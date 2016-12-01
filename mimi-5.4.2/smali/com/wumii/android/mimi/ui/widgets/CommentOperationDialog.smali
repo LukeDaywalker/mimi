@@ -10,25 +10,25 @@
 # static fields
 .field public static a:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
 
-.field private static final b:Lorg/slf4j/Logger;
+.field private static final mLoggerb:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private c:Landroid/app/Dialog;
+.field private mCommenth:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private d:I
+.field private mCommenti:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private e:Landroid/widget/LinearLayout$LayoutParams;
+.field private mDialogc:Landroid/app/Dialog;
 
-.field private f:Landroid/widget/LinearLayout$LayoutParams;
+.field private mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
 
-.field private g:Landroid/graphics/Rect;
+.field private mId:I
 
-.field private h:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mLayoutParamse:Landroid/widget/LinearLayout$LayoutParams;
 
-.field private i:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mLayoutParamsf:Landroid/widget/LinearLayout$LayoutParams;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+.field private mRectg:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->b:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLoggerb:Lorg/slf4j/Logger;
 
     .line 36
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;
@@ -88,7 +88,7 @@
 
     double-to-int v0, v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mId:I
 
     .line 56
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
@@ -97,7 +97,7 @@
 
     invoke-direct {v0, v1, v4}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->e:Landroid/widget/LinearLayout$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLayoutParamse:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 58
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
@@ -106,10 +106,10 @@
 
     invoke-direct {v0, v1, v4}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->f:Landroid/widget/LinearLayout$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLayoutParamsf:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->f:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLayoutParamsf:Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -137,7 +137,7 @@
     move-result-object v2
 
     .line 155
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->f:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLayoutParamsf:Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -163,12 +163,12 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 160
-    iget v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->i:I
+    iget v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mIi:I
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 161
-    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->h:Ljava/lang/String;
+    iget-object v3, p2, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -198,7 +198,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 149
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->e:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLayoutParamse:Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -211,11 +211,11 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
@@ -224,7 +224,7 @@
     if-eqz v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
@@ -252,7 +252,7 @@
     const/4 v4, 0x0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     const v1, 0x7f0b0170
 
@@ -263,7 +263,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     const v1, 0x7f0b0054
 
@@ -397,7 +397,7 @@
 
     .line 87
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->b:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mLoggerb:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Comment operation items can not be empty!!!"
 
@@ -410,21 +410,21 @@
 
     .line 92
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     if-nez v0, :cond_1
 
     .line 96
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->g:Landroid/graphics/Rect;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mRectg:Landroid/graphics/Rect;
 
     .line 97
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->h:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenth:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 98
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->i:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenti:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 99
-    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->j:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
 
     .line 101
     new-instance v0, Landroid/app/Dialog;
@@ -433,27 +433,27 @@
 
     invoke-direct {v0, p1, v1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     const v1, 0x7f0300ad
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setContentView(I)V
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCancelable(Z)V
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -463,7 +463,7 @@
     invoke-direct {v0}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
     .line 108
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -476,12 +476,12 @@
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
 
     .line 109
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->d:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mId:I
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->width:I
 
     .line 110
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -493,7 +493,7 @@
     invoke-direct {p0, p1, p5}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->a(Landroid/content/Context;Ljava/util/List;)V
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
@@ -531,7 +531,7 @@
     .line 70
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->j:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
 
     if-nez v1, :cond_2
 
@@ -543,13 +543,13 @@
 
     .line 75
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->j:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->g:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mRectg:Landroid/graphics/Rect;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->h:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenth:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->i:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mCommenti:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->a(Landroid/graphics/Rect;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;)V
 
@@ -566,10 +566,10 @@
     const/4 v0, 0x0
 
     .line 81
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->j:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mICuj:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;
 
     .line 82
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->c:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog;->mDialogc:Landroid/app/Dialog;
 
     .line 83
     return-void

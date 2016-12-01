@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/content/LocalBroadcastManager;
+.field final synthetic mLocalBroadcastManagera:Landroid/support/v4/content/LocalBroadcastManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 110
-    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$1;->a:Landroid/support/v4/content/LocalBroadcastManager;
+    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$1;->mLocalBroadcastManagera:Landroid/support/v4/content/LocalBroadcastManager;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -40,7 +40,7 @@
 
     .line 116
     :pswitch_0
-    iget-object v0, p0, Landroid/support/v4/content/LocalBroadcastManager$1;->a:Landroid/support/v4/content/LocalBroadcastManager;
+    iget-object v0, p0, Landroid/support/v4/content/LocalBroadcastManager$1;->mLocalBroadcastManagera:Landroid/support/v4/content/LocalBroadcastManager;
 
     invoke-static {v0}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/support/v4/content/LocalBroadcastManager;)V
 

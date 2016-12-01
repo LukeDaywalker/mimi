@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private b:Ljava/util/Map;
+.field private mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+
+.field private mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -15,8 +17,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
 
 # direct methods
@@ -32,14 +32,14 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
     .line 21
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     .line 22
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -61,20 +61,20 @@
     if-nez v0, :cond_0
 
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
     .line 27
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 29
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -107,7 +107,7 @@
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
@@ -139,7 +139,7 @@
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->setMaxAsReadId(Ljava/lang/String;)V
 
     .line 36
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
@@ -197,7 +197,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     .line 48
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->b:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mMapb:Ljava/util/Map;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -209,7 +209,7 @@
 
     .line 51
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->c:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->mChatDaoc:Lcom/wumii/android/mimi/models/dao/chat/ChatDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatDao;->a(Ljava/util/List;)V
 

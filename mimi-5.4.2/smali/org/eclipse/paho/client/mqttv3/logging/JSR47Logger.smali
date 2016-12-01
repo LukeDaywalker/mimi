@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private a:Ljava/util/logging/Logger;
+.field private mLoggera:Ljava/util/logging/Logger;
 
-.field private b:Ljava/util/ResourceBundle;
+.field private mResourceBundleb:Ljava/util/ResourceBundle;
 
-.field private c:Ljava/util/ResourceBundle;
+.field private mResourceBundlec:Ljava/util/ResourceBundle;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
-.field private f:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -31,22 +31,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     .line 37
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b:Ljava/util/ResourceBundle;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundleb:Ljava/util/ResourceBundle;
 
     .line 38
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->c:Ljava/util/ResourceBundle;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundlec:Ljava/util/ResourceBundle;
 
     .line 39
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->d:Ljava/lang/String;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringd:Ljava/lang/String;
 
     .line 40
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->e:Ljava/lang/String;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringe:Ljava/lang/String;
 
     .line 41
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->f:Ljava/lang/String;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringf:Ljava/lang/String;
 
     .line 35
     return-void
@@ -106,7 +106,7 @@
 
     new-instance v1, Ljava/lang/StringBuffer;
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->e:Ljava/lang/String;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringe:Ljava/lang/String;
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -137,7 +137,7 @@
     invoke-virtual {v0, p3}, Ljava/util/logging/LogRecord;->setSourceMethodName(Ljava/lang/String;)V
 
     .line 200
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->f:Ljava/lang/String;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/logging/LogRecord;->setLoggerName(Ljava/lang/String;)V
 
@@ -149,7 +149,7 @@
 
     .line 210
     :cond_1
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     invoke-virtual {v1, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/LogRecord;)V
 
@@ -238,7 +238,7 @@
     move-result-object v1
 
     .line 120
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     invoke-virtual {v0, v1}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
 
@@ -247,9 +247,9 @@
     if-eqz v0, :cond_0
 
     .line 121
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->d:Ljava/lang/String;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringd:Ljava/lang/String;
 
-    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b:Ljava/util/ResourceBundle;
+    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundleb:Ljava/util/ResourceBundle;
 
     move-object v0, p0
 
@@ -275,7 +275,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->e:Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringe:Ljava/lang/String;
 
     .line 63
     return-void
@@ -361,33 +361,33 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b:Ljava/util/ResourceBundle;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundleb:Ljava/util/ResourceBundle;
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->c:Ljava/util/ResourceBundle;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundlec:Ljava/util/ResourceBundle;
 
     .line 51
-    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->e:Ljava/lang/String;
+    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringe:Ljava/lang/String;
 
     .line 53
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->f:Ljava/lang/String;
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringf:Ljava/lang/String;
 
     .line 54
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->f:Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringf:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     .line 55
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b:Ljava/util/ResourceBundle;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundleb:Ljava/util/ResourceBundle;
 
     .line 56
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->c:Ljava/util/ResourceBundle;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundlec:Ljava/util/ResourceBundle;
 
     .line 57
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b:Ljava/util/ResourceBundle;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundleb:Ljava/util/ResourceBundle;
 
     const-string/jumbo v1, "0"
 
@@ -395,7 +395,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->d:Ljava/lang/String;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringd:Ljava/lang/String;
 
     .line 59
     return-void
@@ -406,7 +406,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     invoke-direct {p0, p1}, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->b(I)Ljava/util/logging/Level;
 
@@ -429,7 +429,7 @@
     move-result-object v1
 
     .line 168
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->a:Ljava/util/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mLoggera:Ljava/util/logging/Logger;
 
     invoke-virtual {v0, v1}, Ljava/util/logging/Logger;->isLoggable(Ljava/util/logging/Level;)Z
 
@@ -439,9 +439,9 @@
     if-eqz v0, :cond_0
 
     .line 173
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->d:Ljava/lang/String;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mStringd:Ljava/lang/String;
 
-    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->c:Ljava/util/ResourceBundle;
+    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/logging/JSR47Logger;->mResourceBundlec:Ljava/util/ResourceBundle;
 
     move-object v0, p0
 

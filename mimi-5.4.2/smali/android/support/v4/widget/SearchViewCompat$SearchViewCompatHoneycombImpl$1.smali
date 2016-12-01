@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
+.field final synthetic mOnQueryTextListenerCompata:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 
-.field final synthetic b:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;
+.field final synthetic mSearchViewCompatHoneycombImplb:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 150
-    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->b:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;
+    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->mSearchViewCompatHoneycombImplb:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;
 
-    iput-object p2, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->a:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
+    iput-object p2, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->mOnQueryTextListenerCompata:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->a:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->mOnQueryTextListenerCompata:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;->a(Ljava/lang/String;)Z
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->a:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;->mOnQueryTextListenerCompata:Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;->b(Ljava/lang/String;)Z
 

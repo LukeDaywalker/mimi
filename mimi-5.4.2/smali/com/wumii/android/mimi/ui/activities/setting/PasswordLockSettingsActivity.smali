@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private n:Landroid/widget/TextView;
+.field private mCheckBoxp:Landroid/widget/CheckBox;
 
-.field private o:Landroid/widget/TextView;
+.field private mTextViewn:Landroid/widget/TextView;
 
-.field private p:Landroid/widget/CheckBox;
+.field private mTextViewo:Landroid/widget/TextView;
 
-.field private q:Landroid/view/View;
+.field private mTextViewr:Landroid/widget/TextView;
 
-.field private r:Landroid/widget/TextView;
+.field private mViewq:Landroid/view/View;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mTextViewn:Landroid/widget/TextView;
 
     .line 41
     const v0, 0x7f0b00fb
@@ -68,7 +68,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 42
     const v0, 0x7f0b00fc
@@ -79,7 +79,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->p:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mCheckBoxp:Landroid/widget/CheckBox;
 
     .line 43
     const v0, 0x7f0b00af
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->q:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mViewq:Landroid/view/View;
 
     .line 44
     const v0, 0x7f0b00fd
@@ -99,7 +99,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->r:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mTextViewr:Landroid/widget/TextView;
 
     .line 45
     return-void
@@ -125,7 +125,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->p:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mCheckBoxp:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -226,17 +226,17 @@
     check-cast v0, Ljava/lang/String;
 
     .line 52
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v3
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->p:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mCheckBoxp:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 54
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->q:Landroid/view/View;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mViewq:Landroid/view/View;
 
     if-eqz v3, :cond_0
 
@@ -246,7 +246,7 @@
     invoke-static {v4, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->r:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->mTextViewr:Landroid/widget/TextView;
 
     if-eqz v3, :cond_1
 

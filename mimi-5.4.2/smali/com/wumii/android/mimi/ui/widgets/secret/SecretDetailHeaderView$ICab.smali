@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field final synthetic mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mSecretDetailHeaderViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
+.field final synthetic mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 100
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mSecretDetailHeaderViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mStringb:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,15 +38,15 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mSecretDetailHeaderViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView$ICab;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle;Ljava/lang/String;)V
 

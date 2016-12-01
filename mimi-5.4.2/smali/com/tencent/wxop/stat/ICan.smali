@@ -6,15 +6,15 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic isZc:Z
 
-.field final synthetic b:I
+.field final synthetic isZd:Z
 
-.field final synthetic c:Z
+.field final synthetic mICame:Lcom/tencent/wxop/stat/ICam;
 
-.field final synthetic d:Z
+.field final synthetic mIb:I
 
-.field final synthetic e:Lcom/tencent/wxop/stat/ICam;
+.field final synthetic mLista:Ljava/util/List;
 
 
 # direct methods
@@ -23,15 +23,15 @@
 
     const/4 v0, 0x1
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICan;->e:Lcom/tencent/wxop/stat/ICam;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICan;->mICame:Lcom/tencent/wxop/stat/ICam;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/ICan;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/ICan;->mLista:Ljava/util/List;
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICan;->b:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICan;->mIb:I
 
-    iput-boolean p3, p0, Lcom/tencent/wxop/stat/ICan;->c:Z
+    iput-boolean p3, p0, Lcom/tencent/wxop/stat/ICan;->isZc:Z
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICan;->d:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICan;->isZd:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,21 +43,21 @@
 .method public final run()V
     .locals 4
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICan;->e:Lcom/tencent/wxop/stat/ICam;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICan;->mICame:Lcom/tencent/wxop/stat/ICam;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICan;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICan;->mLista:Ljava/util/List;
 
-    iget v2, p0, Lcom/tencent/wxop/stat/ICan;->b:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICan;->mIb:I
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICan;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICan;->isZc:Z
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/ICam;Ljava/util/List;IZ)V
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICan;->d:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICan;->isZd:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICan;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICan;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 

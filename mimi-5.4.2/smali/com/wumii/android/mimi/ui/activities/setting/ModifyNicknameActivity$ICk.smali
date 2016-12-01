@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
+.field final synthetic mModifyNicknameActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->mModifyNicknameActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 59
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->mModifyNicknameActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->mModifyNicknameActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Landroid/widget/EditText;
 
@@ -48,7 +48,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;->mModifyNicknameActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Z
 

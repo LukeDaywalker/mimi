@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/fasterxml/jackson/databind/JsonNode;
+.field final synthetic mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-.field final synthetic b:Lcom/wumii/android/mimi/network/HttpRequest;
+.field final synthetic mHttpRequestb:Lcom/wumii/android/mimi/network/HttpRequest;
 
-.field final synthetic c:Lcom/wumii/android/mimi/network/HttpProcessor;
+.field final synthetic mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 201
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->b:Lcom/wumii/android/mimi/network/HttpRequest;
+    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpRequestb:Lcom/wumii/android/mimi/network/HttpRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,12 +41,12 @@
 
     .line 204
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
     if-eqz v0, :cond_2
 
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
     const-string/jumbo v1, "data"
 
@@ -55,7 +55,7 @@
     move-result-object v1
 
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
     const-string/jumbo v3, "extras"
 
@@ -64,12 +64,12 @@
     move-result-object v0
 
     .line 209
-    iget-object v3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     .line 210
-    iget-object v3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v3, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->b(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
@@ -79,7 +79,7 @@
 
     .line 213
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->b:Lcom/wumii/android/mimi/network/HttpRequest;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpRequestb:Lcom/wumii/android/mimi/network/HttpRequest;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/HttpRequest;->f()Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
@@ -89,13 +89,13 @@
     if-nez v0, :cond_0
 
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpProcessor;)Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->b:Lcom/wumii/android/mimi/network/HttpRequest;
+    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpRequestb:Lcom/wumii/android/mimi/network/HttpRequest;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/network/HttpRequest;->b()Ljava/lang/String;
 
@@ -112,7 +112,7 @@
     if-eqz v0, :cond_1
 
     .line 218
-    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->b:Lcom/wumii/android/mimi/network/HttpRequest;
+    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;->mHttpRequestb:Lcom/wumii/android/mimi/network/HttpRequest;
 
     new-instance v5, Lcom/wumii/android/mimi/network/HttpJsonResponse;
 

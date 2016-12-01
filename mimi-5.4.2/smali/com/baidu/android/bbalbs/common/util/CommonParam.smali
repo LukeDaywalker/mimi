@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/android/bbalbs/common/util/CommonParam;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/android/bbalbs/common/util/CommonParam;->mStringa:Ljava/lang/String;
 
     return-void
 .end method

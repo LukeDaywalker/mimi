@@ -9,21 +9,21 @@
 # instance fields
 .field protected a:Landroid/view/View;
 
-.field private b:Landroid/widget/AbsListView$OnScrollListener;
+.field private isZf:Z
 
-.field private c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+.field private mFe:F
 
-.field private d:I
+.field private mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
-.field private e:F
+.field private mId:I
 
-.field private f:Z
+.field private mIg:I
 
-.field private g:I
+.field private mIh:I
 
-.field private h:I
+.field private mIi:I
 
-.field private i:I
+.field private mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
 
 # direct methods
@@ -37,15 +37,15 @@
     invoke-direct {p0, p1}, Landroid/widget/ListView;-><init>(Landroid/content/Context;)V
 
     .line 37
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->d:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mId:I
 
     .line 39
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     .line 40
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIg:I
 
     .line 46
     invoke-super {p0, p0}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
@@ -64,15 +64,15 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->d:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mId:I
 
     .line 39
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     .line 40
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIg:I
 
     .line 51
     invoke-super {p0, p0}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
@@ -91,15 +91,15 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 37
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->d:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mId:I
 
     .line 39
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iput-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     .line 40
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIg:I
 
     .line 56
     invoke-super {p0, p0}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
@@ -113,7 +113,7 @@
 
     .prologue
     .line 123
-    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->g:I
+    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIg:I
 
     if-ne p1, v0, :cond_0
 
@@ -124,7 +124,7 @@
 
     .line 125
     :goto_0
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     invoke-interface {v1, p1, p2, p0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->a(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -137,7 +137,7 @@
     invoke-direct {p0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a(Landroid/view/View;)V
 
     .line 129
-    iput p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->g:I
+    iput p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIg:I
 
     .line 131
     :cond_1
@@ -168,7 +168,7 @@
 
     move-result v0
 
-    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->h:I
+    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIh:I
 
     invoke-static {v0, v1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
@@ -235,11 +235,11 @@
     invoke-super {p0, p1}, Landroid/widget/ListView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
     .line 153
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iget-boolean v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -261,7 +261,7 @@
     .line 156
     const/4 v1, 0x0
 
-    iget v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->e:F
+    iget v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mFe:F
 
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
@@ -301,14 +301,14 @@
 
     move-result v0
 
-    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->h:I
+    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIh:I
 
     .line 173
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->i:I
+    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mIi:I
 
     .line 174
     return-void
@@ -325,22 +325,22 @@
     const/4 v5, 0x0
 
     .line 72
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->b:Landroid/widget/AbsListView$OnScrollListener;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
     if-eqz v1, :cond_0
 
     .line 73
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->b:Landroid/widget/AbsListView$OnScrollListener;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
     invoke-interface {v1, p1, p2, p3, p4}, Landroid/widget/AbsListView$OnScrollListener;->onScroll(Landroid/widget/AbsListView;III)V
 
     .line 76
     :cond_0
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     invoke-interface {v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->getCount()I
 
@@ -348,7 +348,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iget-boolean v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     if-eqz v1, :cond_1
 
@@ -363,7 +363,7 @@
     iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a:Landroid/view/View;
 
     .line 78
-    iput v5, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->e:F
+    iput v5, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mFe:F
 
     move v0, p2
 
@@ -399,21 +399,21 @@
     sub-int v1, p2, v1
 
     .line 90
-    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     invoke-interface {v2, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->d(I)I
 
     move-result v2
 
     .line 91
-    iget-object v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     invoke-interface {v3, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->a_(I)I
 
     move-result v3
 
     .line 92
-    iget v4, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->d:I
+    iget v4, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mId:I
 
     if-eq v4, v3, :cond_5
 
@@ -430,10 +430,10 @@
     invoke-direct {p0, v0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->a(Landroid/view/View;)V
 
     .line 94
-    iput v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->d:I
+    iput v3, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mId:I
 
     .line 96
-    iput v5, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->e:F
+    iput v5, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mFe:F
 
     move v0, v1
 
@@ -444,7 +444,7 @@
     if-ge v0, v2, :cond_7
 
     .line 99
-    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iget-object v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     invoke-interface {v2, v0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;->c(I)Z
 
@@ -496,7 +496,7 @@
 
     sub-float v2, v3, v2
 
-    iput v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->e:F
+    iput v2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mFe:F
 
     .line 98
     :cond_4
@@ -538,12 +538,12 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->b:Landroid/widget/AbsListView$OnScrollListener;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
     if-eqz v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->b:Landroid/widget/AbsListView$OnScrollListener;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
     invoke-interface {v0, p1, p2}, Landroid/widget/AbsListView$OnScrollListener;->onScrollStateChanged(Landroid/widget/AbsListView;I)V
 
@@ -578,7 +578,7 @@
     .line 66
     check-cast v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mICdc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
     .line 67
     invoke-super {p0, p1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
@@ -618,7 +618,7 @@
 
     .prologue
     .line 165
-    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->b:Landroid/widget/AbsListView$OnScrollListener;
+    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->mOnScrollListenerb:Landroid/widget/AbsListView$OnScrollListener;
 
     .line 166
     return-void
@@ -629,7 +629,7 @@
 
     .prologue
     .line 60
-    iput-boolean p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->f:Z
+    iput-boolean p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->isZf:Z
 
     .line 61
     return-void

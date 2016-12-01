@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
     .line 39
-    iput-object p2, p0, Lio/fabric/sdk/android/FabricContext;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/FabricContext;->mStringb:Ljava/lang/String;
 
     .line 40
-    iput-object p3, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     .line 41
     return-void
@@ -40,7 +40,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -62,7 +62,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -112,7 +112,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -130,7 +130,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/FabricContext;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -146,7 +146,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lio/fabric/sdk/android/FabricContext;->b:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/FabricContext;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

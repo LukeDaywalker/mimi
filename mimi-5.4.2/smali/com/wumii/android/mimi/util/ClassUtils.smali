@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Lorg/slf4j/Logger;
+.field private static mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ClassUtils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/ClassUtils;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     move-exception v0
 
     .line 53
-    sget-object v1, Lcom/wumii/android/mimi/util/ClassUtils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/ClassUtils;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

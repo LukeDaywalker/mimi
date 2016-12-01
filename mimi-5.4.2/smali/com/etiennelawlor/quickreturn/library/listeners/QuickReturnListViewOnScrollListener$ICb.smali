@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->a:[I
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->a:[I
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->a:[I
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->b:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->a:[I
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->c:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->a:[I
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 

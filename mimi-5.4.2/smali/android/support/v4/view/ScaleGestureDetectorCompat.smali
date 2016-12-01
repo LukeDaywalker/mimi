@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
+.field static final mScaleGestureDetectorImpla:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v2}, Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorCompatKitKatImpl;-><init>(Landroid/support/v4/view/ScaleGestureDetectorCompat$1;)V
 
-    sput-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->a:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
+    sput-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->mScaleGestureDetectorImpla:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
 
     .line 64
     :goto_0
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v2}, Landroid/support/v4/view/ScaleGestureDetectorCompat$BaseScaleGestureDetectorImpl;-><init>(Landroid/support/v4/view/ScaleGestureDetectorCompat$1;)V
 
-    sput-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->a:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
+    sput-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->mScaleGestureDetectorImpla:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
 
     goto :goto_0
 .end method

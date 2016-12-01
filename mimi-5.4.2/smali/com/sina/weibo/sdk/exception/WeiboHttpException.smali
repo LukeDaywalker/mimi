@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/exception/WeiboException;-><init>(Ljava/lang/String;)V
 
     .line 40
-    iput p2, p0, Lcom/sina/weibo/sdk/exception/WeiboHttpException;->a:I
+    iput p2, p0, Lcom/sina/weibo/sdk/exception/WeiboHttpException;->mIa:I
 
     .line 41
     return-void

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+.field final synthetic mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 279
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->e(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Landroid/widget/TextView;
 
@@ -43,15 +43,15 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 284
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->e(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICx;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;)Landroid/content/Context;
 

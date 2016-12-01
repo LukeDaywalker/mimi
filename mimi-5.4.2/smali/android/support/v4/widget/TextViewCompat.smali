@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
+.field static final mTextViewCompatImpla:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/TextViewCompat$JbMr2TextViewCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->a:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->mTextViewCompatImpla:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
 
     .line 137
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/TextViewCompat$JbMr1TextViewCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->a:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->mTextViewCompatImpla:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
 
     goto :goto_0
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/TextViewCompat$BaseTextViewCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->a:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/TextViewCompat;->mTextViewCompatImpla:Landroid/support/v4/widget/TextViewCompat$TextViewCompatImpl;
 
     goto :goto_0
 .end method

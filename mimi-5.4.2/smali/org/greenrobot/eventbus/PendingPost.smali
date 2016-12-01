@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final d:Ljava/util/List;
+.field private static final mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,11 +17,11 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field mObjecta:Ljava/lang/Object;
 
-.field b:Lorg/greenrobot/eventbus/Subscription;
+.field mPendingPostc:Lorg/greenrobot/eventbus/PendingPost;
 
-.field c:Lorg/greenrobot/eventbus/PendingPost;
+.field mSubscriptionb:Lorg/greenrobot/eventbus/Subscription;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sput-object v0, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     return-void
 .end method
@@ -47,10 +47,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPost;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPost;->mObjecta:Ljava/lang/Object;
 
     .line 30
-    iput-object p2, p0, Lorg/greenrobot/eventbus/PendingPost;->b:Lorg/greenrobot/eventbus/Subscription;
+    iput-object p2, p0, Lorg/greenrobot/eventbus/PendingPost;->mSubscriptionb:Lorg/greenrobot/eventbus/Subscription;
 
     .line 31
     return-void
@@ -61,13 +61,13 @@
 
     .prologue
     .line 34
-    sget-object v1, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v1, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     monitor-enter v1
 
     .line 35
     :try_start_0
-    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -77,7 +77,7 @@
     if-lez v0, :cond_0
 
     .line 37
-    sget-object v2, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v2, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     add-int/lit8 v0, v0, -0x1
 
@@ -88,15 +88,15 @@
     check-cast v0, Lorg/greenrobot/eventbus/PendingPost;
 
     .line 38
-    iput-object p1, v0, Lorg/greenrobot/eventbus/PendingPost;->a:Ljava/lang/Object;
+    iput-object p1, v0, Lorg/greenrobot/eventbus/PendingPost;->mObjecta:Ljava/lang/Object;
 
     .line 39
-    iput-object p0, v0, Lorg/greenrobot/eventbus/PendingPost;->b:Lorg/greenrobot/eventbus/Subscription;
+    iput-object p0, v0, Lorg/greenrobot/eventbus/PendingPost;->mSubscriptionb:Lorg/greenrobot/eventbus/Subscription;
 
     .line 40
     const/4 v2, 0x0
 
-    iput-object v2, v0, Lorg/greenrobot/eventbus/PendingPost;->c:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object v2, v0, Lorg/greenrobot/eventbus/PendingPost;->mPendingPostc:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 41
     monitor-exit v1
@@ -137,22 +137,22 @@
     const/4 v0, 0x0
 
     .line 48
-    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->a:Ljava/lang/Object;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->mObjecta:Ljava/lang/Object;
 
     .line 49
-    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->b:Lorg/greenrobot/eventbus/Subscription;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->mSubscriptionb:Lorg/greenrobot/eventbus/Subscription;
 
     .line 50
-    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->c:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/PendingPost;->mPendingPostc:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 51
-    sget-object v1, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v1, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     monitor-enter v1
 
     .line 53
     :try_start_0
-    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -163,7 +163,7 @@
     if-ge v0, v2, :cond_0
 
     .line 54
-    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->d:Ljava/util/List;
+    sget-object v0, Lorg/greenrobot/eventbus/PendingPost;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

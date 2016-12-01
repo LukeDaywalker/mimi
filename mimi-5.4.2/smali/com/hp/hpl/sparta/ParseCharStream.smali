@@ -7,85 +7,85 @@
 
 
 # static fields
-.field private static final c:[C
+.field private static final mArrayCc:[C
 
-.field private static final d:[Z
+.field private static final mArrayCe:[C
 
-.field private static final e:[C
+.field private static final mArrayCf:[C
 
-.field private static final f:[C
+.field private static final mArrayCg:[C
 
-.field private static final g:[C
+.field private static final mArrayCh:[C
 
-.field private static final h:[C
+.field private static final mArrayCi:[C
 
-.field private static final i:[C
+.field private static final mArrayCj:[C
 
-.field private static final j:[C
+.field private static final mArrayCk:[C
 
-.field private static final k:[C
+.field private static final mArrayCl:[C
 
-.field private static final l:[C
+.field private static final mArrayCm:[C
 
-.field private static final m:[C
+.field private static final mArrayCn:[C
 
-.field private static final n:[C
+.field private static final mArrayCo:[C
 
-.field private static final o:[C
+.field private static final mArrayCp:[C
 
-.field private static final p:[C
+.field private static final mArrayCq:[C
 
-.field private static final q:[C
+.field private static final mArrayCr:[C
 
-.field private static final r:[C
+.field private static final mArrayCs:[C
 
-.field private static final s:[C
+.field private static final mArrayCt:[C
 
-.field private static final t:[C
+.field private static final mArrayCu:[C
 
-.field private static final u:[C
+.field private static final mArrayCv:[C
 
-.field private static final v:[C
+.field private static final mArrayCw:[C
 
-.field private static final w:[C
+.field private static final mArrayZd:[Z
 
 
 # instance fields
-.field private final A:Ljava/util/Hashtable;
+.field private isZF:Z
 
-.field private final B:Ljava/util/Hashtable;
+.field private isZK:Z
 
-.field private final C:Lcom/hp/hpl/sparta/ParseLog;
+.field private final mArrayCH:[C
 
-.field private final D:Ljava/lang/String;
+.field private final mArrayCL:[C
 
-.field private E:I
+.field private final mCharCircBufferN:Lcom/hp/hpl/sparta/CharCircBuffer;
 
-.field private F:Z
+.field private final mHashtableA:Ljava/util/Hashtable;
 
-.field private final G:I
+.field private final mHashtableB:Ljava/util/Hashtable;
 
-.field private final H:[C
+.field private mIE:I
 
-.field private I:I
+.field private final mIG:I
 
-.field private J:I
+.field private mII:I
 
-.field private K:Z
+.field private mIJ:I
 
-.field private final L:[C
+.field private mIM:I
 
-.field private M:I
+.field private final mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
-.field private final N:Lcom/hp/hpl/sparta/CharCircBuffer;
+.field private final mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
-.field private final O:Lcom/hp/hpl/sparta/ParseHandler;
+.field private final mReaderz:Ljava/io/Reader;
 
-.field private x:Ljava/lang/String;
+.field private final mStringD:Ljava/lang/String;
 
-.field private y:Ljava/lang/String;
+.field private mStringx:Ljava/lang/String;
 
-.field private final z:Ljava/io/Reader;
+.field private mStringy:Ljava/lang/String;
 
 
 # direct methods
@@ -102,12 +102,12 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->c:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCc:[C
 
     .line 294
     new-array v0, v4, [Z
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->d:[Z
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayZd:[Z
 
     .line 296
     const/4 v0, 0x0
@@ -116,7 +116,7 @@
     if-ge v0, v4, :cond_0
 
     .line 297
-    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->d:[Z
+    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayZd:[Z
 
     invoke-static {v0}, Lcom/hp/hpl/sparta/ParseCharStream;->d(C)Z
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->e:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCe:[C
 
     .line 438
     const-string/jumbo v0, "-->"
@@ -148,7 +148,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->f:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCf:[C
 
     .line 456
     const-string/jumbo v0, "<?"
@@ -157,7 +157,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->g:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCg:[C
 
     .line 457
     const-string/jumbo v0, "?>"
@@ -166,7 +166,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->h:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCh:[C
 
     .line 484
     const-string/jumbo v0, "<!DOCTYPE"
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->i:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCi:[C
 
     .line 490
     const-string/jumbo v0, "<?xml"
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->j:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCj:[C
 
     .line 512
     const-string/jumbo v0, "encoding"
@@ -193,7 +193,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->k:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCk:[C
 
     .line 533
     const-string/jumbo v0, "version"
@@ -202,14 +202,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->l:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCl:[C
 
     .line 555
     new-array v0, v3, [C
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->m:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCm:[C
 
     .line 621
     const-string/jumbo v0, "<!"
@@ -218,7 +218,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->n:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCn:[C
 
     .line 648
     const-string/jumbo v0, "&#"
@@ -227,7 +227,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->o:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCo:[C
 
     .line 738
     const-string/jumbo v0, "<!ENTITY"
@@ -236,7 +236,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->p:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCp:[C
 
     .line 739
     const-string/jumbo v0, "NDATA"
@@ -245,7 +245,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->q:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCq:[C
 
     .line 789
     const-string/jumbo v0, "SYSTEM"
@@ -254,7 +254,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->r:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCr:[C
 
     .line 790
     const-string/jumbo v0, "PUBLIC"
@@ -263,7 +263,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->s:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCs:[C
 
     .line 874
     const-string/jumbo v0, "<![CDATA["
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->t:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCt:[C
 
     .line 875
     const-string/jumbo v0, "]]>"
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->u:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCu:[C
 
     .line 979
     const-string/jumbo v0, "/>"
@@ -290,7 +290,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->v:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCv:[C
 
     .line 1014
     const-string/jumbo v0, "</"
@@ -299,7 +299,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->w:[C
+    sput-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCw:[C
 
     return-void
 
@@ -365,59 +365,59 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1076
-    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->y:Ljava/lang/String;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringy:Ljava/lang/String;
 
     .line 1083
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     .line 1084
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->B:Ljava/util/Hashtable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableB:Ljava/util/Hashtable;
 
     .line 1087
     const/4 v0, -0x2
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     .line 1088
-    iput-boolean v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->F:Z
+    iput-boolean v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZF:Z
 
     .line 1097
-    iput v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->G:I
+    iput v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIG:I
 
     .line 1099
-    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     .line 1100
-    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     .line 1101
-    iput-boolean v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->K:Z
+    iput-boolean v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZK:Z
 
     .line 1105
     const/16 v0, 0xff
 
     new-array v0, v0, [C
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     .line 1108
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->M:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIM:I
 
     .line 50
-    iput v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->M:I
+    iput v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIM:I
 
     .line 55
-    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->N:Lcom/hp/hpl/sparta/CharCircBuffer;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mCharCircBufferN:Lcom/hp/hpl/sparta/CharCircBuffer;
 
     .line 57
     if-nez p4, :cond_0
@@ -425,7 +425,7 @@
     sget-object p4, Lcom/hp/hpl/sparta/ParseCharStream;->a:Lcom/hp/hpl/sparta/ParseLog;
 
     :cond_0
-    iput-object p4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iput-object p4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     .line 58
     if-nez p5, :cond_2
@@ -433,10 +433,10 @@
     move-object v0, v1
 
     :goto_0
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->D:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringD:Ljava/lang/String;
 
     .line 61
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "lt"
 
@@ -445,7 +445,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 62
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "gt"
 
@@ -454,7 +454,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 63
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "amp"
 
@@ -463,7 +463,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 64
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "apos"
 
@@ -472,7 +472,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 65
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "quot"
 
@@ -484,33 +484,33 @@
     if-eqz p3, :cond_3
 
     .line 70
-    iput-object p3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iput-object p3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     .line 71
-    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     .line 72
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     array-length v0, v0
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     .line 73
-    iput-boolean v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->K:Z
+    iput-boolean v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZK:Z
 
     .line 74
-    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->z:Ljava/io/Reader;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mReaderz:Ljava/io/Reader;
 
     .line 81
     :goto_1
-    iput-object p1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     .line 84
-    iput-object p6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iput-object p6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     .line 85
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     invoke-interface {v0, p0}, Lcom/hp/hpl/sparta/ParseHandler;->a(Lcom/hp/hpl/sparta/ParseSource$ICp;)V
 
@@ -518,7 +518,7 @@
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->x()V
 
     .line 93
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     invoke-interface {v0}, Lcom/hp/hpl/sparta/ParseHandler;->b()V
 
@@ -528,11 +528,11 @@
     move-result-object v0
 
     .line 98
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->y:Ljava/lang/String;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringy:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->y:Ljava/lang/String;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringy:Ljava/lang/String;
 
     invoke-virtual {v0}, Lcom/hp/hpl/sparta/Element;->c()Ljava/lang/String;
 
@@ -545,7 +545,7 @@
     if-nez v1, :cond_1
 
     .line 99
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -557,7 +557,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->y:Ljava/lang/String;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringy:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -587,7 +587,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -619,12 +619,12 @@
 
     .line 76
     :cond_3
-    iput-object p2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->z:Ljava/io/Reader;
+    iput-object p2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mReaderz:Ljava/io/Reader;
 
     .line 77
     new-array v0, v6, [C
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     .line 78
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->f()I
@@ -633,17 +633,17 @@
 
     .line 116
     :cond_4
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->z:Ljava/io/Reader;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mReaderz:Ljava/io/Reader;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->z:Ljava/io/Reader;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mReaderz:Ljava/io/Reader;
 
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     .line 118
     :cond_5
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     invoke-interface {v0}, Lcom/hp/hpl/sparta/ParseHandler;->c()V
 
@@ -656,7 +656,7 @@
 
     .prologue
     .line 509
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->j:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCj:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -670,7 +670,7 @@
 
     .prologue
     .line 515
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->k:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCk:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -684,7 +684,7 @@
 
     .prologue
     .line 523
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->k:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCk:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -742,7 +742,7 @@
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->i()V
 
     .line 540
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->l:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCl:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -833,7 +833,7 @@
     if-le v0, v2, :cond_2
 
     :cond_1
-    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->m:[C
+    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCm:[C
 
     invoke-static {v0, v1}, Lcom/hp/hpl/sparta/ParseCharStream;->a(C[C)Z
 
@@ -889,7 +889,7 @@
     const/16 v1, 0x3e
 
     .line 580
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->i:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCi:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -901,7 +901,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->y:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringy:Ljava/lang/String;
 
     .line 583
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->j()Z
@@ -929,7 +929,7 @@
     .line 588
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->F:Z
+    iput-boolean v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZF:Z
 
     .line 589
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->T()Ljava/lang/String;
@@ -1103,7 +1103,7 @@
 
     .line 633
     :cond_2
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->n:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCn:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1190,7 +1190,7 @@
     const/4 v3, 0x0
 
     .line 653
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->o:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCo:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -1223,7 +1223,7 @@
     if-nez v4, :cond_1
 
     .line 661
-    iget-object v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     add-int/lit8 v4, v2, 0x1
 
@@ -1239,11 +1239,11 @@
     if-lt v4, v2, :cond_3
 
     .line 663
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     const-string/jumbo v1, "Tmp buffer overflow on readCharRef"
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -1264,7 +1264,7 @@
     .line 668
     new-instance v4, Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v6, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-direct {v4, v6, v3, v2}, Ljava/lang/String;-><init>([CII)V
 
@@ -1285,7 +1285,7 @@
     move-exception v2
 
     .line 672
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1326,7 +1326,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -1356,7 +1356,7 @@
 
     .prologue
     .line 681
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->o:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCo:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1422,7 +1422,7 @@
     move-result-object v1
 
     .line 696
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1437,12 +1437,12 @@
     const-string/jumbo v0, ""
 
     .line 700
-    iget-boolean v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->F:Z
+    iget-boolean v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZF:Z
 
     if-eqz v2, :cond_1
 
     .line 701
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1468,7 +1468,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -1488,7 +1488,7 @@
 
     .line 704
     :cond_1
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1514,7 +1514,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -1540,7 +1540,7 @@
     move-result-object v1
 
     .line 724
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->B:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableB:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1555,7 +1555,7 @@
     const-string/jumbo v0, ""
 
     .line 728
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1581,7 +1581,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -1620,7 +1620,7 @@
     const/16 v1, 0x25
 
     .line 749
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->p:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCp:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -1662,7 +1662,7 @@
 
     .line 761
     :goto_0
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->B:Ljava/util/Hashtable;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableB:Ljava/util/Hashtable;
 
     invoke-virtual {v2, v1, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1717,7 +1717,7 @@
     .line 779
     :cond_3
     :goto_2
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->A:Ljava/util/Hashtable;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mHashtableA:Ljava/util/Hashtable;
 
     invoke-virtual {v2, v1, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1747,7 +1747,7 @@
 
     .line 771
     :cond_5
-    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->q:[C
+    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCq:[C
 
     invoke-direct {p0, v2}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1756,7 +1756,7 @@
     if-eqz v2, :cond_3
 
     .line 772
-    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->q:[C
+    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCq:[C
 
     invoke-direct {p0, v2}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -1784,7 +1784,7 @@
 
     .prologue
     .line 786
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->p:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCp:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1798,7 +1798,7 @@
 
     .prologue
     .line 797
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->r:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCr:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1807,7 +1807,7 @@
     if-eqz v0, :cond_0
 
     .line 798
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->r:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCr:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -1825,7 +1825,7 @@
 
     .line 799
     :cond_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->s:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCs:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1834,7 +1834,7 @@
     if-eqz v0, :cond_1
 
     .line 800
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->s:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCs:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -1862,7 +1862,7 @@
 
     .prologue
     .line 811
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->r:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCr:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1870,7 +1870,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->s:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCs:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1984,7 +1984,7 @@
 
     if-nez v2, :cond_2
 
-    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->u:[C
+    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCu:[C
 
     invoke-direct {p0, v2}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -1993,7 +1993,7 @@
     if-nez v2, :cond_2
 
     .line 888
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->g()C
 
@@ -2002,7 +2002,7 @@
     aput-char v3, v2, v0
 
     .line 891
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     aget-char v2, v2, v0
 
@@ -2018,7 +2018,7 @@
 
     if-ne v2, v3, :cond_1
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-direct {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->g()C
 
@@ -2034,9 +2034,9 @@
     if-ne v0, v4, :cond_0
 
     .line 895
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-interface {v0, v2, v1, v4}, Lcom/hp/hpl/sparta/ParseHandler;->a([CII)V
 
@@ -2049,9 +2049,9 @@
     :cond_2
     if-lez v0, :cond_3
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-interface {v2, v3, v1, v0}, Lcom/hp/hpl/sparta/ParseHandler;->a([CII)V
 
@@ -2070,7 +2070,7 @@
     const/4 v0, 0x0
 
     .line 911
-    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->t:[C
+    sget-object v2, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCt:[C
 
     invoke-direct {p0, v2}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -2078,7 +2078,7 @@
 
     .line 913
     :goto_0
-    sget-object v3, Lcom/hp/hpl/sparta/ParseCharStream;->u:[C
+    sget-object v3, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCu:[C
 
     invoke-direct {p0, v3}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -2100,7 +2100,7 @@
     invoke-direct {v0, v2}, Ljava/lang/StringBuffer;-><init>(I)V
 
     .line 917
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -2111,7 +2111,7 @@
 
     .line 922
     :goto_2
-    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     add-int/lit8 v3, v0, 0x1
 
@@ -2129,7 +2129,7 @@
 
     .line 919
     :cond_0
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -2137,7 +2137,7 @@
 
     .line 924
     :cond_1
-    sget-object v3, Lcom/hp/hpl/sparta/ParseCharStream;->u:[C
+    sget-object v3, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCu:[C
 
     invoke-direct {p0, v3}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -2145,7 +2145,7 @@
     if-eqz v0, :cond_2
 
     .line 927
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -2159,7 +2159,7 @@
     move-result-object v0
 
     .line 929
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     array-length v3, v0
 
@@ -2171,9 +2171,9 @@
 
     .line 931
     :cond_2
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-interface {v0, v3, v1, v2}, Lcom/hp/hpl/sparta/ParseHandler;->a([CII)V
 
@@ -2194,7 +2194,7 @@
 
     .prologue
     .line 948
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->t:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCt:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -2218,7 +2218,7 @@
     move-result v1
 
     .line 961
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     invoke-interface {v2, v0}, Lcom/hp/hpl/sparta/ParseHandler;->a(Lcom/hp/hpl/sparta/Element;)V
 
@@ -2233,7 +2233,7 @@
 
     .line 969
     :cond_0
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     invoke-interface {v1, v0}, Lcom/hp/hpl/sparta/ParseHandler;->b(Lcom/hp/hpl/sparta/Element;)V
 
@@ -2338,7 +2338,7 @@
     const/4 v2, -0x1
 
     .line 164
-    iget-boolean v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->K:Z
+    iget-boolean v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZK:Z
 
     if-eqz v0, :cond_1
 
@@ -2351,11 +2351,11 @@
 
     .line 167
     :cond_1
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     array-length v0, v0
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v0, v3
 
@@ -2365,20 +2365,20 @@
 
     .line 168
     :goto_1
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/2addr v3, v0
 
-    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-ge v3, v4, :cond_2
 
     .line 169
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/2addr v5, v0
 
@@ -2393,17 +2393,17 @@
 
     .line 170
     :cond_2
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v0, v3
 
     .line 171
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     .line 172
-    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     move v1, v0
 
@@ -2462,9 +2462,9 @@
     array-length v1, p1
 
     .line 816
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v0, v2
 
@@ -2480,7 +2480,7 @@
     .line 818
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     .line 819
     new-instance v0, Lcom/hp/hpl/sparta/ParseException;
@@ -2493,20 +2493,20 @@
 
     .line 822
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     add-int/lit8 v2, v2, -0x1
 
     aget-char v0, v0, v2
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     .line 824
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v0, v2
 
@@ -2528,9 +2528,9 @@
     if-ge v0, v1, :cond_3
 
     .line 830
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/2addr v3, v0
 
@@ -2545,9 +2545,9 @@
 
     new-instance v2, Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     invoke-direct {v2, v3, v4, v1}, Ljava/lang/String;-><init>([CII)V
 
@@ -2563,11 +2563,11 @@
 
     .line 834
     :cond_3
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     .line 835
     return-void
@@ -2676,7 +2676,7 @@
 
     .line 997
     :cond_3
-    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->v:[C
+    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCv:[C
 
     invoke-direct {p0, v1}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -2688,7 +2688,7 @@
 
     .prologue
     .line 1030
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->w:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCw:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -2742,7 +2742,7 @@
     move-result-object v2
 
     .line 1049
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->O:Lcom/hp/hpl/sparta/ParseHandler;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseHandlerO:Lcom/hp/hpl/sparta/ParseHandler;
 
     array-length v4, v2
 
@@ -2840,7 +2840,7 @@
     if-eqz v2, :cond_0
 
     .line 1009
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2876,7 +2876,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -2897,9 +2897,9 @@
 
     .prologue
     .line 217
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-lt v0, v1, :cond_0
 
@@ -2922,9 +2922,9 @@
 
     .line 219
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v0, v0, v1
 
@@ -2948,9 +2948,9 @@
     const/4 v0, 0x0
 
     .line 245
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-lt v1, v2, :cond_1
 
@@ -2969,9 +2969,9 @@
 
     .line 246
     :cond_1
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v1, v1, v2
 
@@ -2993,9 +2993,9 @@
     const/4 v0, 0x0
 
     .line 252
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-lt v1, v2, :cond_1
 
@@ -3014,9 +3014,9 @@
 
     .line 253
     :cond_1
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v1, v1, v2
 
@@ -3045,9 +3045,9 @@
     array-length v2, p1
 
     .line 839
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v1, v3
 
@@ -3063,7 +3063,7 @@
     .line 841
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     .line 854
     :cond_0
@@ -3072,20 +3072,20 @@
 
     .line 845
     :cond_1
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     add-int/lit8 v3, v3, -0x1
 
     aget-char v1, v1, v3
 
-    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     .line 847
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     sub-int/2addr v1, v3
 
@@ -3098,9 +3098,9 @@
     if-ge v1, v2, :cond_2
 
     .line 852
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/2addr v4, v1
 
@@ -3127,7 +3127,7 @@
 
     .prologue
     .line 1018
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->w:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCw:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -3148,7 +3148,7 @@
     if-nez v1, :cond_0
 
     .line 1022
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3188,7 +3188,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/ParseCharStream;->b()I
 
@@ -3263,7 +3263,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->c:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCc:[C
 
     invoke-static {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a(C[C)Z
 
@@ -3341,7 +3341,7 @@
     const/4 v0, -0x1
 
     .line 146
-    iget-boolean v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->K:Z
+    iget-boolean v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZK:Z
 
     if-eqz v1, :cond_0
 
@@ -3351,9 +3351,9 @@
 
     .line 148
     :cond_0
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     array-length v2, v2
 
@@ -3362,23 +3362,23 @@
     .line 151
     const/4 v1, 0x0
 
-    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     .line 154
     :cond_1
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->z:Ljava/io/Reader;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mReaderz:Ljava/io/Reader;
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
-    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
     array-length v4, v4
 
-    iget v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v5, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     sub-int/2addr v4, v5
 
@@ -3392,17 +3392,17 @@
     .line 156
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->K:Z
+    iput-boolean v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->isZK:Z
 
     goto :goto_0
 
     .line 159
     :cond_2
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     move v0, v1
 
@@ -3415,9 +3415,9 @@
 
     .prologue
     .line 190
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-lt v0, v1, :cond_0
 
@@ -3440,9 +3440,9 @@
 
     .line 192
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v0, v0, v1
 
@@ -3450,21 +3450,21 @@
 
     if-ne v0, v1, :cond_1
 
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->M:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIM:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->M:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIM:I
 
     .line 201
     :cond_1
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iput v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v0, v0, v1
 
@@ -3476,9 +3476,9 @@
 
     .prologue
     .line 206
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->J:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIJ:I
 
     if-lt v0, v1, :cond_0
 
@@ -3501,9 +3501,9 @@
 
     .line 208
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->H:[C
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCH:[C
 
-    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->I:I
+    iget v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mII:I
 
     aget-char v0, v0, v1
 
@@ -3577,7 +3577,7 @@
 
     if-ge v0, v1, :cond_0
 
-    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->d:[Z
+    sget-object v1, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayZd:[Z
 
     aget-boolean v0, v1, v0
 
@@ -3602,7 +3602,7 @@
     const/4 v0, 0x0
 
     .line 349
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     const/4 v2, 0x1
 
@@ -3634,7 +3634,7 @@
     invoke-direct {v0, v2}, Ljava/lang/StringBuffer;-><init>(I)V
 
     .line 354
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -3645,7 +3645,7 @@
 
     .line 359
     :goto_2
-    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v4, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     add-int/lit8 v3, v0, 0x1
 
@@ -3663,7 +3663,7 @@
 
     .line 356
     :cond_0
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -3676,7 +3676,7 @@
     .line 362
     new-instance v0, Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-direct {v0, v3, v1, v2}, Ljava/lang/String;-><init>([CII)V
 
@@ -3690,7 +3690,7 @@
 
     .line 365
     :cond_2
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->L:[C
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCL:[C
 
     invoke-virtual {v0, v3, v1, v2}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -3982,13 +3982,13 @@
 
     .prologue
     .line 446
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->e:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCe:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
     .line 447
     :goto_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->f:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCf:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4003,7 +4003,7 @@
 
     .line 449
     :cond_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->f:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCf:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -4016,7 +4016,7 @@
 
     .prologue
     .line 453
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->e:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCe:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4030,13 +4030,13 @@
 
     .prologue
     .line 462
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->g:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCg:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
     .line 463
     :goto_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->h:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCh:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4051,7 +4051,7 @@
 
     .line 465
     :cond_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->h:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCh:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -4064,7 +4064,7 @@
 
     .prologue
     .line 469
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->g:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCg:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4134,7 +4134,7 @@
 
     .prologue
     .line 487
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->i:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCi:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4148,7 +4148,7 @@
 
     .prologue
     .line 494
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->j:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCj:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -4178,7 +4178,7 @@
     move-result-object v0
 
     .line 499
-    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->D:Ljava/lang/String;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringD:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -4186,7 +4186,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->D:Ljava/lang/String;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringD:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4197,9 +4197,9 @@
     .line 500
     new-instance v1, Lcom/hp/hpl/sparta/EncodingMismatchException;
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v2, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->D:Ljava/lang/String;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringD:Ljava/lang/String;
 
     invoke-direct {v1, v2, v0, v3}, Lcom/hp/hpl/sparta/EncodingMismatchException;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -4208,7 +4208,7 @@
     .line 503
     :cond_1
     :goto_0
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->h:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCh:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->b([C)Z
 
@@ -4223,7 +4223,7 @@
 
     .line 505
     :cond_2
-    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->h:[C
+    sget-object v0, Lcom/hp/hpl/sparta/ParseCharStream;->mArrayCh:[C
 
     invoke-direct {p0, v0}, Lcom/hp/hpl/sparta/ParseCharStream;->a([C)V
 
@@ -4238,7 +4238,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -4248,7 +4248,7 @@
 
     .prologue
     .line 131
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->M:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIM:I
 
     return v0
 .end method
@@ -4258,7 +4258,7 @@
 
     .prologue
     .line 135
-    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->E:I
+    iget v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mIE:I
 
     return v0
 .end method
@@ -4278,7 +4278,7 @@
 
     .prologue
     .line 976
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->C:Lcom/hp/hpl/sparta/ParseLog;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mParseLogC:Lcom/hp/hpl/sparta/ParseLog;
 
     return-object v0
 .end method
@@ -4288,7 +4288,7 @@
 
     .prologue
     .line 122
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->x:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseCharStream;->mStringx:Ljava/lang/String;
 
     return-object v0
 .end method

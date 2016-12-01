@@ -3,9 +3,7 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
-
-.field private static d:Ljava/util/List;
+.field private static mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -16,11 +14,13 @@
     .end annotation
 .end field
 
+.field private static final mStringa:Ljava/lang/String;
+
 
 # instance fields
-.field private b:J
+.field private mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-.field private c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+.field private mJb:J
 
 
 # direct methods
@@ -33,13 +33,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mStringa:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->d:Ljava/util/List;
+    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mListd:Ljava/util/List;
 
     :try_start_0
     invoke-static {}, Lcom/baidu/mapapi/VersionInfo;->getApiVersion()Ljava/lang/String;
@@ -124,17 +124,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     new-instance v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     invoke-direct {v0}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     return-void
 .end method
@@ -676,9 +676,9 @@
 .method public a(I)I
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->SetMapControlMode(JI)I
 
@@ -690,9 +690,9 @@
 .method public a(IILjava/lang/String;)J
     .locals 7
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move v4, p1
 
@@ -710,9 +710,9 @@
 .method public a(II)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ScrPtToGeoPoint(JII)Ljava/lang/String;
 
@@ -724,9 +724,9 @@
 .method public a(IIII)Ljava/lang/String;
     .locals 9
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     int-to-long v4, p1
 
@@ -746,9 +746,9 @@
 .method public a(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnSchcityGet(JLjava/lang/String;)Ljava/lang/String;
 
@@ -760,9 +760,9 @@
 .method public a(J)V
     .locals 5
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->UpdateLayers(JJ)V
 
@@ -772,9 +772,9 @@
 .method public a(JZ)V
     .locals 7
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move-wide v4, p1
 
@@ -788,9 +788,9 @@
 .method public a(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->SetMapStatus(JLandroid/os/Bundle;)V
 
@@ -800,9 +800,9 @@
 .method public a(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->SaveScreenToLocal(JLjava/lang/String;Landroid/os/Bundle;)V
 
@@ -812,9 +812,9 @@
 .method public a(Z)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ShowSatelliteMap(JZ)V
 
@@ -824,7 +824,7 @@
 .method public a()Z
     .locals 4
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->d:Ljava/util/List;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -832,30 +832,30 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->Create()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
-    iput-wide v2, v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->a:J
+    iput-wide v2, v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->mJa:J
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->d:Ljava/util/List;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mListd:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     const/4 v1, 0x0
 
@@ -866,9 +866,9 @@
     return v0
 
     :cond_0
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->d:Ljava/util/List;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mListd:Ljava/util/List;
 
     const/4 v2, 0x0
 
@@ -878,13 +878,13 @@
 
     check-cast v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->a:J
+    iget-wide v2, v0, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->mJa:J
 
     invoke-virtual {v1, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->CreateDuplicate(J)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     goto :goto_0
 .end method
@@ -892,9 +892,9 @@
 .method public a(IZ)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordReload(JIZ)Z
 
@@ -906,9 +906,9 @@
 .method public a(IZI)Z
     .locals 7
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move v4, p1
 
@@ -928,11 +928,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v3, v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     move-object/from16 v0, p0
 
-    iget-wide v4, v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v4, v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move-object/from16 v6, p1
 
@@ -970,9 +970,9 @@
 .method public a(ZZ)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordImport(JZZ)Z
 
@@ -984,9 +984,9 @@
 .method public a([III)[I
     .locals 7
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move-object v4, p1
 
@@ -1004,9 +1004,9 @@
 .method public b(Landroid/os/Bundle;)F
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->GetZoomToBound(JLandroid/os/Bundle;)F
 
@@ -1018,9 +1018,9 @@
 .method public b(II)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->GeoPtToScrPoint(JII)Ljava/lang/String;
 
@@ -1032,9 +1032,9 @@
 .method public b(Z)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ShowHotMap(JZ)V
 
@@ -1044,15 +1044,15 @@
 .method public b()Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->Release(J)I
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->d:Ljava/util/List;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mListd:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -1064,9 +1064,9 @@
 .method public b(I)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordAdd(JI)Z
 
@@ -1078,9 +1078,9 @@
 .method public b(IZ)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordRemove(JIZ)Z
 
@@ -1092,9 +1092,9 @@
 .method public b(IZI)Z
     .locals 7
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     move v4, p1
 
@@ -1112,9 +1112,9 @@
 .method public b(J)Z
     .locals 5
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->cleanSDKTileDataCache(JJ)Z
 
@@ -1126,7 +1126,7 @@
 .method public c()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     return-wide v0
 .end method
@@ -1134,9 +1134,9 @@
 .method public c(I)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordGetAt(JI)Ljava/lang/String;
 
@@ -1148,9 +1148,9 @@
 .method public c(J)V
     .locals 5
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ClearLayer(JJ)V
 
@@ -1160,9 +1160,9 @@
 .method public c(Z)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ShowTrafficMap(JZ)V
 
@@ -1172,9 +1172,9 @@
 .method public c(Landroid/os/Bundle;)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->updateSDKTile(JLandroid/os/Bundle;)Z
 
@@ -1186,9 +1186,9 @@
 .method public d()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnPause(J)V
 
@@ -1198,9 +1198,9 @@
 .method public d(Z)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->enableDrawHouseHeight(JZ)V
 
@@ -1210,9 +1210,9 @@
 .method public d(Landroid/os/Bundle;)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->addtileOverlay(JLandroid/os/Bundle;)Z
 
@@ -1224,9 +1224,9 @@
 .method public e()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnResume(J)V
 
@@ -1236,9 +1236,9 @@
 .method public e(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->addOneOverlayItem(JLandroid/os/Bundle;)V
 
@@ -1248,9 +1248,9 @@
 .method public f()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->ResetImageRes(J)V
 
@@ -1260,9 +1260,9 @@
 .method public f(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->updateOneOverlayItem(JLandroid/os/Bundle;)V
 
@@ -1272,9 +1272,9 @@
 .method public g()Landroid/os/Bundle;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->GetMapStatus(J)Landroid/os/Bundle;
 
@@ -1286,9 +1286,9 @@
 .method public g(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->removeOneOverlayItem(JLandroid/os/Bundle;)V
 
@@ -1298,9 +1298,9 @@
 .method public h()Landroid/os/Bundle;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->getDrawingMapStatus(J)Landroid/os/Bundle;
 
@@ -1312,9 +1312,9 @@
 .method public i()Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->GetBaiduHotMapCityInfo(J)Z
 
@@ -1326,9 +1326,9 @@
 .method public j()Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnRecordGetAll(J)Ljava/lang/String;
 
@@ -1340,9 +1340,9 @@
 .method public k()Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->OnHotcityGet(J)Ljava/lang/String;
 
@@ -1354,9 +1354,9 @@
 .method public l()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->PostStatInfo(J)V
 
@@ -1366,9 +1366,9 @@
 .method public m()Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->isDrawHouseHeightEnable(J)Z
 
@@ -1380,9 +1380,9 @@
 .method public n()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->c:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJNIBaseMapc:Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/basemap/ICa;->mJb:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/basemap/JNIBaseMap;->clearHeatMapLayerCache(J)V
 

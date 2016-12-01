@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+.field final synthetic mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 213
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 217
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)V
 

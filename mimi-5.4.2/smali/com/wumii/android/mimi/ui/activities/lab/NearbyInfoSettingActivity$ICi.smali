@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+.field final synthetic mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
@@ -41,7 +41,7 @@
     if-eq v0, v1, :cond_0
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;->mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->b(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
 

@@ -4,11 +4,15 @@
 
 
 # static fields
-.field private static final b:Lorg/slf4j/Logger;
+.field private static final mLoggerb:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private c:Ljava/util/Map;
+.field private mCommentDaoe:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
+
+.field private mFileHelperf:Lcom/wumii/android/mimi/models/helper/FileHelper;
+
+.field private mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -25,7 +29,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/Map;
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -38,10 +42,6 @@
         }
     .end annotation
 .end field
-
-.field private e:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
-
-.field private f:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->b:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mLoggerb:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -73,14 +73,14 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->e:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mCommentDaoe:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
 
     .line 46
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     .line 47
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->f:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mFileHelperf:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 48
     return-void
@@ -102,7 +102,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->f:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mFileHelperf:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -112,7 +112,7 @@
 
     .prologue
     .line 30
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->b:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mLoggerb:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -124,7 +124,7 @@
     .line 98
     new-instance v0, Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->d:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapd:Ljava/util/Map;
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
@@ -160,7 +160,7 @@
 
     .line 115
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->f:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mFileHelperf:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "localComments"
 
@@ -196,7 +196,7 @@
     move-exception v0
 
     .line 117
-    sget-object v2, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->b:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mLoggerb:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -387,7 +387,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapd:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
@@ -396,11 +396,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapd:Ljava/util/Map;
 
     .line 54
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -431,7 +431,7 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -450,7 +450,7 @@
 
     .line 147
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->e:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mCommentDaoe:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Ljava/lang/String;)Ljava/util/Map;
 
@@ -524,7 +524,7 @@
     const/4 v4, 0x0
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
@@ -655,7 +655,7 @@
     invoke-interface {v0, v2, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 206
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->e:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mCommentDaoe:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
@@ -729,7 +729,7 @@
 
     .line 237
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -781,7 +781,7 @@
 
     move-result-object v6
 
-    invoke-static {v2, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -817,7 +817,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -828,7 +828,7 @@
 
     .line 257
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->e:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mCommentDaoe:Lcom/wumii/android/mimi/models/dao/secret/CommentDao;
 
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -871,7 +871,7 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -963,7 +963,7 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -985,7 +985,7 @@
     const/4 v4, 0x0
 
     .line 292
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1037,7 +1037,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v7, v8}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v7
 
@@ -1098,7 +1098,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v6, v7}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
@@ -1185,7 +1185,7 @@
 
     .prologue
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1226,7 +1226,7 @@
     const/4 v4, 0x0
 
     .line 328
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1287,7 +1287,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v7, v8}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v7
 
@@ -1338,7 +1338,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v6, v7}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 

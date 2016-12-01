@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/ViewPropertyAnimatorUpdateListener;
+.field final synthetic mViewPropertyAnimatorUpdateListenera:Landroid/support/v4/view/ViewPropertyAnimatorUpdateListener;
 
-.field final synthetic b:Landroid/view/View;
+.field final synthetic mViewb:Landroid/view/View;
 
 
 # virtual methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatKK$1;->a:Landroid/support/v4/view/ViewPropertyAnimatorUpdateListener;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatKK$1;->mViewPropertyAnimatorUpdateListenera:Landroid/support/v4/view/ViewPropertyAnimatorUpdateListener;
 
-    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatKK$1;->b:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatKK$1;->mViewb:Landroid/view/View;
 
     invoke-interface {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorUpdateListener;->a(Landroid/view/View;)V
 

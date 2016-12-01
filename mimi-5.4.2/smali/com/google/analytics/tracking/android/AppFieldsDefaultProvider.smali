@@ -7,9 +7,9 @@
 
 
 # static fields
-.field private static e:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
+.field private static mAppFieldsDefaultProvidere:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
 
-.field private static f:Ljava/lang/Object;
+.field private static mObjectf:Ljava/lang/Object;
 
 
 # instance fields
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->f:Ljava/lang/Object;
+    sput-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     return-void
 .end method
@@ -157,7 +157,7 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->e:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mAppFieldsDefaultProvidere:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
 
     return-object v0
 .end method
@@ -167,13 +167,13 @@
 
     .prologue
     .line 27
-    sget-object v1, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->f:Ljava/lang/Object;
+    sget-object v1, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 28
     :try_start_0
-    sget-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->e:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mAppFieldsDefaultProvidere:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
 
     if-nez v0, :cond_0
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->e:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
+    sput-object v0, Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;->mAppFieldsDefaultProvidere:Lcom/google/analytics/tracking/android/AppFieldsDefaultProvider;
 
     .line 31
     :cond_0

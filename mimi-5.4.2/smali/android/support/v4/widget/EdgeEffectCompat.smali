@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+.field private static final mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
 
 # instance fields
-.field private a:Ljava/lang/Object;
+.field private mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectLollipopImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
     .line 44
     :goto_0
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
     goto :goto_0
 
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/EdgeEffectCompat$BaseEdgeEffectImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sput-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
     goto :goto_0
 .end method
@@ -70,13 +70,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 150
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
     invoke-interface {v0, p1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Landroid/content/Context;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     .line 151
     return-void
@@ -89,9 +89,9 @@
 
     .prologue
     .line 160
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1, p1, p2}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;II)V
 
@@ -104,9 +104,9 @@
 
     .prologue
     .line 171
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;)Z
 
@@ -120,9 +120,9 @@
 
     .prologue
     .line 195
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1, p1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;F)Z
 
@@ -136,9 +136,9 @@
 
     .prologue
     .line 213
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1, p1, p2}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;FF)Z
 
@@ -152,9 +152,9 @@
 
     .prologue
     .line 240
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1, p1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;I)Z
 
@@ -168,9 +168,9 @@
 
     .prologue
     .line 254
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1, p1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->a(Ljava/lang/Object;Landroid/graphics/Canvas;)Z
 
@@ -184,9 +184,9 @@
 
     .prologue
     .line 179
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->b(Ljava/lang/Object;)V
 
@@ -199,9 +199,9 @@
 
     .prologue
     .line 225
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->b:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffectImplb:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->c(Ljava/lang/Object;)Z
 

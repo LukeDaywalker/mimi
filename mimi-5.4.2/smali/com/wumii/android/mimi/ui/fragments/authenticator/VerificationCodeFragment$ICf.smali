@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
+.field final synthetic mVerificationCodeFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICf;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICf;->mVerificationCodeFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICf;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICf;->mVerificationCodeFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->d(Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;)Landroid/widget/LinearLayout;
 

@@ -130,7 +130,7 @@
     aget-object v0, v0, v1
 
     .line 83
-    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/NotificationType;->ordinal()I
 

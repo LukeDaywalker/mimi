@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mIa:I
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
+.field final synthetic mPasswordDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mPasswordDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,12 +44,12 @@
 
     .line 85
     :goto_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mIa:I
 
     if-ge v1, v0, :cond_1
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mPasswordDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;)Ljava/util/List;
 
@@ -93,7 +93,7 @@
 
     .line 94
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mPasswordDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->b(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;)Landroid/widget/Button;
 
@@ -102,13 +102,13 @@
     if-eqz v0, :cond_3
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mPasswordDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->b(Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;)Landroid/widget/Button;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICav;->mIa:I
 
     if-ne v3, v1, :cond_2
 

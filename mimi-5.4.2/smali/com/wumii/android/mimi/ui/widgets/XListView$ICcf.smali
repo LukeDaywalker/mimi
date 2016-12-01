@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+.field final synthetic mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 166
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICcf;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Lcom/wumii/android/mimi/ui/widgets/XListView;)V
 

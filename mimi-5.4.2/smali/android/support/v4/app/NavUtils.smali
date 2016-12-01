@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
+.field private static final mNavUtilsImpla:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NavUtils$NavUtilsImplJB;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NavUtils;->a:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
+    sput-object v0, Landroid/support/v4/app/NavUtils;->mNavUtilsImpla:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 
     .line 142
     :goto_0
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NavUtils$NavUtilsImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NavUtils;->a:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
+    sput-object v0, Landroid/support/v4/app/NavUtils;->mNavUtilsImpla:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 
     goto :goto_0
 .end method

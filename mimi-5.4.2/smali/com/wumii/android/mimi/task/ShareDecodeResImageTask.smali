@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Ljava/lang/String;
+.field private mIe:I
 
-.field private e:I
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -31,10 +31,10 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->f()Z
 
     .line 25
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mStringd:Ljava/lang/String;
 
     .line 26
-    iput p2, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->e:I
+    iput p2, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mIe:I
 
     .line 27
     invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
@@ -50,9 +50,9 @@
     .line 20
     iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->b:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mStringd:Ljava/lang/String;
 
-    iget v2, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/task/ShareDecodeResImageTask;->mIe:I
 
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;Ljava/lang/String;I)Ljava/io/File;
 

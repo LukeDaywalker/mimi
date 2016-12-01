@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mOkUrlFactoryb:Lcom/squareup/okhttp/OkUrlFactory;
 
-.field final synthetic b:Lcom/squareup/okhttp/OkUrlFactory;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->b:Lcom/squareup/okhttp/OkUrlFactory;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mOkUrlFactoryb:Lcom/squareup/okhttp/OkUrlFactory;
 
-    iput-object p2, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/net/URLStreamHandler;-><init>()V
 
@@ -31,7 +31,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v1, "http"
 
@@ -48,7 +48,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v1, "https"
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->b:Lcom/squareup/okhttp/OkUrlFactory;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mOkUrlFactoryb:Lcom/squareup/okhttp/OkUrlFactory;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/OkUrlFactory;->a(Ljava/net/URL;)Ljava/net/HttpURLConnection;
 
@@ -90,7 +90,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->b:Lcom/squareup/okhttp/OkUrlFactory;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory$ICal;->mOkUrlFactoryb:Lcom/squareup/okhttp/OkUrlFactory;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/OkUrlFactory;->a(Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/HttpURLConnection;
 

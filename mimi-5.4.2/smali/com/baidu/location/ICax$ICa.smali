@@ -11,14 +11,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICax;
+.field final synthetic mICaxa:Lcom/baidu/location/ICax;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICax;Landroid/os/Looper;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICax$ICa;->a:Lcom/baidu/location/ICax;
+    iput-object p1, p0, Lcom/baidu/location/ICax$ICa;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -72,7 +72,7 @@
 
     check-cast v0, Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICa;->a:Lcom/baidu/location/ICax;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICa;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-static {v3, v2, v1, v0}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;ILjava/lang/String;Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;)V
 
@@ -102,14 +102,14 @@
 
     check-cast v0, Lcom/baidu/location/GeofenceClient$OnRemoveBDGeofencesResultListener;
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICa;->a:Lcom/baidu/location/ICax;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICa;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-static {v3, v2, v1, v0}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;I[Ljava/lang/String;Lcom/baidu/location/GeofenceClient$OnRemoveBDGeofencesResultListener;)V
 
     goto :goto_0
 
     :pswitch_3
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICa;->a:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICa;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICax;->cn()V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+.field final synthetic mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 163
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
@@ -39,13 +39,13 @@
     if-nez v0, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdm;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-direct {v2, p0, v3}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdm;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;Landroid/app/Activity;)V
 
@@ -57,7 +57,7 @@
 
     .line 175
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdl;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 

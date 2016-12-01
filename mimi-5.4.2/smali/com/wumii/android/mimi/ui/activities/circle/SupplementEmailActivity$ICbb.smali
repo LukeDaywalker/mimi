@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+.field final synthetic mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;-><init>()V
 
@@ -37,7 +37,7 @@
     if-nez v0, :cond_1
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;->finish()V
 
@@ -57,7 +57,7 @@
     if-eq v0, v1, :cond_0
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -67,13 +67,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     const v2, 0x7f060377
 

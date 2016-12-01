@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static a:Lorg/slf4j/Logger;
+.field private static mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mIe:I
 
-.field private c:Landroid/app/NotificationManager;
+.field private mNotificationManagerc:Landroid/app/NotificationManager;
 
-.field private d:Landroid/media/SoundPool;
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private e:I
+.field private mSoundPoold:Landroid/media/SoundPool;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->c:Landroid/app/NotificationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mNotificationManagerc:Landroid/app/NotificationManager;
 
     .line 41
     new-instance v0, Landroid/media/SoundPool;
@@ -67,10 +67,10 @@
 
     invoke-direct {v0, v1, v2, v3}, Landroid/media/SoundPool;-><init>(III)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->d:Landroid/media/SoundPool;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mSoundPoold:Landroid/media/SoundPool;
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->d:Landroid/media/SoundPool;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mSoundPoold:Landroid/media/SoundPool;
 
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
 
@@ -84,7 +84,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mIe:I
 
     .line 43
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 44
     return-void
@@ -197,7 +197,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -236,7 +236,7 @@
 
     .line 130
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->c:Landroid/app/NotificationManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mNotificationManagerc:Landroid/app/NotificationManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/NotificationCompat$Builder;->a()Landroid/app/Notification;
 
@@ -260,7 +260,7 @@
     .line 137
     const-string/jumbo v2, "does not have android.permission.UPDATE_APP_OPS_STATS"
 
-    invoke-static {v1, v2}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -268,7 +268,7 @@
 
     const-string/jumbo v2, "Binder invocation to an incorrect interface"
 
-    invoke-static {v1, v2}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -276,7 +276,7 @@
 
     .line 139
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -310,7 +310,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -370,7 +370,7 @@
 
     .line 275
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -583,7 +583,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -613,7 +613,7 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -638,7 +638,7 @@
     if-eqz v0, :cond_0
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
@@ -653,7 +653,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 211
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -696,9 +696,9 @@
     if-eqz v0, :cond_0
 
     .line 244
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->d:Landroid/media/SoundPool;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mSoundPoold:Landroid/media/SoundPool;
 
-    iget v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->e:I
+    iget v1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mIe:I
 
     const/4 v4, 0x1
 
@@ -811,7 +811,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -866,7 +866,7 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/models/helper/NotificationHelper$ICz;
 

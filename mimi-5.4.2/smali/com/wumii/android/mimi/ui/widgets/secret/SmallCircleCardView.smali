@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private mButtonf:Landroid/widget/Button;
 
-.field private d:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private f:Landroid/widget/Button;
+.field private mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     .line 34
     const v0, 0x7f0b008b
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewe:Landroid/widget/TextView;
 
     .line 35
     const v0, 0x7f0b0172
@@ -78,10 +78,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->f:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mButtonf:Landroid/widget/Button;
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -92,7 +92,7 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->f:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mButtonf:Landroid/widget/Button;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;
 
@@ -123,10 +123,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mViewc:Landroid/view/View;
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -140,7 +140,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -158,7 +158,7 @@
 
     .line 58
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -167,9 +167,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
 

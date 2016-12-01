@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/OnApplyWindowInsetsListener;
+.field final synthetic mOnApplyWindowInsetsListenera:Landroid/support/v4/view/OnApplyWindowInsetsListener;
 
 
 # virtual methods
@@ -21,7 +21,7 @@
     invoke-direct {v0, p2}, Landroid/support/v4/view/WindowInsetsCompatApi21;-><init>(Landroid/view/WindowInsets;)V
 
     .line 62
-    iget-object v1, p0, Landroid/support/v4/view/ViewCompatLollipop$1;->a:Landroid/support/v4/view/OnApplyWindowInsetsListener;
+    iget-object v1, p0, Landroid/support/v4/view/ViewCompatLollipop$1;->mOnApplyWindowInsetsListenera:Landroid/support/v4/view/OnApplyWindowInsetsListener;
 
     invoke-interface {v1, p1, v0}, Landroid/support/v4/view/OnApplyWindowInsetsListener;->a(Landroid/view/View;Landroid/support/v4/view/WindowInsetsCompat;)Landroid/support/v4/view/WindowInsetsCompat;
 

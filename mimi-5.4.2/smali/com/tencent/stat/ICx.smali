@@ -3,9 +3,9 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static mIb:I
 
-.field private static b:I
+.field private static mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -14,11 +14,11 @@
 
     const-string/jumbo v0, "tencent_analysis.db"
 
-    sput-object v0, Lcom/tencent/stat/ICx;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/ICx;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x3
 
-    sput v0, Lcom/tencent/stat/ICx;->b:I
+    sput v0, Lcom/tencent/stat/ICx;->mIb:I
 
     return-void
 .end method
@@ -26,11 +26,11 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    sget-object v0, Lcom/tencent/stat/ICx;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/ICx;->mStringa:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    sget v2, Lcom/tencent/stat/ICx;->b:I
+    sget v2, Lcom/tencent/stat/ICx;->mIb:I
 
     invoke-direct {p0, p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
@@ -203,7 +203,7 @@
 
     const-string/jumbo v3, "content"
 
-    iget-object v4, v0, Lcom/tencent/stat/ICy;->b:Ljava/lang/String;
+    iget-object v4, v0, Lcom/tencent/stat/ICy;->mStringb:Ljava/lang/String;
 
     invoke-static {v4}, Lcom/tencent/stat/a/ICj;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -217,7 +217,7 @@
 
     new-array v5, v9, [Ljava/lang/String;
 
-    iget-wide v6, v0, Lcom/tencent/stat/ICy;->a:J
+    iget-wide v6, v0, Lcom/tencent/stat/ICy;->mJa:J
 
     invoke-static {v6, v7}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 

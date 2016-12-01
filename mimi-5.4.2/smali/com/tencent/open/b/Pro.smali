@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private b:Landroid/graphics/Rect;
+.field private isZc:Z
 
-.field private c:Z
+.field private mICbd:Lcom/tencent/open/b/Pro$ICb;
 
-.field private d:Lcom/tencent/open/b/Pro$ICb;
+.field private mRectb:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/open/b/Pro;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/open/b/Pro;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -42,18 +42,18 @@
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     .line 18
-    iput-object v1, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iput-object v1, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     .line 20
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/open/b/Pro;->c:Z
+    iput-boolean v0, p0, Lcom/tencent/open/b/Pro;->isZc:Z
 
     .line 33
-    iput-object v1, p0, Lcom/tencent/open/b/Pro;->d:Lcom/tencent/open/b/Pro$ICb;
+    iput-object v1, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
 
     .line 38
-    iget-object v0, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
@@ -62,7 +62,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     .line 41
     :cond_0
@@ -96,12 +96,12 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
     .line 65
-    iget-object v2, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
@@ -124,7 +124,7 @@
     sub-int/2addr v0, v1
 
     .line 73
-    iget-object v2, p0, Lcom/tencent/open/b/Pro;->d:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v2, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
 
     if-eqz v2, :cond_0
 
@@ -136,9 +136,9 @@
     if-le v0, v1, :cond_1
 
     .line 77
-    iget-object v0, p0, Lcom/tencent/open/b/Pro;->d:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
 
-    iget-object v1, p0, Lcom/tencent/open/b/Pro;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/tencent/open/b/Pro;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
@@ -172,7 +172,7 @@
 
     .line 83
     :cond_1
-    iget-object v0, p0, Lcom/tencent/open/b/Pro;->d:Lcom/tencent/open/b/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/b/Pro;->mICbd:Lcom/tencent/open/b/Pro$ICb;
 
     invoke-interface {v0}, Lcom/tencent/open/b/Pro$ICb;->a()V
 

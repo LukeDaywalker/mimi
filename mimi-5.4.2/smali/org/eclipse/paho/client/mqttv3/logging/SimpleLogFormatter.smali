@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/SimpleLogFormatter;->a:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/SimpleLogFormatter;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -252,7 +252,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/logging/SimpleLogFormatter;->a:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/logging/SimpleLogFormatter;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

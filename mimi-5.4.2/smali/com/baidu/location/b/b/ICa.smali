@@ -3,9 +3,9 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String; = "AES"
+.field private static final mStringa:Ljava/lang/String; = "AES"
 
-.field private static final if:Ljava/lang/String; = "AES/CBC/PKCS5Padding"
+.field private static final mStringif:Ljava/lang/String; = "AES/CBC/PKCS5Padding"
 
 
 # direct methods

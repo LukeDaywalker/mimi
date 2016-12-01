@@ -4,25 +4,25 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final isZi:Z
 
-.field private final b:Ljava/lang/String;
+.field private final mImageDownloaderg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
-.field private final c:Ljava/lang/String;
+.field private final mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-.field private final d:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+.field private final mImageSized:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-.field private final e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+.field private final mObjecth:Ljava/lang/Object;
 
-.field private final f:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+.field private final mOptionsj:Landroid/graphics/BitmapFactory$Options;
 
-.field private final g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final h:Ljava/lang/Object;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final i:Z
+.field private final mStringc:Ljava/lang/String;
 
-.field private final j:Landroid/graphics/BitmapFactory$Options;
+.field private final mViewScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
 
 # direct methods
@@ -34,57 +34,57 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mStringa:Ljava/lang/String;
 
     .line 53
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mStringb:Ljava/lang/String;
 
     .line 54
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mStringc:Ljava/lang/String;
 
     .line 55
-    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->d:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageSized:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     .line 57
     invoke-virtual {p7}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->j()Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 58
-    iput-object p5, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->f:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    iput-object p5, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mViewScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     .line 60
-    iput-object p6, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
+    iput-object p6, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageDownloaderg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     .line 61
     invoke-virtual {p7}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->n()Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->h:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mObjecth:Ljava/lang/Object;
 
     .line 63
     invoke-virtual {p7}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->m()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->i:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->isZi:Z
 
     .line 64
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->j:Landroid/graphics/BitmapFactory$Options;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mOptionsj:Landroid/graphics/BitmapFactory$Options;
 
     .line 65
     invoke-virtual {p7}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->k()Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->j:Landroid/graphics/BitmapFactory$Options;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mOptionsj:Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {p0, v0, v1}, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->a(Landroid/graphics/BitmapFactory$Options;Landroid/graphics/BitmapFactory$Options;)V
 
@@ -219,7 +219,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -229,7 +229,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -239,7 +239,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->d:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageSized:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     return-object v0
 .end method
@@ -249,7 +249,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->e:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageScaleTypee:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     return-object v0
 .end method
@@ -259,7 +259,7 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->f:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mViewScaleTypef:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     return-object v0
 .end method
@@ -269,7 +269,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mImageDownloaderg:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     return-object v0
 .end method
@@ -279,7 +279,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->h:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mObjecth:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -289,7 +289,7 @@
 
     .prologue
     .line 143
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->i:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->isZi:Z
 
     return v0
 .end method
@@ -299,7 +299,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->j:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;->mOptionsj:Landroid/graphics/BitmapFactory$Options;
 
     return-object v0
 .end method

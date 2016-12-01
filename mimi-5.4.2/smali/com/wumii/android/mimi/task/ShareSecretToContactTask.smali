@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Set;
+.field private mSeta:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -60,10 +60,10 @@
 
     .line 33
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->a:Ljava/util/Set;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->mSeta:Ljava/util/Set;
 
     .line 34
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->mStringd:Ljava/lang/String;
 
     .line 35
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->j()V
@@ -115,7 +115,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->a:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->mSeta:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -178,7 +178,7 @@
     .line 46
     const-string/jumbo v0, "secretId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

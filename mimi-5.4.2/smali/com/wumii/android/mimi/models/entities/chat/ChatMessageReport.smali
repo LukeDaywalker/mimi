@@ -13,7 +13,7 @@
     .end annotation
 .end field
 
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 .field private message:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -226,7 +226,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -318,7 +318,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->mStringid:Ljava/lang/String;
 
     .line 42
     return-void

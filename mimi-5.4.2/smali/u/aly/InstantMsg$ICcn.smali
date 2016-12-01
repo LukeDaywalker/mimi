@@ -27,7 +27,9 @@
 
 .field public static final enum d:Lu/aly/InstantMsg$ICcn;
 
-.field private static final e:Ljava/util/Map;
+.field private static final synthetic mArrayICcnh:[Lu/aly/InstantMsg$ICcn;
+
+.field private static final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -39,13 +41,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic h:[Lu/aly/InstantMsg$ICcn;
-
 
 # instance fields
-.field private final f:S
+.field private final mSf:S
 
-.field private final g:Ljava/lang/String;
+.field private final mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -126,14 +126,14 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->h:[Lu/aly/InstantMsg$ICcn;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mArrayICcnh:[Lu/aly/InstantMsg$ICcn;
 
     .line 58
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/InstantMsg$ICcn;->e:Ljava/util/Map;
+    sput-object v0, Lu/aly/InstantMsg$ICcn;->mMape:Ljava/util/Map;
 
     .line 61
     const-class v0, Lu/aly/InstantMsg$ICcn;
@@ -160,7 +160,7 @@
     check-cast v0, Lu/aly/InstantMsg$ICcn;
 
     .line 62
-    sget-object v2, Lu/aly/InstantMsg$ICcn;->e:Ljava/util/Map;
+    sget-object v2, Lu/aly/InstantMsg$ICcn;->mMape:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/InstantMsg$ICcn;->b()Ljava/lang/String;
 
@@ -190,10 +190,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 105
-    iput-short p3, p0, Lu/aly/InstantMsg$ICcn;->f:S
+    iput-short p3, p0, Lu/aly/InstantMsg$ICcn;->mSf:S
 
     .line 106
-    iput-object p4, p0, Lu/aly/InstantMsg$ICcn;->g:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/InstantMsg$ICcn;->mStringg:Ljava/lang/String;
 
     .line 107
     return-void
@@ -220,7 +220,7 @@
 
     .prologue
     .line 52
-    sget-object v0, Lu/aly/InstantMsg$ICcn;->h:[Lu/aly/InstantMsg$ICcn;
+    sget-object v0, Lu/aly/InstantMsg$ICcn;->mArrayICcnh:[Lu/aly/InstantMsg$ICcn;
 
     invoke-virtual {v0}, [Lu/aly/InstantMsg$ICcn;->clone()Ljava/lang/Object;
 
@@ -238,7 +238,7 @@
 
     .prologue
     .line 110
-    iget-short v0, p0, Lu/aly/InstantMsg$ICcn;->f:S
+    iget-short v0, p0, Lu/aly/InstantMsg$ICcn;->mSf:S
 
     return v0
 .end method
@@ -248,7 +248,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lu/aly/InstantMsg$ICcn;->g:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/InstantMsg$ICcn;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method

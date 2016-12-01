@@ -19,11 +19,11 @@
 
 .field public static final enum b:Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+.field private static final synthetic mArrayICbd:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
 
 # instance fields
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->d:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sput-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mArrayICbd:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 19
-    iput-object p3, p0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mStringc:Ljava/lang/String;
 
     .line 20
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 14
-    sget-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->d:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
+    sget-object v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mArrayICbd:[Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->clone()Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

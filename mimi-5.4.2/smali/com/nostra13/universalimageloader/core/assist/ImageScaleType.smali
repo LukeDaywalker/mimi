@@ -27,7 +27,7 @@
 
 .field public static final enum f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-.field private static final synthetic g:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+.field private static final synthetic mArrayImageScaleTypeg:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->g:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mArrayImageScaleTypeg:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     return-void
 .end method
@@ -173,7 +173,7 @@
 
     .prologue
     .line 24
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->g:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->mArrayImageScaleTypeg:[Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->clone()Ljava/lang/Object;
 

@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic dA:Lcom/baidu/location/ICs;
+.field final synthetic mICsdA:Lcom/baidu/location/ICs;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICs;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICs$ICa;->dA:Lcom/baidu/location/ICs;
+    iput-object p1, p0, Lcom/baidu/location/ICs$ICa;->mICsdA:Lcom/baidu/location/ICs;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
@@ -57,9 +57,9 @@
 
     invoke-direct {v1, v0}, Lcom/baidu/location/ICai;-><init>(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->dA:Lcom/baidu/location/ICs;
+    iget-object v0, p0, Lcom/baidu/location/ICs$ICa;->mICsdA:Lcom/baidu/location/ICs;
 
-    iget-boolean v0, v0, Lcom/baidu/location/ICs;->cW:Z
+    iget-boolean v0, v0, Lcom/baidu/location/ICs;->isZcW:Z
 
     if-eqz v0, :cond_2
 
@@ -245,7 +245,7 @@
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/baidu/location/ICak;->et:Landroid/os/Handler;
+    iget-object v1, v1, Lcom/baidu/location/ICak;->mHandleret:Landroid/os/Handler;
 
     const/16 v2, 0x15
 

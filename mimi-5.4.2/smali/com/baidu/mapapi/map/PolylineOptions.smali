@@ -3,17 +3,25 @@
 
 
 # instance fields
-.field a:I
+.field isZb:Z
 
-.field b:Z
+.field isZc:Z
 
-.field c:Z
+.field private isZl:Z
 
-.field d:Landroid/os/Bundle;
+.field private isZm:Z
 
-.field private e:I
+.field private mBitmapDescriptorj:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-.field private f:Ljava/util/List;
+.field mBundled:Landroid/os/Bundle;
+
+.field mIa:I
+
+.field private mIe:I
+
+.field private mIi:I
+
+.field private mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -24,7 +32,7 @@
     .end annotation
 .end field
 
-.field private g:Ljava/util/List;
+.field private mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -35,7 +43,7 @@
     .end annotation
 .end field
 
-.field private h:Ljava/util/List;
+.field private mListh:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -46,11 +54,7 @@
     .end annotation
 .end field
 
-.field private i:I
-
-.field private j:Lcom/baidu/mapapi/map/BitmapDescriptor;
-
-.field private k:Ljava/util/List;
+.field private mListk:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -60,10 +64,6 @@
         }
     .end annotation
 .end field
-
-.field private l:Z
-
-.field private m:Z
 
 
 # direct methods
@@ -78,19 +78,19 @@
 
     const/high16 v0, -0x1000000
 
-    iput v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->e:I
+    iput v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIe:I
 
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->i:I
+    iput v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIi:I
 
-    iput-boolean v2, p0, Lcom/baidu/mapapi/map/PolylineOptions;->l:Z
+    iput-boolean v2, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZl:Z
 
-    iput-boolean v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->m:Z
+    iput-boolean v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZm:Z
 
-    iput-boolean v2, p0, Lcom/baidu/mapapi/map/PolylineOptions;->b:Z
+    iput-boolean v2, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZb:Z
 
-    iput-boolean v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->c:Z
+    iput-boolean v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZc:Z
 
     return-void
 .end method
@@ -106,27 +106,27 @@
 
     invoke-direct {v3}, Lcom/baidu/mapapi/map/Polyline;-><init>()V
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZb:Z
 
-    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->s:Z
+    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->isZs:Z
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->c:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZc:Z
 
-    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->f:Z
+    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->isZf:Z
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIa:I
 
-    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->r:I
+    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->mIr:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->d:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBundled:Landroid/os/Bundle;
 
-    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->t:Landroid/os/Bundle;
+    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->mBundlet:Landroid/os/Bundle;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -146,45 +146,45 @@
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
-    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->b:Ljava/util/List;
+    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->mListb:Ljava/util/List;
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->e:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIe:I
 
-    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->a:I
+    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->mIa:I
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->i:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIi:I
 
-    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->e:I
+    iput v0, v3, Lcom/baidu/mapapi/map/Polyline;->mIe:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->j:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBitmapDescriptorj:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->i:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->mBitmapDescriptori:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->k:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListk:Ljava/util/List;
 
-    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->j:Ljava/util/List;
+    iput-object v0, v3, Lcom/baidu/mapapi/map/Polyline;->mListj:Ljava/util/List;
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->l:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZl:Z
 
-    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->g:Z
+    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->isZg:Z
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->m:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZm:Z
 
-    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->h:Z
+    iput-boolean v0, v3, Lcom/baidu/mapapi/map/Polyline;->isZh:Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -196,7 +196,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -204,7 +204,7 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -214,9 +214,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -225,11 +225,11 @@
     invoke-interface {v1, v4, v0}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -237,7 +237,7 @@
 
     if-lez v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -245,7 +245,7 @@
 
     new-array v4, v0, [I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -279,20 +279,20 @@
     goto :goto_0
 
     :cond_3
-    iput-object v4, v3, Lcom/baidu/mapapi/map/Polyline;->c:[I
+    iput-object v4, v3, Lcom/baidu/mapapi/map/Polyline;->mArrayIc:[I
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -304,7 +304,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -312,7 +312,7 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -322,9 +322,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -333,11 +333,11 @@
     invoke-interface {v1, v4, v0}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -345,7 +345,7 @@
 
     if-lez v0, :cond_7
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -353,7 +353,7 @@
 
     new-array v1, v0, [I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -383,7 +383,7 @@
     goto :goto_1
 
     :cond_6
-    iput-object v1, v3, Lcom/baidu/mapapi/map/Polyline;->d:[I
+    iput-object v1, v3, Lcom/baidu/mapapi/map/Polyline;->mArrayId:[I
 
     :cond_7
     return-object v3
@@ -392,7 +392,7 @@
 .method public color(I)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->e:I
+    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIe:I
 
     return-object p0
 .end method
@@ -438,7 +438,7 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->h:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListh:Ljava/util/List;
 
     return-object p0
 .end method
@@ -446,7 +446,7 @@
 .method public customTexture(Lcom/baidu/mapapi/map/BitmapDescriptor;)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->j:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBitmapDescriptorj:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     return-object p0
 .end method
@@ -517,7 +517,7 @@
     goto :goto_0
 
     :cond_3
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->k:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListk:Ljava/util/List;
 
     return-object p0
 .end method
@@ -525,7 +525,7 @@
 .method public dottedLine(Z)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->c:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZc:Z
 
     return-object p0
 .end method
@@ -533,7 +533,7 @@
 .method public extraInfo(Landroid/os/Bundle;)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->d:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBundled:Landroid/os/Bundle;
 
     return-object p0
 .end method
@@ -541,7 +541,7 @@
 .method public focus(Z)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->l:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZl:Z
 
     return-object p0
 .end method
@@ -549,7 +549,7 @@
 .method public getColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->e:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIe:I
 
     return v0
 .end method
@@ -557,7 +557,7 @@
 .method public getCustomTexture()Lcom/baidu/mapapi/map/BitmapDescriptor;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->j:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBitmapDescriptorj:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     return-object v0
 .end method
@@ -574,7 +574,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->k:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListk:Ljava/util/List;
 
     return-object v0
 .end method
@@ -582,7 +582,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->d:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mBundled:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -599,7 +599,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     return-object v0
 .end method
@@ -616,7 +616,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     return-object v0
 .end method
@@ -624,7 +624,7 @@
 .method public getWidth()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->i:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIi:I
 
     return v0
 .end method
@@ -632,7 +632,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIa:I
 
     return v0
 .end method
@@ -640,7 +640,7 @@
 .method public isDottedLine()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->c:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZc:Z
 
     return v0
 .end method
@@ -648,7 +648,7 @@
 .method public isFocus()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->l:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZl:Z
 
     return v0
 .end method
@@ -656,7 +656,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZb:Z
 
     return v0
 .end method
@@ -664,7 +664,7 @@
 .method public keepScale(Z)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->m:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZm:Z
 
     return-object p0
 .end method
@@ -727,7 +727,7 @@
     throw v0
 
     :cond_2
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListf:Ljava/util/List;
 
     return-object p0
 .end method
@@ -773,7 +773,7 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->g:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mListg:Ljava/util/List;
 
     return-object p0
 .end method
@@ -781,7 +781,7 @@
 .method public visible(Z)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -791,7 +791,7 @@
 
     if-lez p1, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->i:I
+    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIi:I
 
     :cond_0
     return-object p0
@@ -800,7 +800,7 @@
 .method public zIndex(I)Lcom/baidu/mapapi/map/PolylineOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/PolylineOptions;->mIa:I
 
     return-object p0
 .end method

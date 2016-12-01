@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
     .line 527
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->mContexta:Landroid/content/Context;
 
     .line 528
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->mIb:I
 
     .line 529
     return-void
@@ -34,13 +34,13 @@
 
     .prologue
     .line 533
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbg;->mIb:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 

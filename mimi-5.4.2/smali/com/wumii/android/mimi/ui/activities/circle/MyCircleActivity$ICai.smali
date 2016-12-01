@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+.field final synthetic mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 250
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
 
@@ -30,7 +30,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->b()V
 
     .line 260
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     const/4 v1, 0x0
 
@@ -48,7 +48,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f_()V
 
     .line 254
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     const/4 v1, 0x1
 

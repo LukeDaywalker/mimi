@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private n:Landroid/widget/EditText;
+.field private mCircleManagero:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private o:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mEditTextn:Landroid/widget/EditText;
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -96,7 +96,7 @@
 
     .line 83
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->o:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mCircleManagero:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v1, p0, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->c(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
@@ -129,10 +129,10 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;
 
@@ -159,7 +159,7 @@
     if-nez v2, :cond_0
 
     .line 63
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->n:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -168,7 +168,7 @@
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->c(Z)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -194,7 +194,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->o:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->mCircleManagero:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 70
     return-void

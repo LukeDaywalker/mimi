@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field final mContexta:Landroid/content/Context;
 
-.field b:Landroid/graphics/BitmapFactory$Options;
+.field private final mObjectc:Ljava/lang/Object;
 
-.field private final c:Ljava/lang/Object;
+.field mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->a:Landroid/content/Context;
+    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->mContexta:Landroid/content/Context;
 
     if-nez v2, :cond_1
 
@@ -98,7 +98,7 @@
     if-lez v2, :cond_2
 
     .line 507
-    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->c:Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->mObjectc:Ljava/lang/Object;
 
     monitor-enter v2
 
@@ -108,22 +108,22 @@
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iput-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     .line 509
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     const/4 v3, 0x1
 
     iput-boolean v3, v0, Landroid/graphics/BitmapFactory$Options;->inMutable:Z
 
     .line 510
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     .line 511
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     .line 512
     monitor-exit v2
@@ -139,7 +139,7 @@
     move-result-object v0
 
     .line 516
-    iget-object v1, p0, Landroid/support/v4/print/PrintHelperKitkat;->c:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/print/PrintHelperKitkat;->mObjectc:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -147,7 +147,7 @@
     const/4 v2, 0x0
 
     :try_start_2
-    iput-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iput-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     .line 518
     monitor-exit v1
@@ -178,7 +178,7 @@
     :catchall_2
     move-exception v0
 
-    iget-object v1, p0, Landroid/support/v4/print/PrintHelperKitkat;->c:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/print/PrintHelperKitkat;->mObjectc:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -186,7 +186,7 @@
     const/4 v2, 0x0
 
     :try_start_4
-    iput-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->b:Landroid/graphics/BitmapFactory$Options;
+    iput-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat;->mOptionsb:Landroid/graphics/BitmapFactory$Options;
 
     .line 518
     monitor-exit v1
@@ -215,7 +215,7 @@
     .line 527
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mContexta:Landroid/content/Context;
 
     if-nez v0, :cond_1
 
@@ -232,7 +232,7 @@
     .line 532
     :cond_1
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -429,7 +429,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->c:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat;->mObjectc:Ljava/lang/Object;
 
     return-object v0
 .end method

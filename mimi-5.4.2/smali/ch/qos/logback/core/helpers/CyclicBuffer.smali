@@ -14,17 +14,17 @@
 
 
 # instance fields
-.field ea:[Ljava/lang/Object;
+.field first:I
+
+.field last:I
+
+.field mArrayObjectea:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TE;"
         }
     .end annotation
 .end field
-
-.field first:I
-
-.field last:I
 
 .field maxSize:I
 
@@ -101,11 +101,11 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
-    iget-object v0, p1, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v0, p1, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
-    iget-object v1, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v1, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v2, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->maxSize:I
 
@@ -137,7 +137,7 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iput v1, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
@@ -160,7 +160,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v1, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->last:I
 
@@ -278,13 +278,13 @@
 
     iput v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->numElems:I
 
-    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v2, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
     aget-object v0, v0, v2
 
-    iget-object v2, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v2, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v3, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
@@ -335,7 +335,7 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v1, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
@@ -428,7 +428,7 @@
     :goto_2
     if-ge v2, v1, :cond_4
 
-    iget-object v4, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v4, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v5, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
@@ -436,7 +436,7 @@
 
     aput-object v4, v0, v2
 
-    iget-object v4, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iget-object v4, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iget v5, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 
@@ -467,7 +467,7 @@
     goto :goto_1
 
     :cond_4
-    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->ea:[Ljava/lang/Object;
+    iput-object v0, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->mArrayObjectea:[Ljava/lang/Object;
 
     iput v3, p0, Lch/qos/logback/core/helpers/CyclicBuffer;->first:I
 

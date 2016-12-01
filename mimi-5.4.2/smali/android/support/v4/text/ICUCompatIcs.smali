@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Method;
+.field private static mMethoda:Ljava/lang/reflect/Method;
 
-.field private static b:Ljava/lang/reflect/Method;
+.field private static mMethodb:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    sput-object v1, Landroid/support/v4/text/ICUCompatIcs;->a:Ljava/lang/reflect/Method;
+    sput-object v1, Landroid/support/v4/text/ICUCompatIcs;->mMethoda:Ljava/lang/reflect/Method;
 
     .line 37
     const-string/jumbo v1, "addLikelySubtags"
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/text/ICUCompatIcs;->b:Ljava/lang/reflect/Method;
+    sput-object v0, Landroid/support/v4/text/ICUCompatIcs;->mMethodb:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -100,7 +100,7 @@
 
     .line 48
     :try_start_0
-    sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->mMethoda:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
@@ -114,7 +114,7 @@
     aput-object p0, v0, v2
 
     .line 50
-    sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->a:Ljava/lang/reflect/Method;
+    sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->mMethoda:Ljava/lang/reflect/Method;
 
     const/4 v3, 0x0
 
@@ -165,7 +165,7 @@
     .prologue
     .line 65
     :try_start_0
-    sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->b:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/v4/text/ICUCompatIcs;->mMethodb:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
@@ -179,7 +179,7 @@
     aput-object p0, v0, v1
 
     .line 67
-    sget-object v1, Landroid/support/v4/text/ICUCompatIcs;->b:Ljava/lang/reflect/Method;
+    sget-object v1, Landroid/support/v4/text/ICUCompatIcs;->mMethodb:Ljava/lang/reflect/Method;
 
     const/4 v2, 0x0
 

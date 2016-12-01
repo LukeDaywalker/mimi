@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field a:Ljava/lang/Long;
+.field mLonga:Ljava/lang/Long;
 
-.field m:Ljava/lang/String;
+.field mStringm:Ljava/lang/String;
 
-.field n:Ljava/lang/String;
+.field mStringn:Ljava/lang/String;
 
 
 # direct methods
@@ -18,13 +18,13 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICh;->a:Ljava/lang/Long;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICh;->mLonga:Ljava/lang/Long;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/a/ICh;->n:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/a/ICh;->mStringn:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICh;->m:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICh;->mStringm:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/tencent/wxop/stat/a/ICh;->a:Ljava/lang/Long;
+    iput-object p5, p0, Lcom/tencent/wxop/stat/a/ICh;->mLonga:Ljava/lang/Long;
 
     return-void
 .end method
@@ -36,23 +36,23 @@
 
     const-string/jumbo v0, "pi"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->mStringm:Ljava/lang/String;
 
     invoke-static {p1, v0, v1}, Lcom/tencent/wxop/stat/b/ICr;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "rf"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->n:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->mStringn:Ljava/lang/String;
 
     invoke-static {p1, v0, v1}, Lcom/tencent/wxop/stat/b/ICr;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICh;->a:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICh;->mLonga:Ljava/lang/Long;
 
     if-eqz v0, :cond_0
 
     const-string/jumbo v0, "du"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->a:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICh;->mLonga:Ljava/lang/Long;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 

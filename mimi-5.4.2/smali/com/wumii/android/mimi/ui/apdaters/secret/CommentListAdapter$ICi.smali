@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/view/View;
+.field private mImageViewf:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mProgressBare:Landroid/widget/ProgressBar;
 
-.field private c:Landroid/view/View;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private d:Landroid/view/View;
+.field private mViewa:Landroid/view/View;
 
-.field private e:Landroid/widget/ProgressBar;
+.field private mViewc:Landroid/view/View;
 
-.field private f:Landroid/widget/ImageView;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->a:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewa:Landroid/view/View;
 
     .line 1066
     const v0, 0x7f0b0089
@@ -43,7 +43,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mTextViewb:Landroid/widget/TextView;
 
     .line 1067
     const v0, 0x7f0b01c0
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewc:Landroid/view/View;
 
     .line 1068
     const v0, 0x7f0b01c1
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewd:Landroid/view/View;
 
     .line 1069
     const v0, 0x7f0b01bc
@@ -72,7 +72,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->e:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mProgressBare:Landroid/widget/ProgressBar;
 
     .line 1070
     const v0, 0x7f0b01bd
@@ -83,7 +83,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mImageViewf:Landroid/widget/ImageView;
 
     .line 1071
     return-void
@@ -104,7 +104,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewa:Landroid/view/View;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -124,7 +124,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -134,7 +134,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -144,7 +144,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->e:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mProgressBare:Landroid/widget/ProgressBar;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 1056
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->mImageViewf:Landroid/widget/ImageView;
 
     return-object v0
 .end method

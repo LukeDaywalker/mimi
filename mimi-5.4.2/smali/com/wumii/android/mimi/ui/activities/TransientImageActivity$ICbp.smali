@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+.field final synthetic mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Z
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -47,13 +47,13 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->c(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Ljava/lang/String;
 
@@ -63,7 +63,7 @@
 
     .line 93
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->finish()V
 
@@ -72,7 +72,7 @@
 
     .line 91
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -80,13 +80,13 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbp;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->c(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Ljava/lang/String;
 

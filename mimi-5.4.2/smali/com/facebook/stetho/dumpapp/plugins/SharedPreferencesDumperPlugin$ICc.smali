@@ -27,11 +27,11 @@
 
 .field public static final enum f:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
-.field private static final synthetic h:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+.field private static final synthetic mArrayICch:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
 
 # instance fields
-.field private final g:Ljava/lang/String;
+.field private final mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -148,7 +148,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->h:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mArrayICch:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     return-void
 .end method
@@ -168,7 +168,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 207
-    iput-object p3, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->g:Ljava/lang/String;
+    iput-object p3, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mStringg:Ljava/lang/String;
 
     .line 208
     return-void
@@ -195,7 +195,7 @@
     aget-object v0, v2, v1
 
     .line 212
-    iget-object v4, v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->g:Ljava/lang/String;
+    iget-object v4, v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -252,7 +252,7 @@
 
     .line 227
     :goto_1
-    iget-object v5, v5, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->g:Ljava/lang/String;
+    iget-object v5, v5, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mStringg:Ljava/lang/String;
 
     invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -293,7 +293,7 @@
 
     .prologue
     .line 196
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->h:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->mArrayICch:[Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
     invoke-virtual {v0}, [Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->clone()Ljava/lang/Object;
 

@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private a:Landroid/app/Notification$Builder;
+.field private mBuildera:Landroid/app/Notification$Builder;
 
 
 # direct methods
@@ -286,7 +286,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Landroid/app/Notification$Builder;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     .line 103
     invoke-virtual/range {p20 .. p20}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -307,7 +307,7 @@
     check-cast v4, Ljava/lang/String;
 
     .line 104
-    iget-object v6, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v6, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-virtual {v6, v4}, Landroid/app/Notification$Builder;->addPerson(Ljava/lang/String;)Landroid/app/Notification$Builder;
 
@@ -346,7 +346,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     return-object v0
 .end method
@@ -356,7 +356,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-static {v0, p1}, Landroid/support/v4/app/NotificationCompatApi20;->a(Landroid/app/Notification$Builder;Landroid/support/v4/app/NotificationCompatBase$Action;)V
 
@@ -369,7 +369,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi21$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 

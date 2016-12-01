@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+.field private static final synthetic mArrayICcd:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->d:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mArrayICcd:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 9
-    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->d:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->mArrayICcd:[Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->clone()Ljava/lang/Object;
 

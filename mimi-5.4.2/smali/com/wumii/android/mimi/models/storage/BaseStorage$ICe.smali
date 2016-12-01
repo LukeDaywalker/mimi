@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+.field private mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     .line 66
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->mStringb:Ljava/lang/String;
 
     .line 67
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->mICca:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method

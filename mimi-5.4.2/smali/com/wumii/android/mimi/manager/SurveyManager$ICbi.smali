@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field final synthetic mFeedTypea:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mListc:Ljava/util/List;
 
-.field final synthetic c:Ljava/util/List;
+.field final synthetic mStringb:Ljava/lang/String;
 
-.field final synthetic d:Lcom/wumii/android/mimi/manager/SurveyManager;
+.field final synthetic mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->a:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mFeedTypea:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mStringb:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->c:Ljava/util/List;
+    iput-object p4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mListc:Ljava/util/List;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +63,7 @@
 
     .line 75
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -89,7 +89,7 @@
     move-result-object v0
 
     .line 78
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -97,9 +97,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->a:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mFeedTypea:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -111,7 +111,7 @@
     move-result-object v3
 
     .line 80
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v4, v4, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -136,7 +136,7 @@
     invoke-virtual {v4, v2, v3, v5}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 83
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -158,7 +158,7 @@
     move-result-object v0
 
     .line 85
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -186,7 +186,7 @@
 
     .line 90
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -227,7 +227,7 @@
 
     .line 94
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->d:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbi;->mSurveyManagerd:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->b(Ljava/lang/Object;)V
 

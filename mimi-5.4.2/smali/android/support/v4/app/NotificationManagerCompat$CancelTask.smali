@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field final isZd:Z
 
-.field final b:I
+.field final mIb:I
 
-.field final c:Ljava/lang/String;
+.field final mStringa:Ljava/lang/String;
 
-.field final d:Z
+.field final mStringc:Ljava/lang/String;
 
 
 # virtual methods
@@ -22,12 +22,12 @@
 
     .prologue
     .line 611
-    iget-boolean v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->d:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->isZd:Z
 
     if-eqz v0, :cond_0
 
     .line 612
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->a:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Landroid/support/v4/app/INotificationSideChannel;->a(Ljava/lang/String;)V
 
@@ -37,11 +37,11 @@
 
     .line 614
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->a:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mStringa:Ljava/lang/String;
 
-    iget v1, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->b:I
+    iget v1, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mIb:I
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->c:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mStringc:Ljava/lang/String;
 
     invoke-interface {p1, v0, v1, v2}, Landroid/support/v4/app/INotificationSideChannel;->a(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -77,7 +77,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->b:I
+    iget v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->c:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -99,7 +99,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->d:Z
+    iget-boolean v2, p0, Landroid/support/v4/app/NotificationManagerCompat$CancelTask;->isZd:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

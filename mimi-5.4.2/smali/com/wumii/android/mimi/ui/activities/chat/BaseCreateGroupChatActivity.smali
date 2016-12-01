@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+.field private mMenuItemo:Landroid/view/MenuItem;
 
-.field private o:Landroid/view/MenuItem;
+.field protected n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
 
 # direct methods
@@ -48,7 +48,7 @@
     move-result v0
 
     .line 47
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->o:Landroid/view/MenuItem;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mMenuItemo:Landroid/view/MenuItem;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
@@ -57,7 +57,7 @@
     invoke-interface {v2, v0}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->o:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mMenuItemo:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -230,7 +230,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->o:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->mMenuItemo:Landroid/view/MenuItem;
 
     .line 38
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->g()Z

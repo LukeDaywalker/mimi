@@ -7,17 +7,17 @@
 
 
 # static fields
-.field private static eU:Lcom/baidu/location/ICv; = null
+.field private static mICveU:Lcom/baidu/location/ICv; = null
 
-.field static final eV:I = 0xbb8
+.field static final mIeV:I = 0xbb8
 
 
 # instance fields
-.field private eW:J
-
-.field private eX:Lcom/baidu/location/BDLocation;
-
 .field public eY:Lcom/baidu/location/ICaj$ICa;
+
+.field private mBDLocationeX:Lcom/baidu/location/BDLocation;
+
+.field private mJeW:J
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICv;->eU:Lcom/baidu/location/ICv;
+    sput-object v0, Lcom/baidu/location/ICv;->mICveU:Lcom/baidu/location/ICv;
 
     return-void
 .end method
@@ -38,11 +38,11 @@
 
     invoke-direct {p0}, Lcom/baidu/location/ICaj;-><init>()V
 
-    iput-object v2, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iput-object v2, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICv;->eW:J
+    iput-wide v0, p0, Lcom/baidu/location/ICv;->mJeW:J
 
     iput-object v2, p0, Lcom/baidu/location/ICv;->eY:Lcom/baidu/location/ICaj$ICa;
 
@@ -70,7 +70,7 @@
 .method public static aN()Lcom/baidu/location/ICv;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICv;->eU:Lcom/baidu/location/ICv;
+    sget-object v0, Lcom/baidu/location/ICv;->mICveU:Lcom/baidu/location/ICv;
 
     if-nez v0, :cond_0
 
@@ -78,10 +78,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICv;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICv;->eU:Lcom/baidu/location/ICv;
+    sput-object v0, Lcom/baidu/location/ICv;->mICveU:Lcom/baidu/location/ICv;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICv;->eU:Lcom/baidu/location/ICv;
+    sget-object v0, Lcom/baidu/location/ICv;->mICveU:Lcom/baidu/location/ICv;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICv;->eW:J
+    iget-wide v2, p0, Lcom/baidu/location/ICv;->mJeW:J
 
     sub-long/2addr v0, v2
 
@@ -103,7 +103,7 @@
 
     if-gez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_0
 
@@ -111,7 +111,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iget-object v1, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     const/16 v2, 0x1a
 
@@ -141,7 +141,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICv;->eW:J
+    iput-wide v0, p0, Lcom/baidu/location/ICv;->mJeW:J
 
     goto :goto_0
 .end method
@@ -159,7 +159,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     invoke-static {}, Lcom/baidu/location/ICk;->q()Lcom/baidu/location/ICk;
 
@@ -211,7 +211,7 @@
 
     if-eqz v1, :cond_0
 
-    iput-object v0, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     :goto_0
     invoke-direct {p0}, Lcom/baidu/location/ICv;->aM()V
@@ -221,7 +221,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICv;->eX:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICv;->mBDLocationeX:Lcom/baidu/location/BDLocation;
 
     goto :goto_0
 .end method

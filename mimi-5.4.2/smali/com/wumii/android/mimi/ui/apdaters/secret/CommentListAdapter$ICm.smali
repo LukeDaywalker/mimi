@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICm;->mTextViewa:Landroid/widget/TextView;
 
     .line 1093
     return-void

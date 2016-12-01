@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/model/LatLng;
+.field mIb:I
 
-.field b:I
+.field mIc:I
 
-.field c:I
+.field mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
-.field d:Lcom/baidu/mapapi/map/Stroke;
+.field mStroked:Lcom/baidu/mapapi/map/Stroke;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->h:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Circle;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Circle;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     invoke-super {p0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -56,9 +56,9 @@
 
     const-string/jumbo v0, "radius"
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Circle;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Circle;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
-    iget v2, p0, Lcom/baidu/mapapi/map/Circle;->c:I
+    iget v2, p0, Lcom/baidu/mapapi/map/Circle;->mIc:I
 
     invoke-static {v1, v2}, Lcom/baidu/mapapi/model/CoordUtil;->getMCDistanceByOneLatLngAndRadius(Lcom/baidu/mapapi/model/LatLng;I)I
 
@@ -66,11 +66,11 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->mIb:I
 
     invoke-static {v0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(ILandroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->d:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     if-nez v0, :cond_0
 
@@ -96,7 +96,7 @@
 
     const-string/jumbo v1, "stroke"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Circle;->d:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Circle;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     invoke-virtual {v2, v0}, Lcom/baidu/mapapi/map/Stroke;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
@@ -110,7 +110,7 @@
 .method public getCenter()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -118,7 +118,7 @@
 .method public getFillColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->mIb:I
 
     return v0
 .end method
@@ -126,7 +126,7 @@
 .method public getRadius()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->c:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Circle;->mIc:I
 
     return v0
 .end method
@@ -134,7 +134,7 @@
 .method public getStroke()Lcom/baidu/mapapi/map/Stroke;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->d:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -153,7 +153,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Circle;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Circle;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -165,7 +165,7 @@
 .method public setFillColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Circle;->b:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Circle;->mIb:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -177,7 +177,7 @@
 .method public setRadius(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Circle;->c:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Circle;->mIc:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -189,7 +189,7 @@
 .method public setStroke(Lcom/baidu/mapapi/map/Stroke;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Circle;->d:Lcom/baidu/mapapi/map/Stroke;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Circle;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Circle;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

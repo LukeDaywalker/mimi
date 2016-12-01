@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+.field final synthetic mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
-.field private i:Landroid/widget/TextView;
+.field private mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+.field private mTextViewi:Landroid/widget/TextView;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 460
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     .line 461
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICe;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;Landroid/view/View;)V
@@ -31,7 +31,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->i:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mTextViewi:Landroid/widget/TextView;
 
     .line 463
     const v0, 0x7f0b01a8
@@ -42,10 +42,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     .line 464
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a()V
 
@@ -86,7 +86,7 @@
     if-nez v2, :cond_0
 
     .line 545
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mTextViewi:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -98,7 +98,7 @@
 
     .line 549
     :cond_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->i:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mTextViewi:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->c(J)Ljava/lang/String;
 
@@ -107,7 +107,7 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 550
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mTextViewi:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -124,7 +124,7 @@
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 470
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -145,14 +145,14 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     .line 472
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     const v2, 0x7f0b0009
 
     invoke-virtual {v1, v2, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setTag(ILjava/lang/Object;)V
 
     .line 473
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     invoke-virtual {v1, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
 
@@ -217,7 +217,7 @@
     if-lez v2, :cond_1
 
     .line 557
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     if-nez p2, :cond_0
 
@@ -231,7 +231,7 @@
     invoke-virtual {v2, v4, v5, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a(JJ)V
 
     .line 558
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     const/4 v1, 0x0
 
@@ -243,7 +243,7 @@
 
     .line 560
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -251,7 +251,7 @@
 
     .line 563
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->j:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mCountDownProgressBarj:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -291,7 +291,7 @@
     check-cast p1, Lcom/wumii/android/mimi/models/entities/chat/GroupSingleChat;
 
     .line 491
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -323,7 +323,7 @@
     .line 493
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Landroid/content/Context;
 
@@ -348,7 +348,7 @@
     .line 494
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -408,7 +408,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->f(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -487,7 +487,7 @@
     .line 507
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -503,7 +503,7 @@
     .line 509
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -541,7 +541,7 @@
     .line 514
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -557,7 +557,7 @@
     .line 516
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -588,7 +588,7 @@
     .line 520
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Landroid/content/Context;
 
@@ -617,7 +617,7 @@
     .line 521
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -633,7 +633,7 @@
     .line 523
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -664,7 +664,7 @@
     .line 527
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Landroid/content/Context;
 
@@ -681,7 +681,7 @@
     .line 528
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -697,7 +697,7 @@
     .line 530
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -728,7 +728,7 @@
     .line 534
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Landroid/content/Context;
 
@@ -745,7 +745,7 @@
     .line 535
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -761,7 +761,7 @@
     .line 537
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->h:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICi;->mChatListAdapterh:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 

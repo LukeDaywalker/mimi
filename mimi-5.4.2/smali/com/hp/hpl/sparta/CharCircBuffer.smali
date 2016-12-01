@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:[I
+.field private final mArrayIa:[I
 
-.field private b:I
+.field private mIb:I
 
-.field private c:I
+.field private mIc:I
 
 
 # virtual methods
@@ -21,7 +21,7 @@
     .line 61
     new-instance v1, Ljava/lang/StringBuffer;
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     array-length v0, v0
 
@@ -32,43 +32,43 @@
     invoke-direct {v1, v0}, Ljava/lang/StringBuffer;-><init>(I)V
 
     .line 62
-    iget v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->c:I
+    iget v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mIc:I
 
-    iget-object v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_0
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v0, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     array-length v0, v0
 
-    iget v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->c:I
+    iget v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mIc:I
 
     sub-int/2addr v0, v2
 
     .line 63
     :goto_0
-    iget-object v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_2
 
     .line 64
-    iget v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->b:I
+    iget v2, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mIb:I
 
     add-int/2addr v2, v0
 
-    iget-object v3, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v3, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     array-length v3, v3
 
     rem-int/2addr v2, v3
 
     .line 65
-    iget-object v3, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->a:[I
+    iget-object v3, p0, Lcom/hp/hpl/sparta/CharCircBuffer;->mArrayIa:[I
 
     aget v2, v3, v2
 

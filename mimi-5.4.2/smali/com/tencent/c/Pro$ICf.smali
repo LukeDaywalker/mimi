@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro$ICt;
+.field final synthetic mBundled:Landroid/os/Bundle;
 
-.field final synthetic b:Landroid/content/Context;
+.field final synthetic mContextb:Landroid/content/Context;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic mICta:Lcom/tencent/connect/b/Pro$ICt;
 
-.field final synthetic d:Landroid/os/Bundle;
+.field final synthetic mProf:Lcom/tencent/tauth/Pro;
 
-.field final synthetic e:Ljava/lang/String;
+.field final synthetic mStringc:Ljava/lang/String;
 
-.field final synthetic f:Lcom/tencent/tauth/Pro;
+.field final synthetic mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -23,17 +23,17 @@
 
     .prologue
     .line 331
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICf;->a:Lcom/tencent/connect/b/Pro$ICt;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICf;->mICta:Lcom/tencent/connect/b/Pro$ICt;
 
-    iput-object p2, p0, Lcom/tencent/c/Pro$ICf;->b:Landroid/content/Context;
+    iput-object p2, p0, Lcom/tencent/c/Pro$ICf;->mContextb:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/tencent/c/Pro$ICf;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/c/Pro$ICf;->mStringc:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/tencent/c/Pro$ICf;->d:Landroid/os/Bundle;
+    iput-object p4, p0, Lcom/tencent/c/Pro$ICf;->mBundled:Landroid/os/Bundle;
 
-    iput-object p5, p0, Lcom/tencent/c/Pro$ICf;->e:Ljava/lang/String;
+    iput-object p5, p0, Lcom/tencent/c/Pro$ICf;->mStringe:Ljava/lang/String;
 
-    iput-object p6, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iput-object p6, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -48,27 +48,27 @@
     .prologue
     .line 335
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICf;->a:Lcom/tencent/connect/b/Pro$ICt;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICf;->mICta:Lcom/tencent/connect/b/Pro$ICt;
 
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mContextb:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICf;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICf;->mStringc:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/tencent/c/Pro$ICf;->d:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/tencent/c/Pro$ICf;->mBundled:Landroid/os/Bundle;
 
-    iget-object v4, p0, Lcom/tencent/c/Pro$ICf;->e:Ljava/lang/String;
+    iget-object v4, p0, Lcom/tencent/c/Pro$ICf;->mStringe:Ljava/lang/String;
 
     invoke-static {v0, v1, v2, v3, v4}, Lcom/tencent/c/Pro$ICe;->a(Lcom/tencent/connect/b/Pro$ICt;Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     .line 337
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 338
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Lorg/json/JSONObject;)V
 
@@ -98,12 +98,12 @@
     move-exception v0
 
     .line 342
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 343
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Ljava/net/MalformedURLException;)V
 
@@ -121,12 +121,12 @@
     move-exception v0
 
     .line 347
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 348
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Lorg/apache/http/conn/ConnectTimeoutException;)V
 
@@ -144,12 +144,12 @@
     move-exception v0
 
     .line 352
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 353
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Ljava/net/SocketTimeoutException;)V
 
@@ -167,12 +167,12 @@
     move-exception v0
 
     .line 357
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 358
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Lcom/tencent/c/Pro$ICk;)V
 
@@ -190,12 +190,12 @@
     move-exception v0
 
     .line 362
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 363
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Lcom/tencent/c/Pro$ICh;)V
 
@@ -213,12 +213,12 @@
     move-exception v0
 
     .line 367
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 368
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Ljava/io/IOException;)V
 
@@ -236,12 +236,12 @@
     move-exception v0
 
     .line 372
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 373
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Lorg/json/JSONException;)V
 
@@ -259,12 +259,12 @@
     move-exception v0
 
     .line 377
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     if-eqz v1, :cond_0
 
     .line 378
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->f:Lcom/tencent/tauth/Pro;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICf;->mProf:Lcom/tencent/tauth/Pro;
 
     invoke-interface {v1, v0}, Lcom/tencent/tauth/Pro;->a(Ljava/lang/Exception;)V
 

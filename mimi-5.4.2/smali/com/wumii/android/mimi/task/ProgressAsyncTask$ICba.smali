@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+.field final synthetic mProgressAsyncTaskb:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->b:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->mProgressAsyncTaskb:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,23 +34,23 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->b:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->mProgressAsyncTaskb:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->b:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->mProgressAsyncTaskb:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->b(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 
     .line 57
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->isZa:Z
 
     if-nez v0, :cond_0
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->b:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICba;->mProgressAsyncTaskb:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->f()Z
 

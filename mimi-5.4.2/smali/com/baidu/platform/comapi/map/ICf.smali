@@ -34,7 +34,7 @@
 
 .field public static final enum j:Lcom/baidu/platform/comapi/map/ICf;
 
-.field private static final synthetic k:[Lcom/baidu/platform/comapi/map/ICf;
+.field private static final synthetic mArrayICfk:[Lcom/baidu/platform/comapi/map/ICf;
 
 
 # direct methods
@@ -195,7 +195,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->k:[Lcom/baidu/platform/comapi/map/ICf;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICf;->mArrayICfk:[Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -230,7 +230,7 @@
 .method public static values()[Lcom/baidu/platform/comapi/map/ICf;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->k:[Lcom/baidu/platform/comapi/map/ICf;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->mArrayICfk:[Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v0}, [Lcom/baidu/platform/comapi/map/ICf;->clone()Ljava/lang/Object;
 

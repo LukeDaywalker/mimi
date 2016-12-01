@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+.field final synthetic mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->a(Landroid/app/Activity;Ljava/lang/String;)V
 

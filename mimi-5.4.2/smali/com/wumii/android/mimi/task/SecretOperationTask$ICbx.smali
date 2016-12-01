@@ -25,13 +25,13 @@
 
 .field public static final enum e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-.field private static final synthetic h:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+.field private static final synthetic mArrayICbxh:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
 
 # instance fields
-.field private f:Ljava/lang/String;
+.field private mIg:I
 
-.field private g:I
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -139,7 +139,7 @@
 
     aput-object v1, v0, v8
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->h:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sput-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mArrayICbxh:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     return-void
 .end method
@@ -159,10 +159,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 22
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->f:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mStringf:Ljava/lang/String;
 
     .line 23
-    iput p4, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->g:I
+    iput p4, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mIg:I
 
     .line 24
     return-void
@@ -189,7 +189,7 @@
 
     .prologue
     .line 13
-    sget-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->h:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    sget-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mArrayICbxh:[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->clone()Ljava/lang/Object;
 
@@ -207,7 +207,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -217,7 +217,7 @@
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->g:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->mIg:I
 
     return v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+.field final synthetic mCircleSelectorControllera:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 218
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->mCircleSelectorControllera:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 231
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->mCircleSelectorControllera:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     const-wide/16 v2, 0x0
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;->mCircleSelectorControllera:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     const/4 v1, 0x0
 

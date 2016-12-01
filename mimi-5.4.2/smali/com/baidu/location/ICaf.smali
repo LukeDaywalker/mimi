@@ -8,43 +8,43 @@
 
 
 # static fields
-.field private static kL:Lcom/baidu/location/ICaf;
+.field private static mICafkL:Lcom/baidu/location/ICaf;
 
 
 # instance fields
-.field private kB:Ljava/lang/Runnable;
+.field private isZkE:Z
 
-.field private kC:Landroid/hardware/Sensor;
+.field private isZkF:Z
 
-.field private final kD:I
+.field private isZkH:Z
 
-.field private kE:Z
+.field private isZkJ:Z
 
-.field private kF:Z
+.field private isZkM:Z
 
-.field private kG:I
+.field private mHandlerkK:Landroid/os/Handler;
 
-.field private kH:Z
+.field private final mIkD:I
 
-.field private kI:Landroid/hardware/Sensor;
+.field private mIkG:I
 
-.field private kJ:Z
+.field private mIkN:I
 
-.field private kK:Landroid/os/Handler;
+.field private final mIkS:I
 
-.field private kM:Z
+.field private mRunnablekB:Ljava/lang/Runnable;
 
-.field private kN:I
+.field private mRunnablekR:Ljava/lang/Runnable;
 
-.field private kO:Ljava/lang/StringBuffer;
+.field private mSensorManagerkP:Landroid/hardware/SensorManager;
 
-.field private kP:Landroid/hardware/SensorManager;
+.field private mSensorkC:Landroid/hardware/Sensor;
 
-.field private kQ:Ljava/lang/StringBuffer;
+.field private mSensorkI:Landroid/hardware/Sensor;
 
-.field private kR:Ljava/lang/Runnable;
+.field private mStringBufferkO:Ljava/lang/StringBuffer;
 
-.field private final kS:I
+.field private mStringBufferkQ:Ljava/lang/StringBuffer;
 
 
 # direct methods
@@ -61,31 +61,31 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v2, p0, Lcom/baidu/location/ICaf;->kS:I
+    iput v2, p0, Lcom/baidu/location/ICaf;->mIkS:I
 
-    iput v3, p0, Lcom/baidu/location/ICaf;->kD:I
+    iput v3, p0, Lcom/baidu/location/ICaf;->mIkD:I
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kF:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkF:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kE:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkE:Z
 
-    iput-object v1, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iput-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
-    iput-object v1, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iput-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
-    iput-object v1, p0, Lcom/baidu/location/ICaf;->kR:Ljava/lang/Runnable;
+    iput-object v1, p0, Lcom/baidu/location/ICaf;->mRunnablekR:Ljava/lang/Runnable;
 
-    iput-object v1, p0, Lcom/baidu/location/ICaf;->kB:Ljava/lang/Runnable;
+    iput-object v1, p0, Lcom/baidu/location/ICaf;->mRunnablekB:Ljava/lang/Runnable;
 
-    iput v0, p0, Lcom/baidu/location/ICaf;->kN:I
+    iput v0, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
-    iput v0, p0, Lcom/baidu/location/ICaf;->kG:I
+    iput v0, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kM:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkM:Z
 
     :try_start_0
     invoke-static {}, Lcom/baidu/location/ICf;->getServiceContext()Landroid/content/Context;
@@ -100,9 +100,9 @@
 
     check-cast v0, Landroid/hardware/SensorManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
     const/4 v1, 0x1
 
@@ -110,9 +110,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kC:Landroid/hardware/Sensor;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mSensorkC:Landroid/hardware/Sensor;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
     const/4 v1, 0x2
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kI:Landroid/hardware/Sensor;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mSensorkI:Landroid/hardware/Sensor;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -129,7 +129,7 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
     return-void
 
@@ -142,7 +142,7 @@
 .method public static c0()Lcom/baidu/location/ICaf;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICaf;->kL:Lcom/baidu/location/ICaf;
+    sget-object v0, Lcom/baidu/location/ICaf;->mICafkL:Lcom/baidu/location/ICaf;
 
     if-nez v0, :cond_0
 
@@ -150,10 +150,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICaf;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICaf;->kL:Lcom/baidu/location/ICaf;
+    sput-object v0, Lcom/baidu/location/ICaf;->mICafkL:Lcom/baidu/location/ICaf;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICaf;->kL:Lcom/baidu/location/ICaf;
+    sget-object v0, Lcom/baidu/location/ICaf;->mICafkL:Lcom/baidu/location/ICaf;
 
     return-object v0
 .end method
@@ -497,11 +497,11 @@
 .method private cQ()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kI:Landroid/hardware/Sensor;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorkI:Landroid/hardware/Sensor;
 
     if-nez v0, :cond_1
 
@@ -510,24 +510,24 @@
     return-void
 
     :cond_1
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kE:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkE:Z
 
     if-nez v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kI:Landroid/hardware/Sensor;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mSensorkI:Landroid/hardware/Sensor;
 
     const/4 v2, 0x2
 
-    iget-object v3, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
     invoke-virtual {v0, p0, v1, v2, v3}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kE:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkE:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -542,20 +542,20 @@
 .method private cR()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kE:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkE:Z
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kI:Landroid/hardware/Sensor;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mSensorkI:Landroid/hardware/Sensor;
 
     invoke-virtual {v0, p0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kE:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkE:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -572,11 +572,11 @@
 .method private cS()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kC:Landroid/hardware/Sensor;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorkC:Landroid/hardware/Sensor;
 
     if-nez v0, :cond_1
 
@@ -585,24 +585,24 @@
     return-void
 
     :cond_1
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kF:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkF:Z
 
     if-nez v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kC:Landroid/hardware/Sensor;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mSensorkC:Landroid/hardware/Sensor;
 
     const/4 v2, 0x2
 
-    iget-object v3, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
     invoke-virtual {v0, p0, v1, v2, v3}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kF:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkF:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -617,11 +617,11 @@
 .method private cT()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     if-eqz v0, :cond_1
 
@@ -629,7 +629,7 @@
     invoke-direct {p0}, Lcom/baidu/location/ICaf;->cS()V
 
     :cond_1
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
     if-eqz v0, :cond_2
 
@@ -740,20 +740,20 @@
 .method private cW()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kF:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkF:Z
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kP:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mSensorManagerkP:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kC:Landroid/hardware/Sensor;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mSensorkC:Landroid/hardware/Sensor;
 
     invoke-virtual {v0, p0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kF:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkF:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -772,7 +772,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -780,7 +780,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     invoke-direct {p0}, Lcom/baidu/location/ICaf;->cT()V
 
@@ -788,11 +788,11 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaf$3;-><init>(Lcom/baidu/location/ICaf;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kR:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mRunnablekR:Ljava/lang/Runnable;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kR:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mRunnablekR:Ljava/lang/Runnable;
 
     const-wide/32 v2, 0xea60
 
@@ -806,7 +806,7 @@
 
     const/4 v1, 0x0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
     if-eqz v0, :cond_0
 
@@ -814,7 +814,7 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     if-eqz v0, :cond_1
 
@@ -827,9 +827,9 @@
 
     invoke-direct {p0}, Lcom/baidu/location/ICaf;->cW()V
 
-    iput v1, p0, Lcom/baidu/location/ICaf;->kN:I
+    iput v1, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
-    iput v1, p0, Lcom/baidu/location/ICaf;->kG:I
+    iput v1, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     goto :goto_0
 .end method
@@ -951,7 +951,7 @@
 .method static synthetic do(Lcom/baidu/location/ICaf;)Ljava/lang/Runnable;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kB:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mRunnablekB:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -959,11 +959,11 @@
 .method private do(Ljava/lang/StringBuffer;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     if-nez v0, :cond_1
 
@@ -972,7 +972,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     const/4 v1, 0x2
 
@@ -1073,7 +1073,7 @@
 .method static synthetic for(Lcom/baidu/location/ICaf;)Ljava/lang/Runnable;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kR:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mRunnablekR:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -1159,7 +1159,7 @@
 .method static synthetic if(Lcom/baidu/location/ICaf;)Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -1202,11 +1202,11 @@
 .method private if(Ljava/lang/StringBuffer;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     if-nez v0, :cond_1
 
@@ -1215,7 +1215,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     const/4 v1, 0x1
 
@@ -1348,7 +1348,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kM:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkM:Z
 
     const/4 v0, 0x0
 
@@ -1612,13 +1612,13 @@
 
     const/4 v2, 0x0
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
@@ -1629,7 +1629,7 @@
     if-gt v0, v1, :cond_1
 
     :cond_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kM:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkM:Z
 
     if-eqz v0, :cond_2
 
@@ -1644,7 +1644,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->length()I
 
@@ -1652,16 +1652,16 @@
 
     invoke-direct {p0, v1}, Lcom/baidu/location/ICaf;->e(I)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     invoke-direct {p0, v1, v0}, Lcom/baidu/location/ICaf;->if(Ljava/lang/StringBuffer;Ljava/io/File;)V
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->kM:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->isZkM:Z
 
     :cond_2
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     invoke-direct {p0}, Lcom/baidu/location/ICaf;->cZ()V
 
@@ -1673,13 +1673,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->kH:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkH:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
@@ -1699,14 +1699,14 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     invoke-direct {p0, v1, v0}, Lcom/baidu/location/ICaf;->if(Ljava/lang/StringBuffer;Ljava/io/File;)V
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kO:Ljava/lang/StringBuffer;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mStringBufferkO:Ljava/lang/StringBuffer;
 
     invoke-direct {p0}, Lcom/baidu/location/ICaf;->cZ()V
 
@@ -1820,7 +1820,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-boolean v1, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iget-boolean v1, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     if-eqz v1, :cond_3
 
@@ -1864,7 +1864,7 @@
 .method public cY()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
     new-instance v1, Lcom/baidu/location/ICaf$2;
 
@@ -1880,7 +1880,7 @@
 
     const/4 v2, 0x1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     if-eqz v0, :cond_1
 
@@ -1901,7 +1901,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->kJ:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICaf;->isZkJ:Z
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -1909,7 +1909,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    iput-object v1, p0, Lcom/baidu/location/ICaf;->kQ:Ljava/lang/StringBuffer;
+    iput-object v1, p0, Lcom/baidu/location/ICaf;->mStringBufferkQ:Ljava/lang/StringBuffer;
 
     const-string/jumbo v1, "T1"
 
@@ -1933,11 +1933,11 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaf$1;-><init>(Lcom/baidu/location/ICaf;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf;->kB:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/baidu/location/ICaf;->mRunnablekB:Ljava/lang/Runnable;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaf;->kK:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICaf;->mHandlerkK:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaf;->kB:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/baidu/location/ICaf;->mRunnablekB:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x1f40
 
@@ -1975,11 +1975,11 @@
 
     if-ne v0, v4, :cond_2
 
-    iget v2, p0, Lcom/baidu/location/ICaf;->kN:I
+    iget v2, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/baidu/location/ICaf;->kN:I
+    iput v2, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
     const-string/jumbo v2, "A"
 
@@ -2015,7 +2015,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuffer;->append(F)Ljava/lang/StringBuffer;
 
-    iget v2, p0, Lcom/baidu/location/ICaf;->kN:I
+    iget v2, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
     if-ne v2, v4, :cond_0
 
@@ -2028,13 +2028,13 @@
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuffer;->append(J)Ljava/lang/StringBuffer;
 
     :cond_0
-    iget v2, p0, Lcom/baidu/location/ICaf;->kN:I
+    iget v2, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
     const/16 v3, 0xe
 
     if-lt v2, v3, :cond_1
 
-    iput v5, p0, Lcom/baidu/location/ICaf;->kN:I
+    iput v5, p0, Lcom/baidu/location/ICaf;->mIkN:I
 
     :cond_1
     const-string/jumbo v2, "\n"
@@ -2048,11 +2048,11 @@
     :cond_2
     if-ne v0, v6, :cond_5
 
-    iget v0, p0, Lcom/baidu/location/ICaf;->kG:I
+    iget v0, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICaf;->kG:I
+    iput v0, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     const-string/jumbo v0, "M"
 
@@ -2088,7 +2088,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(F)Ljava/lang/StringBuffer;
 
-    iget v0, p0, Lcom/baidu/location/ICaf;->kG:I
+    iget v0, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     if-ne v0, v4, :cond_3
 
@@ -2101,13 +2101,13 @@
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuffer;->append(J)Ljava/lang/StringBuffer;
 
     :cond_3
-    iget v0, p0, Lcom/baidu/location/ICaf;->kG:I
+    iget v0, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     const/16 v2, 0xd
 
     if-le v0, v2, :cond_4
 
-    iput v5, p0, Lcom/baidu/location/ICaf;->kG:I
+    iput v5, p0, Lcom/baidu/location/ICaf;->mIkG:I
 
     :cond_4
     const-string/jumbo v0, "\n"

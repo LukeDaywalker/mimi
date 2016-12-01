@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
+.field final synthetic mQuickSelectionBara:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 140
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->a:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->mQuickSelectionBara:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->a:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->mQuickSelectionBara:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;)Landroid/widget/PopupWindow;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 145
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->a:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbc;->mQuickSelectionBara:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;)Landroid/widget/PopupWindow;
 

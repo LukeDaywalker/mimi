@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Landroid/hardware/display/DisplayManager;
+.field private isZd:Z
 
-.field private final b:Landroid/os/Handler;
+.field private final mDisplayManagera:Landroid/hardware/display/DisplayManager;
 
-.field private c:Ljava/lang/reflect/Method;
+.field private final mHandlerb:Landroid/os/Handler;
 
-.field private d:Z
+.field private mMethodc:Ljava/lang/reflect/Method;
 
 
 # virtual methods
@@ -22,15 +22,15 @@
 
     .prologue
     .line 108
-    iget-boolean v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->d:Z
+    iget-boolean v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->isZd:Z
 
     if-eqz v0, :cond_0
 
     .line 110
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->mMethodc:Ljava/lang/reflect/Method;
 
-    iget-object v1, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->a:Landroid/hardware/display/DisplayManager;
+    iget-object v1, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->mDisplayManagera:Landroid/hardware/display/DisplayManager;
 
     const/4 v2, 0x0
 
@@ -43,7 +43,7 @@
 
     .line 116
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->b:Landroid/os/Handler;
+    iget-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$ActiveScanWorkaround;->mHandlerb:Landroid/os/Handler;
 
     const-wide/16 v2, 0x3a98
 

@@ -11,7 +11,7 @@
 
 .field public final b:Lokio/Sink;
 
-.field private c:Z
+.field private isZc:Z
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     .prologue
     .line 23
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     return v0
 .end method
@@ -138,7 +138,7 @@
 
     .prologue
     .line 44
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -168,7 +168,7 @@
 
     .prologue
     .line 56
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -199,7 +199,7 @@
 
     .prologue
     .line 50
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -240,7 +240,7 @@
 
     .prologue
     .line 88
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -271,7 +271,7 @@
 
     .prologue
     .line 94
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -302,7 +302,7 @@
 
     .prologue
     .line 227
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -319,7 +319,7 @@
     :try_start_0
     iget-object v1, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
 
-    iget-wide v2, v1, Lokio/Buffer;->b:J
+    iget-wide v2, v1, Lokio/Buffer;->mJb:J
 
     const-wide/16 v4, 0x0
 
@@ -334,7 +334,7 @@
 
     iget-object v3, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
 
-    iget-wide v4, v3, Lokio/Buffer;->b:J
+    iget-wide v4, v3, Lokio/Buffer;->mJb:J
 
     invoke-interface {v1, v2, v4, v5}, Lokio/Sink;->a_(Lokio/Buffer;J)V
     :try_end_0
@@ -355,7 +355,7 @@
     :goto_2
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lokio/RealBufferedSink;->c:Z
+    iput-boolean v1, p0, Lokio/RealBufferedSink;->isZc:Z
 
     .line 247
     if-eqz v0, :cond_0
@@ -399,7 +399,7 @@
 
     .prologue
     .line 181
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -442,7 +442,7 @@
 
     .prologue
     .line 138
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -473,7 +473,7 @@
 
     .prologue
     .line 219
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -489,7 +489,7 @@
     :cond_0
     iget-object v0, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
 
-    iget-wide v0, v0, Lokio/Buffer;->b:J
+    iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
     const-wide/16 v2, 0x0
 
@@ -504,7 +504,7 @@
 
     iget-object v2, p0, Lokio/RealBufferedSink;->a:Lokio/Buffer;
 
-    iget-wide v2, v2, Lokio/Buffer;->b:J
+    iget-wide v2, v2, Lokio/Buffer;->mJb:J
 
     invoke-interface {v0, v1, v2, v3}, Lokio/Sink;->a_(Lokio/Buffer;J)V
 
@@ -523,7 +523,7 @@
 
     .prologue
     .line 126
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -554,7 +554,7 @@
 
     .prologue
     .line 120
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -585,7 +585,7 @@
 
     .prologue
     .line 168
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -650,7 +650,7 @@
 
     .prologue
     .line 174
-    iget-boolean v0, p0, Lokio/RealBufferedSink;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSink;->isZc:Z
 
     if-eqz v0, :cond_0
 

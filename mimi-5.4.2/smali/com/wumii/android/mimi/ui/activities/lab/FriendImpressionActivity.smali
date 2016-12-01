@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private n:Landroid/view/MenuItem;
+.field private mMenuItemn:Landroid/view/MenuItem;
 
 
 # direct methods
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -257,7 +257,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -270,12 +270,12 @@
 
     .line 68
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 69
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->n:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     if-eqz p1, :cond_1
 
@@ -398,7 +398,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->n:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     .line 59
     const/4 v0, 0x1

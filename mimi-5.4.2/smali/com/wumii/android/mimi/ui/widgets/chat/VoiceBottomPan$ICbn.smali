@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+.field final synthetic mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 264
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 268
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/soundtouch/RecordClient;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->a:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;->isZa:Z
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/RecordClient;->a(Z)V
 

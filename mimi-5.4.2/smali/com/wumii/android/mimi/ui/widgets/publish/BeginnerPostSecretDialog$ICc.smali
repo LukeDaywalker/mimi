@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
+.field final synthetic mBeginnerPostSecretDialoga:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICc;->mBeginnerPostSecretDialoga:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

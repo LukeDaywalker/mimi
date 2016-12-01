@@ -19,7 +19,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+.field private mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
+
+.field private mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentLinkedQueue",
@@ -29,8 +31,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods
@@ -44,17 +44,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 34
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     .line 35
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 39
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     .line 40
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 41
     return-void
@@ -76,7 +76,7 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -95,12 +95,12 @@
     move-result v0
 
     .line 54
-    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICg;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICg;->mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v1, p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
 
     .line 56
-    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICg;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro$ICg;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
@@ -234,12 +234,12 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->clear()V
 
     .line 147
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
 
@@ -263,7 +263,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICg;->mConcurrentLinkedQueuea:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 

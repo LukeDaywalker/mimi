@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private a:Landroid/view/inputmethod/InputMethodManager;
+.field private mEditTextb:Landroid/widget/EditText;
 
-.field private b:Landroid/widget/EditText;
+.field private mEditTextc:Landroid/widget/EditText;
 
-.field private c:Landroid/widget/EditText;
+.field private mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->c:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextc:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -108,7 +108,7 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->a:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
     .line 33
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -150,7 +150,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     .line 38
     const v0, 0x7f0b01e1
@@ -161,7 +161,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->c:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextc:Landroid/widget/EditText;
 
     .line 40
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -186,7 +186,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->d:Ljava/lang/String;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mStringd:Ljava/lang/String;
 
     .line 43
     const-string/jumbo v2, "extra_password_hint"
@@ -196,16 +196,16 @@
     move-result-object v2
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 45
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mStringd:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -215,18 +215,18 @@
     invoke-virtual {v3, v0}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->c:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextc:Landroid/widget/EditText;
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 48
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment$ICab;
 
@@ -237,7 +237,7 @@
     invoke-virtual {v0, v2, v4, v5}, Landroid/widget/EditText;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->c:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextc:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -246,7 +246,7 @@
 
     .line 45
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -285,9 +285,9 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onPause()V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->a:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
@@ -310,19 +310,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mStringd:Ljava/lang/String;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
@@ -331,7 +331,7 @@
     if-eqz v1, :cond_1
 
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 

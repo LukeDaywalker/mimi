@@ -8,59 +8,59 @@
 
 
 # static fields
-.field private static final v:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
+.field private static final mAccessibilityDelegatev:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
 
-.field private static final w:[I
+.field private static final mArrayIw:[I
 
 
 # instance fields
-.field private a:J
+.field private isZg:Z
 
-.field private final b:Landroid/graphics/Rect;
+.field private isZh:Z
 
-.field private c:Landroid/support/v4/widget/ScrollerCompat;
+.field private isZj:Z
 
-.field private d:Landroid/support/v4/widget/EdgeEffectCompat;
+.field private isZl:Z
 
-.field private e:Landroid/support/v4/widget/EdgeEffectCompat;
+.field private isZm:Z
 
-.field private f:I
+.field private final mArrayIr:[I
 
-.field private g:Z
+.field private final mArrayIs:[I
 
-.field private h:Z
+.field private mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
-.field private i:Landroid/view/View;
+.field private mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
-.field private j:Z
+.field private mFz:F
 
-.field private k:Landroid/view/VelocityTracker;
+.field private mIf:I
 
-.field private l:Z
+.field private mIn:I
 
-.field private m:Z
+.field private mIo:I
 
-.field private n:I
+.field private mIp:I
 
-.field private o:I
+.field private mIq:I
 
-.field private p:I
+.field private mIt:I
 
-.field private q:I
+.field private mJa:J
 
-.field private final r:[I
+.field private final mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
-.field private final s:[I
+.field private final mNestedScrollingParentHelperx:Landroid/support/v4/view/NestedScrollingParentHelper;
 
-.field private t:I
+.field private final mRectb:Landroid/graphics/Rect;
 
-.field private u:Landroid/support/v4/widget/NestedScrollView$SavedState;
+.field private mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
-.field private final x:Landroid/support/v4/view/NestedScrollingParentHelper;
+.field private mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
-.field private final y:Landroid/support/v4/view/NestedScrollingChildHelper;
+.field private mVelocityTrackerk:Landroid/view/VelocityTracker;
 
-.field private z:F
+.field private mViewi:Landroid/view/View;
 
 
 # direct methods
@@ -73,7 +73,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/NestedScrollView;->v:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
+    sput-object v0, Landroid/support/v4/widget/NestedScrollView;->mAccessibilityDelegatev:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
 
     .line 147
     const/4 v0, 0x1
@@ -86,7 +86,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/widget/NestedScrollView;->w:[I
+    sput-object v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIw:[I
 
     return-void
 .end method
@@ -135,45 +135,45 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     .line 87
-    iput-boolean v2, p0, Landroid/support/v4/widget/NestedScrollView;->g:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/NestedScrollView;->isZg:Z
 
     .line 88
-    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->h:Z
+    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZh:Z
 
     .line 95
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     .line 102
-    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 118
-    iput-boolean v2, p0, Landroid/support/v4/widget/NestedScrollView;->m:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/NestedScrollView;->isZm:Z
 
     .line 128
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 133
     new-array v0, v3, [I
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     .line 134
     new-array v0, v3, [I
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->s:[I
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mArrayIs:[I
 
     .line 166
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->a()V
 
     .line 168
-    sget-object v0, Landroid/support/v4/widget/NestedScrollView;->w:[I
+    sget-object v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIw:[I
 
     invoke-virtual {p1, p2, v0, p3, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -194,20 +194,20 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/view/NestedScrollingParentHelper;-><init>(Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->x:Landroid/support/v4/view/NestedScrollingParentHelper;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingParentHelperx:Landroid/support/v4/view/NestedScrollingParentHelper;
 
     .line 176
     new-instance v0, Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-direct {v0, p0}, Landroid/support/v4/view/NestedScrollingChildHelper;-><init>(Landroid/view/View;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     .line 179
     invoke-virtual {p0, v2}, Landroid/support/v4/widget/NestedScrollView;->setNestedScrollingEnabled(Z)V
 
     .line 181
-    sget-object v0, Landroid/support/v4/widget/NestedScrollView;->v:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
+    sget-object v0, Landroid/support/v4/widget/NestedScrollView;->mAccessibilityDelegatev:Landroid/support/v4/widget/NestedScrollView$AccessibilityDelegate;
 
     invoke-static {p0, v0}, Landroid/support/v4/view/ViewCompat;->a(Landroid/view/View;Landroid/support/v4/view/AccessibilityDelegateCompat;)V
 
@@ -411,7 +411,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/support/v4/widget/ScrollerCompat;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     .line 333
     const/4 v0, 0x1
@@ -442,21 +442,21 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->n:I
+    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->mIn:I
 
     .line 338
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->o:I
+    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->mIo:I
 
     .line 339
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->p:I
+    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->mIp:I
 
     .line 340
     return-void
@@ -483,7 +483,7 @@
     move-result v1
 
     .line 834
-    iget v2, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v2, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     if-ne v1, v2, :cond_0
 
@@ -500,22 +500,22 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 840
     invoke-static {p1, v0}, Landroid/support/v4/view/MotionEventCompat;->b(Landroid/view/MotionEvent;I)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 841
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 842
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
 
@@ -689,17 +689,17 @@
 
     .prologue
     .line 1218
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
     .line 1219
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1, v0}, Landroid/support/v4/widget/NestedScrollView;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 1221
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
@@ -711,7 +711,7 @@
 
     if-lt v0, v1, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
@@ -816,17 +816,17 @@
 
     .prologue
     .line 1373
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
     .line 1376
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1, v0}, Landroid/support/v4/widget/NestedScrollView;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 1378
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v0}, Landroid/support/v4/widget/NestedScrollView;->a(Landroid/graphics/Rect;)I
 
@@ -895,7 +895,7 @@
 
     .prologue
     .line 532
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     if-nez v0, :cond_0
 
@@ -904,7 +904,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     .line 537
     :goto_0
@@ -912,7 +912,7 @@
 
     .line 535
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
 
@@ -983,7 +983,7 @@
 
     .prologue
     .line 540
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     if-nez v0, :cond_0
 
@@ -992,7 +992,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     .line 543
     :cond_0
@@ -1004,19 +1004,19 @@
 
     .prologue
     .line 546
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 547
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 548
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     .line 550
     :cond_0
@@ -1033,7 +1033,7 @@
     if-eqz p1, :cond_0
 
     .line 1232
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->m:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZm:Z
 
     if-eqz v0, :cond_1
 
@@ -1059,23 +1059,23 @@
     .line 1636
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 1638
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->e()V
 
     .line 1640
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     if-eqz v0, :cond_0
 
     .line 1641
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/EdgeEffectCompat;->c()Z
 
     .line 1642
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/EdgeEffectCompat;->c()Z
 
@@ -1160,7 +1160,7 @@
     if-eq v0, v1, :cond_1
 
     .line 1666
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     if-nez v0, :cond_0
 
@@ -1174,14 +1174,14 @@
 
     invoke-direct {v1, v0}, Landroid/support/v4/widget/EdgeEffectCompat;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iput-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     .line 1669
     new-instance v1, Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-direct {v1, v0}, Landroid/support/v4/widget/EdgeEffectCompat;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iput-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     .line 1675
     :cond_0
@@ -1190,10 +1190,10 @@
 
     .line 1672
     :cond_1
-    iput-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iput-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     .line 1673
-    iput-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iput-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     goto :goto_0
 .end method
@@ -1254,7 +1254,7 @@
 
     .prologue
     .line 877
-    iget v0, p0, Landroid/support/v4/widget/NestedScrollView;->z:F
+    iget v0, p0, Landroid/support/v4/widget/NestedScrollView;->mFz:F
 
     const/4 v1, 0x0
 
@@ -1310,11 +1310,11 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->z:F
+    iput v0, p0, Landroid/support/v4/widget/NestedScrollView;->mFz:F
 
     .line 888
     :cond_1
-    iget v0, p0, Landroid/support/v4/widget/NestedScrollView;->z:F
+    iget v0, p0, Landroid/support/v4/widget/NestedScrollView;->mFz:F
 
     return v0
 .end method
@@ -1517,7 +1517,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Landroid/support/v4/widget/NestedScrollView;->a:J
+    iget-wide v2, p0, Landroid/support/v4/widget/NestedScrollView;->mJa:J
 
     sub-long/2addr v0, v2
 
@@ -1580,7 +1580,7 @@
     sub-int/2addr v0, v1
 
     .line 1259
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getScrollX()I
 
@@ -1597,13 +1597,13 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Landroid/support/v4/widget/NestedScrollView;->a:J
+    iput-wide v0, p0, Landroid/support/v4/widget/NestedScrollView;->mJa:J
 
     goto :goto_0
 
     .line 1262
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->a()Z
 
@@ -1612,7 +1612,7 @@
     if-nez v0, :cond_2
 
     .line 1263
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->h()V
 
@@ -1646,7 +1646,7 @@
     if-eqz v0, :cond_2
 
     .line 1060
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getScrollY()I
 
@@ -1672,7 +1672,7 @@
     move-result-object v0
 
     .line 1064
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->top:I
 
@@ -1685,7 +1685,7 @@
     if-le v1, v3, :cond_0
 
     .line 1065
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/view/View;->getBottom()I
 
@@ -1698,9 +1698,9 @@
     .line 1074
     :cond_0
     :goto_1
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->top:I
 
@@ -1709,11 +1709,11 @@
     iput v1, v0, Landroid/graphics/Rect;->bottom:I
 
     .line 1076
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -1731,7 +1731,7 @@
 
     .line 1069
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getScrollY()I
 
@@ -1742,14 +1742,14 @@
     iput v3, v0, Landroid/graphics/Rect;->top:I
 
     .line 1070
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
     if-gez v0, :cond_0
 
     .line 1071
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iput v1, v0, Landroid/graphics/Rect;->top:I
 
@@ -1973,7 +1973,7 @@
     const/16 v2, 0x82
 
     .line 478
-    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v3}, Landroid/graphics/Rect;->setEmpty()V
 
@@ -2293,12 +2293,12 @@
     move-result v2
 
     .line 1095
-    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iput v1, v3, Landroid/graphics/Rect;->top:I
 
     .line 1096
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iput v2, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -2321,7 +2321,7 @@
     move-result-object v0
 
     .line 1102
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/view/View;->getBottom()I
 
@@ -2336,9 +2336,9 @@
     iput v0, v1, Landroid/graphics/Rect;->bottom:I
 
     .line 1103
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -2348,11 +2348,11 @@
 
     .line 1107
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -2416,17 +2416,17 @@
     if-eqz v4, :cond_2
 
     .line 1164
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v3, v1}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
     .line 1165
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v3, v1}, Landroid/support/v4/widget/NestedScrollView;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 1166
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/widget/NestedScrollView;->a(Landroid/graphics/Rect;)I
 
@@ -2575,7 +2575,7 @@
     const/4 v5, 0x0
 
     .line 1340
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/ScrollerCompat;->g()Z
 
@@ -2594,14 +2594,14 @@
     move-result v4
 
     .line 1343
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/ScrollerCompat;->b()I
 
     move-result v1
 
     .line 1344
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/ScrollerCompat;->c()I
 
@@ -2661,9 +2661,9 @@
     if-lez v4, :cond_4
 
     .line 1358
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/ScrollerCompat;->f()F
 
@@ -2691,9 +2691,9 @@
     if-ge v4, v6, :cond_2
 
     .line 1360
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/ScrollerCompat;->f()F
 
@@ -2844,7 +2844,7 @@
     move-result v5
 
     .line 1616
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getScrollX()I
 
@@ -2916,7 +2916,7 @@
 
     .prologue
     .line 225
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/support/v4/view/NestedScrollingChildHelper;->a(FFZ)Z
 
@@ -2930,7 +2930,7 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/NestedScrollingChildHelper;->a(FF)Z
 
@@ -2944,7 +2944,7 @@
 
     .prologue
     .line 220
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/support/v4/view/NestedScrollingChildHelper;->a(II[I[I)Z
 
@@ -2958,7 +2958,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     move v1, p1
 
@@ -2985,7 +2985,7 @@
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
 
     .line 1680
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     if-eqz v0, :cond_3
 
@@ -2995,7 +2995,7 @@
     move-result v0
 
     .line 1682
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -3043,7 +3043,7 @@
     invoke-virtual {p1, v3, v4}, Landroid/graphics/Canvas;->translate(FF)V
 
     .line 1687
-    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getHeight()I
 
@@ -3052,7 +3052,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/support/v4/widget/EdgeEffectCompat;->a(II)V
 
     .line 1688
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2, p1}, Landroid/support/v4/widget/EdgeEffectCompat;->a(Landroid/graphics/Canvas;)Z
 
@@ -3069,7 +3069,7 @@
 
     .line 1693
     :cond_1
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -3139,12 +3139,12 @@
     invoke-virtual {p1, v0, v4, v5}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     .line 1701
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v0, v2, v3}, Landroid/support/v4/widget/EdgeEffectCompat;->a(II)V
 
     .line 1702
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/EdgeEffectCompat;->a(Landroid/graphics/Canvas;)Z
 
@@ -3262,7 +3262,7 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->x:Landroid/support/v4/view/NestedScrollingParentHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingParentHelperx:Landroid/support/v4/view/NestedScrollingParentHelper;
 
     invoke-virtual {v0}, Landroid/support/v4/view/NestedScrollingParentHelper;->a()I
 
@@ -3324,7 +3324,7 @@
 
     .prologue
     .line 208
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0}, Landroid/support/v4/view/NestedScrollingChildHelper;->b()Z
 
@@ -3338,7 +3338,7 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0}, Landroid/support/v4/view/NestedScrollingChildHelper;->a()Z
 
@@ -3452,7 +3452,7 @@
     .line 1570
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->h:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZh:Z
 
     .line 1571
     return-void
@@ -3487,7 +3487,7 @@
 
     .line 851
     :pswitch_0
-    iget-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-nez v1, :cond_0
 
@@ -3584,7 +3584,7 @@
     .line 575
     if-ne v2, v5, :cond_0
 
-    iget-boolean v3, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v3, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-eqz v3, :cond_0
 
@@ -3621,13 +3621,13 @@
     :cond_2
     :goto_1
     :pswitch_0
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     goto :goto_0
 
     .line 597
     :pswitch_1
-    iget v2, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v2, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 598
     if-eq v2, v4, :cond_2
@@ -3680,7 +3680,7 @@
     float-to-int v2, v2
 
     .line 611
-    iget v3, p0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iget v3, p0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     sub-int v3, v2, v3
 
@@ -3689,7 +3689,7 @@
     move-result v3
 
     .line 612
-    iget v4, p0, Landroid/support/v4/widget/NestedScrollView;->n:I
+    iget v4, p0, Landroid/support/v4/widget/NestedScrollView;->mIn:I
 
     if-le v3, v4, :cond_2
 
@@ -3702,21 +3702,21 @@
     if-nez v3, :cond_2
 
     .line 614
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 615
-    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 616
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->d()V
 
     .line 617
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     .line 618
-    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iput v1, p0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     .line 619
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->getParent()Landroid/view/ViewParent;
@@ -3753,7 +3753,7 @@
     if-nez v3, :cond_4
 
     .line 630
-    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 631
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->e()V
@@ -3762,25 +3762,25 @@
 
     .line 639
     :cond_4
-    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 640
     invoke-static {p1, v1}, Landroid/support/v4/view/MotionEventCompat;->b(Landroid/view/MotionEvent;I)I
 
     move-result v2
 
-    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v2, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 642
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->c()V
 
     .line 643
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     .line 649
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/ScrollerCompat;->a()Z
 
@@ -3789,7 +3789,7 @@
     if-nez v2, :cond_5
 
     :goto_2
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 650
     invoke-virtual {p0, v5}, Landroid/support/v4/widget/NestedScrollView;->startNestedScroll(I)Z
@@ -3804,10 +3804,10 @@
 
     .line 657
     :pswitch_3
-    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 658
-    iput v4, p0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v4, p0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 659
     invoke-direct {p0}, Landroid/support/v4/widget/NestedScrollView;->e()V
@@ -3848,14 +3848,14 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 1538
-    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->g:Z
+    iput-boolean v1, p0, Landroid/support/v4/widget/NestedScrollView;->isZg:Z
 
     .line 1540
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     invoke-static {v0, p0}, Landroid/support/v4/widget/NestedScrollView;->a(Landroid/view/View;Landroid/view/View;)Z
 
@@ -3864,21 +3864,21 @@
     if-eqz v0, :cond_0
 
     .line 1541
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     invoke-direct {p0, v0}, Landroid/support/v4/widget/NestedScrollView;->b(Landroid/view/View;)V
 
     .line 1543
     :cond_0
-    iput-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iput-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     .line 1545
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->h:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZh:Z
 
     if-nez v0, :cond_2
 
     .line 1546
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->u:Landroid/support/v4/widget/NestedScrollView$SavedState;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
     if-eqz v0, :cond_1
 
@@ -3887,14 +3887,14 @@
 
     move-result v0
 
-    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->u:Landroid/support/v4/widget/NestedScrollView$SavedState;
+    iget-object v2, p0, Landroid/support/v4/widget/NestedScrollView;->mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
     iget v2, v2, Landroid/support/v4/widget/NestedScrollView$SavedState;->a:I
 
     invoke-virtual {p0, v0, v2}, Landroid/support/v4/widget/NestedScrollView;->scrollTo(II)V
 
     .line 1548
-    iput-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->u:Landroid/support/v4/widget/NestedScrollView$SavedState;
+    iput-object v3, p0, Landroid/support/v4/widget/NestedScrollView;->mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
     .line 1551
     :cond_1
@@ -3964,7 +3964,7 @@
     .line 1565
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->h:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZh:Z
 
     .line 1566
     return-void
@@ -4001,7 +4001,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     .line 436
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->l:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZl:Z
 
     if-nez v0, :cond_1
 
@@ -4181,7 +4181,7 @@
 
     .prologue
     .line 242
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->x:Landroid/support/v4/view/NestedScrollingParentHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingParentHelperx:Landroid/support/v4/view/NestedScrollingParentHelper;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/support/v4/view/NestedScrollingParentHelper;->a(Landroid/view/View;Landroid/view/View;I)V
 
@@ -4297,7 +4297,7 @@
     invoke-super {p0, v0}, Landroid/widget/FrameLayout;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 1744
-    iput-object p1, p0, Landroid/support/v4/widget/NestedScrollView;->u:Landroid/support/v4/widget/NestedScrollView$SavedState;
+    iput-object p1, p0, Landroid/support/v4/widget/NestedScrollView;->mSavedStateu:Landroid/support/v4/widget/NestedScrollView$SavedState;
 
     .line 1745
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->requestLayout()V
@@ -4364,17 +4364,17 @@
     if-eqz v1, :cond_0
 
     .line 1585
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
     .line 1586
-    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v0, v1}, Landroid/support/v4/widget/NestedScrollView;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
 
     .line 1587
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v0}, Landroid/support/v4/widget/NestedScrollView;->a(Landroid/graphics/Rect;)I
 
@@ -4442,7 +4442,7 @@
 
     move-object/from16 v0, p0
 
-    iput v3, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iput v3, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     .line 685
     :cond_0
@@ -4450,7 +4450,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     int-to-float v4, v4
 
@@ -4467,14 +4467,14 @@
     :pswitch_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     if-eqz v2, :cond_2
 
     .line 824
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     move-object/from16 v0, v16
 
@@ -4507,7 +4507,7 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/ScrollerCompat;->a()Z
 
@@ -4520,7 +4520,7 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-eqz v2, :cond_4
 
@@ -4541,7 +4541,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/ScrollerCompat;->a()Z
 
@@ -4552,7 +4552,7 @@
     .line 704
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->c:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mScrollerCompatc:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/ScrollerCompat;->h()V
 
@@ -4566,7 +4566,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 709
     const/4 v2, 0x0
@@ -4579,7 +4579,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 710
     const/4 v2, 0x2
@@ -4600,7 +4600,7 @@
     :pswitch_2
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     move-object/from16 v0, p1
 
@@ -4630,7 +4630,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4665,7 +4665,7 @@
     .line 722
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     sub-int/2addr v2, v3
 
@@ -4674,11 +4674,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->s:[I
+    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIs:[I
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v6, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     move-object/from16 v0, p0
 
@@ -4691,7 +4691,7 @@
     .line 724
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/support/v4/widget/NestedScrollView;->s:[I
+    iget-object v4, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIs:[I
 
     const/4 v5, 0x1
 
@@ -4704,7 +4704,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v6, 0x1
 
@@ -4719,11 +4719,11 @@
     .line 726
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v5, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v6, 0x1
 
@@ -4733,13 +4733,13 @@
 
     move-object/from16 v0, p0
 
-    iput v4, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iput v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     .line 728
     :cond_8
     move-object/from16 v0, p0
 
-    iget-boolean v4, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v4, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-nez v4, :cond_13
 
@@ -4749,7 +4749,7 @@
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Landroid/support/v4/widget/NestedScrollView;->n:I
+    iget v5, v0, Landroid/support/v4/widget/NestedScrollView;->mIn:I
 
     if-le v4, v5, :cond_13
 
@@ -4772,7 +4772,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v4, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iput-boolean v4, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     .line 734
     if-lez v2, :cond_c
@@ -4780,7 +4780,7 @@
     .line 735
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->n:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIn:I
 
     sub-int/2addr v2, v4
 
@@ -4790,14 +4790,14 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-eqz v2, :cond_1
 
     .line 742
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v5, 0x1
 
@@ -4807,7 +4807,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 744
     invoke-virtual/range {p0 .. p0}, Landroid/support/v4/widget/NestedScrollView;->getScrollY()I
@@ -4873,7 +4873,7 @@
     .line 756
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2}, Landroid/view/VelocityTracker;->clear()V
 
@@ -4895,7 +4895,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v14, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     move-object/from16 v9, p0
 
@@ -4908,11 +4908,11 @@
     .line 762
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v4, 0x1
 
@@ -4922,14 +4922,14 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 763
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v4, 0x1
 
@@ -4944,11 +4944,11 @@
     .line 764
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->r:[I
+    iget-object v3, v0, Landroid/support/v4/widget/NestedScrollView;->mArrayIr:[I
 
     const/4 v4, 0x1
 
@@ -4958,7 +4958,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->t:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIt:I
 
     goto/16 :goto_0
 
@@ -4966,7 +4966,7 @@
     :cond_c
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->n:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIn:I
 
     add-int/2addr v2, v4
 
@@ -4998,7 +4998,7 @@
     .line 769
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     int-to-float v3, v4
 
@@ -5031,7 +5031,7 @@
     .line 771
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -5042,7 +5042,7 @@
     .line 772
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->c()Z
 
@@ -5051,13 +5051,13 @@
     :goto_5
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     if-eqz v2, :cond_1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -5067,7 +5067,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -5088,7 +5088,7 @@
     .line 775
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->e:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompate:Landroid/support/v4/widget/EdgeEffectCompat;
 
     int-to-float v3, v4
 
@@ -5125,7 +5125,7 @@
     .line 778
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->a()Z
 
@@ -5136,7 +5136,7 @@
     .line 779
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->d:Landroid/support/v4/widget/EdgeEffectCompat;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mEdgeEffectCompatd:Landroid/support/v4/widget/EdgeEffectCompat;
 
     invoke-virtual {v2}, Landroid/support/v4/widget/EdgeEffectCompat;->c()Z
 
@@ -5146,21 +5146,21 @@
     :pswitch_3
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-eqz v2, :cond_1
 
     .line 791
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->k:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Landroid/support/v4/widget/NestedScrollView;->mVelocityTrackerk:Landroid/view/VelocityTracker;
 
     .line 792
     const/16 v3, 0x3e8
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->p:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIp:I
 
     int-to-float v4, v4
 
@@ -5169,7 +5169,7 @@
     .line 793
     move-object/from16 v0, p0
 
-    iget v3, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v3, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     invoke-static {v2, v3}, Landroid/support/v4/view/VelocityTrackerCompat;->b(Landroid/view/VelocityTracker;I)F
 
@@ -5184,7 +5184,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->o:I
+    iget v4, v0, Landroid/support/v4/widget/NestedScrollView;->mIo:I
 
     if-le v3, v4, :cond_12
 
@@ -5201,7 +5201,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 801
     invoke-direct/range {p0 .. p0}, Landroid/support/v4/widget/NestedScrollView;->f()V
@@ -5212,7 +5212,7 @@
     :pswitch_4
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->j:Z
+    iget-boolean v2, v0, Landroid/support/v4/widget/NestedScrollView;->isZj:Z
 
     if-eqz v2, :cond_1
 
@@ -5227,7 +5227,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     .line 807
     invoke-direct/range {p0 .. p0}, Landroid/support/v4/widget/NestedScrollView;->f()V
@@ -5251,7 +5251,7 @@
 
     move-object/from16 v0, p0
 
-    iput v3, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v3, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     .line 813
     move-object/from16 v0, p1
@@ -5262,7 +5262,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     goto/16 :goto_0
 
@@ -5273,7 +5273,7 @@
     .line 818
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->q:I
+    iget v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIq:I
 
     move-object/from16 v0, p1
 
@@ -5291,7 +5291,7 @@
 
     move-object/from16 v0, p0
 
-    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->f:I
+    iput v2, v0, Landroid/support/v4/widget/NestedScrollView;->mIf:I
 
     goto/16 :goto_0
 
@@ -5318,7 +5318,7 @@
 
     .prologue
     .line 1474
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->g:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZg:Z
 
     if-nez v0, :cond_0
 
@@ -5334,7 +5334,7 @@
 
     .line 1478
     :cond_0
-    iput-object p2, p0, Landroid/support/v4/widget/NestedScrollView;->i:Landroid/view/View;
+    iput-object p2, p0, Landroid/support/v4/widget/NestedScrollView;->mViewi:Landroid/view/View;
 
     goto :goto_0
 .end method
@@ -5399,7 +5399,7 @@
     .line 1531
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->g:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZg:Z
 
     .line 1532
     invoke-super {p0}, Landroid/widget/FrameLayout;->requestLayout()V
@@ -5503,12 +5503,12 @@
 
     .prologue
     .line 411
-    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->l:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/NestedScrollView;->isZl:Z
 
     if-eq p1, v0, :cond_0
 
     .line 412
-    iput-boolean p1, p0, Landroid/support/v4/widget/NestedScrollView;->l:Z
+    iput-boolean p1, p0, Landroid/support/v4/widget/NestedScrollView;->isZl:Z
 
     .line 413
     invoke-virtual {p0}, Landroid/support/v4/widget/NestedScrollView;->requestLayout()V
@@ -5523,7 +5523,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/view/NestedScrollingChildHelper;->a(Z)V
 
@@ -5536,7 +5536,7 @@
 
     .prologue
     .line 429
-    iput-boolean p1, p0, Landroid/support/v4/widget/NestedScrollView;->m:Z
+    iput-boolean p1, p0, Landroid/support/v4/widget/NestedScrollView;->isZm:Z
 
     .line 430
     return-void
@@ -5557,7 +5557,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/view/NestedScrollingChildHelper;->a(I)Z
 
@@ -5571,7 +5571,7 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->y:Landroid/support/v4/view/NestedScrollingChildHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/NestedScrollView;->mNestedScrollingChildHelpery:Landroid/support/v4/view/NestedScrollingChildHelper;
 
     invoke-virtual {v0}, Landroid/support/v4/view/NestedScrollingChildHelper;->c()V
 

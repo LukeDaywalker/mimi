@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+.field final synthetic mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1055
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$2;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$2;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->b(J)V
 
@@ -29,7 +29,7 @@
 
     .prologue
     .line 1050
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$2;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase$2;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-static {p1}, Landroid/support/v4/media/RatingCompat;->a(Ljava/lang/Object;)Landroid/support/v4/media/RatingCompat;
 

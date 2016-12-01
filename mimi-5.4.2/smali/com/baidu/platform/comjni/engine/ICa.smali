@@ -3,9 +3,7 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
-
-.field private static b:Landroid/util/SparseArray;
+.field private static mSparseArrayb:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -18,6 +16,8 @@
     .end annotation
 .end field
 
+.field private static final mStringa:Ljava/lang/String;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -29,13 +29,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comjni/engine/ICa;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mStringa:Ljava/lang/String;
 
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sput-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     return-void
 .end method
@@ -51,12 +51,12 @@
 .method public static a()V
     .locals 5
 
-    sget-object v2, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v2, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     monitor-enter v2
 
     :try_start_0
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -69,9 +69,9 @@
     :goto_0
     if-ge v1, v3, :cond_1
 
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
-    sget-object v4, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v4, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -95,7 +95,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
@@ -116,12 +116,12 @@
 .method public static a(IIIJ)V
     .locals 5
 
-    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -187,7 +187,7 @@
 .method public static a(ILandroid/os/Handler;)V
     .locals 3
 
-    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     monitor-enter v1
 
@@ -200,7 +200,7 @@
     return-void
 
     :cond_0
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -241,7 +241,7 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-object v2, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v2, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p0, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
     :try_end_1
@@ -253,7 +253,7 @@
 .method public static b(ILandroid/os/Handler;)V
     .locals 2
 
-    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v1, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     monitor-enter v1
 
@@ -264,7 +264,7 @@
     :try_start_0
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->b:Landroid/util/SparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/engine/ICa;->mSparseArrayb:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 

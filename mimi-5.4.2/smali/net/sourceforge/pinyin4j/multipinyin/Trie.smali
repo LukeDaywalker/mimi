@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Hashtable;
+.field private mHashtablea:Ljava/util/Hashtable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Hashtable",
@@ -16,9 +16,9 @@
     .end annotation
 .end field
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
-.field private c:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+.field private mTriec:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->a:Ljava/util/Hashtable;
+    iput-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mHashtablea:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->b:Ljava/lang/String;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     aget-object v4, v0, v4
 
-    iput-object v4, v2, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->b:Ljava/lang/String;
+    iput-object v4, v2, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mStringb:Ljava/lang/String;
 
     .line 52
     const/4 v4, 0x0
@@ -210,7 +210,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -223,7 +223,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->c:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mTriec:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
     .line 32
     return-void
@@ -234,7 +234,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->c:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mTriec:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
     return-object v0
 .end method
@@ -362,7 +362,7 @@
     if-ne v9, v5, :cond_3
 
     .line 92
-    iput-object v7, v4, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->b:Ljava/lang/String;
+    iput-object v7, v4, Lnet/sourceforge/pinyin4j/multipinyin/Trie;->mStringb:Ljava/lang/String;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

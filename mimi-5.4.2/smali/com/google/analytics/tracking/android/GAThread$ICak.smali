@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/GAThread;
+.field final synthetic mGAThreada:Lcom/google/analytics/tracking/android/GAThread;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 248
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread$ICak;->a:Lcom/google/analytics/tracking/android/GAThread;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread$ICak;->mGAThreada:Lcom/google/analytics/tracking/android/GAThread;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread$ICak;->a:Lcom/google/analytics/tracking/android/GAThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread$ICak;->mGAThreada:Lcom/google/analytics/tracking/android/GAThread;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAThread;->e(Lcom/google/analytics/tracking/android/GAThread;)Lcom/google/analytics/tracking/android/ServiceProxy;
 

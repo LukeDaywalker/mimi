@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 90
-    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICe;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICe;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
     .line 94
     new-instance v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;
 
-    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICe;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICe;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;-><init>(Landroid/content/Context;)V
 

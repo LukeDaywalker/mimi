@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final k:Lorg/slf4j/Logger;
+.field private static final mLoggerk:Lorg/slf4j/Logger;
 
 
 # instance fields
+.field private isZl:Z
+
 .field protected j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private l:Z
+.field private mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
-.field private m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
-
-.field private n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+.field private mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->k:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mLoggerk:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
     return-object p1
 .end method
@@ -140,7 +140,7 @@
 
     .prologue
     .line 36
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->l:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->isZl:Z
 
     return p1
 .end method
@@ -496,7 +496,7 @@
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->l:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->isZl:Z
 
     return v0
 .end method
@@ -569,7 +569,7 @@
     if-nez v0, :cond_1
 
     .line 211
-    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->k:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mLoggerk:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Fragment view is empty when RefreshFeedList!"
 
@@ -644,7 +644,7 @@
     .line 180
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->l:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->isZl:Z
 
     .line 181
     return-void
@@ -655,7 +655,7 @@
 
     .prologue
     .line 184
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
     if-nez v0, :cond_0
 
@@ -666,7 +666,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
     .line 186
     new-instance v0, Landroid/content/IntentFilter;
@@ -689,7 +689,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->n:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mICin:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICi;
 
     invoke-virtual {v1, v2, v0}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
@@ -739,7 +739,7 @@
     .line 116
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -795,7 +795,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 69
     return-void
@@ -811,7 +811,7 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->mOnSharedPreferenceChangeListenerm:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

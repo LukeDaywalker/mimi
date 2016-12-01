@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+.field final synthetic mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 172
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     .line 173
     const/4 v0, 0x1
@@ -50,7 +50,7 @@
     .line 179
     const-string/jumbo v1, "rid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbt;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->c(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Ljava/lang/String;
 

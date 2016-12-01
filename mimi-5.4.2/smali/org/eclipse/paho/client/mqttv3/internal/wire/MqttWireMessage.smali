@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final c:[Ljava/lang/String;
+.field private static final mArrayStringc:[Ljava/lang/String;
 
 
 # instance fields
@@ -12,7 +12,7 @@
 
 .field protected b:Z
 
-.field private d:B
+.field private mBd:B
 
 
 # direct methods
@@ -118,7 +118,7 @@
     aput-object v2, v0, v1
 
     .line 52
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->c:[Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mArrayStringc:[Ljava/lang/String;
 
     .line 54
     return-void
@@ -137,7 +137,7 @@
     iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->b:Z
 
     .line 65
-    iput-byte p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->d:B
+    iput-byte p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mBd:B
 
     .line 68
     iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->a:I
@@ -780,7 +780,7 @@
 
     .prologue
     .line 88
-    iget-byte v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->d:B
+    iget-byte v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mBd:B
 
     return v0
 .end method
@@ -959,9 +959,9 @@
 
     .prologue
     .line 349
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->c:[Ljava/lang/String;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mArrayStringc:[Ljava/lang/String;
 
-    iget-byte v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->d:B
+    iget-byte v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;->mBd:B
 
     aget-object v0, v0, v1
 

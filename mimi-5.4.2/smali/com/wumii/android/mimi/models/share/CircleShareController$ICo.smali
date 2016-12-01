@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+.field final synthetic mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 26
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     const-string/jumbo v2, "weixin_timeline"
 
@@ -42,13 +42,13 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/CircleShareController;->j()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICo;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/CircleShareController;->j()Ljava/lang/String;
 

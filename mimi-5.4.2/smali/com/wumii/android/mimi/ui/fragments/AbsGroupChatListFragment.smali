@@ -8,9 +8,9 @@
 
 .field protected b:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-.field private c:Ljava/util/Observer;
+.field private isZd:Z
 
-.field private d:Z
+.field private mObserverc:Ljava/util/Observer;
 
 
 # direct methods
@@ -121,12 +121,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->c:Ljava/util/Observer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 
     .line 55
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->c:Ljava/util/Observer;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/GroupListManager;->addObserver(Ljava/util/Observer;)V
 
@@ -181,7 +181,7 @@
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->b:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->c:Ljava/util/Observer;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->mObserverc:Ljava/util/Observer;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/GroupListManager;->deleteObserver(Ljava/util/Observer;)V
 
@@ -199,14 +199,14 @@
     .line 62
     if-eqz p1, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->isZd:Z
 
     if-nez v0, :cond_0
 
     .line 63
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->isZd:Z
 
     .line 64
     new-instance v0, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment$ICb;

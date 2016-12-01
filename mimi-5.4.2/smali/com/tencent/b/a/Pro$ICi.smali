@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private volatile a:I
+.field private volatile isZb:Z
 
-.field private volatile b:Z
+.field private mIChc:Lcom/tencent/b/a/Pro$ICh;
 
-.field private c:Lcom/tencent/b/a/Pro$ICh;
+.field private volatile mIa:I
 
 
 # direct methods
@@ -39,17 +39,17 @@
     .line 18
     const/16 v0, 0x3f
 
-    iput v0, p0, Lcom/tencent/b/a/Pro$ICi;->a:I
+    iput v0, p0, Lcom/tencent/b/a/Pro$ICi;->mIa:I
 
     .line 19
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/b/a/Pro$ICi;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/b/a/Pro$ICi;->isZb:Z
 
     .line 21
     sget-object v0, Lcom/tencent/b/a/Pro$ICh;->a:Lcom/tencent/b/a/Pro$ICh;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICi;->c:Lcom/tencent/b/a/Pro$ICh;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICi;->mIChc:Lcom/tencent/b/a/Pro$ICh;
 
     .line 41
     invoke-virtual {p0, p1}, Lcom/tencent/b/a/Pro$ICi;->a(I)V
@@ -71,7 +71,7 @@
 
     .prologue
     .line 158
-    iput p1, p0, Lcom/tencent/b/a/Pro$ICi;->a:I
+    iput p1, p0, Lcom/tencent/b/a/Pro$ICi;->mIa:I
 
     .line 159
     return-void
@@ -85,7 +85,7 @@
 
     .prologue
     .line 204
-    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICi;->c:Lcom/tencent/b/a/Pro$ICh;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICi;->mIChc:Lcom/tencent/b/a/Pro$ICh;
 
     .line 205
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 181
-    iput-boolean p1, p0, Lcom/tencent/b/a/Pro$ICi;->b:Z
+    iput-boolean p1, p0, Lcom/tencent/b/a/Pro$ICi;->isZb:Z
 
     .line 182
     return-void
@@ -114,7 +114,7 @@
     if-eqz v0, :cond_0
 
     .line 76
-    iget v0, p0, Lcom/tencent/b/a/Pro$ICi;->a:I
+    iget v0, p0, Lcom/tencent/b/a/Pro$ICi;->mIa:I
 
     invoke-static {v0, p1}, Lcom/tencent/b/c/Pro$ICd;->a(II)Z
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 169
-    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICi;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICi;->isZb:Z
 
     return v0
 .end method
@@ -145,7 +145,7 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICi;->c:Lcom/tencent/b/a/Pro$ICh;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICi;->mIChc:Lcom/tencent/b/a/Pro$ICh;
 
     return-object v0
 .end method

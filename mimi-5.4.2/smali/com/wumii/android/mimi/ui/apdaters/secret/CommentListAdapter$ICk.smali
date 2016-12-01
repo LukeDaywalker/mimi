@@ -19,11 +19,11 @@
 
 .field public static final enum b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+.field private static final synthetic mArrayICkd:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
 
 # instance fields
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->d:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mArrayICkd:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 53
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mStringc:Ljava/lang/String;
 
     .line 54
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->d:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mArrayICkd:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->clone()Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICk;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

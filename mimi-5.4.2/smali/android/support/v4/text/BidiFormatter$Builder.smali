@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private b:I
+.field private mIb:I
 
-.field private c:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+.field private mTextDirectionHeuristicCompatc:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
 
 # direct methods
@@ -39,19 +39,19 @@
 
     .prologue
     .line 165
-    iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter$Builder;->a:Z
+    iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter$Builder;->isZa:Z
 
     .line 166
     invoke-static {}, Landroid/support/v4/text/BidiFormatter;->a()Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->c:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    iput-object v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mTextDirectionHeuristicCompatc:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     .line 167
     const/4 v0, 0x2
 
-    iput v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->b:I
+    iput v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mIb:I
 
     .line 168
     return-void

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+.field final synthetic mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 496
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,23 +45,23 @@
     if-eqz v0, :cond_1
 
     .line 500
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->isZa:Z
 
     if-eqz v0, :cond_0
 
     .line 501
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 502
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 
@@ -73,18 +73,18 @@
 
     .line 504
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 505
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 
@@ -94,18 +94,18 @@
 
     .line 508
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 509
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->mICpb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 

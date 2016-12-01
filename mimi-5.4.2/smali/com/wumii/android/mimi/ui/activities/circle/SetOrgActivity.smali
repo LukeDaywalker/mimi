@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private o:Z
+.field private isZo:Z
 
 
 # direct methods
@@ -75,7 +75,7 @@
 
     .prologue
     .line 56
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->isZo:Z
 
     if-eqz v0, :cond_0
 
@@ -113,7 +113,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o()V
 
     .line 39
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->isZo:Z
 
     if-eqz v0, :cond_0
 
@@ -141,7 +141,7 @@
     const/4 v1, 0x1
 
     .line 47
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->isZo:Z
 
     if-eqz v0, :cond_0
 
@@ -188,7 +188,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->o:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->isZo:Z
 
     .line 33
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->onCreate(Landroid/os/Bundle;)V

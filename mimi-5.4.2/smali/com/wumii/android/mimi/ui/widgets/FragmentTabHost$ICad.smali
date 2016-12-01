@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mBundlec:Landroid/os/Bundle;
 
-.field private final b:Ljava/lang/Class;
+.field private final mClassb:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -15,9 +15,9 @@
     .end annotation
 .end field
 
-.field private final c:Landroid/os/Bundle;
+.field private mFragmentd:Landroid/support/v4/app/Fragment;
 
-.field private d:Landroid/support/v4/app/Fragment;
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -39,13 +39,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 74
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mStringa:Ljava/lang/String;
 
     .line 75
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->b:Ljava/lang/Class;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mClassb:Ljava/lang/Class;
 
     .line 76
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->c:Landroid/os/Bundle;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mBundlec:Landroid/os/Bundle;
 
     .line 77
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->d:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mFragmentd:Landroid/support/v4/app/Fragment;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->d:Landroid/support/v4/app/Fragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mFragmentd:Landroid/support/v4/app/Fragment;
 
     return-object p1
 .end method
@@ -76,7 +76,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -86,7 +86,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mClassb:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -96,7 +96,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method

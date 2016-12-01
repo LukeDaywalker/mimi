@@ -3,29 +3,29 @@
 
 
 # static fields
-.field private static c:Landroid/os/Bundle;
+.field private static mBundlec:Landroid/os/Bundle;
 
-.field private static final j:Ljava/lang/String;
+.field private static final mStringj:Ljava/lang/String;
 
 
 # instance fields
-.field private a:I
-
-.field private b:Lcom/baidu/mapapi/map/TileProvider;
-
-.field private d:I
-
 .field public datasource:I
 
-.field private e:I
+.field private mIa:I
 
-.field private f:I
+.field private mId:I
 
-.field private g:I
+.field private mIe:I
 
-.field private h:I
+.field private mIf:I
 
-.field private i:I
+.field private mIg:I
+
+.field private mIh:I
+
+.field private mIi:I
+
+.field private mTileProviderb:Lcom/baidu/mapapi/map/TileProvider;
 
 .field public urlString:Ljava/lang/String;
 
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->j:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mStringj:Ljava/lang/String;
 
     return-void
 .end method
@@ -52,67 +52,67 @@
 
     const/high16 v0, 0x1400000
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->a:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIa:I
 
     const/16 v0, 0x14
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->d:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mId:I
 
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->e:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIe:I
 
     const v0, 0xf0e1ae
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->f:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIf:I
 
     const v0, -0x131c05e
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->g:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIg:I
 
     const v0, -0xf0e1ae
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->h:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIh:I
 
     const v0, 0x131c05e
 
-    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->i:I
+    iput v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIi:I
 
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    sput-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sput-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "rectr"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->f:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIf:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "rectb"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->g:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIg:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "rectl"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->h:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIh:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "rectt"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->i:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIi:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -122,9 +122,9 @@
 .method private a(II)Lcom/baidu/mapapi/map/TileOverlayOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->d:I
+    iput p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mId:I
 
-    iput p2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->e:I
+    iput p2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIe:I
 
     return-object p0
 .end method
@@ -134,7 +134,7 @@
 .method a()Landroid/os/Bundle;
     .locals 3
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "url"
 
@@ -142,7 +142,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "datasource"
 
@@ -150,31 +150,31 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "maxDisplay"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->d:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mId:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "minDisplay"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->e:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIe:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v1, "sdktiletmpmax"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->a:I
+    iget v2, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIa:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -184,7 +184,7 @@
 
     new-instance v0, Lcom/baidu/mapapi/map/TileOverlay;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->b:Lcom/baidu/mapapi/map/TileProvider;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mTileProviderb:Lcom/baidu/mapapi/map/TileProvider;
 
     invoke-direct {v0, p1, v1}, Lcom/baidu/mapapi/map/TileOverlay;-><init>(Lcom/baidu/mapapi/map/BaiduMap;Lcom/baidu/mapapi/map/TileProvider;)V
 
@@ -194,7 +194,7 @@
 .method public setMaxTileTmp(I)Lcom/baidu/mapapi/map/TileOverlayOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mIa:I
 
     return-object p0
 .end method
@@ -249,7 +249,7 @@
 
     if-lez v8, :cond_1
 
-    sget-object v8, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v8, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v9, "rectr"
 
@@ -257,7 +257,7 @@
 
     invoke-virtual {v8, v9, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v3, "rectb"
 
@@ -265,7 +265,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v3, "rectl"
 
@@ -273,7 +273,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->c:Landroid/os/Bundle;
+    sget-object v2, Lcom/baidu/mapapi/map/TileOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     const-string/jumbo v3, "rectt"
 
@@ -285,7 +285,7 @@
     return-object p0
 
     :cond_1
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->j:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v1, "bounds is illegal, use default bounds"
 
@@ -360,7 +360,7 @@
     iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->urlString:Ljava/lang/String;
 
     :goto_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->b:Lcom/baidu/mapapi/map/TileProvider;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mTileProviderb:Lcom/baidu/mapapi/map/TileProvider;
 
     invoke-interface {p1}, Lcom/baidu/mapapi/map/TileProvider;->getMaxDisLevel()I
 
@@ -379,7 +379,7 @@
     if-ge v1, v2, :cond_5
 
     :cond_1
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->j:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v1, "display level is illegal"
 
@@ -388,7 +388,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->j:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v2, "tile url template is illegal, must contains {x}\u3001{y}\u3001{z}"
 
@@ -410,7 +410,7 @@
     goto :goto_1
 
     :cond_4
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->j:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlayOptions;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v2, "tileProvider must be UrlTileProvider or FileTileProvider"
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+.field final synthetic mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 18
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Contact;
 
     .line 23
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;)Ljava/util/Set;
 
@@ -52,7 +52,7 @@
     if-nez v1, :cond_0
 
     .line 24
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;)Ljava/util/Set;
 
@@ -62,7 +62,7 @@
 
     .line 27
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;)Landroid/view/View$OnClickListener;
 
@@ -71,7 +71,7 @@
     if-eqz v0, :cond_1
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->a:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;->mSearchContactAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;)Landroid/view/View$OnClickListener;
 

@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field private a:D
+.field private isZc:Z
 
-.field private b:J
+.field private mDa:D
 
-.field private c:Z
+.field private mJb:J
 
 
 # direct methods
@@ -35,12 +35,12 @@
     invoke-direct {p0}, Ljava/lang/Number;-><init>()V
 
     .line 17
-    iput-wide p1, p0, Lcom/google/tagmanager/TypedNumber;->b:J
+    iput-wide p1, p0, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     .line 18
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/tagmanager/TypedNumber;->c:Z
+    iput-boolean v0, p0, Lcom/google/tagmanager/TypedNumber;->isZc:Z
 
     .line 19
     return-void
@@ -79,11 +79,11 @@
 
     new-instance v0, Ljava/lang/Long;
 
-    iget-wide v2, p0, Lcom/google/tagmanager/TypedNumber;->b:J
+    iget-wide v2, p0, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     invoke-direct {v0, v2, v3}, Ljava/lang/Long;-><init>(J)V
 
-    iget-wide v2, p1, Lcom/google/tagmanager/TypedNumber;->b:J
+    iget-wide v2, p1, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 87
-    iget-boolean v0, p0, Lcom/google/tagmanager/TypedNumber;->c:Z
+    iget-boolean v0, p0, Lcom/google/tagmanager/TypedNumber;->isZc:Z
 
     return v0
 .end method
@@ -171,13 +171,13 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->b:J
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     :goto_0
     return-wide v0
 
     :cond_0
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->a:D
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mDa:D
 
     double-to-long v0, v0
 
@@ -223,7 +223,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->b:J
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     long-to-double v0, v0
 
@@ -231,7 +231,7 @@
     return-wide v0
 
     :cond_0
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->a:D
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mDa:D
 
     goto :goto_0
 .end method
@@ -361,7 +361,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->b:J
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mJb:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
     return-object v0
 
     :cond_0
-    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->a:D
+    iget-wide v0, p0, Lcom/google/tagmanager/TypedNumber;->mDa:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->toString(D)Ljava/lang/String;
 

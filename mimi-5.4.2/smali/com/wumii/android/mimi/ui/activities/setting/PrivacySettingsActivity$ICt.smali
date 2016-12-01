@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
+.field final synthetic mICsa:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 89
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->mICsa:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
@@ -51,9 +51,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->mICsa:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;->mPrivacySettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;
 
     const/4 v1, -0x1
 

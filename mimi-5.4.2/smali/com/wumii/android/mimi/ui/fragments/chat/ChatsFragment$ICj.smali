@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+.field final synthetic mChatBaseb:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+.field final synthetic mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+.field final synthetic mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 297
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->b:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatBaseb:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     .line 303
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getType()I
 
@@ -60,7 +60,7 @@
     if-ne v0, v1, :cond_1
 
     .line 304
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->c(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
@@ -68,7 +68,7 @@
 
     .line 305
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getType()I
 
@@ -79,7 +79,7 @@
     if-ne v0, v1, :cond_2
 
     .line 306
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->d(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 
@@ -89,17 +89,17 @@
     :cond_2
     new-instance v0, Lcom/wumii/android/mimi/task/RemoveChatsTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/task/RemoveChatsTask;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;)V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getSessionId()Ljava/lang/String;
 
@@ -111,7 +111,7 @@
 
     .line 312
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -137,14 +137,14 @@
     check-cast v0, Landroid/widget/EditText;
 
     .line 314
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->b:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatBaseb:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     instance-of v1, v1, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
     if-eqz v1, :cond_0
 
     .line 317
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->b:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatBaseb:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     check-cast v1, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -154,7 +154,7 @@
     move-result-object v1
 
     .line 319
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -167,19 +167,19 @@
     :cond_3
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->e(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)Landroid/util/DisplayMetrics;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->f(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
 

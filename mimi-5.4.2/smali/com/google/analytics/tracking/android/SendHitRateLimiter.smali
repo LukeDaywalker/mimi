@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private final a:J
+.field private mDc:D
 
-.field private final b:I
+.field private final mIb:I
 
-.field private c:D
+.field private final mJa:J
 
-.field private d:J
+.field private mJd:J
 
-.field private final e:Ljava/lang/Object;
+.field private final mObjecte:Ljava/lang/Object;
 
 
 # direct methods
@@ -46,20 +46,20 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->e:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mObjecte:Ljava/lang/Object;
 
     .line 29
-    iput p1, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->b:I
+    iput p1, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mIb:I
 
     .line 30
-    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->b:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mIb:I
 
     int-to-double v0, v0
 
-    iput-wide v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iput-wide v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     .line 31
-    iput-wide p2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->a:J
+    iput-wide p2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mJa:J
 
     .line 32
     return-void
@@ -74,7 +74,7 @@
     const-wide/high16 v10, 0x3ff0000000000000L    # 1.0
 
     .line 62
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->e:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mObjecte:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -85,9 +85,9 @@
     move-result-wide v2
 
     .line 64
-    iget-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iget-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
-    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->b:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mIb:I
 
     int-to-double v6, v0
 
@@ -96,14 +96,14 @@
     if-gez v0, :cond_0
 
     .line 65
-    iget-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->d:J
+    iget-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mJd:J
 
     sub-long v4, v2, v4
 
     .line 66
     long-to-double v4, v4
 
-    iget-wide v6, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->a:J
+    iget-wide v6, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mJa:J
 
     long-to-double v6, v6
 
@@ -117,11 +117,11 @@
     if-lez v0, :cond_0
 
     .line 68
-    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->b:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mIb:I
 
     int-to-double v6, v0
 
-    iget-wide v8, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iget-wide v8, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     add-double/2addr v4, v8
 
@@ -129,25 +129,25 @@
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iput-wide v4, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     .line 71
     :cond_0
-    iput-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->d:J
+    iput-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mJd:J
 
     .line 72
-    iget-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iget-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     cmpl-double v0, v2, v10
 
     if-ltz v0, :cond_1
 
     .line 73
-    iget-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iget-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     sub-double/2addr v2, v10
 
-    iput-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->c:D
+    iput-wide v2, p0, Lcom/google/analytics/tracking/android/SendHitRateLimiter;->mDc:D
 
     .line 74
     const/4 v0, 0x1

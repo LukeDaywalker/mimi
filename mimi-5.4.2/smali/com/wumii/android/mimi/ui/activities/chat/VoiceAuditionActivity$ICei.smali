@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/widget/ImageView;
+.field final synthetic mImageViewa:Landroid/widget/ImageView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
+.field final synthetic mVoiceAuditionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 305
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->b:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->mVoiceAuditionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->a:Landroid/widget/ImageView;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +64,7 @@
 
     .prologue
     .line 315
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICei;->mImageViewa:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 

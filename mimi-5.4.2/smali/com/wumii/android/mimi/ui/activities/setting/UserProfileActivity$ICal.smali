@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+.field final synthetic mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 174
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;
 

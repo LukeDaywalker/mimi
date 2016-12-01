@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICad;
+.field final synthetic mICada:Lcom/baidu/location/ICad;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICad;Landroid/os/Looper;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iput-object p1, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -38,7 +38,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0}, Lcom/baidu/location/ICad;->do(Lcom/baidu/location/ICad;)V
 
@@ -47,7 +47,7 @@
 
     if-ne v0, v2, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0}, Lcom/baidu/location/ICad;->if(Lcom/baidu/location/ICad;)V
 
@@ -57,28 +57,28 @@
     return-void
 
     :sswitch_0
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0, p1}, Lcom/baidu/location/ICad;->for(Lcom/baidu/location/ICad;Landroid/os/Message;)V
 
     goto :goto_0
 
     :sswitch_1
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0, p1}, Lcom/baidu/location/ICad;->if(Lcom/baidu/location/ICad;Landroid/os/Message;)V
 
     goto :goto_0
 
     :sswitch_2
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0, p1}, Lcom/baidu/location/ICad;->do(Lcom/baidu/location/ICad;Landroid/os/Message;)V
 
     goto :goto_0
 
     :sswitch_3
-    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->a:Lcom/baidu/location/ICad;
+    iget-object v0, p0, Lcom/baidu/location/ICad$ICa;->mICada:Lcom/baidu/location/ICad;
 
     invoke-static {v0, p1}, Lcom/baidu/location/ICad;->int(Lcom/baidu/location/ICad;Landroid/os/Message;)V
 

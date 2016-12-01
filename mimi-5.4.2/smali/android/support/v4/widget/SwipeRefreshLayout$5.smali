@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/SwipeRefreshLayout;
+.field final synthetic mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 815
-    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->a:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 823
-    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->a:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0}, Landroid/support/v4/widget/SwipeRefreshLayout;->f(Landroid/support/v4/widget/SwipeRefreshLayout;)Z
 
@@ -39,7 +39,7 @@
     if-nez v0, :cond_0
 
     .line 824
-    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->a:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$5;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     const/4 v1, 0x0
 

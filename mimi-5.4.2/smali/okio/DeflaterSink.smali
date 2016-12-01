@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Lokio/BufferedSink;
+.field private isZc:Z
 
-.field private final b:Ljava/util/zip/Deflater;
+.field private final mBufferedSinka:Lokio/BufferedSink;
 
-.field private c:Z
+.field private final mDeflaterb:Ljava/util/zip/Deflater;
 
 
 # direct methods
@@ -47,10 +47,10 @@
 
     .line 55
     :cond_1
-    iput-object p1, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iput-object p1, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     .line 56
-    iput-object p2, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iput-object p2, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
     .line 57
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->c()Lokio/Buffer;
 
@@ -96,13 +96,13 @@
     .line 93
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v0, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
-    iget-object v3, v2, Lokio/Segment;->a:[B
+    iget-object v3, v2, Lokio/Segment;->mArrayBa:[B
 
-    iget v4, v2, Lokio/Segment;->c:I
+    iget v4, v2, Lokio/Segment;->mIc:I
 
-    iget v5, v2, Lokio/Segment;->c:I
+    iget v5, v2, Lokio/Segment;->mIc:I
 
     rsub-int v5, v5, 0x800
 
@@ -117,23 +117,23 @@
     if-lez v0, :cond_2
 
     .line 98
-    iget v3, v2, Lokio/Segment;->c:I
+    iget v3, v2, Lokio/Segment;->mIc:I
 
     add-int/2addr v3, v0
 
-    iput v3, v2, Lokio/Segment;->c:I
+    iput v3, v2, Lokio/Segment;->mIc:I
 
     .line 99
-    iget-wide v2, v1, Lokio/Buffer;->b:J
+    iget-wide v2, v1, Lokio/Buffer;->mJb:J
 
     int-to-long v4, v0
 
     add-long/2addr v2, v4
 
-    iput-wide v2, v1, Lokio/Buffer;->b:J
+    iput-wide v2, v1, Lokio/Buffer;->mJb:J
 
     .line 100
-    iget-object v0, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->v()Lokio/BufferedSink;
 
@@ -141,13 +141,13 @@
 
     .line 93
     :cond_1
-    iget-object v0, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v0, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
-    iget-object v3, v2, Lokio/Segment;->a:[B
+    iget-object v3, v2, Lokio/Segment;->mArrayBa:[B
 
-    iget v4, v2, Lokio/Segment;->c:I
+    iget v4, v2, Lokio/Segment;->mIc:I
 
-    iget v5, v2, Lokio/Segment;->c:I
+    iget v5, v2, Lokio/Segment;->mIc:I
 
     rsub-int v5, v5, 0x800
 
@@ -159,7 +159,7 @@
 
     .line 101
     :cond_2
-    iget-object v0, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v0, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
     invoke-virtual {v0}, Ljava/util/zip/Deflater;->needsInput()Z
 
@@ -168,9 +168,9 @@
     if-eqz v0, :cond_0
 
     .line 102
-    iget v0, v2, Lokio/Segment;->b:I
+    iget v0, v2, Lokio/Segment;->mIb:I
 
-    iget v3, v2, Lokio/Segment;->c:I
+    iget v3, v2, Lokio/Segment;->mIc:I
 
     if-ne v0, v3, :cond_3
 
@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lokio/Buffer;->a:Lokio/Segment;
+    iput-object v0, v1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 105
     invoke-static {v2}, Lokio/SegmentPool;->a(Lokio/Segment;)V
@@ -196,7 +196,7 @@
 
     .prologue
     .line 151
-    iget-object v0, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->a()Lokio/Timeout;
 
@@ -212,7 +212,7 @@
     const-wide/16 v2, 0x0
 
     .line 61
-    iget-wide v0, p1, Lokio/Buffer;->b:J
+    iget-wide v0, p1, Lokio/Buffer;->mJb:J
 
     move-wide v4, p2
 
@@ -225,12 +225,12 @@
     if-lez v0, :cond_1
 
     .line 64
-    iget-object v0, p1, Lokio/Buffer;->a:Lokio/Segment;
+    iget-object v0, p1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 65
-    iget v1, v0, Lokio/Segment;->c:I
+    iget v1, v0, Lokio/Segment;->mIc:I
 
-    iget v4, v0, Lokio/Segment;->b:I
+    iget v4, v0, Lokio/Segment;->mIb:I
 
     sub-int/2addr v1, v4
 
@@ -243,11 +243,11 @@
     long-to-int v1, v4
 
     .line 66
-    iget-object v4, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v4, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
-    iget-object v5, v0, Lokio/Segment;->a:[B
+    iget-object v5, v0, Lokio/Segment;->mArrayBa:[B
 
-    iget v6, v0, Lokio/Segment;->b:I
+    iget v6, v0, Lokio/Segment;->mIb:I
 
     invoke-virtual {v4, v5, v6, v1}, Ljava/util/zip/Deflater;->setInput([BII)V
 
@@ -257,25 +257,25 @@
     invoke-direct {p0, v4}, Lokio/DeflaterSink;->a(Z)V
 
     .line 72
-    iget-wide v4, p1, Lokio/Buffer;->b:J
+    iget-wide v4, p1, Lokio/Buffer;->mJb:J
 
     int-to-long v6, v1
 
     sub-long/2addr v4, v6
 
-    iput-wide v4, p1, Lokio/Buffer;->b:J
+    iput-wide v4, p1, Lokio/Buffer;->mJb:J
 
     .line 73
-    iget v4, v0, Lokio/Segment;->b:I
+    iget v4, v0, Lokio/Segment;->mIb:I
 
     add-int/2addr v4, v1
 
-    iput v4, v0, Lokio/Segment;->b:I
+    iput v4, v0, Lokio/Segment;->mIb:I
 
     .line 74
-    iget v4, v0, Lokio/Segment;->b:I
+    iget v4, v0, Lokio/Segment;->mIb:I
 
-    iget v5, v0, Lokio/Segment;->c:I
+    iget v5, v0, Lokio/Segment;->mIc:I
 
     if-ne v4, v5, :cond_0
 
@@ -284,7 +284,7 @@
 
     move-result-object v4
 
-    iput-object v4, p1, Lokio/Buffer;->a:Lokio/Segment;
+    iput-object v4, p1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 76
     invoke-static {v0}, Lokio/SegmentPool;->a(Lokio/Segment;)V
@@ -308,7 +308,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v0, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
     invoke-virtual {v0}, Ljava/util/zip/Deflater;->finish()V
 
@@ -326,7 +326,7 @@
 
     .prologue
     .line 123
-    iget-boolean v0, p0, Lokio/DeflaterSink;->c:Z
+    iget-boolean v0, p0, Lokio/DeflaterSink;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -348,7 +348,7 @@
     .line 135
     :goto_1
     :try_start_1
-    iget-object v0, p0, Lokio/DeflaterSink;->b:Ljava/util/zip/Deflater;
+    iget-object v0, p0, Lokio/DeflaterSink;->mDeflaterb:Ljava/util/zip/Deflater;
 
     invoke-virtual {v0}, Ljava/util/zip/Deflater;->end()V
     :try_end_1
@@ -360,7 +360,7 @@
     :cond_2
     :goto_2
     :try_start_2
-    iget-object v1, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v1}, Lokio/BufferedSink;->close()V
     :try_end_2
@@ -371,7 +371,7 @@
     :goto_3
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lokio/DeflaterSink;->c:Z
+    iput-boolean v1, p0, Lokio/DeflaterSink;->isZc:Z
 
     .line 147
     if-eqz v0, :cond_0
@@ -419,7 +419,7 @@
     invoke-direct {p0, v0}, Lokio/DeflaterSink;->a(Z)V
 
     .line 114
-    iget-object v0, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
 
@@ -442,7 +442,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lokio/DeflaterSink;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lokio/DeflaterSink;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

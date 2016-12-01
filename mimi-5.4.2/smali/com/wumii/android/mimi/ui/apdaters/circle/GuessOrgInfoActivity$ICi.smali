@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
+.field final synthetic mGuessOrgInfoActivitya:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->mGuessOrgInfoActivitya:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,14 +30,14 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->mGuessOrgInfoActivitya:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/SetOrgActivity;->a(Landroid/app/Activity;Z)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICi;->mGuessOrgInfoActivitya:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->finish()V
 

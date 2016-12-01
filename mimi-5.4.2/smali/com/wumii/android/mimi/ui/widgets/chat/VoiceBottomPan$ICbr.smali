@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
+.field final synthetic mVoiceAuditionOptionsAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+.field final synthetic mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 366
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceAuditionOptionsAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 370
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -58,7 +58,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 372
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceAuditionOptionsAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
     invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->a(I)V
 
@@ -75,7 +75,7 @@
     if-ne v1, v0, :cond_0
 
     .line 376
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
@@ -90,7 +90,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
     .line 377
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
@@ -105,7 +105,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 379
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     const-string/jumbo v2, "voice_normal_mode"
 
@@ -115,7 +115,7 @@
 
     .line 386
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
@@ -135,7 +135,7 @@
     invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 388
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;)V
 
@@ -144,7 +144,7 @@
 
     .line 381
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
@@ -159,7 +159,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
     .line 382
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
@@ -174,7 +174,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 384
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     const-string/jumbo v2, "voice_change_mode"
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/app/Activity;
+.field private mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mActivitya:Landroid/app/Activity;
 
-.field private c:Landroid/util/DisplayMetrics;
+.field private mAlertDialogd:Landroid/app/AlertDialog;
 
-.field private d:Landroid/app/AlertDialog;
+.field private mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
 
 # direct methods
@@ -22,13 +22,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     .line 39
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 40
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->c:Landroid/util/DisplayMetrics;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
     .line 41
     return-void
@@ -55,11 +55,11 @@
     const/4 v6, 0x0
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -76,16 +76,16 @@
     :cond_1
     new-instance v7, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->c:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v7, v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -142,7 +142,7 @@
     check-cast v3, Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
     .line 130
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-static {v4}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -227,15 +227,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->d:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -349,12 +349,12 @@
     .line 44
     new-instance v0, Lcom/wumii/android/mimi/models/share/CircleShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/CircleShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 45
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     const v2, 0x7f060118
 
@@ -425,12 +425,12 @@
     .line 71
     new-instance v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Guidance;)V
 
     .line 72
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     const v2, 0x7f06011a
 
@@ -501,12 +501,12 @@
     .line 57
     new-instance v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/PromotionShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
     .line 58
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->mActivitya:Landroid/app/Activity;
 
     const v2, 0x7f06011c
 

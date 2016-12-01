@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
+.field final synthetic mICbga:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 210
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbi;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbi;->mICbga:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbi;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbi;->mICbga:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;)V
 

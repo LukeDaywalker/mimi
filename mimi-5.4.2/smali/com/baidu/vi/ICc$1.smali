@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sput-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     sget-object v1, Landroid/net/NetworkInfo$State;->CONNECTED:Landroid/net/NetworkInfo$State;
 
@@ -37,7 +37,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     sget-object v1, Landroid/net/NetworkInfo$State;->CONNECTING:Landroid/net/NetworkInfo$State;
 
@@ -53,7 +53,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     sget-object v1, Landroid/net/NetworkInfo$State;->DISCONNECTED:Landroid/net/NetworkInfo$State;
 
@@ -69,7 +69,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     sget-object v1, Landroid/net/NetworkInfo$State;->DISCONNECTING:Landroid/net/NetworkInfo$State;
 
@@ -85,7 +85,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     sget-object v1, Landroid/net/NetworkInfo$State;->SUSPENDED:Landroid/net/NetworkInfo$State;
 

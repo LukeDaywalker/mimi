@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/wxop/stat/ICam;
+.field final synthetic mICama:Lcom/tencent/wxop/stat/ICam;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/wxop/stat/ICam;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICap;->a:Lcom/tencent/wxop/stat/ICam;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICap;->mICama:Lcom/tencent/wxop/stat/ICam;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +25,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICap;->a:Lcom/tencent/wxop/stat/ICam;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICap;->mICama:Lcom/tencent/wxop/stat/ICam;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/ICam;)V
 

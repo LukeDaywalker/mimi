@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/Object;
+.field private mObjecta:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -71,7 +71,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->mObjecta:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 46
-    iput-object p2, p0, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->a:Ljava/lang/Object;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->mObjecta:Ljava/lang/Object;
 
     .line 47
     return-void

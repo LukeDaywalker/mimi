@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+.field final synthetic mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     return-void
 
     :pswitch_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->a(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/platform/comapi/map/ICr;
 
@@ -48,7 +48,7 @@
     goto :goto_0
 
     :pswitch_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->b(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/mapapi/map/offline/MKOfflineMapListener;
 
@@ -61,7 +61,7 @@
     goto :goto_0
 
     :pswitch_3
-    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->getAllUpdateInfo()Ljava/util/ArrayList;
 
@@ -91,7 +91,7 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-static {v2}, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->b(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/mapapi/map/offline/MKOfflineMapListener;
 
@@ -112,7 +112,7 @@
 
     and-int/2addr v0, v1
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/offline/ICa;->a:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/offline/ICa;->mMKOfflineMapa:Lcom/baidu/mapapi/map/offline/MKOfflineMap;
 
     invoke-static {v1}, Lcom/baidu/mapapi/map/offline/MKOfflineMap;->b(Lcom/baidu/mapapi/map/offline/MKOfflineMap;)Lcom/baidu/mapapi/map/offline/MKOfflineMapListener;
 

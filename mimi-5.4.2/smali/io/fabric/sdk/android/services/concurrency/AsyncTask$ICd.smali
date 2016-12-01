@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+.field final synthetic mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 315
-    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     invoke-direct {p0, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -37,7 +37,7 @@
     .prologue
     .line 319
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->get()Ljava/lang/Object;
 
@@ -86,7 +86,7 @@
     move-exception v0
 
     .line 326
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     const/4 v1, 0x0
 

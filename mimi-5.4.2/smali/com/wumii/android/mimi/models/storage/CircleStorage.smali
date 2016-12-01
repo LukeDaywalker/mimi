@@ -4,7 +4,11 @@
 
 
 # instance fields
-.field private b:Ljava/util/Map;
+.field private mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+
+.field private mCircleDaof:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
+
+.field private mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -18,7 +22,7 @@
     .end annotation
 .end field
 
-.field private c:Ljava/util/Map;
+.field private mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -30,7 +34,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/Map;
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -43,10 +47,6 @@
         }
     .end annotation
 .end field
-
-.field private e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
-
-.field private f:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
 
 # direct methods
@@ -62,35 +62,35 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
 
     .line 26
     new-instance v0, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->f:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleDaof:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
     .line 28
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     .line 29
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->c:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapc:Ljava/util/Map;
 
     .line 30
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapd:Ljava/util/Map;
 
     .line 31
     return-void
@@ -114,7 +114,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
     if-nez v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;)Ljava/util/List;
 
@@ -142,7 +142,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapc:Ljava/util/Map;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -169,17 +169,17 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->f:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleDaof:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;->saveCircles(Ljava/util/List;)V
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->a(Ljava/lang/String;Ljava/util/List;)V
 
@@ -204,7 +204,7 @@
     .line 53
     if-nez p3, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -214,17 +214,17 @@
 
     .line 54
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->f:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleDaof:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;->saveCircles(Ljava/util/List;)V
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;Ljava/util/List;)V
 
@@ -234,7 +234,7 @@
 
     .line 58
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -261,7 +261,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->f:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleDaof:Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/circle/CircleDao;->saveCircles(Ljava/util/List;)V
 
@@ -285,7 +285,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -297,7 +297,7 @@
     if-nez v0, :cond_0
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->e:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mCircleCategoryDaoe:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao;->b(Ljava/lang/String;)Ljava/util/List;
 
@@ -313,14 +313,14 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapb:Ljava/util/Map;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapc:Ljava/util/Map;
 
     const/4 v1, 0x0
 
@@ -384,7 +384,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/CircleStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

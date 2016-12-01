@@ -3,23 +3,23 @@
 
 
 # static fields
-.field private static final d:Ljava/lang/String;
+.field private static final mStringd:Ljava/lang/String;
 
 
 # instance fields
-.field a:I
+.field isZb:Z
 
-.field b:Z
+.field mBundlec:Landroid/os/Bundle;
 
-.field c:Landroid/os/Bundle;
+.field mIa:I
 
-.field private e:Lcom/baidu/mapapi/model/LatLng;
+.field private mIf:I
 
-.field private f:I
+.field private mIg:I
 
-.field private g:I
+.field private mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
-.field private h:Lcom/baidu/mapapi/map/Stroke;
+.field private mStrokeh:Lcom/baidu/mapapi/map/Stroke;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/CircleOptions;->d:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/CircleOptions;->mStringd:Ljava/lang/String;
 
     return-void
 .end method
@@ -44,11 +44,11 @@
 
     const/high16 v0, -0x1000000
 
-    iput v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->f:I
+    iput v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIf:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->isZb:Z
 
     return-void
 .end method
@@ -62,33 +62,33 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/Circle;-><init>()V
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->b:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->isZb:Z
 
-    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Circle;->s:Z
+    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Circle;->isZs:Z
 
-    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIa:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->r:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->mIr:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->c:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mBundlec:Landroid/os/Bundle;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->t:Landroid/os/Bundle;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->mBundlet:Landroid/os/Bundle;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->f:I
+    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIf:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->b:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->mIb:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->g:I
+    iget v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIg:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->c:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Circle;->mIc:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->h:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mStrokeh:Lcom/baidu/mapapi/map/Stroke;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->d:Lcom/baidu/mapapi/map/Stroke;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Circle;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -115,7 +115,7 @@
 .method public extraInfo(Landroid/os/Bundle;)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->c:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object p0
 .end method
@@ -123,7 +123,7 @@
 .method public fillColor(I)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->f:I
+    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIf:I
 
     return-object p0
 .end method
@@ -131,7 +131,7 @@
 .method public getCenter()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -147,7 +147,7 @@
 .method public getFillColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->f:I
+    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIf:I
 
     return v0
 .end method
@@ -155,7 +155,7 @@
 .method public getRadius()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->g:I
+    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIg:I
 
     return v0
 .end method
@@ -163,7 +163,7 @@
 .method public getStroke()Lcom/baidu/mapapi/map/Stroke;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->h:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mStrokeh:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -171,7 +171,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIa:I
 
     return v0
 .end method
@@ -179,7 +179,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/CircleOptions;->isZb:Z
 
     return v0
 .end method
@@ -187,7 +187,7 @@
 .method public radius(I)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->g:I
+    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIg:I
 
     return-object p0
 .end method
@@ -195,7 +195,7 @@
 .method public stroke(Lcom/baidu/mapapi/map/Stroke;)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->h:Lcom/baidu/mapapi/map/Stroke;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mStrokeh:Lcom/baidu/mapapi/map/Stroke;
 
     return-object p0
 .end method
@@ -203,7 +203,7 @@
 .method public visible(Z)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -211,7 +211,7 @@
 .method public zIndex(I)Lcom/baidu/mapapi/map/CircleOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/CircleOptions;->mIa:I
 
     return-object p0
 .end method

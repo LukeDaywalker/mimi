@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Luk/co/senab/photoview/log/Logger;
+.field private static mLoggera:Luk/co/senab/photoview/log/Logger;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Luk/co/senab/photoview/log/LoggerDefault;-><init>()V
 
-    sput-object v0, Luk/co/senab/photoview/log/LogManager;->a:Luk/co/senab/photoview/log/Logger;
+    sput-object v0, Luk/co/senab/photoview/log/LogManager;->mLoggera:Luk/co/senab/photoview/log/Logger;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Luk/co/senab/photoview/log/LogManager;->a:Luk/co/senab/photoview/log/Logger;
+    sget-object v0, Luk/co/senab/photoview/log/LogManager;->mLoggera:Luk/co/senab/photoview/log/Logger;
 
     return-object v0
 .end method

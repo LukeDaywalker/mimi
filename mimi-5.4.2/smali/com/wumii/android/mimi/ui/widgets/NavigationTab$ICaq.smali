@@ -23,17 +23,11 @@
 
 .field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-.field private static final synthetic i:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+.field private static final synthetic mArrayICaqi:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
 
 # instance fields
-.field e:I
-
-.field private f:I
-
-.field private g:I
-
-.field private h:Ljava/lang/Class;
+.field private mClassh:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -41,6 +35,12 @@
         }
     .end annotation
 .end field
+
+.field mIe:I
+
+.field private mIf:I
+
+.field private mIg:I
 
 
 # direct methods
@@ -151,7 +151,7 @@
 
     aput-object v1, v0, v12
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->i:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mArrayICaqi:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     return-void
 .end method
@@ -171,16 +171,16 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 23
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->f:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIf:I
 
     .line 24
-    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->g:I
+    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIg:I
 
     .line 25
-    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->h:Ljava/lang/Class;
+    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mClassh:Ljava/lang/Class;
 
     .line 26
-    iput p5, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->e:I
+    iput p5, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIe:I
 
     .line 27
     return-void
@@ -191,7 +191,7 @@
 
     .prologue
     .line 16
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIf:I
 
     return v0
 .end method
@@ -201,7 +201,7 @@
 
     .prologue
     .line 16
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->g:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mIg:I
 
     return v0
 .end method
@@ -227,7 +227,7 @@
 
     .prologue
     .line 16
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->i:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mArrayICaqi:[Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->clone()Ljava/lang/Object;
 
@@ -252,7 +252,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->mClassh:Ljava/lang/Class;
 
     return-object v0
 .end method

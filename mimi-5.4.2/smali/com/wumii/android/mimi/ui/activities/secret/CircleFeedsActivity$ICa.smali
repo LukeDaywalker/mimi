@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+.field final synthetic mCircleFeedsActivitya:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICa;->mCircleFeedsActivitya:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

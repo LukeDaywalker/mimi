@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
+.field final synthetic mSysNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 185
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;->mSysNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
 
     .line 186
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -54,7 +54,7 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;->mSysNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
 
     const/4 v1, 0x0
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
+.field final synthetic mWeixinPromotionWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;->mWeixinPromotionWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;->mWeixinPromotionWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 

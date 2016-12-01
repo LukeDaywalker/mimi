@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/SharedPreferences$Editor;
+.field final synthetic mEditora:Landroid/content/SharedPreferences$Editor;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 22
-    iput-object p1, p0, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;->a:Landroid/content/SharedPreferences$Editor;
+    iput-object p1, p0, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;->mEditora:Landroid/content/SharedPreferences$Editor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;->a:Landroid/content/SharedPreferences$Editor;
+    iget-object v0, p0, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;->mEditora:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 

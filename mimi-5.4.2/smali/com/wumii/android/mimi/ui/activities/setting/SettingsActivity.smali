@@ -7,31 +7,31 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mFileHelperD:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private D:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private E:Lcom/wumii/android/mimi/models/service/UserService;
+.field private mSectionTextItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private F:Ljava/lang/String;
+.field private mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mSectionTextItemViewp:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionTextItemViewq:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private p:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionTextItemViewr:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private q:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionTextItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private s:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mStringF:Ljava/lang/String;
 
-.field private t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mUserServiceE:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mFileHelperD:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 109
     const v0, 0x7f0b0138
@@ -130,7 +130,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewp:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 110
     const v0, 0x7f0b0134
@@ -141,7 +141,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewr:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 111
     const v0, 0x7f0b0135
@@ -152,7 +152,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->s:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 112
     const v0, 0x7f0b0136
@@ -163,7 +163,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 113
     const v0, 0x7f0b0139
@@ -174,7 +174,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 114
     const v0, 0x7f0b0137
@@ -185,7 +185,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewq:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 115
     return-void
@@ -202,7 +202,7 @@
     const/high16 v3, 0x40800000    # 4.0f
 
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -215,7 +215,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -239,14 +239,14 @@
     if-eqz v0, :cond_0
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     const-string/jumbo v1, "New"
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setText(Ljava/lang/String;)V
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -265,7 +265,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -286,7 +286,7 @@
     invoke-virtual {v0, v1, v4, v2, v4}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -302,14 +302,14 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->F:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mStringF:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setText(Ljava/lang/String;)V
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -328,7 +328,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->getTextView()Landroid/widget/TextView;
 
@@ -394,7 +394,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 155
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->n:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mLoggern:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Forgot to handle this case?"
 
@@ -515,7 +515,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->E:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mUserServiceE:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 75
     const v0, 0x7f03005d
@@ -534,40 +534,40 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mFileHelperD:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewp:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewr:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->s:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mSectionTextItemViewq:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
@@ -604,7 +604,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->F:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mStringF:Ljava/lang/String;
 
     .line 90
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->h()V
@@ -616,12 +616,12 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICag;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 103
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -648,14 +648,14 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     if-eqz v0, :cond_0
 
     .line 125
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->mOnSharedPreferenceChangeListenerG:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

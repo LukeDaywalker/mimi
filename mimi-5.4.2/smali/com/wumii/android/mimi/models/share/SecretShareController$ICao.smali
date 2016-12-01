@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICanb:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->b:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mICanb:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->b:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mICanb:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
 
@@ -46,9 +46,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->b:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mICanb:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
 
@@ -60,9 +60,9 @@
 
     const/4 v6, 0x0
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->b:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
+    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mICanb:Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;
 
-    iget-object v7, v7, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v7, v7, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-static {v7}, Lcom/wumii/android/mimi/models/share/SecretShareController;->a(Lcom/wumii/android/mimi/models/share/SecretShareController;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -76,7 +76,7 @@
 
     const/4 v6, 0x1
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->a:Ljava/lang/String;
+    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICao;->mStringa:Ljava/lang/String;
 
     aput-object v7, v5, v6
 

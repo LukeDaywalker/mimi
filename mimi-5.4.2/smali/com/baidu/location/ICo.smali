@@ -5,25 +5,25 @@
 # static fields
 .field public static final dj:I = 0x1
 
-.field static dl:Lcom/baidu/location/ICo;
+.field static mICodl:Lcom/baidu/location/ICo;
 
 
 # instance fields
-.field private di:I
+.field isZdm:Z
 
-.field private dk:Lcom/baidu/location/ICo$ICa;
+.field mArrayListdr:Ljava/util/ArrayList;
 
-.field dm:Z
+.field private mHandlerds:Landroid/os/Handler;
 
-.field dn:I
+.field private mICadk:Lcom/baidu/location/ICo$ICa;
 
-.field dp:J
+.field private mIdi:I
 
-.field dq:J
+.field mIdn:I
 
-.field dr:Ljava/util/ArrayList;
+.field mJdp:J
 
-.field private ds:Landroid/os/Handler;
+.field mJdq:J
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICo;->dl:Lcom/baidu/location/ICo;
+    sput-object v0, Lcom/baidu/location/ICo;->mICodl:Lcom/baidu/location/ICo;
 
     return-void
 .end method
@@ -48,21 +48,21 @@
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object v1, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICo;->dm:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICo;->isZdm:Z
 
-    iput-wide v2, p0, Lcom/baidu/location/ICo;->dp:J
+    iput-wide v2, p0, Lcom/baidu/location/ICo;->mJdp:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICo;->dq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICo;->mJdq:J
 
-    iput v0, p0, Lcom/baidu/location/ICo;->dn:I
+    iput v0, p0, Lcom/baidu/location/ICo;->mIdn:I
 
-    iput-object v1, p0, Lcom/baidu/location/ICo;->ds:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/baidu/location/ICo;->mHandlerds:Landroid/os/Handler;
 
-    iput-object v1, p0, Lcom/baidu/location/ICo;->dk:Lcom/baidu/location/ICo$ICa;
+    iput-object v1, p0, Lcom/baidu/location/ICo;->mICadk:Lcom/baidu/location/ICo$ICa;
 
-    iput v0, p0, Lcom/baidu/location/ICo;->di:I
+    iput v0, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICo$ICa;-><init>(Lcom/baidu/location/ICo;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICo;->dk:Lcom/baidu/location/ICo$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICo;->mICadk:Lcom/baidu/location/ICo$ICa;
 
     const/4 v0, 0x2
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICo$1;-><init>(Lcom/baidu/location/ICo;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICo;->ds:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICo;->mHandlerds:Landroid/os/Handler;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 .method public static ah()Lcom/baidu/location/ICo;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICo;->dl:Lcom/baidu/location/ICo;
+    sget-object v0, Lcom/baidu/location/ICo;->mICodl:Lcom/baidu/location/ICo;
 
     if-nez v0, :cond_0
 
@@ -100,10 +100,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICo;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICo;->dl:Lcom/baidu/location/ICo;
+    sput-object v0, Lcom/baidu/location/ICo;->mICodl:Lcom/baidu/location/ICo;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICo;->dl:Lcom/baidu/location/ICo;
+    sget-object v0, Lcom/baidu/location/ICo;->mICodl:Lcom/baidu/location/ICo;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget v0, p0, Lcom/baidu/location/ICo;->di:I
+    iget v0, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     const/16 v1, 0xa
 
@@ -135,11 +135,11 @@
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/baidu/location/ICo;->di:I
+    iget v0, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICo;->di:I
+    iput v0, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     invoke-virtual {p0}, Lcom/baidu/location/ICo;->ag()Z
 
@@ -147,14 +147,14 @@
 
     if-nez v0, :cond_0
 
-    iput v2, p0, Lcom/baidu/location/ICo;->di:I
+    iput v2, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     :cond_0
     :goto_0
     return-void
 
     :cond_1
-    iput v2, p0, Lcom/baidu/location/ICo;->di:I
+    iput v2, p0, Lcom/baidu/location/ICo;->mIdi:I
 
     goto :goto_0
 .end method
@@ -162,7 +162,7 @@
 .method static synthetic do(Lcom/baidu/location/ICo;)Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->ds:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mHandlerds:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -223,7 +223,7 @@
     move v1, v2
 
     :goto_1
-    iget-object v0, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -259,7 +259,7 @@
 
     move-result-object v5
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -336,21 +336,21 @@
     return v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/location/ICo;->dk:Lcom/baidu/location/ICo$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICo;->mICadk:Lcom/baidu/location/ICo$ICa;
 
-    iget v1, v1, Lcom/baidu/location/ICo$ICa;->df:I
+    iget v1, v1, Lcom/baidu/location/ICo$ICa;->mIdf:I
 
     const/4 v2, 0x2
 
     if-le v1, v2, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/location/ICo;->dk:Lcom/baidu/location/ICo$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICo;->mICadk:Lcom/baidu/location/ICo$ICa;
 
-    iget v2, v1, Lcom/baidu/location/ICo$ICa;->df:I
+    iget v2, v1, Lcom/baidu/location/ICo$ICa;->mIdf:I
 
     add-int/lit8 v2, v2, -0x1
 
-    iput v2, v1, Lcom/baidu/location/ICo$ICa;->df:I
+    iput v2, v1, Lcom/baidu/location/ICo$ICa;->mIdf:I
 
     invoke-virtual {p0, v0}, Lcom/baidu/location/ICo;->for(Z)Z
 
@@ -359,7 +359,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/location/ICo;->dk:Lcom/baidu/location/ICo$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICo;->mICadk:Lcom/baidu/location/ICo$ICa;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICo$ICa;->af()Z
 
@@ -377,7 +377,7 @@
 .method public do(I)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->ds:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mHandlerds:Landroid/os/Handler;
 
     const-wide/16 v2, 0x1f4
 
@@ -395,11 +395,11 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -416,9 +416,9 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICo;->dm:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICo;->isZdm:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICo;->ds:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICo;->mHandlerds:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -431,7 +431,7 @@
     :cond_2
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICo;->dp:J
+    iput-wide v0, p0, Lcom/baidu/location/ICo;->mJdp:J
 
     goto :goto_0
 .end method
@@ -443,7 +443,7 @@
 
     const/4 v1, 0x0
 
-    iget-boolean v2, p0, Lcom/baidu/location/ICo;->dm:Z
+    iget-boolean v2, p0, Lcom/baidu/location/ICo;->isZdm:Z
 
     if-eqz v2, :cond_0
 
@@ -455,7 +455,7 @@
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/baidu/location/ICo;->dp:J
+    iget-wide v4, p0, Lcom/baidu/location/ICo;->mJdp:J
 
     sub-long/2addr v2, v4
 
@@ -474,7 +474,7 @@
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/baidu/location/ICo;->dq:J
+    iget-wide v4, p0, Lcom/baidu/location/ICo;->mJdq:J
 
     sub-long/2addr v2, v4
 
@@ -484,10 +484,10 @@
 
     if-lez v2, :cond_2
 
-    iput v1, p0, Lcom/baidu/location/ICo;->dn:I
+    iput v1, p0, Lcom/baidu/location/ICo;->mIdn:I
 
     :cond_2
-    iget v2, p0, Lcom/baidu/location/ICo;->dn:I
+    iget v2, p0, Lcom/baidu/location/ICo;->mIdn:I
 
     const/4 v3, 0x5
 
@@ -528,11 +528,11 @@
     goto :goto_0
 
     :cond_5
-    iget-object v2, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     if-eqz v2, :cond_6
 
-    iget-object v2, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -560,7 +560,7 @@
 
     if-eqz v4, :cond_8
 
-    iget-object v5, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     if-nez v5, :cond_7
 
@@ -568,10 +568,10 @@
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v5, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iput-object v5, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     :cond_7
-    iget-object v5, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -584,14 +584,14 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICo;->dp:J
+    iput-wide v2, p0, Lcom/baidu/location/ICo;->mJdp:J
 
     :cond_9
-    iget-object v2, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     if-eqz v2, :cond_b
 
-    iget-object v2, p0, Lcom/baidu/location/ICo;->dr:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICo;->mArrayListdr:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -599,19 +599,19 @@
 
     if-lez v2, :cond_b
 
-    iget v1, p0, Lcom/baidu/location/ICo;->dn:I
+    iget v1, p0, Lcom/baidu/location/ICo;->mIdn:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lcom/baidu/location/ICo;->dn:I
+    iput v1, p0, Lcom/baidu/location/ICo;->mIdn:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICo;->dq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICo;->mJdq:J
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICo;->dm:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICo;->isZdm:Z
 
     invoke-virtual {p0}, Lcom/baidu/location/ICo;->R()V
 

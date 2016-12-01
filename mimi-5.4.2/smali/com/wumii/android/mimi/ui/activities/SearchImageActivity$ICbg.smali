@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+.field private mImageViewk:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/ProgressBar;
+.field private mIt:I
 
-.field private j:Landroid/widget/TextView;
+.field private mIu:I
 
-.field private k:Landroid/widget/ImageView;
+.field private mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
-.field private q:Landroid/view/View;
+.field private mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+.field private mProgressBard:Landroid/widget/ProgressBar;
 
-.field private s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+.field final synthetic mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
-.field private t:I
+.field private mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
-.field private u:I
+.field private mStringw:Ljava/lang/String;
 
-.field private v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+.field private mTextViewj:Landroid/widget/TextView;
 
-.field private w:Ljava/lang/String;
+.field private mViewq:Landroid/view/View;
 
 
 # direct methods
@@ -35,16 +35,16 @@
     const/4 v0, 0x0
 
     .line 151
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     .line 152
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 145
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     .line 146
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->u:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIu:I
 
     .line 153
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->m()V
@@ -81,12 +81,12 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->f()Z
 
     .line 158
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->w:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mStringw:Ljava/lang/String;
 
     .line 159
     sget-object v0, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     .line 160
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j()V
@@ -102,7 +102,7 @@
     .line 164
     sget-object v0, Lcom/wumii/android/mimi/models/entities/LoadMode;->LOADMORE:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     .line 165
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j()V
@@ -116,16 +116,16 @@
 
     .prologue
     .line 169
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     .line 170
     sget-object v0, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     .line 171
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j()V
@@ -139,7 +139,7 @@
 
     .prologue
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     const v1, 0x7f0b005d
 
@@ -153,10 +153,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     const v1, 0x7f0b00ad
 
@@ -166,10 +166,10 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->d:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mProgressBard:Landroid/widget/ProgressBar;
 
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     const v1, 0x7f0b0098
 
@@ -179,10 +179,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mTextViewj:Landroid/widget/TextView;
 
     .line 189
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     const v1, 0x7f0b00ba
 
@@ -192,10 +192,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->k:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mImageViewk:Landroid/widget/ImageView;
 
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     const v1, 0x7f0b024c
 
@@ -205,10 +205,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbh;
 
@@ -217,7 +217,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbi;
 
@@ -230,18 +230,18 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->b:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->y:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
     .line 218
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -312,12 +312,12 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->u:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIu:I
 
     .line 287
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->u:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIu:I
 
     const/4 v3, -0x1
 
@@ -350,7 +350,7 @@
     check-cast v0, Lcom/wumii/android/mimi/network/domain/ImageSearchResp;
 
     .line 292
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
@@ -367,7 +367,7 @@
     if-eqz v2, :cond_4
 
     .line 293
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     const/4 v2, 0x4
 
@@ -386,7 +386,7 @@
 
     .line 296
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mTextViewj:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -394,19 +394,19 @@
 
     .line 299
     :cond_4
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-static {v2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 300
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     if-ne v1, v2, :cond_5
 
     .line 301
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/ImageSearchResp;->getResult()Ljava/util/List;
 
@@ -422,7 +422,7 @@
 
     .line 303
     :cond_5
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/ImageSearchResp;->getResult()Ljava/util/List;
 
@@ -463,21 +463,21 @@
 
     .line 237
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     if-ne v0, v1, :cond_1
 
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->d:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mProgressBard:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 239
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->a()V
 
@@ -485,7 +485,7 @@
 
     .line 241
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->i()V
 
@@ -529,14 +529,14 @@
     .line 252
     const-string/jumbo v0, "q"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->w:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mStringw:Ljava/lang/String;
 
     invoke-interface {v1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 253
     const-string/jumbo v0, "p"
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -547,7 +547,7 @@
     .line 255
     const-string/jumbo v2, "o"
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
@@ -608,7 +608,7 @@
 
     .line 255
     :cond_1
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->u:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIu:I
 
     goto :goto_1
 .end method
@@ -618,7 +618,7 @@
 
     .prologue
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
@@ -652,14 +652,14 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->e(Ljava/lang/Exception;)V
 
     .line 266
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     if-ne v0, v1, :cond_0
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->k:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mImageViewk:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
@@ -679,34 +679,34 @@
     const/16 v2, 0x8
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 224
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mLoadModev:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/LoadMode;->REFRESH:Lcom/wumii/android/mimi/models/entities/LoadMode;
 
     if-ne v0, v1, :cond_0
 
     .line 225
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->d:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mProgressBard:Landroid/widget/ProgressBar;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mPagedStaggeredGridViewr:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 227
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mTextViewj:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 228
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->k:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -725,22 +725,22 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->f()Z
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mViewq:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mSearchImageAdapters:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->a()V
 
     .line 180
-    iput v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIt:I
 
     .line 181
-    iput v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->u:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->mIu:I
 
     .line 182
     return-void

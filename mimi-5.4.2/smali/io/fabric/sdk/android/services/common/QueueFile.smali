@@ -7,21 +7,21 @@
 
 
 # static fields
-.field private static final b:Ljava/util/logging/Logger;
+.field private static final mLoggerb:Ljava/util/logging/Logger;
 
 
 # instance fields
-.field a:I
+.field private final mArrayBg:[B
 
-.field private final c:Ljava/io/RandomAccessFile;
+.field private mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-.field private d:I
+.field private mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-.field private e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+.field mIa:I
 
-.field private f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+.field private mId:I
 
-.field private final g:[B
+.field private final mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/QueueFile;->b:Ljava/util/logging/Logger;
+    sput-object v0, Lio/fabric/sdk/android/services/common/QueueFile;->mLoggerb:Ljava/util/logging/Logger;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     .line 129
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     .line 133
     invoke-direct {p0}, Lio/fabric/sdk/android/services/common/QueueFile;->c()V
@@ -146,7 +146,7 @@
     if-nez p1, :cond_0
 
     .line 201
-    sget-object v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->a:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    sget-object v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mICafa:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     .line 204
     :goto_0
@@ -154,7 +154,7 @@
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v2, p1
 
@@ -163,7 +163,7 @@
     .line 204
     new-instance v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->readInt()I
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     return-object v0
 .end method
@@ -201,7 +201,7 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/4 v1, 0x4
 
@@ -226,16 +226,16 @@
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/QueueFile;->a([B[I)V
 
     .line 194
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     const-wide/16 v2, 0x0
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 195
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     invoke-virtual {v0, v1}, Ljava/io/RandomAccessFile;->write([B)V
 
@@ -255,19 +255,19 @@
     .line 248
     add-int v1, v0, p4
 
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     if-gt v1, v2, :cond_0
 
     .line 249
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v2, v0
 
     invoke-virtual {v1, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 250
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0, p2, p3, p4}, Ljava/io/RandomAccessFile;->write([BII)V
 
@@ -277,31 +277,31 @@
 
     .line 254
     :cond_0
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     sub-int/2addr v1, v0
 
     .line 255
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v4, v0
 
     invoke-virtual {v2, v4, v5}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 256
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0, p2, p3, v1}, Ljava/io/RandomAccessFile;->write([BII)V
 
     .line 257
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     const-wide/16 v2, 0x10
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 258
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     add-int v2, p3, v1
 
@@ -469,7 +469,7 @@
 
     .prologue
     .line 235
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     if-ge p1, v0, :cond_0
 
@@ -479,7 +479,7 @@
     :cond_0
     add-int/lit8 v0, p1, 0x10
 
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     sub-int p1, v0, v1
 
@@ -540,19 +540,19 @@
     .line 271
     add-int v1, v0, p4
 
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     if-gt v1, v2, :cond_0
 
     .line 272
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v2, v0
 
     invoke-virtual {v1, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 273
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0, p2, p3, p4}, Ljava/io/RandomAccessFile;->readFully([BII)V
 
@@ -562,31 +562,31 @@
 
     .line 277
     :cond_0
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     sub-int/2addr v1, v0
 
     .line 278
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v4, v0
 
     invoke-virtual {v2, v4, v5}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 279
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0, p2, p3, v1}, Ljava/io/RandomAccessFile;->readFully([BII)V
 
     .line 280
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     const-wide/16 v2, 0x10
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 281
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     add-int v2, p3, v1
 
@@ -642,21 +642,21 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     const-wide/16 v2, 0x0
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
 
     .line 173
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     invoke-virtual {v0, v1}, Ljava/io/RandomAccessFile;->readFully([B)V
 
     .line 174
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/4 v1, 0x0
 
@@ -664,14 +664,14 @@
 
     move-result v0
 
-    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     .line 175
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     int-to-long v0, v0
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->length()J
 
@@ -694,7 +694,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -706,7 +706,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->length()J
 
@@ -726,7 +726,7 @@
 
     .line 179
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/4 v1, 0x4
 
@@ -734,10 +734,10 @@
 
     move-result v0
 
-    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     .line 180
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/16 v1, 0x8
 
@@ -746,7 +746,7 @@
     move-result v0
 
     .line 181
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/16 v2, 0xc
 
@@ -759,14 +759,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     .line 183
     invoke-direct {p0, v1}, Lio/fabric/sdk/android/services/common/QueueFile;->a(I)Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     .line 184
     return-void
@@ -793,7 +793,7 @@
 
     .line 375
     :cond_0
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     .line 379
     :cond_1
@@ -809,15 +809,15 @@
     invoke-direct {p0, v0}, Lio/fabric/sdk/android/services/common/QueueFile;->d(I)V
 
     .line 387
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/lit8 v1, v1, 0x4
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     add-int/2addr v1, v2
 
@@ -826,21 +826,21 @@
     move-result v2
 
     .line 390
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     if-ge v2, v1, :cond_2
 
     .line 391
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object v1
 
     .line 392
-    iget v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     int-to-long v4, v3
 
@@ -877,64 +877,64 @@
 
     .line 400
     :cond_2
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     if-ge v1, v2, :cond_3
 
     .line 401
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/2addr v1, v2
 
     add-int/lit8 v1, v1, -0x10
 
     .line 402
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     invoke-direct {p0, v0, v2, v3, v1}, Lio/fabric/sdk/android/services/common/QueueFile;->a(IIII)V
 
     .line 403
     new-instance v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     invoke-direct {v2, v1, v3}, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;-><init>(II)V
 
-    iput-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iput-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     .line 408
     :goto_1
-    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     goto :goto_0
 
     .line 405
     :cond_3
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v3, v3, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     invoke-direct {p0, v0, v1, v2, v3}, Lio/fabric/sdk/android/services/common/QueueFile;->a(IIII)V
 
@@ -946,7 +946,7 @@
 
     .prologue
     .line 354
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/QueueFile;->a()I
 
@@ -962,14 +962,14 @@
 
     .prologue
     .line 414
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     int-to-long v2, p1
 
     invoke-virtual {v0, v2, v3}, Ljava/io/RandomAccessFile;->setLength(J)V
 
     .line 415
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
@@ -990,7 +990,7 @@
 
     .prologue
     .line 335
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     if-nez v0, :cond_0
 
@@ -1003,32 +1003,32 @@
 
     .line 339
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     if-lt v0, v1, :cond_1
 
     .line 341
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     sub-int/2addr v0, v1
 
     add-int/lit8 v0, v0, 0x4
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     add-int/2addr v0, v1
 
@@ -1038,25 +1038,25 @@
 
     .line 346
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/lit8 v0, v0, 0x4
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
-
-    add-int/2addr v0, v1
-
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    add-int/2addr v0, v1
+
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     sub-int/2addr v0, v1
 
@@ -1071,15 +1071,15 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v1, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     .line 441
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     if-ge v0, v2, :cond_0
 
@@ -1095,16 +1095,16 @@
 
     invoke-direct {v2, p0, v1, v3}, Lio/fabric/sdk/android/services/common/QueueFile$ICag;-><init>(Lio/fabric/sdk/android/services/common/QueueFile;Lio/fabric/sdk/android/services/common/QueueFile$ICaf;Lio/fabric/sdk/android/services/common/QueueFile$ICae;)V
 
-    iget v3, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v3, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     invoke-interface {p1, v2, v3}, Lio/fabric/sdk/android/services/common/QueueFile$ICah;->a(Ljava/io/InputStream;I)V
 
     .line 444
-    iget v2, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v2, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/lit8 v2, v2, 0x4
 
-    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v1, v1, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     add-int/2addr v1, v2
 
@@ -1212,16 +1212,16 @@
     invoke-direct {v2, v0, p3}, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;-><init>(II)V
 
     .line 317
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/4 v3, 0x0
 
     invoke-static {v0, v3, p3}, Lio/fabric/sdk/android/services/common/QueueFile;->b([BII)V
 
     .line 318
-    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->g:[B
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mArrayBg:[B
 
     const/4 v4, 0x0
 
@@ -1230,7 +1230,7 @@
     invoke-direct {p0, v0, v3, v4, v5}, Lio/fabric/sdk/android/services/common/QueueFile;->a(I[BII)V
 
     .line 321
-    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/lit8 v0, v0, 0x4
 
@@ -1239,37 +1239,37 @@
     .line 324
     if-eqz v1, :cond_4
 
-    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     .line 325
     :goto_1
-    iget v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v3, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
-    iget v4, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v4, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iget v5, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v5, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     invoke-direct {p0, v3, v4, v0, v5}, Lio/fabric/sdk/android/services/common/QueueFile;->a(IIII)V
 
     .line 326
-    iput-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iput-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     .line 327
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iput v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     .line 328
     if-eqz v1, :cond_2
 
     .line 329
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1282,15 +1282,15 @@
     .line 313
     :cond_3
     :try_start_2
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     add-int/lit8 v0, v0, 0x4
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v2, v2, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     add-int/2addr v0, v2
 
@@ -1302,9 +1302,9 @@
 
     .line 324
     :cond_4
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
-    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v0, v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1345,7 +1345,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1379,7 +1379,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->c:Ljava/io/RandomAccessFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mRandomAccessFilec:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
     :try_end_0
@@ -1432,7 +1432,7 @@
 
     move-result-object v0
 
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->a:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mIa:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1443,7 +1443,7 @@
 
     move-result-object v0
 
-    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->d:I
+    iget v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mId:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1454,7 +1454,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->e:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICafe:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1465,7 +1465,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->f:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/QueueFile;->mICaff:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1502,7 +1502,7 @@
     move-exception v0
 
     .line 577
-    sget-object v2, Lio/fabric/sdk/android/services/common/QueueFile;->b:Ljava/util/logging/Logger;
+    sget-object v2, Lio/fabric/sdk/android/services/common/QueueFile;->mLoggerb:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 

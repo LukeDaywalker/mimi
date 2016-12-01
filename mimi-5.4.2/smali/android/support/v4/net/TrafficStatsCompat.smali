@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
+.field private static final mTrafficStatsCompatImpla:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/TrafficStatsCompat$IcsTrafficStatsCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/TrafficStatsCompat;->a:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
+    sput-object v0, Landroid/support/v4/net/TrafficStatsCompat;->mTrafficStatsCompatImpla:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
 
     .line 129
     :goto_0
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/TrafficStatsCompat;->a:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
+    sput-object v0, Landroid/support/v4/net/TrafficStatsCompat;->mTrafficStatsCompatImpla:Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
 
     goto :goto_0
 .end method

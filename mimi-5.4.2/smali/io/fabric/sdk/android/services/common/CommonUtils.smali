@@ -15,13 +15,13 @@
     .end annotation
 .end field
 
-.field private static b:Ljava/lang/Boolean;
+.field private static final mArrayCc:[C
 
-.field private static final c:[C
+.field private static mBooleanb:Ljava/lang/Boolean;
 
-.field private static d:J
+.field private static mBooleane:Ljava/lang/Boolean;
 
-.field private static e:Ljava/lang/Boolean;
+.field private static mJd:J
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 v2, 0x0
 
     .line 86
-    sput-object v2, Lio/fabric/sdk/android/services/common/CommonUtils;->b:Ljava/lang/Boolean;
+    sput-object v2, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleanb:Ljava/lang/Boolean;
 
     .line 95
     const/16 v0, 0x10
@@ -41,15 +41,15 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->c:[C
+    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mArrayCc:[C
 
     .line 108
     const-wide/16 v0, -0x1
 
-    sput-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->d:J
+    sput-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mJd:J
 
     .line 465
-    sput-object v2, Lio/fabric/sdk/android/services/common/CommonUtils;->e:Ljava/lang/Boolean;
+    sput-object v2, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleane:Ljava/lang/Boolean;
 
     .line 713
     new-instance v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICn;
@@ -654,7 +654,7 @@
     .line 678
     mul-int/lit8 v3, v0, 0x2
 
-    sget-object v4, Lio/fabric/sdk/android/services/common/CommonUtils;->c:[C
+    sget-object v4, Lio/fabric/sdk/android/services/common/CommonUtils;->mArrayCc:[C
 
     ushr-int/lit8 v5, v2, 0x4
 
@@ -667,7 +667,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    sget-object v4, Lio/fabric/sdk/android/services/common/CommonUtils;->c:[C
+    sget-object v4, Lio/fabric/sdk/android/services/common/CommonUtils;->mArrayCc:[C
 
     and-int/lit8 v2, v2, 0xf
 
@@ -1229,7 +1229,7 @@
     monitor-enter v3
 
     :try_start_0
-    sget-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->d:J
+    sget-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mJd:J
 
     const-wide/16 v4, -0x1
 
@@ -1295,11 +1295,11 @@
     :cond_0
     :goto_0
     :try_start_2
-    sput-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->d:J
+    sput-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mJd:J
 
     .line 234
     :cond_1
-    sget-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->d:J
+    sget-wide v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mJd:J
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1713,7 +1713,7 @@
 
     .prologue
     .line 490
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->b:Ljava/lang/Boolean;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleanb:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
@@ -1730,11 +1730,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->b:Ljava/lang/Boolean;
+    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleanb:Ljava/lang/Boolean;
 
     .line 495
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->b:Ljava/lang/Boolean;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils;->mBooleanb:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 

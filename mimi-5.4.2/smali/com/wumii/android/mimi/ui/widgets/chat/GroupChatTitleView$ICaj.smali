@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
+.field final synthetic mGroupChatTitleViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;->mGroupChatTitleViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICaj;->mGroupChatTitleViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
 

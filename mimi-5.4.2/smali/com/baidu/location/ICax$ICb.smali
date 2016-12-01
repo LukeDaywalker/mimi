@@ -3,44 +3,44 @@
 
 
 # static fields
-.field private static final dN:Ljava/lang/String; = "error"
+.field private static final mIdO:I = -0x3
 
-.field private static final dO:I = -0x3
+.field private static final mStringdN:Ljava/lang/String; = "error"
 
-.field private static final dP:Ljava/lang/String; = "ext"
+.field private static final mStringdP:Ljava/lang/String; = "ext"
 
-.field private static final dQ:Ljava/lang/String; = "cl"
+.field private static final mStringdQ:Ljava/lang/String; = "cl"
 
-.field private static final dR:Ljava/lang/String; = "fence"
+.field private static final mStringdR:Ljava/lang/String; = "fence"
 
-.field private static final dS:Ljava/lang/String; = "lac"
+.field private static final mStringdS:Ljava/lang/String; = "lac"
 
-.field private static final dU:Ljava/lang/String; = "wf"
+.field private static final mStringdU:Ljava/lang/String; = "wf"
 
-.field private static final dW:Ljava/lang/String; = "radius"
+.field private static final mStringdW:Ljava/lang/String; = "radius"
 
 
 # instance fields
-.field private dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+.field private final mICatdX:Lcom/baidu/location/ICat;
 
-.field final synthetic dT:Lcom/baidu/location/ICax;
+.field final synthetic mICaxdT:Lcom/baidu/location/ICax;
 
-.field private dV:I
+.field private mIdV:I
 
-.field private final dX:Lcom/baidu/location/ICat;
+.field private mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICax;Lcom/baidu/location/ICat;Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iput-object p1, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object p2, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iput-object p2, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
-    iput-object p3, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iput-object p3, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -78,7 +78,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->a()D
 
@@ -90,7 +90,7 @@
 
     aput-object v3, v2, v7
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->case()D
 
@@ -102,7 +102,7 @@
 
     aput-object v0, v2, v8
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICat;->new()I
 
@@ -116,7 +116,7 @@
 
     const/4 v0, 0x3
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->int()Ljava/lang/String;
 
@@ -130,7 +130,7 @@
 
     const/4 v0, 0x4
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-static {v3}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;)Landroid/content/Context;
 
@@ -148,7 +148,7 @@
 
     const/4 v0, 0x5
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-static {v3}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;)Landroid/content/Context;
 
@@ -200,7 +200,7 @@
 
     new-array v5, v6, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v6, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-static {v6}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;)Landroid/content/Context;
 
@@ -212,7 +212,7 @@
 
     aput-object v6, v5, v7
 
-    iget-object v6, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v6, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-static {v6}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICax;)Landroid/content/Context;
 
@@ -301,7 +301,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     const/4 v3, 0x1
 
@@ -330,7 +330,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     const/4 v3, 0x1
 
@@ -359,7 +359,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     const/4 v3, 0x1
 
@@ -392,7 +392,7 @@
 
     move-result v1
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3, v1}, Lcom/baidu/location/ICat;->a(F)V
 
@@ -419,7 +419,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/baidu/location/ICax$ICb;->dV:I
+    iput v1, p0, Lcom/baidu/location/ICax$ICb;->mIdV:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -430,19 +430,19 @@
 
     if-eqz v1, :cond_6
 
-    iget v0, p0, Lcom/baidu/location/ICax$ICb;->dV:I
+    iget v0, p0, Lcom/baidu/location/ICax$ICb;->mIdV:I
 
     const/4 v1, -0x3
 
     if-ne v0, v1, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
     const/16 v2, 0x3ea
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -456,11 +456,11 @@
     :catch_0
     move-exception v0
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
-    iget-object v2, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v2, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -471,13 +471,13 @@
     goto :goto_0
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
-    iget v2, p0, Lcom/baidu/location/ICax$ICb;->dV:I
+    iget v2, p0, Lcom/baidu/location/ICax$ICb;->mIdV:I
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -488,7 +488,7 @@
     goto :goto_0
 
     :cond_6
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
     invoke-static {v1}, Lcom/baidu/location/ICax;->do(Lcom/baidu/location/ICax;)Lcom/baidu/location/ICax$ICa;
 
@@ -496,11 +496,11 @@
 
     new-instance v2, Lcom/baidu/location/ICax$ICc;
 
-    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v3, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
-    iget-object v4, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v4, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
-    iget-object v5, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iget-object v5, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
     invoke-direct {v2, v3, v4, v0, v5}, Lcom/baidu/location/ICax$ICc;-><init>(Lcom/baidu/location/ICax;Lcom/baidu/location/ICat;Ljava/lang/String;Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;)V
 
@@ -509,11 +509,11 @@
     goto :goto_0
 
     :cond_7
-    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->dT:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$ICb;->mICaxdT:Lcom/baidu/location/ICax;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->dM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
+    iget-object v1, p0, Lcom/baidu/location/ICax$ICb;->mOnAddBDGeofencesResultListenerdM:Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;
 
-    iget-object v2, p0, Lcom/baidu/location/ICax$ICb;->dX:Lcom/baidu/location/ICat;
+    iget-object v2, p0, Lcom/baidu/location/ICax$ICb;->mICatdX:Lcom/baidu/location/ICat;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 

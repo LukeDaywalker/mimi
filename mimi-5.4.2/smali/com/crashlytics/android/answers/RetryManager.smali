@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:J
+.field mJa:J
 
-.field private b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+.field private mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     .line 26
     :cond_0
-    iput-object p1, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     .line 27
     return-void
@@ -46,16 +46,16 @@
     .line 49
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/crashlytics/android/answers/RetryManager;->a:J
+    iput-wide v0, p0, Lcom/crashlytics/android/answers/RetryManager;->mJa:J
 
     .line 50
-    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->c()Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     .line 51
     return-void
@@ -68,7 +68,7 @@
     .line 33
     const-wide/32 v0, 0xf4240
 
-    iget-object v2, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iget-object v2, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     invoke-virtual {v2}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->a()J
 
@@ -77,7 +77,7 @@
     mul-long/2addr v0, v2
 
     .line 34
-    iget-wide v2, p0, Lcom/crashlytics/android/answers/RetryManager;->a:J
+    iget-wide v2, p0, Lcom/crashlytics/android/answers/RetryManager;->mJa:J
 
     sub-long v2, p1, v2
 
@@ -101,16 +101,16 @@
 
     .prologue
     .line 41
-    iput-wide p1, p0, Lcom/crashlytics/android/answers/RetryManager;->a:J
+    iput-wide p1, p0, Lcom/crashlytics/android/answers/RetryManager;->mJa:J
 
     .line 42
-    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->b()Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->b:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->mRetryStateb:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
     .line 43
     return-void

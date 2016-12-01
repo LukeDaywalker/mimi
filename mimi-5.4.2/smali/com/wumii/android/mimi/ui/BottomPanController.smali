@@ -7,25 +7,23 @@
 
 
 # instance fields
-.field private a:Landroid/view/inputmethod/InputMethodManager;
+.field private isZh:Z
 
-.field private b:Landroid/widget/EditText;
+.field private isZi:Z
 
-.field private c:Landroid/view/ViewGroup;
+.field private mBaseBottomPane:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
 
-.field private d:Landroid/widget/ImageView;
+.field private mEditTextb:Landroid/widget/EditText;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
+.field private mIf:I
 
-.field private f:I
+.field private mIg:I
 
-.field private g:I
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private h:Z
+.field private mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
-.field private i:Z
-
-.field private j:Ljava/util/Map;
+.field private mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -36,6 +34,8 @@
         }
     .end annotation
 .end field
+
+.field private mViewGroupc:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -51,19 +51,19 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     .line 46
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->a:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
     .line 47
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->b:Landroid/widget/EditText;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mEditTextb:Landroid/widget/EditText;
 
     .line 48
-    iput p5, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->g:I
+    iput p5, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIg:I
 
     .line 49
-    iput-object p6, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->c:Landroid/view/ViewGroup;
+    iput-object p6, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mViewGroupc:Landroid/view/ViewGroup;
 
     .line 51
     invoke-virtual {p0, p6}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Landroid/view/ViewGroup;)V
@@ -86,7 +86,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -99,30 +99,30 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/BottomPanController;->c()V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->e:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mBaseBottomPane:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->b()I
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIf:I
 
     .line 145
     check-cast p1, Landroid/widget/ImageView;
 
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->g:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIg:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mViewGroupc:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->e:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mBaseBottomPane:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;->c()Landroid/view/View;
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 22
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->i:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZi:Z
 
     return p1
 .end method
@@ -169,16 +169,16 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mEditTextb:Landroid/widget/EditText;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setCursorVisible(Z)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->a:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mInputMethodManagera:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->b:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
@@ -195,7 +195,7 @@
 
     .prologue
     .line 22
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->i:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZi:Z
 
     return v0
 .end method
@@ -207,15 +207,15 @@
     const/4 v0, 0x0
 
     .line 152
-    iput v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIf:I
 
     .line 153
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZh:Z
 
     .line 154
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     .line 156
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/BottomPanController;->e()V
@@ -229,7 +229,7 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -255,7 +255,7 @@
     check-cast v0, Landroid/view/View;
 
     .line 163
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -286,7 +286,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -295,7 +295,7 @@
     if-nez v0, :cond_0
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -320,7 +320,7 @@
 
     .prologue
     .line 89
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZh:Z
 
     return v0
 .end method
@@ -333,12 +333,12 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/BottomPanController;->d()V
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mViewGroupc:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mViewGroupc:Landroid/view/ViewGroup;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Landroid/view/ViewGroup;)V
 
@@ -378,10 +378,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZh:Z
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -389,22 +389,22 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->e:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mBaseBottomPane:Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;
 
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mViewGroupc:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 114
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->i:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->isZi:Z
 
     if-eqz v0, :cond_1
 
     .line 115
     check-cast p1, Landroid/widget/ImageView;
 
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     .line 116
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/BottomPanController;->c()V
@@ -415,7 +415,7 @@
 
     .line 120
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     if-nez v0, :cond_2
 
@@ -426,20 +426,20 @@
 
     .line 123
     :cond_2
-    iget v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIf:I
 
     if-eqz v0, :cond_3
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->f:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mIf:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 127
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController;->mImageViewd:Landroid/widget/ImageView;
 
     if-ne v0, p1, :cond_4
 

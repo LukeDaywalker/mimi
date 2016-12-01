@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+.field final synthetic mEventsFilesManagera:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 202
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICe;->a:Lio/fabric/sdk/android/services/events/EventsFilesManager;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICe;->mEventsFilesManagera:Lio/fabric/sdk/android/services/events/EventsFilesManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 205
-    iget-wide v0, p1, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->b:J
+    iget-wide v0, p1, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mJb:J
 
-    iget-wide v2, p2, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->b:J
+    iget-wide v2, p2, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mJb:J
 
     sub-long/2addr v0, v2
 

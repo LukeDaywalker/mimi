@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field final synthetic mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/SecretManager;
+.field final synthetic mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 176
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->b:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,12 +47,12 @@
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;-><init>(ILjava/lang/String;)V
 
     .line 180
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
     .line 181
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->b:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbg;->mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/Object;)V
 

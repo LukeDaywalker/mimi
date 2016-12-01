@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private mStringBuilderb:Ljava/lang/StringBuilder;
 
-.field private b:Ljava/lang/StringBuilder;
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -24,10 +24,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iput-object v0, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iput-object v0, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     .line 40
-    iput-object p1, p0, Landroid/support/v4/util/LogWriter;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroid/support/v4/util/LogWriter;->mStringa:Ljava/lang/String;
 
     .line 41
     return-void
@@ -38,7 +38,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -47,9 +47,9 @@
     if-lez v0, :cond_0
 
     .line 65
-    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->a:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->mStringa:Ljava/lang/String;
 
-    iget-object v1, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iget-object v1, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -58,11 +58,11 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 66
-    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iget-object v2, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
 
@@ -130,7 +130,7 @@
 
     .line 58
     :cond_0
-    iget-object v2, p0, Landroid/support/v4/util/LogWriter;->b:Ljava/lang/StringBuilder;
+    iget-object v2, p0, Landroid/support/v4/util/LogWriter;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 

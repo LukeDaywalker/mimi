@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
+.field final synthetic mChatAnimLayera:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 130
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICm;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICm;->mChatAnimLayera:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICm;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICm;->mChatAnimLayera:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;
 
     const/4 v1, 0x1
 

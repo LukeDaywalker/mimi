@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/support/v4/media/TransportPerformer;
+.field final mCallbackb:Landroid/view/KeyEvent$Callback;
 
-.field final b:Landroid/view/KeyEvent$Callback;
+.field final mTransportPerformera:Landroid/support/v4/media/TransportPerformer;
 
 
 # direct methods

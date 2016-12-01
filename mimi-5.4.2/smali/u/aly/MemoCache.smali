@@ -4,7 +4,15 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mActivateMsgb:Lu/aly/ActivateMsg;
+
+.field private mAppInfoc:Lu/aly/AppInfo;
+
+.field private mContextf:Landroid/content/Context;
+
+.field private mDeviceInfod:Lu/aly/DeviceInfo;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,15 +23,7 @@
     .end annotation
 .end field
 
-.field private b:Lu/aly/ActivateMsg;
-
-.field private c:Lu/aly/AppInfo;
-
-.field private d:Lu/aly/DeviceInfo;
-
-.field private e:Lu/aly/MiscInfo;
-
-.field private f:Landroid/content/Context;
+.field private mMiscInfoe:Lu/aly/MiscInfo;
 
 
 # direct methods
@@ -41,25 +41,25 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lu/aly/MemoCache;->a:Ljava/util/List;
+    iput-object v0, p0, Lu/aly/MemoCache;->mLista:Ljava/util/List;
 
     .line 30
-    iput-object v1, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iput-object v1, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
 
     .line 31
-    iput-object v1, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iput-object v1, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     .line 32
-    iput-object v1, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iput-object v1, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     .line 33
-    iput-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iput-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     .line 35
-    iput-object v1, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iput-object v1, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     .line 39
-    iput-object p1, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     .line 40
     return-void
@@ -71,7 +71,7 @@
     .prologue
     .line 161
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     invoke-static {p1}, Lcom/umeng/analytics/AnalyticsConfig;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -80,7 +80,7 @@
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->a(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 162
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     invoke-static {p1}, Lcom/umeng/analytics/AnalyticsConfig;->b(Landroid/content/Context;)Ljava/lang/String;
 
@@ -98,14 +98,14 @@
     if-eqz v0, :cond_0
 
     .line 165
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->f(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 166
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     sget-object v1, Lcom/umeng/analytics/AnalyticsConfig;->b:Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->o(Landroid/content/Context;)Ljava/lang/String;
 
@@ -122,21 +122,21 @@
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->c(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 170
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     sget-object v1, Lu/aly/SDKType;->a:Lu/aly/SDKType;
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->a(Lu/aly/SDKType;)Lu/aly/AppInfo;
 
     .line 171
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     const-string/jumbo v1, "5.2.4"
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->d(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 172
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->b(Landroid/content/Context;)Ljava/lang/String;
 
@@ -145,7 +145,7 @@
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->b(Ljava/lang/String;)Lu/aly/AppInfo;
 
     .line 173
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -165,14 +165,14 @@
     if-ne v0, v1, :cond_1
 
     .line 176
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     sget v1, Lcom/umeng/analytics/AnalyticsConfig;->c:I
 
     invoke-virtual {v0, v1}, Lu/aly/AppInfo;->b(I)Lu/aly/AppInfo;
 
     .line 177
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     const-string/jumbo v1, "5.2.4.1"
 
@@ -201,7 +201,7 @@
     .prologue
     .line 186
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     invoke-static {}, Lu/aly/DeviceConfig;->a()Ljava/lang/String;
 
@@ -210,7 +210,7 @@
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->e(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 187
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->c(Landroid/content/Context;)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->a(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 188
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->d(Landroid/content/Context;)Ljava/lang/String;
 
@@ -228,7 +228,7 @@
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->b(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 189
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->k(Landroid/content/Context;)Ljava/lang/String;
 
@@ -237,21 +237,21 @@
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->c(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 190
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->d(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 191
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     const-string/jumbo v1, "Android"
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->f(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 192
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
@@ -266,7 +266,7 @@
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v1, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     new-instance v2, Lu/aly/Resolution;
 
@@ -294,42 +294,42 @@
 
     .line 204
     :cond_1
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->BOARD:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->h(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 205
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->i(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 206
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-wide v2, Landroid/os/Build;->TIME:J
 
     invoke-virtual {v0, v2, v3}, Lu/aly/DeviceInfo;->a(J)Lu/aly/DeviceInfo;
 
     .line 207
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->j(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 208
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->ID:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/DeviceInfo;->k(Ljava/lang/String;)Lu/aly/DeviceInfo;
 
     .line 209
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -375,7 +375,7 @@
     if-eqz v1, :cond_3
 
     .line 220
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     sget-object v2, Lu/aly/AccessType;->c:Lu/aly/AccessType;
 
@@ -396,7 +396,7 @@
     if-nez v1, :cond_0
 
     .line 228
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     const/4 v2, 0x1
 
@@ -406,7 +406,7 @@
 
     .line 231
     :cond_0
-    iget-object v0, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->m(Landroid/content/Context;)Ljava/lang/String;
 
@@ -420,7 +420,7 @@
     move-result-object v0
 
     .line 235
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     const/4 v2, 0x0
 
@@ -429,7 +429,7 @@
     invoke-virtual {v1, v2}, Lu/aly/MiscInfo;->b(Ljava/lang/String;)Lu/aly/MiscInfo;
 
     .line 236
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     const/4 v2, 0x1
 
@@ -438,7 +438,7 @@
     invoke-virtual {v1, v0}, Lu/aly/MiscInfo;->a(Ljava/lang/String;)Lu/aly/MiscInfo;
 
     .line 237
-    iget-object v0, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     invoke-static {p1}, Lu/aly/DeviceConfig;->h(Landroid/content/Context;)I
 
@@ -494,7 +494,7 @@
     invoke-virtual {v0, v1}, Lu/aly/UserInfo;->b(Ljava/lang/String;)Lu/aly/UserInfo;
 
     .line 249
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     invoke-virtual {v1, v0}, Lu/aly/MiscInfo;->a(Lu/aly/UserInfo;)Lu/aly/MiscInfo;
 
@@ -518,7 +518,7 @@
     if-eqz v1, :cond_4
 
     .line 222
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     sget-object v2, Lu/aly/AccessType;->b:Lu/aly/AccessType;
 
@@ -540,7 +540,7 @@
     .line 224
     :cond_4
     :try_start_1
-    iget-object v1, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v1, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     sget-object v2, Lu/aly/AccessType;->a:Lu/aly/AccessType;
 
@@ -556,7 +556,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -583,14 +583,14 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->a:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/MemoCache;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
     .line 53
-    iget-object v1, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iget-object v1, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -622,7 +622,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-object p1, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iput-object p1, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -648,7 +648,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->a:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/MemoCache;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -690,7 +690,7 @@
 
     .line 75
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->a:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/MemoCache;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -727,24 +727,24 @@
     .line 79
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lu/aly/MemoCache;->a:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/MemoCache;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 81
-    iget-object v0, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iget-object v0, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
 
     if-eqz v0, :cond_2
 
     .line 82
-    iget-object v0, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iget-object v0, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
 
     invoke-virtual {p1, v0}, Lu/aly/UALogEntry;->a(Lu/aly/ActivateMsg;)Lu/aly/UALogEntry;
 
     .line 83
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lu/aly/MemoCache;->b:Lu/aly/ActivateMsg;
+    iput-object v0, p0, Lu/aly/MemoCache;->mActivateMsgb:Lu/aly/ActivateMsg;
 
     .line 85
     :cond_2
@@ -805,7 +805,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     if-nez v0, :cond_0
 
@@ -814,16 +814,16 @@
 
     invoke-direct {v0}, Lu/aly/AppInfo;-><init>()V
 
-    iput-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iput-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
 
     .line 107
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lu/aly/MemoCache;->a(Landroid/content/Context;)V
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lu/aly/MemoCache;->c:Lu/aly/AppInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mAppInfoc:Lu/aly/AppInfo;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -848,7 +848,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     if-nez v0, :cond_0
 
@@ -857,16 +857,16 @@
 
     invoke-direct {v0}, Lu/aly/DeviceInfo;-><init>()V
 
-    iput-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iput-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
 
     .line 116
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lu/aly/MemoCache;->b(Landroid/content/Context;)V
 
     .line 119
     :cond_0
-    iget-object v0, p0, Lu/aly/MemoCache;->d:Lu/aly/DeviceInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mDeviceInfod:Lu/aly/DeviceInfo;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -891,7 +891,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     if-nez v0, :cond_0
 
@@ -900,16 +900,16 @@
 
     invoke-direct {v0}, Lu/aly/MiscInfo;-><init>()V
 
-    iput-object v0, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iput-object v0, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
 
     .line 126
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lu/aly/MemoCache;->c(Landroid/content/Context;)V
 
     .line 129
     :cond_0
-    iget-object v0, p0, Lu/aly/MemoCache;->e:Lu/aly/MiscInfo;
+    iget-object v0, p0, Lu/aly/MemoCache;->mMiscInfoe:Lu/aly/MiscInfo;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -932,7 +932,7 @@
     .prologue
     .line 134
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/SDKContext;->b(Landroid/content/Context;)Lu/aly/ImprintHandler;
 
@@ -967,7 +967,7 @@
     .prologue
     .line 143
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/SDKContext;->a(Landroid/content/Context;)Lu/aly/IdTracker;
 
@@ -1002,7 +1002,7 @@
     .prologue
     .line 152
     :try_start_0
-    iget-object v0, p0, Lu/aly/MemoCache;->f:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/MemoCache;->mContextf:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/StatTracer;->a(Landroid/content/Context;)Lu/aly/ClientStats;
     :try_end_0

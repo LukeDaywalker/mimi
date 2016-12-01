@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+.field private static final mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplApi21;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     .line 845
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplApi20;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplKitKat;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -77,7 +77,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplJellybean;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -94,7 +94,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplIceCreamSandwich;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -111,7 +111,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -128,7 +128,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplGingerbread;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 
@@ -138,7 +138,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$NotificationCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     goto :goto_0
 .end method
@@ -159,7 +159,7 @@
 
     .prologue
     .line 41
-    sget-object v0, Landroid/support/v4/app/NotificationCompat;->a:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    sget-object v0, Landroid/support/v4/app/NotificationCompat;->mNotificationCompatImpla:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     return-object v0
 .end method
@@ -242,13 +242,13 @@
     check-cast p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;
 
     .line 802
-    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->d:Ljava/lang/CharSequence;
+    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mCharSequenced:Ljava/lang/CharSequence;
 
-    iget-boolean v1, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->f:Z
+    iget-boolean v1, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->isZf:Z
 
-    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->e:Ljava/lang/CharSequence;
+    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mCharSequencee:Ljava/lang/CharSequence;
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->a:Ljava/lang/CharSequence;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mCharSequencea:Ljava/lang/CharSequence;
 
     invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/app/NotificationCompatJellybean;->a(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
@@ -267,13 +267,13 @@
     check-cast p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;
 
     .line 809
-    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->d:Ljava/lang/CharSequence;
+    iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mCharSequenced:Ljava/lang/CharSequence;
 
-    iget-boolean v1, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->f:Z
+    iget-boolean v1, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->isZf:Z
 
-    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->e:Ljava/lang/CharSequence;
+    iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mCharSequencee:Ljava/lang/CharSequence;
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->a:Ljava/util/ArrayList;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-static {p0, v0, v1, v2, v3}, Landroid/support/v4/app/NotificationCompatJellybean;->a(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/util/ArrayList;)V
 
@@ -289,17 +289,17 @@
     check-cast p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;
 
     .line 816
-    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->d:Ljava/lang/CharSequence;
+    iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mCharSequenced:Ljava/lang/CharSequence;
 
-    iget-boolean v2, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->f:Z
+    iget-boolean v2, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->isZf:Z
 
-    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->e:Ljava/lang/CharSequence;
+    iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mCharSequencee:Ljava/lang/CharSequence;
 
-    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->a:Landroid/graphics/Bitmap;
+    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mBitmapa:Landroid/graphics/Bitmap;
 
-    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->b:Landroid/graphics/Bitmap;
+    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mBitmapb:Landroid/graphics/Bitmap;
 
-    iget-boolean v6, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->c:Z
+    iget-boolean v6, p1, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->isZc:Z
 
     move-object v0, p0
 

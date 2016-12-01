@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static n:Z
+.field private static isZn:Z
 
 
 # instance fields
@@ -15,7 +15,7 @@
 
 .field protected B:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+.field private mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
 .field protected u:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -38,7 +38,7 @@
     .line 54
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->n:Z
+    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->isZn:Z
 
     return-void
 .end method
@@ -81,10 +81,10 @@
 
     invoke-direct {v1, v2, p0, v3}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;-><init>(Landroid/view/View;Landroid/content/Context;Landroid/view/inputmethod/InputMethodManager;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     .line 379
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->getTitle()Ljava/lang/CharSequence;
 
@@ -152,12 +152,12 @@
 
     .prologue
     .line 305
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 306
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -171,12 +171,12 @@
 
     .prologue
     .line 311
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 312
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
 
@@ -190,12 +190,12 @@
 
     .prologue
     .line 295
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 296
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -209,12 +209,12 @@
 
     .prologue
     .line 317
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 318
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -228,12 +228,12 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 290
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->b(Ljava/lang/String;)V
 
@@ -247,12 +247,12 @@
 
     .prologue
     .line 341
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 342
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e()V
 
@@ -341,12 +341,12 @@
 
     .prologue
     .line 333
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 334
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e()V
 
@@ -642,11 +642,11 @@
 
     .prologue
     .line 324
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d()Z
 
@@ -655,7 +655,7 @@
     if-eqz v0, :cond_0
 
     .line 325
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
 
@@ -713,11 +713,11 @@
 
     if-ne p1, v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a()Z
 
@@ -726,7 +726,7 @@
     if-eqz v0, :cond_0
 
     .line 366
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c()V
 
@@ -803,7 +803,7 @@
     .line 184
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->n:Z
+    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->isZn:Z
 
     .line 186
     invoke-static {p0}, Lcom/umeng/analytics/MobclickAgent;->a(Landroid/content/Context;)V
@@ -850,7 +850,7 @@
     .line 156
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->n:Z
+    sput-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->isZn:Z
 
     .line 157
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->b()Z
@@ -892,7 +892,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -990,7 +990,7 @@
     invoke-super {p0}, Landroid/support/v4/app/FragmentActivity;->onStop()V
 
     .line 147
-    sget-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->n:Z
+    sget-boolean v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->isZn:Z
 
     if-nez v0, :cond_0
 
@@ -1047,7 +1047,7 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     return-object v0
 .end method
@@ -1057,7 +1057,7 @@
 
     .prologue
     .line 389
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity$ICj;
 
@@ -1131,12 +1131,12 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     if-eqz v0, :cond_0
 
     .line 279
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->mMimiActionBaro:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 

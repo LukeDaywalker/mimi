@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:J
+.field private mJa:J
 
-.field private b:Lu/aly/StatTracer;
+.field private mStatTracerb:Lu/aly/StatTracer;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     .line 90
     const-wide/32 v0, 0x5265c00
 
-    iput-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->a:J
+    iput-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->mJa:J
 
     .line 94
-    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->b:Lu/aly/StatTracer;
+    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->mStatTracerb:Lu/aly/StatTracer;
 
     .line 95
     return-void
@@ -40,13 +40,13 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->b:Lu/aly/StatTracer;
+    iget-object v2, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->mStatTracerb:Lu/aly/StatTracer;
 
     iget-wide v2, v2, Lu/aly/StatTracer;->c:J
 
     sub-long/2addr v0, v2
 
-    iget-wide v2, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->a:J
+    iget-wide v2, p0, Lcom/umeng/analytics/ReportPolicy$ICl;->mJa:J
 
     cmp-long v0, v0, v2
 

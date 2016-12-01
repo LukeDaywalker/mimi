@@ -23,11 +23,11 @@
 
 .field public static final enum d:Lcom/squareup/okhttp/TlsVersion;
 
-.field private static final synthetic f:[Lcom/squareup/okhttp/TlsVersion;
+.field private static final synthetic mArrayTlsVersionf:[Lcom/squareup/okhttp/TlsVersion;
 
 
 # instance fields
-.field final e:Ljava/lang/String;
+.field final mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -108,7 +108,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->f:[Lcom/squareup/okhttp/TlsVersion;
+    sput-object v0, Lcom/squareup/okhttp/TlsVersion;->mArrayTlsVersionf:[Lcom/squareup/okhttp/TlsVersion;
 
     return-void
 .end method
@@ -128,7 +128,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 34
-    iput-object p3, p0, Lcom/squareup/okhttp/TlsVersion;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/squareup/okhttp/TlsVersion;->mStringe:Ljava/lang/String;
 
     .line 35
     return-void
@@ -296,7 +296,7 @@
 
     .prologue
     .line 24
-    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->f:[Lcom/squareup/okhttp/TlsVersion;
+    sget-object v0, Lcom/squareup/okhttp/TlsVersion;->mArrayTlsVersionf:[Lcom/squareup/okhttp/TlsVersion;
 
     invoke-virtual {v0}, [Lcom/squareup/okhttp/TlsVersion;->clone()Ljava/lang/Object;
 

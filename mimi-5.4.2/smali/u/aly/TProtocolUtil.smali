@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:I
+.field private static mIa:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 35
     const v0, 0x7fffffff
 
-    sput v0, Lu/aly/TProtocolUtil;->a:I
+    sput v0, Lu/aly/TProtocolUtil;->mIa:I
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 
     .prologue
     .line 60
-    sget v0, Lu/aly/TProtocolUtil;->a:I
+    sget v0, Lu/aly/TProtocolUtil;->mIa:I
 
     invoke-static {p0, p1, v0}, Lu/aly/TProtocolUtil;->a(Lu/aly/TProtocol;BI)V
 

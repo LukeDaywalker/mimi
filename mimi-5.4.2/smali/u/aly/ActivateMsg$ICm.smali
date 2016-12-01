@@ -21,7 +21,9 @@
 # static fields
 .field public static final enum a:Lu/aly/ActivateMsg$ICm;
 
-.field private static final b:Ljava/util/Map;
+.field private static final synthetic mArrayICme:[Lu/aly/ActivateMsg$ICm;
+
+.field private static final mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -33,13 +35,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic e:[Lu/aly/ActivateMsg$ICm;
-
 
 # instance fields
-.field private final c:S
+.field private final mSc:S
 
-.field private final d:Ljava/lang/String;
+.field private final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -69,14 +69,14 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lu/aly/ActivateMsg$ICm;->e:[Lu/aly/ActivateMsg$ICm;
+    sput-object v0, Lu/aly/ActivateMsg$ICm;->mArrayICme:[Lu/aly/ActivateMsg$ICm;
 
     .line 49
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/ActivateMsg$ICm;->b:Ljava/util/Map;
+    sput-object v0, Lu/aly/ActivateMsg$ICm;->mMapb:Ljava/util/Map;
 
     .line 52
     const-class v0, Lu/aly/ActivateMsg$ICm;
@@ -103,7 +103,7 @@
     check-cast v0, Lu/aly/ActivateMsg$ICm;
 
     .line 53
-    sget-object v2, Lu/aly/ActivateMsg$ICm;->b:Ljava/util/Map;
+    sget-object v2, Lu/aly/ActivateMsg$ICm;->mMapb:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/ActivateMsg$ICm;->b()Ljava/lang/String;
 
@@ -133,10 +133,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 90
-    iput-short p3, p0, Lu/aly/ActivateMsg$ICm;->c:S
+    iput-short p3, p0, Lu/aly/ActivateMsg$ICm;->mSc:S
 
     .line 91
-    iput-object p4, p0, Lu/aly/ActivateMsg$ICm;->d:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/ActivateMsg$ICm;->mStringd:Ljava/lang/String;
 
     .line 92
     return-void
@@ -163,7 +163,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lu/aly/ActivateMsg$ICm;->e:[Lu/aly/ActivateMsg$ICm;
+    sget-object v0, Lu/aly/ActivateMsg$ICm;->mArrayICme:[Lu/aly/ActivateMsg$ICm;
 
     invoke-virtual {v0}, [Lu/aly/ActivateMsg$ICm;->clone()Ljava/lang/Object;
 
@@ -181,7 +181,7 @@
 
     .prologue
     .line 95
-    iget-short v0, p0, Lu/aly/ActivateMsg$ICm;->c:S
+    iget-short v0, p0, Lu/aly/ActivateMsg$ICm;->mSc:S
 
     return v0
 .end method
@@ -191,7 +191,7 @@
 
     .prologue
     .line 99
-    iget-object v0, p0, Lu/aly/ActivateMsg$ICm;->d:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/ActivateMsg$ICm;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method

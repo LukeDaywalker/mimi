@@ -4,39 +4,39 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Landroid/widget/TextView;
+.field private mButtont:Landroid/widget/Button;
 
-.field private D:Landroid/widget/TextView;
+.field private mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
-.field private E:Landroid/widget/TextView;
+.field private mEditTextr:Landroid/widget/EditText;
 
-.field private F:Landroid/widget/RadioGroup;
+.field private mEditTexts:Landroid/widget/EditText;
 
-.field private G:Landroid/widget/RadioButton;
+.field private mII:I
 
-.field private H:Landroid/widget/RadioButton;
+.field private mLinearLayouto:Landroid/widget/LinearLayout;
 
-.field private I:I
+.field private mRadioButtonG:Landroid/widget/RadioButton;
 
-.field private J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+.field private mRadioButtonH:Landroid/widget/RadioButton;
 
-.field private K:Ljava/lang/String;
+.field private mRadioGroupF:Landroid/widget/RadioGroup;
 
-.field private o:Landroid/widget/LinearLayout;
+.field private mStringK:Ljava/lang/String;
 
-.field private p:Landroid/widget/TextView;
+.field private mTextViewC:Landroid/widget/TextView;
 
-.field private q:Landroid/widget/TextView;
+.field private mTextViewD:Landroid/widget/TextView;
 
-.field private r:Landroid/widget/EditText;
+.field private mTextViewE:Landroid/widget/TextView;
 
-.field private s:Landroid/widget/EditText;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private t:Landroid/widget/Button;
+.field private mTextViewq:Landroid/widget/TextView;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->o:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 262
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 263
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewq:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -165,7 +165,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->H:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioButtonH:Landroid/widget/RadioButton;
 
     return-object v0
 .end method
@@ -189,14 +189,14 @@
     move-result-object v0
 
     .line 157
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 158
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->n:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mLoggern:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "get telephone number failed !"
 
@@ -217,7 +217,7 @@
     if-eqz v1, :cond_1
 
     .line 163
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->n:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mLoggern:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "get telephone number with country ISO code number!"
 
@@ -227,7 +227,7 @@
 
     .line 167
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -247,7 +247,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->o:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     .line 172
     const v0, 0x7f0b006a
@@ -258,7 +258,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewp:Landroid/widget/TextView;
 
     .line 173
     const v0, 0x7f0b006b
@@ -269,7 +269,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 174
     const v0, 0x7f0b006c
@@ -280,7 +280,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     .line 175
     const v0, 0x7f0b006d
@@ -291,7 +291,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->s:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTexts:Landroid/widget/EditText;
 
     .line 176
     const v0, 0x7f0b006e
@@ -302,7 +302,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->t:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mButtont:Landroid/widget/Button;
 
     .line 177
     const v0, 0x7f0b006f
@@ -313,7 +313,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->C:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewC:Landroid/widget/TextView;
 
     .line 178
     const v0, 0x7f0b0070
@@ -324,7 +324,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->D:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewD:Landroid/widget/TextView;
 
     .line 179
     const v0, 0x7f0b0071
@@ -335,7 +335,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->E:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewE:Landroid/widget/TextView;
 
     .line 180
     const v0, 0x7f0b0072
@@ -346,7 +346,7 @@
 
     check-cast v0, Landroid/widget/RadioGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->F:Landroid/widget/RadioGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioGroupF:Landroid/widget/RadioGroup;
 
     .line 181
     const v0, 0x7f0b0073
@@ -357,7 +357,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->G:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioButtonG:Landroid/widget/RadioButton;
 
     .line 182
     const v0, 0x7f0b0074
@@ -368,7 +368,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->H:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioButtonH:Landroid/widget/RadioButton;
 
     .line 183
     return-void
@@ -392,7 +392,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -402,7 +402,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v4}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -446,7 +446,7 @@
     move-exception v2
 
     .line 203
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -474,7 +474,7 @@
     const/4 v4, 0x0
 
     .line 228
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     if-ne v0, v5, :cond_0
 
@@ -485,7 +485,7 @@
 
     .line 232
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -496,7 +496,7 @@
     move-result-object v0
 
     .line 233
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->s:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTexts:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -507,7 +507,7 @@
     move-result-object v1
 
     .line 234
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -579,7 +579,7 @@
 
     .line 243
     :cond_4
-    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     if-ne v2, v5, :cond_5
 
@@ -596,7 +596,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -614,7 +614,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->K:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mStringK:Ljava/lang/String;
 
     invoke-virtual {v2, p0, v0, v1, v3}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -634,7 +634,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -662,7 +662,7 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -720,7 +720,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o()V
 
     .line 221
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     const/4 v1, 0x2
 
@@ -760,7 +760,7 @@
 
     .line 283
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     const-string/jumbo v1, "phoneNumber"
 
@@ -782,10 +782,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     .line 287
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->a(Lcom/wumii/android/mimi/models/entities/authenticator/Country;)V
 
@@ -809,7 +809,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onBackPressed()V
 
     .line 212
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     const/4 v1, 0x2
 
@@ -862,7 +862,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     .line 82
     const-string/jumbo v0, "country"
@@ -873,32 +873,32 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     if-nez v0, :cond_0
 
     .line 84
     sget-object v0, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->DEFAULT:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     .line 86
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->J:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mCountryJ:Lcom/wumii/android/mimi/models/entities/authenticator/Country;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->a(Lcom/wumii/android/mimi/models/entities/authenticator/Country;)V
 
     .line 88
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->I:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mII:I
 
     packed-switch v0, :pswitch_data_0
 
     .line 109
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;
 
@@ -914,12 +914,12 @@
     if-eqz v0, :cond_1
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->F:Landroid/widget/RadioGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioGroupF:Landroid/widget/RadioGroup;
 
     invoke-virtual {v0, v3}, Landroid/widget/RadioGroup;->setVisibility(I)V
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->F:Landroid/widget/RadioGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioGroupF:Landroid/widget/RadioGroup;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;
 
@@ -944,7 +944,7 @@
     if-eqz v0, :cond_3
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->H:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioButtonH:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
 
@@ -955,19 +955,19 @@
 
     .line 90
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->t:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mButtont:Landroid/widget/Button;
 
     const v1, 0x7f060242
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->D:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewD:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->E:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewE:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -980,14 +980,14 @@
 
     .line 96
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->t:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mButtont:Landroid/widget/Button;
 
     const v2, 0x7f0601e3
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setText(I)V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->C:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mTextViewC:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1010,10 +1010,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->K:Ljava/lang/String;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mStringK:Ljava/lang/String;
 
     .line 101
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1026,7 +1026,7 @@
 
     .line 104
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTextr:Landroid/widget/EditText;
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -1034,7 +1034,7 @@
 
     .line 136
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->G:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mRadioButtonG:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
 
@@ -1066,7 +1066,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->s:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->mEditTexts:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+.field final synthetic mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICb;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->a(Landroid/content/SharedPreferences;Ljava/lang/String;)V
 

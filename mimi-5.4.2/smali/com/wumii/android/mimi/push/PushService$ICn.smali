@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/push/PushService;
+.field final synthetic mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 616
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICn;->a:Lcom/wumii/android/mimi/push/PushService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICn;->mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

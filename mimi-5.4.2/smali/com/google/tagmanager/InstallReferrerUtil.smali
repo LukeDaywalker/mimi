@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static a:Ljava/util/Map;
+.field static mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/google/tagmanager/InstallReferrerUtil;->a:Ljava/util/Map;
+    sput-object v0, Lcom/google/tagmanager/InstallReferrerUtil;->mMapa:Ljava/util/Map;
 
     return-void
 .end method
@@ -129,7 +129,7 @@
 
     .line 33
     :try_start_0
-    sput-object p0, Lcom/google/tagmanager/InstallReferrerUtil;->b:Ljava/lang/String;
+    sput-object p0, Lcom/google/tagmanager/InstallReferrerUtil;->mStringb:Ljava/lang/String;
 
     .line 34
     monitor-exit v1
@@ -169,7 +169,7 @@
     if-lez v1, :cond_0
 
     .line 75
-    sget-object v1, Lcom/google/tagmanager/InstallReferrerUtil;->a:Ljava/util/Map;
+    sget-object v1, Lcom/google/tagmanager/InstallReferrerUtil;->mMapa:Ljava/util/Map;
 
     invoke-interface {v1, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

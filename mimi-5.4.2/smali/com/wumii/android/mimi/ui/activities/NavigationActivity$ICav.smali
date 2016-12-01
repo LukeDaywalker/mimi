@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mListb:Ljava/util/List;
 
-.field final synthetic b:Ljava/util/List;
+.field final synthetic mNavigationActivityc:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 662
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->c:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mNavigationActivityc:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mViewa:Landroid/view/View;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->b:Ljava/util/List;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mListb:Ljava/util/List;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,9 +47,9 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 668
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mViewa:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->c:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mNavigationActivityc:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->getApplicationContext()Landroid/content/Context;
 
@@ -66,16 +66,16 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
 
     .line 669
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->c:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mNavigationActivityc:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mListb:Ljava/util/List;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-static {v0, v3, v3, v1, v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Guidance;Ljava/util/List;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
     .line 671
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->c:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;->mNavigationActivityc:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->j(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Ljava/util/List;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/os/IBinder;
+.field private final mIBindera:Landroid/os/IBinder;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 159
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->mIBindera:Landroid/os/IBinder;
 
     .line 160
     return-void
@@ -51,7 +51,7 @@
     invoke-virtual {v1, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 173
-    iget-object v3, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->a:Landroid/os/IBinder;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->mIBindera:Landroid/os/IBinder;
 
     const/4 v4, 0x1
 
@@ -123,7 +123,7 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method
@@ -158,7 +158,7 @@
     invoke-virtual {v2, v4}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 193
-    iget-object v4, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->a:Landroid/os/IBinder;
+    iget-object v4, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICi;->mIBindera:Landroid/os/IBinder;
 
     const/4 v5, 0x2
 

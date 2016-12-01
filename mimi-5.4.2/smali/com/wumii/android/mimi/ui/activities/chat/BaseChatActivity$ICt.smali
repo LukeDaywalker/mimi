@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+.field final synthetic mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 532
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 536
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 545
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
@@ -83,7 +83,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 546
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->L:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -93,11 +93,11 @@
 
     .line 547
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->l()Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
@@ -118,7 +118,7 @@
     move-result-object v0
 
     .line 548
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
@@ -127,7 +127,7 @@
 
     .line 546
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->L:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -143,7 +143,7 @@
 
     .prologue
     .line 553
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 

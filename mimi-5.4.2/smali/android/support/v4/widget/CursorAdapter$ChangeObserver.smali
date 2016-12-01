@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/CursorAdapter;
+.field final synthetic mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
 
 # virtual methods
@@ -23,7 +23,7 @@
 
     .prologue
     .line 465
-    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$ChangeObserver;->a:Landroid/support/v4/widget/CursorAdapter;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$ChangeObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->b()V
 

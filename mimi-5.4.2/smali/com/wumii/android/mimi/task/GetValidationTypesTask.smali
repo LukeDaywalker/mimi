@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
 
 # direct methods
@@ -55,7 +55,7 @@
     .line 36
     iget-object v1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->b:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/OrgValidationResp;->getValidationTypes()Ljava/util/List;
 
@@ -98,7 +98,7 @@
     move-result-object p1
 
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 42
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->j()V
@@ -131,7 +131,7 @@
     .line 27
     const-string/jumbo v1, "organizationId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getId()Ljava/lang/String;
 

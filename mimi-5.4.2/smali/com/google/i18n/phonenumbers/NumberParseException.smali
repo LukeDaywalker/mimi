@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+.field private mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 47
-    iput-object p2, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->mStringb:Ljava/lang/String;
 
     .line 48
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     .line 49
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     return-object v0
 .end method
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->a:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->mICda:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -66,7 +66,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

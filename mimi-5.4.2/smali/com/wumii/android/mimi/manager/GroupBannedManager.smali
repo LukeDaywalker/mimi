@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/GroupBannedManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/GroupBannedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -180,7 +180,7 @@
     move-exception v1
 
     .line 91
-    sget-object v2, Lcom/wumii/android/mimi/manager/GroupBannedManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/GroupBannedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "parse data err"
 
@@ -410,7 +410,7 @@
     move-exception v1
 
     .line 133
-    sget-object v2, Lcom/wumii/android/mimi/manager/GroupBannedManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/GroupBannedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v5, "parse data err"
 

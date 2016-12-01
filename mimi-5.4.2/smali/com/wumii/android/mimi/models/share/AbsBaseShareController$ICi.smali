@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+.field final synthetic mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICi;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->l()Ljava/lang/String;
 

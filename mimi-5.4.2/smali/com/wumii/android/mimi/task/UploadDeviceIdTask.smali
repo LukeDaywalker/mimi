@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 

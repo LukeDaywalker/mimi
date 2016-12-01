@@ -7,11 +7,17 @@
 
 
 # static fields
-.field private static g:Lcom/google/analytics/tracking/android/GAThread;
+.field private static mGAThreadg:Lcom/google/analytics/tracking/android/GAThread;
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/LinkedBlockingQueue;
+.field private volatile isZb:Z
+
+.field private volatile isZc:Z
+
+.field private final mContexti:Landroid/content/Context;
+
+.field private final mLinkedBlockingQueuea:Ljava/util/concurrent/LinkedBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/LinkedBlockingQueue",
@@ -22,11 +28,7 @@
     .end annotation
 .end field
 
-.field private volatile b:Z
-
-.field private volatile c:Z
-
-.field private volatile d:Ljava/util/List;
+.field private volatile mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -37,13 +39,11 @@
     .end annotation
 .end field
 
-.field private volatile e:Ljava/lang/String;
+.field private volatile mServiceProxyh:Lcom/google/analytics/tracking/android/ServiceProxy;
 
-.field private volatile f:Ljava/lang/String;
+.field private volatile mStringe:Ljava/lang/String;
 
-.field private volatile h:Lcom/google/analytics/tracking/android/ServiceProxy;
-
-.field private final i:Landroid/content/Context;
+.field private volatile mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -63,13 +63,13 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->a:Ljava/util/concurrent/LinkedBlockingQueue;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mLinkedBlockingQueuea:Ljava/util/concurrent/LinkedBlockingQueue;
 
     .line 48
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->b:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->isZb:Z
 
     .line 49
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->c:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->isZc:Z
 
     .line 68
     if-eqz p1, :cond_0
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->i:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mContexti:Landroid/content/Context;
 
     .line 73
     :goto_0
@@ -90,7 +90,7 @@
 
     .line 71
     :cond_0
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread;->i:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread;->mContexti:Landroid/content/Context;
 
     goto :goto_0
 .end method
@@ -174,7 +174,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/google/analytics/tracking/android/GAThread;->g:Lcom/google/analytics/tracking/android/GAThread;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAThread;->mGAThreadg:Lcom/google/analytics/tracking/android/GAThread;
 
     if-nez v0, :cond_0
 
@@ -183,11 +183,11 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAThread;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAThread;->g:Lcom/google/analytics/tracking/android/GAThread;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAThread;->mGAThreadg:Lcom/google/analytics/tracking/android/GAThread;
 
     .line 62
     :cond_0
-    sget-object v0, Lcom/google/analytics/tracking/android/GAThread;->g:Lcom/google/analytics/tracking/android/GAThread;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAThread;->mGAThreadg:Lcom/google/analytics/tracking/android/GAThread;
 
     return-object v0
 .end method
@@ -197,7 +197,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -207,7 +207,7 @@
 
     .prologue
     .line 28
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread;->e:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAThread;->mStringe:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -261,7 +261,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->i:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mContexti:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -481,7 +481,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -636,7 +636,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mListd:Ljava/util/List;
 
     return-object v0
 .end method
@@ -720,7 +720,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->h:Lcom/google/analytics/tracking/android/ServiceProxy;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mServiceProxyh:Lcom/google/analytics/tracking/android/ServiceProxy;
 
     return-object v0
 .end method
@@ -747,7 +747,7 @@
 
     .prologue
     .line 279
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->a:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mLinkedBlockingQueuea:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/LinkedBlockingQueue;->add(Ljava/lang/Object;)Z
 
@@ -865,7 +865,7 @@
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->a:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mLinkedBlockingQueuea:Ljava/util/concurrent/LinkedBlockingQueue;
 
     return-object v0
 .end method
@@ -887,7 +887,7 @@
     const/4 v5, 0x1
 
     .line 90
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->h:Lcom/google/analytics/tracking/android/ServiceProxy;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mServiceProxyh:Lcom/google/analytics/tracking/android/ServiceProxy;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/ServiceProxy;->f()V
 
@@ -896,10 +896,10 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mListd:Ljava/util/List;
 
     .line 95
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/google/android/gms/analytics/internal/Command;
 
@@ -918,7 +918,7 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 99
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/google/android/gms/analytics/internal/Command;
 
@@ -935,7 +935,7 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 103
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/google/android/gms/analytics/internal/Command;
 
@@ -972,18 +972,18 @@
     .line 355
     :goto_0
     :try_start_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->h:Lcom/google/analytics/tracking/android/ServiceProxy;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mServiceProxyh:Lcom/google/analytics/tracking/android/ServiceProxy;
 
     if-nez v0, :cond_0
 
     .line 356
     new-instance v0, Lcom/google/analytics/tracking/android/GAServiceProxy;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAThread;->i:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAThread;->mContexti:Landroid/content/Context;
 
     invoke-direct {v0, v1, p0}, Lcom/google/analytics/tracking/android/GAServiceProxy;-><init>(Landroid/content/Context;Lcom/google/analytics/tracking/android/AnalyticsThread;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->h:Lcom/google/analytics/tracking/android/ServiceProxy;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mServiceProxyh:Lcom/google/analytics/tracking/android/ServiceProxy;
 
     .line 358
     :cond_0
@@ -1000,29 +1000,29 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mStringf:Ljava/lang/String;
 
     .line 368
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->i:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mContexti:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAThread;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mStringe:Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 376
     :cond_1
     :goto_1
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAThread;->c:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAThread;->isZc:Z
 
     if-nez v0, :cond_2
 
     .line 382
     :try_start_2
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->a:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAThread;->mLinkedBlockingQueuea:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingQueue;->take()Ljava/lang/Object;
 
@@ -1031,7 +1031,7 @@
     check-cast v0, Ljava/lang/Runnable;
 
     .line 383
-    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->b:Z
+    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/GAThread;->isZb:Z
 
     if-nez v1, :cond_1
 
@@ -1094,7 +1094,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->a(Ljava/lang/String;)V
 
     .line 394
-    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/GAThread;->b:Z
+    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/GAThread;->isZb:Z
 
     goto :goto_1
 
@@ -1144,7 +1144,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->a(Ljava/lang/String;)V
 
     .line 374
-    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/GAThread;->b:Z
+    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/GAThread;->isZb:Z
 
     goto :goto_1
 

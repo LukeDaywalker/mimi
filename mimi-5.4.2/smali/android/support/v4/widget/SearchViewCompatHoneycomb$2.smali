@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
+.field final synthetic mOnCloseListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$2;->a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
+    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$2;->mOnCloseListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$2;->a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
+    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$2;->mOnCloseListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
 
     invoke-interface {v0}, Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;->a()Z
 

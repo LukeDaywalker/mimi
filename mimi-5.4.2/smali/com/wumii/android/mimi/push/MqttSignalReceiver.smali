@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/os/PowerManager;
+.field private mPowerManagerb:Landroid/os/PowerManager;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     check-cast v0, Landroid/os/PowerManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->b:Landroid/os/PowerManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mPowerManagerb:Landroid/os/PowerManager;
 
     .line 33
     return-void
@@ -72,7 +72,7 @@
     if-ne v0, v1, :cond_0
 
     .line 40
-    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Current process doesn\'t have permission android.permission.WAKE_LOCK"
 
@@ -84,7 +84,7 @@
 
     .line 47
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->b:Landroid/os/PowerManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mPowerManagerb:Landroid/os/PowerManager;
 
     const/4 v1, 0x1
 
@@ -141,7 +141,7 @@
     if-eqz v1, :cond_1
 
     .line 53
-    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Fail to acquire android.permission.WAKE_LOCK for current process."
 
@@ -175,7 +175,7 @@
     if-eqz v3, :cond_2
 
     .line 65
-    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MqttSignalReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

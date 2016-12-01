@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/Set;
+.field final synthetic mPushReportServiceb:Lcom/wumii/android/mimi/push/PushReportService;
 
-.field final synthetic b:Lcom/wumii/android/mimi/push/PushReportService;
+.field final synthetic mSeta:Ljava/util/Set;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->b:Lcom/wumii/android/mimi/push/PushReportService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->mPushReportServiceb:Lcom/wumii/android/mimi/push/PushReportService;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->a:Ljava/util/Set;
+    iput-object p2, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->mSeta:Ljava/util/Set;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     .prologue
     .line 102
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->b:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->mPushReportServiceb:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushReportService;->a(Lcom/wumii/android/mimi/push/PushReportService;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -43,7 +43,7 @@
 
     const-string/jumbo v1, "push_reports"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->a:Ljava/util/Set;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->mSeta:Ljava/util/Set;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0

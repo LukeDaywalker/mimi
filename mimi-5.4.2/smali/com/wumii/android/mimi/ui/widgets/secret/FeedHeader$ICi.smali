@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+.field final synthetic mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICi;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICi;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

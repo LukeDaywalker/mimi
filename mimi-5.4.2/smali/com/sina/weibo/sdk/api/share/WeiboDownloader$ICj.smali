@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final synthetic a:Landroid/content/Context;
+.field private final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;->mContexta:Landroid/content/Context;
 
     .line 71
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -31,7 +31,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICj;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/api/share/WeiboDownloader;->a(Landroid/content/Context;)V
 

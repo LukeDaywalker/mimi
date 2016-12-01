@@ -20,15 +20,15 @@
 
 
 # instance fields
-.field final a:I
+.field isZd:Z
 
-.field b:I
+.field final mIa:I
 
-.field c:I
+.field mIb:I
 
-.field d:Z
+.field mIc:I
 
-.field final synthetic e:Landroid/support/v4/util/MapCollections;
+.field final synthetic mMapCollectionse:Landroid/support/v4/util/MapCollections;
 
 
 # direct methods
@@ -37,24 +37,24 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->e:Landroid/support/v4/util/MapCollections;
+    iput-object p1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mMapCollectionse:Landroid/support/v4/util/MapCollections;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 39
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->d:Z
+    iput-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->isZd:Z
 
     .line 42
-    iput p2, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->a:I
+    iput p2, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIa:I
 
     .line 43
     invoke-virtual {p1}, Landroid/support/v4/util/MapCollections;->a()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->b:I
+    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIb:I
 
     .line 44
     return-void
@@ -67,9 +67,9 @@
 
     .prologue
     .line 48
-    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
-    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->b:I
+    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIb:I
 
     if-ge v0, v1, :cond_0
 
@@ -94,27 +94,27 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->e:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mMapCollectionse:Landroid/support/v4/util/MapCollections;
 
-    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
-    iget v2, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->a:I
+    iget v2, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIa:I
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/util/MapCollections;->a(II)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 54
-    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iput v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
     .line 55
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->d:Z
+    iput-boolean v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->isZd:Z
 
     .line 56
     return-object v0
@@ -125,7 +125,7 @@
 
     .prologue
     .line 61
-    iget-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->d:Z
+    iget-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->isZd:Z
 
     if-nez v0, :cond_0
 
@@ -138,28 +138,28 @@
 
     .line 64
     :cond_0
-    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
     .line 65
-    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->b:I
+    iget v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->b:I
+    iput v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIb:I
 
     .line 66
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->d:Z
+    iput-boolean v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->isZd:Z
 
     .line 67
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->e:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mMapCollectionse:Landroid/support/v4/util/MapCollections;
 
-    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->c:I
+    iget v1, p0, Landroid/support/v4/util/MapCollections$ArrayIterator;->mIc:I
 
     invoke-virtual {v0, v1}, Landroid/support/v4/util/MapCollections;->a(I)V
 

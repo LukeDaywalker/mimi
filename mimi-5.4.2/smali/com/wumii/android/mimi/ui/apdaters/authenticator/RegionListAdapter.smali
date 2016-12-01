@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field private d:Landroid/util/SparseArray;
+.field private mSparseArrayd:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -39,7 +39,7 @@
     .end annotation
 .end field
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -73,16 +73,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 28
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListb:Ljava/util/List;
 
     .line 29
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->c:Ljava/util/List;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListc:Ljava/util/List;
 
     .line 30
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     .line 32
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mStringe:Ljava/lang/String;
 
     .line 33
     return-void
@@ -111,7 +111,7 @@
     if-nez p1, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -132,13 +132,13 @@
     if-ne p1, v0, :cond_1
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -150,7 +150,7 @@
 
     .line 61
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     add-int/lit8 v1, p1, 0x1
 
@@ -158,7 +158,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -178,7 +178,7 @@
     if-nez p3, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f9
 
@@ -208,7 +208,7 @@
     invoke-virtual {p3, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 78
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->a:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getName()Ljava/lang/String;
 
@@ -217,7 +217,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 79
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->b:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -247,7 +247,7 @@
     if-nez p2, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f3
 
@@ -268,7 +268,7 @@
 
     .line 90
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -285,7 +285,7 @@
 
     if-nez p1, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mStringe:Ljava/lang/String;
 
     :cond_1
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -311,7 +311,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -338,7 +338,7 @@
     if-nez p1, :cond_0
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -351,9 +351,9 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mListc:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->d:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->keyAt(I)I
 

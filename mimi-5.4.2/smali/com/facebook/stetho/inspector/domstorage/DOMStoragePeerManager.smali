@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+.field private final mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;-><init>(Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->b:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
     .line 23
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->mContexta:Landroid/content/Context;
 
     .line 24
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->b:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
     invoke-virtual {p0, v0}, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;->a(Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;)V
 

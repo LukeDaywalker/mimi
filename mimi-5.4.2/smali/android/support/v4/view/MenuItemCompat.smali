@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
+.field static final mMenuVersionImpla:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->a:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->mMenuVersionImpla:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
 
     .line 255
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MenuItemCompat$HoneycombMenuVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->a:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->mMenuVersionImpla:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
 
     goto :goto_0
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MenuItemCompat$BaseMenuVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->a:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MenuItemCompat;->mMenuVersionImpla:Landroid/support/v4/view/MenuItemCompat$MenuVersionImpl;
 
     goto :goto_0
 .end method

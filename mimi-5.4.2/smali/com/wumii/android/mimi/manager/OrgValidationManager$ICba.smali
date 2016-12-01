@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+.field final synthetic mOrgValidationManagera:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager$ICba;->a:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/OrgValidationManager$ICba;->mOrgValidationManagera:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

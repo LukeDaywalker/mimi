@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/map/BaiduMap;
+.field final synthetic mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/mapapi/map/BaiduMap;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +25,7 @@
 .method public a(III)Landroid/os/Bundle;
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/BaiduMap;->t(Lcom/baidu/mapapi/map/BaiduMap;)Ljava/util/concurrent/locks/Lock;
 
@@ -34,7 +34,7 @@
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/BaiduMap;->u(Lcom/baidu/mapapi/map/BaiduMap;)Lcom/baidu/mapapi/map/HeatMap;
 
@@ -42,7 +42,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/BaiduMap;->u(Lcom/baidu/mapapi/map/BaiduMap;)Lcom/baidu/mapapi/map/HeatMap;
 
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v1}, Lcom/baidu/mapapi/map/BaiduMap;->t(Lcom/baidu/mapapi/map/BaiduMap;)Ljava/util/concurrent/locks/Lock;
 
@@ -72,7 +72,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/BaiduMap;->t(Lcom/baidu/mapapi/map/BaiduMap;)Ljava/util/concurrent/locks/Lock;
 
@@ -87,7 +87,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ICc;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ICc;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-static {v1}, Lcom/baidu/mapapi/map/BaiduMap;->t(Lcom/baidu/mapapi/map/BaiduMap;)Ljava/util/concurrent/locks/Lock;
 

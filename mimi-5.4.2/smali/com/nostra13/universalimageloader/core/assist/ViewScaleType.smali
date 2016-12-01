@@ -19,7 +19,7 @@
 
 .field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
-.field private static final synthetic c:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+.field private static final synthetic mArrayViewScaleTypec:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->c:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mArrayViewScaleTypec:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType$ICj;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType$ICj;->mArrayIa:[I
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getScaleType()Landroid/widget/ImageView$ScaleType;
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 27
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->c:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->mArrayViewScaleTypec:[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->clone()Ljava/lang/Object;
 

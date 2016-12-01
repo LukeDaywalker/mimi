@@ -3,9 +3,19 @@
 
 
 # static fields
-.field private static a:Landroid/os/Handler;
+.field private static isZk:Z
 
-.field private static b:Ljava/util/Map;
+.field private static mHandlera:Landroid/os/Handler;
+
+.field private static mICli:Lcom/tencent/stat/a/ICl;
+
+.field private static volatile mIe:I
+
+.field private static volatile mJc:J
+
+.field private static volatile mJd:J
+
+.field private static mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -17,17 +27,7 @@
     .end annotation
 .end field
 
-.field private static volatile c:J
-
-.field private static volatile d:J
-
-.field private static volatile e:I
-
-.field private static volatile f:Ljava/lang/String;
-
-.field private static volatile g:Ljava/lang/String;
-
-.field private static h:Ljava/util/Map;
+.field private static mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -39,11 +39,11 @@
     .end annotation
 .end field
 
-.field private static i:Lcom/tencent/stat/a/ICl;
+.field private static volatile mStringf:Ljava/lang/String;
 
-.field private static j:Ljava/lang/Thread$UncaughtExceptionHandler;
+.field private static volatile mStringg:Ljava/lang/String;
 
-.field private static k:Z
+.field private static mUncaughtExceptionHandlerj:Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # direct methods
@@ -56,43 +56,43 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, Lcom/tencent/stat/ICi;->b:Ljava/util/Map;
+    sput-object v0, Lcom/tencent/stat/ICi;->mMapb:Ljava/util/Map;
 
-    sput-wide v2, Lcom/tencent/stat/ICi;->c:J
+    sput-wide v2, Lcom/tencent/stat/ICi;->mJc:J
 
-    sput-wide v2, Lcom/tencent/stat/ICi;->d:J
+    sput-wide v2, Lcom/tencent/stat/ICi;->mJd:J
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/tencent/stat/ICi;->e:I
+    sput v0, Lcom/tencent/stat/ICi;->mIe:I
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/stat/ICi;->g:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/ICi;->mStringg:Ljava/lang/String;
 
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, Lcom/tencent/stat/ICi;->h:Ljava/util/Map;
+    sput-object v0, Lcom/tencent/stat/ICi;->mMaph:Ljava/util/Map;
 
     invoke-static {}, Lcom/tencent/stat/a/ICj;->b()Lcom/tencent/stat/a/ICl;
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sput-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/stat/ICi;->j:Ljava/lang/Thread$UncaughtExceptionHandler;
+    sput-object v0, Lcom/tencent/stat/ICi;->mUncaughtExceptionHandlerj:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/tencent/stat/ICi;->k:Z
+    sput-boolean v0, Lcom/tencent/stat/ICi;->isZk:Z
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     if-eqz p1, :cond_7
 
-    sget-wide v6, Lcom/tencent/stat/ICi;->c:J
+    sget-wide v6, Lcom/tencent/stat/ICi;->mJc:J
 
     sub-long v6, v4, v6
 
@@ -127,9 +127,9 @@
     move v0, v1
 
     :goto_0
-    sput-wide v4, Lcom/tencent/stat/ICi;->c:J
+    sput-wide v4, Lcom/tencent/stat/ICi;->mJc:J
 
-    sget-wide v6, Lcom/tencent/stat/ICi;->d:J
+    sget-wide v6, Lcom/tencent/stat/ICi;->mJd:J
 
     const-wide/16 v8, 0x0
 
@@ -141,10 +141,10 @@
 
     move-result-wide v6
 
-    sput-wide v6, Lcom/tencent/stat/ICi;->d:J
+    sput-wide v6, Lcom/tencent/stat/ICi;->mJd:J
 
     :cond_0
-    sget-wide v6, Lcom/tencent/stat/ICi;->d:J
+    sget-wide v6, Lcom/tencent/stat/ICi;->mJd:J
 
     cmp-long v3, v4, v6
 
@@ -154,7 +154,7 @@
 
     move-result-wide v4
 
-    sput-wide v4, Lcom/tencent/stat/ICi;->d:J
+    sput-wide v4, Lcom/tencent/stat/ICi;->mJd:J
 
     invoke-static {p0}, Lcom/tencent/stat/ICo;->a(Landroid/content/Context;)Lcom/tencent/stat/ICo;
 
@@ -186,7 +186,7 @@
     move v0, v1
 
     :cond_2
-    sget-boolean v3, Lcom/tencent/stat/ICi;->k:Z
+    sget-boolean v3, Lcom/tencent/stat/ICi;->isZk:Z
 
     if-eqz v3, :cond_6
 
@@ -207,21 +207,21 @@
 
     :cond_3
     :goto_2
-    sget-boolean v0, Lcom/tencent/stat/ICi;->k:Z
+    sget-boolean v0, Lcom/tencent/stat/ICi;->isZk:Z
 
     if-eqz v0, :cond_4
 
     invoke-static {p0}, Lcom/tencent/stat/a/ICe;->b(Landroid/content/Context;)V
 
-    sput-boolean v2, Lcom/tencent/stat/ICi;->k:Z
+    sput-boolean v2, Lcom/tencent/stat/ICi;->isZk:Z
 
     :cond_4
-    sget v0, Lcom/tencent/stat/ICi;->e:I
+    sget v0, Lcom/tencent/stat/ICi;->mIe:I
 
     return v0
 
     :cond_5
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Exceed StatConfig.getMaxDaySessionNumbers()."
 
@@ -252,24 +252,24 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    sget-object v2, Lcom/tencent/stat/ICb;->b:Lcom/tencent/stat/ICc;
+    sget-object v2, Lcom/tencent/stat/ICb;->mICcb:Lcom/tencent/stat/ICc;
 
-    iget v2, v2, Lcom/tencent/stat/ICc;->d:I
+    iget v2, v2, Lcom/tencent/stat/ICc;->mId:I
 
     if-eqz v2, :cond_0
 
     const-string/jumbo v2, "v"
 
-    sget-object v3, Lcom/tencent/stat/ICb;->b:Lcom/tencent/stat/ICc;
+    sget-object v3, Lcom/tencent/stat/ICb;->mICcb:Lcom/tencent/stat/ICc;
 
-    iget v3, v3, Lcom/tencent/stat/ICc;->d:I
+    iget v3, v3, Lcom/tencent/stat/ICc;->mId:I
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_0
-    sget-object v2, Lcom/tencent/stat/ICb;->b:Lcom/tencent/stat/ICc;
+    sget-object v2, Lcom/tencent/stat/ICb;->mICcb:Lcom/tencent/stat/ICc;
 
-    iget v2, v2, Lcom/tencent/stat/ICc;->a:I
+    iget v2, v2, Lcom/tencent/stat/ICc;->mIa:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -281,24 +281,24 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    sget-object v2, Lcom/tencent/stat/ICb;->a:Lcom/tencent/stat/ICc;
+    sget-object v2, Lcom/tencent/stat/ICb;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v2, v2, Lcom/tencent/stat/ICc;->d:I
+    iget v2, v2, Lcom/tencent/stat/ICc;->mId:I
 
     if-eqz v2, :cond_1
 
     const-string/jumbo v2, "v"
 
-    sget-object v3, Lcom/tencent/stat/ICb;->a:Lcom/tencent/stat/ICc;
+    sget-object v3, Lcom/tencent/stat/ICb;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v3, v3, Lcom/tencent/stat/ICc;->d:I
+    iget v3, v3, Lcom/tencent/stat/ICc;->mId:I
 
     invoke-virtual {v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_1
-    sget-object v2, Lcom/tencent/stat/ICb;->a:Lcom/tencent/stat/ICc;
+    sget-object v2, Lcom/tencent/stat/ICb;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v2, v2, Lcom/tencent/stat/ICc;->a:I
+    iget v2, v2, Lcom/tencent/stat/ICc;->mIa:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -314,7 +314,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -331,7 +331,7 @@
     return-void
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/ICi;->a:Landroid/os/Handler;
+    sget-object v0, Lcom/tencent/stat/ICi;->mHandlera:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
@@ -347,13 +347,13 @@
 
     if-nez v0, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "ooh, Compatibility problem was found in this device!"
 
     invoke-virtual {v0, v1}, Lcom/tencent/stat/a/ICl;->e(Ljava/lang/Object;)V
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "If you are on debug mode, please delete apk and try again."
 
@@ -386,13 +386,13 @@
 
     invoke-direct {v1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    sput-object v1, Lcom/tencent/stat/ICi;->a:Landroid/os/Handler;
+    sput-object v1, Lcom/tencent/stat/ICi;->mHandlera:Landroid/os/Handler;
 
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICi;->j:Ljava/lang/Thread$UncaughtExceptionHandler;
+    sput-object v0, Lcom/tencent/stat/ICi;->mUncaughtExceptionHandlerj:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-static {}, Lcom/tencent/stat/ICb;->n()Z
 
@@ -434,7 +434,7 @@
     invoke-virtual {v0, v1}, Lcom/tencent/stat/ICo;->a(I)V
 
     :cond_3
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Init MTA StatService success."
 
@@ -443,7 +443,7 @@
     goto :goto_0
 
     :cond_4
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "MTA SDK AutoExceptionCaught is disable"
 
@@ -460,7 +460,7 @@
     const-string/jumbo p1, ""
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/ICb;->d:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/ICb;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -468,7 +468,7 @@
 
     if-nez v0, :cond_1
 
-    sput-object p1, Lcom/tencent/stat/ICb;->d:Ljava/lang/String;
+    sput-object p1, Lcom/tencent/stat/ICb;->mStringd:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -494,7 +494,7 @@
     :cond_1
     if-nez p0, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The Context of StatService.trackCustomEvent() can not be null!"
 
@@ -509,7 +509,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The event_id of StatService.trackCustomEvent() can not be null or empty."
 
@@ -576,7 +576,7 @@
     :cond_1
     if-nez p0, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The Context of StatService.reportSdkSelfException() can not be null!"
 
@@ -589,7 +589,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -674,7 +674,7 @@
     :cond_1
     if-nez p0, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The Context of StatService.sendAdditionEvent() can not be null!"
 
@@ -733,7 +733,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "MTA StatService is disable."
 
@@ -745,7 +745,7 @@
     :cond_0
     const-string/jumbo v1, "1.0.0"
 
-    sget-object v2, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -786,7 +786,7 @@
     :cond_1
     const-string/jumbo v1, "Context or mtaSdkVersion in StatService.startStatService() is null, please check it!"
 
-    sget-object v2, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->e(Ljava/lang/Object;)V
 
@@ -857,7 +857,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->e(Ljava/lang/Object;)V
 
@@ -902,7 +902,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -935,7 +935,7 @@
 .method static synthetic b()Lcom/tencent/stat/a/ICl;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     return-object v0
 .end method
@@ -945,7 +945,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/tencent/stat/ICb;->c:Ljava/lang/String;
+    sget-object v1, Lcom/tencent/stat/ICb;->mStringc:Ljava/lang/String;
 
     const-wide/16 v2, 0x0
 
@@ -977,7 +977,7 @@
 .method static synthetic c()Ljava/lang/Thread$UncaughtExceptionHandler;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICi;->j:Ljava/lang/Thread$UncaughtExceptionHandler;
+    sget-object v0, Lcom/tencent/stat/ICi;->mUncaughtExceptionHandlerj:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     return-object v0
 .end method
@@ -991,7 +991,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "start new session."
 
@@ -1001,7 +1001,7 @@
 
     move-result v0
 
-    sput v0, Lcom/tencent/stat/ICi;->e:I
+    sput v0, Lcom/tencent/stat/ICi;->mIe:I
 
     const/4 v0, 0x0
 
@@ -1017,7 +1017,7 @@
 
     new-instance v2, Lcom/tencent/stat/b/ICh;
 
-    sget v3, Lcom/tencent/stat/ICi;->e:I
+    sget v3, Lcom/tencent/stat/ICi;->mIe:I
 
     invoke-static {}, Lcom/tencent/stat/ICi;->a()Lorg/json/JSONObject;
 
@@ -1049,7 +1049,7 @@
     :cond_1
     if-nez p0, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The Context of StatService.onResume() can not be null!"
 
@@ -1059,7 +1059,7 @@
 
     :cond_2
     :try_start_0
-    sget-object v0, Lcom/tencent/stat/ICi;->h:Ljava/util/Map;
+    sget-object v0, Lcom/tencent/stat/ICi;->mMaph:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -1071,7 +1071,7 @@
 
     if-lt v0, v1, :cond_3
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1118,15 +1118,15 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
-    sget-object v0, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/ICi;->h:Ljava/util/Map;
+    sget-object v0, Lcom/tencent/stat/ICi;->mMaph:Ljava/util/Map;
 
-    sget-object v1, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sget-object v1, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1134,7 +1134,7 @@
 
     if-eqz v0, :cond_4
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1146,7 +1146,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sget-object v2, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1167,9 +1167,9 @@
     goto :goto_0
 
     :cond_4
-    sget-object v0, Lcom/tencent/stat/ICi;->h:Ljava/util/Map;
+    sget-object v0, Lcom/tencent/stat/ICi;->mMaph:Ljava/util/Map;
 
-    sget-object v1, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sget-object v1, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1205,7 +1205,7 @@
     :cond_0
     if-nez p0, :cond_1
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "The Context of StatService.onPause() can not be null!"
 
@@ -1219,7 +1219,7 @@
 
     move-result-object v1
 
-    sget-object v0, Lcom/tencent/stat/ICi;->h:Ljava/util/Map;
+    sget-object v0, Lcom/tencent/stat/ICi;->mMaph:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1264,7 +1264,7 @@
     move-result-object v0
 
     :cond_2
-    sget-object v2, Lcom/tencent/stat/ICi;->g:Ljava/lang/String;
+    sget-object v2, Lcom/tencent/stat/ICi;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1276,12 +1276,12 @@
 
     const-string/jumbo v2, "-"
 
-    sput-object v2, Lcom/tencent/stat/ICi;->g:Ljava/lang/String;
+    sput-object v2, Lcom/tencent/stat/ICi;->mStringg:Ljava/lang/String;
 
     :cond_3
     new-instance v2, Lcom/tencent/stat/b/ICg;
 
-    sget-object v3, Lcom/tencent/stat/ICi;->g:Ljava/lang/String;
+    sget-object v3, Lcom/tencent/stat/ICi;->mStringg:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1295,7 +1295,7 @@
 
     move-result-object v0
 
-    sget-object v3, Lcom/tencent/stat/ICi;->f:Ljava/lang/String;
+    sget-object v3, Lcom/tencent/stat/ICi;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1303,7 +1303,7 @@
 
     if-nez v0, :cond_4
 
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v3, "Invalid invocation since previous onResume on diff page."
 
@@ -1327,7 +1327,7 @@
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     :cond_5
-    sput-object v1, Lcom/tencent/stat/ICi;->g:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/stat/ICi;->mStringg:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1342,7 +1342,7 @@
 
     :cond_6
     :try_start_1
-    sget-object v0, Lcom/tencent/stat/ICi;->i:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICi;->mICli:Lcom/tencent/stat/a/ICl;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1380,7 +1380,7 @@
 
     invoke-static {p0}, Lcom/tencent/stat/ICi;->a(Landroid/content/Context;)V
 
-    sget-object v0, Lcom/tencent/stat/ICi;->a:Landroid/os/Handler;
+    sget-object v0, Lcom/tencent/stat/ICi;->mHandlera:Landroid/os/Handler;
 
     return-object v0
 .end method

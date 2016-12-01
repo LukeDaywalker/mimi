@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/Logger;
+.field private isZd:Z
 
-.field private b:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
+.field private final mLoggera:Lio/fabric/sdk/android/Logger;
 
-.field private c:Ljavax/net/ssl/SSLSocketFactory;
+.field private mPinningInfoProviderb:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
 
-.field private d:Z
+.field private mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
 
 
 # direct methods
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 53
-    iput-object p1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->a:Lio/fabric/sdk/android/Logger;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mLoggera:Lio/fabric/sdk/android/Logger;
 
     .line 54
     return-void
@@ -56,12 +56,12 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->d:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->isZd:Z
 
     .line 71
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->c:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -119,11 +119,11 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->c:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->d:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->isZd:Z
 
     if-nez v0, :cond_0
 
@@ -132,11 +132,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->c:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 125
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->c:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -163,20 +163,20 @@
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->d:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->isZd:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 132
     :try_start_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->b:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mPinningInfoProviderb:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/network/NetworkUtils;->a(Lio/fabric/sdk/android/services/network/PinningInfoProvider;)Ljavax/net/ssl/SSLSocketFactory;
 
     move-result-object v0
 
     .line 134
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->a:Lio/fabric/sdk/android/Logger;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mLoggera:Lio/fabric/sdk/android/Logger;
 
     const-string/jumbo v2, "Fabric"
 
@@ -199,7 +199,7 @@
 
     .line 137
     :try_start_2
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->a:Lio/fabric/sdk/android/Logger;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mLoggera:Lio/fabric/sdk/android/Logger;
 
     const-string/jumbo v2, "Fabric"
 
@@ -245,7 +245,7 @@
     const/4 v2, 0x1
 
     .line 83
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     invoke-virtual {p1}, Lio/fabric/sdk/android/services/network/HttpMethod;->ordinal()I
 
@@ -280,7 +280,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->b:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mPinningInfoProviderb:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
 
     if-eqz v0, :cond_0
 
@@ -353,12 +353,12 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->b:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mPinningInfoProviderb:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
 
     if-eq v0, p1, :cond_0
 
     .line 64
-    iput-object p1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->b:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->mPinningInfoProviderb:Lio/fabric/sdk/android/services/network/PinningInfoProvider;
 
     .line 65
     invoke-direct {p0}, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;->a()V

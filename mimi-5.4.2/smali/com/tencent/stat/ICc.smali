@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:Lorg/json/JSONObject;
+.field mId:I
 
-.field c:Ljava/lang/String;
+.field mJSONObjectb:Lorg/json/JSONObject;
 
-.field d:I
+.field mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -22,17 +22,17 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/stat/ICc;->b:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/stat/ICc;->mJSONObjectb:Lorg/json/JSONObject;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/tencent/stat/ICc;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/ICc;->mStringc:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/tencent/stat/ICc;->d:I
+    iput v0, p0, Lcom/tencent/stat/ICc;->mId:I
 
-    iput p1, p0, Lcom/tencent/stat/ICc;->a:I
+    iput p1, p0, Lcom/tencent/stat/ICc;->mIa:I
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/ICc;->b:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/stat/ICc;->mJSONObjectb:Lorg/json/JSONObject;
 
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 

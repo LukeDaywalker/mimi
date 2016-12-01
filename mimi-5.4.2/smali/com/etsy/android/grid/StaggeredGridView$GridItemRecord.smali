@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field a:I
+.field isZc:Z
 
-.field b:D
+.field mDb:D
 
-.field c:Z
+.field mIa:I
 
 
 # direct methods
@@ -66,14 +66,14 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     .line 83
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iput-wide v2, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     .line 84
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
@@ -83,7 +83,7 @@
     if-ne v1, v0, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->c:Z
+    iput-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->isZc:Z
 
     .line 85
     return-void
@@ -150,7 +150,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -162,7 +162,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iget-wide v2, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->c:Z
+    iget-boolean v1, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->isZc:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -198,17 +198,17 @@
 
     .prologue
     .line 94
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 95
-    iget-wide v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iget-wide v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
     .line 96
-    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->c:Z
+    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->isZc:Z
 
     if-eqz v0, :cond_0
 

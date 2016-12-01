@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/network/NetworkManager;
+.field final synthetic mNetworkManagera:Lcom/wumii/android/mimi/network/NetworkManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 25
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->a:Lcom/wumii/android/mimi/network/NetworkManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->mNetworkManagera:Lcom/wumii/android/mimi/network/NetworkManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,7 +41,7 @@
     if-eqz v0, :cond_0
 
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->a:Lcom/wumii/android/mimi/network/NetworkManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->mNetworkManagera:Lcom/wumii/android/mimi/network/NetworkManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
@@ -52,7 +52,7 @@
     if-eqz v0, :cond_0
 
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->a:Lcom/wumii/android/mimi/network/NetworkManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;->mNetworkManagera:Lcom/wumii/android/mimi/network/NetworkManager;
 
     new-instance v1, Lcom/wumii/android/mimi/models/entities/ObserverResult;
 

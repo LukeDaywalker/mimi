@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+.field final synthetic mMultiSelectContactSectionedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 21
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->a:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->mMultiSelectContactSectionedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,12 +39,12 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Contact;
 
     .line 26
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->a:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->mMultiSelectContactSectionedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->b(Lcom/wumii/android/mimi/models/entities/Contact;)V
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->a:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->mMultiSelectContactSectionedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;)Landroid/view/View$OnClickListener;
 
@@ -53,7 +53,7 @@
     if-eqz v0, :cond_0
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->a:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;->mMultiSelectContactSectionedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;)Landroid/view/View$OnClickListener;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private o:Ljava/lang/String;
+.field private isZp:Z
 
-.field private p:Z
+.field private mStringo:Ljava/lang/String;
 
 
 # direct methods
@@ -103,7 +103,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -142,12 +142,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     .line 37
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     return-object v0
 
@@ -168,7 +168,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     .line 29
     const-string/jumbo v1, "needCheck"
@@ -177,10 +177,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->p:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->isZp:Z
 
     .line 30
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->p:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->isZp:Z
 
     if-eqz v0, :cond_0
 
@@ -201,7 +201,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     invoke-static {v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     goto :goto_0
 
@@ -235,7 +235,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WebViewActivity;->mStringo:Ljava/lang/String;
 
     goto :goto_0
 .end method

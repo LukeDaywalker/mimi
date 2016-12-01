@@ -27,7 +27,7 @@
 
     check-cast v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;
 
-    iget-object v0, v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->d:Landroid/graphics/Paint;
+    iget-object v0, v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mPaintd:Landroid/graphics/Paint;
 
     invoke-static {p2, v0}, Landroid/support/v4/view/ViewCompat;->a(Landroid/view/View;Landroid/graphics/Paint;)V
 

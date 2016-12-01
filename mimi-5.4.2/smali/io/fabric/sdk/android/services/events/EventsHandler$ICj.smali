@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/events/EventsHandler;
+.field final synthetic mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 79
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->a:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .prologue
     .line 83
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->a:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
@@ -48,7 +48,7 @@
     move-exception v0
 
     .line 85
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->a:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICj;->mEventsHandlera:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
 

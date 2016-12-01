@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+.field final synthetic mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 767
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 770
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     sget-object v2, Lcom/crashlytics/android/core/ClsFileOutputStream;->a:Ljava/io/FilenameFilter;
 

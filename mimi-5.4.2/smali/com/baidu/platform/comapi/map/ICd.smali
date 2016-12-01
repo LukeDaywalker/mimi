@@ -10,15 +10,15 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICd;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICd;->mIc:I
 
     const-string/jumbo v0, "map"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICd;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICd;->mStringb:Ljava/lang/String;
 
     const/16 v0, 0x1f4
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICd;->d:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICd;->mId:I
 
     return-void
 .end method

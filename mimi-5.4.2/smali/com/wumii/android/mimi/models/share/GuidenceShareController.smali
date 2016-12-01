@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+.field private mGuidanced:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 24
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mGuidanced:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     .line 25
     return-void
@@ -148,7 +148,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mGuidanced:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Guidance;->getContent()Ljava/lang/String;
 
@@ -162,7 +162,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mGuidanced:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Guidance;->getImageUrl()Ljava/lang/String;
 
@@ -267,7 +267,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->mGuidanced:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Guidance;->getId()Ljava/lang/String;
 

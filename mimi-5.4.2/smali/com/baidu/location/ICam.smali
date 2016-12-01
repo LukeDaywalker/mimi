@@ -7,59 +7,59 @@
 
 
 # static fields
-.field private static final h0:I = 0x14
-
-.field private static final h5:F = 0.8f
-
 .field public static final h6:F = 4.0f
 
 .field public static final hP:F = 0.01f
 
-.field private static final hY:I = 0x6
+.field private static final mFh5:F = 0.8f
+
+.field private static final mIh0:I = 0x14
+
+.field private static final mIhY:I = 0x6
 
 
 # instance fields
-.field private h1:[F
-
-.field private volatile h2:I
-
-.field private h3:I
-
-.field private h4:[D
-
-.field private h7:I
-
-.field private h8:Landroid/hardware/SensorManager;
-
-.field private h9:Z
-
-.field private hK:I
-
-.field private hL:I
-
-.field private hM:I
-
-.field private final hN:J
-
-.field private hO:[F
-
-.field private hQ:I
-
-.field private hR:D
-
-.field private hS:[D
-
 .field public hT:Landroid/hardware/SensorEventListener;
 
-.field private hU:I
+.field private isZh9:Z
 
-.field private hV:J
+.field private mArrayDh4:[D
 
-.field hW:Ljava/util/Timer;
+.field private mArrayDhS:[D
 
-.field private hX:I
+.field private mArrayFh1:[F
 
-.field private hZ:Landroid/hardware/Sensor;
+.field private mArrayFhO:[F
+
+.field private mDhR:D
+
+.field private volatile mIh2:I
+
+.field private mIh3:I
+
+.field private mIh7:I
+
+.field private mIhK:I
+
+.field private mIhL:I
+
+.field private mIhM:I
+
+.field private mIhQ:I
+
+.field private mIhU:I
+
+.field private mIhX:I
+
+.field private final mJhN:J
+
+.field private mJhV:J
+
+.field private mSensorManagerh8:Landroid/hardware/SensorManager;
+
+.field private mSensorhZ:Landroid/hardware/Sensor;
+
+.field mTimerhW:Ljava/util/Timer;
 
 
 # direct methods
@@ -86,47 +86,47 @@
 
     const-wide/16 v0, 0x1e
 
-    iput-wide v0, p0, Lcom/baidu/location/ICam;->hN:J
+    iput-wide v0, p0, Lcom/baidu/location/ICam;->mJhN:J
 
-    iput v2, p0, Lcom/baidu/location/ICam;->h2:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIh2:I
 
-    iput v3, p0, Lcom/baidu/location/ICam;->hM:I
+    iput v3, p0, Lcom/baidu/location/ICam;->mIhM:I
 
     new-array v0, v4, [F
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hO:[F
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     new-array v0, v4, [F
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->h1:[F
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mArrayFh1:[F
 
     const/16 v0, 0x1f
 
-    iput v0, p0, Lcom/baidu/location/ICam;->h3:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIh3:I
 
-    iget v0, p0, Lcom/baidu/location/ICam;->h3:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIh3:I
 
     new-array v0, v0, [D
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->h4:[D
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mArrayDh4:[D
 
-    iput v2, p0, Lcom/baidu/location/ICam;->h7:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIh7:I
 
     const/4 v0, 0x6
 
     new-array v0, v0, [D
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hS:[D
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mArrayDhS:[D
 
-    iput v2, p0, Lcom/baidu/location/ICam;->hU:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICam;->hV:J
+    iput-wide v0, p0, Lcom/baidu/location/ICam;->mJhV:J
 
-    iput v2, p0, Lcom/baidu/location/ICam;->hQ:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIhQ:I
 
     new-instance v0, Lcom/baidu/location/ICam$1;
 
@@ -136,11 +136,11 @@
 
     const-wide v0, 0x3ff999999999999aL    # 1.6
 
-    iput-wide v0, p0, Lcom/baidu/location/ICam;->hR:D
+    iput-wide v0, p0, Lcom/baidu/location/ICam;->mDhR:D
 
     const/16 v0, 0x1b8
 
-    iput v0, p0, Lcom/baidu/location/ICam;->hL:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhL:I
 
     :try_start_0
     const-string/jumbo v0, "sensor"
@@ -151,11 +151,11 @@
 
     check-cast v0, Landroid/hardware/SensorManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->h8:Landroid/hardware/SensorManager;
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
-    iput p2, p0, Lcom/baidu/location/ICam;->hX:I
+    iput p2, p0, Lcom/baidu/location/ICam;->mIhX:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICam;->h8:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
     const/4 v1, 0x1
 
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hZ:Landroid/hardware/Sensor;
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mSensorhZ:Landroid/hardware/Sensor;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -196,7 +196,7 @@
 
     const/4 v6, 0x0
 
-    iget v0, p0, Lcom/baidu/location/ICam;->hK:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhK:I
 
     const/16 v1, 0x14
 
@@ -213,7 +213,7 @@
 
     new-array v2, v4, [F
 
-    iget-object v3, p0, Lcom/baidu/location/ICam;->h1:[F
+    iget-object v3, p0, Lcom/baidu/location/ICam;->mArrayFh1:[F
 
     invoke-static {v3, v6, v2, v6, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -245,35 +245,35 @@
 
     move-result-wide v2
 
-    iget-object v4, p0, Lcom/baidu/location/ICam;->h4:[D
+    iget-object v4, p0, Lcom/baidu/location/ICam;->mArrayDh4:[D
 
-    iget v5, p0, Lcom/baidu/location/ICam;->h7:I
+    iget v5, p0, Lcom/baidu/location/ICam;->mIh7:I
 
     aput-wide v2, v4, v5
 
     invoke-direct {p0, v2, v3}, Lcom/baidu/location/ICam;->do(D)V
 
-    iget v2, p0, Lcom/baidu/location/ICam;->h7:I
+    iget v2, p0, Lcom/baidu/location/ICam;->mIh7:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/baidu/location/ICam;->h7:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIh7:I
 
-    iget v2, p0, Lcom/baidu/location/ICam;->h7:I
+    iget v2, p0, Lcom/baidu/location/ICam;->mIh7:I
 
-    iget v3, p0, Lcom/baidu/location/ICam;->h3:I
+    iget v3, p0, Lcom/baidu/location/ICam;->mIh3:I
 
     if-ne v2, v3, :cond_2
 
-    iput v6, p0, Lcom/baidu/location/ICam;->h7:I
+    iput v6, p0, Lcom/baidu/location/ICam;->mIh7:I
 
-    iget-object v2, p0, Lcom/baidu/location/ICam;->h4:[D
+    iget-object v2, p0, Lcom/baidu/location/ICam;->mArrayDh4:[D
 
     invoke-direct {p0, v2}, Lcom/baidu/location/ICam;->if([D)D
 
     move-result-wide v2
 
-    iget v4, p0, Lcom/baidu/location/ICam;->h2:I
+    iget v4, p0, Lcom/baidu/location/ICam;->mIh2:I
 
     if-nez v4, :cond_3
 
@@ -285,15 +285,15 @@
 
     invoke-direct {p0, v6}, Lcom/baidu/location/ICam;->char(I)V
 
-    iput v6, p0, Lcom/baidu/location/ICam;->h2:I
+    iput v6, p0, Lcom/baidu/location/ICam;->mIh2:I
 
     :cond_2
     :goto_1
-    iget-wide v2, p0, Lcom/baidu/location/ICam;->hV:J
+    iget-wide v2, p0, Lcom/baidu/location/ICam;->mJhV:J
 
     sub-long v2, v0, v2
 
-    iget v4, p0, Lcom/baidu/location/ICam;->hL:I
+    iget v4, p0, Lcom/baidu/location/ICam;->mIhL:I
 
     int-to-long v4, v4
 
@@ -301,7 +301,7 @@
 
     if-lez v2, :cond_0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICam;->hR:D
+    iget-wide v2, p0, Lcom/baidu/location/ICam;->mDhR:D
 
     invoke-direct {p0, v2, v3}, Lcom/baidu/location/ICam;->if(D)Z
 
@@ -309,20 +309,20 @@
 
     if-eqz v2, :cond_0
 
-    iget v2, p0, Lcom/baidu/location/ICam;->hQ:I
+    iget v2, p0, Lcom/baidu/location/ICam;->mIhQ:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/baidu/location/ICam;->hQ:I
+    iput v2, p0, Lcom/baidu/location/ICam;->mIhQ:I
 
-    iput-wide v0, p0, Lcom/baidu/location/ICam;->hV:J
+    iput-wide v0, p0, Lcom/baidu/location/ICam;->mJhV:J
 
     goto :goto_0
 
     :cond_3
     invoke-direct {p0, v7}, Lcom/baidu/location/ICam;->char(I)V
 
-    iput v7, p0, Lcom/baidu/location/ICam;->h2:I
+    iput v7, p0, Lcom/baidu/location/ICam;->mIh2:I
 
     goto :goto_1
 .end method
@@ -333,11 +333,11 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/baidu/location/ICam;->hM:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhM:I
 
     or-int/2addr v0, p1
 
-    iput v0, p0, Lcom/baidu/location/ICam;->hM:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhM:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -356,11 +356,11 @@
 .method static synthetic do(Lcom/baidu/location/ICam;)I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICam;->hK:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhK:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICam;->hK:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhK:I
 
     return v0
 .end method
@@ -368,25 +368,25 @@
 .method private do(D)V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/location/ICam;->hS:[D
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mArrayDhS:[D
 
-    iget v1, p0, Lcom/baidu/location/ICam;->hU:I
+    iget v1, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     rem-int/lit8 v1, v1, 0x6
 
     aput-wide p1, v0, v1
 
-    iget v0, p0, Lcom/baidu/location/ICam;->hU:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICam;->hU:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhU:I
 
-    iget v0, p0, Lcom/baidu/location/ICam;->hU:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     rem-int/lit8 v0, v0, 0x6
 
-    iput v0, p0, Lcom/baidu/location/ICam;->hU:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     return-void
 .end method
@@ -394,7 +394,7 @@
 .method static synthetic for(Lcom/baidu/location/ICam;)I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICam;->h2:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIh2:I
 
     return v0
 .end method
@@ -460,7 +460,7 @@
 .method static synthetic if(Lcom/baidu/location/ICam;I)I
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/ICam;->h2:I
+    iput p1, p0, Lcom/baidu/location/ICam;->mIh2:I
 
     return p1
 .end method
@@ -485,9 +485,9 @@
     :goto_0
     if-gt v1, v2, :cond_1
 
-    iget-object v3, p0, Lcom/baidu/location/ICam;->hS:[D
+    iget-object v3, p0, Lcom/baidu/location/ICam;->mArrayDhS:[D
 
-    iget v4, p0, Lcom/baidu/location/ICam;->hU:I
+    iget v4, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     add-int/lit8 v4, v4, -0x1
 
@@ -501,9 +501,9 @@
 
     aget-wide v4, v3, v4
 
-    iget-object v3, p0, Lcom/baidu/location/ICam;->hS:[D
+    iget-object v3, p0, Lcom/baidu/location/ICam;->mArrayDhS:[D
 
-    iget v6, p0, Lcom/baidu/location/ICam;->hU:I
+    iget v6, p0, Lcom/baidu/location/ICam;->mIhU:I
 
     add-int/lit8 v6, v6, -0x1
 
@@ -550,9 +550,9 @@
 
     new-array v0, v0, [F
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
-    iget-object v2, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v2, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v2, v2, v4
 
@@ -564,9 +564,9 @@
 
     aput v2, v1, v4
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
-    iget-object v2, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v2, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v2, v2, v5
 
@@ -578,9 +578,9 @@
 
     aput v2, v1, v5
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
-    iget-object v2, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v2, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v2, v2, v6
 
@@ -592,7 +592,7 @@
 
     aput v2, v1, v6
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v1, v1, v4
 
@@ -600,7 +600,7 @@
 
     aput v1, v0, v4
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v1, v1, v5
 
@@ -608,7 +608,7 @@
 
     aput v1, v0, v5
 
-    iget-object v1, p0, Lcom/baidu/location/ICam;->hO:[F
+    iget-object v1, p0, Lcom/baidu/location/ICam;->mArrayFhO:[F
 
     aget v1, v1, v6
 
@@ -632,7 +632,7 @@
 .method static synthetic if(Lcom/baidu/location/ICam;[F)[F
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICam;->h1:[F
+    iput-object p1, p0, Lcom/baidu/location/ICam;->mArrayFh1:[F
 
     return-object p1
 .end method
@@ -645,7 +645,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/baidu/location/ICam;->hK:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhK:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -662,7 +662,7 @@
 
     :cond_0
     :try_start_1
-    iget v0, p0, Lcom/baidu/location/ICam;->hQ:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhQ:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -684,7 +684,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput v0, p0, Lcom/baidu/location/ICam;->hM:I
+    iput v0, p0, Lcom/baidu/location/ICam;->mIhM:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -706,7 +706,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/baidu/location/ICam;->hK:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhK:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -723,7 +723,7 @@
 
     :cond_0
     :try_start_1
-    iget v0, p0, Lcom/baidu/location/ICam;->hM:I
+    iget v0, p0, Lcom/baidu/location/ICam;->mIhM:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -740,22 +740,22 @@
 .method public bW()V
     .locals 6
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICam;->h9:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICam;->isZh9:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICam;->hZ:Landroid/hardware/Sensor;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorhZ:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICam;->h8:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/baidu/location/ICam;->hT:Landroid/hardware/SensorEventListener;
 
-    iget-object v2, p0, Lcom/baidu/location/ICam;->hZ:Landroid/hardware/Sensor;
+    iget-object v2, p0, Lcom/baidu/location/ICam;->mSensorhZ:Landroid/hardware/Sensor;
 
-    iget v3, p0, Lcom/baidu/location/ICam;->hX:I
+    iget v3, p0, Lcom/baidu/location/ICam;->mIhX:I
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
     :try_end_0
@@ -770,13 +770,13 @@
 
     invoke-direct {v0, v1, v2}, Ljava/util/Timer;-><init>(Ljava/lang/String;Z)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hW:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mTimerhW:Ljava/util/Timer;
 
     new-instance v1, Lcom/baidu/location/ICam$2;
 
     invoke-direct {v1, p0}, Lcom/baidu/location/ICam$2;-><init>(Lcom/baidu/location/ICam;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICam;->hW:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mTimerhW:Ljava/util/Timer;
 
     const-wide/16 v2, 0x1f4
 
@@ -786,7 +786,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICam;->h9:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICam;->isZh9:Z
 
     :cond_0
     return-void
@@ -800,14 +800,14 @@
 .method public bX()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICam;->h9:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICam;->isZh9:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICam;->h8:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mSensorManagerh8:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/baidu/location/ICam;->hT:Landroid/hardware/SensorEventListener;
 
@@ -816,21 +816,21 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICam;->hW:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mTimerhW:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICam;->hW:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/baidu/location/ICam;->mTimerhW:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICam;->hW:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/baidu/location/ICam;->mTimerhW:Ljava/util/Timer;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICam;->h9:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICam;->isZh9:Z
 
     :cond_0
     return-void

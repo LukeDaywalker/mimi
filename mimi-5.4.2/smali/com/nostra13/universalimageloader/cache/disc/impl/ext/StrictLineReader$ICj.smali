@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
+.field final synthetic mStrictLineReadera:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 147
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;->mStrictLineReadera:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
 
     invoke-direct {p0, p2}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
@@ -56,7 +56,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
+    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;->mStrictLineReadera:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;
 
     invoke-static {v4}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;)Ljava/nio/charset/Charset;
 

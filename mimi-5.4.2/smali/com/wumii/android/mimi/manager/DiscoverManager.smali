@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+.field private mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -260,7 +260,7 @@
 
     .line 369
     :cond_0
-    sget-object v1, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedModule;->getFeedType()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -671,7 +671,7 @@
 
     invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;-><init>(Lcom/wumii/android/mimi/manager/DiscoverManager;Ljava/util/List;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iput-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     .line 424
     return-void
@@ -812,7 +812,7 @@
     move-exception v0
 
     .line 140
-    sget-object v2, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "handle topics error"
 
@@ -1008,7 +1008,7 @@
     move-exception v0
 
     .line 165
-    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle topic secrets error"
 
@@ -1037,7 +1037,7 @@
 
     .prologue
     .line 307
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedModule;->getFeedType()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -1291,7 +1291,7 @@
     move-exception v0
 
     .line 191
-    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle circle secrets error"
 
@@ -1462,7 +1462,7 @@
     move-exception v0
 
     .line 216
-    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle hot secrets error"
 
@@ -1629,7 +1629,7 @@
     move-exception v0
 
     .line 241
-    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle nearby secrets error"
 
@@ -1801,7 +1801,7 @@
     move-exception v0
 
     .line 266
-    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/DiscoverManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle subject secrets error"
 
@@ -1841,7 +1841,7 @@
 
     .prologue
     .line 411
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     if-nez v0, :cond_0
 
@@ -1850,7 +1850,7 @@
 
     .line 414
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a()Ljava/util/List;
 
@@ -1872,7 +1872,7 @@
 
     .line 430
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     if-nez v0, :cond_1
 
@@ -1881,14 +1881,14 @@
 
     .line 433
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 434
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->i:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager;->mICaji:Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a()Ljava/util/List;
 

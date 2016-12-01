@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+.field final synthetic mSysNotificationStoragea:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;->a:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage$ICn;->mSysNotificationStoragea:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

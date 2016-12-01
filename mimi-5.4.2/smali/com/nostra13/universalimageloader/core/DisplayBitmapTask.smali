@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private final a:Landroid/graphics/Bitmap;
+.field private final mBitmapDisplayere:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
-.field private final b:Ljava/lang/String;
+.field private final mBitmapa:Landroid/graphics/Bitmap;
 
-.field private final c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+.field private final mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
-.field private final d:Ljava/lang/String;
+.field private final mImageLoaderEngineg:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
-.field private final e:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+.field private final mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-.field private final f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+.field private final mLoadedFromh:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-.field private final g:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final h:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+.field private final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -33,42 +33,42 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->a:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mBitmapa:Landroid/graphics/Bitmap;
 
     .line 51
-    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->a:Ljava/lang/String;
+    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringb:Ljava/lang/String;
 
     .line 52
-    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     .line 53
-    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->b:Ljava/lang/String;
+    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mStringb:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringd:Ljava/lang/String;
 
     .line 54
-    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->q()Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->e:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mBitmapDisplayere:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     .line 55
-    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+    iget-object v0, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
     .line 56
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->g:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoaderEngineg:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     .line 57
-    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->h:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mLoadedFromh:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     .line 58
     return-void
@@ -79,16 +79,16 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->g:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoaderEngineg:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a(Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 79
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -118,7 +118,7 @@
     const/4 v3, 0x0
 
     .line 62
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v0}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->e()Z
 
@@ -131,18 +131,18 @@
 
     new-array v1, v4, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringd:Ljava/lang/String;
 
     aput-object v2, v1, v3
 
     invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 64
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringb:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v2}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->d()Landroid/view/View;
 
@@ -167,18 +167,18 @@
 
     new-array v1, v4, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringd:Ljava/lang/String;
 
     aput-object v2, v1, v3
 
     invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 67
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringb:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v2}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->d()Landroid/view/View;
 
@@ -196,46 +196,46 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->h:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mLoadedFromh:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringd:Ljava/lang/String;
 
     aput-object v2, v1, v4
 
     invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 70
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->e:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mBitmapDisplayere:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->a:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mBitmapa:Landroid/graphics/Bitmap;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->h:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mLoadedFromh:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     invoke-interface {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;->a(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;)V
 
     .line 71
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->g:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoaderEngineg:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->b(Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;)V
 
     .line 72
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->f:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageLoadingListenerf:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mStringb:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->c:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mImageAwarec:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v2}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->d()Landroid/view/View;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->a:Landroid/graphics/Bitmap;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-interface {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;->a(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
 

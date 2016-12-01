@@ -3,19 +3,19 @@
 
 
 # static fields
-.field static a:Ljava/lang/String;
+.field private static mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
-.field static b:Ljava/lang/String;
+.field static mId:I
 
-.field static c:Ljava/lang/String;
+.field static mIe:I
 
-.field static d:I
+.field static mIf:I
 
-.field static e:I
+.field static mStringa:Ljava/lang/String;
 
-.field static f:I
+.field static mStringb:Ljava/lang/String;
 
-.field private static g:Lcom/baidu/platform/comapi/util/ICe;
+.field static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 .method public static getAppCachePath()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -48,7 +48,7 @@
 .method public static getAppSDCardPath()Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -93,7 +93,7 @@
 .method public static getAppSecondCachePath()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -101,7 +101,7 @@
 .method public static getDomTmpStgMax()I
     .locals 1
 
-    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->e:I
+    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mIe:I
 
     return v0
 .end method
@@ -109,7 +109,7 @@
 .method public static getItsTmpStgMax()I
     .locals 1
 
-    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->f:I
+    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mIf:I
 
     return v0
 .end method
@@ -117,7 +117,7 @@
 .method public static getMapTmpStgMax()I
     .locals 1
 
-    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->d:I
+    sget v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mId:I
 
     return v0
 .end method
@@ -125,7 +125,7 @@
 .method public static getSDCardPath()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 .method public static initAppDirectory(Landroid/content/Context;)V
     .locals 2
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     if-nez v0, :cond_0
 
@@ -141,18 +141,18 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     invoke-virtual {v0, p0}, Lcom/baidu/platform/comapi/util/ICe;->a(Landroid/content/Context;)V
 
     :cond_0
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -164,7 +164,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -198,10 +198,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringb:Ljava/lang/String;
 
     :goto_0
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
@@ -211,24 +211,24 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->c:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringc:Ljava/lang/String;
 
     const/high16 v0, 0x1400000
 
-    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->d:I
+    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mId:I
 
     const/high16 v0, 0x3200000
 
-    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->e:I
+    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mIe:I
 
     const/high16 v0, 0x500000
 
-    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->f:I
+    sput v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mIf:I
 
     return-void
 
     :cond_1
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
@@ -238,9 +238,9 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mICeg:Lcom/baidu/platform/comapi/util/ICe;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
@@ -250,7 +250,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringb:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -258,7 +258,7 @@
 .method public static setSDCardPath(Ljava/lang/String;)V
     .locals 0
 
-    sput-object p0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
+    sput-object p0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->mStringa:Ljava/lang/String;
 
     return-void
 .end method

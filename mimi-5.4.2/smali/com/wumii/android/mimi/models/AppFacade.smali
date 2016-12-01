@@ -4,47 +4,47 @@
 
 
 # static fields
-.field private static a:Lcom/wumii/android/mimi/models/AppFacade;
+.field private static mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
 
 # instance fields
-.field private b:Lcom/wumii/jackson/databind/JacksonMapper;
+.field private mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
-.field private c:Lcom/wumii/android/mimi/models/service/UserService;
+.field private mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mAppStateServicen:Lcom/wumii/android/mimi/models/service/AppStateService;
 
-.field private e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+.field private mApplicationInfoServicef:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
-.field private f:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
+.field private mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+.field private mGlobalStorages:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
-.field private h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field private mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
-.field private i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+.field private mHttpHelperk:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field private k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+.field private mLocationHelperg:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
-.field private l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+.field private mNetworkHelperh:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-.field private m:Lcom/wumii/android/mimi/push/PushReportService;
+.field private mNotificationCountHelperi:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
-.field private n:Lcom/wumii/android/mimi/models/service/AppStateService;
+.field private mNotificationHelperl:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
-.field private o:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+.field private mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private p:Lcom/wumii/android/mimi/models/service/ActivityService;
+.field private mPushReportServicem:Lcom/wumii/android/mimi/push/PushReportService;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
-.field private r:Lcom/wumii/android/mimi/manager/AccountManager;
+.field private mTagStoraget:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
-.field private s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
+.field private mUnreadNotificationServiceo:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
-.field private t:Lcom/wumii/android/mimi/models/storage/TagStorage;
+.field private mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/AppFacade;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/AppFacade;->a:Lcom/wumii/android/mimi/models/AppFacade;
+    sput-object v0, Lcom/wumii/android/mimi/models/AppFacade;->mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mStringq:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -105,11 +105,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mStringq:Ljava/lang/String;
 
     .line 103
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mStringq:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 79
-    sget-object v0, Lcom/wumii/android/mimi/models/AppFacade;->a:Lcom/wumii/android/mimi/models/AppFacade;
+    sget-object v0, Lcom/wumii/android/mimi/models/AppFacade;->mAppFacadea:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
@@ -259,7 +259,7 @@
 
     .prologue
     .line 293
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mGlobalStorages:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     if-nez v0, :cond_0
 
@@ -268,11 +268,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mGlobalStorages:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     .line 296
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mGlobalStorages:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     return-object v0
 .end method
@@ -282,7 +282,7 @@
 
     .prologue
     .line 300
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mTagStoraget:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     if-nez v0, :cond_0
 
@@ -291,11 +291,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mTagStoraget:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     .line 303
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mTagStoraget:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     return-object v0
 .end method
@@ -305,7 +305,7 @@
 
     .prologue
     .line 83
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -318,31 +318,31 @@
 
     .line 87
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mStringq:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 88
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AppFacade;->mStringq:Ljava/lang/String;
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     if-eqz v0, :cond_0
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->a()V
 
     .line 91
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     goto :goto_0
 .end method
@@ -352,7 +352,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     if-nez v0, :cond_0
 
@@ -365,11 +365,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/manager/AccountManager;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAccountManagerr:Lcom/wumii/android/mimi/manager/AccountManager;
 
     return-object v0
 .end method
@@ -379,7 +379,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->m:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPushReportServicem:Lcom/wumii/android/mimi/push/PushReportService;
 
     if-nez v0, :cond_0
 
@@ -388,11 +388,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/push/PushReportService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->m:Lcom/wumii/android/mimi/push/PushReportService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPushReportServicem:Lcom/wumii/android/mimi/push/PushReportService;
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->m:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPushReportServicem:Lcom/wumii/android/mimi/push/PushReportService;
 
     return-object v0
 .end method
@@ -402,7 +402,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->n:Lcom/wumii/android/mimi/models/service/AppStateService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAppStateServicen:Lcom/wumii/android/mimi/models/service/AppStateService;
 
     if-nez v0, :cond_0
 
@@ -411,11 +411,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/service/AppStateService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->n:Lcom/wumii/android/mimi/models/service/AppStateService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAppStateServicen:Lcom/wumii/android/mimi/models/service/AppStateService;
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->n:Lcom/wumii/android/mimi/models/service/AppStateService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mAppStateServicen:Lcom/wumii/android/mimi/models/service/AppStateService;
 
     return-object v0
 .end method
@@ -425,7 +425,7 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationHelperl:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     if-nez v0, :cond_0
 
@@ -434,11 +434,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationHelperl:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationHelperl:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     return-object v0
 .end method
@@ -448,7 +448,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->o:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUnreadNotificationServiceo:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
     if-nez v0, :cond_0
 
@@ -457,11 +457,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/services/UnreadNotificationService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->o:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUnreadNotificationServiceo:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
     .line 138
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->o:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUnreadNotificationServiceo:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
     return-object v0
 .end method
@@ -471,7 +471,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     if-nez v0, :cond_0
 
@@ -480,11 +480,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/service/ActivityService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     .line 145
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     return-object v0
 .end method
@@ -494,7 +494,7 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     if-nez v0, :cond_0
 
@@ -503,11 +503,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/service/UserService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 152
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     return-object v0
 .end method
@@ -517,7 +517,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     if-nez v0, :cond_0
 
@@ -530,11 +530,11 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper;-><init>(ZZ)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     return-object v0
 .end method
@@ -544,7 +544,7 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     if-nez v0, :cond_0
 
@@ -553,11 +553,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 168
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -567,7 +567,7 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->f:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mApplicationInfoServicef:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
     if-nez v0, :cond_0
 
@@ -576,11 +576,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->f:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mApplicationInfoServicef:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
     .line 175
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->f:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mApplicationInfoServicef:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
     return-object v0
 .end method
@@ -590,7 +590,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     if-nez v0, :cond_0
 
@@ -599,11 +599,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/HostHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     .line 182
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     return-object v0
 .end method
@@ -613,7 +613,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mLocationHelperg:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     if-nez v0, :cond_0
 
@@ -622,11 +622,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/LocationHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mLocationHelperg:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     .line 189
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mLocationHelperg:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     return-object v0
 .end method
@@ -636,7 +636,7 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNetworkHelperh:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     if-nez v0, :cond_0
 
@@ -645,11 +645,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNetworkHelperh:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 196
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNetworkHelperh:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     return-object v0
 .end method
@@ -659,7 +659,7 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationCountHelperi:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     if-nez v0, :cond_0
 
@@ -668,11 +668,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationCountHelperi:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mNotificationCountHelperi:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     return-object v0
 .end method
@@ -682,7 +682,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     if-nez v0, :cond_0
 
@@ -691,11 +691,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 210
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -705,7 +705,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHttpHelperk:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     if-nez v0, :cond_0
 
@@ -741,11 +741,11 @@
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;-><init>(Ljava/util/Map;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iput-object v1, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHttpHelperk:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 218
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->mHttpHelperk:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     return-object v0
 .end method

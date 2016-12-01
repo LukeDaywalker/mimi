@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field final synthetic mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+.field final synthetic mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 607
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 611
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 

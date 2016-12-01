@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private static final mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # instance fields
-.field private final b:Lcom/facebook/stetho/server/RegistryInitializer;
+.field private isZe:Z
 
-.field private final c:Ljava/lang/String;
+.field private mLocalServerSocketf:Landroid/net/LocalServerSocket;
 
-.field private d:Ljava/lang/Thread;
+.field private final mRegistryInitializerb:Lcom/facebook/stetho/server/RegistryInitializer;
 
-.field private e:Z
+.field private final mStringc:Ljava/lang/String;
 
-.field private f:Landroid/net/LocalServerSocket;
+.field private mThreadd:Ljava/lang/Thread;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    sput-object v0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sput-object v0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
@@ -61,10 +61,10 @@
 
     check-cast v0, Lcom/facebook/stetho/server/RegistryInitializer;
 
-    iput-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->b:Lcom/facebook/stetho/server/RegistryInitializer;
+    iput-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mRegistryInitializerb:Lcom/facebook/stetho/server/RegistryInitializer;
 
     .line 96
-    iput-object p2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->c:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mStringc:Ljava/lang/String;
 
     .line 97
     return-void
@@ -75,7 +75,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->b:Lcom/facebook/stetho/server/RegistryInitializer;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mRegistryInitializerb:Lcom/facebook/stetho/server/RegistryInitializer;
 
     invoke-interface {v0}, Lcom/facebook/stetho/server/RegistryInitializer;->c()Lorg/apache/http/protocol/HttpRequestHandlerRegistry;
 
@@ -148,7 +148,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->f:Landroid/net/LocalServerSocket;
+    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mLocalServerSocketf:Landroid/net/LocalServerSocket;
 
     .line 121
     new-instance v1, Ljava/lang/StringBuilder;
@@ -189,7 +189,7 @@
 
     .line 131
     :try_start_0
-    iget-object v3, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->f:Landroid/net/LocalServerSocket;
+    iget-object v3, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mLocalServerSocketf:Landroid/net/LocalServerSocket;
 
     invoke-virtual {v3}, Landroid/net/LocalServerSocket;->accept()Landroid/net/LocalSocket;
 
@@ -372,7 +372,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-object v0
 .end method
@@ -484,7 +484,7 @@
 
     .line 109
     :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->e:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -501,7 +501,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->d:Ljava/lang/Thread;
+    iput-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mThreadd:Ljava/lang/Thread;
 
     .line 113
     monitor-exit p0
@@ -509,11 +509,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 115
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mStringc:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer;->mStringc:Ljava/lang/String;
 
     .line 116
     :goto_1

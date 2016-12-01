@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private f:Landroid/widget/TextView;
+.field private mTextViewf:Landroid/widget/TextView;
 
-.field private g:Landroid/widget/TextView;
+.field private mTextViewg:Landroid/widget/TextView;
 
-.field private h:Landroid/view/View;
+.field private mViewh:Landroid/view/View;
 
-.field private i:Landroid/view/View;
+.field private mViewi:Landroid/view/View;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewc:Landroid/widget/TextView;
 
     .line 50
     const v0, 0x7f0b01b1
@@ -73,7 +73,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewd:Landroid/widget/TextView;
 
     .line 51
     const v0, 0x7f0b01b2
@@ -84,7 +84,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewe:Landroid/widget/TextView;
 
     .line 52
     const v0, 0x7f0b01b3
@@ -95,7 +95,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewf:Landroid/widget/TextView;
 
     .line 53
     const v0, 0x7f0b01b5
@@ -106,7 +106,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
     .line 54
     const v0, 0x7f0b016b
@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewh:Landroid/view/View;
 
     .line 55
     const v0, 0x7f0b01b4
@@ -124,7 +124,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->i:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewi:Landroid/view/View;
 
     .line 56
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->a:Landroid/view/View;
@@ -212,7 +212,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -220,23 +220,23 @@
 
     .line 69
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewc:Landroid/widget/TextView;
 
     const v3, 0x7f02009e
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v3, ""
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -280,7 +280,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -288,7 +288,7 @@
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewe:Landroid/widget/TextView;
 
     const v3, 0x7f060058
 
@@ -306,14 +306,14 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
     .line 85
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->getContext()Landroid/content/Context;
 
@@ -343,7 +343,7 @@
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;
 
@@ -370,21 +370,21 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewf:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->f:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -411,17 +411,17 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->i:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewi:Landroid/view/View;
 
     invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -485,14 +485,14 @@
 
     .line 73
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewc:Landroid/widget/TextView;
 
     const v3, 0x7f02009f
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;->getSecretCount()I
 
@@ -505,9 +505,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -549,7 +549,7 @@
 
     .line 81
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewe:Landroid/widget/TextView;
 
     const v3, 0x7f06005a
 
@@ -579,9 +579,9 @@
     move-result-object v3
 
     .line 105
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -607,7 +607,7 @@
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewg:Landroid/widget/TextView;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
 
@@ -665,17 +665,17 @@
 
     .line 149
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v10}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0, v10}, Landroid/view/View;->setVisibility(I)V
 
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->i:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->mViewi:Landroid/view/View;
 
     invoke-virtual {v0, v10}, Landroid/view/View;->setVisibility(I)V
 

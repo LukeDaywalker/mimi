@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+.field final synthetic mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 592
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICav;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICav;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 596
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICav;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICav;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->r(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;
 

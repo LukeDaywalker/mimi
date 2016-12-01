@@ -3,11 +3,9 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static mContextb:Landroid/content/Context;
 
-.field private static b:Landroid/content/Context;
-
-.field private static c:Ljava/util/Hashtable;
+.field private static mHashtablec:Ljava/util/Hashtable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Hashtable",
@@ -19,11 +17,13 @@
     .end annotation
 .end field
 
-.field private static d:Lcom/baidu/lbsapi/auth/ICi;
+.field private static mICcf:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
-.field private static e:Lcom/baidu/lbsapi/auth/ICn;
+.field private static mICid:Lcom/baidu/lbsapi/auth/ICi;
 
-.field private static f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
+.field private static mICne:Lcom/baidu/lbsapi/auth/ICn;
+
+.field private static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -38,13 +38,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mStringa:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICid:Lcom/baidu/lbsapi/auth/ICi;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICcf:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 .method static synthetic a()Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICcf:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-object v0
 .end method
@@ -70,11 +70,11 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICcf:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
     return-void
 .end method
@@ -88,9 +88,9 @@
 
     const/4 v7, 0x0
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     if-nez v0, :cond_0
 
@@ -98,23 +98,23 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     :cond_0
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICid:Lcom/baidu/lbsapi/auth/ICi;
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;)Lcom/baidu/lbsapi/auth/ICi;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICid:Lcom/baidu/lbsapi/auth/ICi;
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
     if-nez v0, :cond_2
 
@@ -124,7 +124,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/platform/comapi/util/PermissionCheck$ICa;-><init>(Lcom/baidu/platform/comapi/util/PermissionCheck$1;)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
     :cond_2
     const-string/jumbo v0, ""
@@ -134,7 +134,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -177,7 +177,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sget-object v3, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/baidu/platform/comapi/util/ICa;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -197,7 +197,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "mb"
 
@@ -209,7 +209,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "os"
 
@@ -221,7 +221,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "sv"
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "imt"
 
@@ -241,7 +241,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "net"
 
@@ -253,7 +253,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "cpu"
 
@@ -265,7 +265,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "glr"
 
@@ -277,7 +277,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "glv"
 
@@ -289,7 +289,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "resid"
 
@@ -301,7 +301,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "appid"
 
@@ -309,7 +309,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "ver"
 
@@ -317,7 +317,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "screen"
 
@@ -355,7 +355,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "dpi"
 
@@ -393,7 +393,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "pcn"
 
@@ -405,7 +405,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v3, "cuid"
 
@@ -417,7 +417,7 @@
 
     invoke-virtual {v2, v3, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
     const-string/jumbo v2, "name"
 
@@ -443,15 +443,15 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICid:Lcom/baidu/lbsapi/auth/ICi;
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->mContextb:Landroid/content/Context;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -465,15 +465,15 @@
 
     :cond_1
     :try_start_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICid:Lcom/baidu/lbsapi/auth/ICi;
 
     const/4 v2, 0x0
 
     const-string/jumbo v3, "lbs_androidsdk"
 
-    sget-object v4, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
+    sget-object v4, Lcom/baidu/platform/comapi/util/PermissionCheck;->mHashtablec:Ljava/util/Hashtable;
 
-    sget-object v5, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
+    sget-object v5, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICne:Lcom/baidu/lbsapi/auth/ICn;
 
     invoke-virtual {v0, v2, v3, v4, v5}, Lcom/baidu/lbsapi/auth/ICi;->a(ZLjava/lang/String;Ljava/util/Hashtable;Lcom/baidu/lbsapi/auth/ICn;)I
     :try_end_1
@@ -494,7 +494,7 @@
 .method public static setPermissionCheckResultListener(Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;)V
     .locals 0
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
+    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->mICcf:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-void
 .end method

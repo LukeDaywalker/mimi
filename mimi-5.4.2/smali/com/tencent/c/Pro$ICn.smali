@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static mICnb:Lcom/tencent/c/Pro$ICn;
 
-.field private static b:Lcom/tencent/c/Pro$ICn;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private volatile c:Ljava/lang/ref/WeakReference;
+.field private volatile mWeakReferencec:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -34,12 +34,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/c/Pro$ICn;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/c/Pro$ICn;->mStringa:Ljava/lang/String;
 
     .line 57
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/c/Pro$ICn;->b:Lcom/tencent/c/Pro$ICn;
+    sput-object v0, Lcom/tencent/c/Pro$ICn;->mICnb:Lcom/tencent/c/Pro$ICn;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     .line 58
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICn;->c:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICn;->mWeakReferencec:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/c/Pro$ICn;->b:Lcom/tencent/c/Pro$ICn;
+    sget-object v0, Lcom/tencent/c/Pro$ICn;->mICnb:Lcom/tencent/c/Pro$ICn;
 
     if-nez v0, :cond_0
 
@@ -78,11 +78,11 @@
 
     invoke-direct {v0}, Lcom/tencent/c/Pro$ICn;-><init>()V
 
-    sput-object v0, Lcom/tencent/c/Pro$ICn;->b:Lcom/tencent/c/Pro$ICn;
+    sput-object v0, Lcom/tencent/c/Pro$ICn;->mICnb:Lcom/tencent/c/Pro$ICn;
 
     .line 65
     :cond_0
-    sget-object v0, Lcom/tencent/c/Pro$ICn;->b:Lcom/tencent/c/Pro$ICn;
+    sget-object v0, Lcom/tencent/c/Pro$ICn;->mICnb:Lcom/tencent/c/Pro$ICn;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -106,11 +106,11 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->mWeakReferencec:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->mWeakReferencec:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v1, p0, Lcom/tencent/c/Pro$ICn;->c:Ljava/lang/ref/WeakReference;
+    iput-object v1, p0, Lcom/tencent/c/Pro$ICn;->mWeakReferencec:Ljava/lang/ref/WeakReference;
 
     .line 88
     :cond_1
@@ -151,7 +151,7 @@
     if-nez v1, :cond_2
 
     .line 91
-    sget-object v0, Lcom/tencent/c/Pro$ICn;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro$ICn;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -179,7 +179,7 @@
 
     .line 94
     :cond_2
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICn;->mWeakReferencec:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -204,7 +204,7 @@
 
     .line 96
     :cond_3
-    sget-object v2, Lcom/tencent/c/Pro$ICn;->a:Ljava/lang/String;
+    sget-object v2, Lcom/tencent/c/Pro$ICn;->mStringa:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -248,7 +248,7 @@
     invoke-virtual {v0}, Ljava/net/MalformedURLException;->printStackTrace()V
 
     .line 105
-    sget-object v0, Lcom/tencent/c/Pro$ICn;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro$ICn;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -280,7 +280,7 @@
     move-result-object p2
 
     .line 100
-    sget-object v0, Lcom/tencent/c/Pro$ICn;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro$ICn;->mStringa:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

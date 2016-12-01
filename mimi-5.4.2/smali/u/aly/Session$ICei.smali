@@ -33,7 +33,9 @@
 
 .field public static final enum g:Lu/aly/Session$ICei;
 
-.field private static final h:Ljava/util/Map;
+.field private static final synthetic mArrayICeik:[Lu/aly/Session$ICei;
+
+.field private static final mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -45,13 +47,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic k:[Lu/aly/Session$ICei;
-
 
 # instance fields
-.field private final i:S
+.field private final mSi:S
 
-.field private final j:Ljava/lang/String;
+.field private final mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -191,14 +191,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lu/aly/Session$ICei;->k:[Lu/aly/Session$ICei;
+    sput-object v0, Lu/aly/Session$ICei;->mArrayICeik:[Lu/aly/Session$ICei;
 
     .line 67
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/Session$ICei;->h:Ljava/util/Map;
+    sput-object v0, Lu/aly/Session$ICei;->mMaph:Ljava/util/Map;
 
     .line 70
     const-class v0, Lu/aly/Session$ICei;
@@ -225,7 +225,7 @@
     check-cast v0, Lu/aly/Session$ICei;
 
     .line 71
-    sget-object v2, Lu/aly/Session$ICei;->h:Ljava/util/Map;
+    sget-object v2, Lu/aly/Session$ICei;->mMaph:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/Session$ICei;->b()Ljava/lang/String;
 
@@ -255,10 +255,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 120
-    iput-short p3, p0, Lu/aly/Session$ICei;->i:S
+    iput-short p3, p0, Lu/aly/Session$ICei;->mSi:S
 
     .line 121
-    iput-object p4, p0, Lu/aly/Session$ICei;->j:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/Session$ICei;->mStringj:Ljava/lang/String;
 
     .line 122
     return-void
@@ -285,7 +285,7 @@
 
     .prologue
     .line 58
-    sget-object v0, Lu/aly/Session$ICei;->k:[Lu/aly/Session$ICei;
+    sget-object v0, Lu/aly/Session$ICei;->mArrayICeik:[Lu/aly/Session$ICei;
 
     invoke-virtual {v0}, [Lu/aly/Session$ICei;->clone()Ljava/lang/Object;
 
@@ -303,7 +303,7 @@
 
     .prologue
     .line 125
-    iget-short v0, p0, Lu/aly/Session$ICei;->i:S
+    iget-short v0, p0, Lu/aly/Session$ICei;->mSi:S
 
     return v0
 .end method
@@ -313,7 +313,7 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lu/aly/Session$ICei;->j:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/Session$ICei;->mStringj:Ljava/lang/String;
 
     return-object v0
 .end method

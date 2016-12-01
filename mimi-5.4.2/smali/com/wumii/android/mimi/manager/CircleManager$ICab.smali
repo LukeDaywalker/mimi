@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/CircleManager;
+.field final synthetic mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 337
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
 
     .line 343
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 346
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/CircleManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -107,7 +107,7 @@
     .line 355
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICab;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/Object;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+.field final synthetic mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;Landroid/graphics/Bitmap;)V
 

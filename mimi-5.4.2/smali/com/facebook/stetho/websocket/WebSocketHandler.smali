@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+.field private final mSimpleEndpointa:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/facebook/stetho/server/SecureHttpRequestHandler;-><init>(Landroid/content/Context;)V
 
     .line 79
-    iput-object p2, p0, Lcom/facebook/stetho/websocket/WebSocketHandler;->a:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iput-object p2, p0, Lcom/facebook/stetho/websocket/WebSocketHandler;->mSimpleEndpointa:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     .line 80
     return-void
@@ -255,7 +255,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/facebook/stetho/websocket/WebSocketHandler;->a:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iget-object v3, p0, Lcom/facebook/stetho/websocket/WebSocketHandler;->mSimpleEndpointa:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     invoke-direct {v1, v2, v0, v3}, Lcom/facebook/stetho/websocket/WebSocketSession;-><init>(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/facebook/stetho/websocket/SimpleEndpoint;)V
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
+.field final synthetic mICaaa:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+.field final synthetic mSearchImageAdapterb:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->b:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->mSearchImageAdapterb:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->mICaaa:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICz;->mICaaa:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->c(Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;)Landroid/view/View;
 

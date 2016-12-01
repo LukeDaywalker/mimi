@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private e:Landroid/widget/LinearLayout;
+.field private mIg:I
 
-.field private f:Landroid/widget/TextView;
+.field private mLinearLayoute:Landroid/widget/LinearLayout;
 
-.field private g:I
+.field private mTextViewf:Landroid/widget/TextView;
 
 
 # direct methods
@@ -82,7 +82,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->g:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mIg:I
 
     .line 39
     invoke-virtual {v0, v8, v6}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -101,10 +101,10 @@
 
     invoke-direct {v0, v3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -113,21 +113,21 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     const/high16 v1, 0x41800000    # 16.0f
 
     invoke-virtual {v0, v4, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->g:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mIg:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -158,24 +158,24 @@
 
     invoke-direct {v0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 69
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2, v1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -243,7 +243,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -261,7 +261,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -283,7 +283,7 @@
     if-le v0, p2, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, p2}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -303,12 +303,12 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 102
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->g:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mIg:I
 
     .line 103
     const/4 v0, 0x0
@@ -316,7 +316,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -325,7 +325,7 @@
     if-ge v1, v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->e:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 

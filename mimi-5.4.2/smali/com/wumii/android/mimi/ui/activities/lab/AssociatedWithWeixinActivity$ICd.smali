@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+.field final synthetic mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 258
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     .line 259
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -31,7 +31,7 @@
 
     .prologue
     .line 263
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mStringd:Ljava/lang/String;
 
     .line 264
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->j()V
@@ -91,7 +91,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -234,7 +234,7 @@
 
     .line 288
     :goto_0
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     new-instance v9, Ljava/util/HashMap;
 
@@ -243,7 +243,7 @@
     invoke-static {v8, v9}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;Ljava/util/Map;)Ljava/util/Map;
 
     .line 289
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     invoke-static {v8}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)Ljava/util/Map;
 
@@ -254,7 +254,7 @@
     invoke-interface {v8, v9, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 290
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)Ljava/util/Map;
 
@@ -269,7 +269,7 @@
     invoke-interface {v2, v8, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 291
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)Ljava/util/Map;
 
@@ -280,7 +280,7 @@
     invoke-interface {v2, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 292
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)Ljava/util/Map;
 
@@ -291,7 +291,7 @@
     invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 293
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)Ljava/util/Map;
 
@@ -302,7 +302,7 @@
     invoke-interface {v2, v3, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 295
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->mAssociatedWithWeixinActivitya:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICe;
 

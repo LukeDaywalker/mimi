@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Method;
+.field private static mMethoda:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     const/4 v5, 0x1
 
     .line 37
-    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->mMethoda:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
@@ -49,20 +49,20 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->a:Ljava/lang/reflect/Method;
+    sput-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->mMethoda:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 44
     :goto_0
-    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->mMethoda:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     .line 47
     :cond_0
     :try_start_1
-    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/v4/view/ViewCompatEclairMr1;->mMethoda:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 

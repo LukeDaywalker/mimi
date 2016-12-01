@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+.field private mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
 
 # direct methods
@@ -181,7 +181,7 @@
     const/4 v1, 0x1
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
     if-eqz v0, :cond_2
 
@@ -265,7 +265,7 @@
     if-eqz v4, :cond_0
 
     .line 46
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
     invoke-interface {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->a(Landroid/view/View;)V
 
@@ -284,7 +284,7 @@
     if-eqz v0, :cond_1
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
     invoke-interface {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->b(Landroid/view/View;)V
 
@@ -302,7 +302,7 @@
     if-eqz v0, :cond_2
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
     invoke-interface {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;->c(Landroid/view/View;)V
 
@@ -325,7 +325,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView;->mICdb:Lcom/wumii/android/mimi/ui/widgets/secret/CommentsPinnedHeaderListView$ICd;
 
     .line 78
     return-void

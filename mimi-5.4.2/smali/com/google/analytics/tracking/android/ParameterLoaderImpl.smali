@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     .line 24
     return-void
@@ -49,7 +49,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -62,15 +62,15 @@
 
     .line 42
     :cond_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mStringb:Ljava/lang/String;
 
     .line 47
     :goto_1
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -84,7 +84,7 @@
 
     .line 42
     :cond_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -116,7 +116,7 @@
     .line 77
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -145,7 +145,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -186,7 +186,7 @@
     return-object v0
 
     :cond_0
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -284,7 +284,7 @@
     :cond_0
     const-string/jumbo v1, "true"
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -302,7 +302,7 @@
 
     .prologue
     .line 106
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/ParameterLoaderImpl;->mStringb:Ljava/lang/String;
 
     .line 107
     return-void

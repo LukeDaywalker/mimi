@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+.field private mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-.field private d:Ljava/lang/String;
+.field final synthetic mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 783
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     .line 784
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
@@ -47,7 +47,7 @@
     if-nez p1, :cond_0
 
     .line 826
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->I(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -65,7 +65,7 @@
 
     .line 829
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Landroid/graphics/Bitmap;)V
 
@@ -89,7 +89,7 @@
 
     .prologue
     .line 838
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mStringd:Ljava/lang/String;
 
     .line 839
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->j()V
@@ -103,7 +103,7 @@
 
     .prologue
     .line 844
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -112,7 +112,7 @@
     if-eqz v0, :cond_0
 
     .line 845
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 834
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->J(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -167,7 +167,7 @@
     if-eqz v0, :cond_0
 
     .line 853
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     const/4 v2, 0x0
 
@@ -183,14 +183,14 @@
 
     .prologue
     .line 789
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->e(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Ljava/lang/String;)Ljava/lang/String;
 
     .line 790
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     if-nez v0, :cond_0
 
@@ -201,10 +201,10 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 792
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICu;
 
@@ -214,7 +214,7 @@
 
     .line 799
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->e:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mProgressingDialoge:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -229,9 +229,9 @@
     const/4 v0, 0x0
 
     .line 804
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mStringd:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->H(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Landroid/util/DisplayMetrics;
 
@@ -283,7 +283,7 @@
     invoke-direct {v2, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 809
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 

@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/models/enum/SenderRole;
+.field private static final synthetic mArraySenderRoled:[Lcom/wumii/android/mimi/models/enum/SenderRole;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->d:[Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->mArraySenderRoled:[Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 3
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->d:[Lcom/wumii/android/mimi/models/enum/SenderRole;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->mArraySenderRoled:[Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/models/enum/SenderRole;->clone()Ljava/lang/Object;
 

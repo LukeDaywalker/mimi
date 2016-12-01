@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Map;
+.field private mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     .line 26
     return-void
@@ -106,7 +106,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -114,7 +114,7 @@
     if-eqz p1, :cond_0
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     const-string/jumbo v1, "gender"
 
@@ -125,7 +125,7 @@
     if-eqz p2, :cond_1
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     const-string/jumbo v1, "organizationId"
 
@@ -137,14 +137,14 @@
 
     .line 44
     :cond_1
-    invoke-static {p3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     const-string/jumbo v1, "description"
 
@@ -196,7 +196,7 @@
 
     const-string/jumbo v1, "user/profile"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/SetUserProfileTask;->mMapa:Ljava/util/Map;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 

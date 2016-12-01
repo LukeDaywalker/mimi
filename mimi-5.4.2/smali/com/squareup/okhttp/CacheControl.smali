@@ -10,29 +10,29 @@
 
 
 # instance fields
-.field c:Ljava/lang/String;
+.field private final isZd:Z
 
-.field private final d:Z
+.field private final isZe:Z
 
-.field private final e:Z
+.field private final isZh:Z
 
-.field private final f:I
+.field private final isZi:Z
 
-.field private final g:I
+.field private final isZj:Z
 
-.field private final h:Z
+.field private final isZm:Z
 
-.field private final i:Z
+.field private final isZn:Z
 
-.field private final j:Z
+.field private final mIf:I
 
-.field private final k:I
+.field private final mIg:I
 
-.field private final l:I
+.field private final mIk:I
 
-.field private final m:Z
+.field private final mIl:I
 
-.field private final n:Z
+.field mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -95,53 +95,53 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 65
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->a:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZa:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->d:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZd:Z
 
     .line 66
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->b:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZb:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->e:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZe:Z
 
     .line 67
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->c:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mIc:I
 
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->f:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
     .line 68
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->g:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIg:I
 
     .line 69
-    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->h:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZh:Z
 
     .line 70
-    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->i:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZi:Z
 
     .line 71
-    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->j:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZj:Z
 
     .line 72
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->d:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mId:I
 
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->k:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     .line 73
-    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->e:I
+    iget v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->mIe:I
 
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->l:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     .line 74
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->f:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZf:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->m:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZm:Z
 
     .line 75
-    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->g:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/CacheControl$ICf;->isZg:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->n:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZn:Z
 
     .line 76
     return-void
@@ -165,40 +165,40 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    iput-boolean p1, p0, Lcom/squareup/okhttp/CacheControl;->d:Z
+    iput-boolean p1, p0, Lcom/squareup/okhttp/CacheControl;->isZd:Z
 
     .line 51
-    iput-boolean p2, p0, Lcom/squareup/okhttp/CacheControl;->e:Z
+    iput-boolean p2, p0, Lcom/squareup/okhttp/CacheControl;->isZe:Z
 
     .line 52
-    iput p3, p0, Lcom/squareup/okhttp/CacheControl;->f:I
+    iput p3, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
     .line 53
-    iput p4, p0, Lcom/squareup/okhttp/CacheControl;->g:I
+    iput p4, p0, Lcom/squareup/okhttp/CacheControl;->mIg:I
 
     .line 54
-    iput-boolean p5, p0, Lcom/squareup/okhttp/CacheControl;->h:Z
+    iput-boolean p5, p0, Lcom/squareup/okhttp/CacheControl;->isZh:Z
 
     .line 55
-    iput-boolean p6, p0, Lcom/squareup/okhttp/CacheControl;->i:Z
+    iput-boolean p6, p0, Lcom/squareup/okhttp/CacheControl;->isZi:Z
 
     .line 56
-    iput-boolean p7, p0, Lcom/squareup/okhttp/CacheControl;->j:Z
+    iput-boolean p7, p0, Lcom/squareup/okhttp/CacheControl;->isZj:Z
 
     .line 57
-    iput p8, p0, Lcom/squareup/okhttp/CacheControl;->k:I
+    iput p8, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     .line 58
-    iput p9, p0, Lcom/squareup/okhttp/CacheControl;->l:I
+    iput p9, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     .line 59
-    iput-boolean p10, p0, Lcom/squareup/okhttp/CacheControl;->m:Z
+    iput-boolean p10, p0, Lcom/squareup/okhttp/CacheControl;->isZm:Z
 
     .line 60
-    iput-boolean p11, p0, Lcom/squareup/okhttp/CacheControl;->n:Z
+    iput-boolean p11, p0, Lcom/squareup/okhttp/CacheControl;->isZn:Z
 
     .line 61
-    iput-object p12, p0, Lcom/squareup/okhttp/CacheControl;->c:Ljava/lang/String;
+    iput-object p12, p0, Lcom/squareup/okhttp/CacheControl;->mStringc:Ljava/lang/String;
 
     .line 62
     return-void
@@ -777,7 +777,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 255
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->d:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZd:Z
 
     if-eqz v1, :cond_0
 
@@ -787,7 +787,7 @@
 
     .line 256
     :cond_0
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->e:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZe:Z
 
     if-eqz v1, :cond_1
 
@@ -797,7 +797,7 @@
 
     .line 257
     :cond_1
-    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->f:I
+    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
     if-eq v1, v3, :cond_2
 
@@ -807,7 +807,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->f:I
+    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -819,7 +819,7 @@
 
     .line 258
     :cond_2
-    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->g:I
+    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->mIg:I
 
     if-eq v1, v3, :cond_3
 
@@ -829,7 +829,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->g:I
+    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->mIg:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -841,7 +841,7 @@
 
     .line 259
     :cond_3
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->h:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZh:Z
 
     if-eqz v1, :cond_4
 
@@ -851,7 +851,7 @@
 
     .line 260
     :cond_4
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->i:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZi:Z
 
     if-eqz v1, :cond_5
 
@@ -861,7 +861,7 @@
 
     .line 261
     :cond_5
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->j:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZj:Z
 
     if-eqz v1, :cond_6
 
@@ -871,7 +871,7 @@
 
     .line 262
     :cond_6
-    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->k:I
+    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     if-eq v1, v3, :cond_7
 
@@ -881,7 +881,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->k:I
+    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -893,7 +893,7 @@
 
     .line 263
     :cond_7
-    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->l:I
+    iget v1, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     if-eq v1, v3, :cond_8
 
@@ -903,7 +903,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->l:I
+    iget v2, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -915,7 +915,7 @@
 
     .line 264
     :cond_8
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->m:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZm:Z
 
     if-eqz v1, :cond_9
 
@@ -925,7 +925,7 @@
 
     .line 265
     :cond_9
-    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->n:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/CacheControl;->isZn:Z
 
     if-eqz v1, :cond_a
 
@@ -976,7 +976,7 @@
 
     .prologue
     .line 87
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->d:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZd:Z
 
     return v0
 .end method
@@ -986,7 +986,7 @@
 
     .prologue
     .line 92
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZe:Z
 
     return v0
 .end method
@@ -996,7 +996,7 @@
 
     .prologue
     .line 100
-    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->f:I
+    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->mIf:I
 
     return v0
 .end method
@@ -1006,7 +1006,7 @@
 
     .prologue
     .line 113
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->h:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZh:Z
 
     return v0
 .end method
@@ -1016,7 +1016,7 @@
 
     .prologue
     .line 117
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->i:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZi:Z
 
     return v0
 .end method
@@ -1026,7 +1026,7 @@
 
     .prologue
     .line 121
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->j:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZj:Z
 
     return v0
 .end method
@@ -1036,7 +1036,7 @@
 
     .prologue
     .line 125
-    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->k:I
+    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->mIk:I
 
     return v0
 .end method
@@ -1046,7 +1046,7 @@
 
     .prologue
     .line 129
-    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->l:I
+    iget v0, p0, Lcom/squareup/okhttp/CacheControl;->mIl:I
 
     return v0
 .end method
@@ -1056,7 +1056,7 @@
 
     .prologue
     .line 140
-    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->m:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/CacheControl;->isZm:Z
 
     return v0
 .end method
@@ -1066,7 +1066,7 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/squareup/okhttp/CacheControl;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/CacheControl;->mStringc:Ljava/lang/String;
 
     .line 250
     if-eqz v0, :cond_0
@@ -1079,7 +1079,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/CacheControl;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/CacheControl;->mStringc:Ljava/lang/String;
 
     goto :goto_0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/VolumeProviderCompat;
+.field final synthetic mVolumeProviderCompata:Landroid/support/v4/media/VolumeProviderCompat;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Landroid/support/v4/media/VolumeProviderCompat$1;->a:Landroid/support/v4/media/VolumeProviderCompat;
+    iget-object v0, p0, Landroid/support/v4/media/VolumeProviderCompat$1;->mVolumeProviderCompata:Landroid/support/v4/media/VolumeProviderCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/media/VolumeProviderCompat;->a(I)V
 
@@ -29,7 +29,7 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Landroid/support/v4/media/VolumeProviderCompat$1;->a:Landroid/support/v4/media/VolumeProviderCompat;
+    iget-object v0, p0, Landroid/support/v4/media/VolumeProviderCompat$1;->mVolumeProviderCompata:Landroid/support/v4/media/VolumeProviderCompat;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/media/VolumeProviderCompat;->b(I)V
 

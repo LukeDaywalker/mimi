@@ -25,11 +25,11 @@
 
 .field public static final enum e:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
-.field private static final synthetic g:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+.field private static final synthetic mArrayICcg:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
 
 # instance fields
-.field private final f:I
+.field private final mIf:I
 
 
 # direct methods
@@ -127,7 +127,7 @@
 
     aput-object v1, v0, v7
 
-    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->g:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sput-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mArrayICcg:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     return-void
 .end method
@@ -145,7 +145,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 43
-    iput p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->f:I
+    iput p3, p0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mIf:I
 
     .line 44
     return-void
@@ -172,7 +172,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->g:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
+    sget-object v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->mArrayICcg:[Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;
 
     invoke-virtual {v0}, [Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError$ICc;->clone()Ljava/lang/Object;
 

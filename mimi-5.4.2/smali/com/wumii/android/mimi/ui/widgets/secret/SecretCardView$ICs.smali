@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+.field final synthetic mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 380
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,11 +32,11 @@
     const/16 v0, 0x8
 
     .line 384
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->e:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICs;->mSecretCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 

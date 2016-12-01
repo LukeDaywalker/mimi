@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
+.field final synthetic mDatabasePeerManagera:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$ICb;->a:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$ICb;->mDatabasePeerManagera:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

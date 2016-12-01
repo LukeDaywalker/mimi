@@ -46,9 +46,9 @@
 
     .line 474
     :pswitch_0
-    iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
-    iget-object v0, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->b:[Ljava/lang/Object;
+    iget-object v0, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mArrayObjectb:[Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -60,9 +60,9 @@
 
     .line 477
     :pswitch_1
-    iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
-    iget-object v0, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->b:[Ljava/lang/Object;
+    iget-object v0, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mArrayObjectb:[Ljava/lang/Object;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/content/ModernAsyncTask;->b([Ljava/lang/Object;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -31,7 +31,7 @@
     invoke-direct/range {v0 .. v5}, Lio/fabric/sdk/android/services/common/AbstractSpiCall;-><init>(Lio/fabric/sdk/android/Kit;Ljava/lang/String;Ljava/lang/String;Lio/fabric/sdk/android/services/network/HttpRequestFactory;Lio/fabric/sdk/android/services/network/HttpMethod;)V
 
     .line 29
-    iput-object p5, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->b:Ljava/lang/String;
+    iput-object p5, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->mStringb:Ljava/lang/String;
 
     .line 30
     return-void
@@ -211,7 +211,7 @@
     move-result-object v0
 
     .line 35
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->mStringb:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->a(Lio/fabric/sdk/android/services/network/HttpRequest;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 

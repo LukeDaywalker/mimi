@@ -302,7 +302,7 @@
     check-cast p0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 42
-    sget-object v1, Lcom/wumii/android/mimi/util/CircleUtils$ICo;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/util/CircleUtils$ICo;->mArrayIa:[I
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 

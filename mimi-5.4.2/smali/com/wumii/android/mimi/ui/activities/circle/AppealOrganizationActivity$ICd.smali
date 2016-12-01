@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+.field final synthetic mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)V
 

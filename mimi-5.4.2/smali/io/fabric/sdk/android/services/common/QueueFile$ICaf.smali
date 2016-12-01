@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+.field static final mICafa:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
 
 # instance fields
-.field final b:I
+.field final mIb:I
 
-.field final c:I
+.field final mIc:I
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0, v1, v1}, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;-><init>(II)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->a:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
+    sput-object v0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mICafa:Lio/fabric/sdk/android/services/common/QueueFile$ICaf;
 
     return-void
 .end method
@@ -38,10 +38,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 605
-    iput p1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iput p1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     .line 606
-    iput p2, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iput p2, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     .line 607
     return-void
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->b:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -94,7 +94,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->c:I
+    iget v1, p0, Lio/fabric/sdk/android/services/common/QueueFile$ICaf;->mIc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

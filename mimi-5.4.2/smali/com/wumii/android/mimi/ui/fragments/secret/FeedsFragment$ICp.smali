@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+.field final synthetic mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+.field final synthetic mUserProfilea:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->a:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mUserProfilea:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,18 +50,18 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -75,11 +75,11 @@
 
     .line 120
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->c(Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;)Landroid/widget/PopupWindow;
 
@@ -106,18 +106,18 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -130,11 +130,11 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -146,7 +146,7 @@
 
     .line 113
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->a:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mUserProfilea:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getAppOrganizationV2()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -167,18 +167,18 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 115
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -192,11 +192,11 @@
 
     .line 117
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->b:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICp;->mICnb:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

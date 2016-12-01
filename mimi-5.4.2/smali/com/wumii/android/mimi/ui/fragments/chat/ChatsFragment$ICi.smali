@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+.field final synthetic mChatsFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 250
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->a:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->mChatsFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
@@ -49,7 +49,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(I)V
 
     .line 263
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->a:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICi;->mChatsFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->b(Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;)V
 

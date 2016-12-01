@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Lokio/BufferedSource;
+.field private isZd:Z
 
-.field private final b:Ljava/util/zip/Inflater;
+.field private final mBufferedSourcea:Lokio/BufferedSource;
 
-.field private c:I
+.field private mIc:I
 
-.field private d:Z
+.field private final mInflaterb:Ljava/util/zip/Inflater;
 
 
 # direct methods
@@ -49,10 +49,10 @@
 
     .line 51
     :cond_1
-    iput-object p1, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iput-object p1, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     .line 52
-    iput-object p2, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iput-object p2, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     .line 53
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 112
-    iget v0, p0, Lokio/InflaterSource;->c:I
+    iget v0, p0, Lokio/InflaterSource;->mIc:I
 
     if-nez v0, :cond_0
 
@@ -88,9 +88,9 @@
 
     .line 113
     :cond_0
-    iget v0, p0, Lokio/InflaterSource;->c:I
+    iget v0, p0, Lokio/InflaterSource;->mIc:I
 
-    iget-object v1, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v1, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v1}, Ljava/util/zip/Inflater;->getRemaining()I
 
@@ -99,14 +99,14 @@
     sub-int/2addr v0, v1
 
     .line 114
-    iget v1, p0, Lokio/InflaterSource;->c:I
+    iget v1, p0, Lokio/InflaterSource;->mIc:I
 
     sub-int/2addr v1, v0
 
-    iput v1, p0, Lokio/InflaterSource;->c:I
+    iput v1, p0, Lokio/InflaterSource;->mIc:I
 
     .line 115
-    iget-object v1, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     int-to-long v2, v0
 
@@ -154,7 +154,7 @@
 
     .line 58
     :cond_0
-    iget-boolean v2, p0, Lokio/InflaterSource;->d:Z
+    iget-boolean v2, p0, Lokio/InflaterSource;->isZd:Z
 
     if-eqz v2, :cond_1
 
@@ -191,13 +191,13 @@
     move-result-object v1
 
     .line 67
-    iget-object v2, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
-    iget-object v3, v1, Lokio/Segment;->a:[B
+    iget-object v3, v1, Lokio/Segment;->mArrayBa:[B
 
-    iget v4, v1, Lokio/Segment;->c:I
+    iget v4, v1, Lokio/Segment;->mIc:I
 
-    iget v5, v1, Lokio/Segment;->c:I
+    iget v5, v1, Lokio/Segment;->mIc:I
 
     rsub-int v5, v5, 0x800
 
@@ -209,20 +209,20 @@
     if-lez v2, :cond_3
 
     .line 69
-    iget v0, v1, Lokio/Segment;->c:I
+    iget v0, v1, Lokio/Segment;->mIc:I
 
     add-int/2addr v0, v2
 
-    iput v0, v1, Lokio/Segment;->c:I
+    iput v0, v1, Lokio/Segment;->mIc:I
 
     .line 70
-    iget-wide v0, p1, Lokio/Buffer;->b:J
+    iget-wide v0, p1, Lokio/Buffer;->mJb:J
 
     int-to-long v4, v2
 
     add-long/2addr v0, v4
 
-    iput-wide v0, p1, Lokio/Buffer;->b:J
+    iput-wide v0, p1, Lokio/Buffer;->mJb:J
 
     .line 71
     int-to-long v0, v2
@@ -231,7 +231,7 @@
 
     .line 73
     :cond_3
-    iget-object v2, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v2}, Ljava/util/zip/Inflater;->finished()Z
 
@@ -239,7 +239,7 @@
 
     if-nez v2, :cond_4
 
-    iget-object v2, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v2}, Ljava/util/zip/Inflater;->needsDictionary()Z
 
@@ -252,9 +252,9 @@
     invoke-direct {p0}, Lokio/InflaterSource;->c()V
 
     .line 75
-    iget v0, v1, Lokio/Segment;->b:I
+    iget v0, v1, Lokio/Segment;->mIb:I
 
-    iget v2, v1, Lokio/Segment;->c:I
+    iget v2, v1, Lokio/Segment;->mIc:I
 
     if-ne v0, v2, :cond_5
 
@@ -263,7 +263,7 @@
 
     move-result-object v0
 
-    iput-object v0, p1, Lokio/Buffer;->a:Lokio/Segment;
+    iput-object v0, p1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 78
     invoke-static {v1}, Lokio/SegmentPool;->a(Lokio/Segment;)V
@@ -305,7 +305,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->a()Lokio/Timeout;
 
@@ -321,7 +321,7 @@
     const/4 v0, 0x0
 
     .line 95
-    iget-object v1, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v1, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v1}, Ljava/util/zip/Inflater;->needsInput()Z
 
@@ -338,7 +338,7 @@
     invoke-direct {p0}, Lokio/InflaterSource;->c()V
 
     .line 98
-    iget-object v1, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v1, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v1}, Ljava/util/zip/Inflater;->getRemaining()I
 
@@ -356,7 +356,7 @@
 
     .line 101
     :cond_1
-    iget-object v1, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->g()Z
 
@@ -370,31 +370,31 @@
 
     .line 104
     :cond_2
-    iget-object v1, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
     move-result-object v1
 
-    iget-object v1, v1, Lokio/Buffer;->a:Lokio/Segment;
+    iget-object v1, v1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 105
-    iget v2, v1, Lokio/Segment;->c:I
+    iget v2, v1, Lokio/Segment;->mIc:I
 
-    iget v3, v1, Lokio/Segment;->b:I
+    iget v3, v1, Lokio/Segment;->mIb:I
 
     sub-int/2addr v2, v3
 
-    iput v2, p0, Lokio/InflaterSource;->c:I
+    iput v2, p0, Lokio/InflaterSource;->mIc:I
 
     .line 106
-    iget-object v2, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
-    iget-object v3, v1, Lokio/Segment;->a:[B
+    iget-object v3, v1, Lokio/Segment;->mArrayBa:[B
 
-    iget v1, v1, Lokio/Segment;->b:I
+    iget v1, v1, Lokio/Segment;->mIb:I
 
-    iget v4, p0, Lokio/InflaterSource;->c:I
+    iget v4, p0, Lokio/InflaterSource;->mIc:I
 
     invoke-virtual {v2, v3, v1, v4}, Ljava/util/zip/Inflater;->setInput([BII)V
 
@@ -406,7 +406,7 @@
 
     .prologue
     .line 123
-    iget-boolean v0, p0, Lokio/InflaterSource;->d:Z
+    iget-boolean v0, p0, Lokio/InflaterSource;->isZd:Z
 
     if-eqz v0, :cond_0
 
@@ -416,17 +416,17 @@
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lokio/InflaterSource;->b:Ljava/util/zip/Inflater;
+    iget-object v0, p0, Lokio/InflaterSource;->mInflaterb:Ljava/util/zip/Inflater;
 
     invoke-virtual {v0}, Ljava/util/zip/Inflater;->end()V
 
     .line 125
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lokio/InflaterSource;->d:Z
+    iput-boolean v0, p0, Lokio/InflaterSource;->isZd:Z
 
     .line 126
-    iget-object v0, p0, Lokio/InflaterSource;->a:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/InflaterSource;->mBufferedSourcea:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->close()V
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0, v0}, Lu/aly/AbstractIdTracker;-><init>(Ljava/lang/String;)V
 
     .line 17
-    iput-object p1, p0, Lu/aly/ImeiTracker;->a:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/ImeiTracker;->mContexta:Landroid/content/Context;
 
     .line 18
     return-void
@@ -31,7 +31,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lu/aly/ImeiTracker;->a:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/ImeiTracker;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v1, "phone"
 
@@ -50,7 +50,7 @@
 
     .line 31
     :try_start_0
-    iget-object v2, p0, Lu/aly/ImeiTracker;->a:Landroid/content/Context;
+    iget-object v2, p0, Lu/aly/ImeiTracker;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v3, "android.permission.READ_PHONE_STATE"
 

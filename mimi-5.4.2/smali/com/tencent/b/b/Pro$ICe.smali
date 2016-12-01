@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/io/File;
+.field private mFilea:Ljava/io/File;
 
-.field private b:J
+.field private mJb:J
 
-.field private c:J
+.field private mJc:J
 
 
 # direct methods
@@ -85,7 +85,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/tencent/b/b/Pro$ICe;->a:Ljava/io/File;
+    iget-object v0, p0, Lcom/tencent/b/b/Pro$ICe;->mFilea:Ljava/io/File;
 
     return-object v0
 .end method
@@ -95,7 +95,7 @@
 
     .prologue
     .line 46
-    iput-wide p1, p0, Lcom/tencent/b/b/Pro$ICe;->b:J
+    iput-wide p1, p0, Lcom/tencent/b/b/Pro$ICe;->mJb:J
 
     .line 47
     return-void
@@ -106,7 +106,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/tencent/b/b/Pro$ICe;->a:Ljava/io/File;
+    iput-object p1, p0, Lcom/tencent/b/b/Pro$ICe;->mFilea:Ljava/io/File;
 
     .line 32
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 41
-    iget-wide v0, p0, Lcom/tencent/b/b/Pro$ICe;->b:J
+    iget-wide v0, p0, Lcom/tencent/b/b/Pro$ICe;->mJb:J
 
     return-wide v0
 .end method
@@ -127,7 +127,7 @@
 
     .prologue
     .line 61
-    iput-wide p1, p0, Lcom/tencent/b/b/Pro$ICe;->c:J
+    iput-wide p1, p0, Lcom/tencent/b/b/Pro$ICe;->mJc:J
 
     .line 62
     return-void
@@ -138,7 +138,7 @@
 
     .prologue
     .line 56
-    iget-wide v0, p0, Lcom/tencent/b/b/Pro$ICe;->c:J
+    iget-wide v0, p0, Lcom/tencent/b/b/Pro$ICe;->mJc:J
 
     return-wide v0
 .end method

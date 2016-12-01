@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
+.field final synthetic mArrayAlertDialogBuilderc:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
-.field final synthetic b:Landroid/support/v4/util/SimpleArrayMap;
+.field final synthetic mICfa:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
+.field final synthetic mSimpleArrayMapb:Landroid/support/v4/util/SimpleArrayMap;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 26
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->c:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->mArrayAlertDialogBuilderc:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->mICfa:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->b:Landroid/support/v4/util/SimpleArrayMap;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->mSimpleArrayMapb:Landroid/support/v4/util/SimpleArrayMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->mICfa:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->b:Landroid/support/v4/util/SimpleArrayMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICe;->mSimpleArrayMapb:Landroid/support/v4/util/SimpleArrayMap;
 
     invoke-virtual {v0, p2}, Landroid/support/v4/util/SimpleArrayMap;->b(I)Ljava/lang/Object;
 

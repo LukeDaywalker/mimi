@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field private a:Z
-
 .field private byte:Ljava/lang/String;
 
 .field private case:Ljava/lang/String;
 
 .field private char:J
 
-.field private do:Ljava/lang/String;
-
 .field private else:Ljava/lang/String;
 
 .field private for:J
 
-.field private if:J
-
 .field private int:Ljava/lang/String;
+
+.field private isZa:Z
+
+.field private mJif:J
+
+.field private mStringdo:Ljava/lang/String;
 
 .field public new:Ljava/lang/String;
 
@@ -50,11 +50,11 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan;->isZa:Z
 
     iput-object v1, p0, Lcom/baidu/location/ICan;->case:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/baidu/location/ICan;->try:Lcom/baidu/location/ICan$ICa;
 
@@ -62,7 +62,7 @@
 
     iput-wide v2, p0, Lcom/baidu/location/ICan;->for:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICan;->if:J
+    iput-wide v2, p0, Lcom/baidu/location/ICan;->mJif:J
 
     new-instance v0, Lcom/baidu/location/ICan$ICa;
 
@@ -111,7 +111,7 @@
 .method static synthetic a(Lcom/baidu/location/ICan;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -119,7 +119,7 @@
 .method static synthetic do(Lcom/baidu/location/ICan;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICan;->if:J
+    iget-wide v0, p0, Lcom/baidu/location/ICan;->mJif:J
 
     return-wide v0
 .end method
@@ -135,7 +135,7 @@
 .method static synthetic if(Lcom/baidu/location/ICan;)Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -157,7 +157,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -168,7 +168,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICan;->byte:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     :cond_1
     iget-object v0, p0, Lcom/baidu/location/ICan;->try:Lcom/baidu/location/ICan$ICa;
@@ -185,7 +185,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan;->isZa:Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -205,7 +205,7 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICan;->byte:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -223,7 +223,7 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICan;->case:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICan;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan;->mStringdo:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -235,7 +235,7 @@
 .method public if(Ljava/lang/String;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICan;->a:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICan;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -245,11 +245,11 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan;->isZa:Z
 
     iget-wide v0, p0, Lcom/baidu/location/ICan;->for:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICan;->if:J
+    iput-wide v0, p0, Lcom/baidu/location/ICan;->mJif:J
 
     :cond_0
     iput-object p1, p0, Lcom/baidu/location/ICan;->byte:Ljava/lang/String;

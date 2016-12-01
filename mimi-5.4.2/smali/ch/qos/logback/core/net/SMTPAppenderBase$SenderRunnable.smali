@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field final e:Ljava/lang/Object;
+.field final mObjecte:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
@@ -43,7 +43,7 @@
 
     iput-object p2, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->cyclicBuffer:Lch/qos/logback/core/helpers/CyclicBuffer;
 
-    iput-object p3, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->e:Ljava/lang/Object;
+    iput-object p3, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->mObjecte:Ljava/lang/Object;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     iget-object v1, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->cyclicBuffer:Lch/qos/logback/core/helpers/CyclicBuffer;
 
-    iget-object v2, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->e:Ljava/lang/Object;
+    iget-object v2, p0, Lch/qos/logback/core/net/SMTPAppenderBase$SenderRunnable;->mObjecte:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Lch/qos/logback/core/net/SMTPAppenderBase;->sendBuffer(Lch/qos/logback/core/helpers/CyclicBuffer;Ljava/lang/Object;)V
 

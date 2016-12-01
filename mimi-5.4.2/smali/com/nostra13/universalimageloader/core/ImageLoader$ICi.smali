@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/graphics/Bitmap;
+.field private mBitmapa:Landroid/graphics/Bitmap;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     .prologue
     .line 810
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;->mBitmapa:Landroid/graphics/Bitmap;
 
     return-object v0
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 806
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;->a:Landroid/graphics/Bitmap;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/ImageLoader$ICi;->mBitmapa:Landroid/graphics/Bitmap;
 
     .line 807
     return-void

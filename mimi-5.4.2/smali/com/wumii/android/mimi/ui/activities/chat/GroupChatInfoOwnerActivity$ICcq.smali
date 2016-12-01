@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
+.field final synthetic mGroupChatInfoOwnerActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 278
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->mGroupChatInfoOwnerActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 284
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->mGroupChatInfoOwnerActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->clickOnCamera(Landroid/view/View;)V
 
@@ -48,7 +48,7 @@
 
     .line 287
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->mGroupChatInfoOwnerActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->clickOnAlbum(Landroid/view/View;)V
 
@@ -56,7 +56,7 @@
 
     .line 290
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcq;->mGroupChatInfoOwnerActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->clickOnSearchImage(Landroid/view/View;)V
 

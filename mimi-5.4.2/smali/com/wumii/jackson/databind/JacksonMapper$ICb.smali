@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Class;
+.field final synthetic mClassa:Ljava/lang/Class;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/wumii/jackson/databind/JacksonMapper$ICb;->a:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/wumii/jackson/databind/JacksonMapper$ICb;->mClassa:Ljava/lang/Class;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 
@@ -36,7 +36,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper$ICb;->a:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper$ICb;->mClassa:Ljava/lang/Class;
 
     return-object v0
 .end method

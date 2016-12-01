@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private n:Landroid/widget/ListView;
+.field private mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
-.field private o:Landroid/widget/TextView;
+.field private mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
-.field private p:Lcom/wumii/android/mimi/manager/ChatManager;
+.field private mChatObserverr:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
-.field private q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+.field private mListViewn:Landroid/widget/ListView;
 
-.field private r:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+.field private mTextViewo:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->r:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatObserverr:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->p:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
     return-object v0
 .end method
@@ -84,7 +84,7 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->n:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mListViewn:Landroid/widget/ListView;
 
     .line 74
     const v0, 0x7f0b0098
@@ -95,7 +95,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 75
     return-void
@@ -106,9 +106,9 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->p:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->r:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatObserverr:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->addObserver(Ljava/util/Observer;)V
 
@@ -121,9 +121,9 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->p:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->r:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatObserverr:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->deleteObserver(Ljava/util/Observer;)V
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -153,9 +153,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a(Ljava/util/List;)V
 
     .line 128
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->o:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mTextViewo:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a()Ljava/util/List;
 
@@ -378,7 +378,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->p:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
     .line 51
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
@@ -401,12 +401,12 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;Ljava/util/List;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->n:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mListViewn:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -414,7 +414,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->h()V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->p:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatManagerp:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->g()V
 
@@ -446,7 +446,7 @@
     .line 86
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->getCount()I
 
@@ -455,7 +455,7 @@
     if-eqz v0, :cond_0
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->mChatListAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->notifyDataSetChanged()V
 

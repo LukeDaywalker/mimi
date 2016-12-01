@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static final t:Ljava/lang/String;
+.field private static final mStringt:Ljava/lang/String;
 
 
 # instance fields
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/B;->t:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/map/B;->mStringt:Ljava/lang/String;
 
     return-void
 .end method

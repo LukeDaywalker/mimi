@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+.field final synthetic mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 880
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,14 +37,14 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     .line 885
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/ChatManager;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 886
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;->mBaseChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 

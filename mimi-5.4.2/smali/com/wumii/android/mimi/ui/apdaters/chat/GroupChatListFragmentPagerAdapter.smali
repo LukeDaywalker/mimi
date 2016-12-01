@@ -4,13 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/support/v4/app/FragmentManager;
+.field private mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
-.field private b:I
+.field private mIb:I
 
-.field private c:Lcom/wumii/android/mimi/models/service/UserService;
-
-.field private d:Ljava/util/List;
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -20,6 +18,8 @@
         }
     .end annotation
 .end field
+
+.field private mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -43,16 +43,16 @@
     invoke-direct {p0, p2}, Landroid/support/v4/app/FragmentPagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;)V
 
     .line 21
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     .line 22
-    iput p3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->b:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mIb:I
 
     .line 23
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 24
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->d:Ljava/util/List;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mListd:Ljava/util/List;
 
     .line 25
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -104,7 +104,7 @@
 
     if-ne v0, v1, :cond_1
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -113,7 +113,7 @@
     if-eqz v1, :cond_1
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -154,7 +154,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -163,9 +163,9 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->b:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;->mIb:I
 
     invoke-static {v1, v2, v0, p1}, Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;->a(Landroid/support/v4/app/FragmentManager;ILcom/wumii/android/mimi/models/entities/chat/GroupChatType;I)Lcom/wumii/android/mimi/ui/fragments/AbsGroupChatListFragment;
 

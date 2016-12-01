@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/TagManager;
+.field final synthetic mTagManagera:Lcom/google/tagmanager/TagManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 147
-    iput-object p1, p0, Lcom/google/tagmanager/TagManager$ICbf;->a:Lcom/google/tagmanager/TagManager;
+    iput-object p1, p0, Lcom/google/tagmanager/TagManager$ICbf;->mTagManagera:Lcom/google/tagmanager/TagManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     if-eqz v0, :cond_0
 
     .line 153
-    iget-object v1, p0, Lcom/google/tagmanager/TagManager$ICbf;->a:Lcom/google/tagmanager/TagManager;
+    iget-object v1, p0, Lcom/google/tagmanager/TagManager$ICbf;->mTagManagera:Lcom/google/tagmanager/TagManager;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

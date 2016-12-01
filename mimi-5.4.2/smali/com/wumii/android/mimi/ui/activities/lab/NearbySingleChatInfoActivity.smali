@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private o:Landroid/widget/TextView;
+.field private mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field private p:Landroid/widget/ImageView;
+.field private mICms:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
 
-.field private q:Landroid/widget/TextView;
+.field private mImageViewp:Landroid/widget/ImageView;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
-.field private s:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
+.field private mTextViewo:Landroid/widget/TextView;
 
-.field private t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+.field private mTextViewq:Landroid/widget/TextView;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     return-object v0
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     return-object v0
 .end method
@@ -72,7 +72,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 54
     const v0, 0x7f0b0051
@@ -83,7 +83,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->p:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     .line 55
     const v0, 0x7f0b00e5
@@ -94,7 +94,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 56
     const v0, 0x7f0b00e7
@@ -105,7 +105,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 57
     return-void
@@ -118,7 +118,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->s:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mICms:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
 
     if-nez v0, :cond_0
 
@@ -127,13 +127,13 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->s:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mICms:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
 
     .line 76
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->s:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mICms:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -207,12 +207,12 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->o:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mTextViewo:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;->getNearbyConverser()Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -225,9 +225,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->p:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;->getNearbyConverser()Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -248,9 +248,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mTextViewq:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;->getNearbyConverser()Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -263,9 +263,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;->isNearbyDiscoverable()Z
 
@@ -291,7 +291,7 @@
     if-ne p2, v0, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;->mNearbySingleChatt:Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;
 
     const/4 v1, 0x1
 

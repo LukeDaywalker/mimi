@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZr:Z
 
-.field private d:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private r:Z
+.field private mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -40,7 +40,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -50,7 +50,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->q:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringq:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -222,16 +222,16 @@
 
     .prologue
     .line 29
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringa:Ljava/lang/String;
 
     .line 30
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringd:Ljava/lang/String;
 
     .line 31
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->q:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringq:Ljava/lang/String;
 
     .line 32
-    iput-boolean p4, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->r:Z
+    iput-boolean p4, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->isZr:Z
 
     .line 33
     invoke-super {p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j()V
@@ -264,28 +264,28 @@
     .line 39
     const-string/jumbo v1, "pwd"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
     const-string/jumbo v1, "newPno"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     const-string/jumbo v1, "code"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->mStringq:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     const-string/jumbo v1, "deleteNewPnoData"
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->r:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask;->isZr:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

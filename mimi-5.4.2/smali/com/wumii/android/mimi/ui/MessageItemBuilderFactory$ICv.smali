@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->a:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->b:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->c:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -104,7 +104,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->f:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -120,7 +120,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->g:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -136,7 +136,7 @@
 
     :goto_6
     :try_start_7
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->h:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -152,7 +152,7 @@
 
     :goto_7
     :try_start_8
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->i:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -168,7 +168,7 @@
 
     :goto_8
     :try_start_9
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->j:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -184,7 +184,7 @@
 
     :goto_9
     :try_start_a
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->k:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
@@ -200,7 +200,7 @@
 
     :goto_a
     :try_start_b
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->l:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 

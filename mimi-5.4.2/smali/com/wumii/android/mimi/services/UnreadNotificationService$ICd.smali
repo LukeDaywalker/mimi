@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+.field final synthetic mUnreadNotificationServicea:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;->a:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;->mUnreadNotificationServicea:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,7 +78,7 @@
 
     .line 69
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;->a:Lcom/wumii/android/mimi/services/UnreadNotificationService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;->mUnreadNotificationServicea:Lcom/wumii/android/mimi/services/UnreadNotificationService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a(Lcom/wumii/android/mimi/services/UnreadNotificationService;)V
 

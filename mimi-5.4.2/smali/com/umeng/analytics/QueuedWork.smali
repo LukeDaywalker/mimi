@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static a:Ljava/util/concurrent/ExecutorService;
+.field private static mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-.field private static b:J
+.field private static mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
-.field private static c:Ljava/util/concurrent/ExecutorService;
+.field private static mJb:J
 
 
 # direct methods
@@ -21,19 +21,19 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     .line 9
     const-wide/16 v0, 0x5
 
-    sput-wide v0, Lcom/umeng/analytics/QueuedWork;->b:J
+    sput-wide v0, Lcom/umeng/analytics/QueuedWork;->mJb:J
 
     .line 33
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .prologue
     .line 25
     :try_start_0
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -52,13 +52,13 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 26
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -66,24 +66,24 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 28
     :cond_1
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-    sget-wide v2, Lcom/umeng/analytics/QueuedWork;->b:J
+    sget-wide v2, Lcom/umeng/analytics/QueuedWork;->mJb:J
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-interface {v0, v2, v3, v1}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
 
     .line 29
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
-    sget-wide v2, Lcom/umeng/analytics/QueuedWork;->b:J
+    sget-wide v2, Lcom/umeng/analytics/QueuedWork;->mJb:J
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 16
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -120,11 +120,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     .line 20
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0, p0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 41
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -150,11 +150,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     .line 44
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/QueuedWork;->c:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/umeng/analytics/QueuedWork;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0, p0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 

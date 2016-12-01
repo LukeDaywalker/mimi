@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+.field final synthetic mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
 
 # virtual methods
@@ -16,13 +16,13 @@
 
     .prologue
     .line 497
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$2;->a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$2;->mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$2;->a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$2;->mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-    iget-object v1, v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v1, v1, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v1, v1, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
     const/4 v2, 0x0
 

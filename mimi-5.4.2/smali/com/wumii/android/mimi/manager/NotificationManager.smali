@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -361,7 +361,7 @@
     move-exception v1
 
     .line 60
-    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/NotificationManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

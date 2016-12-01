@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+.field final synthetic mPromotionCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 129
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;->a:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;->mPromotionCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;->a:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;->mPromotionCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->b(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;)Landroid/view/View;
 

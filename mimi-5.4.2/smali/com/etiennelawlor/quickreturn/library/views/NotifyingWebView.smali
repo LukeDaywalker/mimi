@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
+.field private mICcb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     .line 26
     return-void
@@ -36,7 +36,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     .line 30
     return-void
@@ -52,7 +52,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     .line 34
     return-void
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebView;->onScrollChanged(IIII)V
 
     .line 40
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->mICcb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->mICcb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     move-object v1, p0
 
@@ -97,14 +97,14 @@
 
     .prologue
     .line 48
-    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     if-eqz v0, :cond_0
 
     move/from16 v7, p7
 
     :goto_0
-    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->mICcb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     .line 63
     return-void
@@ -160,7 +160,7 @@
 
     .prologue
     .line 66
-    iput-boolean p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->a:Z
+    iput-boolean p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->isZa:Z
 
     .line 67
     return-void

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field private mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 23
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 24
     return-void
@@ -77,25 +77,25 @@
     .line 39
     new-instance v0, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICar;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getDescription()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getIcon()Ljava/lang/String;
 
@@ -142,7 +142,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getName()Ljava/lang/String;
 
@@ -162,7 +162,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getIcon()Ljava/lang/String;
 
@@ -255,7 +255,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->mGroupChatd:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 

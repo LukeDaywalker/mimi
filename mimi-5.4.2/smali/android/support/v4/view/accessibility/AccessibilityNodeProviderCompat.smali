@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
+.field private static final mAccessibilityNodeProviderImpla:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
 
 # instance fields
-.field private final b:Ljava/lang/Object;
+.field private final mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderKitKatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mAccessibilityNodeProviderImpla:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
     .line 146
     :goto_0
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mAccessibilityNodeProviderImpla:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
     goto :goto_0
 
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mAccessibilityNodeProviderImpla:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
     goto :goto_0
 .end method
@@ -70,13 +70,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 152
-    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
+    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mAccessibilityNodeProviderImpla:Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;->a(Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->b:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mObjectb:Ljava/lang/Object;
 
     .line 153
     return-void
@@ -90,7 +90,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 162
-    iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->b:Ljava/lang/Object;
+    iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mObjectb:Ljava/lang/Object;
 
     .line 163
     return-void
@@ -113,7 +113,7 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->b:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;->mObjectb:Ljava/lang/Object;
 
     return-object v0
 .end method

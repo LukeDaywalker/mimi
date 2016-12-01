@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field final synthetic mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+.field final synthetic mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 1885
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 1889
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getRepliedCommentId()Ljava/lang/String;
 
@@ -63,11 +63,11 @@
     if-eqz v0, :cond_1
 
     .line 1893
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -75,11 +75,11 @@
 
     .line 1895
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->b(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -90,11 +90,11 @@
     if-eqz v0, :cond_2
 
     .line 1900
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->c(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -102,11 +102,11 @@
 
     .line 1902
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mICbvb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbv;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbw;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 

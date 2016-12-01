@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+.field final synthetic mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 257
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
     .line 258
     const/4 v0, 0x1
@@ -42,7 +42,7 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/service/UserService;->a(Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     .line 275
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)V
 
@@ -55,7 +55,7 @@
 
     .prologue
     .line 280
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
     const/4 v1, 0x0
 
@@ -82,14 +82,14 @@
 
     .prologue
     .line 263
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->setProgressBarIndeterminateVisibility(Z)V
 
     .line 264
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->mPushNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)V
 

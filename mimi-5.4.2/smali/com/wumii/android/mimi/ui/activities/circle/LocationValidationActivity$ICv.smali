@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+.field final synthetic mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 150
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,15 +32,15 @@
     .line 185
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->j(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Landroid/util/DisplayMetrics;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->k(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -81,7 +81,7 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     new-instance v1, Lcom/baidu/mapapi/model/LatLng;
 
@@ -174,7 +174,7 @@
     move-result-object v0
 
     .line 171
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/baidu/mapapi/map/BaiduMap;
 
@@ -188,7 +188,7 @@
     move-result-object v0
 
     .line 174
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/baidu/mapapi/map/BaiduMap;
 
@@ -197,7 +197,7 @@
     invoke-virtual {v2, v0}, Lcom/baidu/mapapi/map/BaiduMap;->setMapStatus(Lcom/baidu/mapapi/map/MapStatusUpdate;)V
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/baidu/mapapi/map/BaiduMap;
 
@@ -206,7 +206,7 @@
     invoke-virtual {v0, v1}, Lcom/baidu/mapapi/map/BaiduMap;->setMyLocationData(Lcom/baidu/mapapi/map/MyLocationData;)V
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/baidu/mapapi/map/BaiduMap;
 
@@ -220,13 +220,13 @@
     invoke-virtual {p1}, Lcom/baidu/location/BDLocation;->getRadius()F
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->i(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->h(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

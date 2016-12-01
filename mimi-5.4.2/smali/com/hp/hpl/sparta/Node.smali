@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Lcom/hp/hpl/sparta/Document;
+.field private mDocumenta:Lcom/hp/hpl/sparta/Document;
 
-.field private b:Lcom/hp/hpl/sparta/Element;
+.field private mElementb:Lcom/hp/hpl/sparta/Element;
 
-.field private c:Lcom/hp/hpl/sparta/Node;
+.field private mIf:I
 
-.field private d:Lcom/hp/hpl/sparta/Node;
+.field private mNodec:Lcom/hp/hpl/sparta/Node;
 
-.field private e:Ljava/lang/Object;
+.field private mNoded:Lcom/hp/hpl/sparta/Node;
 
-.field private f:I
+.field private mObjecte:Ljava/lang/Object;
 
 
 # direct methods
@@ -28,24 +28,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 426
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->a:Lcom/hp/hpl/sparta/Document;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     .line 431
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->b:Lcom/hp/hpl/sparta/Element;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->mElementb:Lcom/hp/hpl/sparta/Element;
 
     .line 436
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     .line 441
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     .line 442
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->e:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Node;->mObjecte:Ljava/lang/Object;
 
     .line 444
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/hp/hpl/sparta/Node;->f:I
+    iput v0, p0, Lcom/hp/hpl/sparta/Node;->mIf:I
 
     return-void
 .end method
@@ -59,14 +59,14 @@
     .line 28
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/hp/hpl/sparta/Node;->f:I
+    iput v0, p0, Lcom/hp/hpl/sparta/Node;->mIf:I
 
     .line 29
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->a:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->a:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     invoke-virtual {v0}, Lcom/hp/hpl/sparta/Document;->a()V
 
@@ -80,7 +80,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->a:Lcom/hp/hpl/sparta/Document;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     .line 34
     return-void
@@ -97,7 +97,7 @@
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->b:Lcom/hp/hpl/sparta/Element;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->mElementb:Lcom/hp/hpl/sparta/Element;
 
     .line 71
     return-void
@@ -111,12 +111,12 @@
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     .line 75
     if-eqz p1, :cond_0
 
-    iput-object p0, p1, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iput-object p0, p1, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     .line 76
     :cond_0
@@ -128,7 +128,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->a:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     return-object v0
 .end method
@@ -138,7 +138,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->b:Lcom/hp/hpl/sparta/Element;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mElementb:Lcom/hp/hpl/sparta/Element;
 
     return-object v0
 .end method
@@ -148,7 +148,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     return-object v0
 .end method
@@ -158,7 +158,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     return-object v0
 .end method
@@ -168,7 +168,7 @@
 
     .prologue
     .line 419
-    iget v0, p0, Lcom/hp/hpl/sparta/Node;->f:I
+    iget v0, p0, Lcom/hp/hpl/sparta/Node;->mIf:I
 
     if-nez v0, :cond_0
 
@@ -176,11 +176,11 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/hp/hpl/sparta/Node;->f:I
+    iput v0, p0, Lcom/hp/hpl/sparta/Node;->mIf:I
 
     .line 420
     :cond_0
-    iget v0, p0, Lcom/hp/hpl/sparta/Node;->f:I
+    iget v0, p0, Lcom/hp/hpl/sparta/Node;->mIf:I
 
     return v0
 .end method
@@ -192,34 +192,34 @@
     const/4 v2, 0x0
 
     .line 79
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
-    iput-object v1, v0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iput-object v1, v0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     .line 80
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
-    iput-object v1, v0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iput-object v1, v0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     .line 81
     :cond_1
-    iput-object v2, p0, Lcom/hp/hpl/sparta/Node;->d:Lcom/hp/hpl/sparta/Node;
+    iput-object v2, p0, Lcom/hp/hpl/sparta/Node;->mNoded:Lcom/hp/hpl/sparta/Node;
 
     .line 82
-    iput-object v2, p0, Lcom/hp/hpl/sparta/Node;->c:Lcom/hp/hpl/sparta/Node;
+    iput-object v2, p0, Lcom/hp/hpl/sparta/Node;->mNodec:Lcom/hp/hpl/sparta/Node;
 
     .line 83
     return-void

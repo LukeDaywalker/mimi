@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/ContextToast;
+.field final synthetic mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/ContextToast$ICz;->a:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/ContextToast$ICz;->mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast$ICz;->a:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast$ICz;->mContextToasta:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/ContextToast;->c(Lcom/wumii/android/mimi/util/ContextToast;)V
 

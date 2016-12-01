@@ -3,13 +3,13 @@
 
 
 # static fields
-.field private static volatile b:Lcom/tencent/wxop/stat/ICg;
+.field private static volatile mICgb:Lcom/tencent/wxop/stat/ICg;
 
 
 # instance fields
-.field private a:Ljava/util/Timer;
+.field private mContextc:Landroid/content/Context;
 
-.field private c:Landroid/content/Context;
+.field private mTimera:Ljava/util/Timer;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICg;->b:Lcom/tencent/wxop/stat/ICg;
+    sput-object v0, Lcom/tencent/wxop/stat/ICg;->mICgb:Lcom/tencent/wxop/stat/ICg;
 
     return-void
 .end method
@@ -30,15 +30,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->a:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->mTimera:Ljava/util/Timer;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->c:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->mContextc:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->c:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->mContextc:Landroid/content/Context;
 
     new-instance v0, Ljava/util/Timer;
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->a:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICg;->mTimera:Ljava/util/Timer;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method static synthetic a(Lcom/tencent/wxop/stat/ICg;)Landroid/content/Context;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICg;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICg;->mContextc:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -62,7 +62,7 @@
 .method public static a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICg;
     .locals 2
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICg;->b:Lcom/tencent/wxop/stat/ICg;
+    sget-object v0, Lcom/tencent/wxop/stat/ICg;->mICgb:Lcom/tencent/wxop/stat/ICg;
 
     if-nez v0, :cond_1
 
@@ -71,7 +71,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/ICg;->b:Lcom/tencent/wxop/stat/ICg;
+    sget-object v0, Lcom/tencent/wxop/stat/ICg;->mICgb:Lcom/tencent/wxop/stat/ICg;
 
     if-nez v0, :cond_0
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/wxop/stat/ICg;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICg;->b:Lcom/tencent/wxop/stat/ICg;
+    sput-object v0, Lcom/tencent/wxop/stat/ICg;->mICgb:Lcom/tencent/wxop/stat/ICg;
 
     :cond_0
     monitor-exit v1
@@ -87,7 +87,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/wxop/stat/ICg;->b:Lcom/tencent/wxop/stat/ICg;
+    sget-object v0, Lcom/tencent/wxop/stat/ICg;->mICgb:Lcom/tencent/wxop/stat/ICg;
 
     return-object v0
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v2, p0}, Lcom/tencent/wxop/stat/ICh;-><init>(Lcom/tencent/wxop/stat/ICg;)V
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICg;->a:Ljava/util/Timer;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICg;->mTimera:Ljava/util/Timer;
 
     if-eqz v3, :cond_3
 
@@ -184,7 +184,7 @@
     invoke-virtual {v3, v4}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_1
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICg;->a:Ljava/util/Timer;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICg;->mTimera:Ljava/util/Timer;
 
     invoke-virtual {v3, v2, v0, v1}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 

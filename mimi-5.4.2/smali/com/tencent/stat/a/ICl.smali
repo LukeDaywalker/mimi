@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZb:Z
 
-.field private b:Z
+.field private mIc:I
 
-.field private c:I
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,15 +18,15 @@
 
     const-string/jumbo v0, "default"
 
-    iput-object v0, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/stat/a/ICl;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/stat/a/ICl;->isZb:Z
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iput v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     return-void
 .end method
@@ -38,17 +38,17 @@
 
     const-string/jumbo v0, "default"
 
-    iput-object v0, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/stat/a/ICl;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/stat/a/ICl;->isZb:Z
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iput v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
-    iput-object p1, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -214,7 +214,7 @@
 .method public a(Ljava/lang/Exception;)V
     .locals 7
 
-    iget v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     const/4 v1, 0x6
 
@@ -355,7 +355,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -370,7 +370,7 @@
 .method public a(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     const/4 v1, 0x4
 
@@ -387,7 +387,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -423,7 +423,7 @@
 .method public a(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/tencent/stat/a/ICl;->b:Z
+    iput-boolean p1, p0, Lcom/tencent/stat/a/ICl;->isZb:Z
 
     return-void
 .end method
@@ -431,7 +431,7 @@
 .method public a()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/stat/a/ICl;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/stat/a/ICl;->isZb:Z
 
     return v0
 .end method
@@ -469,7 +469,7 @@
 .method public c(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     const/4 v1, 0x5
 
@@ -486,7 +486,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -537,7 +537,7 @@
 .method public e(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     const/4 v1, 0x6
 
@@ -554,7 +554,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -605,7 +605,7 @@
 .method public g(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/stat/a/ICl;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICl;->mIc:I
 
     const/4 v1, 0x3
 
@@ -622,7 +622,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/stat/a/ICl;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

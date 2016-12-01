@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
-.field private final b:Lcom/fasterxml/jackson/databind/JsonNode;
+.field private final mJsonNodeb:Lcom/fasterxml/jackson/databind/JsonNode;
 
-.field private final c:Lcom/fasterxml/jackson/databind/JsonNode;
+.field private final mJsonNodec:Lcom/fasterxml/jackson/databind/JsonNode;
 
 
 # direct methods
@@ -24,13 +24,13 @@
     invoke-direct {p0}, Ljava/io/IOException;-><init>()V
 
     .line 606
-    iput p1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->a:I
+    iput p1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mIa:I
 
     .line 607
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->b:Lcom/fasterxml/jackson/databind/JsonNode;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodeb:Lcom/fasterxml/jackson/databind/JsonNode;
 
     .line 608
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->c:Lcom/fasterxml/jackson/databind/JsonNode;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodec:Lcom/fasterxml/jackson/databind/JsonNode;
 
     .line 609
     return-void
@@ -43,7 +43,7 @@
 
     .prologue
     .line 612
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mIa:I
 
     return v0
 .end method
@@ -53,7 +53,7 @@
 
     .prologue
     .line 616
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->b:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodeb:Lcom/fasterxml/jackson/databind/JsonNode;
 
     return-object v0
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 620
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->c:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodec:Lcom/fasterxml/jackson/databind/JsonNode;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->b:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodeb:Lcom/fasterxml/jackson/databind/JsonNode;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->c:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->mJsonNodec:Lcom/fasterxml/jackson/databind/JsonNode;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

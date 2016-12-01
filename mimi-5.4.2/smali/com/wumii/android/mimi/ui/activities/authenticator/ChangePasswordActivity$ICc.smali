@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
+.field final synthetic mChangePasswordActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mChangePasswordActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
 
     .line 105
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -267,10 +267,10 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->f()Z
 
     .line 167
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mStringd:Ljava/lang/String;
 
     .line 168
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->q:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mStringq:Ljava/lang/String;
 
     .line 169
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->j()V
@@ -320,14 +320,14 @@
     .line 111
     const-string/jumbo v1, "opwd"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 112
     const-string/jumbo v1, "npwd"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mStringq:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/ChatManager;
+.field final synthetic mChatManagera:Lcom/wumii/android/mimi/manager/ChatManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1577
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICr;->a:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICr;->mChatManagera:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 1580
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICr;->a:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICr;->mChatManagera:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->i()V
 

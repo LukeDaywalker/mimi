@@ -41,7 +41,9 @@
 
 .field public static final enum k:Lu/aly/MiscInfo$ICdb;
 
-.field private static final l:Ljava/util/Map;
+.field private static final synthetic mArrayICdbo:[Lu/aly/MiscInfo$ICdb;
+
+.field private static final mMapl:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -53,13 +55,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic o:[Lu/aly/MiscInfo$ICdb;
-
 
 # instance fields
-.field private final m:S
+.field private final mSm:S
 
-.field private final n:Ljava/lang/String;
+.field private final mStringn:Ljava/lang/String;
 
 
 # direct methods
@@ -283,14 +283,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lu/aly/MiscInfo$ICdb;->o:[Lu/aly/MiscInfo$ICdb;
+    sput-object v0, Lu/aly/MiscInfo$ICdb;->mArrayICdbo:[Lu/aly/MiscInfo$ICdb;
 
     .line 87
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/MiscInfo$ICdb;->l:Ljava/util/Map;
+    sput-object v0, Lu/aly/MiscInfo$ICdb;->mMapl:Ljava/util/Map;
 
     .line 90
     const-class v0, Lu/aly/MiscInfo$ICdb;
@@ -317,7 +317,7 @@
     check-cast v0, Lu/aly/MiscInfo$ICdb;
 
     .line 91
-    sget-object v2, Lu/aly/MiscInfo$ICdb;->l:Ljava/util/Map;
+    sget-object v2, Lu/aly/MiscInfo$ICdb;->mMapl:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/MiscInfo$ICdb;->b()Ljava/lang/String;
 
@@ -347,10 +347,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 148
-    iput-short p3, p0, Lu/aly/MiscInfo$ICdb;->m:S
+    iput-short p3, p0, Lu/aly/MiscInfo$ICdb;->mSm:S
 
     .line 149
-    iput-object p4, p0, Lu/aly/MiscInfo$ICdb;->n:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/MiscInfo$ICdb;->mStringn:Ljava/lang/String;
 
     .line 150
     return-void
@@ -377,7 +377,7 @@
 
     .prologue
     .line 70
-    sget-object v0, Lu/aly/MiscInfo$ICdb;->o:[Lu/aly/MiscInfo$ICdb;
+    sget-object v0, Lu/aly/MiscInfo$ICdb;->mArrayICdbo:[Lu/aly/MiscInfo$ICdb;
 
     invoke-virtual {v0}, [Lu/aly/MiscInfo$ICdb;->clone()Ljava/lang/Object;
 
@@ -395,7 +395,7 @@
 
     .prologue
     .line 153
-    iget-short v0, p0, Lu/aly/MiscInfo$ICdb;->m:S
+    iget-short v0, p0, Lu/aly/MiscInfo$ICdb;->mSm:S
 
     return v0
 .end method
@@ -405,7 +405,7 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lu/aly/MiscInfo$ICdb;->n:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/MiscInfo$ICdb;->mStringn:Ljava/lang/String;
 
     return-object v0
 .end method

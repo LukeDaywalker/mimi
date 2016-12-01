@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mStringa:Ljava/lang/String;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+.field final synthetic mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
@@ -33,7 +33,7 @@
     const v2, 0x7f0b002a
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/webkit/URLUtil;->guessUrl(Ljava/lang/String;)Ljava/lang/String;
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
+.field static final mBitmapImpla:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/graphics/BitmapCompat$KitKatBitmapCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->a:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
+    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->mBitmapImpla:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
 
     .line 91
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/graphics/BitmapCompat$JbMr2BitmapCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->a:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
+    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->mBitmapImpla:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
 
     goto :goto_0
 
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/graphics/BitmapCompat$HcMr1BitmapCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->a:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
+    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->mBitmapImpla:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
 
     goto :goto_0
 
@@ -67,7 +67,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/graphics/BitmapCompat$BaseBitmapImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->a:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
+    sput-object v0, Landroid/support/v4/graphics/BitmapCompat;->mBitmapImpla:Landroid/support/v4/graphics/BitmapCompat$BitmapImpl;
 
     goto :goto_0
 .end method

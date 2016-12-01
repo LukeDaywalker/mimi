@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->TOPIC:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->NEARBY:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->HOT:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->SUBJECT:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_HOTEST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -104,7 +104,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -120,7 +120,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_SQUARE_ALL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -136,7 +136,7 @@
 
     :goto_6
     :try_start_7
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_SQUARE_CO:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -152,7 +152,7 @@
 
     :goto_7
     :try_start_8
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_SQUARE_OT:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -168,7 +168,7 @@
 
     :goto_8
     :try_start_9
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_SQUARE_SL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -184,7 +184,7 @@
 
     :goto_9
     :try_start_a
-    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICai;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->TOPIC_LIST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+.field final synthetic mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 297
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 303
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->clickOnCamera(Landroid/view/View;)V
 
@@ -48,7 +48,7 @@
 
     .line 306
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->clickOnAlbum(Landroid/view/View;)V
 
@@ -56,7 +56,7 @@
 
     .line 309
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICy;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/ImageSearchHotsType;->CHAT_ICON:Lcom/wumii/android/mimi/models/entities/ImageSearchHotsType;
 

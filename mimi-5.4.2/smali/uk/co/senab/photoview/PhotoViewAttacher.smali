@@ -10,25 +10,63 @@
 
 
 # static fields
-.field static final a:Landroid/view/animation/Interpolator;
+.field private static final isZb:Z
 
-.field private static final b:Z
+.field static final mInterpolatora:Landroid/view/animation/Interpolator;
 
 
 # instance fields
-.field private A:Landroid/widget/ImageView$ScaleType;
+.field private isZf:Z
 
-.field private B:F
+.field private isZy:Z
 
-.field private c:F
+.field private isZz:Z
 
-.field private d:F
+.field private final mArrayFn:[F
 
-.field private e:F
+.field private mFB:F
 
-.field private f:Z
+.field private mFc:F
 
-.field private g:Ljava/lang/ref/WeakReference;
+.field private mFd:F
+
+.field private mFe:F
+
+.field private mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+
+.field private mGestureDetectorh:Landroid/view/GestureDetector;
+
+.field private mGestureDetectori:Luk/co/senab/photoview/gestures/GestureDetector;
+
+.field private mIs:I
+
+.field private mIt:I
+
+.field private mIu:I
+
+.field private mIv:I
+
+.field private mIx:I
+
+.field private final mMatrixj:Landroid/graphics/Matrix;
+
+.field private final mMatrixk:Landroid/graphics/Matrix;
+
+.field private final mMatrixl:Landroid/graphics/Matrix;
+
+.field private mOnLongClickListenerr:Landroid/view/View$OnLongClickListener;
+
+.field private mOnMatrixChangedListenero:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
+
+.field private mOnPhotoTapListenerp:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
+
+.field private mOnViewTapListenerq:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
+
+.field private final mRectFm:Landroid/graphics/RectF;
+
+.field private mScaleTypeA:Landroid/widget/ImageView$ScaleType;
+
+.field private mWeakReferenceg:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -38,44 +76,6 @@
         }
     .end annotation
 .end field
-
-.field private h:Landroid/view/GestureDetector;
-
-.field private i:Luk/co/senab/photoview/gestures/GestureDetector;
-
-.field private final j:Landroid/graphics/Matrix;
-
-.field private final k:Landroid/graphics/Matrix;
-
-.field private final l:Landroid/graphics/Matrix;
-
-.field private final m:Landroid/graphics/RectF;
-
-.field private final n:[F
-
-.field private o:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
-
-.field private p:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
-
-.field private q:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
-
-.field private r:Landroid/view/View$OnLongClickListener;
-
-.field private s:I
-
-.field private t:I
-
-.field private u:I
-
-.field private v:I
-
-.field private w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
-
-.field private x:I
-
-.field private y:Z
-
-.field private z:Z
 
 
 # direct methods
@@ -92,14 +92,14 @@
 
     move-result v0
 
-    sput-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->b:Z
+    sput-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->isZb:Z
 
     .line 58
     new-instance v0, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
 
-    sput-object v0, Luk/co/senab/photoview/PhotoViewAttacher;->a:Landroid/view/animation/Interpolator;
+    sput-object v0, Luk/co/senab/photoview/PhotoViewAttacher;->mInterpolatora:Landroid/view/animation/Interpolator;
 
     return-void
 .end method
@@ -116,82 +116,82 @@
     .line 70
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     .line 71
     const/high16 v0, 0x3fe00000    # 1.75f
 
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->d:F
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFd:F
 
     .line 72
     const/high16 v0, 0x40400000    # 3.0f
 
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     .line 74
-    iput-boolean v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->f:Z
+    iput-boolean v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZf:Z
 
     .line 134
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     .line 135
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->k:Landroid/graphics/Matrix;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixk:Landroid/graphics/Matrix;
 
     .line 136
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     .line 137
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->m:Landroid/graphics/RectF;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mRectFm:Landroid/graphics/RectF;
 
     .line 138
     const/16 v0, 0x9
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->n:[F
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mArrayFn:[F
 
     .line 148
     const/4 v0, 0x2
 
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     .line 150
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->y:Z
+    iput-boolean v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZy:Z
 
     .line 152
     sget-object v0, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     .line 276
     const/4 v0, 0x0
 
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->B:F
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFB:F
 
     .line 155
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     .line 157
     invoke-virtual {p1, v3}, Landroid/widget/ImageView;->setDrawingCacheEnabled(Z)V
@@ -235,7 +235,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->i:Luk/co/senab/photoview/gestures/GestureDetector;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectori:Luk/co/senab/photoview/gestures/GestureDetector;
 
     .line 174
     new-instance v0, Landroid/view/GestureDetector;
@@ -250,10 +250,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     .line 186
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     new-instance v1, Luk/co/senab/photoview/DefaultOnDoubleTapListener;
 
@@ -272,12 +272,12 @@
 
     .prologue
     .line 780
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->n:[F
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mArrayFn:[F
 
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->getValues([F)V
 
     .line 781
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->n:[F
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mArrayFn:[F
 
     aget v0, v0, p2
 
@@ -307,7 +307,7 @@
     if-eqz v0, :cond_0
 
     .line 758
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->m:Landroid/graphics/RectF;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mRectFm:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -324,12 +324,12 @@
     invoke-virtual {v1, v3, v3, v2, v0}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 760
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->m:Landroid/graphics/RectF;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mRectFm:Landroid/graphics/RectF;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
     .line 761
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->m:Landroid/graphics/RectF;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mRectFm:Landroid/graphics/RectF;
 
     .line 764
     :goto_0
@@ -346,7 +346,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->r:Landroid/view/View$OnLongClickListener;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnLongClickListenerr:Landroid/view/View$OnLongClickListener;
 
     return-object v0
 .end method
@@ -400,7 +400,7 @@
     move-result v3
 
     .line 826
-    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     invoke-virtual {v4}, Landroid/graphics/Matrix;->reset()V
 
@@ -415,14 +415,14 @@
     div-float v5, v0, v5
 
     .line 831
-    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     sget-object v7, Landroid/widget/ImageView$ScaleType;->CENTER:Landroid/widget/ImageView$ScaleType;
 
     if-ne v6, v7, :cond_2
 
     .line 832
-    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     int-to-float v2, v2
 
@@ -446,7 +446,7 @@
 
     .line 835
     :cond_2
-    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     sget-object v7, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
@@ -458,12 +458,12 @@
     move-result v4
 
     .line 837
-    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     invoke-virtual {v5, v4, v4}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     .line 838
-    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     int-to-float v2, v2
 
@@ -487,7 +487,7 @@
 
     .line 841
     :cond_3
-    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v6, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     sget-object v7, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
@@ -505,12 +505,12 @@
     move-result v4
 
     .line 843
-    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     invoke-virtual {v5, v4, v4}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     .line 844
-    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     int-to-float v2, v2
 
@@ -548,9 +548,9 @@
     invoke-direct {v2, v9, v9, v1, v0}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     .line 851
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v1}, Landroid/widget/ImageView$ScaleType;->ordinal()I
 
@@ -564,7 +564,7 @@
 
     .line 858
     :pswitch_0
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     sget-object v1, Landroid/graphics/Matrix$ScaleToFit;->START:Landroid/graphics/Matrix$ScaleToFit;
 
@@ -574,7 +574,7 @@
 
     .line 853
     :pswitch_1
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     sget-object v1, Landroid/graphics/Matrix$ScaleToFit;->CENTER:Landroid/graphics/Matrix$ScaleToFit;
 
@@ -584,7 +584,7 @@
 
     .line 862
     :pswitch_2
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     sget-object v1, Landroid/graphics/Matrix$ScaleToFit;->END:Landroid/graphics/Matrix$ScaleToFit;
 
@@ -594,7 +594,7 @@
 
     .line 866
     :pswitch_3
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     sget-object v1, Landroid/graphics/Matrix$ScaleToFit;->FILL:Landroid/graphics/Matrix$ScaleToFit;
 
@@ -651,7 +651,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     return-object v0
 .end method
@@ -713,7 +713,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
     .line 801
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->o:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnMatrixChangedListenero:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
 
     if-eqz v0, :cond_0
 
@@ -726,7 +726,7 @@
     if-eqz v0, :cond_0
 
     .line 804
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->o:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnMatrixChangedListenero:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
 
     invoke-interface {v1, v0}, Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;->a(Landroid/graphics/RectF;)V
 
@@ -785,7 +785,7 @@
 
     .line 102
     :cond_0
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     invoke-virtual {p0}, Landroid/widget/ImageView$ScaleType;->ordinal()I
 
@@ -922,7 +922,7 @@
 
     .prologue
     .line 48
-    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->b:Z
+    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->isZb:Z
 
     return v0
 .end method
@@ -932,19 +932,19 @@
 
     .prologue
     .line 654
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     if-eqz v0, :cond_0
 
     .line 655
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a()V
 
     .line 656
     const/4 v0, 0x0
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     .line 658
     :cond_0
@@ -1084,9 +1084,9 @@
     if-gtz v8, :cond_2
 
     .line 700
-    sget-object v8, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v8, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
-    iget-object v9, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v9, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v9}, Landroid/widget/ImageView$ScaleType;->ordinal()I
 
@@ -1121,9 +1121,9 @@
     if-gtz v7, :cond_4
 
     .line 719
-    sget-object v1, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v1, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
-    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v2}, Landroid/widget/ImageView$ScaleType;->ordinal()I
 
@@ -1148,11 +1148,11 @@
     :goto_2
     const/4 v2, 0x2
 
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     .line 742
     :goto_3
-    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v2, v1, v0}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
@@ -1248,7 +1248,7 @@
     if-lez v6, :cond_5
 
     .line 732
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     .line 733
     iget v1, v5, Landroid/graphics/RectF;->left:F
@@ -1275,7 +1275,7 @@
     sub-float/2addr v1, v2
 
     .line 736
-    iput v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iput v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     goto :goto_3
 
@@ -1283,7 +1283,7 @@
     :cond_6
     const/4 v2, -0x1
 
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     goto :goto_3
 
@@ -1314,7 +1314,7 @@
 
     .prologue
     .line 788
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
@@ -1341,7 +1341,7 @@
     const/4 v3, 0x0
 
     .line 218
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     if-nez v0, :cond_0
 
@@ -1351,7 +1351,7 @@
 
     .line 222
     :cond_0
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -1388,27 +1388,27 @@
 
     .line 238
     :cond_2
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     if-eqz v0, :cond_3
 
     .line 239
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, v3}, Landroid/view/GestureDetector;->setOnDoubleTapListener(Landroid/view/GestureDetector$OnDoubleTapListener;)V
 
     .line 243
     :cond_3
-    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->o:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
+    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnMatrixChangedListenero:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
 
     .line 244
-    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->p:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
+    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnPhotoTapListenerp:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
     .line 245
-    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->q:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
+    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnViewTapListenerq:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 
     .line 248
-    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iput-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     goto :goto_0
 .end method
@@ -1423,16 +1423,16 @@
     rem-float v0, p1, v0
 
     .line 281
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
-    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->B:F
+    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFB:F
 
     sub-float/2addr v2, v0
 
     invoke-virtual {v1, v2}, Landroid/graphics/Matrix;->postRotate(F)Z
 
     .line 282
-    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->B:F
+    iput v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFB:F
 
     .line 283
     invoke-direct {p0}, Luk/co/senab/photoview/PhotoViewAttacher;->p()V
@@ -1452,7 +1452,7 @@
     const/4 v5, 0x1
 
     .line 348
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->i:Luk/co/senab/photoview/gestures/GestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectori:Luk/co/senab/photoview/gestures/GestureDetector;
 
     invoke-interface {v0}, Luk/co/senab/photoview/gestures/GestureDetector;->a()Z
 
@@ -1467,7 +1467,7 @@
 
     .line 352
     :cond_1
-    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->b:Z
+    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->isZb:Z
 
     if-eqz v0, :cond_2
 
@@ -1507,7 +1507,7 @@
     move-result-object v0
 
     .line 358
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v1, p1, p2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
@@ -1520,16 +1520,16 @@
     move-result-object v0
 
     .line 371
-    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->f:Z
+    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZf:Z
 
     if-eqz v1, :cond_5
 
     .line 372
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     if-eq v1, v7, :cond_4
 
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     if-nez v1, :cond_3
 
@@ -1540,7 +1540,7 @@
     if-gez v1, :cond_4
 
     :cond_3
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->x:I
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIx:I
 
     if-ne v1, v5, :cond_0
 
@@ -1574,7 +1574,7 @@
 
     .prologue
     .line 433
-    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->b:Z
+    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -1627,7 +1627,7 @@
 
     move-result v0
 
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     cmpg-float v0, v0, v1
 
@@ -1641,7 +1641,7 @@
 
     .line 441
     :cond_1
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1, p1, p2, p3}, Landroid/graphics/Matrix;->postScale(FFFF)Z
 
@@ -1658,7 +1658,7 @@
 
     .prologue
     .line 388
-    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->b:Z
+    sget-boolean v0, Luk/co/senab/photoview/PhotoViewAttacher;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -1734,10 +1734,10 @@
 
     invoke-direct {v1, p0, v2}, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;-><init>(Luk/co/senab/photoview/PhotoViewAttacher;Landroid/content/Context;)V
 
-    iput-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iput-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     .line 396
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     invoke-direct {p0, v0}, Luk/co/senab/photoview/PhotoViewAttacher;->c(Landroid/widget/ImageView;)I
 
@@ -1754,7 +1754,7 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a(IIII)V
 
     .line 398
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->w:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFlingRunnablew:Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->post(Ljava/lang/Runnable;)Z
 
@@ -1775,13 +1775,13 @@
     if-eqz v6, :cond_1
 
     .line 591
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     cmpg-float v0, p1, v0
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     cmpl-float v0, p1, v0
 
@@ -1831,7 +1831,7 @@
 
     .line 603
     :cond_3
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1, p1, p2, p3}, Landroid/graphics/Matrix;->setScale(FFFF)V
 
@@ -1882,7 +1882,7 @@
 
     .prologue
     .line 539
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->r:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnLongClickListenerr:Landroid/view/View$OnLongClickListener;
 
     .line 540
     return-void
@@ -1899,12 +1899,12 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     if-eq p1, v0, :cond_0
 
     .line 612
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     .line 615
     invoke-virtual {p0}, Luk/co/senab/photoview/PhotoViewAttacher;->k()V
@@ -1919,7 +1919,7 @@
 
     .prologue
     .line 544
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->o:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnMatrixChangedListenero:Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;
 
     .line 545
     return-void
@@ -1930,7 +1930,7 @@
 
     .prologue
     .line 549
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->p:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnPhotoTapListenerp:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
     .line 550
     return-void
@@ -1941,7 +1941,7 @@
 
     .prologue
     .line 559
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->q:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnViewTapListenerq:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 
     .line 560
     return-void
@@ -1952,7 +1952,7 @@
 
     .prologue
     .line 498
-    iput-boolean p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->f:Z
+    iput-boolean p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZf:Z
 
     .line 499
     return-void
@@ -1982,14 +1982,14 @@
 
     .prologue
     .line 509
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->d:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFd:F
 
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     invoke-static {p1, v0, v1}, Luk/co/senab/photoview/PhotoViewAttacher;->b(FFF)V
 
     .line 510
-    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     .line 511
     return-void
@@ -2000,7 +2000,7 @@
 
     .prologue
     .line 621
-    iput-boolean p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->z:Z
+    iput-boolean p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZz:Z
 
     .line 622
     invoke-virtual {p0}, Luk/co/senab/photoview/PhotoViewAttacher;->k()V
@@ -2017,12 +2017,12 @@
     const/4 v0, 0x0
 
     .line 289
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_0
 
     .line 290
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->g:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mWeakReferenceg:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -2054,14 +2054,14 @@
 
     .prologue
     .line 521
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     invoke-static {v0, p1, v1}, Luk/co/senab/photoview/PhotoViewAttacher;->b(FFF)V
 
     .line 522
-    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->d:F
+    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFd:F
 
     .line 523
     return-void
@@ -2072,7 +2072,7 @@
 
     .prologue
     .line 311
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     return v0
 .end method
@@ -2082,14 +2082,14 @@
 
     .prologue
     .line 533
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
-    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->d:F
+    iget v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFd:F
 
     invoke-static {v0, v1, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->b(FFF)V
 
     .line 534
-    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iput p1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     .line 535
     return-void
@@ -2100,7 +2100,7 @@
 
     .prologue
     .line 322
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->d:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFd:F
 
     return v0
 .end method
@@ -2123,7 +2123,7 @@
 
     .prologue
     .line 333
-    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->e:F
+    iget v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFe:F
 
     return v0
 .end method
@@ -2135,7 +2135,7 @@
     const-wide/high16 v4, 0x4000000000000000L    # 2.0
 
     .line 338
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     const/4 v1, 0x0
 
@@ -2151,7 +2151,7 @@
 
     double-to-float v0, v0
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     const/4 v2, 0x3
 
@@ -2181,7 +2181,7 @@
 
     .prologue
     .line 343
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->A:Landroid/widget/ImageView$ScaleType;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mScaleTypeA:Landroid/widget/ImageView$ScaleType;
 
     return-object v0
 .end method
@@ -2191,7 +2191,7 @@
 
     .prologue
     .line 554
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->p:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnPhotoTapListenerp:Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
     return-object v0
 .end method
@@ -2201,7 +2201,7 @@
 
     .prologue
     .line 564
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->q:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mOnViewTapListenerq:Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 
     return-object v0
 .end method
@@ -2219,7 +2219,7 @@
     if-eqz v0, :cond_0
 
     .line 629
-    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->z:Z
+    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZz:Z
 
     if-eqz v1, :cond_1
 
@@ -2250,21 +2250,21 @@
 
     .prologue
     .line 648
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->k:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixk:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->j:Landroid/graphics/Matrix;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixj:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
     .line 649
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->k:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixk:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->l:Landroid/graphics/Matrix;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixl:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->postConcat(Landroid/graphics/Matrix;)Z
 
     .line 650
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->k:Landroid/graphics/Matrix;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mMatrixk:Landroid/graphics/Matrix;
 
     return-object v0
 .end method
@@ -2306,7 +2306,7 @@
     .line 405
     if-eqz v0, :cond_1
 
-    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->z:Z
+    iget-boolean v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZz:Z
 
     if-eqz v1, :cond_1
 
@@ -2331,19 +2331,19 @@
     move-result v4
 
     .line 418
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->s:I
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIs:I
 
     if-ne v1, v5, :cond_0
 
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->u:I
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIu:I
 
     if-ne v3, v5, :cond_0
 
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->v:I
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIv:I
 
     if-ne v4, v5, :cond_0
 
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->t:I
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIt:I
 
     if-eq v2, v5, :cond_1
 
@@ -2356,16 +2356,16 @@
     invoke-direct {p0, v0}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Landroid/graphics/drawable/Drawable;)V
 
     .line 424
-    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->s:I
+    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIs:I
 
     .line 425
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->t:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIt:I
 
     .line 426
-    iput v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->u:I
+    iput v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIu:I
 
     .line 427
-    iput v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->v:I
+    iput v4, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mIv:I
 
     .line 430
     :cond_1
@@ -2382,7 +2382,7 @@
     const/4 v1, 0x0
 
     .line 450
-    iget-boolean v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->z:Z
+    iget-boolean v0, p0, Luk/co/senab/photoview/PhotoViewAttacher;->isZz:Z
 
     if-eqz v0, :cond_4
 
@@ -2414,11 +2414,11 @@
 
     .line 482
     :goto_0
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->i:Luk/co/senab/photoview/gestures/GestureDetector;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectori:Luk/co/senab/photoview/gestures/GestureDetector;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->i:Luk/co/senab/photoview/gestures/GestureDetector;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectori:Luk/co/senab/photoview/gestures/GestureDetector;
 
     invoke-interface {v1, p2}, Luk/co/senab/photoview/gestures/GestureDetector;->c(Landroid/view/MotionEvent;)Z
 
@@ -2430,11 +2430,11 @@
 
     .line 488
     :cond_1
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->h:Landroid/view/GestureDetector;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mGestureDetectorh:Landroid/view/GestureDetector;
 
     invoke-virtual {v1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -2481,7 +2481,7 @@
 
     move-result v0
 
-    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     cmpg-float v0, v0, v2
 
@@ -2502,7 +2502,7 @@
 
     move-result v2
 
-    iget v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->c:F
+    iget v3, p0, Luk/co/senab/photoview/PhotoViewAttacher;->mFc:F
 
     invoke-virtual {v5}, Landroid/graphics/RectF;->centerX()F
 

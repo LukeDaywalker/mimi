@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:D
+.field private mDa:D
 
-.field private b:D
+.field private mDb:D
 
 
 # direct methods
@@ -14,9 +14,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
-    iput-wide p3, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iput-wide p3, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     return-void
 .end method
@@ -45,23 +45,23 @@
 
     if-ne v0, v2, :cond_0
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
     move-object v0, p1
 
     check-cast v0, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-    iget-wide v4, v0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iget-wide v4, v0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
     cmpl-double v0, v2, v4
 
     if-nez v0, :cond_2
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     check-cast p1, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-    iget-wide v4, p1, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iget-wide v4, p1, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     cmpl-double v0, v2, v4
 
@@ -83,7 +83,7 @@
 .method public getLatitudeE6()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
     return-wide v0
 .end method
@@ -91,7 +91,7 @@
 .method public getLongitudeE6()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     return-wide v0
 .end method
@@ -99,7 +99,7 @@
 .method public setLatitudeE6(D)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
     return-void
 .end method
@@ -107,7 +107,7 @@
 .method public setLongitudeE6(D)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     return-void
 .end method
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDa:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -137,7 +137,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->b:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/inner/GeoPoint;->mDb:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 

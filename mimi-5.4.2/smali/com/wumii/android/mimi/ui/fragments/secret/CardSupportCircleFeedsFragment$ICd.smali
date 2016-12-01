@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+.field final synthetic mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->l(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->m(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
@@ -66,7 +66,7 @@
 
     .line 161
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->h(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -83,13 +83,13 @@
     if-nez v0, :cond_2
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->i(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)V
 
     .line 164
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->j(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
@@ -98,7 +98,7 @@
     if-eqz v0, :cond_0
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->a:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICd;->mCardSupportCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->k(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 

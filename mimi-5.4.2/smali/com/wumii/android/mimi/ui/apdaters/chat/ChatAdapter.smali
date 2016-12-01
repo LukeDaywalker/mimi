@@ -21,17 +21,17 @@
     .end annotation
 .end field
 
-.field private e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+.field private mIi:I
 
-.field private f:Landroid/view/View$OnClickListener;
+.field private mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
-.field private g:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerf:Landroid/view/View$OnClickListener;
 
-.field private h:Landroid/view/View$OnLongClickListener;
+.field private mOnClickListenerg:Landroid/view/View$OnClickListener;
 
-.field private i:I
+.field private mOnLongClickListenerh:Landroid/view/View$OnLongClickListener;
 
-.field private j:Ljava/lang/String;
+.field private mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     .line 40
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mIi:I
 
     .line 45
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;-><init>(Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     .line 49
     return-void
@@ -136,7 +136,7 @@
     move-result-wide v10
 
     .line 170
-    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->i:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mIi:I
 
     if-eq v1, v8, :cond_0
 
@@ -218,7 +218,7 @@
 
     .line 187
     :cond_6
-    iput v8, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->i:I
+    iput v8, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mIi:I
 
     .line 188
     return-void
@@ -266,7 +266,7 @@
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->f:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     .line 57
     return-void
@@ -277,7 +277,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->h:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnLongClickListenerh:Landroid/view/View$OnLongClickListener;
 
     .line 53
     return-void
@@ -383,7 +383,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mStringj:Ljava/lang/String;
 
     .line 202
     :cond_0
@@ -395,7 +395,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->g:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnClickListenerg:Landroid/view/View$OnClickListener;
 
     .line 61
     return-void
@@ -549,7 +549,7 @@
     move-result-object v0
 
     .line 80
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getType()I
 
@@ -576,7 +576,7 @@
     move-result-object v2
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mMessageItemBuilderFactorye:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
 
@@ -606,22 +606,22 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;
 
     .line 113
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->f:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a(Landroid/view/View$OnClickListener;)V
 
     .line 114
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->h:Landroid/view/View$OnLongClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnLongClickListenerh:Landroid/view/View$OnLongClickListener;
 
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a(Landroid/view/View$OnLongClickListener;)V
 
     .line 115
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->g:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mOnClickListenerg:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->b(Landroid/view/View$OnClickListener;)V
 
     .line 116
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->j:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a(Ljava/lang/String;)V
 

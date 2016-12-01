@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/services/settings/SettingsRequest;
+.field private final mCachedSettingsIod:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
 
-.field private final b:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
+.field private final mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
-.field private final c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+.field private final mKitf:Lio/fabric/sdk/android/Kit;
 
-.field private final d:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
+.field private final mPreferenceStoreg:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-.field private final e:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
+.field private final mSettingsJsonTransformb:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
 
-.field private final f:Lio/fabric/sdk/android/Kit;
+.field private final mSettingsRequesta:Lio/fabric/sdk/android/services/settings/SettingsRequest;
 
-.field private final g:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+.field private final mSettingsSpiCalle:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
 
 
 # direct methods
@@ -31,31 +31,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->f:Lio/fabric/sdk/android/Kit;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mKitf:Lio/fabric/sdk/android/Kit;
 
     .line 55
-    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->a:Lio/fabric/sdk/android/services/settings/SettingsRequest;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsRequesta:Lio/fabric/sdk/android/services/settings/SettingsRequest;
 
     .line 56
-    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     .line 57
-    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->b:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsJsonTransformb:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
 
     .line 58
-    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->d:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCachedSettingsIod:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
 
     .line 59
-    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->e:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
+    iput-object p6, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsSpiCalle:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
 
     .line 60
     new-instance v0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->f:Lio/fabric/sdk/android/Kit;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mKitf:Lio/fabric/sdk/android/Kit;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;-><init>(Lio/fabric/sdk/android/Kit;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->g:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mPreferenceStoreg:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     .line 61
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 143
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->f:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mKitf:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/Kit;->B()Landroid/content/Context;
 
@@ -79,7 +79,7 @@
     if-nez v0, :cond_0
 
     .line 144
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->b:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsJsonTransformb:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
 
     invoke-interface {v0, p1}, Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;->a(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
@@ -137,7 +137,7 @@
     if-nez v1, :cond_1
 
     .line 109
-    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->d:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCachedSettingsIod:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/settings/CachedSettingsIo;->a()Lorg/json/JSONObject;
 
@@ -147,9 +147,9 @@
     if-eqz v2, :cond_4
 
     .line 112
-    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->b:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsJsonTransformb:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v1, v3, v2}, Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;->a(Lio/fabric/sdk/android/services/common/CurrentTimeProvider;Lorg/json/JSONObject;)Lio/fabric/sdk/android/services/settings/SettingsData;
 
@@ -164,7 +164,7 @@
     invoke-direct {p0, v2, v3}, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->a(Lorg/json/JSONObject;Ljava/lang/String;)V
 
     .line 118
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v2}, Lio/fabric/sdk/android/services/common/CurrentTimeProvider;->a()J
 
@@ -340,9 +340,9 @@
 
     .line 80
     :try_start_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->e:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsSpiCalle:Lio/fabric/sdk/android/services/settings/SettingsSpiCall;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->a:Lio/fabric/sdk/android/services/settings/SettingsRequest;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsRequesta:Lio/fabric/sdk/android/services/settings/SettingsRequest;
 
     invoke-interface {v0, v2}, Lio/fabric/sdk/android/services/settings/SettingsSpiCall;->a(Lio/fabric/sdk/android/services/settings/SettingsRequest;)Lorg/json/JSONObject;
 
@@ -352,16 +352,16 @@
     if-eqz v0, :cond_1
 
     .line 83
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->b:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mSettingsJsonTransformb:Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->c:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCurrentTimeProviderc:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v2, v3, v0}, Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;->a(Lio/fabric/sdk/android/services/common/CurrentTimeProvider;Lorg/json/JSONObject;)Lio/fabric/sdk/android/services/settings/SettingsData;
 
     move-result-object v1
 
     .line 85
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->d:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mCachedSettingsIod:Lio/fabric/sdk/android/services/settings/CachedSettingsIo;
 
     iget-wide v4, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->g:J
 
@@ -454,7 +454,7 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->g:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mPreferenceStoreg:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->b()Landroid/content/SharedPreferences$Editor;
 
@@ -466,7 +466,7 @@
     invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     .line 163
-    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->g:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mPreferenceStoreg:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v1, v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a(Landroid/content/SharedPreferences$Editor;)Z
 
@@ -486,7 +486,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->f:Lio/fabric/sdk/android/Kit;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mKitf:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v2}, Lio/fabric/sdk/android/Kit;->B()Landroid/content/Context;
 
@@ -510,7 +510,7 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->g:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;->mPreferenceStoreg:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a()Landroid/content/SharedPreferences;
 

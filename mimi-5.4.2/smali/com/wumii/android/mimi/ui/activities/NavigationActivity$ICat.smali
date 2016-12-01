@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 529
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->j(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Ljava/util/List;
 
@@ -55,9 +55,9 @@
     if-nez v0, :cond_0
 
     .line 534
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->j(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Ljava/util/List;
 

@@ -11,55 +11,107 @@
 
 
 # instance fields
-.field private A:Z
+.field private isZA:Z
 
-.field private B:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+.field private isZC:Z
 
-.field private C:Z
+.field private isZE:Z
 
-.field private D:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+.field private isZG:Z
 
-.field private E:Z
+.field private isZI:Z
 
-.field private F:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+.field private isZK:Z
 
-.field private G:Z
+.field private isZM:Z
 
-.field private H:Ljava/lang/String;
+.field private isZO:Z
 
-.field private I:Z
+.field private isZQ:Z
 
-.field private J:I
+.field private isZS:Z
 
-.field private K:Z
+.field private isZU:Z
 
-.field private L:Ljava/lang/String;
+.field private isZW:Z
 
-.field private M:Z
+.field private isZX:Z
 
-.field private N:Ljava/lang/String;
+.field private isZa:Z
 
-.field private O:Z
+.field private isZaa:Z
 
-.field private P:Ljava/lang/String;
+.field private isZab:Z
 
-.field private Q:Z
+.field private isZac:Z
 
-.field private R:Ljava/lang/String;
+.field private isZae:Z
 
-.field private S:Z
+.field private isZaf:Z
 
-.field private T:Ljava/lang/String;
+.field private isZag:Z
 
-.field private U:Z
+.field private isZah:Z
 
-.field private V:Ljava/lang/String;
+.field private isZc:Z
 
-.field private W:Z
+.field private isZe:Z
 
-.field private X:Z
+.field private isZg:Z
 
-.field private Y:Ljava/util/List;
+.field private isZi:Z
+
+.field private isZk:Z
+
+.field private isZm:Z
+
+.field private isZo:Z
+
+.field private isZq:Z
+
+.field private isZs:Z
+
+.field private isZu:Z
+
+.field private isZw:Z
+
+.field private isZy:Z
+
+.field private mIClB:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClD:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClF:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClb:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mICld:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClf:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClh:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClj:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mICll:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mICln:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClp:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClr:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClt:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClv:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClx:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIClz:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+
+.field private mIJ:I
+
+.field private mListY:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -70,7 +122,7 @@
     .end annotation
 .end field
 
-.field private Z:Ljava/util/List;
+.field private mListZ:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -81,73 +133,21 @@
     .end annotation
 .end field
 
-.field private a:Z
+.field private mStringH:Ljava/lang/String;
 
-.field private aa:Z
+.field private mStringL:Ljava/lang/String;
 
-.field private ab:Z
+.field private mStringN:Ljava/lang/String;
 
-.field private ac:Z
+.field private mStringP:Ljava/lang/String;
 
-.field private ad:Ljava/lang/String;
+.field private mStringR:Ljava/lang/String;
 
-.field private ae:Z
+.field private mStringT:Ljava/lang/String;
 
-.field private af:Z
+.field private mStringV:Ljava/lang/String;
 
-.field private ag:Z
-
-.field private ah:Z
-
-.field private b:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private c:Z
-
-.field private d:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private e:Z
-
-.field private f:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private g:Z
-
-.field private h:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private i:Z
-
-.field private j:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private k:Z
-
-.field private l:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private m:Z
-
-.field private n:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private o:Z
-
-.field private p:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private q:Z
-
-.field private r:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private s:Z
-
-.field private t:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private u:Z
-
-.field private v:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private w:Z
-
-.field private x:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
-
-.field private y:Z
-
-.field private z:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+.field private mStringad:Ljava/lang/String;
 
 
 # direct methods
@@ -163,121 +163,121 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 312
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->b:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClb:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 326
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->d:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICld:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 340
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->f:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClf:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 354
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->h:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClh:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 368
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->j:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClj:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 382
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->l:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICll:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 396
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->n:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICln:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 410
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->p:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClp:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 424
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->r:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClr:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 438
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->t:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClt:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 452
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->v:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClv:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 466
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->x:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClx:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 480
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->z:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClz:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 494
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->B:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClB:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 508
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->D:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClD:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 522
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->F:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClF:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 536
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->H:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringH:Ljava/lang/String;
 
     .line 547
-    iput v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->J:I
+    iput v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIJ:I
 
     .line 558
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->L:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringL:Ljava/lang/String;
 
     .line 569
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->N:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringN:Ljava/lang/String;
 
     .line 580
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->P:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringP:Ljava/lang/String;
 
     .line 591
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->R:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringR:Ljava/lang/String;
 
     .line 602
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->T:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringT:Ljava/lang/String;
 
     .line 613
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->V:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringV:Ljava/lang/String;
 
     .line 624
-    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->X:Z
+    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZX:Z
 
     .line 634
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Y:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListY:Ljava/util/List;
 
     .line 651
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Z:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListZ:Ljava/util/List;
 
     .line 675
-    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ab:Z
+    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZab:Z
 
     .line 689
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ad:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringad:Ljava/lang/String;
 
     .line 700
-    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->af:Z
+    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZaf:Z
 
     .line 711
-    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ah:Z
+    iput-boolean v1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZah:Z
 
     .line 294
     return-void
@@ -292,10 +292,10 @@
     .line 551
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->I:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZI:Z
 
     .line 552
-    iput p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->J:I
+    iput p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIJ:I
 
     .line 553
     return-object p0
@@ -319,10 +319,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->a:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZa:Z
 
     .line 320
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->b:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClb:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 321
     return-object p0
@@ -335,10 +335,10 @@
     .line 540
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->G:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZG:Z
 
     .line 541
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->H:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringH:Ljava/lang/String;
 
     .line 542
     return-object p0
@@ -351,10 +351,10 @@
     .line 628
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->W:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZW:Z
 
     .line 629
-    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->X:Z
+    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZX:Z
 
     .line 630
     return-object p0
@@ -365,7 +365,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->b:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClb:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     return-object v0
 .end method
@@ -375,7 +375,7 @@
 
     .prologue
     .line 549
-    iget v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->J:I
+    iget v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIJ:I
 
     return v0
 .end method
@@ -398,10 +398,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->c:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZc:Z
 
     .line 334
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->d:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICld:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 335
     return-object p0
@@ -414,10 +414,10 @@
     .line 562
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->K:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZK:Z
 
     .line 563
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->L:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringL:Ljava/lang/String;
 
     .line 564
     return-object p0
@@ -430,10 +430,10 @@
     .line 682
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->aa:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZaa:Z
 
     .line 683
-    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ab:Z
+    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZab:Z
 
     .line 684
     return-object p0
@@ -457,10 +457,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->e:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZe:Z
 
     .line 348
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->f:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClf:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 349
     return-object p0
@@ -473,10 +473,10 @@
     .line 573
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->M:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZM:Z
 
     .line 574
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->N:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringN:Ljava/lang/String;
 
     .line 575
     return-object p0
@@ -489,10 +489,10 @@
     .line 704
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ae:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZae:Z
 
     .line 705
-    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->af:Z
+    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZaf:Z
 
     .line 706
     return-object p0
@@ -503,7 +503,7 @@
 
     .prologue
     .line 560
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->L:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringL:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -526,10 +526,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->g:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZg:Z
 
     .line 362
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->h:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClh:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 363
     return-object p0
@@ -542,10 +542,10 @@
     .line 584
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->O:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZO:Z
 
     .line 585
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->P:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringP:Ljava/lang/String;
 
     .line 586
     return-object p0
@@ -558,10 +558,10 @@
     .line 715
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ag:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZag:Z
 
     .line 716
-    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ah:Z
+    iput-boolean p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZah:Z
 
     .line 717
     return-object p0
@@ -572,7 +572,7 @@
 
     .prologue
     .line 604
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->T:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringT:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -595,10 +595,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->i:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZi:Z
 
     .line 376
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->j:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClj:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 377
     return-object p0
@@ -611,10 +611,10 @@
     .line 595
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Q:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZQ:Z
 
     .line 596
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->R:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringR:Ljava/lang/String;
 
     .line 597
     return-object p0
@@ -625,7 +625,7 @@
 
     .prologue
     .line 615
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->V:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringV:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -635,7 +635,7 @@
 
     .prologue
     .line 638
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Y:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListY:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -662,10 +662,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->k:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZk:Z
 
     .line 390
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->l:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICll:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 391
     return-object p0
@@ -678,10 +678,10 @@
     .line 606
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->S:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZS:Z
 
     .line 607
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->T:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringT:Ljava/lang/String;
 
     .line 608
     return-object p0
@@ -692,7 +692,7 @@
 
     .prologue
     .line 656
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Z:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListZ:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -719,10 +719,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->m:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZm:Z
 
     .line 404
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->n:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICln:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 405
     return-object p0
@@ -735,10 +735,10 @@
     .line 617
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->U:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZU:Z
 
     .line 618
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->V:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringV:Ljava/lang/String;
 
     .line 619
     return-object p0
@@ -762,10 +762,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->o:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZo:Z
 
     .line 418
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->p:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClp:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 419
     return-object p0
@@ -778,10 +778,10 @@
     .line 693
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ac:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZac:Z
 
     .line 694
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ad:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringad:Ljava/lang/String;
 
     .line 695
     return-object p0
@@ -805,10 +805,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->q:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZq:Z
 
     .line 432
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->r:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClr:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 433
     return-object p0
@@ -832,10 +832,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->s:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZs:Z
 
     .line 446
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->t:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClt:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 447
     return-object p0
@@ -859,10 +859,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->u:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZu:Z
 
     .line 460
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->v:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClv:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 461
     return-object p0
@@ -886,10 +886,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->w:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZw:Z
 
     .line 474
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->x:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClx:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 475
     return-object p0
@@ -913,10 +913,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->y:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZy:Z
 
     .line 488
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->z:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClz:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 489
     return-object p0
@@ -940,10 +940,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->A:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZA:Z
 
     .line 502
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->B:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClB:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 503
     return-object p0
@@ -967,10 +967,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->C:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZC:Z
 
     .line 516
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->D:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClD:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 517
     return-object p0
@@ -994,10 +994,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->E:Z
+    iput-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZE:Z
 
     .line 530
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->F:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClF:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     .line 531
     return-object p0
@@ -1457,7 +1457,7 @@
     invoke-virtual {v3, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICi;->readExternal(Ljava/io/ObjectInput;)V
 
     .line 974
-    iget-object v4, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Y:Ljava/util/List;
+    iget-object v4, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListY:Ljava/util/List;
 
     invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1485,7 +1485,7 @@
     invoke-virtual {v2, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICi;->readExternal(Ljava/io/ObjectInput;)V
 
     .line 981
-    iget-object v3, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Z:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListZ:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1543,358 +1543,358 @@
     const/4 v1, 0x0
 
     .line 721
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->a:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZa:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 722
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->a:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZa:Z
 
     if-eqz v0, :cond_0
 
     .line 723
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->b:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClb:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 725
     :cond_0
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZc:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 726
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZc:Z
 
     if-eqz v0, :cond_1
 
     .line 727
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->d:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICld:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 729
     :cond_1
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->e:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZe:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 730
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->e:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZe:Z
 
     if-eqz v0, :cond_2
 
     .line 731
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->f:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClf:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 733
     :cond_2
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->g:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZg:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 734
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->g:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZg:Z
 
     if-eqz v0, :cond_3
 
     .line 735
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->h:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClh:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 737
     :cond_3
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->i:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZi:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 738
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->i:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZi:Z
 
     if-eqz v0, :cond_4
 
     .line 739
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->j:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClj:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 741
     :cond_4
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->k:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZk:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 742
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->k:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZk:Z
 
     if-eqz v0, :cond_5
 
     .line 743
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->l:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICll:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 745
     :cond_5
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->m:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZm:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 746
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->m:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZm:Z
 
     if-eqz v0, :cond_6
 
     .line 747
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->n:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mICln:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 749
     :cond_6
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->o:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZo:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 750
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->o:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZo:Z
 
     if-eqz v0, :cond_7
 
     .line 751
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->p:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClp:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 753
     :cond_7
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->q:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZq:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 754
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->q:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZq:Z
 
     if-eqz v0, :cond_8
 
     .line 755
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->r:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClr:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 757
     :cond_8
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->s:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZs:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 758
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->s:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZs:Z
 
     if-eqz v0, :cond_9
 
     .line 759
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->t:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClt:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 761
     :cond_9
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->u:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZu:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 762
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->u:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZu:Z
 
     if-eqz v0, :cond_a
 
     .line 763
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->v:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClv:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 765
     :cond_a
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->w:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZw:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 766
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->w:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZw:Z
 
     if-eqz v0, :cond_b
 
     .line 767
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->x:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClx:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 769
     :cond_b
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->y:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZy:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 770
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->y:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZy:Z
 
     if-eqz v0, :cond_c
 
     .line 771
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->z:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClz:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 773
     :cond_c
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->A:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZA:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 774
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->A:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZA:Z
 
     if-eqz v0, :cond_d
 
     .line 775
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->B:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClB:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 777
     :cond_d
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->C:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZC:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 778
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->C:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZC:Z
 
     if-eqz v0, :cond_e
 
     .line 779
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->D:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClD:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 781
     :cond_e
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->E:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZE:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 782
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->E:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZE:Z
 
     if-eqz v0, :cond_f
 
     .line 783
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->F:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIClF:Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->writeExternal(Ljava/io/ObjectOutput;)V
 
     .line 786
     :cond_f
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->H:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringH:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 787
-    iget v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->J:I
+    iget v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mIJ:I
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeInt(I)V
 
     .line 788
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->L:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringL:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 790
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->M:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZM:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 791
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->M:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZM:Z
 
     if-eqz v0, :cond_10
 
     .line 792
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->N:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringN:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 795
     :cond_10
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->O:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZO:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 796
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->O:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZO:Z
 
     if-eqz v0, :cond_11
 
     .line 797
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->P:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringP:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 800
     :cond_11
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Q:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZQ:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 801
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Q:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZQ:Z
 
     if-eqz v0, :cond_12
 
     .line 802
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->R:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringR:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 805
     :cond_12
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->S:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZS:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 806
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->S:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZS:Z
 
     if-eqz v0, :cond_13
 
     .line 807
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->T:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringT:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 810
     :cond_13
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->U:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZU:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 811
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->U:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZU:Z
 
     if-eqz v0, :cond_14
 
     .line 812
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->V:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringV:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 815
     :cond_14
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->X:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZX:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
@@ -1913,7 +1913,7 @@
     if-ge v2, v3, :cond_15
 
     .line 820
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Y:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListY:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1944,7 +1944,7 @@
     if-ge v1, v2, :cond_16
 
     .line 826
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->Z:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mListZ:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1963,33 +1963,33 @@
 
     .line 829
     :cond_16
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ab:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZab:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 831
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ac:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZac:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 832
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ac:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZac:Z
 
     if-eqz v0, :cond_17
 
     .line 833
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ad:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->mStringad:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 836
     :cond_17
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->af:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZaf:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 
     .line 838
-    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->ah:Z
+    iget-boolean v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->isZah:Z
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeBoolean(Z)V
 

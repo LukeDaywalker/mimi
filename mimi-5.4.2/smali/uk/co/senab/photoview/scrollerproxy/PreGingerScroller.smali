@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Landroid/widget/Scroller;
+.field private final mScrollera:Landroid/widget/Scroller;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0, p1}, Landroid/widget/Scroller;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iput-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     .line 27
     return-void
@@ -33,7 +33,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     move v1, p1
 
@@ -62,7 +62,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     invoke-virtual {v0, p1}, Landroid/widget/Scroller;->forceFinished(Z)V
 
@@ -75,7 +75,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->computeScrollOffset()Z
 
@@ -89,7 +89,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
 
@@ -103,7 +103,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrX()I
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->a:Landroid/widget/Scroller;
+    iget-object v0, p0, Luk/co/senab/photoview/scrollerproxy/PreGingerScroller;->mScrollera:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrY()I
 

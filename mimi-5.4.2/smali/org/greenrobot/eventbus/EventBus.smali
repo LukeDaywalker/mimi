@@ -6,11 +6,11 @@
 # static fields
 .field public static a:Ljava/lang/String;
 
-.field static volatile b:Lorg/greenrobot/eventbus/EventBus;
+.field private static final mEventBusBuilderc:Lorg/greenrobot/eventbus/EventBusBuilder;
 
-.field private static final c:Lorg/greenrobot/eventbus/EventBusBuilder;
+.field static volatile mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
-.field private static final d:Ljava/util/Map;
+.field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -27,7 +27,27 @@
 
 
 # instance fields
-.field private final e:Ljava/util/Map;
+.field private final isZn:Z
+
+.field private final isZo:Z
+
+.field private final isZp:Z
+
+.field private final isZq:Z
+
+.field private final isZr:Z
+
+.field private final isZs:Z
+
+.field private final mAsyncPosterk:Lorg/greenrobot/eventbus/AsyncPoster;
+
+.field private final mBackgroundPosterj:Lorg/greenrobot/eventbus/BackgroundPoster;
+
+.field private final mExecutorServicem:Ljava/util/concurrent/ExecutorService;
+
+.field private final mHandlerPosteri:Lorg/greenrobot/eventbus/HandlerPoster;
+
+.field private final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -42,7 +62,7 @@
     .end annotation
 .end field
 
-.field private final f:Ljava/util/Map;
+.field private final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -56,7 +76,7 @@
     .end annotation
 .end field
 
-.field private final g:Ljava/util/Map;
+.field private final mMapg:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -69,7 +89,9 @@
     .end annotation
 .end field
 
-.field private final h:Ljava/lang/ThreadLocal;
+.field private final mSubscriberMethodFinderl:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
+
+.field private final mThreadLocalh:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal",
@@ -79,28 +101,6 @@
         }
     .end annotation
 .end field
-
-.field private final i:Lorg/greenrobot/eventbus/HandlerPoster;
-
-.field private final j:Lorg/greenrobot/eventbus/BackgroundPoster;
-
-.field private final k:Lorg/greenrobot/eventbus/AsyncPoster;
-
-.field private final l:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
-
-.field private final m:Ljava/util/concurrent/ExecutorService;
-
-.field private final n:Z
-
-.field private final o:Z
-
-.field private final p:Z
-
-.field private final q:Z
-
-.field private final r:Z
-
-.field private final s:Z
 
 
 # direct methods
@@ -118,14 +118,14 @@
 
     invoke-direct {v0}, Lorg/greenrobot/eventbus/EventBusBuilder;-><init>()V
 
-    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->c:Lorg/greenrobot/eventbus/EventBusBuilder;
+    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusBuilderc:Lorg/greenrobot/eventbus/EventBusBuilder;
 
     .line 47
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->d:Ljava/util/Map;
+    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->mMapd:Ljava/util/Map;
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 
     .prologue
     .line 101
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->c:Lorg/greenrobot/eventbus/EventBusBuilder;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusBuilderc:Lorg/greenrobot/eventbus/EventBusBuilder;
 
     invoke-direct {p0, v0}, Lorg/greenrobot/eventbus/EventBus;-><init>(Lorg/greenrobot/eventbus/EventBusBuilder;)V
 
@@ -155,28 +155,28 @@
 
     invoke-direct {v0, p0}, Lorg/greenrobot/eventbus/EventBus$ICd;-><init>(Lorg/greenrobot/eventbus/EventBus;)V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->h:Ljava/lang/ThreadLocal;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mThreadLocalh:Ljava/lang/ThreadLocal;
 
     .line 105
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->e:Ljava/util/Map;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMape:Ljava/util/Map;
 
     .line 106
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     .line 107
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->g:Ljava/util/Map;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapg:Ljava/util/Map;
 
     .line 108
     new-instance v0, Lorg/greenrobot/eventbus/HandlerPoster;
@@ -189,65 +189,65 @@
 
     invoke-direct {v0, p0, v1, v2}, Lorg/greenrobot/eventbus/HandlerPoster;-><init>(Lorg/greenrobot/eventbus/EventBus;Landroid/os/Looper;I)V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->i:Lorg/greenrobot/eventbus/HandlerPoster;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mHandlerPosteri:Lorg/greenrobot/eventbus/HandlerPoster;
 
     .line 109
     new-instance v0, Lorg/greenrobot/eventbus/BackgroundPoster;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/eventbus/BackgroundPoster;-><init>(Lorg/greenrobot/eventbus/EventBus;)V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->j:Lorg/greenrobot/eventbus/BackgroundPoster;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mBackgroundPosterj:Lorg/greenrobot/eventbus/BackgroundPoster;
 
     .line 110
     new-instance v0, Lorg/greenrobot/eventbus/AsyncPoster;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/eventbus/AsyncPoster;-><init>(Lorg/greenrobot/eventbus/EventBus;)V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->k:Lorg/greenrobot/eventbus/AsyncPoster;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mAsyncPosterk:Lorg/greenrobot/eventbus/AsyncPoster;
 
     .line 111
     new-instance v0, Lorg/greenrobot/eventbus/SubscriberMethodFinder;
 
-    iget-object v1, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->h:Ljava/util/List;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->mListh:Ljava/util/List;
 
     invoke-direct {v0, v1}, Lorg/greenrobot/eventbus/SubscriberMethodFinder;-><init>(Ljava/util/List;)V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->l:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mSubscriberMethodFinderl:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
 
     .line 112
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->a:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZa:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->o:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZo:Z
 
     .line 113
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->b:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZb:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->p:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZp:Z
 
     .line 114
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->c:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZc:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->q:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZq:Z
 
     .line 115
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->d:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZd:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->r:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZr:Z
 
     .line 116
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->e:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZe:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->n:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZn:Z
 
     .line 117
-    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->f:Z
+    iget-boolean v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->isZf:Z
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->s:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZs:Z
 
     .line 118
-    iget-object v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->g:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p1, Lorg/greenrobot/eventbus/EventBusBuilder;->mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->m:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mExecutorServicem:Ljava/util/concurrent/ExecutorService;
 
     .line 119
     return-void
@@ -269,13 +269,13 @@
 
     .prologue
     .line 455
-    sget-object v2, Lorg/greenrobot/eventbus/EventBus;->d:Ljava/util/Map;
+    sget-object v2, Lorg/greenrobot/eventbus/EventBus;->mMapd:Ljava/util/Map;
 
     monitor-enter v2
 
     .line 456
     :try_start_0
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->d:Ljava/util/Map;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -316,7 +316,7 @@
 
     .line 465
     :cond_0
-    sget-object v1, Lorg/greenrobot/eventbus/EventBus;->d:Ljava/util/Map;
+    sget-object v1, Lorg/greenrobot/eventbus/EventBus;->mMapd:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -342,7 +342,7 @@
 
     .prologue
     .line 76
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->b:Lorg/greenrobot/eventbus/EventBus;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     if-nez v0, :cond_1
 
@@ -353,7 +353,7 @@
 
     .line 78
     :try_start_0
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->b:Lorg/greenrobot/eventbus/EventBus;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     if-nez v0, :cond_0
 
@@ -362,7 +362,7 @@
 
     invoke-direct {v0}, Lorg/greenrobot/eventbus/EventBus;-><init>()V
 
-    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->b:Lorg/greenrobot/eventbus/EventBus;
+    sput-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     .line 81
     :cond_0
@@ -372,7 +372,7 @@
 
     .line 83
     :cond_1
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->b:Lorg/greenrobot/eventbus/EventBus;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     return-object v0
 
@@ -403,7 +403,7 @@
     const/4 v4, 0x0
 
     .line 221
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->e:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -433,12 +433,12 @@
     check-cast v1, Lorg/greenrobot/eventbus/Subscription;
 
     .line 226
-    iget-object v5, v1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v5, v1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     if-ne v5, p1, :cond_1
 
     .line 227
-    iput-boolean v4, v1, Lorg/greenrobot/eventbus/Subscription;->d:Z
+    iput-boolean v4, v1, Lorg/greenrobot/eventbus/Subscription;->isZd:Z
 
     .line 228
     invoke-interface {v0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
@@ -483,7 +483,7 @@
     move-result-object v3
 
     .line 378
-    iget-boolean v1, p0, Lorg/greenrobot/eventbus/EventBus;->s:Z
+    iget-boolean v1, p0, Lorg/greenrobot/eventbus/EventBus;->isZs:Z
 
     if-eqz v1, :cond_3
 
@@ -534,7 +534,7 @@
     if-nez v0, :cond_2
 
     .line 389
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->p:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZp:Z
 
     if-eqz v0, :cond_1
 
@@ -563,7 +563,7 @@
 
     .line 392
     :cond_1
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->r:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZr:Z
 
     if-eqz v0, :cond_2
 
@@ -602,10 +602,10 @@
     const/4 v2, 0x0
 
     .line 171
-    iget-object v4, p2, Lorg/greenrobot/eventbus/SubscriberMethod;->c:Ljava/lang/Class;
+    iget-object v4, p2, Lorg/greenrobot/eventbus/SubscriberMethod;->mClassc:Ljava/lang/Class;
 
     .line 172
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->e:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -627,7 +627,7 @@
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
     .line 176
-    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->e:Ljava/util/Map;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->mMape:Ljava/util/Map;
 
     invoke-interface {v1, v4, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -648,7 +648,7 @@
     .line 189
     if-eq v3, v6, :cond_0
 
-    iget v7, v5, Lorg/greenrobot/eventbus/Subscription;->c:I
+    iget v7, v5, Lorg/greenrobot/eventbus/Subscription;->mIc:I
 
     invoke-virtual {v1, v3}, Ljava/util/concurrent/CopyOnWriteArrayList;->get(I)Ljava/lang/Object;
 
@@ -656,7 +656,7 @@
 
     check-cast v0, Lorg/greenrobot/eventbus/Subscription;
 
-    iget v0, v0, Lorg/greenrobot/eventbus/Subscription;->c:I
+    iget v0, v0, Lorg/greenrobot/eventbus/Subscription;->mIc:I
 
     if-le v7, v0, :cond_5
 
@@ -666,7 +666,7 @@
 
     .line 195
     :cond_1
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -683,7 +683,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 198
-    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -695,13 +695,13 @@
     if-eqz p3, :cond_3
 
     .line 204
-    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->g:Ljava/util/Map;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/EventBus;->mMapg:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 205
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->g:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapg:Ljava/util/Map;
 
     invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -821,7 +821,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->l:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mSubscriberMethodFinderl:Lorg/greenrobot/eventbus/SubscriberMethodFinder;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -934,7 +934,7 @@
     if-eqz v0, :cond_1
 
     .line 508
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->o:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZo:Z
 
     if-eqz v0, :cond_0
 
@@ -951,7 +951,7 @@
 
     move-result-object v1
 
-    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1022,7 +1022,7 @@
 
     .line 517
     :cond_1
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->n:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZn:Z
 
     if-eqz v0, :cond_2
 
@@ -1037,7 +1037,7 @@
 
     .line 520
     :cond_2
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->o:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZo:Z
 
     if-eqz v0, :cond_3
 
@@ -1068,7 +1068,7 @@
 
     move-result-object v1
 
-    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1086,14 +1086,14 @@
 
     .line 524
     :cond_3
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->q:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/EventBus;->isZq:Z
 
     if-eqz v0, :cond_0
 
     .line 525
     new-instance v0, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;
 
-    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     invoke-direct {v0, p0, p3, p2, v1}, Lorg/greenrobot/eventbus/SubscriberExceptionEvent;-><init>(Lorg/greenrobot/eventbus/EventBus;Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -1108,11 +1108,11 @@
 
     .prologue
     .line 427
-    sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->a:[I
+    sget-object v0, Lorg/greenrobot/eventbus/EventBus$ICe;->mArrayIa:[I
 
-    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
-    iget-object v1, v1, Lorg/greenrobot/eventbus/SubscriberMethod;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    iget-object v1, v1, Lorg/greenrobot/eventbus/SubscriberMethod;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1}, Lorg/greenrobot/eventbus/ThreadMode;->ordinal()I
 
@@ -1135,9 +1135,9 @@
 
     move-result-object v1
 
-    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
-    iget-object v2, v2, Lorg/greenrobot/eventbus/SubscriberMethod;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    iget-object v2, v2, Lorg/greenrobot/eventbus/SubscriberMethod;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1170,7 +1170,7 @@
 
     .line 435
     :cond_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->i:Lorg/greenrobot/eventbus/HandlerPoster;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mHandlerPosteri:Lorg/greenrobot/eventbus/HandlerPoster;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/eventbus/HandlerPoster;->a(Lorg/greenrobot/eventbus/Subscription;Ljava/lang/Object;)V
 
@@ -1181,7 +1181,7 @@
     if-eqz p3, :cond_1
 
     .line 440
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->j:Lorg/greenrobot/eventbus/BackgroundPoster;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mBackgroundPosterj:Lorg/greenrobot/eventbus/BackgroundPoster;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/eventbus/BackgroundPoster;->a(Lorg/greenrobot/eventbus/Subscription;Ljava/lang/Object;)V
 
@@ -1195,7 +1195,7 @@
 
     .line 446
     :pswitch_3
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->k:Lorg/greenrobot/eventbus/AsyncPoster;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mAsyncPosterk:Lorg/greenrobot/eventbus/AsyncPoster;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/eventbus/AsyncPoster;->a(Lorg/greenrobot/eventbus/Subscription;Ljava/lang/Object;)V
 
@@ -1235,7 +1235,7 @@
 
     .line 402
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->e:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1276,30 +1276,30 @@
     check-cast v0, Lorg/greenrobot/eventbus/Subscription;
 
     .line 406
-    iput-object p1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->e:Ljava/lang/Object;
+    iput-object p1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mObjecte:Ljava/lang/Object;
 
     .line 407
-    iput-object v0, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->d:Lorg/greenrobot/eventbus/Subscription;
+    iput-object v0, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mSubscriptiond:Lorg/greenrobot/eventbus/Subscription;
 
     .line 410
     :try_start_1
-    iget-boolean v3, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->c:Z
+    iget-boolean v3, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->isZc:Z
 
     invoke-direct {p0, v0, p1, v3}, Lorg/greenrobot/eventbus/EventBus;->a(Lorg/greenrobot/eventbus/Subscription;Ljava/lang/Object;Z)V
 
     .line 411
-    iget-boolean v0, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->f:Z
+    iget-boolean v0, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->isZf:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 413
-    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->e:Ljava/lang/Object;
+    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mObjecte:Ljava/lang/Object;
 
     .line 414
-    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->d:Lorg/greenrobot/eventbus/Subscription;
+    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mSubscriptiond:Lorg/greenrobot/eventbus/Subscription;
 
     .line 415
-    iput-boolean v1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->f:Z
+    iput-boolean v1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->isZf:Z
 
     .line 417
     if-eqz v0, :cond_0
@@ -1327,13 +1327,13 @@
     :catchall_1
     move-exception v0
 
-    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->e:Ljava/lang/Object;
+    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mObjecte:Ljava/lang/Object;
 
     .line 414
-    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->d:Lorg/greenrobot/eventbus/Subscription;
+    iput-object v4, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->mSubscriptiond:Lorg/greenrobot/eventbus/Subscription;
 
     .line 415
-    iput-boolean v1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->f:Z
+    iput-boolean v1, p2, Lorg/greenrobot/eventbus/EventBus$ICf;->isZf:Z
 
     throw v0
 
@@ -1364,16 +1364,16 @@
 
     .prologue
     .line 488
-    iget-object v0, p1, Lorg/greenrobot/eventbus/PendingPost;->a:Ljava/lang/Object;
+    iget-object v0, p1, Lorg/greenrobot/eventbus/PendingPost;->mObjecta:Ljava/lang/Object;
 
     .line 489
-    iget-object v1, p1, Lorg/greenrobot/eventbus/PendingPost;->b:Lorg/greenrobot/eventbus/Subscription;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/PendingPost;->mSubscriptionb:Lorg/greenrobot/eventbus/Subscription;
 
     .line 490
     invoke-static {p1}, Lorg/greenrobot/eventbus/PendingPost;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 
     .line 491
-    iget-boolean v2, v1, Lorg/greenrobot/eventbus/Subscription;->d:Z
+    iget-boolean v2, v1, Lorg/greenrobot/eventbus/Subscription;->isZd:Z
 
     if-eqz v2, :cond_0
 
@@ -1391,11 +1391,11 @@
     .prologue
     .line 498
     :try_start_0
-    iget-object v0, p1, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v0, p1, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
-    iget-object v0, v0, Lorg/greenrobot/eventbus/SubscriberMethod;->a:Ljava/lang/reflect/Method;
+    iget-object v0, v0, Lorg/greenrobot/eventbus/SubscriberMethod;->mMethoda:Ljava/lang/reflect/Method;
 
-    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -1446,7 +1446,7 @@
 
     .prologue
     .line 543
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->m:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mExecutorServicem:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
 .end method
@@ -1459,7 +1459,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
     :try_end_0
@@ -1487,7 +1487,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1534,7 +1534,7 @@
     .line 243
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->f:Ljava/util/Map;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -1589,7 +1589,7 @@
     const/4 v3, 0x0
 
     .line 251
-    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->h:Ljava/lang/ThreadLocal;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/EventBus;->mThreadLocalh:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -1598,13 +1598,13 @@
     check-cast v0, Lorg/greenrobot/eventbus/EventBus$ICf;
 
     .line 252
-    iget-object v4, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->a:Ljava/util/List;
+    iget-object v4, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->mLista:Ljava/util/List;
 
     .line 253
     invoke-interface {v4, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 255
-    iget-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->b:Z
+    iget-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZb:Z
 
     if-nez v1, :cond_3
 
@@ -1622,13 +1622,13 @@
     move v1, v2
 
     :goto_0
-    iput-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->c:Z
+    iput-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZc:Z
 
     .line 257
-    iput-boolean v2, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->b:Z
+    iput-boolean v2, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZb:Z
 
     .line 258
-    iget-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->f:Z
+    iget-boolean v1, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZf:Z
 
     if-eqz v1, :cond_1
 
@@ -1674,19 +1674,19 @@
     :catchall_0
     move-exception v1
 
-    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->b:Z
+    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZb:Z
 
     .line 267
-    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->c:Z
+    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZc:Z
 
     throw v1
 
     .line 266
     :cond_2
-    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->b:Z
+    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZb:Z
 
     .line 267
-    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->c:Z
+    iput-boolean v3, v0, Lorg/greenrobot/eventbus/EventBus$ICf;->isZc:Z
 
     .line 270
     :cond_3

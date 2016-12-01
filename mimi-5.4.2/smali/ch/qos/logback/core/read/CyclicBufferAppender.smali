@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+.field mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lch/qos/logback/core/helpers/CyclicBuffer",
@@ -60,7 +60,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-virtual {v0, p1}, Lch/qos/logback/core/helpers/CyclicBuffer;->add(Ljava/lang/Object;)V
 
@@ -81,7 +81,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-virtual {v0, p1}, Lch/qos/logback/core/helpers/CyclicBuffer;->get(I)Ljava/lang/Object;
 
@@ -105,7 +105,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-virtual {v0}, Lch/qos/logback/core/helpers/CyclicBuffer;->length()I
 
@@ -131,7 +131,7 @@
 .method public reset()V
     .locals 1
 
-    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iget-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-virtual {v0}, Lch/qos/logback/core/helpers/CyclicBuffer;->clear()V
 
@@ -155,7 +155,7 @@
 
     invoke-direct {v0, v1}, Lch/qos/logback/core/helpers/CyclicBuffer;-><init>(I)V
 
-    iput-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iput-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-super {p0}, Lch/qos/logback/core/AppenderBase;->start()V
 
@@ -167,7 +167,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->cb:Lch/qos/logback/core/helpers/CyclicBuffer;
+    iput-object v0, p0, Lch/qos/logback/core/read/CyclicBufferAppender;->mCyclicBuffercb:Lch/qos/logback/core/helpers/CyclicBuffer;
 
     invoke-super {p0}, Lch/qos/logback/core/AppenderBase;->stop()V
 

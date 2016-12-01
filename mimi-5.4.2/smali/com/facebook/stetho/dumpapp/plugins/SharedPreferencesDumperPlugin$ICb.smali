@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sput-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->a:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->b:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->c:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->d:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->e:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 
@@ -104,7 +104,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->f:Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;
 

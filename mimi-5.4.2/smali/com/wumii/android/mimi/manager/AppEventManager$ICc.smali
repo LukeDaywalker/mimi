@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/AppEventManager;
+.field final synthetic mLista:Ljava/util/List;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mLista:Ljava/util/List;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     const/4 v1, 0x0
 
@@ -48,18 +48,18 @@
     if-eqz v0, :cond_0
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Lcom/wumii/android/mimi/manager/AppEventManager;)Ljava/util/List;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Lcom/wumii/android/mimi/manager/AppEventManager;)Ljava/util/List;
 
@@ -77,7 +77,7 @@
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/AppEventManager;->a(Lcom/wumii/android/mimi/manager/AppEventManager;)Ljava/util/List;
 

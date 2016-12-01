@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
-.field private final b:I
+.field private final mIb:I
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     .line 34
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     .line 35
     return-void
@@ -40,10 +40,10 @@
     if-nez v0, :cond_0
 
     .line 39
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     .line 40
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     .line 45
     :goto_0
@@ -51,10 +51,10 @@
 
     .line 42
     :cond_0
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     .line 43
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     goto :goto_0
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 48
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     return v0
 .end method
@@ -78,7 +78,7 @@
     .line 62
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     int-to-float v1, v1
 
@@ -86,7 +86,7 @@
 
     float-to-int v1, v1
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     int-to-float v2, v2
 
@@ -106,11 +106,11 @@
     .line 57
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     div-int/2addr v1, p1
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     div-int/2addr v2, p1
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 52
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     return v0
 .end method
@@ -140,7 +140,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -152,7 +152,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

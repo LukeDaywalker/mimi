@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/ViewPropertyAnimatorListener;
+.field final synthetic mViewPropertyAnimatorListenera:Landroid/support/v4/view/ViewPropertyAnimatorListener;
 
-.field final synthetic b:Landroid/view/View;
+.field final synthetic mViewb:Landroid/view/View;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 136
-    iput-object p1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->a:Landroid/support/v4/view/ViewPropertyAnimatorListener;
+    iput-object p1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewPropertyAnimatorListenera:Landroid/support/v4/view/ViewPropertyAnimatorListener;
 
-    iput-object p2, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->b:Landroid/view/View;
+    iput-object p2, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewb:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -31,9 +31,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->a:Landroid/support/v4/view/ViewPropertyAnimatorListener;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewPropertyAnimatorListenera:Landroid/support/v4/view/ViewPropertyAnimatorListener;
 
-    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->b:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewb:Landroid/view/View;
 
     invoke-interface {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorListener;->c(Landroid/view/View;)V
 
@@ -46,9 +46,9 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->a:Landroid/support/v4/view/ViewPropertyAnimatorListener;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewPropertyAnimatorListenera:Landroid/support/v4/view/ViewPropertyAnimatorListener;
 
-    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->b:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewb:Landroid/view/View;
 
     invoke-interface {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorListener;->b(Landroid/view/View;)V
 
@@ -61,9 +61,9 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->a:Landroid/support/v4/view/ViewPropertyAnimatorListener;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewPropertyAnimatorListenera:Landroid/support/v4/view/ViewPropertyAnimatorListener;
 
-    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->b:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/view/ViewPropertyAnimatorCompatICS$1;->mViewb:Landroid/view/View;
 
     invoke-interface {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorListener;->a(Landroid/view/View;)V
 

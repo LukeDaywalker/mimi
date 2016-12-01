@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
+.field final synthetic mICma:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 100
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICn;->mICma:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICn;->mICma:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->f()Z
 

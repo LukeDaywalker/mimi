@@ -6,7 +6,7 @@
 # instance fields
 .field protected final a:Landroid/support/v7/widget/RecyclerView$ICar;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 42
     const/high16 v0, -0x80000000
 
-    iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->b:I
+    iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     .line 45
     iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->a:Landroid/support/v7/widget/RecyclerView$ICar;
@@ -118,7 +118,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->b:I
+    iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     .line 55
     return-void
@@ -134,7 +134,7 @@
     .line 68
     const/high16 v0, -0x80000000
 
-    iget v1, p0, Landroid/support/v7/widget/OrientationHelper;->b:I
+    iget v1, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     if-ne v0, v1, :cond_0
 
@@ -148,7 +148,7 @@
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v7/widget/OrientationHelper;->b:I
+    iget v1, p0, Landroid/support/v7/widget/OrientationHelper;->mIb:I
 
     sub-int/2addr v0, v1
 

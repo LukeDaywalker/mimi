@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+.field private isZb:Z
 
-.field private b:Z
+.field private mJc:J
 
-.field private c:J
+.field final synthetic mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 592
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     .line 594
     const/4 v0, 0x0
@@ -29,7 +29,7 @@
     .line 582
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->c:J
+    iput-wide v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mJc:J
 
     .line 595
     return-void
@@ -334,18 +334,18 @@
 
     .prologue
     .line 638
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->b:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->isZb:Z
 
     if-eqz v0, :cond_0
 
     .line 642
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->c:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mJc:J
 
     const-wide/32 v2, 0x36ee80
 
     add-long/2addr v0, v2
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     invoke-static {v2}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->a(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)Lcom/google/analytics/tracking/android/Clock;
 
@@ -375,10 +375,10 @@
     .line 648
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->b:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->isZb:Z
 
     .line 649
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     invoke-static {v1}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->a(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)Lcom/google/analytics/tracking/android/Clock;
 
@@ -388,7 +388,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->c:J
+    iput-wide v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mJc:J
 
     .line 651
     :try_start_0
@@ -411,7 +411,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->b:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->isZb:Z
 
     .line 660
     return-object v0
@@ -421,13 +421,13 @@
     move-exception v1
 
     .line 654
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     invoke-static {v1}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->c(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     invoke-static {v2}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->b(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)Ljava/lang/String;
 

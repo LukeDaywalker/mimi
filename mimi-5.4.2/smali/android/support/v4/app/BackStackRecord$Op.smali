@@ -4,23 +4,7 @@
 
 
 # instance fields
-.field a:Landroid/support/v4/app/BackStackRecord$Op;
-
-.field b:Landroid/support/v4/app/BackStackRecord$Op;
-
-.field c:I
-
-.field d:Landroid/support/v4/app/Fragment;
-
-.field e:I
-
-.field f:I
-
-.field g:I
-
-.field h:I
-
-.field i:Ljava/util/ArrayList;
+.field mArrayListi:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -30,6 +14,22 @@
         }
     .end annotation
 .end field
+
+.field mFragmentd:Landroid/support/v4/app/Fragment;
+
+.field mIc:I
+
+.field mIe:I
+
+.field mIf:I
+
+.field mIg:I
+
+.field mIh:I
+
+.field mOpa:Landroid/support/v4/app/BackStackRecord$Op;
+
+.field mOpb:Landroid/support/v4/app/BackStackRecord$Op;
 
 
 # direct methods

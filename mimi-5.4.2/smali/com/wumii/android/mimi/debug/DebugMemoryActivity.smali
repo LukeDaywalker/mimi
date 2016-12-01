@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private n:Landroid/widget/LinearLayout;
+.field private mDisplayMetricso:Landroid/util/DisplayMetrics;
 
-.field private o:Landroid/util/DisplayMetrics;
+.field private mLinearLayoutn:Landroid/widget/LinearLayout;
 
 
 # direct methods
@@ -175,7 +175,7 @@
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 90
-    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -197,13 +197,13 @@
     invoke-direct {v0, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 80
-    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mDisplayMetricso:Landroid/util/DisplayMetrics;
 
     invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mDisplayMetricso:Landroid/util/DisplayMetrics;
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
@@ -215,7 +215,7 @@
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -230,7 +230,7 @@
     const/4 v0, 0x0
 
     .line 49
-    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->removeAllViews()V
 
@@ -476,7 +476,7 @@
     .line 71
     const-string/jumbo v3, "Debug"
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -484,7 +484,7 @@
 
     const-string/jumbo v3, "NavigationActivity"
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -569,14 +569,14 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     .line 42
     new-instance v0, Landroid/util/DisplayMetrics;
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mDisplayMetricso:Landroid/util/DisplayMetrics;
 
     .line 43
     invoke-virtual {p0}, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->getWindowManager()Landroid/view/WindowManager;
@@ -587,7 +587,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->mDisplayMetricso:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 

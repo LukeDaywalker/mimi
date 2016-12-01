@@ -6,21 +6,21 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static mICaf:Lcom/baidu/platform/comapi/ICa;
 
-.field private static f:Lcom/baidu/platform/comapi/ICa;
+.field private static mIg:I
 
-.field private static g:I
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private mContextb:Landroid/content/Context;
 
-.field private c:Landroid/os/Handler;
+.field private mHandlerc:Landroid/os/Handler;
 
-.field private d:Lcom/baidu/platform/comapi/ICd;
+.field private mICdd:Lcom/baidu/platform/comapi/ICd;
 
-.field private e:I
+.field private mIe:I
 
 
 # direct methods
@@ -33,11 +33,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/ICa;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/ICa;->mStringa:Ljava/lang/String;
 
     const/16 v0, -0x64
 
-    sput v0, Lcom/baidu/platform/comapi/ICa;->g:I
+    sput v0, Lcom/baidu/platform/comapi/ICa;->mIg:I
 
     :try_start_0
     invoke-static {}, Lcom/baidu/mapapi/VersionInfo;->getKitName()Ljava/lang/String;
@@ -96,7 +96,7 @@
 .method public static a()Lcom/baidu/platform/comapi/ICa;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/ICa;->f:Lcom/baidu/platform/comapi/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/ICa;->mICaf:Lcom/baidu/platform/comapi/ICa;
 
     if-nez v0, :cond_0
 
@@ -104,10 +104,10 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/ICa;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/ICa;->f:Lcom/baidu/platform/comapi/ICa;
+    sput-object v0, Lcom/baidu/platform/comapi/ICa;->mICaf:Lcom/baidu/platform/comapi/ICa;
 
     :cond_0
-    sget-object v0, Lcom/baidu/platform/comapi/ICa;->f:Lcom/baidu/platform/comapi/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/ICa;->mICaf:Lcom/baidu/platform/comapi/ICa;
 
     return-object v0
 .end method
@@ -127,17 +127,17 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->d:Lcom/baidu/platform/comapi/ICd;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mICdd:Lcom/baidu/platform/comapi/ICd;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/ICa;->d:Lcom/baidu/platform/comapi/ICd;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/ICa;->mICdd:Lcom/baidu/platform/comapi/ICd;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -148,17 +148,17 @@
 .method private g()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->d:Lcom/baidu/platform/comapi/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mICdd:Lcom/baidu/platform/comapi/ICd;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->d:Lcom/baidu/platform/comapi/ICd;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mICdd:Lcom/baidu/platform/comapi/ICd;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -171,7 +171,7 @@
 .method public a(Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     return-void
 .end method
@@ -196,7 +196,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     :goto_0
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -232,7 +232,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -268,7 +268,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -300,21 +300,21 @@
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/util/ICf;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mHandlerc:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
 
-    sget v1, Lcom/baidu/platform/comapi/ICa;->g:I
+    sget v1, Lcom/baidu/platform/comapi/ICa;->mIg:I
 
     if-eq v0, v1, :cond_0
 
     iget v0, p1, Lcom/baidu/platform/comapi/util/PermissionCheck$ICb;->a:I
 
-    sput v0, Lcom/baidu/platform/comapi/ICa;->g:I
+    sput v0, Lcom/baidu/platform/comapi/ICa;->mIg:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mHandlerc:Landroid/os/Handler;
 
     const/16 v1, 0x7dc
 
@@ -365,11 +365,11 @@
 .method public b()V
     .locals 2
 
-    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -382,13 +382,13 @@
     throw v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/vi/ICb;->a(Landroid/content/Context;)V
 
     invoke-static {}, Lcom/baidu/vi/VMsg;->init()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->a()Landroid/os/Bundle;
 
@@ -402,20 +402,20 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/ICd;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/ICa;->d:Lcom/baidu/platform/comapi/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mICdd:Lcom/baidu/platform/comapi/ICd;
 
     invoke-direct {p0}, Lcom/baidu/platform/comapi/ICa;->f()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/util/ICc;->a(Landroid/content/Context;)V
 
     :cond_1
-    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iput v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
     return-void
 .end method
@@ -423,7 +423,7 @@
 .method public c()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -438,7 +438,7 @@
     :cond_0
     const/16 v0, 0x7d0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/ICa;->mHandlerc:Landroid/os/Handler;
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comjni/engine/ICa;->a(ILandroid/os/Handler;)V
 
@@ -446,9 +446,9 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/platform/comapi/ICb;-><init>(Lcom/baidu/platform/comapi/ICa;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/ICa;->c:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mHandlerc:Landroid/os/Handler;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/util/ICf;->b(Landroid/content/Context;)V
 
@@ -456,7 +456,7 @@
 
     invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->d()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/util/PermissionCheck;->init(Landroid/content/Context;)V
 
@@ -472,13 +472,13 @@
 .method public d()V
     .locals 1
 
-    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iput v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
-    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->e:I
+    iget v0, p0, Lcom/baidu/platform/comapi/ICa;->mIe:I
 
     if-nez v0, :cond_0
 
@@ -497,7 +497,7 @@
 .method public e()Landroid/content/Context;
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -510,7 +510,7 @@
     throw v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/ICa;->mContextb:Landroid/content/Context;
 
     return-object v0
 .end method

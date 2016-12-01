@@ -6,22 +6,22 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mICamc:Lcom/tencent/wxop/stat/ICam;
 
-.field final synthetic c:Lcom/tencent/wxop/stat/ICam;
+.field final synthetic mLista:Ljava/util/List;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/wxop/stat/ICam;Ljava/util/List;Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICb;->c:Lcom/tencent/wxop/stat/ICam;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICb;->mICamc:Lcom/tencent/wxop/stat/ICam;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/ICb;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/ICb;->mLista:Ljava/util/List;
 
-    iput-boolean p3, p0, Lcom/tencent/wxop/stat/ICb;->b:Z
+    iput-boolean p3, p0, Lcom/tencent/wxop/stat/ICb;->isZb:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +35,11 @@
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICx;->b()V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICb;->c:Lcom/tencent/wxop/stat/ICam;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICb;->mICamc:Lcom/tencent/wxop/stat/ICam;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICb;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICb;->mLista:Ljava/util/List;
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/ICb;->b:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/ICb;->isZb:Z
 
     invoke-virtual {v0, v1, v2}, Lcom/tencent/wxop/stat/ICam;->b(Ljava/util/List;Z)V
 
@@ -51,11 +51,11 @@
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICx;->c()V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICb;->c:Lcom/tencent/wxop/stat/ICam;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICb;->mICamc:Lcom/tencent/wxop/stat/ICam;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICb;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICb;->mLista:Ljava/util/List;
 
-    iget-boolean v2, p0, Lcom/tencent/wxop/stat/ICb;->b:Z
+    iget-boolean v2, p0, Lcom/tencent/wxop/stat/ICb;->isZb:Z
 
     invoke-virtual {v0, v1, v2}, Lcom/tencent/wxop/stat/ICam;->a(Ljava/util/List;Z)V
 

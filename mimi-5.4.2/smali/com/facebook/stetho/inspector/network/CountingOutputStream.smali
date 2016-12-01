@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:J
+.field private mJa:J
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 15
-    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a:J
+    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->mJa:J
 
     return-wide v0
 .end method
@@ -41,13 +41,13 @@
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
     .line 21
-    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a:J
+    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->mJa:J
 
     const-wide/16 v2, 0x1
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a:J
+    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->mJa:J
 
     .line 22
     return-void
@@ -78,13 +78,13 @@
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
     .line 32
-    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a:J
+    iget-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->mJa:J
 
     int-to-long v2, p3
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a:J
+    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->mJa:J
 
     .line 33
     return-void

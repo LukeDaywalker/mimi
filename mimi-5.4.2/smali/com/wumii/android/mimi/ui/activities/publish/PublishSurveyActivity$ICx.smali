@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+.field final synthetic mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 276
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 288
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)Landroid/view/View;
 
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -52,7 +52,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;->mPublishSurveyActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->b(Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;)V
 

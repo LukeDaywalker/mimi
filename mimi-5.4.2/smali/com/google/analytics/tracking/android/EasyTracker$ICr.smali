@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/EasyTracker;
+.field final synthetic mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 448
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICr;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICr;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 451
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICr;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICr;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     const/4 v1, 0x0
 

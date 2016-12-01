@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
+.field private final mDOMStoragePeerManagerb:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
 
-.field private final c:Lcom/facebook/stetho/json/ObjectMapper;
+.field private final mObjectMapperc:Lcom/facebook/stetho/json/ObjectMapper;
 
 
 # direct methods
@@ -27,17 +27,17 @@
 
     invoke-direct {v0}, Lcom/facebook/stetho/json/ObjectMapper;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->c:Lcom/facebook/stetho/json/ObjectMapper;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->mObjectMapperc:Lcom/facebook/stetho/json/ObjectMapper;
 
     .line 34
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->mContexta:Landroid/content/Context;
 
     .line 35
     new-instance v0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
 
     invoke-direct {v0, p1}, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->b:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;->mDOMStoragePeerManagerb:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
 
     .line 36
     return-void

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lio/fabric/sdk/android/services/settings/Settings;
+.field private static final mSettingsa:Lio/fabric/sdk/android/services/settings/Settings;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/settings/Settings;-><init>(Lio/fabric/sdk/android/services/settings/Settings$ICr;)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/Settings$ICs;->a:Lio/fabric/sdk/android/services/settings/Settings;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/Settings$ICs;->mSettingsa:Lio/fabric/sdk/android/services/settings/Settings;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lio/fabric/sdk/android/services/settings/Settings$ICs;->a:Lio/fabric/sdk/android/services/settings/Settings;
+    sget-object v0, Lio/fabric/sdk/android/services/settings/Settings$ICs;->mSettingsa:Lio/fabric/sdk/android/services/settings/Settings;
 
     return-object v0
 .end method

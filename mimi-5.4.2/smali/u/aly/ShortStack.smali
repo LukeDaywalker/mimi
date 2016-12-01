@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:[S
+.field private mArraySa:[S
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -20,12 +20,12 @@
     .line 29
     const/4 v0, -0x1
 
-    iput v0, p0, Lu/aly/ShortStack;->b:I
+    iput v0, p0, Lu/aly/ShortStack;->mIb:I
 
     .line 32
     new-array v0, p1, [S
 
-    iput-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iput-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     .line 33
     return-void
@@ -38,7 +38,7 @@
     const/4 v3, 0x0
 
     .line 47
-    iget-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     array-length v0, v0
 
@@ -47,16 +47,16 @@
     new-array v0, v0, [S
 
     .line 48
-    iget-object v1, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v1, p0, Lu/aly/ShortStack;->mArraySa:[S
 
-    iget-object v2, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v2, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     array-length v2, v2
 
     invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 49
-    iput-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iput-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     .line 50
     return-void
@@ -69,13 +69,13 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
-    iget v1, p0, Lu/aly/ShortStack;->b:I
+    iget v1, p0, Lu/aly/ShortStack;->mIb:I
 
     add-int/lit8 v2, v1, -0x1
 
-    iput v2, p0, Lu/aly/ShortStack;->b:I
+    iput v2, p0, Lu/aly/ShortStack;->mIb:I
 
     aget-short v0, v0, v1
 
@@ -87,11 +87,11 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     array-length v0, v0
 
-    iget v1, p0, Lu/aly/ShortStack;->b:I
+    iget v1, p0, Lu/aly/ShortStack;->mIb:I
 
     add-int/lit8 v1, v1, 0x1
 
@@ -102,13 +102,13 @@
 
     .line 43
     :cond_0
-    iget-object v0, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v0, p0, Lu/aly/ShortStack;->mArraySa:[S
 
-    iget v1, p0, Lu/aly/ShortStack;->b:I
+    iget v1, p0, Lu/aly/ShortStack;->mIb:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lu/aly/ShortStack;->b:I
+    iput v1, p0, Lu/aly/ShortStack;->mIb:I
 
     aput-short p1, v0, v1
 
@@ -123,7 +123,7 @@
     .line 57
     const/4 v0, -0x1
 
-    iput v0, p0, Lu/aly/ShortStack;->b:I
+    iput v0, p0, Lu/aly/ShortStack;->mIb:I
 
     .line 58
     return-void
@@ -147,7 +147,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v2, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v2, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     array-length v2, v2
 
@@ -163,7 +163,7 @@
 
     .line 69
     :cond_0
-    iget v2, p0, Lu/aly/ShortStack;->b:I
+    iget v2, p0, Lu/aly/ShortStack;->mIb:I
 
     if-ne v0, v2, :cond_1
 
@@ -174,14 +174,14 @@
 
     .line 73
     :cond_1
-    iget-object v2, p0, Lu/aly/ShortStack;->a:[S
+    iget-object v2, p0, Lu/aly/ShortStack;->mArraySa:[S
 
     aget-short v2, v2, v0
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 75
-    iget v2, p0, Lu/aly/ShortStack;->b:I
+    iget v2, p0, Lu/aly/ShortStack;->mIb:I
 
     if-ne v0, v2, :cond_2
 

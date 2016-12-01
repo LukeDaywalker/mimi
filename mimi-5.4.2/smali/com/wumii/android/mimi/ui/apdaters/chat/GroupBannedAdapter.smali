@@ -19,11 +19,11 @@
     .end annotation
 .end field
 
-.field private d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+.field private mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
-.field private f:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerf:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;-><init>(Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->f:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     .line 40
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;-><init>(Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     .line 44
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 48
     return-void
@@ -181,7 +181,7 @@
     move-result-object v0
 
     .line 62
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->getMessage()Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -216,7 +216,7 @@
     move-result-object v2
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mMessageItemBuilderFactoryd:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
 
@@ -300,7 +300,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->f:Landroid/view/View$OnClickListener;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -387,7 +387,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0, v2, v1, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 

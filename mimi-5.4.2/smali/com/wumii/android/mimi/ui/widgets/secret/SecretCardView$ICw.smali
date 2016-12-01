@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mIa:I
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+.field final synthetic mSecretCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 696
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->mSecretCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 699
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->mSecretCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;)Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
@@ -43,13 +43,13 @@
     if-eqz v0, :cond_0
 
     .line 700
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->mSecretCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;)Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICw;->mIa:I
 
     invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->a(Landroid/view/View;I)V
 

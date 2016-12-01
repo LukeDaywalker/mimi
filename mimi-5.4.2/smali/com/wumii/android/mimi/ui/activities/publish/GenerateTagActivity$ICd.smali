@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+.field final synthetic mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 204
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->j(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
@@ -43,12 +43,12 @@
 
     .prologue
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;Ljava/lang/String;)V
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     const/4 v1, -0x1
 
@@ -65,7 +65,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 211
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->finish()V
 

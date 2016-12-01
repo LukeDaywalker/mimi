@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/google/tagmanager/PreviewManager$ICan;
 
-.field private static final synthetic d:[Lcom/google/tagmanager/PreviewManager$ICan;
+.field private static final synthetic mArrayICand:[Lcom/google/tagmanager/PreviewManager$ICan;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->d:[Lcom/google/tagmanager/PreviewManager$ICan;
+    sput-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->mArrayICand:[Lcom/google/tagmanager/PreviewManager$ICan;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 12
-    sget-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->d:[Lcom/google/tagmanager/PreviewManager$ICan;
+    sget-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->mArrayICand:[Lcom/google/tagmanager/PreviewManager$ICan;
 
     invoke-virtual {v0}, [Lcom/google/tagmanager/PreviewManager$ICan;->clone()Ljava/lang/Object;
 

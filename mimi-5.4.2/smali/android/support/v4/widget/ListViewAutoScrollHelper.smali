@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Landroid/widget/ListView;
+.field private final mListViewa:Landroid/widget/ListView;
 
 
 # virtual methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Landroid/support/v4/widget/ListViewAutoScrollHelper;->a:Landroid/widget/ListView;
+    iget-object v0, p0, Landroid/support/v4/widget/ListViewAutoScrollHelper;->mListViewa:Landroid/widget/ListView;
 
     .line 38
     invoke-virtual {v0}, Landroid/widget/ListView;->getFirstVisiblePosition()I
@@ -71,7 +71,7 @@
     const/4 v0, 0x0
 
     .line 60
-    iget-object v1, p0, Landroid/support/v4/widget/ListViewAutoScrollHelper;->a:Landroid/widget/ListView;
+    iget-object v1, p0, Landroid/support/v4/widget/ListViewAutoScrollHelper;->mListViewa:Landroid/widget/ListView;
 
     .line 61
     invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I

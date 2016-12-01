@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+.field final synthetic mSecretMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;->a:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;->mSecretMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;->a:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;->mSecretMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->d:Landroid/content/Context;
 

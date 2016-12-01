@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field private a:[I
+.field private mArrayIa:[I
 
-.field private b:I
+.field private mIb:I
 
-.field private c:I
+.field private mIc:I
 
-.field private d:I
+.field private mId:I
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, La/a/a/a/ICb;->a:[I
+    iput-object v0, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     const/4 v0, -0x1
 
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     if-nez v1, :cond_1
 
@@ -41,18 +41,18 @@
     return v0
 
     :cond_1
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v2, v1, -0x1
 
-    iget v1, p0, La/a/a/a/ICb;->d:I
+    iget v1, p0, La/a/a/a/ICb;->mId:I
 
     move v3, v1
 
     :goto_1
     if-eqz v3, :cond_0
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v1, v1, v2
 
@@ -63,13 +63,13 @@
 
     if-eqz p2, :cond_2
 
-    iget-object v4, p0, La/a/a/a/ICb;->a:[I
+    iget-object v4, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v4, v4, v2
 
     if-ne v4, p1, :cond_3
 
-    iget-object v0, p0, La/a/a/a/ICb;->a:[I
+    iget-object v0, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v1, v2, 0x1
 
@@ -78,7 +78,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v4, p0, La/a/a/a/ICb;->a:[I
+    iget-object v4, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v5, v2, 0x1
 
@@ -86,7 +86,7 @@
 
     if-ne v4, p1, :cond_3
 
-    iget-object v0, p0, La/a/a/a/ICb;->a:[I
+    iget-object v0, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v0, v0, v2
 
@@ -112,7 +112,7 @@
 
     const/4 v0, -0x1
 
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     if-eqz v1, :cond_0
 
@@ -125,12 +125,12 @@
     :cond_1
     const/4 v2, 0x0
 
-    iget v1, p0, La/a/a/a/ICb;->d:I
+    iget v1, p0, La/a/a/a/ICb;->mId:I
 
     :goto_1
     if-eqz v1, :cond_0
 
-    iget-object v3, p0, La/a/a/a/ICb;->a:[I
+    iget-object v3, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v3, v3, v2
 
@@ -160,7 +160,7 @@
     add-int/lit8 v0, v0, 0x1
 
     :cond_3
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v0, v1, v0
 
@@ -172,11 +172,11 @@
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, La/a/a/a/ICb;->a:[I
+    iget-object v0, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     array-length v0, v0
 
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     sub-int/2addr v0, v1
 
@@ -186,7 +186,7 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     array-length v1, v1
 
@@ -196,13 +196,13 @@
 
     new-array v0, v0, [I
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
-    iget v2, p0, La/a/a/a/ICb;->b:I
+    iget v2, p0, La/a/a/a/ICb;->mIb:I
 
     invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iput-object v0, p0, La/a/a/a/ICb;->a:[I
+    iput-object v0, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     goto :goto_0
 .end method
@@ -214,7 +214,7 @@
 
     const/4 v0, 0x0
 
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     if-eqz v1, :cond_0
 
@@ -224,11 +224,11 @@
     return v0
 
     :cond_1
-    iget v1, p0, La/a/a/a/ICb;->d:I
+    iget v1, p0, La/a/a/a/ICb;->mId:I
 
     if-le p1, v1, :cond_2
 
-    iget p1, p0, La/a/a/a/ICb;->d:I
+    iget p1, p0, La/a/a/a/ICb;->mId:I
 
     :cond_2
     move v1, v0
@@ -236,7 +236,7 @@
     :goto_0
     if-eqz p1, :cond_0
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v3, v2, v1
 
@@ -262,11 +262,11 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, La/a/a/a/ICb;->b:I
+    iput v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iput v0, p0, La/a/a/a/ICb;->c:I
+    iput v0, p0, La/a/a/a/ICb;->mIc:I
 
-    iput v0, p0, La/a/a/a/ICb;->d:I
+    iput v0, p0, La/a/a/a/ICb;->mId:I
 
     return-void
 .end method
@@ -274,7 +274,7 @@
 .method public final a(II)V
     .locals 5
 
-    iget v0, p0, La/a/a/a/ICb;->d:I
+    iget v0, p0, La/a/a/a/ICb;->mId:I
 
     if-nez v0, :cond_0
 
@@ -285,15 +285,15 @@
 
     invoke-direct {p0, v0}, La/a/a/a/ICb;->e(I)V
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v1, v1, v0
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v3, v0, -0x1
 
@@ -305,17 +305,17 @@
 
     aput v4, v2, v3
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aput p1, v2, v0
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v3, v0, 0x1
 
     aput p2, v2, v3
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v0, v0, 0x2
 
@@ -323,17 +323,17 @@
 
     aput v1, v2, v0
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, La/a/a/a/ICb;->b:I
+    iput v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iget v0, p0, La/a/a/a/ICb;->c:I
+    iget v0, p0, La/a/a/a/ICb;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, La/a/a/a/ICb;->c:I
+    iput v0, p0, La/a/a/a/ICb;->mIc:I
 
     return-void
 .end method
@@ -341,7 +341,7 @@
 .method public final b()I
     .locals 2
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     if-nez v0, :cond_0
 
@@ -351,11 +351,11 @@
     return v0
 
     :cond_0
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v0, v1, v0
 
@@ -391,7 +391,7 @@
 
     const/4 v0, 0x0
 
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     if-nez v1, :cond_1
 
@@ -400,11 +400,11 @@
     return v0
 
     :cond_1
-    iget v1, p0, La/a/a/a/ICb;->b:I
+    iget v1, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v2, v2, v1
 
@@ -414,7 +414,7 @@
 
     add-int/lit8 v1, v1, -0x2
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aput v0, v2, v1
 
@@ -424,21 +424,21 @@
 
     sub-int/2addr v1, v2
 
-    iget-object v2, p0, La/a/a/a/ICb;->a:[I
+    iget-object v2, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aput v0, v2, v1
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, -0x2
 
-    iput v0, p0, La/a/a/a/ICb;->b:I
+    iput v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iget v0, p0, La/a/a/a/ICb;->c:I
+    iget v0, p0, La/a/a/a/ICb;->mIc:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, La/a/a/a/ICb;->c:I
+    iput v0, p0, La/a/a/a/ICb;->mIc:I
 
     const/4 v0, 0x1
 
@@ -448,7 +448,7 @@
 .method public final d()I
     .locals 1
 
-    iget v0, p0, La/a/a/a/ICb;->d:I
+    iget v0, p0, La/a/a/a/ICb;->mId:I
 
     return v0
 .end method
@@ -474,29 +474,29 @@
 
     invoke-direct {p0, v0}, La/a/a/a/ICb;->e(I)V
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aput v2, v1, v0
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     add-int/lit8 v0, v0, 0x1
 
     aput v2, v1, v0
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, La/a/a/a/ICb;->b:I
+    iput v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iget v0, p0, La/a/a/a/ICb;->d:I
+    iget v0, p0, La/a/a/a/ICb;->mId:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, La/a/a/a/ICb;->d:I
+    iput v0, p0, La/a/a/a/ICb;->mId:I
 
     return-void
 .end method
@@ -504,7 +504,7 @@
 .method public final f()V
     .locals 3
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     if-nez v0, :cond_1
 
@@ -513,11 +513,11 @@
     return-void
 
     :cond_1
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iget-object v1, p0, La/a/a/a/ICb;->a:[I
+    iget-object v1, p0, La/a/a/a/ICb;->mArrayIa:[I
 
     aget v1, v1, v0
 
@@ -529,7 +529,7 @@
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, La/a/a/a/ICb;->b:I
+    iget v0, p0, La/a/a/a/ICb;->mIb:I
 
     mul-int/lit8 v2, v1, 0x2
 
@@ -537,19 +537,19 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, La/a/a/a/ICb;->b:I
+    iput v0, p0, La/a/a/a/ICb;->mIb:I
 
-    iget v0, p0, La/a/a/a/ICb;->c:I
+    iget v0, p0, La/a/a/a/ICb;->mIc:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, La/a/a/a/ICb;->c:I
+    iput v0, p0, La/a/a/a/ICb;->mIc:I
 
-    iget v0, p0, La/a/a/a/ICb;->d:I
+    iget v0, p0, La/a/a/a/ICb;->mId:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, La/a/a/a/ICb;->d:I
+    iput v0, p0, La/a/a/a/ICb;->mId:I
 
     goto :goto_0
 .end method

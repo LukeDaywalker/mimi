@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:Lcom/baidu/mapapi/model/LatLng;
+.field private mCoordTypeb:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
-.field private b:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
+.field private mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
 
 # direct methods
@@ -97,7 +97,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_0
 
@@ -105,18 +105,18 @@
     return-object v0
 
     :cond_0
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->b:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mCoordTypeb:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
     if-nez v1, :cond_1
 
     sget-object v1, Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;->GPS:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
-    iput-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->b:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
+    iput-object v1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mCoordTypeb:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
     :cond_1
-    sget-object v1, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->a:[I
+    sget-object v1, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->mArrayIa:[I
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->b:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mCoordTypeb:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
     invoke-virtual {v2}, Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;->ordinal()I
 
@@ -129,7 +129,7 @@
     goto :goto_0
 
     :pswitch_0
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/utils/CoordinateConverter;->b(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/LatLng;
 
@@ -138,7 +138,7 @@
     goto :goto_0
 
     :pswitch_1
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/utils/CoordinateConverter;->a(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/LatLng;
 
@@ -156,7 +156,7 @@
 .method public coord(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/utils/CoordinateConverter;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -164,7 +164,7 @@
 .method public from(Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;)Lcom/baidu/mapapi/utils/CoordinateConverter;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->b:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/CoordinateConverter;->mCoordTypeb:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
     return-object p0
 .end method

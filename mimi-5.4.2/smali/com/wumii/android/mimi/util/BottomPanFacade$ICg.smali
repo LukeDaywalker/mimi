@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+.field final synthetic mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 147
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-nez v0, :cond_0
 
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->a(Lcom/wumii/android/mimi/util/BottomPanFacade;)Lcom/wumii/android/soundtouch/RecordClient;
 
@@ -47,7 +47,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->a(Lcom/wumii/android/mimi/util/BottomPanFacade;)Lcom/wumii/android/soundtouch/RecordClient;
 
@@ -66,13 +66,13 @@
 
     .line 155
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/BottomPanFacade;->c(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/widget/EditText;
 
@@ -85,7 +85,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->d(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/widget/FrameLayout;
 
@@ -94,7 +94,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->e(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 

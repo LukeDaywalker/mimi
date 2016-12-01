@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
+.field final synthetic mICbqa:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1951
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->mICbqa:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1954
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->mICbqa:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->getWindow()Landroid/view/Window;
 
@@ -43,9 +43,9 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 1955
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbr;->mICbqa:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbq;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->I(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Landroid/widget/EditText;
 

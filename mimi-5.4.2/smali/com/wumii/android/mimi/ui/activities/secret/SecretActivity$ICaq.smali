@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+.field final synthetic mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+.field final synthetic mSecretActivityb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 1020
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->mSecretActivityb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     const/4 v0, 0x0
 
@@ -33,9 +33,9 @@
 
     .prologue
     .line 1023
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->mSecretActivityb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->mICbxa:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->b()I
 
@@ -46,7 +46,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 1024
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaq;->mSecretActivityb:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)V
 

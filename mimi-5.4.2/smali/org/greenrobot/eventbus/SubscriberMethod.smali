@@ -4,11 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/reflect/Method;
-
-.field final b:Lorg/greenrobot/eventbus/ThreadMode;
-
-.field final c:Ljava/lang/Class;
+.field final mClassc:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -17,7 +13,11 @@
     .end annotation
 .end field
 
-.field d:Ljava/lang/String;
+.field final mMethoda:Ljava/lang/reflect/Method;
+
+.field mStringd:Ljava/lang/String;
+
+.field final mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
 
 # direct methods
@@ -38,13 +38,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iput-object p1, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->a:Ljava/lang/reflect/Method;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mMethoda:Ljava/lang/reflect/Method;
 
     .line 29
-    iput-object p2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->b:Lorg/greenrobot/eventbus/ThreadMode;
+    iput-object p2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mThreadModeb:Lorg/greenrobot/eventbus/ThreadMode;
 
     .line 30
-    iput-object p3, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->c:Ljava/lang/Class;
+    iput-object p3, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mClassc:Ljava/lang/Class;
 
     .line 31
     return-void
@@ -58,7 +58,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->d:Ljava/lang/String;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mStringd:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -70,7 +70,7 @@
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 50
-    iget-object v1, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->a:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mMethoda:Ljava/lang/reflect/Method;
 
     invoke-virtual {v1}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
 
@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->a:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mMethoda:Ljava/lang/reflect/Method;
 
     invoke-virtual {v2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->c:Ljava/lang/Class;
+    iget-object v2, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mClassc:Ljava/lang/Class;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->d:Ljava/lang/String;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mStringd:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -157,9 +157,9 @@
     invoke-direct {p1}, Lorg/greenrobot/eventbus/SubscriberMethod;->a()V
 
     .line 40
-    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->d:Ljava/lang/String;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mStringd:Ljava/lang/String;
 
-    iget-object v1, p1, Lorg/greenrobot/eventbus/SubscriberMethod;->d:Ljava/lang/String;
+    iget-object v1, p1, Lorg/greenrobot/eventbus/SubscriberMethod;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->a:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/SubscriberMethod;->mMethoda:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->hashCode()I
 

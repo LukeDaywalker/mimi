@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
+.field final synthetic mAbsCircleSelectorListenera:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;->a:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;->mAbsCircleSelectorListenera:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;->a:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;->mAbsCircleSelectorListenera:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->a(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)Landroid/app/Activity;
 

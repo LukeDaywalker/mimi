@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/reflect/Method;
+.field private mIb:I
 
-.field private b:I
+.field private mMethoda:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$IsConnectingWorkaround;->b:I
+    iput v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$IsConnectingWorkaround;->mIb:I
 
     .line 138
     const-class v0, Landroid/media/MediaRouter$RouteInfo;
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$IsConnectingWorkaround;->a:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Landroid/support/v4/media/routing/MediaRouterJellybeanMr1$IsConnectingWorkaround;->mMethoda:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1

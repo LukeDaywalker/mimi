@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/content/Loader;
+.field final synthetic mLoadera:Landroid/support/v4/content/Loader;
 
 
 # virtual methods
@@ -23,7 +23,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Landroid/support/v4/content/Loader$ForceLoadContentObserver;->a:Landroid/support/v4/content/Loader;
+    iget-object v0, p0, Landroid/support/v4/content/Loader$ForceLoadContentObserver;->mLoadera:Landroid/support/v4/content/Loader;
 
     invoke-virtual {v0}, Landroid/support/v4/content/Loader;->u()V
 

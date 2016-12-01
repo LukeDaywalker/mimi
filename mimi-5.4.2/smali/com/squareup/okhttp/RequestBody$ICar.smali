@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/MediaType;
+.field final synthetic mArrayBc:[B
 
-.field final synthetic b:I
+.field final synthetic mIb:I
 
-.field final synthetic c:[B
+.field final synthetic mId:I
 
-.field final synthetic d:I
+.field final synthetic mMediaTypea:Lcom/squareup/okhttp/MediaType;
 
 
 # direct methods
@@ -19,13 +19,13 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/squareup/okhttp/RequestBody$ICar;->a:Lcom/squareup/okhttp/MediaType;
+    iput-object p1, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mMediaTypea:Lcom/squareup/okhttp/MediaType;
 
-    iput p2, p0, Lcom/squareup/okhttp/RequestBody$ICar;->b:I
+    iput p2, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mIb:I
 
-    iput-object p3, p0, Lcom/squareup/okhttp/RequestBody$ICar;->c:[B
+    iput-object p3, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mArrayBc:[B
 
-    iput p4, p0, Lcom/squareup/okhttp/RequestBody$ICar;->d:I
+    iput p4, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mId:I
 
     invoke-direct {p0}, Lcom/squareup/okhttp/RequestBody;-><init>()V
 
@@ -39,7 +39,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->a:Lcom/squareup/okhttp/MediaType;
+    iget-object v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mMediaTypea:Lcom/squareup/okhttp/MediaType;
 
     return-object v0
 .end method
@@ -49,11 +49,11 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->c:[B
+    iget-object v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mArrayBc:[B
 
-    iget v1, p0, Lcom/squareup/okhttp/RequestBody$ICar;->d:I
+    iget v1, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mId:I
 
-    iget v2, p0, Lcom/squareup/okhttp/RequestBody$ICar;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mIb:I
 
     invoke-interface {p1, v0, v1, v2}, Lokio/BufferedSink;->c([BII)Lokio/BufferedSink;
 
@@ -66,7 +66,7 @@
 
     .prologue
     .line 92
-    iget v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/RequestBody$ICar;->mIb:I
 
     int-to-long v0, v0
 

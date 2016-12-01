@@ -55,10 +55,10 @@
     invoke-direct {v1}, Ljava/util/zip/CRC32;-><init>()V
 
     .line 109
-    iget-wide v2, p1, Landroid/support/multidex/ZipUtil$ICh;->b:J
+    iget-wide v2, p1, Landroid/support/multidex/ZipUtil$ICh;->mJb:J
 
     .line 110
-    iget-wide v4, p1, Landroid/support/multidex/ZipUtil$ICh;->a:J
+    iget-wide v4, p1, Landroid/support/multidex/ZipUtil$ICh;->mJa:J
 
     invoke-virtual {p0, v4, v5}, Ljava/io/RandomAccessFile;->seek(J)V
 
@@ -239,7 +239,7 @@
 
     and-long/2addr v2, v8
 
-    iput-wide v2, v0, Landroid/support/multidex/ZipUtil$ICh;->b:J
+    iput-wide v2, v0, Landroid/support/multidex/ZipUtil$ICh;->mJb:J
 
     .line 101
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->readInt()I
@@ -254,7 +254,7 @@
 
     and-long/2addr v2, v8
 
-    iput-wide v2, v0, Landroid/support/multidex/ZipUtil$ICh;->a:J
+    iput-wide v2, v0, Landroid/support/multidex/ZipUtil$ICh;->mJa:J
 
     .line 102
     return-object v0

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lokio/Sink;
+.field final synthetic mAsyncTimeoutb:Lokio/AsyncTimeout;
 
-.field final synthetic b:Lokio/AsyncTimeout;
+.field final synthetic mSinka:Lokio/Sink;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 150
-    iput-object p1, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iput-object p1, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
-    iput-object p2, p0, Lokio/AsyncTimeout$ICb;->a:Lokio/Sink;
+    iput-object p2, p0, Lokio/AsyncTimeout$ICb;->mSinka:Lokio/Sink;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     return-object v0
 .end method
@@ -47,13 +47,13 @@
     const/4 v1, 0x0
 
     .line 153
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v0}, Lokio/AsyncTimeout;->c()V
 
     .line 155
     :try_start_0
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->a:Lokio/Sink;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mSinka:Lokio/Sink;
 
     invoke-interface {v0, p1, p2, p3}, Lokio/Sink;->a_(Lokio/Buffer;J)V
     :try_end_0
@@ -64,7 +64,7 @@
     const/4 v0, 0x1
 
     .line 160
-    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v1, v0}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -77,7 +77,7 @@
 
     .line 158
     :try_start_1
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v0}, Lokio/AsyncTimeout;->a(Ljava/io/IOException;)Ljava/io/IOException;
 
@@ -91,7 +91,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v1}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -106,13 +106,13 @@
     const/4 v1, 0x0
 
     .line 179
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v0}, Lokio/AsyncTimeout;->c()V
 
     .line 181
     :try_start_0
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->a:Lokio/Sink;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mSinka:Lokio/Sink;
 
     invoke-interface {v0}, Lokio/Sink;->close()V
     :try_end_0
@@ -123,7 +123,7 @@
     const/4 v0, 0x1
 
     .line 186
-    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v1, v0}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -136,7 +136,7 @@
 
     .line 184
     :try_start_1
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v0}, Lokio/AsyncTimeout;->a(Ljava/io/IOException;)Ljava/io/IOException;
 
@@ -150,7 +150,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v1}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -165,13 +165,13 @@
     const/4 v1, 0x0
 
     .line 166
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v0}, Lokio/AsyncTimeout;->c()V
 
     .line 168
     :try_start_0
-    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->a:Lokio/Sink;
+    iget-object v0, p0, Lokio/AsyncTimeout$ICb;->mSinka:Lokio/Sink;
 
     invoke-interface {v0}, Lokio/Sink;->flush()V
     :try_end_0
@@ -182,7 +182,7 @@
     const/4 v0, 0x1
 
     .line 173
-    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v1, v0}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -195,7 +195,7 @@
 
     .line 171
     :try_start_1
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v0}, Lokio/AsyncTimeout;->a(Ljava/io/IOException;)Ljava/io/IOException;
 
@@ -209,7 +209,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->b:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout$ICb;->mAsyncTimeoutb:Lokio/AsyncTimeout;
 
     invoke-virtual {v2, v1}, Lokio/AsyncTimeout;->a(Z)V
 
@@ -231,7 +231,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->a:Lokio/Sink;
+    iget-object v1, p0, Lokio/AsyncTimeout$ICb;->mSinka:Lokio/Sink;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mContexta:Landroid/content/Context;
 
-.field private c:Landroid/util/DisplayMetrics;
+.field private mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 177
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mContexta:Landroid/content/Context;
 
     .line 178
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 179
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->c:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
     .line 180
     return-void
@@ -55,7 +55,7 @@
 
     .prologue
     .line 183
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICs;->mArrayIa:[I
 
     invoke-virtual {p4}, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->ordinal()I
 
@@ -175,11 +175,11 @@
     .line 223
     new-instance v0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->c:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mDisplayMetricsc:Landroid/util/DisplayMetrics;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICu;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 

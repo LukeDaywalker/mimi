@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static a:J
+.field static mJa:J
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const-wide/16 v0, -0x1
 
-    sput-wide v0, Lcom/tencent/stat/a/ICe;->a:J
+    sput-wide v0, Lcom/tencent/stat/a/ICe;->mJa:J
 
     return-void
 .end method
@@ -20,7 +20,7 @@
 .method static a(Landroid/content/Context;Ljava/lang/String;)J
     .locals 2
 
-    sget-wide v0, Lcom/tencent/stat/a/ICe;->a:J
+    sget-wide v0, Lcom/tencent/stat/a/ICe;->mJa:J
 
     invoke-static {p0, p1, v0, v1}, Lcom/tencent/stat/a/ICm;->a(Landroid/content/Context;Ljava/lang/String;J)J
 
@@ -58,7 +58,7 @@
 
     if-lez v4, :cond_0
 
-    sget-wide v4, Lcom/tencent/stat/a/ICe;->a:J
+    sget-wide v4, Lcom/tencent/stat/a/ICe;->mJa:J
 
     cmp-long v2, v2, v4
 
@@ -70,7 +70,7 @@
     return v0
 
     :cond_0
-    sget-wide v2, Lcom/tencent/stat/a/ICe;->a:J
+    sget-wide v2, Lcom/tencent/stat/a/ICe;->mJa:J
 
     cmp-long v0, v0, v2
 
@@ -99,7 +99,7 @@
 
     move-result-wide v0
 
-    sget-wide v2, Lcom/tencent/stat/a/ICe;->a:J
+    sget-wide v2, Lcom/tencent/stat/a/ICe;->mJa:J
 
     cmp-long v0, v0, v2
 

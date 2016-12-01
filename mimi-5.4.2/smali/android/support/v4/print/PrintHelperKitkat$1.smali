@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mBitmapb:Landroid/graphics/Bitmap;
 
-.field final synthetic b:Landroid/graphics/Bitmap;
+.field final synthetic mIc:I
 
-.field final synthetic c:I
+.field final synthetic mOnPrintFinishCallbackd:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
 
-.field final synthetic d:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
+.field private mPrintAttributesf:Landroid/print/PrintAttributes;
 
-.field final synthetic e:Landroid/support/v4/print/PrintHelperKitkat;
+.field final synthetic mPrintHelperKitkate:Landroid/support/v4/print/PrintHelperKitkat;
 
-.field private f:Landroid/print/PrintAttributes;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # virtual methods
@@ -23,12 +23,12 @@
 
     .prologue
     .line 253
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->d:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mOnPrintFinishCallbackd:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
 
     if-eqz v0, :cond_0
 
     .line 254
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->d:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mOnPrintFinishCallbackd:Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;
 
     invoke-interface {v0}, Landroid/support/v4/print/PrintHelperKitkat$OnPrintFinishCallback;->a()V
 
@@ -44,12 +44,12 @@
     const/4 v0, 0x1
 
     .line 195
-    iput-object p2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->f:Landroid/print/PrintAttributes;
+    iput-object p2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mPrintAttributesf:Landroid/print/PrintAttributes;
 
     .line 197
     new-instance v1, Landroid/print/PrintDocumentInfo$Builder;
 
-    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->a:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mStringa:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Landroid/print/PrintDocumentInfo$Builder;-><init>(Ljava/lang/String;)V
 
@@ -93,11 +93,11 @@
     .line 209
     new-instance v1, Landroid/print/pdf/PrintedPdfDocument;
 
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->e:Landroid/support/v4/print/PrintHelperKitkat;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mPrintHelperKitkate:Landroid/support/v4/print/PrintHelperKitkat;
 
-    iget-object v0, v0, Landroid/support/v4/print/PrintHelperKitkat;->a:Landroid/content/Context;
+    iget-object v0, v0, Landroid/support/v4/print/PrintHelperKitkat;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->f:Landroid/print/PrintAttributes;
+    iget-object v2, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mPrintAttributesf:Landroid/print/PrintAttributes;
 
     invoke-direct {v1, v0, v2}, Landroid/print/pdf/PrintedPdfDocument;-><init>(Landroid/content/Context;Landroid/print/PrintAttributes;)V
 
@@ -123,21 +123,21 @@
     invoke-direct {v2, v3}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
 
     .line 216
-    iget-object v3, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->e:Landroid/support/v4/print/PrintHelperKitkat;
+    iget-object v3, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mPrintHelperKitkate:Landroid/support/v4/print/PrintHelperKitkat;
 
-    iget-object v4, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->b:Landroid/graphics/Bitmap;
+    iget-object v4, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mBitmapb:Landroid/graphics/Bitmap;
 
     invoke-virtual {v4}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v4
 
-    iget-object v5, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->b:Landroid/graphics/Bitmap;
+    iget-object v5, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mBitmapb:Landroid/graphics/Bitmap;
 
     invoke-virtual {v5}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v5
 
-    iget v6, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->c:I
+    iget v6, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mIc:I
 
     invoke-static {v3, v4, v5, v2, v6}, Landroid/support/v4/print/PrintHelperKitkat;->a(Landroid/support/v4/print/PrintHelperKitkat;IILandroid/graphics/RectF;I)Landroid/graphics/Matrix;
 
@@ -148,7 +148,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->b:Landroid/graphics/Bitmap;
+    iget-object v4, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->mBitmapb:Landroid/graphics/Bitmap;
 
     const/4 v5, 0x0
 

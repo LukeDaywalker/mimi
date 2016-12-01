@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private static mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private static c:Lcom/wumii/android/mimi/models/service/UserService;
+.field private static mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # instance fields
-.field private d:Landroid/app/Activity;
+.field private mActivityd:Landroid/app/Activity;
 
-.field private e:Landroid/app/AlertDialog;
+.field private mAlertDialoge:Landroid/app/AlertDialog;
 
-.field private f:Landroid/app/AlertDialog;
+.field private mAlertDialogf:Landroid/app/AlertDialog;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mLoggera:Lorg/slf4j/Logger;
 
     .line 31
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 32
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     .line 41
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -87,16 +87,16 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->f:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialogf:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
     .line 85
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -138,11 +138,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->f:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialogf:Landroid/app/AlertDialog;
 
     .line 96
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->f:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialogf:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -151,7 +151,7 @@
     if-nez v0, :cond_1
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->f:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialogf:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -173,7 +173,7 @@
 
     if-ne v0, v1, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -209,7 +209,7 @@
 
     if-ne v0, v2, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -249,7 +249,7 @@
 
     .prologue
     .line 145
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICd;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICd;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -264,7 +264,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 151
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "FRIEND is not belong to circle type"
 
@@ -321,7 +321,7 @@
     if-ne p1, v0, :cond_0
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -337,16 +337,16 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->e:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialoge:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
     .line 109
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -363,7 +363,7 @@
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 110
-    sget-object v1, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    sget-object v1, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -374,7 +374,7 @@
     move-result-object v1
 
     .line 111
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     const v3, 0x7f060102
 
@@ -421,11 +421,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->e:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialoge:Landroid/app/AlertDialog;
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->e:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialoge:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -434,7 +434,7 @@
     if-nez v0, :cond_1
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->e:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mAlertDialoge:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -456,7 +456,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)V
 
@@ -535,7 +535,7 @@
     if-nez v0, :cond_2
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mActivityd:Landroid/app/Activity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
@@ -552,7 +552,7 @@
     if-nez v0, :cond_2
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -596,7 +596,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 

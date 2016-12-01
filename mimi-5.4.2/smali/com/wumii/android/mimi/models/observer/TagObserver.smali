@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/observer/TagObserver;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/observer/TagObserver;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -114,7 +114,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 48
-    sget-object v0, Lcom/wumii/android/mimi/models/observer/TagObserver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/observer/TagObserver;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unsupported event for TabObserver"
 

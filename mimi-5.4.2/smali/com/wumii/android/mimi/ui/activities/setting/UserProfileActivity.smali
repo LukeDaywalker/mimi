@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/task/SetUserProfileTask;
+.field private mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-.field private n:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+.field private mGenderq:Lcom/wumii/android/mimi/models/entities/Gender;
 
-.field private o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+.field private mOrganizationV2r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-.field private p:Landroid/view/View;
+.field private mSetUserProfileTaskC:Lcom/wumii/android/mimi/task/SetUserProfileTask;
 
-.field private q:Lcom/wumii/android/mimi/models/entities/Gender;
+.field private mTitleItemViewn:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
-.field private r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
-.field private s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+.field private mUserProfileGenderSettedFragmentt:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
-.field private t:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+.field private mViewp:Landroid/view/View;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->q:Lcom/wumii/android/mimi/models/entities/Gender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mGenderq:Lcom/wumii/android/mimi/models/entities/Gender;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mOrganizationV2r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->n:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewn:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     .line 60
     const v0, 0x7f0b0142
@@ -109,7 +109,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     .line 61
     const v0, 0x7f0b0140
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->p:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mViewp:Landroid/view/View;
 
     .line 62
     return-void
@@ -150,7 +150,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->t:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mUserProfileGenderSettedFragmentt:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     if-nez v0, :cond_0
 
@@ -166,7 +166,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->t:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mUserProfileGenderSettedFragmentt:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     if-nez v0, :cond_0
 
@@ -175,7 +175,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->t:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mUserProfileGenderSettedFragmentt:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     .line 114
     :cond_0
@@ -189,7 +189,7 @@
 
     const v1, 0x7f0b0054
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->t:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mUserProfileGenderSettedFragmentt:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     const-string/jumbo v3, "tag_gender"
 
@@ -214,7 +214,7 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b()Z
 
@@ -222,7 +222,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->n:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewn:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b()Z
 
@@ -266,7 +266,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->C:Lcom/wumii/android/mimi/task/SetUserProfileTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mSetUserProfileTaskC:Lcom/wumii/android/mimi/task/SetUserProfileTask;
 
     if-nez v0, :cond_0
 
@@ -275,11 +275,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->C:Lcom/wumii/android/mimi/task/SetUserProfileTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mSetUserProfileTaskC:Lcom/wumii/android/mimi/task/SetUserProfileTask;
 
     .line 163
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->C:Lcom/wumii/android/mimi/task/SetUserProfileTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mSetUserProfileTaskC:Lcom/wumii/android/mimi/task/SetUserProfileTask;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a(Lcom/wumii/android/mimi/models/entities/Gender;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Ljava/lang/String;)V
 
@@ -292,10 +292,10 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->q:Lcom/wumii/android/mimi/models/entities/Gender;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mGenderq:Lcom/wumii/android/mimi/models/entities/Gender;
 
     .line 87
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->n:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewn:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     sget-object v0, Lcom/wumii/android/mimi/models/entities/Gender;->MALE:Lcom/wumii/android/mimi/models/entities/Gender;
 
@@ -313,7 +313,7 @@
     invoke-virtual {v1, v0, p2, v2}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setValue(Ljava/lang/CharSequence;ZZ)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->n:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewn:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setTag(Ljava/lang/Object;)V
 
@@ -332,10 +332,10 @@
 
     .prologue
     .line 79
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mOrganizationV2r:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 80
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -355,7 +355,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 
@@ -366,7 +366,7 @@
     invoke-virtual {v0, v1, p2, v2}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setValue(Ljava/lang/CharSequence;ZZ)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->o:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mTitleItemViewo:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setTag(Ljava/lang/Object;)V
 
@@ -385,12 +385,12 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->p:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mViewp:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 119
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->p:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mViewp:Landroid/view/View;
 
     if-eqz p1, :cond_1
 
@@ -422,7 +422,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     if-nez v0, :cond_0
 
@@ -435,10 +435,10 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     const v1, 0x7f060051
 
@@ -448,7 +448,7 @@
 
     .line 174
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     const v1, 0x7f0600a8
 
@@ -459,7 +459,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->mAlertDialogBuilders:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     const v1, 0x7f0603eb
 

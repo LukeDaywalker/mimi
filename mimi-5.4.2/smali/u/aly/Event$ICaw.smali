@@ -29,7 +29,9 @@
 
 .field public static final enum e:Lu/aly/Event$ICaw;
 
-.field private static final f:Ljava/util/Map;
+.field private static final synthetic mArrayICawi:[Lu/aly/Event$ICaw;
+
+.field private static final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -41,13 +43,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic i:[Lu/aly/Event$ICaw;
-
 
 # instance fields
-.field private final g:S
+.field private final mSg:S
 
-.field private final h:Ljava/lang/String;
+.field private final mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -147,14 +147,14 @@
 
     aput-object v1, v0, v7
 
-    sput-object v0, Lu/aly/Event$ICaw;->i:[Lu/aly/Event$ICaw;
+    sput-object v0, Lu/aly/Event$ICaw;->mArrayICawi:[Lu/aly/Event$ICaw;
 
     .line 61
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/Event$ICaw;->f:Ljava/util/Map;
+    sput-object v0, Lu/aly/Event$ICaw;->mMapf:Ljava/util/Map;
 
     .line 64
     const-class v0, Lu/aly/Event$ICaw;
@@ -181,7 +181,7 @@
     check-cast v0, Lu/aly/Event$ICaw;
 
     .line 65
-    sget-object v2, Lu/aly/Event$ICaw;->f:Ljava/util/Map;
+    sget-object v2, Lu/aly/Event$ICaw;->mMapf:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/Event$ICaw;->b()Ljava/lang/String;
 
@@ -211,10 +211,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 110
-    iput-short p3, p0, Lu/aly/Event$ICaw;->g:S
+    iput-short p3, p0, Lu/aly/Event$ICaw;->mSg:S
 
     .line 111
-    iput-object p4, p0, Lu/aly/Event$ICaw;->h:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/Event$ICaw;->mStringh:Ljava/lang/String;
 
     .line 112
     return-void
@@ -241,7 +241,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lu/aly/Event$ICaw;->i:[Lu/aly/Event$ICaw;
+    sget-object v0, Lu/aly/Event$ICaw;->mArrayICawi:[Lu/aly/Event$ICaw;
 
     invoke-virtual {v0}, [Lu/aly/Event$ICaw;->clone()Ljava/lang/Object;
 
@@ -259,7 +259,7 @@
 
     .prologue
     .line 115
-    iget-short v0, p0, Lu/aly/Event$ICaw;->g:S
+    iget-short v0, p0, Lu/aly/Event$ICaw;->mSg:S
 
     return v0
 .end method
@@ -269,7 +269,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lu/aly/Event$ICaw;->h:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/Event$ICaw;->mStringh:Ljava/lang/String;
 
     return-object v0
 .end method

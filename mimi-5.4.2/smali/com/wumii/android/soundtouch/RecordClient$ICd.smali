@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/soundtouch/RecordClient;
+.field final synthetic mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 28
-    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->a:Lcom/wumii/android/soundtouch/RecordClient;
+    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->a:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-static {v0}, Lcom/wumii/android/soundtouch/RecordClient;->a(Lcom/wumii/android/soundtouch/RecordClient;)Landroid/os/Handler;
 
@@ -36,13 +36,13 @@
     if-eqz v0, :cond_0
 
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->a:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-static {v0}, Lcom/wumii/android/soundtouch/RecordClient;->a(Lcom/wumii/android/soundtouch/RecordClient;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->a:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-static {v1}, Lcom/wumii/android/soundtouch/RecordClient;->a(Lcom/wumii/android/soundtouch/RecordClient;)Landroid/os/Handler;
 
@@ -60,7 +60,7 @@
 
     .line 36
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->a:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient$ICd;->mRecordClienta:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/soundtouch/RecordClient;->a(Landroid/os/Message;)V
 

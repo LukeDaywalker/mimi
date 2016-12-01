@@ -7,27 +7,27 @@
 
 
 # static fields
-.field private static final a:I
+.field private static final mIa:I
 
-.field private static final b:I
+.field private static final mIb:I
 
-.field private static final c:I
+.field private static final mIc:I
 
 
 # instance fields
-.field private final d:Landroid/os/Handler;
+.field private isZg:Z
 
-.field private final e:Landroid/view/GestureDetector$OnGestureListener;
+.field private isZh:Z
 
-.field private f:Landroid/view/GestureDetector$OnDoubleTapListener;
+.field private isZi:Z
 
-.field private g:Z
+.field private final mHandlerd:Landroid/os/Handler;
 
-.field private h:Z
+.field private mMotionEventj:Landroid/view/MotionEvent;
 
-.field private i:Z
+.field private mOnDoubleTapListenerf:Landroid/view/GestureDetector$OnDoubleTapListener;
 
-.field private j:Landroid/view/MotionEvent;
+.field private final mOnGestureListenere:Landroid/view/GestureDetector$OnGestureListener;
 
 
 # direct methods
@@ -40,21 +40,21 @@
 
     move-result v0
 
-    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->a:I
+    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mIa:I
 
     .line 63
     invoke-static {}, Landroid/view/ViewConfiguration;->getTapTimeout()I
 
     move-result v0
 
-    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->b:I
+    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mIb:I
 
     .line 64
     invoke-static {}, Landroid/view/ViewConfiguration;->getDoubleTapTimeout()I
 
     move-result v0
 
-    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->c:I
+    sput v0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mIc:I
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->j:Landroid/view/MotionEvent;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mMotionEventj:Landroid/view/MotionEvent;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     .prologue
     .line 453
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->d:Landroid/os/Handler;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mHandlerd:Landroid/os/Handler;
 
     const/4 v1, 0x3
 
@@ -83,17 +83,17 @@
     .line 454
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->h:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->isZh:Z
 
     .line 455
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->i:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->isZi:Z
 
     .line 456
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->e:Landroid/view/GestureDetector$OnGestureListener;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mOnGestureListenere:Landroid/view/GestureDetector$OnGestureListener;
 
-    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->j:Landroid/view/MotionEvent;
+    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mMotionEventj:Landroid/view/MotionEvent;
 
     invoke-interface {v0, v1}, Landroid/view/GestureDetector$OnGestureListener;->onLongPress(Landroid/view/MotionEvent;)V
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 56
-    iput-boolean p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->h:Z
+    iput-boolean p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->isZh:Z
 
     return p1
 .end method
@@ -116,7 +116,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->e:Landroid/view/GestureDetector$OnGestureListener;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mOnGestureListenere:Landroid/view/GestureDetector$OnGestureListener;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->f:Landroid/view/GestureDetector$OnDoubleTapListener;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mOnDoubleTapListenerf:Landroid/view/GestureDetector$OnDoubleTapListener;
 
     return-object v0
 .end method
@@ -146,7 +146,7 @@
 
     .prologue
     .line 56
-    iget-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->g:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->isZg:Z
 
     return v0
 .end method

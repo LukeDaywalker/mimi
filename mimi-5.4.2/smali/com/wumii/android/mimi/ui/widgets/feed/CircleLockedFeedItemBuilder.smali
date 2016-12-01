@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mCircleLockInfob:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -21,12 +21,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 17
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->b:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->mCircleLockInfob:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->b:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->mCircleLockInfob:Lcom/wumii/android/mimi/models/entities/circle/CircleLockInfo;
 
     .line 19
     return-void
@@ -44,7 +44,7 @@
     .line 24
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;-><init>(Landroid/content/Context;)V
 

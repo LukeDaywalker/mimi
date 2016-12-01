@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private mJf:J
 
-.field private final b:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
-.field private d:Lcom/umeng/analytics/onlineconfig/UmengOnlineConfigureListener;
+.field private final mStringc:Ljava/lang/String;
 
-.field private e:Lcom/umeng/analytics/onlineconfig/UmengPolicyChangedListener;
+.field private mUmengOnlineConfigureListenerd:Lcom/umeng/analytics/onlineconfig/UmengOnlineConfigureListener;
 
-.field private f:J
+.field private mUmengPolicyChangedListenere:Lcom/umeng/analytics/onlineconfig/UmengPolicyChangedListener;
 
 
 # direct methods
@@ -30,28 +30,28 @@
     .line 26
     const-string/jumbo v0, "last_config_time"
 
-    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mStringa:Ljava/lang/String;
 
     .line 27
     const-string/jumbo v0, "report_policy"
 
-    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mStringb:Ljava/lang/String;
 
     .line 29
     const-string/jumbo v0, "online_config"
 
-    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mStringc:Ljava/lang/String;
 
     .line 39
-    iput-object v1, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->d:Lcom/umeng/analytics/onlineconfig/UmengOnlineConfigureListener;
+    iput-object v1, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mUmengOnlineConfigureListenerd:Lcom/umeng/analytics/onlineconfig/UmengOnlineConfigureListener;
 
     .line 40
-    iput-object v1, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->e:Lcom/umeng/analytics/onlineconfig/UmengPolicyChangedListener;
+    iput-object v1, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mUmengPolicyChangedListenere:Lcom/umeng/analytics/onlineconfig/UmengPolicyChangedListener;
 
     .line 42
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->f:J
+    iput-wide v0, p0, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;->mJf:J
 
     .line 44
     return-void

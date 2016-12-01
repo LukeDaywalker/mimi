@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Ljava/util/WeakHashMap;
+.field private static final mWeakHashMapa:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap",
@@ -27,7 +27,7 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    sput-object v0, Landroid/support/v4/hardware/display/DisplayManagerCompat;->a:Ljava/util/WeakHashMap;
+    sput-object v0, Landroid/support/v4/hardware/display/DisplayManagerCompat;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     return-void
 .end method

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro;
+.field private isZc:Z
 
-.field private b:Lcom/tencent/tauth/Pro$ICb;
+.field private mContextd:Landroid/content/Context;
 
-.field private c:Z
+.field private mICbb:Lcom/tencent/tauth/Pro$ICb;
 
-.field private d:Landroid/content/Context;
+.field final synthetic mProa:Lcom/tencent/connect/b/Pro;
 
 
 # direct methods
@@ -22,18 +22,18 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICj;->a:Lcom/tencent/connect/b/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICj;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 99
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICj;->d:Landroid/content/Context;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICj;->mContextd:Landroid/content/Context;
 
     .line 100
-    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICj;->b:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICj;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     .line 101
-    iput-boolean p4, p0, Lcom/tencent/connect/b/Pro$ICj;->c:Z
+    iput-boolean p4, p0, Lcom/tencent/connect/b/Pro$ICj;->isZc:Z
 
     .line 102
     const-string/jumbo v0, "openSDK_LOG"
@@ -60,7 +60,7 @@
     invoke-static {v0, v1}, Lcom/tencent/b/a/Pro$ICj;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 160
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->b:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0}, Lcom/tencent/tauth/Pro$ICb;->a()V
 
@@ -87,7 +87,7 @@
     invoke-static {v0, v1}, Lcom/tencent/b/a/Pro$ICj;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 153
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->b:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/Pro$ICb;->a(Lcom/tencent/tauth/Pro$ICc;)V
 
@@ -141,7 +141,7 @@
     .line 113
     if-eqz v0, :cond_0
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICj;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICj;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v3}, Lcom/tencent/connect/b/Pro;->a(Lcom/tencent/connect/b/Pro;)Lcom/tencent/connect/b/Pro$ICt;
 
@@ -152,7 +152,7 @@
     if-eqz v2, :cond_0
 
     .line 120
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICj;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICj;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v3}, Lcom/tencent/connect/b/Pro;->b(Lcom/tencent/connect/b/Pro;)Lcom/tencent/connect/b/Pro$ICt;
 
@@ -161,7 +161,7 @@
     invoke-virtual {v3, v0, v1}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 121
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->c(Lcom/tencent/connect/b/Pro;)Lcom/tencent/connect/b/Pro$ICt;
 
@@ -170,9 +170,9 @@
     invoke-virtual {v0, v2}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;)V
 
     .line 122
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->mContextd:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICj;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICj;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->d(Lcom/tencent/connect/b/Pro;)Lcom/tencent/connect/b/Pro$ICt;
 
@@ -195,7 +195,7 @@
 
     .line 130
     :try_start_1
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICj;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICj;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v2, "pfStore"
 
@@ -225,7 +225,7 @@
     :cond_1
     :goto_0
     :try_start_2
-    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICj;->isZc:Z
 
     if-eqz v0, :cond_2
 
@@ -241,7 +241,7 @@
     .line 146
     :cond_2
     :goto_1
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->b:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICj;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 

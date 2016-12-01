@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/OkHttpClient;
+.field private final mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/squareup/okhttp/OkUrlFactory;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkUrlFactory;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 33
     return-void
@@ -35,7 +35,7 @@
     .line 44
     new-instance v0, Lcom/squareup/okhttp/OkUrlFactory;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/OkUrlFactory;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/OkUrlFactory;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/OkHttpClient;->x()Lcom/squareup/okhttp/OkHttpClient;
 
@@ -51,7 +51,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkUrlFactory;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->d()Ljava/net/Proxy;
 
@@ -74,7 +74,7 @@
     move-result-object v0
 
     .line 53
-    iget-object v1, p0, Lcom/squareup/okhttp/OkUrlFactory;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/OkUrlFactory;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/OkHttpClient;->w()Lcom/squareup/okhttp/OkHttpClient;
 

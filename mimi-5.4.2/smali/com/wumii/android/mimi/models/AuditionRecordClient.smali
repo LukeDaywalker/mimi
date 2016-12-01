@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final e:Lorg/slf4j/Logger;
+.field private static final mLoggere:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private f:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->e:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mLoggere:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -95,12 +95,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     .line 43
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -112,12 +112,12 @@
     if-eqz v0, :cond_0
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     invoke-virtual {p0, v0, p3}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/MediaPlayCallback;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     .line 66
     :goto_0
@@ -176,7 +176,7 @@
     .line 61
     iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->d:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     const/4 v2, 0x7
 
@@ -186,7 +186,7 @@
 
     .line 66
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     goto :goto_0
 
@@ -195,7 +195,7 @@
     move-exception v0
 
     .line 63
-    sget-object v1, Lcom/wumii/android/mimi/models/AuditionRecordClient;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mLoggere:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
@@ -221,12 +221,12 @@
 
     .line 32
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/soundtouch/AudioConvertor;->a(Ljava/lang/String;)V
 
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->mStringf:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c:Lcom/wumii/android/mimi/ui/MediaPlayCallback;
 

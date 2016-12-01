@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private n:Landroid/widget/LinearLayout;
+.field private mLinearLayoutn:Landroid/widget/LinearLayout;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->n:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     .line 48
     const/4 v0, 0x0
@@ -97,7 +97,7 @@
     invoke-virtual {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 53
-    iget-object v3, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->n:Landroid/widget/LinearLayout;
+    iget-object v3, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->mLinearLayoutn:Landroid/widget/LinearLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -125,7 +125,7 @@
     check-cast v0, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;
 
     .line 62
-    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICa;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$ICa;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/debug/DebugActivity$ICb;->ordinal()I
 

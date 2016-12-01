@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static isZb:Z
 
-.field private static b:Z
+.field private static mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -54,14 +54,14 @@
     monitor-enter v1
 
     :try_start_0
-    sget-boolean v0, Lcom/facebook/stetho/common/ProcessUtil;->b:Z
+    sget-boolean v0, Lcom/facebook/stetho/common/ProcessUtil;->isZb:Z
 
     if-nez v0, :cond_0
 
     .line 27
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/facebook/stetho/common/ProcessUtil;->b:Z
+    sput-boolean v0, Lcom/facebook/stetho/common/ProcessUtil;->isZb:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/facebook/stetho/common/ProcessUtil;->a:Ljava/lang/String;
+    sput-object v0, Lcom/facebook/stetho/common/ProcessUtil;->mStringa:Ljava/lang/String;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -80,7 +80,7 @@
     :cond_0
     :goto_0
     :try_start_2
-    sget-object v0, Lcom/facebook/stetho/common/ProcessUtil;->a:Ljava/lang/String;
+    sget-object v0, Lcom/facebook/stetho/common/ProcessUtil;->mStringa:Ljava/lang/String;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

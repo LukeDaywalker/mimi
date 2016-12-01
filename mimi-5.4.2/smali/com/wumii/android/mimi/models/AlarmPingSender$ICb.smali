@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+.field final synthetic mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -39,7 +39,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->a(Lcom/wumii/android/mimi/models/AlarmPingSender;)Lcom/wumii/android/mimi/push/PushService;
 
@@ -54,7 +54,7 @@
     check-cast v0, Landroid/app/AlarmManager;
 
     .line 57
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/models/AlarmPingSender;->b(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/app/PendingIntent;
 
@@ -63,7 +63,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->c(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 

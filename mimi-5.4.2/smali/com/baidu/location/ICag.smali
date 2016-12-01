@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static hn:Lcom/baidu/location/ICag;
+.field private static mICaghn:Lcom/baidu/location/ICag;
 
 
 # instance fields
@@ -36,7 +36,7 @@
 .method public static bz()Lcom/baidu/location/ICag;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICag;->hn:Lcom/baidu/location/ICag;
+    sget-object v0, Lcom/baidu/location/ICag;->mICaghn:Lcom/baidu/location/ICag;
 
     if-nez v0, :cond_0
 
@@ -44,10 +44,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICag;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICag;->hn:Lcom/baidu/location/ICag;
+    sput-object v0, Lcom/baidu/location/ICag;->mICaghn:Lcom/baidu/location/ICag;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICag;->hn:Lcom/baidu/location/ICag;
+    sget-object v0, Lcom/baidu/location/ICag;->mICaghn:Lcom/baidu/location/ICag;
 
     return-object v0
 .end method

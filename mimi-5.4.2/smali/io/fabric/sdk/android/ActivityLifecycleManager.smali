@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Landroid/app/Application;
+.field private final mApplicationa:Landroid/app/Application;
 
-.field private b:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+.field private mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     check-cast v0, Landroid/app/Application;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->a:Landroid/app/Application;
+    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mApplicationa:Landroid/app/Application;
 
     .line 57
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -36,11 +36,11 @@
     .line 58
     new-instance v0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->a:Landroid/app/Application;
+    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mApplicationa:Landroid/app/Application;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;-><init>(Landroid/app/Application;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->b:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
 
     .line 60
     :cond_0
@@ -54,11 +54,11 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->b:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->b:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
+    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager;->mICbb:Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;
 
     invoke-static {v0, p1}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
 

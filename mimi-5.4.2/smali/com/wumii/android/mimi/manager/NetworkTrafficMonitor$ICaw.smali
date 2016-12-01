@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mIb:I
 
-.field private b:I
+.field private mJc:J
 
-.field private c:J
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 174
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mStringa:Ljava/lang/String;
 
     .line 175
     return-void
@@ -33,7 +33,7 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -43,7 +43,7 @@
 
     .prologue
     .line 190
-    iput p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->b:I
+    iput p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mIb:I
 
     .line 191
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 198
-    iput-wide p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->c:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mJc:J
 
     .line 199
     return-void
@@ -65,7 +65,7 @@
 
     .prologue
     .line 186
-    iget v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mIb:I
 
     return v0
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 194
-    iget-wide v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->c:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->mJc:J
 
     return-wide v0
 .end method

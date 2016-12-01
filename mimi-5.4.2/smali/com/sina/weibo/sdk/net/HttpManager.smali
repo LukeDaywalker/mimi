@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
-.field private static final c:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
-.field private static d:Lorg/apache/http/conn/ssl/SSLSocketFactory;
+.field private static final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->a:Ljava/lang/String;
+    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mStringa:Ljava/lang/String;
 
     .line 75
     new-instance v0, Ljava/lang/StringBuilder;
@@ -32,7 +32,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Lcom/sina/weibo/sdk/net/HttpManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/sina/weibo/sdk/net/HttpManager;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->b:Ljava/lang/String;
+    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mStringb:Ljava/lang/String;
 
     .line 76
     new-instance v0, Ljava/lang/StringBuilder;
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Lcom/sina/weibo/sdk/net/HttpManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/sina/weibo/sdk/net/HttpManager;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->c:Ljava/lang/String;
+    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mStringc:Ljava/lang/String;
 
     .line 318
     return-void
@@ -434,7 +434,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v2, Lcom/sina/weibo/sdk/net/HttpManager;->c:Ljava/lang/String;
+    sget-object v2, Lcom/sina/weibo/sdk/net/HttpManager;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -484,7 +484,7 @@
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->setLength(I)V
 
     .line 213
-    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->b:Ljava/lang/String;
+    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -573,7 +573,7 @@
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 226
-    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->b:Ljava/lang/String;
+    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -664,7 +664,7 @@
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 240
-    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->b:Ljava/lang/String;
+    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -988,7 +988,7 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->a:Ljava/lang/String;
+    sget-object v5, Lcom/sina/weibo/sdk/net/HttpManager;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1108,7 +1108,7 @@
     const/4 v1, 0x0
 
     .line 320
-    sget-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->d:Lorg/apache/http/conn/ssl/SSLSocketFactory;
+    sget-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
 
     if-nez v0, :cond_0
 
@@ -1142,7 +1142,7 @@
 
     invoke-direct {v2, v0}, Lcom/sina/weibo/sdk/net/HttpManager$ICe;-><init>(Ljava/security/KeyStore;)V
 
-    sput-object v2, Lcom/sina/weibo/sdk/net/HttpManager;->d:Lorg/apache/http/conn/ssl/SSLSocketFactory;
+    sput-object v2, Lcom/sina/weibo/sdk/net/HttpManager;->mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1159,7 +1159,7 @@
     .line 344
     :cond_0
     :goto_0
-    sget-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->d:Lorg/apache/http/conn/ssl/SSLSocketFactory;
+    sget-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
 
     return-object v0
 
@@ -1176,7 +1176,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->d:Lorg/apache/http/conn/ssl/SSLSocketFactory;
+    sput-object v0, Lcom/sina/weibo/sdk/net/HttpManager;->mSSLSocketFactoryd:Lorg/apache/http/conn/ssl/SSLSocketFactory;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mIb:I
 
-.field final synthetic b:I
+.field final synthetic mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 127
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->a:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->mViewa:Landroid/view/View;
 
-    iput p2, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->mIb:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->mViewa:Landroid/view/View;
 
-    iget v1, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/util/Utils$ICaw;->mIb:I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 

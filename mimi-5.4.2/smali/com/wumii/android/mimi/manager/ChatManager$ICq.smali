@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/ChatManager;
+.field final synthetic mChatManagera:Lcom/wumii/android/mimi/manager/ChatManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 975
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICq;->a:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager$ICq;->mChatManagera:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

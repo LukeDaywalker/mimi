@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final c:Z
+.field private final isZc:Z
 
 
 # direct methods
@@ -50,7 +50,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 232
-    iput-boolean p1, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->c:Z
+    iput-boolean p1, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;->isZc:Z
 
     .line 233
     return-void

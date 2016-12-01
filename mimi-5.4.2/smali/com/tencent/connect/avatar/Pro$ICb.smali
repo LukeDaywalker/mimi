@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/graphics/Rect;
+.field private mPaintb:Landroid/graphics/Paint;
 
-.field private b:Landroid/graphics/Paint;
+.field private mRecta:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     .line 34
     return-void
@@ -46,7 +46,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->a:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mRecta:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
@@ -55,7 +55,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->a:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mRecta:Landroid/graphics/Rect;
 
     .line 77
     invoke-virtual {p0}, Lcom/tencent/connect/avatar/Pro$ICb;->getMeasuredWidth()I
@@ -101,13 +101,13 @@
     add-int/2addr v2, v1
 
     .line 97
-    iget-object v4, p0, Lcom/tencent/connect/avatar/Pro$ICb;->a:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mRecta:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v0, v1, v3, v2}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->a:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mRecta:Landroid/graphics/Rect;
 
     return-object v0
 .end method
@@ -141,14 +141,14 @@
     move-result v8
 
     .line 45
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 49
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     invoke-static {v10, v9, v9, v9}, Landroid/graphics/Color;->argb(IIII)I
 
@@ -163,7 +163,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -180,7 +180,7 @@
 
     int-to-float v4, v8
 
-    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -199,7 +199,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -220,7 +220,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -234,14 +234,14 @@
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
     .line 58
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 59
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     const/4 v1, -0x1
 
@@ -266,7 +266,7 @@
 
     int-to-float v4, v0
 
-    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->b:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/tencent/connect/avatar/Pro$ICb;->mPaintb:Landroid/graphics/Paint;
 
     move-object v0, p1
 

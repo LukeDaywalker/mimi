@@ -25,15 +25,15 @@
 
 .field public static final enum e:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
-.field private static final synthetic i:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+.field private static final synthetic mArrayICti:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
 
 # instance fields
-.field private f:Ljava/lang/String;
+.field private mIh:I
 
-.field private g:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
-.field private h:I
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -159,7 +159,7 @@
 
     aput-object v1, v0, v12
 
-    sput-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->i:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mArrayICti:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     return-void
 .end method
@@ -180,13 +180,13 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 125
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->f:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mStringf:Ljava/lang/String;
 
     .line 126
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->g:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mStringg:Ljava/lang/String;
 
     .line 127
-    iput p5, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->h:I
+    iput p5, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mIh:I
 
     .line 128
     return-void
@@ -213,7 +213,7 @@
 
     .prologue
     .line 117
-    sget-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->i:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mArrayICti:[Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->clone()Ljava/lang/Object;
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -241,7 +241,7 @@
 
     .prologue
     .line 139
-    iget v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->h:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mIh:I
 
     return v0
 .end method
@@ -251,7 +251,7 @@
 
     .prologue
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method

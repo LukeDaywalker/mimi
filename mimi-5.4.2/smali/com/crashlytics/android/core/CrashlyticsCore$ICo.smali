@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
-.field final synthetic b:Lcom/crashlytics/android/core/CrashlyticsCore$ICs;
+.field final synthetic mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
-.field final synthetic c:Lcom/crashlytics/android/core/DialogStringResolver;
+.field final synthetic mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
-.field final synthetic d:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+.field final synthetic mICsb:Lcom/crashlytics/android/core/CrashlyticsCore$ICs;
 
-.field final synthetic e:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field final synthetic mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     .prologue
     .line 942
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
-    iput-object p2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
-    iput-object p3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->b:Lcom/crashlytics/android/core/CrashlyticsCore$ICs;
+    iput-object p3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mICsb:Lcom/crashlytics/android/core/CrashlyticsCore$ICs;
 
-    iput-object p4, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iput-object p4, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
-    iput-object p5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->d:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iput-object p5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     .line 945
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -60,7 +60,7 @@
     invoke-direct {v1, p0}, Lcom/crashlytics/android/core/CrashlyticsCore$ICp;-><init>(Lcom/crashlytics/android/core/CrashlyticsCore$ICo;)V
 
     .line 955
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -73,7 +73,7 @@
     iget v2, v2, Landroid/util/DisplayMetrics;->density:F
 
     .line 959
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     const/4 v4, 0x5
 
@@ -84,7 +84,7 @@
     .line 961
     new-instance v4, Landroid/widget/TextView;
 
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v4, v5}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -94,7 +94,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setAutoLinkMask(I)V
 
     .line 963
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
     invoke-virtual {v5}, Lcom/crashlytics/android/core/DialogStringResolver;->b()Ljava/lang/String;
 
@@ -103,7 +103,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 964
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
     const v6, 0x1030044
 
@@ -118,12 +118,12 @@
     .line 969
     new-instance v3, Landroid/widget/ScrollView;
 
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->a:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v3, v5}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     .line 970
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     const/16 v6, 0xe
 
@@ -131,7 +131,7 @@
 
     move-result v5
 
-    iget-object v6, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v6, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     const/4 v7, 0x2
 
@@ -139,7 +139,7 @@
 
     move-result v6
 
-    iget-object v7, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v7, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     const/16 v8, 0xa
 
@@ -147,7 +147,7 @@
 
     move-result v7
 
-    iget-object v8, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->e:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v8, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mCrashlyticsCoree:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     const/16 v9, 0xc
 
@@ -165,7 +165,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
     invoke-virtual {v3}, Lcom/crashlytics/android/core/DialogStringResolver;->a()Ljava/lang/String;
 
@@ -179,7 +179,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
     invoke-virtual {v3}, Lcom/crashlytics/android/core/DialogStringResolver;->c()Ljava/lang/String;
 
@@ -188,7 +188,7 @@
     invoke-virtual {v2, v3, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 979
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->d:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->d:Z
 
@@ -200,7 +200,7 @@
     invoke-direct {v1, p0}, Lcom/crashlytics/android/core/CrashlyticsCore$ICq;-><init>(Lcom/crashlytics/android/core/CrashlyticsCore$ICo;)V
 
     .line 987
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/DialogStringResolver;->e()Ljava/lang/String;
 
@@ -210,7 +210,7 @@
 
     .line 991
     :cond_0
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->d:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mPromptSettingsDatad:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-boolean v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->f:Z
 
@@ -222,7 +222,7 @@
     invoke-direct {v1, p0}, Lcom/crashlytics/android/core/CrashlyticsCore$ICr;-><init>(Lcom/crashlytics/android/core/CrashlyticsCore$ICo;)V
 
     .line 1000
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->c:Lcom/crashlytics/android/core/DialogStringResolver;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICo;->mDialogStringResolverc:Lcom/crashlytics/android/core/DialogStringResolver;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/DialogStringResolver;->d()Ljava/lang/String;
 

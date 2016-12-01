@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static mFilec:Ljava/io/File;
 
-.field private static c:Ljava/io/File;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:I
+.field private mContextd:Landroid/content/Context;
 
-.field private d:Landroid/content/Context;
+.field private mIb:I
 
-.field private e:Lcom/wumii/jackson/databind/JacksonMapper;
+.field private mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field private f:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -46,14 +46,14 @@
     .line 41
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     .line 52
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->d:Landroid/content/Context;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mContextd:Landroid/content/Context;
 
     .line 53
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 54
     return-void
@@ -79,12 +79,12 @@
     const/4 v0, 0x0
 
     .line 332
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
 
     if-eqz v1, :cond_0
 
     .line 333
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
 
     .line 356
     :goto_0
@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -130,7 +130,7 @@
     add-int/lit8 v2, v2, 0x1
 
     .line 344
-    sget-object v3, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -170,12 +170,12 @@
 
     .line 352
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
 
     if-nez v0, :cond_3
 
     .line 353
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "External storage has not currently been mounted."
 
@@ -186,11 +186,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
 
     .line 356
     :cond_3
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->c:Ljava/io/File;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mFilec:Ljava/io/File;
 
     goto :goto_0
 .end method
@@ -270,7 +270,7 @@
     .line 424
     :goto_1
     :try_start_3
-    sget-object v3, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -352,7 +352,7 @@
     if-eqz p4, :cond_0
 
     .line 125
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EncryptUtils;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -368,7 +368,7 @@
 
     .line 127
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, v0, p2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
     :try_end_0
@@ -384,7 +384,7 @@
     move-exception v0
 
     .line 130
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
@@ -393,7 +393,7 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/fasterxml/jackson/core/type/TypeReference;->getType()Ljava/lang/reflect/Type;
 
@@ -458,7 +458,7 @@
     invoke-static {v2}, Lcom/crashlytics/android/Crashlytics;->a(Ljava/lang/Throwable;)V
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p2}, Lcom/fasterxml/jackson/core/type/TypeReference;->getType()Ljava/lang/reflect/Type;
 
@@ -680,7 +680,7 @@
     if-nez v1, :cond_0
 
     .line 371
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "failed to create \'mimi\' directory, return sdcard root directory"
 
@@ -821,14 +821,14 @@
     const/4 v2, 0x1
 
     .line 65
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
     .line 66
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     .line 89
     :goto_0
@@ -836,7 +836,7 @@
 
     .line 70
     :cond_0
-    iput v2, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iput v2, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     .line 72
     invoke-virtual {p0, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Z)Ljava/io/File;
@@ -859,11 +859,11 @@
     :cond_1
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     .line 89
     :cond_2
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     goto :goto_0
 
@@ -901,13 +901,13 @@
     move-result v3
 
     .line 83
-    iget v4, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iget v4, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     invoke-static {v4, v3}, Ljava/lang/Math;->max(II)I
 
     move-result v3
 
-    iput v3, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iput v3, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -942,7 +942,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v0, p2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -962,7 +962,7 @@
     const/4 v0, 0x0
 
     .line 183
-    invoke-static {p2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1066,7 +1066,7 @@
 
     .prologue
     .line 309
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mStringf:Ljava/lang/String;
 
     invoke-virtual {p0, p1, v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(ZLjava/lang/String;)Ljava/io/File;
 
@@ -1080,7 +1080,7 @@
 
     .prologue
     .line 313
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Landroid/content/Context;)Ljava/io/File;
 
@@ -1262,7 +1262,7 @@
 
     .prologue
     .line 61
-    iput p1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->b:I
+    iput p1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mIb:I
 
     .line 62
     return-void
@@ -1273,7 +1273,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mStringf:Ljava/lang/String;
 
     .line 58
     return-void
@@ -1294,7 +1294,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->e:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/FileHelper;->mJacksonMappere:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v0, p2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
 

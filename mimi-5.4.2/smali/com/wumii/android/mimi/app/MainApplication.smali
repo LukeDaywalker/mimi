@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static isZd:Z
 
-.field private static b:Lcom/wumii/android/mimi/app/MainApplication;
+.field private static mBooleane:Ljava/lang/Boolean;
 
-.field private static c:J
+.field private static mJc:J
 
-.field private static d:Z
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static e:Ljava/lang/Boolean;
+.field private static mMainApplicationb:Lcom/wumii/android/mimi/app/MainApplication;
 
-.field private static f:Ljava/lang/String;
+.field private static mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -29,12 +29,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mLoggera:Lorg/slf4j/Logger;
 
     .line 61
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->d:Z
+    sput-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->isZd:Z
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 167
-    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->b:Lcom/wumii/android/mimi/app/MainApplication;
+    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mMainApplicationb:Lcom/wumii/android/mimi/app/MainApplication;
 
     return-object v0
 .end method
@@ -195,10 +195,10 @@
 
     .prologue
     .line 175
-    sput-boolean p0, Lcom/wumii/android/mimi/app/MainApplication;->d:Z
+    sput-boolean p0, Lcom/wumii/android/mimi/app/MainApplication;->isZd:Z
 
     .line 177
-    sget-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->d:Z
+    sget-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->isZd:Z
 
     if-eqz v0, :cond_0
 
@@ -207,7 +207,7 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/wumii/android/mimi/app/MainApplication;->c:J
+    sput-wide v0, Lcom/wumii/android/mimi/app/MainApplication;->mJc:J
 
     .line 181
     :cond_0
@@ -416,7 +416,7 @@
 
     .prologue
     .line 171
-    sget-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->d:Z
+    sget-boolean v0, Lcom/wumii/android/mimi/app/MainApplication;->isZd:Z
 
     return v0
 .end method
@@ -430,7 +430,7 @@
 
     move-result-wide v0
 
-    sget-wide v2, Lcom/wumii/android/mimi/app/MainApplication;->c:J
+    sget-wide v2, Lcom/wumii/android/mimi/app/MainApplication;->mJc:J
 
     sub-long/2addr v0, v2
 
@@ -456,7 +456,7 @@
 
     .prologue
     .line 189
-    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->e:Ljava/lang/Boolean;
+    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mBooleane:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
@@ -497,14 +497,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->e:Ljava/lang/Boolean;
+    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mBooleane:Ljava/lang/Boolean;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 201
     :cond_0
     :goto_0
-    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->e:Ljava/lang/Boolean;
+    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mBooleane:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -517,7 +517,7 @@
     move-exception v0
 
     .line 196
-    sget-object v1, Lcom/wumii/android/mimi/app/MainApplication;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/app/MainApplication;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Failed to load meta-data key : WUMII_DEV"
 
@@ -530,7 +530,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->e:Ljava/lang/Boolean;
+    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mBooleane:Ljava/lang/Boolean;
 
     goto :goto_0
 .end method
@@ -540,7 +540,7 @@
 
     .prologue
     .line 205
-    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->f:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mStringf:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -577,14 +577,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->f:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mStringf:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 216
     :cond_0
     :goto_0
-    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->f:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/app/MainApplication;->mStringf:Ljava/lang/String;
 
     return-object v0
 
@@ -593,7 +593,7 @@
     move-exception v0
 
     .line 212
-    sget-object v1, Lcom/wumii/android/mimi/app/MainApplication;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/app/MainApplication;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Failed to load meta-data key : WUMII_CODE_VERSION"
 
@@ -629,7 +629,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -651,7 +651,7 @@
     move-result-object v0
 
     .line 228
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -767,7 +767,7 @@
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
     .line 69
-    sput-object p0, Lcom/wumii/android/mimi/app/MainApplication;->b:Lcom/wumii/android/mimi/app/MainApplication;
+    sput-object p0, Lcom/wumii/android/mimi/app/MainApplication;->mMainApplicationb:Lcom/wumii/android/mimi/app/MainApplication;
 
     .line 71
     invoke-virtual {p0}, Lcom/wumii/android/mimi/app/MainApplication;->getApplicationContext()Landroid/content/Context;

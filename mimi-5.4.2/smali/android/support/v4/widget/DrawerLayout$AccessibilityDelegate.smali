@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/support/v4/widget/DrawerLayout;
+.field final synthetic mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
-.field private final c:Landroid/graphics/Rect;
+.field private final mRectc:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 1828
-    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/DrawerLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
     invoke-direct {p0}, Landroid/support/v4/view/AccessibilityDelegateCompat;-><init>()V
 
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->c:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mRectc:Landroid/graphics/Rect;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 1919
-    iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->c:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mRectc:Landroid/graphics/Rect;
 
     .line 1921
     invoke-virtual {p2, v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Landroid/graphics/Rect;)V
@@ -308,7 +308,7 @@
     move-result-object v0
 
     .line 1878
-    iget-object v1, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/DrawerLayout;
+    iget-object v1, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
     invoke-static {v1}, Landroid/support/v4/widget/DrawerLayout;->a(Landroid/support/v4/widget/DrawerLayout;)Landroid/view/View;
 
@@ -318,14 +318,14 @@
     if-eqz v1, :cond_0
 
     .line 1880
-    iget-object v2, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/DrawerLayout;
+    iget-object v2, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
     invoke-virtual {v2, v1}, Landroid/support/v4/widget/DrawerLayout;->e(Landroid/view/View;)I
 
     move-result v1
 
     .line 1881
-    iget-object v2, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/DrawerLayout;
+    iget-object v2, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
     invoke-virtual {v2, v1}, Landroid/support/v4/widget/DrawerLayout;->a(I)Ljava/lang/CharSequence;
 

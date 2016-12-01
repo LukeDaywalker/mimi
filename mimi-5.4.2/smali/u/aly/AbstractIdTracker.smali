@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
-.field private final b:I
+.field private final mIb:I
 
-.field private final c:Ljava/lang/String;
+.field private mIdSnapshote:Lu/aly/IdSnapshot;
 
-.field private d:Ljava/util/List;
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -21,7 +21,7 @@
     .end annotation
 .end field
 
-.field private e:Lu/aly/IdSnapshot;
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -35,15 +35,15 @@
     .line 12
     const/16 v0, 0xa
 
-    iput v0, p0, Lu/aly/AbstractIdTracker;->a:I
+    iput v0, p0, Lu/aly/AbstractIdTracker;->mIa:I
 
     .line 13
     const/16 v0, 0x14
 
-    iput v0, p0, Lu/aly/AbstractIdTracker;->b:I
+    iput v0, p0, Lu/aly/AbstractIdTracker;->mIb:I
 
     .line 19
-    iput-object p1, p0, Lu/aly/AbstractIdTracker;->c:Ljava/lang/String;
+    iput-object p1, p0, Lu/aly/AbstractIdTracker;->mStringc:Ljava/lang/String;
 
     .line 20
     return-void
@@ -56,7 +56,7 @@
     const/4 v1, 0x0
 
     .line 39
-    iget-object v2, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iget-object v2, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     .line 41
     if-nez v2, :cond_4
@@ -119,7 +119,7 @@
     invoke-direct {v0}, Lu/aly/IdJournal;-><init>()V
 
     .line 53
-    iget-object v5, p0, Lu/aly/AbstractIdTracker;->c:Ljava/lang/String;
+    iget-object v5, p0, Lu/aly/AbstractIdTracker;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v5}, Lu/aly/IdJournal;->a(Ljava/lang/String;)Lu/aly/IdJournal;
 
@@ -137,7 +137,7 @@
     invoke-virtual {v0, v4, v5}, Lu/aly/IdJournal;->a(J)Lu/aly/IdJournal;
 
     .line 58
-    iget-object v3, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v3, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     if-nez v3, :cond_1
 
@@ -148,16 +148,16 @@
 
     invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v3, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iput-object v3, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     .line 62
     :cond_1
-    iget-object v3, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v3, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 64
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -168,13 +168,13 @@
     if-le v0, v3, :cond_2
 
     .line 65
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 68
     :cond_2
-    iput-object v2, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iput-object v2, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     .line 69
     const/4 v1, 0x1
@@ -275,7 +275,7 @@
 
     .prologue
     .line 88
-    iput-object p1, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iput-object p1, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     .line 89
     return-void
@@ -298,7 +298,7 @@
 
     check-cast v0, Lu/aly/IdSnapshot;
 
-    iput-object v0, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iput-object v0, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     .line 118
     invoke-virtual {p1}, Lu/aly/IdTracking;->b()Ljava/util/List;
@@ -315,7 +315,7 @@
     if-lez v1, :cond_2
 
     .line 121
-    iget-object v1, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v1, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     if-nez v1, :cond_0
 
@@ -324,7 +324,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iput-object v1, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     .line 125
     :cond_0
@@ -347,7 +347,7 @@
     check-cast v0, Lu/aly/IdJournal;
 
     .line 126
-    iget-object v2, p0, Lu/aly/AbstractIdTracker;->c:Ljava/lang/String;
+    iget-object v2, p0, Lu/aly/AbstractIdTracker;->mStringc:Ljava/lang/String;
 
     iget-object v3, v0, Lu/aly/IdJournal;->a:Ljava/lang/String;
 
@@ -358,7 +358,7 @@
     if-eqz v2, :cond_1
 
     .line 127
-    iget-object v2, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v2, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -386,7 +386,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->c:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -396,11 +396,11 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     invoke-virtual {v0}, Lu/aly/IdSnapshot;->d()I
 
@@ -428,7 +428,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->e:Lu/aly/IdSnapshot;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mIdSnapshote:Lu/aly/IdSnapshot;
 
     return-object v0
 .end method
@@ -447,7 +447,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lu/aly/AbstractIdTracker;->d:Ljava/util/List;
+    iget-object v0, p0, Lu/aly/AbstractIdTracker;->mListd:Ljava/util/List;
 
     return-object v0
 .end method

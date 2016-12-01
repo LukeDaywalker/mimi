@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+.field final synthetic mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICe;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Landroid/widget/LinearLayout;
 

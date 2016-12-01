@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+.field final synthetic mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
 
@@ -39,12 +39,12 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-static {v0, p2}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->b(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;Landroid/webkit/ValueCallback;)Landroid/webkit/ValueCallback;
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)Landroid/app/AlertDialog;
 
@@ -72,12 +72,12 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;Landroid/webkit/ValueCallback;)Landroid/webkit/ValueCallback;
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)Landroid/app/AlertDialog;
 

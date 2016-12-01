@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:[I
+.field private mArrayIa:[I
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+.field private mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
 
 # direct methods
@@ -56,7 +56,7 @@
     .line 22
     new-array v0, v11, [I
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     .line 47
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->setOrientation(I)V
@@ -210,14 +210,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 94
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     const/4 v2, -0x1
 
@@ -242,7 +242,7 @@
     const/4 v3, -0x1
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     array-length v0, v0
 
@@ -261,14 +261,14 @@
     check-cast v0, Landroid/widget/CheckBox;
 
     .line 122
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aget v2, v2, v1
 
     if-eq v2, v3, :cond_1
 
     .line 123
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aput v3, v2, v1
 
@@ -280,12 +280,12 @@
     .line 125
     if-nez v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
     if-eqz v0, :cond_0
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;->i()V
 
@@ -314,7 +314,7 @@
     move v1, v2
 
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     array-length v0, v0
 
@@ -328,14 +328,14 @@
     check-cast v0, Landroid/widget/CheckBox;
 
     .line 101
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aget v3, v3, v1
 
     if-ne v3, v4, :cond_2
 
     .line 102
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aput p1, v3, v1
 
@@ -346,11 +346,11 @@
 
     .line 108
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     const/4 v1, 0x3
 
@@ -367,21 +367,21 @@
 
     .line 110
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     array-length v1, v1
 
     if-ge v2, v1, :cond_3
 
     .line 111
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aget v1, v1, v2
 
     if-eq v1, v4, :cond_1
 
     .line 112
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     aget v1, v1, v2
 
@@ -403,7 +403,7 @@
 
     .line 115
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -421,7 +421,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     array-length v0, v0
 
@@ -433,7 +433,7 @@
     if-ltz v1, :cond_0
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->a:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mArrayIa:[I
 
     const/4 v2, -0x1
 
@@ -502,7 +502,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordInputView;->mICazb:Lcom/wumii/android/mimi/ui/widgets/PasswordInputView$ICaz;
 
     .line 34
     return-void

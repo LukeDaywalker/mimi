@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mActivityd:Landroid/app/Activity;
 
-.field private b:Landroid/widget/EditText;
+.field private mButtonc:Landroid/widget/Button;
 
-.field private c:Landroid/widget/Button;
+.field private mEditTextb:Landroid/widget/EditText;
 
-.field private d:Landroid/app/Activity;
+.field private mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
 
-.field private e:Ljava/util/List;
+.field private mListe:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -47,10 +47,10 @@
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->d:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mActivityd:Landroid/app/Activity;
 
     .line 46
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->e:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mListe:Ljava/util/List;
 
     .line 47
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 124
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mTextViewa:Landroid/widget/TextView;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -83,7 +83,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->e:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mListe:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -112,7 +112,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mTextViewa:Landroid/widget/TextView;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->e:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mListe:Ljava/util/List;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->c:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mButtonc:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -159,7 +159,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->f:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
 
     return-object v0
 .end method
@@ -169,7 +169,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -181,7 +181,7 @@
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->f:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mICff:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
 
     .line 138
     return-void
@@ -202,7 +202,7 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->dismiss()V
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->d:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mActivityd:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
@@ -233,7 +233,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mTextViewa:Landroid/widget/TextView;
 
     .line 55
     const v0, 0x7f0b014b
@@ -244,7 +244,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->b:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
     .line 56
     const v0, 0x7f0b00ab
@@ -255,7 +255,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->c:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mButtonc:Landroid/widget/Button;
 
     .line 58
     invoke-direct {p0, v2}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->a(I)V
@@ -277,12 +277,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setImeOptions(I)V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICc;
 
@@ -291,7 +291,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mEditTextb:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;
 
@@ -300,7 +300,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->c:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mButtonc:Landroid/widget/Button;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICe;
 
@@ -318,7 +318,7 @@
     move-result-object v0
 
     .line 119
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->d:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->mActivityd:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 

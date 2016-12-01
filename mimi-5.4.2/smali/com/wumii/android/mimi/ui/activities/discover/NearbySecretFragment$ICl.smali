@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+.field final synthetic mNearbySecretFragmentb:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 214
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->b:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->mNearbySecretFragmentb:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

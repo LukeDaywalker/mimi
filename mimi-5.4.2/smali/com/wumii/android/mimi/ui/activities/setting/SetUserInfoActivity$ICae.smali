@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+.field final synthetic mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)Landroid/widget/EditText;
 
@@ -48,7 +48,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->o:Ljava/lang/String;
 

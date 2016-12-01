@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field final mIb:I
 
-.field final b:I
+.field final mNotificationd:Landroid/app/Notification;
 
-.field final c:Ljava/lang/String;
+.field final mStringa:Ljava/lang/String;
 
-.field final d:Landroid/app/Notification;
+.field final mStringc:Ljava/lang/String;
 
 
 # virtual methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 576
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->a:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mStringa:Ljava/lang/String;
 
-    iget v1, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->b:I
+    iget v1, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mIb:I
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->c:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mStringc:Ljava/lang/String;
 
-    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->d:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mNotificationd:Landroid/app/Notification;
 
     invoke-interface {p1, v0, v1, v2, v3}, Landroid/support/v4/app/INotificationSideChannel;->a(Ljava/lang/String;ILjava/lang/String;Landroid/app/Notification;)V
 
@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -65,7 +65,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->b:I
+    iget v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->c:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$NotifyTask;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

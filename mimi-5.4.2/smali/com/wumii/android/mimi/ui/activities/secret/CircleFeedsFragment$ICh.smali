@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
+.field final synthetic mCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->mCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;-><init>(Landroid/content/Context;)V
 
@@ -35,7 +35,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->mCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -43,7 +43,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICh;->mCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 

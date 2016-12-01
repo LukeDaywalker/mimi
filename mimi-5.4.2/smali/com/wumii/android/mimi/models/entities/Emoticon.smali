@@ -145,7 +145,7 @@
 
 .field private icon:I
 
-.field private id:I
+.field private mIid:I
 
 
 # direct methods
@@ -1558,7 +1558,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 69
-    iput p3, p0, Lcom/wumii/android/mimi/models/entities/Emoticon;->id:I
+    iput p3, p0, Lcom/wumii/android/mimi/models/entities/Emoticon;->mIid:I
 
     .line 70
     iput p4, p0, Lcom/wumii/android/mimi/models/entities/Emoticon;->icon:I
@@ -1666,7 +1666,7 @@
 
     .prologue
     .line 89
-    iget v0, p0, Lcom/wumii/android/mimi/models/entities/Emoticon;->id:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/entities/Emoticon;->mIid:I
 
     return v0
 .end method

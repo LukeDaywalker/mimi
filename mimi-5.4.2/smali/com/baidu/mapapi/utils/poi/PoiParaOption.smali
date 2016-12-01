@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field mId:I
 
-.field b:Ljava/lang/String;
+.field mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-.field c:Lcom/baidu/mapapi/model/LatLng;
+.field mStringa:Ljava/lang/String;
 
-.field d:I
+.field mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 .method public center(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/utils/poi/PoiParaOption;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -34,7 +34,7 @@
 .method public getCenter()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -42,7 +42,7 @@
 .method public getKey()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -50,7 +50,7 @@
 .method public getRadius()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->d:I
+    iget v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mId:I
 
     return v0
 .end method
@@ -58,7 +58,7 @@
 .method public getUid()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
 .method public key(Ljava/lang/String;)Lcom/baidu/mapapi/utils/poi/PoiParaOption;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringb:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -74,7 +74,7 @@
 .method public radius(I)Lcom/baidu/mapapi/utils/poi/PoiParaOption;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->d:I
+    iput p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mId:I
 
     return-object p0
 .end method
@@ -82,7 +82,7 @@
 .method public uid(Ljava/lang/String;)Lcom/baidu/mapapi/utils/poi/PoiParaOption;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringa:Ljava/lang/String;
 
     return-object p0
 .end method

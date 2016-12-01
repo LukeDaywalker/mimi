@@ -37,7 +37,9 @@
 
 .field public static final enum i:Lu/aly/UMEnvelope$ICfk;
 
-.field private static final j:Ljava/util/Map;
+.field private static final synthetic mArrayICfkm:[Lu/aly/UMEnvelope$ICfk;
+
+.field private static final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -49,13 +51,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic m:[Lu/aly/UMEnvelope$ICfk;
-
 
 # instance fields
-.field private final k:S
+.field private final mSk:S
 
-.field private final l:Ljava/lang/String;
+.field private final mStringl:Ljava/lang/String;
 
 
 # direct methods
@@ -237,14 +237,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->m:[Lu/aly/UMEnvelope$ICfk;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mArrayICfkm:[Lu/aly/UMEnvelope$ICfk;
 
     .line 75
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/UMEnvelope$ICfk;->j:Ljava/util/Map;
+    sput-object v0, Lu/aly/UMEnvelope$ICfk;->mMapj:Ljava/util/Map;
 
     .line 78
     const-class v0, Lu/aly/UMEnvelope$ICfk;
@@ -271,7 +271,7 @@
     check-cast v0, Lu/aly/UMEnvelope$ICfk;
 
     .line 79
-    sget-object v2, Lu/aly/UMEnvelope$ICfk;->j:Ljava/util/Map;
+    sget-object v2, Lu/aly/UMEnvelope$ICfk;->mMapj:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/UMEnvelope$ICfk;->b()Ljava/lang/String;
 
@@ -301,10 +301,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 132
-    iput-short p3, p0, Lu/aly/UMEnvelope$ICfk;->k:S
+    iput-short p3, p0, Lu/aly/UMEnvelope$ICfk;->mSk:S
 
     .line 133
-    iput-object p4, p0, Lu/aly/UMEnvelope$ICfk;->l:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/UMEnvelope$ICfk;->mStringl:Ljava/lang/String;
 
     .line 134
     return-void
@@ -331,7 +331,7 @@
 
     .prologue
     .line 64
-    sget-object v0, Lu/aly/UMEnvelope$ICfk;->m:[Lu/aly/UMEnvelope$ICfk;
+    sget-object v0, Lu/aly/UMEnvelope$ICfk;->mArrayICfkm:[Lu/aly/UMEnvelope$ICfk;
 
     invoke-virtual {v0}, [Lu/aly/UMEnvelope$ICfk;->clone()Ljava/lang/Object;
 
@@ -349,7 +349,7 @@
 
     .prologue
     .line 137
-    iget-short v0, p0, Lu/aly/UMEnvelope$ICfk;->k:S
+    iget-short v0, p0, Lu/aly/UMEnvelope$ICfk;->mSk:S
 
     return v0
 .end method
@@ -359,7 +359,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lu/aly/UMEnvelope$ICfk;->l:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/UMEnvelope$ICfk;->mStringl:Ljava/lang/String;
 
     return-object v0
 .end method

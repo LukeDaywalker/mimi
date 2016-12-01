@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:[Ljava/lang/String;
+.field private final mArrayStringa:[Ljava/lang/String;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     .line 53
     return-void
@@ -102,7 +102,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     array-length v0, v0
 
@@ -121,7 +121,7 @@
     .line 82
     if-ltz v0, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     array-length v1, v1
 
@@ -136,7 +136,7 @@
     return-object v0
 
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     aget-object v0, v1, v0
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     invoke-static {v0, p1}, Lcom/squareup/okhttp/Headers;->a([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -171,7 +171,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     invoke-static {v1, v2}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
@@ -191,7 +191,7 @@
     .line 91
     if-ltz v0, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     array-length v1, v1
 
@@ -206,7 +206,7 @@
     return-object v0
 
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->a:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Headers;->mArrayStringa:[Ljava/lang/String;
 
     aget-object v0, v1, v0
 

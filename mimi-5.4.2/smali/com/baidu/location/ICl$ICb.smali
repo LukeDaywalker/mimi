@@ -9,18 +9,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICl;
-
 .field private for:D
 
 .field private int:Ljava/util/HashMap;
+
+.field final synthetic mICla:Lcom/baidu/location/ICl;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICl;Lcom/baidu/location/ICau$ICb;)V
     .locals 8
 
-    iput-object p1, p0, Lcom/baidu/location/ICl$ICb;->a:Lcom/baidu/location/ICl;
+    iput-object p1, p0, Lcom/baidu/location/ICl$ICb;->mICla:Lcom/baidu/location/ICl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

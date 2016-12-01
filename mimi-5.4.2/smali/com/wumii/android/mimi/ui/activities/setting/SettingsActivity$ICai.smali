@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
+.field final synthetic mICaha:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 182
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->mICaha:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
 
     invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
 
@@ -30,9 +30,9 @@
     invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->mICaha:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->mSettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->finish()V
 
@@ -63,9 +63,9 @@
 
     .line 189
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->mICaha:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->mSettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 

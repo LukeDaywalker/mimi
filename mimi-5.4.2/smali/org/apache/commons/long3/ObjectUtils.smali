@@ -1,10 +1,10 @@
-.class public Lorg/apache/commons/long/ObjectUtils;
+.class public Lorg/apache/commons/long3/ObjectUtils;
 .super Ljava/lang/Object;
 .source "ObjectUtils.java"
 
 
 # static fields
-.field public static final a:Lorg/apache/commons/long/ObjectUtils$ICc;
+.field public static final a:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     .prologue
     .line 63
-    new-instance v0, Lorg/apache/commons/long/ObjectUtils$ICc;
+    new-instance v0, Lorg/apache/commons/long3/ObjectUtils$ICc;
 
-    invoke-direct {v0}, Lorg/apache/commons/long/ObjectUtils$ICc;-><init>()V
+    invoke-direct {v0}, Lorg/apache/commons/long3/ObjectUtils$ICc;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long/ObjectUtils;->a:Lorg/apache/commons/long/ObjectUtils$ICc;
+    sput-object v0, Lorg/apache/commons/long3/ObjectUtils;->a:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
     return-void
 .end method

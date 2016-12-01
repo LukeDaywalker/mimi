@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Object;
+.field private final mObjecta:Ljava/lang/Object;
 
 
 # virtual methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 154
-    iget-object v1, p0, Landroid/support/v4/util/Pools$SynchronizedPool;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/util/Pools$SynchronizedPool;->mObjecta:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -65,7 +65,7 @@
 
     .prologue
     .line 161
-    iget-object v1, p0, Landroid/support/v4/util/Pools$SynchronizedPool;->a:Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/util/Pools$SynchronizedPool;->mObjecta:Ljava/lang/Object;
 
     monitor-enter v1
 

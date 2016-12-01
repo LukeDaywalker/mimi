@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private c:[Ljava/lang/String;
+.field private mArrayStringc:[Ljava/lang/String;
 
-.field private d:I
+.field private mId:I
 
 
 # direct methods
@@ -39,12 +39,12 @@
     iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->a:I
 
     .line 55
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->d:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mId:I
 
     .line 56
     new-array v1, v3, [Ljava/lang/String;
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
     .line 58
     :goto_0
@@ -59,9 +59,9 @@
     .line 60
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
-    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->d:I
+    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mId:I
 
     invoke-virtual {p0, v2}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->b(Ljava/io/DataInputStream;)Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     invoke-direct {p0, v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;-><init>(B)V
 
     .line 39
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
     .line 40
     return-void
@@ -142,7 +142,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
     array-length v3, v3
 
@@ -157,7 +157,7 @@
 
     .line 105
     :cond_0
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v3, v3, v0
 
@@ -238,7 +238,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->d:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mId:I
 
     if-lt v0, v2, :cond_0
 
@@ -271,7 +271,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->c:[Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v3, v3, v0
 

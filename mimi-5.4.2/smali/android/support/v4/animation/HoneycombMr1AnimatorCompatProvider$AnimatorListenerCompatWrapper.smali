@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final a:Landroid/support/v4/animation/AnimatorListenerCompat;
+.field final mAnimatorListenerCompata:Landroid/support/v4/animation/AnimatorListenerCompat;
 
-.field final b:Landroid/support/v4/animation/ValueAnimatorCompat;
+.field final mValueAnimatorCompatb:Landroid/support/v4/animation/ValueAnimatorCompat;
 
 
 # virtual methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->a:Landroid/support/v4/animation/AnimatorListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mAnimatorListenerCompata:Landroid/support/v4/animation/AnimatorListenerCompat;
 
-    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->b:Landroid/support/v4/animation/ValueAnimatorCompat;
+    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mValueAnimatorCompatb:Landroid/support/v4/animation/ValueAnimatorCompat;
 
     invoke-interface {v0, v1}, Landroid/support/v4/animation/AnimatorListenerCompat;->c(Landroid/support/v4/animation/ValueAnimatorCompat;)V
 
@@ -33,9 +33,9 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->a:Landroid/support/v4/animation/AnimatorListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mAnimatorListenerCompata:Landroid/support/v4/animation/AnimatorListenerCompat;
 
-    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->b:Landroid/support/v4/animation/ValueAnimatorCompat;
+    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mValueAnimatorCompatb:Landroid/support/v4/animation/ValueAnimatorCompat;
 
     invoke-interface {v0, v1}, Landroid/support/v4/animation/AnimatorListenerCompat;->b(Landroid/support/v4/animation/ValueAnimatorCompat;)V
 
@@ -48,9 +48,9 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->a:Landroid/support/v4/animation/AnimatorListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mAnimatorListenerCompata:Landroid/support/v4/animation/AnimatorListenerCompat;
 
-    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->b:Landroid/support/v4/animation/ValueAnimatorCompat;
+    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mValueAnimatorCompatb:Landroid/support/v4/animation/ValueAnimatorCompat;
 
     invoke-interface {v0, v1}, Landroid/support/v4/animation/AnimatorListenerCompat;->d(Landroid/support/v4/animation/ValueAnimatorCompat;)V
 
@@ -63,9 +63,9 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->a:Landroid/support/v4/animation/AnimatorListenerCompat;
+    iget-object v0, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mAnimatorListenerCompata:Landroid/support/v4/animation/AnimatorListenerCompat;
 
-    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->b:Landroid/support/v4/animation/ValueAnimatorCompat;
+    iget-object v1, p0, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider$AnimatorListenerCompatWrapper;->mValueAnimatorCompatb:Landroid/support/v4/animation/ValueAnimatorCompat;
 
     invoke-interface {v0, v1}, Landroid/support/v4/animation/AnimatorListenerCompat;->a(Landroid/support/v4/animation/ValueAnimatorCompat;)V
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field final synthetic mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/SecretManager;
+.field final synthetic mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->b:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
     invoke-direct {v1, v0, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;-><init>(ILjava/lang/String;)V
 
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -100,7 +100,7 @@
     .line 149
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->b:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbe;->mSecretManagerb:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/Object;)V
 

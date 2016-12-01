@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+.field final synthetic mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic mStringb:Ljava/lang/String;
 
-.field final synthetic d:Ljava/lang/String;
+.field final synthetic mStringc:Ljava/lang/String;
 
-.field final synthetic e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+.field final synthetic mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     .prologue
     .line 157
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringb:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->c:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringc:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->d:Ljava/lang/String;
+    iput-object p5, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringd:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,15 +46,15 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringb:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringc:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->d:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICj;->mStringd:Ljava/lang/String;
 
     const/4 v5, 0x1
 

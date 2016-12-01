@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
-.field final synthetic b:Lokio/BufferedSource;
+.field final synthetic mBufferedSinkd:Lokio/BufferedSink;
 
-.field final synthetic c:Lcom/squareup/okhttp/internal/http/CacheRequest;
+.field final synthetic mBufferedSourceb:Lokio/BufferedSource;
 
-.field final synthetic d:Lokio/BufferedSink;
+.field final synthetic mCacheRequestc:Lcom/squareup/okhttp/internal/http/CacheRequest;
 
-.field final synthetic e:Lcom/squareup/okhttp/internal/http/HttpEngine;
+.field final synthetic mHttpEnginee:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
 
 # direct methods
@@ -24,13 +24,13 @@
 
     .prologue
     .line 949
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->e:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mHttpEnginee:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->b:Lokio/BufferedSource;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSourceb:Lokio/BufferedSource;
 
-    iput-object p3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->c:Lcom/squareup/okhttp/internal/http/CacheRequest;
+    iput-object p3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mCacheRequestc:Lcom/squareup/okhttp/internal/http/CacheRequest;
 
-    iput-object p4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->d:Lokio/BufferedSink;
+    iput-object p4, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSinkd:Lokio/BufferedSink;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     .line 955
     :try_start_0
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->b:Lokio/BufferedSource;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v2, p1, p2, p3}, Lokio/BufferedSource;->a(Lokio/Buffer;J)J
     :try_end_0
@@ -63,15 +63,15 @@
     if-nez v2, :cond_2
 
     .line 965
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     if-nez v2, :cond_0
 
     .line 966
-    iput-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iput-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     .line 967
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->d:Lokio/BufferedSink;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSinkd:Lokio/BufferedSink;
 
     invoke-interface {v2}, Lokio/BufferedSink;->close()V
 
@@ -87,15 +87,15 @@
     move-exception v0
 
     .line 957
-    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     if-nez v1, :cond_1
 
     .line 958
-    iput-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iput-boolean v3, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     .line 959
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->c:Lcom/squareup/okhttp/internal/http/CacheRequest;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mCacheRequestc:Lcom/squareup/okhttp/internal/http/CacheRequest;
 
     invoke-interface {v1}, Lcom/squareup/okhttp/internal/http/CacheRequest;->b()V
 
@@ -105,7 +105,7 @@
 
     .line 972
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->d:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSinkd:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->c()Lokio/Buffer;
 
@@ -122,7 +122,7 @@
     invoke-virtual/range {v0 .. v5}, Lokio/Buffer;->a(Lokio/Buffer;JJ)Lokio/Buffer;
 
     .line 973
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->d:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSinkd:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->v()Lokio/BufferedSink;
 
@@ -134,7 +134,7 @@
 
     .prologue
     .line 978
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->a()Lokio/Timeout;
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 982
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -166,16 +166,16 @@
     .line 984
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->a:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->isZa:Z
 
     .line 985
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->c:Lcom/squareup/okhttp/internal/http/CacheRequest;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mCacheRequestc:Lcom/squareup/okhttp/internal/http/CacheRequest;
 
     invoke-interface {v0}, Lcom/squareup/okhttp/internal/http/CacheRequest;->b()V
 
     .line 987
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpEngine$ICs;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->close()V
 

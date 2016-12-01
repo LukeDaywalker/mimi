@@ -25,7 +25,7 @@
 
 .field public static final enum e:Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
-.field private static final synthetic f:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+.field private static final synthetic mArrayICcf:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
 
 # direct methods
@@ -113,7 +113,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->f:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mArrayICcf:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     return-void
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->f:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->mArrayICcf:[Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/FailReason$ICc;->clone()Ljava/lang/Object;
 

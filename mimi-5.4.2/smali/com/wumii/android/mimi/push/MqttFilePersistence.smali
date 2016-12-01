@@ -7,17 +7,17 @@
 
 
 # static fields
-.field private static final e:Ljava/io/FilenameFilter;
+.field private static final mFilenameFiltere:Ljava/io/FilenameFilter;
 
 
 # instance fields
-.field private a:Lorg/slf4j/Logger;
+.field private mFileLockd:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
-.field private b:Ljava/io/File;
+.field private mFileb:Ljava/io/File;
 
-.field private c:Ljava/io/File;
+.field private mFilec:Ljava/io/File;
 
-.field private d:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+.field private mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICb;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->e:Ljava/io/FilenameFilter;
+    sput-object v0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilenameFiltere:Ljava/io/FilenameFilter;
 
     return-void
 .end method
@@ -51,20 +51,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     .line 62
-    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     .line 63
-    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->d:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileLockd:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     .line 83
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     .line 84
     return-void
@@ -77,7 +77,7 @@
     const/4 v1, 0x0
 
     .line 287
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -225,7 +225,7 @@
 
     .prologue
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     if-nez v0, :cond_0
 
@@ -249,9 +249,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/MqttFilePersistence;->d()V
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
-    sget-object v1, Lcom/wumii/android/mimi/push/MqttFilePersistence;->e:Ljava/io/FilenameFilter;
+    sget-object v1, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilenameFiltere:Ljava/io/FilenameFilter;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->listFiles(Ljava/io/FilenameFilter;)[Ljava/io/File;
 
@@ -281,7 +281,7 @@
     const/4 v0, 0x0
 
     .line 213
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -310,7 +310,7 @@
     :try_start_0
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -403,7 +403,7 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "close"
 
@@ -414,12 +414,12 @@
 
     .line 152
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->d:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileLockd:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     if-eqz v0, :cond_0
 
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->d:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileLockd:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;->a()V
 
@@ -434,7 +434,7 @@
     if-nez v0, :cond_1
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
@@ -442,7 +442,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     .line 160
     monitor-exit p0
@@ -468,7 +468,7 @@
     const/4 v1, 0x0
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -501,7 +501,7 @@
     invoke-interface {v0, v2}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -509,7 +509,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
@@ -526,7 +526,7 @@
 
     .line 90
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -535,7 +535,7 @@
     if-nez v0, :cond_1
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -552,7 +552,7 @@
 
     .line 95
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->canWrite()Z
 
@@ -645,7 +645,7 @@
 
     .line 115
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     if-nez v0, :cond_7
 
@@ -657,14 +657,14 @@
     .line 117
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->b:Ljava/io/File;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-direct {v1, v2, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iput-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -673,7 +673,7 @@
     if-nez v0, :cond_7
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
     :try_end_0
@@ -684,20 +684,20 @@
     :try_start_1
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     const-string/jumbo v2, ".lck"
 
     invoke-direct {v0, v1, v2}, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->d:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFileLockd:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 133
     :try_start_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a(Ljava/io/File;)V
 
@@ -736,7 +736,7 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -764,7 +764,7 @@
     .line 175
     new-instance v1, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -789,7 +789,7 @@
     .line 176
     new-instance v2, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1050,7 +1050,7 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1078,7 +1078,7 @@
     .line 240
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1120,7 +1120,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "clear"
 
@@ -1167,7 +1167,7 @@
     .line 309
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->c:Ljava/io/File;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence;->mFilec:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

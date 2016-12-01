@@ -4,13 +4,15 @@
 
 
 # static fields
-.field private static final a:I
+.field private static final mIa:I
 
-.field private static final b:Ljava/lang/Object;
+.field private static final mImplf:Landroid/support/v4/app/NotificationManagerCompat$Impl;
 
-.field private static c:Ljava/lang/String;
+.field private static final mObjectb:Ljava/lang/Object;
 
-.field private static d:Ljava/util/Set;
+.field private static final mObjecte:Ljava/lang/Object;
+
+.field private static mSetd:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -21,9 +23,7 @@
     .end annotation
 .end field
 
-.field private static final e:Ljava/lang/Object;
-
-.field private static final f:Landroid/support/v4/app/NotificationManagerCompat$Impl;
+.field private static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -36,21 +36,21 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->b:Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mObjectb:Ljava/lang/Object;
 
     .line 92
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->d:Ljava/util/Set;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mSetd:Ljava/util/Set;
 
     .line 97
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->e:Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mObjecte:Ljava/lang/Object;
 
     .line 165
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -64,17 +64,17 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationManagerCompat$ImplIceCreamSandwich;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->f:Landroid/support/v4/app/NotificationManagerCompat$Impl;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mImplf:Landroid/support/v4/app/NotificationManagerCompat$Impl;
 
     .line 172
     :goto_0
-    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->f:Landroid/support/v4/app/NotificationManagerCompat$Impl;
+    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mImplf:Landroid/support/v4/app/NotificationManagerCompat$Impl;
 
     invoke-interface {v0}, Landroid/support/v4/app/NotificationManagerCompat$Impl;->a()I
 
     move-result v0
 
-    sput v0, Landroid/support/v4/app/NotificationManagerCompat;->a:I
+    sput v0, Landroid/support/v4/app/NotificationManagerCompat;->mIa:I
 
     .line 173
     return-void
@@ -92,7 +92,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationManagerCompat$ImplEclair;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->f:Landroid/support/v4/app/NotificationManagerCompat$Impl;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mImplf:Landroid/support/v4/app/NotificationManagerCompat$Impl;
 
     goto :goto_0
 
@@ -102,7 +102,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationManagerCompat$ImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->f:Landroid/support/v4/app/NotificationManagerCompat$Impl;
+    sput-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mImplf:Landroid/support/v4/app/NotificationManagerCompat$Impl;
 
     goto :goto_0
 .end method
@@ -112,7 +112,7 @@
 
     .prologue
     .line 54
-    sget v0, Landroid/support/v4/app/NotificationManagerCompat;->a:I
+    sget v0, Landroid/support/v4/app/NotificationManagerCompat;->mIa:I
 
     return v0
 .end method
@@ -146,7 +146,7 @@
     .line 237
     if-eqz v1, :cond_2
 
-    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->c:Ljava/lang/String;
+    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -201,16 +201,16 @@
 
     .line 247
     :cond_1
-    sget-object v2, Landroid/support/v4/app/NotificationManagerCompat;->b:Ljava/lang/Object;
+    sget-object v2, Landroid/support/v4/app/NotificationManagerCompat;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 248
     :try_start_0
-    sput-object v3, Landroid/support/v4/app/NotificationManagerCompat;->d:Ljava/util/Set;
+    sput-object v3, Landroid/support/v4/app/NotificationManagerCompat;->mSetd:Ljava/util/Set;
 
     .line 249
-    sput-object v1, Landroid/support/v4/app/NotificationManagerCompat;->c:Ljava/lang/String;
+    sput-object v1, Landroid/support/v4/app/NotificationManagerCompat;->mStringc:Ljava/lang/String;
 
     .line 250
     monitor-exit v2
@@ -219,7 +219,7 @@
 
     .line 252
     :cond_2
-    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->d:Ljava/util/Set;
+    sget-object v0, Landroid/support/v4/app/NotificationManagerCompat;->mSetd:Ljava/util/Set;
 
     return-object v0
 

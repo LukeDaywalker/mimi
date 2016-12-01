@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/util/ArrayMap;
+.field final synthetic mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 73
-    iput-object p1, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iput-object p1, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-direct {p0}, Landroid/support/v4/util/MapCollections;-><init>()V
 
@@ -36,9 +36,9 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
-    iget v0, v0, Landroid/support/v4/util/ArrayMap;->h:I
+    iget v0, v0, Landroid/support/v4/util/ArrayMap;->mIh:I
 
     return v0
 .end method
@@ -48,7 +48,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/ArrayMap;->a(Ljava/lang/Object;)I
 
@@ -62,9 +62,9 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
-    iget-object v0, v0, Landroid/support/v4/util/ArrayMap;->g:[Ljava/lang/Object;
+    iget-object v0, v0, Landroid/support/v4/util/ArrayMap;->mArrayObjectg:[Ljava/lang/Object;
 
     shl-int/lit8 v1, p1, 0x1
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/util/ArrayMap;->a(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/ArrayMap;->d(I)Ljava/lang/Object;
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/ArrayMap;->b(Ljava/lang/Object;)I
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     return-object v0
 .end method
@@ -161,7 +161,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->a:Landroid/support/v4/util/ArrayMap;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap$1;->mArrayMapa:Landroid/support/v4/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/support/v4/util/ArrayMap;->clear()V
 

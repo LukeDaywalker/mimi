@@ -4,17 +4,9 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field mIe:I
 
-.field b:Ljava/lang/String;
-
-.field c:Ljava/lang/String;
-
-.field d:Ljava/lang/String;
-
-.field e:I
-
-.field final f:Ljava/util/List;
+.field final mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -25,7 +17,7 @@
     .end annotation
 .end field
 
-.field g:Ljava/util/List;
+.field mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -36,7 +28,15 @@
     .end annotation
 .end field
 
-.field h:Ljava/lang/String;
+.field mStringa:Ljava/lang/String;
+
+.field mStringb:Ljava/lang/String;
+
+.field mStringc:Ljava/lang/String;
+
+.field mStringd:Ljava/lang/String;
+
+.field mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -50,27 +50,27 @@
     .line 614
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     .line 615
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     .line 617
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     .line 618
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     .line 623
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     const-string/jumbo v1, ""
 
@@ -110,12 +110,12 @@
 
     .line 1011
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 1012
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     const-string/jumbo v1, ""
 
@@ -164,9 +164,9 @@
 
     .line 1016
     :cond_4
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -235,9 +235,9 @@
 
     .line 1041
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -258,9 +258,9 @@
     if-eqz v0, :cond_3
 
     .line 1042
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -275,7 +275,7 @@
     if-eqz p4, :cond_0
 
     .line 1047
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     const-string/jumbo v1, ""
 
@@ -285,7 +285,7 @@
 
     .line 1044
     :cond_3
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -561,9 +561,9 @@
 
     .prologue
     .line 1073
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -584,7 +584,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -593,9 +593,9 @@
     if-nez v0, :cond_0
 
     .line 1077
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -613,7 +613,7 @@
 
     .line 1079
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     const-string/jumbo v1, ""
 
@@ -1327,19 +1327,19 @@
 
     .prologue
     .line 682
-    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     :goto_0
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/lang/String;)I
 
@@ -1369,7 +1369,7 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     .line 751
     return-object p0
@@ -1435,7 +1435,7 @@
     .line 888
     const-string/jumbo v0, "https"
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     .line 889
     const-string/jumbo v0, "https:"
@@ -1469,7 +1469,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v5, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1544,7 +1544,7 @@
     .line 891
     const-string/jumbo v0, "http"
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     .line 892
     const-string/jumbo v0, "http:"
@@ -1574,7 +1574,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     goto :goto_0
 
@@ -1621,7 +1621,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iget-object v3, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1642,7 +1642,7 @@
     move-result-object v0
 
     :cond_6
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     .line 934
     if-eq v2, v8, :cond_7
@@ -1667,7 +1667,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     .line 939
     :cond_7
@@ -1690,7 +1690,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1724,7 +1724,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     goto :goto_5
 
@@ -1744,7 +1744,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     .line 956
     add-int/lit8 v0, v0, 0x1
@@ -1753,10 +1753,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     .line 957
-    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     const/4 v1, -0x1
 
@@ -1772,20 +1772,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     .line 960
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/lang/String;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     .line 962
     :cond_a
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     if-nez v0, :cond_b
 
@@ -1845,7 +1845,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     .line 994
     :goto_7
@@ -1876,7 +1876,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringh:Ljava/lang/String;
 
     .line 999
     :cond_d
@@ -1892,36 +1892,36 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     .line 970
     invoke-virtual {p1}, Lcom/squareup/okhttp/HttpUrl;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     .line 971
     invoke-static {p1}, Lcom/squareup/okhttp/HttpUrl;->b(Lcom/squareup/okhttp/HttpUrl;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     .line 972
     invoke-static {p1}, Lcom/squareup/okhttp/HttpUrl;->c(Lcom/squareup/okhttp/HttpUrl;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mIe:I
 
     .line 973
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 974
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/HttpUrl;->f()Ljava/util/List;
 
@@ -1972,7 +1972,7 @@
 
     .prologue
     .line 831
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -1986,7 +1986,7 @@
 
     .line 832
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -2021,7 +2021,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 838
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2031,7 +2031,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 841
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
@@ -2039,7 +2039,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
@@ -2049,12 +2049,12 @@
 
     .line 842
     :cond_0
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 843
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
@@ -2066,7 +2066,7 @@
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 845
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2078,7 +2078,7 @@
 
     .line 850
     :cond_2
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/String;->indexOf(I)I
 
@@ -2094,7 +2094,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 853
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2110,7 +2110,7 @@
     move-result v1
 
     .line 860
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/lang/String;)I
 
@@ -2126,12 +2126,12 @@
 
     .line 865
     :cond_3
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-static {v0, v1}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/lang/StringBuilder;Ljava/util/List;)V
 
     .line 867
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     if-eqz v1, :cond_4
 
@@ -2141,13 +2141,13 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 869
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     invoke-static {v0, v1}, Lcom/squareup/okhttp/HttpUrl;->b(Ljava/lang/StringBuilder;Ljava/util/List;)V
 
     .line 872
     :cond_4
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringh:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
@@ -2157,7 +2157,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 874
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2171,7 +2171,7 @@
 
     .line 856
     :cond_6
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

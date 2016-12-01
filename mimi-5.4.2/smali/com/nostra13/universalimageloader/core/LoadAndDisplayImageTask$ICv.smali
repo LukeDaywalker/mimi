@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
+.field final synthetic mLoadAndDisplayImageTaska:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 480
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$ICv;->a:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$ICv;->mLoadAndDisplayImageTaska:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 

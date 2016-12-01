@@ -6,9 +6,9 @@
 # static fields
 .field public static final a:Ljava/util/Locale;
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
-.field private static c:Ljava/lang/String;
+.field private static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -30,12 +30,12 @@
     .line 116
     const-string/jumbo v0, "Arab"
 
-    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->b:Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->mStringb:Ljava/lang/String;
 
     .line 117
     const-string/jumbo v0, "Hebr"
 
-    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->c:Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/text/TextUtilsCompat;->mStringc:Ljava/lang/String;
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 
     .line 81
     :cond_0
-    sget-object v1, Landroid/support/v4/text/TextUtilsCompat;->b:Ljava/lang/String;
+    sget-object v1, Landroid/support/v4/text/TextUtilsCompat;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -99,7 +99,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object v1, Landroid/support/v4/text/TextUtilsCompat;->c:Ljava/lang/String;
+    sget-object v1, Landroid/support/v4/text/TextUtilsCompat;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 

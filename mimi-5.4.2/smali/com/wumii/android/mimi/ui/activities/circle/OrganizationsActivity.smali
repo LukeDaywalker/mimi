@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private D:Landroid/view/View;
+.field private mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
-.field private E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+.field private mViewD:Landroid/view/View;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     .line 97
     const v0, 0x7f06008a
@@ -119,7 +119,7 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;)Ljava/lang/String;
 
@@ -145,7 +145,7 @@
     const/4 v6, 0x0
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;)Ljava/lang/String;
 
@@ -192,7 +192,7 @@
     if-le v0, v2, :cond_1
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewD:Landroid/view/View;
 
     if-nez v0, :cond_0
 
@@ -211,11 +211,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->D:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewD:Landroid/view/View;
 
     .line 52
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewD:Landroid/view/View;
 
     const v2, 0x7f0b01ad
 
@@ -264,7 +264,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewD:Landroid/view/View;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -274,7 +274,7 @@
 
     .line 62
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mViewD:Landroid/view/View;
 
     const/16 v1, 0x8
 
@@ -347,7 +347,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->E:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->mOrganizationTypeE:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;)Ljava/lang/String;
 

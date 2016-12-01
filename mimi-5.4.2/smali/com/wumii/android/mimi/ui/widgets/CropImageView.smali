@@ -4,55 +4,55 @@
 
 
 # instance fields
-.field private a:F
+.field private isZu:Z
 
-.field private b:F
+.field private mBitmapq:Landroid/graphics/Bitmap;
 
-.field private c:F
+.field private mFa:F
 
-.field private d:F
+.field private mFb:F
 
-.field private e:F
+.field private mFc:F
 
-.field private f:F
+.field private mFd:F
 
-.field private final g:I
+.field private mFe:F
 
-.field private final h:I
+.field private mFf:F
 
-.field private final i:I
+.field private mFloatDrawabler:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
-.field private j:I
+.field private mFn:F
 
-.field private k:I
+.field private final mFo:F
 
-.field private l:I
+.field private final mFp:F
 
-.field private m:I
+.field private mFx:F
 
-.field private n:F
+.field private mFy:F
 
-.field private final o:F
+.field private final mIg:I
 
-.field private final p:F
+.field private final mIh:I
 
-.field private q:Landroid/graphics/Bitmap;
+.field private final mIi:I
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
+.field private mIj:I
 
-.field private s:Landroid/graphics/Rect;
+.field private mIk:I
 
-.field private t:Landroid/graphics/Rect;
+.field private mIl:I
 
-.field private u:Z
+.field private mIm:I
 
-.field private v:I
+.field private mIv:I
 
-.field private w:I
+.field private mIw:I
 
-.field private x:F
+.field private mRects:Landroid/graphics/Rect;
 
-.field private y:F
+.field private mRectt:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -68,65 +68,65 @@
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     .line 18
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 19
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     .line 22
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 23
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 25
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 26
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     .line 29
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->g:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIg:I
 
     .line 30
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIh:I
 
     .line 31
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIi:I
 
     .line 33
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     .line 41
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     .line 42
     const/high16 v0, 0x40a00000    # 5.0f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->o:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFo:F
 
     .line 43
     const v0, 0x3e99999a    # 0.3f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->p:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFp:F
 
     .line 47
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     .line 48
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     .line 60
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a(Landroid/content/Context;)V
@@ -147,65 +147,65 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 18
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 19
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     .line 22
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 23
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 25
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 26
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     .line 29
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->g:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIg:I
 
     .line 30
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIh:I
 
     .line 31
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIi:I
 
     .line 33
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     .line 41
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     .line 42
     const/high16 v0, 0x40a00000    # 5.0f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->o:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFo:F
 
     .line 43
     const v0, 0x3e99999a    # 0.3f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->p:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFp:F
 
     .line 47
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     .line 48
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     .line 65
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a(Landroid/content/Context;)V
@@ -226,65 +226,65 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 18
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 19
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     .line 22
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 23
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 25
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 26
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     .line 29
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->g:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIg:I
 
     .line 30
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIh:I
 
     .line 31
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIi:I
 
     .line 33
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     .line 41
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     .line 42
     const/high16 v0, 0x40a00000    # 5.0f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->o:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFo:F
 
     .line 43
     const v0, 0x3e99999a    # 0.3f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->p:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFp:F
 
     .line 47
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     .line 48
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     .line 70
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a(Landroid/content/Context;)V
@@ -298,7 +298,7 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -306,10 +306,10 @@
 
     int-to-float v0, v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
     .line 225
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -317,19 +317,19 @@
 
     int-to-float v0, v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->y:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFy:F
 
     .line 226
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->y:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFy:F
 
     div-float/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     .line 227
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -338,12 +338,12 @@
     if-lez v0, :cond_0
 
     .line 228
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->k:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIk:I
 
     .line 229
     int-to-float v1, v0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     mul-float/2addr v1, v2
 
@@ -375,7 +375,7 @@
     add-int/2addr v0, v3
 
     .line 240
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v2, v3, v1, v0}, Landroid/graphics/Rect;->set(IIII)V
 
@@ -384,7 +384,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     sub-int/2addr v0, v1
 
@@ -395,31 +395,31 @@
 
     move-result v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     sub-int/2addr v1, v2
 
     div-int/lit8 v1, v1, 0x2
 
     .line 244
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     add-int/2addr v2, v0
 
     .line 245
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     add-int/2addr v3, v1
 
     .line 246
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v0, v1, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFloatDrawabler:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;->setBounds(Landroid/graphics/Rect;)V
 
@@ -428,12 +428,12 @@
 
     .line 231
     :cond_0
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->k:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIk:I
 
     .line 232
     int-to-float v0, v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     div-float/2addr v0, v2
 
@@ -464,7 +464,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->v:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIv:I
 
     .line 79
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->getResources()Landroid/content/res/Resources;
@@ -477,14 +477,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->w:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIw:I
 
     .line 81
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFloatDrawabler:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
     .line 83
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->getResources()Landroid/content/res/Resources;
@@ -497,17 +497,17 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->k:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIk:I
 
     .line 84
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->k:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIk:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     .line 85
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->k:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIk:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     .line 86
     return-void
@@ -520,12 +520,12 @@
     const/4 v1, 0x1
 
     .line 251
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
     .line 252
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v3, v0, Landroid/graphics/Rect;->top:I
 
@@ -533,14 +533,14 @@
     const/4 v0, 0x0
 
     .line 255
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v4, v4, Landroid/graphics/Rect;->left:I
 
     if-le v2, v4, :cond_0
 
     .line 256
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
@@ -550,24 +550,24 @@
 
     .line 259
     :cond_0
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v4, v4, Landroid/graphics/Rect;->right:I
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v5, v5, Landroid/graphics/Rect;->right:I
 
     if-ge v4, v5, :cond_1
 
     .line 260
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->right:I
 
@@ -579,18 +579,18 @@
 
     .line 264
     :cond_1
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v4, v4, Landroid/graphics/Rect;->top:I
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v5, v5, Landroid/graphics/Rect;->top:I
 
     if-le v4, v5, :cond_2
 
     .line 265
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
@@ -600,24 +600,24 @@
 
     .line 268
     :cond_2
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v4, v4, Landroid/graphics/Rect;->bottom:I
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v5, v5, Landroid/graphics/Rect;->bottom:I
 
     if-ge v4, v5, :cond_4
 
     .line 269
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->bottom:I
 
@@ -630,7 +630,7 @@
     if-eqz v1, :cond_3
 
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/Rect;->offsetTo(II)V
 
@@ -656,7 +656,7 @@
     const/4 v7, 0x0
 
     .line 280
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -664,12 +664,12 @@
 
     int-to-float v0, v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
     div-float/2addr v0, v1
 
     .line 281
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
@@ -677,16 +677,16 @@
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->y:F
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFy:F
 
     div-float/2addr v1, v2
 
     .line 283
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->left:I
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->left:I
 
@@ -703,11 +703,11 @@
     float-to-int v2, v2
 
     .line 284
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->top:I
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     iget v4, v4, Landroid/graphics/Rect;->top:I
 
@@ -720,7 +720,7 @@
     float-to-int v3, v3
 
     .line 286
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     int-to-float v4, v4
 
@@ -729,7 +729,7 @@
     float-to-int v0, v0
 
     .line 287
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     int-to-float v4, v4
 
@@ -764,14 +764,14 @@
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
     .line 294
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
     const/4 v5, 0x0
 
     invoke-virtual {v1, v3, v4, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     .line 295
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->w:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIw:I
 
     invoke-virtual {v1, v2}, Landroid/graphics/Canvas;->drawColor(I)V
 
@@ -786,7 +786,7 @@
     const/4 v2, 0x0
 
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_0
 
@@ -796,7 +796,7 @@
 
     .line 202
     :cond_0
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->u:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->isZu:Z
 
     if-eqz v0, :cond_1
 
@@ -806,13 +806,13 @@
     .line 204
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->u:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->isZu:Z
 
     .line 207
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0, v2, v1, v2}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
@@ -820,14 +820,14 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     sget-object v1, Landroid/graphics/Region$Op;->DIFFERENCE:Landroid/graphics/Region$Op;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z
 
     .line 211
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->v:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIv:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
@@ -838,14 +838,14 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRects:Landroid/graphics/Rect;
 
     sget-object v1, Landroid/graphics/Region$Op;->INTERSECT:Landroid/graphics/Region$Op;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z
 
     .line 216
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->w:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIw:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
@@ -853,7 +853,7 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFloatDrawabler:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -882,40 +882,40 @@
     if-le v1, v2, :cond_3
 
     .line 102
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-ne v1, v2, :cond_2
 
     .line 103
-    iput v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     .line 105
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 106
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 108
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 109
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     .line 128
     :cond_0
@@ -933,55 +933,55 @@
 
     .line 110
     :cond_2
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-ne v1, v4, :cond_0
 
     .line 111
-    iput v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     goto :goto_0
 
     .line 114
     :cond_3
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-eq v1, v4, :cond_4
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-ne v1, v5, :cond_5
 
     .line 115
     :cond_4
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 116
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 118
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 119
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     .line 121
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 122
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     .line 125
     :cond_5
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     goto :goto_0
 
@@ -991,14 +991,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 131
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     goto :goto_1
 
@@ -1010,7 +1010,7 @@
 
     .line 137
     :pswitch_2
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-ne v1, v5, :cond_a
 
@@ -1035,9 +1035,9 @@
     move-result v6
 
     .line 144
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
-    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     sub-float/2addr v1, v7
 
@@ -1046,9 +1046,9 @@
     move-result v1
 
     .line 145
-    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
-    iget v8, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iget v8, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     sub-float/2addr v7, v8
 
@@ -1097,21 +1097,21 @@
 
     .line 153
     :goto_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->centerX()I
 
     move-result v7
 
     .line 154
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->centerY()I
 
     move-result v8
 
     .line 155
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
@@ -1126,7 +1126,7 @@
     .line 156
     int-to-float v0, v1
 
-    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     div-float/2addr v0, v9
 
@@ -1135,7 +1135,7 @@
     .line 158
     int-to-float v9, v1
 
-    iget v10, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iget v10, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
     div-float/2addr v9, v10
 
@@ -1149,7 +1149,7 @@
     .line 160
     const/high16 v0, 0x40a00000    # 5.0f
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
     mul-float/2addr v0, v1
 
@@ -1158,7 +1158,7 @@
     .line 161
     int-to-float v0, v1
 
-    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     div-float/2addr v0, v9
 
@@ -1167,16 +1167,16 @@
     .line 167
     :cond_7
     :goto_3
-    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     if-lt v1, v9, :cond_1
 
-    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     if-lt v0, v9, :cond_1
 
     .line 171
-    iget-object v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     div-int/lit8 v10, v1, 0x2
 
@@ -1200,16 +1200,16 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->invalidate()V
 
     .line 174
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->c:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFc:F
 
     .line 175
-    iput v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->d:F
+    iput v4, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFd:F
 
     .line 177
-    iput v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->e:F
+    iput v5, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFe:F
 
     .line 178
-    iput v6, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->f:F
+    iput v6, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFf:F
 
     goto/16 :goto_1
 
@@ -1230,7 +1230,7 @@
     .line 163
     const v0, 0x3e99999a    # 0.3f
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->x:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFx:F
 
     mul-float/2addr v0, v1
 
@@ -1239,7 +1239,7 @@
     .line 164
     int-to-float v0, v1
 
-    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->n:F
+    iget v9, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFn:F
 
     div-float/2addr v0, v9
 
@@ -1249,7 +1249,7 @@
 
     .line 179
     :cond_a
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->j:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIj:I
 
     if-ne v0, v2, :cond_1
 
@@ -1258,7 +1258,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     sub-float/2addr v0, v1
 
@@ -1269,7 +1269,7 @@
 
     move-result v1
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     sub-float/2addr v1, v3
 
@@ -1280,14 +1280,14 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->a:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFa:F
 
     .line 184
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v3
 
-    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->b:F
+    iput v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mFb:F
 
     .line 186
     if-nez v0, :cond_b
@@ -1296,7 +1296,7 @@
 
     .line 187
     :cond_b
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->t:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mRectt:Landroid/graphics/Rect;
 
     invoke-virtual {v3, v0, v1}, Landroid/graphics/Rect;->offset(II)V
 
@@ -1321,12 +1321,12 @@
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->q:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mBitmapq:Landroid/graphics/Bitmap;
 
     .line 95
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->u:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->isZu:Z
 
     .line 96
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->invalidate()V
@@ -1340,10 +1340,10 @@
 
     .prologue
     .line 89
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->l:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIl:I
 
     .line 90
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->m:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->mIm:I
 
     .line 91
     return-void

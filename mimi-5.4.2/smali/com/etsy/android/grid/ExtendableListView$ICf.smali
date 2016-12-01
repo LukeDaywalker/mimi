@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
-.field b:I
+.field mIb:I
 
-.field c:J
+.field mId:I
 
-.field d:I
+.field mJc:J
 
 
 # direct methods
@@ -24,7 +24,7 @@
     .line 2134
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->c:J
+    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mJc:J
 
     .line 2145
     return-void
@@ -40,10 +40,10 @@
     .line 2134
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->c:J
+    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mJc:J
 
     .line 2149
-    iput p3, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iput p3, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     .line 2150
     return-void
@@ -59,7 +59,7 @@
     .line 2134
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->c:J
+    iput-wide v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mJc:J
 
     .line 2154
     return-void

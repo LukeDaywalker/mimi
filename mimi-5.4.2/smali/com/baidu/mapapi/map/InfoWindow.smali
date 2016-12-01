@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/map/BitmapDescriptor;
+.field mBitmapDescriptora:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-.field b:Landroid/view/View;
+.field mIe:I
 
-.field c:Lcom/baidu/mapapi/model/LatLng;
+.field mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-.field d:Lcom/baidu/mapapi/map/InfoWindow$OnInfoWindowClickListener;
+.field mOnInfoWindowClickListenerd:Lcom/baidu/mapapi/map/InfoWindow$OnInfoWindowClickListener;
 
-.field e:I
+.field mViewb:Landroid/view/View;
 
 
 # direct methods
@@ -34,11 +34,11 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/InfoWindow;->b:Landroid/view/View;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/InfoWindow;->mViewb:Landroid/view/View;
 
-    iput-object p2, p0, Lcom/baidu/mapapi/map/InfoWindow;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p2, p0, Lcom/baidu/mapapi/map/InfoWindow;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iput p3, p0, Lcom/baidu/mapapi/map/InfoWindow;->e:I
+    iput p3, p0, Lcom/baidu/mapapi/map/InfoWindow;->mIe:I
 
     return-void
 .end method
@@ -62,13 +62,13 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/InfoWindow;->a:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/InfoWindow;->mBitmapDescriptora:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iput-object p2, p0, Lcom/baidu/mapapi/map/InfoWindow;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p2, p0, Lcom/baidu/mapapi/map/InfoWindow;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p4, p0, Lcom/baidu/mapapi/map/InfoWindow;->d:Lcom/baidu/mapapi/map/InfoWindow$OnInfoWindowClickListener;
+    iput-object p4, p0, Lcom/baidu/mapapi/map/InfoWindow;->mOnInfoWindowClickListenerd:Lcom/baidu/mapapi/map/InfoWindow$OnInfoWindowClickListener;
 
-    iput p3, p0, Lcom/baidu/mapapi/map/InfoWindow;->e:I
+    iput p3, p0, Lcom/baidu/mapapi/map/InfoWindow;->mIe:I
 
     return-void
 .end method

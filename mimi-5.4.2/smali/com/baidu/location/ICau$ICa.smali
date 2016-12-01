@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICau;
+.field final synthetic mICaua:Lcom/baidu/location/ICau;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/ICau;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICau$ICa;->a:Lcom/baidu/location/ICau;
+    iput-object p1, p0, Lcom/baidu/location/ICau$ICa;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau$ICa;->a:Lcom/baidu/location/ICau;
+    iget-object v0, p0, Lcom/baidu/location/ICau$ICa;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -63,7 +63,7 @@
 
     invoke-static {v0, v2, v3}, Lcom/baidu/location/ICau;->if(Lcom/baidu/location/ICau;J)J
 
-    iget-object v0, p0, Lcom/baidu/location/ICau$ICa;->a:Lcom/baidu/location/ICau;
+    iget-object v0, p0, Lcom/baidu/location/ICau$ICa;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-static {v0}, Lcom/baidu/location/ICau;->if(Lcom/baidu/location/ICau;)V
 

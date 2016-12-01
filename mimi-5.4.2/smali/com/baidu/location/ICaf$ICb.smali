@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICaf;
+.field final synthetic mICafa:Lcom/baidu/location/ICaf;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICaf;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICaf$ICb;->a:Lcom/baidu/location/ICaf;
+    iput-object p1, p0, Lcom/baidu/location/ICaf$ICb;->mICafa:Lcom/baidu/location/ICaf;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

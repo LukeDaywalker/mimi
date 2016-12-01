@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:J
+.field private final mIb:I
 
-.field private final b:I
+.field private final mJa:J
 
 
 # direct methods
@@ -21,10 +21,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 35
-    iput-wide p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->a:J
+    iput-wide p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->mJa:J
 
     .line 36
-    iput p3, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->b:I
+    iput p3, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->mIb:I
 
     .line 37
     return-void
@@ -37,11 +37,11 @@
 
     .prologue
     .line 41
-    iget-wide v0, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->a:J
+    iget-wide v0, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->mJa:J
 
     long-to-double v0, v0
 
-    iget v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->b:I
+    iget v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/ExponentialBackoff;->mIb:I
 
     int-to-double v2, v2
 

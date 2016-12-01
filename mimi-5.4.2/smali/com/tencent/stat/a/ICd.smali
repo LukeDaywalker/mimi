@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final a:[B
+.field static final mArrayBa:[B
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/a/ICd;->a:[B
+    sput-object v0, Lcom/tencent/stat/a/ICd;->mArrayBa:[B
 
     return-void
 .end method
@@ -24,7 +24,7 @@
 .method public static a([B)[B
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/a/ICd;->a:[B
+    sget-object v0, Lcom/tencent/stat/a/ICd;->mArrayBa:[B
 
     invoke-static {p0, v0}, Lcom/tencent/stat/a/ICd;->a([B[B)[B
 
@@ -170,7 +170,7 @@
 .method public static b([B)[B
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/a/ICd;->a:[B
+    sget-object v0, Lcom/tencent/stat/a/ICd;->mArrayBa:[B
 
     invoke-static {p0, v0}, Lcom/tencent/stat/a/ICd;->b([B[B)[B
 

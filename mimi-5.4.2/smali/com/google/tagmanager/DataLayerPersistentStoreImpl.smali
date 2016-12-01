@@ -7,19 +7,19 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private final b:Ljava/util/concurrent/Executor;
+.field private mClocke:Lcom/google/tagmanager/Clock;
 
-.field private final c:Landroid/content/Context;
+.field private final mContextc:Landroid/content/Context;
 
-.field private d:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
+.field private final mExecutorb:Ljava/util/concurrent/Executor;
 
-.field private e:Lcom/google/tagmanager/Clock;
+.field private mICrd:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
 
-.field private f:I
+.field private mIf:I
 
 
 # direct methods
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->a:Ljava/lang/String;
+    sput-object v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -108,25 +108,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 68
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mContextc:Landroid/content/Context;
 
     .line 69
-    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->e:Lcom/google/tagmanager/Clock;
+    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mClocke:Lcom/google/tagmanager/Clock;
 
     .line 70
-    iput p4, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->f:I
+    iput p4, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mIf:I
 
     .line 71
-    iput-object p5, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->b:Ljava/util/concurrent/Executor;
+    iput-object p5, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mExecutorb:Ljava/util/concurrent/Executor;
 
     .line 72
     new-instance v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mContextc:Landroid/content/Context;
 
     invoke-direct {v0, p0, v1, p3}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;-><init>(Lcom/google/tagmanager/DataLayerPersistentStoreImpl;Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->d:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mICrd:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
 
     .line 73
     return-void
@@ -139,7 +139,7 @@
     .line 359
     .line 361
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->d:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mICrd:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
 
     invoke-virtual {v0}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
@@ -332,7 +332,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -392,9 +392,9 @@
     .line 118
     new-instance v3, Lcom/google/tagmanager/DataLayer$ICi;
 
-    iget-object v4, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->a:Ljava/lang/String;
+    iget-object v4, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mStringa:Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->b:[B
+    iget-object v0, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mArrayBb:[B
 
     invoke-direct {p0, v0}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->a([B)Ljava/lang/Object;
 
@@ -420,7 +420,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->f:I
+    iget v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mIf:I
 
     sub-int/2addr v0, v1
 
@@ -816,7 +816,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mContextc:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -836,7 +836,7 @@
     .prologue
     .line 105
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->e:Lcom/google/tagmanager/Clock;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mClocke:Lcom/google/tagmanager/Clock;
 
     invoke-interface {v0}, Lcom/google/tagmanager/Clock;->a()J
 
@@ -1164,7 +1164,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->e:Lcom/google/tagmanager/Clock;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mClocke:Lcom/google/tagmanager/Clock;
 
     invoke-interface {v0}, Lcom/google/tagmanager/Clock;->a()J
 
@@ -1401,14 +1401,14 @@
     .line 216
     const-string/jumbo v4, "key"
 
-    iget-object v5, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->a:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 217
     const-string/jumbo v4, "value"
 
-    iget-object v0, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->b:[B
+    iget-object v0, v0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mArrayBb:[B
 
     invoke-virtual {v3, v4, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;[B)V
 
@@ -1524,7 +1524,7 @@
     .prologue
     .line 374
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->d:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mICrd:Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;
 
     invoke-virtual {v0}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->close()V
     :try_end_0
@@ -1548,7 +1548,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->b:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mExecutorb:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;
 
@@ -1579,7 +1579,7 @@
     move-result-object v0
 
     .line 78
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->b:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->mExecutorb:Ljava/util/concurrent/Executor;
 
     new-instance v2, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICp;
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Ljava/util/HashMap;
+.field private static mHashMapa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -27,7 +27,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/tencent/c/Pro$ICp;->a:Ljava/util/HashMap;
+    sput-object v0, Lcom/tencent/c/Pro$ICp;->mHashMapa:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lcom/tencent/c/Pro$ICp;->a:Ljava/util/HashMap;
+    sget-object v0, Lcom/tencent/c/Pro$ICp;->mHashMapa:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -51,7 +51,7 @@
 
     .prologue
     .line 23
-    sget-object v0, Lcom/tencent/c/Pro$ICp;->a:Ljava/util/HashMap;
+    sget-object v0, Lcom/tencent/c/Pro$ICp;->mHashMapa:Ljava/util/HashMap;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -3,19 +3,19 @@
 
 
 # static fields
-.field private static volatile f:J
+.field private static volatile mJf:J
 
 
 # instance fields
-.field private a:Lcom/tencent/wxop/stat/a/ICd;
+.field private isZc:Z
 
-.field private b:Lcom/tencent/wxop/stat/ICw;
+.field private mContextd:Landroid/content/Context;
 
-.field private c:Z
+.field private mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-.field private d:Landroid/content/Context;
+.field private mICwb:Lcom/tencent/wxop/stat/ICw;
 
-.field private e:J
+.field private mJe:J
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/tencent/wxop/stat/ICai;->f:J
+    sput-wide v0, Lcom/tencent/wxop/stat/ICai;->mJf:J
 
     return-void
 .end method
@@ -36,39 +36,39 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iput-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->a()Lcom/tencent/wxop/stat/ICw;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {p1}, Lcom/tencent/wxop/stat/a/ICd;->f()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {p1}, Lcom/tencent/wxop/stat/a/ICd;->e()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 .method static synthetic a(Lcom/tencent/wxop/stat/ICai;)Landroid/content/Context;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -92,7 +92,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-virtual {v0, v1, p1}, Lcom/tencent/wxop/stat/ICl;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;)V
 
@@ -102,7 +102,7 @@
 .method static synthetic b(Lcom/tencent/wxop/stat/ICai;)Lcom/tencent/wxop/stat/a/ICd;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     return-object v0
 .end method
@@ -114,11 +114,11 @@
 
     move-result-object v0
 
-    iget v0, v0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, v0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     if-lez v0, :cond_0
 
-    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->m:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->isZm:Z
 
     if-eqz v0, :cond_0
 
@@ -126,11 +126,11 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     const/4 v2, 0x0
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     const/4 v4, 0x1
 
@@ -160,7 +160,7 @@
 .method static synthetic c(Lcom/tencent/wxop/stat/ICai;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     return v0
 .end method
@@ -176,11 +176,11 @@
 
     const/4 v2, 0x0
 
-    sget v0, Lcom/tencent/wxop/stat/ICv;->h:I
+    sget v0, Lcom/tencent/wxop/stat/ICv;->mIh:I
 
     if-lez v0, :cond_4
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICx;->j()J
 
@@ -196,9 +196,9 @@
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v6, Lcom/tencent/wxop/stat/ICv;->i:J
+    sget-wide v6, Lcom/tencent/wxop/stat/ICv;->mJi:J
 
     add-long/2addr v4, v6
 
@@ -235,7 +235,7 @@
     invoke-virtual {v0, v3}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/a/ICd;->b()Lcom/tencent/wxop/stat/a/ICe;
 
@@ -281,7 +281,7 @@
 
     move-result v3
 
-    sget v4, Lcom/tencent/wxop/stat/ICv;->h:I
+    sget v4, Lcom/tencent/wxop/stat/ICv;->mIh:I
 
     if-le v3, v4, :cond_4
 
@@ -301,7 +301,7 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v5, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v5, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-virtual {v5}, Lcom/tencent/wxop/stat/a/ICd;->g()Ljava/lang/String;
 
@@ -327,7 +327,7 @@
 
     move-result-object v0
 
-    sget v4, Lcom/tencent/wxop/stat/ICv;->h:I
+    sget v4, Lcom/tencent/wxop/stat/ICv;->mIh:I
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -339,7 +339,7 @@
 
     move-result-object v0
 
-    sget-wide v4, Lcom/tencent/wxop/stat/ICv;->i:J
+    sget-wide v4, Lcom/tencent/wxop/stat/ICv;->mJi:J
 
     invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -384,29 +384,29 @@
     goto :goto_0
 
     :cond_5
-    sget v0, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v0, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     if-lez v0, :cond_6
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v6, Lcom/tencent/wxop/stat/ICai;->f:J
+    sget-wide v6, Lcom/tencent/wxop/stat/ICai;->mJf:J
 
     cmp-long v0, v4, v6
 
     if-ltz v0, :cond_6
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->e(Landroid/content/Context;)V
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v6, Lcom/tencent/wxop/stat/ICv;->o:J
+    sget-wide v6, Lcom/tencent/wxop/stat/ICv;->mJo:J
 
     add-long/2addr v4, v6
 
-    sput-wide v4, Lcom/tencent/wxop/stat/ICai;->f:J
+    sput-wide v4, Lcom/tencent/wxop/stat/ICai;->mJf:J
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
 
@@ -424,7 +424,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-wide v4, Lcom/tencent/wxop/stat/ICai;->f:J
+    sget-wide v4, Lcom/tencent/wxop/stat/ICai;->mJf:J
 
     invoke-virtual {v3, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -437,7 +437,7 @@
     invoke-virtual {v0, v3}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_6
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICz;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICz;
 
@@ -465,7 +465,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget v4, Lcom/tencent/wxop/stat/ICx;->a:I
+    sget v4, Lcom/tencent/wxop/stat/ICx;->mIa:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -484,7 +484,7 @@
 
     if-nez v0, :cond_11
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/a/ICd;->d()Lcom/tencent/wxop/stat/ICy;
 
@@ -492,7 +492,7 @@
 
     if-eqz v0, :cond_8
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/a/ICd;->d()Lcom/tencent/wxop/stat/ICy;
 
@@ -506,10 +506,10 @@
 
     sget-object v0, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     :cond_8
-    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->j:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->isZj:Z
 
     if-eqz v0, :cond_9
 
@@ -529,7 +529,7 @@
 
     sget-object v0, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     :cond_9
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
@@ -548,7 +548,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iget-object v4, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v4}, Lcom/tencent/wxop/stat/ICw;->name()Ljava/lang/String;
 
@@ -565,9 +565,9 @@
     invoke-virtual {v0, v3}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_a
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICai;->b:Lcom/tencent/wxop/stat/ICw;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICai;->mICwb:Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v3}, Lcom/tencent/wxop/stat/ICw;->ordinal()I
 
@@ -609,15 +609,15 @@
     goto/16 :goto_1
 
     :pswitch_1
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v1, v8, v3, v2}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 
@@ -637,7 +637,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -649,7 +649,7 @@
 
     move-result-object v1
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -661,9 +661,9 @@
 
     move-result-object v1
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     sub-long/2addr v2, v4
 
@@ -678,7 +678,7 @@
     invoke-virtual {v0, v1}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_b
-    sget-wide v0, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v0, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     const-wide/16 v2, 0x0
 
@@ -686,7 +686,7 @@
 
     if-nez v0, :cond_e
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     const-string/jumbo v1, "last_period_ts"
 
@@ -694,22 +694,22 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/tencent/wxop/stat/ICx;->c:J
+    sput-wide v0, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
-    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_c
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->f(Landroid/content/Context;)V
 
     :cond_c
-    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->l()I
 
@@ -723,16 +723,16 @@
 
     add-long/2addr v0, v2
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     cmp-long v2, v2, v0
 
     if-lez v2, :cond_d
 
-    sput-wide v0, Lcom/tencent/wxop/stat/ICx;->c:J
+    sput-wide v0, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     :cond_d
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICg;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICg;
 
@@ -757,7 +757,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -769,7 +769,7 @@
 
     move-result-object v1
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -781,9 +781,9 @@
 
     move-result-object v1
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
-    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v4, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
     sub-long/2addr v2, v4
 
@@ -798,49 +798,49 @@
     invoke-virtual {v0, v1}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_f
-    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->c:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJc:J
 
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->f(Landroid/content/Context;)V
 
     goto/16 :goto_1
 
     :pswitch_2
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v1, v8, v3, v2}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 
     goto/16 :goto_1
 
     :pswitch_3
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
     new-instance v3, Lcom/tencent/wxop/stat/ICaj;
 
     invoke-direct {v3, p0}, Lcom/tencent/wxop/stat/ICaj;-><init>(Lcom/tencent/wxop/stat/ICai;)V
 
-    iget-boolean v4, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v4, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 
@@ -866,22 +866,22 @@
     goto/16 :goto_1
 
     :cond_10
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v1, v8, v3, v2}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 
     goto/16 :goto_1
 
     :pswitch_5
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->e(Landroid/content/Context;)Z
 
@@ -898,21 +898,21 @@
     goto/16 :goto_1
 
     :cond_11
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v1, v8, v3, v2}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 
-    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->e:J
+    iget-wide v0, p0, Lcom/tencent/wxop/stat/ICai;->mJe:J
 
-    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->b:J
+    sget-wide v2, Lcom/tencent/wxop/stat/ICx;->mJb:J
 
     sub-long/2addr v0, v2
 
@@ -922,22 +922,22 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->c(Landroid/content/Context;)V
 
     goto/16 :goto_1
 
     :cond_12
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICai;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->a:Lcom/tencent/wxop/stat/a/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICai;->mICda:Lcom/tencent/wxop/stat/a/ICd;
 
-    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->c:Z
+    iget-boolean v3, p0, Lcom/tencent/wxop/stat/ICai;->isZc:Z
 
     invoke-virtual {v0, v1, v8, v3, v2}, Lcom/tencent/wxop/stat/ICam;->a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
 

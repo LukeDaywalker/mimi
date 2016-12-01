@@ -17,11 +17,11 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:I
+.field private mIb:I
 
-.field private c:I
+.field private mIc:I
 
 
 # virtual methods
@@ -35,16 +35,16 @@
     monitor-enter p0
 
     :try_start_0
-    iget v1, p0, Landroid/support/v4/util/LruCache;->b:I
+    iget v1, p0, Landroid/support/v4/util/LruCache;->mIb:I
 
-    iget v2, p0, Landroid/support/v4/util/LruCache;->c:I
+    iget v2, p0, Landroid/support/v4/util/LruCache;->mIc:I
 
     add-int/2addr v1, v2
 
     .line 339
     if-eqz v1, :cond_0
 
-    iget v0, p0, Landroid/support/v4/util/LruCache;->b:I
+    iget v0, p0, Landroid/support/v4/util/LruCache;->mIb:I
 
     mul-int/lit8 v0, v0, 0x64
 
@@ -60,7 +60,7 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Landroid/support/v4/util/LruCache;->a:I
+    iget v4, p0, Landroid/support/v4/util/LruCache;->mIa:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -70,7 +70,7 @@
 
     const/4 v3, 0x1
 
-    iget v4, p0, Landroid/support/v4/util/LruCache;->b:I
+    iget v4, p0, Landroid/support/v4/util/LruCache;->mIb:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -80,7 +80,7 @@
 
     const/4 v3, 0x2
 
-    iget v4, p0, Landroid/support/v4/util/LruCache;->c:I
+    iget v4, p0, Landroid/support/v4/util/LruCache;->mIc:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -22,7 +22,7 @@
 
 .field public static final i:[Ljava/io/File;
 
-.field private static final j:Ljava/nio/charset/Charset;
+.field private static final mCharsetj:Ljava/nio/charset/Charset;
 
 
 # direct methods
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/apache/commons/io/FileUtils;->j:Ljava/nio/charset/Charset;
+    sput-object v0, Lorg/apache/commons/io/FileUtils;->mCharsetj:Ljava/nio/charset/Charset;
 
     return-void
 .end method

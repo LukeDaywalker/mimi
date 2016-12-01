@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+.field final synthetic mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+.field final synthetic mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 241
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .line 247
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
@@ -52,13 +52,13 @@
 
     .line 250
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mBaseChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 

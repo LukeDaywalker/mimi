@@ -4,23 +4,23 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private i:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
+.field private isZn:Z
 
-.field private j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+.field private mMobileChatMessageParserFactoryi:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
-.field private k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
-.field private l:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+.field private mNotificationCountHelperl:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
-.field private m:Lcom/wumii/android/mimi/models/service/UserService;
+.field private mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private n:Z
+.field private mStringo:Ljava/lang/String;
 
-.field private o:Ljava/lang/String;
+.field private mUserServicem:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -50,12 +50,12 @@
     .line 158
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->n:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->isZn:Z
 
     .line 160
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mStringo:Ljava/lang/String;
 
     .line 164
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 185
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -189,7 +189,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->l:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mNotificationCountHelperl:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     .line 186
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -200,21 +200,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->m:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mUserServicem:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 188
     new-instance v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatMessageParserFactoryi:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
     .line 189
     new-instance v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     .line 191
     return-void
@@ -368,7 +368,7 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatMessageParserFactoryi:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;
 
@@ -834,7 +834,7 @@
     check-cast v0, Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;
 
     .line 274
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatMessageParserFactoryi:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
     invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;
 
@@ -1788,7 +1788,7 @@
     move-result-object v7
 
     .line 1407
-    invoke-static {v7}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v7}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v8
 
@@ -1879,7 +1879,7 @@
 
     const-string/jumbo v6, ","
 
-    invoke-static {v1, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1890,7 +1890,7 @@
 
     const-string/jumbo v1, ","
 
-    invoke-static {v3, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1901,7 +1901,7 @@
 
     const-string/jumbo v1, ","
 
-    invoke-static {v5, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1969,7 +1969,7 @@
     if-eqz p1, :cond_0
 
     .line 911
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/ChatManager;->j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChat;)Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserBase;
 
@@ -2221,7 +2221,7 @@
     if-eqz v2, :cond_1
 
     .line 329
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/SingleChatMsgResp;->getChat()Lcom/wumii/mimi/model/domain/mobile/MobileChat;
 
@@ -2272,7 +2272,7 @@
     move-exception v0
 
     .line 334
-    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -2397,7 +2397,7 @@
     move-result-object v4
 
     .line 975
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/manager/ChatManager$ICq;
 
@@ -2535,14 +2535,14 @@
     invoke-virtual {v4, p1, v5}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(ILjava/util/List;)V
 
     .line 1002
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v5, "group_chat_notification"
 
     invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1003
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/manager/ChatManager;->c()I
 
@@ -2866,7 +2866,7 @@
     if-eqz v2, :cond_2
 
     .line 376
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/GroupApplicationChatMessageResp;->getChat()Lcom/wumii/mimi/model/domain/mobile/MobileChat;
 
@@ -2915,7 +2915,7 @@
     move-exception v0
 
     .line 382
-    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -3679,7 +3679,7 @@
     move-exception v0
 
     .line 499
-    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "parse data err"
 
@@ -3786,7 +3786,7 @@
     if-nez v0, :cond_1
 
     .line 521
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v4, Lcom/wumii/android/mimi/manager/ChatManager$ICp;
 
@@ -3834,7 +3834,7 @@
     if-eqz v5, :cond_5
 
     .line 537
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->l:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mNotificationCountHelperl:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/push/PushNotification;->getPushType()Lcom/wumii/android/mimi/models/entities/push/PushType;
 
@@ -3902,7 +3902,7 @@
     move-exception v0
 
     .line 532
-    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "parse data err"
 
@@ -4042,7 +4042,7 @@
     if-eqz v5, :cond_1
 
     .line 573
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->l:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mNotificationCountHelperl:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/push/PushNotification;->getPushType()Lcom/wumii/android/mimi/models/entities/push/PushType;
 
@@ -4110,7 +4110,7 @@
     move-exception v1
 
     .line 558
-    sget-object v2, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -4298,7 +4298,7 @@
     move-exception v0
 
     .line 600
-    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -4435,7 +4435,7 @@
     move-exception v0
 
     .line 621
-    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -4565,7 +4565,7 @@
     move-exception v0
 
     .line 1493
-    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "parse data err"
 
@@ -4622,7 +4622,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -4854,7 +4854,7 @@
     move-exception v0
 
     .line 1549
-    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
 
@@ -4938,11 +4938,11 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->n:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->isZn:Z
 
     .line 1585
     :goto_0
-    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5382,7 +5382,7 @@
     if-eqz v7, :cond_b
 
     .line 1720
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->l:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mNotificationCountHelperl:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-virtual {v7}, Lcom/wumii/android/mimi/models/entities/push/PushNotification;->getPushType()Lcom/wumii/android/mimi/models/entities/push/PushType;
 
@@ -5501,7 +5501,7 @@
     move-exception v3
 
     .line 1709
-    sget-object v4, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v4, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -5686,7 +5686,7 @@
 
     .line 1747
     :goto_2
-    sget-object v5, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v5, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -5959,7 +5959,7 @@
 
     .line 1801
     :goto_2
-    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 
@@ -6068,7 +6068,7 @@
     invoke-virtual {v3, v8}, Lcom/wumii/android/mimi/models/entities/chat/SingleChatDetailData;->setNewMsgCount(I)V
 
     .line 1793
-    iget-object v8, p0, Lcom/wumii/android/mimi/manager/ChatManager;->j:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
+    iget-object v8, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mMobileChatParserFactoryj:Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/network/domain/LoadDetailResp;->getChat()Lcom/wumii/mimi/model/domain/mobile/MobileChat;
 
@@ -6102,7 +6102,7 @@
 
     .line 1806
     :goto_5
-    sget-object v2, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -7311,7 +7311,7 @@
     move-result-object v0
 
     .line 1600
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -7844,7 +7844,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->b(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->b(Ljava/lang/Boolean;)Z
 
     move-result v0
 
@@ -7916,7 +7916,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->b(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->b(Ljava/lang/Boolean;)Z
 
     move-result v0
 
@@ -7939,7 +7939,7 @@
 
     .prologue
     .line 770
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mStringo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -8263,7 +8263,7 @@
 
     .prologue
     .line 766
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager;->o:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mStringo:Ljava/lang/String;
 
     .line 767
     return-void
@@ -8492,7 +8492,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -8965,11 +8965,11 @@
 
     move-result v0
 
-    iget-boolean v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->n:Z
+    iget-boolean v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->isZn:Z
 
     if-eq v0, v3, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->m:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mUserServicem:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->d()Z
 
@@ -8978,7 +8978,7 @@
     if-eqz v0, :cond_0
 
     .line 1558
-    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/ChatManager;->mLoggerh:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -8990,7 +8990,7 @@
 
     move-result-object v4
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->n:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->isZn:Z
 
     if-nez v0, :cond_1
 
@@ -9015,7 +9015,7 @@
     .line 1561
     const-string/jumbo v0, "inBackground"
 
-    iget-boolean v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->n:Z
+    iget-boolean v3, p0, Lcom/wumii/android/mimi/manager/ChatManager;->isZn:Z
 
     if-nez v3, :cond_2
 
@@ -9176,7 +9176,7 @@
 
     .prologue
     .line 1589
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->k:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ChatManager;->mPreferencesHelperk:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/manager/ChatManager;->c()I
 
@@ -9588,7 +9588,7 @@
     move-result-object v1
 
     .line 1642
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v2
 

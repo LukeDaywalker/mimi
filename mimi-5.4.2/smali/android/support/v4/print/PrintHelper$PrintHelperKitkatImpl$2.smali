@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/print/PrintHelper$OnPrintFinishCallback;
+.field final synthetic mOnPrintFinishCallbacka:Landroid/support/v4/print/PrintHelper$OnPrintFinishCallback;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperKitkatImpl$2;->a:Landroid/support/v4/print/PrintHelper$OnPrintFinishCallback;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperKitkatImpl$2;->mOnPrintFinishCallbacka:Landroid/support/v4/print/PrintHelper$OnPrintFinishCallback;
 
     invoke-interface {v0}, Landroid/support/v4/print/PrintHelper$OnPrintFinishCallback;->a()V
 

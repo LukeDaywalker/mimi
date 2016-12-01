@@ -26,7 +26,7 @@
 
 .field public final k:Ljava/lang/String;
 
-.field private l:Ljava/lang/String;
+.field private mStringl:Ljava/lang/String;
 
 
 # direct methods
@@ -81,7 +81,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->l:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringl:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -227,11 +227,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->l:Ljava/lang/String;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringl:Ljava/lang/String;
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->l:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventMetadata;->mStringl:Ljava/lang/String;
 
     return-object v0
 .end method

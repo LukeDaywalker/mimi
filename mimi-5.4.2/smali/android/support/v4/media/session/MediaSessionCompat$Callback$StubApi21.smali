@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+.field final synthetic mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 577
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .prologue
     .line 591
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a()V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 606
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a(J)V
 
@@ -66,7 +66,7 @@
 
     .prologue
     .line 646
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-static {p1}, Landroid/support/v4/media/RatingCompat;->a(Ljava/lang/Object;)Landroid/support/v4/media/RatingCompat;
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 596
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 581
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V
 
@@ -109,7 +109,7 @@
 
     .prologue
     .line 586
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a(Landroid/content/Intent;)Z
 
@@ -123,7 +123,7 @@
 
     .prologue
     .line 611
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->b()V
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 641
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->b(J)V
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 601
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->b(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -162,7 +162,7 @@
 
     .prologue
     .line 616
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->c()V
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 651
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->c(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -188,7 +188,7 @@
 
     .prologue
     .line 621
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->d()V
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 626
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->e()V
 
@@ -214,7 +214,7 @@
 
     .prologue
     .line 631
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->f()V
 
@@ -227,7 +227,7 @@
 
     .prologue
     .line 636
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaSessionCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->g()V
 

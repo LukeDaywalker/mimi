@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final isZb:Z
 
-.field private final b:Z
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 24
-    iput-object p1, p0, Lcom/crashlytics/android/core/BuildIdValidator;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/core/BuildIdValidator;->mStringa:Ljava/lang/String;
 
     .line 25
-    iput-boolean p2, p0, Lcom/crashlytics/android/core/BuildIdValidator;->b:Z
+    iput-boolean p2, p0, Lcom/crashlytics/android/core/BuildIdValidator;->isZb:Z
 
     .line 26
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/CommonUtils;->c(Ljava/lang/String;)Z
 
@@ -42,7 +42,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->b:Z
+    iget-boolean v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -191,7 +191,7 @@
 
     .line 60
     :cond_0
-    iget-boolean v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->b:Z
+    iget-boolean v0, p0, Lcom/crashlytics/android/core/BuildIdValidator;->isZb:Z
 
     if-nez v0, :cond_1
 

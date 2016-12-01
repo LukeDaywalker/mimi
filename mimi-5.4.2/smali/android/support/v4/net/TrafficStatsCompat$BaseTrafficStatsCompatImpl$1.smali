@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
+.field final synthetic mBaseTrafficStatsCompatImpla:Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;->a:Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
+    iput-object p1, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;->mBaseTrafficStatsCompatImpla:Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
 
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 

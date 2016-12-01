@@ -26,11 +26,11 @@
 
 .field public static final enum f:Lcom/tencent/stat/b/ICf;
 
-.field private static final synthetic h:[Lcom/tencent/stat/b/ICf;
+.field private static final synthetic mArrayICfh:[Lcom/tencent/stat/b/ICf;
 
 
 # instance fields
-.field private g:I
+.field private mIg:I
 
 
 # direct methods
@@ -133,7 +133,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/tencent/stat/b/ICf;->h:[Lcom/tencent/stat/b/ICf;
+    sput-object v0, Lcom/tencent/stat/b/ICf;->mArrayICfh:[Lcom/tencent/stat/b/ICf;
 
     return-void
 .end method
@@ -148,7 +148,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lcom/tencent/stat/b/ICf;->g:I
+    iput p3, p0, Lcom/tencent/stat/b/ICf;->mIg:I
 
     return-void
 .end method
@@ -158,7 +158,7 @@
 .method public a()I
     .locals 1
 
-    iget v0, p0, Lcom/tencent/stat/b/ICf;->g:I
+    iget v0, p0, Lcom/tencent/stat/b/ICf;->mIg:I
 
     return v0
 .end method

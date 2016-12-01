@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private e:I
+.field private mChatManagerh:Lcom/wumii/android/mimi/manager/ChatManager;
 
-.field private f:I
+.field private mIe:I
 
-.field private g:I
+.field private mIf:I
 
-.field private h:Lcom/wumii/android/mimi/manager/ChatManager;
+.field private mIg:I
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->f:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIf:I
 
     .line 35
     const v1, 0x7f090013
@@ -42,7 +42,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->g:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIg:I
 
     .line 37
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->h:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mChatManagerh:Lcom/wumii/android/mimi/manager/ChatManager;
 
     .line 39
     const/high16 v0, 0x42a00000    # 80.0f
@@ -62,7 +62,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIe:I
 
     .line 40
     return-void
@@ -117,7 +117,7 @@
 
     .line 134
     :goto_1
-    sget-object v6, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v6, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;->getStatus()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -162,7 +162,7 @@
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->h:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mChatManagerh:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v2, p1}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Z
 
@@ -319,7 +319,7 @@
 
     if-eqz v2, :cond_2
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->f:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIf:I
 
     :goto_0
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setTextColor(I)V
@@ -485,11 +485,11 @@
     move-result-object v2
 
     .line 92
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->e:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIe:I
 
     iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->c:I
 
-    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->e:I
+    iget v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIe:I
 
     sub-int/2addr v6, v7
 
@@ -512,7 +512,7 @@
     invoke-virtual {p2, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 97
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;->getStatus()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -533,7 +533,7 @@
 
     .line 53
     :cond_2
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->g:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;->mIg:I
 
     goto/16 :goto_0
 

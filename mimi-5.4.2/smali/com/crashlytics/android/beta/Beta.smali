@@ -19,7 +19,9 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+.field private final mDeviceTokenLoaderb:Lcom/crashlytics/android/beta/DeviceTokenLoader;
+
+.field private final mMemoryValueCachea:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/a/a/b",
@@ -30,9 +32,7 @@
     .end annotation
 .end field
 
-.field private final b:Lcom/crashlytics/android/beta/DeviceTokenLoader;
-
-.field private c:Lcom/crashlytics/android/beta/UpdatesController;
+.field private mUpdatesControllerc:Lcom/crashlytics/android/beta/UpdatesController;
 
 
 # direct methods
@@ -48,14 +48,14 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/cache/MemoryValueCache;-><init>()V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->a:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->mMemoryValueCachea:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
 
     .line 41
     new-instance v0, Lcom/crashlytics/android/beta/DeviceTokenLoader;
 
     invoke-direct {v0}, Lcom/crashlytics/android/beta/DeviceTokenLoader;-><init>()V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->b:Lcom/crashlytics/android/beta/DeviceTokenLoader;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->mDeviceTokenLoaderb:Lcom/crashlytics/android/beta/DeviceTokenLoader;
 
     return-void
 .end method
@@ -353,9 +353,9 @@
 
     .line 162
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/beta/Beta;->a:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/Beta;->mMemoryValueCachea:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
 
-    iget-object v2, p0, Lcom/crashlytics/android/beta/Beta;->b:Lcom/crashlytics/android/beta/DeviceTokenLoader;
+    iget-object v2, p0, Lcom/crashlytics/android/beta/Beta;->mDeviceTokenLoaderb:Lcom/crashlytics/android/beta/DeviceTokenLoader;
 
     invoke-virtual {v0, p1, v2}, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->a(Landroid/content/Context;Lio/fabric/sdk/android/services/cache/ValueLoader;)Ljava/lang/Object;
 
@@ -594,7 +594,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->c:Lcom/crashlytics/android/beta/UpdatesController;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/Beta;->mUpdatesControllerc:Lcom/crashlytics/android/beta/UpdatesController;
 
     .line 56
     const/4 v0, 0x1
@@ -706,7 +706,7 @@
     if-eqz v0, :cond_1
 
     .line 79
-    iget-object v0, p0, Lcom/crashlytics/android/beta/Beta;->c:Lcom/crashlytics/android/beta/UpdatesController;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/Beta;->mUpdatesControllerc:Lcom/crashlytics/android/beta/UpdatesController;
 
     new-instance v6, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;
 

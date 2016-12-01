@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
+.field final mTimerPingSendera:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;->a:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;->mTimerPingSendera:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -68,7 +68,7 @@
     invoke-interface {v0, v1, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 77
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;->a:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;->mTimerPingSendera:Lorg/eclipse/paho/client/mqttv3/TimerPingSender;
 
     invoke-static {v0}, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->a(Lorg/eclipse/paho/client/mqttv3/TimerPingSender;)Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 

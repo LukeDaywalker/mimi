@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/PreviewActivity;
+.field final synthetic mPreviewActivitya:Lcom/google/tagmanager/PreviewActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/google/tagmanager/PreviewActivity$ICal;->a:Lcom/google/tagmanager/PreviewActivity;
+    iput-object p1, p0, Lcom/google/tagmanager/PreviewActivity$ICal;->mPreviewActivitya:Lcom/google/tagmanager/PreviewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

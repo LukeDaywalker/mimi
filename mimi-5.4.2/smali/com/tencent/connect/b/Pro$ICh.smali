@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field d:Landroid/app/Dialog;
+.field mDialogd:Landroid/app/Dialog;
 
-.field final synthetic e:Lcom/tencent/connect/b/Pro$ICd;
+.field final synthetic mICde:Lcom/tencent/connect/b/Pro$ICd;
 
 
 # direct methods
@@ -18,12 +18,12 @@
 
     .prologue
     .line 651
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICh;->e:Lcom/tencent/connect/b/Pro$ICd;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICh;->mICde:Lcom/tencent/connect/b/Pro$ICd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 652
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICh;->d:Landroid/app/Dialog;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICh;->mDialogd:Landroid/app/Dialog;
 
     .line 653
     return-void

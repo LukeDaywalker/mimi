@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field final synthetic dF:Lcom/baidu/location/ICaj;
+.field final synthetic mICajdF:Lcom/baidu/location/ICaj;
 
-.field dG:Ljava/lang/String;
+.field mStringdG:Ljava/lang/String;
 
-.field dH:Ljava/lang/String;
+.field mStringdH:Ljava/lang/String;
 
 
 # direct methods
@@ -16,13 +16,13 @@
 
     const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICaj$ICa;->dF:Lcom/baidu/location/ICaj;
+    iput-object p1, p0, Lcom/baidu/location/ICaj$ICa;->mICajdF:Lcom/baidu/location/ICaj;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dG:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mStringdG:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -48,7 +48,7 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->cX:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mStringdG:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/baidu/location/Jni;->j(Ljava/lang/String;)Ljava/lang/String;
 
@@ -71,9 +71,9 @@
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/baidu/location/ICaj$ICa;->dG:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICaj$ICa;->mStringdG:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
@@ -81,7 +81,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
 
     :cond_1
     iget-object v1, p0, Lcom/baidu/location/ICaj$ICa;->cZ:Ljava/util/List;
@@ -94,7 +94,7 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
@@ -104,7 +104,7 @@
 
     const-string/jumbo v2, "up"
 
-    iget-object v3, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -303,9 +303,9 @@
     :cond_0
     :goto_0
     :try_start_2
-    iget-object v1, p0, Lcom/baidu/location/ICaj$ICa;->dF:Lcom/baidu/location/ICaj;
+    iget-object v1, p0, Lcom/baidu/location/ICaj$ICa;->mICajdF:Lcom/baidu/location/ICaj;
 
-    iget-object v1, v1, Lcom/baidu/location/ICaj;->et:Landroid/os/Handler;
+    iget-object v1, v1, Lcom/baidu/location/ICaj;->mHandleret:Landroid/os/Handler;
 
     const/16 v2, 0x15
 
@@ -319,7 +319,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mStringdH:Ljava/lang/String;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -354,9 +354,9 @@
     :catch_1
     move-exception v0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dF:Lcom/baidu/location/ICaj;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mICajdF:Lcom/baidu/location/ICaj;
 
-    iget-object v0, v0, Lcom/baidu/location/ICaj;->et:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/baidu/location/ICaj;->mHandleret:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
@@ -379,9 +379,9 @@
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICan;->if(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->dF:Lcom/baidu/location/ICaj;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICa;->mICajdF:Lcom/baidu/location/ICaj;
 
-    iget-object v0, v0, Lcom/baidu/location/ICaj;->et:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/baidu/location/ICaj;->mHandleret:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
@@ -399,7 +399,7 @@
 .method public e(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICaj$ICa;->dG:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/ICaj$ICa;->mStringdG:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/location/ICaj$ICa;->R()V
 

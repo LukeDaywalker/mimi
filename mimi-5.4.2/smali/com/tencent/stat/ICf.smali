@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/stat/ICe;
+.field final synthetic mICea:Lcom/tencent/stat/ICe;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/stat/ICe;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICf;->a:Lcom/tencent/stat/ICe;
+    iput-object p1, p0, Lcom/tencent/stat/ICf;->mICea:Lcom/tencent/stat/ICe;
 
     invoke-direct {p0}, Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;-><init>()V
 

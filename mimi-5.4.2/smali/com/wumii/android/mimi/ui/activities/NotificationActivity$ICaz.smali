@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-.field final synthetic c:Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
+.field final synthetic mSecretNotificationc:Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
-.field final synthetic d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->b:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->isZb:Z
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->c:Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mSecretNotificationc:Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->c(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/task/SecretOperationTask;
 
@@ -51,11 +51,11 @@
     if-nez v0, :cond_0
 
     .line 221
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     new-instance v1, Lcom/wumii/android/mimi/task/SecretOperationTask;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-direct {v1, v2}, Lcom/wumii/android/mimi/task/SecretOperationTask;-><init>(Landroid/content/Context;)V
 
@@ -66,7 +66,7 @@
     sget-object v0, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     .line 226
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->d:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mNotificationActivityd:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->c(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/task/SecretOperationTask;
 
@@ -76,7 +76,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaz;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 

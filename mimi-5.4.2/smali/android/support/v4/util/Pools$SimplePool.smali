@@ -20,9 +20,9 @@
 
 
 # instance fields
-.field private final a:[Ljava/lang/Object;
+.field private final mArrayObjecta:[Ljava/lang/Object;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -49,7 +49,7 @@
     :cond_0
     new-array v0, p1, [Ljava/lang/Object;
 
-    iput-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
     .line 95
     return-void
@@ -70,12 +70,12 @@
     move v0, v1
 
     :goto_0
-    iget v2, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v2, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     if-ge v0, v2, :cond_0
 
     .line 125
-    iget-object v2, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
     aget-object v2, v2, v0
 
@@ -109,31 +109,31 @@
     const/4 v1, 0x0
 
     .line 100
-    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     if-lez v0, :cond_0
 
     .line 101
-    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     add-int/lit8 v2, v0, -0x1
 
     .line 102
-    iget-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
     aget-object v0, v0, v2
 
     .line 103
-    iget-object v3, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iget-object v3, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
     aput-object v1, v3, v2
 
     .line 104
-    iget v1, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v1, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iput v1, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     .line 107
     :goto_0
@@ -172,27 +172,27 @@
 
     .line 115
     :cond_0
-    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
-    iget-object v1, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iget-object v1, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 116
-    iget-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mArrayObjecta:[Ljava/lang/Object;
 
-    iget v1, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v1, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     aput-object p1, v0, v1
 
     .line 117
-    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iget v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Landroid/support/v4/util/Pools$SimplePool;->b:I
+    iput v0, p0, Landroid/support/v4/util/Pools$SimplePool;->mIb:I
 
     .line 118
     const/4 v0, 0x1

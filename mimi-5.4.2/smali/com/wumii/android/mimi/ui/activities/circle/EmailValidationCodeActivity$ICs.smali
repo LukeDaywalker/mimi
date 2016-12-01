@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+.field final synthetic mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 68
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;-><init>()V
 
@@ -41,7 +41,7 @@
     if-nez v0, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -56,7 +56,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -75,14 +75,14 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2, v4}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->a(Landroid/content/Context;)V
 
@@ -102,7 +102,7 @@
     if-eq v0, v1, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -112,13 +112,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity$ICs;->mEmailValidationCodeActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationCodeActivity;
 
     const v2, 0x7f060378
 

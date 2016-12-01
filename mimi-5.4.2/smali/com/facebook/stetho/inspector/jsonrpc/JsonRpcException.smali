@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
+.field private final mJsonRpcErrora:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     check-cast v0, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcException;->a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcException;->mJsonRpcErrora:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
     .line 14
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcException;->a:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcException;->mJsonRpcErrora:Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcError;
 
     return-object v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
+.field final synthetic mViewDragCallbacka:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1628
-    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->a:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
+    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->mViewDragCallbacka:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 1630
-    iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->a:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
+    iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->mViewDragCallbacka:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->a(Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;)V
 

@@ -7,101 +7,101 @@
 
 
 # static fields
-.field private static final f1:I = 0x2710
+.field private static final mArrayBfy:[B
 
-.field private static final f4:I = 0x5
+.field private static final mDfI:D = 1.0E-5
 
-.field private static f5:Lcom/baidu/location/ICz; = null
+.field private static mFilef6:Ljava/io/File; = null
 
-.field private static f6:Ljava/io/File; = null
+.field private static mICzf5:Lcom/baidu/location/ICz; = null
 
-.field private static fH:Ljava/lang/StringBuilder; = null
+.field private static final mIf1:I = 0x2710
 
-.field private static final fI:D = 1.0E-5
+.field private static final mIf4:I = 0x5
 
-.field private static final fK:I = 0xbb8
+.field private static final mIfK:I = 0xbb8
 
-.field private static fM:Ljava/lang/String; = null
+.field private static mIfT:I = 0x0
 
-.field private static fT:I = 0x0
+.field private static final mIfU:I = 0x1
 
-.field private static final fU:I = 0x1
+.field private static final mIfZ:I = 0x3
 
-.field private static fW:Ljava/lang/String; = null
+.field private static final mIgd:I = 0x46cd0
 
-.field private static final fZ:I = 0x3
+.field private static mStringBuilderfH:Ljava/lang/StringBuilder;
 
-.field private static final fy:[B
+.field private static mStringfM:Ljava/lang/String;
 
-.field private static final gd:I = 0x46cd0
+.field private static mStringfW:Ljava/lang/String;
 
-.field private static gg:Ljava/lang/String;
+.field private static mStringgg:Ljava/lang/String;
 
 
 # instance fields
-.field private f0:Z
+.field private isZf0:Z
 
-.field private f2:J
+.field private isZf7:Z
 
-.field private f3:Lcom/baidu/location/ICz$ICb;
+.field private isZfD:Z
 
-.field private f7:Z
+.field private mContextfR:Landroid/content/Context;
 
-.field private f8:Lcom/baidu/location/ICz$ICc;
+.field private mGpsStatusfx:Landroid/location/GpsStatus;
 
-.field private f9:Ljava/lang/String;
+.field private mHandlerfA:Landroid/os/Handler;
 
-.field private fA:Landroid/os/Handler;
+.field private mHashMapfJ:Ljava/util/HashMap;
 
-.field private final fB:I
+.field private mICafF:Lcom/baidu/location/ICz$ICa;
 
-.field private fC:Landroid/location/LocationManager;
+.field private mICbf3:Lcom/baidu/location/ICz$ICb;
 
-.field private fD:Z
+.field private mICcf8:Lcom/baidu/location/ICz$ICc;
 
-.field private fE:Landroid/location/Location;
+.field private final mIfB:I
 
-.field private fF:Lcom/baidu/location/ICz$ICa;
+.field private final mIfG:I
 
-.field private final fG:I
+.field private final mIfX:I
 
-.field private fJ:Ljava/util/HashMap;
+.field private mIfz:I
 
-.field private fL:J
+.field private final mIgb:I
 
-.field private fN:Landroid/location/Location;
+.field private mIgf:I
 
-.field private fO:J
+.field private mJf2:J
 
-.field private fP:J
+.field private mJfL:J
 
-.field private fQ:Landroid/location/Location;
+.field private mJfO:J
 
-.field private fR:Landroid/content/Context;
+.field private mJfP:J
 
-.field private fS:J
+.field private mJfS:J
 
-.field private final fV:J
+.field private final mJfV:J
 
-.field private final fX:I
+.field private mJgc:J
 
-.field private fY:Landroid/location/Location;
+.field private mJge:J
 
-.field private fx:Landroid/location/GpsStatus;
+.field private mJgh:J
 
-.field private fz:I
+.field private mLocationManagerfC:Landroid/location/LocationManager;
 
-.field private ga:Landroid/location/Location;
+.field private mLocationfE:Landroid/location/Location;
 
-.field private final gb:I
+.field private mLocationfN:Landroid/location/Location;
 
-.field private gc:J
+.field private mLocationfQ:Landroid/location/Location;
 
-.field private ge:J
+.field private mLocationfY:Landroid/location/Location;
 
-.field private gf:I
+.field private mLocationga:Landroid/location/Location;
 
-.field private gh:J
+.field private mStringf9:Ljava/lang/String;
 
 
 # direct methods
@@ -110,27 +110,27 @@
 
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/baidu/location/ICz;->f5:Lcom/baidu/location/ICz;
+    sput-object v1, Lcom/baidu/location/ICz;->mICzf5:Lcom/baidu/location/ICz;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICz;->fT:I
+    sput v0, Lcom/baidu/location/ICz;->mIfT:I
 
-    sput-object v1, Lcom/baidu/location/ICz;->fW:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/location/ICz;->mStringfW:Ljava/lang/String;
 
     const-string/jumbo v0, "Temp_in.dat"
 
-    sput-object v0, Lcom/baidu/location/ICz;->gg:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICz;->mStringgg:Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/baidu/location/ICz;->I:Ljava/lang/String;
 
-    sget-object v2, Lcom/baidu/location/ICz;->gg:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICz;->mStringgg:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICz;->f6:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICz;->mFilef6:Ljava/io/File;
 
     const/16 v0, 0x40
 
@@ -138,7 +138,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/baidu/location/ICz;->fy:[B
+    sput-object v0, Lcom/baidu/location/ICz;->mArrayBfy:[B
 
     return-void
 
@@ -224,49 +224,49 @@
 
     const-wide/16 v0, 0x3e8
 
-    iput-wide v0, p0, Lcom/baidu/location/ICz;->fV:J
+    iput-wide v0, p0, Lcom/baidu/location/ICz;->mJfV:J
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->f8:Lcom/baidu/location/ICz$ICc;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mICcf8:Lcom/baidu/location/ICz$ICc;
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
-    iput-wide v4, p0, Lcom/baidu/location/ICz;->fO:J
+    iput-wide v4, p0, Lcom/baidu/location/ICz;->mJfO:J
 
-    iput-wide v4, p0, Lcom/baidu/location/ICz;->fL:J
+    iput-wide v4, p0, Lcom/baidu/location/ICz;->mJfL:J
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICz;->fD:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICz;->isZfD:Z
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICz;->f0:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICz;->isZf0:Z
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->f9:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mStringf9:Ljava/lang/String;
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICz;->f7:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICz;->isZf7:Z
 
-    iput-wide v4, p0, Lcom/baidu/location/ICz;->fS:J
+    iput-wide v4, p0, Lcom/baidu/location/ICz;->mJfS:J
 
-    iput-wide v4, p0, Lcom/baidu/location/ICz;->gc:J
+    iput-wide v4, p0, Lcom/baidu/location/ICz;->mJgc:J
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->fA:Landroid/os/Handler;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mHandlerfA:Landroid/os/Handler;
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICz;->gb:I
+    iput v0, p0, Lcom/baidu/location/ICz;->mIgb:I
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/location/ICz;->fB:I
+    iput v0, p0, Lcom/baidu/location/ICz;->mIfB:I
 
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/baidu/location/ICz;->fX:I
+    iput v0, p0, Lcom/baidu/location/ICz;->mIfX:I
 
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/baidu/location/ICz;->fG:I
+    iput v0, p0, Lcom/baidu/location/ICz;->mIfG:I
 
     return-void
 .end method
@@ -274,11 +274,11 @@
 .method private static a5()Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -290,7 +290,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
@@ -299,7 +299,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->insert(ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICz;->fM:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringfM:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -307,7 +307,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "&pogr="
 
@@ -315,12 +315,12 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/location/ICz;->fM:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICz;->mStringfM:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_1
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -338,7 +338,7 @@
 .method static synthetic a7()Ljava/lang/StringBuilder;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     return-object v0
 .end method
@@ -354,7 +354,7 @@
 .method public static bc()Lcom/baidu/location/ICz;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICz;->f5:Lcom/baidu/location/ICz;
+    sget-object v0, Lcom/baidu/location/ICz;->mICzf5:Lcom/baidu/location/ICz;
 
     if-nez v0, :cond_0
 
@@ -362,10 +362,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICz;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICz;->f5:Lcom/baidu/location/ICz;
+    sput-object v0, Lcom/baidu/location/ICz;->mICzf5:Lcom/baidu/location/ICz;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICz;->f5:Lcom/baidu/location/ICz;
+    sget-object v0, Lcom/baidu/location/ICz;->mICzf5:Lcom/baidu/location/ICz;
 
     return-object v0
 .end method
@@ -373,7 +373,7 @@
 .method static synthetic byte(Lcom/baidu/location/ICz;)Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fA:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mHandlerfA:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -536,7 +536,7 @@
 
     const/4 v0, 0x5
 
-    sget v1, Lcom/baidu/location/ICz;->fT:I
+    sget v1, Lcom/baidu/location/ICz;->mIfT:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -588,7 +588,7 @@
 .method static synthetic case(Lcom/baidu/location/ICz;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICz;->f0:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICz;->isZf0:Z
 
     return v0
 .end method
@@ -596,7 +596,7 @@
 .method static synthetic char(Lcom/baidu/location/ICz;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICz;->gc:J
+    iget-wide v0, p0, Lcom/baidu/location/ICz;->mJgc:J
 
     return-wide v0
 .end method
@@ -604,7 +604,7 @@
 .method static synthetic do(Lcom/baidu/location/ICz;I)I
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/ICz;->gf:I
+    iput p1, p0, Lcom/baidu/location/ICz;->mIgf:I
 
     return p1
 .end method
@@ -612,7 +612,7 @@
 .method static synthetic do(Lcom/baidu/location/ICz;J)J
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/ICz;->fS:J
+    iput-wide p1, p0, Lcom/baidu/location/ICz;->mJfS:J
 
     return-wide p1
 .end method
@@ -620,7 +620,7 @@
 .method static synthetic do(Lcom/baidu/location/ICz;)Landroid/location/GpsStatus;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fx:Landroid/location/GpsStatus;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mGpsStatusfx:Landroid/location/GpsStatus;
 
     return-object v0
 .end method
@@ -628,7 +628,7 @@
 .method static synthetic do(Lcom/baidu/location/ICz;Ljava/util/HashMap;)Ljava/util/HashMap;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->fJ:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mHashMapfJ:Ljava/util/HashMap;
 
     return-object p1
 .end method
@@ -644,7 +644,7 @@
 .method static synthetic do(Lcom/baidu/location/ICz;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICz;->fD:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICz;->isZfD:Z
 
     return p1
 .end method
@@ -690,7 +690,7 @@
 .method static synthetic for(Lcom/baidu/location/ICz;J)J
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/ICz;->gc:J
+    iput-wide p1, p0, Lcom/baidu/location/ICz;->mJgc:J
 
     return-wide p1
 .end method
@@ -698,7 +698,7 @@
 .method static synthetic for(Lcom/baidu/location/ICz;)Lcom/baidu/location/ICz$ICa;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     return-object v0
 .end method
@@ -710,15 +710,15 @@
 
     const/4 v10, 0x1
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->f9:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mStringf9:Ljava/lang/String;
 
     :goto_0
     :try_start_0
@@ -726,7 +726,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICy;->do(Landroid/location/Location;)Z
     :try_end_0
@@ -749,11 +749,11 @@
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICk;->byte(Ljava/lang/String;)V
 
-    sget v0, Lcom/baidu/location/ICz;->fT:I
+    sget v0, Lcom/baidu/location/ICz;->mIfT:I
 
     if-le v0, v11, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-static {v0, v10}, Lcom/baidu/location/ICq;->if(Landroid/location/Location;Z)Z
 
@@ -783,7 +783,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v2, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-static {}, Lcom/baidu/location/ICk;->q()Lcom/baidu/location/ICk;
 
@@ -803,11 +803,11 @@
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0, v2, v3}, Landroid/location/Location;->setTime(J)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getSpeed()F
 
@@ -821,7 +821,7 @@
 
     double-to-float v6, v0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->hasSpeed()Z
 
@@ -832,12 +832,12 @@
     const/high16 v6, -0x40800000    # -1.0f
 
     :cond_2
-    sget v0, Lcom/baidu/location/ICz;->fT:I
+    sget v0, Lcom/baidu/location/ICz;->mIfT:I
 
     if-nez v0, :cond_3
 
     :try_start_1
-    iget-object v1, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v1}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
@@ -863,7 +863,7 @@
 
     const/4 v7, 0x0
 
-    iget-object v8, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v8, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v8}, Landroid/location/Location;->getLongitude()D
 
@@ -875,7 +875,7 @@
 
     aput-object v8, v5, v7
 
-    iget-object v7, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v7, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v7}, Landroid/location/Location;->getLatitude()D
 
@@ -895,7 +895,7 @@
 
     const/4 v7, 0x3
 
-    iget-object v8, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v8, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v8}, Landroid/location/Location;->getBearing()F
 
@@ -927,15 +927,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->f9:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mStringf9:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLatitude()D
 
@@ -1029,7 +1029,7 @@
 
     const/4 v0, 0x1
 
-    sget v2, Lcom/baidu/location/ICz;->fT:I
+    sget v2, Lcom/baidu/location/ICz;->mIfT:I
 
     sget v3, Lcom/baidu/location/ICc;->aP:I
 
@@ -1040,7 +1040,7 @@
     return v0
 
     :cond_1
-    sget v2, Lcom/baidu/location/ICz;->fT:I
+    sget v2, Lcom/baidu/location/ICz;->mIfT:I
 
     sget v3, Lcom/baidu/location/ICc;->ax:I
 
@@ -1114,11 +1114,11 @@
     goto :goto_0
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fJ:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mHashMapfJ:Ljava/util/HashMap;
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fJ:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mHashMapfJ:Ljava/util/HashMap;
 
     invoke-direct {p0, v0}, Lcom/baidu/location/ICz;->if(Ljava/util/HashMap;)I
 
@@ -1135,7 +1135,7 @@
 .method static synthetic if(Lcom/baidu/location/ICz;I)I
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/ICz;->fz:I
+    iput p1, p0, Lcom/baidu/location/ICz;->mIfz:I
 
     return p1
 .end method
@@ -1163,7 +1163,7 @@
 .method private if(Ljava/util/HashMap;)I
     .locals 12
 
-    iget v0, p0, Lcom/baidu/location/ICz;->gf:I
+    iget v0, p0, Lcom/baidu/location/ICz;->mIgf:I
 
     const/4 v1, 0x4
 
@@ -1444,7 +1444,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/baidu/location/ICz;->fM:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/location/ICz;->mStringfM:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1494,7 +1494,7 @@
 .method static synthetic if(Lcom/baidu/location/ICz;J)J
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/ICz;->fL:J
+    iput-wide p1, p0, Lcom/baidu/location/ICz;->mJfL:J
 
     return-wide p1
 .end method
@@ -1502,7 +1502,7 @@
 .method static synthetic if(Lcom/baidu/location/ICz;Landroid/location/GpsStatus;)Landroid/location/GpsStatus;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->fx:Landroid/location/GpsStatus;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mGpsStatusfx:Landroid/location/GpsStatus;
 
     return-object p1
 .end method
@@ -1510,7 +1510,7 @@
 .method static synthetic if(Lcom/baidu/location/ICz;)Landroid/location/LocationManager;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     return-object v0
 .end method
@@ -1614,11 +1614,11 @@
 
     invoke-virtual {p2, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget v0, p0, Lcom/baidu/location/ICz;->gf:I
+    iget v0, p0, Lcom/baidu/location/ICz;->mIgf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICz;->gf:I
+    iput v0, p0, Lcom/baidu/location/ICz;->mIgf:I
 
     :cond_2
     if-lt v5, v1, :cond_3
@@ -1644,7 +1644,7 @@
 
     const/4 v6, 0x0
 
-    sget-object v8, Lcom/baidu/location/ICz;->fy:[B
+    sget-object v8, Lcom/baidu/location/ICz;->mArrayBfy:[B
 
     add-int/lit8 v0, v0, -0x1
 
@@ -1658,7 +1658,7 @@
 
     const/4 v0, 0x1
 
-    sget-object v6, Lcom/baidu/location/ICz;->fy:[B
+    sget-object v6, Lcom/baidu/location/ICz;->mArrayBfy:[B
 
     aget-byte v5, v6, v5
 
@@ -1670,7 +1670,7 @@
 
     const/4 v0, 0x2
 
-    sget-object v5, Lcom/baidu/location/ICz;->fy:[B
+    sget-object v5, Lcom/baidu/location/ICz;->mArrayBfy:[B
 
     aget-byte v3, v5, v3
 
@@ -1718,7 +1718,7 @@
 .method static synthetic if(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
     .locals 0
 
-    sput-object p0, Lcom/baidu/location/ICz;->fH:Ljava/lang/StringBuilder;
+    sput-object p0, Lcom/baidu/location/ICz;->mStringBuilderfH:Ljava/lang/StringBuilder;
 
     return-object p0
 .end method
@@ -2171,7 +2171,7 @@
 .method static synthetic int(I)I
     .locals 0
 
-    sput p0, Lcom/baidu/location/ICz;->fT:I
+    sput p0, Lcom/baidu/location/ICz;->mIfT:I
 
     return p0
 .end method
@@ -2179,11 +2179,11 @@
 .method static synthetic int(Lcom/baidu/location/ICz;)I
     .locals 2
 
-    iget v0, p0, Lcom/baidu/location/ICz;->fz:I
+    iget v0, p0, Lcom/baidu/location/ICz;->mIfz:I
 
     add-int/lit8 v1, v0, 0x1
 
-    iput v1, p0, Lcom/baidu/location/ICz;->fz:I
+    iput v1, p0, Lcom/baidu/location/ICz;->mIfz:I
 
     return v0
 .end method
@@ -2191,7 +2191,7 @@
 .method private int(Landroid/location/Location;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fA:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mHandlerfA:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -2199,7 +2199,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->fA:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mHandlerfA:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -2209,7 +2209,7 @@
 .method static synthetic n(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    sput-object p0, Lcom/baidu/location/ICz;->fW:Ljava/lang/String;
+    sput-object p0, Lcom/baidu/location/ICz;->mStringfW:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -2231,7 +2231,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/location/ICz;->fW:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICz;->mStringfW:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2275,7 +2275,7 @@
 .method static synthetic new(Lcom/baidu/location/ICz;)Ljava/util/HashMap;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fJ:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mHashMapfJ:Ljava/util/HashMap;
 
     return-object v0
 .end method
@@ -2283,7 +2283,7 @@
 .method private new(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICz;->f7:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICz;->isZf7:Z
 
     if-eqz p1, :cond_0
 
@@ -2300,7 +2300,7 @@
 .method static synthetic try(Lcom/baidu/location/ICz;)I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICz;->fz:I
+    iget v0, p0, Lcom/baidu/location/ICz;->mIfz:I
 
     return v0
 .end method
@@ -2314,11 +2314,11 @@
 
     move-result-wide v0
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
-    iput-wide v0, p0, Lcom/baidu/location/ICz;->ge:J
+    iput-wide v0, p0, Lcom/baidu/location/ICz;->mJge:J
 
-    iget-wide v2, p0, Lcom/baidu/location/ICz;->f2:J
+    iget-wide v2, p0, Lcom/baidu/location/ICz;->mJf2:J
 
     const-wide/16 v4, 0x0
 
@@ -2326,7 +2326,7 @@
 
     if-eqz v2, :cond_0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICz;->f2:J
+    iget-wide v2, p0, Lcom/baidu/location/ICz;->mJf2:J
 
     sub-long v2, v0, v2
 
@@ -2336,35 +2336,35 @@
 
     if-gez v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iget-object v2, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     if-nez v2, :cond_1
 
     :cond_0
-    iget-object v2, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iget-object v2, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
     if-nez v2, :cond_2
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
-    iget-object v2, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iget-object v2, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
-    iput-object v2, p0, Lcom/baidu/location/ICz;->fN:Landroid/location/Location;
+    iput-object v2, p0, Lcom/baidu/location/ICz;->mLocationfN:Landroid/location/Location;
 
-    iput-wide v0, p0, Lcom/baidu/location/ICz;->f2:J
+    iput-wide v0, p0, Lcom/baidu/location/ICz;->mJf2:J
 
-    iget-wide v0, p0, Lcom/baidu/location/ICz;->f2:J
+    iget-wide v0, p0, Lcom/baidu/location/ICz;->mJf2:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICz;->gh:J
+    iput-wide v0, p0, Lcom/baidu/location/ICz;->mJgh:J
 
-    iput-object v10, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iput-object v10, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     :cond_1
     :goto_0
     return-void
 
     :cond_2
-    iget-wide v2, p0, Lcom/baidu/location/ICz;->f2:J
+    iget-wide v2, p0, Lcom/baidu/location/ICz;->mJf2:J
 
     sub-long v2, v0, v2
 
@@ -2374,7 +2374,7 @@
 
     if-ltz v2, :cond_1
 
-    iput-object p1, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iput-object p1, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     const-string/jumbo v2, "&dt=%.6f|%.6f|%s|%s|%s"
 
@@ -2384,13 +2384,13 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v6
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLongitude()D
 
@@ -2406,13 +2406,13 @@
 
     const/4 v4, 0x1
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v6
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLatitude()D
 
@@ -2428,7 +2428,7 @@
 
     const/4 v4, 0x2
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getSpeed()F
 
@@ -2442,7 +2442,7 @@
 
     const/4 v4, 0x3
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->fQ:Landroid/location/Location;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mLocationfQ:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getBearing()F
 
@@ -2456,7 +2456,7 @@
 
     const/4 v4, 0x4
 
-    iget-wide v6, p0, Lcom/baidu/location/ICz;->f2:J
+    iget-wide v6, p0, Lcom/baidu/location/ICz;->mJf2:J
 
     sub-long/2addr v0, v6
 
@@ -2515,7 +2515,7 @@
     invoke-virtual {v1, v0}, Lcom/baidu/location/ICq;->long(Ljava/lang/String;)V
 
     :cond_3
-    iput-object v10, p0, Lcom/baidu/location/ICz;->fE:Landroid/location/Location;
+    iput-object v10, p0, Lcom/baidu/location/ICz;->mLocationfE:Landroid/location/Location;
 
     goto/16 :goto_0
 .end method
@@ -2525,7 +2525,7 @@
 .method public a0()Landroid/location/Location;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     return-object v0
 .end method
@@ -2535,11 +2535,11 @@
 
     const-wide/16 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLatitude()D
 
@@ -2549,7 +2549,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getLongitude()D
 
@@ -2593,12 +2593,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fR:Landroid/content/Context;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mContextfR:Landroid/content/Context;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fR:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mContextfR:Landroid/content/Context;
 
     const-string/jumbo v1, "location"
 
@@ -2608,7 +2608,7 @@
 
     check-cast v0, Landroid/location/LocationManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     new-instance v0, Lcom/baidu/location/ICz$ICa;
 
@@ -2616,11 +2616,11 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICz$ICa;-><init>(Lcom/baidu/location/ICz;Lcom/baidu/location/ICz$1;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->addGpsStatusListener(Landroid/location/GpsStatus$Listener;)Z
 
@@ -2630,9 +2630,9 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICz$ICc;-><init>(Lcom/baidu/location/ICz;Lcom/baidu/location/ICz$1;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->f8:Lcom/baidu/location/ICz$ICc;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mICcf8:Lcom/baidu/location/ICz$ICc;
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     const-string/jumbo v1, "passive"
 
@@ -2640,7 +2640,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->f8:Lcom/baidu/location/ICz$ICc;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mICcf8:Lcom/baidu/location/ICz$ICc;
 
     invoke-virtual/range {v0 .. v5}, Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;)V
     :try_end_2
@@ -2653,7 +2653,7 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICz$1;-><init>(Lcom/baidu/location/ICz;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fA:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mHandlerfA:Landroid/os/Handler;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -2675,7 +2675,7 @@
 .method public a3()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->f9:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mStringf9:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -2688,7 +2688,7 @@
     :try_start_0
     invoke-virtual {p0}, Lcom/baidu/location/ICz;->bb()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2701,20 +2701,20 @@
 
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->removeGpsStatusListener(Landroid/location/GpsStatus$Listener;)V
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->f8:Lcom/baidu/location/ICz$ICc;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICcf8:Lcom/baidu/location/ICz$ICc;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->removeUpdates(Landroid/location/LocationListener;)V
     :try_end_1
@@ -2725,11 +2725,11 @@
     const/4 v0, 0x0
 
     :try_start_2
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -2757,11 +2757,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-static {v0}, Lcom/baidu/location/ICz;->case(Landroid/location/Location;)Ljava/lang/String;
 
@@ -2780,11 +2780,11 @@
     .locals 8
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fN:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationfN:Landroid/location/Location;
 
     if-eqz v0, :cond_1
 
@@ -2799,13 +2799,13 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v4
 
-    iget-object v6, p0, Lcom/baidu/location/ICz;->fN:Landroid/location/Location;
+    iget-object v6, p0, Lcom/baidu/location/ICz;->mLocationfN:Landroid/location/Location;
 
     invoke-virtual {v6}, Landroid/location/Location;->getLongitude()D
 
@@ -2821,13 +2821,13 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v4
 
-    iget-object v6, p0, Lcom/baidu/location/ICz;->fN:Landroid/location/Location;
+    iget-object v6, p0, Lcom/baidu/location/ICz;->mLocationfN:Landroid/location/Location;
 
     invoke-virtual {v6}, Landroid/location/Location;->getLatitude()D
 
@@ -2843,7 +2843,7 @@
 
     const/4 v3, 0x2
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getSpeed()F
 
@@ -2857,7 +2857,7 @@
 
     const/4 v3, 0x3
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getBearing()F
 
@@ -2871,9 +2871,9 @@
 
     const/4 v3, 0x4
 
-    iget-wide v4, p0, Lcom/baidu/location/ICz;->ge:J
+    iget-wide v4, p0, Lcom/baidu/location/ICz;->mJge:J
 
-    iget-wide v6, p0, Lcom/baidu/location/ICz;->gh:J
+    iget-wide v6, p0, Lcom/baidu/location/ICz;->mJgh:J
 
     sub-long/2addr v4, v6
 
@@ -2903,7 +2903,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/baidu/location/ICz;->fY:Landroid/location/Location;
+    iget-object v3, p0, Lcom/baidu/location/ICz;->mLocationfY:Landroid/location/Location;
 
     invoke-static {}, Lcom/baidu/location/ICk;->q()Lcom/baidu/location/ICk;
 
@@ -2948,11 +2948,11 @@
 .method public a9()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     const-string/jumbo v1, "gps"
 
@@ -2980,7 +2980,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     if-eqz v1, :cond_2
 
@@ -3024,7 +3024,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->hasAccuracy()Z
 
@@ -3032,7 +3032,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getAccuracy()F
 
@@ -3041,7 +3041,7 @@
     :goto_0
     float-to-int v2, v0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v0}, Landroid/location/Location;->getSpeed()F
 
@@ -3055,7 +3055,7 @@
 
     double-to-float v0, v4
 
-    iget-object v3, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v3, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v3}, Landroid/location/Location;->hasSpeed()Z
 
@@ -3066,13 +3066,13 @@
     const/high16 v0, -0x40800000    # -1.0f
 
     :cond_0
-    iget-object v3, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v3, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v3}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v4
 
-    iget-object v3, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v3, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v3}, Landroid/location/Location;->getLatitude()D
 
@@ -3096,7 +3096,7 @@
 
     if-gtz v4, :cond_1
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getLongitude()D
 
@@ -3104,7 +3104,7 @@
 
     aput-wide v4, v3, v8
 
-    iget-object v4, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v4, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v4}, Landroid/location/Location;->getLatitude()D
 
@@ -3145,7 +3145,7 @@
 
     const/4 v2, 0x3
 
-    iget-object v3, p0, Lcom/baidu/location/ICz;->ga:Landroid/location/Location;
+    iget-object v3, p0, Lcom/baidu/location/ICz;->mLocationga:Landroid/location/Location;
 
     invoke-virtual {v3}, Landroid/location/Location;->getBearing()F
 
@@ -3167,7 +3167,7 @@
 
     const/4 v0, 0x5
 
-    sget v2, Lcom/baidu/location/ICz;->fT:I
+    sget v2, Lcom/baidu/location/ICz;->mIfT:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3208,7 +3208,7 @@
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/baidu/location/ICz;->fS:J
+    iget-wide v4, p0, Lcom/baidu/location/ICz;->mJfS:J
 
     sub-long/2addr v2, v4
 
@@ -3222,11 +3222,11 @@
 
     move-result-wide v0
 
-    iget-boolean v2, p0, Lcom/baidu/location/ICz;->fD:Z
+    iget-boolean v2, p0, Lcom/baidu/location/ICz;->isZfD:Z
 
     if-eqz v2, :cond_2
 
-    iget-wide v2, p0, Lcom/baidu/location/ICz;->fL:J
+    iget-wide v2, p0, Lcom/baidu/location/ICz;->mJfL:J
 
     sub-long/2addr v0, v2
 
@@ -3241,7 +3241,7 @@
     goto :goto_0
 
     :cond_2
-    iget-boolean v0, p0, Lcom/baidu/location/ICz;->f7:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICz;->isZf7:Z
 
     goto :goto_0
 .end method
@@ -3249,7 +3249,7 @@
 .method public ba()V
     .locals 6
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICz;->f0:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICz;->isZf0:Z
 
     if-eqz v0, :cond_0
 
@@ -3264,9 +3264,9 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICz$ICb;-><init>(Lcom/baidu/location/ICz;Lcom/baidu/location/ICz$1;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     const-string/jumbo v1, "gps"
 
@@ -3274,19 +3274,19 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iget-object v5, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
     invoke-virtual/range {v0 .. v5}, Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->addNmeaListener(Landroid/location/GpsStatus$NmeaListener;)Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICz;->f0:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICz;->isZf0:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3303,7 +3303,7 @@
 
     const/4 v2, 0x0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICz;->f0:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICz;->isZf0:Z
 
     if-nez v0, :cond_0
 
@@ -3311,29 +3311,29 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
     if-eqz v0, :cond_2
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->removeUpdates(Landroid/location/LocationListener;)V
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz;->fC:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/baidu/location/ICz;->mLocationManagerfC:Landroid/location/LocationManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICz;->fF:Lcom/baidu/location/ICz$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICz;->mICafF:Lcom/baidu/location/ICz$ICa;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->removeNmeaListener(Landroid/location/GpsStatus$NmeaListener;)V
     :try_end_0
@@ -3347,9 +3347,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz;->f3:Lcom/baidu/location/ICz$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICz;->mICbf3:Lcom/baidu/location/ICz$ICb;
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICz;->f0:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICz;->isZf0:Z
 
     invoke-direct {p0, v2}, Lcom/baidu/location/ICz;->new(Z)V
 

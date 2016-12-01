@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field isZc:Z
 
-.field b:I
+.field mFd:F
 
-.field c:Z
+.field mFe:F
 
-.field d:F
+.field mIb:I
 
-.field e:F
+.field mObjecta:Ljava/lang/Object;
 
 
 # direct methods

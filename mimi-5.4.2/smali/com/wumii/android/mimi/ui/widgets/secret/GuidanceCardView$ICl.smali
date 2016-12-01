@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+.field final synthetic mActivityb:Landroid/app/Activity;
 
-.field final synthetic b:Landroid/app/Activity;
+.field final synthetic mGuidanceCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
+.field final synthetic mGuidancea:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 169
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->c:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mGuidanceCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->a:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mGuidancea:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -37,14 +37,14 @@
     const/4 v4, 0x0
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->a:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mGuidancea:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Guidance;->getSubject()Ljava/lang/String;
 
     move-result-object v0
 
     .line 173
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICn;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICn;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -64,7 +64,7 @@
 
     .line 175
     :pswitch_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -89,11 +89,11 @@
     if-nez v1, :cond_0
 
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->a:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mGuidancea:Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -107,7 +107,7 @@
 
     .line 181
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -133,7 +133,7 @@
 
     .line 185
     :pswitch_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -167,9 +167,9 @@
     .line 192
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -202,7 +202,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 201
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
     const v2, 0x7f060094
 
@@ -212,7 +212,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->c:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mGuidanceCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
 
     invoke-static {v5, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->a(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)Ljava/lang/String;
 

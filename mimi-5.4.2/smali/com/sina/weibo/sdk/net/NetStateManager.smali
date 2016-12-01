@@ -6,7 +6,7 @@
 # static fields
 .field public static a:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
-.field private static b:Landroid/content/Context;
+.field private static mContextb:Landroid/content/Context;
 
 
 # direct methods
@@ -36,12 +36,12 @@
     move-result-object v1
 
     .line 69
-    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->b:Landroid/content/Context;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->mContextb:Landroid/content/Context;
 
     if-eqz v0, :cond_2
 
     .line 70
-    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->b:Landroid/content/Context;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 38
-    sput-object p0, Lcom/sina/weibo/sdk/net/NetStateManager;->b:Landroid/content/Context;
+    sput-object p0, Lcom/sina/weibo/sdk/net/NetStateManager;->mContextb:Landroid/content/Context;
 
     return-void
 .end method

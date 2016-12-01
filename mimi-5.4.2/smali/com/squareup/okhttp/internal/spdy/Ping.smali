@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/CountDownLatch;
+.field private final mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
-.field private b:J
+.field private mJb:J
 
-.field private c:J
+.field private mJc:J
 
 
 # direct methods
@@ -28,13 +28,13 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->a:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     .line 26
-    iput-wide v2, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iput-wide v2, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     .line 27
-    iput-wide v2, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->c:J
+    iput-wide v2, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJc:J
 
     .line 30
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 33
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     const-wide/16 v2, -0x1
 
@@ -67,7 +67,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     .line 35
     return-void
@@ -80,13 +80,13 @@
     const-wide/16 v2, -0x1
 
     .line 38
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->c:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJc:J
 
     cmp-long v0, v0, v2
 
     if-nez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     cmp-long v0, v0, v2
 
@@ -105,10 +105,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->c:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJc:J
 
     .line 40
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -123,13 +123,13 @@
     const-wide/16 v2, -0x1
 
     .line 44
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->c:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJc:J
 
     cmp-long v0, v0, v2
 
     if-nez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     cmp-long v0, v0, v2
 
@@ -144,16 +144,16 @@
 
     .line 45
     :cond_1
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->b:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJb:J
 
     const-wide/16 v2, 0x1
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->c:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mJc:J
 
     .line 46
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Ping;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 

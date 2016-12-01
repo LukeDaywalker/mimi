@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+.field final synthetic mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICas;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->b(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
 

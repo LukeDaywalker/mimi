@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Landroid/content/ComponentName;
+.field final mComponentNamea:Landroid/content/ComponentName;
 
-.field final b:Landroid/os/IBinder;
+.field final mIBinderb:Landroid/os/IBinder;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 552
-    iput-object p1, p0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->a:Landroid/content/ComponentName;
+    iput-object p1, p0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->mComponentNamea:Landroid/content/ComponentName;
 
     .line 553
-    iput-object p2, p0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->b:Landroid/os/IBinder;
+    iput-object p2, p0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->mIBinderb:Landroid/os/IBinder;
 
     .line 554
     return-void

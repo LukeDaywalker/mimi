@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lu/aly/IProtocol;
+.field final synthetic mCacheServiceb:Lu/aly/CacheService;
 
-.field final synthetic b:Lu/aly/CacheService;
+.field final synthetic mIProtocola:Lu/aly/IProtocol;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lu/aly/CacheService$IChq;->b:Lu/aly/CacheService;
+    iput-object p1, p0, Lu/aly/CacheService$IChq;->mCacheServiceb:Lu/aly/CacheService;
 
-    iput-object p2, p0, Lu/aly/CacheService$IChq;->a:Lu/aly/IProtocol;
+    iput-object p2, p0, Lu/aly/CacheService$IChq;->mIProtocola:Lu/aly/IProtocol;
 
     invoke-direct {p0}, Lcom/umeng/analytics/SafeRunnable;-><init>()V
 
@@ -31,13 +31,13 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lu/aly/CacheService$IChq;->b:Lu/aly/CacheService;
+    iget-object v0, p0, Lu/aly/CacheService$IChq;->mCacheServiceb:Lu/aly/CacheService;
 
     invoke-static {v0}, Lu/aly/CacheService;->a(Lu/aly/CacheService;)Lu/aly/ICacheService;
 
     move-result-object v0
 
-    iget-object v1, p0, Lu/aly/CacheService$IChq;->a:Lu/aly/IProtocol;
+    iget-object v1, p0, Lu/aly/CacheService$IChq;->mIProtocola:Lu/aly/IProtocol;
 
     invoke-interface {v0, v1}, Lu/aly/ICacheService;->a(Lu/aly/IProtocol;)V
 

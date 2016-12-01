@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     const/4 v1, 0x0
 
     .line 38
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -110,7 +110,7 @@
 
     .prologue
     .line 59
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     monitor-enter v1
 
@@ -118,7 +118,7 @@
     :try_start_0
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-virtual {p0, p2}, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a(Landroid/graphics/Bitmap;)Ljava/lang/ref/Reference;
 
@@ -165,7 +165,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 

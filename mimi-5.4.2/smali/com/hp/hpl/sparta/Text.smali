@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/StringBuffer;
+.field private mStringBuffera:Ljava/lang/StringBuffer;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     .line 33
     return-void
@@ -33,7 +33,7 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/lang/StringBuffer;->append([CII)Ljava/lang/StringBuffer;
 
@@ -66,7 +66,7 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -86,7 +86,7 @@
     .line 45
     new-instance v0, Lcom/hp/hpl/sparta/Text;
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -125,13 +125,13 @@
     check-cast p1, Lcom/hp/hpl/sparta/Text;
 
     .line 126
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p1, Lcom/hp/hpl/sparta/Text;->a:Ljava/lang/StringBuffer;
+    iget-object v1, p1, Lcom/hp/hpl/sparta/Text;->mStringBuffera:Ljava/lang/StringBuffer;
 
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 

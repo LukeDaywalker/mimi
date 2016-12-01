@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
+.field private static mShareCompatImpla:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/ShareCompat$ShareCompatImplJB;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/ShareCompat;->a:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
+    sput-object v0, Landroid/support/v4/app/ShareCompat;->mShareCompatImpla:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
 
     .line 159
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/ShareCompat$ShareCompatImplICS;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/ShareCompat;->a:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
+    sput-object v0, Landroid/support/v4/app/ShareCompat;->mShareCompatImpla:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/ShareCompat$ShareCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/ShareCompat;->a:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
+    sput-object v0, Landroid/support/v4/app/ShareCompat;->mShareCompatImpla:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
 
     goto :goto_0
 .end method

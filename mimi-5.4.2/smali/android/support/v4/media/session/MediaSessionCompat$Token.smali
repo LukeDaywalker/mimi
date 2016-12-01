@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Object;
+.field private final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -46,7 +46,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 665
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->a:Ljava/lang/Object;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mObjecta:Ljava/lang/Object;
 
     .line 666
     return-void
@@ -76,7 +76,7 @@
     if-lt v0, v1, :cond_0
 
     .line 694
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mObjecta:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/Parcelable;
 
@@ -88,7 +88,7 @@
 
     .line 696
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->a:Ljava/lang/Object;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Token;->mObjecta:Ljava/lang/Object;
 
     check-cast v0, Landroid/os/IBinder;
 

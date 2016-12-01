@@ -4,19 +4,13 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+.field private mExecutorServicee:Ljava/util/concurrent/ExecutorService;
 
-.field private c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
-
-.field private d:Ljava/util/concurrent/ScheduledExecutorService;
-
-.field private e:Ljava/util/concurrent/ExecutorService;
-
-.field private f:Ljava/util/concurrent/Future;
+.field private mFuturef:Ljava/util/concurrent/Future;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Future",
@@ -24,6 +18,12 @@
         }
     .end annotation
 .end field
+
+.field private mHttpHelperb:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+
+.field private mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+
+.field private mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 43
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mHttpHelperb:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 44
     return-void
@@ -91,7 +91,7 @@
 
     .prologue
     .line 29
-    sget-object v0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -102,7 +102,7 @@
     .prologue
     .line 96
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mHttpHelperb:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "unread/count"
 
@@ -143,7 +143,7 @@
     check-cast v0, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getChatPreview()J
 
@@ -158,7 +158,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 103
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNotification()J
 
@@ -173,7 +173,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 104
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewFriendGroupChatCount()J
 
@@ -188,7 +188,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 105
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewOrganizationGroupChatCount()J
 
@@ -203,7 +203,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 106
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewCrowdGroupChatCount()J
 
@@ -218,7 +218,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 107
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewJoinableCircleCount()J
 
@@ -249,7 +249,7 @@
     move-result v1
 
     .line 111
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -310,7 +310,7 @@
 
     .line 120
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mPreferencesHelperc:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -337,7 +337,7 @@
     if-eqz v1, :cond_3
 
     .line 126
-    sget-object v1, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
@@ -354,7 +354,7 @@
     if-nez v1, :cond_2
 
     .line 128
-    sget-object v1, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
@@ -405,7 +405,7 @@
 
     const-string/jumbo v2, ","
 
-    invoke-static {v0, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -425,7 +425,7 @@
     move-exception v0
 
     .line 140
-    sget-object v2, Lcom/wumii/android/mimi/services/UnreadNotificationService;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -459,10 +459,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;
 
@@ -484,7 +484,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->e:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mExecutorServicee:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_0
 
@@ -493,15 +493,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->e:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mExecutorServicee:Ljava/util/concurrent/ExecutorService;
 
     .line 82
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->f:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mFuturef:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->f:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mFuturef:Ljava/util/concurrent/Future;
 
     invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
 
@@ -515,7 +515,7 @@
 
     .line 86
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->e:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mExecutorServicee:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICe;
 
@@ -525,7 +525,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->f:Ljava/util/concurrent/Future;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mFuturef:Ljava/util/concurrent/Future;
 
     goto :goto_0
 .end method
@@ -542,14 +542,14 @@
     if-eqz v0, :cond_0
 
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
 
     .line 148
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 150
     :cond_0
@@ -561,7 +561,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->mScheduledExecutorServiced:Ljava/util/concurrent/ScheduledExecutorService;
 
     if-eqz v0, :cond_0
 

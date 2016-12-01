@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mCheckBoxb:Landroid/widget/CheckBox;
 
-.field private b:Landroid/widget/CheckBox;
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -118,10 +118,10 @@
 
     invoke-direct {v3, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iput-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     .line 51
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->getResources()Landroid/content/res/Resources;
 
@@ -136,24 +136,24 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 52
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     const/high16 v4, 0x41800000    # 16.0f
 
     invoke-virtual {v3, v9, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 53
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 54
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 55
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1, v10}, Landroid/widget/TextView;->setGravity(I)V
 
@@ -166,7 +166,7 @@
     iput v7, v1, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
     .line 58
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v2, v3, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -179,7 +179,7 @@
 
     invoke-direct {v1, v3}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     .line 62
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
@@ -206,24 +206,24 @@
     invoke-virtual {v1, v0, v6, v6, v6}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckBox;->setBackgroundColor(I)V
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckBox;->setClickable(Z)V
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     const v3, 0x7f02019c
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setButtonDrawable(I)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -238,7 +238,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mCheckBoxb:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
@@ -270,7 +270,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ToggleTitleCheckBox;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

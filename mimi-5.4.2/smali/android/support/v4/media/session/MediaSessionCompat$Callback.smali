@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->mObjecta:Ljava/lang/Object;
 
     .line 460
     :goto_0
@@ -41,7 +41,7 @@
 
     .line 458
     :cond_0
-    iput-object v2, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->a:Ljava/lang/Object;
+    iput-object v2, p0, Landroid/support/v4/media/session/MediaSessionCompat$Callback;->mObjecta:Ljava/lang/Object;
 
     goto :goto_0
 .end method

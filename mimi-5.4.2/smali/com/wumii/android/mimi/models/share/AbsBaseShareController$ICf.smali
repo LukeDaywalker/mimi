@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICeb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->b:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mICeb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,27 +42,27 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->b:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mICeb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v2, v2, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->j()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mStringa:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->b:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mICeb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v4, v4, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->k()Ljava/lang/String;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->b:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
+    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICf;->mICeb:Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;
 
-    iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICe;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     iget-object v5, v5, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a:Landroid/app/Activity;
 

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Ljava/util/concurrent/CountDownLatch;
+.field final mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
-.field final synthetic b:I
+.field final synthetic mFabricc:Lio/fabric/sdk/android/Fabric;
 
-.field final synthetic c:Lio/fabric/sdk/android/Fabric;
+.field final synthetic mIb:I
 
 
 # direct methods
@@ -20,20 +20,20 @@
 
     .prologue
     .line 582
-    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICh;->c:Lio/fabric/sdk/android/Fabric;
+    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICh;->mFabricc:Lio/fabric/sdk/android/Fabric;
 
-    iput p2, p0, Lio/fabric/sdk/android/Fabric$ICh;->b:I
+    iput p2, p0, Lio/fabric/sdk/android/Fabric$ICh;->mIb:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 583
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
-    iget v1, p0, Lio/fabric/sdk/android/Fabric$ICh;->b:I
+    iget v1, p0, Lio/fabric/sdk/android/Fabric$ICh;->mIb:I
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->a:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 599
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->c:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mFabricc:Lio/fabric/sdk/android/Fabric;
 
     invoke-static {v0}, Lio/fabric/sdk/android/Fabric;->b(Lio/fabric/sdk/android/Fabric;)Lio/fabric/sdk/android/InitializationCallback;
 
@@ -62,12 +62,12 @@
 
     .prologue
     .line 590
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     .line 591
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mCountDownLatcha:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
 
@@ -80,7 +80,7 @@
     if-nez v0, :cond_0
 
     .line 592
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->c:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mFabricc:Lio/fabric/sdk/android/Fabric;
 
     invoke-static {v0}, Lio/fabric/sdk/android/Fabric;->a(Lio/fabric/sdk/android/Fabric;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -91,13 +91,13 @@
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 593
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->c:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICh;->mFabricc:Lio/fabric/sdk/android/Fabric;
 
     invoke-static {v0}, Lio/fabric/sdk/android/Fabric;->b(Lio/fabric/sdk/android/Fabric;)Lio/fabric/sdk/android/InitializationCallback;
 
     move-result-object v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICh;->c:Lio/fabric/sdk/android/Fabric;
+    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICh;->mFabricc:Lio/fabric/sdk/android/Fabric;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/InitializationCallback;->a(Ljava/lang/Object;)V
 

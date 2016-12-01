@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+.field final synthetic mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
     if-le p5, p9, :cond_1
 
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->c(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
@@ -53,7 +53,7 @@
     if-ge p5, p9, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICd;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->c(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 

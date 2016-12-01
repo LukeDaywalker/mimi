@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/push/PushReportService;
+.field final synthetic mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
-.field private d:Ljava/util/Set;
+.field private mSetd:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -24,7 +24,7 @@
 
     .prologue
     .line 128
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->a:Lcom/wumii/android/mimi/push/PushReportService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
     .line 129
     const/4 v0, 0x1
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->d:Ljava/util/Set;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mSetd:Ljava/util/Set;
 
     .line 130
     return-void
@@ -64,7 +64,7 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 149
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -129,7 +129,7 @@
 
     const-string/jumbo v5, ","
 
-    invoke-static {v1, v5}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v5}, Lorg/apache/commons/long3/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -144,7 +144,7 @@
 
     const-string/jumbo v4, ","
 
-    invoke-static {v2, v4}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v4}, Lorg/apache/commons/long3/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -159,7 +159,7 @@
 
     const-string/jumbo v3, ","
 
-    invoke-static {v2, v3}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lorg/apache/commons/long3/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -182,7 +182,7 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->a:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -191,18 +191,18 @@
     invoke-static {v0, v2, v3}, Lcom/wumii/android/mimi/push/PushReportService;->a(Lcom/wumii/android/mimi/push/PushReportService;J)J
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->a:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushReportService;->b(Lcom/wumii/android/mimi/push/PushReportService;)Ljava/util/Set;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->d:Ljava/util/Set;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->removeAll(Ljava/util/Collection;)Z
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->a:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushReportService;->c(Lcom/wumii/android/mimi/push/PushReportService;)V
 
@@ -258,12 +258,12 @@
     if-eqz v0, :cond_0
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 

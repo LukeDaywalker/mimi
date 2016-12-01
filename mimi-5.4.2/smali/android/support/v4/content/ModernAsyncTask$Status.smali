@@ -21,7 +21,7 @@
 
 .field public static final enum c:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-.field private static final synthetic d:[Landroid/support/v4/content/ModernAsyncTask$Status;
+.field private static final synthetic mArrayStatusd:[Landroid/support/v4/content/ModernAsyncTask$Status;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->d:[Landroid/support/v4/content/ModernAsyncTask$Status;
+    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mArrayStatusd:[Landroid/support/v4/content/ModernAsyncTask$Status;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 89
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->d:[Landroid/support/v4/content/ModernAsyncTask$Status;
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->mArrayStatusd:[Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-virtual {v0}, [Landroid/support/v4/content/ModernAsyncTask$Status;->clone()Ljava/lang/Object;
 

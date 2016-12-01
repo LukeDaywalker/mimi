@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     .prologue
     .line 25
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;->a:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;->mIa:I
 
     .line 26
     return-void

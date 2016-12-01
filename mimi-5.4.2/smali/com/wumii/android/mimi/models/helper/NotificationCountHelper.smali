@@ -4,15 +4,13 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/app/NotificationManager;
+.field private mFileHelperc:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private c:Lcom/wumii/android/mimi/models/helper/FileHelper;
-
-.field private d:Ljava/util/Map;
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -27,6 +25,8 @@
     .end annotation
 .end field
 
+.field private mNotificationManagerb:Landroid/app/NotificationManager;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mFileHelperc:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 30
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->b:Landroid/app/NotificationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     .line 31
     return-void
@@ -100,12 +100,12 @@
 
     .prologue
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mMapd:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mFileHelperc:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "notifications_count"
 
@@ -119,11 +119,11 @@
 
     check-cast v0, Ljava/util/Map;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mMapd:Ljava/util/Map;
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mMapd:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -173,7 +173,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 117
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->b:Landroid/app/NotificationManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -199,11 +199,11 @@
     .prologue
     .line 131
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mFileHelperc:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "notifications_count"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->d:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mMapd:Ljava/util/Map;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0
@@ -218,7 +218,7 @@
     move-exception v0
 
     .line 133
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Fail to update notification count to file"
 
@@ -296,7 +296,7 @@
     move-exception v0
 
     .line 81
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Fail to read notification count from file"
 
@@ -307,7 +307,7 @@
     .line 75
     :cond_1
     :try_start_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->b:Landroid/app/NotificationManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 

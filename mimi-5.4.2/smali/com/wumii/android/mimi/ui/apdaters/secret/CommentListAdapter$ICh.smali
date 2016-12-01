@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static mStringa:Ljava/lang/String;
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+.field private mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
-.field private d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+.field private mLoadPageCommentDirectionc:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
 
 # direct methods
@@ -24,7 +24,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1122
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->c:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mLoadPageCommentDirectionc:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     .line 1123
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mStringa:Ljava/lang/String;
 
     .line 1124
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mStringb:Ljava/lang/String;
 
     .line 1125
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 1113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->c:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mLoadPageCommentDirectionc:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     return-object v0
 .end method
@@ -73,9 +73,9 @@
 
     .prologue
     .line 1128
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICc;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICc;->mArrayIa:[I
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->c:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mLoadPageCommentDirectionc:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->ordinal()I
 
@@ -93,13 +93,13 @@
 
     .line 1130
     :pswitch_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->a:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mStringa:Ljava/lang/String;
 
     goto :goto_0
 
     .line 1132
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mStringb:Ljava/lang/String;
 
     goto :goto_0
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 1143
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     .line 1144
     return-void
@@ -129,7 +129,7 @@
 
     .prologue
     .line 1139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->mICjd:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     return-object v0
 .end method

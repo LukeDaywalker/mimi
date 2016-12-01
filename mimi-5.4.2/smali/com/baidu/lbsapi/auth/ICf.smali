@@ -3,17 +3,22 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private mContextb:Landroid/content/Context;
 
-.field private b:Landroid/content/Context;
+.field private mICag:Lcom/baidu/lbsapi/auth/ICf$ICa;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/baidu/lbsapi/auth/f$a",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private c:Ljava/lang/String;
+.field private mIe:I
 
-.field private d:Ljava/lang/String;
-
-.field private e:I
-
-.field private f:Ljava/util/List;
+.field private mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -27,16 +32,11 @@
     .end annotation
 .end field
 
-.field private g:Lcom/baidu/lbsapi/auth/ICf$ICa;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/baidu/lbsapi/auth/f$a",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mStringa:Ljava/lang/String;
+
+.field private mStringc:Ljava/lang/String;
+
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -49,17 +49,17 @@
 
     const-string/jumbo v0, "HttpAsyncTask"
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringa:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->c:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringc:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringd:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->f:Ljava/util/List;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mListf:Ljava/util/List;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->g:Lcom/baidu/lbsapi/auth/ICf$ICa;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mICag:Lcom/baidu/lbsapi/auth/ICf$ICa;
 
-    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICf;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICf;->mContextb:Landroid/content/Context;
 
     return-void
 .end method
@@ -408,7 +408,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/lbsapi/auth/ICf;->e:I
+    iput v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mIe:I
     :try_end_0
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_2
@@ -513,7 +513,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringc:Ljava/lang/String;
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
@@ -552,7 +552,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -565,7 +565,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_9
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringc:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/baidu/lbsapi/auth/ICf;->a(Ljava/lang/String;)V
 
@@ -578,7 +578,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_a
-    iget v0, p0, Lcom/baidu/lbsapi/auth/ICf;->e:I
+    iget v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mIe:I
 
     const/16 v1, 0xc8
 
@@ -598,7 +598,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -621,7 +621,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -633,7 +633,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -650,7 +650,7 @@
     invoke-direct {p0, v0}, Lcom/baidu/lbsapi/auth/ICf;->a(Ljava/lang/String;)V
 
     :cond_c
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringc:Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -775,7 +775,7 @@
 .method static synthetic a(Lcom/baidu/lbsapi/auth/ICf;)Ljava/util/List;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mListf:Ljava/util/List;
 
     return-object v0
 .end method
@@ -944,11 +944,11 @@
 
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->g:Lcom/baidu/lbsapi/auth/ICf$ICa;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mICag:Lcom/baidu/lbsapi/auth/ICf$ICa;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->g:Lcom/baidu/lbsapi/auth/ICf$ICa;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mICag:Lcom/baidu/lbsapi/auth/ICf$ICa;
 
     if-eqz v0, :cond_2
 
@@ -1111,7 +1111,7 @@
 
     check-cast v0, Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringd:Ljava/lang/String;
 
     invoke-direct {p0, v1}, Lcom/baidu/lbsapi/auth/ICf;->b(Ljava/lang/String;)Ljavax/net/ssl/HttpsURLConnection;
 
@@ -1445,7 +1445,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mContextb:Landroid/content/Context;
 
     const-string/jumbo v1, "connectivity"
 
@@ -1534,7 +1534,7 @@
 
     invoke-static {v3}, Ljavax/net/ssl/HttpsURLConnection;->setDefaultHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
 
-    iget-object v3, p0, Lcom/baidu/lbsapi/auth/ICf;->b:Landroid/content/Context;
+    iget-object v3, p0, Lcom/baidu/lbsapi/auth/ICf;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v3}, Lcom/baidu/lbsapi/auth/ICf;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1755,9 +1755,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->f:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mListf:Ljava/util/List;
 
-    iput-object p3, p0, Lcom/baidu/lbsapi/auth/ICf;->g:Lcom/baidu/lbsapi/auth/ICf$ICa;
+    iput-object p3, p0, Lcom/baidu/lbsapi/auth/ICf;->mICag:Lcom/baidu/lbsapi/auth/ICf$ICa;
 
     const-string/jumbo v0, "url"
 
@@ -1767,7 +1767,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICf;->mStringd:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Thread;
 

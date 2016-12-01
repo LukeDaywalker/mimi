@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
+.field private static mWeixinShareHelperb:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
 
 
 # instance fields
-.field private a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+.field private mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
 
 # direct methods
@@ -32,10 +32,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     const-string/jumbo v1, "wxa05bec14f8a70ca4"
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mWeixinShareHelperb:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
 
     if-nez v0, :cond_0
 
@@ -59,11 +59,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
+    sput-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mWeixinShareHelperb:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
 
     .line 36
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mWeixinShareHelperb:Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
 
     return-object v0
 .end method
@@ -116,7 +116,7 @@
     iput p4, v0, Lcom/tencent/mm/sdk/modelmsg/SendMessageToWX$Req;->scene:I
 
     .line 128
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     invoke-interface {v1, v0}, Lcom/tencent/mm/sdk/openapi/IWXAPI;->sendReq(Lcom/tencent/mm/sdk/modelbase/BaseReq;)Z
 
@@ -131,7 +131,7 @@
     const/4 v0, 0x0
 
     .line 65
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     const-string/jumbo v2, "wxa05bec14f8a70ca4"
 
@@ -141,7 +141,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     invoke-interface {v1}, Lcom/tencent/mm/sdk/openapi/IWXAPI;->isWXAppInstalled()Z
 
@@ -173,7 +173,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a:Lcom/tencent/mm/sdk/openapi/IWXAPI;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->mIWXAPIa:Lcom/tencent/mm/sdk/openapi/IWXAPI;
 
     invoke-interface {v0}, Lcom/tencent/mm/sdk/openapi/IWXAPI;->isWXAppSupportAPI()Z
 

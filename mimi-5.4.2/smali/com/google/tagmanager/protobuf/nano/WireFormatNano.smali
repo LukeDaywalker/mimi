@@ -4,14 +4,6 @@
 
 
 # static fields
-.field static final a:I
-
-.field static final b:I
-
-.field static final c:I
-
-.field static final d:I
-
 .field public static final e:[I
 
 .field public static final f:[J
@@ -29,6 +21,14 @@
 .field public static final l:[B
 
 .field public static final m:[Ljava/lang/Integer;
+
+.field static final mIa:I
+
+.field static final mIb:I
+
+.field static final mIc:I
+
+.field static final mId:I
 
 .field public static final n:[Ljava/lang/Long;
 
@@ -57,7 +57,7 @@
 
     move-result v0
 
-    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->a:I
+    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->mIa:I
 
     .line 86
     const/4 v0, 0x4
@@ -66,21 +66,21 @@
 
     move-result v0
 
-    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->b:I
+    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->mIb:I
 
     .line 88
     invoke-static {v3, v1}, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->a(II)I
 
     move-result v0
 
-    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->c:I
+    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->mIc:I
 
     .line 90
     invoke-static {v4, v3}, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->a(II)I
 
     move-result v0
 
-    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->d:I
+    sput v0, Lcom/google/tagmanager/protobuf/nano/WireFormatNano;->mId:I
 
     .line 93
     new-array v0, v1, [I

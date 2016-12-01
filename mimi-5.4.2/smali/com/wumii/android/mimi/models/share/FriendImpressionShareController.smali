@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private d:Ljava/lang/String;
+.field private mIh:I
 
-.field private e:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private f:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
-.field private g:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
-.field private h:I
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -24,19 +24,19 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 23
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringd:Ljava/lang/String;
 
     .line 24
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringe:Ljava/lang/String;
 
     .line 25
-    iput-object p4, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->f:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringf:Ljava/lang/String;
 
     .line 26
-    iput-object p5, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->g:Ljava/lang/String;
+    iput-object p5, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringg:Ljava/lang/String;
 
     .line 27
-    iput p6, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->h:I
+    iput p6, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mIh:I
 
     .line 28
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -57,7 +57,7 @@
 
     .prologue
     .line 13
-    iget v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->h:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mIh:I
 
     return v0
 .end method
@@ -69,7 +69,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method

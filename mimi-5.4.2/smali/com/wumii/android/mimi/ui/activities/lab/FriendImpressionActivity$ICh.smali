@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+.field final synthetic mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -15,13 +15,13 @@
 
     .prologue
     .line 156
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     .line 157
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 158
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->d:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mStringd:Ljava/lang/String;
 
     .line 159
     return-void
@@ -79,9 +79,9 @@
     .line 172
     new-instance v0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->getResources()Landroid/content/res/Resources;
 
@@ -101,7 +101,7 @@
 
     const/4 v6, 0x1
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-static {v7}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->c(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)Ljava/lang/String;
 
@@ -197,7 +197,7 @@
     .line 164
     const-string/jumbo v1, "question"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

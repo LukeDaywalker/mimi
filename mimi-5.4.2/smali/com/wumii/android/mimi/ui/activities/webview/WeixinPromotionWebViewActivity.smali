@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private o:Ljava/lang/String;
+.field private mStringo:Ljava/lang/String;
 
 
 # direct methods
@@ -150,7 +150,7 @@
 
     move-result-object v6
 
-    invoke-static {v3, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
@@ -162,7 +162,7 @@
 
     move-result-object v6
 
-    invoke-static {v3, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
@@ -254,7 +254,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->mStringo:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -269,11 +269,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->mStringo:Ljava/lang/String;
 
     .line 80
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->mStringo:Ljava/lang/String;
 
     return-object v0
 .end method

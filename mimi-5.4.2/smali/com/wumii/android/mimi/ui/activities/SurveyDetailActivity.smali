@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+.field private mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-.field private p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+.field private mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     .line 49
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->getIntent()Landroid/content/Intent;
@@ -123,10 +123,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     if-nez v0, :cond_0
 
@@ -154,10 +154,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity$ICbj;
 
@@ -166,11 +166,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a(Lcom/wumii/android/mimi/models/entities/survey/Survey;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getId()Ljava/lang/String;
 
@@ -261,14 +261,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a(Lcom/wumii/android/mimi/models/entities/survey/Survey;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
@@ -291,14 +291,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyCardViewp:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->n:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mSurveyn:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->o:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->mFeedTypeo:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a(Lcom/wumii/android/mimi/models/entities/survey/Survey;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 

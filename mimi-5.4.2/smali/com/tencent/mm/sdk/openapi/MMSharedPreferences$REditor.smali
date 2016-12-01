@@ -8,7 +8,7 @@
 # instance fields
 .field private clear:Z
 
-.field private cr:Landroid/content/ContentResolver;
+.field private mContentResolvercr:Landroid/content/ContentResolver;
 
 .field private remove:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -56,7 +56,7 @@
 
     iput-boolean v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->clear:Z
 
-    iput-object p1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->cr:Landroid/content/ContentResolver;
+    iput-object p1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->cr:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
     sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
 
@@ -124,7 +124,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->cr:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
     sget-object v6, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
 
@@ -185,7 +185,7 @@
     :goto_3
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->cr:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;->mContentResolvercr:Landroid/content/ContentResolver;
 
     sget-object v6, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
 

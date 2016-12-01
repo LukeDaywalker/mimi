@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:Ljava/lang/Throwable;
+.field private mThrowableb:Ljava/lang/Throwable;
 
 
 # direct methods
@@ -278,15 +278,15 @@
     .line 82
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/hp/hpl/sparta/ParseException;->a:I
+    iput v0, p0, Lcom/hp/hpl/sparta/ParseException;->mIa:I
 
     .line 108
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseException;->b:Ljava/lang/Throwable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseException;->mThrowableb:Ljava/lang/Throwable;
 
     .line 34
-    iput p2, p0, Lcom/hp/hpl/sparta/ParseException;->a:I
+    iput p2, p0, Lcom/hp/hpl/sparta/ParseException;->mIa:I
 
     .line 35
     return-void
@@ -462,7 +462,7 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseException;->b:Ljava/lang/Throwable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseException;->mThrowableb:Ljava/lang/Throwable;
 
     return-object v0
 .end method

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private n:Landroid/view/MenuItem;
+.field private isZo:Z
 
-.field private o:Z
+.field private isZp:Z
 
-.field private p:Z
+.field private mMenuItemn:Landroid/view/MenuItem;
 
 
 # direct methods
@@ -29,10 +29,10 @@
 
     .prologue
     .line 43
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->p:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->isZp:Z
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -83,12 +83,12 @@
     invoke-virtual {v2, v3, v0, v1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 57
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->o:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->isZo:Z
 
     .line 58
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->invalidateOptionsMenu()V
@@ -137,7 +137,7 @@
 
     .prologue
     .line 21
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->isZo:Z
 
     if-eqz v0, :cond_0
 
@@ -157,10 +157,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->n:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     .line 24
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->p:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->isZp:Z
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->b(Z)V
 

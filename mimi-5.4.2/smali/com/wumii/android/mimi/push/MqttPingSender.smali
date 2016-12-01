@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field private mMqttAsyncClientc:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-.field private c:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+.field private mNetworkHelperb:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->mNetworkHelperb:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 29
     return-void
@@ -57,11 +57,11 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->c:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->mMqttAsyncClientc:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->c:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->mMqttAsyncClientc:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->c()Z
 
@@ -87,7 +87,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->mNetworkHelperb:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -102,7 +102,7 @@
     if-nez v0, :cond_0
 
     .line 42
-    sget-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Lost connect to the server, now reconnecting..."
 
@@ -119,7 +119,7 @@
 
     .line 44
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->mNetworkHelperb:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -128,7 +128,7 @@
     if-nez v0, :cond_1
 
     .line 45
-    sget-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MqttPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Network is unreachable. Waiting for network available before reconnect."
 

@@ -21,11 +21,11 @@
 
 .field public static final enum c:Lu/aly/Gender;
 
-.field private static final synthetic e:[Lu/aly/Gender;
+.field private static final synthetic mArrayGendere:[Lu/aly/Gender;
 
 
 # instance fields
-.field private final d:I
+.field private final mId:I
 
 
 # direct methods
@@ -83,7 +83,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lu/aly/Gender;->e:[Lu/aly/Gender;
+    sput-object v0, Lu/aly/Gender;->mArrayGendere:[Lu/aly/Gender;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 23
-    iput p3, p0, Lu/aly/Gender;->d:I
+    iput p3, p0, Lu/aly/Gender;->mId:I
 
     .line 24
     return-void
@@ -168,7 +168,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lu/aly/Gender;->e:[Lu/aly/Gender;
+    sget-object v0, Lu/aly/Gender;->mArrayGendere:[Lu/aly/Gender;
 
     invoke-virtual {v0}, [Lu/aly/Gender;->clone()Ljava/lang/Object;
 
@@ -186,7 +186,7 @@
 
     .prologue
     .line 30
-    iget v0, p0, Lu/aly/Gender;->d:I
+    iget v0, p0, Lu/aly/Gender;->mId:I
 
     return v0
 .end method

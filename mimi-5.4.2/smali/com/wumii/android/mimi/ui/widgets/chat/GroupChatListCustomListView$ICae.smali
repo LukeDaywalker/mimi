@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+.field final synthetic mGroupChatListCustomListViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 130
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->mGroupChatListCustomListViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->mGroupChatListCustomListViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;->mGroupChatListCustomListViewa:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 

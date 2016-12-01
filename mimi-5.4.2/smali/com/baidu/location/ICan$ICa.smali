@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field final synthetic dI:Lcom/baidu/location/ICan;
+.field isZdL:Z
 
-.field dJ:Ljava/lang/String;
+.field final synthetic mICandI:Lcom/baidu/location/ICan;
 
-.field dK:Landroid/os/Messenger;
+.field mMessengerdK:Landroid/os/Messenger;
 
-.field dL:Z
+.field mStringdJ:Ljava/lang/String;
 
 
 # direct methods
@@ -18,17 +18,17 @@
 
     const/4 v1, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iput-object p1, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->dL:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->isZdL:Z
 
-    iput-object v1, p0, Lcom/baidu/location/ICan$ICa;->dJ:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/location/ICan$ICa;->dK:Landroid/os/Messenger;
+    iput-object v1, p0, Lcom/baidu/location/ICan$ICa;->mMessengerdK:Landroid/os/Messenger;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -52,7 +52,7 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->cX:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v0}, Lcom/baidu/location/ICan;->a(Lcom/baidu/location/ICan;)Ljava/lang/String;
 
@@ -60,7 +60,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     const-string/jumbo v1, "none"
 
@@ -77,7 +77,7 @@
 
     const-string/jumbo v2, "erpt[0]"
 
-    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v3}, Lcom/baidu/location/ICan;->a(Lcom/baidu/location/ICan;)Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v0}, Lcom/baidu/location/ICan;->if(Lcom/baidu/location/ICan;)Ljava/lang/String;
 
@@ -95,7 +95,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     const-string/jumbo v1, "none"
 
@@ -108,7 +108,7 @@
 
     const-string/jumbo v2, "erpt[1]"
 
-    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v3}, Lcom/baidu/location/ICan;->if(Lcom/baidu/location/ICan;)Ljava/lang/String;
 
@@ -122,13 +122,13 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dJ:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
     const-string/jumbo v0, "none"
 
-    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->dJ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
     :cond_2
     iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->cZ:Ljava/util/List;
@@ -137,7 +137,7 @@
 
     const-string/jumbo v2, "erpt[2]"
 
-    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->dJ:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
     invoke-static {v3}, Lcom/baidu/location/Jni;->j(Ljava/lang/String;)Ljava/lang/String;
 
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v1}, Lcom/baidu/location/ICan;->do(Lcom/baidu/location/ICan;)J
 
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v1}, Lcom/baidu/location/ICan;->for(Lcom/baidu/location/ICan;)J
 
@@ -208,15 +208,15 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICan;->if(Lcom/baidu/location/ICan;Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICan;->a(Lcom/baidu/location/ICan;Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->dI:Lcom/baidu/location/ICan;
+    iget-object v0, p0, Lcom/baidu/location/ICan$ICa;->mICandI:Lcom/baidu/location/ICan;
 
     const-wide/16 v2, 0x0
 
@@ -249,7 +249,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->dK:Landroid/os/Messenger;
+    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->mMessengerdK:Landroid/os/Messenger;
 
     invoke-virtual {v1, v0}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
     :try_end_0
@@ -258,7 +258,7 @@
     :goto_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->dL:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->isZdL:Z
 
     return-void
 
@@ -282,9 +282,9 @@
 
     iget-object v0, p1, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
-    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->dK:Landroid/os/Messenger;
+    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mMessengerdK:Landroid/os/Messenger;
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->dL:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->isZdL:Z
 
     if-eqz v0, :cond_0
 
@@ -297,7 +297,7 @@
     move-result-object v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->dK:Landroid/os/Messenger;
+    iget-object v1, p0, Lcom/baidu/location/ICan$ICa;->mMessengerdK:Landroid/os/Messenger;
 
     invoke-virtual {v1, v0}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
     :try_end_0
@@ -309,7 +309,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->dL:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICan$ICa;->isZdL:Z
 
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
@@ -321,7 +321,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->dJ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICan$ICa;->mStringdJ:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/location/ICan$ICa;->R()V
 

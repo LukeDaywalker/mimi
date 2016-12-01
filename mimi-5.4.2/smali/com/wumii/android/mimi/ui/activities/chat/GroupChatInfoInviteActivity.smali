@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
+.field private mGroupChatq:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private q:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field private mInviteListp:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->q:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mGroupChatq:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     return-object v0
 .end method
@@ -84,7 +84,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mInviteListp:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
@@ -103,10 +103,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->q:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mGroupChatq:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->q:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mGroupChatq:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     if-nez v0, :cond_0
 
@@ -119,7 +119,7 @@
 
     .line 39
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mInviteListp:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
     const/4 v1, 0x0
 
@@ -164,7 +164,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->mInviteListp:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$ICbz;
 

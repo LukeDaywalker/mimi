@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewf:Landroid/widget/ImageView;
 
-.field private c:Landroid/view/View;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private d:Landroid/view/View;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mViewc:Landroid/view/View;
 
-.field private f:Landroid/widget/ImageView;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mImageViewa:Landroid/widget/ImageView;
 
     .line 168
     const v0, 0x7f0b0272
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mTextViewb:Landroid/widget/TextView;
 
     .line 169
     const v0, 0x7f0b0273
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mViewc:Landroid/view/View;
 
     .line 170
     const v0, 0x7f0b0274
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mViewd:Landroid/view/View;
 
     .line 171
     const v0, 0x7f0b0276
@@ -74,7 +74,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mTextViewe:Landroid/widget/TextView;
 
     .line 172
     const v0, 0x7f0b0275
@@ -85,7 +85,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mImageViewf:Landroid/widget/ImageView;
 
     .line 173
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -106,7 +106,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -116,7 +116,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -126,7 +126,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mImageViewf:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -146,7 +146,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;->mTextViewe:Landroid/widget/TextView;
 
     return-object v0
 .end method

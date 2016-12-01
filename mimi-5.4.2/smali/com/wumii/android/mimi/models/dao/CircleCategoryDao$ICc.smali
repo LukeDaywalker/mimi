@@ -19,7 +19,7 @@
 
 .field public static final enum b:Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
-.field private static final synthetic c:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+.field private static final synthetic mArrayICcc:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->c:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mArrayICcc:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 23
-    sget-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->c:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
+    sget-object v0, Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->mArrayICcc:[Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/models/dao/CircleCategoryDao$ICc;->clone()Ljava/lang/Object;
 

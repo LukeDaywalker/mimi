@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:Ljava/util/concurrent/atomic/AtomicLong;
+.field private static final mAtomicLonga:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
-    sput-object v0, Lcom/crashlytics/android/core/CLSUUID;->a:Ljava/util/concurrent/atomic/AtomicLong;
+    sput-object v0, Lcom/crashlytics/android/core/CLSUUID;->mAtomicLonga:Ljava/util/concurrent/atomic/AtomicLong;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/CLSUUID;->b:Ljava/lang/String;
+    sput-object v0, Lcom/crashlytics/android/core/CLSUUID;->mStringb:Ljava/lang/String;
 
     .line 47
     return-void
@@ -241,7 +241,7 @@
 
     .prologue
     .line 66
-    sget-object v0, Lcom/crashlytics/android/core/CLSUUID;->a:Ljava/util/concurrent/atomic/AtomicLong;
+    sget-object v0, Lcom/crashlytics/android/core/CLSUUID;->mAtomicLonga:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
 
@@ -362,7 +362,7 @@
 
     .prologue
     .line 97
-    sget-object v0, Lcom/crashlytics/android/core/CLSUUID;->b:Ljava/lang/String;
+    sget-object v0, Lcom/crashlytics/android/core/CLSUUID;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method

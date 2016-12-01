@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v7/widget/RecyclerView;
+.field final synthetic mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 3920
-    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICaz;->a:Landroid/support/v7/widget/RecyclerView;
+    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICaz;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$ICaj;-><init>()V
 

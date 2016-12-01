@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/push/PushService;
+.field final synthetic mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 529
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->a:Lcom/wumii/android/mimi/push/PushService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -36,7 +36,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 534
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->a:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->e(Lcom/wumii/android/mimi/push/PushService;)Z
 
@@ -50,7 +50,7 @@
 
     .line 537
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->a:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICl;->mPushServicea:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->f(Lcom/wumii/android/mimi/push/PushService;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICh;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICh;->mContexta:Landroid/content/Context;
 
     .line 134
     return-void
@@ -90,7 +90,7 @@
 
     new-instance v3, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;
 
-    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->mContexta:Landroid/content/Context;
 
     invoke-direct {v3, v4, v2}, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;-><init>(Landroid/content/Context;Lcom/facebook/stetho/dumpapp/Dumper;)V
 
@@ -101,7 +101,7 @@
 
     new-instance v3, Lcom/facebook/stetho/dumpapp/RawDumpappHandler;
 
-    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->mContexta:Landroid/content/Context;
 
     invoke-direct {v3, v4, v2}, Lcom/facebook/stetho/dumpapp/RawDumpappHandler;-><init>(Landroid/content/Context;Lcom/facebook/stetho/dumpapp/Dumper;)V
 
@@ -119,7 +119,7 @@
     .line 150
     new-instance v2, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;
 
-    iget-object v3, p0, Lcom/facebook/stetho/Stetho$ICh;->a:Landroid/content/Context;
+    iget-object v3, p0, Lcom/facebook/stetho/Stetho$ICh;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v4, "/inspector"
 
@@ -133,7 +133,7 @@
 
     new-instance v3, Lcom/facebook/stetho/websocket/WebSocketHandler;
 
-    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/facebook/stetho/Stetho$ICh;->mContexta:Landroid/content/Context;
 
     new-instance v5, Lcom/facebook/stetho/inspector/ChromeDevtoolsServer;
 

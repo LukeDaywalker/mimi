@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field final synthetic mCircleLockedFeedCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+.field final synthetic mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->b:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->mCircleLockedFeedCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,7 +100,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
@@ -118,7 +118,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICa;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-direct {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static isZb:Z
 
-.field private static b:Z
+.field private static final mStringa:Ljava/lang/String;
 
-.field private static c:Ljava/lang/String;
+.field private static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -23,17 +23,17 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/c/Pro$ICq;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/c/Pro$ICq;->mStringa:Ljava/lang/String;
 
     .line 69
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/tencent/c/Pro$ICq;->b:Z
+    sput-boolean v0, Lcom/tencent/c/Pro$ICq;->isZb:Z
 
     .line 769
     const-string/jumbo v0, "0123456789ABCDEF"
 
-    sput-object v0, Lcom/tencent/c/Pro$ICq;->c:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/c/Pro$ICq;->mStringc:Ljava/lang/String;
 
     return-void
 .end method
@@ -953,7 +953,7 @@
 
     .prologue
     .line 482
-    sget-boolean v0, Lcom/tencent/c/Pro$ICq;->b:Z
+    sget-boolean v0, Lcom/tencent/c/Pro$ICq;->isZb:Z
 
     if-eqz v0, :cond_0
 

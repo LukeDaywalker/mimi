@@ -27,9 +27,9 @@
 
 .field public f:Landroid/content/res/Resources;
 
-.field private g:Landroid/view/View;
+.field private mViewg:Landroid/view/View;
 
-.field private h:Landroid/view/View;
+.field private mViewh:Landroid/view/View;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->g:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mViewg:Landroid/view/View;
 
     .line 129
     const v0, 0x7f0b003a
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mViewh:Landroid/view/View;
 
     .line 130
     const v0, 0x7f0b0038
@@ -125,7 +125,7 @@
 
     .prologue
     .line 160
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -140,7 +140,7 @@
     :cond_0
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->c:Landroid/widget/TextView;
 
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -315,7 +315,7 @@
 
     .line 171
     :cond_0
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->h:Landroid/view/View;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mViewh:Landroid/view/View;
 
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->d(Ljava/lang/Object;)Z
 
@@ -329,7 +329,7 @@
     invoke-static {v4, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/AbsSecretVerticalListAdapter$ICb;->mViewg:Landroid/view/View;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->c(Ljava/lang/String;)Z
 

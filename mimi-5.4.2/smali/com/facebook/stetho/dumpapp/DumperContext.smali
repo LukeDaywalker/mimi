@@ -4,15 +4,11 @@
 
 
 # instance fields
-.field private final a:Ljava/io/InputStream;
+.field private final mCommandLineParserd:Lorg/apache/commons/cli/CommandLineParser;
 
-.field private final b:Ljava/io/PrintStream;
+.field private final mInputStreama:Ljava/io/InputStream;
 
-.field private final c:Ljava/io/PrintStream;
-
-.field private final d:Lorg/apache/commons/cli/CommandLineParser;
-
-.field private final e:Ljava/util/List;
+.field private final mListe:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -22,6 +18,10 @@
         }
     .end annotation
 .end field
+
+.field private final mPrintStreamb:Ljava/io/PrintStream;
+
+.field private final mPrintStreamc:Ljava/io/PrintStream;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     check-cast v0, Ljava/io/InputStream;
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->a:Ljava/io/InputStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mInputStreama:Ljava/io/InputStream;
 
     .line 45
     invoke-static {p2}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -61,7 +61,7 @@
 
     check-cast v0, Ljava/io/PrintStream;
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->b:Ljava/io/PrintStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mPrintStreamb:Ljava/io/PrintStream;
 
     .line 46
     invoke-static {p3}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -70,7 +70,7 @@
 
     check-cast v0, Ljava/io/PrintStream;
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->c:Ljava/io/PrintStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mPrintStreamc:Ljava/io/PrintStream;
 
     .line 47
     invoke-static {p4}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -79,7 +79,7 @@
 
     check-cast v0, Lorg/apache/commons/cli/CommandLineParser;
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->d:Lorg/apache/commons/cli/CommandLineParser;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mCommandLineParserd:Lorg/apache/commons/cli/CommandLineParser;
 
     .line 48
     invoke-static {p5}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -88,7 +88,7 @@
 
     check-cast v0, Ljava/util/List;
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->e:Ljava/util/List;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mListe:Ljava/util/List;
 
     .line 49
     return-void
@@ -101,7 +101,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->b:Ljava/io/PrintStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mPrintStreamb:Ljava/io/PrintStream;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->e:Ljava/util/List;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumperContext;->mListe:Ljava/util/List;
 
     return-object v0
 .end method

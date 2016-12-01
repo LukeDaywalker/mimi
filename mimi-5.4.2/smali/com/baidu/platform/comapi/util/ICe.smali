@@ -3,15 +3,17 @@
 
 
 # static fields
-.field private static volatile a:Lcom/baidu/platform/comapi/util/ICe;
+.field private static volatile mICea:Lcom/baidu/platform/comapi/util/ICe;
 
 
 # instance fields
-.field private b:Z
+.field private isZb:Z
 
-.field private c:Z
+.field private isZc:Z
 
-.field private final d:Ljava/util/List;
+.field private mICde:Lcom/baidu/platform/comapi/util/ICd;
+
+.field private final mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -22,9 +24,7 @@
     .end annotation
 .end field
 
-.field private e:Lcom/baidu/platform/comapi/util/ICd;
-
-.field private f:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICe;->a:Lcom/baidu/platform/comapi/util/ICe;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICe;->mICea:Lcom/baidu/platform/comapi/util/ICe;
 
     return-void
 .end method
@@ -45,21 +45,21 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->isZb:Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->isZc:Z
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 .method public static a()Lcom/baidu/platform/comapi/util/ICe;
     .locals 2
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->a:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->mICea:Lcom/baidu/platform/comapi/util/ICe;
 
     if-nez v0, :cond_1
 
@@ -76,7 +76,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->a:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->mICea:Lcom/baidu/platform/comapi/util/ICe;
 
     if-nez v0, :cond_0
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/util/ICe;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICe;->a:Lcom/baidu/platform/comapi/util/ICe;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICe;->mICea:Lcom/baidu/platform/comapi/util/ICe;
 
     :cond_0
     monitor-exit v1
@@ -92,7 +92,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->a:Lcom/baidu/platform/comapi/util/ICe;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICe;->mICea:Lcom/baidu/platform/comapi/util/ICe;
 
     return-object v0
 
@@ -362,7 +362,7 @@
 
     if-eqz v3, :cond_4
 
-    iget-object v11, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v11, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     new-instance v12, Lcom/baidu/platform/comapi/util/ICd;
 
@@ -496,7 +496,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/baidu/platform/comapi/util/ICe;->f:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/platform/comapi/util/ICe;->mStringf:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -529,7 +529,7 @@
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v4, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -547,11 +547,11 @@
     if-nez v0, :cond_8
 
     :cond_7
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -566,7 +566,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -884,7 +884,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     new-instance v5, Lcom/baidu/platform/comapi/util/ICd;
 
@@ -948,7 +948,7 @@
 
     if-eqz v5, :cond_9
 
-    iget-object v5, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v5, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     new-instance v6, Lcom/baidu/platform/comapi/util/ICd;
 
@@ -1008,7 +1008,7 @@
 
     const/4 v1, 0x0
 
-    iget-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->isZb:Z
 
     if-eqz v0, :cond_1
 
@@ -1017,7 +1017,7 @@
     return-void
 
     :cond_1
-    iput-boolean v6, p0, Lcom/baidu/platform/comapi/util/ICe;->b:Z
+    iput-boolean v6, p0, Lcom/baidu/platform/comapi/util/ICe;->isZb:Z
 
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -1032,7 +1032,7 @@
 
     :goto_1
     :try_start_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1042,7 +1042,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1115,13 +1115,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1146,15 +1146,15 @@
 
     if-eqz v2, :cond_4
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     :cond_5
     :goto_4
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     if-nez v0, :cond_6
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -1164,18 +1164,18 @@
 
     check-cast v0, Lcom/baidu/platform/comapi/util/ICd;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
     :cond_6
     :goto_5
     :try_start_4
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICd;->a()Ljava/lang/String;
 
@@ -1189,7 +1189,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/util/ICd;->b()Ljava/lang/String;
 
@@ -1208,7 +1208,7 @@
     :cond_7
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/util/ICd;->c()Ljava/lang/String;
 
@@ -1260,7 +1260,7 @@
 
     if-eqz v0, :cond_5
 
-    iput-object v2, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v2, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
 
@@ -1279,7 +1279,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 
@@ -1289,21 +1289,21 @@
     const/4 v0, 0x0
 
     :try_start_7
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICe;->isZc:Z
 
     new-instance v0, Lcom/baidu/platform/comapi/util/ICd;
 
     invoke-direct {v0, p1}, Lcom/baidu/platform/comapi/util/ICd;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_7
@@ -1362,7 +1362,7 @@
 .method public b()Lcom/baidu/platform/comapi/util/ICd;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->e:Lcom/baidu/platform/comapi/util/ICd;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mICde:Lcom/baidu/platform/comapi/util/ICd;
 
     return-object v0
 .end method
@@ -1394,7 +1394,7 @@
 
     if-lez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICe;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

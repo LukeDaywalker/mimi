@@ -9,11 +9,11 @@
 # static fields
 .field public static a:Lcom/wumii/android/mimi/network/server/ServersManager;
 
-.field private static final b:Lorg/slf4j/Logger;
+.field private static final mLoggerb:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/network/HttpProcessor;
+.field private mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->b:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mLoggerb:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -45,10 +45,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "servers"
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 96
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->b:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mLoggerb:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -177,7 +177,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 101
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->c:Lcom/wumii/android/mimi/network/HttpProcessor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->mHttpProcessorc:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -197,7 +197,7 @@
     if-eqz v0, :cond_0
 
     .line 60
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->b:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersManager;->mLoggerb:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "fetch servers failed"
 
@@ -290,7 +290,7 @@
     move-exception v0
 
     .line 77
-    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersManager;->b:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersManager;->mLoggerb:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle servers response error"
 

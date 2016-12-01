@@ -29,13 +29,13 @@
 
 .field public static final enum g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
-.field private static final synthetic j:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+.field private static final synthetic mArrayICdj:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
 
 # instance fields
-.field private h:Ljava/lang/String;
+.field private mStringh:Ljava/lang/String;
 
-.field private i:Ljava/lang/String;
+.field private mStringi:Ljava/lang/String;
 
 
 # direct methods
@@ -165,7 +165,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->j:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mArrayICdj:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     return-void
 .end method
@@ -185,7 +185,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 52
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringh:Ljava/lang/String;
 
     .line 53
     new-instance v0, Ljava/lang/StringBuilder;
@@ -206,7 +206,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->i:Ljava/lang/String;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringi:Ljava/lang/String;
 
     .line 54
     return-void
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -302,7 +302,7 @@
 
     .prologue
     .line 45
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->j:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mArrayICdj:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->clone()Ljava/lang/Object;
 
@@ -324,7 +324,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -367,7 +367,7 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->h:Ljava/lang/String;
+    iget-object v4, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringh:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
@@ -381,7 +381,7 @@
 
     .line 87
     :cond_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 

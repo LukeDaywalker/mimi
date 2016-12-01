@@ -4,7 +4,9 @@
 
 
 # static fields
-.field private static final e:Ljava/util/Set;
+.field private static final mRequestBodyf:Lcom/squareup/okhttp/RequestBody;
+
+.field private static final mSete:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -15,27 +17,25 @@
     .end annotation
 .end field
 
-.field private static final f:Lcom/squareup/okhttp/RequestBody;
-
 
 # instance fields
-.field final a:Lcom/squareup/okhttp/OkHttpClient;
-
 .field protected b:Ljava/io/IOException;
 
 .field protected c:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-.field d:Lcom/squareup/okhttp/Handshake;
+.field mHandshaked:Lcom/squareup/okhttp/Handshake;
 
-.field private g:Lcom/squareup/okhttp/Headers$ICab;
+.field private mHeadersj:Lcom/squareup/okhttp/Headers;
 
-.field private h:J
+.field private mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
-.field private i:I
+.field private mIi:I
 
-.field private j:Lcom/squareup/okhttp/Headers;
+.field private mJh:J
 
-.field private k:Lcom/squareup/okhttp/Route;
+.field final mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
+
+.field private mRoutek:Lcom/squareup/okhttp/Route;
 
 
 # direct methods
@@ -105,7 +105,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/LinkedHashSet;-><init>(Ljava/util/Collection;)V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->e:Ljava/util/Set;
+    sput-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mSete:Ljava/util/Set;
 
     .line 79
     const/4 v0, 0x0
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->f:Lcom/squareup/okhttp/RequestBody;
+    sput-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mRequestBodyf:Lcom/squareup/okhttp/RequestBody;
 
     return-void
 .end method
@@ -133,15 +133,15 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     .line 86
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->h:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mJh:J
 
     .line 107
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 108
     return-void
@@ -152,7 +152,7 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->j:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHeadersj:Lcom/squareup/okhttp/Headers;
 
     if-nez v0, :cond_0
 
@@ -215,11 +215,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->j:Lcom/squareup/okhttp/Headers;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHeadersj:Lcom/squareup/okhttp/Headers;
 
     .line 157
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->j:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHeadersj:Lcom/squareup/okhttp/Headers;
 
     return-object v0
 .end method
@@ -235,7 +235,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->f:Lcom/squareup/okhttp/RequestBody;
+    sget-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mRequestBodyf:Lcom/squareup/okhttp/RequestBody;
 
     .line 325
     :goto_0
@@ -258,7 +258,7 @@
     move-result-object v1
 
     .line 328
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
 
@@ -308,7 +308,7 @@
     if-eqz v3, :cond_2
 
     .line 336
-    iget-wide v4, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->h:J
+    iget-wide v4, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mJh:J
 
     const-wide/16 v6, -0x1
 
@@ -319,7 +319,7 @@
     .line 337
     const-string/jumbo v3, "Content-Length"
 
-    iget-wide v4, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->h:J
+    iget-wide v4, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mJh:J
 
     invoke-static {v4, v5}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -372,7 +372,7 @@
     move-result-object v2
 
     .line 357
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 358
     sget-object v0, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
@@ -390,7 +390,7 @@
     if-nez v0, :cond_4
 
     .line 359
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->x()Lcom/squareup/okhttp/OkHttpClient;
 
@@ -572,7 +572,7 @@
     if-eqz p2, :cond_0
 
     .line 568
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->s()Ljava/util/List;
 
@@ -627,7 +627,7 @@
 
     .line 577
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljava/util/List;)Lcom/squareup/okhttp/OkHttpClient;
 
@@ -654,7 +654,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->k:Lcom/squareup/okhttp/Route;
+    iput-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mRoutek:Lcom/squareup/okhttp/Route;
 
     .line 435
     iget-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
@@ -677,7 +677,7 @@
     move-result-object v1
 
     :goto_0
-    iput-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->d:Lcom/squareup/okhttp/Handshake;
+    iput-object v1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     .line 438
     if-eqz p1, :cond_0
@@ -1009,11 +1009,11 @@
 
     .line 396
     :cond_1
-    iget v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->i:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mIi:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->i:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mIi:I
 
     const/16 v3, 0x14
 
@@ -1032,7 +1032,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->i:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mIi:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1063,7 +1063,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     .line 407
     iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
@@ -1250,7 +1250,7 @@
 
     .line 555
     :cond_4
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
 
@@ -1306,7 +1306,7 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->a()I
 
@@ -1718,7 +1718,7 @@
     if-eqz v2, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->d()Ljava/net/Proxy;
 
@@ -1778,7 +1778,7 @@
 
     .prologue
     .line 291
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->b()I
 
@@ -1819,7 +1819,7 @@
 
     .line 223
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
 
@@ -1848,7 +1848,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Headers$ICab;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1902,7 +1902,7 @@
 
     .prologue
     .line 274
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     int-to-long v2, p1
 
@@ -1976,7 +1976,7 @@
 
     .line 595
     :cond_2
-    iput-wide p1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->h:J
+    iput-wide p1, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mJh:J
 
     .line 596
     const-wide/32 v0, 0x7fffffff
@@ -2010,7 +2010,7 @@
     if-eqz v0, :cond_0
 
     .line 528
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     const-string/jumbo v1, "If-Modified-Since"
 
@@ -2032,7 +2032,7 @@
 
     .line 530
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     const-string/jumbo v1, "If-Modified-Since"
 
@@ -2046,7 +2046,7 @@
 
     .prologue
     .line 279
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/OkHttpClient;->a(Z)V
 
@@ -2059,7 +2059,7 @@
 
     .prologue
     .line 287
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     int-to-long v2, p1
 
@@ -2076,7 +2076,7 @@
 
     .prologue
     .line 581
-    sget-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->e:Ljava/util/Set;
+    sget-object v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mSete:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -2097,7 +2097,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->e:Ljava/util/Set;
+    sget-object v2, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mSete:Ljava/util/Set;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2227,7 +2227,7 @@
 
     .line 521
     :cond_4
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->g:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mICabg:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
 
@@ -2239,11 +2239,11 @@
 
     .prologue
     .line 486
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->k:Lcom/squareup/okhttp/Route;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mRoutek:Lcom/squareup/okhttp/Route;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->k:Lcom/squareup/okhttp/Route;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mRoutek:Lcom/squareup/okhttp/Route;
 
     .line 487
     invoke-virtual {v0}, Lcom/squareup/okhttp/Route;->b()Ljava/net/Proxy;
@@ -2269,7 +2269,7 @@
 
     .line 487
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 488
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->d()Ljava/net/Proxy;

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+.field final synthetic mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .line 34
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
     const-class v2, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
@@ -51,7 +51,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 37
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICr;->mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->startActivity(Landroid/content/Intent;)V
 

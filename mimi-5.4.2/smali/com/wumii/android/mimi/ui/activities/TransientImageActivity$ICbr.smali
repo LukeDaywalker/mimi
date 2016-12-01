@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+.field final synthetic mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
@@ -27,13 +27,13 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->e(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v1, p1, p2}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;J)Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->mTransientImageActivitya:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->finish()V
 

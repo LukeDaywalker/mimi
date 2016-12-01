@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
+.field final synthetic mCircleSelectorTypea:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+.field final synthetic mOwnerGroupChatListActivityb:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->b:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->mOwnerGroupChatListActivityb:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->mCircleSelectorTypea:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->b:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->mOwnerGroupChatListActivityb:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->a:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdj;->mCircleSelectorTypea:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     invoke-static {v0, p1, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->a(Landroid/app/Activity;ILcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
 

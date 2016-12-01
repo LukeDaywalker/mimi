@@ -3,13 +3,9 @@
 
 
 # static fields
-.field private static b:Landroid/content/Context;
+.field private static mContextb:Landroid/content/Context;
 
-.field private static e:Lcom/baidu/lbsapi/auth/ICo;
-
-.field private static f:I
-
-.field private static g:Ljava/util/Hashtable;
+.field private static mHashtableg:Ljava/util/Hashtable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Hashtable",
@@ -21,17 +17,21 @@
     .end annotation
 .end field
 
-.field private static h:Lcom/baidu/lbsapi/auth/ICi;
+.field private static mICih:Lcom/baidu/lbsapi/auth/ICi;
+
+.field private static mICoe:Lcom/baidu/lbsapi/auth/ICo;
+
+.field private static mIf:I
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private c:Lcom/baidu/lbsapi/auth/ICc;
+.field private final mHandleri:Landroid/os/Handler;
 
-.field private d:Lcom/baidu/lbsapi/auth/ICf;
+.field private mICcc:Lcom/baidu/lbsapi/auth/ICc;
 
-.field private final i:Landroid/os/Handler;
+.field private mICfd:Lcom/baidu/lbsapi/auth/ICf;
 
 
 # direct methods
@@ -40,17 +40,17 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sput v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -64,11 +64,11 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICi;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICi;->isZa:Z
 
-    iput-object v2, p0, Lcom/baidu/lbsapi/auth/ICi;->c:Lcom/baidu/lbsapi/auth/ICc;
+    iput-object v2, p0, Lcom/baidu/lbsapi/auth/ICi;->mICcc:Lcom/baidu/lbsapi/auth/ICc;
 
-    iput-object v2, p0, Lcom/baidu/lbsapi/auth/ICi;->d:Lcom/baidu/lbsapi/auth/ICf;
+    iput-object v2, p0, Lcom/baidu/lbsapi/auth/ICi;->mICfd:Lcom/baidu/lbsapi/auth/ICf;
 
     new-instance v0, Lcom/baidu/lbsapi/auth/ICj;
 
@@ -78,15 +78,15 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/lbsapi/auth/ICj;-><init>(Lcom/baidu/lbsapi/auth/ICi;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->i:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mHandleri:Landroid/os/Handler;
 
-    sput-object p1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sput-object p1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     invoke-virtual {v0}, Lcom/baidu/lbsapi/auth/ICo;->isAlive()Z
 
@@ -94,7 +94,7 @@
 
     if-nez v0, :cond_0
 
-    sput-object v2, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sput-object v2, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     :cond_0
     invoke-direct {p0}, Lcom/baidu/lbsapi/auth/ICi;->d()V
@@ -269,7 +269,7 @@
 .method public static a(Landroid/content/Context;)Lcom/baidu/lbsapi/auth/ICi;
     .locals 2
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->h:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICih:Lcom/baidu/lbsapi/auth/ICi;
 
     if-nez v0, :cond_1
 
@@ -278,7 +278,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->h:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICih:Lcom/baidu/lbsapi/auth/ICi;
 
     if-nez v0, :cond_0
 
@@ -286,7 +286,7 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/lbsapi/auth/ICi;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->h:Lcom/baidu/lbsapi/auth/ICi;
+    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICih:Lcom/baidu/lbsapi/auth/ICi;
 
     :cond_0
     monitor-exit v1
@@ -294,7 +294,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_0
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->h:Lcom/baidu/lbsapi/auth/ICi;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICih:Lcom/baidu/lbsapi/auth/ICi;
 
     return-object v0
 
@@ -309,7 +309,7 @@
     throw v0
 
     :cond_1
-    sput-object p0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sput-object p0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     goto :goto_0
 .end method
@@ -340,7 +340,7 @@
 
     if-nez v2, :cond_1
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p2}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -386,7 +386,7 @@
     if-eqz v0, :cond_3
 
     :cond_2
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p2}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -417,7 +417,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p2}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -441,7 +441,7 @@
 .method static synthetic a()Ljava/util/Hashtable;
     .locals 1
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     return-object v0
 .end method
@@ -485,7 +485,7 @@
     move-result-object p1
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mHandleri:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
     :try_end_0
@@ -573,7 +573,7 @@
 
     invoke-virtual {v2, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mHandleri:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
     :try_end_1
@@ -582,15 +582,15 @@
 
     :goto_0
     :try_start_2
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     invoke-virtual {v0}, Lcom/baidu/lbsapi/auth/ICo;->c()V
 
-    sget v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sget v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     add-int/lit8 v0, v0, -0x1
 
-    sput v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sput v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
 
@@ -606,7 +606,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sget v1, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -619,21 +619,21 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_4
-    sget v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sget v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     if-nez v0, :cond_5
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     invoke-virtual {v0}, Lcom/baidu/lbsapi/auth/ICo;->a()V
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     if-eqz v0, :cond_5
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -666,7 +666,7 @@
 
     invoke-virtual {v2, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mHandleri:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
     :try_end_3
@@ -698,7 +698,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v0, p4}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -741,7 +741,7 @@
 
     const-string/jumbo v0, "mcode"
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/baidu/lbsapi/auth/ICb;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -817,7 +817,7 @@
     const-string/jumbo v0, ""
 
     :try_start_0
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/baidu/android/bbalbs/common/util/CommonParam;->a(Landroid/content/Context;)Ljava/lang/String;
     :try_end_0
@@ -839,7 +839,7 @@
     :goto_3
     const-string/jumbo v0, "pcn"
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -856,7 +856,7 @@
     const-string/jumbo v0, ""
 
     :try_start_1
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/baidu/lbsapi/auth/ICb;->c(Landroid/content/Context;)Ljava/lang/String;
     :try_end_1
@@ -915,13 +915,13 @@
 
     new-instance v0, Lcom/baidu/lbsapi/auth/ICc;
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/baidu/lbsapi/auth/ICc;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->c:Lcom/baidu/lbsapi/auth/ICc;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mICcc:Lcom/baidu/lbsapi/auth/ICc;
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->c:Lcom/baidu/lbsapi/auth/ICc;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mICcc:Lcom/baidu/lbsapi/auth/ICc;
 
     new-instance v1, Lcom/baidu/lbsapi/auth/ICl;
 
@@ -996,7 +996,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v0, p5}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1105,7 +1105,7 @@
     const-string/jumbo v0, ""
 
     :try_start_0
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/baidu/android/bbalbs/common/util/CommonParam;->a(Landroid/content/Context;)Ljava/lang/String;
     :try_end_0
@@ -1127,7 +1127,7 @@
     :goto_3
     const-string/jumbo v0, "pcn"
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -1144,7 +1144,7 @@
     const-string/jumbo v0, ""
 
     :try_start_1
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/baidu/lbsapi/auth/ICb;->c(Landroid/content/Context;)Ljava/lang/String;
     :try_end_1
@@ -1203,13 +1203,13 @@
 
     new-instance v0, Lcom/baidu/lbsapi/auth/ICf;
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/baidu/lbsapi/auth/ICf;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->d:Lcom/baidu/lbsapi/auth/ICf;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mICfd:Lcom/baidu/lbsapi/auth/ICf;
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->d:Lcom/baidu/lbsapi/auth/ICf;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICi;->mICfd:Lcom/baidu/lbsapi/auth/ICf;
 
     new-instance v1, Lcom/baidu/lbsapi/auth/ICm;
 
@@ -1280,7 +1280,7 @@
 .method static synthetic b()Landroid/content/Context;
     .locals 1
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -1341,7 +1341,7 @@
 
     const/4 v0, 0x1
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v1, p1}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1408,7 +1408,7 @@
 .method static synthetic c()Lcom/baidu/lbsapi/auth/ICo;
     .locals 1
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     return-object v0
 .end method
@@ -1416,7 +1416,7 @@
 .method private c(Ljava/lang/String;)V
     .locals 3
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1428,7 +1428,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v2}, Lcom/baidu/lbsapi/auth/ICi;->b(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1471,7 +1471,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     if-nez v0, :cond_1
 
@@ -1481,16 +1481,16 @@
 
     invoke-direct {v0, v2}, Lcom/baidu/lbsapi/auth/ICo;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sput-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
     invoke-virtual {v0}, Lcom/baidu/lbsapi/auth/ICo;->start()V
 
     :goto_0
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
-    iget-object v0, v0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1544,7 +1544,7 @@
 .method private e()Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1556,7 +1556,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v2, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v2}, Lcom/baidu/lbsapi/auth/ICi;->b(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1634,12 +1634,12 @@
 
     if-eqz p4, :cond_0
 
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->g:Ljava/util/Hashtable;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mHashtableg:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v4, p4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->b:Landroid/content/Context;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v0, v4}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1664,11 +1664,11 @@
     return v2
 
     :cond_2
-    sget v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sget v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sput v0, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
 
@@ -1684,7 +1684,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/baidu/lbsapi/auth/ICi;->f:I
+    sget v1, Lcom/baidu/lbsapi/auth/ICi;->mIf:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1777,9 +1777,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v1, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
-    iget-object v1, v1, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iget-object v1, v1, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1792,9 +1792,9 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_6
-    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->e:Lcom/baidu/lbsapi/auth/ICo;
+    sget-object v0, Lcom/baidu/lbsapi/auth/ICi;->mICoe:Lcom/baidu/lbsapi/auth/ICo;
 
-    iget-object v8, v0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iget-object v8, v0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v0, Lcom/baidu/lbsapi/auth/ICk;
 

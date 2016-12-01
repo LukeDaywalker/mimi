@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Landroid/content/Context;
+.field private static mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 81
-    sget-object v0, Lcom/tencent/b/b/Pro$ICc;->a:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/b/b/Pro$ICc;->mContexta:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -25,7 +25,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/tencent/b/b/Pro$ICc;->a:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/b/b/Pro$ICc;->mContexta:Landroid/content/Context;
 
     goto :goto_0
 .end method
@@ -35,7 +35,7 @@
 
     .prologue
     .line 91
-    sput-object p0, Lcom/tencent/b/b/Pro$ICc;->a:Landroid/content/Context;
+    sput-object p0, Lcom/tencent/b/b/Pro$ICc;->mContexta:Landroid/content/Context;
 
     .line 92
     return-void

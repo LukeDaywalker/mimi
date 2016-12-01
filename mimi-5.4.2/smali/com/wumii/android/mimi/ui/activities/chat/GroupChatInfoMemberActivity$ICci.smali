@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+.field final synthetic mICcha:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 233
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICci;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICci;->mICcha:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

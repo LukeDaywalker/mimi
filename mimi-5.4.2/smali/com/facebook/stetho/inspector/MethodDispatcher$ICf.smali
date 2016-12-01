@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/json/ObjectMapper;
+.field private final mChromeDevtoolsDomainb:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
 
-.field private final b:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
+.field private final mMethodc:Ljava/lang/reflect/Method;
 
-.field private final c:Ljava/lang/reflect/Method;
+.field private final mObjectMappera:Lcom/facebook/stetho/json/ObjectMapper;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 82
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->a:Lcom/facebook/stetho/json/ObjectMapper;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mObjectMappera:Lcom/facebook/stetho/json/ObjectMapper;
 
     .line 83
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->b:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mChromeDevtoolsDomainb:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
 
     .line 84
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->c:Ljava/lang/reflect/Method;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mMethodc:Ljava/lang/reflect/Method;
 
     .line 85
     return-void
@@ -39,9 +39,9 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mMethodc:Ljava/lang/reflect/Method;
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->b:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mChromeDevtoolsDomainb:Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;
 
     const/4 v2, 0x2
 
@@ -81,7 +81,7 @@
     check-cast v0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcResult;
 
     .line 94
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->a:Lcom/facebook/stetho/json/ObjectMapper;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher$ICf;->mObjectMappera:Lcom/facebook/stetho/json/ObjectMapper;
 
     const-class v2, Lorg/json/JSONObject;
 

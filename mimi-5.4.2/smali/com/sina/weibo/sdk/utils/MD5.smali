@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[C
+.field private static final mArrayCa:[C
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/sina/weibo/sdk/utils/MD5;->a:[C
+    sput-object v0, Lcom/sina/weibo/sdk/utils/MD5;->mArrayCa:[C
 
     .line 30
     return-void
@@ -133,7 +133,7 @@
     .line 53
     add-int/lit8 v6, v2, 0x1
 
-    sget-object v7, Lcom/sina/weibo/sdk/utils/MD5;->a:[C
+    sget-object v7, Lcom/sina/weibo/sdk/utils/MD5;->mArrayCa:[C
 
     ushr-int/lit8 v8, v5, 0x4
 
@@ -146,7 +146,7 @@
     .line 54
     add-int/lit8 v2, v6, 0x1
 
-    sget-object v7, Lcom/sina/weibo/sdk/utils/MD5;->a:[C
+    sget-object v7, Lcom/sina/weibo/sdk/utils/MD5;->mArrayCa:[C
 
     and-int/lit8 v5, v5, 0xf
 

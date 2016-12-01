@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+.field static final mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatLollipopImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     .line 153
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatJellybeanMR2Impl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     goto :goto_0
 
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     goto :goto_0
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatHCImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     goto :goto_0
 
@@ -82,7 +82,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sput-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     goto :goto_0
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 199
-    sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->a:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
+    sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->mViewGroupCompatImpla:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;->a(Landroid/view/ViewGroup;Z)V
 

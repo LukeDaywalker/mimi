@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
+.field final synthetic mGuidanceCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 146
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICk;->a:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICk;->mGuidanceCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

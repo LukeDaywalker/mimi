@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
+.field final synthetic mSubmitNewPasswordFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->mSubmitNewPasswordFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ResetPasswordTask;-><init>(Landroid/app/Activity;)V
 
@@ -48,7 +48,7 @@
     .line 81
     const-string/jumbo v1, "phoneNumber"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->mSubmitNewPasswordFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->a(Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;)Ljava/lang/String;
 
@@ -57,7 +57,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->mSubmitNewPasswordFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -68,7 +68,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/support/v4/app/FragmentActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment$ICb;->mSubmitNewPasswordFragmenta:Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

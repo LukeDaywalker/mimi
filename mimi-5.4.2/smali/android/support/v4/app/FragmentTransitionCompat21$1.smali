@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/graphics/Rect;
+.field final synthetic mRecta:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Landroid/support/v4/app/FragmentTransitionCompat21$1;->a:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentTransitionCompat21$1;->mRecta:Landroid/graphics/Rect;
 
     invoke-direct {p0}, Landroid/transition/Transition$EpicenterCallback;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$1;->a:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$1;->mRecta:Landroid/graphics/Rect;
 
     return-object v0
 .end method

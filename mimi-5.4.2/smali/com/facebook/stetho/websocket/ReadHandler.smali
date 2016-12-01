@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Ljava/io/BufferedInputStream;
+.field private final mBufferedInputStreama:Ljava/io/BufferedInputStream;
 
-.field private final b:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+.field private final mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
-.field private final c:Ljava/io/ByteArrayOutputStream;
+.field private final mSimpleEndpointb:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/ReadHandler;->c:Ljava/io/ByteArrayOutputStream;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
     .line 22
     new-instance v0, Ljava/io/BufferedInputStream;
@@ -33,10 +33,10 @@
 
     invoke-direct {v0, p1, v1}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;I)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/ReadHandler;->a:Ljava/io/BufferedInputStream;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mBufferedInputStreama:Ljava/io/BufferedInputStream;
 
     .line 23
-    iput-object p2, p0, Lcom/facebook/stetho/websocket/ReadHandler;->b:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iput-object p2, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mSimpleEndpointb:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     .line 24
     return-void
@@ -55,12 +55,12 @@
 
     .line 35
     :cond_0
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->a:Ljava/io/BufferedInputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mBufferedInputStreama:Ljava/io/BufferedInputStream;
 
     invoke-virtual {v0, v1}, Lcom/facebook/stetho/websocket/Frame;->a(Ljava/io/BufferedInputStream;)V
 
     .line 36
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->c:Ljava/io/ByteArrayOutputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
     iget-object v2, v0, Lcom/facebook/stetho/websocket/Frame;->i:[B
 
@@ -78,7 +78,7 @@
     if-eqz v1, :cond_1
 
     .line 38
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->c:Ljava/io/ByteArrayOutputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -92,7 +92,7 @@
     invoke-interface {p1, v2, v1, v3}, Lcom/facebook/stetho/websocket/ReadCallback;->a(B[BI)V
 
     .line 40
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->c:Ljava/io/ByteArrayOutputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/ReadHandler;->mByteArrayOutputStreamc:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->reset()V
 

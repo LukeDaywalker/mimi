@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static a:Lokio/Segment;
+.field static mJb:J
 
-.field static b:J
+.field static mSegmenta:Lokio/Segment;
 
 
 # direct methods
@@ -32,31 +32,31 @@
 
     .line 38
     :try_start_0
-    sget-object v0, Lokio/SegmentPool;->a:Lokio/Segment;
+    sget-object v0, Lokio/SegmentPool;->mSegmenta:Lokio/Segment;
 
     if-eqz v0, :cond_0
 
     .line 39
-    sget-object v0, Lokio/SegmentPool;->a:Lokio/Segment;
+    sget-object v0, Lokio/SegmentPool;->mSegmenta:Lokio/Segment;
 
     .line 40
-    iget-object v2, v0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v2, v0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
-    sput-object v2, Lokio/SegmentPool;->a:Lokio/Segment;
+    sput-object v2, Lokio/SegmentPool;->mSegmenta:Lokio/Segment;
 
     .line 41
     const/4 v2, 0x0
 
-    iput-object v2, v0, Lokio/Segment;->f:Lokio/Segment;
+    iput-object v2, v0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 42
-    sget-wide v2, Lokio/SegmentPool;->b:J
+    sget-wide v2, Lokio/SegmentPool;->mJb:J
 
     const-wide/16 v4, 0x800
 
     sub-long/2addr v2, v4
 
-    sput-wide v2, Lokio/SegmentPool;->b:J
+    sput-wide v2, Lokio/SegmentPool;->mJb:J
 
     .line 43
     monitor-exit v1
@@ -97,11 +97,11 @@
     const-wide/16 v6, 0x800
 
     .line 50
-    iget-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     if-eqz v0, :cond_1
 
@@ -114,7 +114,7 @@
 
     .line 51
     :cond_1
-    iget-boolean v0, p0, Lokio/Segment;->d:Z
+    iget-boolean v0, p0, Lokio/Segment;->isZd:Z
 
     if-eqz v0, :cond_2
 
@@ -130,7 +130,7 @@
 
     .line 53
     :try_start_0
-    sget-wide v2, Lokio/SegmentPool;->b:J
+    sget-wide v2, Lokio/SegmentPool;->mJb:J
 
     add-long/2addr v2, v6
 
@@ -157,26 +157,26 @@
     .line 54
     :cond_3
     :try_start_1
-    sget-wide v2, Lokio/SegmentPool;->b:J
+    sget-wide v2, Lokio/SegmentPool;->mJb:J
 
     add-long/2addr v2, v6
 
-    sput-wide v2, Lokio/SegmentPool;->b:J
+    sput-wide v2, Lokio/SegmentPool;->mJb:J
 
     .line 55
-    sget-object v0, Lokio/SegmentPool;->a:Lokio/Segment;
+    sget-object v0, Lokio/SegmentPool;->mSegmenta:Lokio/Segment;
 
-    iput-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iput-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 56
     const/4 v0, 0x0
 
-    iput v0, p0, Lokio/Segment;->c:I
+    iput v0, p0, Lokio/Segment;->mIc:I
 
-    iput v0, p0, Lokio/Segment;->b:I
+    iput v0, p0, Lokio/Segment;->mIb:I
 
     .line 57
-    sput-object p0, Lokio/SegmentPool;->a:Lokio/Segment;
+    sput-object p0, Lokio/SegmentPool;->mSegmenta:Lokio/Segment;
 
     .line 58
     monitor-exit v1

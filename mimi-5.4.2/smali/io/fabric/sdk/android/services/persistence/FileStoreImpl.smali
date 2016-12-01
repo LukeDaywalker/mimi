@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -41,14 +41,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->mContexta:Landroid/content/Context;
 
     .line 44
     invoke-virtual {p1}, Lio/fabric/sdk/android/Kit;->D()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->b:Ljava/lang/String;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->mStringb:Ljava/lang/String;
 
     .line 45
     new-instance v0, Ljava/lang/StringBuilder;
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->c:Ljava/lang/String;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->mStringc:Ljava/lang/String;
 
     .line 46
     return-void
@@ -88,7 +88,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 

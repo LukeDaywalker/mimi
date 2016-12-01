@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/c/Pro$ICd;
+.field final synthetic mICda:Lcom/tencent/c/Pro$ICd;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 58
-    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICg;->a:Lcom/tencent/c/Pro$ICd;
+    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICg;->mICda:Lcom/tencent/c/Pro$ICd;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -45,7 +45,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 65
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICg;->a:Lcom/tencent/c/Pro$ICd;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICg;->mICda:Lcom/tencent/c/Pro$ICd;
 
     const/4 v2, 0x0
 
@@ -58,7 +58,7 @@
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     .line 69
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICg;->a:Lcom/tencent/c/Pro$ICd;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICg;->mICda:Lcom/tencent/c/Pro$ICd;
 
     const/4 v2, 0x0
 

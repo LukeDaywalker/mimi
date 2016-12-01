@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -163,7 +163,7 @@
 
     .line 63
     :cond_1
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->n:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->mLoggern:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

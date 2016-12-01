@@ -72,7 +72,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-char v4, v0, Lch/qos/logback/core/util/CharSequenceState;->c:C
+    iget-char v4, v0, Lch/qos/logback/core/util/CharSequenceState;->mCc:C
 
     if-eq v4, v3, :cond_1
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+.field final synthetic mUserProfileGenderSettedFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->a:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->mUserProfileGenderSettedFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->a:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->mUserProfileGenderSettedFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -38,7 +38,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICw;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->a:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment$ICu;->mUserProfileGenderSettedFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;->a(Lcom/wumii/android/mimi/ui/fragments/discover/UserProfileGenderSettedFragment;)Lcom/wumii/android/mimi/models/entities/Gender;
 

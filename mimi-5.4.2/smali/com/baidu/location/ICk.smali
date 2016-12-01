@@ -7,15 +7,15 @@
 
 
 # static fields
-.field private static bx:Lcom/baidu/location/ICk;
+.field private static mICkbx:Lcom/baidu/location/ICk;
 
 
 # instance fields
-.field private bv:Z
+.field private isZbv:Z
 
-.field private bw:Ljava/util/ArrayList;
+.field private isZby:Z
 
-.field private by:Z
+.field private mArrayListbw:Ljava/util/ArrayList;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICk;->bx:Lcom/baidu/location/ICk;
+    sput-object v0, Lcom/baidu/location/ICk;->mICkbx:Lcom/baidu/location/ICk;
 
     return-void
 .end method
@@ -38,17 +38,17 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICk;->by:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICk;->isZby:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICk;->bv:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICk;->isZbv:Z
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -68,7 +68,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -127,7 +127,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -155,7 +155,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -203,17 +203,17 @@
     :cond_1
     sput-boolean v1, Lcom/baidu/location/ICc;->aL:Z
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICk;->by:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICk;->isZby:Z
 
     if-eq v0, v2, :cond_2
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICk;->by:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICk;->isZby:Z
 
     invoke-static {}, Lcom/baidu/location/ICz;->bc()Lcom/baidu/location/ICz;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/location/ICk;->by:Z
+    iget-boolean v1, p0, Lcom/baidu/location/ICk;->isZby:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICz;->int(Z)V
 
@@ -229,7 +229,7 @@
 .method public static q()Lcom/baidu/location/ICk;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICk;->bx:Lcom/baidu/location/ICk;
+    sget-object v0, Lcom/baidu/location/ICk;->mICkbx:Lcom/baidu/location/ICk;
 
     if-nez v0, :cond_0
 
@@ -237,10 +237,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICk;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICk;->bx:Lcom/baidu/location/ICk;
+    sput-object v0, Lcom/baidu/location/ICk;->mICkbx:Lcom/baidu/location/ICk;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICk;->bx:Lcom/baidu/location/ICk;
+    sget-object v0, Lcom/baidu/location/ICk;->mICkbx:Lcom/baidu/location/ICk;
 
     return-object v0
 .end method
@@ -260,7 +260,7 @@
 
     iput-object p1, v0, Lcom/baidu/location/ICan;->new:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -298,7 +298,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -327,7 +327,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -385,7 +385,7 @@
 
     check-cast v0, Lcom/baidu/location/ICk$ICa;
 
-    iget-object v2, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -582,7 +582,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -640,7 +640,7 @@
 
     check-cast v0, Lcom/baidu/location/ICk$ICa;
 
-    iget-object v2, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -678,7 +678,7 @@
 
     if-le v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -964,7 +964,7 @@
 .method public j()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -994,7 +994,7 @@
 .method public l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICk;->by:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICk;->isZby:Z
 
     return v0
 .end method
@@ -1002,7 +1002,7 @@
 .method public n()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1057,7 +1057,7 @@
 .method public o()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1075,7 +1075,7 @@
 
     invoke-direct {v1, v0}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1119,7 +1119,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICk;->bw:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICk;->mArrayListbw:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 

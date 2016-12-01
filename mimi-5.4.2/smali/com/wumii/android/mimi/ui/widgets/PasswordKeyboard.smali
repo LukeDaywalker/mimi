@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/LinearLayout$LayoutParams;
+.field private mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+.field private mLayoutParamsa:Landroid/widget/LinearLayout$LayoutParams;
 
 
 # direct methods
@@ -397,7 +397,7 @@
 
     .prologue
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->a:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mLayoutParamsa:Landroid/widget/LinearLayout$LayoutParams;
 
     if-nez v0, :cond_0
 
@@ -410,10 +410,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->a:Landroid/widget/LinearLayout$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mLayoutParamsa:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 145
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->a:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mLayoutParamsa:Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -421,7 +421,7 @@
 
     .line 147
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->a:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mLayoutParamsa:Landroid/widget/LinearLayout$LayoutParams;
 
     return-object v0
 .end method
@@ -496,7 +496,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     if-eqz v0, :cond_0
 
@@ -515,7 +515,7 @@
     sparse-switch v1, :sswitch_data_0
 
     .line 162
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -535,7 +535,7 @@
 
     .line 156
     :sswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;->g()V
 
@@ -543,7 +543,7 @@
 
     .line 159
     :sswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;->h()V
 
@@ -564,7 +564,7 @@
 
     .prologue
     .line 37
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->mICbab:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     .line 38
     return-void

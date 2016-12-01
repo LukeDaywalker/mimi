@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mFileHelperj:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field private mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-.field private j:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 26
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->j:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mFileHelperj:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 27
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mStringa:Ljava/lang/String;
 
     .line 31
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/PushClickReportTask;->j()V
@@ -86,7 +86,7 @@
 
     .line 38
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->j:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mFileHelperj:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v3, "cached_click_trackIds"
 
@@ -104,7 +104,7 @@
 
     .line 44
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -113,12 +113,12 @@
     if-nez v1, :cond_0
 
     .line 45
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->j:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mFileHelperj:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v3, "cached_click_trackIds"
 
@@ -186,7 +186,7 @@
     .line 55
     const-string/jumbo v4, "trackId"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->a:Ljava/lang/String;
+    iget-object v5, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v1, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -229,7 +229,7 @@
     .line 67
     const-string/jumbo v3, "trackId"
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->a:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v1, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -247,7 +247,7 @@
 
     .line 77
     :goto_3
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->j:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mFileHelperj:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v3, "cached_click_trackIds"
 
@@ -284,7 +284,7 @@
     invoke-interface {v3, v4, v1}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 75
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 

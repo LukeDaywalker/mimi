@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/support/v7/widget/RecyclerView$ICan;
+.field private isZg:Z
 
-.field private b:Ljava/util/ArrayList;
+.field private mArrayListb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -17,15 +17,15 @@
     .end annotation
 .end field
 
-.field private c:J
+.field private mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
-.field private d:J
+.field private mJc:J
 
-.field private e:J
+.field private mJd:J
 
-.field private f:J
+.field private mJe:J
 
-.field private g:Z
+.field private mJf:J
 
 
 # direct methods
@@ -43,31 +43,31 @@
     .line 9252
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     .line 9253
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->b:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mArrayListb:Ljava/util/ArrayList;
 
     .line 9256
-    iput-wide v2, p0, Landroid/support/v7/widget/RecyclerView$ICal;->c:J
+    iput-wide v2, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJc:J
 
     .line 9257
-    iput-wide v2, p0, Landroid/support/v7/widget/RecyclerView$ICal;->d:J
+    iput-wide v2, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJd:J
 
     .line 9258
-    iput-wide v4, p0, Landroid/support/v7/widget/RecyclerView$ICal;->e:J
+    iput-wide v4, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJe:J
 
     .line 9259
-    iput-wide v4, p0, Landroid/support/v7/widget/RecyclerView$ICal;->f:J
+    iput-wide v4, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJf:J
 
     .line 9261
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->g:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->isZg:Z
 
     .line 9675
     return-void
@@ -83,7 +83,7 @@
 
     .prologue
     .line 9373
-    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     .line 9374
     return-void
@@ -97,12 +97,12 @@
     invoke-virtual {p0, p1, p2}, Landroid/support/v7/widget/RecyclerView$ICal;->d(Landroid/support/v7/widget/RecyclerView$ICbg;Z)V
 
     .line 9536
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     if-eqz v0, :cond_0
 
     .line 9537
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     invoke-interface {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICan;->d(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
@@ -156,7 +156,7 @@
 
     .prologue
     .line 9269
-    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->e:J
+    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJe:J
 
     return-wide v0
 .end method
@@ -169,12 +169,12 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/RecyclerView$ICal;->k(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 9495
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     if-eqz v0, :cond_0
 
     .line 9496
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     invoke-interface {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICan;->a(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 9287
-    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->c:J
+    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJc:J
 
     return-wide v0
 .end method
@@ -209,12 +209,12 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/RecyclerView$ICal;->o(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 9507
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     if-eqz v0, :cond_0
 
     .line 9508
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     invoke-interface {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICan;->c(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
@@ -228,7 +228,7 @@
 
     .prologue
     .line 9305
-    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->d:J
+    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJd:J
 
     return-wide v0
 .end method
@@ -241,12 +241,12 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/RecyclerView$ICal;->m(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 9519
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     if-eqz v0, :cond_0
 
     .line 9520
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->a:Landroid/support/v7/widget/RecyclerView$ICan;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mICana:Landroid/support/v7/widget/RecyclerView$ICan;
 
     invoke-interface {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICan;->b(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
@@ -260,7 +260,7 @@
 
     .prologue
     .line 9323
-    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->f:J
+    iget-wide v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mJf:J
 
     return-wide v0
 .end method
@@ -292,7 +292,7 @@
 
     .prologue
     .line 9341
-    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->g:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->isZg:Z
 
     return v0
 .end method
@@ -302,7 +302,7 @@
 
     .prologue
     .line 9661
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -317,7 +317,7 @@
     if-ge v1, v2, :cond_0
 
     .line 9663
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -336,7 +336,7 @@
 
     .line 9665
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICal;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 

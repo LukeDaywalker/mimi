@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mIb:I
 
-.field private b:I
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 34
     iget v0, p2, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -48,14 +48,14 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mIb:I
 
     .line 35
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     .line 36
     return-void
@@ -123,7 +123,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     .line 122
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->notifyDataSetChanged()V
@@ -187,7 +187,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -248,7 +248,7 @@
 
     move-result v0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->b:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mIb:I
 
     mul-int/2addr v0, v2
 
@@ -258,7 +258,7 @@
 
     div-int/2addr v0, v2
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->b:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mIb:I
 
     mul-int/lit8 v2, v2, 0x4
 
@@ -270,7 +270,7 @@
     if-nez p2, :cond_0
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v3, 0x7f0300fb
 
@@ -294,7 +294,7 @@
 
     new-instance v4, Landroid/widget/RelativeLayout$LayoutParams;
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->b:I
+    iget v5, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;->mIb:I
 
     invoke-direct {v4, v5, v2}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 

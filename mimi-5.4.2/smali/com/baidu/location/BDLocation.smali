@@ -45,51 +45,51 @@
 
 
 # instance fields
-.field private g0:I
+.field private isZg3:Z
 
-.field private g1:D
+.field private isZg4:Z
 
-.field private g2:Ljava/lang/String;
+.field private isZg8:Z
 
-.field private g3:Z
+.field private isZha:Z
 
-.field private g4:Z
+.field private isZhe:Z
 
-.field private g5:Ljava/lang/String;
+.field private isZhh:Z
 
-.field private g6:F
+.field private mDg1:D
 
-.field private g7:D
+.field private mDg7:D
 
-.field private g8:Z
+.field private mDhg:D
 
-.field private g9:Lcom/baidu/location/BDLocation$ICa;
+.field private mFg6:F
 
-.field private gZ:Ljava/lang/String;
+.field private mFhd:F
 
-.field private ha:Z
+.field private mFhi:F
 
-.field private hb:Ljava/lang/String;
+.field private mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-.field private hc:I
+.field private mIg0:I
 
-.field private hd:F
+.field private mIhc:I
 
-.field private he:Z
+.field private mIhf:I
 
-.field private hf:I
+.field private mIhl:I
 
-.field private hg:D
+.field private mStringg2:Ljava/lang/String;
 
-.field private hh:Z
+.field private mStringg5:Ljava/lang/String;
 
-.field private hi:F
+.field private mStringgZ:Ljava/lang/String;
 
-.field private hj:Ljava/lang/String;
+.field private mStringhb:Ljava/lang/String;
 
-.field private hk:Ljava/lang/String;
+.field private mStringhj:Ljava/lang/String;
 
-.field private hl:I
+.field private mStringhk:Ljava/lang/String;
 
 
 # direct methods
@@ -118,61 +118,61 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v1, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v1, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     new-instance v0, Lcom/baidu/location/BDLocation$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     return-void
 .end method
@@ -192,127 +192,127 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v2, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v2, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     new-instance v0, Lcom/baidu/location/BDLocation$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
-    iput v3, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v3, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -320,7 +320,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -328,7 +328,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -336,7 +336,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -344,7 +344,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -360,7 +360,7 @@
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -376,53 +376,53 @@
 
     aget-boolean v1, v0, v2
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
     const/4 v1, 0x1
 
     aget-boolean v1, v0, v1
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
     aget-boolean v1, v0, v3
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
     const/4 v1, 0x3
 
     aget-boolean v1, v0, v1
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     const/4 v1, 0x4
 
     aget-boolean v1, v0, v1
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     const/4 v1, 0x5
 
     aget-boolean v0, v0, v1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hl:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhl:I
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
     return-void
 .end method
@@ -448,211 +448,211 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v1, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v1, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v4, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v1, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     new-instance v0, Lcom/baidu/location/BDLocation$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iput-object v2, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->hf:I
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->g1:D
+    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->hg:D
+    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->g3:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->g7:D
+    iget-wide v0, p1, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->g4:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZg4:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->hi:F
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->ha:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZha:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->hd:F
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mFhd:F
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->hh:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZhh:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->g0:I
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mIg0:I
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->g6:F
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->he:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->hc:I
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->g8:Z
+    iget-boolean v0, p1, Lcom/baidu/location/BDLocation;->isZg8:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     new-instance v0, Lcom/baidu/location/BDLocation$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iget-object v1, p1, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v1, p1, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, v1, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
-    iget v0, p1, Lcom/baidu/location/BDLocation;->hl:I
+    iget v0, p1, Lcom/baidu/location/BDLocation;->mIhl:I
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hl:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIhl:I
 
-    iget-object v0, p1, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     return-void
 .end method
@@ -672,63 +672,63 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v5, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v5, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
-    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
-    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
-    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide v2, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->g4:Z
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hi:F
-
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZha:Z
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
+
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    iput v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     new-instance v0, Lcom/baidu/location/BDLocation$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/BDLocation$ICa;-><init>(Lcom/baidu/location/BDLocation;)V
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
-    iput v7, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput v7, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
-    iput-object v1, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -873,9 +873,9 @@
 
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    iput v5, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput v5, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
-    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v5, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     goto/16 :goto_0
 
@@ -947,7 +947,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iput-object v0, v2, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
@@ -961,7 +961,7 @@
 
     if-lez v2, :cond_3
 
-    iget-object v3, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v3, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v4, 0x0
 
@@ -972,7 +972,7 @@
     :cond_3
     if-le v2, v6, :cond_4
 
-    iget-object v3, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v3, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v4, 0x1
 
@@ -983,7 +983,7 @@
     :cond_4
     if-le v2, v7, :cond_5
 
-    iget-object v3, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v3, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v4, 0x2
 
@@ -996,7 +996,7 @@
 
     if-le v2, v3, :cond_6
 
-    iget-object v3, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v3, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v4, 0x3
 
@@ -1009,7 +1009,7 @@
 
     if-le v2, v3, :cond_7
 
-    iget-object v3, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v3, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v4, 0x4
 
@@ -1022,7 +1022,7 @@
 
     if-le v2, v3, :cond_8
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     const/4 v3, 0x5
 
@@ -1031,7 +1031,7 @@
     iput-object v0, v2, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
     :cond_8
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1043,7 +1043,7 @@
 
     if-eqz v0, :cond_9
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1056,7 +1056,7 @@
     if-nez v0, :cond_c
 
     :cond_9
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1068,7 +1068,7 @@
 
     if-eqz v0, :cond_a
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1081,7 +1081,7 @@
     if-nez v0, :cond_c
 
     :cond_a
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1093,7 +1093,7 @@
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1106,7 +1106,7 @@
     if-nez v0, :cond_c
 
     :cond_b
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1118,7 +1118,7 @@
 
     if-eqz v0, :cond_f
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1131,12 +1131,12 @@
     if-eqz v0, :cond_f
 
     :cond_c
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
     :goto_1
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
@@ -1150,7 +1150,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
@@ -1158,7 +1158,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
@@ -1166,7 +1166,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
@@ -1179,13 +1179,13 @@
     move-result-object v0
 
     :goto_2
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iput-object v0, v2, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     :goto_3
     const-string/jumbo v0, "floor"
@@ -1202,9 +1202,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1214,7 +1214,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     :cond_d
     const-string/jumbo v0, "loctp"
@@ -1231,9 +1231,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1243,7 +1243,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1284,7 +1284,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1292,7 +1292,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1315,7 +1315,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
@@ -1323,7 +1323,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v2, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v2, v2, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
@@ -1340,7 +1340,7 @@
     :cond_11
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     const/4 v0, 0x0
 
@@ -1443,7 +1443,7 @@
 .method private bw()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1485,7 +1485,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     return-void
 .end method
@@ -1503,7 +1503,7 @@
 .method bv()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
     return v0
 .end method
@@ -1511,7 +1511,7 @@
 .method bx()Lcom/baidu/location/BDLocation$ICa;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     return-object v0
 .end method
@@ -1519,7 +1519,7 @@
 .method protected byte(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->hl:I
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mIhl:I
 
     return-void
 .end method
@@ -1527,7 +1527,7 @@
 .method protected case(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
     return-void
 .end method
@@ -1545,13 +1545,13 @@
 
     const-string/jumbo v0, "http://lba.baidu.com/"
 
-    iget-wide v2, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iget-wide v2, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iget-wide v2, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
     invoke-static {v2, v3}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
@@ -1679,7 +1679,7 @@
 .method public getAddrStr()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
@@ -1689,7 +1689,7 @@
 .method public getAltitude()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
     return-wide v0
 .end method
@@ -1697,7 +1697,7 @@
 .method public getCity()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
@@ -1707,7 +1707,7 @@
 .method public getCityCode()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
@@ -1717,7 +1717,7 @@
 .method public getCoorType()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1725,7 +1725,7 @@
 .method public getDirection()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
     return v0
 .end method
@@ -1733,7 +1733,7 @@
 .method public getDistrict()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
@@ -1743,7 +1743,7 @@
 .method public getFloor()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1751,7 +1751,7 @@
 .method public getLatitude()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
     return-wide v0
 .end method
@@ -1759,7 +1759,7 @@
 .method public getLocType()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
     return v0
 .end method
@@ -1767,7 +1767,7 @@
 .method public getLongitude()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
     return-wide v0
 .end method
@@ -1775,7 +1775,7 @@
 .method public getNetworkLocationType()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1783,7 +1783,7 @@
 .method public getOperators()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hl:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhl:I
 
     return v0
 .end method
@@ -1791,7 +1791,7 @@
 .method public getProvince()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
@@ -1801,7 +1801,7 @@
 .method public getRadius()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
     return v0
 .end method
@@ -1811,9 +1811,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     return v0
 .end method
@@ -1821,7 +1821,7 @@
 .method public getSpeed()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
     return v0
 .end method
@@ -1829,7 +1829,7 @@
 .method public getStreet()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
@@ -1839,7 +1839,7 @@
 .method public getStreetNumber()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
@@ -1849,7 +1849,7 @@
 .method public getTime()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1857,7 +1857,7 @@
 .method public hasAddr()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     return v0
 .end method
@@ -1865,7 +1865,7 @@
 .method public hasAltitude()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
     return v0
 .end method
@@ -1873,7 +1873,7 @@
 .method public hasRadius()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
     return v0
 .end method
@@ -1881,7 +1881,7 @@
 .method public hasSateNumber()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     return v0
 .end method
@@ -1889,7 +1889,7 @@
 .method public hasSpeed()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
     return v0
 .end method
@@ -1899,43 +1899,43 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v1, p1, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
@@ -1943,7 +1943,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     :cond_0
     return-void
@@ -1961,7 +1961,7 @@
     :cond_1
     if-nez p1, :cond_0
 
-    iput-object p2, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iput-object p2, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -1969,7 +1969,7 @@
 .method public isCellChangeFlag()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iget-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     return v0
 .end method
@@ -1985,13 +1985,13 @@
 .method public setAddrStr(Ljava/lang/String;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/BDLocation;->gZ:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/BDLocation;->mStringgZ:Ljava/lang/String;
 
     if-nez p1, :cond_0
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     :goto_0
     return-void
@@ -1999,7 +1999,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     goto :goto_0
 .end method
@@ -2007,11 +2007,11 @@
 .method public setAltitude(D)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
     return-void
 .end method
@@ -2019,7 +2019,7 @@
 .method public setCoorType(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/BDLocation;->hk:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/BDLocation;->mStringhk:Ljava/lang/String;
 
     return-void
 .end method
@@ -2027,7 +2027,7 @@
 .method public setDirection(F)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
     return-void
 .end method
@@ -2035,7 +2035,7 @@
 .method public setLatitude(D)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
     return-void
 .end method
@@ -2043,7 +2043,7 @@
 .method public setLocType(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
     return-void
 .end method
@@ -2051,7 +2051,7 @@
 .method public setLongitude(D)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iput-wide p1, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
     return-void
 .end method
@@ -2059,7 +2059,7 @@
 .method public setNetworkLocationType(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     return-void
 .end method
@@ -2067,11 +2067,11 @@
 .method public setRadius(F)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
     return-void
 .end method
@@ -2079,7 +2079,7 @@
 .method public setSatelliteNumber(I)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     return-void
 .end method
@@ -2087,11 +2087,11 @@
 .method public setSpeed(F)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iput p1, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iput-boolean v0, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
     return-void
 .end method
@@ -2099,7 +2099,7 @@
 .method public setTime(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
     return-void
 .end method
@@ -2107,87 +2107,87 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hf:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhf:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hj:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhj:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->g1:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg1:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->hg:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDhg:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->g7:D
+    iget-wide v0, p0, Lcom/baidu/location/BDLocation;->mDg7:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hi:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFhi:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hd:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFhd:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->g0:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIg0:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->g6:F
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mFg6:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g2:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg2:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->hb:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringhb:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->if:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->new:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->int:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->byte:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->do:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->for:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g9:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mICag9:Lcom/baidu/location/BDLocation$ICa;
 
     iget-object v0, v0, Lcom/baidu/location/BDLocation$ICa;->try:Ljava/lang/String;
 
@@ -2199,51 +2199,51 @@
 
     const/4 v1, 0x0
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->g3:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg3:Z
 
     aput-boolean v2, v0, v1
 
     const/4 v1, 0x1
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->g4:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg4:Z
 
     aput-boolean v2, v0, v1
 
     const/4 v1, 0x2
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->ha:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZha:Z
 
     aput-boolean v2, v0, v1
 
     const/4 v1, 0x3
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->hh:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZhh:Z
 
     aput-boolean v2, v0, v1
 
     const/4 v1, 0x4
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->he:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZhe:Z
 
     aput-boolean v2, v0, v1
 
     const/4 v1, 0x5
 
-    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->g8:Z
+    iget-boolean v2, p0, Lcom/baidu/location/BDLocation;->isZg8:Z
 
     aput-boolean v2, v0, v1
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeBooleanArray([Z)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hl:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhl:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget-object v0, p0, Lcom/baidu/location/BDLocation;->g5:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDLocation;->mStringg5:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget v0, p0, Lcom/baidu/location/BDLocation;->hc:I
+    iget v0, p0, Lcom/baidu/location/BDLocation;->mIhc:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

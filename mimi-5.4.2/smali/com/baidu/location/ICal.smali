@@ -7,15 +7,15 @@
 
 
 # static fields
-.field private static hH:Lcom/baidu/location/ICal;
+.field private static mICalhH:Lcom/baidu/location/ICal;
 
 
 # instance fields
-.field private hG:Z
+.field private isZhG:Z
 
-.field private hI:Landroid/os/Handler;
+.field private isZhJ:Z
 
-.field private hJ:Z
+.field private mHandlerhI:Landroid/os/Handler;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICal;->hH:Lcom/baidu/location/ICal;
+    sput-object v0, Lcom/baidu/location/ICal;->mICalhH:Lcom/baidu/location/ICal;
 
     return-void
 .end method
@@ -38,17 +38,17 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICal;->hI:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICal;->mHandlerhI:Landroid/os/Handler;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICal;->hG:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICal;->isZhG:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICal;->hJ:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICal;->isZhJ:Z
 
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICal;->hI:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICal;->mHandlerhI:Landroid/os/Handler;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 .method public static bP()Lcom/baidu/location/ICal;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICal;->hH:Lcom/baidu/location/ICal;
+    sget-object v0, Lcom/baidu/location/ICal;->mICalhH:Lcom/baidu/location/ICal;
 
     if-nez v0, :cond_0
 
@@ -64,10 +64,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICal;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICal;->hH:Lcom/baidu/location/ICal;
+    sput-object v0, Lcom/baidu/location/ICal;->mICalhH:Lcom/baidu/location/ICal;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICal;->hH:Lcom/baidu/location/ICal;
+    sget-object v0, Lcom/baidu/location/ICal;->mICalhH:Lcom/baidu/location/ICal;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 .method static synthetic do(Lcom/baidu/location/ICal;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICal;->hG:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICal;->isZhG:Z
 
     return v0
 .end method
@@ -97,7 +97,7 @@
 .method static synthetic if(Lcom/baidu/location/ICal;)Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICal;->hI:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICal;->mHandlerhI:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -105,7 +105,7 @@
 .method static synthetic if(Lcom/baidu/location/ICal;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICal;->hJ:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICal;->isZhJ:Z
 
     return p1
 .end method
@@ -115,7 +115,7 @@
 .method public bO()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICal;->hI:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICal;->mHandlerhI:Landroid/os/Handler;
 
     new-instance v1, Lcom/baidu/location/ICal$1;
 
@@ -131,7 +131,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICal;->hG:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICal;->isZhG:Z
 
     return-void
 .end method

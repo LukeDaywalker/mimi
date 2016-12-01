@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Landroid/widget/EditText;
+.field private isZe:Z
 
-.field private e:Z
+.field private mEditTextd:Landroid/widget/EditText;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -79,7 +79,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -126,7 +126,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->e:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->isZe:Z
 
     .line 43
     const v0, 0x7f0300bb
@@ -146,15 +146,15 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;
 
@@ -177,12 +177,12 @@
     if-eqz v0, :cond_0
 
     .line 66
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v2, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 67
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -267,7 +267,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 109
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->isZe:Z
 
     if-eqz v0, :cond_2
 
@@ -338,11 +338,11 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

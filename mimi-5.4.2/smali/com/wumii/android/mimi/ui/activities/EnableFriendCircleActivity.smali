@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private n:Landroid/widget/Button;
+.field private mButtonn:Landroid/widget/Button;
 
-.field private o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+.field private mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
-.field private p:Landroid/content/IntentFilter;
+.field private mIntentFilterp:Landroid/content/IntentFilter;
 
 
 # direct methods
@@ -149,7 +149,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->n:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mButtonn:Landroid/widget/Button;
 
     invoke-virtual {v1}, Landroid/widget/Button;->getId()I
 
@@ -211,10 +211,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->n:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mButtonn:Landroid/widget/Button;
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->n:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mButtonn:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -284,7 +284,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
     if-nez v0, :cond_0
 
@@ -293,7 +293,7 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
     .line 95
     new-instance v0, Landroid/content/IntentFilter;
@@ -302,10 +302,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->p:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mIntentFilterp:Landroid/content/IntentFilter;
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->p:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mIntentFilterp:Landroid/content/IntentFilter;
 
     const-string/jumbo v1, "android.intent.category.DEFAULT"
 
@@ -317,9 +317,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->p:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mIntentFilterp:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
@@ -335,7 +335,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStop()V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
     if-eqz v0, :cond_0
 
@@ -344,7 +344,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->o:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity;->mICuo:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;)V
 

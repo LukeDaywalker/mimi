@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
-.field private static final synthetic e:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+.field private static final synthetic mArrayICaye:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
 
 # direct methods
@@ -93,7 +93,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->e:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sput-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mArrayICaye:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 
     .prologue
     .line 30
-    sget-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->e:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
+    sget-object v0, Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->mArrayICaye:[Lcom/wumii/android/mimi/manager/NotificationManager$ICay;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/manager/NotificationManager$ICay;->clone()Ljava/lang/Object;
 

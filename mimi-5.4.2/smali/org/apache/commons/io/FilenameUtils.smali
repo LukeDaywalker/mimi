@@ -6,9 +6,9 @@
 # static fields
 .field public static final a:Ljava/lang/String;
 
-.field private static final b:C
+.field private static final mCb:C
 
-.field private static final c:C
+.field private static final mCc:C
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .line 110
     sget-char v0, Ljava/io/File;->separatorChar:C
 
-    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->b:C
+    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->mCb:C
 
     .line 117
     invoke-static {}, Lorg/apache/commons/io/FilenameUtils;->a()Z
@@ -40,7 +40,7 @@
     .line 118
     const/16 v0, 0x2f
 
-    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->c:C
+    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->mCc:C
 
     .line 122
     :goto_0
@@ -50,7 +50,7 @@
     :cond_0
     const/16 v0, 0x5c
 
-    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->c:C
+    sput-char v0, Lorg/apache/commons/io/FilenameUtils;->mCc:C
 
     goto :goto_0
 .end method
@@ -97,7 +97,7 @@
 
     .prologue
     .line 138
-    sget-char v0, Lorg/apache/commons/io/FilenameUtils;->b:C
+    sget-char v0, Lorg/apache/commons/io/FilenameUtils;->mCb:C
 
     const/16 v1, 0x5c
 

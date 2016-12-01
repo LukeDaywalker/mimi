@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private n:Landroid/widget/EditText;
+.field private mButtonr:Landroid/widget/Button;
 
-.field private o:Landroid/widget/EditText;
+.field private mEditTextn:Landroid/widget/EditText;
 
-.field private p:Landroid/widget/EditText;
+.field private mEditTexto:Landroid/widget/EditText;
 
-.field private q:Landroid/widget/TextView;
+.field private mEditTextp:Landroid/widget/EditText;
 
-.field private r:Landroid/widget/Button;
+.field private mICcs:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
-.field private s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+.field private mTextViewq:Landroid/widget/TextView;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 51
     const v0, 0x7f0b008f
@@ -73,7 +73,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->o:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTexto:Landroid/widget/EditText;
 
     .line 52
     const v0, 0x7f0b0090
@@ -84,7 +84,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->p:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTextp:Landroid/widget/EditText;
 
     .line 53
     const v0, 0x7f0b006f
@@ -95,7 +95,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 54
     const v0, 0x7f0b0091
@@ -106,15 +106,15 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->r:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mButtonr:Landroid/widget/Button;
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->r:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mButtonr:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mTextViewq:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -131,7 +131,7 @@
     const/4 v5, 0x0
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -142,7 +142,7 @@
     move-result-object v0
 
     .line 62
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->o:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -157,7 +157,7 @@
     move-result-object v1
 
     .line 63
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->p:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mEditTextp:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -172,7 +172,7 @@
     move-result-object v2
 
     .line 64
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -191,7 +191,7 @@
 
     .line 66
     :cond_0
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -227,7 +227,7 @@
 
     .line 70
     :cond_2
-    invoke-static {v2}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v2}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -244,7 +244,7 @@
 
     .line 72
     :cond_3
-    invoke-static {v1, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -261,7 +261,7 @@
 
     .line 75
     :cond_4
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mICcs:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     if-nez v2, :cond_5
 
@@ -270,11 +270,11 @@
 
     invoke-direct {v2, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;Landroid/app/Activity;)V
 
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mICcs:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     .line 78
     :cond_5
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->mICcs:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->a(Ljava/lang/String;Ljava/lang/String;)V
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mListb:Ljava/util/List;
 
     .line 27
     return-void
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mListb:Ljava/util/List;
 
     .line 22
     return-void
@@ -70,7 +70,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -101,7 +101,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;-><init>(Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;Landroid/content/Context;IILjava/lang/CharSequence;)V
 
     .line 32
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

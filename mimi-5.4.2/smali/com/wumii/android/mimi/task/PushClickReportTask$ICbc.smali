@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/PushClickReportTask;
+.field final synthetic mPushClickReportTaska:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask$ICbc;->a:Lcom/wumii/android/mimi/task/PushClickReportTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/PushClickReportTask$ICbc;->mPushClickReportTaska:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

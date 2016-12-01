@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/io/InputStream;
+.field final synthetic mHttpRequestc:Lio/fabric/sdk/android/services/network/HttpRequest;
 
-.field final synthetic b:Ljava/io/OutputStream;
+.field final synthetic mInputStreama:Ljava/io/InputStream;
 
-.field final synthetic c:Lio/fabric/sdk/android/services/network/HttpRequest;
+.field final synthetic mOutputStreamb:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -28,11 +28,11 @@
 
     .prologue
     .line 2419
-    iput-object p1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->c:Lio/fabric/sdk/android/services/network/HttpRequest;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mHttpRequestc:Lio/fabric/sdk/android/services/network/HttpRequest;
 
-    iput-object p4, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->a:Ljava/io/InputStream;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mInputStreama:Ljava/io/InputStream;
 
-    iput-object p5, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->b:Ljava/io/OutputStream;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-direct {p0, p2, p3}, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;-><init>(Ljava/io/Closeable;Z)V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 2423
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->c:Lio/fabric/sdk/android/services/network/HttpRequest;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mHttpRequestc:Lio/fabric/sdk/android/services/network/HttpRequest;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Lio/fabric/sdk/android/services/network/HttpRequest;)I
 
@@ -56,7 +56,7 @@
 
     .line 2425
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->a:Ljava/io/InputStream;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v1, v0}, Ljava/io/InputStream;->read([B)I
 
@@ -67,7 +67,7 @@
     if-eq v1, v2, :cond_0
 
     .line 2426
-    iget-object v2, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->b:Ljava/io/OutputStream;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mOutputStreamb:Ljava/io/OutputStream;
 
     const/4 v3, 0x0
 
@@ -77,7 +77,7 @@
 
     .line 2427
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->c:Lio/fabric/sdk/android/services/network/HttpRequest;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;->mHttpRequestc:Lio/fabric/sdk/android/services/network/HttpRequest;
 
     return-object v0
 .end method

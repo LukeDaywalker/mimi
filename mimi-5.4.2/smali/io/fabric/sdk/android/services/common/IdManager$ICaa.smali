@@ -29,7 +29,7 @@
 
 .field public static final enum g:Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
-.field private static final synthetic i:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+.field private static final synthetic mArrayICaai:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
 
 # instance fields
@@ -165,7 +165,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->i:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mArrayICaai:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     return-void
 .end method
@@ -210,7 +210,7 @@
 
     .prologue
     .line 73
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->i:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager$ICaa;->mArrayICaai:[Lio/fabric/sdk/android/services/common/IdManager$ICaa;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/common/IdManager$ICaa;->clone()Ljava/lang/Object;
 

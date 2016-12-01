@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;-><init>(Landroid/app/Activity;)V
 
     .line 28
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 29
     return-void
@@ -59,7 +59,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/share/CircleLockInvitationShareController;->mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 

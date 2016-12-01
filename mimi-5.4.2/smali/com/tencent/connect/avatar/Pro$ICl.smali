@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+.field final synthetic mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 284
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     .line 285
     invoke-direct {p0, p2}, Landroid/view/View;-><init>(Landroid/content/Context;)V
@@ -34,7 +34,7 @@
     invoke-direct {v0}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
 
     .line 291
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v2, "com.tencent.plus.blue_normal.png"
 
@@ -43,7 +43,7 @@
     move-result-object v1
 
     .line 292
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v3, "com.tencent.plus.blue_down.png"
 
@@ -52,7 +52,7 @@
     move-result-object v2
 
     .line 293
-    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v4, "com.tencent.plus.blue_disable.png"
 
@@ -102,7 +102,7 @@
     invoke-direct {v0}, Landroid/graphics/drawable/StateListDrawable;-><init>()V
 
     .line 306
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v2, "com.tencent.plus.gray_normal.png"
 
@@ -111,7 +111,7 @@
     move-result-object v1
 
     .line 307
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v3, "com.tencent.plus.gray_down.png"
 
@@ -120,7 +120,7 @@
     move-result-object v2
 
     .line 308
-    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ICl;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v3, p0, Lcom/tencent/connect/avatar/Pro$ICl;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v4, "com.tencent.plus.gray_disable.png"
 

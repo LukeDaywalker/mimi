@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
+.field final synthetic mGroupApplicationChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 241
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->mGroupApplicationChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
     .line 242
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
@@ -29,7 +29,7 @@
 
     .prologue
     .line 252
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->mGroupApplicationChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -56,7 +56,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Z)Z
 
     .line 253
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->mGroupApplicationChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->g(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+.field final synthetic mSecretActivityc:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 1002
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;->mSecretActivityc:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;-><init>()V
 
@@ -49,7 +49,7 @@
     if-ne p1, v0, :cond_0
 
     .line 1008
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;->mSecretActivityc:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)V
 

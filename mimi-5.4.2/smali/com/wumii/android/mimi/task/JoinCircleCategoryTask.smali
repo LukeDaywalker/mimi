@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 23
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->mStringd:Ljava/lang/String;
 
     .line 24
     if-eqz p2, :cond_0
@@ -36,7 +36,7 @@
     const-string/jumbo v0, "JOIN"
 
     :goto_0
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->mStringa:Ljava/lang/String;
 
     .line 25
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->j()V
@@ -75,14 +75,14 @@
     .line 31
     const-string/jumbo v1, "categoryId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 32
     const-string/jumbo v1, "action"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

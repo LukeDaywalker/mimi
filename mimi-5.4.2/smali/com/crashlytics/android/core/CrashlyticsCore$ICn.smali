@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field final synthetic mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 903
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     const/4 v0, 0x1
 
     .line 908
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v1}, Lcom/crashlytics/android/core/CrashlyticsCore;->C()Lio/fabric/sdk/android/Fabric;
 
@@ -64,7 +64,7 @@
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->v()Z
 
@@ -73,7 +73,7 @@
     if-eqz v2, :cond_0
 
     .line 912
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICn;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     iget-object v2, p1, Lio/fabric/sdk/android/services/settings/SettingsData;->c:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 

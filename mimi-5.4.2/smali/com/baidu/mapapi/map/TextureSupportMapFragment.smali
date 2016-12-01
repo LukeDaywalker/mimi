@@ -3,13 +3,13 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private b:Lcom/baidu/mapapi/map/TextureMapView;
+.field private mBaiduMapOptionsc:Lcom/baidu/mapapi/map/BaiduMapOptions;
 
-.field private c:Lcom/baidu/mapapi/map/BaiduMapOptions;
+.field private mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     invoke-direct {p0}, Landroid/support/v4/app/Fragment;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->c:Lcom/baidu/mapapi/map/BaiduMapOptions;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mBaiduMapOptionsc:Lcom/baidu/mapapi/map/BaiduMapOptions;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 .method public getBaiduMap()Lcom/baidu/mapapi/map/BaiduMap;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     if-nez v0, :cond_0
 
@@ -80,7 +80,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/TextureMapView;->getMap()Lcom/baidu/mapapi/map/BaiduMap;
 
@@ -92,7 +92,7 @@
 .method public getMapView()Lcom/baidu/mapapi/map/TextureMapView;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     return-object v0
 .end method
@@ -138,13 +138,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->c:Lcom/baidu/mapapi/map/BaiduMapOptions;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mBaiduMapOptionsc:Lcom/baidu/mapapi/map/BaiduMapOptions;
 
     invoke-direct {v0, v1, v2}, Lcom/baidu/mapapi/map/TextureMapView;-><init>(Landroid/content/Context;Lcom/baidu/mapapi/map/BaiduMapOptions;)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     return-object v0
 .end method
@@ -162,7 +162,7 @@
 
     invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDestroyView()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/TextureMapView;->onDestroy()V
 
@@ -182,7 +182,7 @@
 
     invoke-super {p0}, Landroid/support/v4/app/Fragment;->onPause()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/TextureMapView;->onPause()V
 
@@ -194,7 +194,7 @@
 
     invoke-super {p0}, Landroid/support/v4/app/Fragment;->onResume()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->b:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TextureSupportMapFragment;->mTextureMapViewb:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/TextureMapView;->onResume()V
 

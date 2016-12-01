@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+.field final synthetic mImageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;->mImageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,14 +48,14 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 38
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;->mImageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->d:Landroid/content/Context;
 

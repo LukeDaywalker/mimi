@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/widget/ImageView;
+.field final synthetic mImageViewa:Landroid/widget/ImageView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 676
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->a:Landroid/widget/ImageView;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 679
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;->mImageViewa:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->performClick()Z
 

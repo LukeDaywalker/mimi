@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic c:I
+.field final synthetic mIc:I
 
-.field final synthetic d:I
+.field final synthetic mId:I
 
-.field final synthetic e:Lcom/squareup/okhttp/internal/spdy/Ping;
+.field final synthetic mPinge:Lcom/squareup/okhttp/internal/spdy/Ping;
 
-.field final synthetic f:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+.field final synthetic mSpdyConnectionf:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
 
 # direct methods
@@ -21,15 +21,15 @@
 
     .prologue
     .line 393
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->f:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mSpdyConnectionf:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    iput-boolean p4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->a:Z
+    iput-boolean p4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->isZa:Z
 
-    iput p5, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->c:I
+    iput p5, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mIc:I
 
-    iput p6, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->d:I
+    iput p6, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mId:I
 
-    iput-object p7, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->e:Lcom/squareup/okhttp/internal/spdy/Ping;
+    iput-object p7, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mPinge:Lcom/squareup/okhttp/internal/spdy/Ping;
 
     invoke-direct {p0, p2, p3}, Lcom/squareup/okhttp/internal/NamedRunnable;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
 
@@ -44,15 +44,15 @@
     .prologue
     .line 396
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->f:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mSpdyConnectionf:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->a:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->isZa:Z
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->c:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mIc:I
 
-    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->d:I
+    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mId:I
 
-    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->e:Lcom/squareup/okhttp/internal/spdy/Ping;
+    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICaf;->mPinge:Lcom/squareup/okhttp/internal/spdy/Ping;
 
     invoke-static {v0, v1, v2, v3, v4}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->a(Lcom/squareup/okhttp/internal/spdy/SpdyConnection;ZIILcom/squareup/okhttp/internal/spdy/Ping;)V
     :try_end_0

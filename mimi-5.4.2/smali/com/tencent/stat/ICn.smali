@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/stat/ICl;
+.field final synthetic mICla:Lcom/tencent/stat/ICl;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/stat/ICl;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICn;->a:Lcom/tencent/stat/ICl;
+    iput-object p1, p0, Lcom/tencent/stat/ICn;->mICla:Lcom/tencent/stat/ICl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

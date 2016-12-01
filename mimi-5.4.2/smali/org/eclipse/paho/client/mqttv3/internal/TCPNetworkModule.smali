@@ -7,23 +7,23 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field static mClassc:Ljava/lang/Class;
 
-.field static c:Ljava/lang/Class;
+.field private static final mLoggerd:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private static final d:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
 .field protected b:Ljava/net/Socket;
 
-.field private e:Ljavax/net/SocketFactory;
+.field private mIg:I
 
-.field private f:Ljava/lang/String;
+.field private mIh:I
 
-.field private g:I
+.field private mSocketFactorye:Ljavax/net/SocketFactory;
 
-.field private h:I
+.field private mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     .prologue
     .line 36
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->c:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mClassc:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -45,25 +45,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->c:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mClassc:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->a:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringa:Ljava/lang/String;
 
     .line 37
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.internal.nls.logcat"
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->a:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->d:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mLoggerd:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     return-void
 
@@ -90,18 +90,18 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->d:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mLoggerd:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     invoke-interface {v0, p4}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->a(Ljava/lang/String;)V
 
     .line 52
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->e:Ljavax/net/SocketFactory;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketFactorye:Ljavax/net/SocketFactory;
 
     .line 53
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->f:Ljava/lang/String;
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringf:Ljava/lang/String;
 
     .line 54
-    iput p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->g:I
+    iput p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIg:I
 
     .line 56
     return-void
@@ -115,9 +115,9 @@
     .prologue
     .line 67
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->d:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mLoggerd:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->a:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "start"
 
@@ -129,7 +129,7 @@
 
     const/4 v5, 0x0
 
-    iget-object v6, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->f:Ljava/lang/String;
+    iget-object v6, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringf:Ljava/lang/String;
 
     aput-object v6, v4, v5
 
@@ -137,7 +137,7 @@
 
     new-instance v6, Ljava/lang/Integer;
 
-    iget v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->g:I
+    iget v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIg:I
 
     invoke-direct {v6, v7}, Ljava/lang/Integer;-><init>(I)V
 
@@ -147,7 +147,7 @@
 
     new-instance v6, Ljava/lang/Long;
 
-    iget v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->h:I
+    iget v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIh:I
 
     mul-int/lit16 v7, v7, 0x3e8
 
@@ -162,14 +162,14 @@
     .line 68
     new-instance v0, Ljava/net/InetSocketAddress;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->f:Ljava/lang/String;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringf:Ljava/lang/String;
 
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->g:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIg:I
 
     invoke-direct {v0, v1, v2}, Ljava/net/InetSocketAddress;-><init>(Ljava/lang/String;I)V
 
     .line 69
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->e:Ljavax/net/SocketFactory;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mSocketFactorye:Ljavax/net/SocketFactory;
 
     invoke-virtual {v1}, Ljavax/net/SocketFactory;->createSocket()Ljava/net/Socket;
 
@@ -180,7 +180,7 @@
     .line 70
     iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->b:Ljava/net/Socket;
 
-    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->h:I
+    iget v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIh:I
 
     mul-int/lit16 v2, v2, 0x3e8
 
@@ -196,9 +196,9 @@
     move-exception v5
 
     .line 78
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->d:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mLoggerd:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->a:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, "start"
 
@@ -237,7 +237,7 @@
 
     .prologue
     .line 105
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->h:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/TCPNetworkModule;->mIh:I
 
     .line 106
     return-void

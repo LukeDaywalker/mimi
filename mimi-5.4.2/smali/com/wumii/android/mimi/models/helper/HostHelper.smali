@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/network/server/Server;
+.field private mIc:I
 
-.field private c:I
+.field private mId:I
 
-.field private d:I
+.field private mIe:I
 
-.field private e:I
+.field private mIf:I
 
-.field private f:I
+.field private mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -46,15 +46,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 35
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     .line 36
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     .line 37
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIe:I
 
     .line 41
     invoke-static {}, Lcom/wumii/android/mimi/network/server/ServersStorage;->a()Lcom/wumii/android/mimi/network/server/ServersStorage;
@@ -147,18 +147,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 53
-    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     .line 54
-    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     .line 55
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIe:I
 
     .line 56
     return-void
@@ -177,7 +177,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/network/server/Server;->equals(Ljava/lang/Object;)Z
 
@@ -198,16 +198,16 @@
     if-eqz v0, :cond_1
 
     .line 120
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIe:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
     .line 121
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIe:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     .line 123
     :cond_0
@@ -219,7 +219,7 @@
 
     .line 125
     :cond_1
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIf:I
 
     if-gtz v0, :cond_3
 
@@ -240,18 +240,18 @@
     if-nez v1, :cond_2
 
     .line 128
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     .line 129
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->g()I
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIf:I
 
     .line 130
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->e()V
@@ -260,7 +260,7 @@
 
     .line 134
     :cond_2
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/HostHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/HostHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -272,7 +272,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -291,12 +291,12 @@
     invoke-interface {v1, v2}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 135
-    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
-    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->e:I
+    iput v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIe:I
 
     .line 136
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     goto :goto_0
 
@@ -328,7 +328,7 @@
     if-eqz v0, :cond_0
 
     .line 146
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "backup servers is empty"
 
@@ -340,7 +340,7 @@
 
     .line 150
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -351,11 +351,11 @@
     .line 151
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     .line 154
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -381,7 +381,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iget v3, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -398,7 +398,7 @@
     invoke-interface {v0, v2}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 155
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -406,10 +406,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/network/server/Server;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     .line 156
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     add-int/lit8 v0, v0, 0x1
 
@@ -419,7 +419,7 @@
 
     rem-int/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mId:I
 
     goto :goto_0
 .end method
@@ -433,7 +433,7 @@
 
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
-    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iget v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     int-to-double v4, v1
 
@@ -467,7 +467,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/server/Server;->getHost()Ljava/lang/String;
 
@@ -492,22 +492,22 @@
     if-eqz v0, :cond_1
 
     .line 96
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->c:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIc:I
 
     .line 97
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->g()I
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mIf:I
 
     .line 100
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     const/4 v1, 0x0
 
@@ -524,7 +524,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->b:Lcom/wumii/android/mimi/network/server/Server;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HostHelper;->mServerb:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/server/Server;->getHost()Ljava/lang/String;
 

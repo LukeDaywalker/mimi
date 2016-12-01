@@ -50,9 +50,9 @@
 
     iget v0, p1, Lch/qos/logback/core/util/CharSequenceState;->occurrences:I
 
-    iget-char v1, p1, Lch/qos/logback/core/util/CharSequenceState;->c:C
+    iget-char v1, p1, Lch/qos/logback/core/util/CharSequenceState;->mCc:C
 
-    iget-char v2, p1, Lch/qos/logback/core/util/CharSequenceState;->c:C
+    iget-char v2, p1, Lch/qos/logback/core/util/CharSequenceState;->mCc:C
 
     sparse-switch v2, :sswitch_data_0
 

@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:J
+.field mIc:I
 
-.field b:Ljava/lang/String;
+.field mId:I
 
-.field c:I
+.field mJa:J
 
-.field d:I
+.field mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,13 +18,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Lcom/tencent/stat/ICy;->a:J
+    iput-wide p1, p0, Lcom/tencent/stat/ICy;->mJa:J
 
-    iput-object p3, p0, Lcom/tencent/stat/ICy;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/stat/ICy;->mStringb:Ljava/lang/String;
 
-    iput p4, p0, Lcom/tencent/stat/ICy;->c:I
+    iput p4, p0, Lcom/tencent/stat/ICy;->mIc:I
 
-    iput p5, p0, Lcom/tencent/stat/ICy;->d:I
+    iput p5, p0, Lcom/tencent/stat/ICy;->mId:I
 
     return-void
 .end method

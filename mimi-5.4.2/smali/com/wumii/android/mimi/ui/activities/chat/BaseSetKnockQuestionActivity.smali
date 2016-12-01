@@ -4,6 +4,12 @@
 
 
 # instance fields
+.field private mMenuItemq:Landroid/view/MenuItem;
+
+.field private mSpannableStringr:Landroid/text/SpannableString;
+
+.field private mSpannableStrings:Landroid/text/SpannableString;
+
 .field protected n:Landroid/widget/EditText;
 
 .field protected o:Landroid/widget/TextView;
@@ -18,12 +24,6 @@
         }
     .end annotation
 .end field
-
-.field private q:Landroid/view/MenuItem;
-
-.field private r:Landroid/text/SpannableString;
-
-.field private s:Landroid/text/SpannableString;
 
 
 # direct methods
@@ -58,7 +58,7 @@
     if-eqz p1, :cond_1
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->s:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     if-nez v0, :cond_0
 
@@ -85,11 +85,11 @@
 
     check-cast v0, Landroid/text/SpannableString;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->s:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     .line 147
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->s:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     .line 154
     :goto_0
@@ -97,7 +97,7 @@
 
     .line 149
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->r:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     if-nez v0, :cond_2
 
@@ -124,11 +124,11 @@
 
     check-cast v0, Landroid/text/SpannableString;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->r:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     .line 154
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->r:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     goto :goto_0
 .end method
@@ -138,7 +138,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->q:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -169,7 +169,7 @@
 
     .line 164
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->q:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->c(Z)Landroid/text/SpannableString;
 
@@ -178,7 +178,7 @@
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 165
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->q:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -319,7 +319,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/math/RandomUtils;->a(I)I
+    invoke-static {v0}, Lorg/apache/commons/long3/math/RandomUtils;->a(I)I
 
     move-result v0
 
@@ -400,7 +400,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->q:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     .line 114
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->l()V

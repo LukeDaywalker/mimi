@@ -97,7 +97,7 @@
     .line 142
     .line 143
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
     iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;->c:Lcom/wumii/android/mimi/network/HttpRequest;
 

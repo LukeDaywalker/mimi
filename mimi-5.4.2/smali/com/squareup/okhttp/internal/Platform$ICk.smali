@@ -7,7 +7,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/List;
+.field private isZb:Z
+
+.field private final mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -18,9 +20,7 @@
     .end annotation
 .end field
 
-.field private b:Z
-
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 321
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mLista:Ljava/util/List;
 
     .line 322
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 312
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->b:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->isZb:Z
 
     return v0
 .end method
@@ -62,7 +62,7 @@
 
     .prologue
     .line 312
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
     if-ne v4, v3, :cond_2
 
     .line 333
-    iput-boolean v5, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->b:Z
+    iput-boolean v5, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->isZb:Z
 
     move-object v0, v1
 
@@ -155,7 +155,7 @@
     if-nez v4, :cond_3
 
     .line 336
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mLista:Ljava/util/List;
 
     goto :goto_0
 
@@ -208,7 +208,7 @@
     if-ge v1, v3, :cond_6
 
     .line 342
-    iget-object v4, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->a:Ljava/util/List;
+    iget-object v4, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -227,7 +227,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mStringc:Ljava/lang/String;
 
     goto :goto_0
 
@@ -239,7 +239,7 @@
 
     .line 346
     :cond_6
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -247,7 +247,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mStringc:Ljava/lang/String;
 
     goto :goto_0
 
@@ -279,7 +279,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICk;->mStringc:Ljava/lang/String;
 
     move-object v0, v1
 

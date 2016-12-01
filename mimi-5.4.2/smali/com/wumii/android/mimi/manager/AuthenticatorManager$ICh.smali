@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +54,7 @@
     if-eqz v1, :cond_0
 
     .line 137
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;->a(Ljava/lang/String;)V
 
@@ -65,7 +65,7 @@
 
     .line 143
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICh;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->b(Ljava/lang/Object;)V
 

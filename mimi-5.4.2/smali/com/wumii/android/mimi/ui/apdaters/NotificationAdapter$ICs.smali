@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/NotificationType;->SECRET:Lcom/wumii/android/mimi/models/entities/NotificationType;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/NotificationType;->SURVEY:Lcom/wumii/android/mimi/models/entities/NotificationType;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICs;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/NotificationType;->CIRCLE_CHANGE:Lcom/wumii/android/mimi/models/entities/NotificationType;
 

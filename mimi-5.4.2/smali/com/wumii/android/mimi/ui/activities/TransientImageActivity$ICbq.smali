@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/graphics/Bitmap;
+.field final synthetic mBitmapa:Landroid/graphics/Bitmap;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+.field final synthetic mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 113
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->a:Landroid/graphics/Bitmap;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,16 +48,16 @@
 
     .line 118
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->n:Luk/co/senab/photoview/PhotoView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->a:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0, v1}, Luk/co/senab/photoview/PhotoView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->d(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)Landroid/widget/TextView;
 
@@ -68,7 +68,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     const-wide/16 v2, 0x7d0
 
@@ -78,7 +78,7 @@
 
     .line 123
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->b:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbq;->mTransientImageActivityb:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->finish()V
 

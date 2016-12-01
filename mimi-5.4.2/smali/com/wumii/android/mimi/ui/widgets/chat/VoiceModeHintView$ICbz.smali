@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
+.field final synthetic mVoiceModeHintViewa:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;->mVoiceModeHintViewa:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;->mVoiceModeHintViewa:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d()V
 

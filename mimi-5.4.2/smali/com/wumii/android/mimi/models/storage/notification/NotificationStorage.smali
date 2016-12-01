@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,9 +15,9 @@
     .end annotation
 .end field
 
-.field private c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+.field private mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
-.field private d:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
+.field private mSecretDaod:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
 
 
 # direct methods
@@ -33,21 +33,21 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     .line 24
     new-instance v0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     .line 25
     new-instance v0, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->d:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mSecretDaod:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
 
     .line 26
     return-void
@@ -69,7 +69,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -78,17 +78,17 @@
     if-eqz v0, :cond_0
 
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     .line 32
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     return-object v0
 .end method
@@ -107,12 +107,12 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Ljava/util/List;)V
 
@@ -122,7 +122,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -160,7 +160,7 @@
 
     .line 46
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->d:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mSecretDaod:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/secret/SecretDao;->a(Ljava/util/List;)V
 
@@ -182,7 +182,7 @@
     const/4 v2, 0x0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -198,7 +198,7 @@
 
     .line 127
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -258,12 +258,12 @@
     if-eqz v0, :cond_1
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Lcom/wumii/android/mimi/models/entities/notification/Notification;)V
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->d:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mSecretDaod:Lcom/wumii/android/mimi/models/dao/secret/SecretDao;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;->getSecret()Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -303,7 +303,7 @@
     const/4 v2, 0x0
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -319,7 +319,7 @@
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -401,7 +401,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;->setNewComments(Ljava/util/List;)V
 
     .line 111
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a(Lcom/wumii/android/mimi/models/entities/notification/Notification;)V
 
@@ -437,7 +437,7 @@
     const/4 v1, 0x0
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -453,7 +453,7 @@
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -496,12 +496,12 @@
     if-eqz v3, :cond_1
 
     .line 61
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/NotificationType;->SECRET:Lcom/wumii/android/mimi/models/entities/NotificationType;
 
@@ -531,7 +531,7 @@
     const/4 v1, 0x0
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -547,7 +547,7 @@
 
     .line 78
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -590,12 +590,12 @@
     if-eqz v3, :cond_1
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->c:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;->mNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/NotificationType;->SURVEY:Lcom/wumii/android/mimi/models/entities/NotificationType;
 

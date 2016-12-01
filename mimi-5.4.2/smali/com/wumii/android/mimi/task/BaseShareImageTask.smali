@@ -24,11 +24,11 @@
 # instance fields
 .field protected a:Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
-.field private d:Lcom/wumii/android/mimi/util/ContextToast;
+.field private mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private e:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -48,24 +48,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->e:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 34
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->d:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 35
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICk;
 
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->e:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mActivityEventManagere:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -145,7 +145,7 @@
     if-eqz v0, :cond_0
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -236,7 +236,7 @@
 
     .line 88
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->d:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06037c
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -292,7 +292,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -301,7 +301,7 @@
     if-eqz v0, :cond_0
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask;->mProgressingDialogf:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    iput-object p1, p0, Lio/fabric/sdk/android/KitInfo;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/KitInfo;->mStringa:Ljava/lang/String;
 
     .line 27
-    iput-object p2, p0, Lio/fabric/sdk/android/KitInfo;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/KitInfo;->mStringb:Ljava/lang/String;
 
     .line 28
-    iput-object p3, p0, Lio/fabric/sdk/android/KitInfo;->c:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/KitInfo;->mStringc:Ljava/lang/String;
 
     .line 29
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->a:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -49,7 +49,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->b:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->c:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/KitInfo;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/GAServiceManager;
+.field final synthetic mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v1}, Lcom/google/analytics/tracking/android/GAServiceManager;->a(Lcom/google/analytics/tracking/android/GAServiceManager;)Z
 

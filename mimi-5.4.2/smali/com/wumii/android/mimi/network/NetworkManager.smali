@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static c:Lcom/wumii/android/mimi/network/NetworkManager;
+.field private static mNetworkManagerc:Lcom/wumii/android/mimi/network/NetworkManager;
 
 
 # instance fields
 .field protected a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-.field private b:Landroid/content/BroadcastReceiver;
+.field private mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/network/NetworkManager$ICk;-><init>(Lcom/wumii/android/mimi/network/NetworkManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->b:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     .line 38
     new-instance v0, Landroid/content/IntentFilter;
@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/NetworkManager;->b:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/NetworkManager;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/app/MainApplication;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -67,7 +67,7 @@
 
     .prologue
     .line 44
-    sget-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->c:Lcom/wumii/android/mimi/network/NetworkManager;
+    sget-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->mNetworkManagerc:Lcom/wumii/android/mimi/network/NetworkManager;
 
     if-nez v0, :cond_0
 
@@ -76,11 +76,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/network/NetworkManager;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->c:Lcom/wumii/android/mimi/network/NetworkManager;
+    sput-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->mNetworkManagerc:Lcom/wumii/android/mimi/network/NetworkManager;
 
     .line 47
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->c:Lcom/wumii/android/mimi/network/NetworkManager;
+    sget-object v0, Lcom/wumii/android/mimi/network/NetworkManager;->mNetworkManagerc:Lcom/wumii/android/mimi/network/NetworkManager;
 
     return-object v0
 .end method

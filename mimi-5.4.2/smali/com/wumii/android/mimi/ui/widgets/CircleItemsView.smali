@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mTextViewa:Landroid/widget/TextView;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private c:Landroid/view/View;
+.field private mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mViewc:Landroid/view/View;
 
     if-nez v0, :cond_0
 
@@ -54,11 +54,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mViewc:Landroid/view/View;
 
     .line 44
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewb:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -81,11 +81,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewb:Landroid/widget/TextView;
 
     .line 37
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -95,7 +95,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewa:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -108,11 +108,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewa:Landroid/widget/TextView;
 
     .line 29
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItemsView;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method

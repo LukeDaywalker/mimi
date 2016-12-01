@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+.field final synthetic mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -29,13 +29,13 @@
     const-wide/16 v6, 0x0
 
     .line 88
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     monitor-enter v2
 
     .line 89
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)J
 
@@ -53,14 +53,14 @@
     if-gtz v3, :cond_0
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(Lcom/wumii/android/mimi/models/helper/CountDownTimer;Z)Z
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b()V
 
@@ -73,7 +73,7 @@
 
     .line 94
     :cond_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)J
 
@@ -84,7 +84,7 @@
     if-gez v3, :cond_1
 
     .line 95
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v3, v0, v1}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(J)V
 
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)J
 
@@ -123,12 +123,12 @@
     move-result-wide v4
 
     .line 100
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v3, v0, v1}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(J)V
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)J
 
@@ -149,7 +149,7 @@
     if-gez v3, :cond_2
 
     .line 108
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/CountDownTimer$ICe;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b(Lcom/wumii/android/mimi/models/helper/CountDownTimer;)J
 

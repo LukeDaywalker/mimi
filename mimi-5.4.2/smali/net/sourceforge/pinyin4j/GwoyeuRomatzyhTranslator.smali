@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:[Ljava/lang/String;
+.field private static mArrayStringa:[Ljava/lang/String;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhTranslator;->a:[Ljava/lang/String;
+    sput-object v0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhTranslator;->mArrayStringa:[Ljava/lang/String;
 
     return-void
 .end method

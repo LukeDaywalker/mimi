@@ -75,9 +75,9 @@
 
     .line 2973
     :cond_1
-    iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->e:I
+    iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->mIe:I
 
-    iget v1, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->e:I
+    iget v1, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->mIe:I
 
     sub-int/2addr v0, v1
 

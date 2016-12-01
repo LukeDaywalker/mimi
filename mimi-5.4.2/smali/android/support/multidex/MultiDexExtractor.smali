@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Method;
+.field private static mMethoda:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/multidex/MultiDexExtractor;->a:Ljava/lang/reflect/Method;
+    sput-object v0, Landroid/support/multidex/MultiDexExtractor;->mMethoda:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -42,7 +42,7 @@
     .line 381
     const/4 v0, 0x0
 
-    sput-object v0, Landroid/support/multidex/MultiDexExtractor;->a:Ljava/lang/reflect/Method;
+    sput-object v0, Landroid/support/multidex/MultiDexExtractor;->mMethoda:Ljava/lang/reflect/Method;
 
     goto :goto_0
 .end method
@@ -938,13 +938,13 @@
 
     .prologue
     .line 386
-    sget-object v0, Landroid/support/multidex/MultiDexExtractor;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/multidex/MultiDexExtractor;->mMethoda:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
     .line 388
     :try_start_0
-    sget-object v0, Landroid/support/multidex/MultiDexExtractor;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Landroid/support/multidex/MultiDexExtractor;->mMethoda:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+.field private static final mAccessibilityManagerVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->mAccessibilityManagerVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
 
     .line 130
     :goto_0
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->mAccessibilityManagerVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
 
     goto :goto_0
 .end method
@@ -57,7 +57,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->mAccessibilityManagerVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
 
     return-object v0
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 196
-    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->mAccessibilityManagerVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;->a(Landroid/view/accessibility/AccessibilityManager;)Z
 

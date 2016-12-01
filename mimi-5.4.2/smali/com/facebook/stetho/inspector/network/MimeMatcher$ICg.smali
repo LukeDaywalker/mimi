@@ -12,19 +12,19 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/inspector/network/MimeMatcher;
+.field private final isZb:Z
 
-.field private final b:Z
+.field final synthetic mMimeMatchera:Lcom/facebook/stetho/inspector/network/MimeMatcher;
 
-.field private final c:Ljava/lang/String;
-
-.field private final d:Ljava/lang/Object;
+.field private final mObjectd:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
         }
     .end annotation
 .end field
+
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -42,7 +42,7 @@
     const/4 v1, 0x0
 
     .line 47
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->a:Lcom/facebook/stetho/inspector/network/MimeMatcher;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mMimeMatchera:Lcom/facebook/stetho/inspector/network/MimeMatcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +58,7 @@
     .line 49
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->b:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->isZb:Z
 
     .line 50
     invoke-virtual {p2}, Ljava/lang/String;->length()I
@@ -71,11 +71,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mStringc:Ljava/lang/String;
 
     .line 55
     :goto_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "*"
 
@@ -112,16 +112,16 @@
 
     .line 52
     :cond_0
-    iput-boolean v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->b:Z
+    iput-boolean v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->isZb:Z
 
     .line 53
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->c:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mStringc:Ljava/lang/String;
 
     goto :goto_0
 
     .line 59
     :cond_1
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->d:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mObjectd:Ljava/lang/Object;
 
     .line 60
     return-void
@@ -139,7 +139,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->d:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mObjectd:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -151,7 +151,7 @@
     const/4 v0, 0x0
 
     .line 64
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -165,7 +165,7 @@
     return v0
 
     :cond_1
-    iget-boolean v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->b:Z
+    iget-boolean v1, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->isZb:Z
 
     if-nez v1, :cond_2
 
@@ -173,7 +173,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 

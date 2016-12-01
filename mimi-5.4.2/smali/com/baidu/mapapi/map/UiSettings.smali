@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private a:Lcom/baidu/platform/comapi/map/ICc;
+.field private mICca:Lcom/baidu/platform/comapi/map/ICc;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     return-void
 .end method
@@ -22,7 +22,7 @@
 .method public isCompassEnabled()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->m()Z
 
@@ -34,7 +34,7 @@
 .method public isOverlookingGesturesEnabled()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->s()Z
 
@@ -46,7 +46,7 @@
 .method public isRotateGesturesEnabled()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->r()Z
 
@@ -58,7 +58,7 @@
 .method public isScrollGesturesEnabled()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->p()Z
 
@@ -70,7 +70,7 @@
 .method public isZoomGesturesEnabled()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->q()Z
 
@@ -96,7 +96,7 @@
 .method public setCompassEnabled(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->g(Z)V
 
@@ -106,7 +106,7 @@
 .method public setCompassPosition(Landroid/graphics/Point;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->a(Landroid/graphics/Point;)V
 
@@ -116,7 +116,7 @@
 .method public setOverlookingGesturesEnabled(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->m(Z)V
 
@@ -126,7 +126,7 @@
 .method public setRotateGesturesEnabled(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->l(Z)V
 
@@ -136,7 +136,7 @@
 .method public setScrollGesturesEnabled(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->j(Z)V
 
@@ -146,7 +146,7 @@
 .method public setZoomGesturesEnabled(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/UiSettings;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->k(Z)V
 

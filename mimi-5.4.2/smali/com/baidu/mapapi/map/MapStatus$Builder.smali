@@ -3,21 +3,21 @@
 
 
 # instance fields
-.field private a:F
+.field private mDg:D
 
-.field private b:Lcom/baidu/mapapi/model/LatLng;
+.field private mDh:D
 
-.field private c:F
+.field private mFa:F
 
-.field private d:F
+.field private mFc:F
 
-.field private e:Landroid/graphics/Point;
+.field private mFd:F
 
-.field private f:Lcom/baidu/mapapi/model/LatLngBounds;
+.field private mLatLngBoundsf:Lcom/baidu/mapapi/model/LatLngBounds;
 
-.field private g:D
+.field private mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
-.field private h:D
+.field private mPointe:Landroid/graphics/Point;
 
 
 # direct methods
@@ -32,21 +32,21 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->a:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFa:F
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->b:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->c:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFc:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->d:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFd:F
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->e:Landroid/graphics/Point;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mPointe:Landroid/graphics/Point;
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->f:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngBoundsf:Lcom/baidu/mapapi/model/LatLngBounds;
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->g:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDg:D
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->h:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDh:D
 
     return-void
 .end method
@@ -62,53 +62,53 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->a:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFa:F
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->b:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->c:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFc:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->d:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFd:F
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->e:Landroid/graphics/Point;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mPointe:Landroid/graphics/Point;
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->f:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngBoundsf:Lcom/baidu/mapapi/model/LatLngBounds;
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->g:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDg:D
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->h:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDh:D
 
     iget v0, p1, Lcom/baidu/mapapi/map/MapStatus;->rotate:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->a:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFa:F
 
     iget-object v0, p1, Lcom/baidu/mapapi/map/MapStatus;->target:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->b:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     iget v0, p1, Lcom/baidu/mapapi/map/MapStatus;->overlook:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->c:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFc:F
 
     iget v0, p1, Lcom/baidu/mapapi/map/MapStatus;->zoom:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->d:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFd:F
 
     iget-object v0, p1, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->e:Landroid/graphics/Point;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mPointe:Landroid/graphics/Point;
 
     invoke-virtual {p1}, Lcom/baidu/mapapi/map/MapStatus;->a()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->g:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDg:D
 
     invoke-virtual {p1}, Lcom/baidu/mapapi/map/MapStatus;->b()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->h:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mDh:D
 
     return-void
 .end method
@@ -120,17 +120,17 @@
 
     new-instance v0, Lcom/baidu/mapapi/map/MapStatus;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->a:F
+    iget v1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFa:F
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
-    iget v3, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->c:F
+    iget v3, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFc:F
 
-    iget v4, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->d:F
+    iget v4, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFd:F
 
-    iget-object v5, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->e:Landroid/graphics/Point;
+    iget-object v5, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mPointe:Landroid/graphics/Point;
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->f:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngBoundsf:Lcom/baidu/mapapi/model/LatLngBounds;
 
     invoke-direct/range {v0 .. v6}, Lcom/baidu/mapapi/map/MapStatus;-><init>(FLcom/baidu/mapapi/model/LatLng;FFLandroid/graphics/Point;Lcom/baidu/mapapi/model/LatLngBounds;)V
 
@@ -140,7 +140,7 @@
 .method public overlook(F)Lcom/baidu/mapapi/map/MapStatus$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->c:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFc:F
 
     return-object p0
 .end method
@@ -148,7 +148,7 @@
 .method public rotate(F)Lcom/baidu/mapapi/map/MapStatus$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->a:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFa:F
 
     return-object p0
 .end method
@@ -156,7 +156,7 @@
 .method public target(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/map/MapStatus$Builder;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->b:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -164,7 +164,7 @@
 .method public targetScreen(Landroid/graphics/Point;)Lcom/baidu/mapapi/map/MapStatus$Builder;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->e:Landroid/graphics/Point;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mPointe:Landroid/graphics/Point;
 
     return-object p0
 .end method
@@ -172,7 +172,7 @@
 .method public zoom(F)Lcom/baidu/mapapi/map/MapStatus$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->d:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MapStatus$Builder;->mFd:F
 
     return-object p0
 .end method

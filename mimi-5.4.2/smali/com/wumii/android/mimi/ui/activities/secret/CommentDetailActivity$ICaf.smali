@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mICabc:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
 
-.field final synthetic b:Landroid/graphics/Rect;
+.field final synthetic mIa:I
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
+.field final synthetic mRectb:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 819
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->c:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mICabc:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mIa:I
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->b:Landroid/graphics/Rect;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mRectb:Landroid/graphics/Rect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 822
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->c:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mICabc:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;->mCommentDetailActivitya:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->I(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Landroid/widget/ScrollView;
 
@@ -48,11 +48,11 @@
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->a:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mIa:I
 
     neg-int v2, v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->b:Landroid/graphics/Rect;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICaf;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
 

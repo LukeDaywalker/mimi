@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static a:Lcom/wumii/android/mimi/network/server/CheckHostService;
+.field private static mCheckHostServicea:Lcom/wumii/android/mimi/network/server/CheckHostService;
 
 
 # instance fields
-.field private b:Ljava/util/concurrent/ScheduledExecutorService;
+.field private mJc:J
 
-.field private c:J
+.field private mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 23
-    sget-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->a:Lcom/wumii/android/mimi/network/server/CheckHostService;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mCheckHostServicea:Lcom/wumii/android/mimi/network/server/CheckHostService;
 
     if-nez v0, :cond_0
 
@@ -39,11 +39,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/network/server/CheckHostService;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->a:Lcom/wumii/android/mimi/network/server/CheckHostService;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mCheckHostServicea:Lcom/wumii/android/mimi/network/server/CheckHostService;
 
     .line 26
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->a:Lcom/wumii/android/mimi/network/server/CheckHostService;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mCheckHostServicea:Lcom/wumii/android/mimi/network/server/CheckHostService;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->c:J
+    iget-wide v2, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mJc:J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -191,7 +191,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->c:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mJc:J
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -207,7 +207,7 @@
     const-wide/16 v2, 0x1
 
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     if-nez v0, :cond_0
 
@@ -216,11 +216,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 34
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->b:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->mScheduledExecutorServiceb:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v1, Lcom/wumii/android/mimi/network/server/CheckHostService$ICb;
 

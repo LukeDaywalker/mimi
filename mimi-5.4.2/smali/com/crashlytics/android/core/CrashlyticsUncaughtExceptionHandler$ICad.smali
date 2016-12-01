@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+.field final synthetic mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 500
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 503
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->c()Z
 
@@ -51,7 +51,7 @@
     if-nez v0, :cond_0
 
     .line 504
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-static {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->e(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;)V
 
@@ -63,13 +63,13 @@
 
     .line 506
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-static {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->b(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;)Lcom/crashlytics/android/core/LogFileManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->a:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;->mCrashlyticsUncaughtExceptionHandlera:Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;
 
     invoke-static {v1}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->c(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;)Ljava/lang/String;
 

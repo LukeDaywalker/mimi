@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->a:[I
+    sput-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->a:[I
+    sget-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;->COMMON:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 
@@ -37,7 +37,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->a:[I
+    sget-object v0, Lcom/baidu/mapapi/utils/CoordinateConverter$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;->GPS:Lcom/baidu/mapapi/utils/CoordinateConverter$CoordType;
 

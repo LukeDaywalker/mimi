@@ -14,11 +14,11 @@
 
 
 # instance fields
-.field private final a:Lcom/baidu/mapapi/map/ICe;
+.field private final mICea:Lcom/baidu/mapapi/map/ICe;
 
-.field private final b:I
+.field private final mIb:I
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/List;
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -79,11 +79,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
-    iput p2, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iput p2, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     return-void
 .end method
@@ -97,29 +97,29 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/baidu/mapapi/map/ICj;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->a:D
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->e:D
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->b:D
 
-    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->f:D
 
-    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     add-int/lit8 v10, v10, 0x1
 
@@ -127,27 +127,27 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/baidu/mapapi/map/ICj;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->e:D
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->c:D
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->b:D
 
-    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->f:D
 
-    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     add-int/lit8 v10, v10, 0x1
 
@@ -155,27 +155,27 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/baidu/mapapi/map/ICj;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->a:D
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->e:D
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->f:D
 
-    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->d:D
 
-    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     add-int/lit8 v10, v10, 0x1
 
@@ -183,27 +183,27 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     new-instance v1, Lcom/baidu/mapapi/map/ICj;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v2, v2, Lcom/baidu/mapapi/map/ICe;->e:D
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v4, v4, Lcom/baidu/mapapi/map/ICe;->c:D
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v6, v6, Lcom/baidu/mapapi/map/ICe;->f:D
 
-    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v8, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/map/ICe;->d:D
 
-    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iget v10, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     add-int/lit8 v10, v10, 0x1
 
@@ -211,11 +211,11 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -270,11 +270,11 @@
 
     const/16 v1, 0x28
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->f:D
 
@@ -282,7 +282,7 @@
 
     if-gez v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->e:D
 
@@ -290,7 +290,7 @@
 
     if-gez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -313,7 +313,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     const/4 v1, 0x1
 
@@ -334,7 +334,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget-wide v0, v0, Lcom/baidu/mapapi/map/ICe;->e:D
 
@@ -342,7 +342,7 @@
 
     if-gez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     const/4 v1, 0x2
 
@@ -363,7 +363,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     const/4 v1, 0x3
 
@@ -384,7 +384,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     if-nez v0, :cond_5
 
@@ -392,14 +392,14 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     invoke-interface {v0, p5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -407,7 +407,7 @@
 
     if-le v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/mapapi/map/ICj;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/ICj;->mIb:I
 
     if-ge v0, v1, :cond_0
 
@@ -427,7 +427,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     invoke-virtual {v0, p1}, Lcom/baidu/mapapi/map/ICe;->a(Lcom/baidu/mapapi/map/ICe;)Z
 
@@ -440,11 +440,11 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -468,11 +468,11 @@
     goto :goto_1
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     invoke-virtual {p1, v0}, Lcom/baidu/mapapi/map/ICe;->b(Lcom/baidu/mapapi/map/ICe;)Z
 
@@ -480,14 +480,14 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     invoke-interface {p2, v0}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICj;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -557,7 +557,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ICj;->a:Lcom/baidu/mapapi/map/ICe;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ICj;->mICea:Lcom/baidu/mapapi/map/ICe;
 
     iget v2, v0, Landroid/graphics/Point;->x:I
 

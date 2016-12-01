@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field f:Landroid/view/View$OnClickListener;
+.field mOnClickListenerf:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->f:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     .line 19
     return-void
@@ -100,7 +100,7 @@
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->f:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

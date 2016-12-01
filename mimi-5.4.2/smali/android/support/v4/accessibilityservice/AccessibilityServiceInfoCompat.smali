@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+.field private static final mAccessibilityServiceInfoVersionImpla:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2;-><init>()V
 
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->a:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->mAccessibilityServiceInfoVersionImpla:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
 
     .line 118
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->a:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->mAccessibilityServiceInfoVersionImpla:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->a:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->mAccessibilityServiceInfoVersionImpla:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
 
     goto :goto_0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+.field final synthetic mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->l()Ljava/lang/String;
 

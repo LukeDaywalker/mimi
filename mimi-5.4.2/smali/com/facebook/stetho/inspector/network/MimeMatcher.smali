@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/ArrayList;
+.field private final mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->mArrayLista:Ljava/util/ArrayList;
 
     .line 41
     return-void
@@ -60,7 +60,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -75,7 +75,7 @@
     if-ge v1, v2, :cond_1
 
     .line 33
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/MimeMatcher;->mArrayLista:Ljava/util/ArrayList;
 
     new-instance v1, Lcom/facebook/stetho/inspector/network/MimeMatcher$ICg;
 

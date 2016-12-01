@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/HashMap;
+.field private mHashMapb:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->b:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->mHashMapb:Ljava/util/HashMap;
 
     .line 20
     return-void
@@ -70,7 +70,7 @@
 
     .line 27
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -87,7 +87,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->b:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -137,7 +137,7 @@
 
     move-result-object v4
 
-    invoke-static {v4, p2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, p2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -191,7 +191,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

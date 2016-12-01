@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+.field private mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
 
 # direct methods
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 15
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     .line 16
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/Sort;->ASC:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
@@ -67,7 +67,7 @@
 
     .line 22
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/CommentSortComparator;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/Sort;->DESC:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 

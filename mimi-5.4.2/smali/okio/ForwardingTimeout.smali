@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lokio/Timeout;
+.field private mTimeouta:Lokio/Timeout;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .line 27
     :cond_0
-    iput-object p1, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iput-object p1, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     .line 28
     return-void
@@ -53,7 +53,7 @@
 
     .line 37
     :cond_0
-    iput-object p1, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iput-object p1, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     .line 38
     return-object p0
@@ -64,7 +64,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0, p1, p2}, Lokio/Timeout;->a(J)Lokio/Timeout;
 
@@ -88,7 +88,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Timeout;->a(JLjava/util/concurrent/TimeUnit;)Lokio/Timeout;
 
@@ -102,7 +102,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->c_()J
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->d()J
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->d_()Z
 
@@ -144,7 +144,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->e_()Lokio/Timeout;
 
@@ -158,7 +158,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->f()Lokio/Timeout;
 
@@ -172,7 +172,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lokio/ForwardingTimeout;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/ForwardingTimeout;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->g()V
 

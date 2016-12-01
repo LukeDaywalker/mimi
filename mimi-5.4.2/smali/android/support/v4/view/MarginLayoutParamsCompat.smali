@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
+.field static final mMarginLayoutParamsCompatImpla:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImplJbMr1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->a:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
+    sput-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->mMarginLayoutParamsCompatImpla:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
     .line 133
     :goto_0
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->a:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
+    sput-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->mMarginLayoutParamsCompatImpla:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
     goto :goto_0
 .end method

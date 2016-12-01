@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -37,14 +37,14 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 21
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLista:Ljava/util/List;
 
     .line 22
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 23
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 26
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLista:Ljava/util/List;
 
     .line 27
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->notifyDataSetChanged()V
@@ -96,7 +96,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLista:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -106,7 +106,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -145,7 +145,7 @@
     if-nez p2, :cond_0
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030095
 

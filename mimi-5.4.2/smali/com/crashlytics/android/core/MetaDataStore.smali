@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Ljava/nio/charset/Charset;
+.field private static final mCharseta:Ljava/nio/charset/Charset;
 
 
 # instance fields
-.field private final b:Ljava/io/File;
+.field private final mFileb:Ljava/io/File;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/MetaDataStore;->a:Ljava/nio/charset/Charset;
+    sput-object v0, Lcom/crashlytics/android/core/MetaDataStore;->mCharseta:Ljava/nio/charset/Charset;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 57
-    iput-object p1, p0, Lcom/crashlytics/android/core/MetaDataStore;->b:Ljava/io/File;
+    iput-object p1, p0, Lcom/crashlytics/android/core/MetaDataStore;->mFileb:Ljava/io/File;
 
     .line 58
     return-void
@@ -113,7 +113,7 @@
     .line 131
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore;->b:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore;->mFileb:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -151,7 +151,7 @@
     .line 135
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore;->b:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore;->mFileb:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -421,7 +421,7 @@
 
     invoke-direct {v5, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    sget-object v0, Lcom/crashlytics/android/core/MetaDataStore;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/crashlytics/android/core/MetaDataStore;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-direct {v4, v5, v0}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
 
@@ -539,7 +539,7 @@
 
     invoke-direct {v5, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    sget-object v0, Lcom/crashlytics/android/core/MetaDataStore;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/crashlytics/android/core/MetaDataStore;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-direct {v4, v5, v0}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
 

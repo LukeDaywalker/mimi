@@ -7,9 +7,9 @@
 
 
 # static fields
-.field private static final a:Ljava/util/logging/Logger;
+.field private static final mByteStringb:Lokio/ByteString;
 
-.field private static final b:Lokio/ByteString;
+.field private static final mLoggera:Ljava/util/logging/Logger;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->a:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->mLoggera:Ljava/util/logging/Logger;
 
     .line 49
     const-string/jumbo v0, "PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n"
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->b:Lokio/ByteString;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->mByteStringb:Lokio/ByteString;
 
     .line 49
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->b:Lokio/ByteString;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->mByteStringb:Lokio/ByteString;
 
     return-object v0
 .end method
@@ -217,7 +217,7 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->a:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2;->mLoggera:Ljava/util/logging/Logger;
 
     return-object v0
 .end method

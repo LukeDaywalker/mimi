@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Ljava/util/regex/Pattern;
+.field private static final mPatterna:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private mContextb:Landroid/content/Context;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lu/aly/UTDIdTracker;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lu/aly/UTDIdTracker;->mPatterna:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     invoke-direct {p0, v0}, Lu/aly/AbstractIdTracker;-><init>(Ljava/lang/String;)V
 
     .line 23
-    iput-object p1, p0, Lu/aly/UTDIdTracker;->b:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/UTDIdTracker;->mContextb:Landroid/content/Context;
 
     .line 24
     return-void
@@ -60,7 +60,7 @@
 
     .line 55
     :cond_1
-    sget-object v1, Lu/aly/UTDIdTracker;->a:Ljava/util/regex/Pattern;
+    sget-object v1, Lu/aly/UTDIdTracker;->mPatterna:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -170,7 +170,7 @@
     const/4 v0, 0x0
 
     .line 65
-    iget-object v1, p0, Lu/aly/UTDIdTracker;->b:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/UTDIdTracker;->mContextb:Landroid/content/Context;
 
     const-string/jumbo v2, "android.permission.WRITE_EXTERNAL_STORAGE"
 

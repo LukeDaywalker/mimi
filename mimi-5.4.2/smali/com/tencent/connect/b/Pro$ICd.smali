@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field a:Lcom/tencent/tauth/Pro$ICb;
+.field mICba:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic b:Lcom/tencent/connect/b/Pro;
+.field final synthetic mProb:Lcom/tencent/connect/b/Pro;
 
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -24,27 +24,27 @@
 
     .prologue
     .line 606
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 602
     const-string/jumbo v0, "sendinstall"
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringc:Ljava/lang/String;
 
     .line 603
     const-string/jumbo v0, "installwording"
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringd:Ljava/lang/String;
 
     .line 604
     const-string/jumbo v0, "http://appsupport.qq.com/cgi-bin/qzapps/mapp_addapp.cgi"
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringe:Ljava/lang/String;
 
     .line 607
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     .line 608
     return-void
@@ -744,7 +744,7 @@
     .line 660
     new-instance v6, Landroid/app/Dialog;
 
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -758,7 +758,7 @@
     invoke-virtual {v6, v0}, Landroid/app/Dialog;->requestWindowFeature(I)Z
 
     .line 663
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -770,7 +770,7 @@
 
     .line 667
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -826,7 +826,7 @@
     invoke-virtual {v1, v0}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 713
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -852,7 +852,7 @@
     invoke-virtual {v6, v0}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 727
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -860,7 +860,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -898,12 +898,12 @@
 
     .prologue
     .line 929
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_0
 
     .line 930
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0}, Lcom/tencent/tauth/Pro$ICb;->a()V
 
@@ -917,12 +917,12 @@
 
     .prologue
     .line 922
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_0
 
     .line 923
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/Pro$ICb;->a(Lcom/tencent/tauth/Pro$ICc;)V
 
@@ -955,7 +955,7 @@
 
     .line 619
     :try_start_0
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->c:Ljava/lang/String;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
@@ -967,7 +967,7 @@
 
     .line 620
     :cond_0
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->d:Ljava/lang/String;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
@@ -1023,7 +1023,7 @@
     if-nez v1, :cond_2
 
     .line 631
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-direct {p0, v0, v1, p1}, Lcom/tencent/connect/b/Pro$ICd;->a(Ljava/lang/String;Lcom/tencent/tauth/Pro$ICb;Ljava/lang/Object;)V
 
@@ -1043,7 +1043,7 @@
     move-object v2, v6
 
     .line 623
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v4}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
@@ -1066,12 +1066,12 @@
 
     .line 636
     :cond_2
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_1
 
     .line 637
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 
@@ -1079,12 +1079,12 @@
 
     .line 643
     :cond_3
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_1
 
     .line 644
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     const/4 v1, 0x0
 
@@ -1098,26 +1098,26 @@
 
     .prologue
     .line 914
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->j(Lcom/tencent/connect/b/Pro;)Landroid/os/Bundle;
 
     move-result-object v3
 
     .line 915
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->k(Lcom/tencent/connect/b/Pro;)Lcom/tencent/connect/b/Pro$ICt;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICd;->b:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICd;->mProb:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->i(Lcom/tencent/connect/b/Pro;)Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICd;->e:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICd;->mStringe:Ljava/lang/String;
 
     const-string/jumbo v4, "POST"
 

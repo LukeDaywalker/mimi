@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+.field final synthetic mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 146
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->b(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICc;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 

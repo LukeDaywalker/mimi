@@ -4,25 +4,25 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/app/NotificationManager;
+.field private mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
-.field private c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+.field private mFileh:Ljava/io/File;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mHandleri:Landroid/os/Handler;
 
-.field private e:Landroid/support/v4/app/NotificationCompat$Builder;
+.field private mHttpHelperc:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private f:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
+.field private mNotificationManagerb:Landroid/app/NotificationManager;
 
-.field private g:Ljava/lang/String;
+.field private mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private h:Ljava/io/File;
+.field private mStringg:Ljava/lang/String;
 
-.field private i:Landroid/os/Handler;
+.field private mVersionStatef:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/services/AppDownloadService;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/services/AppDownloadService;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;-><init>(Lcom/wumii/android/mimi/services/AppDownloadService;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->i:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mHandleri:Landroid/os/Handler;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->f:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mVersionStatef:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     .prologue
     .line 37
-    sget-object v0, Lcom/wumii/android/mimi/services/AppDownloadService;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/services/AppDownloadService;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -109,29 +109,29 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/app/NotificationCompat$Builder;->a(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, p2}, Landroid/support/v4/app/NotificationCompat$Builder;->b(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, p2}, Landroid/support/v4/app/NotificationCompat$Builder;->c(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->b(Z)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -149,16 +149,16 @@
     move-result-object v0
 
     .line 136
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/NotificationCompat$Builder;->a(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->b:Landroid/app/NotificationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     const v1, 0x7f0b002b
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v2}, Landroid/support/v4/app/NotificationCompat$Builder;->a()Landroid/app/Notification;
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -185,7 +185,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -195,7 +195,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->h:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mFileh:Ljava/io/File;
 
     return-object v0
 .end method
@@ -205,7 +205,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mHttpHelperc:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     return-object v0
 .end method
@@ -215,7 +215,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     return-object v0
 .end method
@@ -225,7 +225,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mHandleri:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -235,7 +235,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->b:Landroid/app/NotificationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     return-object v0
 .end method
@@ -265,7 +265,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 98
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -276,7 +276,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mHttpHelperc:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 99
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -291,7 +291,7 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->b:Landroid/app/NotificationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     .line 100
     return-void
@@ -314,7 +314,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->f:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mVersionStatef:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
 
     .line 107
     const-string/jumbo v0, "newestVersion"
@@ -323,7 +323,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mStringg:Ljava/lang/String;
 
     .line 108
     new-instance v0, Ljava/lang/StringBuilder;
@@ -346,7 +346,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -371,7 +371,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->h:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mFileh:Ljava/io/File;
 
     .line 111
     const-string/jumbo v0, "url"
@@ -380,7 +380,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->h:Ljava/io/File;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mFileh:Ljava/io/File;
 
     invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/services/AppDownloadService;->a(Ljava/lang/String;Ljava/io/File;)V
 
@@ -389,10 +389,10 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/app/NotificationCompat$Builder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     const v1, 0x7f060025
 
@@ -403,28 +403,28 @@
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->a(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     const v1, 0x7f020107
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/NotificationCompat$Builder;->a(I)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, v2, v2, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->a(IIZ)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v0, v3}, Landroid/support/v4/app/NotificationCompat$Builder;->a(Z)Landroid/support/v4/app/NotificationCompat$Builder;
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->b:Landroid/app/NotificationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mNotificationManagerb:Landroid/app/NotificationManager;
 
     const v1, 0x7f0b002b
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->e:Landroid/support/v4/app/NotificationCompat$Builder;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->mBuildere:Landroid/support/v4/app/NotificationCompat$Builder;
 
     invoke-virtual {v2}, Landroid/support/v4/app/NotificationCompat$Builder;->a()Landroid/app/Notification;
 

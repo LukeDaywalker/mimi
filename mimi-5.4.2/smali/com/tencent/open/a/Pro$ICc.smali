@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/open/a/Pro$ICb;
+.field final synthetic mICba:Lcom/tencent/open/a/Pro$ICb;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 37
-    iput-object p1, p0, Lcom/tencent/open/a/Pro$ICc;->a:Lcom/tencent/open/a/Pro$ICb;
+    iput-object p1, p0, Lcom/tencent/open/a/Pro$ICc;->mICba:Lcom/tencent/open/a/Pro$ICb;
 
     .line 38
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V

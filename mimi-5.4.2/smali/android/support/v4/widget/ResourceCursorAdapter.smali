@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private j:I
+.field private mIj:I
 
-.field private k:I
+.field private mIk:I
 
-.field private l:Landroid/view/LayoutInflater;
+.field private mLayoutInflaterl:Landroid/view/LayoutInflater;
 
 
 # virtual methods
@@ -17,9 +17,9 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->l:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mLayoutInflaterl:Landroid/view/LayoutInflater;
 
-    iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->j:I
+    iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mIj:I
 
     const/4 v2, 0x0
 
@@ -35,9 +35,9 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->l:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mLayoutInflaterl:Landroid/view/LayoutInflater;
 
-    iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->k:I
+    iget v1, p0, Landroid/support/v4/widget/ResourceCursorAdapter;->mIk:I
 
     const/4 v2, 0x0
 

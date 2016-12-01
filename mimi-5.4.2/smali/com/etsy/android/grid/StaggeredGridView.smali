@@ -4,19 +4,35 @@
 
 
 # instance fields
-.field private j:I
+.field private isZm:Z
 
-.field private k:I
+.field private mArrayIu:[I
 
-.field private l:I
+.field private mArrayIv:[I
 
-.field private m:Z
+.field private mArrayIw:[I
 
-.field private n:I
+.field private mIj:I
 
-.field private o:I
+.field private mIk:I
 
-.field private p:Landroid/util/SparseArray;
+.field private mIl:I
+
+.field private mIn:I
+
+.field private mIo:I
+
+.field private mIq:I
+
+.field private mIr:I
+
+.field private mIs:I
+
+.field private mIt:I
+
+.field private mIx:I
+
+.field private mSparseArrayp:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -26,22 +42,6 @@
         }
     .end annotation
 .end field
-
-.field private q:I
-
-.field private r:I
-
-.field private s:I
-
-.field private t:I
-
-.field private u:[I
-
-.field private v:[I
-
-.field private w:[I
-
-.field private x:I
 
 
 # direct methods
@@ -85,10 +85,10 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/etsy/android/grid/ExtendableListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 53
-    iput v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iput v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     .line 54
-    iput v4, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iput v4, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     .line 155
     if-eqz p2, :cond_0
@@ -105,22 +105,22 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 162
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-lez v1, :cond_1
 
     .line 163
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     .line 164
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     .line 175
     :goto_0
@@ -128,7 +128,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
     .line 177
     const/4 v1, 0x4
@@ -137,7 +137,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->q:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIq:I
 
     .line 179
     const/4 v1, 0x5
@@ -146,7 +146,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->r:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIr:I
 
     .line 181
     const/4 v1, 0x6
@@ -155,7 +155,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->s:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIs:I
 
     .line 183
     const/4 v1, 0x7
@@ -164,36 +164,36 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->t:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIt:I
 
     .line 186
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 189
     :cond_0
-    iput v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iput v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 191
     new-array v0, v2, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     .line 192
     new-array v0, v2, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     .line 193
     new-array v0, v2, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     .line 194
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     .line 195
     return-void
@@ -206,14 +206,14 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     .line 170
     invoke-virtual {v0, v3, v4}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v1
 
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     goto :goto_0
 .end method
@@ -228,7 +228,7 @@
     move-result v0
 
     .line 1040
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 1041
     if-ltz v0, :cond_0
@@ -284,7 +284,7 @@
     if-eqz p3, :cond_0
 
     .line 438
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v1, v0, v3
 
@@ -310,7 +310,7 @@
     check-cast v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
     .line 454
-    iput v3, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iput v3, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     .line 456
     invoke-direct {p0, v3, v1}, Lcom/etsy/android/grid/StaggeredGridView;->e(II)V
@@ -332,7 +332,7 @@
 
     .line 442
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v0, v3
 
@@ -376,7 +376,7 @@
     const/4 v0, 0x0
 
     :goto_1
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v1, :cond_1
 
@@ -450,7 +450,7 @@
     const/4 v1, 0x0
 
     :goto_1
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v1, v2, :cond_1
 
@@ -515,14 +515,14 @@
 
     .prologue
     .line 575
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v0, p1
 
     if-ge p2, v0, :cond_0
 
     .line 576
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aput p2, v0, p1
 
@@ -557,7 +557,7 @@
     if-eqz p3, :cond_0
 
     .line 515
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v1, v0, v3
 
@@ -583,7 +583,7 @@
     check-cast v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
     .line 532
-    iput v3, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iput v3, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     .line 534
     invoke-direct {p0, v3, v1}, Lcom/etsy/android/grid/StaggeredGridView;->e(II)V
@@ -611,7 +611,7 @@
 
     .line 519
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v0, v3
 
@@ -636,14 +636,14 @@
 
     .prologue
     .line 581
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v0, v0, p1
 
     if-le p2, v0, :cond_0
 
     .line 582
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aput p2, v0, p1
 
@@ -660,7 +660,7 @@
     if-eqz p1, :cond_0
 
     .line 730
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v1, v0, p2
 
@@ -669,7 +669,7 @@
     aput v1, v0, p2
 
     .line 731
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v1, v0, p2
 
@@ -692,7 +692,7 @@
     move-result-object v0
 
     .line 994
-    iput p2, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iput p2, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     .line 995
     return-void
@@ -703,7 +703,7 @@
 
     .prologue
     .line 550
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
     return v0
 .end method
@@ -713,7 +713,7 @@
 
     .prologue
     .line 782
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v2, v0, [I
 
@@ -763,7 +763,7 @@
     check-cast v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
     .line 793
-    iget v5, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->d:I
+    iget v5, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mId:I
 
     const/4 v6, -0x2
 
@@ -773,14 +773,14 @@
 
     move-result v5
 
-    iget v6, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iget v6, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     aget v6, v2, v6
 
     if-ge v5, v6, :cond_0
 
     .line 795
-    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     invoke-virtual {v4}, Landroid/view/View;->getTop()I
 
@@ -811,7 +811,7 @@
     move-result v0
 
     .line 1082
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v0, v1, v0
 
@@ -832,12 +832,12 @@
 
     .line 1089
     :goto_0
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v3, :cond_1
 
     .line 1090
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v3, v3, v0
 
@@ -869,7 +869,7 @@
     move-result v0
 
     .line 1145
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v1, v0
 
@@ -890,12 +890,12 @@
 
     .line 1152
     :goto_0
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v3, :cond_1
 
     .line 1153
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v3, v3, v0
 
@@ -927,7 +927,7 @@
     move-result v0
 
     .line 1101
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v0, v1, v0
 
@@ -948,12 +948,12 @@
 
     .line 1108
     :goto_0
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v3, :cond_1
 
     .line 1109
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v3, v3, v0
 
@@ -985,7 +985,7 @@
     move-result v0
 
     .line 1124
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v1, v0
 
@@ -1006,12 +1006,12 @@
 
     .line 1133
     :goto_0
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v3, :cond_1
 
     .line 1134
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v3, v3, v0
 
@@ -1044,7 +1044,7 @@
 
     move-result v1
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     add-int/2addr v1, v2
 
@@ -1056,7 +1056,7 @@
     :goto_0
     if-eqz v1, :cond_0
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
     :cond_0
     return v0
@@ -1080,13 +1080,13 @@
     .line 999
     int-to-double v2, p2
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     int-to-double v4, v1
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iput-wide v2, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     .line 1004
     return-void
@@ -1133,11 +1133,11 @@
 
     .prologue
     .line 712
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     add-int/2addr v0, p1
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     .line 714
     return-void
@@ -1150,22 +1150,22 @@
     const/4 v3, 0x0
 
     .line 368
-    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->m:Z
+    iget-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->isZm:Z
 
     if-nez v0, :cond_0
 
     .line 369
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     invoke-static {v0, v3}, Ljava/util/Arrays;->fill([II)V
 
     .line 377
     :goto_0
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -1174,7 +1174,7 @@
 
     .line 372
     :cond_0
-    iput-boolean v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->m:Z
+    iput-boolean v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->isZm:Z
 
     goto :goto_0
 .end method
@@ -1190,7 +1190,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v1, :cond_0
 
@@ -1225,9 +1225,9 @@
     .line 896
     sub-int v0, p1, v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1235,7 +1235,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     div-int/2addr v0, v1
 
@@ -1362,13 +1362,13 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
     add-int/2addr v0, v1
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->k:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIk:I
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     add-int/2addr v1, v2
 
@@ -1410,7 +1410,7 @@
     if-ge v2, v3, :cond_0
 
     .line 915
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     invoke-virtual {v0, v2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -1423,7 +1423,7 @@
 
     .line 922
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
@@ -1450,7 +1450,7 @@
     move-result-wide v6
 
     .line 932
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     int-to-double v8, v0
 
@@ -1459,7 +1459,7 @@
     double-to-int v0, v8
 
     .line 933
-    iput-wide v6, v5, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iput-wide v6, v5, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     .line 938
     invoke-direct {p0, v2}, Lcom/etsy/android/grid/StaggeredGridView;->o(I)Z
@@ -1480,17 +1480,17 @@
 
     .line 943
     :goto_2
-    iget v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v7, :cond_3
 
     .line 944
-    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aput v5, v7, v0
 
     .line 945
-    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aput v6, v7, v0
 
@@ -1523,7 +1523,7 @@
 
     move-result-object v6
 
-    iget-wide v8, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iget-wide v8, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     invoke-virtual {v6, v8, v9}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1536,7 +1536,7 @@
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 919
-    iget-wide v6, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->b:D
+    iget-wide v6, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mDb:D
 
     invoke-static {v6, v7}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -1558,7 +1558,7 @@
     move-result v6
 
     .line 952
-    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v7, v7, v6
 
@@ -1578,17 +1578,17 @@
     add-int/2addr v0, v8
 
     .line 955
-    iget-object v8, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v8, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aput v7, v8, v6
 
     .line 956
-    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v7, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aput v0, v7, v6
 
     .line 958
-    iput v6, v5, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iput v6, v5, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     .line 929
     :cond_3
@@ -1608,7 +1608,7 @@
     invoke-direct {p0, v3, v0}, Lcom/etsy/android/grid/StaggeredGridView;->g(II)V
 
     .line 975
-    iget-object v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v0, v2, v0
 
@@ -1625,14 +1625,14 @@
     .line 981
     neg-int v0, v0
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     .line 984
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
-    iget-object v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
-    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     invoke-static {v0, v1, v2, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -1645,7 +1645,7 @@
 
     .prologue
     .line 1012
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
 
@@ -1664,7 +1664,7 @@
     invoke-direct {v0}, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;-><init>()V
 
     .line 1015
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
@@ -1692,7 +1692,7 @@
 
     .prologue
     .line 1021
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
 
@@ -1705,7 +1705,7 @@
     .line 1022
     if-eqz v0, :cond_0
 
-    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->a:I
+    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->mIa:I
 
     :goto_0
     return v0
@@ -1721,13 +1721,13 @@
 
     .prologue
     .line 1062
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getPaddingTop()I
 
     move-result v1
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->s:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIs:I
 
     add-int/2addr v1, v2
 
@@ -1742,13 +1742,13 @@
 
     .prologue
     .line 1066
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getPaddingTop()I
 
     move-result v1
 
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->s:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIs:I
 
     add-int/2addr v1, v2
 
@@ -1763,7 +1763,7 @@
 
     .prologue
     .line 1031
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->a:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mListAdaptera:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->getItemViewType(I)I
 
@@ -1793,12 +1793,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v1, :cond_0
 
     .line 1071
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/StaggeredGridView;->l(I)I
 
@@ -1828,7 +1828,7 @@
     .line 1008
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->c:Z
+    iput-boolean v1, v0, Lcom/etsy/android/grid/StaggeredGridView$GridItemRecord;->isZc:Z
 
     .line 1009
     return-void
@@ -1863,7 +1863,7 @@
     move-result v0
 
     .line 593
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     aget v0, v1, v0
 
@@ -1877,49 +1877,49 @@
     const/4 v1, 0x0
 
     .line 316
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-lez v0, :cond_2
 
     .line 318
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     if-nez v0, :cond_0
 
     .line 319
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     .line 321
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     if-nez v0, :cond_1
 
     .line 322
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     .line 324
     :cond_1
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->m()V
 
     .line 326
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 327
-    iput-boolean v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->m:Z
+    iput-boolean v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->isZm:Z
 
     .line 328
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     .line 329
     invoke-virtual {p0, v1}, Lcom/etsy/android/grid/StaggeredGridView;->setSelection(I)V
@@ -1947,47 +1947,47 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     .line 870
     :goto_1
-    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-eq v2, v0, :cond_1
 
     .line 871
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 873
     invoke-direct {p0, p1}, Lcom/etsy/android/grid/StaggeredGridView;->k(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     .line 875
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     .line 876
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     .line 877
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     .line 879
-    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iput v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     .line 882
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->m()V
@@ -2002,7 +2002,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -2029,7 +2029,7 @@
 
     .line 869
     :cond_3
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     goto :goto_1
 .end method
@@ -2138,10 +2138,10 @@
     const/4 v3, -0x2
 
     .line 280
-    iget v0, p2, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iget v0, p2, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     .line 281
-    iget v1, p2, Lcom/etsy/android/grid/ExtendableListView$ICf;->b:I
+    iget v1, p2, Lcom/etsy/android/grid/ExtendableListView$ICf;->mIb:I
 
     .line 283
     if-eq v0, v3, :cond_0
@@ -2168,7 +2168,7 @@
 
     .line 292
     :cond_1
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     invoke-static {v0, v4}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
@@ -2243,7 +2243,7 @@
 
     .line 607
     :cond_1
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v0, v1, v0
 
@@ -2280,7 +2280,7 @@
     .line 567
     new-instance v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     const/4 v2, -0x2
 
@@ -2316,14 +2316,14 @@
     invoke-super {p0, p1, p2}, Lcom/etsy/android/grid/ExtendableListView;->b(II)V
 
     .line 809
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     const v1, 0x7fffffff
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
     .line 810
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     invoke-static {v0, v2}, Ljava/util/Arrays;->fill([II)V
 
@@ -2353,7 +2353,7 @@
     check-cast v0, Lcom/etsy/android/grid/ExtendableListView$ICf;
 
     .line 816
-    iget v4, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iget v4, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     const/4 v5, -0x2
 
@@ -2367,10 +2367,10 @@
     check-cast v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
     .line 819
-    iget v4, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iget v4, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     .line 820
-    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->b:I
+    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIb:I
 
     .line 821
     invoke-virtual {v3}, Landroid/view/View;->getTop()I
@@ -2378,14 +2378,14 @@
     move-result v5
 
     .line 822
-    iget-object v6, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v6, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v6, v6, v4
 
     if-ge v5, v6, :cond_0
 
     .line 823
-    iget-object v6, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v6, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/StaggeredGridView;->h(I)I
 
@@ -2402,14 +2402,14 @@
     move-result v0
 
     .line 826
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v3, v3, v4
 
     if-le v0, v3, :cond_1
 
     .line 827
-    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getChildBottomMargin()I
 
@@ -2442,32 +2442,32 @@
 
     .line 835
     :goto_1
-    iget v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ge v0, v5, :cond_1
 
     .line 836
-    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v5, v5, v0
 
     if-ge v4, v5, :cond_3
 
     .line 837
-    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aput v4, v5, v0
 
     .line 839
     :cond_3
-    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aget v5, v5, v0
 
     if-le v3, v5, :cond_4
 
     .line 840
-    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v5, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     aput v3, v5, v0
 
@@ -2540,7 +2540,7 @@
 
     .line 635
     :cond_1
-    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     aget v0, v1, v0
 
@@ -2594,7 +2594,7 @@
     check-cast v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;
 
     .line 703
-    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->e:I
+    iget v0, v0, Lcom/etsy/android/grid/StaggeredGridView$ICn;->mIe:I
 
     if-ne v0, p2, :cond_0
 
@@ -2730,7 +2730,7 @@
 
     .prologue
     .line 311
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     return v0
 .end method
@@ -2740,7 +2740,7 @@
 
     .prologue
     .line 717
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->x:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIx:I
 
     return v0
 .end method
@@ -2892,7 +2892,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->t:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIt:I
 
     add-int/2addr v0, v1
 
@@ -2908,7 +2908,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->q:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIq:I
 
     add-int/2addr v0, v1
 
@@ -2924,7 +2924,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->r:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIr:I
 
     add-int/2addr v0, v1
 
@@ -2940,7 +2940,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->s:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIs:I
 
     add-int/2addr v0, v1
 
@@ -2969,7 +2969,7 @@
     invoke-super {p0, p1, p2}, Lcom/etsy/android/grid/ExtendableListView;->onMeasure(II)V
 
     .line 253
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-gtz v0, :cond_0
 
@@ -2990,10 +2990,10 @@
     :goto_0
     if-eqz v0, :cond_8
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     :goto_1
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 262
     :cond_0
@@ -3005,78 +3005,78 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->l:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIl:I
 
     .line 264
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     array-length v0, v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-eq v0, v1, :cond_2
 
     .line 265
     :cond_1
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     .line 266
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->n()V
 
     .line 268
     :cond_2
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     array-length v0, v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-eq v0, v1, :cond_4
 
     .line 269
     :cond_3
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     .line 270
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->o()V
 
     .line 272
     :cond_4
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     array-length v0, v0
 
-    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-eq v0, v1, :cond_6
 
     .line 273
     :cond_5
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->w:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIw:[I
 
     .line 274
     invoke-direct {p0}, Lcom/etsy/android/grid/StaggeredGridView;->p()V
@@ -3093,7 +3093,7 @@
 
     .line 255
     :cond_8
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     goto :goto_1
 .end method
@@ -3106,31 +3106,31 @@
     check-cast p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;
 
     .line 1295
-    iget v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iget v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     .line 1296
-    iget-object v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iget-object v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
     .line 1297
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->v:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIv:[I
 
     .line 1298
-    iget-object v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->i:Landroid/util/SparseArray;
+    iget-object v0, p1, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mSparseArrayi:Landroid/util/SparseArray;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
     .line 1299
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->m:Z
+    iput-boolean v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->isZm:Z
 
     .line 1300
     invoke-super {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
@@ -3210,19 +3210,19 @@
     if-lez v0, :cond_1
 
     .line 1279
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
-    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     .line 1280
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->u:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mArrayIu:[I
 
-    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
     .line 1281
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->p:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mSparseArrayp:Landroid/util/SparseArray;
 
-    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->i:Landroid/util/SparseArray;
+    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mSparseArrayi:Landroid/util/SparseArray;
 
     .line 1289
     :goto_1
@@ -3236,28 +3236,28 @@
 
     .line 1284
     :cond_1
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     if-ltz v0, :cond_2
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->j:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIj:I
 
     :goto_2
-    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iput v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     .line 1285
-    iget v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iget v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     new-array v0, v0, [I
 
-    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
     .line 1286
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->i:Landroid/util/SparseArray;
+    iput-object v0, v2, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mSparseArrayi:Landroid/util/SparseArray;
 
     goto :goto_1
 
@@ -3287,10 +3287,10 @@
 
     .prologue
     .line 238
-    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     .line 239
-    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     .line 241
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getWidth()I
@@ -3315,7 +3315,7 @@
 
     .prologue
     .line 232
-    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->o:I
+    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIo:I
 
     .line 233
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getWidth()I
@@ -3340,7 +3340,7 @@
 
     .prologue
     .line 226
-    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->n:I
+    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIn:I
 
     .line 227
     invoke-virtual {p0}, Lcom/etsy/android/grid/StaggeredGridView;->getWidth()I
@@ -3365,16 +3365,16 @@
 
     .prologue
     .line 219
-    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->q:I
+    iput p1, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIq:I
 
     .line 220
-    iput p2, p0, Lcom/etsy/android/grid/StaggeredGridView;->s:I
+    iput p2, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIs:I
 
     .line 221
-    iput p3, p0, Lcom/etsy/android/grid/StaggeredGridView;->r:I
+    iput p3, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIr:I
 
     .line 222
-    iput p4, p0, Lcom/etsy/android/grid/StaggeredGridView;->t:I
+    iput p4, p0, Lcom/etsy/android/grid/StaggeredGridView;->mIt:I
 
     .line 223
     return-void

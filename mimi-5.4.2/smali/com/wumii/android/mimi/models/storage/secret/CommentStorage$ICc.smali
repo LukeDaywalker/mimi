@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/Map;
+.field final synthetic mCommentStorageb:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+.field final synthetic mMapa:Ljava/util/Map;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->b:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->mCommentStorageb:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->a:Ljava/util/Map;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->mMapa:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     .prologue
     .line 104
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->b:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->mCommentStorageb:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -43,7 +43,7 @@
 
     const-string/jumbo v1, "localComments"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->a:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICc;->mMapa:Ljava/util/Map;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0

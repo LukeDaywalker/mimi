@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/io/BufferedOutputStream;
+.field private final mBufferedOutputStreama:Ljava/io/BufferedOutputStream;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     invoke-direct {v0, p1, v1}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->a:Ljava/io/BufferedOutputStream;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->mBufferedOutputStreama:Ljava/io/BufferedOutputStream;
 
     .line 17
     return-void
@@ -38,12 +38,12 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->a:Ljava/io/BufferedOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->mBufferedOutputStreama:Ljava/io/BufferedOutputStream;
 
     invoke-virtual {p1, v0}, Lcom/facebook/stetho/websocket/Frame;->a(Ljava/io/BufferedOutputStream;)V
 
     .line 22
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->a:Ljava/io/BufferedOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WriteHandler;->mBufferedOutputStreama:Ljava/io/BufferedOutputStream;
 
     invoke-virtual {v0}, Ljava/io/BufferedOutputStream;->flush()V
 

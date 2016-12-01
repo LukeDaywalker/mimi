@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:[Ljava/lang/String;
+.field private static final mArrayStringa:[Ljava/lang/String;
 
-.field private static final b:[Ljava/lang/String;
+.field private static final mArrayStringb:[Ljava/lang/String;
 
-.field private static final c:[Ljava/lang/String;
+.field private static final mArrayStringc:[Ljava/lang/String;
 
 
 # direct methods
@@ -81,34 +81,34 @@
 
     aput-object v3, v0, v2
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->a:[Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringa:[Ljava/lang/String;
 
     .line 724
     const/16 v0, 0x40
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     .line 725
     const/16 v0, 0x100
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     move v0, v1
 
     .line 728
     :goto_0
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_0
 
     .line 729
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     const-string/jumbo v3, "%8s"
 
@@ -141,14 +141,14 @@
 
     .line 732
     :cond_0
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
     aput-object v2, v0, v1
 
     .line 733
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const-string/jumbo v2, "END_STREAM"
 
@@ -160,7 +160,7 @@
     aput v6, v3, v1
 
     .line 737
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const-string/jumbo v2, "PADDED"
 
@@ -177,7 +177,7 @@
     aget v4, v3, v0
 
     .line 739
-    sget-object v5, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v5, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     or-int/lit8 v6, v4, 0x8
 
@@ -185,7 +185,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v8, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v8, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v4, v8, v4
 
@@ -212,14 +212,14 @@
 
     .line 742
     :cond_1
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const-string/jumbo v2, "END_HEADERS"
 
     aput-object v2, v0, v10
 
     .line 743
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const/16 v2, 0x20
 
@@ -228,7 +228,7 @@
     aput-object v4, v0, v2
 
     .line 744
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     const/16 v2, 0x24
 
@@ -262,7 +262,7 @@
     aget v8, v3, v0
 
     .line 750
-    sget-object v9, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v9, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     or-int v10, v8, v6
 
@@ -270,7 +270,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v12, v12, v8
 
@@ -284,7 +284,7 @@
 
     move-result-object v11
 
-    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v12, v12, v6
 
@@ -299,7 +299,7 @@
     aput-object v11, v9, v10
 
     .line 751
-    sget-object v9, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v9, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     or-int v10, v8, v6
 
@@ -309,7 +309,7 @@
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v12, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v8, v12, v8
 
@@ -323,7 +323,7 @@
 
     move-result-object v8
 
-    sget-object v11, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v11, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v11, v11, v6
 
@@ -359,22 +359,22 @@
     .line 756
     :cond_3
     :goto_4
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     array-length v0, v0
 
     if-ge v1, v0, :cond_5
 
     .line 757
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v0, v0, v1
 
     if-nez v0, :cond_4
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v2, v2, v1
 
@@ -431,13 +431,13 @@
 
     .line 696
     :pswitch_0
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     array-length v0, v0
 
     if-ge p1, v0, :cond_3
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringb:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
@@ -473,7 +473,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
@@ -481,7 +481,7 @@
 
     .line 694
     :pswitch_2
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
@@ -489,7 +489,7 @@
 
     .line 696
     :cond_3
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->c:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
@@ -538,13 +538,13 @@
     const/4 v5, 0x0
 
     .line 673
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->a:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringa:[Ljava/lang/String;
 
     array-length v0, v0
 
     if-ge p3, v0, :cond_0
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->a:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->mArrayStringa:[Ljava/lang/String;
 
     aget-object v0, v0, p3
 

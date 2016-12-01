@@ -5,7 +5,7 @@
 # instance fields
 .field protected a:Lcom/tencent/wxop/stat/a/ICb;
 
-.field private m:J
+.field private mJm:J
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/tencent/wxop/stat/a/ICa;->m:J
+    iput-wide v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mJm:J
 
     iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICa;->a:Lcom/tencent/wxop/stat/a/ICb;
 
@@ -52,7 +52,7 @@
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    iget-wide v0, p0, Lcom/tencent/wxop/stat/a/ICa;->m:J
+    iget-wide v0, p0, Lcom/tencent/wxop/stat/a/ICa;->mJm:J
 
     const-wide/16 v2, 0x0
 
@@ -62,7 +62,7 @@
 
     const-string/jumbo v0, "du"
 
-    iget-wide v2, p0, Lcom/tencent/wxop/stat/a/ICa;->m:J
+    iget-wide v2, p0, Lcom/tencent/wxop/stat/a/ICa;->mJm:J
 
     invoke-virtual {p1, v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 

@@ -4,24 +4,24 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mArrayListb:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lu/aly/StringValuePair;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
             "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList",
-            "<",
-            "Lu/aly/StringValuePair;",
             ">;"
         }
     .end annotation
@@ -41,14 +41,14 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iput-object v0, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     .line 21
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iput-object v0, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -176,13 +176,13 @@
     const-wide/16 v2, 0x0
 
     .line 55
-    iget-object v5, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v5, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     monitor-enter v5
 
     .line 56
     :try_start_0
-    iget-object v0, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v0, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -302,7 +302,7 @@
     move-result-object v1
 
     .line 72
-    iget-object v2, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -341,13 +341,13 @@
 
     .line 81
     :cond_0
-    iget-object v3, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v3, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     monitor-enter v3
 
     .line 82
     :try_start_0
-    iget-object v0, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -415,7 +415,7 @@
     .line 87
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -467,13 +467,13 @@
     if-nez v0, :cond_0
 
     .line 26
-    iget-object v1, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v1, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 27
     :try_start_0
-    iget-object v0, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v0, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -515,13 +515,13 @@
     if-nez v0, :cond_0
 
     .line 35
-    iget-object v1, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v1, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 36
     :try_start_0
-    iget-object v0, p0, Lu/aly/ViewPageTracker;->a:Ljava/util/Map;
+    iget-object v0, p0, Lu/aly/ViewPageTracker;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -585,13 +585,13 @@
     sub-long v0, v2, v0
 
     .line 45
-    iget-object v2, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     monitor-enter v2
 
     .line 46
     :try_start_2
-    iget-object v3, p0, Lu/aly/ViewPageTracker;->b:Ljava/util/ArrayList;
+    iget-object v3, p0, Lu/aly/ViewPageTracker;->mArrayListb:Ljava/util/ArrayList;
 
     new-instance v4, Lu/aly/StringValuePair;
 

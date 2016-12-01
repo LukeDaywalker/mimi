@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Z
+.field private static isZa:Z
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 30
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->a:Z
+    sput-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->isZa:Z
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 
     .prologue
     .line 53
-    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->a:Z
+    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 70
-    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->a:Z
+    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -225,7 +225,7 @@
 
     .prologue
     .line 86
-    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->a:Z
+    sget-boolean v0, Lcom/sina/weibo/sdk/utils/LogUtil;->isZa:Z
 
     if-eqz v0, :cond_0
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/viewpagerindicator/TabPageIndicator;
+.field private mIb:I
 
-.field private b:I
+.field final synthetic mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 269
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     .line 270
     const/4 v0, 0x0
@@ -33,7 +33,7 @@
 
     .prologue
     .line 266
-    iput p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->b:I
+    iput p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mIb:I
 
     return p1
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 285
-    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->b:I
+    iget v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mIb:I
 
     return v0
 .end method
@@ -58,7 +58,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->onMeasure(II)V
 
     .line 278
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
 
@@ -68,14 +68,14 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget v1, v1, Lcom/viewpagerindicator/TabPageIndicator;->d:I
 
     if-le v0, v1, :cond_0
 
     .line 279
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICg;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->d:I
 

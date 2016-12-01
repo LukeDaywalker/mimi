@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+.field final synthetic mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 79
-    iput-object p1, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iput-object p1, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
     invoke-direct {p0}, Landroid/support/v4/view/AccessibilityDelegateCompat;-><init>()V
 
@@ -30,7 +30,7 @@
     invoke-super {p0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->a(Landroid/view/View;Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;)V
 
     .line 83
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
     invoke-static {v0}, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->a(Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;)Z
 
@@ -38,9 +38,9 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->b:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->mRecyclerViewb:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$ICar;
 
@@ -49,9 +49,9 @@
     if-eqz v0, :cond_0
 
     .line 84
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->b:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->mRecyclerViewb:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$ICar;
 
@@ -84,7 +84,7 @@
 
     .line 94
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
     invoke-static {v0}, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->a(Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;)Z
 
@@ -92,9 +92,9 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->b:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->mRecyclerViewb:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$ICar;
 
@@ -103,9 +103,9 @@
     if-eqz v0, :cond_1
 
     .line 95
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->b:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate$ICbi;->mRecyclerViewAccessibilityDelegateb:Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->b:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerViewAccessibilityDelegate;->mRecyclerViewb:Landroid/support/v7/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$ICar;
 

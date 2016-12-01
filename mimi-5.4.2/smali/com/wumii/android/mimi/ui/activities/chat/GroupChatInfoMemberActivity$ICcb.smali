@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field final synthetic mGroupChatInfoMemberActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+.field final synthetic mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->mGroupChatInfoMemberActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->mGroupChatInfoMemberActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -46,7 +46,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 

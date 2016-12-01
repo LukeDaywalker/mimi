@@ -7,13 +7,13 @@
 
 
 # static fields
-.field private static c:Lu/aly/CacheService;
+.field private static mCacheServicec:Lu/aly/CacheService;
 
 
 # instance fields
-.field private a:Lu/aly/ICacheService;
+.field private mContextb:Landroid/content/Context;
 
-.field private b:Landroid/content/Context;
+.field private mICacheServicea:Lu/aly/ICacheService;
 
 
 # direct methods
@@ -29,16 +29,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/CacheService;->b:Landroid/content/Context;
+    iput-object v0, p0, Lu/aly/CacheService;->mContextb:Landroid/content/Context;
 
     .line 18
     new-instance v0, Lu/aly/CacheImpl;
 
-    iget-object v1, p0, Lu/aly/CacheService;->b:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/CacheService;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lu/aly/CacheImpl;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheService;->a:Lu/aly/ICacheService;
+    iput-object v0, p0, Lu/aly/CacheService;->mICacheServicea:Lu/aly/ICacheService;
 
     .line 19
     return-void
@@ -54,7 +54,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lu/aly/CacheService;->c:Lu/aly/CacheService;
+    sget-object v0, Lu/aly/CacheService;->mCacheServicec:Lu/aly/CacheService;
 
     if-nez v0, :cond_0
 
@@ -65,11 +65,11 @@
 
     invoke-direct {v0, p0}, Lu/aly/CacheService;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lu/aly/CacheService;->c:Lu/aly/CacheService;
+    sput-object v0, Lu/aly/CacheService;->mCacheServicec:Lu/aly/CacheService;
 
     .line 26
     :cond_0
-    sget-object v0, Lu/aly/CacheService;->c:Lu/aly/CacheService;
+    sget-object v0, Lu/aly/CacheService;->mCacheServicec:Lu/aly/CacheService;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 10
-    iget-object v0, p0, Lu/aly/CacheService;->a:Lu/aly/ICacheService;
+    iget-object v0, p0, Lu/aly/CacheService;->mICacheServicea:Lu/aly/ICacheService;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lu/aly/CacheService;->a:Lu/aly/ICacheService;
+    iget-object v0, p0, Lu/aly/CacheService;->mICacheServicea:Lu/aly/ICacheService;
 
     invoke-interface {v0, p1}, Lu/aly/ICacheService;->b(Lu/aly/IProtocol;)V
 

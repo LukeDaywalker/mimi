@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
+.field final synthetic mGroupChatShareControllera:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 28
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->a:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->mGroupChatShareControllera:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->a:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->mGroupChatShareControllera:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
     const-string/jumbo v2, "weixin_timeline"
 
@@ -42,7 +42,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->a:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GroupChatShareController$ICv;->mGroupChatShareControllera:Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->k()Ljava/lang/String;
 

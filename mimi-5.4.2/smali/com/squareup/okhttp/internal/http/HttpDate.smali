@@ -4,9 +4,11 @@
 
 
 # static fields
-.field private static final a:Ljava/util/TimeZone;
+.field private static final mArrayDateFormatd:[Ljava/text/DateFormat;
 
-.field private static final b:Ljava/lang/ThreadLocal;
+.field private static final mArrayStringc:[Ljava/lang/String;
+
+.field private static final mThreadLocalb:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal",
@@ -17,9 +19,7 @@
     .end annotation
 .end field
 
-.field private static final c:[Ljava/lang/String;
-
-.field private static final d:[Ljava/text/DateFormat;
+.field private static final mTimeZonea:Ljava/util/TimeZone;
 
 
 # direct methods
@@ -34,14 +34,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->a:Ljava/util/TimeZone;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mTimeZonea:Ljava/util/TimeZone;
 
     .line 37
     new-instance v0, Lcom/squareup/okhttp/internal/http/HttpDate$ICp;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/HttpDate$ICp;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->b:Ljava/lang/ThreadLocal;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mThreadLocalb:Ljava/lang/ThreadLocal;
 
     .line 49
     const/16 v0, 0xf
@@ -138,16 +138,16 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->c:[Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayStringc:[Ljava/lang/String;
 
     .line 71
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->c:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayStringc:[Ljava/lang/String;
 
     array-length v0, v0
 
     new-array v0, v0, [Ljava/text/DateFormat;
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->d:[Ljava/text/DateFormat;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayDateFormatd:[Ljava/text/DateFormat;
 
     return-void
 .end method
@@ -157,7 +157,7 @@
 
     .prologue
     .line 114
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->b:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mThreadLocalb:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -201,7 +201,7 @@
     invoke-direct {v3, v2}, Ljava/text/ParsePosition;-><init>(I)V
 
     .line 81
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->b:Ljava/lang/ThreadLocal;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mThreadLocalb:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -225,13 +225,13 @@
     if-eq v4, v5, :cond_0
 
     .line 87
-    sget-object v4, Lcom/squareup/okhttp/internal/http/HttpDate;->c:[Ljava/lang/String;
+    sget-object v4, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayStringc:[Ljava/lang/String;
 
     monitor-enter v4
 
     .line 88
     :try_start_0
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->c:[Ljava/lang/String;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayStringc:[Ljava/lang/String;
 
     array-length v5, v0
 
@@ -239,7 +239,7 @@
     if-ge v2, v5, :cond_4
 
     .line 89
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->d:[Ljava/text/DateFormat;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayDateFormatd:[Ljava/text/DateFormat;
 
     aget-object v0, v0, v2
 
@@ -249,7 +249,7 @@
     .line 91
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->c:[Ljava/lang/String;
+    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v6, v6, v2
 
@@ -258,12 +258,12 @@
     invoke-direct {v0, v6, v7}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 94
-    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->a:Ljava/util/TimeZone;
+    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->mTimeZonea:Ljava/util/TimeZone;
 
     invoke-virtual {v0, v6}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 95
-    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->d:[Ljava/text/DateFormat;
+    sget-object v6, Lcom/squareup/okhttp/internal/http/HttpDate;->mArrayDateFormatd:[Ljava/text/DateFormat;
 
     aput-object v0, v6, v2
 
@@ -326,7 +326,7 @@
 
     .prologue
     .line 29
-    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->a:Ljava/util/TimeZone;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/HttpDate;->mTimeZonea:Ljava/util/TimeZone;
 
     return-object v0
 .end method

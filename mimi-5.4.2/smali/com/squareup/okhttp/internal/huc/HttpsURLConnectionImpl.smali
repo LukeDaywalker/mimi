@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+.field private final mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;-><init>(Ljava/net/HttpURLConnection;)V
 
     .line 34
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
     .line 35
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
     iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
@@ -61,7 +61,7 @@
 
     .line 45
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
     iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
@@ -71,7 +71,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
     iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
@@ -88,9 +88,9 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->d:Lcom/squareup/okhttp/Handshake;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mHandshaked:Lcom/squareup/okhttp/Handshake;
 
     goto :goto_0
 .end method
@@ -370,9 +370,9 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->j()Ljavax/net/ssl/HostnameVerifier;
 
@@ -566,9 +566,9 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->i()Ljavax/net/ssl/SSLSocketFactory;
 
@@ -688,7 +688,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->setFixedLengthStreamingMode(J)V
 
@@ -701,9 +701,9 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljavax/net/ssl/HostnameVerifier;)Lcom/squareup/okhttp/OkHttpClient;
 
@@ -766,9 +766,9 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->a:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/HttpsURLConnectionImpl;->mHttpURLConnectionImpla:Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->a:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, v0, Lcom/squareup/okhttp/internal/huc/HttpURLConnectionImpl;->mOkHttpClienta:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljavax/net/ssl/SSLSocketFactory;)Lcom/squareup/okhttp/OkHttpClient;
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:I
+.field private static final mIa:I
 
-.field private static final b:I
+.field private static final mIb:I
 
-.field private static final c:I
+.field private static final mIc:I
 
 
 # direct methods
@@ -25,23 +25,23 @@
 
     move-result v0
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->a:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIa:I
 
     .line 37
-    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->a:I
+    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIa:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->b:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIb:I
 
     .line 38
-    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->a:I
+    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIa:I
 
     mul-int/lit8 v0, v0, 0x2
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->c:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIc:I
 
     return-void
 .end method
@@ -83,9 +83,9 @@
 
     .prologue
     .line 81
-    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->b:I
+    sget v0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIb:I
 
-    sget v1, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->c:I
+    sget v1, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->mIc:I
 
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;->a(II)Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
 

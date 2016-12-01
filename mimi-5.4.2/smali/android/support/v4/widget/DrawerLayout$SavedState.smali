@@ -17,11 +17,11 @@
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:I
+.field mIb:I
 
-.field c:I
+.field mIc:I
 
 
 # direct methods
@@ -49,20 +49,20 @@
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
     .line 1591
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIa:I
 
     .line 1592
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->b:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIb:I
 
     .line 1593
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->c:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIc:I
 
     .line 1597
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIa:I
 
     .line 1598
     return-void
@@ -78,13 +78,13 @@
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 1591
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->a:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIa:I
 
     .line 1592
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->b:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIb:I
 
     .line 1593
-    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->c:I
+    iput v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIc:I
 
     .line 1602
     return-void
@@ -100,7 +100,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 1607
-    iget v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->a:I
+    iget v0, p0, Landroid/support/v4/widget/DrawerLayout$SavedState;->mIa:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

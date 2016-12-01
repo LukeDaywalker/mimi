@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field private static final mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/dao/SurveyDao$ICg;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/SurveyDao;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/SurveyDao;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     return-void
 .end method
@@ -263,7 +263,7 @@
 
     move-result-object v0
 
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/SurveyDao;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/SurveyDao;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/models/dao/SurveyDao;->fromJson(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 

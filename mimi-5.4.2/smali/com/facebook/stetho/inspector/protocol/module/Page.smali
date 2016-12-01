@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/Page;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/protocol/module/Page;->mContexta:Landroid/content/Context;
 
     .line 27
     return-void

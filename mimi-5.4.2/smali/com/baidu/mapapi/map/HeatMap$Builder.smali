@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Collection;
+.field private mCollectiona:Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection",
@@ -14,11 +14,11 @@
     .end annotation
 .end field
 
-.field private b:I
+.field private mDd:D
 
-.field private c:Lcom/baidu/mapapi/map/Gradient;
+.field private mGradientc:Lcom/baidu/mapapi/map/Gradient;
 
-.field private d:D
+.field private mIb:I
 
 
 # direct methods
@@ -29,15 +29,15 @@
 
     const/16 v0, 0xc
 
-    iput v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->b:I
+    iput v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mIb:I
 
     sget-object v0, Lcom/baidu/mapapi/map/HeatMap;->DEFAULT_GRADIENT:Lcom/baidu/mapapi/map/Gradient;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->c:Lcom/baidu/mapapi/map/Gradient;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mGradientc:Lcom/baidu/mapapi/map/Gradient;
 
     const-wide v0, 0x3fe3333333333333L    # 0.6
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->d:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mDd:D
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 .method static synthetic a(Lcom/baidu/mapapi/map/HeatMap$Builder;)Ljava/util/Collection;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->a:Ljava/util/Collection;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mCollectiona:Ljava/util/Collection;
 
     return-object v0
 .end method
@@ -53,7 +53,7 @@
 .method static synthetic b(Lcom/baidu/mapapi/map/HeatMap$Builder;)I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mIb:I
 
     return v0
 .end method
@@ -61,7 +61,7 @@
 .method static synthetic c(Lcom/baidu/mapapi/map/HeatMap$Builder;)Lcom/baidu/mapapi/map/Gradient;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->c:Lcom/baidu/mapapi/map/Gradient;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mGradientc:Lcom/baidu/mapapi/map/Gradient;
 
     return-object v0
 .end method
@@ -69,7 +69,7 @@
 .method static synthetic d(Lcom/baidu/mapapi/map/HeatMap$Builder;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mDd:D
 
     return-wide v0
 .end method
@@ -79,7 +79,7 @@
 .method public build()Lcom/baidu/mapapi/map/HeatMap;
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->a:Ljava/util/Collection;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mCollectiona:Ljava/util/Collection;
 
     if-nez v0, :cond_0
 
@@ -174,7 +174,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->c:Lcom/baidu/mapapi/map/Gradient;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mGradientc:Lcom/baidu/mapapi/map/Gradient;
 
     return-object p0
 .end method
@@ -182,9 +182,9 @@
 .method public opacity(D)Lcom/baidu/mapapi/map/HeatMap$Builder;
     .locals 5
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->d:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mDd:D
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mDd:D
 
     const-wide/16 v2, 0x0
 
@@ -192,7 +192,7 @@
 
     if-ltz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mDd:D
 
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
@@ -216,15 +216,15 @@
 .method public radius(I)Lcom/baidu/mapapi/map/HeatMap$Builder;
     .locals 2
 
-    iput p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->b:I
+    iput p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mIb:I
 
-    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mIb:I
 
     const/16 v1, 0xa
 
     if-lt v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mIb:I
 
     const/16 v1, 0x32
 
@@ -355,7 +355,7 @@
     :cond_5
     invoke-interface {p1, v1}, Ljava/util/Collection;->removeAll(Ljava/util/Collection;)Z
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->a:Ljava/util/Collection;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/HeatMap$Builder;->mCollectiona:Ljava/util/Collection;
 
     return-object p0
 .end method

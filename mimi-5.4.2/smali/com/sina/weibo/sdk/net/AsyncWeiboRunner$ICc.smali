@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mRequestListenerd:Lcom/sina/weibo/sdk/net/RequestListener;
 
-.field private final b:Lcom/sina/weibo/sdk/net/WeiboParameters;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
 
-.field private final d:Lcom/sina/weibo/sdk/net/RequestListener;
+.field private final mWeiboParametersb:Lcom/sina/weibo/sdk/net/WeiboParameters;
 
 
 # direct methods
@@ -37,16 +37,16 @@
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 112
-    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mStringa:Ljava/lang/String;
 
     .line 113
-    iput-object p2, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->b:Lcom/sina/weibo/sdk/net/WeiboParameters;
+    iput-object p2, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mWeiboParametersb:Lcom/sina/weibo/sdk/net/WeiboParameters;
 
     .line 114
-    iput-object p3, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mStringc:Ljava/lang/String;
 
     .line 115
-    iput-object p4, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->d:Lcom/sina/weibo/sdk/net/RequestListener;
+    iput-object p4, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mRequestListenerd:Lcom/sina/weibo/sdk/net/RequestListener;
 
     .line 116
     return-void
@@ -71,11 +71,11 @@
     .prologue
     .line 121
     :try_start_0
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mStringa:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mStringc:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->b:Lcom/sina/weibo/sdk/net/WeiboParameters;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mWeiboParametersb:Lcom/sina/weibo/sdk/net/WeiboParameters;
 
     invoke-static {v0, v1, v2}, Lcom/sina/weibo/sdk/net/HttpManager;->a(Ljava/lang/String;Ljava/lang/String;Lcom/sina/weibo/sdk/net/WeiboParameters;)Ljava/lang/String;
 
@@ -128,7 +128,7 @@
     if-eqz v0, :cond_0
 
     .line 137
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->d:Lcom/sina/weibo/sdk/net/RequestListener;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mRequestListenerd:Lcom/sina/weibo/sdk/net/RequestListener;
 
     invoke-interface {v1, v0}, Lcom/sina/weibo/sdk/net/RequestListener;->a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
 
@@ -138,7 +138,7 @@
 
     .line 139
     :cond_0
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->d:Lcom/sina/weibo/sdk/net/RequestListener;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->mRequestListenerd:Lcom/sina/weibo/sdk/net/RequestListener;
 
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->a()Ljava/lang/Object;
 

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/tauth/Pro$ICb;
+.field final synthetic mICba:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic b:Ljava/lang/Object;
+.field final synthetic mICdc:Lcom/tencent/connect/b/Pro$ICd;
 
-.field final synthetic c:Lcom/tencent/connect/b/Pro$ICd;
+.field final synthetic mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 715
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICg;->c:Lcom/tencent/connect/b/Pro$ICd;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICg;->mICdc:Lcom/tencent/connect/b/Pro$ICd;
 
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICg;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICg;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
-    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICg;->b:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICg;->mObjectb:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,14 +38,14 @@
 
     .prologue
     .line 719
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICg;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICg;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_0
 
     .line 720
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICg;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICg;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICg;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICg;->mObjectb:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 

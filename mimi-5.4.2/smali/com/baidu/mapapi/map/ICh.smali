@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/map/MapView;
+.field final synthetic mMapViewa:Lcom/baidu/mapapi/map/MapView;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/mapapi/map/MapView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ICh;->a:Lcom/baidu/mapapi/map/MapView;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ICh;->mMapViewa:Lcom/baidu/mapapi/map/MapView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +25,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICh;->a:Lcom/baidu/mapapi/map/MapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICh;->mMapViewa:Lcom/baidu/mapapi/map/MapView;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/MapView;->a(Lcom/baidu/mapapi/map/MapView;)Lcom/baidu/platform/comapi/map/ICg;
 
@@ -47,7 +47,7 @@
 
     iput v1, v0, Lcom/baidu/platform/comapi/map/B;->a:F
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ICh;->a:Lcom/baidu/mapapi/map/MapView;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ICh;->mMapViewa:Lcom/baidu/mapapi/map/MapView;
 
     invoke-static {v1}, Lcom/baidu/mapapi/map/MapView;->a(Lcom/baidu/mapapi/map/MapView;)Lcom/baidu/platform/comapi/map/ICg;
 

@@ -7,19 +7,19 @@
 
 
 # static fields
-.field private static final iP:Ljava/lang/String; = "app.jar"
+.field public static mC:Landroid/content/Context; = null
 
-.field public static mC:Landroid/content/Context;
+.field private static final mStringiP:Ljava/lang/String; = "app.jar"
 
 .field public static replaceFileName:Ljava/lang/String;
 
 
 # instance fields
-.field iO:Lcom/baidu/location/LLSInterface;
+.field mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
-.field iQ:Lcom/baidu/location/LLSInterface;
+.field mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
-.field iR:Lcom/baidu/location/LLSInterface;
+.field mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
 
 # direct methods
@@ -44,11 +44,11 @@
 
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iQ:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0, p1}, Lcom/baidu/location/LLSInterface;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
 
@@ -108,7 +108,7 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICad;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iQ:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
     :try_start_0
     new-instance v0, Ljava/io/File;
@@ -247,22 +247,22 @@
 
     check-cast v0, Lcom/baidu/location/LLSInterface;
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0}, Lcom/baidu/location/LLSInterface;->getVersion()D
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/baidu/location/ICf;->iQ:Lcom/baidu/location/LLSInterface;
+    iget-object v2, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v2}, Lcom/baidu/location/LLSInterface;->getVersion()D
 
@@ -272,14 +272,14 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
-    iput-object v5, p0, Lcom/baidu/location/ICf;->iQ:Lcom/baidu/location/LLSInterface;
+    iput-object v5, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
     :goto_1
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0, p0}, Lcom/baidu/location/LLSInterface;->onCreate(Landroid/content/Context;)V
 
@@ -288,16 +288,16 @@
     :catch_0
     move-exception v0
 
-    iput-object v5, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iput-object v5, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iQ:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiQ:Lcom/baidu/location/LLSInterface;
 
-    iput-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iput-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
-    iput-object v5, p0, Lcom/baidu/location/ICf;->iO:Lcom/baidu/location/LLSInterface;
+    iput-object v5, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiO:Lcom/baidu/location/LLSInterface;
 
     goto :goto_1
 .end method
@@ -305,7 +305,7 @@
 .method public onDestroy()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0}, Lcom/baidu/location/LLSInterface;->onDestroy()V
 
@@ -315,7 +315,7 @@
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/baidu/location/LLSInterface;->onStartCommand(Landroid/content/Intent;II)I
 
@@ -327,7 +327,7 @@
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICf;->iR:Lcom/baidu/location/LLSInterface;
+    iget-object v0, p0, Lcom/baidu/location/ICf;->mLLSInterfaceiR:Lcom/baidu/location/LLSInterface;
 
     invoke-interface {v0, p1}, Lcom/baidu/location/LLSInterface;->onUnBind(Landroid/content/Intent;)Z
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
+.field final synthetic mICma:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICn;->a:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICn;->mICma:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICn;->a:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICn;->mICma:Lcom/wumii/android/mimi/manager/BaseManager$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->b:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->mWMProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;->dismiss()V
 

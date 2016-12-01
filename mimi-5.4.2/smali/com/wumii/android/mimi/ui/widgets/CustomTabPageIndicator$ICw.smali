@@ -6,7 +6,7 @@
 # instance fields
 .field protected a:Landroid/content/Context;
 
-.field private b:Landroid/widget/LinearLayout$LayoutParams;
+.field private mLayoutParamsb:Landroid/widget/LinearLayout$LayoutParams;
 
 
 # direct methods
@@ -42,7 +42,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->a:Landroid/content/Context;
 
     .line 78
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->b:Landroid/widget/LinearLayout$LayoutParams;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->mLayoutParamsb:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 79
     return-void
@@ -53,7 +53,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->b:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;->mLayoutParamsb:Landroid/widget/LinearLayout$LayoutParams;
 
     return-object v0
 .end method

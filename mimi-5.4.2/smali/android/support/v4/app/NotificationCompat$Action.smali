@@ -14,9 +14,9 @@
 
 .field public c:Landroid/app/PendingIntent;
 
-.field private final e:Landroid/os/Bundle;
+.field private final mArrayRemoteInputf:[Landroid/support/v4/app/RemoteInput;
 
-.field private final f:[Landroid/support/v4/app/RemoteInput;
+.field private final mBundlee:Landroid/os/Bundle;
 
 
 # direct methods
@@ -71,7 +71,7 @@
 
     .prologue
     .line 1857
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->e:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->mBundlee:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .prologue
     .line 1866
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->f:[Landroid/support/v4/app/RemoteInput;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Action;->mArrayRemoteInputf:[Landroid/support/v4/app/RemoteInput;
 
     return-object v0
 .end method

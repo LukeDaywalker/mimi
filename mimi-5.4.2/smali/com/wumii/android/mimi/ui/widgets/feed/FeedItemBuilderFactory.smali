@@ -4,25 +4,25 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
+.field private mBuildingItemFeedBuilderd:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
+.field private mCircleLockedFeedItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
+.field private mContactUnauthorizedFeedItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
+.field private mGuidanceFeedItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
+.field private mPromotionFeedItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
+.field private mSecretFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
+.field private mSharedSmallCircleFeedItemBuildere:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
 
-.field private h:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
+.field private mSmallCircleFeedItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
+.field private mSurveyFeedItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+.field private mTagFeedItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     move-result-object v0
 
     .line 23
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory$ICf;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory$ICf;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Feed$FeedItemType;->ordinal()I
 
@@ -86,7 +86,7 @@
 
     .line 25
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->a:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSecretFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
 
     if-nez v0, :cond_0
 
@@ -95,11 +95,11 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->a:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSecretFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
 
     .line 28
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->a:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSecretFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;
 
     .line 73
     :goto_0
@@ -107,7 +107,7 @@
 
     .line 30
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mContactUnauthorizedFeedItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
 
     if-nez v0, :cond_1
 
@@ -116,17 +116,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mContactUnauthorizedFeedItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
 
     .line 33
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mContactUnauthorizedFeedItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/feed/ContactUnauthorizedFeedItemBuilder;
 
     goto :goto_0
 
     .line 35
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSmallCircleFeedItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
 
     if-nez v0, :cond_2
 
@@ -135,17 +135,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSmallCircleFeedItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
 
     .line 38
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSmallCircleFeedItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;
 
     goto :goto_0
 
     .line 40
     :pswitch_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSharedSmallCircleFeedItemBuildere:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
 
     if-nez v0, :cond_3
 
@@ -154,17 +154,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSharedSmallCircleFeedItemBuildere:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
 
     .line 43
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSharedSmallCircleFeedItemBuildere:Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;
 
     goto :goto_0
 
     .line 45
     :pswitch_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mBuildingItemFeedBuilderd:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
 
     if-nez v0, :cond_4
 
@@ -173,17 +173,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mBuildingItemFeedBuilderd:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
 
     .line 48
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mBuildingItemFeedBuilderd:Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;
 
     goto :goto_0
 
     .line 50
     :pswitch_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mGuidanceFeedItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
 
     if-nez v0, :cond_5
 
@@ -192,17 +192,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mGuidanceFeedItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
 
     .line 53
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mGuidanceFeedItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/feed/GuidanceFeedItemBuilder;
 
     goto :goto_0
 
     .line 55
     :pswitch_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mPromotionFeedItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
 
     if-nez v0, :cond_6
 
@@ -211,17 +211,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mPromotionFeedItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
 
     .line 58
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mPromotionFeedItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/feed/PromotionFeedItemBuilder;
 
     goto :goto_0
 
     .line 60
     :pswitch_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSurveyFeedItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
 
     if-nez v0, :cond_7
 
@@ -230,17 +230,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSurveyFeedItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
 
     .line 63
     :cond_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mSurveyFeedItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;
 
     goto :goto_0
 
     .line 65
     :pswitch_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mCircleLockedFeedItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
 
     if-nez v0, :cond_8
 
@@ -249,17 +249,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mCircleLockedFeedItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
 
     .line 68
     :cond_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mCircleLockedFeedItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/feed/CircleLockedFeedItemBuilder;
 
     goto :goto_0
 
     .line 70
     :pswitch_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mTagFeedItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     if-nez v0, :cond_9
 
@@ -268,11 +268,11 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mTagFeedItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     .line 73
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory;->mTagFeedItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     goto :goto_0
 

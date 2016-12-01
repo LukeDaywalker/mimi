@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private q:Lcom/wumii/android/mimi/models/entities/NearbyUser;
+.field private mNearbyUserq:Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
 
 # direct methods
@@ -104,7 +104,7 @@
     .line 49
     const-string/jumbo v1, "description"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->q:Lcom/wumii/android/mimi/models/entities/NearbyUser;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mNearbyUserq:Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/NearbyUser;->getDescription()Ljava/lang/String;
 
@@ -188,10 +188,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->q:Lcom/wumii/android/mimi/models/entities/NearbyUser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mNearbyUserq:Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->q:Lcom/wumii/android/mimi/models/entities/NearbyUser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->mNearbyUserq:Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
     if-nez v0, :cond_0
 

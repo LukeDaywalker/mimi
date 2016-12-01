@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mICfb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
+.field final synthetic mIa:I
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 269
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->mICfb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,24 +34,24 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->mICfb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;->b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;->mCardSupportCircleFeedsFragmentb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->z(Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->mIa:I
 
     add-int/lit8 v1, v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->smoothScrollToPosition(I)V
 
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICh;->mICfb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;->b:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment$ICf;->mCardSupportCircleFeedsFragmentb:Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
     const/4 v1, 0x0
 

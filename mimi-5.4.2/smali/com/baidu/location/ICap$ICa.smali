@@ -3,8 +3,6 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICap;
-
 .field public do:I
 
 .field public for:Z
@@ -12,6 +10,8 @@
 .field public if:D
 
 .field public int:D
+
+.field final synthetic mICapa:Lcom/baidu/location/ICap;
 
 .field public new:J
 
@@ -22,7 +22,7 @@
 .method public constructor <init>(Lcom/baidu/location/ICap;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICap$ICa;->a:Lcom/baidu/location/ICap;
+    iput-object p1, p0, Lcom/baidu/location/ICap$ICa;->mICapa:Lcom/baidu/location/ICap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

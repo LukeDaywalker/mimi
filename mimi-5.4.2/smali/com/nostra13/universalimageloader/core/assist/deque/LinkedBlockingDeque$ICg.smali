@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic d:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
+.field final synthetic mLinkedBlockingDequed:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 1128
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICg;->d:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICg;->mLinkedBlockingDequed:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICf;-><init>(Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;)V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 1130
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICg;->d:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICg;->mLinkedBlockingDequed:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
 
     iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
@@ -74,7 +74,7 @@
 
     .prologue
     .line 1134
-    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     return-object v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+.field final synthetic mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->g()Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -84,13 +84,13 @@
     :goto_0
     new-instance v1, Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment$ICad;->mCreateGroupForShareFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->g()Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 

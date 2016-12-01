@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 19
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->mStringa:Ljava/lang/String;
 
     .line 20
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method

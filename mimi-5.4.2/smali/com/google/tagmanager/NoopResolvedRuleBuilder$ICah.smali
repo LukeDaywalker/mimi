@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/NoopResolvedRuleBuilder;
+.field final synthetic mNoopResolvedRuleBuildera:Lcom/google/tagmanager/NoopResolvedRuleBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;->a:Lcom/google/tagmanager/NoopResolvedRuleBuilder;
+    iput-object p1, p0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;->mNoopResolvedRuleBuildera:Lcom/google/tagmanager/NoopResolvedRuleBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

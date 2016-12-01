@@ -4,9 +4,7 @@
 
 
 # static fields
-.field private static a:Lcom/wumii/android/mimi/manager/MemoryMonitor;
-
-.field private static b:Ljava/util/List;
+.field private static mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -16,6 +14,8 @@
         }
     .end annotation
 .end field
+
+.field private static mMemoryMonitora:Lcom/wumii/android/mimi/manager/MemoryMonitor;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->b:Ljava/util/List;
+    sput-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mListb:Ljava/util/List;
 
     .line 23
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->a:Lcom/wumii/android/mimi/manager/MemoryMonitor;
+    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mMemoryMonitora:Lcom/wumii/android/mimi/manager/MemoryMonitor;
 
     if-nez v0, :cond_0
 
@@ -51,11 +51,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/MemoryMonitor;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->a:Lcom/wumii/android/mimi/manager/MemoryMonitor;
+    sput-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mMemoryMonitora:Lcom/wumii/android/mimi/manager/MemoryMonitor;
 
     .line 18
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->a:Lcom/wumii/android/mimi/manager/MemoryMonitor;
+    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mMemoryMonitora:Lcom/wumii/android/mimi/manager/MemoryMonitor;
 
     return-object v0
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 30
-    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mListb:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mListb:Ljava/util/List;
 
     return-object v0
 .end method
@@ -101,7 +101,7 @@
 
     .prologue
     .line 34
-    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -121,14 +121,14 @@
     check-cast v0, Ljava/lang/String;
 
     .line 35
-    invoke-static {v0, p1}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, p1}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 36
-    sget-object v1, Lcom/wumii/android/mimi/manager/MemoryMonitor;->b:Ljava/util/List;
+    sget-object v1, Lcom/wumii/android/mimi/manager/MemoryMonitor;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 

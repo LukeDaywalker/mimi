@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private e:I
+.field private mDisplayImageOptionsj:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private f:I
+.field private mIe:I
 
-.field private g:I
+.field private mIf:I
 
-.field private h:I
+.field private mIg:I
 
-.field private i:I
+.field private mIh:I
 
-.field private j:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mIi:I
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->e:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIe:I
 
     .line 41
     const v1, 0x7f0a000d
@@ -48,7 +48,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->f:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIf:I
 
     .line 42
     const v1, 0x7f0a0010
@@ -57,7 +57,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->g:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIg:I
 
     .line 43
     const v1, 0x7f0a000e
@@ -66,7 +66,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->h:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIh:I
 
     .line 44
     const v1, 0x7f0a0033
@@ -75,7 +75,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIi:I
 
     .line 46
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
@@ -102,7 +102,7 @@
 
     new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->i:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIi:I
 
     invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
@@ -114,7 +114,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->j:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mDisplayImageOptionsj:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 52
     return-void
@@ -262,7 +262,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -301,13 +301,13 @@
 
     iget v2, v2, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->h:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIh:I
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->f:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIf:I
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->g:I
+    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIg:I
 
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIe:I
 
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
@@ -316,7 +316,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->j:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mDisplayImageOptionsj:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0, v9, v8, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
@@ -347,13 +347,13 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->h:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIh:I
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->f:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIf:I
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->g:I
+    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIg:I
 
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mIe:I
 
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
@@ -366,7 +366,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->j:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->mDisplayImageOptionsj:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0, v1, v8, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 

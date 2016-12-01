@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic isZd:Z
 
-.field final synthetic c:Ljava/util/List;
+.field final synthetic mIa:I
 
-.field final synthetic d:Z
+.field final synthetic mListc:Ljava/util/List;
 
-.field final synthetic e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+.field final synthetic mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
 
 # direct methods
@@ -19,13 +19,13 @@
 
     .prologue
     .line 828
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    iput p4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->a:I
+    iput p4, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mIa:I
 
-    iput-object p5, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->c:Ljava/util/List;
+    iput-object p5, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mListc:Ljava/util/List;
 
-    iput-boolean p6, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->d:Z
+    iput-boolean p6, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->isZd:Z
 
     invoke-direct {p0, p2, p3}, Lcom/squareup/okhttp/internal/NamedRunnable;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
 
@@ -39,17 +39,17 @@
 
     .prologue
     .line 830
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->h(Lcom/squareup/okhttp/internal/spdy/SpdyConnection;)Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mIa:I
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->c:Ljava/util/List;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mListc:Ljava/util/List;
 
-    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->d:Z
+    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->isZd:Z
 
     invoke-interface {v0, v1, v2, v3}, Lcom/squareup/okhttp/internal/spdy/PushObserver;->a(ILjava/util/List;Z)Z
 
@@ -59,11 +59,11 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
-    iget-object v1, v1, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->i:Lcom/squareup/okhttp/internal/spdy/FrameWriter;
+    iget-object v1, v1, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->mFrameWriteri:Lcom/squareup/okhttp/internal/spdy/FrameWriter;
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->a:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mIa:I
 
     sget-object v3, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
@@ -73,13 +73,13 @@
     :cond_0
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->d:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->isZd:Z
 
     if-eqz v0, :cond_2
 
     .line 834
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
     monitor-enter v1
     :try_end_0
@@ -87,13 +87,13 @@
 
     .line 835
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->e:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mSpdyConnectione:Lcom/squareup/okhttp/internal/spdy/SpdyConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/spdy/SpdyConnection;->i(Lcom/squareup/okhttp/internal/spdy/SpdyConnection;)Ljava/util/Set;
 
     move-result-object v0
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->a:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICah;->mIa:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

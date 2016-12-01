@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field private C:Z
+.field private isZC:Z
 
-.field private n:Landroid/widget/Button;
+.field private mButtonn:Landroid/widget/Button;
 
-.field private o:Landroid/widget/Button;
+.field private mButtono:Landroid/widget/Button;
 
-.field private p:Landroid/widget/EditText;
+.field private mEditTextp:Landroid/widget/EditText;
 
-.field private q:Landroid/view/MenuItem;
+.field private mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-.field private r:Landroid/text/SpannableString;
+.field private mMenuItemq:Landroid/view/MenuItem;
 
-.field private s:Landroid/text/SpannableString;
+.field private mSpannableStringr:Landroid/text/SpannableString;
 
-.field private t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+.field private mSpannableStrings:Landroid/text/SpannableString;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     return-object v0
 .end method
@@ -70,7 +70,7 @@
     if-eqz p1, :cond_1
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->r:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     if-nez v0, :cond_0
 
@@ -97,11 +97,11 @@
 
     check-cast v0, Landroid/text/SpannableString;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->r:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->r:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStringr:Landroid/text/SpannableString;
 
     .line 177
     :goto_0
@@ -109,7 +109,7 @@
 
     .line 172
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->s:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     if-nez v0, :cond_2
 
@@ -136,11 +136,11 @@
 
     check-cast v0, Landroid/text/SpannableString;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->s:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     .line 177
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->s:Landroid/text/SpannableString;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mSpannableStrings:Landroid/text/SpannableString;
 
     goto :goto_0
 .end method
@@ -160,7 +160,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mEditTextp:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -178,7 +178,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     .line 83
     const v0, 0x7f0b00e4
@@ -189,7 +189,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     .line 84
     const v0, 0x7f0b005e
@@ -200,7 +200,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->p:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mEditTextp:Landroid/widget/EditText;
 
     .line 85
     return-void
@@ -211,7 +211,7 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->q:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -224,13 +224,13 @@
 
     .line 186
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->UNKNOW:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     if-eq v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mEditTextp:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getEditableText()Landroid/text/Editable;
 
@@ -246,7 +246,7 @@
 
     .line 187
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->q:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->b(Z)Landroid/text/SpannableString;
 
@@ -255,7 +255,7 @@
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 188
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->q:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -277,17 +277,17 @@
     .line 140
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->FEMALE:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     const v1, 0x7f020170
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     const v1, 0x7f020172
 
@@ -299,7 +299,7 @@
     move-result-object v0
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     const v2, 0x106000b
 
@@ -310,7 +310,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 147
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     const v2, 0x7f090046
 
@@ -334,17 +334,17 @@
     .line 128
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->MALE:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     const v1, 0x7f020172
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     const v1, 0x7f020171
 
@@ -356,7 +356,7 @@
     move-result-object v0
 
     .line 134
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     const v2, 0x7f090046
 
@@ -367,7 +367,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 135
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     const v2, 0x106000b
 
@@ -393,15 +393,15 @@
     .line 153
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->UNKNOW:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     .line 155
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -417,12 +417,12 @@
     move-result v0
 
     .line 158
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->o:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtono:Landroid/widget/Button;
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 159
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->n:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mButtonn:Landroid/widget/Button;
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setTextColor(I)V
 
@@ -459,10 +459,10 @@
     .line 60
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->UNKNOW:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mGenderTypet:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mEditTextp:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;
 
@@ -494,7 +494,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->q:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     .line 91
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->i()V
@@ -523,7 +523,7 @@
     if-ne v1, v2, :cond_1
 
     .line 103
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->C:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->isZC:Z
 
     if-eqz v1, :cond_0
 
@@ -573,7 +573,7 @@
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 119
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->C:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->isZC:Z
 
     .line 120
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;

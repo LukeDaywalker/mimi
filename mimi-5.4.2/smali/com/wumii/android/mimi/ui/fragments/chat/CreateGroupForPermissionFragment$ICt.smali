@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
+.field final synthetic mCreateGroupForPermissionFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;->mCreateGroupForPermissionFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;->mCreateGroupForPermissionFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->a(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;)Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 

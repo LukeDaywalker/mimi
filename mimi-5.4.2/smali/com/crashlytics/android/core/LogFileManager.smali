@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Lcom/crashlytics/android/core/LogFileManager$ICba;
+.field private static final mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
 
 
 # instance fields
-.field private final b:Landroid/content/Context;
+.field private final mContextb:Landroid/content/Context;
 
-.field private final c:Ljava/io/File;
+.field private mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
-.field private d:Lcom/crashlytics/android/core/FileLogStore;
+.field private final mFilec:Ljava/io/File;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, v1}, Lcom/crashlytics/android/core/LogFileManager$ICba;-><init>(Lcom/crashlytics/android/core/LogFileManager$ICaz;)V
 
-    sput-object v0, Lcom/crashlytics/android/core/LogFileManager;->a:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sput-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput-object p1, p0, Lcom/crashlytics/android/core/LogFileManager;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/crashlytics/android/core/LogFileManager;->mContextb:Landroid/content/Context;
 
     .line 30
     new-instance v0, Ljava/io/File;
@@ -49,12 +49,12 @@
 
     invoke-direct {v0, p2, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->c:Ljava/io/File;
+    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFilec:Ljava/io/File;
 
     .line 31
-    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->a:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     .line 32
     return-void
@@ -95,7 +95,7 @@
     .line 81
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/LogFileManager;->c:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/LogFileManager;->mFilec:Ljava/io/File;
 
     invoke-direct {v1, v2, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -116,7 +116,7 @@
     if-nez v0, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mContextb:Landroid/content/Context;
 
     const-string/jumbo v1, "com.crashlytics.CollectCustomLogs"
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/FileLogStore;->a()Lcom/crashlytics/android/core/ByteString;
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/FileLogStore;->b()V
 
@@ -173,7 +173,7 @@
 
     invoke-direct {v0, p1, p2}, Lcom/crashlytics/android/core/QueueFileLogStore;-><init>(Ljava/io/File;I)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     .line 76
     return-void
@@ -205,9 +205,9 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 42
-    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->a:Lcom/crashlytics/android/core/LogFileManager$ICba;
+    sget-object v0, Lcom/crashlytics/android/core/LogFileManager;->mICbaa:Lcom/crashlytics/android/core/LogFileManager$ICba;
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iput-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     .line 47
     :goto_0
@@ -231,7 +231,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->d:Lcom/crashlytics/android/core/FileLogStore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/LogFileManager;->mFileLogStored:Lcom/crashlytics/android/core/FileLogStore;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/FileLogStore;->c()V
 

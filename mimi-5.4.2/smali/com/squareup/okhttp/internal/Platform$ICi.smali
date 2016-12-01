@@ -4,7 +4,11 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/internal/OptionalMethod;
+.field private final mMethodc:Ljava/lang/reflect/Method;
+
+.field private final mMethodd:Ljava/lang/reflect/Method;
+
+.field private final mOptionalMethoda:Lcom/squareup/okhttp/internal/OptionalMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/f/a/a/g",
@@ -15,7 +19,7 @@
     .end annotation
 .end field
 
-.field private final b:Lcom/squareup/okhttp/internal/OptionalMethod;
+.field private final mOptionalMethodb:Lcom/squareup/okhttp/internal/OptionalMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/f/a/a/g",
@@ -26,11 +30,7 @@
     .end annotation
 .end field
 
-.field private final c:Ljava/lang/reflect/Method;
-
-.field private final d:Ljava/lang/reflect/Method;
-
-.field private final e:Lcom/squareup/okhttp/internal/OptionalMethod;
+.field private final mOptionalMethode:Lcom/squareup/okhttp/internal/OptionalMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/f/a/a/g",
@@ -41,7 +41,7 @@
     .end annotation
 .end field
 
-.field private final f:Lcom/squareup/okhttp/internal/OptionalMethod;
+.field private final mOptionalMethodf:Lcom/squareup/okhttp/internal/OptionalMethod;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/f/a/a/g",
@@ -85,22 +85,22 @@
     invoke-direct {p0}, Lcom/squareup/okhttp/internal/Platform;-><init>()V
 
     .line 179
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->a:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethoda:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     .line 180
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->b:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodb:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     .line 181
-    iput-object p3, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->c:Ljava/lang/reflect/Method;
+    iput-object p3, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodc:Ljava/lang/reflect/Method;
 
     .line 182
-    iput-object p4, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->d:Ljava/lang/reflect/Method;
+    iput-object p4, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodd:Ljava/lang/reflect/Method;
 
     .line 183
-    iput-object p5, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->e:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iput-object p5, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethode:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     .line 184
-    iput-object p6, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->f:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iput-object p6, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodf:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     .line 185
     return-void
@@ -113,7 +113,7 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodc:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
@@ -124,7 +124,7 @@
     .line 227
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodc:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 
@@ -224,7 +224,7 @@
     if-eqz p2, :cond_0
 
     .line 204
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->a:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethoda:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     new-array v1, v3, [Ljava/lang/Object;
 
@@ -237,7 +237,7 @@
     invoke-virtual {v0, p1, v1}, Lcom/squareup/okhttp/internal/OptionalMethod;->b(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 205
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->b:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodb:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     new-array v1, v3, [Ljava/lang/Object;
 
@@ -247,11 +247,11 @@
 
     .line 209
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->f:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodf:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->f:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodf:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/internal/OptionalMethod;->a(Ljava/lang/Object;)Z
 
@@ -269,7 +269,7 @@
     aput-object v1, v0, v4
 
     .line 211
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->f:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethodf:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     invoke-virtual {v1, p1, v0}, Lcom/squareup/okhttp/internal/OptionalMethod;->d(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -285,7 +285,7 @@
     const/4 v1, 0x0
 
     .line 216
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->e:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethode:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     if-nez v0, :cond_1
 
@@ -296,7 +296,7 @@
 
     .line 217
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->e:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethode:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/internal/OptionalMethod;->a(Ljava/lang/Object;)Z
 
@@ -305,7 +305,7 @@
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->e:Lcom/squareup/okhttp/internal/OptionalMethod;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mOptionalMethode:Lcom/squareup/okhttp/internal/OptionalMethod;
 
     const/4 v2, 0x0
 
@@ -346,7 +346,7 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->d:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodd:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
@@ -357,7 +357,7 @@
     .line 239
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->d:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/Platform$ICi;->mMethodd:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 

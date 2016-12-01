@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICib:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->mICib:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
     const/4 v1, 0x0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->mICib:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->b(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;)Landroid/webkit/WebView;
 
@@ -54,7 +54,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

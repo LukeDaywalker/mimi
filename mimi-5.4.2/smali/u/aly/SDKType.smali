@@ -23,11 +23,11 @@
 
 .field public static final enum d:Lu/aly/SDKType;
 
-.field private static final synthetic f:[Lu/aly/SDKType;
+.field private static final synthetic mArraySDKTypef:[Lu/aly/SDKType;
 
 
 # instance fields
-.field private final e:I
+.field private final mIe:I
 
 
 # direct methods
@@ -100,7 +100,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lu/aly/SDKType;->f:[Lu/aly/SDKType;
+    sput-object v0, Lu/aly/SDKType;->mArraySDKTypef:[Lu/aly/SDKType;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 24
-    iput p3, p0, Lu/aly/SDKType;->e:I
+    iput p3, p0, Lu/aly/SDKType;->mIe:I
 
     .line 25
     return-void
@@ -194,7 +194,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lu/aly/SDKType;->f:[Lu/aly/SDKType;
+    sget-object v0, Lu/aly/SDKType;->mArraySDKTypef:[Lu/aly/SDKType;
 
     invoke-virtual {v0}, [Lu/aly/SDKType;->clone()Ljava/lang/Object;
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 31
-    iget v0, p0, Lu/aly/SDKType;->e:I
+    iget v0, p0, Lu/aly/SDKType;->mIe:I
 
     return v0
 .end method

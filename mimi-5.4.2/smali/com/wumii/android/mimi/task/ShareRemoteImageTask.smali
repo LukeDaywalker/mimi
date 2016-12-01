@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private e:I
+.field private mArrayBf:[B
 
-.field private f:[B
+.field private mIe:I
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 26
     const/16 v0, 0x50
 
-    iput v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mIe:I
 
     .line 27
     return-void
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->f:[B
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mArrayBf:[B
 
     .line 45
     return-void
@@ -203,7 +203,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->f:[B
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mArrayBf:[B
 
     if-nez v0, :cond_0
 
@@ -215,7 +215,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->f:[B
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mArrayBf:[B
 
     goto :goto_0
 .end method
@@ -237,7 +237,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mIe:I
 
     invoke-direct {p0, v1, v2}, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->a(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
@@ -262,9 +262,9 @@
     move-result-object v1
 
     .line 36
-    iget v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mIe:I
 
-    iget v3, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->e:I
+    iget v3, p0, Lcom/wumii/android/mimi/task/ShareRemoteImageTask;->mIe:I
 
     const/4 v4, 0x1
 

@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mContextb:Landroid/content/Context;
 
-.field private b:Landroid/content/Context;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,17 +20,17 @@
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICd;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICd;->mStringa:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICd;->b:Landroid/content/Context;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICd;->mContextb:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/ICd;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/ICd;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICd;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICd;->mContextb:Landroid/content/Context;
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICd;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICd;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -328,7 +328,7 @@
 
     const-string/jumbo v3, "content"
 
-    iget-object v4, v0, Lcom/tencent/wxop/stat/ICe;->b:Ljava/lang/String;
+    iget-object v4, v0, Lcom/tencent/wxop/stat/ICe;->mStringb:Ljava/lang/String;
 
     invoke-static {v4}, Lcom/tencent/wxop/stat/b/ICr;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -346,7 +346,7 @@
 
     const/4 v6, 0x0
 
-    iget-wide v8, v0, Lcom/tencent/wxop/stat/ICe;->a:J
+    iget-wide v8, v0, Lcom/tencent/wxop/stat/ICe;->mJa:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 

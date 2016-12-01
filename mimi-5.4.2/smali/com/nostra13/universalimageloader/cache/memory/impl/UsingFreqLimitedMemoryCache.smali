@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     .line 50
     return-void
@@ -55,7 +55,7 @@
     if-eqz v1, :cond_0
 
     .line 67
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -67,7 +67,7 @@
     if-eqz v0, :cond_0
 
     .line 69
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -123,7 +123,7 @@
     if-eqz v1, :cond_0
 
     .line 55
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -170,7 +170,7 @@
     if-eqz v0, :cond_0
 
     .line 79
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -188,7 +188,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -207,14 +207,14 @@
 
     .line 97
     .line 99
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
     .line 100
-    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     monitor-enter v4
 
@@ -305,7 +305,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 114
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

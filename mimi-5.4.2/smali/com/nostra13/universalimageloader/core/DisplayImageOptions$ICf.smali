@@ -4,43 +4,43 @@
 
 
 # instance fields
-.field private a:I
+.field private isZg:Z
 
-.field private b:I
+.field private isZh:Z
 
-.field private c:I
+.field private isZi:Z
 
-.field private d:Landroid/graphics/drawable/Drawable;
+.field private isZm:Z
 
-.field private e:Landroid/graphics/drawable/Drawable;
+.field private isZs:Z
 
-.field private f:Landroid/graphics/drawable/Drawable;
+.field private mBitmapDisplayerq:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
-.field private g:Z
+.field private mBitmapProcessoro:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
-.field private h:Z
+.field private mBitmapProcessorp:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
-.field private i:Z
+.field private mDrawabled:Landroid/graphics/drawable/Drawable;
 
-.field private j:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+.field private mDrawablee:Landroid/graphics/drawable/Drawable;
 
-.field private k:Landroid/graphics/BitmapFactory$Options;
+.field private mDrawablef:Landroid/graphics/drawable/Drawable;
 
-.field private l:I
+.field private mHandlerr:Landroid/os/Handler;
 
-.field private m:Z
+.field private mIa:I
 
-.field private n:Ljava/lang/Object;
+.field private mIb:I
 
-.field private o:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+.field private mIc:I
 
-.field private p:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+.field private mIl:I
 
-.field private q:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+.field private mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-.field private r:Landroid/os/Handler;
+.field private mObjectn:Ljava/lang/Object;
 
-.field private s:Z
+.field private mOptionsk:Landroid/graphics/BitmapFactory$Options;
 
 
 # direct methods
@@ -56,71 +56,71 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 203
-    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIa:I
 
     .line 204
-    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIb:I
 
     .line 205
-    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIc:I
 
     .line 206
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->d:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     .line 207
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->e:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablee:Landroid/graphics/drawable/Drawable;
 
     .line 208
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->f:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablef:Landroid/graphics/drawable/Drawable;
 
     .line 209
-    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->g:Z
+    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZg:Z
 
     .line 210
-    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->h:Z
+    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZh:Z
 
     .line 211
-    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->i:Z
+    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZi:Z
 
     .line 212
     sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->c:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->j:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 213
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->k:Landroid/graphics/BitmapFactory$Options;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mOptionsk:Landroid/graphics/BitmapFactory$Options;
 
     .line 214
-    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->l:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIl:I
 
     .line 215
-    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->m:Z
+    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZm:Z
 
     .line 216
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->n:Ljava/lang/Object;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mObjectn:Ljava/lang/Object;
 
     .line 217
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->o:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessoro:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     .line 218
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->p:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessorp:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     .line 219
     invoke-static {}, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory;->c()Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->q:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapDisplayerq:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     .line 220
-    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->r:Landroid/os/Handler;
+    iput-object v2, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mHandlerr:Landroid/os/Handler;
 
     .line 221
-    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->s:Z
+    iput-boolean v1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZs:Z
 
     return-void
 .end method
@@ -130,7 +130,7 @@
 
     .prologue
     .line 202
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIa:I
 
     return v0
 .end method
@@ -140,7 +140,7 @@
 
     .prologue
     .line 202
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIb:I
 
     return v0
 .end method
@@ -150,7 +150,7 @@
 
     .prologue
     .line 202
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIc:I
 
     return v0
 .end method
@@ -160,7 +160,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->d:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -170,7 +170,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->e:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablee:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -180,7 +180,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->f:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablef:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -190,7 +190,7 @@
 
     .prologue
     .line 202
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->g:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZg:Z
 
     return v0
 .end method
@@ -200,7 +200,7 @@
 
     .prologue
     .line 202
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->h:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZh:Z
 
     return v0
 .end method
@@ -210,7 +210,7 @@
 
     .prologue
     .line 202
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->i:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZi:Z
 
     return v0
 .end method
@@ -220,7 +220,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->j:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     return-object v0
 .end method
@@ -230,7 +230,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->k:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mOptionsk:Landroid/graphics/BitmapFactory$Options;
 
     return-object v0
 .end method
@@ -240,7 +240,7 @@
 
     .prologue
     .line 202
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->l:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIl:I
 
     return v0
 .end method
@@ -250,7 +250,7 @@
 
     .prologue
     .line 202
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->m:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZm:Z
 
     return v0
 .end method
@@ -260,7 +260,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->n:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mObjectn:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -270,7 +270,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->o:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessoro:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     return-object v0
 .end method
@@ -280,7 +280,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->p:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessorp:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     return-object v0
 .end method
@@ -290,7 +290,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->q:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapDisplayerq:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     return-object v0
 .end method
@@ -300,7 +300,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->r:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mHandlerr:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -310,7 +310,7 @@
 
     .prologue
     .line 202
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->s:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZs:Z
 
     return v0
 .end method
@@ -322,7 +322,7 @@
 
     .prologue
     .line 243
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIa:I
 
     .line 244
     return-object p0
@@ -345,7 +345,7 @@
 
     .line 378
     :cond_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->k:Landroid/graphics/BitmapFactory$Options;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mOptionsk:Landroid/graphics/BitmapFactory$Options;
 
     iput-object p1, v0, Landroid/graphics/BitmapFactory$Options;->inPreferredConfig:Landroid/graphics/Bitmap$Config;
 
@@ -358,7 +358,7 @@
 
     .prologue
     .line 276
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->e:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablee:Landroid/graphics/drawable/Drawable;
 
     .line 277
     return-object p0
@@ -373,133 +373,133 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIa:I
 
     .line 461
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->b(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIb:I
 
     .line 462
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->c(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIc:I
 
     .line 463
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->d(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->d:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     .line 464
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->e(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->e:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablee:Landroid/graphics/drawable/Drawable;
 
     .line 465
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->f(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->f:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablef:Landroid/graphics/drawable/Drawable;
 
     .line 466
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->g(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->g:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZg:Z
 
     .line 467
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->h(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->h:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZh:Z
 
     .line 468
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->i(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->i:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZi:Z
 
     .line 469
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->j(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->j:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 470
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->k(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->k:Landroid/graphics/BitmapFactory$Options;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mOptionsk:Landroid/graphics/BitmapFactory$Options;
 
     .line 471
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->l(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->l:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIl:I
 
     .line 472
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->m(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->m:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZm:Z
 
     .line 473
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->n(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->n:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mObjectn:Ljava/lang/Object;
 
     .line 474
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->o(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->o:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessoro:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     .line 475
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->p(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->p:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessorp:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     .line 476
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->q(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->q:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapDisplayerq:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     .line 477
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->r(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->r:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mHandlerr:Landroid/os/Handler;
 
     .line 478
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->s(Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->s:Z
+    iput-boolean v0, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZs:Z
 
     .line 479
     return-object p0
@@ -510,7 +510,7 @@
 
     .prologue
     .line 371
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->j:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mImageScaleTypej:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
     .line 372
     return-object p0
@@ -533,7 +533,7 @@
 
     .line 440
     :cond_0
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->q:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapDisplayerq:Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
 
     .line 441
     return-object p0
@@ -544,7 +544,7 @@
 
     .prologue
     .line 430
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->p:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mBitmapProcessorp:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     .line 431
     return-object p0
@@ -555,7 +555,7 @@
 
     .prologue
     .line 319
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->g:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZg:Z
 
     .line 320
     return-object p0
@@ -580,7 +580,7 @@
 
     .prologue
     .line 265
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIb:I
 
     .line 266
     return-object p0
@@ -591,7 +591,7 @@
 
     .prologue
     .line 299
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->f:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mDrawablef:Landroid/graphics/drawable/Drawable;
 
     .line 300
     return-object p0
@@ -602,7 +602,7 @@
 
     .prologue
     .line 336
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->h:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZh:Z
 
     .line 337
     return-object p0
@@ -613,7 +613,7 @@
 
     .prologue
     .line 288
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->mIc:I
 
     .line 289
     return-object p0
@@ -624,7 +624,7 @@
 
     .prologue
     .line 362
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->i:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZi:Z
 
     .line 363
     return-object p0
@@ -635,7 +635,7 @@
 
     .prologue
     .line 410
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->m:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZm:Z
 
     .line 411
     return-object p0
@@ -646,7 +646,7 @@
 
     .prologue
     .line 445
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->s:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->isZs:Z
 
     .line 446
     return-object p0

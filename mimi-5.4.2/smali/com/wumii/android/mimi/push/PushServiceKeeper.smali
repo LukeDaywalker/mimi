@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private b:Lorg/slf4j/Logger;
+.field private mLoggerb:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->b:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->mLoggerb:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->b:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeper;->mLoggerb:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "onReceive, keep service running."
 

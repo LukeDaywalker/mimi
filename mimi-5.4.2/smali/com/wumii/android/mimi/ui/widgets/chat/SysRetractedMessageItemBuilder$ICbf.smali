@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;->mImageViewa:Landroid/widget/ImageView;
 
     .line 50
     return-void
@@ -35,7 +35,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method

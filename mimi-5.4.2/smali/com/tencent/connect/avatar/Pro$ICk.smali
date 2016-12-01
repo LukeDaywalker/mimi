@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+.field final synthetic mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 517
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICk;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICk;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     .line 518
     invoke-direct {p0, p2, p3}, Lcom/tencent/connect/common/Pro;-><init>(Landroid/content/Context;Lcom/tencent/connect/b/Pro$ICt;)V

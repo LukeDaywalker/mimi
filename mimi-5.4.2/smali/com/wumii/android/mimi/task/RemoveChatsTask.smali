@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:Ljava/lang/String;
+.field private mICblq:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
 
-.field private q:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 40
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->q:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mICblq:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
 
     .line 41
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 42
     return-void
@@ -68,14 +68,14 @@
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->q:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mICblq:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
 
     if-eqz v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->q:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mICblq:Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;->a(Ljava/lang/String;)V
 
@@ -87,7 +87,7 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     .line 70
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/RemoveChatsTask;->j()V
@@ -137,7 +137,7 @@
     .line 47
     const-string/jumbo v1, "cvid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +152,7 @@
 
     .line 51
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "max_as_read_msg_ids"
 
@@ -167,7 +167,7 @@
     check-cast v0, Ljava/util/Map;
 
     .line 54
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -176,12 +176,12 @@
     if-eqz v2, :cond_0
 
     .line 55
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 56
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v3, "max_as_read_msg_ids"
 
@@ -189,11 +189,11 @@
 
     .line 59
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "chats"
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -202,11 +202,11 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;)Z
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "chat_messages"
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask;->mStringd:Ljava/lang/String;
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

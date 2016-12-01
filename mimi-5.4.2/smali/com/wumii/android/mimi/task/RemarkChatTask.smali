@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -28,10 +28,10 @@
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->mStringa:Ljava/lang/String;
 
     .line 44
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->mStringd:Ljava/lang/String;
 
     .line 45
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/RemarkChatTask;->j()V
@@ -81,14 +81,14 @@
     .line 32
     const-string/jumbo v1, "cid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 33
     const-string/jumbo v1, "remark"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/RemarkChatTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

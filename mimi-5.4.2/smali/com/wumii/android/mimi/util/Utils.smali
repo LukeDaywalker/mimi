@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static b:Ljava/lang/StringBuilder;
+.field private static volatile mNumberFormatc:Ljava/text/NumberFormat;
 
-.field private static volatile c:Ljava/text/NumberFormat;
+.field private static mStringBuilderb:Ljava/lang/StringBuilder;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -156,7 +156,7 @@
     move-exception v0
 
     .line 538
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Failed to get status bar height"
 
@@ -425,7 +425,7 @@
 
     .line 774
     :try_start_1
-    sget-object v4, Lcom/wumii/android/mimi/util/Utils;->a:Lorg/slf4j/Logger;
+    sget-object v4, Lcom/wumii/android/mimi/util/Utils;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
@@ -460,7 +460,7 @@
 
     .prologue
     .line 725
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -937,7 +937,7 @@
     const-wide/16 v0, 0x0
 
     .line 290
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     if-nez v2, :cond_0
 
@@ -946,7 +946,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sput-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sput-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     .line 294
     :cond_0
@@ -972,7 +972,7 @@
     if-gez v2, :cond_1
 
     .line 302
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-wide/16 v4, 0x3e8
 
@@ -981,7 +981,7 @@
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 303
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u79d2"
 
@@ -989,25 +989,25 @@
 
     .line 321
     :goto_1
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u524d"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 323
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     .line 324
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
-    sget-object v3, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v3, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
 
@@ -1025,14 +1025,14 @@
     if-gez v2, :cond_2
 
     .line 305
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     div-long/2addr v0, v6
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 306
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u5206\u949f"
 
@@ -1047,14 +1047,14 @@
     if-gez v2, :cond_3
 
     .line 308
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     div-long/2addr v0, v8
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 309
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u5c0f\u65f6"
 
@@ -1069,14 +1069,14 @@
     if-gez v2, :cond_4
 
     .line 311
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     div-long/2addr v0, v10
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 312
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u5929"
 
@@ -1093,14 +1093,14 @@
     if-gez v2, :cond_5
 
     .line 314
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     div-long/2addr v0, v12
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 315
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u6708"
 
@@ -1110,7 +1110,7 @@
 
     .line 317
     :cond_5
-    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v2, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-wide v4, 0x73df16000L
 
@@ -1119,7 +1119,7 @@
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 318
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u5e74"
 
@@ -1381,7 +1381,7 @@
     move-exception v0
 
     .line 168
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1854,7 +1854,7 @@
     const/4 v4, 0x6
 
     .line 329
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     if-nez v0, :cond_0
 
@@ -1863,7 +1863,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     .line 333
     :cond_0
@@ -1898,7 +1898,7 @@
     if-eq v2, v3, :cond_2
 
     .line 340
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v2, "yyyy\u5e74M\u6708d\u65e5 "
 
@@ -1919,7 +1919,7 @@
     if-ge v0, v4, :cond_4
 
     .line 350
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u51cc\u6668"
 
@@ -1927,14 +1927,14 @@
 
     .line 361
     :goto_1
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "hh:mm"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 363
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1945,11 +1945,11 @@
     move-result-object v0
 
     .line 364
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
-    sget-object v3, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v3, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
 
@@ -1975,7 +1975,7 @@
     if-le v2, v5, :cond_3
 
     .line 342
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v2, "M\u6708d\u65e5 "
 
@@ -1998,7 +1998,7 @@
     if-ne v1, v5, :cond_1
 
     .line 344
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v2, "\u6628\u5929 "
 
@@ -2013,7 +2013,7 @@
     if-ge v0, v6, :cond_5
 
     .line 352
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u65e9\u4e0a"
 
@@ -2028,7 +2028,7 @@
     if-ge v0, v7, :cond_6
 
     .line 354
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u4e2d\u5348"
 
@@ -2045,7 +2045,7 @@
     if-ge v0, v1, :cond_7
 
     .line 356
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u4e0b\u5348"
 
@@ -2055,7 +2055,7 @@
 
     .line 358
     :cond_7
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->b:Ljava/lang/StringBuilder;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\u665a\u4e0a"
 
@@ -2439,7 +2439,7 @@
     if-gez v0, :cond_4
 
     .line 408
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     if-nez v0, :cond_3
 
@@ -2450,7 +2450,7 @@
 
     .line 410
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     if-nez v0, :cond_2
 
@@ -2459,17 +2459,17 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sput-object v0, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     .line 412
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Ljava/text/NumberFormat;->setMaximumFractionDigits(I)V
 
     .line 413
-    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sget-object v0, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     sget-object v2, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
@@ -2487,7 +2487,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->c:Ljava/text/NumberFormat;
+    sget-object v1, Lcom/wumii/android/mimi/util/Utils;->mNumberFormatc:Ljava/text/NumberFormat;
 
     long-to-double v2, p0
 
@@ -2750,7 +2750,7 @@
     .line 508
     const-string/jumbo v0, "file://"
 
-    invoke-static {p0, v0}, Lorg/apache/commons/long/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lorg/apache/commons/long3/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2832,7 +2832,7 @@
 
     .prologue
     .line 625
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2904,7 +2904,7 @@
     const/4 v0, 0x0
 
     .line 822
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 

@@ -25,7 +25,7 @@
 
 .field public static final enum e:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
-.field private static final synthetic f:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+.field private static final synthetic mArrayICjf:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
 
 # direct methods
@@ -113,7 +113,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->f:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mArrayICjf:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     return-void
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 65
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->f:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->mArrayICjf:[Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;->clone()Ljava/lang/Object;
 

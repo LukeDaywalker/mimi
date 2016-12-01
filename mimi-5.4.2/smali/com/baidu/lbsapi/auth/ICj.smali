@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/lbsapi/auth/ICi;
+.field final synthetic mICia:Lcom/baidu/lbsapi/auth/ICi;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/lbsapi/auth/ICi;Landroid/os/Looper;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICj;->a:Lcom/baidu/lbsapi/auth/ICi;
+    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICj;->mICia:Lcom/baidu/lbsapi/auth/ICi;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->d:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->b:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->c:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 

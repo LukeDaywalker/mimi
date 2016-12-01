@@ -10,19 +10,19 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->mIc:I
 
     const-string/jumbo v0, "location"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICx;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICx;->mStringb:Ljava/lang/String;
 
     const/16 v0, 0x3e8
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->d:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->mId:I
 
     const/4 v0, 0x7
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->g:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICx;->mIg:I
 
     return-void
 .end method

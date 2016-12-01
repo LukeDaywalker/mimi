@@ -4,27 +4,33 @@
 
 
 # static fields
-.field private static a:Lcom/google/analytics/tracking/android/EasyTracker;
+.field private static mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private final c:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+.field private isZd:Z
 
-.field private d:Z
+.field private isZe:Z
 
-.field private e:Z
+.field private isZp:Z
 
-.field private f:I
+.field private isZq:Z
 
-.field private g:J
+.field private mClockm:Lcom/google/analytics/tracking/android/Clock;
 
-.field private h:J
+.field private mContexti:Landroid/content/Context;
 
-.field private i:Landroid/content/Context;
+.field private final mGoogleAnalyticsc:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
-.field private final j:Ljava/util/Map;
+.field private mIf:I
+
+.field private mJg:J
+
+.field private mJh:J
+
+.field private final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -36,19 +42,13 @@
     .end annotation
 .end field
 
-.field private k:Lcom/google/analytics/tracking/android/ParameterLoader;
+.field private mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
-.field private l:Lcom/google/analytics/tracking/android/ServiceManager;
+.field private mServiceManagerl:Lcom/google/analytics/tracking/android/ServiceManager;
 
-.field private m:Lcom/google/analytics/tracking/android/Clock;
+.field private mTimerTasko:Ljava/util/TimerTask;
 
-.field private n:Ljava/util/Timer;
-
-.field private o:Ljava/util/TimerTask;
-
-.field private p:Z
-
-.field private q:Z
+.field private mTimern:Ljava/util/Timer;
 
 
 # direct methods
@@ -98,37 +98,37 @@
     invoke-direct {p0, v0, v1, p5}, Lcom/google/analytics/tracking/android/Tracker;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/analytics/tracking/android/TrackerHandler;)V
 
     .line 155
-    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->e:Z
+    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZe:Z
 
     .line 160
-    iput v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iput v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     .line 173
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->j:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mMapj:Ljava/util/Map;
 
     .line 189
-    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->p:Z
+    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZp:Z
 
     .line 192
-    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->q:Z
+    iput-boolean v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZq:Z
 
     .line 102
-    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->b:Ljava/lang/String;
+    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 103
-    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->b:Ljava/lang/String;
+    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->mStringb:Ljava/lang/String;
 
     invoke-interface {p2, v0}, Lcom/google/analytics/tracking/android/ParameterLoader;->d(Ljava/lang/String;)V
 
     .line 106
     :cond_0
-    iput-object p3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->c:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iput-object p3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mGoogleAnalyticsc:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     .line 108
     invoke-direct {p0, p1, p2, p4}, Lcom/google/analytics/tracking/android/EasyTracker;->a(Landroid/content/Context;Lcom/google/analytics/tracking/android/ParameterLoader;Lcom/google/analytics/tracking/android/ServiceManager;)V
@@ -138,7 +138,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/EasyTracker$ICq;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->m:Lcom/google/analytics/tracking/android/Clock;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mClockm:Lcom/google/analytics/tracking/android/Clock;
 
     .line 116
     return-void
@@ -155,7 +155,7 @@
 
     .prologue
     .line 130
-    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     if-nez v0, :cond_0
 
@@ -164,11 +164,11 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/EasyTracker;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    sput-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     .line 133
     :cond_0
-    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    sget-object v0, Lcom/google/analytics/tracking/android/EasyTracker;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     return-object v0
 .end method
@@ -221,13 +221,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->i:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mContexti:Landroid/content/Context;
 
     .line 312
-    iput-object p3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->l:Lcom/google/analytics/tracking/android/ServiceManager;
+    iput-object p3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mServiceManagerl:Lcom/google/analytics/tracking/android/ServiceManager;
 
     .line 313
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     .line 314
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/EasyTracker;->b()V
@@ -241,7 +241,7 @@
 
     .prologue
     .line 86
-    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->p:Z
+    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZp:Z
 
     return p1
 .end method
@@ -256,7 +256,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 210
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_trackingId"
 
@@ -272,7 +272,7 @@
     if-eqz v1, :cond_0
 
     .line 214
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_api_key"
 
@@ -308,7 +308,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 219
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_appName"
 
@@ -351,7 +351,7 @@
 
     .line 225
     :cond_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_appVersion"
 
@@ -390,7 +390,7 @@
 
     .line 234
     :cond_2
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_logLevel"
 
@@ -431,7 +431,7 @@
     invoke-static {v1}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 239
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->c:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mGoogleAnalyticsc:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/GoogleAnalytics;->d()Lcom/google/analytics/tracking/android/Logger;
 
@@ -441,7 +441,7 @@
 
     .line 243
     :cond_3
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_sampleFrequency"
 
@@ -455,7 +455,7 @@
     .line 246
     new-instance v0, Ljava/lang/Double;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v2, "ga_sampleRate"
 
@@ -517,7 +517,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 254
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_dispatchPeriod"
 
@@ -549,12 +549,12 @@
     invoke-static {v1}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 256
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->l:Lcom/google/analytics/tracking/android/ServiceManager;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mServiceManagerl:Lcom/google/analytics/tracking/android/ServiceManager;
 
     invoke-virtual {v1, v0}, Lcom/google/analytics/tracking/android/ServiceManager;->a(I)V
 
     .line 258
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_sessionTimeout"
 
@@ -568,7 +568,7 @@
 
     int-to-long v0, v0
 
-    iput-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->g:J
+    iput-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJg:J
 
     .line 259
     new-instance v0, Ljava/lang/StringBuilder;
@@ -581,7 +581,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->g:J
+    iget-wide v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJg:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -594,7 +594,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 261
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_autoActivityTracking"
 
@@ -604,7 +604,7 @@
 
     if-nez v0, :cond_6
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_auto_activity_tracking"
 
@@ -618,7 +618,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->e:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZe:Z
 
     .line 264
     new-instance v0, Ljava/lang/StringBuilder;
@@ -631,7 +631,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->e:Z
+    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZe:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -644,7 +644,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 266
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_anonymizeIp"
 
@@ -685,7 +685,7 @@
 
     .line 272
     :cond_7
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_reportUncaughtExceptions"
 
@@ -693,23 +693,23 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->d:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZd:Z
 
     .line 274
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->d:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZd:Z
 
     if-eqz v0, :cond_8
 
     .line 275
     new-instance v0, Lcom/google/analytics/tracking/android/ExceptionReporter;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->l:Lcom/google/analytics/tracking/android/ServiceManager;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mServiceManagerl:Lcom/google/analytics/tracking/android/ServiceManager;
 
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->i:Landroid/content/Context;
+    iget-object v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mContexti:Landroid/content/Context;
 
     invoke-direct {v0, p0, v1, v2, v3}, Lcom/google/analytics/tracking/android/ExceptionReporter;-><init>(Lcom/google/analytics/tracking/android/Tracker;Lcom/google/analytics/tracking/android/ServiceManager;Ljava/lang/Thread$UncaughtExceptionHandler;Landroid/content/Context;)V
 
@@ -727,7 +727,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->d:Z
+    iget-boolean v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZd:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -741,7 +741,7 @@
 
     .line 282
     :cond_8
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     const-string/jumbo v1, "ga_dryRun"
 
@@ -750,7 +750,7 @@
     move-result v0
 
     .line 283
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->c:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mGoogleAnalyticsc:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     invoke-virtual {v1, v0}, Lcom/google/analytics/tracking/android/GoogleAnalytics;->a(Z)V
 
@@ -778,7 +778,7 @@
     move-result-object v1
 
     .line 403
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -787,7 +787,7 @@
     if-eqz v0, :cond_0
 
     .line 404
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -801,7 +801,7 @@
 
     .line 406
     :cond_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->k:Lcom/google/analytics/tracking/android/ParameterLoader;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mParameterLoaderk:Lcom/google/analytics/tracking/android/ParameterLoader;
 
     invoke-interface {v0, v1}, Lcom/google/analytics/tracking/android/ParameterLoader;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -814,7 +814,7 @@
 
     .line 410
     :cond_1
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->j:Ljava/util/Map;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mMapj:Ljava/util/Map;
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -829,19 +829,19 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->n:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimern:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
     .line 387
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->n:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimern:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
     .line 388
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->n:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimern:Ljava/util/Timer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -881,11 +881,11 @@
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/EasyTracker;->c()V
 
     .line 332
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->p:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZp:Z
 
     if-nez v0, :cond_0
 
-    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     if-nez v0, :cond_0
 
@@ -896,21 +896,21 @@
     if-eqz v0, :cond_0
 
     .line 333
-    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->q:Z
+    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZq:Z
 
     .line 335
     :cond_0
-    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->p:Z
+    iput-boolean v3, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZp:Z
 
     .line 336
-    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     .line 337
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->e:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZe:Z
 
     if-eqz v0, :cond_1
 
@@ -974,7 +974,7 @@
 
     .prologue
     .line 427
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->q:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZq:Z
 
     if-eqz v0, :cond_0
 
@@ -988,7 +988,7 @@
     .line 429
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->q:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->isZq:Z
 
     .line 431
     :cond_0
@@ -1005,27 +1005,27 @@
     const-wide/16 v2, 0x0
 
     .line 198
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->g:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJg:J
 
     cmp-long v0, v0, v2
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->g:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJg:J
 
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->m:Lcom/google/analytics/tracking/android/Clock;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mClockm:Lcom/google/analytics/tracking/android/Clock;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/Clock;->a()J
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->h:J
+    iget-wide v2, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJh:J
 
-    iget-wide v4, p0, Lcom/google/analytics/tracking/android/EasyTracker;->g:J
+    iget-wide v4, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJg:J
 
     add-long/2addr v2, v4
 
@@ -1059,34 +1059,34 @@
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 357
-    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     .line 360
     const/4 v0, 0x0
 
-    iget v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iget v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     .line 362
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->m:Lcom/google/analytics/tracking/android/Clock;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mClockm:Lcom/google/analytics/tracking/android/Clock;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/Clock;->a()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->h:J
+    iput-wide v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mJh:J
 
     .line 364
-    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->f:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mIf:I
 
     if-nez v0, :cond_0
 
@@ -1100,7 +1100,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/EasyTracker$ICr;-><init>(Lcom/google/analytics/tracking/android/EasyTracker;Lcom/google/analytics/tracking/android/EasyTracker$ICq;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->o:Ljava/util/TimerTask;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimerTasko:Ljava/util/TimerTask;
 
     .line 369
     new-instance v0, Ljava/util/Timer;
@@ -1109,12 +1109,12 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->n:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimern:Ljava/util/Timer;
 
     .line 370
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->n:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimern:Ljava/util/Timer;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->o:Ljava/util/TimerTask;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/EasyTracker;->mTimerTasko:Ljava/util/TimerTask;
 
     const-wide/16 v2, 0x3e8
 

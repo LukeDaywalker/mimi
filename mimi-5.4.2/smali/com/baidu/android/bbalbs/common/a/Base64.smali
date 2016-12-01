@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
 
 # direct methods
@@ -20,7 +20,7 @@
     fill-array-data v0, :array_0
 
     .line 118
-    sput-object v0, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sput-object v0, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     .line 123
     return-void
@@ -160,7 +160,7 @@
     :cond_0
     add-int/lit8 v2, v1, 0x1
 
-    sget-object v7, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v7, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v8, p0, v4
 
@@ -175,7 +175,7 @@
     .line 139
     add-int/lit8 v1, v2, 0x1
 
-    sget-object v7, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v7, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v8, p0, v4
 
@@ -202,7 +202,7 @@
     .line 141
     add-int/lit8 v7, v1, 0x1
 
-    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     add-int/lit8 v8, v4, 0x1
 
@@ -231,7 +231,7 @@
     .line 143
     add-int/lit8 v2, v7, 0x1
 
-    sget-object v1, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v1, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     add-int/lit8 v8, v4, 0x2
 
@@ -274,7 +274,7 @@
     :pswitch_0
     add-int/lit8 v0, v1, 0x1
 
-    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -289,7 +289,7 @@
     .line 155
     add-int/lit8 v1, v0, 0x1
 
-    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -317,7 +317,7 @@
     :pswitch_1
     add-int/lit8 v0, v1, 0x1
 
-    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -332,7 +332,7 @@
     .line 161
     add-int/lit8 v1, v0, 0x1
 
-    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v2, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -359,7 +359,7 @@
     .line 163
     add-int/lit8 v2, v1, 0x1
 
-    sget-object v0, Lcom/baidu/android/bbalbs/common/a/Base64;->a:[B
+    sget-object v0, Lcom/baidu/android/bbalbs/common/a/Base64;->mArrayBa:[B
 
     add-int/lit8 v4, v6, 0x1
 

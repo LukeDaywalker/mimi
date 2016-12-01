@@ -10,9 +10,9 @@
 
 .field protected c:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mActionBarUpdateCallbacke:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
-.field private e:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
+.field private mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->e:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mActionBarUpdateCallbacke:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
     if-nez v0, :cond_0
 
@@ -47,11 +47,11 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->e:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mActionBarUpdateCallbacke:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
     .line 29
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->e:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mActionBarUpdateCallbacke:Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -74,7 +74,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -122,7 +122,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 38
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;

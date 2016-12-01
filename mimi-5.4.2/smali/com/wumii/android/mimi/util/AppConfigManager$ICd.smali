@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+.field final synthetic mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->a:Lcom/wumii/android/mimi/util/AppConfigManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->mAppConfigManagera:Lcom/wumii/android/mimi/util/AppConfigManager;
 
     invoke-static {}, Lcom/wumii/android/mimi/util/AppConfigManager;->c()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
@@ -41,7 +41,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Lcom/wumii/android/mimi/util/AppConfigManager;Ljava/lang/Object;)V
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->a(Lcom/wumii/android/mimi/util/AppConfigManager$ICc;)Lcom/wumii/android/mimi/util/AppConfigManager$ICb;
 
@@ -50,7 +50,7 @@
     if-eqz v0, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->a(Lcom/wumii/android/mimi/util/AppConfigManager$ICc;)Lcom/wumii/android/mimi/util/AppConfigManager$ICb;
 
@@ -63,7 +63,7 @@
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager$ICb;->a(Lcom/wumii/android/mimi/models/entities/AppConfigModule;)V
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->a:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICd;->mICca:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     const/4 v1, 0x0
 

@@ -4,15 +4,13 @@
 
 
 # static fields
-.field static final a:Ljava/lang/String;
-
 .field public static final b:Ljava/lang/String;
 
 .field public static final c:Ljava/lang/String;
 
 .field public static final d:Ljava/lang/String;
 
-.field private static final e:Ljava/util/Comparator;
+.field private static final mComparatore:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -22,6 +20,8 @@
         }
     .end annotation
 .end field
+
+.field static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/http/OkHeaders$ICx;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->e:Ljava/util/Comparator;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mComparatore:Ljava/util/Comparator;
 
     .line 40
     invoke-static {}, Lcom/squareup/okhttp/internal/Platform;->a()Lcom/squareup/okhttp/internal/Platform;
@@ -45,14 +45,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->a:Ljava/lang/String;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringa:Ljava/lang/String;
 
     .line 45
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->a:Ljava/lang/String;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -75,7 +75,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->a:Ljava/lang/String;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -98,7 +98,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->a:Ljava/lang/String;
+    sget-object v1, Lcom/squareup/okhttp/internal/http/OkHeaders;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -305,7 +305,7 @@
     .line 89
     new-instance v2, Ljava/util/TreeMap;
 
-    sget-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->e:Ljava/util/Comparator;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/OkHeaders;->mComparatore:Ljava/util/Comparator;
 
     invoke-direct {v2, v0}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
 

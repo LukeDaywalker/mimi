@@ -23,11 +23,11 @@
 
 .field public static final enum d:Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
-.field private static final synthetic f:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+.field private static final synthetic mArrayDeliveryMechanismf:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
 
 # instance fields
-.field private final e:I
+.field private final mIe:I
 
 
 # direct methods
@@ -97,7 +97,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->f:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sput-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mArrayDeliveryMechanismf:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 34
-    iput p3, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->e:I
+    iput p3, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mIe:I
 
     .line 35
     return-void
@@ -178,7 +178,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->f:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
+    sget-object v0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mArrayDeliveryMechanismf:[Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/common/DeliveryMechanism;->clone()Ljava/lang/Object;
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 38
-    iget v0, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->e:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mIe:I
 
     return v0
 .end method
@@ -206,7 +206,7 @@
 
     .prologue
     .line 43
-    iget v0, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->e:I
+    iget v0, p0, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->mIe:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 

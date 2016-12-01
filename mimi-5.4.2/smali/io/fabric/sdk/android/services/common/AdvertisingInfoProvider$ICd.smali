@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
+.field final synthetic mAdvertisingInfoProviderb:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
 
-.field final synthetic b:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
+.field final synthetic mAdvertisingInfoa:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 68
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->b:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->mAdvertisingInfoProviderb:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->a:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->mAdvertisingInfoa:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/services/common/BackgroundPriorityRunnable;-><init>()V
 
@@ -31,14 +31,14 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->b:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->mAdvertisingInfoProviderb:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->a(Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;)Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
     move-result-object v0
 
     .line 71
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->a:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->mAdvertisingInfoa:Lio/fabric/sdk/android/services/common/AdvertisingInfo;
 
     invoke-virtual {v1, v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfo;->equals(Ljava/lang/Object;)Z
 
@@ -58,7 +58,7 @@
     invoke-interface {v1, v2, v3}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 74
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->b:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider$ICd;->mAdvertisingInfoProviderb:Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
 
     invoke-static {v1, v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->a(Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;Lio/fabric/sdk/android/services/common/AdvertisingInfo;)V
 

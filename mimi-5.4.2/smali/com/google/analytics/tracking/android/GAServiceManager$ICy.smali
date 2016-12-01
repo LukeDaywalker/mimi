@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/GAServiceManager;
+.field final synthetic mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +56,7 @@
     invoke-virtual {v0, v4}, Lcom/google/analytics/tracking/android/GAUsage;->a(Z)V
 
     .line 111
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GAServiceManager;->c()V
 
@@ -70,7 +70,7 @@
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Z)V
 
     .line 113
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAServiceManager;->b(Lcom/google/analytics/tracking/android/GAServiceManager;)I
 
@@ -78,7 +78,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAServiceManager;->c(Lcom/google/analytics/tracking/android/GAServiceManager;)Z
 
@@ -87,13 +87,13 @@
     if-nez v0, :cond_0
 
     .line 115
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAServiceManager;->d(Lcom/google/analytics/tracking/android/GAServiceManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v1}, Lcom/google/analytics/tracking/android/GAServiceManager;->d(Lcom/google/analytics/tracking/android/GAServiceManager;)Landroid/os/Handler;
 
@@ -107,7 +107,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->a:Lcom/google/analytics/tracking/android/GAServiceManager;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;->mGAServiceManagera:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     invoke-static {v2}, Lcom/google/analytics/tracking/android/GAServiceManager;->b(Lcom/google/analytics/tracking/android/GAServiceManager;)I
 

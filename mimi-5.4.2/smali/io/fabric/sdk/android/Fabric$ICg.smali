@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/Fabric;
+.field final synthetic mFabrica:Lio/fabric/sdk/android/Fabric;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 357
-    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICg;->a:Lio/fabric/sdk/android/Fabric;
+    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICg;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 366
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->a:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Fabric;->a(Landroid/app/Activity;)Lio/fabric/sdk/android/Fabric;
 
@@ -40,7 +40,7 @@
 
     .prologue
     .line 361
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->a:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Fabric;->a(Landroid/app/Activity;)Lio/fabric/sdk/android/Fabric;
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 371
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->a:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICg;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Fabric;->a(Landroid/app/Activity;)Lio/fabric/sdk/android/Fabric;
 

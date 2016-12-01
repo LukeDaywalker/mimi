@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/platform/comapi/favrite/ICa;
+.field final synthetic mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/platform/comapi/favrite/ICa;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICa;->a:Lcom/baidu/platform/comapi/favrite/ICa;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICa;->mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

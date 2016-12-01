@@ -31,7 +31,7 @@
 
 .field public d:Landroid/view/View;
 
-.field final synthetic e:Landroid/support/v4/app/BackStackRecord;
+.field final synthetic mBackStackRecorde:Landroid/support/v4/app/BackStackRecord;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     .prologue
     .line 1449
-    iput-object p1, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->e:Landroid/support/v4/app/BackStackRecord;
+    iput-object p1, p0, Landroid/support/v4/app/BackStackRecord$TransitionState;->mBackStackRecorde:Landroid/support/v4/app/BackStackRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

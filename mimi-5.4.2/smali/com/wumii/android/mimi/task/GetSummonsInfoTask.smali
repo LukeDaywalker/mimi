@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/jackson/databind/JacksonMapper;
+.field private isZk:Z
 
-.field private d:I
+.field private mId:I
 
-.field private j:Ljava/lang/String;
+.field private mJacksonMappera:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field private k:Z
+.field private mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -24,10 +24,10 @@
     invoke-direct {p0, p1, v0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
 
     .line 29
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->j:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mStringj:Ljava/lang/String;
 
     .line 30
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->k:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->isZk:Z
 
     .line 31
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->a:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mJacksonMappera:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 32
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->a:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mJacksonMappera:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {p1}, Lcom/fasterxml/jackson/databind/JsonNode;->toString()Ljava/lang/String;
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/network/domain/GroupSummonsResp;->getSysContent()Ljava/lang/String;
 
@@ -127,7 +127,7 @@
 
     move-result-object v4
 
-    iget-boolean v5, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->k:Z
+    iget-boolean v5, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->isZk:Z
 
     invoke-static/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
@@ -141,14 +141,14 @@
 
     .prologue
     .line 60
-    iget v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mId:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mId:I
 
     .line 61
-    iget v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mId:I
 
     const/4 v1, 0x3
 
@@ -186,7 +186,7 @@
     .line 37
     const-string/jumbo v1, "mid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->mStringj:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

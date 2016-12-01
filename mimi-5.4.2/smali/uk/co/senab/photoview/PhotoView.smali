@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Luk/co/senab/photoview/PhotoViewAttacher;
+.field private final mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-.field private b:Landroid/widget/ImageView$ScaleType;
+.field private mScaleTypeb:Landroid/widget/ImageView$ScaleType;
 
 
 # direct methods
@@ -56,22 +56,22 @@
 
     invoke-direct {v0, p0}, Luk/co/senab/photoview/PhotoViewAttacher;-><init>(Landroid/widget/ImageView;)V
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     .line 50
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->b:Landroid/widget/ImageView$ScaleType;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mScaleTypeb:Landroid/widget/ImageView$ScaleType;
 
     if-eqz v0, :cond_0
 
     .line 51
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->b:Landroid/widget/ImageView$ScaleType;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mScaleTypeb:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {p0, v0}, Luk/co/senab/photoview/PhotoView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 52
     const/4 v0, 0x0
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoView;->b:Landroid/widget/ImageView$ScaleType;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoView;->mScaleTypeb:Landroid/widget/ImageView$ScaleType;
 
     .line 54
     :cond_0
@@ -85,7 +85,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->l()Landroid/graphics/Matrix;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->b()Landroid/graphics/RectF;
 
@@ -127,7 +127,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->f()F
 
@@ -141,7 +141,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->e()F
 
@@ -183,7 +183,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->d()F
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 204
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->i()Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->j()Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 
@@ -225,7 +225,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->g()F
 
@@ -239,7 +239,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->h()Landroid/widget/ImageView$ScaleType;
 
@@ -253,7 +253,7 @@
 
     .prologue
     .line 248
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->m()Landroid/graphics/Bitmap;
 
@@ -267,7 +267,7 @@
 
     .prologue
     .line 253
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->a()V
 
@@ -283,7 +283,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Z)V
 
@@ -299,12 +299,12 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 166
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-eqz v0, :cond_0
 
     .line 167
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->k()V
 
@@ -321,12 +321,12 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 174
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-eqz v0, :cond_0
 
     .line 175
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->k()V
 
@@ -343,12 +343,12 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageURI(Landroid/net/Uri;)V
 
     .line 182
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-eqz v0, :cond_0
 
     .line 183
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->k()V
 
@@ -375,7 +375,7 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->d(F)V
 
@@ -388,7 +388,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->c(F)V
 
@@ -427,7 +427,7 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->b(F)V
 
@@ -440,7 +440,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Landroid/view/View$OnLongClickListener;)V
 
@@ -453,7 +453,7 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher$OnMatrixChangedListener;)V
 
@@ -466,7 +466,7 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;)V
 
@@ -479,7 +479,7 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;)V
 
@@ -492,7 +492,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(F)V
 
@@ -505,7 +505,7 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->e(F)V
 
@@ -518,7 +518,7 @@
 
     .prologue
     .line 229
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Luk/co/senab/photoview/PhotoViewAttacher;->a(FFFZ)V
 
@@ -531,7 +531,7 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1, p2}, Luk/co/senab/photoview/PhotoViewAttacher;->a(FZ)V
 
@@ -544,12 +544,12 @@
 
     .prologue
     .line 234
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-eqz v0, :cond_0
 
     .line 235
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Landroid/widget/ImageView$ScaleType;)V
 
@@ -559,7 +559,7 @@
 
     .line 237
     :cond_0
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoView;->b:Landroid/widget/ImageView$ScaleType;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoView;->mScaleTypeb:Landroid/widget/ImageView$ScaleType;
 
     goto :goto_0
 .end method
@@ -569,7 +569,7 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoView;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0, p1}, Luk/co/senab/photoview/PhotoViewAttacher;->b(Z)V
 

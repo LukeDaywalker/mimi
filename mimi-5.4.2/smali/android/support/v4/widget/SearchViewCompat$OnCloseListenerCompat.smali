@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;->a:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;->mObjecta:Ljava/lang/Object;
 
     .line 387
     return-void

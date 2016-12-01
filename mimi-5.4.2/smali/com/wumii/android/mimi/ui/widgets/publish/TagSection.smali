@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Landroid/view/ViewGroup;
+.field private mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+.field private mId:I
 
-.field private d:I
+.field private mIe:I
 
-.field private e:I
+.field private mViewGroupb:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -27,13 +27,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 35
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mContexta:Landroid/content/Context;
 
     .line 36
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->b:Landroid/view/ViewGroup;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mViewGroupb:Landroid/view/ViewGroup;
 
     .line 37
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->c:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
     .line 39
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -59,7 +59,7 @@
 
     div-int/lit8 v1, v1, 0x3
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->d:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mId:I
 
     .line 41
     const/high16 v1, 0x41000000    # 8.0f
@@ -68,7 +68,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mIe:I
 
     .line 42
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mContexta:Landroid/content/Context;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/widget/TextView;
 
@@ -126,19 +126,19 @@
     .line 106
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->d:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mId:I
 
     const/4 v3, -0x2
 
     invoke-direct {v1, v2, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 107
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mIe:I
 
     iput v2, v1, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     .line 108
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mIe:I
 
     iput v2, v1, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
@@ -157,7 +157,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->c:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
     return-object v0
 .end method
@@ -182,7 +182,7 @@
     const/4 v3, 0x0
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -190,7 +190,7 @@
 
     const v1, 0x7f03010f
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->b:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -264,7 +264,7 @@
     .line 78
     new-instance v0, Landroid/widget/LinearLayout;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -278,12 +278,12 @@
     invoke-direct {v1, v6, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 80
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mIe:I
 
     iput v6, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     .line 81
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mIe:I
 
     iput v6, v1, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
@@ -345,12 +345,12 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->c:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
     if-eqz v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->c:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->mICkc:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
     check-cast p1, Landroid/widget/TextView;
 

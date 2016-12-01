@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/os/Bundle;
+.field final synthetic mBundlea:Landroid/os/Bundle;
 
-.field final synthetic b:Lcom/tencent/c/Pro$ICl;
+.field final synthetic mIClb:Lcom/tencent/c/Pro$ICl;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICm;->b:Lcom/tencent/c/Pro$ICl;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICm;->mIClb:Lcom/tencent/c/Pro$ICl;
 
-    iput-object p2, p0, Lcom/tencent/c/Pro$ICm;->a:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/tencent/c/Pro$ICm;->mBundlea:Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,7 +32,7 @@
     .prologue
     .line 190
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICm;->b:Lcom/tencent/c/Pro$ICl;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICm;->mIClb:Lcom/tencent/c/Pro$ICl;
 
     invoke-static {v0}, Lcom/tencent/c/Pro$ICl;->a(Lcom/tencent/c/Pro$ICl;)Landroid/content/Context;
 
@@ -42,7 +42,7 @@
 
     const-string/jumbo v2, "GET"
 
-    iget-object v3, p0, Lcom/tencent/c/Pro$ICm;->a:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/tencent/c/Pro$ICm;->mBundlea:Landroid/os/Bundle;
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/c/Pro$ICe;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/c/Pro$ICs;
 
@@ -57,7 +57,7 @@
     move-result-object v0
 
     .line 201
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICm;->b:Lcom/tencent/c/Pro$ICl;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICm;->mIClb:Lcom/tencent/c/Pro$ICl;
 
     invoke-static {v1, v0}, Lcom/tencent/c/Pro$ICl;->a(Lcom/tencent/c/Pro$ICl;Lorg/json/JSONObject;)V
     :try_end_0
@@ -65,7 +65,7 @@
 
     .line 205
     :goto_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICm;->b:Lcom/tencent/c/Pro$ICl;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICm;->mIClb:Lcom/tencent/c/Pro$ICl;
 
     const/4 v1, 0x0
 

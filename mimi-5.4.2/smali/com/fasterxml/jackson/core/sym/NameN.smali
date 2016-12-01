@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final q:[I
+.field private final mArrayIq:[I
 
 .field private final q1:I
 
@@ -38,7 +38,7 @@
     iput p6, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q4:I
 
     .line 22
-    iput-object p7, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iput-object p7, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     .line 23
     iput p8, p0, Lcom/fasterxml/jackson/core/sym/NameN;->qlen:I
@@ -69,7 +69,7 @@
 
     aget v3, p1, v3
 
-    iget-object v4, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iget-object v4, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     aget v4, v4, v1
 
@@ -260,7 +260,7 @@
 
     aget v2, p1, v2
 
-    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     aget v3, v3, v5
 
@@ -272,7 +272,7 @@
 
     aget v2, p1, v2
 
-    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     aget v3, v3, v4
 
@@ -284,7 +284,7 @@
 
     aget v2, p1, v2
 
-    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     aget v3, v3, v1
 
@@ -296,7 +296,7 @@
 
     aget v2, p1, v2
 
-    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->q:[I
+    iget-object v3, p0, Lcom/fasterxml/jackson/core/sym/NameN;->mArrayIq:[I
 
     aget v3, v3, v0
 

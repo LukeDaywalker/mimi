@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lokio/Timeout;
+.field final synthetic mInputStreamb:Ljava/io/InputStream;
 
-.field final synthetic b:Ljava/io/InputStream;
+.field final synthetic mTimeouta:Lokio/Timeout;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 130
-    iput-object p1, p0, Lokio/Okio$ICs;->a:Lokio/Timeout;
+    iput-object p1, p0, Lokio/Okio$ICs;->mTimeouta:Lokio/Timeout;
 
-    iput-object p2, p0, Lokio/Okio$ICs;->b:Ljava/io/InputStream;
+    iput-object p2, p0, Lokio/Okio$ICs;->mInputStreamb:Ljava/io/InputStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +76,7 @@
 
     .line 134
     :cond_1
-    iget-object v0, p0, Lokio/Okio$ICs;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/Okio$ICs;->mTimeouta:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->g()V
 
@@ -88,7 +88,7 @@
     move-result-object v0
 
     .line 136
-    iget v1, v0, Lokio/Segment;->c:I
+    iget v1, v0, Lokio/Segment;->mIc:I
 
     rsub-int v1, v1, 0x800
 
@@ -101,11 +101,11 @@
     long-to-int v1, v2
 
     .line 137
-    iget-object v2, p0, Lokio/Okio$ICs;->b:Ljava/io/InputStream;
+    iget-object v2, p0, Lokio/Okio$ICs;->mInputStreamb:Ljava/io/InputStream;
 
-    iget-object v3, v0, Lokio/Segment;->a:[B
+    iget-object v3, v0, Lokio/Segment;->mArrayBa:[B
 
-    iget v4, v0, Lokio/Segment;->c:I
+    iget v4, v0, Lokio/Segment;->mIc:I
 
     invoke-virtual {v2, v3, v4, v1}, Ljava/io/InputStream;->read([BII)I
 
@@ -122,20 +122,20 @@
 
     .line 139
     :cond_2
-    iget v2, v0, Lokio/Segment;->c:I
+    iget v2, v0, Lokio/Segment;->mIc:I
 
     add-int/2addr v2, v1
 
-    iput v2, v0, Lokio/Segment;->c:I
+    iput v2, v0, Lokio/Segment;->mIc:I
 
     .line 140
-    iget-wide v2, p1, Lokio/Buffer;->b:J
+    iget-wide v2, p1, Lokio/Buffer;->mJb:J
 
     int-to-long v4, v1
 
     add-long/2addr v2, v4
 
-    iput-wide v2, p1, Lokio/Buffer;->b:J
+    iput-wide v2, p1, Lokio/Buffer;->mJb:J
 
     .line 141
     int-to-long v0, v1
@@ -148,7 +148,7 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lokio/Okio$ICs;->a:Lokio/Timeout;
+    iget-object v0, p0, Lokio/Okio$ICs;->mTimeouta:Lokio/Timeout;
 
     return-object v0
 .end method
@@ -158,7 +158,7 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lokio/Okio$ICs;->b:Ljava/io/InputStream;
+    iget-object v0, p0, Lokio/Okio$ICs;->mInputStreamb:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lokio/Okio$ICs;->b:Ljava/io/InputStream;
+    iget-object v1, p0, Lokio/Okio$ICs;->mInputStreamb:Ljava/io/InputStream;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

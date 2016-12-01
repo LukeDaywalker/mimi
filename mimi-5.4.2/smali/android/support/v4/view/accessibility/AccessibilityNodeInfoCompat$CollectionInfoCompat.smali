@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 97
-    iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->a:Ljava/lang/Object;
+    iput-object p1, p0, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mObjecta:Ljava/lang/Object;
 
     .line 98
     return-void

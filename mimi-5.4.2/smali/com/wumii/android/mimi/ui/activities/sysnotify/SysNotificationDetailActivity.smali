@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private n:Landroid/webkit/WebView;
+.field private mStringo:Ljava/lang/String;
 
-.field private o:Ljava/lang/String;
+.field private mWebViewn:Landroid/webkit/WebView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->o:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mStringo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->n:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
     return-object v0
 .end method
@@ -91,7 +91,7 @@
 
     check-cast v0, Landroid/webkit/WebView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->n:Landroid/webkit/WebView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
     .line 37
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->getIntent()Landroid/content/Intent;
@@ -109,10 +109,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->o:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mStringo:Ljava/lang/String;
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->n:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -123,7 +123,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->n:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->o:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mStringo:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/SysNotification;
 
@@ -168,12 +168,12 @@
 
     const-string/jumbo v3, "<br/>"
 
-    invoke-static {v0, v2, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->n:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->mWebViewn:Landroid/webkit/WebView;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

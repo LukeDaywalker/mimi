@@ -4,37 +4,37 @@
 
 
 # static fields
-.field private static a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+.field private static mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+.field private mAppEventManagerl:Lcom/wumii/android/mimi/manager/AppEventManager;
 
-.field private c:Lcom/wumii/android/mimi/manager/FeedManager;
+.field private mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-.field private d:Lcom/wumii/android/mimi/manager/DiscoverManager;
+.field private mChatManagere:Lcom/wumii/android/mimi/manager/ChatManager;
 
-.field private e:Lcom/wumii/android/mimi/manager/ChatManager;
+.field private mCircleManageri:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private f:Lcom/wumii/android/mimi/manager/NotificationManager;
+.field private mDiscoverManagerd:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
-.field private g:Lcom/wumii/android/mimi/manager/GroupChatManager;
+.field private mFeedManagerc:Lcom/wumii/android/mimi/manager/FeedManager;
 
-.field private h:Lcom/wumii/android/mimi/manager/GroupListManager;
+.field private mGroupBannedManagerj:Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
-.field private i:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mGroupChatManagerg:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
-.field private j:Lcom/wumii/android/mimi/manager/GroupBannedManager;
+.field private mGroupListManagerh:Lcom/wumii/android/mimi/manager/GroupListManager;
 
-.field private k:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+.field private mNotificationManagerf:Lcom/wumii/android/mimi/manager/NotificationManager;
 
-.field private l:Lcom/wumii/android/mimi/manager/AppEventManager;
+.field private mOrgValidationManagerk:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
-.field private m:Lcom/wumii/android/mimi/manager/TagManager;
+.field private mSecretManagero:Lcom/wumii/android/mimi/manager/SecretManager;
 
-.field private n:Lcom/wumii/android/mimi/manager/SurveyManager;
+.field private mSurveyManagern:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-.field private o:Lcom/wumii/android/mimi/manager/SecretManager;
+.field private mTagManagerm:Lcom/wumii/android/mimi/manager/TagManager;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     .line 5
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 29
-    sget-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+    sget-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     if-nez v0, :cond_0
 
@@ -75,11 +75,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     .line 32
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+    sget-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     return-object v0
 .end method
@@ -91,7 +91,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     if-nez v0, :cond_0
 
@@ -100,11 +100,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     .line 42
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->c:Lcom/wumii/android/mimi/manager/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mFeedManagerc:Lcom/wumii/android/mimi/manager/FeedManager;
 
     if-nez v0, :cond_0
 
@@ -123,11 +123,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/FeedManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->c:Lcom/wumii/android/mimi/manager/FeedManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mFeedManagerc:Lcom/wumii/android/mimi/manager/FeedManager;
 
     .line 49
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->c:Lcom/wumii/android/mimi/manager/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mFeedManagerc:Lcom/wumii/android/mimi/manager/FeedManager;
 
     return-object v0
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->d:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mDiscoverManagerd:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     if-nez v0, :cond_0
 
@@ -146,11 +146,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/DiscoverManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->d:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mDiscoverManagerd:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->d:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mDiscoverManagerd:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     return-object v0
 .end method
@@ -160,7 +160,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->e:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mChatManagere:Lcom/wumii/android/mimi/manager/ChatManager;
 
     if-nez v0, :cond_0
 
@@ -169,11 +169,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/ChatManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->e:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mChatManagere:Lcom/wumii/android/mimi/manager/ChatManager;
 
     .line 63
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->e:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mChatManagere:Lcom/wumii/android/mimi/manager/ChatManager;
 
     return-object v0
 .end method
@@ -183,7 +183,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->f:Lcom/wumii/android/mimi/manager/NotificationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mNotificationManagerf:Lcom/wumii/android/mimi/manager/NotificationManager;
 
     if-nez v0, :cond_0
 
@@ -192,11 +192,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/NotificationManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->f:Lcom/wumii/android/mimi/manager/NotificationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mNotificationManagerf:Lcom/wumii/android/mimi/manager/NotificationManager;
 
     .line 70
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->f:Lcom/wumii/android/mimi/manager/NotificationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mNotificationManagerf:Lcom/wumii/android/mimi/manager/NotificationManager;
 
     return-object v0
 .end method
@@ -206,7 +206,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->g:Lcom/wumii/android/mimi/manager/GroupChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupChatManagerg:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     if-nez v0, :cond_0
 
@@ -215,11 +215,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/GroupChatManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->g:Lcom/wumii/android/mimi/manager/GroupChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupChatManagerg:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     .line 77
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->g:Lcom/wumii/android/mimi/manager/GroupChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupChatManagerg:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     return-object v0
 .end method
@@ -229,7 +229,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->h:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupListManagerh:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     if-nez v0, :cond_0
 
@@ -238,11 +238,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/GroupListManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->h:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupListManagerh:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     .line 84
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->h:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupListManagerh:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     return-object v0
 .end method
@@ -252,7 +252,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->i:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mCircleManageri:Lcom/wumii/android/mimi/manager/CircleManager;
 
     if-nez v0, :cond_0
 
@@ -261,11 +261,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/CircleManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->i:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mCircleManageri:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 91
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->i:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mCircleManageri:Lcom/wumii/android/mimi/manager/CircleManager;
 
     return-object v0
 .end method
@@ -275,7 +275,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->j:Lcom/wumii/android/mimi/manager/GroupBannedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupBannedManagerj:Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
     if-nez v0, :cond_0
 
@@ -284,11 +284,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/GroupBannedManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->j:Lcom/wumii/android/mimi/manager/GroupBannedManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupBannedManagerj:Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
     .line 98
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->j:Lcom/wumii/android/mimi/manager/GroupBannedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mGroupBannedManagerj:Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
     return-object v0
 .end method
@@ -298,7 +298,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->l:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAppEventManagerl:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     if-nez v0, :cond_0
 
@@ -307,11 +307,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/AppEventManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->l:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAppEventManagerl:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     .line 105
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->l:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mAppEventManagerl:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     return-object v0
 .end method
@@ -321,7 +321,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->k:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mOrgValidationManagerk:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     if-nez v0, :cond_0
 
@@ -330,11 +330,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/OrgValidationManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->k:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mOrgValidationManagerk:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     .line 112
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->k:Lcom/wumii/android/mimi/manager/OrgValidationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mOrgValidationManagerk:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     return-object v0
 .end method
@@ -344,7 +344,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->m:Lcom/wumii/android/mimi/manager/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mTagManagerm:Lcom/wumii/android/mimi/manager/TagManager;
 
     if-nez v0, :cond_0
 
@@ -353,11 +353,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/TagManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->m:Lcom/wumii/android/mimi/manager/TagManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mTagManagerm:Lcom/wumii/android/mimi/manager/TagManager;
 
     .line 119
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->m:Lcom/wumii/android/mimi/manager/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mTagManagerm:Lcom/wumii/android/mimi/manager/TagManager;
 
     return-object v0
 .end method
@@ -367,7 +367,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->n:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSurveyManagern:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     if-nez v0, :cond_0
 
@@ -376,11 +376,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/SurveyManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->n:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSurveyManagern:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->n:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSurveyManagern:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     return-object v0
 .end method
@@ -390,7 +390,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->o:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSecretManagero:Lcom/wumii/android/mimi/manager/SecretManager;
 
     if-nez v0, :cond_0
 
@@ -399,11 +399,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/SecretManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->o:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSecretManagero:Lcom/wumii/android/mimi/manager/SecretManager;
 
     .line 133
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->o:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mSecretManagero:Lcom/wumii/android/mimi/manager/SecretManager;
 
     return-object v0
 .end method
@@ -415,7 +415,7 @@
     .line 137
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->a:Lcom/wumii/android/mimi/manager/ManagerCenter;
+    sput-object v0, Lcom/wumii/android/mimi/manager/ManagerCenter;->mManagerCentera:Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     .line 138
     return-void

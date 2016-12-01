@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/c/Pro;
+.field final synthetic mProa:Lcom/tencent/c/Pro;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICb;->a:Lcom/tencent/c/Pro;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICb;->mProa:Lcom/tencent/c/Pro;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -57,7 +57,7 @@
     if-nez v0, :cond_0
 
     .line 53
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICb;->a:Lcom/tencent/c/Pro;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICb;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v0}, Lcom/tencent/c/Pro;->a(Lcom/tencent/c/Pro;)Lcom/tencent/c/Pro$ICd;
 
@@ -77,7 +77,7 @@
 
     .line 55
     :cond_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICb;->a:Lcom/tencent/c/Pro;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICb;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v0}, Lcom/tencent/c/Pro;->a(Lcom/tencent/c/Pro;)Lcom/tencent/c/Pro$ICd;
 

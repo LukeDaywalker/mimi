@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+.field final synthetic mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,19 +34,19 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->a(Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;)Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->j()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->k()Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 
     move-result-object v5
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->a:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController$ICt;->mFriendImpressionShareControllera:Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->b(Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;)I
 

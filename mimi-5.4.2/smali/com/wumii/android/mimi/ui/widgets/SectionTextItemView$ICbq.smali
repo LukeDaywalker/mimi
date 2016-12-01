@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field final synthetic mSectionTextItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->a:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->mSectionTextItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->a:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->mSectionTextItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
 
@@ -39,13 +39,13 @@
     if-eqz v0, :cond_0
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->a:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->mSectionTextItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->a:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbq;->mSectionTextItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;->a(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;)V
 

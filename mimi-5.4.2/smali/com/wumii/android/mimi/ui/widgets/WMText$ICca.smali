@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -33,10 +33,10 @@
     invoke-direct {p0}, Landroid/text/Editable$Factory;-><init>()V
 
     .line 199
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->a:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->mIa:I
 
     .line 200
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->mIb:I
 
     .line 201
     return-void
@@ -63,9 +63,9 @@
     :cond_0
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->mIa:I
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->b:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;->mIb:I
 
     invoke-direct {v0, p1, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/WMText;-><init>(Ljava/lang/CharSequence;II)V
 

@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -26,11 +26,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
-    iget-object v0, p1, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iget-object v0, p1, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 .method public getErrorInfo()Landroid/os/Bundle;
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -56,7 +56,7 @@
 
     const-string/jumbo v1, "errInfo"
 
-    iget-object v2, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -250,7 +250,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/baidu/location/BDErrorReport;->a:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/BDErrorReport;->mStringa:Ljava/lang/String;
 
     const/4 v1, 0x0
 

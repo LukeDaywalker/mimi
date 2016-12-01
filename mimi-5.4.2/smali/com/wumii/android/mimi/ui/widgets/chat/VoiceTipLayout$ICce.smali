@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mTextViewa:Landroid/widget/TextView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+.field final synthetic mVoiceTipLayoutb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 185
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;->mVoiceTipLayoutb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;->mTextViewa:Landroid/widget/TextView;
 
     .line 187
     return-void

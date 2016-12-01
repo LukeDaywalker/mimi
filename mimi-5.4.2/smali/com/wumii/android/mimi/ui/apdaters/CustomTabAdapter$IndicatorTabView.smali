@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+.field final synthetic mCustomTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->a:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mCustomTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     .line 46
     invoke-direct {p0, p2, p3, p4}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;-><init>(Landroid/content/Context;II)V
@@ -36,10 +36,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0, p5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -52,7 +52,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewc:Landroid/widget/TextView;
 
     .line 51
     return-void
@@ -65,7 +65,7 @@
 
     .prologue
     .line 54
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewc:Landroid/widget/TextView;
 
     if-lez p1, :cond_0
 
@@ -89,7 +89,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -102,9 +102,9 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->setSelected(Z)V
 
     .line 60
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->a:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;->mCustomTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;)Landroid/content/Context;
 

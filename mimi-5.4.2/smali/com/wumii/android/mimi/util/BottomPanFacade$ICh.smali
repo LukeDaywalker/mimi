@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+.field final synthetic mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 163
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-ne v0, v1, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->d(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/widget/FrameLayout;
 
@@ -52,7 +52,7 @@
     if-lez v0, :cond_1
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->f(Lcom/wumii/android/mimi/util/BottomPanFacade;)V
 
@@ -65,7 +65,7 @@
 
     .line 170
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->g(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/app/Activity;
 

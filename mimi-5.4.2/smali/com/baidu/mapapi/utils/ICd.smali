@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/utils/ICc;
+.field final synthetic mICca:Lcom/baidu/mapapi/utils/ICc;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/mapapi/utils/ICc;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/utils/ICd;->a:Lcom/baidu/mapapi/utils/ICc;
+    iput-object p1, p0, Lcom/baidu/mapapi/utils/ICd;->mICca:Lcom/baidu/mapapi/utils/ICc;
 
     invoke-direct {p0}, Lcom/baidu/a/a/a/ICc$ICa;-><init>()V
 

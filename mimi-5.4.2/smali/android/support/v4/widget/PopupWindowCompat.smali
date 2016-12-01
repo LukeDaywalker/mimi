@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
+.field static final mPopupWindowImpla:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/PopupWindowCompat$KitKatPopupWindowImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/PopupWindowCompat;->a:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
+    sput-object v0, Landroid/support/v4/widget/PopupWindowCompat;->mPopupWindowImpla:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
 
     .line 69
     :goto_0
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/PopupWindowCompat$BasePopupWindowImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/PopupWindowCompat;->a:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
+    sput-object v0, Landroid/support/v4/widget/PopupWindowCompat;->mPopupWindowImpla:Landroid/support/v4/widget/PopupWindowCompat$PopupWindowImpl;
 
     goto :goto_0
 .end method

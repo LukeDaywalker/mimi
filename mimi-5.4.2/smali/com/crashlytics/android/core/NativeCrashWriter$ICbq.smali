@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mIb:I
 
-.field private final b:I
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -28,12 +28,12 @@
     .line 313
     iget-object v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData;->a:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mStringa:Ljava/lang/String;
 
     .line 314
     iget v0, p1, Lcom/crashlytics/android/core/internal/models/ThreadData;->b:I
 
-    iput v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->b:I
+    iput v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mIb:I
 
     .line 315
     return-void
@@ -44,11 +44,11 @@
 
     .prologue
     .line 333
-    iget-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -82,7 +82,7 @@
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mStringa:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/crashlytics/android/core/ByteString;->a(Ljava/lang/String;)Lcom/crashlytics/android/core/ByteString;
 
@@ -96,7 +96,7 @@
     :goto_0
     const/4 v1, 0x2
 
-    iget v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->b:I
+    iget v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mIb:I
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CodedOutputStream;->d(II)I
 
@@ -127,7 +127,7 @@
     .line 327
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mStringa:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/crashlytics/android/core/ByteString;->a(Ljava/lang/String;)Lcom/crashlytics/android/core/ByteString;
 
@@ -139,7 +139,7 @@
     :cond_0
     const/4 v0, 0x2
 
-    iget v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->b:I
+    iget v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;->mIb:I
 
     invoke-virtual {p1, v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->a(II)V
 

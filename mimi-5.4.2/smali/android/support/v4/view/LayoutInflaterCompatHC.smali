@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Field;
+.field private static isZb:Z
 
-.field private static b:Z
+.field private static mFielda:Ljava/lang/reflect/Field;
 
 
 # direct methods
@@ -79,7 +79,7 @@
     const/4 v4, 0x1
 
     .line 71
-    sget-boolean v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->b:Z
+    sget-boolean v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->isZb:Z
 
     if-nez v0, :cond_0
 
@@ -93,10 +93,10 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->a:Ljava/lang/reflect/Field;
+    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->mFielda:Ljava/lang/reflect/Field;
 
     .line 74
-    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->mFielda:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
 
@@ -106,17 +106,17 @@
 
     .line 80
     :goto_0
-    sput-boolean v4, Landroid/support/v4/view/LayoutInflaterCompatHC;->b:Z
+    sput-boolean v4, Landroid/support/v4/view/LayoutInflaterCompatHC;->isZb:Z
 
     .line 82
     :cond_0
-    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->mFielda:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_1
 
     .line 84
     :try_start_1
-    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompatHC;->mFielda:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_1

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[C
+.field private static final mArrayCa:[C
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SimpleBase64Encoder;->a:[C
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SimpleBase64Encoder;->mArrayCa:[C
 
     return-void
 .end method
@@ -169,7 +169,7 @@
     add-int/lit8 p2, p2, -0x1
 
     .line 92
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/security/SimpleBase64Encoder;->a:[C
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/security/SimpleBase64Encoder;->mArrayCa:[C
 
     const-wide/16 v2, 0x3f
 

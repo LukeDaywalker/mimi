@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/DiscoverManager;
+.field final synthetic mDiscoverManagera:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 418
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICag;->a:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICag;->mDiscoverManagera:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

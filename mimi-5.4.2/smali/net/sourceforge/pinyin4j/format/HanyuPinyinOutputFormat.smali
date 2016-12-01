@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+.field private mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
-.field private b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+.field private mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
-.field private c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+.field private mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
 
 # direct methods
@@ -35,17 +35,17 @@
     .line 129
     sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
-    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     .line 130
     sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
-    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     .line 131
     sget-object v0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
-    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    iput-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     .line 132
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 173
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     .line 174
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 140
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->b:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinCaseTypeb:Lnet/sourceforge/pinyin4j/format/HanyuPinyinCaseType;
 
     return-object v0
 .end method
@@ -77,7 +77,7 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->c:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinToneTypec:Lnet/sourceforge/pinyin4j/format/HanyuPinyinToneType;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 182
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->a:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/format/HanyuPinyinOutputFormat;->mHanyuPinyinVCharTypea:Lnet/sourceforge/pinyin4j/format/HanyuPinyinVCharType;
 
     return-object v0
 .end method

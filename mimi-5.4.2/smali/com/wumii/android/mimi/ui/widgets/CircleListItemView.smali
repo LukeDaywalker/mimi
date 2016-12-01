@@ -7,25 +7,25 @@
 
 
 # static fields
-.field private static a:I
+.field private static mIa:I
 
-.field private static b:I
+.field private static mIb:I
 
-.field private static c:I
+.field private static mIc:I
 
-.field private static d:I
+.field private static mId:I
 
-.field private static e:I
+.field private static mIe:I
 
 
 # instance fields
-.field private f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+.field private mIh:I
 
-.field private g:Landroid/widget/LinearLayout$LayoutParams;
+.field private mIi:I
 
-.field private h:I
+.field private mLayoutParamsg:Landroid/widget/LinearLayout$LayoutParams;
 
-.field private i:I
+.field private mOnCircleClickListenerf:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
 
 # direct methods
@@ -36,25 +36,25 @@
     const/4 v1, 0x4
 
     .line 22
-    sput v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->a:I
+    sput v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIa:I
 
     .line 24
     const/16 v0, 0xa
 
-    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->b:I
+    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIb:I
 
     .line 25
     const/4 v0, 0x2
 
-    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->c:I
+    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIc:I
 
     .line 26
-    sput v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->d:I
+    sput v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mId:I
 
     .line 27
     const/16 v0, 0x1e
 
-    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->e:I
+    sput v0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIe:I
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     .line 32
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIh:I
 
     .line 45
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->a()V
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->c:I
+    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIc:I
 
     int-to-float v2, v2
 
@@ -208,7 +208,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->b:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIb:I
 
     int-to-float v1, v1
 
@@ -233,7 +233,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->e:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIe:I
 
     div-int/lit8 v1, v1, 0x2
 
@@ -243,7 +243,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->i:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIi:I
 
     .line 55
     return-void
@@ -254,7 +254,7 @@
 
     .prologue
     .line 113
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->h:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIh:I
 
     const/4 v1, -0x1
 
@@ -279,7 +279,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->b:I
+    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIb:I
 
     int-to-float v2, v2
 
@@ -292,7 +292,7 @@
     sub-int/2addr v0, v1
 
     .line 115
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->a:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIa:I
 
     div-int/2addr v0, v1
 
@@ -304,9 +304,9 @@
 
     move-result-object v1
 
-    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->d:I
+    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mId:I
 
-    sget v3, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->c:I
+    sget v3, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIc:I
 
     add-int/2addr v2, v3
 
@@ -320,7 +320,7 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIh:I
 
     .line 117
     :cond_0
@@ -332,7 +332,7 @@
     invoke-direct {v1}, Landroid/text/TextPaint;-><init>()V
 
     .line 120
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->i:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIi:I
 
     .line 121
     int-to-float v2, v0
@@ -345,7 +345,7 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->h:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIh:I
 
     int-to-float v3, v3
 
@@ -422,7 +422,7 @@
     const/4 v3, 0x0
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->g:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mLayoutParamsg:Landroid/widget/LinearLayout$LayoutParams;
 
     if-nez v0, :cond_0
 
@@ -437,7 +437,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->e:I
+    sget v2, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIe:I
 
     int-to-float v2, v2
 
@@ -449,7 +449,7 @@
 
     invoke-direct {v0, v3, v1, v2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->g:Landroid/widget/LinearLayout$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mLayoutParamsg:Landroid/widget/LinearLayout$LayoutParams;
 
     .line 134
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->getResources()Landroid/content/res/Resources;
@@ -460,7 +460,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->d:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mId:I
 
     int-to-float v1, v1
 
@@ -469,13 +469,13 @@
     move-result v0
 
     .line 135
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->g:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mLayoutParamsg:Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-virtual {v1, v0, v3, v0, v3}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
     .line 137
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->g:Landroid/widget/LinearLayout$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mLayoutParamsg:Landroid/widget/LinearLayout$LayoutParams;
 
     return-object v0
 .end method
@@ -487,7 +487,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mOnCircleClickListenerf:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     if-eqz v0, :cond_0
 
@@ -498,7 +498,7 @@
     if-eqz v0, :cond_0
 
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mOnCircleClickListenerf:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -546,7 +546,7 @@
 
     .line 63
     :cond_1
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mOnCircleClickListenerf:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     .line 65
     const/4 v0, 0x0
@@ -562,7 +562,7 @@
     if-ge v2, v1, :cond_3
 
     .line 67
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->a:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIa:I
 
     rem-int v1, v2, v1
 
@@ -613,7 +613,7 @@
 
     .line 77
     :cond_3
-    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->a:I
+    sget v1, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->mIa:I
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 

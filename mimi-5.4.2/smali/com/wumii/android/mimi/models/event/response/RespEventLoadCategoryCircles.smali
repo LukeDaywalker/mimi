@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 19
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCategoryCircles;->a:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCategoryCircles;->isZa:Z
 
     .line 20
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 15
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCategoryCircles;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCategoryCircles;->isZa:Z
 
     return v0
 .end method

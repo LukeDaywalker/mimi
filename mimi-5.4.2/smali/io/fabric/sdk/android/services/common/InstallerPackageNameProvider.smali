@@ -4,10 +4,10 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/services/cache/ValueLoader;
+.field private final mMemoryValueCacheb:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lc/a/a/a/a/a/d",
+            "Lc/a/a/a/a/a/b",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -15,10 +15,10 @@
     .end annotation
 .end field
 
-.field private final b:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+.field private final mValueLoadera:Lio/fabric/sdk/android/services/cache/ValueLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lc/a/a/a/a/a/b",
+            "Lc/a/a/a/a/a/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -40,14 +40,14 @@
 
     invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$ICac;-><init>(Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->a:Lio/fabric/sdk/android/services/cache/ValueLoader;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->mValueLoadera:Lio/fabric/sdk/android/services/cache/ValueLoader;
 
     .line 52
     new-instance v0, Lio/fabric/sdk/android/services/cache/MemoryValueCache;
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/cache/MemoryValueCache;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->b:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->mMemoryValueCacheb:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
 
     .line 53
     return-void
@@ -63,9 +63,9 @@
 
     .line 57
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->b:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->mMemoryValueCacheb:Lio/fabric/sdk/android/services/cache/MemoryValueCache;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->a:Lio/fabric/sdk/android/services/cache/ValueLoader;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->mValueLoadera:Lio/fabric/sdk/android/services/cache/ValueLoader;
 
     invoke-virtual {v0, p1, v2}, Lio/fabric/sdk/android/services/cache/MemoryValueCache;->a(Landroid/content/Context;Lio/fabric/sdk/android/services/cache/ValueLoader;)Ljava/lang/Object;
 

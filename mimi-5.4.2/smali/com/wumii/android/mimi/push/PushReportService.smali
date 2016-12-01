@@ -4,17 +4,21 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private mContextb:Landroid/content/Context;
 
-.field private c:Lcom/wumii/android/mimi/push/PushReportService$ICg;
+.field private mFileHelperg:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:Lcom/wumii/android/mimi/task/PushClickReportTask;
+.field private mICgc:Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
-.field private e:Ljava/util/Set;
+.field private mJf:J
+
+.field private mPushClickReportTaskd:Lcom/wumii/android/mimi/task/PushClickReportTask;
+
+.field private mSete:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -24,10 +28,6 @@
         }
     .end annotation
 .end field
-
-.field private f:J
-
-.field private g:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushReportService;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushReportService;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -57,14 +57,14 @@
     .line 39
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->f:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mJf:J
 
     .line 44
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mContextb:Landroid/content/Context;
 
     .line 45
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mFileHelperg:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 46
     return-void
@@ -86,7 +86,7 @@
 
     .prologue
     .line 26
-    iput-wide p1, p0, Lcom/wumii/android/mimi/push/PushReportService;->f:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/push/PushReportService;->mJf:J
 
     return-wide p1
 .end method
@@ -96,7 +96,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mFileHelperg:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/wumii/android/mimi/push/PushReportService;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushReportService;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -137,13 +137,13 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->e:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mSete:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
     .line 55
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mFileHelperg:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "push_reports"
 
@@ -157,14 +157,14 @@
 
     check-cast v0, Ljava/util/Set;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->e:Ljava/util/Set;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mSete:Ljava/util/Set;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 62
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->e:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mSete:Ljava/util/Set;
 
     return-object v0
 
@@ -173,7 +173,7 @@
     move-exception v0
 
     .line 58
-    sget-object v1, Lcom/wumii/android/mimi/push/PushReportService;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushReportService;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -186,7 +186,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->e:Ljava/util/Set;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mSete:Ljava/util/Set;
 
     goto :goto_0
 .end method
@@ -208,7 +208,7 @@
     .line 97
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->e:Ljava/util/Set;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->mSete:Ljava/util/Set;
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
@@ -228,22 +228,22 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->c:Lcom/wumii/android/mimi/push/PushReportService$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mICgc:Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
     if-nez v0, :cond_0
 
     .line 112
     new-instance v0, Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/PushReportService$ICg;-><init>(Lcom/wumii/android/mimi/push/PushReportService;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->c:Lcom/wumii/android/mimi/push/PushReportService$ICg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mICgc:Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
     .line 114
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->c:Lcom/wumii/android/mimi/push/PushReportService$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mICgc:Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
     return-object v0
 .end method
@@ -253,22 +253,22 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mPushClickReportTaskd:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     if-nez v0, :cond_0
 
     .line 119
     new-instance v0, Lcom/wumii/android/mimi/task/PushClickReportTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/PushClickReportTask;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mPushClickReportTaskd:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mPushClickReportTaskd:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     return-object v0
 .end method
@@ -391,7 +391,7 @@
 
     .line 80
     :cond_3
-    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->f:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mJf:J
 
     cmp-long v0, v0, v4
 
@@ -404,7 +404,7 @@
 
     .line 82
     :cond_4
-    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->f:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->mJf:J
 
     cmp-long v0, v0, v4
 
@@ -414,7 +414,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/wumii/android/mimi/push/PushReportService;->f:J
+    iget-wide v2, p0, Lcom/wumii/android/mimi/push/PushReportService;->mJf:J
 
     sub-long/2addr v0, v2
 

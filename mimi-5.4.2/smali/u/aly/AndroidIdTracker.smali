@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0, v0}, Lu/aly/AbstractIdTracker;-><init>(Ljava/lang/String;)V
 
     .line 15
-    iput-object p1, p0, Lu/aly/AndroidIdTracker;->a:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/AndroidIdTracker;->mContexta:Landroid/content/Context;
 
     .line 16
     return-void
@@ -35,7 +35,7 @@
 
     .line 22
     :try_start_0
-    iget-object v1, p0, Lu/aly/AndroidIdTracker;->a:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/AndroidIdTracker;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

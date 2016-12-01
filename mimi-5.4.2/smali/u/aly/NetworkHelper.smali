@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private final a:I
+.field private mContexte:Landroid/content/Context;
 
-.field private b:Ljava/lang/String;
+.field private final mIa:I
 
-.field private c:Ljava/lang/String;
+.field private mId:I
 
-.field private d:I
+.field private mImprintHandlerg:Lu/aly/ImprintHandler;
 
-.field private e:Landroid/content/Context;
+.field private mStatTracerf:Lu/aly/StatTracer;
 
-.field private f:Lu/aly/StatTracer;
+.field private mStringb:Ljava/lang/String;
 
-.field private g:Lu/aly/ImprintHandler;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -30,34 +30,34 @@
     .line 57
     const/4 v0, 0x1
 
-    iput v0, p0, Lu/aly/NetworkHelper;->a:I
+    iput v0, p0, Lu/aly/NetworkHelper;->mIa:I
 
     .line 60
     const-string/jumbo v0, "10.0.0.172"
 
-    iput-object v0, p0, Lu/aly/NetworkHelper;->c:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/NetworkHelper;->mStringc:Ljava/lang/String;
 
     .line 61
     const/16 v0, 0x50
 
-    iput v0, p0, Lu/aly/NetworkHelper;->d:I
+    iput v0, p0, Lu/aly/NetworkHelper;->mId:I
 
     .line 68
-    iput-object p1, p0, Lu/aly/NetworkHelper;->e:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/NetworkHelper;->mContexte:Landroid/content/Context;
 
     .line 69
     invoke-static {p1}, Lu/aly/SDKContext;->b(Landroid/content/Context;)Lu/aly/ImprintHandler;
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/NetworkHelper;->g:Lu/aly/ImprintHandler;
+    iput-object v0, p0, Lu/aly/NetworkHelper;->mImprintHandlerg:Lu/aly/ImprintHandler;
 
     .line 70
     invoke-direct {p0, p1}, Lu/aly/NetworkHelper;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/NetworkHelper;->b:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/NetworkHelper;->mStringb:Ljava/lang/String;
 
     .line 71
     return-void
@@ -195,7 +195,7 @@
     const/4 v1, 0x0
 
     .line 104
-    iget-object v0, p0, Lu/aly/NetworkHelper;->e:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mContexte:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -204,7 +204,7 @@
     .line 105
     const-string/jumbo v3, "android.permission.ACCESS_NETWORK_STATE"
 
-    iget-object v4, p0, Lu/aly/NetworkHelper;->e:Landroid/content/Context;
+    iget-object v4, p0, Lu/aly/NetworkHelper;->mContexte:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -225,7 +225,7 @@
     .line 110
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lu/aly/NetworkHelper;->e:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mContexte:Landroid/content/Context;
 
     const-string/jumbo v3, "connectivity"
 
@@ -337,7 +337,7 @@
     .line 138
     const-string/jumbo v2, "X-Umeng-Sdk"
 
-    iget-object v4, p0, Lu/aly/NetworkHelper;->b:Ljava/lang/String;
+    iget-object v4, p0, Lu/aly/NetworkHelper;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v2, v4}, Lorg/apache/http/client/methods/HttpPost;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -359,9 +359,9 @@
     .line 143
     new-instance v2, Lorg/apache/http/HttpHost;
 
-    iget-object v4, p0, Lu/aly/NetworkHelper;->c:Ljava/lang/String;
+    iget-object v4, p0, Lu/aly/NetworkHelper;->mStringc:Ljava/lang/String;
 
-    iget v5, p0, Lu/aly/NetworkHelper;->d:I
+    iget v5, p0, Lu/aly/NetworkHelper;->mId:I
 
     invoke-direct {v2, v4, v5}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;I)V
 
@@ -392,11 +392,11 @@
     invoke-virtual {v0, v2}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     .line 155
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     invoke-virtual {v2}, Lu/aly/StatTracer;->d()V
 
@@ -407,11 +407,11 @@
     move-result-object v0
 
     .line 159
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     invoke-virtual {v2}, Lu/aly/StatTracer;->e()V
 
@@ -602,7 +602,7 @@
     if-ne v0, v4, :cond_0
 
     .line 231
-    iget-object v0, p0, Lu/aly/NetworkHelper;->g:Lu/aly/ImprintHandler;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mImprintHandlerg:Lu/aly/ImprintHandler;
 
     invoke-virtual {v1}, Lu/aly/Response;->d()Lu/aly/Imprint;
 
@@ -611,7 +611,7 @@
     invoke-virtual {v0, v2}, Lu/aly/ImprintHandler;->b(Lu/aly/Imprint;)V
 
     .line 232
-    iget-object v0, p0, Lu/aly/NetworkHelper;->g:Lu/aly/ImprintHandler;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mImprintHandlerg:Lu/aly/ImprintHandler;
 
     invoke-virtual {v0}, Lu/aly/ImprintHandler;->c()V
 
@@ -706,11 +706,11 @@
     if-eqz v1, :cond_1
 
     .line 89
-    iget-object v0, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->b()V
 
@@ -727,11 +727,11 @@
 
     .line 93
     :cond_1
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     if-eqz v2, :cond_2
 
-    iget-object v2, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     invoke-virtual {v2}, Lu/aly/StatTracer;->c()V
 
@@ -755,7 +755,7 @@
 
     .prologue
     .line 74
-    iput-object p1, p0, Lu/aly/NetworkHelper;->f:Lu/aly/StatTracer;
+    iput-object p1, p0, Lu/aly/NetworkHelper;->mStatTracerf:Lu/aly/StatTracer;
 
     .line 75
     return-void

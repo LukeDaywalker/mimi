@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Ljava/util/HashMap;
+.field private static mHashMapa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -16,21 +16,21 @@
     .end annotation
 .end field
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private c:Landroid/content/Context;
+.field private isZh:Z
 
-.field private d:Ljava/lang/String;
+.field private mContextc:Landroid/content/Context;
 
-.field private e:Lorg/json/JSONObject;
+.field private mIg:I
 
-.field private f:J
+.field private mJSONObjecte:Lorg/json/JSONObject;
 
-.field private g:I
+.field private mJf:J
 
-.field private h:Z
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -41,10 +41,10 @@
     const/4 v0, 0x0
 
     .line 31
-    sput-object v0, Lcom/tencent/c/Pro$ICl;->a:Ljava/util/HashMap;
+    sput-object v0, Lcom/tencent/c/Pro$ICl;->mHashMapa:Ljava/util/HashMap;
 
     .line 33
-    sput-object v0, Lcom/tencent/c/Pro$ICl;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/c/Pro$ICl;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -59,34 +59,34 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 35
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     .line 37
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     .line 39
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     .line 41
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/tencent/c/Pro$ICl;->f:J
+    iput-wide v0, p0, Lcom/tencent/c/Pro$ICl;->mJf:J
 
     .line 43
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/tencent/c/Pro$ICl;->g:I
+    iput v0, p0, Lcom/tencent/c/Pro$ICl;->mIg:I
 
     .line 45
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/c/Pro$ICl;->h:Z
+    iput-boolean v0, p0, Lcom/tencent/c/Pro$ICl;->isZh:Z
 
     .line 73
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     .line 74
-    iput-object p2, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     .line 75
     invoke-direct {p0}, Lcom/tencent/c/Pro$ICl;->a()V
@@ -103,7 +103,7 @@
 
     .prologue
     .line 24
-    iput p1, p0, Lcom/tencent/c/Pro$ICl;->g:I
+    iput p1, p0, Lcom/tencent/c/Pro$ICl;->mIg:I
 
     return p1
 .end method
@@ -113,7 +113,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/tencent/c/Pro$ICl;->a:Ljava/util/HashMap;
+    sget-object v0, Lcom/tencent/c/Pro$ICl;->mHashMapa:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -132,31 +132,31 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/tencent/c/Pro$ICl;->a:Ljava/util/HashMap;
+    sput-object v0, Lcom/tencent/c/Pro$ICl;->mHashMapa:Ljava/util/HashMap;
 
     .line 54
     :cond_0
     if-eqz p1, :cond_1
 
     .line 55
-    sput-object p1, Lcom/tencent/c/Pro$ICl;->b:Ljava/lang/String;
+    sput-object p1, Lcom/tencent/c/Pro$ICl;->mStringb:Ljava/lang/String;
 
     .line 57
     :cond_1
     if-nez p1, :cond_2
 
     .line 58
-    sget-object v0, Lcom/tencent/c/Pro$ICl;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro$ICl;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
     .line 59
-    sget-object p1, Lcom/tencent/c/Pro$ICl;->b:Ljava/lang/String;
+    sget-object p1, Lcom/tencent/c/Pro$ICl;->mStringb:Ljava/lang/String;
 
     .line 64
     :cond_2
     :goto_0
-    sget-object v0, Lcom/tencent/c/Pro$ICl;->a:Ljava/util/HashMap;
+    sget-object v0, Lcom/tencent/c/Pro$ICl;->mHashMapa:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -173,7 +173,7 @@
     invoke-direct {v0, p0, p1}, Lcom/tencent/c/Pro$ICl;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 67
-    sget-object v1, Lcom/tencent/c/Pro$ICl;->a:Ljava/util/HashMap;
+    sget-object v1, Lcom/tencent/c/Pro$ICl;->mHashMapa:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -205,7 +205,7 @@
 
     invoke-direct {v1, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iput-object v1, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -222,7 +222,7 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     goto :goto_0
 .end method
@@ -243,7 +243,7 @@
     .prologue
     .line 150
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -274,7 +274,7 @@
 
     .line 155
     :cond_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -322,7 +322,7 @@
     invoke-direct {p0, v0}, Lcom/tencent/c/Pro$ICl;->f(Ljava/lang/String;)V
 
     .line 217
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     .line 218
     const-string/jumbo v0, "com.tencent.open.config.json"
@@ -338,7 +338,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/tencent/c/Pro$ICl;->f:J
+    iput-wide v0, p0, Lcom/tencent/c/Pro$ICl;->mJf:J
 
     .line 220
     return-void
@@ -349,7 +349,7 @@
 
     .prologue
     .line 171
-    iget v0, p0, Lcom/tencent/c/Pro$ICl;->g:I
+    iget v0, p0, Lcom/tencent/c/Pro$ICl;->mIg:I
 
     if-eqz v0, :cond_0
 
@@ -366,7 +366,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/tencent/c/Pro$ICl;->g:I
+    iput v0, p0, Lcom/tencent/c/Pro$ICl;->mIg:I
 
     .line 177
     new-instance v0, Landroid/os/Bundle;
@@ -376,14 +376,14 @@
     .line 178
     const-string/jumbo v1, "appid"
 
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 179
     const-string/jumbo v1, "appid_for_getting_config"
 
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -437,7 +437,7 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     const-string/jumbo v1, "Common_frequency"
 
@@ -465,7 +465,7 @@
     move-result-wide v2
 
     .line 233
-    iget-wide v4, p0, Lcom/tencent/c/Pro$ICl;->f:J
+    iget-wide v4, p0, Lcom/tencent/c/Pro$ICl;->mJf:J
 
     sub-long/2addr v2, v4
 
@@ -491,7 +491,7 @@
 
     .line 105
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -510,7 +510,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -522,7 +522,7 @@
 
     .line 111
     :goto_0
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
     :try_end_0
@@ -599,7 +599,7 @@
 
     .line 114
     :try_start_4
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -705,7 +705,7 @@
 
     .prologue
     .line 322
-    iget-boolean v0, p0, Lcom/tencent/c/Pro$ICl;->h:Z
+    iget-boolean v0, p0, Lcom/tencent/c/Pro$ICl;->isZh:Z
 
     if-eqz v0, :cond_0
 
@@ -726,7 +726,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -774,7 +774,7 @@
     invoke-direct {p0}, Lcom/tencent/c/Pro$ICl;->c()V
 
     .line 248
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -812,7 +812,7 @@
     invoke-direct {p0}, Lcom/tencent/c/Pro$ICl;->c()V
 
     .line 260
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
 
@@ -850,7 +850,7 @@
     invoke-direct {p0}, Lcom/tencent/c/Pro$ICl;->c()V
 
     .line 272
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;)J
 
@@ -890,7 +890,7 @@
     invoke-direct {p0}, Lcom/tencent/c/Pro$ICl;->c()V
 
     .line 297
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->e:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICl;->mJSONObjecte:Lorg/json/JSONObject;
 
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 

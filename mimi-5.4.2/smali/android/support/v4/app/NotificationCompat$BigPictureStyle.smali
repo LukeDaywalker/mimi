@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:Landroid/graphics/Bitmap;
+.field isZc:Z
 
-.field b:Landroid/graphics/Bitmap;
+.field mBitmapa:Landroid/graphics/Bitmap;
 
-.field c:Z
+.field mBitmapb:Landroid/graphics/Bitmap;
 
 
 # direct methods

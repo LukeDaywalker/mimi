@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
+.field final synthetic mDOMStoragePeerManagera:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
 
-.field private final b:Ljava/util/List;
+.field private final mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -24,7 +24,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;->a:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;->mDOMStoragePeerManagera:Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager;
 
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;-><init>()V
 
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/domstorage/DOMStoragePeerManager$ICb;->mListb:Ljava/util/List;
 
     return-void
 .end method

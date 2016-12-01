@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final q:I
+.field private final mIq:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0, p1, p2}, Lcom/fasterxml/jackson/core/sym/Name;-><init>(Ljava/lang/String;I)V
 
     .line 19
-    iput p3, p0, Lcom/fasterxml/jackson/core/sym/Name1;->q:I
+    iput p3, p0, Lcom/fasterxml/jackson/core/sym/Name1;->mIq:I
 
     .line 20
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 24
-    iget v0, p0, Lcom/fasterxml/jackson/core/sym/Name1;->q:I
+    iget v0, p0, Lcom/fasterxml/jackson/core/sym/Name1;->mIq:I
 
     if-ne p1, v0, :cond_0
 
@@ -81,7 +81,7 @@
 
     .prologue
     .line 25
-    iget v0, p0, Lcom/fasterxml/jackson/core/sym/Name1;->q:I
+    iget v0, p0, Lcom/fasterxml/jackson/core/sym/Name1;->mIq:I
 
     if-ne p1, v0, :cond_0
 
@@ -121,7 +121,7 @@
 
     aget v2, p1, v1
 
-    iget v3, p0, Lcom/fasterxml/jackson/core/sym/Name1;->q:I
+    iget v3, p0, Lcom/fasterxml/jackson/core/sym/Name1;->mIq:I
 
     if-ne v2, v3, :cond_0
 

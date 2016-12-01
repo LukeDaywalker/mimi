@@ -4,7 +4,11 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mCommandLineParserb:Lorg/apache/commons/cli/CommandLineParser;
+
+.field private final mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -15,10 +19,6 @@
         }
     .end annotation
 .end field
-
-.field private final b:Lorg/apache/commons/cli/CommandLineParser;
-
-.field private final c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
 
 # direct methods
@@ -69,17 +69,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mMapa:Ljava/util/Map;
 
     .line 37
-    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/Dumper;->b:Lorg/apache/commons/cli/CommandLineParser;
+    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mCommandLineParserb:Lorg/apache/commons/cli/CommandLineParser;
 
     .line 38
     new-instance v0, Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     invoke-direct {v0}, Lcom/facebook/stetho/dumpapp/GlobalOptions;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     .line 39
     return-void
@@ -186,7 +186,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 127
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/Dumper;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mMapa:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -234,7 +234,7 @@
     :cond_1
     new-instance v0, Lcom/facebook/stetho/dumpapp/DumperContext;
 
-    iget-object v4, p0, Lcom/facebook/stetho/dumpapp/Dumper;->b:Lorg/apache/commons/cli/CommandLineParser;
+    iget-object v4, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mCommandLineParserb:Lorg/apache/commons/cli/CommandLineParser;
 
     move-object v1, p1
 
@@ -261,7 +261,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 108
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -334,9 +334,9 @@
     const/4 v0, 0x0
 
     .line 86
-    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/Dumper;->b:Lorg/apache/commons/cli/CommandLineParser;
+    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mCommandLineParserb:Lorg/apache/commons/cli/CommandLineParser;
 
-    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
 
@@ -345,7 +345,7 @@
     move-result-object v2
 
     .line 90
-    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->a:Lorg/apache/commons/cli/Option;
 
@@ -368,7 +368,7 @@
 
     .line 93
     :cond_0
-    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->b:Lorg/apache/commons/cli/Option;
 
@@ -442,7 +442,7 @@
 
     move-result v2
 
-    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->c:Lcom/facebook/stetho/dumpapp/GlobalOptions;
+    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/Dumper;->mGlobalOptionsc:Lcom/facebook/stetho/dumpapp/GlobalOptions;
 
     iget-object v3, v3, Lcom/facebook/stetho/dumpapp/GlobalOptions;->d:Lorg/apache/commons/cli/Options;
 

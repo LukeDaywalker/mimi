@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/ActionBarDrawerToggle;
+.field private final isZb:Z
 
-.field private final b:Z
+.field final synthetic mActionBarDrawerTogglea:Landroid/support/v4/app/ActionBarDrawerToggle;
 
-.field private final c:Landroid/graphics/Rect;
+.field private mFd:F
 
-.field private d:F
+.field private mFe:F
 
-.field private e:F
+.field private final mRectc:Landroid/graphics/Rect;
 
 
 # virtual methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 523
-    iget v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->d:F
+    iget v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mFd:F
 
     return v0
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 518
-    iput p1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->d:F
+    iput p1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mFd:F
 
     .line 519
     invoke-virtual {p0}, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->invalidateSelf()V
@@ -52,7 +52,7 @@
     const/4 v0, 0x1
 
     .line 540
-    iget-object v1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->c:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mRectc:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->copyBounds(Landroid/graphics/Rect;)V
 
@@ -60,7 +60,7 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 544
-    iget-object v1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->a:Landroid/support/v4/app/ActionBarDrawerToggle;
+    iget-object v1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mActionBarDrawerTogglea:Landroid/support/v4/app/ActionBarDrawerToggle;
 
     invoke-static {v1}, Landroid/support/v4/app/ActionBarDrawerToggle;->a(Landroid/support/v4/app/ActionBarDrawerToggle;)Landroid/app/Activity;
 
@@ -90,14 +90,14 @@
 
     .line 547
     :cond_0
-    iget-object v2, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->c:Landroid/graphics/Rect;
+    iget-object v2, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mRectc:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v2
 
     .line 548
-    iget v3, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->e:F
+    iget v3, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mFe:F
 
     neg-float v3, v3
 
@@ -105,7 +105,7 @@
 
     mul-float/2addr v3, v4
 
-    iget v4, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->d:F
+    iget v4, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mFd:F
 
     mul-float/2addr v3, v4
 
@@ -118,7 +118,7 @@
     .line 551
     if-eqz v1, :cond_1
 
-    iget-boolean v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->b:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->isZb:Z
 
     if-nez v0, :cond_1
 

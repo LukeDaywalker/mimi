@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+.field final synthetic mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 184
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +45,11 @@
     if-nez v0, :cond_0
 
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -67,11 +67,11 @@
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICr;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

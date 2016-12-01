@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+.field final synthetic mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 383
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-direct {p0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;-><init>()V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -76,7 +76,7 @@
 
     .line 398
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -89,26 +89,26 @@
     .line 400
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)Landroid/util/DisplayMetrics;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 401
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     const v2, 0x7f0602ae
 
@@ -122,7 +122,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->o(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

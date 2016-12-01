@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -20,12 +20,12 @@
     .line 28
     const-string/jumbo v0, "a_start_time"
 
-    iput-object v0, p0, Lu/aly/SessionTracker;->a:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/SessionTracker;->mStringa:Ljava/lang/String;
 
     .line 29
     const-string/jumbo v0, "a_end_time"
 
-    iput-object v0, p0, Lu/aly/SessionTracker;->b:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/SessionTracker;->mStringb:Ljava/lang/String;
 
     return-void
 .end method

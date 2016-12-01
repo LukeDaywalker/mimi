@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+.field final synthetic mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 139
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
     if-eqz v0, :cond_1
 
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -72,13 +72,13 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 

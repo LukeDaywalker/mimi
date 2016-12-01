@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private mFeedTypef:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private d:Landroid/widget/TextView;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/ImageView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private f:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     .line 39
     const v0, 0x7f0b0170
@@ -70,10 +70,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mImageViewe:Landroid/widget/ImageView;
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -84,7 +84,7 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -114,10 +114,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mViewc:Landroid/view/View;
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -133,13 +133,13 @@
     const/4 v5, 0x0
 
     .line 68
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->f:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mFeedTypef:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 69
     if-ge p1, v4, :cond_0
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->getResources()Landroid/content/res/Resources;
 
@@ -167,7 +167,7 @@
 
     .line 72
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->getResources()Landroid/content/res/Resources;
 
@@ -199,7 +199,7 @@
     const/4 v3, 0x0
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mImageViewe:Landroid/widget/ImageView;
 
     if-ne p1, v0, :cond_0
 
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->f:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->mFeedTypef:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v3, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(ZLcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 

@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field a:Landroid/support/v4/util/MapCollections;
+.field mMapCollectionsa:Landroid/support/v4/util/MapCollections;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/MapCollections",
@@ -57,7 +57,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     if-nez v0, :cond_0
 
@@ -66,11 +66,11 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/ArrayMap$1;-><init>(Landroid/support/v4/util/ArrayMap;)V
 
-    iput-object v0, p0, Landroid/support/v4/util/ArrayMap;->a:Landroid/support/v4/util/MapCollections;
+    iput-object v0, p0, Landroid/support/v4/util/ArrayMap;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     .line 120
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/util/ArrayMap;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/ArrayMap;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     return-object v0
 .end method
@@ -156,7 +156,7 @@
 
     .prologue
     .line 139
-    iget v0, p0, Landroid/support/v4/util/ArrayMap;->h:I
+    iget v0, p0, Landroid/support/v4/util/ArrayMap;->mIh:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
 

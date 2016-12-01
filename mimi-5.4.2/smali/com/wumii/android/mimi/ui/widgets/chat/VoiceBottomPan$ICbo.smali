@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+.field final synthetic mVoiceBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 282
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;->mVoiceBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;->mVoiceBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)V
 

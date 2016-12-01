@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mArrayFc:[F
 
-.field private final b:[I
+.field private final mArrayIb:[I
 
-.field private final c:[F
+.field private final mIa:I
 
 
 # direct methods
@@ -101,27 +101,27 @@
     goto :goto_0
 
     :cond_5
-    iput p3, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iput p3, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     array-length v0, p1
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     array-length v0, p2
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     array-length v1, p1
 
     invoke-static {p1, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     array-length v1, p2
 
@@ -288,7 +288,7 @@
 
     invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     aget v0, v0, v8
 
@@ -298,7 +298,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v0, v0, v8
 
@@ -306,7 +306,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v1, v1, v8
 
@@ -314,7 +314,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v2, v2, v8
 
@@ -332,15 +332,15 @@
 
     new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v3, v1, v8
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     int-to-float v1, v1
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     aget v4, v4, v8
 
@@ -358,17 +358,17 @@
     move v6, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     array-length v0, v0
 
     if-ge v6, v0, :cond_1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     int-to-float v0, v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     add-int/lit8 v2, v6, -0x1
 
@@ -384,25 +384,25 @@
 
     new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     add-int/lit8 v2, v6, -0x1
 
     aget v2, v1, v2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v3, v1, v6
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     int-to-float v1, v1
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     aget v4, v4, v6
 
-    iget-object v9, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v9, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     add-int/lit8 v10, v6, -0x1
 
@@ -425,9 +425,9 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     array-length v1, v1
 
@@ -439,17 +439,17 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     array-length v0, v0
 
     add-int/lit8 v1, v0, -0x1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     int-to-float v0, v0
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     aget v2, v2, v1
 
@@ -463,19 +463,19 @@
 
     new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v2, v2, v1
 
-    iget-object v3, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
+    iget-object v3, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayIb:[I
 
     aget v3, v3, v1
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     int-to-float v4, v4
 
-    iget-object v8, p0, Lcom/baidu/mapapi/map/Gradient;->c:[F
+    iget-object v8, p0, Lcom/baidu/mapapi/map/Gradient;->mArrayFc:[F
 
     aget v1, v8, v1
 
@@ -504,7 +504,7 @@
 
     move-result-object v5
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     new-array v6, v0, [I
 
@@ -525,7 +525,7 @@
     move v0, v2
 
     :goto_0
-    iget v4, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     if-ge v1, v4, :cond_0
 
@@ -596,7 +596,7 @@
     if-eqz v0, :cond_1
 
     :goto_2
-    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Gradient;->mIa:I
 
     if-ge v2, v0, :cond_1
 

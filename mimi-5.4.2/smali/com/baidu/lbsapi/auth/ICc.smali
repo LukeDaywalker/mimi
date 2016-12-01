@@ -3,17 +3,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private mContextb:Landroid/content/Context;
 
-.field private b:Landroid/content/Context;
-
-.field private c:Ljava/lang/String;
-
-.field private d:Ljava/lang/String;
-
-.field private e:I
-
-.field private f:Ljava/util/HashMap;
+.field private mHashMapf:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -25,7 +17,7 @@
     .end annotation
 .end field
 
-.field private g:Lcom/baidu/lbsapi/auth/ICc$ICa;
+.field private mICag:Lcom/baidu/lbsapi/auth/ICc$ICa;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/baidu/lbsapi/auth/c$a",
@@ -35,6 +27,14 @@
         }
     .end annotation
 .end field
+
+.field private mIe:I
+
+.field private final mStringa:Ljava/lang/String;
+
+.field private mStringc:Ljava/lang/String;
+
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -47,17 +47,17 @@
 
     const-string/jumbo v0, "HttpAsyncTask"
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringa:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->c:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringc:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringd:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->f:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mHashMapf:Ljava/util/HashMap;
 
-    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->g:Lcom/baidu/lbsapi/auth/ICc$ICa;
+    iput-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mICag:Lcom/baidu/lbsapi/auth/ICc$ICa;
 
-    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICc;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICc;->mContextb:Landroid/content/Context;
 
     return-void
 .end method
@@ -199,7 +199,7 @@
 .method static synthetic a(Lcom/baidu/lbsapi/auth/ICc;)Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -339,11 +339,11 @@
 
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->g:Lcom/baidu/lbsapi/auth/ICc$ICa;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mICag:Lcom/baidu/lbsapi/auth/ICc$ICa;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->g:Lcom/baidu/lbsapi/auth/ICc$ICa;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mICag:Lcom/baidu/lbsapi/auth/ICc$ICa;
 
     if-eqz v0, :cond_2
 
@@ -611,7 +611,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/lbsapi/auth/ICc;->e:I
+    iput v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mIe:I
     :try_end_0
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_2
@@ -729,7 +729,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -742,7 +742,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_7
-    iget v0, p0, Lcom/baidu/lbsapi/auth/ICc;->e:I
+    iget v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mIe:I
 
     const/16 v1, 0xc8
 
@@ -762,7 +762,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -785,7 +785,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -797,7 +797,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->e:I
+    iget v1, p0, Lcom/baidu/lbsapi/auth/ICc;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -814,7 +814,7 @@
     invoke-direct {p0, v0}, Lcom/baidu/lbsapi/auth/ICc;->a(Ljava/lang/String;)V
 
     :cond_9
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringc:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/baidu/lbsapi/auth/ICc;->a(Ljava/lang/String;)V
 
@@ -834,7 +834,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringc:Ljava/lang/String;
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
@@ -1013,7 +1013,7 @@
 .method static synthetic b(Lcom/baidu/lbsapi/auth/ICc;)Ljava/util/HashMap;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->f:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mHashMapf:Ljava/util/HashMap;
 
     return-object v0
 .end method
@@ -1121,7 +1121,7 @@
 
     invoke-static {v2}, Ljavax/net/ssl/HttpsURLConnection;->setDefaultHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
 
-    iget-object v2, p0, Lcom/baidu/lbsapi/auth/ICc;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/baidu/lbsapi/auth/ICc;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v2}, Lcom/baidu/lbsapi/auth/ICc;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1305,11 +1305,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->f:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mHashMapf:Ljava/util/HashMap;
 
-    iput-object p2, p0, Lcom/baidu/lbsapi/auth/ICc;->g:Lcom/baidu/lbsapi/auth/ICc$ICa;
+    iput-object p2, p0, Lcom/baidu/lbsapi/auth/ICc;->mICag:Lcom/baidu/lbsapi/auth/ICc$ICa;
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->f:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mHashMapf:Ljava/util/HashMap;
 
     const-string/jumbo v1, "url"
 
@@ -1319,7 +1319,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICc;->mStringd:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Thread;
 

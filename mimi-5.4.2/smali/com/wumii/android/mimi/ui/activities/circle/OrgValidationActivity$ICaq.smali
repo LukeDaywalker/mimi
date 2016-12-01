@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
+.field final synthetic mOrgValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;->mOrgValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationValidationType;
 
     .line 71
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity$ICaq;->mOrgValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;Lcom/wumii/android/mimi/models/entities/circle/OrganizationValidationType;)V
 

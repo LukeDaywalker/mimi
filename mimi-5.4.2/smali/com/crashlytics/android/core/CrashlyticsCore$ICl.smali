@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field final synthetic mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 828
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICl;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICl;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 831
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICl;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICl;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-static {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->a(Lcom/crashlytics/android/core/CrashlyticsCore;)Ljava/io/File;
 

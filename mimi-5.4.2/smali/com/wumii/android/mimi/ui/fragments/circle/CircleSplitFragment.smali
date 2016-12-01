@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private e:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
+.field private mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
-.field private j:Landroid/widget/ListView;
+.field private mCrowdSplitsAdaptere:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
 
-.field private k:Lcom/wumii/android/mimi/models/observer/CircleObserver;
+.field private mListViewj:Landroid/widget/ListView;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->k:Lcom/wumii/android/mimi/models/observer/CircleObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->e:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCrowdSplitsAdaptere:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
 
     return-object v0
 .end method
@@ -101,10 +101,10 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->e:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCrowdSplitsAdaptere:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->e:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCrowdSplitsAdaptere:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->e:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCrowdSplitsAdaptere:Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->a(Ljava/util/List;)V
 
@@ -171,17 +171,17 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->j:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mListViewj:Landroid/widget/ListView;
 
     .line 74
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->k:Lcom/wumii/android/mimi/models/observer/CircleObserver;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/manager/CircleManager;->addObserver(Ljava/util/Observer;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->j:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mListViewj:Landroid/widget/ListView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->a()Landroid/widget/BaseAdapter;
 
@@ -190,7 +190,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->j:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mListViewj:Landroid/widget/ListView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICg;
 
@@ -212,7 +212,7 @@
     .line 109
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->k:Lcom/wumii/android/mimi/models/observer/CircleObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->mCircleObserverk:Lcom/wumii/android/mimi/models/observer/CircleObserver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->deleteObserver(Ljava/util/Observer;)V
 

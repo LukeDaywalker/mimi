@@ -4,11 +4,19 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
 
 # instance fields
-.field private final b:Ljava/util/List;
+.field private mArrayBe:[B
+
+.field private mIc:I
+
+.field private mId:I
+
+.field private mIf:I
+
+.field private final mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -16,14 +24,6 @@
         }
     .end annotation
 .end field
-
-.field private c:I
-
-.field private d:I
-
-.field private e:[B
-
-.field private f:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     new-array v0, v0, [B
 
-    sput-object v0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->a:[B
+    sput-object v0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBa:[B
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->b:Ljava/util/List;
+    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mListb:Ljava/util/List;
 
     .line 86
     if-gez p1, :cond_0
@@ -126,9 +126,9 @@
 
     .prologue
     .line 102
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->b:Ljava/util/List;
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mListb:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -139,27 +139,27 @@
     if-ge v0, v1, :cond_0
 
     .line 104
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     array-length v1, v1
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     .line 106
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
     .line 107
-    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->b:Ljava/util/List;
+    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mListb:Ljava/util/List;
 
-    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -167,7 +167,7 @@
 
     check-cast v0, [B
 
-    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     .line 125
     :goto_0
@@ -175,32 +175,32 @@
 
     .line 111
     :cond_0
-    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     if-nez v0, :cond_1
 
     .line 113
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     .line 121
     :goto_1
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->c:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIc:I
 
     .line 122
     new-array v0, p1, [B
 
-    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iput-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     .line 123
-    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->b:Ljava/util/List;
+    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mListb:Ljava/util/List;
 
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -208,13 +208,13 @@
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     array-length v0, v0
 
     shl-int/lit8 v0, v0, 0x1
 
-    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     sub-int v1, p1, v1
 
@@ -223,15 +223,15 @@
     move-result p1
 
     .line 118
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     array-length v1, v1
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     goto :goto_1
 .end method
@@ -248,13 +248,13 @@
     monitor-enter p0
 
     :try_start_0
-    iget v2, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v2, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
     .line 319
     if-nez v2, :cond_0
 
     .line 320
-    sget-object v0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->a:[B
+    sget-object v0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBa:[B
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -270,7 +270,7 @@
     new-array v1, v2, [B
 
     .line 324
-    iget-object v3, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->b:Ljava/util/List;
+    iget-object v3, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mListb:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -371,21 +371,21 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
-    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     sub-int/2addr v0, v1
 
     .line 168
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     array-length v1, v1
 
     if-ne v0, v1, :cond_0
 
     .line 169
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
     add-int/lit8 v0, v0, 0x1
 
@@ -396,18 +396,18 @@
 
     .line 172
     :cond_0
-    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     int-to-byte v2, p1
 
     aput-byte v2, v1, v0
 
     .line 173
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iput v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -470,14 +470,14 @@
 
     .line 145
     :try_start_0
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
     add-int v2, v0, p3
 
     .line 147
-    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iget v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
-    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->d:I
+    iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mId:I
 
     sub-int/2addr v0, v1
 
@@ -489,7 +489,7 @@
     if-lez v1, :cond_4
 
     .line 149
-    iget-object v3, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v3, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     array-length v3, v3
 
@@ -504,7 +504,7 @@
 
     sub-int/2addr v4, v1
 
-    iget-object v5, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->e:[B
+    iget-object v5, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mArrayBe:[B
 
     invoke-static {p1, v4, v5, v0, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -524,7 +524,7 @@
 
     .line 157
     :cond_4
-    iput v2, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->f:I
+    iput v2, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->mIf:I
 
     .line 158
     monitor-exit p0

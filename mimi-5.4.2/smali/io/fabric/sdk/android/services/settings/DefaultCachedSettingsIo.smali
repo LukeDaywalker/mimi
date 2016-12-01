@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/Kit;
+.field private final mKita:Lio/fabric/sdk/android/Kit;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->a:Lio/fabric/sdk/android/Kit;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->mKita:Lio/fabric/sdk/android/Kit;
 
     .line 42
     return-void
@@ -50,7 +50,7 @@
 
     new-instance v2, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-direct {v2, v3}, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;-><init>(Lio/fabric/sdk/android/Kit;)V
 
@@ -213,7 +213,7 @@
 
     new-instance v3, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v4, p0, Lio/fabric/sdk/android/services/settings/DefaultCachedSettingsIo;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-direct {v3, v4}, Lio/fabric/sdk/android/services/persistence/FileStoreImpl;-><init>(Lio/fabric/sdk/android/Kit;)V
 

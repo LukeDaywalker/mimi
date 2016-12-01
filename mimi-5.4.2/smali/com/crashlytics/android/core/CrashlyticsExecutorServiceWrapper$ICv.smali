@@ -17,9 +17,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/concurrent/Callable;
+.field final synthetic mCallablea:Ljava/util/concurrent/Callable;
 
-.field final synthetic b:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+.field final synthetic mCrashlyticsExecutorServiceWrapperb:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
 
 # direct methods
@@ -28,9 +28,9 @@
 
     .prologue
     .line 100
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->b:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->mCrashlyticsExecutorServiceWrapperb:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
-    iput-object p2, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->a:Ljava/util/concurrent/Callable;
+    iput-object p2, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->mCallablea:Ljava/util/concurrent/Callable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     .prologue
     .line 104
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->a:Ljava/util/concurrent/Callable;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper$ICv;->mCallablea:Ljava/util/concurrent/Callable;
 
     invoke-interface {v0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
     :try_end_0

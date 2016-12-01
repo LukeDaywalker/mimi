@@ -7,41 +7,41 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private isZm:Z
 
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private isZn:Z
 
-.field private c:Landroid/widget/RelativeLayout;
+.field private isZo:Z
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+.field private mAnimationp:Landroid/view/animation/Animation;
 
-.field private e:Lcom/wumii/android/soundtouch/RecordClient;
+.field private mAnimationq:Landroid/view/animation/Animation;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+.field private mContexta:Landroid/content/Context;
 
-.field private g:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+.field private mCountDownTimeri:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
-.field private h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+.field private mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
-.field private i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+.field private mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
-.field private j:J
+.field private mIl:I
 
-.field private k:J
+.field private mJj:J
 
-.field private l:I
+.field private mJk:J
 
-.field private m:Z
+.field private mOnVoiceRecListenerg:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
-.field private n:Z
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private o:Z
+.field private mRecordCliente:Lcom/wumii/android/soundtouch/RecordClient;
 
-.field private p:Landroid/view/animation/Animation;
+.field private mRelativeLayoutc:Landroid/widget/RelativeLayout;
 
-.field private q:Landroid/view/animation/Animation;
+.field private mVoiceAuditionr:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
-.field private r:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
+.field private mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
 
 # direct methods
@@ -55,24 +55,24 @@
     .line 119
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     .line 128
     sget-object v0, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->DEFAULT:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->r:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceAuditionr:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
     .line 131
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mContexta:Landroid/content/Context;
 
     .line 132
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 133
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e:Lcom/wumii/android/soundtouch/RecordClient;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRecordCliente:Lcom/wumii/android/soundtouch/RecordClient;
 
     .line 134
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mOnVoiceRecListenerg:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
     .line 135
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -84,7 +84,7 @@
 
     invoke-direct {v1, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     .line 139
     const v1, 0x7f03006e
@@ -97,10 +97,10 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->c:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRelativeLayoutc:Landroid/widget/RelativeLayout;
 
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->c:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRelativeLayoutc:Landroid/widget/RelativeLayout;
 
     new-instance v1, Landroid/view/ViewGroup$LayoutParams;
 
@@ -123,11 +123,11 @@
     .line 141
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->c:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRelativeLayoutc:Landroid/widget/RelativeLayout;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;-><init>(Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     .line 143
     const v0, 0x7f040013
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->p:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mAnimationp:Landroid/view/animation/Animation;
 
     .line 144
     const v0, 0x7f040014
@@ -145,10 +145,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->q:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mAnimationq:Landroid/view/animation/Animation;
 
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Landroid/widget/ImageButton;
 
@@ -182,7 +182,7 @@
 
     .prologue
     .line 38
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     return-wide v0
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 38
-    iput-wide p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     return-wide p1
 .end method
@@ -202,7 +202,7 @@
 
     .prologue
     .line 409
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->r:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceAuditionr:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
     .line 410
     return-void
@@ -243,7 +243,7 @@
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -266,7 +266,7 @@
     if-nez v0, :cond_0
 
     .line 402
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -299,7 +299,7 @@
     const/4 v1, 0x0
 
     .line 205
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZo:Z
 
     if-eqz v0, :cond_1
 
@@ -327,7 +327,7 @@
 
     .line 212
     :pswitch_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
@@ -339,12 +339,12 @@
     invoke-direct {p0, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b(I)V
 
     .line 217
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mOnVoiceRecListenerg:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
     if-eqz v0, :cond_2
 
     .line 218
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mOnVoiceRecListenerg:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/OnVoiceRecListener;->a()V
 
@@ -354,38 +354,38 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->j:J
+    iput-wide v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJj:J
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
     if-eqz v0, :cond_3
 
     .line 224
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-interface {v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)V
 
     .line 227
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Landroid/widget/ImageButton;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->p:Landroid/view/animation/Animation;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mAnimationp:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 229
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRecordCliente:Lcom/wumii/android/soundtouch/RecordClient;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->r:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceAuditionr:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/soundtouch/RecordClient;->a(Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;)V
 
@@ -413,7 +413,7 @@
 
     .line 244
     :pswitch_1
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
@@ -432,29 +432,29 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a()V
 
     .line 250
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Landroid/widget/ImageButton;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->q:Landroid/view/animation/Animation;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mAnimationq:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 253
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
     if-eqz v0, :cond_a
 
     .line 254
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
-    iget-boolean v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->m:Z
+    iget-boolean v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZm:Z
 
     invoke-interface {v0, v2, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;Z)Z
 
@@ -462,7 +462,7 @@
 
     .line 257
     :goto_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRecordCliente:Lcom/wumii/android/soundtouch/RecordClient;
 
     invoke-virtual {v2}, Lcom/wumii/android/soundtouch/RecordClient;->a()Z
 
@@ -470,7 +470,7 @@
 
     if-eqz v2, :cond_0
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->o:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZo:Z
 
     if-nez v2, :cond_0
 
@@ -479,16 +479,16 @@
 
     move-result-wide v4
 
-    iget-wide v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->j:J
+    iget-wide v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJj:J
 
     sub-long/2addr v4, v6
 
-    iput-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iput-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     .line 263
     if-eqz v0, :cond_5
 
-    iget-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iget-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     cmp-long v2, v4, v10
 
@@ -510,14 +510,14 @@
     .line 273
     if-eqz v0, :cond_4
 
-    iget-wide v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iget-wide v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     cmp-long v0, v6, v10
 
     if-gez v0, :cond_4
 
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     const v2, 0x7f0601cc
 
@@ -529,17 +529,17 @@
     const-wide/16 v4, 0x5dc
 
     .line 277
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->o:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZo:Z
 
     :cond_4
     move-wide v2, v4
 
     .line 280
-    iget-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iget-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     add-long/2addr v4, v8
 
-    iput-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->k:J
+    iput-wide v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mJk:J
 
     .line 282
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;
@@ -558,7 +558,7 @@
 
     .line 292
     :pswitch_2
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
@@ -566,7 +566,7 @@
 
     if-nez v2, :cond_6
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     const/4 v4, 0x4
 
@@ -597,24 +597,24 @@
     if-gez v0, :cond_9
 
     .line 297
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->m:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZm:Z
 
     .line 302
     :goto_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
     if-eqz v0, :cond_8
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->n:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZn:Z
 
     if-nez v0, :cond_8
 
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->m:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZm:Z
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Z)V
 
@@ -626,7 +626,7 @@
 
     .line 299
     :cond_9
-    iput-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->m:Z
+    iput-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZm:Z
 
     goto :goto_3
 
@@ -651,7 +651,7 @@
 
     .prologue
     .line 38
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->n:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZn:Z
 
     return p1
 .end method
@@ -661,7 +661,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->r:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceAuditionr:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
     return-object v0
 .end method
@@ -671,7 +671,7 @@
 
     .prologue
     .line 444
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     .line 445
     return-void
@@ -682,7 +682,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     return-object v0
 .end method
@@ -694,7 +694,7 @@
     .line 313
     new-instance v0, Landroid/view/GestureDetector;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mContexta:Landroid/content/Context;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbp;
 
@@ -703,7 +703,7 @@
     invoke-direct {v0, v1, v2}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
     .line 353
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->c(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Landroid/widget/FrameLayout;
 
@@ -714,7 +714,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setLongClickable(Z)V
 
     .line 354
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->c(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Landroid/widget/FrameLayout;
 
@@ -735,11 +735,11 @@
 
     .prologue
     .line 448
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     or-int/2addr v0, p1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mIl:I
 
     .line 449
     return-void
@@ -750,7 +750,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRecordCliente:Lcom/wumii/android/soundtouch/RecordClient;
 
     return-object v0
 .end method
@@ -762,12 +762,12 @@
     .line 364
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;-><init>(Landroid/content/Context;)V
 
     .line 365
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
@@ -776,7 +776,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 366
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
@@ -789,7 +789,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 396
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -812,7 +812,7 @@
     move-result v0
 
     .line 397
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;)Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
@@ -829,7 +829,7 @@
 
     .prologue
     .line 413
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mCountDownTimeri:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     if-nez v0, :cond_0
 
@@ -838,11 +838,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbs;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mCountDownTimeri:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 433
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mCountDownTimeri:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     return-object v0
 .end method
@@ -862,7 +862,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     return-object v0
 .end method
@@ -874,16 +874,16 @@
     const/4 v0, 0x0
 
     .line 437
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->m:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZm:Z
 
     .line 438
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->n:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZn:Z
 
     .line 439
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->o:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->isZo:Z
 
     .line 440
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->b()V
 
@@ -896,7 +896,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -908,7 +908,7 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->c:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mRelativeLayoutc:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
@@ -918,7 +918,7 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->d:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mVoiceTipLayoutd:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a(I)V
 
@@ -931,7 +931,7 @@
 
     .prologue
     .line 179
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbtf:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;
 
     .line 180
     return-void
@@ -942,7 +942,7 @@
 
     .prologue
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->mICbuh:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     return-object v0
 .end method

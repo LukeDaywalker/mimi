@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mMethodc:Ljava/lang/reflect/Method;
 
-.field private c:Ljava/lang/reflect/Method;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,9 +20,9 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,13 +36,13 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mMethodc:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
     .line 55
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->getContext()Landroid/content/Context;
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mStringa:Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -68,16 +68,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->c:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mMethodc:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 63
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mMethodc:Ljava/lang/reflect/Method;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->getContext()Landroid/content/Context;
 
@@ -89,7 +89,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;)Landroid/widget/CheckBox;
 
@@ -121,7 +121,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -133,7 +133,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;->mChatInfoItemCheckBoxb:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->getContext()Landroid/content/Context;
 

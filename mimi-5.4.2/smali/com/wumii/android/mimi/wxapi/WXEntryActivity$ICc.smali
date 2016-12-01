@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
+.field final synthetic mICba:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICc;->a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
+    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICc;->mICba:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICc;->a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICc;->mICba:Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->a:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->mActivitya:Landroid/app/Activity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->a(Landroid/app/Activity;)V
 

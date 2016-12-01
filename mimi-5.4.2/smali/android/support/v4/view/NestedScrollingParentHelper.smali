@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Landroid/view/ViewGroup;
+.field private mIb:I
 
-.field private b:I
+.field private final mViewGroupa:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 46
-    iput-object p1, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->a:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->mViewGroupa:Landroid/view/ViewGroup;
 
     .line 47
     return-void
@@ -31,7 +31,7 @@
 
     .prologue
     .line 69
-    iget v0, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->b:I
+    iget v0, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->mIb:I
 
     return v0
 .end method
@@ -41,7 +41,7 @@
 
     .prologue
     .line 58
-    iput p3, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->b:I
+    iput p3, p0, Landroid/support/v4/view/NestedScrollingParentHelper;->mIb:I
 
     .line 59
     return-void

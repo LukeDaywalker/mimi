@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private b:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerb:Landroid/view/View$OnClickListener;
 
-.field private c:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerc:Landroid/view/View$OnClickListener;
 
-.field private d:Ljava/util/Set;
+.field private mSetd:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -43,10 +43,10 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter$ICf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->c:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     .line 38
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->d:Ljava/util/Set;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mSetd:Ljava/util/Set;
 
     .line 39
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mSetd:Ljava/util/Set;
 
     return-object v0
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->b:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mOnClickListenerb:Landroid/view/View$OnClickListener;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
 
     .prologue
     .line 42
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->b:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mOnClickListenerb:Landroid/view/View$OnClickListener;
 
     .line 43
     return-void
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->c:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -126,7 +126,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->d:Ljava/util/Set;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->mSetd:Ljava/util/Set;
 
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;->a(I)Lcom/wumii/android/mimi/models/entities/Contact;
 

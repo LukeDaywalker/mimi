@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-.field private static final synthetic e:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+.field private static final synthetic mArrayICaae:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
 
 # direct methods
@@ -92,7 +92,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->e:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mArrayICaae:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     return-void
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 20
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->e:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->mArrayICaae:[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->clone()Ljava/lang/Object;
 

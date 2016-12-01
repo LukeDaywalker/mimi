@@ -4,23 +4,19 @@
 
 
 # static fields
-.field private static a:Lorg/slf4j/Logger;
+.field private static mHttpProcessorb:Lcom/wumii/android/mimi/network/HttpProcessor;
 
-.field private static b:Lcom/wumii/android/mimi/network/HttpProcessor;
+.field private static mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private c:Landroid/os/Handler;
+.field private mExecutord:Ljava/util/concurrent/Executor;
 
-.field private d:Ljava/util/concurrent/Executor;
+.field private mHandlerc:Landroid/os/Handler;
 
-.field private e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+.field private mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
-
-.field private g:Lcom/wumii/android/mimi/models/service/UserService;
-
-.field private h:Ljava/util/Map;
+.field private mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -32,7 +28,7 @@
     .end annotation
 .end field
 
-.field private i:Ljava/util/Map;
+.field private mMapi:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -45,6 +41,10 @@
         }
     .end annotation
 .end field
+
+.field private mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+
+.field private mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->d:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mExecutord:Ljava/util/concurrent/Executor;
 
     .line 72
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 73
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 74
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -111,21 +111,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->g:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 75
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->h:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMaph:Ljava/util/Map;
 
     .line 76
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     .line 77
     new-instance v0, Landroid/os/Handler;
@@ -136,7 +136,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->c:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHandlerc:Landroid/os/Handler;
 
     .line 78
     return-void
@@ -147,7 +147,7 @@
 
     .prologue
     .line 64
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->b:Lcom/wumii/android/mimi/network/HttpProcessor;
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpProcessorb:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     if-nez v0, :cond_0
 
@@ -156,11 +156,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/network/HttpProcessor;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->b:Lcom/wumii/android/mimi/network/HttpProcessor;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpProcessorb:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     .line 67
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->b:Lcom/wumii/android/mimi/network/HttpProcessor;
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpProcessorb:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     return-object v0
 .end method
@@ -170,7 +170,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMaph:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -272,7 +272,7 @@
 
     .prologue
     .line 201
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHandlerc:Landroid/os/Handler;
 
     new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$ICc;
 
@@ -356,7 +356,7 @@
 
     .line 289
     :goto_1
-    iget-object v6, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->c:Landroid/os/Handler;
+    iget-object v6, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHandlerc:Landroid/os/Handler;
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICd;
 
@@ -510,7 +510,7 @@
     if-ne v3, v4, :cond_8
 
     .line 270
-    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -525,7 +525,7 @@
     if-eqz v1, :cond_9
 
     .line 274
-    sget-object v4, Lcom/wumii/android/mimi/network/HttpProcessor;->a:Lorg/slf4j/Logger;
+    sget-object v4, Lcom/wumii/android/mimi/network/HttpProcessor;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-interface {v4, v1, p2}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -587,7 +587,7 @@
 
     .prologue
     .line 44
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -616,7 +616,7 @@
     if-eqz v1, :cond_0
 
     .line 313
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -635,13 +635,13 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->g:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mUserServiceg:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->d()Z
 
@@ -678,13 +678,13 @@
 
     .prologue
     .line 180
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 181
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/HttpRequest;->c()Ljava/lang/String;
 
@@ -716,7 +716,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMaph:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/HttpRequest;->b()Ljava/lang/String;
 
@@ -792,13 +792,13 @@
 
     .line 119
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 120
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -815,7 +815,7 @@
     invoke-virtual {v0, v2}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -840,7 +840,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMaph:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -857,25 +857,25 @@
 
     new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mHttpHelpere:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     invoke-direct {v1, p0, v2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/models/helper/HttpHelper;Lcom/wumii/android/mimi/network/HttpRequest;)V
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 107
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->d:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mExecutord:Ljava/util/concurrent/Executor;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 109
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 110
     :try_start_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->i:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->mMapi:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/HttpRequest;->c()Ljava/lang/String;
 

@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static final a:Ljava/nio/charset/Charset;
+.field static final mCharseta:Ljava/nio/charset/Charset;
 
-.field static final b:Ljava/nio/charset/Charset;
+.field static final mCharsetb:Ljava/nio/charset/Charset;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->a:Ljava/nio/charset/Charset;
+    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     .line 28
     const-string/jumbo v0, "UTF-8"
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->b:Ljava/nio/charset/Charset;
+    sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->mCharsetb:Ljava/nio/charset/Charset;
 
     return-void
 .end method

@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field a:I
+.field isZc:Z
 
-.field b:I
+.field mIa:I
 
-.field c:Z
+.field mIb:I
 
 
 # direct methods
@@ -67,14 +67,14 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
     .line 2032
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->b:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIb:I
 
     .line 2033
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -84,7 +84,7 @@
     if-ne v1, v0, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->isZc:Z
 
     .line 2034
     return-void
@@ -104,19 +104,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2037
-    iget v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iget v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
     .line 2038
-    iget v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->b:I
+    iget v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIb:I
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIb:I
 
     .line 2039
-    iget-boolean v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->c:Z
+    iget-boolean v0, p1, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->isZc:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->isZc:Z
 
     .line 2040
     return-void
@@ -129,7 +129,7 @@
 
     .prologue
     .line 2043
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
     if-ltz v0, :cond_0
 
@@ -151,7 +151,7 @@
     .line 2047
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
     .line 2048
     return-void
@@ -172,17 +172,17 @@
 
     .prologue
     .line 2057
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->a:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIa:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2058
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->b:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->mIb:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2059
-    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$SavedState;->isZc:Z
 
     if-eqz v0, :cond_0
 

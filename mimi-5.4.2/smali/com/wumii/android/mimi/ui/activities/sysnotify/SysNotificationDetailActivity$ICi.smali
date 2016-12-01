@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+.field final synthetic mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     .line 66
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -32,7 +32,7 @@
     invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->finish()V
 
@@ -48,7 +48,7 @@
     if-nez p1, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     const v1, 0x7f060392
 
@@ -57,7 +57,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->finish()V
 
@@ -70,7 +70,7 @@
     .line 96
     const-string/jumbo v1, "sys_notification_id"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;)Ljava/lang/String;
 
@@ -79,7 +79,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 97
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     const/4 v2, -0x1
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     const v1, 0x7f060392
 
@@ -103,7 +103,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->finish()V
 
@@ -140,7 +140,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;)Ljava/lang/String;
 
@@ -192,12 +192,12 @@
 
     const-string/jumbo v4, "<br/>"
 
-    invoke-static {v2, v3, v4}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v4}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 76
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICi;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICj;
 

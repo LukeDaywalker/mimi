@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+.field final synthetic mTextChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->mTextChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->mTextViewb:Landroid/widget/TextView;
 
     .line 52
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -51,7 +51,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method

@@ -11,65 +11,65 @@
 
 .field public static D:Ljava/lang/String;
 
-.field private static final E:Ljava/lang/String;
+.field private static isZF:Z
 
-.field private static F:Z
+.field static mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
-.field private static G:I
+.field private static mIG:I
 
-.field private static H:I
+.field private static mIH:I
 
-.field static a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+.field static mIg:I
 
-.field static b:Ljava/lang/String;
+.field static mIh:I
 
-.field static c:Ljava/lang/String;
+.field static mIi:I
 
-.field static d:Ljava/lang/String;
+.field static mIj:I
 
-.field static e:Ljava/lang/String;
+.field static mIk:I
 
-.field static f:Ljava/lang/String;
+.field static mIl:I
 
-.field static g:I
+.field private static final mStringE:Ljava/lang/String;
 
-.field static h:I
+.field static mStringb:Ljava/lang/String;
 
-.field static i:I
+.field static mStringc:Ljava/lang/String;
 
-.field static j:I
+.field static mStringd:Ljava/lang/String;
 
-.field static k:I
+.field static mStringe:Ljava/lang/String;
 
-.field static l:I
+.field static mStringf:Ljava/lang/String;
 
-.field static m:Ljava/lang/String;
+.field static mStringm:Ljava/lang/String;
 
-.field static n:Ljava/lang/String;
+.field static mStringn:Ljava/lang/String;
 
-.field static o:Ljava/lang/String;
+.field static mStringo:Ljava/lang/String;
 
-.field static p:Ljava/lang/String;
+.field static mStringp:Ljava/lang/String;
 
-.field static q:Ljava/lang/String;
+.field static mStringq:Ljava/lang/String;
 
-.field static r:Ljava/lang/String;
+.field static mStringr:Ljava/lang/String;
 
-.field static s:Ljava/lang/String;
+.field static mStrings:Ljava/lang/String;
 
-.field static t:Ljava/lang/String;
+.field static mStringt:Ljava/lang/String;
 
-.field static u:Ljava/lang/String;
+.field static mStringu:Ljava/lang/String;
 
-.field static v:Ljava/lang/String;
+.field static mStringv:Ljava/lang/String;
 
-.field static w:Ljava/lang/String;
+.field static mStringw:Ljava/lang/String;
 
-.field static x:Ljava/lang/String;
+.field static mStringx:Ljava/lang/String;
 
-.field static y:Ljava/lang/String;
+.field static mStringy:Ljava/lang/String;
 
-.field static z:Ljava/lang/String;
+.field static mStringz:Ljava/lang/String;
 
 
 # direct methods
@@ -84,45 +84,45 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->E:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringE:Ljava/lang/String;
 
     new-instance v0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     invoke-direct {v0}, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     const-string/jumbo v0, "02"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v0, "baidu"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->r:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringr:Ljava/lang/String;
 
     const-string/jumbo v0, "baidu"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->s:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStrings:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->t:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringt:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->u:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringu:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->v:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringv:Ljava/lang/String;
 
     const-string/jumbo v0, "-1"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->y:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringy:Ljava/lang/String;
 
     const-string/jumbo v0, "-1"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->z:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringz:Ljava/lang/String;
 
     sget-object v0, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
 
@@ -138,11 +138,11 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/platform/comapi/util/ICf;->F:Z
+    sput-boolean v0, Lcom/baidu/platform/comapi/util/ICf;->isZF:Z
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICf;->G:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICf;->mIG:I
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICf;->H:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICf;->mIH:I
 
     return-void
 .end method
@@ -164,31 +164,31 @@
 
     const-string/jumbo v1, "cpu"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->t:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringt:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "resid"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->b:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "channel"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->r:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "glr"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->u:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringu:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "glv"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->v:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringv:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -234,7 +234,7 @@
 
     const-string/jumbo v1, "net"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->p:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringp:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -288,7 +288,7 @@
 .method public static a(Ljava/lang/String;)V
     .locals 0
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->p:Ljava/lang/String;
+    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->mStringp:Ljava/lang/String;
 
     invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->d()V
 
@@ -298,9 +298,9 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    sput-object p1, Lcom/baidu/platform/comapi/util/ICf;->y:Ljava/lang/String;
+    sput-object p1, Lcom/baidu/platform/comapi/util/ICf;->mStringy:Ljava/lang/String;
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->z:Ljava/lang/String;
+    sput-object p0, Lcom/baidu/platform/comapi/util/ICf;->mStringz:Ljava/lang/String;
 
     invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->d()V
 
@@ -353,11 +353,11 @@
 .method public static b()V
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a()J
 
@@ -382,7 +382,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->w:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringw:Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
@@ -392,11 +392,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->x:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringx:Ljava/lang/String;
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->d:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringd:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -418,13 +418,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->e:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->c:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringc:Ljava/lang/String;
 
     invoke-static {p0}, Lcom/baidu/platform/comapi/util/ICf;->c(Landroid/content/Context;)V
 
@@ -456,7 +456,7 @@
     move v3, v1
 
     :goto_0
-    sput v3, Lcom/baidu/platform/comapi/util/ICf;->G:I
+    sput v3, Lcom/baidu/platform/comapi/util/ICf;->mIG:I
 
     const-string/jumbo v3, "network"
 
@@ -469,7 +469,7 @@
     move v0, v1
 
     :goto_1
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->H:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIH:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -495,7 +495,7 @@
 .method public static c()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->p:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringp:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -522,13 +522,13 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -538,7 +538,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     const/16 v2, 0x5f
 
@@ -548,12 +548,12 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     :cond_0
     iget v0, v0, Landroid/content/pm/PackageInfo;->versionCode:I
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->g:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIg:I
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -565,11 +565,11 @@
 
     const-string/jumbo v0, "1.0.0"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->g:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIg:I
 
     goto :goto_0
 .end method
@@ -583,31 +583,31 @@
 
     const-string/jumbo v1, "cpu"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->t:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringt:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "resid"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->b:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "channel"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->r:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "glr"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->u:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringu:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "glv"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->v:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringv:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -653,7 +653,7 @@
 
     const-string/jumbo v1, "net"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->p:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringp:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -693,13 +693,13 @@
 
     const-string/jumbo v1, "appid"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->y:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringy:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "duid"
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->z:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/platform/comapi/util/ICf;->mStringz:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -718,11 +718,11 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     if-eqz v1, :cond_1
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->a:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICf;->mICaa:Lcom/baidu/platform/comjni/map/commonmemcache/ICa;
 
     invoke-virtual {v1, v0}, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a(Landroid/os/Bundle;)V
 
@@ -762,13 +762,13 @@
 
     move-result v1
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICf;->h:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICf;->mIh:I
 
     invoke-virtual {v0}, Landroid/view/Display;->getHeight()I
 
     move-result v1
 
-    sput v1, Lcom/baidu/platform/comapi/util/ICf;->i:I
+    sput v1, Lcom/baidu/platform/comapi/util/ICf;->mIi:I
 
     invoke-virtual {v0, v2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
@@ -781,13 +781,13 @@
 
     float-to-int v0, v0
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->j:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIj:I
 
     iget v0, v2, Landroid/util/DisplayMetrics;->ydpi:F
 
     float-to-int v0, v0
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->k:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIk:I
 
     sget v0, Lcom/baidu/platform/comapi/util/ICf;->B:I
 
@@ -797,20 +797,20 @@
 
     iget v0, v2, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    sput v0, Lcom/baidu/platform/comapi/util/ICf;->l:I
+    sput v0, Lcom/baidu/platform/comapi/util/ICf;->mIl:I
 
     :goto_1
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->l:I
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mIl:I
 
     if-nez v0, :cond_1
 
-    sput v3, Lcom/baidu/platform/comapi/util/ICf;->l:I
+    sput v3, Lcom/baidu/platform/comapi/util/ICf;->mIl:I
 
     :cond_1
     return-void
 
     :cond_2
-    sput v3, Lcom/baidu/platform/comapi/util/ICf;->l:I
+    sput v3, Lcom/baidu/platform/comapi/util/ICf;->mIl:I
 
     goto :goto_1
 
@@ -823,7 +823,7 @@
 .method public static e()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->d:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -846,7 +846,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->n:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringn:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -859,15 +859,15 @@
 
     const-string/jumbo v1, ""
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->m:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringm:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->n:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringn:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->o:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/platform/comapi/util/ICf;->mStringo:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -877,7 +877,7 @@
 .method public static f()I
     .locals 1
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->h:I
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mIh:I
 
     return v0
 .end method
@@ -895,7 +895,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->q:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringq:Ljava/lang/String;
 
     return-void
 .end method
@@ -903,7 +903,7 @@
 .method public static g()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->f:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -913,7 +913,7 @@
 
     const-string/jumbo v0, "0"
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->p:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringp:Ljava/lang/String;
 
     return-void
 .end method
@@ -921,7 +921,7 @@
 .method public static h()I
     .locals 1
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->i:I
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mIi:I
 
     return v0
 .end method
@@ -929,7 +929,7 @@
 .method public static i()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->e:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -937,7 +937,7 @@
 .method public static j()I
     .locals 1
 
-    sget v0, Lcom/baidu/platform/comapi/util/ICf;->l:I
+    sget v0, Lcom/baidu/platform/comapi/util/ICf;->mIl:I
 
     return v0
 .end method
@@ -945,7 +945,7 @@
 .method public static k()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->w:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICf;->mStringw:Ljava/lang/String;
 
     return-object v0
 .end method

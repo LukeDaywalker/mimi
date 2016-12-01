@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mTextViewa:Landroid/widget/TextView;
 
-.field b:Landroid/widget/TextView;
+.field mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewa:Landroid/widget/TextView;
 
     .line 14
     const v0, 0x7f0b00b7
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewb:Landroid/widget/TextView;
 
     .line 15
     return-void

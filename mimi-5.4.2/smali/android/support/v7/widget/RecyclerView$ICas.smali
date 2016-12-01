@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:Landroid/support/v7/widget/RecyclerView$ICbg;
+.field isZc:Z
 
-.field final b:Landroid/graphics/Rect;
+.field isZd:Z
 
-.field c:Z
+.field mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-.field d:Z
+.field final mRectb:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -26,17 +26,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mRectb:Landroid/graphics/Rect;
 
     .line 8334
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZc:Z
 
     .line 8338
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZd:Z
 
     .line 8346
     return-void
@@ -54,17 +54,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mRectb:Landroid/graphics/Rect;
 
     .line 8334
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZc:Z
 
     .line 8338
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZd:Z
 
     .line 8342
     return-void
@@ -82,17 +82,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mRectb:Landroid/graphics/Rect;
 
     .line 8334
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZc:Z
 
     .line 8338
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZd:Z
 
     .line 8358
     return-void
@@ -110,17 +110,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mRectb:Landroid/graphics/Rect;
 
     .line 8334
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZc:Z
 
     .line 8338
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZd:Z
 
     .line 8354
     return-void
@@ -138,17 +138,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mRectb:Landroid/graphics/Rect;
 
     .line 8334
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZc:Z
 
     .line 8338
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->d:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->isZd:Z
 
     .line 8350
     return-void
@@ -161,7 +161,7 @@
 
     .prologue
     .line 8388
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICbg;->p()Z
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 8399
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICbg;->n()Z
 
@@ -189,7 +189,7 @@
 
     .prologue
     .line 8416
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICas;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICbg;->d()I
 

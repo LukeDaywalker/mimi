@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICax;
+.field final synthetic mICatif:Lcom/baidu/location/ICat;
 
-.field final synthetic if:Lcom/baidu/location/ICat;
+.field final synthetic mICaxa:Lcom/baidu/location/ICax;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICax;Lcom/baidu/location/ICat;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICax$1;->a:Lcom/baidu/location/ICax;
+    iput-object p1, p0, Lcom/baidu/location/ICax$1;->mICaxa:Lcom/baidu/location/ICax;
 
-    iput-object p2, p0, Lcom/baidu/location/ICax$1;->if:Lcom/baidu/location/ICat;
+    iput-object p2, p0, Lcom/baidu/location/ICax$1;->mICatif:Lcom/baidu/location/ICat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,9 +29,9 @@
 .method public run()V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$1;->a:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$1;->mICaxa:Lcom/baidu/location/ICax;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax$1;->if:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICax$1;->mICatif:Lcom/baidu/location/ICat;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 

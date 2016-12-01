@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/widget/EditText;
+.field final synthetic mEditTexta:Landroid/widget/EditText;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
+.field final synthetic mGroupChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 549
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->mGroupChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->a:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->mEditTexta:Landroid/widget/EditText;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 552
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->mGroupChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->mGroupChatActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity;)Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -48,7 +48,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->a:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatActivity$ICbh;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

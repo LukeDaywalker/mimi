@@ -3,11 +3,11 @@
 
 
 # static fields
-.field private static a:Lcom/baidu/location/ICm; = null
+.field private static mICma:Lcom/baidu/location/ICm; = null
 
-.field private static final do:Ljava/lang/String; = "bd_geofence.db"
+.field private static final mIif:I = 0x2
 
-.field private static final if:I = 0x2
+.field private static final mStringdo:Ljava/lang/String; = "bd_geofence.db"
 
 
 # direct methods
@@ -33,7 +33,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/location/ICm;->a:Lcom/baidu/location/ICm;
+    sget-object v0, Lcom/baidu/location/ICm;->mICma:Lcom/baidu/location/ICm;
 
     if-nez v0, :cond_0
 
@@ -41,10 +41,10 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICm;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/baidu/location/ICm;->a:Lcom/baidu/location/ICm;
+    sput-object v0, Lcom/baidu/location/ICm;->mICma:Lcom/baidu/location/ICm;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICm;->a:Lcom/baidu/location/ICm;
+    sget-object v0, Lcom/baidu/location/ICm;->mICma:Lcom/baidu/location/ICm;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

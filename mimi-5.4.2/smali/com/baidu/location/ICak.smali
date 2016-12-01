@@ -7,51 +7,51 @@
 
 
 # static fields
-.field private static eB:Lcom/baidu/location/ICak;
+.field private static mICakeB:Lcom/baidu/location/ICak;
 
 
 # instance fields
-.field private volatile eA:Z
-
-.field private eC:I
-
-.field private eD:J
-
-.field private eE:J
-
-.field private eF:Lcom/baidu/location/ICav;
-
-.field private eG:J
-
-.field private eH:Lcom/baidu/location/ICu$ICa;
-
-.field private eI:D
-
-.field private eJ:Lcom/baidu/location/ICau$ICb;
-
-.field private eK:Z
-
-.field private eL:D
-
-.field private eM:Z
-
-.field private eN:Z
-
-.field private eO:Lcom/baidu/location/BDLocation$ICa;
-
-.field private eP:Lcom/baidu/location/BDLocation;
-
-.field private eQ:Lcom/baidu/location/BDLocation;
-
-.field final eR:I
-
-.field private eS:Ljava/lang/String;
-
-.field final et:Landroid/os/Handler;
-
-.field final ey:I
-
 .field public ez:Lcom/baidu/location/ICaj$ICa;
+
+.field private volatile isZeA:Z
+
+.field private isZeK:Z
+
+.field private isZeM:Z
+
+.field private isZeN:Z
+
+.field private mBDLocationeP:Lcom/baidu/location/BDLocation;
+
+.field private mBDLocationeQ:Lcom/baidu/location/BDLocation;
+
+.field private mDeI:D
+
+.field private mDeL:D
+
+.field final mHandleret:Landroid/os/Handler;
+
+.field private mICaeH:Lcom/baidu/location/ICu$ICa;
+
+.field private mICaeO:Lcom/baidu/location/BDLocation$ICa;
+
+.field private mICaveF:Lcom/baidu/location/ICav;
+
+.field private mICbeJ:Lcom/baidu/location/ICau$ICb;
+
+.field private mIeC:I
+
+.field final mIeR:I
+
+.field final mIey:I
+
+.field private mJeD:J
+
+.field private mJeE:J
+
+.field private mJeG:J
+
+.field private mStringeS:Ljava/lang/String;
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICak;->eB:Lcom/baidu/location/ICak;
+    sput-object v0, Lcom/baidu/location/ICak;->mICakeB:Lcom/baidu/location/ICak;
 
     return-void
 .end method
@@ -80,53 +80,53 @@
 
     const/16 v0, 0x7d0
 
-    iput v0, p0, Lcom/baidu/location/ICak;->eR:I
+    iput v0, p0, Lcom/baidu/location/ICak;->mIeR:I
 
     const/16 v0, 0x3e8
 
-    iput v0, p0, Lcom/baidu/location/ICak;->ey:I
+    iput v0, p0, Lcom/baidu/location/ICak;->mIey:I
 
-    iput-boolean v5, p0, Lcom/baidu/location/ICak;->eM:Z
+    iput-boolean v5, p0, Lcom/baidu/location/ICak;->isZeM:Z
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     iput-object v1, p0, Lcom/baidu/location/ICak;->ez:Lcom/baidu/location/ICaj$ICa;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
-    iput-boolean v5, p0, Lcom/baidu/location/ICak;->eN:Z
+    iput-boolean v5, p0, Lcom/baidu/location/ICak;->isZeN:Z
 
-    iput-boolean v4, p0, Lcom/baidu/location/ICak;->eA:Z
+    iput-boolean v4, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
-    iput-boolean v4, p0, Lcom/baidu/location/ICak;->eK:Z
+    iput-boolean v4, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
-    iput-wide v2, p0, Lcom/baidu/location/ICak;->eE:J
+    iput-wide v2, p0, Lcom/baidu/location/ICak;->mJeE:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICak;->eG:J
+    iput-wide v2, p0, Lcom/baidu/location/ICak;->mJeG:J
 
     new-instance v0, Lcom/baidu/location/ICaj$ICb;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaj$ICb;-><init>(Lcom/baidu/location/ICaj;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->et:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mHandleret:Landroid/os/Handler;
 
-    iput-object v1, p0, Lcom/baidu/location/ICak;->eO:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v1, p0, Lcom/baidu/location/ICak;->mICaeO:Lcom/baidu/location/BDLocation$ICa;
 
-    iput-wide v2, p0, Lcom/baidu/location/ICak;->eD:J
+    iput-wide v2, p0, Lcom/baidu/location/ICak;->mJeD:J
 
     new-instance v0, Lcom/baidu/location/ICav;
 
     invoke-direct {v0}, Lcom/baidu/location/ICav;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     new-instance v0, Lcom/baidu/location/ICaj$ICa;
 
@@ -150,7 +150,7 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICak;->ex:Lcom/baidu/location/ICau$ICb;
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     iget-object v1, p0, Lcom/baidu/location/ICak;->ex:Lcom/baidu/location/ICau$ICb;
 
@@ -176,7 +176,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eA:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
     invoke-direct {p0}, Lcom/baidu/location/ICak;->aK()V
 
@@ -186,7 +186,7 @@
 .method public static aF()Lcom/baidu/location/ICak;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICak;->eB:Lcom/baidu/location/ICak;
+    sget-object v0, Lcom/baidu/location/ICak;->mICakeB:Lcom/baidu/location/ICak;
 
     if-nez v0, :cond_0
 
@@ -194,10 +194,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICak;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICak;->eB:Lcom/baidu/location/ICak;
+    sput-object v0, Lcom/baidu/location/ICak;->mICakeB:Lcom/baidu/location/ICak;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICak;->eB:Lcom/baidu/location/ICak;
+    sget-object v0, Lcom/baidu/location/ICak;->mICakeB:Lcom/baidu/location/ICak;
 
     return-object v0
 .end method
@@ -205,7 +205,7 @@
 .method private aI()V
     .locals 4
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eN:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeN:Z
 
     if-eqz v0, :cond_1
 
@@ -216,7 +216,7 @@
     return-void
 
     :cond_1
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eA:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
     if-nez v0, :cond_0
 
@@ -232,9 +232,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eK:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->et:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mHandleret:Landroid/os/Handler;
 
     new-instance v1, Lcom/baidu/location/ICak$ICa;
 
@@ -257,7 +257,7 @@
 .method private aK()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_0
 
@@ -278,7 +278,7 @@
 
     const/4 v4, 0x0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eA:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
     if-eqz v0, :cond_0
 
@@ -290,7 +290,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICak;->eE:J
+    iget-wide v2, p0, Lcom/baidu/location/ICak;->mJeE:J
 
     sub-long/2addr v0, v2
 
@@ -300,7 +300,7 @@
 
     if-gez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_1
 
@@ -308,7 +308,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICk;->do(Lcom/baidu/location/BDLocation;)V
 
@@ -323,17 +323,17 @@
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICc;->if(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-boolean v5, p0, Lcom/baidu/location/ICak;->eA:Z
+    iput-boolean v5, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
     invoke-direct {p0, v0}, Lcom/baidu/location/ICak;->if(Lcom/baidu/location/ICu$ICa;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eM:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeM:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     invoke-direct {p0, v0}, Lcom/baidu/location/ICak;->if(Lcom/baidu/location/ICau$ICb;)Z
 
@@ -341,19 +341,19 @@
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eM:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeM:Z
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_3
 
-    iget v0, p0, Lcom/baidu/location/ICak;->eC:I
+    iget v0, p0, Lcom/baidu/location/ICak;->mIeC:I
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_2
 
@@ -361,7 +361,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICak;->eG:J
+    iget-wide v2, p0, Lcom/baidu/location/ICak;->mJeG:J
 
     sub-long/2addr v0, v2
 
@@ -371,18 +371,18 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
-    iput-object v4, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iput-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
     :cond_2
     invoke-static {}, Lcom/baidu/location/ICk;->q()Lcom/baidu/location/ICk;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICk;->do(Lcom/baidu/location/BDLocation;)V
 
@@ -397,7 +397,7 @@
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-eqz v0, :cond_4
 
@@ -405,7 +405,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICk;->do(Lcom/baidu/location/BDLocation;)V
 
@@ -433,7 +433,7 @@
     goto/16 :goto_0
 
     :cond_5
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
     if-eqz v1, :cond_6
 
@@ -445,7 +445,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -455,7 +455,7 @@
 
     move-result-object v0
 
-    iput-object v4, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iput-object v4, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
     :cond_6
     iget-object v1, p0, Lcom/baidu/location/ICak;->ez:Lcom/baidu/location/ICaj$ICa;
@@ -464,26 +464,26 @@
 
     iget-object v0, p0, Lcom/baidu/location/ICak;->eu:Lcom/baidu/location/ICu$ICa;
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
     iget-object v0, p0, Lcom/baidu/location/ICak;->ex:Lcom/baidu/location/ICau$ICb;
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eN:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeN:Z
 
     if-ne v0, v5, :cond_7
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eN:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeN:Z
 
     :cond_7
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICak;->eE:J
+    iput-wide v0, p0, Lcom/baidu/location/ICak;->mJeE:J
 
     goto/16 :goto_0
 .end method
@@ -517,9 +517,9 @@
 
     new-array v8, v0, [F
 
-    iget-wide v0, p0, Lcom/baidu/location/ICak;->eL:D
+    iget-wide v0, p0, Lcom/baidu/location/ICak;->mDeL:D
 
-    iget-wide v2, p0, Lcom/baidu/location/ICak;->eI:D
+    iget-wide v2, p0, Lcom/baidu/location/ICak;->mDeI:D
 
     invoke-virtual {v10}, Lcom/baidu/location/BDLocation;->getLatitude()D
 
@@ -541,11 +541,11 @@
 
     if-gez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eO:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaeO:Lcom/baidu/location/BDLocation$ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eO:Lcom/baidu/location/BDLocation$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaeO:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {v10, v0}, Lcom/baidu/location/BDLocation;->if(Lcom/baidu/location/BDLocation$ICa;)V
 
@@ -576,7 +576,7 @@
 .method static synthetic do(Lcom/baidu/location/ICak;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eK:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
     return v0
 .end method
@@ -615,7 +615,7 @@
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    iput v1, p0, Lcom/baidu/location/ICak;->eC:I
+    iput v1, p0, Lcom/baidu/location/ICak;->mIeC:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -736,7 +736,7 @@
 .method static synthetic if(Lcom/baidu/location/ICak;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICak;->eK:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
     return p1
 .end method
@@ -854,17 +854,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
-    iget-object v2, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v2, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v0, v1, v2}, Lcom/baidu/location/ICj;->if(Lcom/baidu/location/ICu$ICa;Lcom/baidu/location/ICau$ICb;)V
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eM:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeM:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-nez v0, :cond_1
 
@@ -886,11 +886,11 @@
     invoke-virtual {v0, v1, v3}, Lcom/baidu/location/ICk;->if(Lcom/baidu/location/BDLocation;I)V
 
     :goto_0
-    iput-object v4, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
-    iput-object v4, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iput-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICav;->cm()V
 
@@ -903,7 +903,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v0, v1, v3}, Lcom/baidu/location/ICk;->if(Lcom/baidu/location/BDLocation;I)V
 
@@ -913,7 +913,7 @@
 .method public aD()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eK:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
     if-eqz v0, :cond_0
 
@@ -921,7 +921,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eK:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeK:Z
 
     :cond_0
     return-void
@@ -932,7 +932,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eA:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
     invoke-virtual {p0}, Lcom/baidu/location/ICak;->aG()V
 
@@ -944,9 +944,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICav;->cm()V
 
@@ -956,7 +956,7 @@
 .method public aH()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICak;->eM:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICak;->isZeM:Z
 
     return v0
 .end method
@@ -966,11 +966,11 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eN:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeN:Z
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICak;->eA:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICak;->isZeA:Z
 
     return-void
 .end method
@@ -1012,25 +1012,25 @@
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/baidu/location/ICak;->eD:J
+    iput-wide v4, p0, Lcom/baidu/location/ICak;->mJeD:J
 
     invoke-virtual {v0}, Lcom/baidu/location/BDLocation;->bx()Lcom/baidu/location/BDLocation$ICa;
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/baidu/location/ICak;->eO:Lcom/baidu/location/BDLocation$ICa;
+    iput-object v4, p0, Lcom/baidu/location/ICak;->mICaeO:Lcom/baidu/location/BDLocation$ICa;
 
     invoke-virtual {v0}, Lcom/baidu/location/BDLocation;->getLongitude()D
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/baidu/location/ICak;->eI:D
+    iput-wide v4, p0, Lcom/baidu/location/ICak;->mDeI:D
 
     invoke-virtual {v0}, Lcom/baidu/location/BDLocation;->getLatitude()D
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/baidu/location/ICak;->eL:D
+    iput-wide v4, p0, Lcom/baidu/location/ICak;->mDeL:D
 
     :cond_0
     invoke-virtual {v0}, Lcom/baidu/location/BDLocation;->getNetworkLocationType()Ljava/lang/String;
@@ -1065,9 +1065,9 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICak;->eG:J
+    iput-wide v2, p0, Lcom/baidu/location/ICak;->mJeG:J
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     :goto_0
     return-void
@@ -1079,10 +1079,10 @@
 
     if-nez v4, :cond_5
 
-    sput-boolean v1, Lcom/baidu/location/ICaa;->gs:Z
+    sput-boolean v1, Lcom/baidu/location/ICaa;->isZgs:Z
 
     :goto_1
-    iput-object v9, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iput-object v9, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v0}, Lcom/baidu/location/BDLocation;->bv()I
 
@@ -1102,9 +1102,9 @@
 
     new-instance v4, Lcom/baidu/location/ICs;
 
-    iget-object v5, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iget-object v5, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
-    iget-object v6, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v6, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     invoke-direct {v4, v5, v6, v1}, Lcom/baidu/location/ICs;-><init>(Lcom/baidu/location/ICu$ICa;Lcom/baidu/location/ICau$ICb;Z)V
 
@@ -1129,11 +1129,11 @@
 
     if-eqz v4, :cond_9
 
-    iget-object v4, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     if-eqz v4, :cond_9
 
-    iget-object v4, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v4}, Lcom/baidu/location/BDLocation;->getLocType()I
 
@@ -1143,7 +1143,7 @@
 
     const-string/jumbo v4, "wf"
 
-    iget-object v5, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v5, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v5}, Lcom/baidu/location/BDLocation;->getNetworkLocationType()Ljava/lang/String;
 
@@ -1159,7 +1159,7 @@
 
     move-result-wide v4
 
-    iget-wide v6, p0, Lcom/baidu/location/ICak;->eG:J
+    iget-wide v6, p0, Lcom/baidu/location/ICak;->mJeG:J
 
     sub-long/2addr v4, v6
 
@@ -1169,7 +1169,7 @@
 
     if-gez v4, :cond_9
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eQ:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeQ:Lcom/baidu/location/BDLocation;
 
     :goto_2
     invoke-static {}, Lcom/baidu/location/ICz;->bc()Lcom/baidu/location/ICz;
@@ -1188,7 +1188,7 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iget-object v4, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     invoke-virtual {v2, v4, v8}, Lcom/baidu/location/ICk;->if(Lcom/baidu/location/BDLocation;I)V
 
@@ -1202,7 +1202,7 @@
 
     if-nez v1, :cond_4
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     :cond_4
     :goto_4
@@ -1220,17 +1220,17 @@
 
     if-eq v0, v1, :cond_8
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v1, :cond_8
 
-    iget-object v1, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v1, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v1, v0}, Lcom/baidu/location/ICau$ICb;->do(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
     :goto_5
     invoke-static {}, Lcom/baidu/location/ICa1;->ct()Lcom/baidu/location/ICa1;
@@ -1239,9 +1239,9 @@
 
     sget-object v1, Lcom/baidu/location/ICak;->er:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/baidu/location/ICak;->eH:Lcom/baidu/location/ICu$ICa;
+    iget-object v2, p0, Lcom/baidu/location/ICak;->mICaeH:Lcom/baidu/location/ICu$ICa;
 
-    iget-object v4, p0, Lcom/baidu/location/ICak;->eJ:Lcom/baidu/location/ICau$ICb;
+    iget-object v4, p0, Lcom/baidu/location/ICak;->mICbeJ:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v0, v1, v2, v4, v3}, Lcom/baidu/location/ICa1;->if(Ljava/lang/String;Lcom/baidu/location/ICu$ICa;Lcom/baidu/location/ICau$ICb;Lcom/baidu/location/BDLocation;)V
 
@@ -1256,7 +1256,7 @@
     goto/16 :goto_0
 
     :cond_5
-    sput-boolean v2, Lcom/baidu/location/ICaa;->gs:Z
+    sput-boolean v2, Lcom/baidu/location/ICaa;->isZgs:Z
 
     goto/16 :goto_1
 
@@ -1271,21 +1271,21 @@
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/baidu/location/ICak;->eG:J
+    iput-wide v4, p0, Lcom/baidu/location/ICak;->mJeG:J
 
     goto :goto_3
 
     :cond_7
-    iput-object v9, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object v9, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
-    iget-object v0, p0, Lcom/baidu/location/ICak;->eF:Lcom/baidu/location/ICav;
+    iget-object v0, p0, Lcom/baidu/location/ICak;->mICaveF:Lcom/baidu/location/ICav;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICav;->cm()V
 
     goto :goto_4
 
     :cond_8
-    iput-object v9, p0, Lcom/baidu/location/ICak;->eS:Ljava/lang/String;
+    iput-object v9, p0, Lcom/baidu/location/ICak;->mStringeS:Ljava/lang/String;
 
     goto :goto_5
 
@@ -1308,7 +1308,7 @@
 
     invoke-virtual {p0}, Lcom/baidu/location/ICak;->aG()V
 
-    iput-object p1, p0, Lcom/baidu/location/ICak;->eP:Lcom/baidu/location/BDLocation;
+    iput-object p1, p0, Lcom/baidu/location/ICak;->mBDLocationeP:Lcom/baidu/location/BDLocation;
 
     return-void
 .end method

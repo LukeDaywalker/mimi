@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICl;
+.field final synthetic mICla:Lcom/baidu/location/ICl;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICl;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICl$ICa;->a:Lcom/baidu/location/ICl;
+    iput-object p1, p0, Lcom/baidu/location/ICl$ICa;->mICla:Lcom/baidu/location/ICl;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -34,7 +34,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICl$ICa;->a:Lcom/baidu/location/ICl;
+    iget-object v0, p0, Lcom/baidu/location/ICl$ICa;->mICla:Lcom/baidu/location/ICl;
 
     invoke-static {v0}, Lcom/baidu/location/ICl;->if(Lcom/baidu/location/ICl;)Landroid/os/Handler;
 

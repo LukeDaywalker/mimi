@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+.field final synthetic mTagFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->a:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->mTagFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->a:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->mTagFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;)Landroid/content/Context;
 
@@ -47,7 +47,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->a:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;->mTagFeedItemBuildera:Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;)Landroid/content/Context;
 

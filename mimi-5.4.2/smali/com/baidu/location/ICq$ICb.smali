@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field final synthetic dv:Lcom/baidu/location/ICq;
+.field isZdw:Z
 
-.field dw:Z
+.field private mArrayListdx:Ljava/util/ArrayList;
 
-.field private dx:Ljava/util/ArrayList;
+.field final synthetic mICqdv:Lcom/baidu/location/ICq;
 
-.field dy:I
+.field mIdy:I
 
-.field dz:I
+.field mIdz:I
 
 
 # direct methods
@@ -20,19 +20,19 @@
 
     const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICq$ICb;->dv:Lcom/baidu/location/ICq;
+    iput-object p1, p0, Lcom/baidu/location/ICq$ICb;->mICqdv:Lcom/baidu/location/ICq;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->dw:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->isZdw:Z
 
-    iput v0, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iput v0, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
-    iput v0, p0, Lcom/baidu/location/ICq$ICb;->dy:I
+    iput v0, p0, Lcom/baidu/location/ICq$ICb;->mIdy:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -62,14 +62,14 @@
 
     iput v0, p0, Lcom/baidu/location/ICq$ICb;->c8:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
     move v1, v2
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -77,7 +77,7 @@
 
     if-ge v1, v0, :cond_1
 
-    iget v0, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iget v0, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     if-ne v0, v6, :cond_0
 
@@ -109,7 +109,7 @@
 
     move-result-object v5
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -157,7 +157,7 @@
 
     move-result-object v5
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -217,7 +217,7 @@
 
     const/4 v5, 0x1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->dw:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->isZdw:Z
 
     if-eqz v0, :cond_0
 
@@ -231,32 +231,32 @@
 
     if-le v0, v2, :cond_1
 
-    iget v0, p0, Lcom/baidu/location/ICq$ICb;->dy:I
+    iget v0, p0, Lcom/baidu/location/ICq$ICb;->mIdy:I
 
     sget v2, Lcom/baidu/location/ICq$ICb;->c6:I
 
     if-ge v0, v2, :cond_1
 
-    iget v0, p0, Lcom/baidu/location/ICq$ICb;->dy:I
+    iget v0, p0, Lcom/baidu/location/ICq$ICb;->mIdy:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICq$ICb;->dy:I
+    iput v0, p0, Lcom/baidu/location/ICq$ICb;->mIdy:I
 
     goto :goto_0
 
     :cond_1
-    iput v1, p0, Lcom/baidu/location/ICq$ICb;->dy:I
+    iput v1, p0, Lcom/baidu/location/ICq$ICb;->mIdy:I
 
-    iput-boolean v5, p0, Lcom/baidu/location/ICq$ICb;->dw:Z
+    iput-boolean v5, p0, Lcom/baidu/location/ICq$ICb;->isZdw:Z
 
-    iput v1, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iput v1, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -265,7 +265,7 @@
     if-ge v0, v5, :cond_6
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     if-nez v0, :cond_3
 
@@ -273,15 +273,15 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     :cond_3
-    iput v1, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iput v1, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     move v0, v1
 
     :cond_4
-    iget v2, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iget v2, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     if-ge v2, v6, :cond_c
 
@@ -292,11 +292,11 @@
     :goto_1
     if-nez v2, :cond_9
 
-    iget v4, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iget v4, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     if-eq v4, v5, :cond_9
 
-    iput v6, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iput v6, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     :try_start_0
     sget v4, Lcom/baidu/location/ICc;->ba:I
@@ -321,11 +321,11 @@
 
     :cond_6
     :goto_3
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -334,9 +334,9 @@
     if-ge v0, v5, :cond_b
 
     :cond_7
-    iput-object v3, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICq$ICb;->dw:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICq$ICb;->isZdw:Z
 
     goto :goto_0
 
@@ -368,12 +368,12 @@
     goto :goto_2
 
     :cond_9
-    iput v5, p0, Lcom/baidu/location/ICq$ICb;->dz:I
+    iput v5, p0, Lcom/baidu/location/ICq$ICb;->mIdz:I
 
     goto :goto_2
 
     :cond_a
-    iget-object v4, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -409,11 +409,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->dx:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICq$ICb;->mArrayListdx:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -429,7 +429,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->dw:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICq$ICb;->isZdw:Z
 
     return-void
 .end method

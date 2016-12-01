@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+.field final synthetic mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 871
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     .line 872
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -87,7 +87,7 @@
     if-ne p2, v0, :cond_0
 
     .line 970
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0, p3}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
@@ -154,7 +154,7 @@
     move-result-object v3
 
     .line 922
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -162,7 +162,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->L(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -170,7 +170,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->z(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/util/List;
 
@@ -183,7 +183,7 @@
     if-nez v1, :cond_1
 
     .line 923
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->z(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/util/List;
 
@@ -209,7 +209,7 @@
     .line 924
     sget-object v5, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->TAG:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v6}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -225,7 +225,7 @@
 
     .line 928
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->y(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -239,7 +239,7 @@
 
     .line 936
     :goto_2
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->y(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -296,7 +296,7 @@
     invoke-virtual {v2, v1, v0, v3}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 945
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Landroid/widget/EditText;
 
@@ -318,7 +318,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 950
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->D(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
     .line 951
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->D(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 
     .line 954
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -349,13 +349,13 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->M(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -368,19 +368,19 @@
     if-eqz v0, :cond_4
 
     .line 955
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->OUTSIDER:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     new-instance v2, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->x(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -392,11 +392,11 @@
 
     .line 958
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->getIntent()Landroid/content/Intent;
 
@@ -405,7 +405,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 959
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->finish()V
 
@@ -413,7 +413,7 @@
 
     .line 930
     :cond_5
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->y(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -444,7 +444,7 @@
 
     .line 932
     :cond_6
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->y(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -492,7 +492,7 @@
 
     .prologue
     .line 977
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mStringd:Ljava/lang/String;
 
     .line 978
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->j()V
@@ -549,7 +549,7 @@
     if-eqz v1, :cond_0
 
     .line 879
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
@@ -568,7 +568,7 @@
     .line 882
     const-string/jumbo v1, "content"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->d:Ljava/lang/String;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mStringd:Ljava/lang/String;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d(Ljava/lang/String;)Ljava/lang/String;
 
@@ -583,7 +583,7 @@
     .line 883
     const-string/jumbo v5, "strangerEnabled"
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->K(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Landroid/widget/CheckBox;
 
@@ -607,7 +607,7 @@
     .line 884
     const-string/jumbo v1, "type"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->y(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -616,7 +616,7 @@
     invoke-interface {v4, v1, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 885
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -627,7 +627,7 @@
     .line 886
     const-string/jumbo v1, "circleId"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->w(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -637,7 +637,7 @@
 
     .line 888
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->l(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
@@ -648,7 +648,7 @@
     .line 889
     const-string/jumbo v1, "guidanceId"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->l(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
@@ -662,7 +662,7 @@
 
     .line 892
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->z(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/util/List;
 
@@ -677,7 +677,7 @@
     .line 893
     const-string/jumbo v1, "labels[]"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->z(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/util/List;
 
@@ -689,7 +689,7 @@
     :cond_3
     const-string/jumbo v1, "anonymous"
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->r(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
@@ -738,7 +738,7 @@
     .line 899
     const-string/jumbo v0, "coordtype"
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
@@ -752,7 +752,7 @@
 
     .line 901
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->D(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 
@@ -796,7 +796,7 @@
     :cond_7
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICv;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->D(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Ljava/lang/String;
 

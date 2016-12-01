@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+.field final synthetic mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 37
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)Landroid/widget/ProgressBar;
 
@@ -38,14 +38,14 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;Z)Z
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)V
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICp;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)Landroid/widget/ProgressBar;
 

@@ -4,11 +4,13 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private i:Ljava/util/List;
+.field private isZj:Z
+
+.field private mListi:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -18,8 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private j:Z
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/AppEventManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/AppEventManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .line 25
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->j:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->isZj:Z
 
     .line 29
     iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     .line 30
     return-void
@@ -73,7 +73,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 20
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->j:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->isZj:Z
 
     return p1
 .end method
@@ -98,7 +98,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -128,7 +128,7 @@
     if-nez v0, :cond_0
 
     .line 54
-    sget-object v0, Lcom/wumii/android/mimi/manager/AppEventManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/AppEventManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "eventsStr can not be empty"
 
@@ -143,7 +143,7 @@
     move-exception v0
 
     .line 50
-    sget-object v3, Lcom/wumii/android/mimi/manager/AppEventManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/AppEventManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "Conversion events to json error"
 
@@ -176,7 +176,7 @@
     .line 62
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->j:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->isZj:Z
 
     .line 64
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
@@ -206,11 +206,11 @@
 
     .prologue
     .line 37
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->j:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->isZj:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -239,7 +239,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     new-instance v1, Lcom/wumii/android/mimi/network/domain/Event;
 
@@ -258,7 +258,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->i:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AppEventManager;->mListi:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(Ljava/util/List;)V
 

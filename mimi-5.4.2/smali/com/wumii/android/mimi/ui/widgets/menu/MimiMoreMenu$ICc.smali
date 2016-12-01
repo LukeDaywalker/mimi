@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+.field final synthetic mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;)Landroid/widget/PopupWindow;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;)Landroid/widget/PopupWindow;
 
@@ -49,7 +49,7 @@
 
     .line 41
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
@@ -58,7 +58,7 @@
     if-eqz v0, :cond_1
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;->mMimiMoreMenua:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 

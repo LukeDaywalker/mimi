@@ -100,7 +100,7 @@
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/circle/GroupContact;->modifiedName:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

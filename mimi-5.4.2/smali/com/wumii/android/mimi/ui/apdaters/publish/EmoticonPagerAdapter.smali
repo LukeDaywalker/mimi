@@ -7,11 +7,13 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:I
+.field private mIb:I
 
-.field private c:Ljava/util/List;
+.field private mId:I
+
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -21,8 +23,6 @@
         }
     .end annotation
 .end field
-
-.field private d:I
 
 
 # direct methods
@@ -34,10 +34,10 @@
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     .line 32
-    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mIb:I
 
     .line 34
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -50,14 +50,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mId:I
 
     .line 35
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     .line 36
     return-void
@@ -85,9 +85,9 @@
     add-int/lit8 v1, v0, 0x14
 
     .line 90
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -109,9 +109,9 @@
 
     .prologue
     .line 108
-    iget v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mIb:I
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->d:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mId:I
 
     mul-int/lit8 v1, v1, 0x2
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -171,7 +171,7 @@
     const/4 v2, -0x1
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -182,7 +182,7 @@
     .line 64
     new-instance v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -206,7 +206,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 68
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -221,7 +221,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 69
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     const v2, 0x7f0602e6
 
@@ -242,7 +242,7 @@
     :cond_0
     new-instance v0, Landroid/widget/GridView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/widget/GridView;-><init>(Landroid/content/Context;)V
 
@@ -257,11 +257,11 @@
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setNumColumns(I)V
 
     .line 78
-    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->d:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mId:I
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->d:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mId:I
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->d:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mId:I
 
     invoke-virtual {v0, v1, v4, v2, v3}, Landroid/widget/GridView;->setPadding(IIII)V
 
@@ -282,7 +282,7 @@
     .line 81
     new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->b(I)Ljava/util/List;
 
@@ -329,7 +329,7 @@
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     .line 40
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c()V
@@ -361,7 +361,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -377,7 +377,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

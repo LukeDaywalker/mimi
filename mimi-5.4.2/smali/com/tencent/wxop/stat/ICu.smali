@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field private a:J
+.field private mIb:I
 
-.field private b:I
+.field private mId:I
 
-.field private c:Ljava/lang/String;
+.field private mJa:J
 
-.field private d:I
+.field private mStringc:Ljava/lang/String;
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -24,19 +24,19 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/tencent/wxop/stat/ICu;->a:J
+    iput-wide v0, p0, Lcom/tencent/wxop/stat/ICu;->mJa:J
 
-    iput v2, p0, Lcom/tencent/wxop/stat/ICu;->b:I
-
-    const-string/jumbo v0, ""
-
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICu;->c:Ljava/lang/String;
-
-    iput v2, p0, Lcom/tencent/wxop/stat/ICu;->d:I
+    iput v2, p0, Lcom/tencent/wxop/stat/ICu;->mIb:I
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICu;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICu;->mStringc:Ljava/lang/String;
+
+    iput v2, p0, Lcom/tencent/wxop/stat/ICu;->mId:I
+
+    const-string/jumbo v0, ""
+
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICu;->mStringe:Ljava/lang/String;
 
     return-void
 .end method
@@ -53,40 +53,40 @@
     :try_start_0
     const-string/jumbo v1, "tm"
 
-    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICu;->a:J
+    iget-wide v2, p0, Lcom/tencent/wxop/stat/ICu;->mJa:J
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     const-string/jumbo v1, "st"
 
-    iget v2, p0, Lcom/tencent/wxop/stat/ICu;->b:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICu;->mIb:I
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICu;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICu;->mStringc:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
     const-string/jumbo v1, "dm"
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICu;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICu;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_0
     const-string/jumbo v1, "pt"
 
-    iget v2, p0, Lcom/tencent/wxop/stat/ICu;->d:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICu;->mId:I
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICu;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICu;->mStringe:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
     const-string/jumbo v1, "rip"
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICu;->e:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICu;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -117,7 +117,7 @@
 .method public final a(I)V
     .locals 0
 
-    iput p1, p0, Lcom/tencent/wxop/stat/ICu;->b:I
+    iput p1, p0, Lcom/tencent/wxop/stat/ICu;->mIb:I
 
     return-void
 .end method
@@ -125,7 +125,7 @@
 .method public final a(J)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/tencent/wxop/stat/ICu;->a:J
+    iput-wide p1, p0, Lcom/tencent/wxop/stat/ICu;->mJa:J
 
     return-void
 .end method
@@ -133,7 +133,7 @@
 .method public final a(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICu;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICu;->mStringc:Ljava/lang/String;
 
     return-void
 .end method
@@ -141,7 +141,7 @@
 .method public final b(I)V
     .locals 0
 
-    iput p1, p0, Lcom/tencent/wxop/stat/ICu;->d:I
+    iput p1, p0, Lcom/tencent/wxop/stat/ICu;->mId:I
 
     return-void
 .end method
@@ -149,7 +149,7 @@
 .method public final b(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICu;->e:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICu;->mStringe:Ljava/lang/String;
 
     return-void
 .end method

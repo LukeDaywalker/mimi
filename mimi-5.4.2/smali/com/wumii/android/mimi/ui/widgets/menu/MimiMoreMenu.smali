@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+.field private mICahb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+.field private mId:I
 
-.field private c:Landroid/widget/PopupWindow;
+.field private mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
-.field private d:I
+.field private mPopupWindowc:Landroid/widget/PopupWindow;
 
 
 # direct methods
@@ -39,17 +39,17 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mId:I
 
     .line 32
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu$ICc;
 
@@ -73,7 +73,7 @@
     check-cast v0, Landroid/widget/ListView;
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -98,10 +98,10 @@
 
     invoke-direct {v1, v0, v2, v3}, Landroid/widget/PopupWindow;-><init>(Landroid/view/View;II)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     new-instance v1, Landroid/graphics/drawable/ColorDrawable;
 
@@ -112,12 +112,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setOutsideTouchable(Z)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setFocusable(Z)V
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     return-object v0
 .end method
@@ -140,7 +140,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mICahb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     return-object v0
 .end method
@@ -152,7 +152,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a()V
 
@@ -165,11 +165,11 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->d:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mId:I
 
     neg-int v2, v2
 
@@ -184,7 +184,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mICahb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     .line 58
     return-void
@@ -195,7 +195,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -208,7 +208,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->notifyDataSetChanged()V
 

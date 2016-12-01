@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private e:Landroid/view/View$OnClickListener;
+.field private mOnClickListenere:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder$ICas;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->e:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->mOnClickListenere:Landroid/view/View$OnClickListener;
 
     .line 19
     return-void
@@ -41,7 +41,7 @@
     invoke-virtual {v0, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 26
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->e:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;->mOnClickListenere:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

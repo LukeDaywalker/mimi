@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+.field final synthetic mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     const-string/jumbo v2, "weixin_friends"
 
@@ -42,13 +42,13 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->j()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICg;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->k()Ljava/lang/String;
 

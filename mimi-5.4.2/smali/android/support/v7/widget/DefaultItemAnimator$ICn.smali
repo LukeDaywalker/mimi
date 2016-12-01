@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
+.field final synthetic mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-.field final synthetic b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+.field final synthetic mICpa:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
-.field final synthetic c:Landroid/support/v7/widget/DefaultItemAnimator;
+.field final synthetic mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 344
-    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->a:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
+    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mICpa:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
-    iput-object p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+    iput-object p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     const/4 v0, 0x0
 
@@ -37,9 +37,9 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->a:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mICpa:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
     iget-object v1, v1, Landroid/support/v7/widget/DefaultItemAnimator$ICp;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
 
@@ -58,7 +58,7 @@
     const/4 v2, 0x0
 
     .line 352
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     const/4 v1, 0x0
 
@@ -76,9 +76,9 @@
     invoke-static {p1, v2}, Landroid/support/v4/view/ViewCompat;->b(Landroid/view/View;F)V
 
     .line 356
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->a:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mICpa:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
     iget-object v1, v1, Landroid/support/v7/widget/DefaultItemAnimator$ICp;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
 
@@ -87,20 +87,20 @@
     invoke-virtual {v0, v1, v2}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Landroid/support/v7/widget/RecyclerView$ICbg;Z)V
 
     .line 357
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
     invoke-static {v0}, Landroid/support/v7/widget/DefaultItemAnimator;->h(Landroid/support/v7/widget/DefaultItemAnimator;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->a:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mICpa:Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
     iget-object v1, v1, Landroid/support/v7/widget/DefaultItemAnimator$ICp;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 358
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICn;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
     invoke-static {v0}, Landroid/support/v7/widget/DefaultItemAnimator;->e(Landroid/support/v7/widget/DefaultItemAnimator;)V
 

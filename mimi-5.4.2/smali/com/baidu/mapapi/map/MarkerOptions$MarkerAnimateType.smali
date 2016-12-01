@@ -14,11 +14,11 @@
 
 
 # static fields
-.field private static final synthetic a:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
-
 .field public static final enum drop:Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
 
 .field public static final enum grow:Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
+
+.field private static final synthetic mArrayMarkerAnimateTypea:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
 
 .field public static final enum none:Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
 
@@ -73,7 +73,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;->a:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
+    sput-object v0, Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;->mArrayMarkerAnimateTypea:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 .method public static values()[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;->a:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
+    sget-object v0, Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;->mArrayMarkerAnimateTypea:[Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;
 
     invoke-virtual {v0}, [Lcom/baidu/mapapi/map/MarkerOptions$MarkerAnimateType;->clone()Ljava/lang/Object;
 

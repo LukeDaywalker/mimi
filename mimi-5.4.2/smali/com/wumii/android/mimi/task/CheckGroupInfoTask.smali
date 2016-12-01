@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+.field private mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
 
 # direct methods
@@ -26,9 +26,9 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->hashCode()I
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     .line 47
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->j()V
@@ -76,7 +76,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 23
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getName()Ljava/lang/String;
 
@@ -87,7 +87,7 @@
     .line 24
     const-string/jumbo v1, "name"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getName()Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     .line 27
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getDescription()Ljava/lang/String;
 
@@ -108,7 +108,7 @@
     .line 28
     const-string/jumbo v1, "description"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getDescription()Ljava/lang/String;
 
@@ -120,7 +120,7 @@
     :cond_1
     const-string/jumbo v1, "validationNeeded"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isValidationNeeded()Z
 
@@ -133,13 +133,13 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 33
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getValidationQuestion()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -148,7 +148,7 @@
     .line 34
     const-string/jumbo v1, "validationQuestion"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckGroupInfoTask;->mGroupChatInfoa:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getValidationQuestion()Ljava/lang/String;
 

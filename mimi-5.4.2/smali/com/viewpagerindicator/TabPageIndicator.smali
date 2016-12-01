@@ -21,11 +21,11 @@
 
 .field protected f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
-.field private g:Ljava/lang/Runnable;
+.field private final mOnClickListenerh:Landroid/view/View$OnClickListener;
 
-.field private final h:Landroid/view/View$OnClickListener;
+.field private mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
-.field private i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+.field private mRunnableg:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, p0}, Lcom/viewpagerindicator/TabPageIndicator$ICd;-><init>(Lcom/viewpagerindicator/TabPageIndicator;)V
 
-    iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     .line 86
     const/4 v0, 0x0
@@ -104,7 +104,7 @@
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     return-object p1
 .end method
@@ -133,7 +133,7 @@
     invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setFocusable(Z)V
 
     .line 160
-    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -176,12 +176,12 @@
     move-result-object v0
 
     .line 125
-    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     if-eqz v1, :cond_0
 
     .line 126
-    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v1}, Lcom/viewpagerindicator/TabPageIndicator;->removeCallbacks(Ljava/lang/Runnable;)Z
 
@@ -191,10 +191,10 @@
 
     invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/TabPageIndicator$ICe;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/view/View;)V
 
-    iput-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iput-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     .line 136
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->post(Ljava/lang/Runnable;)Z
 
@@ -322,12 +322,12 @@
     invoke-virtual {p0, p1}, Lcom/viewpagerindicator/TabPageIndicator;->setCurrentItem(I)V
 
     .line 187
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     if-eqz v0, :cond_0
 
     .line 188
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/ViewPager$OnPageChangeListener;->a(I)V
 
@@ -341,12 +341,12 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     if-eqz v0, :cond_0
 
     .line 180
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/support/v4/view/ViewPager$OnPageChangeListener;->a(IFI)V
 
@@ -360,12 +360,12 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     if-eqz v0, :cond_0
 
     .line 173
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/ViewPager$OnPageChangeListener;->b(I)V
 
@@ -382,12 +382,12 @@
     invoke-super {p0}, Landroid/widget/HorizontalScrollView;->onAttachedToWindow()V
 
     .line 142
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
     .line 144
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->post(Ljava/lang/Runnable;)Z
 
@@ -404,12 +404,12 @@
     invoke-super {p0}, Landroid/widget/HorizontalScrollView;->onDetachedFromWindow()V
 
     .line 151
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
     .line 152
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->mRunnableg:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Lcom/viewpagerindicator/TabPageIndicator;->removeCallbacks(Ljava/lang/Runnable;)Z
 
@@ -620,7 +620,7 @@
 
     .prologue
     .line 263
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->i:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->mOnPageChangeListeneri:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     .line 264
     return-void

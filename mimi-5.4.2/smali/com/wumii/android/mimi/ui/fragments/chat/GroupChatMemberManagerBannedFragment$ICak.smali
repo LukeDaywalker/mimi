@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
+.field final synthetic mGroupChatMemberManagerBannedFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->a:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->mGroupChatMemberManagerBannedFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,13 +37,13 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatBannedMember;
 
     .line 85
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->a:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->mGroupChatMemberManagerBannedFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->a:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment$ICak;->mGroupChatMemberManagerBannedFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;->c(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;)Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 

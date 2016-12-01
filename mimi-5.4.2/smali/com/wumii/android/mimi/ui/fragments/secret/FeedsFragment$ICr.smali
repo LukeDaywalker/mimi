@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+.field final synthetic mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 169
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICr;->mFeedsFragmenta:Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     const/4 v1, 0x1
 

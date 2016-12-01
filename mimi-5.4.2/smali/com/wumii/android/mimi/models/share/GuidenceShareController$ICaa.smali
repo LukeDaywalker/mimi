@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->j()Ljava/lang/String;
 
@@ -52,9 +52,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
 
@@ -66,9 +66,9 @@
 
     const/4 v6, 0x0
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->b:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
+    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mICzb:Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;
 
-    iget-object v7, v7, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v7, v7, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICz;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-virtual {v7}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->k()Ljava/lang/String;
 
@@ -78,7 +78,7 @@
 
     const/4 v6, 0x1
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->a:Ljava/lang/String;
+    iget-object v7, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICaa;->mStringa:Ljava/lang/String;
 
     aput-object v7, v5, v6
 

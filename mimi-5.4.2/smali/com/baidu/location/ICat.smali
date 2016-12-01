@@ -10,43 +10,43 @@
 
 .field private static final case:I = 0x2
 
-.field private static final d:I = 0x64
-
-.field private static final e:I = 0x2
-
 .field private static final else:I = 0x1
 
 .field private static final for:Ljava/lang/String; = "Circle"
 
-.field private static final i:I = 0x3
-
 .field public static final int:I = 0x1
+
+.field private static final mId:I = 0x64
+
+.field private static final mIe:I = 0x2
+
+.field private static final mIi:I = 0x3
 
 .field private static final void:J = 0x278d00L
 
 
 # instance fields
-.field private final a:I
-
-.field private b:F
-
-.field private final c:I
-
 .field private char:Z
-
-.field private final do:Ljava/lang/String;
-
-.field private f:Z
 
 .field protected g:I
 
 .field private final goto:D
 
-.field private h:J
+.field private isZf:Z
 
-.field private if:Z
+.field private isZif:Z
 
 .field private final long:J
+
+.field private mFb:F
+
+.field private final mIa:I
+
+.field private final mIc:I
+
+.field private mJh:J
+
+.field private final mStringdo:Ljava/lang/String;
 
 .field private final new:Ljava/lang/String;
 
@@ -69,15 +69,15 @@
 
     invoke-static {p8, p9}, Lcom/baidu/location/ICat;->if(J)V
 
-    iput p1, p0, Lcom/baidu/location/ICat;->c:I
+    iput p1, p0, Lcom/baidu/location/ICat;->mIc:I
 
-    iput-object p2, p0, Lcom/baidu/location/ICat;->do:Ljava/lang/String;
+    iput-object p2, p0, Lcom/baidu/location/ICat;->mStringdo:Ljava/lang/String;
 
     iput-wide p3, p0, Lcom/baidu/location/ICat;->goto:D
 
     iput-wide p5, p0, Lcom/baidu/location/ICat;->try:D
 
-    iput p7, p0, Lcom/baidu/location/ICat;->a:I
+    iput p7, p0, Lcom/baidu/location/ICat;->mIa:I
 
     iput-wide p8, p0, Lcom/baidu/location/ICat;->long:J
 
@@ -337,7 +337,7 @@
 .method public a(F)V
     .locals 0
 
-    iput p1, p0, Lcom/baidu/location/ICat;->b:F
+    iput p1, p0, Lcom/baidu/location/ICat;->mFb:F
 
     return-void
 .end method
@@ -353,7 +353,7 @@
 .method public a(J)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/ICat;->h:J
+    iput-wide p1, p0, Lcom/baidu/location/ICat;->mJh:J
 
     return-void
 .end method
@@ -361,7 +361,7 @@
 .method public a(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICat;->if:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICat;->isZif:Z
 
     return-void
 .end method
@@ -369,7 +369,7 @@
 .method public byte()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICat;->f:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICat;->isZf:Z
 
     return v0
 .end method
@@ -395,7 +395,7 @@
     return v0
 
     :cond_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICat;->if:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICat;->isZif:Z
 
     if-eqz v0, :cond_1
 
@@ -412,7 +412,7 @@
 .method public do()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICat;->b:F
+    iget v0, p0, Lcom/baidu/location/ICat;->mFb:F
 
     return v0
 .end method
@@ -420,7 +420,7 @@
 .method public do(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICat;->f:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICat;->isZf:Z
 
     return-void
 .end method
@@ -428,7 +428,7 @@
 .method public else()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICat;->h:J
+    iget-wide v0, p0, Lcom/baidu/location/ICat;->mJh:J
 
     return-wide v0
 .end method
@@ -465,9 +465,9 @@
     :cond_3
     check-cast p1, Lcom/baidu/location/ICat;
 
-    iget v2, p0, Lcom/baidu/location/ICat;->a:I
+    iget v2, p0, Lcom/baidu/location/ICat;->mIa:I
 
-    iget v3, p1, Lcom/baidu/location/ICat;->a:I
+    iget v3, p1, Lcom/baidu/location/ICat;->mIa:I
 
     if-eq v2, v3, :cond_4
 
@@ -502,9 +502,9 @@
     goto :goto_0
 
     :cond_6
-    iget v2, p0, Lcom/baidu/location/ICat;->c:I
+    iget v2, p0, Lcom/baidu/location/ICat;->mIc:I
 
-    iget v3, p1, Lcom/baidu/location/ICat;->c:I
+    iget v3, p1, Lcom/baidu/location/ICat;->mIc:I
 
     if-eq v2, v3, :cond_7
 
@@ -535,7 +535,7 @@
 .method public getGeofenceId()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICat;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICat;->mStringdo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -559,7 +559,7 @@
 .method public if()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICat;->if:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICat;->isZif:Z
 
     return v0
 .end method
@@ -575,7 +575,7 @@
 .method public new()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICat;->a:I
+    iget v0, p0, Lcom/baidu/location/ICat;->mIa:I
 
     return v0
 .end method
@@ -591,7 +591,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/baidu/location/ICat;->c:I
+    iget v3, p0, Lcom/baidu/location/ICat;->mIc:I
 
     invoke-static {v3}, Lcom/baidu/location/ICat;->if(I)Ljava/lang/String;
 
@@ -601,7 +601,7 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/baidu/location/ICat;->do:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICat;->mStringdo:Ljava/lang/String;
 
     aput-object v3, v1, v2
 
@@ -627,7 +627,7 @@
 
     const/4 v2, 0x4
 
-    iget v3, p0, Lcom/baidu/location/ICat;->b:F
+    iget v3, p0, Lcom/baidu/location/ICat;->mFb:F
 
     invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+.field final synthetic mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,34 +30,34 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;Z)V
 
     .line 285
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICak;->mICaja:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->mSecretActivitya:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->n(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Ljava/lang/String;
 

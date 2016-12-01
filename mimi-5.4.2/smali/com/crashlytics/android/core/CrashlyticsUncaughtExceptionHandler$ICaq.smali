@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;->mStringa:Ljava/lang/String;
 
     .line 72
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 

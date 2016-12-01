@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/CertificatePinner$ICn;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/squareup/okhttp/CertificatePinner$ICn;->mMapa:Ljava/util/Map;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 234
-    iget-object v0, p0, Lcom/squareup/okhttp/CertificatePinner$ICn;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/squareup/okhttp/CertificatePinner$ICn;->mMapa:Ljava/util/Map;
 
     return-object v0
 .end method

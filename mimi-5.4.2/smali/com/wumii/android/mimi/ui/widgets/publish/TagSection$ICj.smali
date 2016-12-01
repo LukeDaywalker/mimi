@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
+.field final synthetic mTagSectiona:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->mTagSectiona:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->mTagSectiona:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICj;->mTagSectiona:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a(Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;)Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 

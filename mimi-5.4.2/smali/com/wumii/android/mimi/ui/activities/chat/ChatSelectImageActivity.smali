@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private n:Landroid/widget/ImageView;
+.field private mCheckBoxo:Landroid/widget/CheckBox;
 
-.field private o:Landroid/widget/CheckBox;
+.field private mImageViewn:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->n:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->mImageViewn:Landroid/widget/ImageView;
 
     .line 35
     const v0, 0x7f0b0096
@@ -69,7 +69,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->o:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->mCheckBoxo:Landroid/widget/CheckBox;
 
     .line 36
     return-void
@@ -90,7 +90,7 @@
 
     const-string/jumbo v2, "autoRemove"
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->o:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->mCheckBoxo:Landroid/widget/CheckBox;
 
     invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -159,7 +159,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->n:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->mImageViewn:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 

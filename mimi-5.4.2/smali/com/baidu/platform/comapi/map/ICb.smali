@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:J
+.field mIc:I
 
-.field b:Ljava/lang/String;
+.field mId:I
 
-.field c:I
+.field mJa:J
 
-.field d:I
+.field mStringb:Ljava/lang/String;
 
 
 # direct methods

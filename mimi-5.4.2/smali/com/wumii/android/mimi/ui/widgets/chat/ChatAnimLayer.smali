@@ -4,13 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private isZg:Z
 
-.field private b:Landroid/os/Handler;
+.field private isZh:Z
 
-.field private c:Ljava/lang/Runnable;
+.field private mContexta:Landroid/content/Context;
 
-.field private d:Ljava/util/List;
+.field private mHandlerb:Landroid/os/Handler;
+
+.field private mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -21,13 +25,9 @@
     .end annotation
 .end field
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+.field private mRunnablec:Ljava/lang/Runnable;
 
-.field private f:Landroid/widget/TextView;
-
-.field private g:Z
-
-.field private h:Z
+.field private mTextViewf:Landroid/widget/TextView;
 
 
 # direct methods
@@ -43,20 +43,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->b:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mHandlerb:Landroid/os/Handler;
 
     .line 55
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mListd:Ljava/util/List;
 
     .line 64
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mContexta:Landroid/content/Context;
 
     .line 65
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
     .line 66
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 18
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->g:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->isZg:Z
 
     return p1
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 157
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->g:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->isZg:Z
 
     if-nez v0, :cond_0
 
@@ -97,7 +97,7 @@
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f040011
 
@@ -130,7 +130,7 @@
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 181
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -142,7 +142,7 @@
 
     .prologue
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -151,7 +151,7 @@
     if-nez v0, :cond_0
 
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mListd:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -184,7 +184,7 @@
     if-nez v0, :cond_0
 
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mListd:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -194,10 +194,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->a(Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;)V
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->c:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mRunnablec:Ljava/lang/Runnable;
 
     if-nez v0, :cond_0
 
@@ -220,11 +220,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICo;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->c:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mRunnablec:Ljava/lang/Runnable;
 
     .line 201
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->c:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mRunnablec:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -240,7 +240,7 @@
     const/4 v2, 0x0
 
     .line 105
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->isZh:Z
 
     if-eqz v0, :cond_1
 
@@ -251,12 +251,12 @@
 
     .line 109
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     if-eqz v0, :cond_0
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->b()I
 
@@ -265,9 +265,9 @@
     if-eqz v0, :cond_2
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->b()I
 
@@ -277,9 +277,9 @@
 
     .line 118
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->a()Ljava/lang/String;
 
@@ -288,12 +288,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 120
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->g:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->isZg:Z
 
     if-eqz v0, :cond_3
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mHandlerb:Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d()Ljava/lang/Runnable;
 
@@ -302,7 +302,7 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mHandlerb:Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d()Ljava/lang/Runnable;
 
@@ -314,7 +314,7 @@
 
     .line 116
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -322,7 +322,7 @@
 
     .line 126
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f040010
 
@@ -355,12 +355,12 @@
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 145
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->f:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mHandlerb:Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d()Ljava/lang/Runnable;
 
@@ -384,7 +384,7 @@
 
     .line 90
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->e:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->mICpe:Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;
 
     if-eq v0, p1, :cond_2
 
@@ -392,7 +392,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->b(Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;)V
 
     .line 93
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->g:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->isZg:Z
 
     if-nez v0, :cond_1
 

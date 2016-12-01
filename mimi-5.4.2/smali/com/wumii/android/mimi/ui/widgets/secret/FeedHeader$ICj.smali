@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+.field final synthetic mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     const/4 v3, 0x0
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -64,7 +64,7 @@
     :cond_0
     new-instance v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -74,7 +74,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICj;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

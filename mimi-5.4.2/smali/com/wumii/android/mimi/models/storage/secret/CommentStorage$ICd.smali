@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+.field final synthetic mCommentStoragea:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICd;->a:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage$ICd;->mCommentStoragea:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

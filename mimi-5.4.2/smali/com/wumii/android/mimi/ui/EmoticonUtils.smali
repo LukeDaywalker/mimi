@@ -4,31 +4,7 @@
 
 
 # static fields
-.field private static final a:I
-
-.field private static volatile b:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static volatile c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static volatile d:Ljava/util/HashMap;
+.field private static volatile mHashMapd:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -40,11 +16,35 @@
     .end annotation
 .end field
 
-.field private static e:Ljava/util/regex/Pattern;
+.field private static final mIa:I
 
-.field private static f:Ljava/util/regex/Pattern;
+.field private static mIg:I
 
-.field private static g:I
+.field private static volatile mListb:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static volatile mListc:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static mPatterne:Ljava/util/regex/Pattern;
+
+.field private static mPatternf:Ljava/util/regex/Pattern;
 
 
 # direct methods
@@ -61,27 +61,27 @@
 
     array-length v0, v0
 
-    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a:I
+    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIa:I
 
     .line 57
-    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     .line 58
-    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->c:Ljava/util/List;
+    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListc:Ljava/util/List;
 
     .line 59
-    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     .line 61
-    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->e:Ljava/util/regex/Pattern;
+    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatterne:Ljava/util/regex/Pattern;
 
     .line 62
-    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->f:Ljava/util/regex/Pattern;
+    sput-object v1, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatternf:Ljava/util/regex/Pattern;
 
     .line 64
     const/4 v0, 0x0
 
-    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->g:I
+    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIg:I
 
     return-void
 .end method
@@ -102,7 +102,7 @@
 
     .prologue
     .line 67
-    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a:I
+    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIa:I
 
     if-le p0, v0, :cond_0
 
@@ -250,7 +250,7 @@
 
     move-result v1
 
-    sget v3, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a:I
+    sget v3, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIa:I
 
     if-gt v1, v3, :cond_4
 
@@ -364,7 +364,7 @@
 
     .prologue
     .line 329
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -572,7 +572,7 @@
 
     .prologue
     .line 75
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -583,7 +583,7 @@
 
     .line 77
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -592,7 +592,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     .line 79
     invoke-static {}, Lcom/wumii/android/mimi/models/entities/Emoticon;->values()[Lcom/wumii/android/mimi/models/entities/Emoticon;
@@ -609,7 +609,7 @@
     aget-object v4, v2, v0
 
     .line 80
-    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/Emoticon;->id()I
 
@@ -634,7 +634,7 @@
 
     .line 85
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListb:Ljava/util/List;
 
     return-object v0
 
@@ -971,7 +971,7 @@
 
     .prologue
     .line 89
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->c:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListc:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -982,7 +982,7 @@
 
     .line 91
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->c:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListc:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -1012,7 +1012,7 @@
 
     check-cast v0, Ljava/util/List;
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->c:Ljava/util/List;
+    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListc:Ljava/util/List;
 
     .line 96
     :cond_0
@@ -1022,7 +1022,7 @@
 
     .line 98
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->c:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mListc:Ljava/util/List;
 
     return-object v0
 
@@ -1043,7 +1043,7 @@
 
     .prologue
     .line 158
-    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->g:I
+    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIg:I
 
     if-nez v0, :cond_0
 
@@ -1062,11 +1062,11 @@
 
     move-result v0
 
-    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->g:I
+    sput v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIg:I
 
     .line 161
     :cond_0
-    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->g:I
+    sget v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mIg:I
 
     return v0
 .end method
@@ -1076,7 +1076,7 @@
 
     .prologue
     .line 190
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1331,7 +1331,7 @@
 
     .prologue
     .line 129
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->e:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatterne:Ljava/util/regex/Pattern;
 
     if-nez v0, :cond_0
 
@@ -1342,11 +1342,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->e:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatterne:Ljava/util/regex/Pattern;
 
     .line 132
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->e:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatterne:Ljava/util/regex/Pattern;
 
     return-object v0
 .end method
@@ -1356,7 +1356,7 @@
 
     .prologue
     .line 136
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->f:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatternf:Ljava/util/regex/Pattern;
 
     if-nez v0, :cond_0
 
@@ -1367,11 +1367,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->f:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatternf:Ljava/util/regex/Pattern;
 
     .line 139
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->f:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mPatternf:Ljava/util/regex/Pattern;
 
     return-object v0
 .end method
@@ -1391,7 +1391,7 @@
 
     .prologue
     .line 143
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     if-nez v0, :cond_1
 
@@ -1402,7 +1402,7 @@
 
     .line 145
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -1411,7 +1411,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sput-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     .line 147
     invoke-static {}, Lcom/wumii/android/mimi/models/entities/Emoticon;->values()[Lcom/wumii/android/mimi/models/entities/Emoticon;
@@ -1428,7 +1428,7 @@
     aget-object v4, v2, v0
 
     .line 148
-    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/Emoticon;->formattedId()Ljava/lang/String;
 
@@ -1445,7 +1445,7 @@
     invoke-virtual {v5, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 149
-    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sget-object v5, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/Emoticon;->emotionName()Ljava/lang/String;
 
@@ -1474,7 +1474,7 @@
 
     .line 154
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d:Ljava/util/HashMap;
+    sget-object v0, Lcom/wumii/android/mimi/ui/EmoticonUtils;->mHashMapd:Ljava/util/HashMap;
 
     return-object v0
 

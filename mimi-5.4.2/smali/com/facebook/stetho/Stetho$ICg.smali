@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/DumperPluginsProvider;
+.field private final mDumperPluginsProvidera:Lcom/facebook/stetho/DumperPluginsProvider;
 
-.field private final b:Lcom/facebook/stetho/InspectorModulesProvider;
+.field private final mInspectorModulesProviderb:Lcom/facebook/stetho/InspectorModulesProvider;
 
 
 # direct methods
@@ -15,19 +15,19 @@
 
     .prologue
     .line 238
-    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->a:Landroid/content/Context;
+    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lcom/facebook/stetho/Stetho$ICh;-><init>(Landroid/content/Context;)V
 
     .line 239
-    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->b:Lcom/facebook/stetho/DumperPluginsProvider;
+    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->mDumperPluginsProviderb:Lcom/facebook/stetho/DumperPluginsProvider;
 
-    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->a:Lcom/facebook/stetho/DumperPluginsProvider;
+    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mDumperPluginsProvidera:Lcom/facebook/stetho/DumperPluginsProvider;
 
     .line 240
-    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->c:Lcom/facebook/stetho/InspectorModulesProvider;
+    iget-object v0, p1, Lcom/facebook/stetho/Stetho$ICj;->mInspectorModulesProviderc:Lcom/facebook/stetho/InspectorModulesProvider;
 
-    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->b:Lcom/facebook/stetho/InspectorModulesProvider;
+    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mInspectorModulesProviderb:Lcom/facebook/stetho/InspectorModulesProvider;
 
     .line 241
     return-void
@@ -59,11 +59,11 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->a:Lcom/facebook/stetho/DumperPluginsProvider;
+    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mDumperPluginsProvidera:Lcom/facebook/stetho/DumperPluginsProvider;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->a:Lcom/facebook/stetho/DumperPluginsProvider;
+    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mDumperPluginsProvidera:Lcom/facebook/stetho/DumperPluginsProvider;
 
     invoke-interface {v0}, Lcom/facebook/stetho/DumperPluginsProvider;->a()Ljava/lang/Iterable;
 
@@ -92,11 +92,11 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->b:Lcom/facebook/stetho/InspectorModulesProvider;
+    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mInspectorModulesProviderb:Lcom/facebook/stetho/InspectorModulesProvider;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->b:Lcom/facebook/stetho/InspectorModulesProvider;
+    iget-object v0, p0, Lcom/facebook/stetho/Stetho$ICg;->mInspectorModulesProviderb:Lcom/facebook/stetho/InspectorModulesProvider;
 
     invoke-interface {v0}, Lcom/facebook/stetho/InspectorModulesProvider;->a()Ljava/lang/Iterable;
 

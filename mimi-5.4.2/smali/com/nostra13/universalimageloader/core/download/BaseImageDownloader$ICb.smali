@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sput-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->c:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->d:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->e:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -104,7 +104,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->f:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -120,7 +120,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->g:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 

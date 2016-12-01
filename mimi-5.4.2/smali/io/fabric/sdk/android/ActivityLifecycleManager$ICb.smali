@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Set;
+.field private final mApplicationb:Landroid/app/Application;
+
+.field private final mSeta:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private final b:Landroid/app/Application;
 
 
 # direct methods
@@ -31,10 +31,10 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->a:Ljava/util/Set;
+    iput-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->mSeta:Ljava/util/Set;
 
     .line 87
-    iput-object p1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->b:Landroid/app/Application;
+    iput-object p1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->mApplicationb:Landroid/app/Application;
 
     .line 88
     return-void
@@ -60,7 +60,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->b:Landroid/app/Application;
+    iget-object v0, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->mApplicationb:Landroid/app/Application;
 
     if-eqz v0, :cond_0
 
@@ -70,12 +70,12 @@
     invoke-direct {v0, p0, p1}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICc;-><init>(Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)V
 
     .line 140
-    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->b:Landroid/app/Application;
+    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->mApplicationb:Landroid/app/Application;
 
     invoke-virtual {v1, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     .line 141
-    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->a:Ljava/util/Set;
+    iget-object v1, p0, Lio/fabric/sdk/android/ActivityLifecycleManager$ICb;->mSeta:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 

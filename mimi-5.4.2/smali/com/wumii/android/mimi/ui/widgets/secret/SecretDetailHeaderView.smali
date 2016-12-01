@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mLinearLayoute:Landroid/widget/LinearLayout;
 
-.field private c:Landroid/widget/ProgressBar;
+.field private mLinearLayoutf:Landroid/widget/LinearLayout;
 
-.field private d:Landroid/widget/ImageView;
+.field private mProgressBarc:Landroid/widget/ProgressBar;
 
-.field private e:Landroid/widget/LinearLayout;
+.field private mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-.field private f:Landroid/widget/LinearLayout;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -74,7 +74,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     .line 47
     const v0, 0x7f0b01bb
@@ -85,7 +85,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mTextViewb:Landroid/widget/TextView;
 
     .line 48
     const v0, 0x7f0b01bc
@@ -96,7 +96,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->c:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mProgressBarc:Landroid/widget/ProgressBar;
 
     .line 49
     const v0, 0x7f0b01bd
@@ -107,7 +107,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mImageViewd:Landroid/widget/ImageView;
 
     .line 51
     const v0, 0x7f0b01b9
@@ -118,7 +118,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->e:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     .line 52
     const v0, 0x7f0b01ba
@@ -129,7 +129,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->f:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mLinearLayoutf:Landroid/widget/LinearLayout;
 
     .line 53
     return-void
@@ -254,7 +254,7 @@
     const/4 v0, 0x0
 
     .line 66
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     invoke-virtual {v1, p1, p2, v0, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZZ)V
 
@@ -266,7 +266,7 @@
     if-eqz v1, :cond_1
 
     .line 69
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->f:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mLinearLayoutf:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->removeAllViews()V
 
@@ -276,7 +276,7 @@
     move-result-object v1
 
     .line 71
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->e:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mLinearLayoute:Landroid/widget/LinearLayout;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -315,7 +315,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 74
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->f:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mLinearLayoutf:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -343,7 +343,7 @@
     const/4 v1, 0x0
 
     .line 60
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->c:Landroid/widget/ProgressBar;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mProgressBarc:Landroid/widget/ProgressBar;
 
     if-eqz p1, :cond_0
 
@@ -353,7 +353,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 61
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->b:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mTextViewb:Landroid/widget/TextView;
 
     if-eqz p2, :cond_1
 
@@ -363,7 +363,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mImageViewd:Landroid/widget/ImageView;
 
     if-eqz p3, :cond_2
 
@@ -397,7 +397,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     return-object v0
 .end method
@@ -407,7 +407,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretDetailHeaderView;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
 

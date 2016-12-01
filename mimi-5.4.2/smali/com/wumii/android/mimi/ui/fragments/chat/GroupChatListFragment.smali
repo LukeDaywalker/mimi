@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/util/UserProfileManager;
+.field private mButtonk:Landroid/widget/Button;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/XListView;
+.field private mOrgInfoGroupChatListAdapterl:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
 
-.field private e:Landroid/view/View;
+.field private mTextViewj:Landroid/widget/TextView;
 
-.field private j:Landroid/widget/TextView;
+.field private mUserProfileManagerc:Lcom/wumii/android/mimi/util/UserProfileManager;
 
-.field private k:Landroid/widget/Button;
+.field private mViewe:Landroid/view/View;
 
-.field private l:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
+.field private mXListViewd:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
 
 # direct methods
@@ -53,11 +53,11 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->j:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mTextViewj:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->k:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mButtonk:Landroid/widget/Button;
 
     if-nez v0, :cond_1
 
@@ -80,10 +80,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->e:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mViewe:Landroid/view/View;
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mViewe:Landroid/view/View;
 
     const v1, 0x7f0b01f0
 
@@ -93,10 +93,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->j:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mTextViewj:Landroid/widget/TextView;
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mViewe:Landroid/view/View;
 
     const v1, 0x7f0b01f1
 
@@ -106,11 +106,11 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->k:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mButtonk:Landroid/widget/Button;
 
     .line 126
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->j:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mTextViewj:Landroid/widget/TextView;
 
     if-eqz p2, :cond_3
 
@@ -124,7 +124,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 127
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->k:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mButtonk:Landroid/widget/Button;
 
     if-eqz p2, :cond_4
 
@@ -138,7 +138,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setText(I)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->k:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mButtonk:Landroid/widget/Button;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;
 
@@ -147,7 +147,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->e:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mViewe:Landroid/view/View;
 
     if-nez p1, :cond_2
 
@@ -186,7 +186,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->c:Lcom/wumii/android/mimi/util/UserProfileManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mUserProfileManagerc:Lcom/wumii/android/mimi/util/UserProfileManager;
 
     return-object v0
 .end method
@@ -206,7 +206,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->d:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mXListViewd:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     return-object v0
 .end method
@@ -216,7 +216,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mViewe:Landroid/view/View;
 
     return-object v0
 .end method
@@ -226,7 +226,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->l:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mOrgInfoGroupChatListAdapterl:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
 
     return-object v0
 .end method
@@ -297,7 +297,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->c:Lcom/wumii/android/mimi/util/UserProfileManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mUserProfileManagerc:Lcom/wumii/android/mimi/util/UserProfileManager;
 
     goto :goto_0
 .end method
@@ -352,10 +352,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->d:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mXListViewd:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->d:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mXListViewd:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICaf;
 
@@ -374,12 +374,12 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->l:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mOrgInfoGroupChatListAdapterl:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->d:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mXListViewd:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->l:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->mOrgInfoGroupChatListAdapterl:Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setAdapter(Landroid/widget/ListAdapter;)V
 

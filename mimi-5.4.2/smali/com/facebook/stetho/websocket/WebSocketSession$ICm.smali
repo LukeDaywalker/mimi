@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/websocket/WebSocketSession;
+.field final synthetic mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 177
-    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 180
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-static {v0, p1}, Lcom/facebook/stetho/websocket/WebSocketSession;->a(Lcom/facebook/stetho/websocket/WebSocketSession;Ljava/io/IOException;)V
 

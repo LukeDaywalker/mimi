@@ -8,33 +8,47 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mEnablePushSettingsTaskO:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
 
-.field private D:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private E:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+.field private mSectionCheckBoxItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionCheckBoxItemViewD:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionCheckBoxItemViewH:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private H:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionCheckBoxItemViewI:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private I:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionCheckBoxItemViewJ:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private J:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionCheckBoxItemViewK:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private K:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionCheckBoxItemViewL:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private L:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionCheckBoxItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mSectionCheckBoxItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private N:Landroid/util/SparseArray;
+.field private mSectionListViewE:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+
+.field private mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+
+.field private mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+
+.field private mSectionViewo:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+
+.field private mSectionViewp:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+
+.field private mSectionViewq:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+
+.field private mSectionViewr:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+
+.field private mSparseArrayN:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -44,20 +58,6 @@
         }
     .end annotation
 .end field
-
-.field private O:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
-
-.field private o:Lcom/wumii/android/mimi/ui/widgets/SectionView;
-
-.field private p:Lcom/wumii/android/mimi/ui/widgets/SectionView;
-
-.field private q:Lcom/wumii/android/mimi/ui/widgets/SectionView;
-
-.field private r:Lcom/wumii/android/mimi/ui/widgets/SectionView;
-
-.field private s:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
-
-.field private t:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
 
 # direct methods
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -89,7 +89,7 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->N:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSparseArrayN:Landroid/util/SparseArray;
 
     .line 255
     return-void
@@ -100,7 +100,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 218
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -217,7 +217,7 @@
     invoke-virtual {p1, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;)V
 
     .line 221
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->N:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSparseArrayN:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->getId()I
 
@@ -311,22 +311,22 @@
     if-eqz p1, :cond_0
 
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewo:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewp:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewq:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewr:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -336,22 +336,22 @@
 
     .line 195
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewo:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 196
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewp:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 197
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewq:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewr:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -371,7 +371,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewo:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     .line 85
     const v0, 0x7f0b0117
@@ -382,7 +382,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewp:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     .line 86
     const v0, 0x7f0b011c
@@ -393,7 +393,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewq:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     .line 87
     const v0, 0x7f0b0121
@@ -404,7 +404,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionViewr:Lcom/wumii/android/mimi/ui/widgets/SectionView;
 
     .line 88
     const v0, 0x7f0b0113
@@ -415,7 +415,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 89
     const v0, 0x7f0b0115
@@ -426,7 +426,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 90
     const v0, 0x7f0b0116
@@ -437,7 +437,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->C:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 91
     const v0, 0x7f0b0119
@@ -448,7 +448,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewD:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 92
     const v0, 0x7f0b0118
@@ -459,7 +459,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->E:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionListViewE:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
     .line 93
     const v0, 0x7f0b011a
@@ -470,7 +470,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 94
     const v0, 0x7f0b011b
@@ -481,7 +481,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 95
     const v0, 0x7f0b011d
@@ -492,7 +492,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->H:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewH:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 96
     const v0, 0x7f0b011e
@@ -503,7 +503,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->I:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewI:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 97
     const v0, 0x7f0b011f
@@ -514,7 +514,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->J:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewJ:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 98
     const v0, 0x7f0b0122
@@ -525,7 +525,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->L:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewL:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 99
     const v0, 0x7f0b0120
@@ -536,7 +536,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->K:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewK:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 100
     return-void
@@ -549,7 +549,7 @@
     const/4 v4, 0x1
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -575,14 +575,14 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->i()V
 
     .line 173
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViews:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "enable_push_notify_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewt:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "chat_sound_settings"
 
@@ -591,49 +591,49 @@
     invoke-direct {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->C:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewC:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "chat_vibration_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewD:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "chat_disturb_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->H:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewH:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "secret_updated_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->I:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewI:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "secret_created_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 182
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->J:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewJ:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "organization_secret_created_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 183
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->K:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewK:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "organization_secret_created_settings"
 
     invoke-direct {p0, v0, v1, v4}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;Ljava/lang/String;Z)V
 
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->L:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionCheckBoxItemViewL:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     const-string/jumbo v1, "notify_on_bar_settings"
 
@@ -652,7 +652,7 @@
     const/4 v4, 0x0
 
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -678,19 +678,19 @@
     if-eqz v0, :cond_0
 
     .line 205
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 208
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -707,9 +707,9 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setText(Ljava/lang/String;)V
 
     .line 209
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -727,7 +727,7 @@
 
     .line 214
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->E:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionListViewE:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionListView;->a()V
 
@@ -736,12 +736,12 @@
 
     .line 211
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 212
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -753,7 +753,7 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->O:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mEnablePushSettingsTaskO:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
 
     if-nez v0, :cond_0
 
@@ -762,11 +762,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/EnablePushSettingsTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->O:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mEnablePushSettingsTaskO:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
 
     .line 252
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->O:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mEnablePushSettingsTaskO:Lcom/wumii/android/mimi/task/EnablePushSettingsTask;
 
     return-object v0
 .end method
@@ -778,7 +778,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->N:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSparseArrayN:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->getId()I
 
@@ -796,7 +796,7 @@
     if-ne v0, v1, :cond_1
 
     .line 125
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -925,7 +925,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 117
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->n:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mLoggern:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unsupported SectionTextItemView listener"
 
@@ -937,7 +937,7 @@
 
     .line 111
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     const-string/jumbo v1, "chat_disturb_time_from"
 
@@ -947,7 +947,7 @@
 
     .line 114
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     const-string/jumbo v1, "chat_disturb_time_to"
 
@@ -1003,15 +1003,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->M:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mPreferencesHelperM:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->F:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewF:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->G:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->mSectionTextItemViewG:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 

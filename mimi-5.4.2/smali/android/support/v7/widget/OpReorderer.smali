@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/support/v7/widget/OpReorderer$ICy;
+.field final mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iput-object p1, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
     .line 33
     return-void
@@ -50,7 +50,7 @@
     check-cast v5, Landroid/support/v7/widget/AdapterHelper$ICc;
 
     .line 47
-    iget v0, v5, Landroid/support/v7/widget/AdapterHelper$ICc;->a:I
+    iget v0, v5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIa:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -143,7 +143,7 @@
     check-cast v0, Landroid/support/v7/widget/AdapterHelper$ICc;
 
     .line 220
-    iget v0, v0, Landroid/support/v7/widget/AdapterHelper$ICc;->a:I
+    iget v0, v0, Landroid/support/v7/widget/AdapterHelper$ICc;->mIa:I
 
     const/4 v3, 0x3
 
@@ -203,9 +203,9 @@
     const/4 v0, 0x0
 
     .line 163
-    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-ge v1, v2, :cond_0
 
@@ -214,9 +214,9 @@
 
     .line 166
     :cond_0
-    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-ge v1, v2, :cond_1
 
@@ -225,45 +225,45 @@
 
     .line 169
     :cond_1
-    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-gt v1, v2, :cond_2
 
     .line 170
-    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v1, v2
 
-    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 172
     :cond_2
-    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     if-gt v1, v2, :cond_3
 
     .line 173
-    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v1, v2
 
-    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 175
     :cond_3
-    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/2addr v0, v1
 
-    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 176
     invoke-interface {p1, p2, p5}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -337,24 +337,24 @@
     const/4 v3, 0x0
 
     .line 67
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     if-ge v2, v4, :cond_2
 
     .line 69
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-ne v2, v4, :cond_11
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     sub-int/2addr v4, v5
 
@@ -364,33 +364,33 @@
 
     .line 82
     :goto_0
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-ge v4, v5, :cond_3
 
     .line 83
-    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v4, v4, -0x1
 
-    iput v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 98
     :cond_0
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-gt v4, v5, :cond_4
 
     .line 99
-    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     move-object v1, v3
 
@@ -405,7 +405,7 @@
     invoke-interface {p1, p4}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 111
-    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
     invoke-interface {v0, p3}, Landroid/support/v7/widget/OpReorderer$ICy;->a(Landroid/support/v7/widget/AdapterHelper$ICc;)V
 
@@ -416,19 +416,19 @@
 
     .line 75
     :cond_2
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/lit8 v4, v4, 0x1
 
     if-ne v2, v4, :cond_10
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v4, v5
 
@@ -443,31 +443,31 @@
 
     .line 84
     :cond_3
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v6, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v6, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v5, v6
 
     if-ge v4, v5, :cond_0
 
     .line 86
-    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 87
-    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->a:I
+    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIa:I
 
     .line 88
-    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v1, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 89
-    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     if-nez v0, :cond_1
 
@@ -475,7 +475,7 @@
     invoke-interface {p1, p4}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 91
-    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
     invoke-interface {v0, p5}, Landroid/support/v7/widget/OpReorderer$ICy;->a(Landroid/support/v7/widget/AdapterHelper$ICc;)V
 
@@ -483,31 +483,31 @@
 
     .line 100
     :cond_4
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v6, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v6, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v5, v6
 
     if-ge v4, v5, :cond_f
 
     .line 101
-    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v3, v4
 
-    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     sub-int/2addr v3, v4
 
     .line 103
-    iget-object v4, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v4, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
-    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v5, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v5, v5, 0x1
 
@@ -516,13 +516,13 @@
     move-result-object v1
 
     .line 104
-    iget v3, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v3, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     sub-int/2addr v3, v4
 
-    iput v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     goto :goto_1
 
@@ -534,71 +534,71 @@
     if-eqz v1, :cond_7
 
     .line 118
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-le v0, v2, :cond_6
 
     .line 119
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 121
     :cond_6
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-le v0, v2, :cond_7
 
     .line 122
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 125
     :cond_7
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-le v0, v2, :cond_8
 
     .line 126
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 128
     :cond_8
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-le v0, v2, :cond_9
 
     .line 129
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 148
     :cond_9
@@ -606,9 +606,9 @@
     invoke-interface {p1, p2, p5}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     .line 149
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     if-eq v0, v2, :cond_e
 
@@ -629,71 +629,71 @@
     if-eqz v1, :cond_c
 
     .line 133
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-lt v0, v2, :cond_b
 
     .line 134
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 136
     :cond_b
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-lt v0, v2, :cond_c
 
     .line 137
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, v1, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 140
     :cond_c
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-lt v0, v2, :cond_d
 
     .line 141
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 143
     :cond_d
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-lt v0, v2, :cond_9
 
     .line 144
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     goto :goto_3
 
@@ -744,35 +744,35 @@
 
     .line 182
     .line 185
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-ge v0, v2, :cond_3
 
     .line 186
-    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     move-object v0, v1
 
     .line 193
     :goto_0
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     if-gt v2, v3, :cond_4
 
     .line 194
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iput v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     .line 201
     :cond_0
@@ -780,7 +780,7 @@
     invoke-interface {p1, p4, p3}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     .line 202
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     if-lez v2, :cond_5
 
@@ -807,27 +807,27 @@
 
     .line 187
     :cond_3
-    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v2, v3
 
     if-ge v0, v2, :cond_6
 
     .line 189
-    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v0, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     .line 190
-    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v0, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     const/4 v3, 0x1
 
@@ -839,31 +839,31 @@
 
     .line 195
     :cond_4
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v4, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v3, v4
 
     if-ge v2, v3, :cond_0
 
     .line 196
-    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v1, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
-    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     add-int/2addr v1, v2
 
-    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v2, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     sub-int v2, v1, v2
 
     .line 198
-    iget-object v1, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v1, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
-    iget v3, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->b:I
+    iget v3, p3, Landroid/support/v7/widget/AdapterHelper$ICc;->mIb:I
 
     add-int/lit8 v3, v3, 0x1
 
@@ -872,11 +872,11 @@
     move-result-object v1
 
     .line 199
-    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iget v3, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     sub-int v2, v3, v2
 
-    iput v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->c:I
+    iput v2, p5, Landroid/support/v7/widget/AdapterHelper$ICc;->mIc:I
 
     goto :goto_1
 
@@ -885,7 +885,7 @@
     invoke-interface {p1, p2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 206
-    iget-object v2, p0, Landroid/support/v7/widget/OpReorderer;->a:Landroid/support/v7/widget/OpReorderer$ICy;
+    iget-object v2, p0, Landroid/support/v7/widget/OpReorderer;->mICya:Landroid/support/v7/widget/OpReorderer$ICy;
 
     invoke-interface {v2, p5}, Landroid/support/v7/widget/OpReorderer$ICy;->a(Landroid/support/v7/widget/AdapterHelper$ICc;)V
 

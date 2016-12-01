@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+.field final synthetic mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 204
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->d(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/widget/FrameLayout;
 
@@ -39,7 +39,7 @@
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICj;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->g(Lcom/wumii/android/mimi/util/BottomPanFacade;)Landroid/app/Activity;
 

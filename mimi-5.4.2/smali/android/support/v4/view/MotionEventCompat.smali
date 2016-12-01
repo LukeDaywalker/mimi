@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+.field static final mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MotionEventCompat$HoneycombMr1MotionEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     .line 162
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MotionEventCompat$GingerbreadMotionEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     goto :goto_0
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MotionEventCompat$EclairMotionEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     goto :goto_0
 
@@ -70,7 +70,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/MotionEventCompat$BaseMotionEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     goto :goto_0
 .end method
@@ -105,7 +105,7 @@
 
     .prologue
     .line 444
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->a(Landroid/view/MotionEvent;I)I
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 453
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->b(Landroid/view/MotionEvent;I)I
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 462
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->c(Landroid/view/MotionEvent;I)F
 
@@ -165,7 +165,7 @@
 
     .prologue
     .line 479
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->a(Landroid/view/MotionEvent;)I
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 471
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->d(Landroid/view/MotionEvent;I)F
 
@@ -193,7 +193,7 @@
 
     .prologue
     .line 488
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->b(Landroid/view/MotionEvent;)I
 
@@ -207,7 +207,7 @@
 
     .prologue
     .line 501
-    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->a:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->mMotionEventVersionImpla:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->e(Landroid/view/MotionEvent;I)F
 

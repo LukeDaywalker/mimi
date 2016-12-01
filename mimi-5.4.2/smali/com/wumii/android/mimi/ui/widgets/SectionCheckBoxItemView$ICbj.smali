@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field final synthetic mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
 
@@ -39,15 +39,15 @@
     if-eqz v0, :cond_0
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->a:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;->mSectionCheckBoxItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->b(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)Landroid/widget/CheckBox;
 

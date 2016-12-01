@@ -7,7 +7,13 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mContextd:Landroid/content/Context;
+
+.field private mDisplayImageOptionsc:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,12 +23,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Landroid/view/LayoutInflater;
-
-.field private c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
-
-.field private d:Landroid/content/Context;
 
 
 # direct methods
@@ -34,14 +34,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->d:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mContextd:Landroid/content/Context;
 
     .line 33
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 35
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mDisplayImageOptionsc:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 37
     return-void
@@ -82,7 +82,7 @@
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mLista:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -93,11 +93,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mLista:Ljava/util/List;
 
     .line 135
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -164,7 +164,7 @@
 
     .line 43
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030082
 
@@ -282,7 +282,7 @@
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->mDisplayImageOptionsc:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3, v0, v2, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 

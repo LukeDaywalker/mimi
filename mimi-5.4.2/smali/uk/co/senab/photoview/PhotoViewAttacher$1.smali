@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Luk/co/senab/photoview/PhotoViewAttacher;
+.field final synthetic mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 175
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 180
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-static {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher;)Landroid/view/View$OnLongClickListener;
 
@@ -36,13 +36,13 @@
     if-eqz v0, :cond_0
 
     .line 181
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-static {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher;)Landroid/view/View$OnLongClickListener;
 
     move-result-object v0
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$1;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v1}, Luk/co/senab/photoview/PhotoViewAttacher;->c()Landroid/widget/ImageView;
 

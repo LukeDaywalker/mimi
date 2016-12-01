@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v7/widget/RecyclerView;
+.field final synthetic mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 382
-    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICad;->a:Landroid/support/v7/widget/RecyclerView;
+    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICad;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,22 +30,22 @@
 
     .prologue
     .line 385
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->a:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->d:Landroid/support/v7/widget/RecyclerView$ICal;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mICald:Landroid/support/v7/widget/RecyclerView$ICal;
 
     if-eqz v0, :cond_0
 
     .line 386
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->a:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->d:Landroid/support/v7/widget/RecyclerView$ICal;
+    iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mICald:Landroid/support/v7/widget/RecyclerView$ICal;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICal;->a()V
 
     .line 388
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->a:Landroid/support/v7/widget/RecyclerView;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICad;->mRecyclerViewa:Landroid/support/v7/widget/RecyclerView;
 
     const/4 v1, 0x0
 

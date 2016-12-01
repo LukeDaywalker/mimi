@@ -3,19 +3,19 @@
 
 
 # static fields
-.field private static final f:Ljava/lang/String;
+.field private static final mStringf:Ljava/lang/String;
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:I
+.field mIb:I
 
-.field c:Lcom/baidu/mapapi/model/LatLng;
+.field mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-.field d:Lcom/baidu/mapapi/model/LatLng;
+.field mLatLngd:Lcom/baidu/mapapi/model/LatLng;
 
-.field e:Lcom/baidu/mapapi/model/LatLng;
+.field mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/Arc;->f:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/Arc;->mStringf:Ljava/lang/String;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->f:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Arc;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -58,15 +58,15 @@
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->d:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngd:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -100,13 +100,13 @@
 
     const-string/jumbo v0, "width"
 
-    iget v2, p0, Lcom/baidu/mapapi/map/Arc;->b:I
+    iget v2, p0, Lcom/baidu/mapapi/map/Arc;->mIb:I
 
     invoke-virtual {p1, v0, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     invoke-static {v1, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Ljava/util/List;Landroid/os/Bundle;)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->mIa:I
 
     invoke-static {v0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(ILandroid/os/Bundle;)V
 
@@ -116,7 +116,7 @@
 .method public getColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->mIa:I
 
     return v0
 .end method
@@ -124,7 +124,7 @@
 .method public getEndPoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -132,7 +132,7 @@
 .method public getMiddlePoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->d:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngd:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -140,7 +140,7 @@
 .method public getStartPoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -148,7 +148,7 @@
 .method public getWidth()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Arc;->mIb:I
 
     return v0
 .end method
@@ -156,7 +156,7 @@
 .method public setColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Arc;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Arc;->mIa:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -200,11 +200,11 @@
     throw v0
 
     :cond_3
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Arc;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p2, p0, Lcom/baidu/mapapi/map/Arc;->d:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p2, p0, Lcom/baidu/mapapi/map/Arc;->mLatLngd:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p3, p0, Lcom/baidu/mapapi/map/Arc;->e:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p3, p0, Lcom/baidu/mapapi/map/Arc;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -218,7 +218,7 @@
 
     if-lez p1, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Arc;->b:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Arc;->mIb:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Arc;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

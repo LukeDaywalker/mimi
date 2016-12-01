@@ -11,7 +11,7 @@
 
 .field private baos:Ljava/io/ByteArrayOutputStream;
 
-.field private ds:Ljava/net/DatagramSocket;
+.field private mDatagramSocketds:Ljava/net/DatagramSocket;
 
 .field private final port:I
 
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/net/DatagramSocket;-><init>()V
 
-    iput-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->ds:Ljava/net/DatagramSocket;
+    iput-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->mDatagramSocketds:Ljava/net/DatagramSocket;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     iput-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->address:Ljava/net/InetAddress;
 
-    iput-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->ds:Ljava/net/DatagramSocket;
+    iput-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->mDatagramSocketds:Ljava/net/DatagramSocket;
 
     return-void
 .end method
@@ -111,11 +111,11 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->ds:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->mDatagramSocketds:Ljava/net/DatagramSocket;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->ds:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->mDatagramSocketds:Ljava/net/DatagramSocket;
 
     invoke-virtual {v0, v1}, Ljava/net/DatagramSocket;->send(Ljava/net/DatagramPacket;)V
 
@@ -133,7 +133,7 @@
 .method getSendBufferSize()I
     .locals 1
 
-    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->ds:Ljava/net/DatagramSocket;
+    iget-object v0, p0, Lch/qos/logback/core/net/SyslogOutputStream;->mDatagramSocketds:Ljava/net/DatagramSocket;
 
     invoke-virtual {v0}, Ljava/net/DatagramSocket;->getSendBufferSize()I
 

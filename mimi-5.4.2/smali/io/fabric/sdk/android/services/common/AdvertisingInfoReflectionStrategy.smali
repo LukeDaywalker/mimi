@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->mContexta:Landroid/content/Context;
 
     .line 46
     return-void
@@ -202,7 +202,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->a:Landroid/content/Context;
+    iget-object v5, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->mContexta:Landroid/content/Context;
 
     aput-object v5, v3, v4
 
@@ -241,7 +241,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->mContexta:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;->a(Landroid/content/Context;)Z
 

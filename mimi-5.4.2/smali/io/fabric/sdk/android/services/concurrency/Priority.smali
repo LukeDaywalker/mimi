@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lio/fabric/sdk/android/services/concurrency/Priority;
 
-.field private static final synthetic e:[Lio/fabric/sdk/android/services/concurrency/Priority;
+.field private static final synthetic mArrayPrioritye:[Lio/fabric/sdk/android/services/concurrency/Priority;
 
 
 # direct methods
@@ -96,7 +96,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->e:[Lio/fabric/sdk/android/services/concurrency/Priority;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mArrayPrioritye:[Lio/fabric/sdk/android/services/concurrency/Priority;
 
     return-void
 .end method
@@ -187,7 +187,7 @@
 
     .prologue
     .line 23
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->e:[Lio/fabric/sdk/android/services/concurrency/Priority;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/Priority;->mArrayPrioritye:[Lio/fabric/sdk/android/services/concurrency/Priority;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/concurrency/Priority;->clone()Ljava/lang/Object;
 

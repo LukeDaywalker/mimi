@@ -25,13 +25,13 @@
 
 .field public static final enum e:Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
-.field private static final synthetic h:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
+.field private static final synthetic mArrayOrgValidationEventh:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
 
 # instance fields
-.field private f:Ljava/lang/String;
+.field private mStringf:Ljava/lang/String;
 
-.field private g:Ljava/lang/String;
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -139,7 +139,7 @@
 
     aput-object v1, v0, v8
 
-    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->h:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mArrayOrgValidationEventh:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     return-void
 .end method
@@ -160,10 +160,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 14
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->f:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mStringf:Ljava/lang/String;
 
     .line 15
-    iput-object p4, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->g:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mStringg:Ljava/lang/String;
 
     .line 16
     return-void
@@ -190,7 +190,7 @@
 
     .prologue
     .line 3
-    sget-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->h:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mArrayOrgValidationEventh:[Lcom/wumii/android/mimi/models/OrgValidationEvent;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/models/OrgValidationEvent;->clone()Ljava/lang/Object;
 
@@ -208,7 +208,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -218,7 +218,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/OrgValidationEvent;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method

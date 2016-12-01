@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field private isZc:Z
 
-.field private b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private c:Z
+.field private mScopedUserd:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
-.field private d:Lcom/wumii/android/mimi/models/entities/ScopedUser;
+.field private mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->d:Lcom/wumii/android/mimi/models/entities/ScopedUser;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mScopedUserd:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     .line 53
     return-void
@@ -45,7 +45,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 37
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 28
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 29
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->e:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mStringe:Ljava/lang/String;
 
     .line 61
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 44
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->c:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->isZc:Z
 
     .line 45
     return-void
@@ -89,7 +89,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method
@@ -99,7 +99,7 @@
 
     .prologue
     .line 40
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->c:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->isZc:Z
 
     return v0
 .end method
@@ -109,7 +109,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->d:Lcom/wumii/android/mimi/models/entities/ScopedUser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mScopedUserd:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method

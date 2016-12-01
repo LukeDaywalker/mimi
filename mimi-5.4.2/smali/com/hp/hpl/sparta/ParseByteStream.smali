@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private c:Lcom/hp/hpl/sparta/ParseCharStream;
+.field private mParseCharStreamc:Lcom/hp/hpl/sparta/ParseCharStream;
 
 
 # direct methods
@@ -89,7 +89,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/hp/hpl/sparta/ParseCharStream;-><init>(Ljava/lang/String;Ljava/io/Reader;Lcom/hp/hpl/sparta/ParseLog;Ljava/lang/String;Lcom/hp/hpl/sparta/ParseHandler;)V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->c:Lcom/hp/hpl/sparta/ParseCharStream;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->mParseCharStreamc:Lcom/hp/hpl/sparta/ParseCharStream;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Lcom/hp/hpl/sparta/EncodingMismatchException; {:try_start_1 .. :try_end_1} :catch_1
@@ -171,7 +171,7 @@
 
     invoke-direct/range {v5 .. v10}, Lcom/hp/hpl/sparta/ParseCharStream;-><init>(Ljava/lang/String;Ljava/io/Reader;Lcom/hp/hpl/sparta/ParseLog;Ljava/lang/String;Lcom/hp/hpl/sparta/ParseHandler;)V
 
-    iput-object v5, p0, Lcom/hp/hpl/sparta/ParseByteStream;->c:Lcom/hp/hpl/sparta/ParseCharStream;
+    iput-object v5, p0, Lcom/hp/hpl/sparta/ParseByteStream;->mParseCharStreamc:Lcom/hp/hpl/sparta/ParseCharStream;
     :try_end_4
     .catch Lcom/hp/hpl/sparta/EncodingMismatchException; {:try_start_4 .. :try_end_4} :catch_1
 
@@ -251,7 +251,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/hp/hpl/sparta/ParseCharStream;-><init>(Ljava/lang/String;Ljava/io/Reader;Lcom/hp/hpl/sparta/ParseLog;Ljava/lang/String;Lcom/hp/hpl/sparta/ParseHandler;)V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->c:Lcom/hp/hpl/sparta/ParseCharStream;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->mParseCharStreamc:Lcom/hp/hpl/sparta/ParseCharStream;
 
     goto/16 :goto_2
 
@@ -861,7 +861,7 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->c:Lcom/hp/hpl/sparta/ParseCharStream;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/ParseByteStream;->mParseCharStreamc:Lcom/hp/hpl/sparta/ParseCharStream;
 
     invoke-virtual {v0}, Lcom/hp/hpl/sparta/ParseCharStream;->toString()Ljava/lang/String;
 

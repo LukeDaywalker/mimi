@@ -6,7 +6,7 @@
 # instance fields
 .field protected a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
-.field private b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemBaseRadioFragment;->mActivityEventManagerb:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 29
     return-void

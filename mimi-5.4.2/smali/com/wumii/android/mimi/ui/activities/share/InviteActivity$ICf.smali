@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->CONTACT:Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->WEIXIN_TIMELINE:Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->WEIXIN_MESSAGE:Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->QZONE:Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICf;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->QQ:Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 

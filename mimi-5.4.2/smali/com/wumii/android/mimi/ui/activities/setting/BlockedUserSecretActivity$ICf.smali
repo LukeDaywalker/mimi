@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+.field final synthetic mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/secret/FeedObserver;-><init>()V
 
@@ -46,12 +46,12 @@
     if-ne v0, v1, :cond_1
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
 
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -59,7 +59,7 @@
 
     new-instance v1, Ljava/util/Date;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->c(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setRefreshTime(Ljava/util/Date;)V
 
     .line 183
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -89,7 +89,7 @@
 
     .line 184
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->e(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
@@ -102,7 +102,7 @@
     if-eqz v0, :cond_0
 
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->f(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Landroid/widget/TextView;
 
@@ -120,20 +120,20 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->g(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Ljava/util/List;
 
     move-result-object v0
 
     .line 192
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->e(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->g(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Ljava/util/List;
 
@@ -142,7 +142,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;->a(Ljava/util/List;)V
 
     .line 193
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->f(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Landroid/widget/TextView;
 
@@ -160,7 +160,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 194
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -187,7 +187,7 @@
     const/4 v2, 0x1
 
     .line 199
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -203,7 +203,7 @@
     if-eqz v0, :cond_0
 
     .line 201
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getErrMsg()Ljava/lang/String;
 
@@ -217,7 +217,7 @@
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICf;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     const v1, 0x7f06038b
 

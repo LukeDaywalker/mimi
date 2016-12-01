@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+.field mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Landroid/widget/Filter;-><init>()V
 
     .line 40
-    iput-object p1, p0, Landroid/support/v4/widget/CursorFilter;->a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+    iput-object p1, p0, Landroid/support/v4/widget/CursorFilter;->mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     .line 41
     return-void
@@ -29,7 +29,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     check-cast p1, Landroid/database/Cursor;
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     invoke-interface {v0, p1}, Landroid/support/v4/widget/CursorFilter$CursorFilterClient;->a(Ljava/lang/CharSequence;)Landroid/database/Cursor;
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     invoke-interface {v0}, Landroid/support/v4/widget/CursorFilter$CursorFilterClient;->a()Landroid/database/Cursor;
 
@@ -108,7 +108,7 @@
     if-eq v1, v0, :cond_0
 
     .line 68
-    iget-object v1, p0, Landroid/support/v4/widget/CursorFilter;->a:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
+    iget-object v1, p0, Landroid/support/v4/widget/CursorFilter;->mCursorFilterClienta:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     iget-object v0, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
 

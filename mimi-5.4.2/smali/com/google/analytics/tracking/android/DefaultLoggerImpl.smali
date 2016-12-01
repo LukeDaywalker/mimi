@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Lcom/google/analytics/tracking/android/Logger$ICat;
+.field private mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 18
     sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->b:Lcom/google/analytics/tracking/android/Logger$ICat;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     .line 21
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     return-object v0
 .end method
@@ -82,7 +82,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     .line 61
     return-void
@@ -93,7 +93,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -159,7 +159,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 
@@ -192,7 +192,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/DefaultLoggerImpl;->mICata:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/Logger$ICat;->ordinal()I
 

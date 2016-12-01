@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:I
+.field private isZe:Z
 
-.field private b:I
+.field private mIa:I
 
-.field private c:I
+.field private mIb:I
 
-.field private d:Landroid/view/animation/Interpolator;
+.field private mIc:I
 
-.field private e:Z
+.field private mIf:I
 
-.field private f:I
+.field private mInterpolatord:Landroid/view/animation/Interpolator;
 
 
 # direct methods
@@ -25,11 +25,11 @@
     const/4 v1, 0x1
 
     .line 8756
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->d:Landroid/view/animation/Interpolator;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mInterpolatord:Landroid/view/animation/Interpolator;
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIc:I
 
     if-ge v0, v1, :cond_0
 
@@ -44,7 +44,7 @@
 
     .line 8759
     :cond_0
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIc:I
 
     if-ge v0, v1, :cond_1
 
@@ -79,7 +79,7 @@
     const/4 v5, 0x0
 
     .line 8731
-    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->e:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->isZe:Z
 
     if-eqz v0, :cond_3
 
@@ -87,12 +87,12 @@
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$ICbc;->a()V
 
     .line 8733
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->d:Landroid/view/animation/Interpolator;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mInterpolatord:Landroid/view/animation/Interpolator;
 
     if-nez v0, :cond_2
 
     .line 8734
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIc:I
 
     const/high16 v1, -0x80000000
 
@@ -103,22 +103,22 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->a:I
+    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIa:I
 
-    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->b:I
+    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIb:I
 
     invoke-virtual {v0, v1, v2}, Landroid/support/v7/widget/RecyclerView$ICbf;->b(II)V
 
     .line 8742
     :goto_0
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->f:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->f:I
+    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIf:I
 
     .line 8743
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->f:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIf:I
 
     const/16 v1, 0xa
 
@@ -133,7 +133,7 @@
 
     .line 8749
     :cond_0
-    iput-boolean v5, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->e:Z
+    iput-boolean v5, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->isZe:Z
 
     .line 8753
     :goto_1
@@ -145,11 +145,11 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->a:I
+    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIa:I
 
-    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->b:I
+    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIb:I
 
-    iget v3, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->c:I
+    iget v3, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIc:I
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/support/v7/widget/RecyclerView$ICbf;->a(III)V
 
@@ -161,13 +161,13 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->a:I
+    iget v1, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIa:I
 
-    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->b:I
+    iget v2, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIb:I
 
-    iget v3, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->c:I
+    iget v3, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIc:I
 
-    iget-object v4, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->d:Landroid/view/animation/Interpolator;
+    iget-object v4, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mInterpolatord:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/support/v7/widget/RecyclerView$ICbf;->a(IIILandroid/view/animation/Interpolator;)V
 
@@ -175,7 +175,7 @@
 
     .line 8751
     :cond_3
-    iput v5, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->f:I
+    iput v5, p0, Landroid/support/v7/widget/RecyclerView$ICbc;->mIf:I
 
     goto :goto_1
 .end method

@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field a:Lio/fabric/sdk/android/services/events/FilesSender;
+.field mEventFilterb:Lcom/crashlytics/android/answers/EventFilter;
 
-.field b:Lcom/crashlytics/android/answers/EventFilter;
+.field mFilesSendera:Lio/fabric/sdk/android/services/events/FilesSender;
 
-.field private final h:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+.field private final mHttpRequestFactoryh:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
 
 # direct methods
@@ -42,10 +42,10 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/answers/KeepAllEventFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->b:Lcom/crashlytics/android/answers/EventFilter;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mEventFilterb:Lcom/crashlytics/android/answers/EventFilter;
 
     .line 31
-    iput-object p4, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->h:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iput-object p4, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mHttpRequestFactoryh:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     .line 32
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->a:Lio/fabric/sdk/android/services/events/FilesSender;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mFilesSendera:Lio/fabric/sdk/android/services/events/FilesSender;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->b:Lcom/crashlytics/android/answers/EventFilter;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mEventFilterb:Lcom/crashlytics/android/answers/EventFilter;
 
     invoke-interface {v0, p1}, Lcom/crashlytics/android/answers/EventFilter;->a(Lcom/crashlytics/android/answers/SessionEvent;)Z
 
@@ -129,7 +129,7 @@
 
     iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->a:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->h:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v4, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mHttpRequestFactoryh:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     new-instance v2, Lio/fabric/sdk/android/services/common/ApiKey;
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->a:Lio/fabric/sdk/android/services/events/FilesSender;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mFilesSendera:Lio/fabric/sdk/android/services/events/FilesSender;
 
     .line 45
     iget-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
@@ -177,7 +177,7 @@
 
     invoke-direct {v0, v1}, Lcom/crashlytics/android/answers/SamplingEventFilter;-><init>(I)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->b:Lcom/crashlytics/android/answers/EventFilter;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/EnabledSessionAnalyticsManagerStrategy;->mEventFilterb:Lcom/crashlytics/android/answers/EventFilter;
 
     .line 52
     :cond_0

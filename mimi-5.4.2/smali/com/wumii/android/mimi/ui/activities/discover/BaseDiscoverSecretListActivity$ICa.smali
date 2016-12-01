@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+.field final synthetic mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/DiscoverObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -43,7 +43,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -55,7 +55,7 @@
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -73,7 +73,7 @@
     const/4 v1, 0x0
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -89,7 +89,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -101,14 +101,14 @@
 
     .line 68
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Z)V
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;)V
 
@@ -122,20 +122,20 @@
     if-eq v0, v3, :cond_1
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     new-instance v3, Ljava/util/Date;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v4, v4, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -148,13 +148,13 @@
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setRefreshTime(Ljava/util/Date;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->b(Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;)Landroid/view/View;
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -175,11 +175,11 @@
 
     .line 78
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->j()Z
 
@@ -199,7 +199,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->b(Z)V
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -221,7 +221,7 @@
     const/4 v1, 0x0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -237,7 +237,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -254,11 +254,11 @@
     move-result-object v0
 
     .line 89
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->j()Z
 
@@ -283,7 +283,7 @@
     if-eq v0, v2, :cond_3
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -299,7 +299,7 @@
     if-ne v0, v2, :cond_1
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -308,7 +308,7 @@
     .line 99
     :cond_1
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->a(Lcom/wumii/android/mimi/network/Result;)V
 
@@ -322,7 +322,7 @@
 
     .line 97
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/TagManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/TagManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -112,7 +112,7 @@
     invoke-interface {v0, v1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 176
-    invoke-static {p3}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {p3}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -125,7 +125,7 @@
 
     .line 179
     :cond_0
-    invoke-static {p4}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {p4}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -360,7 +360,7 @@
     move-result-object v8
 
     .line 126
-    sget-object v9, Lcom/wumii/android/mimi/manager/TagManager$ICbn;->a:[I
+    sget-object v9, Lcom/wumii/android/mimi/manager/TagManager$ICbn;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/enum/FeedEvent;->ordinal()I
 
@@ -479,7 +479,7 @@
     move-exception v0
 
     .line 156
-    sget-object v1, Lcom/wumii/android/mimi/manager/TagManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/TagManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle load tag secrets error"
 
@@ -612,7 +612,7 @@
     move-exception v0
 
     .line 204
-    sget-object v1, Lcom/wumii/android/mimi/manager/TagManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/TagManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle load hot tags error"
 

@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field a:Landroid/graphics/Typeface;
+.field mIb:I
 
-.field b:I
+.field mTypefacea:Landroid/graphics/Typeface;
 
 
 # direct methods
@@ -16,11 +16,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lvi/com/gdi/bgl/android/java/ICa;->a:Landroid/graphics/Typeface;
+    iput-object v0, p0, Lvi/com/gdi/bgl/android/java/ICa;->mTypefacea:Landroid/graphics/Typeface;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
+    iput v0, p0, Lvi/com/gdi/bgl/android/java/ICa;->mIb:I
 
     return-void
 .end method

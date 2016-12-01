@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:I
+.field isZc:Z
 
-.field b:I
+.field mIa:I
 
-.field c:Z
+.field mIb:I
 
-.field final synthetic d:Landroid/support/v7/widget/LinearLayoutManager;
+.field final synthetic mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
 
 # direct methods
@@ -80,17 +80,17 @@
     .line 2084
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->a:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIa:I
 
     .line 2085
     const/high16 v0, -0x80000000
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     .line 2086
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->isZc:Z
 
     .line 2087
     return-void
@@ -103,9 +103,9 @@
     const/4 v4, 0x0
 
     .line 2115
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->b()I
 
@@ -124,23 +124,23 @@
 
     .line 2120
     :cond_1
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/LinearLayoutManager;->d(Landroid/view/View;)I
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->a:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIa:I
 
     .line 2121
-    iget-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->c:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->isZc:Z
 
     if-eqz v1, :cond_2
 
     .line 2122
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -149,9 +149,9 @@
     sub-int v0, v1, v0
 
     .line 2123
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -161,9 +161,9 @@
     sub-int/2addr v0, v1
 
     .line 2125
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -171,38 +171,38 @@
 
     sub-int/2addr v1, v0
 
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     .line 2127
     if-lez v0, :cond_0
 
     .line 2128
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
     move-result v1
 
     .line 2129
-    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     sub-int v1, v2, v1
 
     .line 2130
-    iget-object v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v2, v2, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v2, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
     move-result v2
 
     .line 2131
-    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, p1}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
@@ -224,7 +224,7 @@
     if-gez v1, :cond_0
 
     .line 2137
-    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     neg-int v1, v1
 
@@ -234,24 +234,24 @@
 
     add-int/2addr v0, v2
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     goto :goto_0
 
     .line 2141
     :cond_2
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, p1}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v1
 
     .line 2142
-    iget-object v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v2, v2, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v2, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -260,15 +260,15 @@
     sub-int v2, v1, v2
 
     .line 2143
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     .line 2144
     if-lez v2, :cond_0
 
     .line 2145
-    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, p1}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
@@ -277,9 +277,9 @@
     add-int/2addr v1, v3
 
     .line 2147
-    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -288,9 +288,9 @@
     sub-int v0, v3, v0
 
     .line 2149
-    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, p1}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -299,9 +299,9 @@
     sub-int/2addr v0, v3
 
     .line 2151
-    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v3, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -320,7 +320,7 @@
     if-gez v0, :cond_0
 
     .line 2155
-    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     neg-int v0, v0
 
@@ -330,7 +330,7 @@
 
     sub-int v0, v1, v0
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     goto/16 :goto_0
 .end method
@@ -340,29 +340,29 @@
 
     .prologue
     .line 2094
-    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->isZc:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
     move-result v0
 
     :goto_0
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     .line 2097
     return-void
 
     .line 2094
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -376,22 +376,22 @@
 
     .prologue
     .line 2162
-    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->isZc:Z
 
     if-eqz v0, :cond_0
 
     .line 2163
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
     move-result v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, v1, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/OrientationHelper;->b()I
 
@@ -399,32 +399,32 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     .line 2169
     :goto_0
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/LinearLayoutManager;->d(Landroid/view/View;)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->a:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIa:I
 
     .line 2170
     return-void
 
     .line 2166
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->d:Landroid/support/v7/widget/LinearLayoutManager;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mLinearLayoutManagerd:Landroid/support/v7/widget/LinearLayoutManager;
 
-    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, v0, Landroid/support/v7/widget/LinearLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     goto :goto_0
 .end method
@@ -444,7 +444,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->a:I
+    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -456,7 +456,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->b:I
+    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -468,7 +468,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->c:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICt;->isZc:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

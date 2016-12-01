@@ -3,29 +3,29 @@
 
 
 # static fields
-.field private static final k:Ljava/lang/String;
+.field private static final mStringk:Ljava/lang/String;
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field mFi:F
 
-.field b:Lcom/baidu/mapapi/model/LatLng;
+.field mIc:I
 
-.field c:I
+.field mId:I
 
-.field d:I
+.field mIe:I
 
-.field e:I
+.field mIg:I
 
-.field f:Landroid/graphics/Typeface;
+.field mIh:I
 
-.field g:I
+.field mIj:I
 
-.field h:I
+.field mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
-.field i:F
+.field mStringa:Ljava/lang/String;
 
-.field j:I
+.field mTypefacef:Landroid/graphics/Typeface;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/Text;->k:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/Text;->mStringk:Ljava/lang/String;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->e:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Text;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Text;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -60,11 +60,11 @@
 .method a()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     invoke-virtual {v0}, Landroid/graphics/Typeface;->hashCode()I
 
@@ -91,7 +91,7 @@
 
     invoke-super {p0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v0, :cond_0
 
@@ -106,11 +106,11 @@
     :cond_0
     const-string/jumbo v0, "text"
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->a:Ljava/lang/String;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -132,23 +132,23 @@
 
     invoke-virtual {p1, v4, v6, v7}, Landroid/os/Bundle;->putDouble(Ljava/lang/String;D)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     ushr-int/lit8 v0, v0, 0x18
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     shr-int/lit8 v4, v4, 0x10
 
     and-int/lit16 v4, v4, 0xff
 
-    iget v5, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iget v5, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     shr-int/lit8 v5, v5, 0x8
 
     and-int/lit16 v5, v5, 0xff
 
-    iget v6, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iget v6, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     and-int/lit16 v6, v6, 0xff
 
@@ -160,23 +160,23 @@
 
     invoke-virtual {p1, v4, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     ushr-int/lit8 v0, v0, 0x18
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     shr-int/lit8 v4, v4, 0x10
 
     and-int/lit16 v4, v4, 0xff
 
-    iget v5, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iget v5, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     shr-int/lit8 v5, v5, 0x8
 
     and-int/lit16 v5, v5, 0xff
 
-    iget v6, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iget v6, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     and-int/lit16 v6, v6, 0xff
 
@@ -190,27 +190,27 @@
 
     const-string/jumbo v0, "font_size"
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Text;->e:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Text;->mIe:I
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     invoke-virtual {v0}, Landroid/graphics/Typeface;->hashCode()I
 
     move-result v0
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     invoke-static {v0, v4}, Lvi/com/gdi/bgl/android/java/EnvDrawText;->registFontCache(ILandroid/graphics/Typeface;)V
 
     const-string/jumbo v0, "type_face"
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     invoke-virtual {v4}, Landroid/graphics/Typeface;->hashCode()I
 
@@ -219,7 +219,7 @@
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :cond_1
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->g:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIg:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -231,7 +231,7 @@
 
     invoke-virtual {p1, v4, v0}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->h:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIh:I
 
     sparse-switch v0, :sswitch_data_0
 
@@ -243,13 +243,13 @@
 
     const-string/jumbo v0, "rotate"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Text;->i:F
+    iget v1, p0, Lcom/baidu/mapapi/map/Text;->mFi:F
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
     const-string/jumbo v0, "update"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -299,7 +299,7 @@
 .method public getAlignX()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->g:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIg:I
 
     int-to-float v0, v0
 
@@ -309,7 +309,7 @@
 .method public getAlignY()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->h:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIh:I
 
     int-to-float v0, v0
 
@@ -319,7 +319,7 @@
 .method public getBgColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     return v0
 .end method
@@ -327,7 +327,7 @@
 .method public getFontColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     return v0
 .end method
@@ -335,7 +335,7 @@
 .method public getFontSize()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->e:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mIe:I
 
     return v0
 .end method
@@ -343,7 +343,7 @@
 .method public getPosition()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -351,7 +351,7 @@
 .method public getRotate()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Text;->i:F
+    iget v0, p0, Lcom/baidu/mapapi/map/Text;->mFi:F
 
     return v0
 .end method
@@ -359,7 +359,7 @@
 .method public getText()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -367,7 +367,7 @@
 .method public getTypeface()Landroid/graphics/Typeface;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     return-object v0
 .end method
@@ -375,13 +375,13 @@
 .method public setAlign(II)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Text;->g:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Text;->mIg:I
 
-    iput p2, p0, Lcom/baidu/mapapi/map/Text;->h:I
+    iput p2, p0, Lcom/baidu/mapapi/map/Text;->mIh:I
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -393,11 +393,11 @@
 .method public setBgColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Text;->c:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Text;->mIc:I
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -409,11 +409,11 @@
 .method public setFontColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Text;->d:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Text;->mId:I
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -425,11 +425,11 @@
 .method public setFontSize(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Text;->e:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Text;->mIe:I
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -452,11 +452,11 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->b:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -468,11 +468,11 @@
 .method public setRotate(F)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Text;->i:F
+    iput p1, p0, Lcom/baidu/mapapi/map/Text;->mFi:F
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -504,11 +504,11 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -520,11 +520,11 @@
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->f:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Text;->mTypefacef:Landroid/graphics/Typeface;
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Text;->j:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Text;->mIj:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Text;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

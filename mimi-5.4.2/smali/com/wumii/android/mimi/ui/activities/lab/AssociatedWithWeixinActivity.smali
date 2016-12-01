@@ -4,13 +4,19 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Ljava/lang/String;
+.field private mButtono:Landroid/widget/Button;
 
-.field private D:Ljava/util/Map;
+.field private mDisplayImageOptionst:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+.field private mEditTextq:Landroid/widget/EditText;
+
+.field private mImageViewp:Landroid/widget/ImageView;
+
+.field private mMapD:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -22,19 +28,13 @@
     .end annotation
 .end field
 
-.field private E:Landroid/view/MenuItem;
+.field private mMenuItemE:Landroid/view/MenuItem;
 
-.field private o:Landroid/widget/Button;
+.field private mStringC:Ljava/lang/String;
 
-.field private p:Landroid/widget/ImageView;
+.field private mViewr:Landroid/view/View;
 
-.field private q:Landroid/widget/EditText;
-
-.field private r:Landroid/view/View;
-
-.field private s:Landroid/view/View;
-
-.field private t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mViews:Landroid/view/View;
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->D:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMapD:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->D:Ljava/util/Map;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMapD:Ljava/util/Map;
 
     return-object p1
 .end method
@@ -110,7 +110,7 @@
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 200
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mEditTextq:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -156,7 +156,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->E:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMenuItemE:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -169,9 +169,9 @@
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->C:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mStringC:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -195,12 +195,12 @@
     move-result v1
 
     .line 132
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->E:Landroid/view/MenuItem;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMenuItemE:Landroid/view/MenuItem;
 
     invoke-interface {v2, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 133
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->E:Landroid/view/MenuItem;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMenuItemE:Landroid/view/MenuItem;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
@@ -232,7 +232,7 @@
 
     .prologue
     .line 49
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->n:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -250,7 +250,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->o:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mButtono:Landroid/widget/Button;
 
     .line 97
     const v0, 0x7f0b0065
@@ -261,7 +261,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->p:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mImageViewp:Landroid/widget/ImageView;
 
     .line 98
     const v0, 0x7f0b0067
@@ -272,7 +272,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mEditTextq:Landroid/widget/EditText;
 
     .line 99
     const v0, 0x7f0b0062
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->r:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mViewr:Landroid/view/View;
 
     .line 100
     const v0, 0x7f0b0064
@@ -290,7 +290,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->s:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mViews:Landroid/view/View;
 
     .line 101
     return-void
@@ -303,21 +303,21 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->s:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mViews:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->r:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mViewr:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 155
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -348,9 +348,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->p:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mImageViewp:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mDisplayImageOptionst:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICb;
 
@@ -359,7 +359,7 @@
     invoke-virtual {v1, v0, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mEditTextq:Landroid/widget/EditText;
 
     invoke-virtual {v0, p2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -495,10 +495,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mDisplayImageOptionst:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mEditTextq:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICa;
 
@@ -531,7 +531,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->E:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mMenuItemE:Landroid/view/MenuItem;
 
     .line 109
     const/4 v0, 0x0
@@ -592,10 +592,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->C:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mStringC:Ljava/lang/String;
 
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->C:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mStringC:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -604,7 +604,7 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;Landroid/app/Activity;)V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->C:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->mStringC:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a(Ljava/lang/String;)V
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private c:I
+.field private isZd:Z
 
-.field private d:Z
+.field private mIc:I
 
 
 # direct methods
@@ -41,14 +41,14 @@
     if-ne v1, v0, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->isZd:Z
 
     .line 39
     invoke-virtual {v2}, Ljava/io/DataInputStream;->readUnsignedByte()I
 
     move-result v0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->c:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->mIc:I
 
     .line 40
     invoke-virtual {v2}, Ljava/io/DataInputStream;->close()V
@@ -80,7 +80,7 @@
 
     .prologue
     .line 44
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->c:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->mIc:I
 
     return v0
 .end method
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->d:Z
+    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->isZd:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Z)Ljava/lang/StringBuffer;
 
@@ -142,7 +142,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->c:I
+    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttConnack;->mIc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

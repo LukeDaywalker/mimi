@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+.field final synthetic mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 304
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -29,7 +29,7 @@
     const/4 v4, 0x0
 
     .line 308
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICf;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -49,9 +49,9 @@
 
     .line 310
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -61,13 +61,13 @@
 
     .line 313
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->e(Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -81,9 +81,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->f(Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -105,9 +105,9 @@
 
     .line 316
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -133,9 +133,9 @@
 
     .line 319
     :pswitch_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICe;->mICda:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICd;->mCircleFeedsActivityb:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

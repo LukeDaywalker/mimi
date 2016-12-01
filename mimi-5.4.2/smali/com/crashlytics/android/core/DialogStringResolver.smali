@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+.field private final mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mContexta:Landroid/content/Context;
 
     .line 41
-    iput-object p2, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iput-object p2, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     .line 42
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/crashlytics/android/core/DialogStringResolver;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mContexta:Landroid/content/Context;
 
     invoke-static {v0, p1}, Lio/fabric/sdk/android/services/common/CommonUtils;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -99,7 +99,7 @@
     .line 48
     const-string/jumbo v0, "com.crashlytics.CrashSubmissionPromptTitle"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->a:Ljava/lang/String;
 
@@ -117,7 +117,7 @@
     .line 55
     const-string/jumbo v0, "com.crashlytics.CrashSubmissionPromptMessage"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->b:Ljava/lang/String;
 
@@ -135,7 +135,7 @@
     .line 63
     const-string/jumbo v0, "com.crashlytics.CrashSubmissionSendTitle"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->c:Ljava/lang/String;
 
@@ -153,7 +153,7 @@
     .line 71
     const-string/jumbo v0, "com.crashlytics.CrashSubmissionAlwaysSendTitle"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->g:Ljava/lang/String;
 
@@ -171,7 +171,7 @@
     .line 80
     const-string/jumbo v0, "com.crashlytics.CrashSubmissionCancelTitle"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->b:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/DialogStringResolver;->mPromptSettingsDatab:Lio/fabric/sdk/android/services/settings/PromptSettingsData;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/PromptSettingsData;->e:Ljava/lang/String;
 

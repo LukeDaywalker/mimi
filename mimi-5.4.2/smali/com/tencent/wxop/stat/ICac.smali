@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sput-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->a:Lcom/tencent/wxop/stat/ICw;
 
@@ -37,7 +37,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
 
@@ -53,7 +53,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->d:Lcom/tencent/wxop/stat/ICw;
 
@@ -69,7 +69,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->e:Lcom/tencent/wxop/stat/ICw;
 
@@ -85,7 +85,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->c:Lcom/tencent/wxop/stat/ICw;
 
@@ -101,7 +101,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->b:Lcom/tencent/wxop/stat/ICw;
 
@@ -117,7 +117,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/tencent/wxop/stat/ICac;->a:[I
+    sget-object v0, Lcom/tencent/wxop/stat/ICac;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/wxop/stat/ICw;->g:Lcom/tencent/wxop/stat/ICw;
 

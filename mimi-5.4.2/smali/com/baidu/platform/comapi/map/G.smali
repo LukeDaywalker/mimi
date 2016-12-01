@@ -3,15 +3,15 @@
 
 
 # static fields
-.field private static final h:Ljava/lang/String;
+.field private static final mStringh:Ljava/lang/String;
 
 
 # instance fields
-.field e:Landroid/os/Bundle;
+.field mBundlee:Landroid/os/Bundle;
 
-.field f:Ljava/lang/String;
+.field mIg:I
 
-.field g:I
+.field mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/G;->h:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/map/G;->mStringh:Ljava/lang/String;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/G;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/G;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -50,7 +50,7 @@
 .method public a(Landroid/os/Bundle;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/G;->e:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/G;->mBundlee:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/G;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/G;->mStringf:Ljava/lang/String;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 .method public b()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/G;->e:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/G;->mBundlee:Landroid/os/Bundle;
 
     return-object v0
 .end method

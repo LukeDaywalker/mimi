@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/BaseShareImageTask;
+.field final synthetic mBaseShareImageTaska:Lcom/wumii/android/mimi/task/BaseShareImageTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICk;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICk;->mBaseShareImageTaska:Lcom/wumii/android/mimi/task/BaseShareImageTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICk;->a:Lcom/wumii/android/mimi/task/BaseShareImageTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseShareImageTask$ICk;->mBaseShareImageTaska:Lcom/wumii/android/mimi/task/BaseShareImageTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/BaseShareImageTask;->f()Z
 

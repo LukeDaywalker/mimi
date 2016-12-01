@@ -4,33 +4,13 @@
 
 
 # static fields
-.field private static a:Ljava/text/SimpleDateFormat;
+.field private static mFileFilterb:Ljava/io/FileFilter;
 
-.field private static b:Ljava/io/FileFilter;
+.field private static mSimpleDateFormata:Ljava/text/SimpleDateFormat;
 
 
 # instance fields
-.field private c:Ljava/lang/String;
-
-.field private d:I
-
-.field private e:I
-
-.field private f:I
-
-.field private g:J
-
-.field private h:Ljava/io/File;
-
-.field private i:I
-
-.field private j:Ljava/lang/String;
-
-.field private k:J
-
-.field private l:Ljava/io/FileFilter;
-
-.field private m:Ljava/util/Comparator;
+.field private mComparatorm:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -40,6 +20,26 @@
         }
     .end annotation
 .end field
+
+.field private mFileFilterl:Ljava/io/FileFilter;
+
+.field private mFileh:Ljava/io/File;
+
+.field private mId:I
+
+.field private mIe:I
+
+.field private mIf:I
+
+.field private mIi:I
+
+.field private mJg:J
+
+.field private mJk:J
+
+.field private mStringc:Ljava/lang/String;
+
+.field private mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -54,14 +54,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/b/a/Pro$ICb;->a:Ljava/text/SimpleDateFormat;
+    sput-object v0, Lcom/tencent/b/a/Pro$ICb;->mSimpleDateFormata:Ljava/text/SimpleDateFormat;
 
     .line 96
     new-instance v0, Lcom/tencent/b/a/Pro$ICc;
 
     invoke-direct {v0}, Lcom/tencent/b/a/Pro$ICc;-><init>()V
 
-    sput-object v0, Lcom/tencent/b/a/Pro$ICb;->b:Ljava/io/FileFilter;
+    sput-object v0, Lcom/tencent/b/a/Pro$ICb;->mFileFilterb:Ljava/io/FileFilter;
 
     return-void
 .end method
@@ -78,52 +78,52 @@
     .line 123
     const-string/jumbo v0, "Tracer.File"
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mStringc:Ljava/lang/String;
 
     .line 124
-    iput v1, p0, Lcom/tencent/b/a/Pro$ICb;->d:I
+    iput v1, p0, Lcom/tencent/b/a/Pro$ICb;->mId:I
 
     .line 125
-    iput v1, p0, Lcom/tencent/b/a/Pro$ICb;->e:I
+    iput v1, p0, Lcom/tencent/b/a/Pro$ICb;->mIe:I
 
     .line 126
     const/16 v0, 0x1000
 
-    iput v0, p0, Lcom/tencent/b/a/Pro$ICb;->f:I
+    iput v0, p0, Lcom/tencent/b/a/Pro$ICb;->mIf:I
 
     .line 127
     const-wide/16 v0, 0x2710
 
-    iput-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->g:J
+    iput-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->mJg:J
 
     .line 129
     const/16 v0, 0xa
 
-    iput v0, p0, Lcom/tencent/b/a/Pro$ICb;->i:I
+    iput v0, p0, Lcom/tencent/b/a/Pro$ICb;->mIi:I
 
     .line 130
     const-string/jumbo v0, ".log"
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mStringj:Ljava/lang/String;
 
     .line 131
     const-wide v0, 0x7fffffffffffffffL
 
-    iput-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->k:J
+    iput-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->mJk:J
 
     .line 133
     new-instance v0, Lcom/tencent/b/a/Pro$ICd;
 
     invoke-direct {v0, p0}, Lcom/tencent/b/a/Pro$ICd;-><init>(Lcom/tencent/b/a/Pro$ICb;)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->l:Ljava/io/FileFilter;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mFileFilterl:Ljava/io/FileFilter;
 
     .line 156
     new-instance v0, Lcom/tencent/b/a/Pro$ICe;
 
     invoke-direct {v0, p0}, Lcom/tencent/b/a/Pro$ICe;-><init>(Lcom/tencent/b/a/Pro$ICb;)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->m:Ljava/util/Comparator;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mComparatorm:Ljava/util/Comparator;
 
     .line 204
     invoke-virtual {p0, p1}, Lcom/tencent/b/a/Pro$ICb;->c(Ljava/io/File;)V
@@ -162,7 +162,7 @@
     .prologue
     .line 115
     :try_start_0
-    sget-object v0, Lcom/tencent/b/a/Pro$ICb;->a:Ljava/text/SimpleDateFormat;
+    sget-object v0, Lcom/tencent/b/a/Pro$ICb;->mSimpleDateFormata:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -429,7 +429,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/tencent/b/a/Pro$ICb;->a:Ljava/text/SimpleDateFormat;
+    sget-object v2, Lcom/tencent/b/a/Pro$ICb;->mSimpleDateFormata:Ljava/text/SimpleDateFormat;
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -453,7 +453,7 @@
 
     .prologue
     .line 461
-    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->d:I
+    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->mId:I
 
     .line 462
     return-void
@@ -464,7 +464,7 @@
 
     .prologue
     .line 440
-    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->mStringc:Ljava/lang/String;
 
     .line 441
     return-void
@@ -475,7 +475,7 @@
 
     .prologue
     .line 391
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->m:Ljava/util/Comparator;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mComparatorm:Ljava/util/Comparator;
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -504,7 +504,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/b/a/Pro$ICb;->b:Ljava/io/FileFilter;
+    sget-object v1, Lcom/tencent/b/a/Pro$ICb;->mFileFilterb:Ljava/io/FileFilter;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->listFiles(Ljava/io/FileFilter;)[Ljava/io/File;
 
@@ -558,7 +558,7 @@
 
     .prologue
     .line 482
-    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->e:I
+    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->mIe:I
 
     .line 483
     return-void
@@ -569,7 +569,7 @@
 
     .prologue
     .line 519
-    iput-wide p1, p0, Lcom/tencent/b/a/Pro$ICb;->g:J
+    iput-wide p1, p0, Lcom/tencent/b/a/Pro$ICb;->mJg:J
 
     .line 520
     return-void
@@ -580,7 +580,7 @@
 
     .prologue
     .line 582
-    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->j:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->mStringj:Ljava/lang/String;
 
     .line 583
     return-void
@@ -591,7 +591,7 @@
 
     .prologue
     .line 309
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->l:Ljava/io/FileFilter;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mFileFilterl:Ljava/io/FileFilter;
 
     invoke-virtual {p1, v0}, Ljava/io/File;->listFiles(Ljava/io/FileFilter;)[Ljava/io/File;
 
@@ -605,7 +605,7 @@
 
     .prologue
     .line 429
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -615,7 +615,7 @@
 
     .prologue
     .line 498
-    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->f:I
+    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->mIf:I
 
     .line 499
     return-void
@@ -626,7 +626,7 @@
 
     .prologue
     .line 602
-    iput-wide p1, p0, Lcom/tencent/b/a/Pro$ICb;->k:J
+    iput-wide p1, p0, Lcom/tencent/b/a/Pro$ICb;->mJk:J
 
     .line 603
     return-void
@@ -637,7 +637,7 @@
 
     .prologue
     .line 540
-    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->h:Ljava/io/File;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICb;->mFileh:Ljava/io/File;
 
     .line 541
     return-void
@@ -648,7 +648,7 @@
 
     .prologue
     .line 450
-    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->d:I
+    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->mId:I
 
     return v0
 .end method
@@ -658,7 +658,7 @@
 
     .prologue
     .line 561
-    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->i:I
+    iput p1, p0, Lcom/tencent/b/a/Pro$ICb;->mIi:I
 
     .line 562
     return-void
@@ -669,7 +669,7 @@
 
     .prologue
     .line 471
-    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->e:I
+    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->mIe:I
 
     return v0
 .end method
@@ -679,7 +679,7 @@
 
     .prologue
     .line 487
-    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->f:I
+    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->mIf:I
 
     return v0
 .end method
@@ -689,7 +689,7 @@
 
     .prologue
     .line 508
-    iget-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->g:J
+    iget-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->mJg:J
 
     return-wide v0
 .end method
@@ -699,7 +699,7 @@
 
     .prologue
     .line 529
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->h:Ljava/io/File;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mFileh:Ljava/io/File;
 
     return-object v0
 .end method
@@ -709,7 +709,7 @@
 
     .prologue
     .line 550
-    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->i:I
+    iget v0, p0, Lcom/tencent/b/a/Pro$ICb;->mIi:I
 
     return v0
 .end method
@@ -719,7 +719,7 @@
 
     .prologue
     .line 571
-    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro$ICb;->mStringj:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -729,7 +729,7 @@
 
     .prologue
     .line 592
-    iget-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->k:J
+    iget-wide v0, p0, Lcom/tencent/b/a/Pro$ICb;->mJk:J
 
     return-wide v0
 .end method

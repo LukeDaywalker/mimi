@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+.field private isZf:Z
 
-.field private e:J
+.field final synthetic mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
-.field private f:Z
+.field private final mHttpEngineg:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-.field private final g:Lcom/squareup/okhttp/internal/http/HttpEngine;
+.field private mJe:J
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     .prologue
     .line 450
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     const/4 v0, 0x0
 
@@ -28,15 +28,15 @@
     .line 446
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     .line 447
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->f:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->isZf:Z
 
     .line 451
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->g:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpEngineg:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     .line 452
     return-void
@@ -49,7 +49,7 @@
     const-wide/16 v4, 0x0
 
     .line 475
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     const-wide/16 v2, -0x1
 
@@ -58,7 +58,7 @@
     if-eqz v0, :cond_0
 
     .line 476
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSource;
 
@@ -69,7 +69,7 @@
     .line 479
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSource;
 
@@ -79,10 +79,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     .line 480
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSource;
 
@@ -97,7 +97,7 @@
     move-result-object v0
 
     .line 481
-    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     cmp-long v1, v2, v4
 
@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    iget-wide v4, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v4, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -174,7 +174,7 @@
 
     .line 488
     :cond_2
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     cmp-long v0, v0, v4
 
@@ -183,7 +183,7 @@
     .line 489
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->f:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->isZf:Z
 
     .line 490
     new-instance v0, Lcom/squareup/okhttp/Headers$ICab;
@@ -191,12 +191,12 @@
     invoke-direct {v0}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
 
     .line 491
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-virtual {v1, v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/Headers$ICab;)V
 
     .line 492
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->g:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpEngineg:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Headers$ICab;->a()Lcom/squareup/okhttp/Headers;
 
@@ -269,7 +269,7 @@
 
     .line 457
     :cond_1
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->f:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->isZf:Z
 
     if-nez v2, :cond_3
 
@@ -280,13 +280,13 @@
 
     .line 459
     :cond_3
-    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     cmp-long v2, v2, v4
 
     if-eqz v2, :cond_4
 
-    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     cmp-long v2, v2, v0
 
@@ -297,19 +297,19 @@
     invoke-direct {p0}, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->c()V
 
     .line 461
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->f:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->isZf:Z
 
     if-eqz v2, :cond_2
 
     .line 464
     :cond_5
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSource;
 
     move-result-object v2
 
-    iget-wide v4, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v4, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     invoke-static {p2, p3, v4, v5}, Ljava/lang/Math;->min(JJ)J
 
@@ -338,11 +338,11 @@
 
     .line 469
     :cond_6
-    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iget-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->e:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->mJe:J
 
     move-wide v0, v2
 
@@ -365,7 +365,7 @@
 
     .line 499
     :cond_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICk;->isZf:Z
 
     if-eqz v0, :cond_1
 

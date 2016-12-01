@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static a:Lorg/slf4j/Logger;
+.field private static mLoggera:Lorg/slf4j/Logger;
 
-.field private static b:Lcom/wumii/android/mimi/util/UserProfileManager;
+.field private static mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/models/service/UserService;
+.field private mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 28
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->b:Lcom/wumii/android/mimi/util/UserProfileManager;
+    sget-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
     if-nez v0, :cond_0
 
@@ -66,11 +66,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/util/UserProfileManager;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->b:Lcom/wumii/android/mimi/util/UserProfileManager;
+    sput-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
     .line 34
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->b:Lcom/wumii/android/mimi/util/UserProfileManager;
+    sget-object v0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
     return-object v0
 .end method
@@ -132,7 +132,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -143,7 +143,7 @@
     move-result-object v0
 
     .line 47
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -154,7 +154,7 @@
     move-result-object v1
 
     .line 48
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -229,7 +229,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -247,7 +247,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->c:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager;->mUserServicec:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 

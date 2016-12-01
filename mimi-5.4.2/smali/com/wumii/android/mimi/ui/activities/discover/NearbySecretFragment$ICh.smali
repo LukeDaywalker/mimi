@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+.field final synthetic mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 111
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/DiscoverObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->b(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -45,7 +45,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -57,7 +57,7 @@
 
     .line 118
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -77,7 +77,7 @@
     const/4 v1, 0x0
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->b(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -95,7 +95,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -107,7 +107,7 @@
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -116,7 +116,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Z)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->d(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)V
 
@@ -130,7 +130,7 @@
     if-eq v0, v3, :cond_1
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -139,7 +139,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -147,7 +147,7 @@
 
     new-instance v3, Ljava/util/Date;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->b(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -162,13 +162,13 @@
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setRefreshTime(Ljava/util/Date;)V
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->e(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Landroid/view/View;
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->b(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -191,13 +191,13 @@
 
     .line 136
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->d()Z
 
@@ -217,7 +217,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->b(Z)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -241,7 +241,7 @@
     const/4 v1, 0x0
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->b(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -259,7 +259,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -277,13 +277,13 @@
     move-result-object v0
 
     .line 147
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->d()Z
 
@@ -308,7 +308,7 @@
     if-eq v0, v2, :cond_3
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -326,7 +326,7 @@
     if-ne v0, v2, :cond_0
 
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -344,7 +344,7 @@
 
     .line 155
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->mNearbySecretFragmenta:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->c(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 

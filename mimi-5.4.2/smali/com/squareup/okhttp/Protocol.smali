@@ -23,11 +23,11 @@
 
 .field public static final enum d:Lcom/squareup/okhttp/Protocol;
 
-.field private static final synthetic f:[Lcom/squareup/okhttp/Protocol;
+.field private static final synthetic mArrayProtocolf:[Lcom/squareup/okhttp/Protocol;
 
 
 # instance fields
-.field private final e:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -108,7 +108,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/squareup/okhttp/Protocol;->f:[Lcom/squareup/okhttp/Protocol;
+    sput-object v0, Lcom/squareup/okhttp/Protocol;->mArrayProtocolf:[Lcom/squareup/okhttp/Protocol;
 
     return-void
 .end method
@@ -128,7 +128,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 74
-    iput-object p3, p0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     .line 75
     return-void
@@ -141,7 +141,7 @@
     .line 83
     sget-object v0, Lcom/squareup/okhttp/Protocol;->a:Lcom/squareup/okhttp/Protocol;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -159,7 +159,7 @@
     :cond_0
     sget-object v0, Lcom/squareup/okhttp/Protocol;->b:Lcom/squareup/okhttp/Protocol;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -175,7 +175,7 @@
     :cond_1
     sget-object v0, Lcom/squareup/okhttp/Protocol;->d:Lcom/squareup/okhttp/Protocol;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -191,7 +191,7 @@
     :cond_2
     sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -251,7 +251,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/squareup/okhttp/Protocol;->f:[Lcom/squareup/okhttp/Protocol;
+    sget-object v0, Lcom/squareup/okhttp/Protocol;->mArrayProtocolf:[Lcom/squareup/okhttp/Protocol;
 
     invoke-virtual {v0}, [Lcom/squareup/okhttp/Protocol;->clone()Ljava/lang/Object;
 
@@ -269,7 +269,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/squareup/okhttp/Protocol;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Protocol;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method

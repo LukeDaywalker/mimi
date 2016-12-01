@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Landroid/content/SharedPreferences;
+.field private static mSharedPreferencesa:Landroid/content/SharedPreferences;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/stat/a/ICm;->a:Landroid/content/SharedPreferences;
+    sput-object v0, Lcom/tencent/stat/a/ICm;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 .method static a(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/a/ICm;->a:Landroid/content/SharedPreferences;
+    sget-object v0, Lcom/tencent/stat/a/ICm;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
@@ -60,10 +60,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/a/ICm;->a:Landroid/content/SharedPreferences;
+    sput-object v0, Lcom/tencent/stat/a/ICm;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICm;->a:Landroid/content/SharedPreferences;
+    sget-object v0, Lcom/tencent/stat/a/ICm;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     return-object v0
 .end method

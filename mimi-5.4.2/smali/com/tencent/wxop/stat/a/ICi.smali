@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/wxop/stat/b/ICd;
+.field private mICda:Lcom/tencent/wxop/stat/b/ICd;
 
-.field private m:Lorg/json/JSONObject;
+.field private mJSONObjectm:Lorg/json/JSONObject;
 
 
 # direct methods
@@ -16,15 +16,15 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->m:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->mJSONObjectm:Lorg/json/JSONObject;
 
     new-instance v0, Lcom/tencent/wxop/stat/b/ICd;
 
     invoke-direct {v0, p1}, Lcom/tencent/wxop/stat/b/ICd;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->a:Lcom/tencent/wxop/stat/b/ICd;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->mICda:Lcom/tencent/wxop/stat/b/ICd;
 
-    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICi;->m:Lorg/json/JSONObject;
+    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICi;->mJSONObjectm:Lorg/json/JSONObject;
 
     return-void
 .end method
@@ -51,13 +51,13 @@
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->m:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->mJSONObjectm:Lorg/json/JSONObject;
 
     if-eqz v0, :cond_1
 
     const-string/jumbo v0, "cfg"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICi;->m:Lorg/json/JSONObject;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICi;->mJSONObjectm:Lorg/json/JSONObject;
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -75,7 +75,7 @@
     invoke-virtual {p1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_2
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->a:Lcom/tencent/wxop/stat/b/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICi;->mICda:Lcom/tencent/wxop/stat/b/ICd;
 
     const/4 v1, 0x0
 

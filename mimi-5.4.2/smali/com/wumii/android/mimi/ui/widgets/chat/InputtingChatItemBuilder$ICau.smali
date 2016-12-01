@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field final synthetic mInputtingChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->a:Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->mInputtingChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->mImageViewb:Landroid/widget/ImageView;
 
     .line 48
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/InputtingChatItemBuilder$ICau;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method

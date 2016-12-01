@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 144
-    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 147
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->mActivitya:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->a:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -51,7 +51,7 @@
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 148
-    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;->mActivitya:Landroid/app/Activity;
 
     const-string/jumbo v2, "\u63a8\u8350\u65e0\u79d8\u5230"
 

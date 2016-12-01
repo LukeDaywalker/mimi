@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field final a:Ljavax/net/ssl/SSLContext;
+.field final mSSLContexta:Ljavax/net/ssl/SSLContext;
 
 
 # direct methods
@@ -20,13 +20,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICt$ICa;->a:Ljavax/net/ssl/SSLContext;
+    iput-object v0, p0, Lcom/baidu/location/ICt$ICa;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     new-instance v0, Lcom/baidu/location/ICt$ICa$1;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICt$ICa$1;-><init>(Lcom/baidu/location/ICt$ICa;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICt$ICa;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v1, p0, Lcom/baidu/location/ICt$ICa;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     const/4 v2, 0x1
 
@@ -46,7 +46,7 @@
 .method public createSocket()Ljava/net/Socket;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$ICa;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/baidu/location/ICt$ICa;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
@@ -62,7 +62,7 @@
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$ICa;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/baidu/location/ICt$ICa;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 

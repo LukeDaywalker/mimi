@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/tauth/Pro$ICb;
+.field private mActivityn:Landroid/app/Activity;
 
-.field private m:Ljava/lang/String;
+.field private mHandlerp:Landroid/os/Handler;
 
-.field private n:Landroid/app/Activity;
+.field private mICba:Lcom/tencent/tauth/Pro$ICb;
 
-.field private o:Lcom/tencent/tauth/Pro$ICb;
+.field private mICbo:Lcom/tencent/tauth/Pro$ICb;
 
-.field private p:Landroid/os/Handler;
+.field private mStringm:Ljava/lang/String;
 
 
 # direct methods
@@ -28,14 +28,14 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/connect/b/Pro$ICb;-><init>(Lcom/tencent/connect/b/Pro;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->o:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->mICbo:Lcom/tencent/tauth/Pro$ICb;
 
     .line 367
     new-instance v0, Lcom/tencent/connect/b/Pro$ICc;
 
     invoke-direct {v0, p0}, Lcom/tencent/connect/b/Pro$ICc;-><init>(Lcom/tencent/connect/b/Pro;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->p:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->mHandlerp:Landroid/os/Handler;
 
     .line 88
     return-void
@@ -76,7 +76,7 @@
     :cond_0
     const-string/jumbo v1, "scope"
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->m:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -303,7 +303,7 @@
     .line 274
     new-instance v1, Lcom/tencent/connect/b/Pro$ICk;
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->n:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mActivityn:Landroid/app/Activity;
 
     const-string/jumbo v3, "action_login"
 
@@ -387,7 +387,7 @@
     :cond_0
     const-string/jumbo v2, "scope"
 
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->m:Ljava/lang/String;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -556,15 +556,15 @@
     .line 308
     new-instance v0, Lcom/tencent/connect/b/Pro$ICd;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-direct {v0, p0, v1}, Lcom/tencent/connect/b/Pro$ICd;-><init>(Lcom/tencent/connect/b/Pro;Lcom/tencent/tauth/Pro$ICb;)V
 
     .line 309
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     .line 310
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-virtual {p0, p1, v0}, Lcom/tencent/connect/b/Pro;->a(Landroid/app/Activity;Lcom/tencent/tauth/Pro$ICb;)V
 
@@ -684,11 +684,11 @@
     invoke-virtual {v0, v1}, Lcom/tencent/connect/b/Pro$ICt;->a(Ljava/lang/String;)V
 
     .line 321
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->n:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mActivityn:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->m:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mStringm:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     const/4 v3, 0x1
 
@@ -723,7 +723,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     return-object v0
 .end method
@@ -733,7 +733,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->p:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mHandlerp:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -743,7 +743,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->n:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mActivityn:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -801,13 +801,13 @@
 
     .prologue
     .line 173
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro;->m:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro;->mStringm:Ljava/lang/String;
 
     .line 174
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro;->n:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro;->mActivityn:Landroid/app/Activity;
 
     .line 175
-    iput-object p3, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p3, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     .line 176
     if-nez p4, :cond_2
@@ -938,7 +938,7 @@
     if-eqz v0, :cond_0
 
     .line 201
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->o:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICbo:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-virtual {p0, p1, v0}, Lcom/tencent/connect/b/Pro;->a(Landroid/app/Activity;Lcom/tencent/tauth/Pro$ICb;)V
 
@@ -1006,7 +1006,7 @@
 
     .line 214
     :goto_2
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->o:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICbo:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 
@@ -1062,15 +1062,15 @@
     :cond_4
     new-instance v0, Lcom/tencent/connect/b/Pro$ICd;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-direct {v0, p0, v1}, Lcom/tencent/connect/b/Pro$ICd;-><init>(Lcom/tencent/connect/b/Pro;Lcom/tencent/tauth/Pro$ICb;)V
 
     .line 229
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     .line 230
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-direct {p0, p5, v0}, Lcom/tencent/connect/b/Pro;->a(ZLcom/tencent/tauth/Pro$ICb;)I
 
@@ -1162,7 +1162,7 @@
     move-result-object v0
 
     .line 564
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-ne v1, v3, :cond_3
 

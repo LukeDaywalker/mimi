@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
+.field static final mLayoutInflaterCompatImpla:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImplV21;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->a:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
+    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->mLayoutInflaterCompatImpla:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
 
     .line 63
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImplV11;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->a:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
+    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->mLayoutInflaterCompatImpla:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
 
     goto :goto_0
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->a:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
+    sput-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->mLayoutInflaterCompatImpla:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
 
     goto :goto_0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 79
-    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->a:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
+    sget-object v0, Landroid/support/v4/view/LayoutInflaterCompat;->mLayoutInflaterCompatImpla:Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/LayoutInflaterCompat$LayoutInflaterCompatImpl;->a(Landroid/view/LayoutInflater;Landroid/support/v4/view/LayoutInflaterFactory;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+.field final synthetic mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,26 +30,26 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     if-eqz v0, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->h()V
 
     .line 45
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;)Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->mGroupChatInfoBaseActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;)Ljava/lang/String;
 

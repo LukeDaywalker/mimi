@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+.field isZf:Z
 
-.field f:Z
+.field mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
 
 # direct methods
@@ -61,7 +61,7 @@
 
     .prologue
     .line 2078
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     if-nez v0, :cond_0
 
@@ -73,9 +73,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     goto :goto_0
 .end method

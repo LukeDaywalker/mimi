@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+.field final synthetic mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICq;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICq;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICq;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICq;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getNamedUser()Lcom/wumii/android/mimi/models/entities/profile/NamedUser;
 

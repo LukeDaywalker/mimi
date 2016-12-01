@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
+.field final synthetic mCircleCategoryDetailsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->mCircleCategoryDetailsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,17 +39,17 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->mCircleCategoryDetailsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->mCircleCategoryDetailsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$ICi;->mCircleCategoryDetailsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 

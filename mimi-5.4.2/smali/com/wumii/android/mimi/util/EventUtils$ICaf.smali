@@ -107,8 +107,6 @@
 
 .field public static final enum aS:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field private static final synthetic aU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
-
 .field public static final enum aa:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
 .field public static final enum ab:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -185,6 +183,8 @@
 
 .field public static final enum m:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
+.field private static final synthetic mArrayICafaU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
 .field public static final enum n:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
 .field public static final enum o:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
@@ -213,7 +213,7 @@
 
 
 # instance fields
-.field private aT:Ljava/lang/String;
+.field private mStringaT:Ljava/lang/String;
 
 
 # direct methods
@@ -2059,7 +2059,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sput-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mArrayICafaU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     return-void
 .end method
@@ -2079,7 +2079,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 123
-    iput-object p3, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aT:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mStringaT:Ljava/lang/String;
 
     .line 124
     return-void
@@ -2106,7 +2106,7 @@
 
     .prologue
     .line 9
-    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mArrayICafaU:[Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/util/EventUtils$ICaf;->clone()Ljava/lang/Object;
 
@@ -2124,7 +2124,7 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aT:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mStringaT:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -2134,7 +2134,7 @@
 
     .prologue
     .line 133
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aT:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->mStringaT:Ljava/lang/String;
 
     .line 134
     return-void

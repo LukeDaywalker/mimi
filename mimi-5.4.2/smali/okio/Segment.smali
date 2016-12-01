@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field final a:[B
+.field isZd:Z
 
-.field b:I
+.field isZe:Z
 
-.field c:I
+.field final mArrayBa:[B
 
-.field d:Z
+.field mIb:I
 
-.field e:Z
+.field mIc:I
 
-.field f:Lokio/Segment;
+.field mSegmentf:Lokio/Segment;
 
-.field g:Lokio/Segment;
+.field mSegmentg:Lokio/Segment;
 
 
 # direct methods
@@ -32,17 +32,17 @@
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lokio/Segment;->a:[B
+    iput-object v0, p0, Lokio/Segment;->mArrayBa:[B
 
     .line 59
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lokio/Segment;->e:Z
+    iput-boolean v0, p0, Lokio/Segment;->isZe:Z
 
     .line 60
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lokio/Segment;->d:Z
+    iput-boolean v0, p0, Lokio/Segment;->isZd:Z
 
     .line 61
     return-void
@@ -53,18 +53,18 @@
 
     .prologue
     .line 64
-    iget-object v0, p1, Lokio/Segment;->a:[B
+    iget-object v0, p1, Lokio/Segment;->mArrayBa:[B
 
-    iget v1, p1, Lokio/Segment;->b:I
+    iget v1, p1, Lokio/Segment;->mIb:I
 
-    iget v2, p1, Lokio/Segment;->c:I
+    iget v2, p1, Lokio/Segment;->mIc:I
 
     invoke-direct {p0, v0, v1, v2}, Lokio/Segment;-><init>([BII)V
 
     .line 65
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lokio/Segment;->d:Z
+    iput-boolean v0, p1, Lokio/Segment;->isZd:Z
 
     .line 66
     return-void
@@ -78,23 +78,23 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 69
-    iput-object p1, p0, Lokio/Segment;->a:[B
+    iput-object p1, p0, Lokio/Segment;->mArrayBa:[B
 
     .line 70
-    iput p2, p0, Lokio/Segment;->b:I
+    iput p2, p0, Lokio/Segment;->mIb:I
 
     .line 71
-    iput p3, p0, Lokio/Segment;->c:I
+    iput p3, p0, Lokio/Segment;->mIc:I
 
     .line 72
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lokio/Segment;->e:Z
+    iput-boolean v0, p0, Lokio/Segment;->isZe:Z
 
     .line 73
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lokio/Segment;->d:Z
+    iput-boolean v0, p0, Lokio/Segment;->isZd:Z
 
     .line 74
     return-void
@@ -109,32 +109,32 @@
     const/4 v1, 0x0
 
     .line 81
-    iget-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     if-eq v0, p0, :cond_0
 
-    iget-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 82
     :goto_0
-    iget-object v2, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v2, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iget-object v3, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v3, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
-    iput-object v3, v2, Lokio/Segment;->f:Lokio/Segment;
+    iput-object v3, v2, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 83
-    iget-object v2, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v2, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
-    iget-object v3, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v3, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iput-object v3, v2, Lokio/Segment;->g:Lokio/Segment;
+    iput-object v3, v2, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     .line 84
-    iput-object v1, p0, Lokio/Segment;->f:Lokio/Segment;
+    iput-object v1, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 85
-    iput-object v1, p0, Lokio/Segment;->g:Lokio/Segment;
+    iput-object v1, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     .line 86
     return-object v0
@@ -153,9 +153,9 @@
     .line 110
     if-lez p1, :cond_0
 
-    iget v0, p0, Lokio/Segment;->c:I
+    iget v0, p0, Lokio/Segment;->mIc:I
 
-    iget v1, p0, Lokio/Segment;->b:I
+    iget v1, p0, Lokio/Segment;->mIb:I
 
     sub-int/2addr v0, v1
 
@@ -175,21 +175,21 @@
     invoke-direct {v0, p0}, Lokio/Segment;-><init>(Lokio/Segment;)V
 
     .line 112
-    iget v1, v0, Lokio/Segment;->b:I
+    iget v1, v0, Lokio/Segment;->mIb:I
 
     add-int/2addr v1, p1
 
-    iput v1, v0, Lokio/Segment;->c:I
+    iput v1, v0, Lokio/Segment;->mIc:I
 
     .line 113
-    iget v1, p0, Lokio/Segment;->b:I
+    iget v1, p0, Lokio/Segment;->mIb:I
 
     add-int/2addr v1, p1
 
-    iput v1, p0, Lokio/Segment;->b:I
+    iput v1, p0, Lokio/Segment;->mIb:I
 
     .line 114
-    iget-object v1, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v1, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     invoke-virtual {v1, v0}, Lokio/Segment;->a(Lokio/Segment;)Lokio/Segment;
 
@@ -202,20 +202,20 @@
 
     .prologue
     .line 94
-    iput-object p0, p1, Lokio/Segment;->g:Lokio/Segment;
+    iput-object p0, p1, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     .line 95
-    iget-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
-    iput-object v0, p1, Lokio/Segment;->f:Lokio/Segment;
+    iput-object v0, p1, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 96
-    iget-object v0, p0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
-    iput-object p1, v0, Lokio/Segment;->g:Lokio/Segment;
+    iput-object p1, v0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     .line 97
-    iput-object p1, p0, Lokio/Segment;->f:Lokio/Segment;
+    iput-object p1, p0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     .line 98
     return-object p1
@@ -230,7 +230,7 @@
     const/4 v5, 0x0
 
     .line 135
-    iget-boolean v0, p1, Lokio/Segment;->e:Z
+    iget-boolean v0, p1, Lokio/Segment;->isZe:Z
 
     if-nez v0, :cond_0
 
@@ -242,14 +242,14 @@
 
     .line 136
     :cond_0
-    iget v0, p1, Lokio/Segment;->c:I
+    iget v0, p1, Lokio/Segment;->mIc:I
 
     add-int/2addr v0, p2
 
     if-le v0, v2, :cond_3
 
     .line 138
-    iget-boolean v0, p1, Lokio/Segment;->d:Z
+    iget-boolean v0, p1, Lokio/Segment;->isZd:Z
 
     if-eqz v0, :cond_1
 
@@ -261,11 +261,11 @@
 
     .line 139
     :cond_1
-    iget v0, p1, Lokio/Segment;->c:I
+    iget v0, p1, Lokio/Segment;->mIc:I
 
     add-int/2addr v0, p2
 
-    iget v1, p1, Lokio/Segment;->b:I
+    iget v1, p1, Lokio/Segment;->mIb:I
 
     sub-int/2addr v0, v1
 
@@ -279,57 +279,57 @@
 
     .line 140
     :cond_2
-    iget-object v0, p1, Lokio/Segment;->a:[B
+    iget-object v0, p1, Lokio/Segment;->mArrayBa:[B
 
-    iget v1, p1, Lokio/Segment;->b:I
+    iget v1, p1, Lokio/Segment;->mIb:I
 
-    iget-object v2, p1, Lokio/Segment;->a:[B
+    iget-object v2, p1, Lokio/Segment;->mArrayBa:[B
 
-    iget v3, p1, Lokio/Segment;->c:I
+    iget v3, p1, Lokio/Segment;->mIc:I
 
-    iget v4, p1, Lokio/Segment;->b:I
+    iget v4, p1, Lokio/Segment;->mIb:I
 
     sub-int/2addr v3, v4
 
     invoke-static {v0, v1, v2, v5, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 141
-    iget v0, p1, Lokio/Segment;->c:I
+    iget v0, p1, Lokio/Segment;->mIc:I
 
-    iget v1, p1, Lokio/Segment;->b:I
+    iget v1, p1, Lokio/Segment;->mIb:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p1, Lokio/Segment;->c:I
+    iput v0, p1, Lokio/Segment;->mIc:I
 
     .line 142
-    iput v5, p1, Lokio/Segment;->b:I
+    iput v5, p1, Lokio/Segment;->mIb:I
 
     .line 145
     :cond_3
-    iget-object v0, p0, Lokio/Segment;->a:[B
+    iget-object v0, p0, Lokio/Segment;->mArrayBa:[B
 
-    iget v1, p0, Lokio/Segment;->b:I
+    iget v1, p0, Lokio/Segment;->mIb:I
 
-    iget-object v2, p1, Lokio/Segment;->a:[B
+    iget-object v2, p1, Lokio/Segment;->mArrayBa:[B
 
-    iget v3, p1, Lokio/Segment;->c:I
+    iget v3, p1, Lokio/Segment;->mIc:I
 
     invoke-static {v0, v1, v2, v3, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 146
-    iget v0, p1, Lokio/Segment;->c:I
+    iget v0, p1, Lokio/Segment;->mIc:I
 
     add-int/2addr v0, p2
 
-    iput v0, p1, Lokio/Segment;->c:I
+    iput v0, p1, Lokio/Segment;->mIc:I
 
     .line 147
-    iget v0, p0, Lokio/Segment;->b:I
+    iget v0, p0, Lokio/Segment;->mIb:I
 
     add-int/2addr v0, p2
 
-    iput v0, p0, Lokio/Segment;->b:I
+    iput v0, p0, Lokio/Segment;->mIb:I
 
     .line 148
     return-void
@@ -340,7 +340,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     if-ne v0, p0, :cond_0
 
@@ -352,9 +352,9 @@
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iget-boolean v0, v0, Lokio/Segment;->e:Z
+    iget-boolean v0, v0, Lokio/Segment;->isZe:Z
 
     if-nez v0, :cond_2
 
@@ -365,22 +365,22 @@
 
     .line 125
     :cond_2
-    iget v0, p0, Lokio/Segment;->c:I
+    iget v0, p0, Lokio/Segment;->mIc:I
 
-    iget v1, p0, Lokio/Segment;->b:I
+    iget v1, p0, Lokio/Segment;->mIb:I
 
     sub-int v1, v0, v1
 
     .line 126
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iget v0, v0, Lokio/Segment;->c:I
+    iget v0, v0, Lokio/Segment;->mIc:I
 
     rsub-int v2, v0, 0x800
 
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iget-boolean v0, v0, Lokio/Segment;->d:Z
+    iget-boolean v0, v0, Lokio/Segment;->isZd:Z
 
     if-eqz v0, :cond_3
 
@@ -393,7 +393,7 @@
     if-gt v1, v0, :cond_1
 
     .line 128
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
     invoke-virtual {p0, v0, v1}, Lokio/Segment;->a(Lokio/Segment;I)V
 
@@ -407,9 +407,9 @@
 
     .line 126
     :cond_3
-    iget-object v0, p0, Lokio/Segment;->g:Lokio/Segment;
+    iget-object v0, p0, Lokio/Segment;->mSegmentg:Lokio/Segment;
 
-    iget v0, v0, Lokio/Segment;->b:I
+    iget v0, v0, Lokio/Segment;->mIb:I
 
     goto :goto_1
 .end method

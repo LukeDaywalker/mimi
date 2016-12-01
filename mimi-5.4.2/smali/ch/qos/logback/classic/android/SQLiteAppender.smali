@@ -42,8 +42,6 @@
 
 
 # instance fields
-.field private db:Landroid/database/sqlite/SQLiteDatabase;
-
 .field private dbNameResolver:Lch/qos/logback/classic/db/names/DBNameResolver;
 
 .field private insertExceptionSQL:Ljava/lang/String;
@@ -51,6 +49,8 @@
 .field private insertPropertiesSQL:Ljava/lang/String;
 
 .field private insertSQL:Ljava/lang/String;
+
+.field private mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
 
 # direct methods
@@ -373,7 +373,7 @@
 
     if-lez v0, :cond_1
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->insertPropertiesSQL:Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     const/4 v7, 0x0
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->insertExceptionSQL:Ljava/lang/String;
 
@@ -724,7 +724,7 @@
     if-eqz v0, :cond_2
 
     :try_start_0
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->insertSQL:Ljava/lang/String;
 
@@ -735,7 +735,7 @@
     move-result-object v1
 
     :try_start_1
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -751,7 +751,7 @@
 
     invoke-direct {p0, p1, v2, v3}, Lch/qos/logback/classic/android/SQLiteAppender;->secondarySubAppend(Lch/qos/logback/classic/spi/ILoggingEvent;J)V
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
@@ -759,7 +759,7 @@
 
     :cond_0
     :try_start_2
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
 
@@ -767,7 +767,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -781,7 +781,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
 
@@ -789,7 +789,7 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -823,7 +823,7 @@
 .method protected finalize()V
     .locals 1
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -911,7 +911,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v2, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -954,7 +954,7 @@
     iput-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->insertSQL:Ljava/lang/String;
 
     :try_start_1
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->dbNameResolver:Lch/qos/logback/classic/db/names/DBNameResolver;
 
@@ -964,7 +964,7 @@
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->dbNameResolver:Lch/qos/logback/classic/db/names/DBNameResolver;
 
@@ -974,7 +974,7 @@
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v1, p0, Lch/qos/logback/classic/android/SQLiteAppender;->dbNameResolver:Lch/qos/logback/classic/db/names/DBNameResolver;
 
@@ -1018,7 +1018,7 @@
 .method public stop()V
     .locals 1
 
-    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lch/qos/logback/classic/android/SQLiteAppender;->mSQLiteDatabasedb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 

@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic mLista:Ljava/util/List;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mReportDialogBuildere:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic mStringb:Ljava/lang/String;
 
-.field final synthetic d:Ljava/lang/String;
+.field final synthetic mStringc:Ljava/lang/String;
 
-.field final synthetic e:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
+.field final synthetic mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     .prologue
     .line 28
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->e:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mReportDialogBuildere:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mLista:Ljava/util/List;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringb:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->c:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringc:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->d:Ljava/lang/String;
+    iput-object p5, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringd:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -57,7 +57,7 @@
     .line 33
     new-instance v2, Lcom/wumii/android/mimi/task/ReportTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->e:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mReportDialogBuildere:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;->a(Lcom/wumii/android/mimi/ui/ReportDialogBuilder;)Landroid/content/Context;
 
@@ -67,11 +67,11 @@
 
     invoke-direct {v2, v1}, Lcom/wumii/android/mimi/task/ReportTask;-><init>(Landroid/app/Activity;)V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringb:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringc:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->d:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/Violation$ReportItem;->getType()Ljava/lang/String;
 

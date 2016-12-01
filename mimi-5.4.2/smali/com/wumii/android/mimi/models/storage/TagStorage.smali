@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field private static final mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -22,9 +22,7 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
-
-.field private c:Ljava/util/Map;
+.field private mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -38,6 +36,8 @@
     .end annotation
 .end field
 
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -49,7 +49,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage$ICp;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/TagStorage;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 22
     return-void
@@ -93,14 +93,14 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mMapc:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/storage/TagStorage;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/TagStorage;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     const-string/jumbo v2, "hot_tags"
 
@@ -114,11 +114,11 @@
 
     check-cast v0, Ljava/util/Map;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->c:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mMapc:Ljava/util/Map;
 
     .line 49
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mMapc:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Lcom/wumii/android/mimi/util/Constants$ICt;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
 
@@ -209,9 +209,9 @@
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->c:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mMapc:Ljava/util/Map;
 
     const-string/jumbo v2, "hot_tags"
 
@@ -238,7 +238,7 @@
     if-nez p1, :cond_0
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "latest_tags"
 
@@ -250,7 +250,7 @@
 
     .line 41
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/TagStorage;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "latest_tags"
 

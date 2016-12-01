@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+.field final synthetic mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 124
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->finish()V
 

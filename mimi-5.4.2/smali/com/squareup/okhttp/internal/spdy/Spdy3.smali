@@ -7,7 +7,7 @@
 
 
 # static fields
-.field static final a:[B
+.field static final mArrayBa:[B
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Spdy3;->a:[B
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Spdy3;->mArrayBa:[B
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 

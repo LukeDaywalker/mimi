@@ -4,15 +4,17 @@
 
 
 # static fields
-.field private static final a:Lcom/squareup/okhttp/ConnectionPool;
+.field private static final mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
 
 # instance fields
-.field private final b:I
+.field private mExecutore:Ljava/util/concurrent/Executor;
 
-.field private final c:J
+.field private final mIb:I
 
-.field private final d:Ljava/util/LinkedList;
+.field private final mJc:J
+
+.field private final mLinkedListd:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList",
@@ -23,9 +25,7 @@
     .end annotation
 .end field
 
-.field private e:Ljava/util/concurrent/Executor;
-
-.field private final f:Ljava/lang/Runnable;
+.field private final mRunnablef:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -78,7 +78,7 @@
 
     invoke-direct {v2, v3, v0, v1}, Lcom/squareup/okhttp/ConnectionPool;-><init>(IJ)V
 
-    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->a:Lcom/squareup/okhttp/ConnectionPool;
+    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     .line 72
     :goto_1
@@ -103,7 +103,7 @@
 
     invoke-direct {v2, v3, v0, v1}, Lcom/squareup/okhttp/ConnectionPool;-><init>(IJ)V
 
-    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->a:Lcom/squareup/okhttp/ConnectionPool;
+    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     goto :goto_1
 
@@ -115,7 +115,7 @@
 
     invoke-direct {v2, v3, v0, v1}, Lcom/squareup/okhttp/ConnectionPool;-><init>(IJ)V
 
-    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->a:Lcom/squareup/okhttp/ConnectionPool;
+    sput-object v2, Lcom/squareup/okhttp/ConnectionPool;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     goto :goto_1
 .end method
@@ -136,7 +136,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     .line 91
     new-instance v1, Ljava/util/concurrent/ThreadPoolExecutor;
@@ -160,24 +160,24 @@
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->e:Ljava/util/concurrent/Executor;
+    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mExecutore:Ljava/util/concurrent/Executor;
 
     .line 95
     new-instance v0, Lcom/squareup/okhttp/ConnectionPool$ICs;
 
     invoke-direct {v0, p0}, Lcom/squareup/okhttp/ConnectionPool$ICs;-><init>(Lcom/squareup/okhttp/ConnectionPool;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->f:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mRunnablef:Ljava/lang/Runnable;
 
     .line 102
-    iput p1, p0, Lcom/squareup/okhttp/ConnectionPool;->b:I
+    iput p1, p0, Lcom/squareup/okhttp/ConnectionPool;->mIb:I
 
     .line 103
     mul-long v0, p2, v10
 
     mul-long/2addr v0, v10
 
-    iput-wide v0, p0, Lcom/squareup/okhttp/ConnectionPool;->c:J
+    iput-wide v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mJc:J
 
     .line 104
     return-void
@@ -188,7 +188,7 @@
 
     .prologue
     .line 107
-    sget-object v0, Lcom/squareup/okhttp/ConnectionPool;->a:Lcom/squareup/okhttp/ConnectionPool;
+    sget-object v0, Lcom/squareup/okhttp/ConnectionPool;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     return-object v0
 .end method
@@ -223,14 +223,14 @@
 
     .prologue
     .line 205
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->isEmpty()Z
 
     move-result v0
 
     .line 206
-    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v1, p1}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
 
@@ -238,9 +238,9 @@
     if-eqz v0, :cond_0
 
     .line 208
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->e:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mExecutore:Ljava/util/concurrent/Executor;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->f:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mRunnablef:Ljava/lang/Runnable;
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -268,9 +268,9 @@
 
     .line 138
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v1}, Ljava/util/LinkedList;->size()I
 
@@ -329,7 +329,7 @@
 
     sub-long/2addr v4, v6
 
-    iget-wide v6, p0, Lcom/squareup/okhttp/ConnectionPool;->c:J
+    iget-wide v6, p0, Lcom/squareup/okhttp/ConnectionPool;->mJc:J
 
     cmp-long v1, v4, v6
 
@@ -375,7 +375,7 @@
     if-eqz v1, :cond_2
 
     .line 162
-    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v1, p0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v1, v0}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
     :try_end_2
@@ -626,7 +626,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v2}, Ljava/util/LinkedList;->isEmpty()Z
 
@@ -659,16 +659,16 @@
     .line 273
     move-object/from16 v0, p0
 
-    iget-wide v4, v0, Lcom/squareup/okhttp/ConnectionPool;->c:J
+    iget-wide v4, v0, Lcom/squareup/okhttp/ConnectionPool;->mJc:J
 
     .line 276
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v6, v0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v6}, Ljava/util/LinkedList;->size()I
 
@@ -700,7 +700,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/squareup/okhttp/ConnectionPool;->c:J
+    iget-wide v14, v0, Lcom/squareup/okhttp/ConnectionPool;->mJc:J
 
     add-long/2addr v12, v14
 
@@ -766,11 +766,11 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v2, v0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/squareup/okhttp/ConnectionPool;->d:Ljava/util/LinkedList;
+    iget-object v6, v0, Lcom/squareup/okhttp/ConnectionPool;->mLinkedListd:Ljava/util/LinkedList;
 
     invoke-virtual {v6}, Ljava/util/LinkedList;->size()I
 
@@ -790,7 +790,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/squareup/okhttp/ConnectionPool;->b:I
+    iget v2, v0, Lcom/squareup/okhttp/ConnectionPool;->mIb:I
 
     if-le v3, v2, :cond_4
 

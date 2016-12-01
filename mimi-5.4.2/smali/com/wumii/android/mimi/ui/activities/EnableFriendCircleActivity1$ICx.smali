@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
+.field final synthetic mEnableFriendCircleActivity1a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     const/4 v1, 0x0
 
     .line 135
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mEnableFriendCircleActivity1a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -26,15 +26,15 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setCancelable(Z)V
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setCanceledOnTouchOutside(Z)V
 
@@ -87,7 +87,7 @@
 
     .line 149
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -96,7 +96,7 @@
     if-nez v0, :cond_0
 
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -104,11 +104,11 @@
 
     .line 156
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -117,13 +117,13 @@
     if-eqz v0, :cond_1
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
     .line 159
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$ICx;->mEnableFriendCircleActivity1a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->b(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;)V
 

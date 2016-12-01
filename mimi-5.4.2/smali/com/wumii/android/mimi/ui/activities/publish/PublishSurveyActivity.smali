@@ -7,35 +7,35 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/task/ProcessImageTask;
+.field private mAlertDialogI:Landroid/app/AlertDialog;
 
-.field private D:Landroid/view/ViewGroup;
+.field private mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field private E:Landroid/widget/ImageView;
+.field private mEditTexto:Landroid/widget/EditText;
 
-.field private F:Landroid/widget/ImageView;
+.field private mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private G:Ljava/lang/String;
+.field private mFrameLayoutp:Landroid/widget/FrameLayout;
 
-.field private H:Ljava/lang/String;
+.field private mFrameLayoutq:Landroid/widget/FrameLayout;
 
-.field private I:Landroid/app/AlertDialog;
+.field private mImageViewE:Landroid/widget/ImageView;
 
-.field private J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+.field private mImageViewF:Landroid/widget/ImageView;
 
-.field private K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+.field private mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-.field private o:Landroid/widget/EditText;
+.field private mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-.field private p:Landroid/widget/FrameLayout;
+.field private mProcessImageTaskC:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
-.field private q:Landroid/widget/FrameLayout;
+.field private mStringG:Ljava/lang/String;
 
-.field private r:Landroid/view/View;
+.field private mStringH:Ljava/lang/String;
 
-.field private s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mViewGroupD:Landroid/view/ViewGroup;
 
-.field private t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field private mViewr:Landroid/view/View;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->r:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewr:Landroid/view/View;
 
     return-object v0
 .end method
@@ -96,7 +96,7 @@
     const/4 v2, -0x1
 
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     if-nez v0, :cond_0
 
@@ -106,13 +106,13 @@
 
     .line 210
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     if-ne v0, v1, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->E:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mImageViewE:Landroid/widget/ImageView;
 
     .line 211
     :goto_1
@@ -131,19 +131,19 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 215
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 217
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 218
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -155,7 +155,7 @@
 
     .line 210
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->F:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mImageViewF:Landroid/widget/ImageView;
 
     goto :goto_1
 .end method
@@ -190,7 +190,7 @@
     const/4 v0, 0x0
 
     .line 225
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -234,19 +234,19 @@
 
     .line 227
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-ne v1, v2, :cond_3
 
     .line 228
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     if-eqz v1, :cond_0
 
     .line 229
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -270,11 +270,11 @@
     const/16 v4, 0x78
 
     .line 243
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     if-nez v0, :cond_1
 
@@ -288,7 +288,7 @@
 
     .line 248
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -308,7 +308,7 @@
     move-result v2
 
     .line 251
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -319,11 +319,11 @@
     :cond_2
     if-gt v2, v4, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->G:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringG:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->H:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringH:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
@@ -331,7 +331,7 @@
 
     .line 252
     :goto_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     if-eqz v0, :cond_4
 
@@ -341,7 +341,7 @@
     invoke-virtual {v3, v1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a(I)V
 
     .line 253
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a(Z)V
 
@@ -350,7 +350,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -358,7 +358,7 @@
     if-le v2, v4, :cond_5
 
     .line 257
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     rsub-int/lit8 v1, v2, 0x78
 
@@ -388,7 +388,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -408,7 +408,7 @@
 
     .line 259
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     const-string/jumbo v1, ""
 
@@ -430,7 +430,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->o:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mEditTexto:Landroid/widget/EditText;
 
     .line 266
     const v0, 0x7f0b0111
@@ -441,7 +441,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     .line 267
     const v0, 0x7f0b0112
@@ -452,7 +452,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->q:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutq:Landroid/widget/FrameLayout;
 
     .line 269
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
@@ -492,21 +492,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->r:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewr:Landroid/view/View;
 
     .line 273
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->q:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutq:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 276
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mEditTexto:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICx;
 
@@ -523,7 +523,7 @@
 
     .prologue
     .line 295
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->I:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mAlertDialogI:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -550,11 +550,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->I:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mAlertDialogI:Landroid/app/AlertDialog;
 
     .line 316
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->I:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mAlertDialogI:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
@@ -591,7 +591,7 @@
     if-ne p1, v0, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->C:Lcom/wumii/android/mimi/task/ProcessImageTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mProcessImageTaskC:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
     if-nez v0, :cond_2
 
@@ -600,7 +600,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/ProcessImageTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->C:Lcom/wumii/android/mimi/task/ProcessImageTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mProcessImageTaskC:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
     .line 154
     :cond_2
@@ -611,32 +611,32 @@
     move-result-object v0
 
     .line 156
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     if-nez v1, :cond_3
 
     .line 157
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     .line 160
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     if-ne v1, v2, :cond_4
 
     .line 161
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->G:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringG:Ljava/lang/String;
 
     .line 166
     :goto_1
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->i()V
 
     .line 168
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->C:Lcom/wumii/android/mimi/task/ProcessImageTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mProcessImageTaskC:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity$ICw;
 
@@ -648,7 +648,7 @@
 
     .line 163
     :cond_4
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->H:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringH:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -671,11 +671,11 @@
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->G:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringG:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->H:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringH:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -686,7 +686,7 @@
 
     .line 113
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -697,7 +697,7 @@
     move-result-object v4
 
     .line 114
-    invoke-static {v4}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v4}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -707,7 +707,7 @@
     const/4 v3, 0x0
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -743,7 +743,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     const/4 v1, 0x2
 
@@ -751,13 +751,13 @@
 
     const/4 v5, 0x0
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->G:Ljava/lang/String;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringG:Ljava/lang/String;
 
     aput-object v6, v1, v5
 
     const/4 v5, 0x1
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->H:Ljava/lang/String;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mStringH:Ljava/lang/String;
 
     aput-object v6, v1, v5
 
@@ -773,12 +773,12 @@
 
     .line 121
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     if-eqz v0, :cond_2
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -792,7 +792,7 @@
 
     .prologue
     .line 194
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -804,14 +804,14 @@
 
     .line 198
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v0
 
     .line 199
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -837,11 +837,11 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->p:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutp:Landroid/widget/FrameLayout;
 
     if-eq p1, v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->q:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFrameLayoutq:Landroid/widget/FrameLayout;
 
     if-ne p1, v0, :cond_1
 
@@ -849,7 +849,7 @@
     :cond_0
     check-cast p1, Landroid/view/ViewGroup;
 
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->D:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mViewGroupD:Landroid/view/ViewGroup;
 
     .line 188
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->k()Landroid/app/AlertDialog;
@@ -891,7 +891,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->s:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mFeedTypes:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 88
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->getIntent()Landroid/content/Intent;
@@ -906,7 +906,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mCirclet:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 90
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->h()V
@@ -929,7 +929,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 97
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
@@ -944,15 +944,15 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->J:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemJ:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->K:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->mMimiMenuItemK:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSurveyActivity;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
@@ -1024,7 +1024,7 @@
     move-result-object v0
 
     .line 138
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 

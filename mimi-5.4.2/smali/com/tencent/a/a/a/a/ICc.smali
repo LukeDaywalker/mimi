@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:Ljava/lang/String;
+.field mJd:J
 
-.field b:Ljava/lang/String;
+.field mStringa:Ljava/lang/String;
 
-.field c:Ljava/lang/String;
+.field mStringb:Ljava/lang/String;
 
-.field d:J
+.field mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -20,17 +20,17 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v0, "0"
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/tencent/a/a/a/a/ICc;->d:J
+    iput-wide v0, p0, Lcom/tencent/a/a/a/a/ICc;->mJd:J
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->a:Ljava/lang/String;
+    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->mStringa:Ljava/lang/String;
 
     :cond_0
     const-string/jumbo v2, "mc"
@@ -84,7 +84,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->b:Ljava/lang/String;
+    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->mStringb:Ljava/lang/String;
 
     :cond_1
     const-string/jumbo v2, "mid"
@@ -101,7 +101,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iput-object v2, v1, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
     :cond_2
     const-string/jumbo v2, "ts"
@@ -118,7 +118,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v1, Lcom/tencent/a/a/a/a/ICc;->d:J
+    iput-wide v2, v1, Lcom/tencent/a/a/a/a/ICc;->mJd:J
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -146,25 +146,25 @@
     :try_start_0
     const-string/jumbo v0, "ui"
 
-    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0, v2}, Lcom/tencent/a/a/a/a/ICh;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "mc"
 
-    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->mStringb:Ljava/lang/String;
 
     invoke-static {v1, v0, v2}, Lcom/tencent/a/a/a/a/ICh;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "mid"
 
-    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
     invoke-static {v1, v0, v2}, Lcom/tencent/a/a/a/a/ICh;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "ts"
 
-    iget-wide v2, p0, Lcom/tencent/a/a/a/a/ICc;->d:J
+    iget-wide v2, p0, Lcom/tencent/a/a/a/a/ICc;->mJd:J
 
     invoke-virtual {v1, v0, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
     :try_end_0
@@ -188,7 +188,7 @@
 .method public final a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

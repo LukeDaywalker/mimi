@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mJb:J
 
-.field private b:J
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -50,7 +50,7 @@
     .line 20
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->b:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mJb:J
 
     .line 33
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -109,15 +109,15 @@
 
     invoke-direct {v1, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 47
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     const/4 v2, 0x1
 
@@ -126,7 +126,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     const v2, -0xbbbbbc
 
@@ -138,12 +138,12 @@
     invoke-direct {v1, v6, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 50
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->addView(Landroid/view/View;)V
 
@@ -202,7 +202,7 @@
 
     .line 75
     :cond_1
-    iput-wide p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->b:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mJb:J
 
     .line 76
     const-wide/16 v0, 0x64
@@ -212,7 +212,7 @@
     if-gez v0, :cond_2
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->getResources()Landroid/content/res/Resources;
 
@@ -260,7 +260,7 @@
 
     .line 79
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mTextViewa:Landroid/widget/TextView;
 
     const v1, 0x7f060081
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 95
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->b:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mJb:J
 
     return-wide v0
 .end method
@@ -292,7 +292,7 @@
     .line 65
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->b:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->mJb:J
 
     .line 67
     :cond_0

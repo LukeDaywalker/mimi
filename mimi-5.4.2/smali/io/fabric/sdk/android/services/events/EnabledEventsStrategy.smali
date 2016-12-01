@@ -31,9 +31,7 @@
     .end annotation
 .end field
 
-.field final e:Ljava/util/concurrent/ScheduledExecutorService;
-
-.field final f:Ljava/util/concurrent/atomic/AtomicReference;
+.field final mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference",
@@ -44,7 +42,9 @@
     .end annotation
 .end field
 
-.field volatile g:I
+.field volatile mIg:I
+
+.field final mScheduledExecutorServicee:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -67,13 +67,13 @@
     .line 46
     const/4 v0, -0x1
 
-    iput v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iput v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     .line 50
     iput-object p1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->c:Landroid/content/Context;
 
     .line 51
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->e:Ljava/util/concurrent/ScheduledExecutorService;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mScheduledExecutorServicee:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 52
     iput-object p3, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->d:Lio/fabric/sdk/android/services/events/EventsFilesManager;
@@ -83,7 +83,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 54
     return-void
@@ -96,12 +96,12 @@
 
     .prologue
     .line 108
-    iput p1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iput p1, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     .line 109
     const-wide/16 v0, 0x0
 
-    iget v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iget v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     int-to-long v2, v2
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -168,9 +168,9 @@
 
     .line 119
     :try_start_0
-    iget-object v7, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v7, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->e:Ljava/util/concurrent/ScheduledExecutorService;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mScheduledExecutorServicee:Ljava/util/concurrent/ScheduledExecutorService;
 
     sget-object v6, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -287,7 +287,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -303,7 +303,7 @@
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 76
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -316,7 +316,7 @@
     invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
 
     .line 77
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mAtomicReferencef:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
@@ -367,7 +367,7 @@
 
     .prologue
     .line 58
-    iget v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iget v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     const/4 v1, -0x1
 
@@ -380,11 +380,11 @@
     if-eqz v0, :cond_0
 
     .line 61
-    iget v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iget v0, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     int-to-long v0, v0
 
-    iget v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->g:I
+    iget v2, p0, Lio/fabric/sdk/android/services/events/EnabledEventsStrategy;->mIg:I
 
     int-to-long v2, v2
 

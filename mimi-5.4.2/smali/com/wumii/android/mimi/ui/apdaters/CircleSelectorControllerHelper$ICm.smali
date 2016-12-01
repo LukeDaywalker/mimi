@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 113
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICm;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 

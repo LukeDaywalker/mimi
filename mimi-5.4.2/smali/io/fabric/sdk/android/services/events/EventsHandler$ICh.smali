@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Object;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mEventsHandlerc:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-.field final synthetic c:Lio/fabric/sdk/android/services/events/EventsHandler;
+.field final synthetic mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->c:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mEventsHandlerc:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->a:Ljava/lang/Object;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mObjecta:Ljava/lang/Object;
 
-    iput-boolean p3, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->b:Z
+    iput-boolean p3, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->isZb:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,21 +39,21 @@
     .prologue
     .line 50
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->c:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mEventsHandlerc:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/events/EventsStrategy;->a(Ljava/lang/Object;)V
 
     .line 52
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->b:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->isZb:Z
 
     if-eqz v0, :cond_0
 
     .line 54
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->c:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mEventsHandlerc:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
@@ -71,7 +71,7 @@
     move-exception v0
 
     .line 57
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->c:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICh;->mEventsHandlerc:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
 

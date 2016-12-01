@@ -7,17 +7,21 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Landroid/widget/RadioGroup$LayoutParams;
+.field private mCreateGroupRadioe:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
-.field private c:Landroid/widget/RadioGroup$LayoutParams;
+.field private mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
-.field private d:Landroid/util/DisplayMetrics;
+.field private mICyg:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
+.field private mIh:I
 
-.field private f:Ljava/util/List;
+.field private mLayoutParamsb:Landroid/widget/RadioGroup$LayoutParams;
+
+.field private mLayoutParamsc:Landroid/widget/RadioGroup$LayoutParams;
+
+.field private mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -27,10 +31,6 @@
         }
     .end annotation
 .end field
-
-.field private g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
-
-.field private h:I
 
 
 # direct methods
@@ -57,7 +57,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/RadioGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mContexta:Landroid/content/Context;
 
     .line 32
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -68,12 +68,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->d:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
     .line 33
     new-instance v0, Landroid/widget/RadioGroup$LayoutParams;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->d:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -83,7 +83,7 @@
 
     invoke-direct {v0, v3, v1}, Landroid/widget/RadioGroup$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->b:Landroid/widget/RadioGroup$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mLayoutParamsb:Landroid/widget/RadioGroup$LayoutParams;
 
     .line 34
     new-instance v0, Landroid/widget/RadioGroup$LayoutParams;
@@ -92,14 +92,14 @@
 
     invoke-direct {v0, v3, v1}, Landroid/widget/RadioGroup$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->c:Landroid/widget/RadioGroup$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mLayoutParamsc:Landroid/widget/RadioGroup$LayoutParams;
 
     .line 35
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     .line 36
     return-void
@@ -114,7 +114,7 @@
     .line 75
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -123,7 +123,7 @@
 
     const/4 v2, -0x1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->d:Landroid/util/DisplayMetrics;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
     const/high16 v4, 0x3f800000    # 1.0f
 
@@ -155,7 +155,7 @@
     .line 84
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;-><init>(Landroid/content/Context;)V
 
@@ -173,9 +173,9 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mCreateGroupRadioe:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
     invoke-interface {v0, v1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -189,7 +189,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mCreateGroupRadioe:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
     return-object v0
 .end method
@@ -201,14 +201,14 @@
     .line 91
     check-cast p1, Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mCreateGroupRadioe:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
     .line 92
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->h:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mIh:I
 
     if-ne v0, v1, :cond_1
 
@@ -219,14 +219,14 @@
 
     .line 95
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mICyg:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mICyg:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mCreateGroupRadioe:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->getCheckedPostion()I
 
@@ -242,7 +242,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -250,7 +250,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -267,7 +267,7 @@
 
     .line 116
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -285,7 +285,7 @@
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mICyg:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     .line 110
     return-void
@@ -309,16 +309,16 @@
     const/4 v2, 0x0
 
     .line 43
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mICyg:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     .line 44
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->h:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mIh:I
 
     .line 45
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->removeAllViews()V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -343,7 +343,7 @@
 
     move-result v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->b:Landroid/widget/RadioGroup$LayoutParams;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mLayoutParamsb:Landroid/widget/RadioGroup$LayoutParams;
 
     invoke-virtual {p0, v0, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -373,7 +373,7 @@
 
     move-result v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->c:Landroid/widget/RadioGroup$LayoutParams;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mLayoutParamsc:Landroid/widget/RadioGroup$LayoutParams;
 
     invoke-virtual {p0, v0, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -385,7 +385,7 @@
 
     .line 60
     :cond_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->f:Ljava/util/List;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mListf:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -402,7 +402,7 @@
     if-eq v1, v0, :cond_2
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -447,7 +447,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->b:Landroid/widget/RadioGroup$LayoutParams;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->mLayoutParamsb:Landroid/widget/RadioGroup$LayoutParams;
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 

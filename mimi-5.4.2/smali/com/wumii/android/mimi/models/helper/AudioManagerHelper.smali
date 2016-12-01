@@ -4,21 +4,21 @@
 
 
 # static fields
-.field private static a:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
+.field private static mAudioManagerHelpera:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
 
 # instance fields
-.field private b:Landroid/media/AudioManager;
+.field private isZd:Z
 
-.field private c:I
+.field private isZe:Z
 
-.field private d:Z
+.field private isZf:Z
 
-.field private e:Z
+.field private mAudioManagerb:Landroid/media/AudioManager;
 
-.field private f:Z
+.field private mIc:I
 
-.field private g:I
+.field private mIg:I
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .line 22
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
     .line 32
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -47,25 +47,25 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     invoke-virtual {v0}, Landroid/media/AudioManager;->getMode()I
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->c:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIc:I
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     invoke-virtual {v0}, Landroid/media/AudioManager;->isSpeakerphoneOn()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZd:Z
 
     .line 36
     return-void
@@ -76,7 +76,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerHelpera:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     if-nez v0, :cond_0
 
@@ -85,11 +85,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerHelpera:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     .line 28
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerHelpera:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     return-object v0
 .end method
@@ -101,7 +101,7 @@
 
     .prologue
     .line 55
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     .line 56
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e()V
@@ -115,39 +115,39 @@
 
     .prologue
     .line 39
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     monitor-enter v1
 
     .line 40
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
-    iget v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->c:I
+    iget v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIc:I
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setMode(I)V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->d:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZd:Z
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setSpeakerphoneOn(Z)V
 
     .line 44
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     .line 45
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerHelpera:Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     .line 47
     :cond_0
@@ -172,10 +172,10 @@
 
     .prologue
     .line 64
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->f:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZf:Z
 
     .line 66
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     if-nez v0, :cond_0
 
@@ -194,7 +194,7 @@
     .line 83
     if-nez p1, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     if-eqz v0, :cond_1
 
@@ -202,7 +202,7 @@
     const/4 v0, 0x3
 
     :goto_0
-    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iput v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
     .line 84
     return-void
@@ -219,7 +219,7 @@
 
     .prologue
     .line 51
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     return v0
 .end method
@@ -229,7 +229,7 @@
 
     .prologue
     .line 87
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     monitor-enter v1
 
@@ -237,7 +237,7 @@
     if-nez p1, :cond_0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     if-eqz v0, :cond_1
 
@@ -246,12 +246,12 @@
 
     .line 90
     :goto_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     invoke-virtual {v2, p1}, Landroid/media/AudioManager;->setSpeakerphoneOn(Z)V
 
     .line 91
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
     invoke-virtual {v2, v0}, Landroid/media/AudioManager;->setMode(I)V
 
@@ -259,13 +259,13 @@
     invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->c(Z)V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
-    iget v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iget v2, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->b:Landroid/media/AudioManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mAudioManagerb:Landroid/media/AudioManager;
 
-    iget v4, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iget v4, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
     invoke-virtual {v3, v4}, Landroid/media/AudioManager;->getStreamVolume(I)I
 
@@ -303,7 +303,7 @@
 
     .prologue
     .line 60
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZf:Z
 
     return v0
 .end method
@@ -313,11 +313,11 @@
 
     .prologue
     .line 72
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZe:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -341,20 +341,20 @@
 
     .prologue
     .line 76
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
     .line 77
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->isZf:Z
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->c(Z)V
 
     .line 79
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->g:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->mIg:I
 
     return v0
 .end method

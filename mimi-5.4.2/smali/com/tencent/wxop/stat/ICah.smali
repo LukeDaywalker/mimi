@@ -6,9 +6,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Ljava/util/Map;
+.field private mICyc:Lcom/tencent/wxop/stat/ICy;
+
+.field private mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -19,8 +21,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Lcom/tencent/wxop/stat/ICy;
 
 
 # direct methods
@@ -38,15 +38,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->mContexta:Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->c:Lcom/tencent/wxop/stat/ICy;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICah;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICah;->mContexta:Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->c:Lcom/tencent/wxop/stat/ICy;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICah;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
     return-void
 .end method
@@ -313,7 +313,7 @@
     .locals 7
 
     :try_start_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
     if-nez v1, :cond_0
 
@@ -321,14 +321,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
     :cond_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->size()I
 
@@ -354,7 +354,7 @@
 
     invoke-direct {v4}, Lorg/json/JSONArray;-><init>()V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICah;->mMapb:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -489,19 +489,19 @@
 
     new-instance v1, Lcom/tencent/wxop/stat/a/ICg;
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICah;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICah;->mContexta:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICah;->a:Landroid/content/Context;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICah;->mContexta:Landroid/content/Context;
 
     const/4 v5, 0x0
 
-    iget-object v6, p0, Lcom/tencent/wxop/stat/ICah;->c:Lcom/tencent/wxop/stat/ICy;
+    iget-object v6, p0, Lcom/tencent/wxop/stat/ICah;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
     invoke-static {v3, v5, v6}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;ZLcom/tencent/wxop/stat/ICy;)I
 
     move-result v3
 
-    iget-object v5, p0, Lcom/tencent/wxop/stat/ICah;->c:Lcom/tencent/wxop/stat/ICy;
+    iget-object v5, p0, Lcom/tencent/wxop/stat/ICah;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
     invoke-direct {v1, v2, v3, v5}, Lcom/tencent/wxop/stat/a/ICg;-><init>(Landroid/content/Context;ILcom/tencent/wxop/stat/ICy;)V
 

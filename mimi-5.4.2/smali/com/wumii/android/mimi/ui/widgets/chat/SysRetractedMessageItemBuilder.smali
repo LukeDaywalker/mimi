@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mDisplayImageOptionsb:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 27
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->mDisplayImageOptionsb:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 29
     return-void
@@ -59,7 +59,7 @@
     if-nez p2, :cond_0
 
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030086
 
@@ -104,7 +104,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->mDisplayImageOptionsb:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v2, v0, v1, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 

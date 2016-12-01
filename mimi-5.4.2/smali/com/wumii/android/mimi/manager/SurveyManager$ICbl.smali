@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mStringa:Ljava/lang/String;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/SurveyManager;
+.field final synthetic mSurveyManagerb:Lcom/wumii/android/mimi/manager/SurveyManager;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 155
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->b:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->mSurveyManagerb:Lcom/wumii/android/mimi/manager/SurveyManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,12 +47,12 @@
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventUnsubscribeSurvey;-><init>(ILjava/lang/String;)V
 
     .line 159
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventUnsubscribeSurvey;->a(Ljava/lang/String;)V
 
     .line 160
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->b:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbl;->mSurveyManagerb:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/SurveyManager;->b(Ljava/lang/Object;)V
 

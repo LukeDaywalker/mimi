@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+.field final synthetic mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .prologue
     .line 130
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->a(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -39,7 +39,7 @@
 
     const-string/jumbo v1, "recent_contacts"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICb;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 

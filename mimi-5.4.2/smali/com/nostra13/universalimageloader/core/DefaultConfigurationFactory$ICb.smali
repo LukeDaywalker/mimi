@@ -7,17 +7,17 @@
 
 
 # static fields
-.field private static final a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private static final mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # instance fields
-.field private final b:Ljava/lang/ThreadGroup;
+.field private final mAtomicIntegerc:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private final c:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private final mIe:I
 
-.field private final d:Ljava/lang/String;
+.field private final mStringd:Ljava/lang/String;
 
-.field private final e:I
+.field private final mThreadGroupb:Ljava/lang/ThreadGroup;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
@@ -51,10 +51,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mAtomicIntegerc:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 170
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->e:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mIe:I
 
     .line 171
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->b:Ljava/lang/ThreadGroup;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mThreadGroupb:Ljava/lang/ThreadGroup;
 
     .line 172
     new-instance v0, Ljava/lang/StringBuilder;
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mStringd:Ljava/lang/String;
 
     .line 173
     return-void
@@ -111,19 +111,19 @@
     .line 177
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->b:Ljava/lang/ThreadGroup;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mThreadGroupb:Ljava/lang/ThreadGroup;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->d:Ljava/lang/String;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mAtomicIntegerc:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -156,7 +156,7 @@
 
     .line 179
     :cond_0
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->e:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$ICb;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setPriority(I)V
 

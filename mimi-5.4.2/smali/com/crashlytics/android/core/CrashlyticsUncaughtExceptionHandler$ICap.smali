@@ -34,7 +34,7 @@
 
     .prologue
     .line 114
-    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a:Ljava/io/FilenameFilter;
+    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     invoke-interface {v0, p1, p2}, Ljava/io/FilenameFilter;->accept(Ljava/io/File;Ljava/lang/String;)Z
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:[B
+.field private mArrayBa:[B
 
-.field private b:I
+.field private mIb:I
 
-.field private c:I
+.field private mIc:I
 
 
 # direct methods
@@ -44,9 +44,9 @@
     if-lez p3, :cond_1
 
     .line 68
-    iget-object v0, p0, Lu/aly/TMemoryInputTransport;->a:[B
+    iget-object v0, p0, Lu/aly/TMemoryInputTransport;->mArrayBa:[B
 
-    iget v1, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iget v1, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -65,7 +65,7 @@
     .line 49
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lu/aly/TMemoryInputTransport;->a:[B
+    iput-object v0, p0, Lu/aly/TMemoryInputTransport;->mArrayBa:[B
 
     .line 50
     return-void
@@ -76,11 +76,11 @@
 
     .prologue
     .line 93
-    iget v0, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iget v0, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     add-int/2addr v0, p1
 
-    iput v0, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iput v0, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     .line 94
     return-void
@@ -120,7 +120,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lu/aly/TMemoryInputTransport;->a:[B
+    iget-object v0, p0, Lu/aly/TMemoryInputTransport;->mArrayBa:[B
 
     return-object v0
 .end method
@@ -130,7 +130,7 @@
 
     .prologue
     .line 85
-    iget v0, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iget v0, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     return v0
 .end method
@@ -140,15 +140,15 @@
 
     .prologue
     .line 43
-    iput-object p1, p0, Lu/aly/TMemoryInputTransport;->a:[B
+    iput-object p1, p0, Lu/aly/TMemoryInputTransport;->mArrayBa:[B
 
     .line 44
-    iput p2, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iput p2, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     .line 45
     add-int v0, p2, p3
 
-    iput v0, p0, Lu/aly/TMemoryInputTransport;->c:I
+    iput v0, p0, Lu/aly/TMemoryInputTransport;->mIc:I
 
     .line 46
     return-void
@@ -159,9 +159,9 @@
 
     .prologue
     .line 89
-    iget v0, p0, Lu/aly/TMemoryInputTransport;->c:I
+    iget v0, p0, Lu/aly/TMemoryInputTransport;->mIc:I
 
-    iget v1, p0, Lu/aly/TMemoryInputTransport;->b:I
+    iget v1, p0, Lu/aly/TMemoryInputTransport;->mIb:I
 
     sub-int/2addr v0, v1
 

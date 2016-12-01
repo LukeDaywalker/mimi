@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+.field final synthetic mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/ChangePnoTask;->c()Landroid/content/Context;
 
@@ -38,7 +38,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICq;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/task/ChangePnoTask;->a(Lcom/wumii/android/mimi/task/ChangePnoTask;)Ljava/lang/String;
 

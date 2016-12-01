@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->b:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->mAuthenticatorManagerb:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICf;->mStringa:Ljava/lang/String;
 
     const/4 v2, 0x0
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/view/View;
+.field private mId:I
 
-.field private b:Landroid/widget/ProgressBar;
+.field private mProgressBarb:Landroid/widget/ProgressBar;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:I
+.field private mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -24,7 +24,7 @@
     .line 21
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mId:I
 
     .line 25
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -39,10 +39,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -55,7 +55,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     const v1, 0x7f0b00ad
 
@@ -65,10 +65,10 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->b:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mProgressBarb:Landroid/widget/ProgressBar;
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     const v1, 0x7f0b0270
 
@@ -78,10 +78,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mTextViewc:Landroid/widget/TextView;
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->addView(Landroid/view/View;)V
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -140,7 +140,7 @@
 
     .prologue
     .line 33
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mId:I
 
     if-ne p1, v0, :cond_0
 
@@ -155,14 +155,14 @@
     if-ne p1, v0, :cond_1
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mTextViewc:Landroid/widget/TextView;
 
     const v1, 0x7f06034b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->b:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mProgressBarb:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 
@@ -170,20 +170,20 @@
 
     .line 43
     :goto_1
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->d:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mId:I
 
     goto :goto_0
 
     .line 40
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mTextViewc:Landroid/widget/TextView;
 
     const v1, 0x7f06034c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->b:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridViewFooter;->mProgressBarb:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
 

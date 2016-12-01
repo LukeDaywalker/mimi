@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+.field final synthetic mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 623
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     const/4 v2, 0x1
 
     .line 626
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->e(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -51,7 +51,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 627
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->e(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -60,7 +60,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 628
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->f(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -69,7 +69,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 629
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->f(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -78,7 +78,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 630
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->f(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -89,7 +89,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 631
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->d(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/ProgressBar;
 
@@ -100,19 +100,19 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 632
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0, v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Lcom/tencent/connect/avatar/Pro$ImageActivity;Z)Z
 
     .line 636
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     iget-object v1, p1, Lcom/tencent/tauth/Pro$ICc;->b:Ljava/lang/String;
 
     invoke-static {v0, v1, v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->b(Lcom/tencent/connect/avatar/Pro$ImageActivity;Ljava/lang/String;I)V
 
     .line 637
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v1, "10660"
 
@@ -137,7 +137,7 @@
     const/4 v1, -0x1
 
     .line 642
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->e(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -146,7 +146,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 643
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->e(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -155,7 +155,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 644
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->f(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -164,7 +164,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 645
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->f(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/Button;
 
@@ -173,7 +173,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     .line 646
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->d(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/widget/ProgressBar;
 
@@ -201,14 +201,14 @@
     if-nez v0, :cond_1
 
     .line 655
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v1, "\u8bbe\u7f6e\u6210\u529f"
 
     invoke-static {v0, v1, v4}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->b(Lcom/tencent/connect/avatar/Pro$ImageActivity;Ljava/lang/String;I)V
 
     .line 656
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v1, "10658"
 
@@ -217,10 +217,10 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Ljava/lang/String;J)V
 
     .line 657
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     .line 658
-    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v1, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v1}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->k(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Ljava/lang/String;
 
@@ -230,7 +230,7 @@
 
     const-string/jumbo v1, ""
 
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->k(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Ljava/lang/String;
 
@@ -248,7 +248,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 661
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->k(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Ljava/lang/String;
 
@@ -273,7 +273,7 @@
 
     .line 668
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -282,7 +282,7 @@
     invoke-static {v0, v4, v1, v5, v5}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Lcom/tencent/connect/avatar/Pro$ImageActivity;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 669
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->j(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
@@ -303,7 +303,7 @@
 
     .line 672
     :cond_1
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICh;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v1, "\u8bbe\u7f6e\u51fa\u9519\u4e86\uff0c\u8bf7\u91cd\u65b0\u767b\u5f55\u518d\u5c1d\u8bd5\u4e0b\u5462\uff1a\uff09"
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/animation/Animation$AnimationListener;
+.field private mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     float-to-int v4, v4
 
-    iput v4, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iput v4, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     .line 61
     invoke-direct {p0}, Landroid/support/v4/widget/CircleImageView;->a()Z
@@ -105,7 +105,7 @@
     :cond_0
     new-instance v1, Landroid/support/v4/widget/CircleImageView$OvalShadow;
 
-    iget v4, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v4, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     invoke-direct {v1, p0, v4, v0}, Landroid/support/v4/widget/CircleImageView$OvalShadow;-><init>(Landroid/support/v4/widget/CircleImageView;II)V
 
@@ -128,7 +128,7 @@
 
     move-result-object v1
 
-    iget v4, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v4, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     int-to-float v4, v4
 
@@ -141,7 +141,7 @@
     invoke-virtual {v1, v4, v3, v2, v5}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
     .line 70
-    iget v1, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v1, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     .line 72
     invoke-virtual {p0, v1, v1, v1, v1}, Landroid/support/v4/widget/CircleImageView;->setPadding(IIII)V
@@ -154,7 +154,7 @@
 
     .prologue
     .line 38
-    iget v0, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v0, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     return v0
 .end method
@@ -164,7 +164,7 @@
 
     .prologue
     .line 38
-    iput p1, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iput p1, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     return p1
 .end method
@@ -198,7 +198,7 @@
 
     .prologue
     .line 92
-    iput-object p1, p0, Landroid/support/v4/widget/CircleImageView;->a:Landroid/view/animation/Animation$AnimationListener;
+    iput-object p1, p0, Landroid/support/v4/widget/CircleImageView;->mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
     .line 93
     return-void
@@ -212,12 +212,12 @@
     invoke-super {p0}, Landroid/widget/ImageView;->onAnimationEnd()V
 
     .line 106
-    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->a:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
     .line 107
-    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->a:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/CircleImageView;->getAnimation()Landroid/view/animation/Animation;
 
@@ -238,12 +238,12 @@
     invoke-super {p0}, Landroid/widget/ImageView;->onAnimationStart()V
 
     .line 98
-    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->a:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->a:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Landroid/support/v4/widget/CircleImageView;->mAnimationListenera:Landroid/view/animation/Animation$AnimationListener;
 
     invoke-virtual {p0}, Landroid/support/v4/widget/CircleImageView;->getAnimation()Landroid/view/animation/Animation;
 
@@ -275,7 +275,7 @@
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v1, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     mul-int/lit8 v1, v1, 0x2
 
@@ -285,7 +285,7 @@
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/CircleImageView;->b:I
+    iget v2, p0, Landroid/support/v4/widget/CircleImageView;->mIb:I
 
     mul-int/lit8 v2, v2, 0x2
 

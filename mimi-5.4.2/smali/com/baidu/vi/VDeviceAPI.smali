@@ -3,9 +3,9 @@
 
 
 # static fields
-.field private static a:Landroid/os/PowerManager$WakeLock;
+.field private static mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
-.field private static b:Landroid/content/BroadcastReceiver;
+.field private static mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
 
 # direct methods
@@ -14,9 +14,9 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -1219,7 +1219,7 @@
 
     invoke-direct {v0}, Lcom/baidu/vi/ICa;-><init>()V
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -1231,7 +1231,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sget-object v2, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -1243,7 +1243,7 @@
 
     if-eqz p0, :cond_2
 
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     if-nez v0, :cond_0
 
@@ -1267,10 +1267,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     :cond_0
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
@@ -1279,11 +1279,11 @@
     return-void
 
     :cond_2
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -1291,13 +1291,13 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->a:Landroid/os/PowerManager$WakeLock;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mWakeLocka:Landroid/os/PowerManager$WakeLock;
 
     goto :goto_0
 .end method
@@ -1335,7 +1335,7 @@
 .method public static unsetNetworkChangedCallback()V
     .locals 2
 
-    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sget-object v0, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
@@ -1343,13 +1343,13 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sget-object v1, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
+    sput-object v0, Lcom/baidu/vi/VDeviceAPI;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     :cond_0
     return-void

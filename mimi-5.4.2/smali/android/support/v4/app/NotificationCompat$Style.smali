@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field d:Ljava/lang/CharSequence;
+.field isZf:Z
 
-.field e:Ljava/lang/CharSequence;
+.field mCharSequenced:Ljava/lang/CharSequence;
 
-.field f:Z
+.field mCharSequencee:Ljava/lang/CharSequence;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .line 1589
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->f:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->isZf:Z
 
     return-void
 .end method

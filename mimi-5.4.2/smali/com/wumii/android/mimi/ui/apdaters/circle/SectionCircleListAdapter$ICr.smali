@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mTextViewa:Landroid/widget/TextView;
 
-.field b:Landroid/view/View;
+.field mViewb:Landroid/view/View;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter$ICr;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter$ICr;->mTextViewa:Landroid/widget/TextView;
 
     .line 119
     const v0, 0x7f0b0228
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter$ICr;->b:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter$ICr;->mViewb:Landroid/view/View;
 
     .line 120
     return-void

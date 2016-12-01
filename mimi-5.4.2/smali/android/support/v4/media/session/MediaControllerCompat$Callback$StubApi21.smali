@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+.field final synthetic mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 436
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .prologue
     .line 439
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-virtual {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a()V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 449
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->a(Ljava/lang/Object;)Landroid/support/v4/media/session/PlaybackStateCompat;
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 444
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 455
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubApi21;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {p1}, Landroid/support/v4/media/MediaMetadataCompat;->a(Ljava/lang/Object;)Landroid/support/v4/media/MediaMetadataCompat;
 

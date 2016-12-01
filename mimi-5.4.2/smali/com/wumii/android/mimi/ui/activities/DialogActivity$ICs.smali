@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+.field final synthetic mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;->mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DialogActivity$ICs;->mDialogActivitya:Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/DialogActivity;->finish()V
 

@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mAnimatorSete:Landroid/animation/AnimatorSet;
 
-.field private b:Landroid/widget/TextView;
+.field private mDisplayMetricsg:Landroid/util/DisplayMetrics;
 
-.field private c:Landroid/widget/TextView;
+.field private mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
 
-.field private d:Landroid/widget/TextView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private e:Landroid/animation/AnimatorSet;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private g:Landroid/util/DisplayMetrics;
+.field private mTextViewd:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 33
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
 
     .line 34
     const v0, 0x7f0300ce
@@ -44,7 +44,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mImageViewa:Landroid/widget/ImageView;
 
     .line 37
     const v0, 0x7f0b0003
@@ -55,7 +55,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewb:Landroid/widget/TextView;
 
     .line 39
     const v0, 0x7f0b0222
@@ -66,7 +66,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewc:Landroid/widget/TextView;
 
     .line 40
     const v0, 0x7f0b0223
@@ -77,7 +77,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     .line 41
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->a()V
@@ -105,7 +105,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
 
     return-object v0
 .end method
@@ -127,10 +127,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->g:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mDisplayMetricsg:Landroid/util/DisplayMetrics;
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v1, "y"
 
@@ -138,7 +138,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->g:Landroid/util/DisplayMetrics;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mDisplayMetricsg:Landroid/util/DisplayMetrics;
 
     const/high16 v5, 0x420c0000    # 35.0f
 
@@ -152,13 +152,13 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->b:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v4}, Landroid/widget/TextView;->getY()F
 
     move-result v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->g:Landroid/util/DisplayMetrics;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mDisplayMetricsg:Landroid/util/DisplayMetrics;
 
     const/high16 v6, 0x40400000    # 3.0f
 
@@ -180,7 +180,7 @@
     invoke-virtual {v0, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 56
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v2, "alpha"
 
@@ -203,7 +203,7 @@
     invoke-virtual {v1, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 60
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v3, "textSize"
 
@@ -226,7 +226,7 @@
     invoke-virtual {v2, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 64
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v4, "alpha"
 
@@ -255,10 +255,10 @@
 
     invoke-direct {v4}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->e:Landroid/animation/AnimatorSet;
+    iput-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mAnimatorSete:Landroid/animation/AnimatorSet;
 
     .line 69
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->e:Landroid/animation/AnimatorSet;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mAnimatorSete:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v4, v0}, Landroid/animation/AnimatorSet;->play(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
 
@@ -319,7 +319,7 @@
     if-lez v0, :cond_1
 
     .line 97
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewd:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -342,7 +342,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->e:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mAnimatorSete:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
@@ -356,7 +356,7 @@
     if-gez v0, :cond_0
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mICakf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView$ICak;->a()V
 
@@ -368,12 +368,12 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -390,7 +390,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatTitleView;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method

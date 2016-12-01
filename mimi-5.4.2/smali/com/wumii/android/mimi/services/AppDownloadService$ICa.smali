@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/services/AppDownloadService;
+.field final synthetic mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,7 +37,7 @@
 
     .line 91
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/services/AppDownloadService;->stopSelf()V
 
@@ -46,7 +46,7 @@
 
     .line 59
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     const v1, 0x7f060376
 
@@ -55,7 +55,7 @@
     move-result-object v0
 
     .line 60
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/services/AppDownloadService;->a(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/entities/AppUpdateInfo$VersionState;
 
@@ -68,7 +68,7 @@
     .line 61
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     const-class v2, Lcom/wumii/android/mimi/ui/activities/DialogActivity;
 
@@ -85,19 +85,19 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 64
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/services/AppDownloadService;->startActivity(Landroid/content/Intent;)V
 
     .line 68
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/services/AppDownloadService;->c(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/services/AppDownloadService;->b(Lcom/wumii/android/mimi/services/AppDownloadService;)Ljava/lang/String;
 
@@ -111,9 +111,9 @@
 
     .line 66
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-virtual {v2, v6}, Lcom/wumii/android/mimi/services/AppDownloadService;->getString(I)Ljava/lang/String;
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->d(Lcom/wumii/android/mimi/services/AppDownloadService;)Ljava/io/File;
 
@@ -176,7 +176,7 @@
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;Landroid/content/Intent;)Z
 
@@ -185,12 +185,12 @@
     if-eqz v0, :cond_1
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/services/AppDownloadService;->startActivity(Landroid/content/Intent;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     const v2, 0x7f06029c
 
@@ -200,9 +200,9 @@
 
     .line 87
     :goto_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-virtual {v3, v6}, Lcom/wumii/android/mimi/services/AppDownloadService;->getString(I)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     const v2, 0x7f060387
 
@@ -229,7 +229,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->mAppDownloadServicea:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->d(Lcom/wumii/android/mimi/services/AppDownloadService;)Ljava/io/File;
 

@@ -16,7 +16,7 @@
 
 
 # static fields
-.field private static final a:Ljava/util/concurrent/ExecutorService;
+.field private static final mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
 
 # instance fields
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->a:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -374,7 +374,7 @@
 
     .prologue
     .line 204
-    sget-object v0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/task/BaseAsyncTask;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;
 

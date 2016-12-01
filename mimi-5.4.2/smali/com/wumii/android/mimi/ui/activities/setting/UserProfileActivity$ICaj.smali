@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+.field final synthetic mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getGender()Lcom/wumii/android/mimi/models/entities/Gender;
 
@@ -56,7 +56,7 @@
     if-eqz v0, :cond_1
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getAppOrganizationV2()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

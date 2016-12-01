@@ -29,7 +29,7 @@
 
 .field public static final enum g:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-.field private static final synthetic h:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+.field private static final synthetic mArrayICadh:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
 
 # direct methods
@@ -151,7 +151,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->h:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->mArrayICadh:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     return-void
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 30
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->h:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->mArrayICadh:[Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     invoke-virtual {v0}, [Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->clone()Ljava/lang/Object;
 

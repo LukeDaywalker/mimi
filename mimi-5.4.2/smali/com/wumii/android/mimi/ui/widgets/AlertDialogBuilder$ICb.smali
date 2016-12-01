@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+.field final synthetic mAlertDialogBuildera:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->a:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->mAlertDialogBuildera:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->a:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->mAlertDialogBuildera:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->a:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->mAlertDialogBuildera:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -47,7 +47,7 @@
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->a:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;->mAlertDialogBuildera:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 

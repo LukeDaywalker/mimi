@@ -4,19 +4,49 @@
 
 
 # static fields
-.field static volatile a:Lio/fabric/sdk/android/Fabric;
+.field static volatile mFabrica:Lio/fabric/sdk/android/Fabric;
 
-.field static final b:Lio/fabric/sdk/android/Logger;
+.field static final mLoggerb:Lio/fabric/sdk/android/Logger;
 
 
 # instance fields
-.field final c:Lio/fabric/sdk/android/Logger;
+.field final isZd:Z
 
-.field final d:Z
+.field private mActivityLifecycleManagerl:Lio/fabric/sdk/android/ActivityLifecycleManager;
 
-.field private final e:Landroid/content/Context;
+.field private mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final f:Ljava/util/Map;
+.field private final mContexte:Landroid/content/Context;
+
+.field private final mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
+
+.field private final mHandlerh:Landroid/os/Handler;
+
+.field private final mIdManagerk:Lio/fabric/sdk/android/services/common/IdManager;
+
+.field private final mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc/a/a/a/l",
+            "<",
+            "Lio/fabric/sdk/android/Fabric;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mInitializationCallbackj:Lio/fabric/sdk/android/InitializationCallback;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc/a/a/a/l",
+            "<*>;"
+        }
+    .end annotation
+.end field
+
+.field final mLoggerc:Lio/fabric/sdk/android/Logger;
+
+.field private final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -31,35 +61,7 @@
     .end annotation
 .end field
 
-.field private final g:Ljava/util/concurrent/ExecutorService;
-
-.field private final h:Landroid/os/Handler;
-
-.field private final i:Lio/fabric/sdk/android/InitializationCallback;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lc/a/a/a/l",
-            "<",
-            "Lio/fabric/sdk/android/Fabric;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final j:Lio/fabric/sdk/android/InitializationCallback;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lc/a/a/a/l",
-            "<*>;"
-        }
-    .end annotation
-.end field
-
-.field private final k:Lio/fabric/sdk/android/services/common/IdManager;
-
-.field private l:Lio/fabric/sdk/android/ActivityLifecycleManager;
-
-.field private m:Ljava/lang/ref/WeakReference;
+.field private mWeakReferencem:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -69,8 +71,6 @@
         }
     .end annotation
 .end field
-
-.field private n:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
@@ -83,7 +83,7 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/DefaultLogger;-><init>()V
 
-    sput-object v0, Lio/fabric/sdk/android/Fabric;->b:Lio/fabric/sdk/android/Logger;
+    sput-object v0, Lio/fabric/sdk/android/Fabric;->mLoggerb:Lio/fabric/sdk/android/Logger;
 
     return-void
 .end method
@@ -117,25 +117,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 276
-    iput-object p1, p0, Lio/fabric/sdk/android/Fabric;->e:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/Fabric;->mContexte:Landroid/content/Context;
 
     .line 277
-    iput-object p2, p0, Lio/fabric/sdk/android/Fabric;->f:Ljava/util/Map;
+    iput-object p2, p0, Lio/fabric/sdk/android/Fabric;->mMapf:Ljava/util/Map;
 
     .line 278
-    iput-object p3, p0, Lio/fabric/sdk/android/Fabric;->g:Ljava/util/concurrent/ExecutorService;
+    iput-object p3, p0, Lio/fabric/sdk/android/Fabric;->mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
 
     .line 279
-    iput-object p4, p0, Lio/fabric/sdk/android/Fabric;->h:Landroid/os/Handler;
+    iput-object p4, p0, Lio/fabric/sdk/android/Fabric;->mHandlerh:Landroid/os/Handler;
 
     .line 280
-    iput-object p5, p0, Lio/fabric/sdk/android/Fabric;->c:Lio/fabric/sdk/android/Logger;
+    iput-object p5, p0, Lio/fabric/sdk/android/Fabric;->mLoggerc:Lio/fabric/sdk/android/Logger;
 
     .line 281
-    iput-boolean p6, p0, Lio/fabric/sdk/android/Fabric;->d:Z
+    iput-boolean p6, p0, Lio/fabric/sdk/android/Fabric;->isZd:Z
 
     .line 282
-    iput-object p7, p0, Lio/fabric/sdk/android/Fabric;->i:Lio/fabric/sdk/android/InitializationCallback;
+    iput-object p7, p0, Lio/fabric/sdk/android/Fabric;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 
     .line 283
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -144,7 +144,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 284
     invoke-interface {p2}, Ljava/util/Map;->size()I
@@ -155,10 +155,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->j:Lio/fabric/sdk/android/InitializationCallback;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->mInitializationCallbackj:Lio/fabric/sdk/android/InitializationCallback;
 
     .line 285
-    iput-object p8, p0, Lio/fabric/sdk/android/Fabric;->k:Lio/fabric/sdk/android/services/common/IdManager;
+    iput-object p8, p0, Lio/fabric/sdk/android/Fabric;->mIdManagerk:Lio/fabric/sdk/android/services/common/IdManager;
 
     .line 286
     return-void
@@ -169,7 +169,7 @@
 
     .prologue
     .line 264
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     if-nez v0, :cond_0
 
@@ -184,7 +184,7 @@
 
     .line 267
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     return-object v0
 .end method
@@ -194,7 +194,7 @@
 
     .prologue
     .line 300
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     if-nez v0, :cond_1
 
@@ -205,7 +205,7 @@
 
     .line 302
     :try_start_0
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     if-nez v0, :cond_0
 
@@ -232,7 +232,7 @@
 
     .line 307
     :cond_1
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     return-object v0
 
@@ -266,7 +266,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Fabric;->f:Ljava/util/Map;
+    iget-object v0, v0, Lio/fabric/sdk/android/Fabric;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -294,7 +294,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
 .end method
@@ -372,7 +372,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->i:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 
     return-object v0
 .end method
@@ -441,7 +441,7 @@
 
     .prologue
     .line 331
-    sput-object p0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sput-object p0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     .line 332
     invoke-direct {p0}, Lio/fabric/sdk/android/Fabric;->j()V
@@ -455,21 +455,21 @@
 
     .prologue
     .line 523
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     if-nez v0, :cond_0
 
     .line 524
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->b:Lio/fabric/sdk/android/Logger;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mLoggerb:Lio/fabric/sdk/android/Logger;
 
     .line 526
     :goto_0
     return-object v0
 
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Fabric;->c:Lio/fabric/sdk/android/Logger;
+    iget-object v0, v0, Lio/fabric/sdk/android/Fabric;->mLoggerc:Lio/fabric/sdk/android/Logger;
 
     goto :goto_0
 .end method
@@ -479,7 +479,7 @@
 
     .prologue
     .line 533
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
     if-nez v0, :cond_0
 
@@ -491,9 +491,9 @@
     return v0
 
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/Fabric;->a:Lio/fabric/sdk/android/Fabric;
+    sget-object v0, Lio/fabric/sdk/android/Fabric;->mFabrica:Lio/fabric/sdk/android/Fabric;
 
-    iget-boolean v0, v0, Lio/fabric/sdk/android/Fabric;->d:Z
+    iget-boolean v0, v0, Lio/fabric/sdk/android/Fabric;->isZd:Z
 
     goto :goto_0
 .end method
@@ -503,7 +503,7 @@
 
     .prologue
     .line 355
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->e:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mContexte:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lio/fabric/sdk/android/Fabric;->c(Landroid/content/Context;)Landroid/app/Activity;
 
@@ -514,14 +514,14 @@
     .line 356
     new-instance v0, Lio/fabric/sdk/android/ActivityLifecycleManager;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/Fabric;->e:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/Fabric;->mContexte:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->l:Lio/fabric/sdk/android/ActivityLifecycleManager;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->mActivityLifecycleManagerl:Lio/fabric/sdk/android/ActivityLifecycleManager;
 
     .line 357
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->l:Lio/fabric/sdk/android/ActivityLifecycleManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mActivityLifecycleManagerl:Lio/fabric/sdk/android/ActivityLifecycleManager;
 
     new-instance v1, Lio/fabric/sdk/android/Fabric$ICg;
 
@@ -530,7 +530,7 @@
     invoke-virtual {v0, v1}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
 
     .line 375
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->e:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mContexte:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lio/fabric/sdk/android/Fabric;->a(Landroid/content/Context;)V
 
@@ -549,7 +549,7 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->m:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     .line 340
     return-object p0
@@ -604,7 +604,7 @@
     .line 405
     sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->d:Lio/fabric/sdk/android/InitializationCallback;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/Fabric;->k:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v1, p0, Lio/fabric/sdk/android/Fabric;->mIdManagerk:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-virtual {v2, p1, p0, v0, v1}, Lio/fabric/sdk/android/Onboarding;->a(Landroid/content/Context;Lio/fabric/sdk/android/Fabric;Lio/fabric/sdk/android/InitializationCallback;Lio/fabric/sdk/android/services/common/IdManager;)V
 
@@ -627,9 +627,9 @@
     check-cast v0, Lio/fabric/sdk/android/Kit;
 
     .line 407
-    iget-object v4, p0, Lio/fabric/sdk/android/Fabric;->j:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v4, p0, Lio/fabric/sdk/android/Fabric;->mInitializationCallbackj:Lio/fabric/sdk/android/InitializationCallback;
 
-    iget-object v5, p0, Lio/fabric/sdk/android/Fabric;->k:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v5, p0, Lio/fabric/sdk/android/Fabric;->mIdManagerk:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-virtual {v0, p1, p0, v4, v5}, Lio/fabric/sdk/android/Kit;->a(Landroid/content/Context;Lio/fabric/sdk/android/Fabric;Lio/fabric/sdk/android/InitializationCallback;Lio/fabric/sdk/android/services/common/IdManager;)V
 
@@ -712,14 +712,14 @@
     check-cast v0, Lio/fabric/sdk/android/Kit;
 
     .line 427
-    iget-object v4, v0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v4, v0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
-    iget-object v5, v2, Lio/fabric/sdk/android/Onboarding;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v5, v2, Lio/fabric/sdk/android/Onboarding;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     invoke-virtual {v4, v5}, Lio/fabric/sdk/android/InitializationTask;->a(Lio/fabric/sdk/android/services/concurrency/Task;)V
 
     .line 429
-    iget-object v4, p0, Lio/fabric/sdk/android/Fabric;->f:Ljava/util/Map;
+    iget-object v4, p0, Lio/fabric/sdk/android/Fabric;->mMapf:Ljava/util/Map;
 
     invoke-virtual {p0, v4, v0}, Lio/fabric/sdk/android/Fabric;->a(Ljava/util/Map;Lio/fabric/sdk/android/Kit;)V
 
@@ -882,9 +882,9 @@
     if-eqz v6, :cond_0
 
     .line 460
-    iget-object v6, p2, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v6, p2, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     invoke-virtual {v6, v0}, Lio/fabric/sdk/android/InitializationTask;->a(Lio/fabric/sdk/android/services/concurrency/Task;)V
 
@@ -912,7 +912,7 @@
 
     .line 472
     :cond_2
-    iget-object v5, p2, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v5, p2, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     invoke-interface {p1, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -920,7 +920,7 @@
 
     check-cast v0, Lio/fabric/sdk/android/Kit;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     invoke-virtual {v5, v0}, Lio/fabric/sdk/android/InitializationTask;->a(Lio/fabric/sdk/android/services/concurrency/Task;)V
 
@@ -942,12 +942,12 @@
 
     .prologue
     .line 348
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->m:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
     .line 349
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->m:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -1030,7 +1030,7 @@
 
     .prologue
     .line 488
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->l:Lio/fabric/sdk/android/ActivityLifecycleManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mActivityLifecycleManagerl:Lio/fabric/sdk/android/ActivityLifecycleManager;
 
     return-object v0
 .end method
@@ -1040,7 +1040,7 @@
 
     .prologue
     .line 492
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->g:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
 .end method
@@ -1059,7 +1059,7 @@
 
     .prologue
     .line 503
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->f:Ljava/util/Map;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+.field final synthetic mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
     invoke-direct {p0, p2}, Lokio/ForwardingSource;-><init>(Lokio/Source;)V
 
@@ -29,7 +29,7 @@
     const-wide/16 v0, -0x1
 
     .line 56
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
     invoke-static {v2}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;)I
 
@@ -44,7 +44,7 @@
 
     .line 57
     :cond_1
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
     invoke-static {v2}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;)I
 
@@ -66,9 +66,9 @@
     if-eqz v4, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICt;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
     invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a(Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;)I
 

@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+.field final synthetic mNotificationCountHelpera:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$ICx;->a:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper$ICx;->mNotificationCountHelpera:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

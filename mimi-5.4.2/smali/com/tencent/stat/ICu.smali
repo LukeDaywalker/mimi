@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/stat/ICo;
+.field final synthetic mICoa:Lcom/tencent/stat/ICo;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/stat/ICo;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICu;->a:Lcom/tencent/stat/ICo;
+    iput-object p1, p0, Lcom/tencent/stat/ICu;->mICoa:Lcom/tencent/stat/ICo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
     const/4 v8, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICu;->a:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICu;->mICoa:Lcom/tencent/stat/ICo;
 
     invoke-static {v0}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/ICo;)Lcom/tencent/stat/ICx;
 
@@ -95,17 +95,17 @@
 
     invoke-direct {v5, v0}, Lcom/tencent/stat/ICc;-><init>(I)V
 
-    iput v0, v5, Lcom/tencent/stat/ICc;->a:I
+    iput v0, v5, Lcom/tencent/stat/ICc;->mIa:I
 
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, v5, Lcom/tencent/stat/ICc;->b:Lorg/json/JSONObject;
+    iput-object v0, v5, Lcom/tencent/stat/ICc;->mJSONObjectb:Lorg/json/JSONObject;
 
-    iput-object v3, v5, Lcom/tencent/stat/ICc;->c:Ljava/lang/String;
+    iput-object v3, v5, Lcom/tencent/stat/ICc;->mStringc:Ljava/lang/String;
 
-    iput v4, v5, Lcom/tencent/stat/ICc;->d:I
+    iput v4, v5, Lcom/tencent/stat/ICc;->mId:I
 
     invoke-static {v5}, Lcom/tencent/stat/ICb;->a(Lcom/tencent/stat/ICc;)V
     :try_end_1

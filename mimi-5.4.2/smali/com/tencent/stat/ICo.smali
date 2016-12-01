@@ -3,21 +3,15 @@
 
 
 # static fields
-.field private static e:Lcom/tencent/stat/a/ICl;
+.field private static mICle:Lcom/tencent/stat/a/ICl;
 
-.field private static f:Lcom/tencent/stat/ICo;
+.field private static mICof:Lcom/tencent/stat/ICo;
 
 
 # instance fields
-.field a:Landroid/os/Handler;
+.field mHandlera:Landroid/os/Handler;
 
-.field volatile b:I
-
-.field c:Lcom/tencent/stat/a/ICn;
-
-.field private d:Lcom/tencent/stat/ICx;
-
-.field private g:Ljava/util/HashMap;
+.field private mHashMapg:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -29,6 +23,12 @@
     .end annotation
 .end field
 
+.field mICnc:Lcom/tencent/stat/a/ICn;
+
+.field private mICxd:Lcom/tencent/stat/ICx;
+
+.field volatile mIb:I
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -38,11 +38,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sput-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/stat/ICo;->f:Lcom/tencent/stat/ICo;
+    sput-object v0, Lcom/tencent/stat/ICo;->mICof:Lcom/tencent/stat/ICo;
 
     return-void
 .end method
@@ -54,19 +54,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
-    iput-object v1, p0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iput-object v1, p0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/stat/ICo;->g:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/tencent/stat/ICo;->mHashMapg:Ljava/util/HashMap;
 
     :try_start_0
     new-instance v0, Landroid/os/HandlerThread;
@@ -77,7 +77,7 @@
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -107,7 +107,7 @@
 
     invoke-direct {v1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -117,13 +117,13 @@
 
     invoke-direct {v1, v0}, Lcom/tencent/stat/ICx;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iput-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -133,7 +133,7 @@
 
     invoke-direct {p0}, Lcom/tencent/stat/ICo;->f()V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICp;
 
@@ -149,7 +149,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -159,7 +159,7 @@
 .method public static a(Landroid/content/Context;)Lcom/tencent/stat/ICo;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICo;->f:Lcom/tencent/stat/ICo;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICof:Lcom/tencent/stat/ICo;
 
     if-nez v0, :cond_0
 
@@ -167,10 +167,10 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/stat/ICo;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/tencent/stat/ICo;->f:Lcom/tencent/stat/ICo;
+    sput-object v0, Lcom/tencent/stat/ICo;->mICof:Lcom/tencent/stat/ICo;
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/ICo;->f:Lcom/tencent/stat/ICo;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICof:Lcom/tencent/stat/ICo;
 
     return-object v0
 .end method
@@ -202,7 +202,7 @@
 .method public static b()Lcom/tencent/stat/ICo;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICo;->f:Lcom/tencent/stat/ICo;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICof:Lcom/tencent/stat/ICo;
 
     return-object v0
 .end method
@@ -210,7 +210,7 @@
 .method static synthetic b(Lcom/tencent/stat/ICo;)Lcom/tencent/stat/ICx;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     return-object v0
 .end method
@@ -235,7 +235,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -276,7 +276,7 @@
     invoke-virtual {v0, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Object;)V
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -301,9 +301,9 @@
 
     check-cast v0, Lcom/tencent/stat/ICy;
 
-    iget v2, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v2, p0, Lcom/tencent/stat/ICo;->mIb:I
 
-    iget-object v3, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v3, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v3}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -319,7 +319,7 @@
 
     const/4 v7, 0x0
 
-    iget-wide v8, v0, Lcom/tencent/stat/ICy;->a:J
+    iget-wide v8, v0, Lcom/tencent/stat/ICy;->mJa:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -333,7 +333,7 @@
 
     sub-int v0, v2, v0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -344,14 +344,14 @@
     move-exception v0
 
     :try_start_1
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -366,7 +366,7 @@
 
     :cond_0
     :try_start_3
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -374,7 +374,7 @@
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -388,13 +388,13 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
     :try_end_3
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -409,7 +409,7 @@
     :catch_1
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -418,7 +418,7 @@
     :catch_2
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -428,7 +428,7 @@
     move-exception v0
 
     :try_start_5
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -444,7 +444,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v2, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -463,7 +463,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -526,7 +526,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -552,7 +552,7 @@
 
     check-cast v0, Lcom/tencent/stat/ICy;
 
-    iget v3, v0, Lcom/tencent/stat/ICy;->d:I
+    iget v3, v0, Lcom/tencent/stat/ICy;->mId:I
 
     add-int/lit8 v3, v3, 0x1
 
@@ -562,9 +562,9 @@
 
     if-le v3, v4, :cond_1
 
-    iget v3, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v3, p0, Lcom/tencent/stat/ICo;->mIb:I
 
-    iget-object v4, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v4, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v4}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -580,7 +580,7 @@
 
     const/4 v8, 0x0
 
-    iget-wide v10, v0, Lcom/tencent/stat/ICy;->a:J
+    iget-wide v10, v0, Lcom/tencent/stat/ICy;->mJa:J
 
     invoke-static {v10, v11}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -594,7 +594,7 @@
 
     sub-int v0, v3, v0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -605,14 +605,14 @@
     move-exception v0
 
     :try_start_1
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -629,7 +629,7 @@
     :try_start_3
     const-string/jumbo v3, "send_count"
 
-    iget v4, v0, Lcom/tencent/stat/ICy;->d:I
+    iget v4, v0, Lcom/tencent/stat/ICy;->mId:I
 
     add-int/lit8 v4, v4, 0x1
 
@@ -639,7 +639,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    sget-object v3, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v3, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -651,7 +651,7 @@
 
     move-result-object v4
 
-    iget-wide v6, v0, Lcom/tencent/stat/ICy;->a:J
+    iget-wide v6, v0, Lcom/tencent/stat/ICy;->mJa:J
 
     invoke-virtual {v4, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -673,7 +673,7 @@
 
     invoke-virtual {v3, v4}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Object;)V
 
-    iget-object v3, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v3, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v3}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -689,7 +689,7 @@
 
     const/4 v7, 0x0
 
-    iget-wide v8, v0, Lcom/tencent/stat/ICy;->a:J
+    iget-wide v8, v0, Lcom/tencent/stat/ICy;->mJa:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -703,7 +703,7 @@
 
     if-gtz v0, :cond_0
 
-    sget-object v3, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v3, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -738,7 +738,7 @@
     move-exception v0
 
     :try_start_4
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -753,7 +753,7 @@
 
     :cond_2
     :try_start_5
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -761,7 +761,7 @@
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -775,13 +775,13 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
     :try_end_5
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_5 .. :try_end_5} :catch_0
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     :try_start_6
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -796,7 +796,7 @@
     :catch_1
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -805,7 +805,7 @@
     :catch_2
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -814,7 +814,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v2, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -836,7 +836,7 @@
     const/4 v9, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -933,7 +933,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v2, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
     :try_end_2
@@ -990,7 +990,7 @@
 .method static synthetic d()Lcom/tencent/stat/a/ICl;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     return-object v0
 .end method
@@ -1012,7 +1012,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1036,7 +1036,7 @@
 
     invoke-virtual {v1, v2, v0, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1050,9 +1050,9 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1064,7 +1064,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v2, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1091,7 +1091,7 @@
     const/4 v8, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1126,7 +1126,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->g:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHashMapg:Ljava/util/HashMap;
 
     const/4 v2, 0x0
 
@@ -1152,7 +1152,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v2, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
     :try_end_2
@@ -1204,7 +1204,7 @@
 .method public a()I
     .locals 1
 
-    iget v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     return v0
 .end method
@@ -1212,7 +1212,7 @@
 .method a(I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICv;
 
@@ -1233,7 +1233,7 @@
 
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICt;
 
@@ -1248,7 +1248,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1271,7 +1271,7 @@
     return-void
 
     :cond_1
-    iget v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     invoke-static {}, Lcom/tencent/stat/ICb;->h()I
 
@@ -1279,15 +1279,15 @@
 
     if-le v0, v1, :cond_2
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Too many events stored in db."
 
     invoke-virtual {v0, v1}, Lcom/tencent/stat/a/ICl;->c(Ljava/lang/Object;)V
 
-    iget v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
-    iget-object v1, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v1, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v1}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1303,7 +1303,7 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     :cond_2
     new-instance v0, Landroid/content/ContentValues;
@@ -1350,7 +1350,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    iget-object v2, p0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v2, p0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v2}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1368,7 +1368,7 @@
 
     if-nez v0, :cond_3
 
-    sget-object v0, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1393,11 +1393,11 @@
     goto/16 :goto_0
 
     :cond_3
-    iget v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iget v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/tencent/stat/ICo;->b:I
+    iput v0, p0, Lcom/tencent/stat/ICo;->mIb:I
 
     if-eqz p2, :cond_0
 
@@ -1427,7 +1427,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -1451,7 +1451,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICr;
 
@@ -1466,7 +1466,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1494,7 +1494,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -1518,7 +1518,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICq;
 
@@ -1533,7 +1533,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1545,13 +1545,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iget-object v2, v0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
 
     if-eqz v2, :cond_0
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iget-object v2, v0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
 
     :goto_0
     return-object v2
@@ -1562,7 +1562,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v2, v0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v2}, Lcom/tencent/stat/ICx;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1777,7 +1777,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v11, v0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iput-object v11, v0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
 
     new-instance v2, Landroid/content/ContentValues;
 
@@ -1819,7 +1819,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v3, v0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v3}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1844,7 +1844,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v3, v0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v3}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1949,7 +1949,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/stat/ICo;->d:Lcom/tencent/stat/ICx;
+    iget-object v2, v0, Lcom/tencent/stat/ICo;->mICxd:Lcom/tencent/stat/ICx;
 
     invoke-virtual {v2}, Lcom/tencent/stat/ICx;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1967,7 +1967,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iput-object v2, v0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -1981,7 +1981,7 @@
     :goto_8
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/stat/ICo;->c:Lcom/tencent/stat/a/ICn;
+    iget-object v2, v0, Lcom/tencent/stat/ICo;->mICnc:Lcom/tencent/stat/a/ICn;
 
     goto/16 :goto_0
 
@@ -2052,7 +2052,7 @@
 
     :goto_9
     :try_start_3
-    sget-object v4, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v4, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v4, v2}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
     :try_end_3
@@ -2157,7 +2157,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -2184,7 +2184,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICo;->e:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICo;->mICle:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -2192,7 +2192,7 @@
 
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICs;
 
@@ -2208,7 +2208,7 @@
 .method c()V
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/stat/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICu;
 

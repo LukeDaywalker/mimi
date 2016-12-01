@@ -8,7 +8,7 @@
 
 .field protected d:Z
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockTask;->q:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockTask;->mStringq:Ljava/lang/String;
 
     .line 25
     iput-object p2, p0, Lcom/wumii/android/mimi/task/BlockTask;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
@@ -86,7 +86,7 @@
     .line 33
     const-string/jumbo v1, "cid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/BlockTask;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/BlockTask;->mStringq:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

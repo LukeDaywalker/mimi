@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private isZd:Z
 
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private isZe:Z
 
-.field private c:Landroid/widget/TextView;
+.field private isZf:Z
 
-.field private d:Z
+.field private mAnimationg:Landroid/view/animation/Animation;
 
-.field private e:Z
+.field private mAnimationh:Landroid/view/animation/Animation;
 
-.field private f:Z
+.field private mContexta:Landroid/content/Context;
 
-.field private g:Landroid/view/animation/Animation;
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private h:Landroid/view/animation/Animation;
+.field private mRunnablei:Ljava/lang/Runnable;
 
-.field private i:Ljava/lang/Runnable;
+.field private mTextViewc:Landroid/widget/TextView;
 
 
 # direct methods
@@ -32,13 +32,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mContexta:Landroid/content/Context;
 
     .line 34
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 35
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     .line 37
     sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZd:Z
 
     .line 38
     return-void
@@ -72,12 +72,12 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationg:Landroid/view/animation/Animation;
 
     if-nez v0, :cond_0
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f040002
 
@@ -85,17 +85,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->g:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationg:Landroid/view/animation/Animation;
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationg:Landroid/view/animation/Animation;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
 
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationg:Landroid/view/animation/Animation;
 
     const/4 v1, 0x0
 
@@ -103,7 +103,7 @@
 
     .line 114
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationg:Landroid/view/animation/Animation;
 
     return-object v0
 .end method
@@ -113,12 +113,12 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->h:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationh:Landroid/view/animation/Animation;
 
     if-nez v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f040003
 
@@ -126,11 +126,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->h:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationh:Landroid/view/animation/Animation;
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->h:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mAnimationh:Landroid/view/animation/Animation;
 
     return-object v0
 .end method
@@ -144,7 +144,7 @@
     const/4 v2, 0x0
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -155,17 +155,17 @@
     move-result-object v0
 
     .line 70
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(I)V
 
     .line 73
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -174,12 +174,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -189,14 +189,14 @@
     :goto_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->f:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZf:Z
 
     .line 82
     return-void
 
     .line 77
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->e()Landroid/view/animation/Animation;
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 
     if-nez v0, :cond_0
 
@@ -221,11 +221,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView$ICbz;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 
     .line 97
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 
     invoke-static {v0, p1, p2}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
@@ -238,7 +238,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mRunnablei:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -250,10 +250,10 @@
 
     .prologue
     .line 45
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZd:Z
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -272,7 +272,7 @@
 
     .prologue
     .line 41
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZd:Z
 
     return v0
 .end method
@@ -282,7 +282,7 @@
 
     .prologue
     .line 54
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->e:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZe:Z
 
     .line 55
     return-void
@@ -293,7 +293,7 @@
 
     .prologue
     .line 50
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZe:Z
 
     return v0
 .end method
@@ -303,7 +303,7 @@
 
     .prologue
     .line 58
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -313,7 +313,7 @@
 
     .line 62
     :cond_0
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZd:Z
 
     if-eqz v0, :cond_1
 
@@ -321,7 +321,7 @@
 
     .line 63
     :goto_1
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZd:Z
 
     if-eqz v1, :cond_2
 
@@ -351,24 +351,24 @@
 
     .prologue
     .line 101
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZf:Z
 
     if-eqz v0, :cond_0
 
     .line 102
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->f:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->isZf:Z
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     const/4 v1, 0x4
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->f()Landroid/view/animation/Animation;
 

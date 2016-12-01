@@ -7,13 +7,17 @@
 
 
 # static fields
-.field private static a:I
+.field private static mIa:I
 
-.field private static b:I
+.field private static mIb:I
 
 
 # instance fields
-.field private c:Landroid/util/SparseArray;
+.field private mIf:I
+
+.field private mIg:I
+
+.field private mSparseArrayc:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -24,7 +28,7 @@
     .end annotation
 .end field
 
-.field private d:Landroid/util/SparseArray;
+.field private mSparseArrayd:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -35,7 +39,7 @@
     .end annotation
 .end field
 
-.field private e:Landroid/util/SparseArray;
+.field private mSparseArraye:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -45,10 +49,6 @@
         }
     .end annotation
 .end field
-
-.field private f:I
-
-.field private g:I
 
 
 # direct methods
@@ -59,10 +59,10 @@
     const/4 v0, 0x0
 
     .line 12
-    sput v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->a:I
+    sput v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIa:I
 
     .line 13
-    sput v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->b:I
+    sput v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIb:I
 
     return-void
 .end method
@@ -81,27 +81,27 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->d:Landroid/util/SparseArray;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     .line 40
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->c:Landroid/util/SparseArray;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayc:Landroid/util/SparseArray;
 
     .line 41
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->e:Landroid/util/SparseArray;
+    iput-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArraye:Landroid/util/SparseArray;
 
     .line 42
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     .line 43
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     .line 44
     return-void
@@ -112,12 +112,12 @@
 
     .prologue
     .line 206
-    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     if-ltz v0, :cond_0
 
     .line 207
-    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     .line 210
     :goto_0
@@ -129,10 +129,10 @@
 
     move-result v0
 
-    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iput v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     .line 210
-    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iget v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     goto :goto_0
 .end method
@@ -142,7 +142,7 @@
 
     .prologue
     .line 196
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->e:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArraye:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -169,7 +169,7 @@
     move-result v0
 
     .line 201
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->e:Landroid/util/SparseArray;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArraye:Landroid/util/SparseArray;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -199,7 +199,7 @@
 
     .prologue
     .line 175
-    sget v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->a:I
+    sget v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIa:I
 
     return v0
 .end method
@@ -209,7 +209,7 @@
 
     .prologue
     .line 166
-    sget v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->b:I
+    sget v0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIb:I
 
     return v0
 .end method
@@ -295,7 +295,7 @@
     const/4 v1, 0x0
 
     .line 114
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -344,7 +344,7 @@
     if-ge p1, v3, :cond_1
 
     .line 123
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->d:Landroid/util/SparseArray;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -376,7 +376,7 @@
     const/4 v1, 0x0
 
     .line 133
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->c:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayc:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -431,7 +431,7 @@
     add-int/lit8 v1, v0, -0x1
 
     .line 143
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->c:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayc:Landroid/util/SparseArray;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -457,12 +457,12 @@
     const/4 v0, 0x0
 
     .line 68
-    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     if-ltz v1, :cond_0
 
     .line 69
-    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iget v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     .line 77
     :goto_0
@@ -496,7 +496,7 @@
 
     .line 76
     :cond_1
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     goto :goto_0
 .end method
@@ -652,25 +652,25 @@
     const/4 v1, -0x1
 
     .line 48
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 49
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->c:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayc:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 50
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->e:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArraye:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 51
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     .line 52
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     .line 53
     invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
@@ -686,25 +686,25 @@
     const/4 v1, -0x1
 
     .line 58
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->d:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayd:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 59
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->c:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArrayc:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 60
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->e:Landroid/util/SparseArray;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mSparseArraye:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 61
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->f:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIf:I
 
     .line 62
-    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->g:I
+    iput v1, p0, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;->mIg:I
 
     .line 63
     invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V

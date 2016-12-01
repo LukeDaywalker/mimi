@@ -35,7 +35,7 @@
 
 .field public static final enum j:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-.field private static final synthetic k:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
+.field private static final synthetic mArrayICak:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
 
 # direct methods
@@ -208,7 +208,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->k:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mArrayICak:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     return-void
 .end method
@@ -249,7 +249,7 @@
 
     .prologue
     .line 8
-    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->k:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->mArrayICak:[Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     invoke-virtual {v0}, [Lcom/hikvh/media/amr/AmrEncoder$ICa;->clone()Ljava/lang/Object;
 

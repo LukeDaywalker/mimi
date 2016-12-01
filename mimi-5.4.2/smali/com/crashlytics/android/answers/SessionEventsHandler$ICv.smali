@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+.field final synthetic mAnalyticsSettingsDataa:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mSessionEventsHandlerc:Lcom/crashlytics/android/answers/SessionEventsHandler;
 
-.field final synthetic c:Lcom/crashlytics/android/answers/SessionEventsHandler;
+.field final synthetic mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 25
-    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->c:Lcom/crashlytics/android/answers/SessionEventsHandler;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mSessionEventsHandlerc:Lcom/crashlytics/android/answers/SessionEventsHandler;
 
-    iput-object p2, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->a:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iput-object p2, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mAnalyticsSettingsDataa:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
-    iput-object p3, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mStringb:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .prologue
     .line 29
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->c:Lcom/crashlytics/android/answers/SessionEventsHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mSessionEventsHandlerc:Lcom/crashlytics/android/answers/SessionEventsHandler;
 
     invoke-static {v0}, Lcom/crashlytics/android/answers/SessionEventsHandler;->a(Lcom/crashlytics/android/answers/SessionEventsHandler;)Lio/fabric/sdk/android/services/events/EventsStrategy;
 
@@ -47,9 +47,9 @@
 
     check-cast v0, Lcom/crashlytics/android/answers/SessionAnalyticsManagerStrategy;
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->a:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mAnalyticsSettingsDataa:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
-    iget-object v2, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/crashlytics/android/answers/SessionEventsHandler$ICv;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Lcom/crashlytics/android/answers/SessionAnalyticsManagerStrategy;->a(Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;Ljava/lang/String;)V
     :try_end_0

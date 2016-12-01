@@ -4,7 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mCircleb:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+
+.field private mJc:J
+
+.field private mJd:J
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,12 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Lcom/wumii/android/mimi/models/entities/circle/Circle;
-
-.field private c:J
-
-.field private d:J
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     .prologue
     .line 42
-    iput-wide p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->c:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mJc:J
 
     .line 43
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->b:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mCircleb:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 35
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 26
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mLista:Ljava/util/List;
 
     .line 27
     return-void
@@ -83,7 +83,7 @@
 
     .prologue
     .line 50
-    iput-wide p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->d:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mJd:J
 
     .line 51
     return-void
@@ -103,7 +103,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -113,7 +113,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->b:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->mCircleb:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     return-object v0
 .end method

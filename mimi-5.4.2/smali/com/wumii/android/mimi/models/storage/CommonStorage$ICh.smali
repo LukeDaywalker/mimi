@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+.field final synthetic mCommonStoragea:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 213
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/CommonStorage$ICh;->a:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/CommonStorage$ICh;->mCommonStoragea:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

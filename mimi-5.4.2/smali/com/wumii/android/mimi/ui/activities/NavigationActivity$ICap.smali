@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 467
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,14 +30,14 @@
 
     .prologue
     .line 471
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->g()Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     move-result-object v0
 
     .line 472
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
@@ -47,7 +47,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->f(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
@@ -78,13 +78,13 @@
 
     .line 477
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->f(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 

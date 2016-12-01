@@ -7,13 +7,13 @@
 
 
 # static fields
-.field private static cR:Lcom/baidu/location/ICr;
+.field private static mICrcR:Lcom/baidu/location/ICr;
 
 
 # instance fields
-.field private cQ:Lcom/baidu/location/ICl;
+.field private mHandlercS:Landroid/os/Handler;
 
-.field private cS:Landroid/os/Handler;
+.field private mIClcQ:Lcom/baidu/location/ICl;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICr;->cR:Lcom/baidu/location/ICr;
+    sput-object v0, Lcom/baidu/location/ICr;->mICrcR:Lcom/baidu/location/ICr;
 
     return-void
 .end method
@@ -34,15 +34,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICr;->cQ:Lcom/baidu/location/ICl;
+    iput-object v0, p0, Lcom/baidu/location/ICr;->mIClcQ:Lcom/baidu/location/ICl;
 
-    iput-object v0, p0, Lcom/baidu/location/ICr;->cS:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICr;->mHandlercS:Landroid/os/Handler;
 
     new-instance v0, Lcom/baidu/location/ICr$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICr$ICa;-><init>(Lcom/baidu/location/ICr;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICr;->cS:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICr;->mHandlercS:Landroid/os/Handler;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 .method public static I()Lcom/baidu/location/ICr;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICr;->cR:Lcom/baidu/location/ICr;
+    sget-object v0, Lcom/baidu/location/ICr;->mICrcR:Lcom/baidu/location/ICr;
 
     if-nez v0, :cond_0
 
@@ -58,10 +58,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICr;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICr;->cR:Lcom/baidu/location/ICr;
+    sput-object v0, Lcom/baidu/location/ICr;->mICrcR:Lcom/baidu/location/ICr;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICr;->cR:Lcom/baidu/location/ICr;
+    sget-object v0, Lcom/baidu/location/ICr;->mICrcR:Lcom/baidu/location/ICr;
 
     return-object v0
 .end method
@@ -103,18 +103,18 @@
 .method public H()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICr;->cQ:Lcom/baidu/location/ICl;
+    iget-object v0, p0, Lcom/baidu/location/ICr;->mIClcQ:Lcom/baidu/location/ICl;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICr;->cQ:Lcom/baidu/location/ICl;
+    iget-object v0, p0, Lcom/baidu/location/ICr;->mIClcQ:Lcom/baidu/location/ICl;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICl;->v()V
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICr;->cQ:Lcom/baidu/location/ICl;
+    iput-object v0, p0, Lcom/baidu/location/ICr;->mIClcQ:Lcom/baidu/location/ICl;
 
     return-void
 .end method
@@ -122,7 +122,7 @@
 .method public J()Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICr;->cS:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICr;->mHandlercS:Landroid/os/Handler;
 
     return-object v0
 .end method

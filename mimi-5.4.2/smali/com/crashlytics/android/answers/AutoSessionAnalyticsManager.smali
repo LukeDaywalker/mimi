@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field private final d:Landroid/app/Application;
+.field private final mActivityLifecycleCallbackse:Landroid/app/Application$ActivityLifecycleCallbacks;
 
-.field private final e:Landroid/app/Application$ActivityLifecycleCallbacks;
+.field private final mApplicationd:Landroid/app/Application;
 
 
 # direct methods
@@ -28,10 +28,10 @@
 
     invoke-direct {v0, p0}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;-><init>(Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->e:Landroid/app/Application$ActivityLifecycleCallbacks;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mActivityLifecycleCallbackse:Landroid/app/Application$ActivityLifecycleCallbacks;
 
     .line 77
-    iput-object p3, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->d:Landroid/app/Application;
+    iput-object p3, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mApplicationd:Landroid/app/Application;
 
     .line 78
     invoke-static {}, Lcom/crashlytics/android/answers/Answers;->c()Lcom/crashlytics/android/answers/Answers;
@@ -47,7 +47,7 @@
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 80
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->e:Landroid/app/Application$ActivityLifecycleCallbacks;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mActivityLifecycleCallbackse:Landroid/app/Application$ActivityLifecycleCallbacks;
 
     invoke-virtual {p3, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
@@ -104,9 +104,9 @@
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 87
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->d:Landroid/app/Application;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mApplicationd:Landroid/app/Application;
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->e:Landroid/app/Application$ActivityLifecycleCallbacks;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->mActivityLifecycleCallbackse:Landroid/app/Application$ActivityLifecycleCallbacks;
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 

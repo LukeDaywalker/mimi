@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/IBinder;
+.field private mIBindera:Landroid/os/IBinder;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->mIBindera:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     invoke-virtual {v1, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x1
 
@@ -107,7 +107,7 @@
     invoke-virtual {p3, v2, v4}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
 
     :goto_0
-    iget-object v4, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->a:Landroid/os/IBinder;
+    iget-object v4, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->mIBindera:Landroid/os/IBinder;
 
     const/4 v5, 0x2
 
@@ -160,7 +160,7 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/baidu/a/a/a/ICa$ICa$ICa;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method

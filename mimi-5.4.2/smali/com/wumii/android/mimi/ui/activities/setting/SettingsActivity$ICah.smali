@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
+.field final synthetic mSettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->mSettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .line 182
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->mSettingsActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
     const v2, 0x7f060241
 

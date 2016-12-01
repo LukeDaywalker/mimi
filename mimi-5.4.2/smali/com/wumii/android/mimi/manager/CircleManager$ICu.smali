@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+.field final synthetic mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/CircleManager;
+.field final synthetic mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 436
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
 
     .line 442
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -76,7 +76,7 @@
     check-cast v0, Lcom/wumii/android/mimi/network/domain/RecommendCirclesResp;
 
     .line 443
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->a(Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)V
 
@@ -141,7 +141,7 @@
     .line 457
     :cond_0
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICu;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/Object;)V
 

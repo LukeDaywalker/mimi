@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICr;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICr;->mStringa:Ljava/lang/String;
 
     return-void
 .end method

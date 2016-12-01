@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+.field final synthetic mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 18
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
     check-cast p1, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;
 
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->a(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;)Landroid/support/v4/view/ViewPager;
 
@@ -49,7 +49,7 @@
     move-result v1
 
     .line 24
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->b(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;)Landroid/support/v4/view/ViewPager;
 
@@ -60,7 +60,7 @@
     .line 25
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->c(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;)Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
@@ -69,7 +69,7 @@
     if-eqz v0, :cond_0
 
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICv;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->d(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;)Lcom/viewpagerindicator/TabPageIndicator$ICf;
 

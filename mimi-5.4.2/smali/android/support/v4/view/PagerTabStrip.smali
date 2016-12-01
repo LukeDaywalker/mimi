@@ -4,37 +4,37 @@
 
 
 # instance fields
-.field private f:I
+.field private isZo:Z
 
-.field private g:I
+.field private isZp:Z
 
-.field private h:I
+.field private isZr:Z
 
-.field private i:I
+.field private mFs:F
 
-.field private j:I
+.field private mFt:F
 
-.field private k:I
+.field private mIf:I
 
-.field private final l:Landroid/graphics/Paint;
+.field private mIg:I
 
-.field private final m:Landroid/graphics/Rect;
+.field private mIh:I
 
-.field private n:I
+.field private mIi:I
 
-.field private o:Z
+.field private mIj:I
 
-.field private p:Z
+.field private mIk:I
 
-.field private q:I
+.field private mIn:I
 
-.field private r:Z
+.field private mIq:I
 
-.field private s:F
+.field private mIu:I
 
-.field private t:F
+.field private final mPaintl:Landroid/graphics/Paint;
 
-.field private u:I
+.field private final mRectm:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -69,35 +69,35 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iput-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
     .line 64
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->m:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mRectm:Landroid/graphics/Rect;
 
     .line 66
     const/16 v0, 0xff
 
-    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->n:I
+    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIn:I
 
     .line 68
-    iput-boolean v4, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean v4, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 69
-    iput-boolean v4, p0, Landroid/support/v4/view/PagerTabStrip;->p:Z
+    iput-boolean v4, p0, Landroid/support/v4/view/PagerTabStrip;->isZp:Z
 
     .line 84
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->e:I
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIe:I
 
-    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     .line 85
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
-    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -121,7 +121,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->g:I
+    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIg:I
 
     .line 91
     const/high16 v1, 0x40c00000    # 6.0f
@@ -132,7 +132,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->h:I
+    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIh:I
 
     .line 92
     const/high16 v1, 0x42800000    # 64.0f
@@ -141,7 +141,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->i:I
+    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIi:I
 
     .line 93
     const/high16 v1, 0x41800000    # 16.0f
@@ -152,7 +152,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     .line 94
     const/high16 v1, 0x3f800000    # 1.0f
@@ -163,7 +163,7 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->q:I
+    iput v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIq:I
 
     .line 95
     const/high16 v1, 0x42000000    # 32.0f
@@ -174,7 +174,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->j:I
+    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIj:I
 
     .line 96
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -185,7 +185,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->u:I
+    iput v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIu:I
 
     .line 99
     invoke-virtual {p0}, Landroid/support/v4/view/PagerTabStrip;->getPaddingLeft()I
@@ -217,12 +217,12 @@
     invoke-virtual {p0, v4}, Landroid/support/v4/view/PagerTabStrip;->setWillNotDraw(Z)V
 
     .line 104
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setFocusable(Z)V
 
     .line 105
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewb:Landroid/widget/TextView;
 
     new-instance v1, Landroid/support/v4/view/PagerTabStrip$1;
 
@@ -231,12 +231,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 112
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setFocusable(Z)V
 
     .line 113
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewd:Landroid/widget/TextView;
 
     new-instance v1, Landroid/support/v4/view/PagerTabStrip$2;
 
@@ -252,7 +252,7 @@
     if-nez v0, :cond_0
 
     .line 121
-    iput-boolean v5, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean v5, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 123
     :cond_0
@@ -266,7 +266,7 @@
 
     .prologue
     .line 279
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->m:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mRectm:Landroid/graphics/Rect;
 
     .line 280
     invoke-virtual {p0}, Landroid/support/v4/view/PagerTabStrip;->getHeight()I
@@ -274,29 +274,29 @@
     move-result v1
 
     .line 281
-    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getLeft()I
 
     move-result v2
 
-    iget v3, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v3, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     sub-int/2addr v2, v3
 
     .line 282
-    iget-object v3, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getRight()I
 
     move-result v3
 
-    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     add-int/2addr v3, v4
 
     .line 283
-    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->g:I
+    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->mIg:I
 
     sub-int v4, v1, v4
 
@@ -325,27 +325,27 @@
 
     float-to-int v2, v2
 
-    iput v2, p0, Landroid/support/v4/view/PagerTabStrip;->n:I
+    iput v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIn:I
 
     .line 290
-    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getLeft()I
 
     move-result v2
 
-    iget v3, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v3, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     sub-int/2addr v2, v3
 
     .line 291
-    iget-object v3, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getRight()I
 
     move-result v3
 
-    iget v5, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v5, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     add-int/2addr v3, v5
 
@@ -364,7 +364,7 @@
 
     .prologue
     .line 212
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     return v0
 .end method
@@ -378,7 +378,7 @@
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->j:I
+    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIj:I
 
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
@@ -392,7 +392,7 @@
 
     .prologue
     .line 149
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     return v0
 .end method
@@ -412,40 +412,40 @@
     move-result v6
 
     .line 263
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getLeft()I
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     sub-int/2addr v0, v1
 
     .line 264
-    iget-object v1, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getRight()I
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     add-int v3, v1, v2
 
     .line 265
-    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->g:I
+    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIg:I
 
     sub-int v2, v6, v1
 
     .line 267
-    iget-object v1, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
-    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->n:I
+    iget v4, p0, Landroid/support/v4/view/PagerTabStrip;->mIn:I
 
     shl-int/lit8 v4, v4, 0x18
 
-    iget v5, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iget v5, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     and-int/2addr v5, v7
 
@@ -462,23 +462,23 @@
 
     int-to-float v4, v6
 
-    iget-object v5, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v5, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
     move-object v0, p1
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
     .line 270
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     if-eqz v0, :cond_0
 
     .line 271
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
     const/high16 v1, -0x1000000
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     and-int/2addr v2, v7
 
@@ -493,7 +493,7 @@
 
     int-to-float v1, v0
 
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->q:I
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIq:I
 
     sub-int v0, v6, v0
 
@@ -513,7 +513,7 @@
 
     int-to-float v4, v6
 
-    iget-object v5, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v5, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -540,7 +540,7 @@
     .line 223
     if-eqz v2, :cond_0
 
-    iget-boolean v3, p0, Landroid/support/v4/view/PagerTabStrip;->r:Z
+    iget-boolean v3, p0, Landroid/support/v4/view/PagerTabStrip;->isZr:Z
 
     if-eqz v3, :cond_0
 
@@ -571,19 +571,19 @@
 
     .line 233
     :pswitch_0
-    iput v3, p0, Landroid/support/v4/view/PagerTabStrip;->s:F
+    iput v3, p0, Landroid/support/v4/view/PagerTabStrip;->mFs:F
 
     .line 234
-    iput v4, p0, Landroid/support/v4/view/PagerTabStrip;->t:F
+    iput v4, p0, Landroid/support/v4/view/PagerTabStrip;->mFt:F
 
     .line 235
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->r:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZr:Z
 
     goto :goto_1
 
     .line 239
     :pswitch_1
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->s:F
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mFs:F
 
     sub-float v0, v3, v0
 
@@ -591,7 +591,7 @@
 
     move-result v0
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->u:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIu:I
 
     int-to-float v2, v2
 
@@ -599,7 +599,7 @@
 
     if-gtz v0, :cond_2
 
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->t:F
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mFt:F
 
     sub-float v0, v4, v0
 
@@ -607,7 +607,7 @@
 
     move-result v0
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->u:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIu:I
 
     int-to-float v2, v2
 
@@ -617,19 +617,19 @@
 
     .line 241
     :cond_2
-    iput-boolean v1, p0, Landroid/support/v4/view/PagerTabStrip;->r:Z
+    iput-boolean v1, p0, Landroid/support/v4/view/PagerTabStrip;->isZr:Z
 
     goto :goto_1
 
     .line 246
     :pswitch_2
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getLeft()I
 
     move-result v0
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     sub-int/2addr v0, v2
 
@@ -640,9 +640,9 @@
     if-gez v0, :cond_3
 
     .line 247
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
-    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
@@ -656,13 +656,13 @@
 
     .line 248
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getRight()I
 
     move-result v0
 
-    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->k:I
+    iget v2, p0, Landroid/support/v4/view/PagerTabStrip;->mIk:I
 
     add-int/2addr v0, v2
 
@@ -673,9 +673,9 @@
     if-lez v0, :cond_1
 
     .line 249
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
-    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
@@ -704,7 +704,7 @@
     invoke-super {p0, p1}, Landroid/support/v4/view/PagerTitleStrip;->setBackgroundColor(I)V
 
     .line 179
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->p:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZp:Z
 
     if-nez v0, :cond_0
 
@@ -718,7 +718,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 182
     :cond_0
@@ -739,7 +739,7 @@
     invoke-super {p0, p1}, Landroid/support/v4/view/PagerTitleStrip;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 171
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->p:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZp:Z
 
     if-nez v0, :cond_0
 
@@ -749,7 +749,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 174
     :cond_0
@@ -770,7 +770,7 @@
     invoke-super {p0, p1}, Landroid/support/v4/view/PagerTitleStrip;->setBackgroundResource(I)V
 
     .line 187
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->p:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZp:Z
 
     if-nez v0, :cond_0
 
@@ -780,7 +780,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 190
     :cond_0
@@ -798,12 +798,12 @@
 
     .prologue
     .line 199
-    iput-boolean p1, p0, Landroid/support/v4/view/PagerTabStrip;->o:Z
+    iput-boolean p1, p0, Landroid/support/v4/view/PagerTabStrip;->isZo:Z
 
     .line 200
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->p:Z
+    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->isZp:Z
 
     .line 201
     invoke-virtual {p0}, Landroid/support/v4/view/PagerTabStrip;->invalidate()V
@@ -817,12 +817,12 @@
 
     .prologue
     .line 154
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->h:I
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIh:I
 
     if-ge p4, v0, :cond_0
 
     .line 155
-    iget p4, p0, Landroid/support/v4/view/PagerTabStrip;->h:I
+    iget p4, p0, Landroid/support/v4/view/PagerTabStrip;->mIh:I
 
     .line 157
     :cond_0
@@ -837,12 +837,12 @@
 
     .prologue
     .line 131
-    iput p1, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iput p1, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     .line 132
-    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->l:Landroid/graphics/Paint;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTabStrip;->mPaintl:Landroid/graphics/Paint;
 
-    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->f:I
+    iget v1, p0, Landroid/support/v4/view/PagerTabStrip;->mIf:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -881,12 +881,12 @@
 
     .prologue
     .line 162
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->i:I
+    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIi:I
 
     if-ge p1, v0, :cond_0
 
     .line 163
-    iget p1, p0, Landroid/support/v4/view/PagerTabStrip;->i:I
+    iget p1, p0, Landroid/support/v4/view/PagerTabStrip;->mIi:I
 
     .line 165
     :cond_0

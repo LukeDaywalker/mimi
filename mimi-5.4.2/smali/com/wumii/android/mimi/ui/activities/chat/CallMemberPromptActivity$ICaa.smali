@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+.field final synthetic mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 214
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 217
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -47,7 +47,7 @@
     move-result-object v0
 
     .line 218
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     const v2, 0x7f06004d
 
@@ -57,7 +57,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -74,7 +74,7 @@
     move-result-object v1
 
     .line 219
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -84,9 +84,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -103,7 +103,7 @@
     invoke-virtual {v2, v3, v0, v1, v4}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
 
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->mCallMemberPromptActivitya:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->finish()V
 

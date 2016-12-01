@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro$ICk;
+.field final synthetic mICka:Lcom/tencent/connect/b/Pro$ICk;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 498
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICm;->a:Lcom/tencent/connect/b/Pro$ICk;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICm;->mICka:Lcom/tencent/connect/b/Pro$ICk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

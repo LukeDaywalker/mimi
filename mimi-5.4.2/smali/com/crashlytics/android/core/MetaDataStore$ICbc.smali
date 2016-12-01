@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/UserMetaData;
+.field final synthetic mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
 
 # direct methods
@@ -13,14 +13,14 @@
 
     .prologue
     .line 147
-    iput-object p1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->a:Lcom/crashlytics/android/core/UserMetaData;
+    iput-object p1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     invoke-direct {p0}, Lorg/json/JSONObject;-><init>()V
 
     .line 148
     const-string/jumbo v0, "userId"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->a:Lcom/crashlytics/android/core/UserMetaData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
 
@@ -29,7 +29,7 @@
     .line 149
     const-string/jumbo v0, "userName"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->a:Lcom/crashlytics/android/core/UserMetaData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->c:Ljava/lang/String;
 
@@ -38,7 +38,7 @@
     .line 150
     const-string/jumbo v0, "userEmail"
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->a:Lcom/crashlytics/android/core/UserMetaData;
+    iget-object v1, p0, Lcom/crashlytics/android/core/MetaDataStore$ICbc;->mUserMetaDataa:Lcom/crashlytics/android/core/UserMetaData;
 
     iget-object v1, v1, Lcom/crashlytics/android/core/UserMetaData;->d:Ljava/lang/String;
 

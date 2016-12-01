@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.field private mContextc:Landroid/content/Context;
 
-.field private c:Landroid/content/Context;
+.field private mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 157
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mContextc:Landroid/content/Context;
 
     .line 158
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mStringd:Ljava/lang/String;
 
     .line 159
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 21
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -66,24 +66,24 @@
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     if-nez v0, :cond_0
 
     .line 163
     new-instance v0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mContextc:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mStringd:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     .line 165
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     return-object v0
 .end method

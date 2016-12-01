@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:F
+.field final synthetic mFa:F
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+.field final synthetic mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->a:F
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mFa:F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;)Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
 
@@ -51,9 +51,9 @@
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;)Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
 
@@ -67,7 +67,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;)Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
 
@@ -86,9 +86,9 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;I)I
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mSurveyOptionViewb:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->a:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbt;->mFa:F
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;F)V
 

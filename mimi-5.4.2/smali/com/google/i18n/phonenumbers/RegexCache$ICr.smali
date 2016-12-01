@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+.field final synthetic mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICr;->a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICr;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
     invoke-direct {p0, p2, p3, p4}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
@@ -47,7 +47,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICr;->a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICr;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
     invoke-static {v1}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a(Lcom/google/i18n/phonenumbers/RegexCache$ICq;)I
 

@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+.field private static final synthetic mArrayICid:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->d:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mArrayICid:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 8
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->d:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->mArrayICid:[Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/network/HttpRequest$ICi;->clone()Ljava/lang/Object;
 

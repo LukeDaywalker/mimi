@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+.field private mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private e:Ljava/util/Set;
+.field private mSete:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -36,7 +36,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 28
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 29
     return-void
@@ -67,7 +67,7 @@
     .line 34
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;-><init>(Landroid/content/Context;)V
 
@@ -96,7 +96,7 @@
     move-result-object v3
 
     .line 41
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v5, Ljava/lang/String;
 
@@ -111,7 +111,7 @@
     check-cast v2, Ljava/lang/String;
 
     .line 42
-    invoke-static {v3, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -123,16 +123,16 @@
     .line 45
     check-cast v2, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->setOnSecretCardClickListener(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;)V
 
     .line 47
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->e:Ljava/util/Set;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mSete:Ljava/util/Set;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->e:Ljava/util/Set;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mSete:Ljava/util/Set;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Feed;->getSecret()Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -156,7 +156,7 @@
 
     move-result-object v2
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v2, v5, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZZ)V
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 59
     return-void
@@ -190,7 +190,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mICzb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     .line 55
     return-void
@@ -210,7 +210,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->e:Ljava/util/Set;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->mSete:Ljava/util/Set;
 
     .line 63
     return-void

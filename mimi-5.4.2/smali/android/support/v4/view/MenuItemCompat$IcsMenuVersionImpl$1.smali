@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
+.field final synthetic mOnActionExpandListenera:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 231
-    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl$1;->a:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
+    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl$1;->mOnActionExpandListenera:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;->a(Landroid/view/MenuItem;)Z
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl$1;->a:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
+    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl$1;->mOnActionExpandListenera:Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;->b(Landroid/view/MenuItem;)Z
 

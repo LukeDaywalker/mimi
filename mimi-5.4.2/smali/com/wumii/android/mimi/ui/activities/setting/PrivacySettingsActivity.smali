@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private n:Landroid/widget/TextView;
+.field private mDisplayMetricsp:Landroid/util/DisplayMetrics;
 
-.field private o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+.field private mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private p:Landroid/util/DisplayMetrics;
+.field private mTextViewn:Landroid/widget/TextView;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mTextViewn:Landroid/widget/TextView;
 
     .line 50
     const v0, 0x7f0b0103
@@ -69,7 +69,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     .line 51
     return-void
@@ -89,7 +89,7 @@
     .line 81
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->p:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mDisplayMetricsp:Landroid/util/DisplayMetrics;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -222,7 +222,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->p:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mDisplayMetricsp:Landroid/util/DisplayMetrics;
 
     .line 43
     const v0, 0x7f03004b
@@ -233,7 +233,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->g()V
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mSectionTextItemViewo:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
@@ -264,14 +264,14 @@
     check-cast v0, Ljava/lang/String;
 
     .line 57
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mTextViewn:Landroid/widget/TextView;
 
     const v1, 0x7f0602b3
 
@@ -283,7 +283,7 @@
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->mTextViewn:Landroid/widget/TextView;
 
     const v1, 0x7f0602b4
 

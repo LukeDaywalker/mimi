@@ -11,7 +11,7 @@
 
 .field public d:I
 
-.field final synthetic e:Lcom/baidu/platform/comapi/map/B;
+.field final synthetic mBe:Lcom/baidu/platform/comapi/map/B;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/B$ICb;->e:Lcom/baidu/platform/comapi/map/B;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/B$ICb;->mBe:Lcom/baidu/platform/comapi/map/B;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

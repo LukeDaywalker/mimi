@@ -17,11 +17,11 @@
 
 
 # instance fields
-.field g:I
+.field mArrayIh:[I
 
-.field h:[I
+.field mIg:I
 
-.field i:Landroid/util/SparseArray;
+.field mSparseArrayi:Landroid/util/SparseArray;
 
 
 # direct methods
@@ -51,22 +51,22 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iput v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     .line 1228
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     :goto_0
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
     .line 1229
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readIntArray([I)V
 
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->i:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mSparseArrayi:Landroid/util/SparseArray;
 
     .line 1231
     return-void
@@ -154,17 +154,17 @@
     invoke-super {p0, p1, p2}, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 1236
-    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->g:I
+    iget v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mIg:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 1237
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->h:[I
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mArrayIh:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeIntArray([I)V
 
     .line 1238
-    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->i:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/etsy/android/grid/StaggeredGridView$GridListSavedState;->mSparseArrayi:Landroid/util/SparseArray;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeSparseArray(Landroid/util/SparseArray;)V
 

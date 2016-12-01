@@ -8,15 +8,15 @@
 
 
 # instance fields
+.field private isZq:Z
+
+.field private isZr:Z
+
+.field private mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
+
+.field private mStringp:Ljava/lang/String;
+
 .field protected n:Landroid/support/v4/app/FragmentManager;
-
-.field private o:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
-
-.field private p:Ljava/lang/String;
-
-.field private q:Z
-
-.field private r:Z
 
 
 # direct methods
@@ -37,7 +37,7 @@
     const/4 v3, 0x0
 
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
     .line 56
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
@@ -82,10 +82,10 @@
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->p:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mStringp:Ljava/lang/String;
 
     .line 100
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->q:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZq:Z
 
     .line 101
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->invalidateOptionsMenu()V
@@ -110,7 +110,7 @@
 
     .prologue
     .line 117
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZr:Z
 
     invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->a(Ljava/lang/String;Z)Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
@@ -184,7 +184,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
     goto :goto_0
 .end method
@@ -230,10 +230,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->r:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZr:Z
 
     .line 44
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZr:Z
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->a(Z)Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
@@ -294,7 +294,7 @@
     move-result-object v1
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->p:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mStringp:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -303,7 +303,7 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->q:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZq:Z
 
     if-eqz v0, :cond_0
 
@@ -315,7 +315,7 @@
     move-result v0
 
     .line 73
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->p:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mStringp:Ljava/lang/String;
 
     invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
@@ -324,7 +324,7 @@
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 74
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->q:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->isZq:Z
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -370,7 +370,7 @@
     if-ne v0, v1, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->mOrgInfoBaseFragmento:Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/OrgInfoBaseFragment;->a()V
 

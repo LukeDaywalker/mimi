@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+.field final synthetic mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICz;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICz;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICz;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICz;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
 

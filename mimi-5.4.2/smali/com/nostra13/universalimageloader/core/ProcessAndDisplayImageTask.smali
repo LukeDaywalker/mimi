@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+.field private final mBitmapb:Landroid/graphics/Bitmap;
 
-.field private final b:Landroid/graphics/Bitmap;
+.field private final mHandlerd:Landroid/os/Handler;
 
-.field private final c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+.field private final mImageLoaderEnginea:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
-.field private final d:Landroid/os/Handler;
+.field private final mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
 
 # direct methods
@@ -25,16 +25,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 43
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoaderEnginea:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     .line 44
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->b:Landroid/graphics/Bitmap;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mBitmapb:Landroid/graphics/Bitmap;
 
     .line 45
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
     .line 46
-    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->d:Landroid/os/Handler;
+    iput-object p4, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mHandlerd:Landroid/os/Handler;
 
     .line 47
     return-void
@@ -55,25 +55,25 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
-    iget-object v3, v3, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->b:Ljava/lang/String;
+    iget-object v3, v3, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mStringb:Ljava/lang/String;
 
     aput-object v3, v1, v2
 
     invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/utils/L;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 53
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->p()Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
 
     move-result-object v0
 
     .line 54
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->b:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mBitmapb:Landroid/graphics/Bitmap;
 
     invoke-interface {v0, v1}, Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
@@ -82,26 +82,26 @@
     .line 55
     new-instance v1, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoaderEnginea:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     sget-object v4, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     invoke-direct {v1, v0, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;-><init>(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;)V
 
     .line 57
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->c:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoadingInfoc:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->s()Z
 
     move-result v0
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->d:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mHandlerd:Landroid/os/Handler;
 
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/core/ProcessAndDisplayImageTask;->mImageLoaderEnginea:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     invoke-static {v1, v0, v2, v3}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a(Ljava/lang/Runnable;ZLandroid/os/Handler;Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;)V
 

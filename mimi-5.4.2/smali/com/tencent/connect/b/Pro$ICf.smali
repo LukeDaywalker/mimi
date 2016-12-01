@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/tauth/Pro$ICb;
+.field final synthetic mICba:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic b:Ljava/lang/Object;
+.field final synthetic mICdc:Lcom/tencent/connect/b/Pro$ICd;
 
-.field final synthetic c:Lcom/tencent/connect/b/Pro$ICd;
+.field final synthetic mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 694
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICf;->c:Lcom/tencent/connect/b/Pro$ICd;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICf;->mICdc:Lcom/tencent/connect/b/Pro$ICd;
 
-    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICf;->a:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICf;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
-    iput-object p4, p0, Lcom/tencent/connect/b/Pro$ICf;->b:Ljava/lang/Object;
+    iput-object p4, p0, Lcom/tencent/connect/b/Pro$ICf;->mObjectb:Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Lcom/tencent/connect/b/Pro$ICh;-><init>(Lcom/tencent/connect/b/Pro$ICd;Landroid/app/Dialog;)V
 
@@ -35,11 +35,11 @@
 
     .prologue
     .line 698
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->d:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->mDialogd:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->d:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->mDialogd:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
@@ -48,20 +48,20 @@
     if-eqz v0, :cond_0
 
     .line 699
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->d:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->mDialogd:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 701
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_1
 
     .line 702
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->a:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICf;->mICba:Lcom/tencent/tauth/Pro$ICb;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICf;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICf;->mObjectb:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Lcom/tencent/tauth/Pro$ICb;->a(Ljava/lang/Object;)V
 

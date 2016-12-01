@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field private static final mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao$ICb;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     return-void
 .end method
@@ -251,7 +251,7 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v4}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v4
 
@@ -673,7 +673,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->mTypeReferencea:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/models/dao/secret/CommentDao;->fromJson(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 

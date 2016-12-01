@@ -8,7 +8,7 @@
 
 
 # static fields
-.field private static gO:Lcom/baidu/location/ICac;
+.field private static mICacgO:Lcom/baidu/location/ICac;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICac;->gO:Lcom/baidu/location/ICac;
+    sput-object v0, Lcom/baidu/location/ICac;->mICacgO:Lcom/baidu/location/ICac;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 .method public static bo()Lcom/baidu/location/ICac;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICac;->gO:Lcom/baidu/location/ICac;
+    sget-object v0, Lcom/baidu/location/ICac;->mICacgO:Lcom/baidu/location/ICac;
 
     if-nez v0, :cond_0
 
@@ -41,10 +41,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICac;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICac;->gO:Lcom/baidu/location/ICac;
+    sput-object v0, Lcom/baidu/location/ICac;->mICacgO:Lcom/baidu/location/ICac;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICac;->gO:Lcom/baidu/location/ICac;
+    sget-object v0, Lcom/baidu/location/ICac;->mICacgO:Lcom/baidu/location/ICac;
 
     return-object v0
 .end method

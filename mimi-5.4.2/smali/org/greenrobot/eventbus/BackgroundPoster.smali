@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Lorg/greenrobot/eventbus/PendingPostQueue;
+.field private volatile isZc:Z
 
-.field private final b:Lorg/greenrobot/eventbus/EventBus;
+.field private final mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
-.field private volatile c:Z
+.field private final mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
 
 # direct methods
@@ -23,14 +23,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     .line 34
     new-instance v0, Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-direct {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     .line 35
     return-void
@@ -52,22 +52,22 @@
 
     .line 40
     :try_start_0
-    iget-object v1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 
     .line 41
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     if-nez v0, :cond_0
 
     .line 42
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     .line 43
-    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/EventBus;->b()Ljava/util/concurrent/ExecutorService;
 
@@ -102,7 +102,7 @@
     .line 53
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     const/16 v1, 0x3e8
 
@@ -121,7 +121,7 @@
 
     .line 57
     :try_start_1
-    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a()Lorg/greenrobot/eventbus/PendingPost;
 
@@ -133,7 +133,7 @@
     .line 59
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     .line 60
     monitor-exit p0
@@ -141,7 +141,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 70
-    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     .line 72
     :goto_1
@@ -157,7 +157,7 @@
     .line 64
     :cond_1
     :try_start_3
-    iget-object v1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/EventBus;->a(Lorg/greenrobot/eventbus/PendingPost;)V
     :try_end_3
@@ -205,7 +205,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     .line 70
-    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     goto :goto_1
 
@@ -228,7 +228,7 @@
     :catchall_1
     move-exception v0
 
-    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->c:Z
+    iput-boolean v4, p0, Lorg/greenrobot/eventbus/BackgroundPoster;->isZc:Z
 
     throw v0
 .end method

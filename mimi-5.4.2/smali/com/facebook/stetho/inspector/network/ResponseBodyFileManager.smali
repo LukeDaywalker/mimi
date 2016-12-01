@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;->mContexta:Landroid/content/Context;
 
     .line 30
     return-void
@@ -57,7 +57,7 @@
     const/4 v1, 0x0
 
     .line 67
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;->mContexta:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;->a(Ljava/lang/String;)Ljava/lang/String;
 

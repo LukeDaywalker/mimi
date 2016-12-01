@@ -3,25 +3,25 @@
 
 
 # static fields
-.field private static final d:Ljava/lang/String;
+.field private static final mStringd:Ljava/lang/String;
 
 
 # instance fields
-.field a:I
+.field isZb:Z
 
-.field b:Z
+.field mBundlec:Landroid/os/Bundle;
 
-.field c:Landroid/os/Bundle;
+.field mIa:I
 
-.field private e:I
+.field private mIe:I
 
-.field private f:I
+.field private mIf:I
 
-.field private g:Lcom/baidu/mapapi/model/LatLng;
+.field private mLatLngg:Lcom/baidu/mapapi/model/LatLng;
 
-.field private h:Lcom/baidu/mapapi/model/LatLng;
+.field private mLatLngh:Lcom/baidu/mapapi/model/LatLng;
 
-.field private i:Lcom/baidu/mapapi/model/LatLng;
+.field private mLatLngi:Lcom/baidu/mapapi/model/LatLng;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/ArcOptions;->d:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/ArcOptions;->mStringd:Ljava/lang/String;
 
     return-void
 .end method
@@ -46,15 +46,15 @@
 
     const/high16 v0, -0x1000000
 
-    iput v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->e:I
+    iput v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIe:I
 
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->f:I
+    iput v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIf:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->isZb:Z
 
     return-void
 .end method
@@ -68,37 +68,37 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/Arc;-><init>()V
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->b:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->isZb:Z
 
-    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Arc;->s:Z
+    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Arc;->isZs:Z
 
-    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIa:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->r:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->mIr:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->c:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mBundlec:Landroid/os/Bundle;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->t:Landroid/os/Bundle;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->mBundlet:Landroid/os/Bundle;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->e:I
+    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIe:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->a:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->mIa:I
 
-    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->f:I
+    iget v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIf:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->b:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Arc;->mIb:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->g:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngg:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->h:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngh:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->d:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->mLatLngd:Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->i:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngi:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->e:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Arc;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -106,7 +106,7 @@
 .method public color(I)Lcom/baidu/mapapi/map/ArcOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->e:I
+    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIe:I
 
     return-object p0
 .end method
@@ -114,7 +114,7 @@
 .method public extraInfo(Landroid/os/Bundle;)Lcom/baidu/mapapi/map/ArcOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->c:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object p0
 .end method
@@ -122,7 +122,7 @@
 .method public getColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->e:I
+    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIe:I
 
     return v0
 .end method
@@ -130,7 +130,7 @@
 .method public getEndPoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->i:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngi:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -138,7 +138,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -146,7 +146,7 @@
 .method public getMiddlePoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->h:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngh:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 .method public getStartPoint()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->g:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngg:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -162,7 +162,7 @@
 .method public getWidth()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->f:I
+    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIf:I
 
     return v0
 .end method
@@ -170,7 +170,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIa:I
 
     return v0
 .end method
@@ -178,7 +178,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/ArcOptions;->isZb:Z
 
     return v0
 .end method
@@ -218,11 +218,11 @@
     throw v0
 
     :cond_3
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->g:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngg:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p2, p0, Lcom/baidu/mapapi/map/ArcOptions;->h:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p2, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngh:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p3, p0, Lcom/baidu/mapapi/map/ArcOptions;->i:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p3, p0, Lcom/baidu/mapapi/map/ArcOptions;->mLatLngi:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -230,7 +230,7 @@
 .method public visible(Z)Lcom/baidu/mapapi/map/ArcOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -240,7 +240,7 @@
 
     if-lez p1, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->f:I
+    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIf:I
 
     :cond_0
     return-object p0
@@ -249,7 +249,7 @@
 .method public zIndex(I)Lcom/baidu/mapapi/map/ArcOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/ArcOptions;->mIa:I
 
     return-object p0
 .end method

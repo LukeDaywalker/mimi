@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mChatInfoItemCheckBoxo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretInvitationSingleChatInfoActivity;->o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretInvitationSingleChatInfoActivity;->mChatInfoItemCheckBoxo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 21
     return-void
@@ -60,7 +60,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SecretInvitationSingleChatInfoActivity;->k()V
 
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretInvitationSingleChatInfoActivity;->o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretInvitationSingleChatInfoActivity;->mChatInfoItemCheckBoxo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     const/4 v1, 0x1
 

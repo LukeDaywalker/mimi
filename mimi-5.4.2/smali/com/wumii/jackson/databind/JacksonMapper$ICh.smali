@@ -4,10 +4,10 @@
 
 
 # static fields
-.field private static final a:Lcom/fasterxml/jackson/databind/JsonSerializer;
+.field private static final mJsonDeserializerb:Lcom/fasterxml/jackson/databind/JsonDeserializer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/fasterxml/jackson/databind/JsonSerializer",
+            "Lcom/fasterxml/jackson/databind/JsonDeserializer",
             "<",
             "Ljava/time/Instant;",
             ">;"
@@ -15,10 +15,10 @@
     .end annotation
 .end field
 
-.field private static final b:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+.field private static final mJsonSerializera:Lcom/fasterxml/jackson/databind/JsonSerializer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/fasterxml/jackson/databind/JsonDeserializer",
+            "Lcom/fasterxml/jackson/databind/JsonSerializer",
             "<",
             "Ljava/time/Instant;",
             ">;"
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICi;-><init>(Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->a:Lcom/fasterxml/jackson/databind/JsonSerializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->mJsonSerializera:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
     .line 228
     new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICj;
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICj;-><init>(Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->b:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->mJsonDeserializerb:Lcom/fasterxml/jackson/databind/JsonDeserializer;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 218
-    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->b:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->mJsonDeserializerb:Lcom/fasterxml/jackson/databind/JsonDeserializer;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 218
-    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->a:Lcom/fasterxml/jackson/databind/JsonSerializer;
+    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper$ICh;->mJsonSerializera:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
     return-object v0
 .end method

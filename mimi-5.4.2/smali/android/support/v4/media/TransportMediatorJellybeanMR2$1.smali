@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+.field final synthetic mTransportMediatorJellybeanMR2a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->mTransportMediatorJellybeanMR2a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-virtual {v0}, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->a()V
 
@@ -29,7 +29,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->mTransportMediatorJellybeanMR2a:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-virtual {v0}, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->f()V
 

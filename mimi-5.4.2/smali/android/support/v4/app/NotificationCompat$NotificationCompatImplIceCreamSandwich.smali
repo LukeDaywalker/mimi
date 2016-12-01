@@ -45,7 +45,7 @@
 
     move-object/from16 v0, p1
 
-    iget-object v8, v0, Landroid/support/v4/app/NotificationCompat$Builder;->f:Landroid/widget/RemoteViews;
+    iget-object v8, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mRemoteViewsf:Landroid/widget/RemoteViews;
 
     move-object/from16 v0, p1
 
@@ -53,11 +53,11 @@
 
     move-object/from16 v0, p1
 
-    iget-object v10, v0, Landroid/support/v4/app/NotificationCompat$Builder;->d:Landroid/app/PendingIntent;
+    iget-object v10, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
     move-object/from16 v0, p1
 
-    iget-object v11, v0, Landroid/support/v4/app/NotificationCompat$Builder;->e:Landroid/app/PendingIntent;
+    iget-object v11, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntente:Landroid/app/PendingIntent;
 
     move-object/from16 v0, p1
 
@@ -65,15 +65,15 @@
 
     move-object/from16 v0, p1
 
-    iget v13, v0, Landroid/support/v4/app/NotificationCompat$Builder;->o:I
+    iget v13, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mIo:I
 
     move-object/from16 v0, p1
 
-    iget v14, v0, Landroid/support/v4/app/NotificationCompat$Builder;->p:I
+    iget v14, v0, Landroid/support/v4/app/NotificationCompat$Builder;->mIp:I
 
     move-object/from16 v0, p1
 
-    iget-boolean v15, v0, Landroid/support/v4/app/NotificationCompat$Builder;->q:Z
+    iget-boolean v15, v0, Landroid/support/v4/app/NotificationCompat$Builder;->isZq:Z
 
     invoke-direct/range {v2 .. v15}, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;-><init>(Landroid/content/Context;Landroid/app/Notification;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/graphics/Bitmap;IIZ)V
 

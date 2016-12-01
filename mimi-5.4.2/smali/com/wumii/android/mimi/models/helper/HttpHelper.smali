@@ -4,17 +4,15 @@
 
 
 # instance fields
-.field private a:Lorg/slf4j/Logger;
+.field private mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
-.field private b:Lcom/wumii/jackson/databind/JacksonMapper;
+.field private mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field private c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field private mLocationHelperd:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+.field private mLoggera:Lorg/slf4j/Logger;
 
-.field private e:Lcom/wumii/android/mimi/models/helper/HostHelper;
-
-.field private f:Ljava/util/Map;
+.field private mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -26,9 +24,7 @@
     .end annotation
 .end field
 
-.field private g:Lcom/squareup/okhttp/OkHttpClient;
-
-.field private h:Ljava/util/Map;
+.field private mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -42,6 +38,10 @@
         }
     .end annotation
 .end field
+
+.field private mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+
+.field private mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
 
 # direct methods
@@ -73,14 +73,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     .line 93
     new-instance v0, Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/OkHttpClient;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 98
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 99
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->d:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLocationHelperd:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     .line 100
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 101
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -124,17 +124,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     .line 102
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->f:Ljava/util/Map;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMapf:Ljava/util/Map;
 
     .line 104
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->h:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMaph:Ljava/util/Map;
 
     .line 107
     :try_start_0
@@ -166,7 +166,7 @@
     invoke-virtual {v0, v1, v2, v3}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
     .line 111
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
@@ -178,7 +178,7 @@
     .catch Ljava/security/KeyManagementException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     new-array v1, v6, [Lcom/squareup/okhttp/Protocol;
 
@@ -193,14 +193,14 @@
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljava/util/List;)Lcom/squareup/okhttp/OkHttpClient;
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     sget-object v1, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
     invoke-virtual {v0, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(Ljavax/net/ssl/HostnameVerifier;)Lcom/squareup/okhttp/OkHttpClient;
 
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     const-wide/16 v2, 0x14
 
@@ -209,7 +209,7 @@
     invoke-virtual {v0, v2, v3, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(JLjava/util/concurrent/TimeUnit;)V
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     const-wide/16 v2, 0x3c
 
@@ -225,7 +225,7 @@
     if-eqz v0, :cond_0
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->v()Ljava/util/List;
 
@@ -475,7 +475,7 @@
 
     const-string/jumbo v3, "."
 
-    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v3}, Lorg/apache/commons/long3/StringUtils;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -727,7 +727,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -920,7 +920,7 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->b()Ljava/lang/String;
 
@@ -1045,7 +1045,7 @@
 
     .line 492
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, v0}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -1204,7 +1204,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->h:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMaph:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1221,7 +1221,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 141
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->h:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMaph:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1445,7 +1445,7 @@
     invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/InputStream;)V
 
     .line 231
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, v0}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -1550,7 +1550,7 @@
     invoke-virtual {v2, v0, v1}, Lcom/squareup/okhttp/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Request$ICap;
 
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -1652,7 +1652,7 @@
     if-eqz v1, :cond_2
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->d:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLocationHelperd:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->b()Lcom/baidu/location/BDLocation;
 
@@ -1720,7 +1720,7 @@
 
     .line 272
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/OkHttpClient;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Call;
 
@@ -1750,7 +1750,7 @@
     move-exception v0
 
     .line 278
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -1766,7 +1766,7 @@
     invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 280
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "IOException  "
 
@@ -1788,7 +1788,7 @@
     move-exception v0
 
     .line 283
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -1804,7 +1804,7 @@
     invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 285
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "IOException  "
 
@@ -1826,7 +1826,7 @@
     move-exception v0
 
     .line 288
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -1842,7 +1842,7 @@
     invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 290
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "IOException  "
 
@@ -1856,7 +1856,7 @@
     move-exception v0
 
     .line 293
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mHostHelpere:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     invoke-virtual {p1}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -1872,7 +1872,7 @@
     invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 295
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "IOException  "
 
@@ -1972,7 +1972,7 @@
 
     .prologue
     .line 535
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;)Ljava/lang/Object;
 
@@ -2113,7 +2113,7 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mMapf:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -2125,7 +2125,7 @@
     const/4 v0, 0x0
 
     .line 301
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mNetworkHelperc:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -2158,7 +2158,7 @@
     .line 310
     new-instance v3, Lcom/squareup/okhttp/OkUrlFactory;
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v6, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-direct {v3, v6}, Lcom/squareup/okhttp/OkUrlFactory;-><init>(Lcom/squareup/okhttp/OkHttpClient;)V
 
@@ -2238,7 +2238,7 @@
 
     .line 321
     :try_start_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a:Lorg/slf4j/Logger;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2642,7 +2642,7 @@
     move-result-object v0
 
     .line 449
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->g:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/HttpHelper;->mOkHttpClientg:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v1, v0}, Lcom/squareup/okhttp/OkHttpClient;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Call;
 

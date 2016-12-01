@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final synthetic a:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
+.field private final synthetic mIWeiboDownloadListenera:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->a:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->mIWeiboDownloadListenera:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
 
     .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -31,12 +31,12 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->a:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->mIWeiboDownloadListenera:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
 
     if-eqz v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->a:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/share/WeiboDownloader$ICk;->mIWeiboDownloadListenera:Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;
 
     invoke-interface {v0}, Lcom/sina/weibo/sdk/api/share/IWeiboDownloadListener;->a()V
 

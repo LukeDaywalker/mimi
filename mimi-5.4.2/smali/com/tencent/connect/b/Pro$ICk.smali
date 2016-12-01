@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Ljava/lang/ref/WeakReference;
+.field private static mWeakReferencea:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private static l:Ljava/lang/ref/WeakReference;
+.field private static mWeakReferencel:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -28,27 +28,27 @@
 
 
 # instance fields
-.field private b:Ljava/lang/String;
+.field private isZm:Z
 
-.field private c:Lcom/tencent/connect/b/Pro$ICo;
+.field private mFrameLayoutf:Landroid/widget/FrameLayout;
 
-.field private d:Lcom/tencent/tauth/Pro$ICb;
+.field private mFrameLayouth:Landroid/widget/FrameLayout;
 
-.field private e:Landroid/os/Handler;
+.field private mHandlere:Landroid/os/Handler;
 
-.field private f:Landroid/widget/FrameLayout;
+.field private mICbd:Lcom/tencent/tauth/Pro$ICb;
 
-.field private g:Landroid/widget/LinearLayout;
+.field private mICoc:Lcom/tencent/connect/b/Pro$ICo;
 
-.field private h:Landroid/widget/FrameLayout;
+.field private mLinearLayoutg:Landroid/widget/LinearLayout;
 
-.field private i:Landroid/widget/ProgressBar;
+.field private mProgressBari:Landroid/widget/ProgressBar;
 
-.field private j:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
-.field private k:Landroid/webkit/WebView;
+.field private mStringj:Ljava/lang/String;
 
-.field private m:Z
+.field private mWebViewk:Landroid/webkit/WebView;
 
 
 # direct methods
@@ -64,7 +64,7 @@
     .line 75
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->m:Z
+    iput-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->isZm:Z
 
     .line 79
     new-instance v0, Ljava/lang/ref/WeakReference;
@@ -75,10 +75,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sput-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     .line 80
-    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     .line 81
     new-instance v0, Lcom/tencent/connect/b/Pro$ICo;
@@ -97,12 +97,12 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/tencent/connect/b/Pro$ICo;-><init>(Lcom/tencent/connect/b/Pro$ICk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/Pro$ICb;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->c:Lcom/tencent/connect/b/Pro$ICo;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mICoc:Lcom/tencent/connect/b/Pro$ICo;
 
     .line 82
     new-instance v0, Lcom/tencent/connect/b/Pro$ICp;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->c:Lcom/tencent/connect/b/Pro$ICo;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mICoc:Lcom/tencent/connect/b/Pro$ICo;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -110,13 +110,13 @@
 
     invoke-direct {v0, v1, v2}, Lcom/tencent/connect/b/Pro$ICp;-><init>(Lcom/tencent/connect/b/Pro$ICo;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->e:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mHandlere:Landroid/os/Handler;
 
     .line 83
-    iput-object p4, p0, Lcom/tencent/connect/b/Pro$ICk;->d:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p4, p0, Lcom/tencent/connect/b/Pro$ICk;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
     .line 84
-    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICk;->j:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringj:Ljava/lang/String;
 
     .line 85
     return-void
@@ -131,7 +131,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -155,7 +155,7 @@
 
     .prologue
     .line 52
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     return-object v0
 .end method
@@ -187,7 +187,7 @@
 
     .prologue
     .line 52
-    iput-boolean p1, p0, Lcom/tencent/connect/b/Pro$ICk;->m:Z
+    iput-boolean p1, p0, Lcom/tencent/connect/b/Pro$ICk;->isZm:Z
 
     return p1
 .end method
@@ -197,7 +197,7 @@
 
     .prologue
     .line 52
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->l:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencel:Ljava/lang/ref/WeakReference;
 
     return-object v0
 .end method
@@ -259,7 +259,7 @@
 
     .prologue
     .line 52
-    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->m:Z
+    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->isZm:Z
 
     return v0
 .end method
@@ -269,7 +269,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -291,7 +291,7 @@
     .line 336
     new-instance v2, Landroid/webkit/WebView;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -301,17 +301,17 @@
 
     invoke-direct {v2, v0}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iput-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     .line 337
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 339
     new-instance v2, Landroid/widget/FrameLayout;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -321,7 +321,7 @@
 
     invoke-direct {v2, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->f:Landroid/widget/FrameLayout;
+    iput-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     .line 340
     const/16 v0, 0x11
@@ -329,35 +329,35 @@
     iput v0, v1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 341
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 343
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 344
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 345
     new-instance v0, Ljava/lang/ref/WeakReference;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
     invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Lcom/tencent/connect/b/Pro$ICk;->l:Ljava/lang/ref/WeakReference;
+    sput-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencel:Ljava/lang/ref/WeakReference;
 
     .line 347
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {p0, v0}, Lcom/tencent/connect/b/Pro$ICk;->setContentView(Landroid/view/View;)V
 
@@ -370,7 +370,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     return-object v0
 .end method
@@ -392,7 +392,7 @@
     .line 351
     new-instance v1, Landroid/widget/ProgressBar;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -402,7 +402,7 @@
 
     invoke-direct {v1, v0}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->i:Landroid/widget/ProgressBar;
+    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mProgressBari:Landroid/widget/ProgressBar;
 
     .line 352
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
@@ -410,14 +410,14 @@
     invoke-direct {v0, v4, v4}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 355
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->i:Landroid/widget/ProgressBar;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mProgressBari:Landroid/widget/ProgressBar;
 
     invoke-virtual {v1, v0}, Landroid/widget/ProgressBar;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 356
     new-instance v1, Landroid/widget/LinearLayout;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -427,13 +427,13 @@
 
     invoke-direct {v1, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->g:Landroid/widget/LinearLayout;
+    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     .line 357
     const/4 v0, 0x0
 
     .line 358
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v2, "action_login"
 
@@ -461,7 +461,7 @@
     .line 364
     new-instance v1, Landroid/widget/TextView;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -522,14 +522,14 @@
     iput v6, v1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 380
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->g:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 381
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->g:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
-    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->i:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/tencent/connect/b/Pro$ICk;->mProgressBari:Landroid/widget/ProgressBar;
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -537,7 +537,7 @@
     if-eqz v0, :cond_1
 
     .line 383
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->g:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -545,7 +545,7 @@
     :cond_1
     new-instance v1, Landroid/widget/FrameLayout;
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -555,7 +555,7 @@
 
     invoke-direct {v1, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
     .line 386
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
@@ -580,21 +580,21 @@
     iput v6, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 394
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 395
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
     const/high16 v1, 0x1080000
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setBackgroundResource(I)V
 
     .line 396
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->h:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mFrameLayouth:Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->g:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
@@ -615,7 +615,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->c:Lcom/tencent/connect/b/Pro$ICo;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mICoc:Lcom/tencent/connect/b/Pro$ICo;
 
     return-object v0
 .end method
@@ -636,17 +636,17 @@
     const/4 v6, 0x0
 
     .line 403
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v6}, Landroid/webkit/WebView;->setVerticalScrollBarEnabled(Z)V
 
     .line 404
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v6}, Landroid/webkit/WebView;->setHorizontalScrollBarEnabled(Z)V
 
     .line 405
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     new-instance v1, Lcom/tencent/connect/b/Pro$ICn;
 
@@ -655,7 +655,7 @@
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 406
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     new-instance v1, Landroid/webkit/WebChromeClient;
 
@@ -664,12 +664,12 @@
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
     .line 407
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->clearFormData()V
 
     .line 410
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -704,11 +704,11 @@
     invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
     .line 424
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -720,7 +720,7 @@
     invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 
     .line 426
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -775,7 +775,7 @@
     move-result-object v0
 
     .line 434
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     const/4 v2, 0x2
 
@@ -807,21 +807,21 @@
 
     .line 452
     :goto_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 454
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setVisibility(I)V
 
     .line 455
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -906,7 +906,7 @@
     invoke-direct {v3}, Lcom/tencent/connect/b/Pro$ICr;-><init>()V
 
     .line 462
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->d:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
     iput-object v4, v3, Lcom/tencent/connect/b/Pro$ICr;->a:Lcom/tencent/tauth/Pro$ICb;
 
@@ -922,9 +922,9 @@
     move-result-object v1
 
     .line 466
-    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v3, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v5, "?"
 
@@ -937,7 +937,7 @@
     move-result-object v3
 
     .line 467
-    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     invoke-static {v4}, Lcom/tencent/c/Pro$ICq;->b(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -987,14 +987,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iput-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     .line 472
-    sget-object v1, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -1003,7 +1003,7 @@
     if-eqz v1, :cond_0
 
     .line 473
-    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->a:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/connect/b/Pro$ICk;->mWeakReferencea:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -1011,7 +1011,7 @@
 
     check-cast v0, Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/tencent/c/Pro$ICq;->a(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -1078,7 +1078,7 @@
     move-result-object v0
 
     .line 495
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->k:Landroid/webkit/WebView;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICk;->mWebViewk:Landroid/webkit/WebView;
 
     invoke-virtual {v1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
@@ -1091,12 +1091,12 @@
 
     .prologue
     .line 97
-    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->m:Z
+    iget-boolean v0, p0, Lcom/tencent/connect/b/Pro$ICk;->isZm:Z
 
     if-nez v0, :cond_0
 
     .line 98
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->c:Lcom/tencent/connect/b/Pro$ICo;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICk;->mICoc:Lcom/tencent/connect/b/Pro$ICo;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICo;->a()V
 

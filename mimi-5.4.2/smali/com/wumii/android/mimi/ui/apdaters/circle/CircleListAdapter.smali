@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,11 +17,11 @@
     .end annotation
 .end field
 
-.field private c:Landroid/text/SpannableString;
+.field private mSpannableStringc:Landroid/text/SpannableString;
 
-.field private d:Landroid/text/SpannableString;
+.field private mSpannableStringd:Landroid/text/SpannableString;
 
-.field private e:Landroid/text/SpannableString;
+.field private mSpannableStringe:Landroid/text/SpannableString;
 
 
 # direct methods
@@ -41,14 +41,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 37
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     .line 39
     new-instance v0, Landroid/text/SpannableString;
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, v1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->c:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringc:Landroid/text/SpannableString;
 
     .line 40
     new-instance v0, Landroid/text/SpannableString;
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->d:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringd:Landroid/text/SpannableString;
 
     .line 41
     new-instance v0, Landroid/text/SpannableString;
@@ -75,7 +75,7 @@
 
     invoke-direct {v0, v1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->e:Landroid/text/SpannableString;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringe:Landroid/text/SpannableString;
 
     .line 43
     new-instance v0, Landroid/text/style/ForegroundColorSpan;
@@ -93,7 +93,7 @@
     invoke-direct {v0, v1}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
     .line 44
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->c:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringc:Landroid/text/SpannableString;
 
     const-string/jumbo v2, "\u516c\u53f8 "
 
@@ -104,7 +104,7 @@
     invoke-virtual {v1, v0, v3, v2, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 45
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->d:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringd:Landroid/text/SpannableString;
 
     const-string/jumbo v2, "\u5b66\u6821 "
 
@@ -115,7 +115,7 @@
     invoke-virtual {v1, v0, v3, v2, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->e:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringe:Landroid/text/SpannableString;
 
     const-string/jumbo v2, "\u5708\u5b50 "
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -148,7 +148,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -173,12 +173,12 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -194,7 +194,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -206,7 +206,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -247,7 +247,7 @@
     if-nez p2, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300fd
 
@@ -304,7 +304,7 @@
     if-ne v3, v4, :cond_2
 
     .line 96
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->c:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringc:Landroid/text/SpannableString;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -334,7 +334,7 @@
     if-ne v1, v3, :cond_1
 
     .line 98
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->d:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringd:Landroid/text/SpannableString;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -347,7 +347,7 @@
     if-eqz v1, :cond_1
 
     .line 101
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->e:Landroid/text/SpannableString;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleListAdapter;->mSpannableStringe:Landroid/text/SpannableString;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 

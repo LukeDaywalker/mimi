@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -470,7 +470,7 @@
     move-exception v0
 
     .line 241
-    sget-object v1, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "handleLoginResponse error"
 

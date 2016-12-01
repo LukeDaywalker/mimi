@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/baidu/location/b/b/ICb;->a:[B
+    sput-object v0, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     return-void
 
@@ -137,7 +137,7 @@
 
     add-int/lit8 v2, v1, 0x1
 
-    sget-object v7, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v7, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v8, p0, v4
 
@@ -151,7 +151,7 @@
 
     add-int/lit8 v1, v2, 0x1
 
-    sget-object v7, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v7, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v8, p0, v4
 
@@ -175,7 +175,7 @@
 
     add-int/lit8 v7, v1, 0x1
 
-    sget-object v2, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v2, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     add-int/lit8 v8, v4, 0x1
 
@@ -201,7 +201,7 @@
 
     add-int/lit8 v2, v7, 0x1
 
-    sget-object v1, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v1, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     add-int/lit8 v8, v4, 0x2
 
@@ -255,7 +255,7 @@
     :pswitch_0
     add-int/lit8 v0, v1, 0x1
 
-    sget-object v2, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v2, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -269,7 +269,7 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    sget-object v2, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v2, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -294,7 +294,7 @@
     :pswitch_1
     add-int/lit8 v0, v1, 0x1
 
-    sget-object v2, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v2, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -308,7 +308,7 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    sget-object v2, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v2, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     aget-byte v4, p0, v6
 
@@ -332,7 +332,7 @@
 
     add-int/lit8 v2, v1, 0x1
 
-    sget-object v0, Lcom/baidu/location/b/b/ICb;->a:[B
+    sget-object v0, Lcom/baidu/location/b/b/ICb;->mArrayBa:[B
 
     add-int/lit8 v4, v6, 0x1
 

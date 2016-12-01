@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private a:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+.field private mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
-.field private b:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+.field private mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-.field private c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+.field private mIh:I
 
-.field private d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+.field private mMqttAsyncClientb:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-.field private e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+.field private mMqttClientPersistencea:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
-.field private f:Ljava/lang/Object;
+.field private mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
-.field private g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+.field private mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
-.field private h:I
+.field private mObjectf:Ljava/lang/Object;
 
 
 # direct methods
@@ -33,32 +33,32 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 64
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->a:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttClientPersistencea:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     .line 65
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->b:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttAsyncClientb:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     .line 66
-    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 67
-    iput-object p4, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iput-object p4, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     .line 68
-    iput-object p5, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iput-object p5, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     .line 69
-    iput-object p6, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->f:Ljava/lang/Object;
+    iput-object p6, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mObjectf:Ljava/lang/Object;
 
     .line 70
-    iput-object p7, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iput-object p7, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 71
     invoke-virtual {p4}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d()I
 
     move-result v0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->h:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIh:I
 
     .line 72
     return-void
@@ -73,7 +73,7 @@
     .line 151
     new-instance v1, Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->b:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttAsyncClientb:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a()Ljava/lang/String;
 
@@ -88,15 +88,15 @@
     invoke-virtual {v1, p0}, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a(Ljava/lang/Object;)V
 
     .line 155
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->a:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttClientPersistencea:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->b:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttAsyncClientb:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v2}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->b:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttAsyncClientb:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v3}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->d()Ljava/lang/String;
 
@@ -105,7 +105,7 @@
     invoke-interface {v0, v2, v3}, Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 157
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->j()Z
 
@@ -114,13 +114,13 @@
     if-eqz v0, :cond_0
 
     .line 158
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->a:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttClientPersistencea:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     invoke-interface {v0}, Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;->c()V
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d()I
 
@@ -129,7 +129,7 @@
     if-nez v0, :cond_1
 
     .line 162
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v2, 0x4
 
@@ -138,9 +138,9 @@
     .line 166
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0, v2, v1}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->a(Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;Lorg/eclipse/paho/client/mqttv3/MqttToken;)V
     :try_end_0
@@ -165,12 +165,12 @@
 
     .prologue
     .line 80
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->h:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIh:I
 
     if-nez v0, :cond_0
 
     .line 81
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v1, 0x0
 
@@ -178,7 +178,7 @@
 
     .line 83
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     iget-object v0, v0, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
@@ -191,28 +191,28 @@
     invoke-virtual {v0, v1, v2}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;Lorg/eclipse/paho/client/mqttv3/MqttException;)V
 
     .line 84
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     iget-object v0, v0, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->e()V
 
     .line 86
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     if-eqz v0, :cond_1
 
     .line 87
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->f:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mObjectf:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a(Ljava/lang/Object;)V
 
     .line 88
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     invoke-interface {v0, v1}, Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;->a(Lorg/eclipse/paho/client/mqttv3/IMqttToken;)V
 
@@ -228,7 +228,7 @@
     const/4 v3, 0x4
 
     .line 101
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->h()[Lorg/eclipse/paho/client/mqttv3/internal/NetworkModule;
 
@@ -237,7 +237,7 @@
     array-length v0, v0
 
     .line 102
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->g()I
 
@@ -248,11 +248,11 @@
 
     if-lt v2, v0, :cond_0
 
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->h:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIh:I
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d()I
 
@@ -262,12 +262,12 @@
 
     .line 106
     :cond_0
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->h:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIh:I
 
     if-nez v0, :cond_3
 
     .line 107
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d()I
 
@@ -276,7 +276,7 @@
     if-ne v0, v3, :cond_2
 
     .line 108
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v1, 0x3
 
@@ -296,12 +296,12 @@
 
     .line 111
     :cond_2
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0, v3}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->b(I)V
 
     .line 112
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     add-int/lit8 v1, v1, 0x1
 
@@ -311,7 +311,7 @@
 
     .line 116
     :cond_3
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->c:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mClientCommsc:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     add-int/lit8 v1, v1, 0x1
 
@@ -330,12 +330,12 @@
 
     .line 126
     :cond_4
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->h:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIh:I
 
     if-nez v0, :cond_5
 
     .line 127
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->d:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttConnectOptionsd:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v1, 0x0
 
@@ -354,7 +354,7 @@
 
     .line 136
     :goto_2
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     iget-object v1, v1, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
@@ -363,28 +363,28 @@
     invoke-virtual {v1, v2, v0}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;Lorg/eclipse/paho/client/mqttv3/MqttException;)V
 
     .line 137
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     iget-object v0, v0, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a:Lorg/eclipse/paho/client/mqttv3/internal/Token;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->e()V
 
     .line 139
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     if-eqz v0, :cond_1
 
     .line 140
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->f:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mObjectf:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttToken;->a(Ljava/lang/Object;)V
 
     .line 141
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->g:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mIMqttActionListenerg:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->e:Lorg/eclipse/paho/client/mqttv3/MqttToken;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/ConnectActionListener;->mMqttTokene:Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     invoke-interface {v0, v1, p2}, Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;->a(Lorg/eclipse/paho/client/mqttv3/IMqttToken;Ljava/lang/Throwable;)V
 

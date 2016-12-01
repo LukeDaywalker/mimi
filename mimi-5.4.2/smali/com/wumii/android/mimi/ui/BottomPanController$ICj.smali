@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/ViewGroup;
+.field final synthetic mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/BottomPanController;
+.field final synthetic mViewGroupa:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->a:Landroid/view/ViewGroup;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mViewGroupa:Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,12 +34,12 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Lcom/wumii/android/mimi/ui/BottomPanController;Z)Z
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Lcom/wumii/android/mimi/ui/BottomPanController;)Landroid/widget/ImageView;
 
@@ -48,12 +48,12 @@
     if-nez v0, :cond_1
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->b(Lcom/wumii/android/mimi/ui/BottomPanController;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->c(Lcom/wumii/android/mimi/ui/BottomPanController;)Z
 
@@ -62,7 +62,7 @@
     if-eqz v0, :cond_0
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->a:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mViewGroupa:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
@@ -72,9 +72,9 @@
 
     .line 66
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->a:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mViewGroupa:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Landroid/view/ViewGroup;)V
 
@@ -82,7 +82,7 @@
 
     .line 71
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->c(Lcom/wumii/android/mimi/ui/BottomPanController;)Z
 
@@ -91,12 +91,12 @@
     if-eqz v0, :cond_2
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/BottomPanController;->b(Lcom/wumii/android/mimi/ui/BottomPanController;)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->a:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mViewGroupa:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
@@ -104,9 +104,9 @@
 
     .line 75
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->b:Lcom/wumii/android/mimi/ui/BottomPanController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;->mBottomPanControllerb:Lcom/wumii/android/mimi/ui/BottomPanController;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Lcom/wumii/android/mimi/ui/BottomPanController;)Landroid/widget/ImageView;
 

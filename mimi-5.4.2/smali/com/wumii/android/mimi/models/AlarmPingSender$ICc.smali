@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+.field final synthetic mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 148
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/models/AlarmPingSender;->d(Lcom/wumii/android/mimi/models/AlarmPingSender;)Ljava/lang/String;
 
@@ -97,13 +97,13 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->f(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/models/AlarmPingSender;->e(Lcom/wumii/android/mimi/models/AlarmPingSender;)Ljava/lang/Runnable;
 
@@ -112,7 +112,7 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -120,7 +120,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -133,7 +133,7 @@
     if-eqz v0, :cond_0
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/models/AlarmPingSender;->d(Lcom/wumii/android/mimi/models/AlarmPingSender;)Ljava/lang/String;
 
@@ -196,13 +196,13 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->f(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/models/AlarmPingSender;->e(Lcom/wumii/android/mimi/models/AlarmPingSender;)Ljava/lang/Runnable;
 
@@ -211,7 +211,7 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -219,7 +219,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -232,7 +232,7 @@
     if-eqz v0, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICc;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 

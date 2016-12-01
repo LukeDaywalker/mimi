@@ -3,17 +3,17 @@
 
 
 # static fields
-.field private static final b:Ljava/lang/String;
+.field private static mIf:I
 
-.field private static f:I
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/map/BaiduMap;
+.field mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
-.field private c:Ljava/util/concurrent/ExecutorService;
+.field private mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
-.field private d:Ljava/util/HashMap;
+.field private mHashMapd:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field private e:Ljava/util/HashSet;
+.field private mHashSete:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field private g:Lcom/baidu/mapapi/map/TileProvider;
+.field private mTileProviderg:Lcom/baidu/mapapi/map/TileProvider;
 
 
 # direct methods
@@ -49,11 +49,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/TileOverlay;->b:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/TileOverlay;->mStringb:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/mapapi/map/TileOverlay;->f:I
+    sput v0, Lcom/baidu/mapapi/map/TileOverlay;->mIf:I
 
     return-void
 .end method
@@ -63,21 +63,21 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
-    iput-object p2, p0, Lcom/baidu/mapapi/map/TileOverlay;->g:Lcom/baidu/mapapi/map/TileProvider;
+    iput-object p2, p0, Lcom/baidu/mapapi/map/TileOverlay;->mTileProviderg:Lcom/baidu/mapapi/map/TileProvider;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->e:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashSete:Ljava/util/HashSet;
 
     const/4 v0, 0x1
 
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->c:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -104,7 +104,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -112,7 +112,7 @@
 
     check-cast v0, Lcom/baidu/mapapi/map/Tile;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -139,7 +139,7 @@
 .method static synthetic a(Lcom/baidu/mapapi/map/TileOverlay;)Lcom/baidu/mapapi/map/TileProvider;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->g:Lcom/baidu/mapapi/map/TileProvider;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mTileProviderg:Lcom/baidu/mapapi/map/TileProvider;
 
     return-object v0
 .end method
@@ -158,7 +158,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -179,7 +179,7 @@
 .method static synthetic b(Lcom/baidu/mapapi/map/TileOverlay;)Ljava/util/HashSet;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->e:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashSete:Ljava/util/HashSet;
 
     return-object v0
 .end method
@@ -190,7 +190,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->e:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashSete:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
     :try_end_0
@@ -213,7 +213,7 @@
 .method static synthetic c()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -224,7 +224,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->e:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashSete:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -289,27 +289,27 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     if-eqz v0, :cond_1
 
-    sget v0, Lcom/baidu/mapapi/map/TileOverlay;->f:I
+    sget v0, Lcom/baidu/mapapi/map/TileOverlay;->mIf:I
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/BaiduMap;->getMapStatus()Lcom/baidu/mapapi/map/MapStatus;
 
     move-result-object v0
 
-    iget-object v1, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v1, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v1, v1, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
     iget v1, v1, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
@@ -321,13 +321,13 @@
 
     add-int/lit8 v1, v1, 0x2
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
     iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
-    iget-object v0, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v0, v0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
@@ -341,16 +341,16 @@
 
     mul-int/2addr v0, v1
 
-    sput v0, Lcom/baidu/mapapi/map/TileOverlay;->f:I
+    sput v0, Lcom/baidu/mapapi/map/TileOverlay;->mIf:I
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
     move-result v0
 
-    sget v1, Lcom/baidu/mapapi/map/TileOverlay;->f:I
+    sget v1, Lcom/baidu/mapapi/map/TileOverlay;->mIf:I
 
     if-le v0, v1, :cond_2
 
@@ -363,7 +363,7 @@
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->c:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -374,7 +374,7 @@
     :try_start_0
     invoke-direct {p0, v5}, Lcom/baidu/mapapi/map/TileOverlay;->c(Ljava/lang/String;)V
 
-    iget-object v6, p0, Lcom/baidu/mapapi/map/TileOverlay;->c:Ljava/util/concurrent/ExecutorService;
+    iget-object v6, p0, Lcom/baidu/mapapi/map/TileOverlay;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     new-instance v0, Lcom/baidu/mapapi/map/ICn;
 
@@ -402,7 +402,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, "ThreadPool excepiton"
 
@@ -413,7 +413,7 @@
     :catch_1
     move-exception v0
 
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, "fileDir is not legal"
 
@@ -428,17 +428,17 @@
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->b:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/map/TileOverlay;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, "clearTaskSet"
 
     invoke-static {v0, v1}, Lcom/baidu/mapapi/common/Logger;->logE(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->e:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashSete:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->d:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mHashMapd:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
     :try_end_0
@@ -459,7 +459,7 @@
 .method b()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->c:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
 
@@ -469,7 +469,7 @@
 .method public clearTileCache()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/BaiduMap;->b()Z
 
@@ -481,7 +481,7 @@
 .method public removeTileOverlay()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     if-nez v0, :cond_0
 
@@ -489,7 +489,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->a:Lcom/baidu/mapapi/map/BaiduMap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/TileOverlay;->mBaiduMapa:Lcom/baidu/mapapi/map/BaiduMap;
 
     invoke-virtual {v0, p0}, Lcom/baidu/mapapi/map/BaiduMap;->a(Lcom/baidu/mapapi/map/TileOverlay;)V
 

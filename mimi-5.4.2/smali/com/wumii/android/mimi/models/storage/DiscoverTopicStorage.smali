@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
+.field private mDiscoverTopicDaob:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -31,14 +31,14 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->mListc:Ljava/util/List;
 
     .line 21
     new-instance v0, Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->b:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->mDiscoverTopicDaob:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
 
     .line 22
     return-void
@@ -60,10 +60,10 @@
 
     .prologue
     .line 42
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->mListc:Ljava/util/List;
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->b:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;->mDiscoverTopicDaob:Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/DiscoverTopicDao;->a(Ljava/util/List;)V
 

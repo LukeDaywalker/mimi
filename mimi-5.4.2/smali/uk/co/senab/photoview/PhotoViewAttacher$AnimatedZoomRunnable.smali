@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final synthetic a:Luk/co/senab/photoview/PhotoViewAttacher;
+.field private final mFb:F
 
-.field private final b:F
+.field private final mFc:F
 
-.field private final c:F
+.field private final mFe:F
 
-.field private final d:J
+.field private final mFf:F
 
-.field private final e:F
+.field private final mJd:J
 
-.field private final f:F
+.field final synthetic mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
 
 # direct methods
@@ -26,28 +26,28 @@
 
     .prologue
     .line 952
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 953
-    iput p4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->b:F
+    iput p4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFb:F
 
     .line 954
-    iput p5, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->c:F
+    iput p5, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFc:F
 
     .line 955
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->d:J
+    iput-wide v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mJd:J
 
     .line 956
-    iput p2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->e:F
+    iput p2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFe:F
 
     .line 957
-    iput p3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->f:F
+    iput p3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFf:F
 
     .line 958
     return-void
@@ -64,7 +64,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->d:J
+    iget-wide v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mJd:J
 
     sub-long/2addr v0, v2
 
@@ -82,7 +82,7 @@
     move-result v0
 
     .line 983
-    sget-object v1, Luk/co/senab/photoview/PhotoViewAttacher;->a:Landroid/view/animation/Interpolator;
+    sget-object v1, Luk/co/senab/photoview/PhotoViewAttacher;->mInterpolatora:Landroid/view/animation/Interpolator;
 
     invoke-interface {v1, v0}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 962
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->c()Landroid/widget/ImageView;
 
@@ -120,11 +120,11 @@
     move-result v1
 
     .line 968
-    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->e:F
+    iget v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFe:F
 
-    iget v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->f:F
+    iget v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFf:F
 
-    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->e:F
+    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFe:F
 
     sub-float/2addr v3, v4
 
@@ -133,7 +133,7 @@
     add-float/2addr v2, v3
 
     .line 969
-    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v3}, Luk/co/senab/photoview/PhotoViewAttacher;->g()F
 
@@ -142,20 +142,20 @@
     div-float/2addr v2, v3
 
     .line 971
-    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-static {v3}, Luk/co/senab/photoview/PhotoViewAttacher;->b(Luk/co/senab/photoview/PhotoViewAttacher;)Landroid/graphics/Matrix;
 
     move-result-object v3
 
-    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->b:F
+    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFb:F
 
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->c:F
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mFc:F
 
     invoke-virtual {v3, v2, v2, v4, v5}, Landroid/graphics/Matrix;->postScale(FFFF)Z
 
     .line 972
-    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$AnimatedZoomRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-static {v2}, Luk/co/senab/photoview/PhotoViewAttacher;->c(Luk/co/senab/photoview/PhotoViewAttacher;)V
 

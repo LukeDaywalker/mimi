@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+.field final synthetic mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 29
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->a:Landroid/app/Activity;
 
@@ -46,7 +46,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->a:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
+    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/GuidenceShareController$ICx;->mGuidenceShareControllera:Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;->k()Ljava/lang/String;
 

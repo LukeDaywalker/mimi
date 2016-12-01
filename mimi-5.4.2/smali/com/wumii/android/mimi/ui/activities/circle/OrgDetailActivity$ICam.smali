@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
+.field final synthetic mOrgDetailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->mOrgDetailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .line 179
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->mOrgDetailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;Landroid/app/Activity;)V
 

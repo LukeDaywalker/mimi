@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
+.field private mSupportActionExpandProxya:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 
 
 # virtual methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;->a:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
+    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;->mSupportActionExpandProxya:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;->b(Landroid/view/MenuItem;)Z
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;->a:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
+    iget-object v0, p0, Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;->mSupportActionExpandProxya:Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;->a(Landroid/view/MenuItem;)Z
 

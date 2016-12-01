@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field private final a:Lcom/google/tagmanager/TagManager;
+.field private mClocke:Lcom/google/tagmanager/Clock;
 
-.field private b:Lcom/google/analytics/containertag/proto/Serving$ICj;
+.field private mICec:Lcom/google/tagmanager/Container$ICe;
 
-.field private c:Lcom/google/tagmanager/Container$ICe;
+.field private mICjb:Lcom/google/analytics/containertag/proto/Serving$ICj;
 
-.field private d:Lcom/google/tagmanager/Runtime;
+.field private volatile mIh:I
 
-.field private e:Lcom/google/tagmanager/Clock;
+.field private volatile mJg:J
 
-.field private volatile f:Ljava/lang/String;
+.field private mRuntimed:Lcom/google/tagmanager/Runtime;
 
-.field private volatile g:J
+.field private volatile mStringf:Ljava/lang/String;
 
-.field private volatile h:I
+.field private final mTagManagera:Lcom/google/tagmanager/TagManager;
 
 
 # direct methods
@@ -33,7 +33,7 @@
     const/4 v1, 0x0
 
     .line 754
-    iget-wide v2, p0, Lcom/google/tagmanager/Container;->g:J
+    iget-wide v2, p0, Lcom/google/tagmanager/Container;->mJg:J
 
     const-wide/16 v4, 0x0
 
@@ -42,11 +42,11 @@
     if-nez v2, :cond_0
 
     .line 755
-    iget v1, p0, Lcom/google/tagmanager/Container;->h:I
+    iget v1, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Lcom/google/tagmanager/Container;->h:I
+    iput v1, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     .line 773
     :goto_0
@@ -54,7 +54,7 @@
 
     .line 759
     :cond_0
-    iget-wide v2, p0, Lcom/google/tagmanager/Container;->g:J
+    iget-wide v2, p0, Lcom/google/tagmanager/Container;->mJg:J
 
     sub-long v2, p1, v2
 
@@ -72,7 +72,7 @@
 
     .line 763
     :cond_1
-    iget v4, p0, Lcom/google/tagmanager/Container;->h:I
+    iget v4, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     if-ge v4, v6, :cond_2
 
@@ -90,7 +90,7 @@
     double-to-int v2, v2
 
     .line 765
-    iget v3, p0, Lcom/google/tagmanager/Container;->h:I
+    iget v3, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     add-int/2addr v2, v3
 
@@ -98,20 +98,20 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/google/tagmanager/Container;->h:I
+    iput v2, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     .line 768
     :cond_2
-    iget v2, p0, Lcom/google/tagmanager/Container;->h:I
+    iget v2, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     if-lez v2, :cond_3
 
     .line 769
-    iget v1, p0, Lcom/google/tagmanager/Container;->h:I
+    iget v1, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, p0, Lcom/google/tagmanager/Container;->h:I
+    iput v1, p0, Lcom/google/tagmanager/Container;->mIh:I
 
     goto :goto_0
 
@@ -130,7 +130,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->d:Lcom/google/tagmanager/Runtime;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mRuntimed:Lcom/google/tagmanager/Runtime;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 750
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->a:Lcom/google/tagmanager/TagManager;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mTagManagera:Lcom/google/tagmanager/TagManager;
 
     invoke-virtual {v0}, Lcom/google/tagmanager/TagManager;->a()Lcom/google/tagmanager/TagManager$ICbj;
 
@@ -265,7 +265,7 @@
     .line 336
     :cond_1
     :try_start_3
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->e:Lcom/google/tagmanager/Clock;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mClocke:Lcom/google/tagmanager/Clock;
 
     invoke-interface {v0}, Lcom/google/tagmanager/Clock;->a()J
 
@@ -289,7 +289,7 @@
     invoke-virtual {p0, v2, v3}, Lcom/google/tagmanager/Container;->a(J)V
 
     .line 340
-    iput-wide v0, p0, Lcom/google/tagmanager/Container;->g:J
+    iput-wide v0, p0, Lcom/google/tagmanager/Container;->mJg:J
 
     goto :goto_0
 
@@ -313,7 +313,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->c:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
 
     if-eqz v0, :cond_0
 
@@ -324,9 +324,9 @@
     if-nez v0, :cond_0
 
     .line 633
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->c:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
 
-    iget-object v1, p0, Lcom/google/tagmanager/Container;->b:Lcom/google/analytics/containertag/proto/Serving$ICj;
+    iget-object v1, p0, Lcom/google/tagmanager/Container;->mICjb:Lcom/google/analytics/containertag/proto/Serving$ICj;
 
     iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$ICj;->d:Ljava/lang/String;
 
@@ -369,7 +369,7 @@
 
     .prologue
     .line 722
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -382,15 +382,15 @@
     monitor-enter p0
 
     :try_start_0
-    iput-object p1, p0, Lcom/google/tagmanager/Container;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/tagmanager/Container;->mStringf:Ljava/lang/String;
 
     .line 716
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->c:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
 
     if-eqz v0, :cond_0
 
     .line 717
-    iget-object v0, p0, Lcom/google/tagmanager/Container;->c:Lcom/google/tagmanager/Container$ICe;
+    iget-object v0, p0, Lcom/google/tagmanager/Container;->mICec:Lcom/google/tagmanager/Container$ICe;
 
     invoke-interface {v0, p1}, Lcom/google/tagmanager/Container$ICe;->a(Ljava/lang/String;)V
     :try_end_0

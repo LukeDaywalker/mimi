@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
+.field private mICbb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     .line 26
     return-void
@@ -36,7 +36,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     .line 30
     return-void
@@ -52,7 +52,7 @@
     .line 13
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     .line 34
     return-void
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ScrollView;->onScrollChanged(IIII)V
 
     .line 40
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->mICbb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->mICbb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     move-object v1, p0
 
@@ -97,14 +97,14 @@
 
     .prologue
     .line 48
-    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     if-eqz v0, :cond_0
 
     move/from16 v7, p7
 
     :goto_0
-    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->mICbb:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     .line 63
     return-void
@@ -160,7 +160,7 @@
 
     .prologue
     .line 66
-    iput-boolean p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->a:Z
+    iput-boolean p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->isZa:Z
 
     .line 67
     return-void

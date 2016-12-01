@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private c:J
+.field private mJc:J
 
-.field private d:J
+.field private mJd:J
 
 
 # direct methods
@@ -50,10 +50,10 @@
     .line 114
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lokio/Timeout;->a:Z
+    iput-boolean v0, p0, Lokio/Timeout;->isZa:Z
 
     .line 115
-    iput-wide p1, p0, Lokio/Timeout;->c:J
+    iput-wide p1, p0, Lokio/Timeout;->mJc:J
 
     .line 116
     return-object p0
@@ -112,7 +112,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lokio/Timeout;->d:J
+    iput-wide v0, p0, Lokio/Timeout;->mJd:J
 
     .line 84
     return-object p0
@@ -123,7 +123,7 @@
 
     .prologue
     .line 89
-    iget-wide v0, p0, Lokio/Timeout;->d:J
+    iget-wide v0, p0, Lokio/Timeout;->mJd:J
 
     return-wide v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 104
-    iget-boolean v0, p0, Lokio/Timeout;->a:Z
+    iget-boolean v0, p0, Lokio/Timeout;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -147,7 +147,7 @@
 
     .line 105
     :cond_0
-    iget-wide v0, p0, Lokio/Timeout;->c:J
+    iget-wide v0, p0, Lokio/Timeout;->mJc:J
 
     return-wide v0
 .end method
@@ -157,7 +157,7 @@
 
     .prologue
     .line 94
-    iget-boolean v0, p0, Lokio/Timeout;->a:Z
+    iget-boolean v0, p0, Lokio/Timeout;->isZa:Z
 
     return v0
 .end method
@@ -169,7 +169,7 @@
     .line 128
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lokio/Timeout;->d:J
+    iput-wide v0, p0, Lokio/Timeout;->mJd:J
 
     .line 129
     return-object p0
@@ -182,7 +182,7 @@
     .line 134
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lokio/Timeout;->a:Z
+    iput-boolean v0, p0, Lokio/Timeout;->isZa:Z
 
     .line 135
     return-object p0
@@ -210,11 +210,11 @@
 
     .line 148
     :cond_0
-    iget-boolean v0, p0, Lokio/Timeout;->a:Z
+    iget-boolean v0, p0, Lokio/Timeout;->isZa:Z
 
     if-eqz v0, :cond_1
 
-    iget-wide v0, p0, Lokio/Timeout;->c:J
+    iget-wide v0, p0, Lokio/Timeout;->mJc:J
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 

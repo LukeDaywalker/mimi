@@ -20,11 +20,11 @@
 
 .field public static final enum c:Lcom/baidu/platform/comapi/map/ICy;
 
-.field private static final synthetic e:[Lcom/baidu/platform/comapi/map/ICy;
+.field private static final synthetic mArrayICye:[Lcom/baidu/platform/comapi/map/ICy;
 
 
 # instance fields
-.field private final d:I
+.field private final mId:I
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->e:[Lcom/baidu/platform/comapi/map/ICy;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICy;->mArrayICye:[Lcom/baidu/platform/comapi/map/ICy;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lcom/baidu/platform/comapi/map/ICy;->d:I
+    iput p3, p0, Lcom/baidu/platform/comapi/map/ICy;->mId:I
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 .method public static values()[Lcom/baidu/platform/comapi/map/ICy;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/ICy;->e:[Lcom/baidu/platform/comapi/map/ICy;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICy;->mArrayICye:[Lcom/baidu/platform/comapi/map/ICy;
 
     invoke-virtual {v0}, [Lcom/baidu/platform/comapi/map/ICy;->clone()Ljava/lang/Object;
 

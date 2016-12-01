@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/c/Pro;
+.field final synthetic mProa:Lcom/tencent/c/Pro;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 140
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     invoke-static {v0, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 144
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v0}, Lcom/tencent/c/Pro;->b(Lcom/tencent/c/Pro;)Ljava/lang/String;
 
@@ -101,7 +101,7 @@
     invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 150
-    iget-object v4, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v4, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v4}, Lcom/tencent/c/Pro;->c(Lcom/tencent/c/Pro;)Landroid/os/Handler;
 
@@ -141,7 +141,7 @@
 
     move-result-wide v2
 
-    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v5}, Lcom/tencent/c/Pro;->d(Lcom/tencent/c/Pro;)J
 
@@ -161,7 +161,7 @@
 
     .line 182
     :goto_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v0}, Lcom/tencent/c/Pro;->c(Lcom/tencent/c/Pro;)Landroid/os/Handler;
 
@@ -174,7 +174,7 @@
 
     .line 157
     :cond_0
-    iget-object v3, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v3, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v3}, Lcom/tencent/c/Pro;->b(Lcom/tencent/c/Pro;)Ljava/lang/String;
 
@@ -188,7 +188,7 @@
     if-eqz v3, :cond_1
 
     .line 159
-    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-virtual {v5, v3, v0}, Lcom/tencent/c/Pro;->a(Landroid/graphics/Bitmap;Ljava/lang/String;)Z
 
@@ -222,7 +222,7 @@
 
     move-result-wide v2
 
-    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->a:Lcom/tencent/c/Pro;
+    iget-object v5, p0, Lcom/tencent/c/Pro$ICc;->mProa:Lcom/tencent/c/Pro;
 
     invoke-static {v5}, Lcom/tencent/c/Pro;->d(Lcom/tencent/c/Pro;)J
 

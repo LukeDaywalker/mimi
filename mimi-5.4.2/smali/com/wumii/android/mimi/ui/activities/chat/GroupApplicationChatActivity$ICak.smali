@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+.field final synthetic mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 436
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 440
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICak;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;)Lcom/wumii/android/mimi/models/entities/chat/GroupApplicationChat;
 

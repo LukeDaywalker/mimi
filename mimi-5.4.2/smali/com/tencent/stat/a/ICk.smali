@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:I
+.field private static mIa:I
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, -0x1
 
-    sput v0, Lcom/tencent/stat/a/ICk;->a:I
+    sput v0, Lcom/tencent/stat/a/ICk;->mIa:I
 
     return-void
 .end method
@@ -24,7 +24,7 @@
 
     const/4 v1, 0x0
 
-    sget v2, Lcom/tencent/stat/a/ICk;->a:I
+    sget v2, Lcom/tencent/stat/a/ICk;->mIa:I
 
     if-ne v2, v0, :cond_0
 
@@ -32,7 +32,7 @@
     return v0
 
     :cond_0
-    sget v2, Lcom/tencent/stat/a/ICk;->a:I
+    sget v2, Lcom/tencent/stat/a/ICk;->mIa:I
 
     if-nez v2, :cond_1
 
@@ -119,7 +119,7 @@
 
     const/4 v2, 0x1
 
-    sput v2, Lcom/tencent/stat/a/ICk;->a:I
+    sput v2, Lcom/tencent/stat/a/ICk;->mIa:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -129,7 +129,7 @@
     move-exception v0
 
     :cond_2
-    sput v1, Lcom/tencent/stat/a/ICk;->a:I
+    sput v1, Lcom/tencent/stat/a/ICk;->mIa:I
 
     move v0, v1
 

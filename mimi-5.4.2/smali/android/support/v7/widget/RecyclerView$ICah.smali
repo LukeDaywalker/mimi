@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private final a:Landroid/support/v7/widget/RecyclerView$ICai;
+.field private isZb:Z
 
-.field private b:Z
+.field private final mICaia:Landroid/support/v7/widget/RecyclerView$ICai;
 
 
 # virtual methods
@@ -49,7 +49,7 @@
 
     .prologue
     .line 5259
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->a:Landroid/support/v7/widget/RecyclerView$ICai;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->mICaia:Landroid/support/v7/widget/RecyclerView$ICai;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICai;->registerObserver(Ljava/lang/Object;)V
 
@@ -118,7 +118,7 @@
     move-result-object v0
 
     .line 5063
-    iput p2, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->e:I
+    iput p2, v0, Landroid/support/v7/widget/RecyclerView$ICbg;->mIe:I
 
     .line 5064
     invoke-static {}, Landroid/support/v4/os/TraceCompat;->a()V
@@ -132,7 +132,7 @@
 
     .prologue
     .line 5273
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->a:Landroid/support/v7/widget/RecyclerView$ICai;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->mICaia:Landroid/support/v7/widget/RecyclerView$ICai;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/RecyclerView$ICai;->unregisterObserver(Ljava/lang/Object;)V
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 5076
-    iput p2, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->b:I
+    iput p2, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mIb:I
 
     .line 5077
     invoke-virtual {p0}, Landroid/support/v7/widget/RecyclerView$ICah;->b()Z
@@ -164,7 +164,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->d:J
+    iput-wide v0, p1, Landroid/support/v7/widget/RecyclerView$ICbg;->mJd:J
 
     .line 5080
     :cond_0
@@ -202,7 +202,7 @@
 
     .prologue
     .line 5147
-    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->b:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/RecyclerView$ICah;->isZb:Z
 
     return v0
 .end method

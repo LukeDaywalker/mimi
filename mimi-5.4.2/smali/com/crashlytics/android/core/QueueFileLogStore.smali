@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Ljava/io/File;
+.field private final mFilea:Ljava/io/File;
 
-.field private final b:I
+.field private final mIb:I
 
-.field private c:Lio/fabric/sdk/android/services/common/QueueFile;
+.field private mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
 
 # direct methods
@@ -23,10 +23,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 39
-    iput-object p1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->a:Ljava/io/File;
+    iput-object p1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mFilea:Ljava/io/File;
 
     .line 40
-    iput p2, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->b:I
+    iput p2, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mIb:I
 
     .line 41
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     if-nez v0, :cond_0
 
@@ -45,11 +45,11 @@
     :try_start_0
     new-instance v0, Lio/fabric/sdk/android/services/common/QueueFile;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->a:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mFilea:Ljava/io/File;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/common/QueueFile;-><init>(Ljava/io/File;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iput-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -79,7 +79,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->a:Ljava/io/File;
+    iget-object v4, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mFilea:Ljava/io/File;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -105,7 +105,7 @@
     const/4 v6, 0x0
 
     .line 51
-    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->a:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mFilea:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -123,7 +123,7 @@
     invoke-direct {p0}, Lcom/crashlytics/android/core/QueueFileLogStore;->d()V
 
     .line 58
-    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     if-eqz v1, :cond_0
 
@@ -135,7 +135,7 @@
     aput v6, v1, v6
 
     .line 68
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/QueueFile;->a()I
 
@@ -145,7 +145,7 @@
 
     .line 71
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     new-instance v3, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;
 
@@ -188,7 +188,7 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     const-string/jumbo v1, "There was a problem closing the Crashlytics log file."
 
@@ -197,7 +197,7 @@
     .line 93
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->c:Lio/fabric/sdk/android/services/common/QueueFile;
+    iput-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mQueueFilec:Lio/fabric/sdk/android/services/common/QueueFile;
 
     .line 94
     return-void
@@ -211,7 +211,7 @@
     invoke-virtual {p0}, Lcom/crashlytics/android/core/QueueFileLogStore;->b()V
 
     .line 99
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->a:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 

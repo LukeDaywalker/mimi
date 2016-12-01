@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+.field final synthetic mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 230
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICk;->a:Lcom/wumii/android/mimi/util/BottomPanFacade;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade$ICk;->mBottomPanFacadea:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

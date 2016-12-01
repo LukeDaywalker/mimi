@@ -49,8 +49,6 @@
 
 .field public static aH:F
 
-.field private static aI:Z
-
 .field public static aJ:F
 
 .field public static aK:Z
@@ -95,10 +93,6 @@
 
 .field public static ae:I
 
-.field private static af:Ljava/lang/String;
-
-.field private static ag:Ljava/lang/String;
-
 .field public static ah:I
 
 .field public static ai:I
@@ -107,13 +101,9 @@
 
 .field public static ak:I
 
-.field private static al:Ljava/lang/String;
-
 .field public static am:F
 
 .field public static an:Z
-
-.field private static ao:Ljava/lang/String;
 
 .field public static ap:I
 
@@ -121,15 +111,9 @@
 
 .field public static ar:[B
 
-.field private static as:Z
-
 .field public static at:I
 
 .field public static au:D
-
-.field private static av:Ljava/lang/String;
-
-.field private static aw:Ljava/lang/String;
 
 .field public static ax:I
 
@@ -145,11 +129,27 @@
 
 .field public static bd:F
 
-.field private static be:Ljava/lang/Process;
-
 .field public static bf:J
 
 .field public static bg:F
+
+.field private static isZaI:Z
+
+.field private static isZas:Z
+
+.field private static mProcessbe:Ljava/lang/Process;
+
+.field private static mStringaf:Ljava/lang/String;
+
+.field private static mStringag:Ljava/lang/String;
+
+.field private static mStringal:Ljava/lang/String;
+
+.field private static mStringao:Ljava/lang/String;
+
+.field private static mStringav:Ljava/lang/String;
+
+.field private static mStringaw:Ljava/lang/String;
 
 
 # direct methods
@@ -176,7 +176,7 @@
 
     const-string/jumbo v0, "http://loc.map.baidu.com/sdk.php"
 
-    sput-object v0, Lcom/baidu/location/ICc;->af:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringaf:Ljava/lang/String;
 
     const-string/jumbo v0, "http://loc.map.baidu.com/sdk_ep.php"
 
@@ -184,31 +184,31 @@
 
     const-string/jumbo v0, "http://loc.map.baidu.com/user_err.php"
 
-    sput-object v0, Lcom/baidu/location/ICc;->aw:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringaw:Ljava/lang/String;
 
     const-string/jumbo v0, "http://loc.map.baidu.com/oqur.php"
 
-    sput-object v0, Lcom/baidu/location/ICc;->al:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringal:Ljava/lang/String;
 
     const-string/jumbo v0, "http://loc.map.baidu.com/tcu.php"
 
-    sput-object v0, Lcom/baidu/location/ICc;->av:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringav:Ljava/lang/String;
 
     const-string/jumbo v0, "https://api.skyhookwireless.com/wps2/location"
 
-    sput-object v0, Lcom/baidu/location/ICc;->ao:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringao:Ljava/lang/String;
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->aI:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZaI:Z
 
-    sput-boolean v2, Lcom/baidu/location/ICc;->as:Z
+    sput-boolean v2, Lcom/baidu/location/ICc;->isZas:Z
 
     const-string/jumbo v0, "[baidu_location_service]"
 
-    sput-object v0, Lcom/baidu/location/ICc;->ag:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICc;->mStringag:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICc;->be:Ljava/lang/Process;
+    sput-object v0, Lcom/baidu/location/ICc;->mProcessbe:Ljava/lang/Process;
 
     const-string/jumbo v0, "no"
 
@@ -420,7 +420,7 @@
 .method public static byte()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICc;->aw:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringaw:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -578,7 +578,7 @@
 .method public static do()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICc;->al:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringal:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -588,7 +588,7 @@
 
     if-eqz p0, :cond_0
 
-    sput-object p0, Lcom/baidu/location/ICc;->af:Ljava/lang/String;
+    sput-object p0, Lcom/baidu/location/ICc;->mStringaf:Ljava/lang/String;
 
     :cond_0
     return-void
@@ -604,17 +604,17 @@
     .locals 1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/location/ICc;->be:Ljava/lang/Process;
+    sget-object v0, Lcom/baidu/location/ICc;->mProcessbe:Ljava/lang/Process;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICc;->be:Ljava/lang/Process;
+    sget-object v0, Lcom/baidu/location/ICc;->mProcessbe:Ljava/lang/Process;
 
     invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICc;->be:Ljava/lang/Process;
+    sput-object v0, Lcom/baidu/location/ICc;->mProcessbe:Ljava/lang/Process;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -700,7 +700,7 @@
 .method public static for()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICc;->af:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringaf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1375,11 +1375,11 @@
 .method public static if(Ljava/lang/String;)V
     .locals 1
 
-    sget-boolean v0, Lcom/baidu/location/ICc;->as:Z
+    sget-boolean v0, Lcom/baidu/location/ICc;->isZas:Z
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICc;->ag:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringag:Ljava/lang/String;
 
     invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1390,7 +1390,7 @@
 .method public static if(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    sget-boolean v0, Lcom/baidu/location/ICc;->aI:Z
+    sget-boolean v0, Lcom/baidu/location/ICc;->isZaI:Z
 
     if-eqz v0, :cond_0
 
@@ -1429,7 +1429,7 @@
 .method public static int()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICc;->ao:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringao:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1503,7 +1503,7 @@
 .method public static new()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICc;->av:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICc;->mStringav:Ljava/lang/String;
 
     return-object v0
 .end method

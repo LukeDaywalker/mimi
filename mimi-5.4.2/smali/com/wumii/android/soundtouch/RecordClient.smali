@@ -8,7 +8,7 @@
 
 
 # static fields
-.field private static final e:Lorg/slf4j/Logger;
+.field private static final mLoggere:Lorg/slf4j/Logger;
 
 
 # instance fields
@@ -27,15 +27,15 @@
 
 .field protected d:Lcom/wumii/android/soundtouch/SoundTouchThread;
 
-.field private f:Lcom/wumii/android/soundtouch/RecordThread;
+.field private isZh:Z
 
-.field private g:Landroid/media/MediaPlayer;
+.field private mHandleri:Landroid/os/Handler;
 
-.field private h:Z
+.field private mMediaPlayerg:Landroid/media/MediaPlayer;
 
-.field private i:Landroid/os/Handler;
+.field private mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
-.field private j:Ljava/lang/String;
+.field private mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/soundtouch/RecordClient;->e:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/soundtouch/RecordClient;->mLoggere:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -142,7 +142,7 @@
     move-exception v0
 
     .line 68
-    sget-object v1, Lcom/wumii/android/soundtouch/RecordClient;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/soundtouch/RecordClient;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -176,7 +176,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandleri:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -186,12 +186,12 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandleri:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandleri:Landroid/os/Handler;
 
     const/16 v1, 0xa
 
@@ -215,12 +215,12 @@
     .line 178
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     .line 179
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->isZh:Z
 
     .line 180
     return-void
@@ -233,7 +233,7 @@
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordClient;->i:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordClient;->mHandleri:Landroid/os/Handler;
 
     .line 76
     return-void
@@ -260,10 +260,10 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/soundtouch/RecordThread;-><init>(Landroid/os/Handler;Ljava/util/concurrent/BlockingQueue;)V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->f:Lcom/wumii/android/soundtouch/RecordThread;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->f:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordThread;->start()V
 
@@ -321,7 +321,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mStringj:Ljava/lang/String;
 
     .line 93
     return-void
@@ -337,17 +337,17 @@
     .line 115
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->isZh:Z
 
     .line 117
     new-instance v0, Landroid/media/MediaPlayer;
 
     invoke-direct {v0}, Landroid/media/MediaPlayer;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
@@ -360,23 +360,23 @@
     invoke-virtual {v0, v1}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p0}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
     .line 124
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p1}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->prepareAsync()V
     :try_end_0
@@ -391,7 +391,7 @@
     move-exception v0
 
     .line 127
-    sget-object v1, Lcom/wumii/android/soundtouch/RecordClient;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/soundtouch/RecordClient;->mLoggere:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -413,7 +413,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->f:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordThread;->a()V
 
@@ -431,11 +431,11 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->f:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->f:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mRecordThreadf:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordThread;->b()Z
 
@@ -459,12 +459,12 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/soundtouch/RecordClient;->a(Landroid/media/MediaPlayer;)V
 
@@ -493,15 +493,15 @@
 
     .prologue
     .line 146
-    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->isZh:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mMediaPlayerg:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
 
@@ -526,7 +526,7 @@
 
     .prologue
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->mStringj:Ljava/lang/String;
 
     return-object v0
 .end method

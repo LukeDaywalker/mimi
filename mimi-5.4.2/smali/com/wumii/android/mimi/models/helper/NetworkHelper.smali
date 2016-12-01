@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/net/ConnectivityManager;
+.field private mConnectivityManagera:Landroid/net/ConnectivityManager;
 
-.field private b:Landroid/net/NetworkInfo;
+.field private mNetworkInfob:Landroid/net/NetworkInfo;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a:Landroid/net/ConnectivityManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->mConnectivityManagera:Landroid/net/ConnectivityManager;
 
     .line 19
     return-void
@@ -58,13 +58,13 @@
 
     .line 46
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a:Landroid/net/ConnectivityManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->mConnectivityManagera:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->b:Landroid/net/NetworkInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->mNetworkInfob:Landroid/net/NetworkInfo;
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -91,7 +91,7 @@
 
     .line 74
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->b:Landroid/net/NetworkInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->mNetworkInfob:Landroid/net/NetworkInfo;
 
     return-object v0
 .end method

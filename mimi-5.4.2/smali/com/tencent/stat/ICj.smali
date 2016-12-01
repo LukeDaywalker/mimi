@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICj;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/stat/ICj;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/stat/ICj;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/stat/ICj;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/stat/ICo;->a(Landroid/content/Context;)Lcom/tencent/stat/ICo;
 
@@ -43,9 +43,9 @@
 
     new-instance v1, Lcom/tencent/stat/b/ICd;
 
-    iget-object v2, p0, Lcom/tencent/stat/ICj;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/stat/ICj;->mContexta:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/tencent/stat/ICj;->a:Landroid/content/Context;
+    iget-object v3, p0, Lcom/tencent/stat/ICj;->mContexta:Landroid/content/Context;
 
     const/4 v4, 0x0
 

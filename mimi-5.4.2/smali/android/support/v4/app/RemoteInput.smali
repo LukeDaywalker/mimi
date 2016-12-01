@@ -6,19 +6,19 @@
 # static fields
 .field public static final a:Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput$Factory;
 
-.field private static final g:Landroid/support/v4/app/RemoteInput$Impl;
+.field private static final mImplg:Landroid/support/v4/app/RemoteInput$Impl;
 
 
 # instance fields
-.field private final b:Ljava/lang/String;
+.field private final isZe:Z
 
-.field private final c:Ljava/lang/CharSequence;
+.field private final mArrayCharSequenced:[Ljava/lang/CharSequence;
 
-.field private final d:[Ljava/lang/CharSequence;
+.field private final mBundlef:Landroid/os/Bundle;
 
-.field private final e:Z
+.field private final mCharSequencec:Ljava/lang/CharSequence;
 
-.field private final f:Landroid/os/Bundle;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/RemoteInput$ImplApi20;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/RemoteInput;->g:Landroid/support/v4/app/RemoteInput$Impl;
+    sput-object v0, Landroid/support/v4/app/RemoteInput;->mImplg:Landroid/support/v4/app/RemoteInput$Impl;
 
     .line 263
     :goto_0
@@ -63,7 +63,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/RemoteInput$ImplJellybean;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/RemoteInput;->g:Landroid/support/v4/app/RemoteInput$Impl;
+    sput-object v0, Landroid/support/v4/app/RemoteInput;->mImplg:Landroid/support/v4/app/RemoteInput$Impl;
 
     goto :goto_0
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/RemoteInput$ImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/RemoteInput;->g:Landroid/support/v4/app/RemoteInput$Impl;
+    sput-object v0, Landroid/support/v4/app/RemoteInput;->mImplg:Landroid/support/v4/app/RemoteInput$Impl;
 
     goto :goto_0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->b:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -95,7 +95,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->c:Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->mCharSequencec:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -105,7 +105,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->d:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->mArrayCharSequenced:[Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -115,7 +115,7 @@
 
     .prologue
     .line 81
-    iget-boolean v0, p0, Landroid/support/v4/app/RemoteInput;->e:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/RemoteInput;->isZe:Z
 
     return v0
 .end method
@@ -125,7 +125,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/RemoteInput;->mBundlef:Landroid/os/Bundle;
 
     return-object v0
 .end method

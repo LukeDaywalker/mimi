@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+.field final synthetic mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->finish()V
 

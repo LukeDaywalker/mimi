@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field private mBitmape:Landroid/graphics/Bitmap;
 
-.field private e:Landroid/graphics/Bitmap;
+.field private mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
     .line 49
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
@@ -52,7 +52,7 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 51
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getCommentCount()J
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 53
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getLikedCount()J
 
@@ -345,10 +345,10 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->f()Z
 
     .line 38
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->e:Landroid/graphics/Bitmap;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mBitmape:Landroid/graphics/Bitmap;
 
     .line 39
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 40
     invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->a(Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
@@ -362,7 +362,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->e:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->mBitmape:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;->a(Landroid/graphics/Bitmap;)Ljava/io/File;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
+.field final synthetic mICala:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 935
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 938
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->j(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Ljava/util/List;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 23
     return-void
@@ -30,7 +30,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -47,7 +47,7 @@
     .line 28
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;-><init>(Landroid/content/Context;)V
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lorg/apache/http/protocol/HttpService;
+.field private final mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
-.field private final b:Lorg/apache/http/HttpServerConnection;
+.field private final mHttpServicea:Lorg/apache/http/protocol/HttpService;
 
 
 # direct methods
@@ -44,10 +44,10 @@
     invoke-direct {p0, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
     .line 245
-    iput-object p1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->a:Lorg/apache/http/protocol/HttpService;
+    iput-object p1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServicea:Lorg/apache/http/protocol/HttpService;
 
     .line 246
-    iput-object p2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iput-object p2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     .line 247
     return-void
@@ -79,7 +79,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v1}, Lorg/apache/http/HttpServerConnection;->isOpen()Z
 
@@ -88,9 +88,9 @@
     if-eqz v1, :cond_0
 
     .line 255
-    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->a:Lorg/apache/http/protocol/HttpService;
+    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServicea:Lorg/apache/http/protocol/HttpService;
 
-    iget-object v2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v2, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-virtual {v1, v2, v0}, Lorg/apache/http/protocol/HttpService;->handleRequest(Lorg/apache/http/HttpServerConnection;Lorg/apache/http/protocol/HttpContext;)V
     :try_end_0
@@ -102,7 +102,7 @@
     .line 265
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v0}, Lorg/apache/http/HttpServerConnection;->close()V
     :try_end_1
@@ -134,7 +134,7 @@
 
     .line 265
     :try_start_3
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v0}, Lorg/apache/http/HttpServerConnection;->close()V
     :try_end_3
@@ -170,7 +170,7 @@
 
     .line 265
     :try_start_5
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v0}, Lorg/apache/http/HttpServerConnection;->close()V
     :try_end_5
@@ -206,7 +206,7 @@
 
     .line 265
     :try_start_7
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v0}, Lorg/apache/http/HttpServerConnection;->close()V
     :try_end_7
@@ -226,7 +226,7 @@
 
     .line 265
     :try_start_8
-    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->b:Lorg/apache/http/HttpServerConnection;
+    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServer$ICb;->mHttpServerConnectionb:Lorg/apache/http/HttpServerConnection;
 
     invoke-interface {v1}, Lorg/apache/http/HttpServerConnection;->close()V
     :try_end_8

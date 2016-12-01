@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Lorg/slf4j/Logger;
+.field private mContextc:Landroid/content/Context;
 
-.field private b:Landroid/app/PendingIntent;
+.field private mJd:J
 
-.field private c:Landroid/content/Context;
+.field private mLoggera:Lorg/slf4j/Logger;
 
-.field private d:J
+.field private mPendingIntentb:Landroid/app/PendingIntent;
 
 
 # direct methods
@@ -28,15 +28,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mLoggera:Lorg/slf4j/Logger;
 
     .line 19
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->d:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mJd:J
 
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mContextc:Landroid/content/Context;
 
     .line 23
     return-void
@@ -120,7 +120,7 @@
     move-exception v0
 
     .line 45
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "setExact error:"
 
@@ -151,10 +151,10 @@
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->d:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mJd:J
 
     .line 54
-    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->d:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mJd:J
 
     invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a(J)V
     :try_end_0
@@ -187,7 +187,7 @@
     invoke-direct {v0, p1, p2}, Ljava/util/Date;-><init>(J)V
 
     .line 27
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a:Lorg/slf4j/Logger;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -226,7 +226,7 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, "alarm"
 
@@ -244,7 +244,7 @@
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 30
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->c:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -253,7 +253,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 31
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->c:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mContextc:Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -263,7 +263,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iput-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     .line 32
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -273,7 +273,7 @@
     if-le v1, v2, :cond_0
 
     .line 33
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     invoke-direct {p0, v0, p1, p2, v1}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a(Landroid/app/AlarmManager;JLandroid/app/PendingIntent;)V
     :try_end_0
@@ -290,7 +290,7 @@
     const/4 v1, 0x0
 
     :try_start_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1, p1, p2, v2}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
     :try_end_1
@@ -315,12 +315,12 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     if-eqz v0, :cond_0
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, "alarm"
 
@@ -331,17 +331,17 @@
     check-cast v0, Landroid/app/AlarmManager;
 
     .line 61
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     .line 62
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b:Landroid/app/PendingIntent;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mPendingIntentb:Landroid/app/PendingIntent;
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "cancel timer"
 

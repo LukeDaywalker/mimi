@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/content/ModernAsyncTask;
+.field final synthetic mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 118
-    iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$2;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$2;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
     const/4 v0, 0x0
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$2;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$2;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
     invoke-static {v0}, Landroid/support/v4/content/ModernAsyncTask;->a(Landroid/support/v4/content/ModernAsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -59,11 +59,11 @@
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 123
-    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$2;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$2;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
-    iget-object v1, p0, Landroid/support/v4/content/ModernAsyncTask$2;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v1, p0, Landroid/support/v4/content/ModernAsyncTask$2;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
-    iget-object v2, p0, Landroid/support/v4/content/ModernAsyncTask$2;->b:[Ljava/lang/Object;
+    iget-object v2, p0, Landroid/support/v4/content/ModernAsyncTask$2;->mArrayObjectb:[Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Landroid/support/v4/content/ModernAsyncTask;->a([Ljava/lang/Object;)Ljava/lang/Object;
 

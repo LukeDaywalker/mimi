@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private a:Landroid/content/ServiceConnection;
+.field private mContextd:Landroid/content/Context;
 
-.field private b:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
+.field private mIAnalyticsServicee:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
 
-.field private c:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
+.field private mICdb:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
 
-.field private d:Landroid/content/Context;
+.field private mICec:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
 
-.field private e:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
+.field private mServiceConnectiona:Landroid/content/ServiceConnection;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 58
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mContextd:Landroid/content/Context;
 
     .line 59
     if-nez p2, :cond_0
@@ -43,7 +43,7 @@
 
     .line 62
     :cond_0
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->b:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICdb:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
 
     .line 63
     if-nez p3, :cond_1
@@ -59,7 +59,7 @@
 
     .line 66
     :cond_1
-    iput-object p3, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->c:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
+    iput-object p3, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICec:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
 
     .line 67
     return-void
@@ -70,7 +70,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     return-object p1
 .end method
@@ -80,7 +80,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->e:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mIAnalyticsServicee:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
 
     return-object p1
 .end method
@@ -100,7 +100,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mContextd:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->c:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICec:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->b:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICdb:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
     invoke-virtual {p0}, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d()V
 
     .line 147
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->e:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mIAnalyticsServicee:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->b:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICdb:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;->a()V
 
@@ -306,7 +306,7 @@
     .line 79
     const-string/jumbo v1, "app_package_name"
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d:Landroid/content/Context;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mContextd:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -315,7 +315,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 80
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     if-eqz v1, :cond_1
 
@@ -335,12 +335,12 @@
 
     invoke-direct {v1, p0}, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICc;-><init>(Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;)V
 
-    iput-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iput-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     .line 85
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mContextd:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     const/16 v3, 0x81
 
@@ -383,10 +383,10 @@
     if-nez v1, :cond_0
 
     .line 89
-    iput-object v4, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iput-object v4, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     .line 90
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->c:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICec:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;
 
     const/4 v1, 0x1
 
@@ -402,18 +402,18 @@
     const/4 v2, 0x0
 
     .line 103
-    iput-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->e:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
+    iput-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mIAnalyticsServicee:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
 
     .line 104
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     if-eqz v0, :cond_0
 
     .line 113
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mContextd:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
     :try_end_0
@@ -422,10 +422,10 @@
 
     .line 122
     :goto_0
-    iput-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->a:Landroid/content/ServiceConnection;
+    iput-object v2, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mServiceConnectiona:Landroid/content/ServiceConnection;
 
     .line 123
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->b:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mICdb:Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;->b()V
 
@@ -476,7 +476,7 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->e:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;->mIAnalyticsServicee:Lcom/google/android/gms/analytics/internal/IAnalyticsService;
 
     if-eqz v0, :cond_0
 

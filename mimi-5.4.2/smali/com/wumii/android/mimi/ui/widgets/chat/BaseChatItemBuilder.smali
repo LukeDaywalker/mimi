@@ -15,23 +15,23 @@
 
 .field protected d:Landroid/content/Context;
 
-.field private e:I
+.field private mDisplayImageOptionsi:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private f:I
+.field private mIe:I
 
-.field private g:I
+.field private mIf:I
 
-.field private h:I
+.field private mIg:I
 
-.field private i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mIh:I
 
-.field private j:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerj:Landroid/view/View$OnClickListener;
 
-.field private k:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerk:Landroid/view/View$OnClickListener;
 
-.field private l:Landroid/view/View$OnLongClickListener;
+.field private mOnLongClickListenerl:Landroid/view/View$OnLongClickListener;
 
-.field private m:Ljava/lang/String;
+.field private mStringm:Ljava/lang/String;
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIe:I
 
     .line 57
     const/high16 v0, 0x40800000    # 4.0f
@@ -76,7 +76,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIf:I
 
     .line 58
     const/high16 v0, 0x41000000    # 8.0f
@@ -85,7 +85,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->g:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIg:I
 
     .line 59
     const/high16 v0, 0x41200000    # 10.0f
@@ -94,7 +94,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->h:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIh:I
 
     .line 62
     const/high16 v0, 0x41400000    # 12.0f
@@ -143,7 +143,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mDisplayImageOptionsi:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 69
     return-void
@@ -231,7 +231,7 @@
     invoke-virtual {v0, v6, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 159
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->f:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIf:I
 
     iput v6, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -256,7 +256,7 @@
     iput v7, v1, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 165
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->f:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIf:I
 
     iput v6, v1, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
@@ -275,7 +275,7 @@
     invoke-virtual {v2, v8, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 169
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIe:I
 
     iput v6, v2, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -300,7 +300,7 @@
     iput v7, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 175
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->g:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIg:I
 
     iput v6, v3, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
@@ -319,7 +319,7 @@
     invoke-virtual {v4, v7, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 179
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->h:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIh:I
 
     iput v3, v4, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
@@ -376,7 +376,7 @@
     iput v7, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 184
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->f:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIf:I
 
     iput v6, v0, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
@@ -395,7 +395,7 @@
     invoke-virtual {v1, v7, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 188
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->f:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIf:I
 
     iput v6, v1, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -420,7 +420,7 @@
     iput v7, v2, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 194
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->e:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIe:I
 
     iput v6, v2, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
@@ -439,7 +439,7 @@
     invoke-virtual {v3, v8, v6}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 198
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->g:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mIg:I
 
     iput v6, v3, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
@@ -565,7 +565,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mDisplayImageOptionsi:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v1, v5, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 
@@ -706,17 +706,17 @@
 
     move-result-object v1
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->m:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mStringm:Ljava/lang/String;
 
     if-eqz v4, :cond_9
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->m:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mStringm:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getMsgId()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -744,7 +744,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->j:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnClickListenerj:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -753,7 +753,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->k:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnClickListenerk:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -771,7 +771,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->l:Landroid/view/View$OnLongClickListener;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnLongClickListenerl:Landroid/view/View$OnLongClickListener;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
@@ -845,7 +845,7 @@
 
     .prologue
     .line 278
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->j:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnClickListenerj:Landroid/view/View$OnClickListener;
 
     .line 279
     return-void
@@ -856,7 +856,7 @@
 
     .prologue
     .line 286
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->l:Landroid/view/View$OnLongClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnLongClickListenerl:Landroid/view/View$OnLongClickListener;
 
     .line 287
     return-void
@@ -996,7 +996,7 @@
 
     .prologue
     .line 290
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->m:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mStringm:Ljava/lang/String;
 
     .line 291
     return-void
@@ -1010,7 +1010,7 @@
 
     .prologue
     .line 282
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->k:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->mOnClickListenerk:Landroid/view/View$OnClickListener;
 
     .line 283
     return-void

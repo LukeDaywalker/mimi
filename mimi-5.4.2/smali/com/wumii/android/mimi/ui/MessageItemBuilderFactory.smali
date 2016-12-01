@@ -4,31 +4,31 @@
 
 
 # instance fields
-.field private a:Landroid/util/DisplayMetrics;
+.field private mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+.field private mGroupApplicationResultChatItemBuilderk:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+.field private mGroupChatMessageChatItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
+.field private mGroupMemberBannedMessageChatItemBuilderl:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+.field private mGroupMemberMessageChatItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
+.field private mImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+.field private mSecretMessageChatItemBuildere:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
-.field private h:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
+.field private mSummonsMessageChatItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
+.field private mSysRetractedMessageItemBuilderm:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
+.field private mSystemMessageChatItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
 
-.field private k:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+.field private mTextChatItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
-.field private l:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
+.field private mTransientImageChatItemBuilderd:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
 
-.field private m:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
+.field private mVoiceChatItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
 
 
 # direct methods
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     .line 63
     return-void
@@ -190,7 +190,7 @@
     move-result-object v0
 
     .line 67
-    sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->mArrayIa:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->ordinal()I
 
@@ -227,22 +227,22 @@
 
     .line 69
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTextChatItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
     if-nez v0, :cond_0
 
     .line 70
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTextChatItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
     .line 72
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->b:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTextChatItemBuilderb:Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;
 
     .line 127
     :goto_0
@@ -250,70 +250,70 @@
 
     .line 74
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
     if-nez v0, :cond_1
 
     .line 75
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
     .line 77
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->c:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/ImageChatItemBuilder;
 
     goto :goto_0
 
     .line 79
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTransientImageChatItemBuilderd:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
 
     if-nez v0, :cond_2
 
     .line 80
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTransientImageChatItemBuilderd:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
 
     .line 82
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->d:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mTransientImageChatItemBuilderd:Lcom/wumii/android/mimi/ui/widgets/chat/TransientImageChatItemBuilder;
 
     goto :goto_0
 
     .line 84
     :pswitch_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSecretMessageChatItemBuildere:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
     if-nez v0, :cond_3
 
     .line 85
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSecretMessageChatItemBuildere:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
     .line 87
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->e:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSecretMessageChatItemBuildere:Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;
 
     goto :goto_0
 
     .line 89
     :pswitch_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberMessageChatItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
 
     if-nez v0, :cond_4
 
@@ -322,38 +322,38 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberMessageChatItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
 
     .line 92
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->f:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberMessageChatItemBuilderf:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;
 
     goto :goto_0
 
     .line 94
     :pswitch_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupChatMessageChatItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
     if-nez v0, :cond_5
 
     .line 95
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupChatMessageChatItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
     .line 97
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->g:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupChatMessageChatItemBuilderg:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
     goto :goto_0
 
     .line 99
     :pswitch_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSystemMessageChatItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
 
     if-nez v0, :cond_6
 
@@ -362,59 +362,59 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSystemMessageChatItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
 
     .line 102
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->h:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSystemMessageChatItemBuilderh:Lcom/wumii/android/mimi/ui/widgets/chat/SystemMessageChatItemBuilder;
 
     goto :goto_0
 
     .line 104
     :pswitch_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSummonsMessageChatItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
 
     if-nez v0, :cond_7
 
     .line 105
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSummonsMessageChatItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
 
     .line 107
     :cond_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->i:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSummonsMessageChatItemBuilderi:Lcom/wumii/android/mimi/ui/widgets/chat/SummonsMessageChatItemBuilder;
 
     goto :goto_0
 
     .line 109
     :pswitch_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mVoiceChatItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
 
     if-nez v0, :cond_8
 
     .line 110
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mDisplayMetricsa:Landroid/util/DisplayMetrics;
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mVoiceChatItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
 
     .line 112
     :cond_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->j:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mVoiceChatItemBuilderj:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder;
 
     goto :goto_0
 
     .line 114
     :pswitch_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->k:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupApplicationResultChatItemBuilderk:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     if-nez v0, :cond_9
 
@@ -423,17 +423,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->k:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupApplicationResultChatItemBuilderk:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     .line 117
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->k:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupApplicationResultChatItemBuilderk:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     goto/16 :goto_0
 
     .line 119
     :pswitch_a
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->l:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberBannedMessageChatItemBuilderl:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
     if-nez v0, :cond_a
 
@@ -442,17 +442,17 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->l:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberBannedMessageChatItemBuilderl:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
     .line 122
     :cond_a
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->l:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mGroupMemberBannedMessageChatItemBuilderl:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
     goto/16 :goto_0
 
     .line 124
     :pswitch_b
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->m:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSysRetractedMessageItemBuilderm:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
 
     if-nez v0, :cond_b
 
@@ -461,11 +461,11 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->m:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSysRetractedMessageItemBuilderm:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
 
     .line 127
     :cond_b
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->m:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->mSysRetractedMessageItemBuilderm:Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;
 
     goto/16 :goto_0
 

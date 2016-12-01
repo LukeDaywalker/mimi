@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+.field final synthetic mCircleChangeNotificationDaoa:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao$ICb;->a:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao$ICb;->mCircleChangeNotificationDaoa:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

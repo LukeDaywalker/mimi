@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+.field private mArrayBe:[B
 
-.field private d:Ljava/lang/String;
+.field private mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
-.field private e:[B
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -26,17 +26,17 @@
     .line 35
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->e:[B
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mArrayBe:[B
 
     .line 50
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;
 
     invoke-direct {v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;-><init>()V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 51
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     shr-int/lit8 v1, p1, 0x1
 
@@ -50,7 +50,7 @@
     if-ne v0, v2, :cond_0
 
     .line 53
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v0, v2}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a(Z)V
 
@@ -63,7 +63,7 @@
     if-ne v0, v1, :cond_1
 
     .line 56
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     check-cast v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;
 
@@ -90,10 +90,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->d:Ljava/lang/String;
+    iput-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mStringd:Ljava/lang/String;
 
     .line 63
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v2}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c()I
 
@@ -127,7 +127,7 @@
     invoke-virtual {v0}, Ljava/io/DataInputStream;->close()V
 
     .line 69
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a([B)V
 
@@ -157,14 +157,14 @@
     invoke-super {p0, p1}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPersistableWireMessage;->a(I)V
 
     .line 155
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     instance-of v0, v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;
 
     if-eqz v0, :cond_0
 
     .line 156
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     check-cast v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage;
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->d:Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -190,7 +190,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     return-object v0
 .end method
@@ -227,7 +227,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c()I
 
@@ -238,7 +238,7 @@
     int-to-byte v0, v0
 
     .line 115
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->b()Z
 
@@ -253,7 +253,7 @@
 
     .line 118
     :cond_0
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->e()Z
 
@@ -281,22 +281,22 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->e:[B
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mArrayBe:[B
 
     if-nez v0, :cond_0
 
     .line 139
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-static {v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->a(Lorg/eclipse/paho/client/mqttv3/MqttMessage;)[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->e:[B
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mArrayBe:[B
 
     .line 141
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->e:[B
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mArrayBe:[B
 
     return-object v0
 .end method
@@ -317,12 +317,12 @@
     invoke-direct {v1, v0}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 164
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->d:Ljava/lang/String;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mStringd:Ljava/lang/String;
 
     invoke-virtual {p0, v1, v2}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->a(Ljava/io/DataOutputStream;Ljava/lang/String;)V
 
     .line 165
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v2}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c()I
 
@@ -382,7 +382,7 @@
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
     .line 76
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a()[B
 
@@ -435,7 +435,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v5}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c()I
 
@@ -444,7 +444,7 @@
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
     .line 100
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v4}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c()I
 
@@ -471,7 +471,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     invoke-virtual {v5}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->b()Z
 
@@ -497,7 +497,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->d:Ljava/lang/String;
+    iget-object v5, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttPublish;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

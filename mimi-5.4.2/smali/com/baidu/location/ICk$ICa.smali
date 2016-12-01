@@ -3,8 +3,6 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICk;
-
 .field public do:Lcom/baidu/location/LocationClientOption;
 
 .field public for:Landroid/os/Messenger;
@@ -13,6 +11,8 @@
 
 .field public int:Ljava/lang/String;
 
+.field final synthetic mICka:Lcom/baidu/location/ICk;
+
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICk;Landroid/os/Message;)V
@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICk$ICa;->a:Lcom/baidu/location/ICk;
+    iput-object p1, p0, Lcom/baidu/location/ICk$ICa;->mICka:Lcom/baidu/location/ICk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -426,7 +426,7 @@
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v1, v1, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     invoke-virtual {v0, v8, v1}, Lcom/baidu/location/BDLocation;->internalSet(ILjava/lang/String;)V
 

@@ -3,11 +3,11 @@
 
 
 # static fields
-.field private static final if:J = 0x1L
+.field private static final mJif:J = 0x1L
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/ICx;->a:I
+    iput v0, p0, Lcom/baidu/location/ICx;->mIa:I
 
-    iput p1, p0, Lcom/baidu/location/ICx;->a:I
+    iput p1, p0, Lcom/baidu/location/ICx;->mIa:I
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/baidu/location/ICx;->a:I
+    iget v1, p0, Lcom/baidu/location/ICx;->mIa:I
 
     if-ne v0, v1, :cond_0
 

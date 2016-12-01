@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
     check-cast v1, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 98
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
@@ -76,7 +76,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/entities/notification/Notification;->setRead(Z)V
 
     .line 101
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;
 
@@ -85,7 +85,7 @@
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;->notifyDataSetChanged()V
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SurveyNotification;
 
@@ -107,7 +107,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/entities/notification/Notification;->setRead(Z)V
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;
 
@@ -116,7 +116,7 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;->notifyDataSetChanged()V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -125,7 +125,7 @@
     move-result-object v0
 
     .line 107
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICaw;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 

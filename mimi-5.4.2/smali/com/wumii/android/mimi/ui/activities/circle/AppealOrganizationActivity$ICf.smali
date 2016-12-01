@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+.field final synthetic mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 162
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
@@ -36,11 +36,11 @@
     if-ne p2, v0, :cond_0
 
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->getIntent()Landroid/content/Intent;
 
@@ -65,7 +65,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     const v1, 0x7f060366
 
@@ -74,7 +74,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Ljava/io/File;
 
@@ -83,11 +83,11 @@
     invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->d(Ljava/io/File;)Z
 
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->getIntent()Landroid/content/Intent;
 
@@ -96,7 +96,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->finish()V
 
@@ -128,7 +128,7 @@
     .line 166
     const-string/jumbo v1, "organizationId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -143,7 +143,7 @@
     .line 167
     const-string/jumbo v1, "reason"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Landroid/widget/EditText;
 
@@ -162,7 +162,7 @@
     .line 168
     const-string/jumbo v1, "contact"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->d(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Landroid/widget/EditText;
 
@@ -179,7 +179,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 169
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Ljava/io/File;
 
@@ -190,7 +190,7 @@
     .line 170
     const-string/jumbo v1, "image"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICf;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;)Ljava/io/File;
 

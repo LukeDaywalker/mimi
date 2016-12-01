@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Lu/aly/IdTracker;
+.field private static mIdTrackera:Lu/aly/IdTracker;
 
-.field private static b:Lu/aly/ImprintHandler;
+.field private static mImprintHandlerb:Lu/aly/ImprintHandler;
 
 
 # direct methods
@@ -17,10 +17,10 @@
     const/4 v0, 0x0
 
     .line 6
-    sput-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sput-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     .line 7
-    sput-object v0, Lu/aly/SDKContext;->b:Lu/aly/ImprintHandler;
+    sput-object v0, Lu/aly/SDKContext;->mImprintHandlerb:Lu/aly/ImprintHandler;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     if-nez v0, :cond_0
 
@@ -44,10 +44,10 @@
 
     invoke-direct {v0, p0}, Lu/aly/IdTracker;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sput-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     .line 14
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     new-instance v2, Lu/aly/ImeiTracker;
 
@@ -56,7 +56,7 @@
     invoke-virtual {v0, v2}, Lu/aly/IdTracker;->a(Lu/aly/AbstractIdTracker;)V
 
     .line 15
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     new-instance v2, Lu/aly/MacTracker;
 
@@ -65,7 +65,7 @@
     invoke-virtual {v0, v2}, Lu/aly/IdTracker;->a(Lu/aly/AbstractIdTracker;)V
 
     .line 16
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     new-instance v2, Lu/aly/AndroidIdTracker;
 
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v2}, Lu/aly/IdTracker;->a(Lu/aly/AbstractIdTracker;)V
 
     .line 17
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     new-instance v2, Lu/aly/UTDIdTracker;
 
@@ -83,13 +83,13 @@
     invoke-virtual {v0, v2}, Lu/aly/IdTracker;->a(Lu/aly/AbstractIdTracker;)V
 
     .line 19
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
 
     invoke-virtual {v0}, Lu/aly/IdTracker;->d()V
 
     .line 22
     :cond_0
-    sget-object v0, Lu/aly/SDKContext;->a:Lu/aly/IdTracker;
+    sget-object v0, Lu/aly/SDKContext;->mIdTrackera:Lu/aly/IdTracker;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -116,7 +116,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lu/aly/SDKContext;->b:Lu/aly/ImprintHandler;
+    sget-object v0, Lu/aly/SDKContext;->mImprintHandlerb:Lu/aly/ImprintHandler;
 
     if-nez v0, :cond_0
 
@@ -125,16 +125,16 @@
 
     invoke-direct {v0, p0}, Lu/aly/ImprintHandler;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lu/aly/SDKContext;->b:Lu/aly/ImprintHandler;
+    sput-object v0, Lu/aly/SDKContext;->mImprintHandlerb:Lu/aly/ImprintHandler;
 
     .line 28
-    sget-object v0, Lu/aly/SDKContext;->b:Lu/aly/ImprintHandler;
+    sget-object v0, Lu/aly/SDKContext;->mImprintHandlerb:Lu/aly/ImprintHandler;
 
     invoke-virtual {v0}, Lu/aly/ImprintHandler;->b()V
 
     .line 31
     :cond_0
-    sget-object v0, Lu/aly/SDKContext;->b:Lu/aly/ImprintHandler;
+    sget-object v0, Lu/aly/SDKContext;->mImprintHandlerb:Lu/aly/ImprintHandler;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

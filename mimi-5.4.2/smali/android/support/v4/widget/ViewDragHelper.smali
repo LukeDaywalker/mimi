@@ -4,53 +4,53 @@
 
 
 # static fields
-.field private static final v:Landroid/view/animation/Interpolator;
+.field private static final mInterpolatorv:Landroid/view/animation/Interpolator;
 
 
 # instance fields
-.field private a:I
+.field private isZt:Z
 
-.field private b:I
+.field private mArrayFd:[F
 
-.field private c:I
+.field private mArrayFe:[F
 
-.field private d:[F
+.field private mArrayFf:[F
 
-.field private e:[F
+.field private mArrayFg:[F
 
-.field private f:[F
+.field private mArrayIh:[I
 
-.field private g:[F
+.field private mArrayIi:[I
 
-.field private h:[I
+.field private mArrayIj:[I
 
-.field private i:[I
+.field private final mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-.field private j:[I
+.field private mFm:F
 
-.field private k:I
+.field private mFn:F
 
-.field private l:Landroid/view/VelocityTracker;
+.field private mIa:I
 
-.field private m:F
+.field private mIb:I
 
-.field private n:F
+.field private mIc:I
 
-.field private o:I
+.field private mIk:I
 
-.field private p:I
+.field private mIo:I
 
-.field private q:Landroid/support/v4/widget/ScrollerCompat;
+.field private mIp:I
 
-.field private final r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+.field private final mRunnablew:Ljava/lang/Runnable;
 
-.field private s:Landroid/view/View;
+.field private mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
-.field private t:Z
+.field private mVelocityTrackerl:Landroid/view/VelocityTracker;
 
-.field private final u:Landroid/view/ViewGroup;
+.field private final mViewGroupu:Landroid/view/ViewGroup;
 
-.field private final w:Ljava/lang/Runnable;
+.field private mViews:Landroid/view/View;
 
 
 # direct methods
@@ -63,7 +63,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/ViewDragHelper$1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/ViewDragHelper;->v:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/widget/ViewDragHelper;->mInterpolatorv:Landroid/view/animation/Interpolator;
 
     return-void
 .end method
@@ -78,14 +78,14 @@
     .line 115
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 333
     new-instance v0, Landroid/support/v4/widget/ViewDragHelper$2;
 
     invoke-direct {v0, p0}, Landroid/support/v4/widget/ViewDragHelper$2;-><init>(Landroid/support/v4/widget/ViewDragHelper;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->w:Ljava/lang/Runnable;
+    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mRunnablew:Ljava/lang/Runnable;
 
     .line 374
     if-nez p2, :cond_0
@@ -114,10 +114,10 @@
 
     .line 381
     :cond_1
-    iput-object p2, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iput-object p2, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     .line 382
-    iput-object p3, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iput-object p3, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     .line 384
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -146,14 +146,14 @@
 
     float-to-int v1, v1
 
-    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     .line 388
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     .line 389
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
@@ -162,7 +162,7 @@
 
     int-to-float v1, v1
 
-    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iput v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     .line 390
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
@@ -171,16 +171,16 @@
 
     int-to-float v0, v0
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
     .line 391
-    sget-object v0, Landroid/support/v4/widget/ViewDragHelper;->v:Landroid/view/animation/Interpolator;
+    sget-object v0, Landroid/support/v4/widget/ViewDragHelper;->mInterpolatorv:Landroid/view/animation/Interpolator;
 
     invoke-static {p1, v0}, Landroid/support/v4/widget/ScrollerCompat;->a(Landroid/content/Context;Landroid/view/animation/Interpolator;)Landroid/support/v4/widget/ScrollerCompat;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     .line 392
     return-void
@@ -248,7 +248,7 @@
 
     .line 629
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
 
@@ -351,11 +351,11 @@
 
     .prologue
     .line 604
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
     float-to-int v0, v0
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     float-to-int v1, v1
 
@@ -364,11 +364,11 @@
     move-result v2
 
     .line 605
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
     float-to-int v0, v0
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     float-to-int v1, v1
 
@@ -425,7 +425,7 @@
 
     .line 618
     :goto_1
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v4, p1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;)I
 
@@ -436,7 +436,7 @@
     move-result v2
 
     .line 619
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v4, p1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(Landroid/view/View;)I
 
@@ -494,7 +494,7 @@
     move-result-object v0
 
     .line 361
-    iget v1, v0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v1, v0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v1, v1
 
@@ -506,7 +506,7 @@
 
     float-to-int v1, v1
 
-    iput v1, v0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iput v1, v0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     .line 362
     return-object v0
@@ -537,20 +537,20 @@
     const/4 v2, 0x0
 
     .line 766
-    iput-boolean v3, p0, Landroid/support/v4/widget/ViewDragHelper;->t:Z
+    iput-boolean v3, p0, Landroid/support/v4/widget/ViewDragHelper;->isZt:Z
 
     .line 767
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;FF)V
 
     .line 768
-    iput-boolean v2, p0, Landroid/support/v4/widget/ViewDragHelper;->t:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/ViewDragHelper;->isZt:Z
 
     .line 770
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v0, v3, :cond_0
 
@@ -570,25 +570,25 @@
     invoke-direct {p0, p3}, Landroid/support/v4/widget/ViewDragHelper;->f(I)V
 
     .line 836
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     aput p1, v1, p3
 
     aput p1, v0, p3
 
     .line 837
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     aput p2, v1, p3
 
     aput p2, v0, p3
 
     .line 838
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     float-to-int v1, p1
 
@@ -601,7 +601,7 @@
     aput v1, v0, p3
 
     .line 839
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     const/4 v1, 0x1
 
@@ -609,7 +609,7 @@
 
     or-int/2addr v0, v1
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     .line 840
     return-void
@@ -632,7 +632,7 @@
     move-result v2
 
     .line 1254
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aget v3, v3, p3
 
@@ -640,13 +640,13 @@
 
     if-ne v3, p4, :cond_0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v3, p4
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     aget v3, v3, p3
 
@@ -654,7 +654,7 @@
 
     if-eq v3, p4, :cond_0
 
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     aget v3, v3, p3
 
@@ -662,7 +662,7 @@
 
     if-eq v3, p4, :cond_0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -670,7 +670,7 @@
 
     if-gtz v3, :cond_1
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -693,7 +693,7 @@
 
     if-gez v2, :cond_2
 
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v2, p4}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(I)Z
 
@@ -702,7 +702,7 @@
     if-eqz v2, :cond_2
 
     .line 1261
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     aget v2, v1, p3
 
@@ -714,7 +714,7 @@
 
     .line 1264
     :cond_2
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     aget v2, v2, p3
 
@@ -722,7 +722,7 @@
 
     if-nez v2, :cond_0
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v2, v2
 
@@ -742,14 +742,14 @@
     const/4 v0, 0x0
 
     .line 584
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLeft()I
 
     move-result v7
 
     .line 585
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTop()I
 
@@ -767,7 +767,7 @@
     if-nez v3, :cond_0
 
     .line 591
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v1}, Landroid/support/v4/widget/ScrollerCompat;->h()V
 
@@ -780,7 +780,7 @@
 
     .line 596
     :cond_0
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     move-object v0, p0
 
@@ -793,7 +793,7 @@
     move-result v9
 
     .line 597
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     move v5, v7
 
@@ -834,7 +834,7 @@
 
     .line 1281
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;)I
 
@@ -846,7 +846,7 @@
 
     .line 1282
     :goto_1
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v3, p1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(Landroid/view/View;)I
 
@@ -869,9 +869,9 @@
 
     add-float/2addr v0, v3
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
-    iget v4, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     mul-int/2addr v3, v4
 
@@ -906,7 +906,7 @@
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -927,7 +927,7 @@
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -1072,7 +1072,7 @@
     if-eqz v0, :cond_3
 
     .line 1245
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     aget v2, v1, p3
 
@@ -1081,7 +1081,7 @@
     aput v2, v1, p3
 
     .line 1246
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v1, v0, p3}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(II)V
 
@@ -1101,14 +1101,14 @@
     .prologue
     .line 1399
     .line 1401
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
     move-result v0
 
     .line 1402
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTop()I
 
@@ -1118,16 +1118,16 @@
     if-eqz p3, :cond_3
 
     .line 1404
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v2, v3, p1, p3}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;II)I
 
     move-result v2
 
     .line 1405
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     sub-int v4, v2, v0
 
@@ -1138,16 +1138,16 @@
     if-eqz p4, :cond_2
 
     .line 1408
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v3, v4, p2, p4}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(Landroid/view/View;II)I
 
     move-result v3
 
     .line 1409
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     sub-int v5, v3, v1
 
@@ -1167,9 +1167,9 @@
     sub-int v5, v3, v1
 
     .line 1415
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual/range {v0 .. v5}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;IIII)V
 
@@ -1219,12 +1219,12 @@
     move-result v4
 
     .line 848
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     aput v3, v5, v2
 
     .line 849
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     aput v4, v3, v2
 
@@ -1246,13 +1246,13 @@
     const/4 v0, 0x0
 
     .line 1475
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getLeft()I
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     add-int/2addr v1, v2
 
@@ -1262,13 +1262,13 @@
 
     .line 1476
     :cond_0
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getTop()I
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     add-int/2addr v1, v2
 
@@ -1278,13 +1278,13 @@
 
     .line 1477
     :cond_1
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getRight()I
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     sub-int/2addr v1, v2
 
@@ -1294,13 +1294,13 @@
 
     .line 1478
     :cond_2
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getBottom()I
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     sub-int/2addr v1, v2
 
@@ -1322,7 +1322,7 @@
     const/4 v1, 0x0
 
     .line 791
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     if-nez v0, :cond_0
 
@@ -1332,42 +1332,42 @@
 
     .line 794
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     aput v1, v0, p1
 
     .line 795
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     aput v1, v0, p1
 
     .line 796
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     aput v1, v0, p1
 
     .line 797
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     aput v1, v0, p1
 
     .line 798
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aput v2, v0, p1
 
     .line 799
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     aput v2, v0, p1
 
     .line 800
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     aput v2, v0, p1
 
     .line 801
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     const/4 v1, 0x1
 
@@ -1377,7 +1377,7 @@
 
     and-int/2addr v0, v1
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     goto :goto_0
 .end method
@@ -1389,11 +1389,11 @@
     const/4 v9, 0x0
 
     .line 805
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     array-length v0, v0
 
@@ -1436,68 +1436,68 @@
     new-array v6, v6, [I
 
     .line 814
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     if-eqz v7, :cond_1
 
     .line 815
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     array-length v8, v8
 
     invoke-static {v7, v9, v0, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 816
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     array-length v8, v8
 
     invoke-static {v7, v9, v1, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 817
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     array-length v8, v8
 
     invoke-static {v7, v9, v2, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 818
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     array-length v8, v8
 
     invoke-static {v7, v9, v3, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 819
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     array-length v8, v8
 
     invoke-static {v7, v9, v4, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 820
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     array-length v8, v8
 
     invoke-static {v7, v9, v5, v9, v8}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 821
-    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
-    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v8, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     array-length v8, v8
 
@@ -1505,25 +1505,25 @@
 
     .line 824
     :cond_1
-    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     .line 825
-    iput-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iput-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     .line 826
-    iput-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iput-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     .line 827
-    iput-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iput-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     .line 828
-    iput-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iput-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     .line 829
-    iput-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iput-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     .line 830
-    iput-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iput-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     .line 832
     :cond_2
@@ -1539,7 +1539,7 @@
     const/4 v1, 0x0
 
     .line 777
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     if-nez v0, :cond_0
 
@@ -1549,42 +1549,42 @@
 
     .line 780
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
 
     .line 781
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
 
     .line 782
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
 
     .line 783
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([FF)V
 
     .line 784
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     invoke-static {v0, v2}, Ljava/util/Arrays;->fill([II)V
 
     .line 785
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->i:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIi:[I
 
     invoke-static {v0, v2}, Ljava/util/Arrays;->fill([II)V
 
     .line 786
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->j:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIj:[I
 
     invoke-static {v0, v2}, Ljava/util/Arrays;->fill([II)V
 
     .line 787
-    iput v2, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iput v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     goto :goto_0
 .end method
@@ -1594,43 +1594,43 @@
 
     .prologue
     .line 1388
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     const/16 v1, 0x3e8
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     invoke-virtual {v0, v1, v2}, Landroid/view/VelocityTracker;->computeCurrentVelocity(IF)V
 
     .line 1389
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     invoke-static {v0, v1}, Landroid/support/v4/view/VelocityTrackerCompat;->a(Landroid/view/VelocityTracker;I)F
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     invoke-direct {p0, v0, v1, v2}, Landroid/support/v4/widget/ViewDragHelper;->a(FFF)F
 
     move-result v0
 
     .line 1392
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     invoke-static {v1, v2}, Landroid/support/v4/view/VelocityTrackerCompat;->b(Landroid/view/VelocityTracker;I)F
 
     move-result v1
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->m:F
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mFm:F
 
     invoke-direct {p0, v1, v2, v3}, Landroid/support/v4/widget/ViewDragHelper;->a(FFF)F
 
@@ -1650,7 +1650,7 @@
 
     .prologue
     .line 421
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     return v0
 .end method
@@ -1660,7 +1660,7 @@
 
     .prologue
     .line 401
-    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->n:F
+    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->mFn:F
 
     .line 402
     return-void
@@ -1671,7 +1671,7 @@
 
     .prologue
     .line 437
-    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     .line 438
     return-void
@@ -1686,7 +1686,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     if-eq v0, v1, :cond_0
 
@@ -1703,7 +1703,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1725,13 +1725,13 @@
 
     .line 465
     :cond_0
-    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     .line 466
-    iput p2, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iput p2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 467
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(Landroid/view/View;I)V
 
@@ -1749,7 +1749,7 @@
 
     .prologue
     .line 564
-    iget-boolean v0, p0, Landroid/support/v4/widget/ViewDragHelper;->t:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/ViewDragHelper;->isZt:Z
 
     if-nez v0, :cond_0
 
@@ -1764,9 +1764,9 @@
 
     .line 569
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     invoke-static {v0, v1}, Landroid/support/v4/view/VelocityTrackerCompat;->a(Landroid/view/VelocityTracker;I)F
 
@@ -1774,9 +1774,9 @@
 
     float-to-int v0, v0
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     invoke-static {v1, v2}, Landroid/support/v4/view/VelocityTrackerCompat;->b(Landroid/view/VelocityTracker;I)F
 
@@ -1813,7 +1813,7 @@
 
     .line 956
     :cond_0
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     if-nez v2, :cond_1
 
@@ -1822,11 +1822,11 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iput-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     .line 959
     :cond_1
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
@@ -1837,7 +1837,7 @@
     :cond_2
     :goto_0
     :pswitch_0
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     const/4 v1, 0x1
 
@@ -1879,11 +1879,11 @@
     move-result-object v0
 
     .line 971
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     if-ne v0, v1, :cond_3
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     const/4 v3, 0x2
 
@@ -1894,21 +1894,21 @@
 
     .line 975
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aget v0, v0, v2
 
     .line 976
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v1, v0
 
     if-eqz v1, :cond_2
 
     .line 977
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v0, v3
 
@@ -1936,26 +1936,26 @@
     invoke-direct {p0, v2, v1, v0}, Landroid/support/v4/widget/ViewDragHelper;->a(FFI)V
 
     .line 990
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-nez v3, :cond_4
 
     .line 991
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aget v1, v1, v0
 
     .line 992
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v2, v1
 
     if-eqz v2, :cond_2
 
     .line 993
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v1, v3
 
@@ -1965,7 +1965,7 @@
 
     .line 995
     :cond_4
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     const/4 v4, 0x2
 
@@ -1981,7 +1981,7 @@
     move-result-object v1
 
     .line 998
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     if-ne v1, v2, :cond_2
 
@@ -1992,11 +1992,11 @@
 
     .line 1006
     :pswitch_3
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     if-eqz v0, :cond_2
 
@@ -2029,14 +2029,14 @@
     move-result v4
 
     .line 1014
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     aget v5, v5, v3
 
     sub-float v5, v0, v5
 
     .line 1015
-    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     aget v6, v6, v3
 
@@ -2077,7 +2077,7 @@
     add-int/2addr v8, v7
 
     .line 1027
-    iget-object v9, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v9, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     float-to-int v10, v5
 
@@ -2096,7 +2096,7 @@
     add-int/2addr v10, v9
 
     .line 1031
-    iget-object v11, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v11, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     float-to-int v12, v6
 
@@ -2105,14 +2105,14 @@
     move-result v10
 
     .line 1033
-    iget-object v11, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v11, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v11, v4}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;)I
 
     move-result v11
 
     .line 1035
-    iget-object v12, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v12, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v12, v4}, Landroid/support/v4/widget/ViewDragHelper$Callback;->b(Landroid/view/View;)I
 
@@ -2149,7 +2149,7 @@
     invoke-direct {p0, v5, v6, v3}, Landroid/support/v4/widget/ViewDragHelper;->b(FFI)V
 
     .line 1043
-    iget v5, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     const/4 v6, 0x1
 
@@ -2217,12 +2217,12 @@
     const/4 v1, 0x0
 
     .line 539
-    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     .line 540
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 542
     invoke-direct {p0, p2, p3, v1, v1}, Landroid/support/v4/widget/ViewDragHelper;->a(IIII)Z
@@ -2232,18 +2232,18 @@
     .line 543
     if-nez v0, :cond_0
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     if-eqz v1, :cond_0
 
     .line 546
     const/4 v1, 0x0
 
-    iput-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iput-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     .line 549
     :cond_0
@@ -2259,33 +2259,33 @@
     const/4 v6, 0x0
 
     .line 722
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v0, v8, :cond_4
 
     .line 723
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->g()Z
 
     move-result v7
 
     .line 724
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->b()I
 
     move-result v2
 
     .line 725
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->c()I
 
     move-result v3
 
     .line 726
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
@@ -2294,7 +2294,7 @@
     sub-int v4, v2, v0
 
     .line 727
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getTop()I
 
@@ -2306,7 +2306,7 @@
     if-eqz v4, :cond_0
 
     .line 730
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->offsetLeftAndRight(I)V
 
@@ -2315,7 +2315,7 @@
     if-eqz v5, :cond_1
 
     .line 733
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v0, v5}, Landroid/view/View;->offsetTopAndBottom(I)V
 
@@ -2327,9 +2327,9 @@
 
     .line 737
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual/range {v0 .. v5}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;IIII)V
 
@@ -2337,7 +2337,7 @@
     :cond_3
     if-eqz v7, :cond_7
 
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->d()I
 
@@ -2345,7 +2345,7 @@
 
     if-ne v2, v0, :cond_7
 
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->e()I
 
@@ -2354,7 +2354,7 @@
     if-ne v3, v0, :cond_7
 
     .line 743
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->h()V
 
@@ -2368,16 +2368,16 @@
     if-eqz p1, :cond_5
 
     .line 749
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->w:Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mRunnablew:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
 
     .line 756
     :cond_4
     :goto_1
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v0, v8, :cond_6
 
@@ -2409,7 +2409,7 @@
 
     .prologue
     .line 448
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->o:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIo:I
 
     return v0
 .end method
@@ -2444,7 +2444,7 @@
 
     .line 1088
     :cond_0
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     if-nez v4, :cond_1
 
@@ -2453,11 +2453,11 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iput-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     .line 1091
     :cond_1
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     invoke-virtual {v4, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
@@ -2502,21 +2502,21 @@
     invoke-virtual {p0, v3, v0}, Landroid/support/v4/widget/ViewDragHelper;->b(Landroid/view/View;I)Z
 
     .line 1107
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aget v1, v1, v0
 
     .line 1108
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v2, v1
 
     if-eqz v2, :cond_2
 
     .line 1109
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v1, v3
 
@@ -2544,7 +2544,7 @@
     invoke-direct {p0, v1, v2, v0}, Landroid/support/v4/widget/ViewDragHelper;->a(FFI)V
 
     .line 1122
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-nez v3, :cond_3
 
@@ -2561,21 +2561,21 @@
     invoke-virtual {p0, v1, v0}, Landroid/support/v4/widget/ViewDragHelper;->b(Landroid/view/View;I)Z
 
     .line 1128
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->h:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayIh:[I
 
     aget v1, v1, v0
 
     .line 1129
-    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v2, v1
 
     if-eqz v2, :cond_2
 
     .line 1130
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->p:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIp:I
 
     and-int/2addr v1, v3
 
@@ -2596,7 +2596,7 @@
     if-eqz v1, :cond_2
 
     .line 1137
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {p0, v1, v0}, Landroid/support/v4/widget/ViewDragHelper;->b(Landroid/view/View;I)Z
 
@@ -2604,12 +2604,12 @@
 
     .line 1143
     :pswitch_3
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v1, v8, :cond_4
 
     .line 1144
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     invoke-static {p1, v0}, Landroid/support/v4/view/MotionEventCompat;->a(Landroid/view/MotionEvent;I)I
 
@@ -2626,9 +2626,9 @@
     move-result v0
 
     .line 1147
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     aget v2, v2, v3
 
@@ -2637,9 +2637,9 @@
     float-to-int v1, v1
 
     .line 1148
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     aget v2, v2, v3
 
@@ -2648,7 +2648,7 @@
     float-to-int v0, v0
 
     .line 1150
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getLeft()I
 
@@ -2656,7 +2656,7 @@
 
     add-int/2addr v2, v1
 
-    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getTop()I
 
@@ -2697,14 +2697,14 @@
     move-result v4
 
     .line 1160
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     aget v5, v5, v2
 
     sub-float v5, v3, v5
 
     .line 1161
-    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     aget v6, v6, v2
 
@@ -2714,7 +2714,7 @@
     invoke-direct {p0, v5, v6, v2}, Landroid/support/v4/widget/ViewDragHelper;->b(FFI)V
 
     .line 1164
-    iget v7, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v7, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v7, v8, :cond_6
 
@@ -2760,11 +2760,11 @@
     move-result v2
 
     .line 1182
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v3, v8, :cond_a
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     if-ne v2, v3, :cond_a
 
@@ -2783,7 +2783,7 @@
     move-result v4
 
     .line 1188
-    iget v5, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     if-ne v4, v5, :cond_9
 
@@ -2813,11 +2813,11 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     if-ne v5, v6, :cond_8
 
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {p0, v5, v4}, Landroid/support/v4/widget/ViewDragHelper;->b(Landroid/view/View;I)Z
 
@@ -2826,7 +2826,7 @@
     if-eqz v4, :cond_8
 
     .line 1197
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 1202
     :goto_3
@@ -2843,7 +2843,7 @@
 
     .line 1212
     :pswitch_5
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v0, v8, :cond_b
 
@@ -2858,7 +2858,7 @@
 
     .line 1220
     :pswitch_6
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-ne v0, v8, :cond_c
 
@@ -2896,7 +2896,7 @@
     const/4 v0, 0x1
 
     .line 867
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->k:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIk:I
 
     shl-int v2, v0, p1
 
@@ -2955,22 +2955,22 @@
 
     .line 1341
     :goto_2
-    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->f:[F
+    iget-object v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFf:[F
 
     aget v4, v4, p2
 
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     aget v5, v5, p2
 
     sub-float/2addr v4, v5
 
     .line 1342
-    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->g:[F
+    iget-object v5, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFg:[F
 
     aget v5, v5, p2
 
-    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->e:[F
+    iget-object v6, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFe:[F
 
     aget v6, v6, p2
 
@@ -2988,9 +2988,9 @@
 
     add-float/2addr v0, v3
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
-    iget v4, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v4, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     mul-int/2addr v3, v4
 
@@ -3025,7 +3025,7 @@
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -3046,7 +3046,7 @@
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v3, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     int-to-float v3, v3
 
@@ -3072,11 +3072,11 @@
     const/4 v0, 0x1
 
     .line 891
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     if-ne p1, v1, :cond_0
 
-    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iget v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     if-ne v1, p2, :cond_0
 
@@ -3088,7 +3088,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v1, p1, p2}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(Landroid/view/View;I)Z
 
@@ -3097,7 +3097,7 @@
     if-eqz v1, :cond_1
 
     .line 896
-    iput p2, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iput p2, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 897
     invoke-virtual {p0, p1, p2}, Landroid/support/v4/widget/ViewDragHelper;->a(Landroid/view/View;I)V
@@ -3160,7 +3160,7 @@
 
     .prologue
     .line 475
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     return-object v0
 .end method
@@ -3170,34 +3170,34 @@
 
     .prologue
     .line 871
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->w:Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mRunnablew:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 872
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-eq v0, p1, :cond_0
 
     .line 873
-    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iput p1, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     .line 874
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->a(I)V
 
     .line 875
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     if-nez v0, :cond_0
 
     .line 876
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     .line 879
     :cond_0
@@ -3209,7 +3209,7 @@
 
     .prologue
     .line 1430
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     invoke-virtual {p0, v0, p1, p2}, Landroid/support/v4/widget/ViewDragHelper;->b(Landroid/view/View;II)Z
 
@@ -3223,7 +3223,7 @@
 
     .prologue
     .line 490
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->b:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIb:I
 
     return v0
 .end method
@@ -3233,7 +3233,7 @@
 
     .prologue
     .line 1461
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -3248,9 +3248,9 @@
     if-ltz v1, :cond_1
 
     .line 1463
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->u:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mViewGroupu:Landroid/view/ViewGroup;
 
-    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v2, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
     invoke-virtual {v2, v1}, Landroid/support/v4/widget/ViewDragHelper$Callback;->c(I)I
 
@@ -3311,7 +3311,7 @@
     const/4 v0, 0x0
 
     .line 1309
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->d:[F
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mArrayFd:[F
 
     array-length v2, v1
 
@@ -3349,25 +3349,25 @@
     .line 498
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->c:I
+    iput v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIc:I
 
     .line 499
     invoke-direct {p0}, Landroid/support/v4/widget/ViewDragHelper;->g()V
 
     .line 501
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 502
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 503
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->l:Landroid/view/VelocityTracker;
+    iput-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mVelocityTrackerl:Landroid/view/VelocityTracker;
 
     .line 505
     :cond_0
@@ -3382,49 +3382,49 @@
     invoke-virtual {p0}, Landroid/support/v4/widget/ViewDragHelper;->e()V
 
     .line 513
-    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->a:I
+    iget v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mIa:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
     .line 514
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->b()I
 
     move-result v4
 
     .line 515
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->c()I
 
     move-result v5
 
     .line 516
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->h()V
 
     .line 517
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->b()I
 
     move-result v2
 
     .line 518
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->q:Landroid/support/v4/widget/ScrollerCompat;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mScrollerCompatq:Landroid/support/v4/widget/ScrollerCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/ScrollerCompat;->c()I
 
     move-result v3
 
     .line 519
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->r:Landroid/support/v4/widget/ViewDragHelper$Callback;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper;->mCallbackr:Landroid/support/v4/widget/ViewDragHelper$Callback;
 
-    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->s:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ViewDragHelper;->mViews:Landroid/view/View;
 
     sub-int v4, v2, v4
 

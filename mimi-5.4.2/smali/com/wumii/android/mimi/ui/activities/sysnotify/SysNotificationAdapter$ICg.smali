@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mTextViewa:Landroid/widget/TextView;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewa:Landroid/widget/TextView;
 
     .line 77
     const v0, 0x7f0b0187
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewb:Landroid/widget/TextView;
 
     .line 78
     const v0, 0x7f0b0277
@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewc:Landroid/widget/TextView;
 
     .line 79
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->mTextViewc:Landroid/widget/TextView;
 
     return-object v0
 .end method

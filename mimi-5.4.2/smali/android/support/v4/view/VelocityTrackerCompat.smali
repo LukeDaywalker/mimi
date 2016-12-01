@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+.field static final mVelocityTrackerVersionImpla:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->a:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+    sput-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->mVelocityTrackerVersionImpla:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 
     .line 72
     :goto_0
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/VelocityTrackerCompat$BaseVelocityTrackerVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->a:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+    sput-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->mVelocityTrackerVersionImpla:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 
     goto :goto_0
 .end method
@@ -57,7 +57,7 @@
 
     .prologue
     .line 82
-    sget-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->a:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+    sget-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->mVelocityTrackerVersionImpla:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;->a(Landroid/view/VelocityTracker;I)F
 
@@ -71,7 +71,7 @@
 
     .prologue
     .line 91
-    sget-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->a:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+    sget-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->mVelocityTrackerVersionImpla:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;->b(Landroid/view/VelocityTracker;I)F
 

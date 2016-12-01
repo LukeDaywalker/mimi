@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
-.field private static final b:[B
+.field private static final mArrayBb:[B
 
 
 # direct methods
@@ -21,14 +21,14 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lokio/Base64;->a:[B
+    sput-object v0, Lokio/Base64;->mArrayBa:[B
 
     .line 117
     new-array v0, v1, [B
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lokio/Base64;->b:[B
+    sput-object v0, Lokio/Base64;->mArrayBb:[B
 
     return-void
 
@@ -178,7 +178,7 @@
 
     .prologue
     .line 125
-    sget-object v0, Lokio/Base64;->a:[B
+    sget-object v0, Lokio/Base64;->mArrayBa:[B
 
     invoke-static {p0, v0}, Lokio/Base64;->a([B[B)Ljava/lang/String;
 

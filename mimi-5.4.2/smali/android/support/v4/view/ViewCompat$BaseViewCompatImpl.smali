@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Ljava/util/WeakHashMap;
+.field mWeakHashMapa:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/WeakHashMap",
@@ -31,7 +31,7 @@
     .line 389
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;->a:Ljava/util/WeakHashMap;
+    iput-object v0, p0, Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     return-void
 .end method

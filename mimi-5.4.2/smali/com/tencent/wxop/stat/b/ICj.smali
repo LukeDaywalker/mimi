@@ -3,17 +3,17 @@
 
 
 # static fields
-.field private static final c:[I
+.field private static final mArrayIc:[I
 
-.field private static final d:[I
+.field private static final mArrayId:[I
 
 
 # instance fields
-.field private e:I
+.field private final mArrayIg:[I
 
-.field private f:I
+.field private mIe:I
 
-.field private final g:[I
+.field private mIf:I
 
 
 # direct methods
@@ -26,13 +26,13 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICj;->c:[I
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIc:[I
 
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICj;->d:[I
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICj;->mArrayId:[I
 
     return-void
 
@@ -568,13 +568,13 @@
 
     iput-object p1, p0, Lcom/tencent/wxop/stat/b/ICj;->a:[B
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICj;->c:[I
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIc:[I
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICj;->g:[I
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIg:[I
 
-    iput v1, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v1, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
-    iput v1, p0, Lcom/tencent/wxop/stat/b/ICj;->f:I
+    iput v1, p0, Lcom/tencent/wxop/stat/b/ICj;->mIf:I
 
     return-void
 .end method
@@ -592,7 +592,7 @@
 
     const/4 v3, 0x0
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     if-ne v0, v10, :cond_0
 
@@ -604,13 +604,13 @@
     :cond_0
     add-int/lit8 v6, p2, 0x0
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
-    iget v1, p0, Lcom/tencent/wxop/stat/b/ICj;->f:I
+    iget v1, p0, Lcom/tencent/wxop/stat/b/ICj;->mIf:I
 
     iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICj;->a:[B
 
-    iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICj;->g:[I
+    iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICj;->mArrayIg:[I
 
     move v2, v3
 
@@ -733,7 +733,7 @@
     :cond_4
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -757,7 +757,7 @@
     :cond_5
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -802,7 +802,7 @@
     :cond_7
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -873,7 +873,7 @@
     :cond_9
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -893,7 +893,7 @@
     :cond_a
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -902,7 +902,7 @@
     :pswitch_5
     if-eq v2, v11, :cond_3
 
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -915,7 +915,7 @@
 
     :goto_3
     :pswitch_6
-    iput v5, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v5, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     iput v0, p0, Lcom/tencent/wxop/stat/b/ICj;->b:I
 
@@ -924,7 +924,7 @@
     goto/16 :goto_0
 
     :pswitch_7
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 
@@ -963,7 +963,7 @@
     goto :goto_3
 
     :pswitch_a
-    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->e:I
+    iput v10, p0, Lcom/tencent/wxop/stat/b/ICj;->mIe:I
 
     move v0, v3
 

@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/push/PushReportService;
+.field final synthetic mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICe;->a:Lcom/wumii/android/mimi/push/PushReportService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICe;->mPushReportServicea:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

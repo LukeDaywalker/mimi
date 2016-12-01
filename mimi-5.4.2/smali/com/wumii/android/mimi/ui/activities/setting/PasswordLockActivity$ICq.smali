@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
+.field final synthetic mPasswordLockActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 269
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mPasswordLockActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
     invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
 
@@ -43,7 +43,7 @@
     invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 292
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mPasswordLockActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->finish()V
 
@@ -74,7 +74,7 @@
 
     .line 276
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->mPasswordLockActivitya:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 

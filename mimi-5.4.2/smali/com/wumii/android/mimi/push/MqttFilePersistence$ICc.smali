@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/push/MqttFilePersistence;
+.field final synthetic mMqttFilePersistencea:Lcom/wumii/android/mimi/push/MqttFilePersistence;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 288
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICc;->a:Lcom/wumii/android/mimi/push/MqttFilePersistence;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/MqttFilePersistence$ICc;->mMqttFilePersistencea:Lcom/wumii/android/mimi/push/MqttFilePersistence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

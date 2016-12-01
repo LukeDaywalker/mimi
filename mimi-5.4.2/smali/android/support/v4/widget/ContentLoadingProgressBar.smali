@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:J
+.field private isZb:Z
 
-.field private b:Z
+.field private isZc:Z
 
-.field private c:Z
+.field private isZd:Z
 
-.field private d:Z
+.field private mJa:J
 
-.field private final e:Ljava/lang/Runnable;
+.field private final mRunnablee:Ljava/lang/Runnable;
 
-.field private final f:Ljava/lang/Runnable;
+.field private final mRunnablef:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -43,30 +43,30 @@
     .line 34
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->a:J
+    iput-wide v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mJa:J
 
     .line 36
-    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->b:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZb:Z
 
     .line 38
-    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->c:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZc:Z
 
     .line 40
-    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->d:Z
+    iput-boolean v2, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZd:Z
 
     .line 42
     new-instance v0, Landroid/support/v4/widget/ContentLoadingProgressBar$1;
 
     invoke-direct {v0, p0}, Landroid/support/v4/widget/ContentLoadingProgressBar$1;-><init>(Landroid/support/v4/widget/ContentLoadingProgressBar;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->e:Ljava/lang/Runnable;
+    iput-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mRunnablee:Ljava/lang/Runnable;
 
     .line 52
     new-instance v0, Landroid/support/v4/widget/ContentLoadingProgressBar$2;
 
     invoke-direct {v0, p0}, Landroid/support/v4/widget/ContentLoadingProgressBar$2;-><init>(Landroid/support/v4/widget/ContentLoadingProgressBar;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->f:Ljava/lang/Runnable;
+    iput-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mRunnablef:Ljava/lang/Runnable;
 
     .line 70
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 30
-    iput-wide p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->a:J
+    iput-wide p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mJa:J
 
     return-wide p1
 .end method
@@ -87,12 +87,12 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->e:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mRunnablee:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/support/v4/widget/ContentLoadingProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 86
-    iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->f:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mRunnablef:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/support/v4/widget/ContentLoadingProgressBar;->removeCallbacks(Ljava/lang/Runnable;)Z
 
@@ -105,7 +105,7 @@
 
     .prologue
     .line 30
-    iget-boolean v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->d:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZd:Z
 
     return v0
 .end method
@@ -115,7 +115,7 @@
 
     .prologue
     .line 30
-    iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->b:Z
+    iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZb:Z
 
     return p1
 .end method
@@ -125,7 +125,7 @@
 
     .prologue
     .line 30
-    iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->c:Z
+    iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->isZc:Z
 
     return p1
 .end method

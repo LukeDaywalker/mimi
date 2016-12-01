@@ -18,8 +18,6 @@
 
 .field private floor:I
 
-.field private id:Ljava/lang/String;
-
 .field private isBlocked:Z
 
 .field private isFromCircle:Ljava/lang/Boolean;
@@ -31,6 +29,8 @@
 .field private likedByCurUser:Z
 
 .field private likedCount:J
+
+.field private mStringid:Ljava/lang/String;
 
 .field private repliedCommentId:Ljava/lang/String;
 
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/wumii/android/mimi/models/entities/secret/Comment;->id:Ljava/lang/String;
+    iput-object v0, v2, Lcom/wumii/android/mimi/models/entities/secret/Comment;->mStringid:Ljava/lang/String;
 
     .line 243
     invoke-virtual {p0}, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->getContent()Ljava/lang/String;
@@ -428,7 +428,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Comment;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Comment;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -729,7 +729,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/secret/Comment;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/secret/Comment;->mStringid:Ljava/lang/String;
 
     .line 63
     return-void

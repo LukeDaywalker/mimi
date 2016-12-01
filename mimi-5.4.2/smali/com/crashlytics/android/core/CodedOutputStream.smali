@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:[B
+.field private final mArrayBa:[B
 
-.field private final b:I
+.field private final mIb:I
 
-.field private c:I
+.field private mIc:I
 
-.field private final d:Ljava/io/OutputStream;
+.field private final mOutputStreamd:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -25,20 +25,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 88
-    iput-object p1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
     .line 89
-    iput-object p2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iput-object p2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
     .line 90
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 91
     array-length v0, p2
 
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
     .line 92
     return-void
@@ -79,7 +79,7 @@
     const/4 v3, 0x0
 
     .line 661
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
     if-nez v0, :cond_0
 
@@ -92,16 +92,16 @@
 
     .line 668
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/OutputStream;->write([BII)V
 
     .line 669
-    iput v3, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v3, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 670
     return-void
@@ -584,9 +584,9 @@
 
     .prologue
     .line 726
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
     if-ne v0, v1, :cond_0
 
@@ -595,13 +595,13 @@
 
     .line 730
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     aput-byte p1, v0, v1
 
@@ -779,27 +779,27 @@
     const/4 v8, 0x0
 
     .line 782
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     sub-int/2addr v0, v1
 
     if-lt v0, p3, :cond_1
 
     .line 784
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     invoke-virtual {p1, v0, p2, v1, p3}, Lcom/crashlytics/android/core/ByteString;->a([BIII)V
 
     .line 785
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     add-int/2addr v0, p3
 
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 824
     :cond_0
@@ -808,16 +808,16 @@
 
     .line 789
     :cond_1
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     sub-int/2addr v0, v1
 
     .line 790
-    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     invoke-virtual {p1, v1, p2, v2, v0}, Lcom/crashlytics/android/core/ByteString;->a([BIII)V
 
@@ -828,25 +828,25 @@
     sub-int v0, p3, v0
 
     .line 793
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 794
     invoke-direct {p0}, Lcom/crashlytics/android/core/CodedOutputStream;->a()V
 
     .line 799
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
     if-gt v0, v2, :cond_2
 
     .line 801
-    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
     invoke-virtual {p1, v2, v1, v8, v0}, Lcom/crashlytics/android/core/ByteString;->a([BIII)V
 
     .line 802
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     goto :goto_0
 
@@ -880,9 +880,9 @@
 
     .line 819
     :cond_3
-    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
-    iget-object v4, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v4, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
     invoke-virtual {v1, v4, v8, v3}, Ljava/io/OutputStream;->write([BII)V
 
@@ -894,14 +894,14 @@
     if-lez v0, :cond_0
 
     .line 814
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v1
 
     .line 815
-    iget-object v3, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v3, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
     invoke-virtual {v2, v3, v8, v1}, Ljava/io/InputStream;->read([BII)I
 
@@ -985,27 +985,27 @@
 
     .prologue
     .line 751
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     sub-int/2addr v0, v1
 
     if-lt v0, p3, :cond_0
 
     .line 753
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 754
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     add-int/2addr v0, p3
 
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 777
     :goto_0
@@ -1013,16 +1013,16 @@
 
     .line 758
     :cond_0
-    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     sub-int/2addr v0, v1
 
     .line 759
-    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v1, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     invoke-static {p1, p2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -1033,33 +1033,33 @@
     sub-int v0, p3, v0
 
     .line 762
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
-    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     .line 763
     invoke-direct {p0}, Lcom/crashlytics/android/core/CodedOutputStream;->a()V
 
     .line 768
-    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->b:I
+    iget v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIb:I
 
     if-gt v0, v2, :cond_1
 
     .line 770
-    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->a:[B
+    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mArrayBa:[B
 
     const/4 v3, 0x0
 
     invoke-static {p1, v1, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 771
-    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mIc:I
 
     goto :goto_0
 
     .line 774
     :cond_1
-    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
     invoke-virtual {v2, p1, v1, v0}, Ljava/io/OutputStream;->write([BII)V
 
@@ -1199,7 +1199,7 @@
 
     .prologue
     .line 677
-    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->d:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CodedOutputStream;->mOutputStreamd:Ljava/io/OutputStream;
 
     if-eqz v0, :cond_0
 

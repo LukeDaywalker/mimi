@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private isZf:Z
 
-.field private final b:Ljava/io/OutputStream;
+.field private isZg:Z
 
-.field private final c:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
+.field private mArrayBh:[B
 
-.field private final d:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
+.field private final mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
-.field private final e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+.field private final mCountingOutputStreamc:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
 
-.field private f:Z
+.field private mJi:J
 
-.field private g:Z
+.field private final mOutputStreamb:Ljava/io/OutputStream;
 
-.field private h:[B
+.field private final mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
-.field private i:J
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -34,27 +34,27 @@
     .line 49
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->i:J
+    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mJi:J
 
     .line 71
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mStringa:Ljava/lang/String;
 
     .line 72
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b:Ljava/io/OutputStream;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mOutputStreamb:Ljava/io/OutputStream;
 
     .line 73
-    iput-object p4, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->c:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
+    iput-object p4, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mCountingOutputStreamc:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
 
     .line 74
-    iput-object p5, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->d:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
+    iput-object p5, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
     .line 75
-    iput-object p6, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iput-object p6, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     .line 76
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
 
     .line 77
     return-void
@@ -76,14 +76,14 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b()V
 
     .line 82
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     invoke-interface {v0}, Lcom/facebook/stetho/inspector/network/ResponseHandler;->a()V
 
     .line 83
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->g:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZg:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     invoke-interface {v0, p1}, Lcom/facebook/stetho/inspector/network/ResponseHandler;->a(Ljava/io/IOException;)V
 
@@ -123,7 +123,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -138,7 +138,7 @@
     .line 254
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
@@ -176,7 +176,7 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->h:[B
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mArrayBh:[B
 
     if-nez v0, :cond_0
 
@@ -185,11 +185,11 @@
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->h:[B
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mArrayBh:[B
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->h:[B
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mArrayBh:[B
 
     return-object v0
 .end method
@@ -202,7 +202,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -210,7 +210,7 @@
 
     .line 193
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
@@ -224,7 +224,7 @@
     const/4 v0, 0x1
 
     :try_start_2
-    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -241,7 +241,7 @@
 
     .line 196
     :try_start_3
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->d:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
     sget-object v2, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
@@ -273,7 +273,7 @@
     const/4 v0, 0x1
 
     :try_start_4
-    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -294,7 +294,7 @@
     const/4 v1, 0x1
 
     :try_start_5
-    iput-boolean v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iput-boolean v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
 
     throw v0
     :try_end_5
@@ -309,7 +309,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->f:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZf:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -324,7 +324,7 @@
     .line 238
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
@@ -362,7 +362,7 @@
 
     .prologue
     .line 262
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->d:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
     sget-object v1, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
@@ -400,31 +400,31 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->c:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mCountingOutputStreamc:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
 
     if-eqz v0, :cond_0
 
     .line 220
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->c:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mCountingOutputStreamc:Lcom/facebook/stetho/inspector/network/CountingOutputStream;
 
     invoke-virtual {v0}, Lcom/facebook/stetho/inspector/network/CountingOutputStream;->a()J
 
     move-result-wide v0
 
     .line 221
-    iget-wide v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->i:J
+    iget-wide v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mJi:J
 
     sub-long v2, v0, v2
 
     long-to-int v2, v2
 
     .line 222
-    iget-object v3, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iget-object v3, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     invoke-interface {v3, v2}, Lcom/facebook/stetho/inspector/network/ResponseHandler;->b(I)V
 
     .line 223
-    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->i:J
+    iput-wide v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mJi:J
 
     .line 225
     :cond_0
@@ -442,7 +442,7 @@
     .line 165
     .line 166
     :try_start_0
-    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->g:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->isZg:Z
 
     if-nez v0, :cond_0
 
@@ -480,7 +480,7 @@
     if-lez v2, :cond_2
 
     .line 174
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->d:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mChromePeerManagerd:Lcom/facebook/stetho/inspector/helper/ChromePeerManager;
 
     sget-object v3, Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;->c:Lcom/facebook/stetho/inspector/protocol/module/Console$ICf;
 
@@ -516,7 +516,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -592,7 +592,7 @@
     if-eq v0, v1, :cond_0
 
     .line 93
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     const/4 v2, 0x1
 
@@ -657,7 +657,7 @@
     if-eq v0, v1, :cond_0
 
     .line 112
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->e:Lcom/facebook/stetho/inspector/network/ResponseHandler;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/ResponseHandlingInputStream;->mResponseHandlere:Lcom/facebook/stetho/inspector/network/ResponseHandler;
 
     invoke-interface {v1, v0}, Lcom/facebook/stetho/inspector/network/ResponseHandler;->a(I)V
 

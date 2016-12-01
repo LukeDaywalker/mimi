@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lokio/Buffer;
+.field private final mBuffera:Lokio/Buffer;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 373
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     .line 374
     return-void
@@ -32,7 +32,7 @@
     if-ge p1, p2, :cond_0
 
     .line 399
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     or-int v1, p3, p1
 
@@ -44,7 +44,7 @@
 
     .line 404
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     or-int v1, p3, p2
 
@@ -63,7 +63,7 @@
     and-int/lit8 v1, v0, 0x7f
 
     .line 410
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     or-int/lit16 v1, v1, 0x80
 
@@ -77,7 +77,7 @@
 
     .line 413
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v1, v0}, Lokio/Buffer;->b(I)Lokio/Buffer;
 
@@ -168,7 +168,7 @@
 
     .line 388
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, v2}, Lokio/Buffer;->b(I)Lokio/Buffer;
 
@@ -209,7 +209,7 @@
     invoke-virtual {p0, v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a(III)V
 
     .line 418
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1}, Lokio/Buffer;->a(Lokio/ByteString;)Lokio/Buffer;
 

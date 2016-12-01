@@ -8,7 +8,7 @@
 
 
 # static fields
-.field static final c:Ljava/util/ArrayList;
+.field static final mArrayListc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -21,7 +21,11 @@
 
 
 # instance fields
-.field a:Ljava/util/ArrayList;
+.field isZd:Z
+
+.field private final isZf:Z
+
+.field mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -32,7 +36,7 @@
     .end annotation
 .end field
 
-.field b:Ljava/util/ArrayList;
+.field mArrayListb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -43,11 +47,7 @@
     .end annotation
 .end field
 
-.field d:Z
-
-.field private final e:Landroid/widget/ListAdapter;
-
-.field private final f:Z
+.field private final mListAdaptere:Landroid/widget/ListAdapter;
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->c:Ljava/util/ArrayList;
+    sput-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListc:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -88,33 +88,33 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 58
-    iput-object p3, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iput-object p3, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     .line 59
     instance-of v0, p3, Landroid/widget/Filterable;
 
-    iput-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->f:Z
+    iput-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->isZf:Z
 
     .line 61
     if-nez p1, :cond_0
 
     .line 62
-    sget-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->c:Ljava/util/ArrayList;
+    sget-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListc:Ljava/util/ArrayList;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     .line 67
     :goto_0
     if-nez p2, :cond_1
 
     .line 68
-    sget-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->c:Ljava/util/ArrayList;
+    sget-object v0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListc:Ljava/util/ArrayList;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     .line 73
     :goto_1
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/HeaderViewListAdapter;->a(Ljava/util/ArrayList;)Z
 
@@ -122,7 +122,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/etsy/android/grid/HeaderViewListAdapter;->a(Ljava/util/ArrayList;)Z
 
@@ -133,20 +133,20 @@
     const/4 v0, 0x1
 
     :goto_2
-    iput-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->d:Z
+    iput-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->isZd:Z
 
     .line 76
     return-void
 
     .line 64
     :cond_0
-    iput-object p1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     goto :goto_0
 
     .line 70
     :cond_1
-    iput-object p2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     goto :goto_1
 
@@ -216,7 +216,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -232,16 +232,16 @@
     const/4 v0, 0x1
 
     .line 144
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v1, :cond_0
 
     .line 145
-    iget-boolean v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->d:Z
+    iget-boolean v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->isZd:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->areAllItemsEnabled()Z
 
@@ -266,7 +266,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -280,7 +280,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
@@ -295,7 +295,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -326,12 +326,12 @@
 
     .prologue
     .line 266
-    iget-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->f:Z
+    iget-boolean v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->isZf:Z
 
     if-eqz v0, :cond_0
 
     .line 267
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     check-cast v0, Landroid/widget/Filterable;
 
@@ -362,7 +362,7 @@
     if-ge p1, v0, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -384,12 +384,12 @@
     const/4 v0, 0x0
 
     .line 182
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_1
 
     .line 183
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -399,7 +399,7 @@
     if-ge v1, v0, :cond_1
 
     .line 185
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -409,7 +409,7 @@
 
     .line 190
     :cond_1
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     sub-int v0, v1, v0
 
@@ -434,7 +434,7 @@
     move-result v0
 
     .line 195
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v1, :cond_0
 
@@ -444,7 +444,7 @@
     sub-int v0, p1, v0
 
     .line 197
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -454,7 +454,7 @@
     if-ge v0, v1, :cond_0
 
     .line 199
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1, v0}, Landroid/widget/ListAdapter;->getItemId(I)J
 
@@ -480,7 +480,7 @@
     move-result v0
 
     .line 235
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v1, :cond_0
 
@@ -490,7 +490,7 @@
     sub-int v0, p1, v0
 
     .line 237
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -500,7 +500,7 @@
     if-ge v0, v1, :cond_0
 
     .line 239
-    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v1, v0}, Landroid/widget/ListAdapter;->getItemViewType(I)I
 
@@ -529,7 +529,7 @@
     if-ge p1, v0, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -551,12 +551,12 @@
     const/4 v0, 0x0
 
     .line 222
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_1
 
     .line 223
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -566,7 +566,7 @@
     if-ge v1, v0, :cond_1
 
     .line 225
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, v1, p2, p3}, Landroid/widget/ListAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -576,7 +576,7 @@
 
     .line 230
     :cond_1
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     sub-int v0, v1, v0
 
@@ -596,12 +596,12 @@
 
     .prologue
     .line 247
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
     .line 248
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getViewTypeCount()I
 
@@ -622,7 +622,7 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     return-object v0
 .end method
@@ -632,12 +632,12 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
     .line 207
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->hasStableIds()Z
 
@@ -658,11 +658,11 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->isEmpty()Z
 
@@ -695,7 +695,7 @@
     if-ge p1, v0, :cond_0
 
     .line 155
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -717,12 +717,12 @@
     const/4 v0, 0x0
 
     .line 161
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_1
 
     .line 162
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -732,7 +732,7 @@
     if-ge v1, v0, :cond_1
 
     .line 164
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->isEnabled(I)Z
 
@@ -742,7 +742,7 @@
 
     .line 169
     :cond_1
-    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->b:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mArrayListb:Ljava/util/ArrayList;
 
     sub-int v0, v1, v0
 
@@ -762,12 +762,12 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
     .line 255
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
@@ -781,12 +781,12 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->e:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/etsy/android/grid/HeaderViewListAdapter;->mListAdaptere:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
 

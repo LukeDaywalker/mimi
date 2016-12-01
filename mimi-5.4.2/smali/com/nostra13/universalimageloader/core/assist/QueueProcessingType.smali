@@ -19,7 +19,7 @@
 
 .field public static final enum b:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
-.field private static final synthetic c:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+.field private static final synthetic mArrayQueueProcessingTypec:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
 
 # direct methods
@@ -61,7 +61,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->c:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mArrayQueueProcessingTypec:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     return-void
 .end method
@@ -102,7 +102,7 @@
 
     .prologue
     .line 24
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->c:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->mArrayQueueProcessingTypec:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->clone()Ljava/lang/Object;
 

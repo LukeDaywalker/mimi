@@ -39,7 +39,9 @@
 
 .field public static final enum j:Lu/aly/AppInfo$ICt;
 
-.field private static final k:Ljava/util/Map;
+.field private static final synthetic mArrayICtn:[Lu/aly/AppInfo$ICt;
+
+.field private static final mMapk:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -51,13 +53,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic n:[Lu/aly/AppInfo$ICt;
-
 
 # instance fields
-.field private final l:S
+.field private final mSl:S
 
-.field private final m:Ljava/lang/String;
+.field private final mStringm:Ljava/lang/String;
 
 
 # direct methods
@@ -260,14 +260,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lu/aly/AppInfo$ICt;->n:[Lu/aly/AppInfo$ICt;
+    sput-object v0, Lu/aly/AppInfo$ICt;->mArrayICtn:[Lu/aly/AppInfo$ICt;
 
     .line 84
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/AppInfo$ICt;->k:Ljava/util/Map;
+    sput-object v0, Lu/aly/AppInfo$ICt;->mMapk:Ljava/util/Map;
 
     .line 87
     const-class v0, Lu/aly/AppInfo$ICt;
@@ -294,7 +294,7 @@
     check-cast v0, Lu/aly/AppInfo$ICt;
 
     .line 88
-    sget-object v2, Lu/aly/AppInfo$ICt;->k:Ljava/util/Map;
+    sget-object v2, Lu/aly/AppInfo$ICt;->mMapk:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/AppInfo$ICt;->b()Ljava/lang/String;
 
@@ -324,10 +324,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 143
-    iput-short p3, p0, Lu/aly/AppInfo$ICt;->l:S
+    iput-short p3, p0, Lu/aly/AppInfo$ICt;->mSl:S
 
     .line 144
-    iput-object p4, p0, Lu/aly/AppInfo$ICt;->m:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/AppInfo$ICt;->mStringm:Ljava/lang/String;
 
     .line 145
     return-void
@@ -354,7 +354,7 @@
 
     .prologue
     .line 68
-    sget-object v0, Lu/aly/AppInfo$ICt;->n:[Lu/aly/AppInfo$ICt;
+    sget-object v0, Lu/aly/AppInfo$ICt;->mArrayICtn:[Lu/aly/AppInfo$ICt;
 
     invoke-virtual {v0}, [Lu/aly/AppInfo$ICt;->clone()Ljava/lang/Object;
 
@@ -372,7 +372,7 @@
 
     .prologue
     .line 148
-    iget-short v0, p0, Lu/aly/AppInfo$ICt;->l:S
+    iget-short v0, p0, Lu/aly/AppInfo$ICt;->mSl:S
 
     return v0
 .end method
@@ -382,7 +382,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lu/aly/AppInfo$ICt;->m:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/AppInfo$ICt;->mStringm:Ljava/lang/String;
 
     return-object v0
 .end method

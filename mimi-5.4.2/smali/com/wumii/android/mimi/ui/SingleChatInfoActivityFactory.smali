@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/SingleChatInfoActivityFactory;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/SingleChatInfoActivityFactory;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -147,7 +147,7 @@
 
     .line 50
     :cond_6
-    sget-object v1, Lcom/wumii/android/mimi/ui/SingleChatInfoActivityFactory;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/SingleChatInfoActivityFactory;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

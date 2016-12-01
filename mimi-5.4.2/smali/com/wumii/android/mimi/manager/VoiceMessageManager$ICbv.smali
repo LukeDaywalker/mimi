@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-.field final synthetic c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+.field final synthetic mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 160
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->b:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->isZb:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     const/4 v6, 0x0
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getChatMsgItem()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgItemBase;
 
@@ -82,11 +82,11 @@
     if-eqz v1, :cond_1
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->b:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->isZb:Z
 
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Z)V
 
@@ -97,19 +97,19 @@
 
     .line 169
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -140,7 +140,7 @@
     move-result-object v2
 
     .line 173
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->e(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/squareup/okhttp/OkHttpClient;
 
@@ -199,13 +199,13 @@
     invoke-virtual {v2}, Lcom/squareup/okhttp/Call;->b()V
 
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
@@ -213,7 +213,7 @@
 
     const/4 v2, 0x6
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -249,11 +249,11 @@
     if-eqz v0, :cond_5
 
     .line 213
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->b:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->isZb:Z
 
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Z)V
 
@@ -261,13 +261,13 @@
 
     .line 215
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->c:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mVoiceMessageManagerc:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
@@ -275,7 +275,7 @@
 
     const/4 v2, 0x5
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;->mChatMessagea:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

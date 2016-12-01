@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+.field private static final mICUCompatImpla:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;-><init>()V
 
-    sput-object v0, Landroid/support/v4/text/ICUCompat;->a:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sput-object v0, Landroid/support/v4/text/ICUCompat;->mICUCompatImpla:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     .line 61
     :goto_0
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/text/ICUCompat;->a:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sput-object v0, Landroid/support/v4/text/ICUCompat;->mICUCompatImpla:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     goto :goto_0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 70
-    sget-object v0, Landroid/support/v4/text/ICUCompat;->a:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sget-object v0, Landroid/support/v4/text/ICUCompat;->mICUCompatImpla:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 96
-    sget-object v0, Landroid/support/v4/text/ICUCompat;->a:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sget-object v0, Landroid/support/v4/text/ICUCompat;->mICUCompatImpla:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->b(Ljava/lang/String;)Ljava/lang/String;
 

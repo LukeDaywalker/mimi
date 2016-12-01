@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZd:Z
 
-.field private b:I
+.field private mCharSequencec:Ljava/lang/CharSequence;
 
-.field private c:Ljava/lang/CharSequence;
+.field private mIb:I
 
-.field private d:Z
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -24,10 +24,10 @@
     .line 9
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->isZd:Z
 
     .line 23
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mStringa:Ljava/lang/String;
 
     .line 24
     return-void
@@ -43,16 +43,16 @@
     .line 9
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->isZd:Z
 
     .line 12
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mStringa:Ljava/lang/String;
 
     .line 13
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mIb:I
 
     .line 14
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c:Ljava/lang/CharSequence;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mCharSequencec:Ljava/lang/CharSequence;
 
     .line 15
     return-void
@@ -68,13 +68,13 @@
     .line 9
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->isZd:Z
 
     .line 18
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mStringa:Ljava/lang/String;
 
     .line 19
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mCharSequencec:Ljava/lang/CharSequence;
 
     .line 20
     return-void
@@ -87,7 +87,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -97,7 +97,7 @@
 
     .prologue
     .line 31
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mIb:I
 
     .line 32
     return-void
@@ -108,7 +108,7 @@
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mCharSequencec:Ljava/lang/CharSequence;
 
     .line 44
     return-void
@@ -119,7 +119,7 @@
 
     .prologue
     .line 51
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->isZd:Z
 
     .line 52
     return-void
@@ -130,7 +130,7 @@
 
     .prologue
     .line 35
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mIb:I
 
     return v0
 .end method
@@ -140,7 +140,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->mCharSequencec:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -150,7 +150,7 @@
 
     .prologue
     .line 47
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->isZd:Z
 
     return v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/CircleManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/CircleManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -197,7 +197,7 @@
     move-exception v0
 
     .line 122
-    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle set my crowd error!"
 
@@ -353,7 +353,7 @@
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Object;)V
 
     .line 139
-    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle get crowd splits error!"
 
@@ -367,7 +367,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/wumii/android/mimi/manager/CircleManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/CircleManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -1064,7 +1064,7 @@
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Object;)V
 
     .line 158
-    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/CircleManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle get crowd error!"
 

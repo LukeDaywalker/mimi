@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mBundlec:Landroid/os/Bundle;
 
-.field private final b:Ljava/lang/Class;
+.field private final mClassb:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -15,9 +15,9 @@
     .end annotation
 .end field
 
-.field private final c:Landroid/os/Bundle;
+.field private mFragmentd:Landroid/support/v4/app/Fragment;
 
-.field private d:Landroid/support/v4/app/Fragment;
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->d:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->mFragmentd:Landroid/support/v4/app/Fragment;
 
     return-object v0
 .end method
@@ -36,7 +36,7 @@
 
     .prologue
     .line 61
-    iput-object p1, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->d:Landroid/support/v4/app/Fragment;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->mFragmentd:Landroid/support/v4/app/Fragment;
 
     return-object p1
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->a:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->b:Ljava/lang/Class;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->mClassb:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method

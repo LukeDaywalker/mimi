@@ -3,53 +3,53 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
-.field private static b:Ljava/lang/String;
+.field private static mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
-.field private static c:Ljava/lang/String;
+.field private static mICos:Lcom/tencent/wxop/stat/b/ICo;
 
-.field private static d:Ljava/lang/String;
+.field private static mIj:I
 
-.field private static e:Ljava/util/Random;
+.field private static volatile mIn:I
 
-.field private static f:Landroid/util/DisplayMetrics;
+.field private static mIu:I
 
-.field private static g:Ljava/lang/String;
+.field private static mIw:I
 
-.field private static h:Ljava/lang/String;
+.field private static mJq:J
 
-.field private static i:Ljava/lang/String;
+.field private static mJv:J
 
-.field private static j:I
+.field private static mRandome:Ljava/util/Random;
 
-.field private static k:Lcom/tencent/wxop/stat/b/ICb;
+.field private static mStringa:Ljava/lang/String;
 
-.field private static l:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
-.field private static m:Ljava/lang/String;
+.field private static mStringc:Ljava/lang/String;
 
-.field private static volatile n:I
+.field private static mStringd:Ljava/lang/String;
 
-.field private static o:Ljava/lang/String;
+.field private static mStringg:Ljava/lang/String;
 
-.field private static p:Ljava/lang/String;
+.field private static mStringh:Ljava/lang/String;
 
-.field private static q:J
+.field private static mStringi:Ljava/lang/String;
 
-.field private static r:Ljava/lang/String;
+.field private static mStringl:Ljava/lang/String;
 
-.field private static s:Lcom/tencent/wxop/stat/b/ICo;
+.field private static mStringm:Ljava/lang/String;
 
-.field private static t:Ljava/lang/String;
+.field private static mStringo:Ljava/lang/String;
 
-.field private static u:I
+.field private static mStringp:Ljava/lang/String;
 
-.field private static v:J
+.field private static mStringr:Ljava/lang/String;
 
-.field private static w:I
+.field private static mStringt:Ljava/lang/String;
 
-.field private static x:Ljava/lang/String;
+.field private static mStringx:Ljava/lang/String;
 
 
 # direct methods
@@ -62,65 +62,65 @@
 
     const/4 v1, 0x0
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->b:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringb:Ljava/lang/String;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->c:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringc:Ljava/lang/String;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->d:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringd:Ljava/lang/String;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->e:Ljava/util/Random;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mRandome:Ljava/util/Random;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->f:Landroid/util/DisplayMetrics;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->g:Ljava/lang/String;
-
-    const-string/jumbo v0, ""
-
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->h:Ljava/lang/String;
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringg:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
-
-    sput v2, Lcom/tencent/wxop/stat/b/ICl;->j:I
-
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
-
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->l:Ljava/lang/String;
-
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
-
-    sput v2, Lcom/tencent/wxop/stat/b/ICl;->n:I
-
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->o:Ljava/lang/String;
-
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->p:Ljava/lang/String;
-
-    sput-wide v4, Lcom/tencent/wxop/stat/b/ICl;->q:J
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringh:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->r:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
-    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->s:Lcom/tencent/wxop/stat/b/ICo;
+    sput v2, Lcom/tencent/wxop/stat/b/ICl;->mIj:I
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringl:Ljava/lang/String;
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
+
+    sput v2, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringo:Ljava/lang/String;
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringp:Ljava/lang/String;
+
+    sput-wide v4, Lcom/tencent/wxop/stat/b/ICl;->mJq:J
+
+    const-string/jumbo v0, ""
+
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringr:Ljava/lang/String;
+
+    sput-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICos:Lcom/tencent/wxop/stat/b/ICo;
 
     const-string/jumbo v0, "__MTA_FIRST_ACTIVATE__"
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->t:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringt:Ljava/lang/String;
 
-    sput v2, Lcom/tencent/wxop/stat/b/ICl;->u:I
+    sput v2, Lcom/tencent/wxop/stat/b/ICl;->mIu:I
 
-    sput-wide v4, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sput-wide v4, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->w:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIw:I
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->x:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringx:Ljava/lang/String;
 
     return-void
 .end method
@@ -154,10 +154,10 @@
 
     move-result v0
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->w:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIw:I
 
     :cond_0
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->w:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIw:I
 
     return v0
 .end method
@@ -312,7 +312,7 @@
 
     if-ne v0, v1, :cond_1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -320,10 +320,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     :cond_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -341,7 +341,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -562,7 +562,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -624,7 +624,7 @@
 .method public static a(Landroid/content/Context;I)V
     .locals 1
 
-    sput p1, Lcom/tencent/wxop/stat/b/ICl;->w:I
+    sput p1, Lcom/tencent/wxop/stat/b/ICl;->mIw:I
 
     const-string/jumbo v0, "mta.qq.com.difftime"
 
@@ -710,13 +710,13 @@
 .method public static b()I
     .locals 2
 
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->j:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIj:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->j:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIj:I
 
     :goto_0
     return v0
@@ -731,7 +731,7 @@
 
     const/4 v0, 0x1
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->j:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIj:I
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -739,14 +739,14 @@
     :goto_1
     const/4 v0, 0x0
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->j:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIj:I
 
     goto :goto_0
 
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -783,11 +783,11 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -799,7 +799,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -814,11 +814,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -845,10 +845,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
 
     :cond_2
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringa:Ljava/lang/String;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -870,7 +870,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     if-nez v0, :cond_0
 
@@ -880,12 +880,12 @@
 
     invoke-direct {v0, v2}, Lcom/tencent/wxop/stat/b/ICb;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/b/ICb;->a()V
 
     :cond_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -909,11 +909,11 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->c:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringc:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->c:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -930,10 +930,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->c:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringc:Ljava/lang/String;
 
     :cond_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->c:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringc:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1024,7 +1024,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1040,7 +1040,7 @@
 .method public static d(Landroid/content/Context;)Landroid/util/DisplayMetrics;
     .locals 2
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->f:Landroid/util/DisplayMetrics;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     if-nez v0, :cond_0
 
@@ -1048,7 +1048,7 @@
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->f:Landroid/util/DisplayMetrics;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -1066,12 +1066,12 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->f:Landroid/util/DisplayMetrics;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
     :cond_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->f:Landroid/util/DisplayMetrics;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mDisplayMetricsf:Landroid/util/DisplayMetrics;
 
     return-object v0
 .end method
@@ -1185,7 +1185,7 @@
     goto :goto_1
 
     :cond_2
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v2, "can not get the permission of android.permission.ACCESS_WIFI_STATE"
 
@@ -1201,7 +1201,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1213,7 +1213,7 @@
 
     const-wide/32 v6, 0xf4240
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->p:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringp:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->c(Ljava/lang/String;)Z
 
@@ -1221,7 +1221,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->p:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringp:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -1313,7 +1313,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->p:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringp:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -1321,11 +1321,11 @@
 .method public static f(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringb:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -1358,7 +1358,7 @@
 
     if-eqz v0, :cond_2
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringb:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1367,7 +1367,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v1, "Could not read APPKEY meta-data from AndroidManifest.xml"
 
@@ -1381,7 +1381,7 @@
 
     :cond_2
     :try_start_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v1, "Could not read APPKEY meta-data from AndroidManifest.xml"
 
@@ -1430,7 +1430,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v1, "Could not read InstallChannel meta-data from AndroidManifest.xml"
 
@@ -1447,7 +1447,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v1, "Could not read InstallChannel meta-data from AndroidManifest.xml"
 
@@ -1539,7 +1539,7 @@
 .method static synthetic h()Lcom/tencent/wxop/stat/b/ICb;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     return-object v0
 .end method
@@ -1569,11 +1569,11 @@
 .method public static i(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->g:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringg:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->g:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringg:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -1623,13 +1623,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->g:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringg:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_1
     :goto_2
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->g:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringg:Ljava/lang/String;
 
     goto :goto_0
 
@@ -1640,7 +1640,7 @@
 
     :cond_3
     :try_start_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v1, "Could not get permission of android.permission.READ_PHONE_STATE"
 
@@ -1653,7 +1653,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1668,7 +1668,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->e:Ljava/util/Random;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mRandome:Ljava/util/Random;
 
     if-nez v0, :cond_0
 
@@ -1676,10 +1676,10 @@
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->e:Ljava/util/Random;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mRandome:Ljava/util/Random;
 
     :cond_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->e:Ljava/util/Random;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mRandome:Ljava/util/Random;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1698,7 +1698,7 @@
 .method private static j()J
     .locals 5
 
-    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->q:J
+    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJq:J
 
     const-wide/16 v2, 0x0
 
@@ -1706,7 +1706,7 @@
 
     if-lez v0, :cond_0
 
-    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->q:J
+    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJq:J
 
     :goto_0
     return-wide v0
@@ -1758,7 +1758,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_1
-    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->q:J
+    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJq:J
 
     goto :goto_0
 
@@ -1771,7 +1771,7 @@
 .method public static j(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->h:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringh:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->c(Ljava/lang/String;)Z
 
@@ -1779,7 +1779,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->h:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringh:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -1802,7 +1802,7 @@
 
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->h:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringh:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -1815,12 +1815,12 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
     :cond_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->h:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringh:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -1926,7 +1926,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v2, "can not get the permission of android.permission.ACCESS_WIFI_STATE"
 
@@ -1939,7 +1939,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1985,7 +1985,7 @@
 .method public static m(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->c(Ljava/lang/String;)Z
 
@@ -1993,7 +1993,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -2016,11 +2016,11 @@
 
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -2038,12 +2038,12 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
     :cond_2
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->i:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringi:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -2053,7 +2053,7 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->l:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringl:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->c(Ljava/lang/String;)Z
 
@@ -2061,7 +2061,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->l:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringl:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -2170,7 +2170,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->l:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringl:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2179,7 +2179,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -2190,7 +2190,7 @@
 
     :cond_2
     :try_start_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v2, "can not get the permission of android.permission.WRITE_EXTERNAL_STORAGE"
 
@@ -2207,11 +2207,11 @@
     .locals 4
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -2256,13 +2256,13 @@
 
     iget-object v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->processName:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_2
     :goto_1
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->m:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringm:Ljava/lang/String;
 
     goto :goto_0
 
@@ -2294,11 +2294,11 @@
     monitor-enter v2
 
     :try_start_0
-    sget v1, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v1, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     if-lez v1, :cond_1
 
-    sget v1, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v1, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     rem-int/lit16 v1, v1, 0x3e8
     :try_end_0
@@ -2307,11 +2307,11 @@
     if-nez v1, :cond_0
 
     :try_start_1
-    sget v1, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v1, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     add-int/lit16 v1, v1, 0x3e8
 
-    sget v3, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v3, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     const v4, 0x7ffe795f
 
@@ -2328,11 +2328,11 @@
     :cond_0
     :goto_1
     :try_start_2
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
     :try_end_2
@@ -2348,7 +2348,7 @@
     move-exception v0
 
     :try_start_3
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->c(Ljava/lang/Object;)V
     :try_end_3
@@ -2373,11 +2373,11 @@
 
     move-result v0
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     const-string/jumbo v0, "MTA_EVENT_INDEX"
 
-    sget v1, Lcom/tencent/wxop/stat/b/ICl;->n:I
+    sget v1, Lcom/tencent/wxop/stat/b/ICl;->mIn:I
 
     add-int/lit16 v1, v1, 0x3e8
 
@@ -2473,7 +2473,7 @@
 .method public static s(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->r:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringr:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/b/ICl;->c(Ljava/lang/String;)Z
 
@@ -2481,7 +2481,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->r:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringr:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -2563,20 +2563,20 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->r:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringr:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_2
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->r:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringr:Ljava/lang/String;
 
     goto :goto_0
 
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->k:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/b/ICl;->mICbk:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -2591,13 +2591,13 @@
     monitor-enter v1
 
     :try_start_0
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->u:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIu:I
 
     const/4 v2, -0x1
 
     if-eq v0, v2, :cond_0
 
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->u:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIu:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2610,7 +2610,7 @@
     :try_start_1
     invoke-static {p0}, Lcom/tencent/wxop/stat/b/ICl;->u(Landroid/content/Context;)V
 
-    sget v0, Lcom/tencent/wxop/stat/b/ICl;->u:I
+    sget v0, Lcom/tencent/wxop/stat/b/ICl;->mIu:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -2629,17 +2629,17 @@
 
     const/4 v1, 0x1
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->t:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringt:Ljava/lang/String;
 
     invoke-static {p0, v0, v1}, Lcom/tencent/wxop/stat/b/ICq;->a(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v0
 
-    sput v0, Lcom/tencent/wxop/stat/b/ICl;->u:I
+    sput v0, Lcom/tencent/wxop/stat/b/ICl;->mIu:I
 
     if-ne v0, v1, :cond_0
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->t:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICl;->mStringt:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2652,7 +2652,7 @@
 .method public static v(Landroid/content/Context;)Z
     .locals 4
 
-    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sget-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     const-wide/16 v2, 0x0
 
@@ -2666,14 +2666,14 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    sget-wide v2, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sget-wide v2, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     sub-long/2addr v0, v2
 
@@ -2705,11 +2705,11 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sput-wide v0, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     const-string/jumbo v0, "mta.qq.com.checktime"
 
-    sget-wide v2, Lcom/tencent/wxop/stat/b/ICl;->v:J
+    sget-wide v2, Lcom/tencent/wxop/stat/b/ICl;->mJv:J
 
     invoke-static {p0, v0, v2, v3}, Lcom/tencent/wxop/stat/b/ICq;->a(Landroid/content/Context;Ljava/lang/String;J)V
 

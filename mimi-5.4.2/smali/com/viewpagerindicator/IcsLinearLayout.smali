@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:[I
+.field private static final mArrayIa:[I
 
 
 # instance fields
-.field private b:Landroid/graphics/drawable/Drawable;
+.field private mDrawableb:Landroid/graphics/drawable/Drawable;
 
-.field private c:I
+.field private mIc:I
 
-.field private d:I
+.field private mId:I
 
-.field private e:I
+.field private mIe:I
 
-.field private f:I
+.field private mIf:I
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/viewpagerindicator/IcsLinearLayout;->a:[I
+    sput-object v0, Lcom/viewpagerindicator/IcsLinearLayout;->mArrayIa:[I
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     .line 48
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/viewpagerindicator/IcsLinearLayout;->a:[I
+    sget-object v1, Lcom/viewpagerindicator/IcsLinearLayout;->mArrayIa:[I
 
     invoke-virtual {p1, v0, v1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -72,7 +72,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->f:I
+    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIf:I
 
     .line 51
     const/4 v1, 0x1
@@ -81,7 +81,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->e:I
+    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIe:I
 
     .line 52
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -186,7 +186,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     sub-int/2addr v0, v1
 
@@ -212,13 +212,13 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Lcom/viewpagerindicator/IcsLinearLayout;->getPaddingLeft()I
 
     move-result v1
 
-    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->f:I
+    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIf:I
 
     add-int/2addr v1, v2
 
@@ -232,18 +232,18 @@
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->f:I
+    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIf:I
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     add-int/2addr v3, p2
 
     invoke-virtual {v0, v1, p2, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 170
-    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -273,7 +273,7 @@
 
     .line 183
     :cond_1
-    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->e:I
+    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIe:I
 
     and-int/lit8 v1, v1, 0x2
 
@@ -407,7 +407,7 @@
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     sub-int/2addr v0, v1
 
@@ -433,17 +433,17 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Lcom/viewpagerindicator/IcsLinearLayout;->getPaddingTop()I
 
     move-result v1
 
-    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->f:I
+    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIf:I
 
     add-int/2addr v1, v2
 
-    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iget v2, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     add-int/2addr v2, p2
 
@@ -457,14 +457,14 @@
 
     sub-int/2addr v3, v4
 
-    iget v4, p0, Lcom/viewpagerindicator/IcsLinearLayout;->f:I
+    iget v4, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIf:I
 
     sub-int/2addr v3, v4
 
     invoke-virtual {v0, p2, v1, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 176
-    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -508,7 +508,7 @@
     if-ne v2, v5, :cond_2
 
     .line 81
-    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
@@ -535,7 +535,7 @@
     if-ne v2, v5, :cond_3
 
     .line 92
-    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
@@ -549,7 +549,7 @@
 
     .line 84
     :cond_2
-    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iget v3, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
@@ -557,7 +557,7 @@
 
     .line 94
     :cond_3
-    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iget v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
@@ -569,7 +569,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -612,7 +612,7 @@
     const/4 v0, 0x0
 
     .line 58
-    iget-object v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v1, :cond_0
 
@@ -622,7 +622,7 @@
 
     .line 61
     :cond_0
-    iput-object p1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->b:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     .line 62
     if-eqz p1, :cond_2
@@ -632,14 +632,14 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     .line 64
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
-    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iput v1, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     .line 69
     :goto_1
@@ -657,10 +657,10 @@
 
     .line 66
     :cond_2
-    iput v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->c:I
+    iput v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mIc:I
 
     .line 67
-    iput v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->d:I
+    iput v0, p0, Lcom/viewpagerindicator/IcsLinearLayout;->mId:I
 
     goto :goto_1
 .end method

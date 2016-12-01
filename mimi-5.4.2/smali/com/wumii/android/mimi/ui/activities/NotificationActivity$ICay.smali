@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICay;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICay;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/manager/NotificationManager;
 

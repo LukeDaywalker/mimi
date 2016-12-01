@@ -3,17 +3,17 @@
 
 
 # static fields
-.field private static final c:[I
+.field private static final mArrayIc:[I
 
-.field private static final d:[I
+.field private static final mArrayId:[I
 
 
 # instance fields
-.field private e:I
+.field private final mArrayIg:[I
 
-.field private f:I
+.field private mIe:I
 
-.field private final g:[I
+.field private mIf:I
 
 
 # direct methods
@@ -26,13 +26,13 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/tencent/stat/a/ICh;->c:[I
+    sput-object v0, Lcom/tencent/stat/a/ICh;->mArrayIc:[I
 
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/tencent/stat/a/ICh;->d:[I
+    sput-object v0, Lcom/tencent/stat/a/ICh;->mArrayId:[I
 
     return-void
 
@@ -572,19 +572,19 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/a/ICh;->c:[I
+    sget-object v0, Lcom/tencent/stat/a/ICh;->mArrayIc:[I
 
     :goto_0
-    iput-object v0, p0, Lcom/tencent/stat/a/ICh;->g:[I
+    iput-object v0, p0, Lcom/tencent/stat/a/ICh;->mArrayIg:[I
 
-    iput v1, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v1, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
-    iput v1, p0, Lcom/tencent/stat/a/ICh;->f:I
+    iput v1, p0, Lcom/tencent/stat/a/ICh;->mIf:I
 
     return-void
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICh;->d:[I
+    sget-object v0, Lcom/tencent/stat/a/ICh;->mArrayId:[I
 
     goto :goto_0
 .end method
@@ -594,7 +594,7 @@
 .method public a([BIIZ)Z
     .locals 10
 
-    iget v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iget v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v1, 0x6
 
@@ -608,15 +608,15 @@
     :cond_0
     add-int v4, p3, p2
 
-    iget v3, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iget v3, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
-    iget v1, p0, Lcom/tencent/stat/a/ICh;->f:I
+    iget v1, p0, Lcom/tencent/stat/a/ICh;->mIf:I
 
     const/4 v0, 0x0
 
     iget-object v5, p0, Lcom/tencent/stat/a/ICh;->a:[B
 
-    iget-object v6, p0, Lcom/tencent/stat/a/ICh;->g:[I
+    iget-object v6, p0, Lcom/tencent/stat/a/ICh;->mArrayIg:[I
 
     move v2, p2
 
@@ -708,9 +708,9 @@
     :goto_3
     if-nez p4, :cond_b
 
-    iput v3, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v3, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
-    iput v2, p0, Lcom/tencent/stat/a/ICh;->f:I
+    iput v2, p0, Lcom/tencent/stat/a/ICh;->mIf:I
 
     iput v0, p0, Lcom/tencent/stat/a/ICh;->b:I
 
@@ -759,7 +759,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -783,7 +783,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -830,7 +830,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -901,7 +901,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -923,7 +923,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -936,7 +936,7 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -947,7 +947,7 @@
 
     :goto_5
     :pswitch_6
-    iput v3, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v3, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     iput v0, p0, Lcom/tencent/stat/a/ICh;->b:I
 
@@ -958,7 +958,7 @@
     :pswitch_7
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 
@@ -999,7 +999,7 @@
     :pswitch_a
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/tencent/stat/a/ICh;->e:I
+    iput v0, p0, Lcom/tencent/stat/a/ICh;->mIe:I
 
     const/4 v0, 0x0
 

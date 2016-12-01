@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+.field final synthetic mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICt;->mLocationValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->a(Landroid/content/Context;)V
 

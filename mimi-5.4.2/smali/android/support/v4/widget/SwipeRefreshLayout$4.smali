@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mIa:I
 
-.field final synthetic b:I
+.field final synthetic mIb:I
 
-.field final synthetic c:Landroid/support/v4/widget/SwipeRefreshLayout;
+.field final synthetic mSwipeRefreshLayoutc:Landroid/support/v4/widget/SwipeRefreshLayout;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 434
-    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->c:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mSwipeRefreshLayoutc:Landroid/support/v4/widget/SwipeRefreshLayout;
 
-    iput p2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->a:I
+    iput p2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mIa:I
 
-    iput p3, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->b:I
+    iput p3, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mIb:I
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -35,19 +35,19 @@
 
     .prologue
     .line 437
-    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->c:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mSwipeRefreshLayoutc:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0}, Landroid/support/v4/widget/SwipeRefreshLayout;->b(Landroid/support/v4/widget/SwipeRefreshLayout;)Landroid/support/v4/widget/MaterialProgressDrawable;
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->a:I
+    iget v1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mIa:I
 
     int-to-float v1, v1
 
-    iget v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->b:I
+    iget v2, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mIb:I
 
-    iget v3, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->a:I
+    iget v3, p0, Landroid/support/v4/widget/SwipeRefreshLayout$4;->mIa:I
 
     sub-int/2addr v2, v3
 

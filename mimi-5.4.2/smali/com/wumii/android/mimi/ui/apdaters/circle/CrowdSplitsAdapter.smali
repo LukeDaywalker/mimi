@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -20,7 +20,7 @@
     .end annotation
 .end field
 
-.field private c:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+.field private mOnCircleClickListenerc:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
 
 # direct methods
@@ -32,17 +32,17 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mContexta:Landroid/content/Context;
 
     .line 25
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->c:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mOnCircleClickListenerc:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mListb:Ljava/util/List;
 
     .line 27
     return-void
@@ -55,7 +55,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -88,7 +88,7 @@
 
     .line 33
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mListb:Ljava/util/List;
 
     .line 34
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->notifyDataSetChanged()V
@@ -101,7 +101,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -140,7 +140,7 @@
     if-nez p2, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -221,7 +221,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->c:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mOnCircleClickListenerc:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     if-nez v0, :cond_1
 
@@ -239,7 +239,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 74
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->c:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;->mOnCircleClickListenerc:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/OnCircleClickListener;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 

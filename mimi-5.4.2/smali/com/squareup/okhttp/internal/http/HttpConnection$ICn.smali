@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+.field private isZe:Z
 
-.field private e:Z
+.field final synthetic mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 507
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     const/4 v0, 0x0
 
@@ -89,7 +89,7 @@
 
     .line 514
     :cond_1
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->e:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZe:Z
 
     if-eqz v2, :cond_2
 
@@ -99,7 +99,7 @@
 
     .line 516
     :cond_2
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->d:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->mHttpConnectiond:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v2}, Lcom/squareup/okhttp/internal/http/HttpConnection;->b(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSource;
 
@@ -117,7 +117,7 @@
     .line 518
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->e:Z
+    iput-boolean v2, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZe:Z
 
     .line 519
     const/4 v2, 0x0
@@ -148,7 +148,7 @@
 
     .line 527
     :cond_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICn;->isZe:Z
 
     if-nez v0, :cond_1
 

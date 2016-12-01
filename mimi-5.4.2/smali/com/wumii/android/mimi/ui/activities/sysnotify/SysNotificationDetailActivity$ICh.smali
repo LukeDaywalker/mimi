@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+.field final synthetic mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity$ICh;->mSysNotificationDetailActivitya:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;
 
     const/4 v1, 0x0
 

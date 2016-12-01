@@ -17,17 +17,17 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/model/LatLng;
+.field mELayoutModec:Lcom/baidu/mapapi/map/MapViewLayoutParams$ELayoutMode;
 
-.field b:Landroid/graphics/Point;
+.field mFd:F
 
-.field c:Lcom/baidu/mapapi/map/MapViewLayoutParams$ELayoutMode;
+.field mFe:F
 
-.field d:F
+.field mIf:I
 
-.field e:F
+.field mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
-.field f:I
+.field mPointb:Landroid/graphics/Point;
 
 
 # direct methods
@@ -42,54 +42,54 @@
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    iput-object p3, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p3, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object p4, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->b:Landroid/graphics/Point;
+    iput-object p4, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mPointb:Landroid/graphics/Point;
 
-    iput-object p5, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->c:Lcom/baidu/mapapi/map/MapViewLayoutParams$ELayoutMode;
+    iput-object p5, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mELayoutModec:Lcom/baidu/mapapi/map/MapViewLayoutParams$ELayoutMode;
 
     packed-switch p6, :pswitch_data_0
 
     :pswitch_0
-    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->d:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFd:F
 
     :goto_0
     sparse-switch p7, :sswitch_data_0
 
-    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->e:F
+    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFe:F
 
     :goto_1
-    iput p8, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->f:I
+    iput p8, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mIf:I
 
     return-void
 
     :pswitch_1
-    iput v2, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->d:F
+    iput v2, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFd:F
 
     goto :goto_0
 
     :pswitch_2
-    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->d:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFd:F
 
     goto :goto_0
 
     :pswitch_3
-    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->d:F
+    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFd:F
 
     goto :goto_0
 
     :sswitch_0
-    iput v2, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->e:F
+    iput v2, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFe:F
 
     goto :goto_1
 
     :sswitch_1
-    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->e:F
+    iput v0, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFe:F
 
     goto :goto_1
 
     :sswitch_2
-    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->e:F
+    iput v1, p0, Lcom/baidu/mapapi/map/MapViewLayoutParams;->mFe:F
 
     goto :goto_1
 

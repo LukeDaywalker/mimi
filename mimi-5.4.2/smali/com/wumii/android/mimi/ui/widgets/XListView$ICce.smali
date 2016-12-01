@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+.field final synthetic mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/XListView;->a:Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;
 
@@ -47,7 +47,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Lcom/wumii/android/mimi/ui/widgets/XListView;I)I
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->a:Lcom/wumii/android/mimi/ui/widgets/XListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListView$ICce;->mXListViewa:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 

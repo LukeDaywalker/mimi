@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
-.field private static final synthetic e:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+.field private static final synthetic mArrayHeadersModee:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
 
 # direct methods
@@ -96,7 +96,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->e:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mArrayHeadersModee:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 18
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->e:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/HeadersMode;->mArrayHeadersModee:[Lcom/squareup/okhttp/internal/spdy/HeadersMode;
 
     invoke-virtual {v0}, [Lcom/squareup/okhttp/internal/spdy/HeadersMode;->clone()Ljava/lang/Object;
 

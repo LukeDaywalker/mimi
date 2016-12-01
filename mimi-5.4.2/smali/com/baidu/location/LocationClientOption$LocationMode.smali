@@ -9,7 +9,7 @@
 
 .field public static final enum Hight_Accuracy:Lcom/baidu/location/LocationClientOption$LocationMode;
 
-.field private static final synthetic a:[Lcom/baidu/location/LocationClientOption$LocationMode;
+.field private static final synthetic mArrayLocationModea:[Lcom/baidu/location/LocationClientOption$LocationMode;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/baidu/location/LocationClientOption$LocationMode;->a:[Lcom/baidu/location/LocationClientOption$LocationMode;
+    sput-object v0, Lcom/baidu/location/LocationClientOption$LocationMode;->mArrayLocationModea:[Lcom/baidu/location/LocationClientOption$LocationMode;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 .method public static values()[Lcom/baidu/location/LocationClientOption$LocationMode;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/LocationClientOption$LocationMode;->a:[Lcom/baidu/location/LocationClientOption$LocationMode;
+    sget-object v0, Lcom/baidu/location/LocationClientOption$LocationMode;->mArrayLocationModea:[Lcom/baidu/location/LocationClientOption$LocationMode;
 
     invoke-virtual {v0}, [Lcom/baidu/location/LocationClientOption$LocationMode;->clone()Ljava/lang/Object;
 

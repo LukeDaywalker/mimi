@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+.field final synthetic mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->a(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)Z
 
@@ -38,7 +38,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->getLastVisiblePosition()I
 
@@ -49,7 +49,7 @@
     if-ne v0, v1, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->a:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView$ICar;->mPagedStaggeredGridViewa:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;->b(Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;)V
 

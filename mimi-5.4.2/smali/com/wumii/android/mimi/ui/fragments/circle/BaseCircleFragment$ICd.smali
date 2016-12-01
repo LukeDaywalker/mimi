@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field final synthetic mBaseCircleFragmentb:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
+.field final synthetic mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->b:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mBaseCircleFragmentb:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->b:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mBaseCircleFragmentb:Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->b:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment$ICd;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 

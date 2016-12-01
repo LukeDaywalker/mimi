@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
+.field final synthetic mCircleFeedbackActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->mCircleFeedbackActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/CircleAdviceTask;-><init>(Landroid/app/Activity;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->mCircleFeedbackActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
 
     const-string/jumbo v1, "\u63d0\u4ea4\u6210\u529f"
 
@@ -36,7 +36,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$ICk;->mCircleFeedbackActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->finish()V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/TransportMediator;
+.field final synthetic mTransportMediatora:Landroid/support/v4/media/TransportMediator;
 
 
 # virtual methods
@@ -16,9 +16,9 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->a:Landroid/support/v4/media/TransportMediator;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->mTransportMediatora:Landroid/support/v4/media/TransportMediator;
 
-    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->a:Landroid/support/v4/media/TransportPerformer;
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->mTransportPerformera:Landroid/support/v4/media/TransportPerformer;
 
     invoke-virtual {v0}, Landroid/support/v4/media/TransportPerformer;->d()J
 
@@ -32,9 +32,9 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->a:Landroid/support/v4/media/TransportMediator;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->mTransportMediatora:Landroid/support/v4/media/TransportMediator;
 
-    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->a:Landroid/support/v4/media/TransportPerformer;
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->mTransportPerformera:Landroid/support/v4/media/TransportPerformer;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/media/TransportPerformer;->a(I)V
 
@@ -47,9 +47,9 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->a:Landroid/support/v4/media/TransportMediator;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->mTransportMediatora:Landroid/support/v4/media/TransportMediator;
 
-    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->a:Landroid/support/v4/media/TransportPerformer;
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->mTransportPerformera:Landroid/support/v4/media/TransportPerformer;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/TransportPerformer;->a(J)V
 
@@ -62,9 +62,9 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->a:Landroid/support/v4/media/TransportMediator;
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->mTransportMediatora:Landroid/support/v4/media/TransportMediator;
 
-    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->b:Landroid/view/KeyEvent$Callback;
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->mCallbackb:Landroid/view/KeyEvent$Callback;
 
     invoke-virtual {p1, v0}, Landroid/view/KeyEvent;->dispatch(Landroid/view/KeyEvent$Callback;)Z
 

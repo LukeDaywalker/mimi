@@ -4,7 +4,11 @@
 
 
 # static fields
-.field static final a:Ljava/util/Map;
+.field private static final mArraySc:[S
+
+.field private static final mFilenameFilterb:Ljava/io/FilenameFilter;
+
+.field static final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -16,17 +20,13 @@
     .end annotation
 .end field
 
-.field private static final b:Ljava/io/FilenameFilter;
-
-.field private static final c:[S
-
 
 # instance fields
-.field private final d:Ljava/lang/Object;
+.field private final mCreateReportSpiCalle:Lcom/crashlytics/android/core/CreateReportSpiCall;
 
-.field private final e:Lcom/crashlytics/android/core/CreateReportSpiCall;
+.field private final mObjectd:Ljava/lang/Object;
 
-.field private f:Ljava/lang/Thread;
+.field private mThreadf:Ljava/lang/Thread;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/ReportUploader$ICbw;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->b:Ljava/io/FilenameFilter;
+    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->mFilenameFilterb:Ljava/io/FilenameFilter;
 
     .line 32
     const-string/jumbo v0, "X-CRASHLYTICS-INVALID-SESSION"
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->a:Ljava/util/Map;
+    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->mMapa:Ljava/util/Map;
 
     .line 35
     const/4 v0, 0x6
@@ -59,7 +59,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->c:[S
+    sput-object v0, Lcom/crashlytics/android/core/ReportUploader;->mArraySc:[S
 
     return-void
 
@@ -86,7 +86,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->d:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->mObjectd:Ljava/lang/Object;
 
     .line 43
     if-nez p1, :cond_0
@@ -102,7 +102,7 @@
 
     .line 46
     :cond_0
-    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader;->e:Lcom/crashlytics/android/core/CreateReportSpiCall;
+    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader;->mCreateReportSpiCalle:Lcom/crashlytics/android/core/CreateReportSpiCall;
 
     .line 47
     return-void
@@ -113,7 +113,7 @@
 
     .prologue
     .line 23
-    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader;->f:Ljava/lang/Thread;
+    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader;->mThreadf:Ljava/lang/Thread;
 
     return-object p1
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 23
-    sget-object v0, Lcom/crashlytics/android/core/ReportUploader;->c:[S
+    sget-object v0, Lcom/crashlytics/android/core/ReportUploader;->mArraySc:[S
 
     return-object v0
 .end method
@@ -155,7 +155,7 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 104
-    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader;->d:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader;->mObjectd:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -169,7 +169,7 @@
 
     move-result-object v0
 
-    sget-object v2, Lcom/crashlytics/android/core/ReportUploader;->b:Ljava/io/FilenameFilter;
+    sget-object v2, Lcom/crashlytics/android/core/ReportUploader;->mFilenameFilterb:Ljava/io/FilenameFilter;
 
     invoke-virtual {v0, v2}, Ljava/io/File;->listFiles(Ljava/io/FilenameFilter;)[Ljava/io/File;
 
@@ -281,7 +281,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->f:Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->mThreadf:Ljava/lang/Thread;
 
     if-nez v0, :cond_0
 
@@ -296,10 +296,10 @@
 
     invoke-direct {v0, v1, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->f:Ljava/lang/Thread;
+    iput-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->mThreadf:Ljava/lang/Thread;
 
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->f:Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader;->mThreadf:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
     :try_end_0
@@ -328,7 +328,7 @@
     const/4 v0, 0x0
 
     .line 75
-    iget-object v2, p0, Lcom/crashlytics/android/core/ReportUploader;->d:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/crashlytics/android/core/ReportUploader;->mObjectd:Ljava/lang/Object;
 
     monitor-enter v2
 
@@ -356,7 +356,7 @@
     invoke-direct {v3, v1, p1}, Lcom/crashlytics/android/core/CreateReportRequest;-><init>(Ljava/lang/String;Lcom/crashlytics/android/core/Report;)V
 
     .line 81
-    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader;->e:Lcom/crashlytics/android/core/CreateReportSpiCall;
+    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader;->mCreateReportSpiCalle:Lcom/crashlytics/android/core/CreateReportSpiCall;
 
     invoke-interface {v1, v3}, Lcom/crashlytics/android/core/CreateReportSpiCall;->a(Lcom/crashlytics/android/core/CreateReportRequest;)Z
 

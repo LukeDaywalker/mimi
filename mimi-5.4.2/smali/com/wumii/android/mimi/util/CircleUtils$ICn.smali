@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
     if-nez v0, :cond_0
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->mActivitya:Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -60,7 +60,7 @@
     :cond_0
     new-instance v1, Lcom/wumii/android/mimi/task/GetValidationTypesTask;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->a:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/CircleUtils$ICn;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v1, v2}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
 

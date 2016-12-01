@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+.field final synthetic mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
@@ -40,9 +40,9 @@
     double-to-int v0, v0
 
     .line 35
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->getResources()Landroid/content/res/Resources;
 
@@ -77,9 +77,9 @@
 
     .prologue
     .line 40
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;
 
@@ -93,7 +93,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setEnabled(Z)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     const v1, 0x7f060162
 
@@ -104,7 +104,7 @@
 
     .line 40
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->mCountDownTimerViewa:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;
 

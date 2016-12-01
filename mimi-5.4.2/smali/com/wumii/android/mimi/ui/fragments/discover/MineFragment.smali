@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/LinearLayout;
+.field private mLinearLayoutb:Landroid/widget/LinearLayout;
 
-.field private c:Landroid/widget/ImageView;
+.field private mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private d:Landroid/widget/TextView;
+.field private mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mTextViewd:Landroid/widget/TextView;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     const/4 v1, 0x0
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -58,7 +58,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -80,7 +80,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -134,7 +134,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->b:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mLinearLayoutb:Landroid/widget/LinearLayout;
 
     .line 88
     return-void
@@ -185,11 +185,11 @@
 
     .prologue
     .line 197
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mImageViewc:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mTextViewd:Landroid/widget/TextView;
 
     if-nez v0, :cond_1
 
@@ -203,14 +203,14 @@
     if-nez p1, :cond_2
 
     .line 201
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mTextViewd:Landroid/widget/TextView;
 
     const v1, 0x7f06023b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 202
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mImageViewc:Landroid/widget/ImageView;
 
     const v1, 0x7f02013f
 
@@ -220,7 +220,7 @@
 
     .line 204
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/NamedUser;->getName()Ljava/lang/String;
 
@@ -237,7 +237,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->c:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mImageViewc:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->f:Landroid/util/DisplayMetrics;
 
@@ -286,7 +286,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a()V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -339,7 +339,7 @@
     const/4 v4, 0x1
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mLinearLayoutb:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
 
@@ -466,7 +466,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mImageViewc:Landroid/widget/ImageView;
 
     .line 175
     const v0, 0x7f0b0089
@@ -477,15 +477,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mTextViewd:Landroid/widget/TextView;
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mLinearLayoutb:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->b:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mLinearLayoutb:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -528,9 +528,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->b()V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -554,14 +554,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 58
     new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICn;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICn;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 76
     return-void
@@ -598,9 +598,9 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onDestroyView()V
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lorg/greenrobot/eventbus/EventBus;
+.field final synthetic mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 53
-    iput-object p1, p0, Lorg/greenrobot/eventbus/EventBus$ICd;->a:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/EventBus$ICd;->mEventBusa:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 

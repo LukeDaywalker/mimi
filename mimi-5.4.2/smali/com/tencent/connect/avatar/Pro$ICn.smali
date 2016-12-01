@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ICc;
+.field final synthetic mICca:Lcom/tencent/connect/avatar/Pro$ICc;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 272
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICn;->a:Lcom/tencent/connect/avatar/Pro$ICc;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICn;->mICca:Lcom/tencent/connect/avatar/Pro$ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
 
     .line 279
     :goto_0
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICn;->a:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICn;->mICca:Lcom/tencent/connect/avatar/Pro$ICc;
 
     new-instance v1, Lcom/tencent/connect/avatar/Pro$ICo;
 
@@ -48,7 +48,7 @@
     invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$ICc;->post(Ljava/lang/Runnable;)Z
 
     .line 287
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICn;->a:Lcom/tencent/connect/avatar/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICn;->mICca:Lcom/tencent/connect/avatar/Pro$ICc;
 
     const/4 v1, 0x0
 

@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:I
+.field mIb:I
 
-.field c:I
+.field mIc:I
 
-.field d:I
+.field mId:I
 
-.field e:I
+.field mIe:I
 
-.field f:I
+.field mIf:I
 
 
 # direct methods
@@ -28,10 +28,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 65
-    iput v0, p0, Landroid/support/v7/widget/LayoutState;->e:I
+    iput v0, p0, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     .line 70
-    iput v0, p0, Landroid/support/v7/widget/LayoutState;->f:I
+    iput v0, p0, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     return-void
 .end method
@@ -43,20 +43,20 @@
 
     .prologue
     .line 86
-    iget v0, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iget v0, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     invoke-virtual {p1, v0}, Landroid/support/v7/widget/RecyclerView$ICax;->b(I)Landroid/view/View;
 
     move-result-object v0
 
     .line 87
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
-    iget v2, p0, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v2, p0, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iput v1, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     .line 88
     return-object v0
@@ -67,11 +67,11 @@
 
     .prologue
     .line 76
-    iget v0, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iget v0, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iget v0, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView$ICbd;->e()I
 
@@ -105,7 +105,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->b:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v1, p0, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

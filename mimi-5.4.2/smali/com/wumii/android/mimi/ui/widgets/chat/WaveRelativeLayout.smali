@@ -4,19 +4,13 @@
 
 
 # static fields
-.field private static a:Landroid/graphics/Paint;
+.field private static mPainta:Landroid/graphics/Paint;
 
 
 # instance fields
-.field private b:Landroid/widget/ImageView;
+.field private isZk:Z
 
-.field private c:F
-
-.field private d:F
-
-.field private e:J
-
-.field private f:Ljava/util/ArrayList;
+.field private mArrayListf:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -27,19 +21,25 @@
     .end annotation
 .end field
 
-.field private g:F
+.field private mDisplayMetricsl:Landroid/util/DisplayMetrics;
 
-.field private h:F
+.field private mFc:F
 
-.field private i:F
+.field private mFd:F
 
-.field private j:I
+.field private mFg:F
 
-.field private k:Z
+.field private mFh:F
 
-.field private l:Landroid/util/DisplayMetrics;
+.field private mFi:F
 
-.field private m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+.field private mICcgm:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+
+.field private mIj:I
+
+.field private mImageViewb:Landroid/widget/ImageView;
+
+.field private mJe:J
 
 
 # direct methods
@@ -79,12 +79,12 @@
     .line 31
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->e:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mJe:J
 
     .line 35
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->g:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFg:F
 
     .line 58
     new-instance v0, Landroid/graphics/Paint;
@@ -93,24 +93,24 @@
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a:Landroid/graphics/Paint;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mPainta:Landroid/graphics/Paint;
 
     .line 59
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a:Landroid/graphics/Paint;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mPainta:Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 60
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a:Landroid/graphics/Paint;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mPainta:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 61
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a:Landroid/graphics/Paint;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mPainta:Landroid/graphics/Paint;
 
     const v1, -0x69000001
 
@@ -121,7 +121,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     .line 65
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -132,10 +132,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->l:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mDisplayMetricsl:Landroid/util/DisplayMetrics;
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->l:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mDisplayMetricsl:Landroid/util/DisplayMetrics;
 
     const/high16 v1, 0x40a00000    # 5.0f
 
@@ -143,7 +143,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->j:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mIj:I
 
     .line 67
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a()V
@@ -157,13 +157,13 @@
 
     .prologue
     .line 114
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     monitor-enter v2
 
     .line 115
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -177,7 +177,7 @@
     if-ltz v1, :cond_2
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -190,7 +190,7 @@
 
     move-result v3
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->i:F
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFi:F
 
     cmpl-float v3, v3, v4
 
@@ -204,7 +204,7 @@
 
     .line 118
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -247,7 +247,7 @@
 
     .prologue
     .line 19
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->a:Landroid/graphics/Paint;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mPainta:Landroid/graphics/Paint;
 
     return-object v0
 .end method
@@ -257,7 +257,7 @@
 
     .prologue
     .line 127
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     monitor-enter v6
 
@@ -265,22 +265,22 @@
     :try_start_0
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->h:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFh:F
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->j:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mIj:I
 
     int-to-float v2, v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->g:F
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFg:F
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->c:F
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFc:F
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d:F
+    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFd:F
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;-><init>(FFFFF)V
 
     .line 129
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -309,7 +309,7 @@
     .line 135
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->k:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->isZk:Z
 
     .line 136
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->invalidate()V
@@ -325,16 +325,16 @@
     .line 140
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->k:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->isZk:Z
 
     .line 141
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 142
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -366,7 +366,7 @@
 
     .prologue
     .line 93
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->k:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->isZk:Z
 
     if-eqz v0, :cond_2
 
@@ -374,7 +374,7 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 95
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->e:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mJe:J
 
     const-wide/16 v2, -0x1
 
@@ -387,22 +387,22 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->e:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mJe:J
 
     .line 97
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mICcgm:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mICcgm:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mICcgm:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;)I
 
@@ -417,14 +417,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mICcgm:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     .line 101
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->e:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mJe:J
 
     .line 103
     :cond_1
@@ -438,7 +438,7 @@
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 108
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->k:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->isZk:Z
 
     if-eqz v0, :cond_3
 
@@ -460,7 +460,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/RelativeLayout;->onLayout(ZIIII)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mImageViewb:Landroid/widget/ImageView;
 
     if-nez v0, :cond_0
 
@@ -473,10 +473,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mImageViewb:Landroid/widget/ImageView;
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mImageViewb:Landroid/widget/ImageView;
 
     if-nez v0, :cond_0
 
@@ -489,7 +489,7 @@
 
     .line 81
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getHeight()I
 
@@ -500,13 +500,13 @@
     div-float/2addr v0, v2
 
     .line 82
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mIj:I
 
     int-to-float v1, v1
 
     sub-float v1, v0, v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->h:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFh:F
 
     .line 83
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->getWidth()I
@@ -517,25 +517,25 @@
 
     div-float/2addr v1, v2
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->i:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFi:F
 
     .line 84
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->j:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mIj:I
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->i:F
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFi:F
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->h:F
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFh:F
 
     sub-float/2addr v2, v3
 
     div-float/2addr v1, v2
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->g:F
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFg:F
 
     .line 86
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
@@ -548,7 +548,7 @@
 
     add-float/2addr v2, v0
 
-    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->c:F
+    iput v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFc:F
 
     .line 88
     iget v1, v1, Landroid/graphics/Point;->y:I
@@ -557,7 +557,7 @@
 
     add-float/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->mFd:F
 
     goto :goto_0
 .end method

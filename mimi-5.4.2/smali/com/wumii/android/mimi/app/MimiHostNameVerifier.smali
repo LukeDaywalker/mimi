@@ -9,7 +9,7 @@
 # static fields
 .field public static final a:Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
 
-.field private static final b:Lorg/slf4j/Logger;
+.field private static final mLoggerb:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->b:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->mLoggerb:Lorg/slf4j/Logger;
 
     .line 21
     new-instance v0, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;
@@ -140,7 +140,7 @@
     move-exception v0
 
     .line 32
-    sget-object v2, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->b:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/app/MimiHostNameVerifier;->mLoggerb:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

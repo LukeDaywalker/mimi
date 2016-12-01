@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/SwipeRefreshLayout;
+.field final synthetic mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 367
-    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$2;->a:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/SwipeRefreshLayout$2;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 370
-    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$2;->a:Landroid/support/v4/widget/SwipeRefreshLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SwipeRefreshLayout$2;->mSwipeRefreshLayouta:Landroid/support/v4/widget/SwipeRefreshLayout;
 
     invoke-static {v0, p1}, Landroid/support/v4/widget/SwipeRefreshLayout;->a(Landroid/support/v4/widget/SwipeRefreshLayout;F)V
 

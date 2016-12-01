@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private a:I
+.field private final mBufferedSourceb:Lokio/BufferedSource;
 
-.field private final b:Lokio/BufferedSource;
+.field private final mCRC32e:Ljava/util/zip/CRC32;
 
-.field private final c:Ljava/util/zip/Inflater;
+.field private mIa:I
 
-.field private final d:Lokio/InflaterSource;
+.field private final mInflaterSourced:Lokio/InflaterSource;
 
-.field private final e:Ljava/util/zip/CRC32;
+.field private final mInflaterc:Ljava/util/zip/Inflater;
 
 
 # direct methods
@@ -29,14 +29,14 @@
     .line 39
     const/4 v0, 0x0
 
-    iput v0, p0, Lokio/GzipSource;->a:I
+    iput v0, p0, Lokio/GzipSource;->mIa:I
 
     .line 58
     new-instance v0, Ljava/util/zip/CRC32;
 
     invoke-direct {v0}, Ljava/util/zip/CRC32;-><init>()V
 
-    iput-object v0, p0, Lokio/GzipSource;->e:Ljava/util/zip/CRC32;
+    iput-object v0, p0, Lokio/GzipSource;->mCRC32e:Ljava/util/zip/CRC32;
 
     .line 61
     if-nez p1, :cond_0
@@ -57,25 +57,25 @@
 
     invoke-direct {v0, v1}, Ljava/util/zip/Inflater;-><init>(Z)V
 
-    iput-object v0, p0, Lokio/GzipSource;->c:Ljava/util/zip/Inflater;
+    iput-object v0, p0, Lokio/GzipSource;->mInflaterc:Ljava/util/zip/Inflater;
 
     .line 63
     invoke-static {p1}, Lokio/Okio;->a(Lokio/Source;)Lokio/BufferedSource;
 
     move-result-object v0
 
-    iput-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iput-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     .line 64
     new-instance v0, Lokio/InflaterSource;
 
-    iget-object v1, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
-    iget-object v2, p0, Lokio/GzipSource;->c:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/GzipSource;->mInflaterc:Ljava/util/zip/Inflater;
 
     invoke-direct {v0, v1, v2}, Lokio/InflaterSource;-><init>(Lokio/BufferedSource;Ljava/util/zip/Inflater;)V
 
-    iput-object v0, p0, Lokio/GzipSource;->d:Lokio/InflaterSource;
+    iput-object v0, p0, Lokio/GzipSource;->mInflaterSourced:Lokio/InflaterSource;
 
     .line 65
     return-void
@@ -137,13 +137,13 @@
     const-wide/16 v2, 0x0
 
     .line 188
-    iget-object v0, p1, Lokio/Buffer;->a:Lokio/Segment;
+    iget-object v0, p1, Lokio/Buffer;->mSegmenta:Lokio/Segment;
 
     .line 189
     :goto_0
-    iget v1, v0, Lokio/Segment;->c:I
+    iget v1, v0, Lokio/Segment;->mIc:I
 
-    iget v4, v0, Lokio/Segment;->b:I
+    iget v4, v0, Lokio/Segment;->mIb:I
 
     sub-int/2addr v1, v4
 
@@ -154,9 +154,9 @@
     if-ltz v1, :cond_0
 
     .line 190
-    iget v1, v0, Lokio/Segment;->c:I
+    iget v1, v0, Lokio/Segment;->mIc:I
 
-    iget v4, v0, Lokio/Segment;->b:I
+    iget v4, v0, Lokio/Segment;->mIb:I
 
     sub-int/2addr v1, v4
 
@@ -165,7 +165,7 @@
     sub-long/2addr p2, v4
 
     .line 189
-    iget-object v0, v0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, v0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     goto :goto_0
 
@@ -177,7 +177,7 @@
     if-lez v1, :cond_1
 
     .line 195
-    iget v1, v0, Lokio/Segment;->b:I
+    iget v1, v0, Lokio/Segment;->mIb:I
 
     int-to-long v4, v1
 
@@ -186,7 +186,7 @@
     long-to-int v1, v4
 
     .line 196
-    iget v4, v0, Lokio/Segment;->c:I
+    iget v4, v0, Lokio/Segment;->mIc:I
 
     sub-int/2addr v4, v1
 
@@ -199,9 +199,9 @@
     long-to-int v4, v4
 
     .line 197
-    iget-object v5, p0, Lokio/GzipSource;->e:Ljava/util/zip/CRC32;
+    iget-object v5, p0, Lokio/GzipSource;->mCRC32e:Ljava/util/zip/CRC32;
 
-    iget-object v6, v0, Lokio/Segment;->a:[B
+    iget-object v6, v0, Lokio/Segment;->mArrayBa:[B
 
     invoke-virtual {v5, v6, v1, v4}, Ljava/util/zip/CRC32;->update([BII)V
 
@@ -211,7 +211,7 @@
     sub-long/2addr p4, v4
 
     .line 194
-    iget-object v0, v0, Lokio/Segment;->f:Lokio/Segment;
+    iget-object v0, v0, Lokio/Segment;->mSegmentf:Lokio/Segment;
 
     move-wide p2, v2
 
@@ -227,14 +227,14 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const-wide/16 v2, 0xa
 
     invoke-interface {v0, v2, v3}, Lokio/BufferedSource;->a(J)V
 
     .line 115
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -263,7 +263,7 @@
     :goto_0
     if-eqz v6, :cond_0
 
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -279,7 +279,7 @@
 
     .line 119
     :cond_0
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->k()S
 
@@ -293,7 +293,7 @@
     invoke-direct {p0, v1, v2, v0}, Lokio/GzipSource;->a(Ljava/lang/String;II)V
 
     .line 121
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const-wide/16 v2, 0x8
 
@@ -309,7 +309,7 @@
     if-ne v0, v1, :cond_3
 
     .line 128
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const-wide/16 v2, 0x2
 
@@ -318,7 +318,7 @@
     .line 129
     if-eqz v6, :cond_1
 
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -334,7 +334,7 @@
 
     .line 130
     :cond_1
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -345,7 +345,7 @@
     move-result v8
 
     .line 131
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     int-to-long v2, v8
 
@@ -354,7 +354,7 @@
     .line 132
     if-eqz v6, :cond_2
 
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -370,7 +370,7 @@
 
     .line 133
     :cond_2
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     int-to-long v2, v8
 
@@ -387,7 +387,7 @@
     if-ne v0, v1, :cond_7
 
     .line 141
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const/4 v1, 0x0
 
@@ -420,7 +420,7 @@
     :cond_5
     if-eqz v6, :cond_6
 
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -438,7 +438,7 @@
 
     .line 144
     :cond_6
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const-wide/16 v2, 0x1
 
@@ -457,7 +457,7 @@
     if-ne v0, v1, :cond_a
 
     .line 152
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const/4 v1, 0x0
 
@@ -482,7 +482,7 @@
     :cond_8
     if-eqz v6, :cond_9
 
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->c()Lokio/Buffer;
 
@@ -500,7 +500,7 @@
 
     .line 155
     :cond_9
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     const-wide/16 v2, 0x1
 
@@ -515,13 +515,13 @@
     .line 163
     const-string/jumbo v0, "FHCRC"
 
-    iget-object v1, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->m()S
 
     move-result v1
 
-    iget-object v2, p0, Lokio/GzipSource;->e:Ljava/util/zip/CRC32;
+    iget-object v2, p0, Lokio/GzipSource;->mCRC32e:Ljava/util/zip/CRC32;
 
     invoke-virtual {v2}, Ljava/util/zip/CRC32;->getValue()J
 
@@ -534,7 +534,7 @@
     invoke-direct {p0, v0, v1, v2}, Lokio/GzipSource;->a(Ljava/lang/String;II)V
 
     .line 164
-    iget-object v0, p0, Lokio/GzipSource;->e:Ljava/util/zip/CRC32;
+    iget-object v0, p0, Lokio/GzipSource;->mCRC32e:Ljava/util/zip/CRC32;
 
     invoke-virtual {v0}, Ljava/util/zip/CRC32;->reset()V
 
@@ -550,13 +550,13 @@
     .line 173
     const-string/jumbo v0, "CRC"
 
-    iget-object v1, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->n()I
 
     move-result v1
 
-    iget-object v2, p0, Lokio/GzipSource;->e:Ljava/util/zip/CRC32;
+    iget-object v2, p0, Lokio/GzipSource;->mCRC32e:Ljava/util/zip/CRC32;
 
     invoke-virtual {v2}, Ljava/util/zip/CRC32;->getValue()J
 
@@ -569,13 +569,13 @@
     .line 174
     const-string/jumbo v0, "ISIZE"
 
-    iget-object v1, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v1, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->n()I
 
     move-result v1
 
-    iget-object v2, p0, Lokio/GzipSource;->c:Ljava/util/zip/Inflater;
+    iget-object v2, p0, Lokio/GzipSource;->mInflaterc:Ljava/util/zip/Inflater;
 
     invoke-virtual {v2}, Ljava/util/zip/Inflater;->getTotalOut()I
 
@@ -642,7 +642,7 @@
 
     .line 72
     :cond_1
-    iget v2, p0, Lokio/GzipSource;->a:I
+    iget v2, p0, Lokio/GzipSource;->mIa:I
 
     if-nez v2, :cond_2
 
@@ -650,19 +650,19 @@
     invoke-direct {p0}, Lokio/GzipSource;->b()V
 
     .line 74
-    iput v3, p0, Lokio/GzipSource;->a:I
+    iput v3, p0, Lokio/GzipSource;->mIa:I
 
     .line 78
     :cond_2
-    iget v2, p0, Lokio/GzipSource;->a:I
+    iget v2, p0, Lokio/GzipSource;->mIa:I
 
     if-ne v2, v3, :cond_4
 
     .line 79
-    iget-wide v2, p1, Lokio/Buffer;->b:J
+    iget-wide v2, p1, Lokio/Buffer;->mJb:J
 
     .line 80
-    iget-object v4, p0, Lokio/GzipSource;->d:Lokio/InflaterSource;
+    iget-object v4, p0, Lokio/GzipSource;->mInflaterSourced:Lokio/InflaterSource;
 
     invoke-virtual {v4, p1, p2, p3}, Lokio/InflaterSource;->a(Lokio/Buffer;J)J
 
@@ -684,11 +684,11 @@
 
     .line 85
     :cond_3
-    iput v7, p0, Lokio/GzipSource;->a:I
+    iput v7, p0, Lokio/GzipSource;->mIa:I
 
     .line 91
     :cond_4
-    iget v2, p0, Lokio/GzipSource;->a:I
+    iget v2, p0, Lokio/GzipSource;->mIa:I
 
     if-ne v2, v7, :cond_5
 
@@ -698,10 +698,10 @@
     .line 93
     const/4 v2, 0x3
 
-    iput v2, p0, Lokio/GzipSource;->a:I
+    iput v2, p0, Lokio/GzipSource;->mIa:I
 
     .line 99
-    iget-object v2, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v2, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v2}, Lokio/BufferedSource;->g()Z
 
@@ -730,7 +730,7 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lokio/GzipSource;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lokio/GzipSource;->mBufferedSourceb:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->a()Lokio/Timeout;
 
@@ -744,7 +744,7 @@
 
     .prologue
     .line 182
-    iget-object v0, p0, Lokio/GzipSource;->d:Lokio/InflaterSource;
+    iget-object v0, p0, Lokio/GzipSource;->mInflaterSourced:Lokio/InflaterSource;
 
     invoke-virtual {v0}, Lokio/InflaterSource;->close()V
 

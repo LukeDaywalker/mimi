@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;->INIT:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;->PLAYING:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;->EXIST:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;->DOWNLOADING:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbw;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;->FAILED:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice$VoiceStatus;
 

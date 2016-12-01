@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICa1;
+.field final synthetic mICa1a:Lcom/baidu/location/ICa1;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/ICa1;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iput-object p1, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -42,7 +42,7 @@
 
     if-eq v1, v2, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;Z)Z
 
@@ -55,7 +55,7 @@
 
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v1, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-static {v1}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;)Ljava/lang/String;
 
@@ -74,7 +74,7 @@
     :goto_1
     if-nez v2, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;Z)Z
 
@@ -95,7 +95,7 @@
     :try_start_1
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    iget-object v3, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v3, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     const/4 v0, 0x0
 
@@ -111,7 +111,7 @@
 
     invoke-static {v3, v0, v1, v2}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;Ljava/lang/String;Lcom/baidu/location/ICu$ICa;Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iget-object v3, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v3, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     const/4 v0, 0x2
 
@@ -136,7 +136,7 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     :goto_2
-    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->a:Lcom/baidu/location/ICa1;
+    iget-object v0, p0, Lcom/baidu/location/ICa1$ICb;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;Z)Z
 

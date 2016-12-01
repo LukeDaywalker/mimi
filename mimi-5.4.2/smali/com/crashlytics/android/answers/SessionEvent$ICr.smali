@@ -37,7 +37,7 @@
 
 .field public static final enum k:Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
-.field private static final synthetic l:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
+.field private static final synthetic mArrayICrl:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
 
 # direct methods
@@ -227,7 +227,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/crashlytics/android/answers/SessionEvent$ICr;->l:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sput-object v0, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mArrayICrl:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
     return-void
 .end method
@@ -268,7 +268,7 @@
 
     .prologue
     .line 13
-    sget-object v0, Lcom/crashlytics/android/answers/SessionEvent$ICr;->l:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
+    sget-object v0, Lcom/crashlytics/android/answers/SessionEvent$ICr;->mArrayICrl:[Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
     invoke-virtual {v0}, [Lcom/crashlytics/android/answers/SessionEvent$ICr;->clone()Ljava/lang/Object;
 

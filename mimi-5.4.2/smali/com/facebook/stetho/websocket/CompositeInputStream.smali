@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:[Ljava/io/InputStream;
+.field private final mArrayInputStreama:[Ljava/io/InputStream;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -38,12 +38,12 @@
 
     .line 21
     :cond_1
-    iput-object p1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iput-object p1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
     .line 22
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iput v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     .line 23
     return-void
@@ -64,7 +64,7 @@
     move-object v0, v1
 
     :goto_0
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
     array-length v1, v1
 
@@ -72,7 +72,7 @@
 
     .line 39
     :try_start_0
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
     aget-object v1, v1, v2
 
@@ -129,22 +129,22 @@
 
     .prologue
     .line 95
-    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 96
-    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iput v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     .line 97
     const/4 v0, 0x1
@@ -166,9 +166,9 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
-    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     aget-object v0, v0, v1
 
@@ -184,7 +184,7 @@
 
     .prologue
     .line 32
-    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     invoke-direct {p0, v0}, Lcom/facebook/stetho/websocket/CompositeInputStream;->a(I)V
 
@@ -220,9 +220,9 @@
     .prologue
     .line 86
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
-    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     aget-object v0, v0, v1
 
@@ -268,9 +268,9 @@
     .prologue
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->a:[Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mArrayInputStreama:[Ljava/io/InputStream;
 
-    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->b:I
+    iget v1, p0, Lcom/facebook/stetho/websocket/CompositeInputStream;->mIb:I
 
     aget-object v0, v0, v1
 

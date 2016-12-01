@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+.field final synthetic mGroupChatSquareActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICcz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICcz;->mGroupChatSquareActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICcz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICcz;->mGroupChatSquareActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)V
 

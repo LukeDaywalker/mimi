@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/wxop/stat/ICz;
+.field final synthetic mICza:Lcom/tencent/wxop/stat/ICz;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/wxop/stat/ICz;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICas;->a:Lcom/tencent/wxop/stat/ICz;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICas;->mICza:Lcom/tencent/wxop/stat/ICz;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICas;->a:Lcom/tencent/wxop/stat/ICz;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICas;->mICza:Lcom/tencent/wxop/stat/ICz;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICz;->a(Lcom/tencent/wxop/stat/ICz;)Lcom/tencent/wxop/stat/b/ICf;
 
@@ -30,7 +30,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICas;->a:Lcom/tencent/wxop/stat/ICz;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICas;->mICza:Lcom/tencent/wxop/stat/ICz;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICz;->a(Lcom/tencent/wxop/stat/ICz;)Lcom/tencent/wxop/stat/b/ICf;
 

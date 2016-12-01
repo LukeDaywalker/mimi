@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;->BANED_BY_REPORTS:Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;->UNBANED_BY_OWNER:Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;->UNBANED_BY_SYSTEM:Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatGroupBannedMemberMessageParser$ICd;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;->UNBANED_BY_VIP:Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;
 

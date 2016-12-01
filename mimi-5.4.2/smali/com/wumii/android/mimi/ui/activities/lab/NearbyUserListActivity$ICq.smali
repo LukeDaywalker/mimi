@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+.field final synthetic mGenderTypea:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+.field final synthetic mNearbyUserListActivityb:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 96
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->mNearbyUserListActivityb:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->a:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->mGenderTypea:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->mNearbyUserListActivityb:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
@@ -55,7 +55,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->mNearbyUserListActivityb:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->finish()V
 

@@ -4,7 +4,9 @@
 
 
 # static fields
-.field private static final a:Landroid/util/SparseArray;
+.field private static mIb:I
+
+.field private static final mSparseArraya:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private static b:I
 
 
 # direct methods
@@ -28,12 +28,12 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->a:Landroid/util/SparseArray;
+    sput-object v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->mSparseArraya:Landroid/util/SparseArray;
 
     .line 64
     const/4 v0, 0x1
 
-    sput v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->b:I
+    sput v0, Landroid/support/v4/content/WakefulBroadcastReceiver;->mIb:I
 
     return-void
 .end method

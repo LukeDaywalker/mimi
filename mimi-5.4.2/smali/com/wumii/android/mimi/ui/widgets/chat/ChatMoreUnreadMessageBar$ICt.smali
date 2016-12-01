@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
+.field final synthetic mChatMoreUnreadMessageBara:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;->mChatMoreUnreadMessageBara:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;->a:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$ICt;->mChatMoreUnreadMessageBara:Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;
 
     const/16 v1, 0x8
 

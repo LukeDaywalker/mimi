@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/Map;
+.field private mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field private c:Ljava/util/Map;
+.field private mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -30,7 +30,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/Map;
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -42,7 +42,7 @@
     .end annotation
 .end field
 
-.field private e:Ljava/util/Map;
+.field private mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -54,7 +54,7 @@
     .end annotation
 .end field
 
-.field private f:Ljava/util/Map;
+.field private mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -80,35 +80,35 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     .line 30
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->c:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapc:Ljava/util/Map;
 
     .line 31
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapd:Ljava/util/Map;
 
     .line 32
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->e:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMape:Ljava/util/Map;
 
     .line 33
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->f:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapf:Ljava/util/Map;
 
     .line 34
     return-void
@@ -121,7 +121,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -136,7 +136,7 @@
     sget-object v0, Lcom/wumii/android/mimi/models/entities/secret/Sort;->ASC:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     .line 40
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->c:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapf:Ljava/util/Map;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -199,7 +199,7 @@
 
     move-result-object v4
 
-    invoke-static {v0, v4}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v4}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->c:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -259,7 +259,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapd:Ljava/util/Map;
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -298,7 +298,7 @@
     const/4 v3, 0x0
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -415,7 +415,7 @@
 
     .line 201
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v1, p1, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -436,7 +436,7 @@
 
     .line 205
     :goto_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapd:Ljava/util/Map;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -445,7 +445,7 @@
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMape:Ljava/util/Map;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -515,7 +515,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -603,7 +603,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMape:Ljava/util/Map;
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -620,7 +620,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -628,7 +628,7 @@
 
     check-cast v0, Ljava/lang/Boolean;
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v0
 
@@ -672,7 +672,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -719,7 +719,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -727,7 +727,7 @@
 
     check-cast v0, Ljava/lang/Boolean;
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v0
 
@@ -739,7 +739,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -781,7 +781,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -805,7 +805,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->b:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->mMapb:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

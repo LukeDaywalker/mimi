@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+.field final synthetic mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 460
-    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iput-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-direct {p0}, Landroid/support/v4/media/session/IMediaControllerCallback$Stub;-><init>()V
 
@@ -39,7 +39,7 @@
     const/4 v2, 0x0
 
     .line 469
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 494
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 479
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -122,7 +122,7 @@
 
     .line 504
     :goto_0
-    iget-object v1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v1, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v1}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 474
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -167,7 +167,7 @@
 
     .prologue
     .line 489
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -188,7 +188,7 @@
 
     .prologue
     .line 464
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
@@ -216,7 +216,7 @@
 
     .prologue
     .line 484
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->a:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;->mCallbacka:Landroid/support/v4/media/session/MediaControllerCompat$Callback;
 
     invoke-static {v0}, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 

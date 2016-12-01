@@ -4,13 +4,11 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/websocket/SimpleSession;
+.field private final mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
 
-.field private final b:Lcom/facebook/stetho/json/ObjectMapper;
+.field private mJc:J
 
-.field private c:J
-
-.field private final d:Ljava/util/Map;
+.field private final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -22,7 +20,9 @@
     .end annotation
 .end field
 
-.field private final e:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+.field private final mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
+
+.field private final mSimpleSessiona:Lcom/facebook/stetho/websocket/SimpleSession;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMapd:Ljava/util/Map;
 
     .line 34
     new-instance v0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
@@ -47,10 +47,10 @@
 
     invoke-direct {v0, v1}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;-><init>(Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICd;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->e:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
 
     .line 37
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
     .line 38
     invoke-static {p2}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -59,7 +59,7 @@
 
     check-cast v0, Lcom/facebook/stetho/websocket/SimpleSession;
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->a:Lcom/facebook/stetho/websocket/SimpleSession;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mSimpleSessiona:Lcom/facebook/stetho/websocket/SimpleSession;
 
     .line 39
     return-void
@@ -73,16 +73,16 @@
     monitor-enter p0
 
     :try_start_0
-    iget-wide v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->c:J
+    iget-wide v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mJc:J
 
     const-wide/16 v2, 0x1
 
     add-long/2addr v2, v0
 
-    iput-wide v2, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->c:J
+    iput-wide v2, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mJc:J
 
     .line 76
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->d:Ljava/util/Map;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMapd:Ljava/util/Map;
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -120,7 +120,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mMapd:Ljava/util/Map;
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->a:Lcom/facebook/stetho/websocket/SimpleSession;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mSimpleSessiona:Lcom/facebook/stetho/websocket/SimpleSession;
 
     return-object v0
 .end method
@@ -178,7 +178,7 @@
 
     .line 53
     :goto_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
     const-class v2, Lorg/json/JSONObject;
 
@@ -194,7 +194,7 @@
     invoke-direct {v2, v1, p1, v0}, Lcom/facebook/stetho/inspector/jsonrpc/protocol/JsonRpcRequest;-><init>(Ljava/lang/Long;Ljava/lang/String;Lorg/json/JSONObject;)V
 
     .line 57
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
     const-class v1, Lorg/json/JSONObject;
 
@@ -210,7 +210,7 @@
     move-result-object v0
 
     .line 59
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->a:Lcom/facebook/stetho/websocket/SimpleSession;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mSimpleSessiona:Lcom/facebook/stetho/websocket/SimpleSession;
 
     invoke-interface {v1, v0}, Lcom/facebook/stetho/websocket/SimpleSession;->a(Ljava/lang/String;)V
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->e:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer;->mICee:Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;
 
     invoke-virtual {v0}, Lcom/facebook/stetho/inspector/jsonrpc/JsonRpcPeer$ICe;->a()V
 

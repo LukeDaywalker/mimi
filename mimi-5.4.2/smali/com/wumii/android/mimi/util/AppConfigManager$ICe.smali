@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+.field final synthetic mAppConfigModulea:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-.field final synthetic b:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+.field final synthetic mICcb:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 224
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->b:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->mICcb:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->a:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iput-object p2, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->mAppConfigModulea:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,7 +32,7 @@
     .prologue
     .line 228
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->b:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->mICcb:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->b(Lcom/wumii/android/mimi/util/AppConfigManager$ICc;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -40,7 +40,7 @@
 
     const-string/jumbo v1, "config"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->a:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->mAppConfigModulea:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0
@@ -55,7 +55,7 @@
     move-exception v0
 
     .line 230
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->b:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/AppConfigManager$ICe;->mICcb:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;->c(Lcom/wumii/android/mimi/util/AppConfigManager$ICc;)Lorg/slf4j/Logger;
 

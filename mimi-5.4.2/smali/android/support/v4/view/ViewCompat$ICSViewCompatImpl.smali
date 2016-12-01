@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static b:Ljava/lang/reflect/Field;
+.field static isZc:Z
 
-.field static c:Z
+.field static mFieldb:Ljava/lang/reflect/Field;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .line 1136
     const/4 v0, 0x0
 
-    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->c:Z
+    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->isZc:Z
 
     return-void
 .end method
@@ -105,7 +105,7 @@
     const/4 v1, 0x0
 
     .line 1166
-    sget-boolean v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->c:Z
+    sget-boolean v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->isZc:Z
 
     if-eqz v2, :cond_0
 
@@ -115,7 +115,7 @@
 
     .line 1169
     :cond_0
-    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->b:Ljava/lang/reflect/Field;
+    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mFieldb:Ljava/lang/reflect/Field;
 
     if-nez v2, :cond_1
 
@@ -129,10 +129,10 @@
 
     move-result-object v2
 
-    sput-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->b:Ljava/lang/reflect/Field;
+    sput-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mFieldb:Ljava/lang/reflect/Field;
 
     .line 1173
-    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->b:Ljava/lang/reflect/Field;
+    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mFieldb:Ljava/lang/reflect/Field;
 
     const/4 v3, 0x1
 
@@ -143,7 +143,7 @@
     .line 1180
     :cond_1
     :try_start_1
-    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->b:Ljava/lang/reflect/Field;
+    sget-object v2, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mFieldb:Ljava/lang/reflect/Field;
 
     invoke-virtual {v2, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -163,7 +163,7 @@
     move-exception v2
 
     .line 1175
-    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->c:Z
+    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->isZc:Z
 
     goto :goto_0
 
@@ -178,7 +178,7 @@
     move-exception v2
 
     .line 1182
-    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->c:Z
+    sput-boolean v0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->isZc:Z
 
     goto :goto_0
 .end method
@@ -200,7 +200,7 @@
 
     .prologue
     .line 1189
-    iget-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->a:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     if-nez v0, :cond_0
 
@@ -209,11 +209,11 @@
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->a:Ljava/util/WeakHashMap;
+    iput-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     .line 1193
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->a:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -230,7 +230,7 @@
     invoke-direct {v0, p1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;-><init>(Landroid/view/View;)V
 
     .line 1196
-    iget-object v1, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->a:Ljava/util/WeakHashMap;
+    iget-object v1, p0, Landroid/support/v4/view/ViewCompat$ICSViewCompatImpl;->mWeakHashMapa:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

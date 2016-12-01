@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+.field private isZd:Z
 
-.field private final b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+.field private isZe:Z
 
-.field private final c:[Z
+.field private final mArrayZc:[Z
 
-.field private d:Z
+.field final synthetic mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
-.field private e:Z
+.field private final mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
 
 # direct methods
@@ -21,12 +21,12 @@
 
     .prologue
     .line 771
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 772
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     .line 773
     invoke-static {p2}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;->d(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;)Z
@@ -38,7 +38,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->c:[Z
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mArrayZc:[Z
 
     .line 774
     return-void
@@ -69,7 +69,7 @@
 
     .prologue
     .line 765
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
 
     .prologue
     .line 765
-    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->d:Z
+    iput-boolean p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->isZd:Z
 
     return p1
 .end method
@@ -89,7 +89,7 @@
 
     .prologue
     .line 765
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->c:[Z
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mArrayZc:[Z
 
     return-object v0
 .end method
@@ -101,13 +101,13 @@
 
     .prologue
     .line 813
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     monitor-enter v2
 
     .line 814
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     invoke-static {v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;->a(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;)Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;
 
@@ -135,7 +135,7 @@
     .line 817
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     invoke-static {v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;->d(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;)Z
 
@@ -144,7 +144,7 @@
     if-nez v0, :cond_1
 
     .line 818
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->c:[Z
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mArrayZc:[Z
 
     const/4 v1, 0x1
 
@@ -152,7 +152,7 @@
 
     .line 820
     :cond_1
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     invoke-virtual {v0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;->b(I)Ljava/io/File;
     :try_end_1
@@ -190,7 +190,7 @@
     move-exception v0
 
     .line 826
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-static {v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;->g(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;)Ljava/io/File;
 
@@ -238,21 +238,21 @@
     const/4 v2, 0x1
 
     .line 854
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->d:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->isZd:Z
 
     if-eqz v0, :cond_0
 
     .line 855
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     const/4 v1, 0x0
 
     invoke-static {v0, p0, v1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;->a(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;Z)V
 
     .line 856
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->b:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mICfb:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;
 
     invoke-static {v1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;->c(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICf;)Ljava/lang/String;
 
@@ -262,14 +262,14 @@
 
     .line 860
     :goto_0
-    iput-boolean v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->e:Z
+    iput-boolean v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->isZe:Z
 
     .line 861
     return-void
 
     .line 858
     :cond_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-static {v0, p0, v2}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;->a(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;Z)V
 
@@ -281,7 +281,7 @@
 
     .prologue
     .line 868
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICd;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     const/4 v1, 0x0
 

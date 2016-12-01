@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field private a:I
+.field private isZh:Z
 
-.field private b:Ljava/lang/String;
+.field private mArrayCe:[C
 
-.field private c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+.field private mArrayStringj:[Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mIa:I
 
-.field private e:[C
+.field private mIi:I
 
-.field private f:Ljavax/net/SocketFactory;
+.field private mIk:I
 
-.field private g:Ljava/util/Properties;
+.field private mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
-.field private h:Z
+.field private mPropertiesg:Ljava/util/Properties;
 
-.field private i:I
+.field private mSocketFactoryf:Ljavax/net/SocketFactory;
 
-.field private j:[Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
-.field private k:I
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -40,34 +40,34 @@
     .line 55
     const/16 v0, 0x3c
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIa:I
 
     .line 56
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->b:Ljava/lang/String;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mStringb:Ljava/lang/String;
 
     .line 57
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 61
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->g:Ljava/util/Properties;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mPropertiesg:Ljava/util/Properties;
 
     .line 62
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->h:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->isZh:Z
 
     .line 63
     const/16 v0, 0x1e
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->i:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIi:I
 
     .line 64
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->j:[Ljava/lang/String;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mArrayStringj:[Ljava/lang/String;
 
     .line 65
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->k:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIk:I
 
     .line 83
     return-void
@@ -204,7 +204,7 @@
 
     .line 214
     :cond_0
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIa:I
 
     .line 215
     return-void
@@ -238,7 +238,7 @@
 
     .line 117
     :cond_0
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d:Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mStringd:Ljava/lang/String;
 
     .line 118
     return-void
@@ -249,7 +249,7 @@
 
     .prologue
     .line 389
-    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->h:Z
+    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->isZh:Z
 
     .line 390
     return-void
@@ -260,7 +260,7 @@
 
     .prologue
     .line 97
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->e:[C
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mArrayCe:[C
 
     .line 98
     return-void
@@ -271,7 +271,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->e:[C
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mArrayCe:[C
 
     return-object v0
 .end method
@@ -281,7 +281,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->d:Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -312,7 +312,7 @@
 
     .line 492
     :cond_0
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->k:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIk:I
 
     .line 493
     return-void
@@ -323,7 +323,7 @@
 
     .prologue
     .line 183
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIa:I
 
     return v0
 .end method
@@ -333,7 +333,7 @@
 
     .prologue
     .line 192
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->k:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIk:I
 
     return v0
 .end method
@@ -343,7 +343,7 @@
 
     .prologue
     .line 223
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->i:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mIi:I
 
     return v0
 .end method
@@ -353,7 +353,7 @@
 
     .prologue
     .line 247
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->f:Ljavax/net/SocketFactory;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mSocketFactoryf:Ljavax/net/SocketFactory;
 
     return-object v0
 .end method
@@ -363,7 +363,7 @@
 
     .prologue
     .line 267
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->b:Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -373,7 +373,7 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->c:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mMqttMessagec:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     return-object v0
 .end method
@@ -383,7 +383,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->g:Ljava/util/Properties;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mPropertiesg:Ljava/util/Properties;
 
     return-object v0
 .end method
@@ -393,7 +393,7 @@
 
     .prologue
     .line 367
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->h:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->isZh:Z
 
     return v0
 .end method
@@ -403,7 +403,7 @@
 
     .prologue
     .line 397
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->j:[Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->mArrayStringj:[Ljava/lang/String;
 
     return-object v0
 .end method

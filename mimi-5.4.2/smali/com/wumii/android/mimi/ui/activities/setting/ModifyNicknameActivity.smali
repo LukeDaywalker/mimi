@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private n:Landroid/widget/EditText;
+.field private isZp:Z
 
-.field private o:Landroid/widget/TextView;
+.field private mCircleManagerq:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private p:Z
+.field private mEditTextn:Landroid/widget/EditText;
 
-.field private q:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mTextViewo:Landroid/widget/TextView;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 31
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->p:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->isZp:Z
 
     return p1
 .end method
@@ -49,7 +49,7 @@
 
     .prologue
     .line 31
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->p:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->isZp:Z
 
     return v0
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->o:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mTextViewo:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -69,7 +69,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mCircleManagerq:Lcom/wumii/android/mimi/manager/CircleManager;
 
     return-object v0
 .end method
@@ -143,7 +143,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mCircleManagerq:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 43
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
@@ -162,7 +162,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 47
     const v0, 0x7f0b00dc
@@ -173,10 +173,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICk;
 
@@ -185,9 +185,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->n:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

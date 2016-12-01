@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->b:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->b:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/CircleShareController;->a:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->b:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v1, v1, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/CircleShareController;->j()Ljava/lang/String;
 
@@ -56,9 +56,9 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->b:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mICqb:Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->a:Lcom/wumii/android/mimi/models/share/CircleShareController;
+    iget-object v4, v4, Lcom/wumii/android/mimi/models/share/CircleShareController$ICq;->mCircleShareControllera:Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/share/CircleShareController;->j()Ljava/lang/String;
 
@@ -68,7 +68,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->a:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/CircleShareController$ICr;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

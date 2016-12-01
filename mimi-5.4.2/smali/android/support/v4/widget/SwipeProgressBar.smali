@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/view/animation/Interpolator;
+.field private static final mInterpolatora:Landroid/view/animation/Interpolator;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/animation/FastOutSlowInInterpolator;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/SwipeProgressBar;->a:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/widget/SwipeProgressBar;->mInterpolatora:Landroid/view/animation/Interpolator;
 
     return-void
 .end method

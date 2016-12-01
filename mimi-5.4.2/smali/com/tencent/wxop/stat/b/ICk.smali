@@ -3,27 +3,27 @@
 
 
 # static fields
-.field static final synthetic g:Z
+.field static final synthetic isZg:Z
 
-.field private static final h:[B
+.field private static final mArrayBh:[B
 
-.field private static final i:[B
+.field private static final mArrayBi:[B
 
 
 # instance fields
-.field c:I
-
 .field public final d:Z
 
 .field public final e:Z
 
 .field public final f:Z
 
-.field private final j:[B
+.field private final mArrayBj:[B
 
-.field private k:I
+.field private final mArrayBl:[B
 
-.field private final l:[B
+.field mIc:I
+
+.field private mIk:I
 
 
 # direct methods
@@ -43,19 +43,19 @@
     const/4 v0, 0x1
 
     :goto_0
-    sput-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->g:Z
+    sput-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->isZg:Z
 
     new-array v0, v1, [B
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICk;->h:[B
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBh:[B
 
     new-array v0, v1, [B
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/tencent/wxop/stat/b/ICk;->i:[B
+    sput-object v0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBi:[B
 
     return-void
 
@@ -220,17 +220,17 @@
 
     iput-boolean v1, p0, Lcom/tencent/wxop/stat/b/ICk;->f:Z
 
-    sget-object v0, Lcom/tencent/wxop/stat/b/ICk;->h:[B
+    sget-object v0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBh:[B
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->l:[B
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBl:[B
 
     const/4 v0, 0x2
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
-    iput v1, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iput v1, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICk;->e:Z
 
@@ -239,7 +239,7 @@
     const/16 v0, 0x13
 
     :goto_0
-    iput v0, p0, Lcom/tencent/wxop/stat/b/ICk;->k:I
+    iput v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIk:I
 
     return-void
 
@@ -264,17 +264,17 @@
 
     const/4 v4, 0x0
 
-    iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICk;->l:[B
+    iget-object v7, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBl:[B
 
     iget-object v8, p0, Lcom/tencent/wxop/stat/b/ICk;->a:[B
 
-    iget v2, p0, Lcom/tencent/wxop/stat/b/ICk;->k:I
+    iget v2, p0, Lcom/tencent/wxop/stat/b/ICk;->mIk:I
 
     add-int/lit8 v9, p2, 0x0
 
     const/4 v0, -0x1
 
-    iget v1, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v1, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     packed-switch v1, :pswitch_data_0
 
@@ -449,7 +449,7 @@
     :pswitch_1
     if-gt v6, v9, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     aget-byte v0, v0, v4
 
@@ -471,7 +471,7 @@
 
     or-int/2addr v0, v1
 
-    iput v4, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iput v4, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     move v5, v0
 
@@ -482,7 +482,7 @@
     :pswitch_2
     if-lez v9, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     aget-byte v0, v0, v4
 
@@ -490,7 +490,7 @@
 
     shl-int/lit8 v0, v0, 0x10
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     aget-byte v1, v1, v3
 
@@ -506,7 +506,7 @@
 
     or-int/2addr v0, v1
 
-    iput v4, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iput v4, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     move v5, v0
 
@@ -515,7 +515,7 @@
     goto/16 :goto_0
 
     :cond_2
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     sub-int v0, v1, v0
 
@@ -523,11 +523,11 @@
 
     if-ne v0, v2, :cond_8
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     if-lez v0, :cond_7
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     aget-byte v0, v0, v4
 
@@ -538,11 +538,11 @@
 
     shl-int/lit8 v4, v0, 0x4
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iput v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     add-int/lit8 v2, v5, 0x1
 
@@ -605,11 +605,11 @@
 
     :cond_6
     :goto_4
-    sget-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->g:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->isZg:Z
 
     if-nez v0, :cond_e
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     if-eqz v0, :cond_e
 
@@ -631,7 +631,7 @@
     goto :goto_3
 
     :cond_8
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     sub-int v0, v1, v0
 
@@ -639,11 +639,11 @@
 
     if-ne v0, v2, :cond_d
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     if-le v0, v3, :cond_b
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     aget-byte v0, v0, v4
 
@@ -654,11 +654,11 @@
 
     shl-int/lit8 v10, v0, 0xa
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     if-lez v0, :cond_c
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->j:[B
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICk;->mArrayBj:[B
 
     add-int/lit8 v2, v4, 0x1
 
@@ -673,11 +673,11 @@
 
     or-int/2addr v0, v10
 
-    iget v2, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iget v2, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     sub-int/2addr v2, v4
 
-    iput v2, p0, Lcom/tencent/wxop/stat/b/ICk;->c:I
+    iput v2, p0, Lcom/tencent/wxop/stat/b/ICk;->mIc:I
 
     add-int/lit8 v2, v5, 0x1
 
@@ -789,7 +789,7 @@
     goto/16 :goto_4
 
     :cond_e
-    sget-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->g:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/b/ICk;->isZg:Z
 
     if-nez v0, :cond_f
 
@@ -804,7 +804,7 @@
     :cond_f
     iput v5, p0, Lcom/tencent/wxop/stat/b/ICk;->b:I
 
-    iput v6, p0, Lcom/tencent/wxop/stat/b/ICk;->k:I
+    iput v6, p0, Lcom/tencent/wxop/stat/b/ICk;->mIk:I
 
     return v3
 

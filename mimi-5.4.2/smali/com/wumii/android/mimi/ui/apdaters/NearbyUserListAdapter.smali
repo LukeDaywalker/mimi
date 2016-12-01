@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -31,14 +31,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLista:Ljava/util/List;
 
     .line 27
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -95,7 +95,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLista:Ljava/util/List;
 
     .line 31
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->notifyDataSetChanged()V
@@ -109,7 +109,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -151,7 +151,7 @@
     if-nez p2, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300ed
 

@@ -4,17 +4,15 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private mFileb:Ljava/io/File;
 
-.field private b:Ljava/io/File;
+.field private mIdTrackingc:Lu/aly/IdTracking;
 
-.field private c:Lu/aly/IdTracking;
+.field private mJd:J
 
-.field private d:J
+.field private mJe:J
 
-.field private e:J
-
-.field private f:Ljava/util/Set;
+.field private mSetf:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -24,6 +22,8 @@
         }
     .end annotation
 .end field
+
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -37,19 +37,19 @@
     .line 28
     const-string/jumbo v0, "umeng_it.cache"
 
-    iput-object v0, p0, Lu/aly/IdTracker;->a:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/IdTracker;->mStringa:Ljava/lang/String;
 
     .line 31
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iput-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     .line 34
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iput-object v0, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     .line 37
     new-instance v0, Ljava/io/File;
@@ -62,12 +62,12 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lu/aly/IdTracker;->b:Ljava/io/File;
+    iput-object v0, p0, Lu/aly/IdTracker;->mFileb:Ljava/io/File;
 
     .line 38
     const-wide/32 v0, 0x5265c00
 
-    iput-wide v0, p0, Lu/aly/IdTracker;->e:J
+    iput-wide v0, p0, Lu/aly/IdTracker;->mJe:J
 
     .line 39
     return-void
@@ -106,7 +106,7 @@
 
     .line 184
     :try_start_2
-    iget-object v1, p0, Lu/aly/IdTracker;->b:Ljava/io/File;
+    iget-object v1, p0, Lu/aly/IdTracker;->mFileb:Ljava/io/File;
 
     invoke-static {v1, v0}, Lu/aly/Helper;->a(Ljava/io/File;[B)V
     :try_end_2
@@ -161,7 +161,7 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 83
-    iget-object v0, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v0, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -245,7 +245,7 @@
 
     .line 99
     :try_start_0
-    iput-object v1, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iput-object v1, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     .line 100
     monitor-exit p0
@@ -271,7 +271,7 @@
     const/4 v0, 0x0
 
     .line 156
-    iget-object v1, p0, Lu/aly/IdTracker;->b:Ljava/io/File;
+    iget-object v1, p0, Lu/aly/IdTracker;->mFileb:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -288,7 +288,7 @@
     :try_start_0
     new-instance v2, Ljava/io/FileInputStream;
 
-    iget-object v1, p0, Lu/aly/IdTracker;->b:Ljava/io/File;
+    iget-object v1, p0, Lu/aly/IdTracker;->mFileb:Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
     :try_end_0
@@ -379,11 +379,11 @@
     move-result-wide v4
 
     .line 51
-    iget-wide v0, p0, Lu/aly/IdTracker;->d:J
+    iget-wide v0, p0, Lu/aly/IdTracker;->mJd:J
 
     sub-long v0, v4, v0
 
-    iget-wide v6, p0, Lu/aly/IdTracker;->e:J
+    iget-wide v6, p0, Lu/aly/IdTracker;->mJe:J
 
     cmp-long v0, v0, v6
 
@@ -393,7 +393,7 @@
     const/4 v0, 0x0
 
     .line 54
-    iget-object v1, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v1, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -454,7 +454,7 @@
 
     .line 70
     :cond_2
-    iput-wide v4, p0, Lu/aly/IdTracker;->d:J
+    iput-wide v4, p0, Lu/aly/IdTracker;->mJd:J
 
     .line 72
     :cond_3
@@ -471,7 +471,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v0, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -484,7 +484,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iget-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     return-object v0
 .end method
@@ -497,7 +497,7 @@
 
     .line 108
     .line 109
-    iget-object v0, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v0, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -564,7 +564,7 @@
     if-eqz v1, :cond_2
 
     .line 119
-    iget-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iget-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     invoke-virtual {v0, v2}, Lu/aly/IdTracking;->b(Z)V
 
@@ -601,7 +601,7 @@
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v2, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v2}, Ljava/util/Set;->size()I
 
@@ -614,10 +614,10 @@
 
     .line 132
     :try_start_0
-    iput-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iput-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     .line 134
-    iget-object v0, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v0, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -638,7 +638,7 @@
     check-cast v0, Lu/aly/AbstractIdTracker;
 
     .line 135
-    iget-object v3, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iget-object v3, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     invoke-virtual {v0, v3}, Lu/aly/AbstractIdTracker;->a(Lu/aly/IdTracking;)V
 
@@ -685,7 +685,7 @@
     check-cast v0, Lu/aly/AbstractIdTracker;
 
     .line 143
-    iget-object v2, p0, Lu/aly/IdTracker;->f:Ljava/util/Set;
+    iget-object v2, p0, Lu/aly/IdTracker;->mSetf:Ljava/util/Set;
 
     invoke-interface {v2, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -708,11 +708,11 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iget-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lu/aly/IdTracker;->c:Lu/aly/IdTracking;
+    iget-object v0, p0, Lu/aly/IdTracker;->mIdTrackingc:Lu/aly/IdTracking;
 
     invoke-direct {p0, v0}, Lu/aly/IdTracker;->a(Lu/aly/IdTracking;)V
 

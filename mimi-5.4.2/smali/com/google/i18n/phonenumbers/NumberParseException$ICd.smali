@@ -25,7 +25,7 @@
 
 .field public static final enum e:Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
-.field private static final synthetic f:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+.field private static final synthetic mArrayICdf:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
 
 # direct methods
@@ -113,7 +113,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->f:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sput-object v0, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mArrayICdf:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     return-void
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->f:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
+    sget-object v0, Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->mArrayICdf:[Lcom/google/i18n/phonenumbers/NumberParseException$ICd;
 
     invoke-virtual {v0}, [Lcom/google/i18n/phonenumbers/NumberParseException$ICd;->clone()Ljava/lang/Object;
 

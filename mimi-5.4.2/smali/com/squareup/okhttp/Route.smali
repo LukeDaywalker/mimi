@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Lcom/squareup/okhttp/Address;
+.field final mAddressa:Lcom/squareup/okhttp/Address;
 
-.field final b:Ljava/net/Proxy;
+.field final mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
-.field final c:Ljava/net/InetSocketAddress;
+.field final mProxyb:Ljava/net/Proxy;
 
 
 # direct methods
@@ -59,13 +59,13 @@
 
     .line 49
     :cond_2
-    iput-object p1, p0, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iput-object p1, p0, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
     .line 50
-    iput-object p2, p0, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iput-object p2, p0, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
     .line 51
-    iput-object p3, p0, Lcom/squareup/okhttp/Route;->c:Ljava/net/InetSocketAddress;
+    iput-object p3, p0, Lcom/squareup/okhttp/Route;->mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
     .line 52
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->c:Ljava/net/InetSocketAddress;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
     return-object v0
 .end method
@@ -108,13 +108,13 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Address;->e:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, v0, Lcom/squareup/okhttp/Address;->mSSLSocketFactorye:Ljavax/net/ssl/SSLSocketFactory;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
     invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
 
@@ -150,9 +150,9 @@
     check-cast p1, Lcom/squareup/okhttp/Route;
 
     .line 84
-    iget-object v1, p0, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iget-object v1, p0, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iget-object v2, p1, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
     invoke-virtual {v1, v2}, Lcom/squareup/okhttp/Address;->equals(Ljava/lang/Object;)Z
 
@@ -160,9 +160,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iget-object v1, p0, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iget-object v2, p1, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
     .line 85
     invoke-virtual {v1, v2}, Ljava/net/Proxy;->equals(Ljava/lang/Object;)Z
@@ -171,9 +171,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Route;->c:Ljava/net/InetSocketAddress;
+    iget-object v1, p0, Lcom/squareup/okhttp/Route;->mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Route;->c:Ljava/net/InetSocketAddress;
+    iget-object v2, p1, Lcom/squareup/okhttp/Route;->mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
     .line 86
     invoke-virtual {v1, v2}, Ljava/net/InetSocketAddress;->equals(Ljava/lang/Object;)Z
@@ -195,7 +195,7 @@
     .prologue
     .line 92
     .line 93
-    iget-object v0, p0, Lcom/squareup/okhttp/Route;->a:Lcom/squareup/okhttp/Address;
+    iget-object v0, p0, Lcom/squareup/okhttp/Route;->mAddressa:Lcom/squareup/okhttp/Address;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Address;->hashCode()I
 
@@ -206,7 +206,7 @@
     .line 94
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Route;->b:Ljava/net/Proxy;
+    iget-object v1, p0, Lcom/squareup/okhttp/Route;->mProxyb:Ljava/net/Proxy;
 
     invoke-virtual {v1}, Ljava/net/Proxy;->hashCode()I
 
@@ -217,7 +217,7 @@
     .line 95
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Route;->c:Ljava/net/InetSocketAddress;
+    iget-object v1, p0, Lcom/squareup/okhttp/Route;->mInetSocketAddressc:Ljava/net/InetSocketAddress;
 
     invoke-virtual {v1}, Ljava/net/InetSocketAddress;->hashCode()I
 

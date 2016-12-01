@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # virtual methods
@@ -20,7 +20,7 @@
     .line 83
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentTabHost$DummyTabFactory;->a:Landroid/content/Context;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentTabHost$DummyTabFactory;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 

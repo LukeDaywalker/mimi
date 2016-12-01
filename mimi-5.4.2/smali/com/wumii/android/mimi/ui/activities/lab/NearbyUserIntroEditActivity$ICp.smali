@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+.field final synthetic mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 140
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->c(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
@@ -47,9 +47,9 @@
 
     .prologue
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->b(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 

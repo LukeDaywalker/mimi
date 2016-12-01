@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
 
 # direct methods
@@ -52,7 +52,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;->a:Z
+    iput-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;->isZa:Z
 
     .line 1456
     return-void
@@ -95,7 +95,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 1461
-    iget-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;->a:Z
+    iget-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SavedState;->isZa:Z
 
     if-eqz v0, :cond_0
 

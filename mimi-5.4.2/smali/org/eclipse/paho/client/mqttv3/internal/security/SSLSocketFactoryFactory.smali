@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final a:[Ljava/lang/String;
+.field private static final mArrayBd:[B
 
-.field private static final d:[B
+.field private static final mArrayStringa:[Ljava/lang/String;
 
 
 # instance fields
-.field private b:Ljava/util/Hashtable;
+.field private mHashtableb:Ljava/util/Hashtable;
 
-.field private c:Ljava/util/Properties;
+.field private mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private mPropertiesc:Ljava/util/Properties;
 
 
 # direct methods
@@ -115,14 +115,14 @@
     aput-object v2, v0, v1
 
     .line 134
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->a:[Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayStringa:[Ljava/lang/String;
 
     .line 143
     new-array v0, v3, [B
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->d:[B
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayBd:[B
 
     .line 146
     return-void
@@ -151,14 +151,14 @@
     .line 148
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     .line 179
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->b:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mHashtableb:Ljava/util/Hashtable;
 
     .line 180
     return-void
@@ -175,7 +175,7 @@
     if-eqz p1, :cond_3
 
     .line 818
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->b:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mHashtableb:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -205,7 +205,7 @@
 
     .line 826
     :cond_2
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->c:Ljava/util/Properties;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mPropertiesc:Ljava/util/Properties;
 
     .line 827
     if-eqz v1, :cond_0
@@ -445,9 +445,9 @@
     :cond_1
     aget-byte v2, v1, v0
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->d:[B
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayBd:[B
 
-    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->d:[B
+    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayBd:[B
 
     array-length v4, v4
 
@@ -599,9 +599,9 @@
     :cond_1
     aget-byte v2, v1, v0
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->d:[B
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayBd:[B
 
-    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->d:[B
+    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayBd:[B
 
     array-length v4, v4
 
@@ -781,7 +781,7 @@
 
     .line 199
     :goto_0
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->a:[Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayStringa:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -789,7 +789,7 @@
 
     .line 205
     :cond_0
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->a:[Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayStringa:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -802,7 +802,7 @@
 
     .line 200
     :cond_2
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->a:[Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mArrayStringa:[Ljava/lang/String;
 
     aget-object v2, v2, v0
 
@@ -844,12 +844,12 @@
 
     .line 1115
     :cond_0
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v1, :cond_1
 
     .line 1117
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v4, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -891,12 +891,12 @@
 
     .line 1128
     :goto_1
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_2
 
     .line 1130
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -960,12 +960,12 @@
 
     .line 1160
     :cond_3
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_4
 
     .line 1162
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1006,12 +1006,12 @@
     move-result-object v5
 
     .line 1167
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_5
 
     .line 1169
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1063,12 +1063,12 @@
 
     .line 1177
     :cond_6
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_7
 
     .line 1179
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v7, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1158,12 +1158,12 @@
 
     .line 1199
     :goto_a
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v1, :cond_8
 
     .line 1201
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v7, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1196,7 +1196,7 @@
     invoke-interface {v4, v7, v9, v10, v11}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1204
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v4, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1261,12 +1261,12 @@
     move-result-object v4
 
     .line 1225
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_9
 
     .line 1227
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1307,12 +1307,12 @@
     move-result-object v7
 
     .line 1234
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_a
 
     .line 1236
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1364,12 +1364,12 @@
 
     .line 1243
     :cond_b
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_c
 
     .line 1245
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v8, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1459,12 +1459,12 @@
 
     .line 1265
     :goto_16
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v1, :cond_d
 
     .line 1268
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v7, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1497,7 +1497,7 @@
     invoke-interface {v4, v7, v8, v9, v10}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1272
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v1, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 
@@ -1939,7 +1939,7 @@
     if-eqz p2, :cond_0
 
     .line 433
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->b:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mHashtableb:Ljava/util/Hashtable;
 
     invoke-virtual {v1, p2, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1949,7 +1949,7 @@
 
     .line 435
     :cond_0
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->c:Ljava/util/Properties;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mPropertiesc:Ljava/util/Properties;
 
     goto :goto_0
 .end method
@@ -2224,12 +2224,12 @@
     move-result-object v1
 
     .line 1345
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     if-eqz v0, :cond_0
 
     .line 1347
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->e:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory;->mLoggere:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     const-string/jumbo v3, "org.eclipse.paho.client.mqttv3.internal.security.SSLSocketFactoryFactory"
 

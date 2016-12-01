@@ -6,7 +6,7 @@
 # instance fields
 .field private content:Ljava/lang/String;
 
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     .prologue
     .line 11
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/Draft;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/Draft;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 15
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/Draft;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/Draft;->mStringid:Ljava/lang/String;
 
     .line 16
     return-void

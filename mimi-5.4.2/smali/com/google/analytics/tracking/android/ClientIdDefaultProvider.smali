@@ -7,19 +7,19 @@
 
 
 # static fields
-.field private static a:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
+.field private static mClientIdDefaultProvidera:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
 
-.field private static final b:Ljava/lang/Object;
+.field private static final mObjectb:Ljava/lang/Object;
 
 
 # instance fields
-.field private final c:Landroid/content/Context;
+.field private isZe:Z
 
-.field private d:Ljava/lang/String;
+.field private final mContextc:Landroid/content/Context;
 
-.field private e:Z
+.field private final mObjectf:Ljava/lang/Object;
 
-.field private final f:Ljava/lang/Object;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->b:Ljava/lang/Object;
+    sput-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     return-void
 .end method
@@ -47,17 +47,17 @@
     .line 27
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->isZe:Z
 
     .line 28
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->f:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     .line 52
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     .line 53
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e()V
@@ -71,13 +71,13 @@
 
     .prologue
     .line 46
-    sget-object v1, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->b:Ljava/lang/Object;
+    sget-object v1, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 47
     :try_start_0
-    sget-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->a:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mClientIdDefaultProvidera:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
 
     monitor-exit v1
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -109,7 +109,7 @@
 
     .prologue
     .line 20
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mStringd:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -119,13 +119,13 @@
 
     .prologue
     .line 31
-    sget-object v1, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->b:Ljava/lang/Object;
+    sget-object v1, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 32
     :try_start_0
-    sget-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->a:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mClientIdDefaultProvidera:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
 
     if-nez v0, :cond_0
 
@@ -134,7 +134,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->a:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
+    sput-object v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mClientIdDefaultProvidera:Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;
 
     .line 35
     :cond_0
@@ -159,7 +159,7 @@
 
     .prologue
     .line 20
-    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e:Z
+    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->isZe:Z
 
     return p1
 .end method
@@ -177,7 +177,7 @@
     invoke-static {v1}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 102
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "gaClientId"
 
@@ -235,18 +235,18 @@
 
     .prologue
     .line 74
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->isZe:Z
 
     if-nez v0, :cond_2
 
     .line 75
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->f:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 76
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->isZe:Z
 
     if-nez v0, :cond_1
 
@@ -260,7 +260,7 @@
     .line 80
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mObjectf:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->wait()V
     :try_end_1
@@ -270,7 +270,7 @@
     .line 84
     :goto_0
     :try_start_2
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->e:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -287,7 +287,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 90
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mStringd:Ljava/lang/String;
 
     return-object v0
 
@@ -419,7 +419,7 @@
 
     .line 154
     :try_start_0
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "gaClientId"
 
@@ -457,7 +457,7 @@
     invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
 
     .line 162
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "gaClientId"
 
@@ -493,7 +493,7 @@
     invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
 
     .line 166
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "gaClientId"
 
@@ -540,7 +540,7 @@
     invoke-static {v1}, Lcom/google/analytics/tracking/android/Log;->a(Ljava/lang/String;)V
 
     .line 175
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v2, "gaClientId"
 

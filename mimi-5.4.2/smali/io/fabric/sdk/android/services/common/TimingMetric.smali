@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final isZc:Z
 
-.field private final b:Ljava/lang/String;
+.field private mJd:J
 
-.field private final c:Z
+.field private mJe:J
 
-.field private d:J
+.field private final mStringa:Ljava/lang/String;
 
-.field private e:J
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -24,10 +24,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mStringa:Ljava/lang/String;
 
     .line 32
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mStringb:Ljava/lang/String;
 
     .line 33
     const/4 v0, 0x2
@@ -41,7 +41,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->c:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->isZc:Z
 
     .line 34
     return-void
@@ -58,13 +58,13 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->b:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mStringb:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->e:J
+    iget-wide v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJe:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -108,7 +108,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->c:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->isZc:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -127,12 +127,12 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->d:J
+    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJd:J
 
     .line 42
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->e:J
+    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJe:J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -155,7 +155,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->c:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->isZc:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -171,7 +171,7 @@
     .line 50
     :cond_1
     :try_start_1
-    iget-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->e:J
+    iget-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJe:J
 
     const-wide/16 v2, 0x0
 
@@ -184,11 +184,11 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->d:J
+    iget-wide v2, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJd:J
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->e:J
+    iput-wide v0, p0, Lio/fabric/sdk/android/services/common/TimingMetric;->mJe:J
 
     .line 52
     invoke-direct {p0}, Lio/fabric/sdk/android/services/common/TimingMetric;->c()V

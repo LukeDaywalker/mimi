@@ -6,7 +6,7 @@
 # instance fields
 .field protected a:Landroid/view/LayoutInflater;
 
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->mListb:Ljava/util/List;
 
     .line 20
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->mListb:Ljava/util/List;
 
     .line 39
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->notifyDataSetChanged()V
@@ -90,7 +90,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

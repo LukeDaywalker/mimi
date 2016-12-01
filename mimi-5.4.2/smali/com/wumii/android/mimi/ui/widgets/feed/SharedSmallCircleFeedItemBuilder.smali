@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mFeedTypeb:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 17
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 18
     return-void
@@ -39,7 +39,7 @@
     .line 23
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;-><init>(Landroid/content/Context;)V
 
@@ -53,7 +53,7 @@
 
     move-result v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->b:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->mFeedTypeb:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->a(ILcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
@@ -71,7 +71,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->b:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SharedSmallCircleFeedItemBuilder;->mFeedTypeb:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 33
     return-void

@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 44
-    iput-object p1, p0, Lio/fabric/sdk/android/FabricKitsFinder;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/FabricKitsFinder;->mStringa:Ljava/lang/String;
 
     .line 45
     return-void
@@ -416,7 +416,7 @@
     .line 105
     new-instance v0, Ljava/util/zip/ZipFile;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/FabricKitsFinder;->a:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/FabricKitsFinder;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/util/zip/ZipFile;-><init>(Ljava/lang/String;)V
 

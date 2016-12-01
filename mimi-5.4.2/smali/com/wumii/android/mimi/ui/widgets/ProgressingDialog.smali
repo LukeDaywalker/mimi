@@ -9,9 +9,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mStringa:Ljava/lang/String;
 
     .line 24
     return-void
@@ -53,7 +53,7 @@
 
     .prologue
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mStringa:Ljava/lang/String;
 
     .line 39
     return-void
@@ -80,24 +80,24 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mTextViewb:Landroid/widget/TextView;
 
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mTextViewb:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mTextViewb:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

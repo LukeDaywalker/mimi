@@ -7,8 +7,6 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/wxop/stat/ICy;
-
 .field protected b:Ljava/lang/String;
 
 .field protected c:J
@@ -28,6 +26,8 @@
 .field protected k:Z
 
 .field protected l:Landroid/content/Context;
+
+.field private mICya:Lcom/tencent/wxop/stat/ICy;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     iput-boolean v0, p0, Lcom/tencent/wxop/stat/a/ICd;->k:Z
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/a/ICd;->a:Lcom/tencent/wxop/stat/ICy;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/a/ICd;->mICya:Lcom/tencent/wxop/stat/ICy;
 
     iput-object p1, p0, Lcom/tencent/wxop/stat/a/ICd;->l:Landroid/content/Context;
 
@@ -98,7 +98,7 @@
 
     if-eqz p3, :cond_3
 
-    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICd;->a:Lcom/tencent/wxop/stat/ICy;
+    iput-object p3, p0, Lcom/tencent/wxop/stat/a/ICd;->mICya:Lcom/tencent/wxop/stat/ICy;
 
     invoke-virtual {p3}, Lcom/tencent/wxop/stat/ICy;->c()Ljava/lang/String;
 
@@ -419,7 +419,7 @@
 .method public final d()Lcom/tencent/wxop/stat/ICy;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICd;->a:Lcom/tencent/wxop/stat/ICy;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/a/ICd;->mICya:Lcom/tencent/wxop/stat/ICy;
 
     return-object v0
 .end method

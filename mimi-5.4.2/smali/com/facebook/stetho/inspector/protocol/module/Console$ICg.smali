@@ -35,11 +35,11 @@
 
 .field public static final enum j:Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
-.field private static final synthetic l:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+.field private static final synthetic mArrayICgl:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
 
 # instance fields
-.field private final k:Ljava/lang/String;
+.field private final mStringk:Ljava/lang/String;
 
 
 # direct methods
@@ -232,7 +232,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->l:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mArrayICgl:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     return-void
 .end method
@@ -252,7 +252,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 60
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->k:Ljava/lang/String;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mStringk:Ljava/lang/String;
 
     .line 61
     return-void
@@ -279,7 +279,7 @@
 
     .prologue
     .line 45
-    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->l:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
+    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->mArrayICgl:[Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;
 
     invoke-virtual {v0}, [Lcom/facebook/stetho/inspector/protocol/module/Console$ICg;->clone()Ljava/lang/Object;
 

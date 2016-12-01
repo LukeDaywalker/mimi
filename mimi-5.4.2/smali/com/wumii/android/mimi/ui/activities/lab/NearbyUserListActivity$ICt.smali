@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
+.field final synthetic mICra:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 117
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICt;->mICra:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICt;->mICra:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;->mICqa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->mNearbyUserListActivityb:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->finish()V
 

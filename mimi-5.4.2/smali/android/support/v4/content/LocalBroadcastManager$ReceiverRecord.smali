@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/IntentFilter;
+.field isZc:Z
 
-.field final b:Landroid/content/BroadcastReceiver;
+.field final mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
-.field c:Z
+.field final mIntentFiltera:Landroid/content/IntentFilter;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 53
-    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->a:Landroid/content/IntentFilter;
+    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->mIntentFiltera:Landroid/content/IntentFilter;
 
     .line 54
-    iput-object p2, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->b:Landroid/content/BroadcastReceiver;
+    iput-object p2, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     .line 55
     return-void
@@ -48,7 +48,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 61
-    iget-object v1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->b:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->mBroadcastReceiverb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -58,7 +58,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 63
-    iget-object v1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->a:Landroid/content/IntentFilter;
+    iget-object v1, p0, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->mIntentFiltera:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

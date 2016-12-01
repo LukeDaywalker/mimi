@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static b:I
+.field private static mIb:I
 
 
 # instance fields
-.field private a:Landroid/graphics/Matrix;
+.field private mMatrixa:Landroid/graphics/Matrix;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     .line 45
     const/high16 v0, 0x100000
 
-    sput v0, Landroid/support/v4/app/SharedElementCallback;->b:I
+    sput v0, Landroid/support/v4/app/SharedElementCallback;->mIb:I
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     .line 200
     :cond_1
-    sget v2, Landroid/support/v4/app/SharedElementCallback;->b:I
+    sget v2, Landroid/support/v4/app/SharedElementCallback;->mIb:I
 
     int-to-float v2, v2
 
@@ -282,7 +282,7 @@
     .line 174
     const/high16 v0, 0x3f800000    # 1.0f
 
-    sget v3, Landroid/support/v4/app/SharedElementCallback;->b:I
+    sget v3, Landroid/support/v4/app/SharedElementCallback;->mIb:I
 
     int-to-float v3, v3
 
@@ -311,7 +311,7 @@
     float-to-int v2, v2
 
     .line 177
-    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     if-nez v3, :cond_3
 
@@ -320,16 +320,16 @@
 
     invoke-direct {v3}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iput-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     .line 180
     :cond_3
-    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     invoke-virtual {v3, p2}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
     .line 181
-    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     iget v4, p3, Landroid/graphics/RectF;->left:F
 
@@ -342,7 +342,7 @@
     invoke-virtual {v3, v4, v5}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
     .line 182
-    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iget-object v3, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     invoke-virtual {v3, v0, v0}, Landroid/graphics/Matrix;->postScale(FF)Z
 
@@ -359,7 +359,7 @@
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
     .line 185
-    iget-object v2, p0, Landroid/support/v4/app/SharedElementCallback;->a:Landroid/graphics/Matrix;
+    iget-object v2, p0, Landroid/support/v4/app/SharedElementCallback;->mMatrixa:Landroid/graphics/Matrix;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 

@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mICob:Lcom/tencent/stat/ICo;
 
-.field final synthetic b:Lcom/tencent/stat/ICo;
+.field final synthetic mIa:I
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/stat/ICo;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iput-object p1, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
-    iput p2, p0, Lcom/tencent/stat/ICv;->a:I
+    iput p2, p0, Lcom/tencent/stat/ICv;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,9 +29,9 @@
 .method public run()V
     .locals 6
 
-    iget-object v0, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
-    iget v0, v0, Lcom/tencent/stat/ICo;->b:I
+    iget v0, v0, Lcom/tencent/stat/ICo;->mIb:I
 
     if-nez v0, :cond_1
 
@@ -54,9 +54,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iget-object v2, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
-    iget v2, v2, Lcom/tencent/stat/ICo;->b:I
+    iget v2, v2, Lcom/tencent/stat/ICo;->mIb:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -86,7 +86,7 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iget v0, p0, Lcom/tencent/stat/ICv;->a:I
+    iget v0, p0, Lcom/tencent/stat/ICv;->mIa:I
 
     const/4 v1, -0x1
 
@@ -106,15 +106,15 @@
     move v1, v0
 
     :goto_1
-    iget-object v0, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
-    iget v4, v0, Lcom/tencent/stat/ICo;->b:I
+    iget v4, v0, Lcom/tencent/stat/ICo;->mIb:I
 
     sub-int/2addr v4, v1
 
-    iput v4, v0, Lcom/tencent/stat/ICo;->b:I
+    iput v4, v0, Lcom/tencent/stat/ICo;->mIb:I
 
-    iget-object v0, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
     invoke-static {v0, v3, v1}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/ICo;Ljava/util/List;I)V
 
@@ -162,7 +162,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/stat/ICv;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICv;->mICob:Lcom/tencent/stat/ICo;
 
     const/4 v4, 0x2
 
@@ -185,7 +185,7 @@
 
     check-cast v0, Lcom/tencent/stat/ICy;
 
-    iget-object v0, v0, Lcom/tencent/stat/ICy;->b:Ljava/lang/String;
+    iget-object v0, v0, Lcom/tencent/stat/ICy;->mStringb:Ljava/lang/String;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/app/NotificationCompatBase$UnreadConversation$Factory;
+.field static final mFactorya:Landroid/support/v4/app/NotificationCompatBase$UnreadConversation$Factory;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$CarExtender$UnreadConversation$1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompat$CarExtender$UnreadConversation;->a:Landroid/support/v4/app/NotificationCompatBase$UnreadConversation$Factory;
+    sput-object v0, Landroid/support/v4/app/NotificationCompat$CarExtender$UnreadConversation;->mFactorya:Landroid/support/v4/app/NotificationCompatBase$UnreadConversation$Factory;
 
     return-void
 .end method

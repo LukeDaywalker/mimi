@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+.field final synthetic mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iput-object p1, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -41,7 +41,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/View;)Ljava/lang/Object;
 
@@ -57,7 +57,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->b(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/View;Ljava/lang/Object;)V
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->c(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -110,7 +110,7 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/View;ILandroid/os/Bundle;)Z
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->a(Landroid/view/View;I)V
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$1;->mAccessibilityDelegateBridgeJellyBeana:Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 

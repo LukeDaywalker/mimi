@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro;
+.field final synthetic mProa:Lcom/tencent/connect/b/Pro;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 396
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     .line 397
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -81,7 +81,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 466
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -140,7 +140,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 428
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -199,7 +199,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 456
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -258,7 +258,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 408
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -310,7 +310,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 436
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -369,7 +369,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 418
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -428,7 +428,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 476
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -487,7 +487,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 446
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 
@@ -524,7 +524,7 @@
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 486
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICi;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->h(Lcom/tencent/connect/b/Pro;)Landroid/os/Handler;
 

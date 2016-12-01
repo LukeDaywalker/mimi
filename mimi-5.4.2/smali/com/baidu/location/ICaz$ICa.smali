@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICaz;
+.field final synthetic mICaza:Lcom/baidu/location/ICaz;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICaz;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iput-object p1, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -37,7 +37,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const/4 v1, 0x0
 
@@ -61,7 +61,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const/4 v2, 0x0
 
@@ -71,7 +71,7 @@
     packed-switch v1, :pswitch_data_1
 
     :goto_1
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     invoke-static {v0}, Lcom/baidu/location/ICaz;->a(Lcom/baidu/location/ICaz;)Z
 
@@ -90,7 +90,7 @@
     return-void
 
     :pswitch_0
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const-string/jumbo v2, "4"
 
@@ -103,7 +103,7 @@
     :catch_0
     move-exception v0
 
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     invoke-static {v0, v3}, Lcom/baidu/location/ICaz;->a(Lcom/baidu/location/ICaz;Ljava/lang/String;)Ljava/lang/String;
 
@@ -111,7 +111,7 @@
 
     :pswitch_1
     :try_start_1
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const-string/jumbo v2, "3"
 
@@ -120,13 +120,13 @@
     goto :goto_0
 
     :pswitch_2
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const-string/jumbo v1, "6"
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICaz;->a(Lcom/baidu/location/ICaz;Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const/4 v1, 0x1
 
@@ -135,13 +135,13 @@
     goto :goto_1
 
     :pswitch_3
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const-string/jumbo v1, "5"
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICaz;->a(Lcom/baidu/location/ICaz;Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->a:Lcom/baidu/location/ICaz;
+    iget-object v0, p0, Lcom/baidu/location/ICaz$ICa;->mICaza:Lcom/baidu/location/ICaz;
 
     const/4 v1, 0x1
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/Headers;
+.field private final mBufferedSourceb:Lokio/BufferedSource;
 
-.field private final b:Lokio/BufferedSource;
+.field private final mHeadersa:Lcom/squareup/okhttp/Headers;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Lcom/squareup/okhttp/ResponseBody;-><init>()V
 
     .line 28
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->a:Lcom/squareup/okhttp/Headers;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->mHeadersa:Lcom/squareup/okhttp/Headers;
 
     .line 29
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->b:Lokio/BufferedSource;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->mBufferedSourceb:Lokio/BufferedSource;
 
     .line 30
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->a:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->mHeadersa:Lcom/squareup/okhttp/Headers;
 
     const-string/jumbo v1, "Content-Type"
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->a:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->mHeadersa:Lcom/squareup/okhttp/Headers;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/OkHeaders;->a(Lcom/squareup/okhttp/Headers;)J
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RealResponseBody;->mBufferedSourceb:Lokio/BufferedSource;
 
     return-object v0
 .end method

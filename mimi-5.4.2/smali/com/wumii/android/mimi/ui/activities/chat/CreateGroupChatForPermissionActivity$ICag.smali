@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
+.field private static final synthetic mArrayICagd:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->d:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->mArrayICagd:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 58
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->d:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->mArrayICagd:[Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->clone()Ljava/lang/Object;
 

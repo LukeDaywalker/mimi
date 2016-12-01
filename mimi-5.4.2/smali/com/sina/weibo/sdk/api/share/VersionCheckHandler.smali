@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->mStringa:Ljava/lang/String;
 
     .line 42
     return-void
@@ -50,7 +50,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -63,11 +63,11 @@
     invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 87
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->mStringa:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -82,7 +82,7 @@
 
     .line 91
     :cond_1
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/share/VersionCheckHandler;->mStringa:Ljava/lang/String;
 
     invoke-static {p1, v1}, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/share/ApiUtils$ICb;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private mContextb:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 17
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->mContextb:Landroid/content/Context;
 
     .line 18
     return-void
@@ -60,7 +60,7 @@
     if-ge v1, v3, :cond_0
 
     .line 23
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->b:Landroid/content/Context;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->mContextb:Landroid/content/Context;
 
     invoke-virtual {p1, v1}, Landroid/support/v4/util/SimpleArrayMap;->c(I)Ljava/lang/Object;
 

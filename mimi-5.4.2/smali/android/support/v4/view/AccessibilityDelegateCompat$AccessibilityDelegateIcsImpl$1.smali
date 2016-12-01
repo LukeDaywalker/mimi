@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+.field final synthetic mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
-.field final synthetic b:Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl;
+.field final synthetic mAccessibilityDelegateIcsImplb:Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 128
-    iput-object p1, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->b:Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl;
+    iput-object p1, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateIcsImplb:Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl;
 
-    iput-object p2, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iput-object p2, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->a(Landroid/view/View;I)V
 
@@ -47,7 +47,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     new-instance v1, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
 
@@ -64,7 +64,7 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->b(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -78,7 +78,7 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/support/v4/view/AccessibilityDelegateCompat;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -105,7 +105,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->c(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->a:Landroid/support/v4/view/AccessibilityDelegateCompat;
+    iget-object v0, p0, Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;->mAccessibilityDelegateCompata:Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 

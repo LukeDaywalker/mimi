@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/CircleManager;
+.field final synthetic mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 409
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
 
     .line 415
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -132,7 +132,7 @@
     .line 429
     :cond_0
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->a:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICae;->mCircleManagera:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/Object;)V
 

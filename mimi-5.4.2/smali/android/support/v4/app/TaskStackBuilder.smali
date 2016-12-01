@@ -19,11 +19,11 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
+.field private static final mTaskStackBuilderImpla:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
 
 
 # instance fields
-.field private final b:Ljava/util/ArrayList;
+.field private final mArrayListb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/TaskStackBuilder;->a:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
+    sput-object v0, Landroid/support/v4/app/TaskStackBuilder;->mTaskStackBuilderImpla:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
 
     .line 120
     :goto_0
@@ -64,7 +64,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/TaskStackBuilder;->a:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
+    sput-object v0, Landroid/support/v4/app/TaskStackBuilder;->mTaskStackBuilderImpla:Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
 
     goto :goto_0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Landroid/support/v4/app/TaskStackBuilder;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/TaskStackBuilder;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 

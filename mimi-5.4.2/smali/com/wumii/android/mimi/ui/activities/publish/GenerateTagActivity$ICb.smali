@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+.field final synthetic mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +35,13 @@
     move-result v0
 
     .line 101
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->f(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICb;->mGenerateTagActivitya:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->getResources()Landroid/content/res/Resources;
 

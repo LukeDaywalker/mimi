@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mSecretCommentViewb:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
+.field final synthetic mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 499
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->b:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->mSecretCommentViewb:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->mViewa:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 502
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->mViewa:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->a:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbf;->mViewa:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 

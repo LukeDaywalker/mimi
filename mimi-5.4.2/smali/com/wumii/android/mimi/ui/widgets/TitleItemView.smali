@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private isZe:Z
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/ImageView;
+.field private mLayoutInflaterd:Landroid/view/LayoutInflater;
 
-.field private d:Landroid/view/LayoutInflater;
+.field private mStringf:Ljava/lang/String;
 
-.field private e:Z
+.field private mTextViewa:Landroid/widget/TextView;
 
-.field private f:Ljava/lang/String;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -71,10 +71,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->d:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mLayoutInflaterd:Landroid/view/LayoutInflater;
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->d:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mLayoutInflaterd:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300a8
 
@@ -91,7 +91,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewa:Landroid/widget/TextView;
 
     .line 41
     const v0, 0x7f0b01e6
@@ -102,7 +102,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewb:Landroid/widget/TextView;
 
     .line 43
     const v0, 0x7f02016a
@@ -129,7 +129,7 @@
     move-result-object v2
 
     .line 47
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->f:Ljava/lang/String;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mStringf:Ljava/lang/String;
 
     .line 48
     invoke-virtual {p0, v2, v3, v3}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setValue(Ljava/lang/CharSequence;ZZ)V
@@ -157,10 +157,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -175,12 +175,12 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     const/4 v1, 0x4
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     if-nez v0, :cond_0
 
@@ -205,7 +205,7 @@
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mImageViewc:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
@@ -220,7 +220,7 @@
 
     .prologue
     .line 84
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->isZe:Z
 
     return v0
 .end method
@@ -230,7 +230,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -240,7 +240,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -258,7 +258,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -276,7 +276,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mStringf:Ljava/lang/String;
 
     .line 105
     return-void
@@ -287,7 +287,7 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewa:Landroid/widget/TextView;
 
     if-nez p1, :cond_0
 
@@ -305,7 +305,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewb:Landroid/widget/TextView;
 
     if-nez p1, :cond_0
 
@@ -323,10 +323,10 @@
     .line 57
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->e:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->isZe:Z
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->getContext()Landroid/content/Context;
 
@@ -352,10 +352,10 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->e:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->isZe:Z
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->getContext()Landroid/content/Context;
 

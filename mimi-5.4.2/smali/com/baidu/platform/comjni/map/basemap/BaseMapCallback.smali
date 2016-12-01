@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Landroid/util/LongSparseArray;
+.field private static mLongSparseArraya:Landroid/util/LongSparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/LongSparseArray",
@@ -23,7 +23,7 @@
 
     invoke-direct {v0}, Landroid/util/LongSparseArray;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;
+    sput-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->mLongSparseArraya:Landroid/util/LongSparseArray;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->mLongSparseArraya:Landroid/util/LongSparseArray;
 
     invoke-virtual {v0}, Landroid/util/LongSparseArray;->size()I
 
@@ -52,7 +52,7 @@
     :goto_0
     if-ge v2, v3, :cond_1
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->mLongSparseArraya:Landroid/util/LongSparseArray;
 
     invoke-virtual {v0, v2}, Landroid/util/LongSparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -99,7 +99,7 @@
 .method public static addLayerDataInterface(JLcom/baidu/platform/comjni/map/basemap/ICb;)V
     .locals 2
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->mLongSparseArraya:Landroid/util/LongSparseArray;
 
     invoke-virtual {v0, p0, p1, p2}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
@@ -109,7 +109,7 @@
 .method public static removeLayerDataInterface(J)V
     .locals 2
 
-    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;
+    sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->mLongSparseArraya:Landroid/util/LongSparseArray;
 
     invoke-virtual {v0, p0, p1}, Landroid/util/LongSparseArray;->remove(J)V
 

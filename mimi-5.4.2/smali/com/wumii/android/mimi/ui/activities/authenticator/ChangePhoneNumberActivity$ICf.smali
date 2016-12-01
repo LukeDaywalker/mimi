@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+.field final synthetic mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->c(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICf;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Landroid/widget/TextView;
 
@@ -50,7 +50,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 

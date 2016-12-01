@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICab;
+.field final synthetic mICaba:Lcom/baidu/location/ICab;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICab;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICab$ICb;->a:Lcom/baidu/location/ICab;
+    iput-object p1, p0, Lcom/baidu/location/ICab$ICb;->mICaba:Lcom/baidu/location/ICab;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->a:Lcom/baidu/location/ICab;
+    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->mICaba:Lcom/baidu/location/ICab;
 
     invoke-static {v0}, Lcom/baidu/location/ICab;->do(Lcom/baidu/location/ICab;)Ljava/util/ArrayList;
 
@@ -30,7 +30,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->a:Lcom/baidu/location/ICab;
+    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->mICaba:Lcom/baidu/location/ICab;
 
     invoke-static {v0}, Lcom/baidu/location/ICab;->do(Lcom/baidu/location/ICab;)Ljava/util/ArrayList;
 
@@ -47,7 +47,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->a:Lcom/baidu/location/ICab;
+    iget-object v0, p0, Lcom/baidu/location/ICab$ICb;->mICaba:Lcom/baidu/location/ICab;
 
     invoke-static {v0}, Lcom/baidu/location/ICab;->if(Lcom/baidu/location/ICab;)Lcom/baidu/location/LocationClient;
 

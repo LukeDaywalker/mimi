@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lcom/google/analytics/tracking/android/Logger$ICat;
 
-.field private static final synthetic e:[Lcom/google/analytics/tracking/android/Logger$ICat;
+.field private static final synthetic mArrayICate:[Lcom/google/analytics/tracking/android/Logger$ICat;
 
 
 # direct methods
@@ -93,7 +93,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->e:[Lcom/google/analytics/tracking/android/Logger$ICat;
+    sput-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mArrayICate:[Lcom/google/analytics/tracking/android/Logger$ICat;
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 
     .prologue
     .line 20
-    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->e:[Lcom/google/analytics/tracking/android/Logger$ICat;
+    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->mArrayICate:[Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-virtual {v0}, [Lcom/google/analytics/tracking/android/Logger$ICat;->clone()Ljava/lang/Object;
 

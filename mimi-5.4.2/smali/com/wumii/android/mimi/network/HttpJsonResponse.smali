@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/fasterxml/jackson/databind/JsonNode;
+.field private mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/network/Result;-><init>(ILjava/lang/String;Ljava/lang/Object;)V
 
     .line 12
-    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpJsonResponse;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
     .line 13
     return-void
@@ -43,7 +43,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpJsonResponse;->a:Lcom/fasterxml/jackson/databind/JsonNode;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpJsonResponse;->mJsonNodea:Lcom/fasterxml/jackson/databind/JsonNode;
 
     return-object v0
 .end method

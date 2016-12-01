@@ -4,27 +4,27 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/widget/TextView;
+.field private mGroupChatMemberInactiveListAdapterm:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
 
-.field private c:Landroid/widget/TextView;
+.field private mGroupChatl:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private d:Landroid/widget/ListView;
+.field private mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
 
-.field private e:Landroid/widget/TextView;
+.field private mListViewd:Landroid/widget/ListView;
 
-.field private j:Landroid/widget/ProgressBar;
+.field private mProgressBarj:Landroid/widget/ProgressBar;
 
-.field private k:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private l:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private m:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private n:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+.field private mTextViewk:Landroid/widget/TextView;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->m:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatMemberInactiveListAdapterm:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
 
     return-object v0
 .end method
@@ -70,7 +70,7 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -92,21 +92,21 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->l:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatl:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getMemberCount()I
 
     move-result v0
 
     .line 128
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->m:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatMemberInactiveListAdapterm:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->getCount()I
 
     move-result v1
 
     .line 129
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->b:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewb:Landroid/widget/TextView;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -153,7 +153,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->l:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatl:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     return-object v0
 .end method
@@ -163,7 +163,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->n:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
 
     if-nez v0, :cond_0
 
@@ -176,11 +176,11 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;-><init>(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->n:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
 
     .line 136
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->n:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mICaqn:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICaq;
 
     return-object v0
 .end method
@@ -190,7 +190,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->j:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mProgressBarj:Landroid/widget/ProgressBar;
 
     return-object v0
 .end method
@@ -200,7 +200,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->k:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewk:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -220,7 +220,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewe:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -230,7 +230,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->d:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mListViewd:Landroid/widget/ListView;
 
     return-object v0
 .end method
@@ -240,7 +240,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewc:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -265,10 +265,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->l:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatl:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewc:Landroid/widget/TextView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICan;
 
@@ -277,7 +277,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->k:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewk:Landroid/widget/TextView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment$ICao;
 
@@ -298,12 +298,12 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;-><init>(Landroid/content/Context;Landroid/view/View$OnClickListener;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->m:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatMemberInactiveListAdapterm:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->d:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mListViewd:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->m:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mGroupChatMemberInactiveListAdapterm:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -343,7 +343,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewb:Landroid/widget/TextView;
 
     .line 68
     const v0, 0x7f0b020a
@@ -354,7 +354,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewc:Landroid/widget/TextView;
 
     .line 69
     const v0, 0x7f0b0097
@@ -365,7 +365,7 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->d:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mListViewd:Landroid/widget/ListView;
 
     .line 70
     const v0, 0x7f0b0098
@@ -376,7 +376,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewe:Landroid/widget/TextView;
 
     .line 71
     const v0, 0x7f0b00b9
@@ -387,7 +387,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->j:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mProgressBarj:Landroid/widget/ProgressBar;
 
     .line 72
     const v0, 0x7f0b0209
@@ -398,7 +398,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->k:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;->mTextViewk:Landroid/widget/TextView;
 
     .line 74
     return-object v1

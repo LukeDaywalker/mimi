@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private a:Landroid/graphics/Point;
-
 .field public final intensity:D
 
 .field public final latLng:Lcom/baidu/mapapi/model/LatLng;
+
+.field private mPointa:Landroid/graphics/Point;
 
 
 # direct methods
@@ -63,7 +63,7 @@
 
     invoke-direct {v1, v2, v0}, Landroid/graphics/Point;-><init>(II)V
 
-    iput-object v1, p0, Lcom/baidu/mapapi/map/WeightedLatLng;->a:Landroid/graphics/Point;
+    iput-object v1, p0, Lcom/baidu/mapapi/map/WeightedLatLng;->mPointa:Landroid/graphics/Point;
 
     const-wide/16 v0, 0x0
 
@@ -89,7 +89,7 @@
 .method a()Landroid/graphics/Point;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/WeightedLatLng;->a:Landroid/graphics/Point;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/WeightedLatLng;->mPointa:Landroid/graphics/Point;
 
     return-object v0
 .end method

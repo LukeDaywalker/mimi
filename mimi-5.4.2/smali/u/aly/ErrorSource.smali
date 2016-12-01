@@ -19,11 +19,11 @@
 
 .field public static final enum b:Lu/aly/ErrorSource;
 
-.field private static final synthetic d:[Lu/aly/ErrorSource;
+.field private static final synthetic mArrayErrorSourced:[Lu/aly/ErrorSource;
 
 
 # instance fields
-.field private final c:I
+.field private final mIc:I
 
 
 # direct methods
@@ -66,7 +66,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lu/aly/ErrorSource;->d:[Lu/aly/ErrorSource;
+    sput-object v0, Lu/aly/ErrorSource;->mArrayErrorSourced:[Lu/aly/ErrorSource;
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 22
-    iput p3, p0, Lu/aly/ErrorSource;->c:I
+    iput p3, p0, Lu/aly/ErrorSource;->mIc:I
 
     .line 23
     return-void
@@ -146,7 +146,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lu/aly/ErrorSource;->d:[Lu/aly/ErrorSource;
+    sget-object v0, Lu/aly/ErrorSource;->mArrayErrorSourced:[Lu/aly/ErrorSource;
 
     invoke-virtual {v0}, [Lu/aly/ErrorSource;->clone()Ljava/lang/Object;
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 29
-    iget v0, p0, Lu/aly/ErrorSource;->c:I
+    iget v0, p0, Lu/aly/ErrorSource;->mIc:I
 
     return v0
 .end method

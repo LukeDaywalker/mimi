@@ -1,4 +1,4 @@
-.class public Lorg/apache/commons/long/ObjectUtils$ICc;
+.class public Lorg/apache/commons/long3/ObjectUtils$ICc;
 .super Ljava/lang/Object;
 .source "ObjectUtils.java"
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 470
-    sget-object v0, Lorg/apache/commons/long/ObjectUtils;->a:Lorg/apache/commons/long/ObjectUtils$ICc;
+    sget-object v0, Lorg/apache/commons/long3/ObjectUtils;->a:Lorg/apache/commons/long3/ObjectUtils$ICc;
 
     return-object v0
 .end method

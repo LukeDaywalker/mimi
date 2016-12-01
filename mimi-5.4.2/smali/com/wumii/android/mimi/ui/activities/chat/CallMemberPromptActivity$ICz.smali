@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic isZd:Z
 
-.field final synthetic d:Z
+.field final synthetic mCallMemberPromptActivityj:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
-.field final synthetic j:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->j:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->mCallMemberPromptActivityj:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->a:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->mStringa:Ljava/lang/String;
 
-    iput-boolean p4, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->d:Z
+    iput-boolean p4, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->isZd:Z
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
@@ -54,14 +54,14 @@
     .line 147
     const-string/jumbo v1, "mid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 148
     const-string/jumbo v1, "accept"
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->d:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;->isZd:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

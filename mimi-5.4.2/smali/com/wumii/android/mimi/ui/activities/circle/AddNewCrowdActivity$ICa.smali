@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+.field final synthetic mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/CircleObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
     const v1, 0x7f06001d
 
@@ -36,7 +36,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->finish()V
 
@@ -49,19 +49,19 @@
 
     .prologue
     .line 95
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/network/Result;->getErrMsg()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->mAddNewCrowdActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
     const v2, 0x7f060019
 

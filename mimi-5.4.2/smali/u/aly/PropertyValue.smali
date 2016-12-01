@@ -162,7 +162,7 @@
     if-eqz v1, :cond_0
 
     .line 159
-    sget-object v2, Lu/aly/PropertyValue$ICdk;->a:[I
+    sget-object v2, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
     invoke-virtual {v1}, Lu/aly/PropertyValue$ICdl;->ordinal()I
 
@@ -261,7 +261,7 @@
     if-eqz v0, :cond_0
 
     .line 206
-    sget-object v1, Lu/aly/PropertyValue$ICdk;->a:[I
+    sget-object v1, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
     invoke-virtual {v0}, Lu/aly/PropertyValue$ICdl;->ordinal()I
 
@@ -353,7 +353,7 @@
 
     .prologue
     .line 241
-    sget-object v0, Lu/aly/PropertyValue$ICdk;->a:[I
+    sget-object v0, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
     invoke-virtual {p1}, Lu/aly/PropertyValue$ICdl;->ordinal()I
 
@@ -540,7 +540,7 @@
 
     .prologue
     .line 188
-    sget-object v1, Lu/aly/PropertyValue$ICdk;->a:[I
+    sget-object v1, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
     iget-object v0, p0, Lu/aly/PropertyValue;->c:Lu/aly/TFieldIdEnum;
 
@@ -624,7 +624,7 @@
 
     .prologue
     .line 225
-    sget-object v1, Lu/aly/PropertyValue$ICdk;->a:[I
+    sget-object v1, Lu/aly/PropertyValue$ICdk;->mArrayIa:[I
 
     iget-object v0, p0, Lu/aly/PropertyValue;->c:Lu/aly/TFieldIdEnum;
 

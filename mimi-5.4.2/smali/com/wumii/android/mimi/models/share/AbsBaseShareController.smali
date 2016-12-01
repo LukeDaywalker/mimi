@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final d:Lorg/slf4j/Logger;
+.field private static final mLoggerd:Lorg/slf4j/Logger;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->d:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mLoggerd:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -148,7 +148,7 @@
 
     .line 59
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->d:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->mLoggerd:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

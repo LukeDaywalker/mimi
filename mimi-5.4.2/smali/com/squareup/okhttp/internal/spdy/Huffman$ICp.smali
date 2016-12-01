@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+.field private final mArrayICpa:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
-.field private final b:I
+.field private final mIb:I
 
-.field private final c:I
+.field private final mIc:I
 
 
 # direct methods
@@ -26,13 +26,13 @@
 
     new-array v0, v0, [Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->a:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mArrayICpa:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     .line 208
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->b:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIb:I
 
     .line 209
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->c:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIc:I
 
     .line 210
     return-void
@@ -48,10 +48,10 @@
     .line 219
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->a:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mArrayICpa:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     .line 220
-    iput p1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->b:I
+    iput p1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIb:I
 
     .line 221
     and-int/lit8 v0, p2, 0x7
@@ -62,7 +62,7 @@
     const/16 v0, 0x8
 
     :cond_0
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->c:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIc:I
 
     .line 223
     return-void
@@ -73,7 +73,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->a:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mArrayICpa:[Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 194
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIb:I
 
     return v0
 .end method
@@ -93,7 +93,7 @@
 
     .prologue
     .line 194
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;->mIc:I
 
     return v0
 .end method

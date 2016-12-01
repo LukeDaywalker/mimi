@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Lorg/slf4j/Logger;
+.field private mEditTextb:Landroid/widget/EditText;
 
-.field private b:Landroid/widget/EditText;
+.field private mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
-.field private c:Landroid/widget/ImageView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+.field private mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->a:Lorg/slf4j/Logger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mLoggera:Lorg/slf4j/Logger;
 
     .line 49
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->a(Landroid/util/AttributeSet;)V
@@ -68,7 +68,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->a:Lorg/slf4j/Logger;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     .line 61
     const v0, 0x7f0b0232
@@ -131,10 +131,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mImageViewc:Landroid/widget/ImageView;
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;
 
@@ -143,7 +143,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;
 
@@ -152,7 +152,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mImageViewc:Landroid/widget/ImageView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;
 
@@ -183,7 +183,7 @@
     if-eqz v1, :cond_0
 
     .line 129
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mImageViewc:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -211,7 +211,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -233,7 +233,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->performClick()Z
 
@@ -246,7 +246,7 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 159
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     .line 160
     return-void
@@ -288,7 +288,7 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -301,7 +301,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -312,12 +312,12 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     if-eqz v0, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;->a(Ljava/lang/String;)V
 
@@ -341,12 +341,12 @@
 
     if-eq v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     if-eqz v0, :cond_1
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->mICald:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;->a()V
 

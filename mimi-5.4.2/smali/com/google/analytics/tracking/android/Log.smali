@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+.field private static mGoogleAnalyticsa:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     .prologue
     .line 92
-    sget-object v0, Lcom/google/analytics/tracking/android/Log;->a:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    sget-object v0, Lcom/google/analytics/tracking/android/Log;->mGoogleAnalyticsa:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     if-nez v0, :cond_0
 
@@ -79,16 +79,16 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Log;->a:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    sput-object v0, Lcom/google/analytics/tracking/android/Log;->mGoogleAnalyticsa:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     .line 96
     :cond_0
-    sget-object v0, Lcom/google/analytics/tracking/android/Log;->a:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    sget-object v0, Lcom/google/analytics/tracking/android/Log;->mGoogleAnalyticsa:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     if-eqz v0, :cond_1
 
     .line 97
-    sget-object v0, Lcom/google/analytics/tracking/android/Log;->a:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    sget-object v0, Lcom/google/analytics/tracking/android/Log;->mGoogleAnalyticsa:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GoogleAnalytics;->d()Lcom/google/analytics/tracking/android/Logger;
 

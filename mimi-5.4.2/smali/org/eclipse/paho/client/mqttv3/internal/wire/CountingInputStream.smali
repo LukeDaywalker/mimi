@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/io/InputStream;
+.field private mIb:I
 
-.field private b:I
+.field private mInputStreama:Ljava/io/InputStream;
 
 
 # direct methods
@@ -18,12 +18,12 @@
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mInputStreama:Ljava/io/InputStream;
 
     .line 34
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->b:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mIb:I
 
     .line 35
     return-void
@@ -36,7 +36,7 @@
 
     .prologue
     .line 49
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->b:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mIb:I
 
     return v0
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -58,11 +58,11 @@
     if-eq v0, v1, :cond_0
 
     .line 40
-    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->b:I
+    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mIb:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->b:I
+    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream;->mIb:I
 
     .line 42
     :cond_0

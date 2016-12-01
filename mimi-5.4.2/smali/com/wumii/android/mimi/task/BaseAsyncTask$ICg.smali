@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+.field private mBaseAsyncTaskc:Lcom/wumii/android/mimi/task/BaseAsyncTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/wumii/android/mimi/b/d",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/concurrent/Future;
+.field private mFutured:Ljava/util/concurrent/Future;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Future",
@@ -53,7 +53,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;-><init>(Lcom/wumii/android/mimi/task/SafeAsyncTask;)V
 
     .line 158
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->c:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mBaseAsyncTaskc:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
     .line 159
     return-void
@@ -64,7 +64,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->d:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mFutured:Ljava/util/concurrent/Future;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->d:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mFutured:Ljava/util/concurrent/Future;
 
     return-object p1
 .end method
@@ -84,7 +84,7 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->c:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mBaseAsyncTaskc:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
     return-object v0
 .end method
@@ -101,9 +101,9 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->c:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mBaseAsyncTaskc:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->d:Ljava/util/concurrent/Future;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICg;->mFutured:Ljava/util/concurrent/Future;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
 

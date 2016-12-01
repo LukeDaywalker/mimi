@@ -4,43 +4,43 @@
 
 
 # static fields
-.field private static final b:Lorg/slf4j/Logger;
+.field private static final mLoggerb:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Lcom/wumii/android/mimi/models/entities/Contact;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private mFeedModuleDaof:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
 
-.field private d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Lcom/wumii/android/mimi/models/entities/Contact;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private mFileHelpere:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private e:Lcom/wumii/android/mimi/models/helper/FileHelper;
-
-.field private f:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
-
-.field private g:Ljava/util/HashMap;
+.field private mHashMapg:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
             "<",
             "Ljava/lang/String;",
             "Lcom/wumii/android/mimi/models/entities/secret/FeedModule;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mListc:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lcom/wumii/android/mimi/models/entities/Contact;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mListd:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lcom/wumii/android/mimi/models/entities/Contact;",
             ">;"
         }
     .end annotation
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->b:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mLoggerb:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -76,21 +76,21 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mListc:Ljava/util/List;
 
     .line 28
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mListd:Ljava/util/List;
 
     .line 33
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->g:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mHashMapg:Ljava/util/HashMap;
 
     .line 37
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -101,14 +101,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->e:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mFileHelpere:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 38
     new-instance v0, Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->f:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mFeedModuleDaof:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
 
     .line 39
     return-void
@@ -126,7 +126,7 @@
     move-result-object v0
 
     .line 43
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->g:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mHashMapg:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -135,9 +135,9 @@
     if-nez v1, :cond_0
 
     .line 44
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->g:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mHashMapg:Ljava/util/HashMap;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->f:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mFeedModuleDaof:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
 
     invoke-virtual {v2, p1, p2}, Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
@@ -147,7 +147,7 @@
 
     .line 46
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->g:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mHashMapg:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -176,12 +176,12 @@
     move-result-object v0
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->g:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mHashMapg:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->f:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->mFeedModuleDaof:Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;
 
     invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/dao/secret/FeedModuleDao;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 

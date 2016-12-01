@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.field final synthetic mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.field final synthetic mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,7 +32,7 @@
     .prologue
     .line 98
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a(Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;)Ljava/util/concurrent/ExecutorService;
 
@@ -41,7 +41,7 @@
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a(Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;)Ljava/util/concurrent/ExecutorService;
 
@@ -58,7 +58,7 @@
     if-nez v0, :cond_0
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a(Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;)Ljava/util/concurrent/ExecutorService;
 
@@ -71,7 +71,7 @@
 
     .line 106
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->close()V
 
@@ -85,7 +85,7 @@
 
     .line 103
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICgb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a(Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;)Ljava/util/concurrent/ExecutorService;
 
@@ -103,7 +103,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->close()V
 
@@ -112,7 +112,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICi;->mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->close()V
 

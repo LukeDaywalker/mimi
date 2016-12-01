@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field final synthetic mNearbyUserListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     .prologue
     .line 82
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->a:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mNearbyUserListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mImageViewb:Landroid/widget/ImageView;
 
     .line 84
     const v0, 0x7f0b00e5
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewc:Landroid/widget/TextView;
 
     .line 85
     const v0, 0x7f0b00e6
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewd:Landroid/widget/TextView;
 
     .line 86
     const v0, 0x7f0b0187
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewe:Landroid/widget/TextView;
 
     .line 87
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewc:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewd:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->mTextViewe:Landroid/widget/TextView;
 
     return-object v0
 .end method

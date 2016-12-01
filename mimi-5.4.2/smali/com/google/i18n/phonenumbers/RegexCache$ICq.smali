@@ -17,7 +17,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/LinkedHashMap;
+.field private mIb:I
+
+.field private mLinkedHashMapa:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap",
@@ -25,8 +27,6 @@
         }
     .end annotation
 .end field
-
-.field private b:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 56
-    iput p1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->b:I
+    iput p1, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->mIb:I
 
     .line 57
     new-instance v0, Lcom/google/i18n/phonenumbers/RegexCache$ICr;
@@ -55,7 +55,7 @@
 
     invoke-direct {v0, p0, v1, v2, v3}, Lcom/google/i18n/phonenumbers/RegexCache$ICr;-><init>(Lcom/google/i18n/phonenumbers/RegexCache$ICq;IFZ)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     .line 63
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 49
-    iget v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->b:I
+    iget v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->mIb:I
 
     return v0
 .end method
@@ -86,7 +86,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -119,7 +119,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0

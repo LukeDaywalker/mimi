@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/umeng/analytics/Gender;
 
-.field private static final synthetic e:[Lcom/umeng/analytics/Gender;
+.field private static final synthetic mArrayGendere:[Lcom/umeng/analytics/Gender;
 
 
 # instance fields
@@ -83,7 +83,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/umeng/analytics/Gender;->e:[Lcom/umeng/analytics/Gender;
+    sput-object v0, Lcom/umeng/analytics/Gender;->mArrayGendere:[Lcom/umeng/analytics/Gender;
 
     return-void
 .end method
@@ -122,7 +122,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/umeng/analytics/Gender$ICf;->a:[I
+    sget-object v0, Lcom/umeng/analytics/Gender$ICf;->mArrayIa:[I
 
     invoke-virtual {p0}, Lcom/umeng/analytics/Gender;->ordinal()I
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 9
-    sget-object v0, Lcom/umeng/analytics/Gender;->e:[Lcom/umeng/analytics/Gender;
+    sget-object v0, Lcom/umeng/analytics/Gender;->mArrayGendere:[Lcom/umeng/analytics/Gender;
 
     invoke-virtual {v0}, [Lcom/umeng/analytics/Gender;->clone()Ljava/lang/Object;
 

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Landroid/os/HandlerThread;
+.field private static mHandlerThreada:Landroid/os/HandlerThread;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICar;->a:Landroid/os/HandlerThread;
+    sput-object v0, Lcom/baidu/location/ICar;->mHandlerThreada:Landroid/os/HandlerThread;
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 .method static a()Landroid/os/HandlerThread;
     .locals 3
 
-    sget-object v0, Lcom/baidu/location/ICar;->a:Landroid/os/HandlerThread;
+    sget-object v0, Lcom/baidu/location/ICar;->mHandlerThreada:Landroid/os/HandlerThread;
 
     if-nez v0, :cond_0
 
@@ -40,14 +40,14 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/baidu/location/ICar;->a:Landroid/os/HandlerThread;
+    sput-object v0, Lcom/baidu/location/ICar;->mHandlerThreada:Landroid/os/HandlerThread;
 
-    sget-object v0, Lcom/baidu/location/ICar;->a:Landroid/os/HandlerThread;
+    sget-object v0, Lcom/baidu/location/ICar;->mHandlerThreada:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICar;->a:Landroid/os/HandlerThread;
+    sget-object v0, Lcom/baidu/location/ICar;->mHandlerThreada:Landroid/os/HandlerThread;
 
     return-object v0
 .end method

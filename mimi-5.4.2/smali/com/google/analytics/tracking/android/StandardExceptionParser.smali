@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/TreeSet;
+.field private final mTreeSeta:Ljava/util/TreeSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/TreeSet",
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Ljava/util/TreeSet;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     .line 42
     invoke-virtual {p0, p1, p2}, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a(Landroid/content/Context;Ljava/util/Collection;)V
@@ -234,7 +234,7 @@
     const/4 v3, 0x0
 
     .line 57
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v0}, Ljava/util/TreeSet;->clear()V
 
@@ -264,7 +264,7 @@
     move-result-object v0
 
     .line 67
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v2, v0}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
 
@@ -344,7 +344,7 @@
     const/4 v1, 0x1
 
     .line 91
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v2}, Ljava/util/TreeSet;->iterator()Ljava/util/Iterator;
 
@@ -380,7 +380,7 @@
     if-eqz v5, :cond_3
 
     .line 94
-    iget-object v5, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v5, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v5, v1}, Ljava/util/TreeSet;->remove(Ljava/lang/Object;)Z
 
@@ -389,7 +389,7 @@
     if-eqz v2, :cond_2
 
     .line 102
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v1, v0}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
 
@@ -449,7 +449,7 @@
     move-result-object v6
 
     .line 137
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->a:Ljava/util/TreeSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/StandardExceptionParser;->mTreeSeta:Ljava/util/TreeSet;
 
     invoke-virtual {v0}, Ljava/util/TreeSet;->iterator()Ljava/util/Iterator;
 

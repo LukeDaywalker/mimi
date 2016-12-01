@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+.field final synthetic mVoiceFileManagera:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager$ICac;->a:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager$ICac;->mVoiceFileManagera:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -102,7 +102,7 @@
 
     sget-object v5, Lcom/wumii/android/soundtouch/ChatVoiceSettings;->b:Ljava/lang/String;
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 

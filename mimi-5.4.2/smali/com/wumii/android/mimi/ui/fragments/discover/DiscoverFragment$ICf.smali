@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+.field final synthetic mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -46,7 +46,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;->mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;)Landroid/support/v4/view/ViewPager;
 

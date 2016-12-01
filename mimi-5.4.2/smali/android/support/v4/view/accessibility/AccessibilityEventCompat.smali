@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+.field private static final mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventKitKatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
     .line 105
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
     goto :goto_0
 .end method
@@ -86,7 +86,7 @@
 
     .prologue
     .line 296
-    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;->a(Landroid/view/accessibility/AccessibilityEvent;I)V
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 313
-    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->a:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityEventCompat;->mAccessibilityEventVersionImpla:Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;->a(Landroid/view/accessibility/AccessibilityEvent;)I
 

@@ -7,11 +7,9 @@
 
 
 # instance fields
-.field private C:Landroid/widget/FrameLayout;
+.field private mFrameLayoutC:Landroid/widget/FrameLayout;
 
-.field private D:Landroid/widget/TextView;
-
-.field private E:Ljava/util/Set;
+.field private mSetE:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -21,6 +19,8 @@
         }
     .end annotation
 .end field
+
+.field private mTextViewD:Landroid/widget/TextView;
 
 .field protected n:Landroid/widget/CheckBox;
 
@@ -208,7 +208,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->C:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mFrameLayoutC:Landroid/widget/FrameLayout;
 
     .line 101
     const v0, 0x7f0b00a8
@@ -241,7 +241,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->D:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewD:Landroid/widget/TextView;
 
     .line 104
     const v0, 0x7f0b00ab
@@ -270,7 +270,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->C:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mFrameLayoutC:Landroid/widget/FrameLayout;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->a(Landroid/view/ViewGroup;)V
 
@@ -323,7 +323,7 @@
     const/4 v1, 0x0
 
     .line 117
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->D:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mTextViewD:Landroid/widget/TextView;
 
     const v3, 0x7f060305
 
@@ -373,7 +373,7 @@
     .line 85
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->E:Ljava/util/Set;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mSetE:Ljava/util/Set;
 
     invoke-direct {v0, p0, p1, v1}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;Ljava/util/Set;)V
 
@@ -482,7 +482,7 @@
     .line 78
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->E:Ljava/util/Set;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mSetE:Ljava/util/Set;
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/share/SearchContactAdapter;-><init>(Landroid/content/Context;Ljava/util/Set;)V
 
@@ -582,7 +582,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->E:Ljava/util/Set;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->mSetE:Ljava/util/Set;
 
     .line 53
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t()V

@@ -10,15 +10,15 @@
 
     const/16 v0, 0xa
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICa;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICa;->mIc:I
 
     const-string/jumbo v0, "heatmap"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICa;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICa;->mStringb:Ljava/lang/String;
 
     const v0, 0x2bf20
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICa;->d:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICa;->mId:I
 
     return-void
 .end method

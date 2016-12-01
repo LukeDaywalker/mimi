@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private a:I
+.field private mCharSequenceb:Ljava/lang/CharSequence;
 
-.field private b:Ljava/lang/CharSequence;
+.field private mCharSequencec:Ljava/lang/CharSequence;
 
-.field private c:Ljava/lang/CharSequence;
+.field private mCharSequenced:Ljava/lang/CharSequence;
 
-.field private d:Ljava/lang/CharSequence;
+.field private mIa:I
 
 
 # direct methods
@@ -27,7 +27,7 @@
     .line 2008
     const/4 v0, 0x1
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->a:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mIa:I
 
     .line 2019
     return-void
@@ -45,24 +45,24 @@
     invoke-direct {v0}, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;-><init>()V
 
     .line 2065
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->a:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mIa:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->a:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mIa:I
 
     .line 2066
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->b:Ljava/lang/CharSequence;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequenceb:Ljava/lang/CharSequence;
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->b:Ljava/lang/CharSequence;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequenceb:Ljava/lang/CharSequence;
 
     .line 2067
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->c:Ljava/lang/CharSequence;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequencec:Ljava/lang/CharSequence;
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->c:Ljava/lang/CharSequence;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequencec:Ljava/lang/CharSequence;
 
     .line 2068
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->d:Ljava/lang/CharSequence;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequenced:Ljava/lang/CharSequence;
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->d:Ljava/lang/CharSequence;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$Action$WearableExtender;->mCharSequenced:Ljava/lang/CharSequence;
 
     .line 2069
     return-object v0

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mBundleb:Landroid/os/Bundle;
 
-.field final synthetic b:Landroid/os/Bundle;
+.field final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 712
-    iput-object p1, p0, Lcom/tencent/c/Pro$ICr;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/c/Pro$ICr;->mContexta:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/tencent/c/Pro$ICr;->b:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/tencent/c/Pro$ICr;->mBundleb:Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,13 +32,13 @@
     .prologue
     .line 716
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICr;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICr;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v1, "http://cgi.qplus.com/report/report"
 
     const-string/jumbo v2, "GET"
 
-    iget-object v3, p0, Lcom/tencent/c/Pro$ICr;->b:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/tencent/c/Pro$ICr;->mBundleb:Landroid/os/Bundle;
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/c/Pro$ICe;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/c/Pro$ICs;
     :try_end_0

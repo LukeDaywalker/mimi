@@ -3,20 +3,20 @@
 
 
 # instance fields
-.field final synthetic dt:Lcom/baidu/location/ICq;
+.field final synthetic mICqdt:Lcom/baidu/location/ICq;
 
-.field private du:Ljava/lang/String;
+.field private mStringdu:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICq;Ljava/lang/String;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/ICq$ICa;->dt:Lcom/baidu/location/ICq;
+    iput-object p1, p0, Lcom/baidu/location/ICq$ICa;->mICqdt:Lcom/baidu/location/ICq;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object p2, p0, Lcom/baidu/location/ICq$ICa;->du:Ljava/lang/String;
+    iput-object p2, p0, Lcom/baidu/location/ICq$ICa;->mStringdu:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -44,7 +44,7 @@
 
     const-string/jumbo v2, "cldc[0]"
 
-    iget-object v3, p0, Lcom/baidu/location/ICq$ICa;->du:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICq$ICa;->mStringdu:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 

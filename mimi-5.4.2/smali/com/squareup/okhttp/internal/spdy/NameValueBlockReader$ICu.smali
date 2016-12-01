@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+.field final synthetic mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICu;->a:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICu;->mNameValueBlockReadera:Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;
 
     invoke-direct {p0}, Ljava/util/zip/Inflater;-><init>()V
 
@@ -41,7 +41,7 @@
     if-eqz v1, :cond_0
 
     .line 70
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Spdy3;->a:[B
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Spdy3;->mArrayBa:[B
 
     invoke-virtual {p0, v0}, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader$ICu;->setDictionary([B)V
 

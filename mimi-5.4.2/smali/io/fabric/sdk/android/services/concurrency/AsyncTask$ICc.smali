@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+.field final synthetic mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 305
-    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     const/4 v0, 0x0
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 307
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a(Lio/fabric/sdk/android/services/concurrency/AsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -59,11 +59,11 @@
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 311
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->b:[Ljava/lang/Object;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;->mArrayObjectb:[Ljava/lang/Object;
 
     invoke-virtual {v1, v2}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a([Ljava/lang/Object;)Ljava/lang/Object;
 

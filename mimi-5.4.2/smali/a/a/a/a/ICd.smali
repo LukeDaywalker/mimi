@@ -3,23 +3,23 @@
 
 
 # static fields
-.field private static final f:Ljava/nio/charset/CharsetDecoder;
+.field private static final mCharsetDecoderf:Ljava/nio/charset/CharsetDecoder;
 
-.field private static final g:Ljava/nio/charset/CharsetDecoder;
+.field private static final mCharsetDecoderg:Ljava/nio/charset/CharsetDecoder;
 
-.field private static final h:Ljava/util/logging/Logger;
+.field private static final mLoggerh:Ljava/util/logging/Logger;
 
 
 # instance fields
-.field private a:[I
+.field private isZe:Z
 
-.field private b:[B
+.field private mArrayBb:[B
 
-.field private c:[I
+.field private mArrayIa:[I
 
-.field private d:[I
+.field private mArrayIc:[I
 
-.field private e:Z
+.field private mArrayId:[I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     move-result-object v0
 
-    sput-object v0, La/a/a/a/ICd;->f:Ljava/nio/charset/CharsetDecoder;
+    sput-object v0, La/a/a/a/ICd;->mCharsetDecoderf:Ljava/nio/charset/CharsetDecoder;
 
     const-string/jumbo v0, "UTF-8"
 
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    sput-object v0, La/a/a/a/ICd;->g:Ljava/nio/charset/CharsetDecoder;
+    sput-object v0, La/a/a/a/ICd;->mCharsetDecoderg:Ljava/nio/charset/CharsetDecoder;
 
     const-class v0, La/a/a/a/ICd;
 
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    sput-object v0, La/a/a/a/ICd;->h:Ljava/util/logging/Logger;
+    sput-object v0, La/a/a/a/ICd;->mLoggerh:Ljava/util/logging/Logger;
 
     return-void
 .end method
@@ -135,13 +135,13 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, v6, La/a/a/a/ICd;->e:Z
+    iput-boolean v0, v6, La/a/a/a/ICd;->isZe:Z
 
     invoke-virtual {p0, v3}, La/c/ICb;->a(I)[I
 
     move-result-object v0
 
-    iput-object v0, v6, La/a/a/a/ICd;->a:[I
+    iput-object v0, v6, La/a/a/a/ICd;->mArrayIa:[I
 
     if-eqz v4, :cond_0
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    iput-object v0, v6, La/a/a/a/ICd;->c:[I
+    iput-object v0, v6, La/a/a/a/ICd;->mArrayIc:[I
 
     :cond_0
     if-nez v2, :cond_2
@@ -206,9 +206,9 @@
     :cond_3
     new-array v0, v0, [B
 
-    iput-object v0, v6, La/a/a/a/ICd;->b:[B
+    iput-object v0, v6, La/a/a/a/ICd;->mArrayBb:[B
 
-    iget-object v0, v6, La/a/a/a/ICd;->b:[B
+    iget-object v0, v6, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-virtual {p0, v0}, La/c/ICb;->readFully([B)V
 
@@ -257,7 +257,7 @@
 
     move-result-object v0
 
-    iput-object v0, v6, La/a/a/a/ICd;->d:[I
+    iput-object v0, v6, La/a/a/a/ICd;->mArrayId:[I
 
     :cond_5
     return-object v6
@@ -269,14 +269,14 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iget-boolean v1, p0, La/a/a/a/ICd;->e:Z
+    iget-boolean v1, p0, La/a/a/a/ICd;->isZe:Z
 
     if-eqz v1, :cond_0
 
-    sget-object v1, La/a/a/a/ICd;->g:Ljava/nio/charset/CharsetDecoder;
+    sget-object v1, La/a/a/a/ICd;->mCharsetDecoderg:Ljava/nio/charset/CharsetDecoder;
 
     :goto_0
-    iget-object v2, p0, La/a/a/a/ICd;->b:[B
+    iget-object v2, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v2, p1, p2}, Ljava/nio/ByteBuffer;->wrap([BII)Ljava/nio/ByteBuffer;
 
@@ -294,7 +294,7 @@
     return-object v0
 
     :cond_0
-    sget-object v1, La/a/a/a/ICd;->f:Ljava/nio/charset/CharsetDecoder;
+    sget-object v1, La/a/a/a/ICd;->mCharsetDecoderf:Ljava/nio/charset/CharsetDecoder;
     :try_end_0
     .catch Ljava/nio/charset/CharacterCodingException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -303,7 +303,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, La/a/a/a/ICd;->h:Ljava/util/logging/Logger;
+    sget-object v2, La/a/a/a/ICd;->mLoggerh:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -388,17 +388,17 @@
     move v0, v1
 
     :goto_1
-    iget-object v3, p0, La/a/a/a/ICd;->a:[I
+    iget-object v3, p0, La/a/a/a/ICd;->mArrayIa:[I
 
     array-length v3, v3
 
     if-eq v0, v3, :cond_5
 
-    iget-object v3, p0, La/a/a/a/ICd;->a:[I
+    iget-object v3, p0, La/a/a/a/ICd;->mArrayIa:[I
 
     aget v3, v3, v0
 
-    iget-object v4, p0, La/a/a/a/ICd;->b:[B
+    iget-object v4, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v4, v3}, La/a/a/a/ICd;->a([BI)I
 
@@ -429,7 +429,7 @@
 
     move-result v6
 
-    iget-object v7, p0, La/a/a/a/ICd;->b:[B
+    iget-object v7, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v7, v4}, La/a/a/a/ICd;->a([BI)I
 
@@ -460,11 +460,11 @@
 
     if-ltz p1, :cond_0
 
-    iget-object v0, p0, La/a/a/a/ICd;->a:[I
+    iget-object v0, p0, La/a/a/a/ICd;->mArrayIa:[I
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, La/a/a/a/ICd;->a:[I
+    iget-object v0, p0, La/a/a/a/ICd;->mArrayIa:[I
 
     array-length v0, v0
 
@@ -477,15 +477,15 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, La/a/a/a/ICd;->a:[I
+    iget-object v0, p0, La/a/a/a/ICd;->mArrayIa:[I
 
     aget v1, v0, p1
 
-    iget-boolean v0, p0, La/a/a/a/ICd;->e:Z
+    iget-boolean v0, p0, La/a/a/a/ICd;->isZe:Z
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, La/a/a/a/ICd;->b:[B
+    iget-object v0, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v0, v1}, La/a/a/a/ICd;->a([BI)I
 
@@ -503,7 +503,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, La/a/a/a/ICd;->b:[B
+    iget-object v0, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v0, v1}, La/a/a/a/ICd;->b([BI)[I
 
@@ -513,7 +513,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, La/a/a/a/ICd;->b:[B
+    iget-object v1, p0, La/a/a/a/ICd;->mArrayBb:[B
 
     invoke-static {v1, v0}, La/a/a/a/ICd;->b([BI)[I
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -22,10 +22,10 @@
     invoke-direct {p0, p1, v0, v1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 95
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIa:I
 
     .line 96
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->b:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIb:I
 
     .line 97
     return-void
@@ -38,7 +38,7 @@
 
     .prologue
     .line 111
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIa:I
 
     return v0
 .end method
@@ -51,7 +51,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     .line 104
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIb:I
 
     if-lez v0, :cond_0
 
@@ -59,12 +59,12 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIb:I
 
     if-le v0, v1, :cond_0
 
     .line 105
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->mIb:I
 
     const/high16 v1, 0x40000000    # 2.0f
 

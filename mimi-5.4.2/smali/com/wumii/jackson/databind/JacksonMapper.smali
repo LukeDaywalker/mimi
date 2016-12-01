@@ -4,22 +4,9 @@
 
 
 # static fields
-.field private static final b:Ljava/util/regex/Pattern;
+.field private static final isZc:Z
 
-.field private static final c:Z
-
-.field private static final d:Lcom/fasterxml/jackson/databind/JsonSerializer;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/fasterxml/jackson/databind/JsonSerializer",
-            "<",
-            "Ljava/util/Date;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final e:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+.field private static final mJsonDeserializere:Lcom/fasterxml/jackson/databind/JsonDeserializer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/databind/JsonDeserializer",
@@ -30,7 +17,20 @@
     .end annotation
 .end field
 
-.field private static final f:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+.field private static final mJsonSerializerd:Lcom/fasterxml/jackson/databind/JsonSerializer;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/fasterxml/jackson/databind/JsonSerializer",
+            "<",
+            "Ljava/util/Date;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final mPatternb:Ljava/util/regex/Pattern;
+
+.field private static final mStdScalarSerializerf:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer",
@@ -44,7 +44,7 @@
     .end annotation
 .end field
 
-.field private static final g:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+.field private static final mStdScalarSerializerg:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer",
@@ -57,7 +57,7 @@
 
 
 # instance fields
-.field private a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+.field private mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
 
 # direct methods
@@ -74,14 +74,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->b:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mPatternb:Ljava/util/regex/Pattern;
 
     .line 37
     invoke-static {}, Lcom/wumii/jackson/databind/JacksonMapper;->c()Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/wumii/jackson/databind/JacksonMapper;->c:Z
+    sput-boolean v0, Lcom/wumii/jackson/databind/JacksonMapper;->isZc:Z
 
     .line 171
     new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICc;
@@ -90,7 +90,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICc;-><init>(Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->d:Lcom/fasterxml/jackson/databind/JsonSerializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mJsonSerializerd:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
     .line 190
     new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICd;
@@ -99,7 +99,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/jackson/databind/JacksonMapper$ICd;-><init>(Ljava/lang/Class;)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->e:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mJsonDeserializere:Lcom/fasterxml/jackson/databind/JsonDeserializer;
 
     .line 249
     new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICe;
@@ -108,7 +108,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper$ICe;-><init>(Ljava/lang/Class;Z)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->f:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mStdScalarSerializerf:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
 
     .line 272
     new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper$ICf;
@@ -117,7 +117,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper$ICf;-><init>(Ljava/lang/Class;Z)V
 
-    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->g:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+    sput-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mStdScalarSerializerg:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
 
     return-void
 .end method
@@ -162,10 +162,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iput-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     sget-object v1, Lcom/fasterxml/jackson/databind/DeserializationFeature;->FAIL_ON_UNKNOWN_PROPERTIES:Lcom/fasterxml/jackson/databind/DeserializationFeature;
 
@@ -216,7 +216,7 @@
     if-eqz p2, :cond_0
 
     .line 149
-    sget-object v2, Lcom/wumii/jackson/databind/JacksonMapper;->d:Lcom/fasterxml/jackson/databind/JsonSerializer;
+    sget-object v2, Lcom/wumii/jackson/databind/JacksonMapper;->mJsonSerializerd:Lcom/fasterxml/jackson/databind/JsonSerializer;
 
     invoke-virtual {v1, v2}, Lcom/fasterxml/jackson/databind/module/SimpleModule;->addSerializer(Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
 
@@ -224,7 +224,7 @@
 
     const-class v3, Ljava/util/Date;
 
-    sget-object v4, Lcom/wumii/jackson/databind/JacksonMapper;->e:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+    sget-object v4, Lcom/wumii/jackson/databind/JacksonMapper;->mJsonDeserializere:Lcom/fasterxml/jackson/databind/JsonDeserializer;
 
     .line 150
     invoke-virtual {v2, v3, v4}, Lcom/fasterxml/jackson/databind/module/SimpleModule;->addDeserializer(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonDeserializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
@@ -233,13 +233,13 @@
 
     const-class v3, Ljava/sql/Timestamp;
 
-    sget-object v4, Lcom/wumii/jackson/databind/JacksonMapper;->e:Lcom/fasterxml/jackson/databind/JsonDeserializer;
+    sget-object v4, Lcom/wumii/jackson/databind/JacksonMapper;->mJsonDeserializere:Lcom/fasterxml/jackson/databind/JsonDeserializer;
 
     .line 151
     invoke-virtual {v2, v3, v4}, Lcom/fasterxml/jackson/databind/module/SimpleModule;->addDeserializer(Ljava/lang/Class;Lcom/fasterxml/jackson/databind/JsonDeserializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
 
     .line 152
-    sget-boolean v2, Lcom/wumii/jackson/databind/JacksonMapper;->c:Z
+    sget-boolean v2, Lcom/wumii/jackson/databind/JacksonMapper;->isZc:Z
 
     if-eqz v2, :cond_0
 
@@ -266,13 +266,13 @@
     if-eqz p1, :cond_1
 
     .line 158
-    sget-object v2, Lcom/wumii/jackson/databind/JacksonMapper;->f:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+    sget-object v2, Lcom/wumii/jackson/databind/JacksonMapper;->mStdScalarSerializerf:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
 
     invoke-virtual {v1, v2}, Lcom/fasterxml/jackson/databind/module/SimpleModule;->addSerializer(Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/jackson/databind/JacksonMapper;->g:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
+    sget-object v3, Lcom/wumii/jackson/databind/JacksonMapper;->mStdScalarSerializerg:Lcom/fasterxml/jackson/databind/ser/std/StdScalarSerializer;
 
     invoke-virtual {v2, v3}, Lcom/fasterxml/jackson/databind/module/SimpleModule;->addSerializer(Lcom/fasterxml/jackson/databind/JsonSerializer;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
 
@@ -319,7 +319,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->b:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/jackson/databind/JacksonMapper;->mPatternb:Ljava/util/regex/Pattern;
 
     return-object v0
 .end method
@@ -361,7 +361,7 @@
     .prologue
     .line 102
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     const-class v1, Lcom/fasterxml/jackson/databind/JsonNode;
 
@@ -462,9 +462,9 @@
 
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v1, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
-    iget-object v2, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v2, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     invoke-virtual {v2, v0}, Lcom/fasterxml/jackson/databind/ObjectMapper;->treeAsTokens(Lcom/fasterxml/jackson/core/TreeNode;)Lcom/fasterxml/jackson/core/JsonParser;
 
@@ -554,7 +554,7 @@
     .prologue
     .line 92
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     invoke-virtual {v0, p1, p2}, Lcom/fasterxml/jackson/databind/ObjectMapper;->readValue(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
     :try_end_0
@@ -620,7 +620,7 @@
     .prologue
     .line 71
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->a:Lcom/fasterxml/jackson/databind/ObjectMapper;
+    iget-object v0, p0, Lcom/wumii/jackson/databind/JacksonMapper;->mObjectMappera:Lcom/fasterxml/jackson/databind/ObjectMapper;
 
     invoke-virtual {v0, p1}, Lcom/fasterxml/jackson/databind/ObjectMapper;->writeValueAsString(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0

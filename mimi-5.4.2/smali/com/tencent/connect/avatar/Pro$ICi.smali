@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+.field final synthetic mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 681
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
     .prologue
     .line 718
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->m(Lcom/tencent/connect/avatar/Pro$ImageActivity;)I
 
@@ -39,7 +39,7 @@
     if-ge v0, v1, :cond_0
 
     .line 719
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->n(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 
@@ -100,7 +100,7 @@
     move-result-object v0
 
     .line 695
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->l(Lcom/tencent/connect/avatar/Pro$ImageActivity;)Landroid/os/Handler;
 
@@ -113,7 +113,7 @@
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 701
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v2, "10659"
 
@@ -137,7 +137,7 @@
     .line 703
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICi;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v2, "10661"
 

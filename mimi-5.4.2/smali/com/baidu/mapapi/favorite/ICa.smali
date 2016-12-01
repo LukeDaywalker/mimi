@@ -37,11 +37,11 @@
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->a:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->a:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringa:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->b:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     new-instance v1, Lcom/baidu/mapapi/model/LatLng;
 
@@ -63,19 +63,19 @@
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/baidu/mapapi/model/LatLng;-><init>(DD)V
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->e:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringe:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->f:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringf:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->d:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringd:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->h:Ljava/lang/String;
 
@@ -83,7 +83,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->g:J
+    iput-wide v2, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mJg:J
 
     goto :goto_0
 .end method
@@ -137,7 +137,7 @@
 
     invoke-direct {v3, v4, v5, v6, v7}, Lcom/baidu/mapapi/model/LatLng;-><init>(DD)V
 
-    iput-object v3, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v3, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_1
     const-string/jumbo v1, "uspoiname"
@@ -146,7 +146,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->b:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, "addtimesec"
 
@@ -158,7 +158,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->g:J
+    iput-wide v2, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mJg:J
 
     const-string/jumbo v1, "addr"
 
@@ -166,7 +166,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->d:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v1, "uspoiuid"
 
@@ -174,7 +174,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->f:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringf:Ljava/lang/String;
 
     const-string/jumbo v1, "ncityid"
 
@@ -182,7 +182,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->e:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringe:Ljava/lang/String;
 
     const-string/jumbo v1, "key"
 
@@ -190,7 +190,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->a:Ljava/lang/String;
+    iput-object v1, v0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringa:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -202,15 +202,15 @@
 
     if-eqz p0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -231,13 +231,13 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringb:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
 
     new-instance v1, Lcom/baidu/mapapi/model/inner/Point;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v2, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -245,7 +245,7 @@
 
     double-to-int v2, v2
 
-    iget-object v3, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v3, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v4, v3, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -257,15 +257,15 @@
 
     iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->c:Lcom/baidu/mapapi/model/inner/Point;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringd:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->d:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringe:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->e:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->mStringf:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->f:Ljava/lang/String;
 

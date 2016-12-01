@@ -4,13 +4,13 @@
 
 
 # instance fields
+.field private mBlockTaskq:Lcom/wumii/android/mimi/task/BlockTask;
+
+.field private mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+
+.field private mChatInfoItemSummaryViewo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+
 .field protected n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
-
-.field private o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
-
-.field private p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
-
-.field private q:Lcom/wumii/android/mimi/task/BlockTask;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemSummaryViewo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     .line 65
     const v0, 0x7f0b01cc
@@ -48,7 +48,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 66
     return-void
@@ -66,9 +66,9 @@
     if-ne p1, v0, :cond_0
 
     .line 92
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -109,7 +109,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_OTHER:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 69
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->o:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemSummaryViewo:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -217,7 +217,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;->setSummaryText(Ljava/lang/String;)V
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mChatInfoItemCheckBoxp:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -265,7 +265,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mBlockTaskq:Lcom/wumii/android/mimi/task/BlockTask;
 
     if-nez v0, :cond_0
 
@@ -274,11 +274,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mBlockTaskq:Lcom/wumii/android/mimi/task/BlockTask;
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->mBlockTaskq:Lcom/wumii/android/mimi/task/BlockTask;
 
     return-object v0
 .end method

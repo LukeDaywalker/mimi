@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
-.field private final b:I
+.field private final mIb:I
 
-.field private c:I
+.field private mIc:I
 
 
 # virtual methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 77
-    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->c:I
+    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->mIc:I
 
     return v0
 .end method
@@ -35,7 +35,7 @@
 
     .prologue
     .line 86
-    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->a:I
+    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->mIa:I
 
     return v0
 .end method
@@ -53,7 +53,7 @@
 
     .prologue
     .line 95
-    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->b:I
+    iget v0, p0, Landroid/support/v4/media/VolumeProviderCompat;->mIb:I
 
     return v0
 .end method

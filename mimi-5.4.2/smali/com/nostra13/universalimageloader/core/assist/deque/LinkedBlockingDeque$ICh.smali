@@ -15,28 +15,28 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/e/a/b/a/a/h",
+            "<TE;>;"
+        }
+    .end annotation
+.end field
+
+.field mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/e/a/b/a/a/h",
+            "<TE;>;"
+        }
+    .end annotation
+.end field
+
+.field mObjecta:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
-        }
-    .end annotation
-.end field
-
-.field b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/e/a/b/a/a/h",
-            "<TE;>;"
-        }
-    .end annotation
-.end field
-
-.field c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/e/a/b/a/a/h",
-            "<TE;>;"
         }
     .end annotation
 .end field
@@ -56,7 +56,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 104
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 105
     return-void

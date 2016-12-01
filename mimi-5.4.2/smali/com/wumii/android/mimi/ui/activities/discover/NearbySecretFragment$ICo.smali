@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
+.field final synthetic mICma:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 239
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICo;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICo;->mICma:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

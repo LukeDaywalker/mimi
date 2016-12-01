@@ -4,9 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private b:Ljava/util/List;
+.field private mGregorianCalendarf:Ljava/util/GregorianCalendar;
+
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
+
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,13 +21,9 @@
     .end annotation
 .end field
 
-.field private c:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerc:Landroid/view/View$OnClickListener;
 
-.field private d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
-
-.field private e:Ljava/lang/String;
-
-.field private f:Ljava/util/GregorianCalendar;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -35,21 +35,21 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 36
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->c:Landroid/view/View$OnClickListener;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     .line 37
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 38
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     .line 40
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 43
     const v0, 0x7f060198
@@ -76,14 +76,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mStringe:Ljava/lang/String;
 
     .line 44
     new-instance v0, Ljava/util/GregorianCalendar;
 
     invoke-direct {v0}, Ljava/util/GregorianCalendar;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->f:Ljava/util/GregorianCalendar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mGregorianCalendarf:Ljava/util/GregorianCalendar;
 
     .line 45
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -112,7 +112,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -130,7 +130,7 @@
     .line 58
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -142,7 +142,7 @@
     if-ge v1, v2, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -159,14 +159,14 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -200,7 +200,7 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     .line 49
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->notifyDataSetChanged()V
@@ -228,7 +228,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -270,7 +270,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -309,7 +309,7 @@
     if-nez p2, :cond_0
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300cf
 
@@ -351,7 +351,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->e:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -383,7 +383,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->c:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -392,7 +392,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->c:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -413,7 +413,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0, v2, v1, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
@@ -434,7 +434,7 @@
 
     .line 106
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->f:Ljava/util/GregorianCalendar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter;->mGregorianCalendarf:Ljava/util/GregorianCalendar;
 
     invoke-virtual {v0}, Ljava/util/GregorianCalendar;->clone()Ljava/lang/Object;
 

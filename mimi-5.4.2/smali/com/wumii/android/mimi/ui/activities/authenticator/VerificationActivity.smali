@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private n:Landroid/widget/TextView;
+.field private mCountDownTimerViewp:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-.field private o:Landroid/widget/RelativeLayout;
+.field private mEditTextq:Landroid/widget/EditText;
 
-.field private p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+.field private mRelativeLayouto:Landroid/widget/RelativeLayout;
 
-.field private q:Landroid/widget/EditText;
+.field private mStringr:Ljava/lang/String;
 
-.field private r:Ljava/lang/String;
+.field private mStrings:Ljava/lang/String;
 
-.field private s:Ljava/lang/String;
+.field private mTextViewn:Landroid/widget/TextView;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->o:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mRelativeLayouto:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mTextViewn:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mTextViewn:Landroid/widget/TextView;
 
     .line 84
     const v0, 0x7f0b0093
@@ -100,7 +100,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->o:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mRelativeLayouto:Landroid/widget/RelativeLayout;
 
     .line 85
     const v0, 0x7f0b0094
@@ -111,7 +111,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mCountDownTimerViewp:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     .line 86
     const v0, 0x7f0b0092
@@ -122,7 +122,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->q:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mEditTextq:Landroid/widget/EditText;
 
     .line 87
     return-void
@@ -135,7 +135,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mEditTextq:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -146,7 +146,7 @@
     move-result-object v0
 
     .line 112
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -175,9 +175,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->r:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStringr:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->s:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStrings:Ljava/lang/String;
 
     invoke-virtual {v1, p0, v2, v3, v0}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->r:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
@@ -299,7 +299,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->r:Ljava/lang/String;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStringr:Ljava/lang/String;
 
     .line 48
     const-string/jumbo v1, "password"
@@ -308,17 +308,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->s:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStrings:Ljava/lang/String;
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mTextViewn:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->r:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mEditTextq:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICr;
 
@@ -327,7 +327,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mCountDownTimerViewp:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;
 
@@ -336,7 +336,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mCountDownTimerViewp:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     const-wide/16 v2, 0x7530
 
@@ -367,7 +367,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->mCountDownTimerViewp:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     const-wide/16 v2, 0x7530
 

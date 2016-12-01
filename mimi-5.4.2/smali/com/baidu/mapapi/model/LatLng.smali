@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/model/LatLng;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/model/LatLng;->mStringa:Ljava/lang/String;
 
     new-instance v0, Lcom/baidu/mapapi/model/ICa;
 

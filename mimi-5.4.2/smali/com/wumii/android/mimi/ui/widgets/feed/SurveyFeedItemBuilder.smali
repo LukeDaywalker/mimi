@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+.field private mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 17
     return-void
@@ -39,7 +39,7 @@
     .line 22
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;-><init>(Landroid/content/Context;)V
 
@@ -50,7 +50,7 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;
 
     .line 26
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->b:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->setOnSurveyCardClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;)V
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->b:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyFeedItemBuilder;->mICmb:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     .line 34
     return-void

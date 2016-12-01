@@ -6,11 +6,11 @@
 # instance fields
 .field public a:I
 
-.field b:F
+.field isZc:Z
 
-.field c:Z
+.field isZd:Z
 
-.field d:Z
+.field mFb:F
 
 
 # direct methods

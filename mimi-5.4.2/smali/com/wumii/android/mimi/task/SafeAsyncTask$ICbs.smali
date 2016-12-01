@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Exception;
+.field final synthetic mExceptiona:Ljava/lang/Exception;
 
-.field final synthetic b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+.field final synthetic mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
 
 # direct methods
@@ -30,9 +30,9 @@
 
     .prologue
     .line 237
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->a:Ljava/lang/Exception;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mExceptiona:Ljava/lang/Exception;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,13 +46,13 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->a:Ljava/lang/Exception;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mExceptiona:Ljava/lang/Exception;
 
     instance-of v0, v0, Ljava/lang/InterruptedException;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->a:Ljava/lang/Exception;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mExceptiona:Ljava/lang/Exception;
 
     instance-of v0, v0, Ljava/io/InterruptedIOException;
 
@@ -60,11 +60,11 @@
 
     .line 241
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->a:Ljava/lang/Exception;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mExceptiona:Ljava/lang/Exception;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->b(Ljava/lang/Exception;)V
 
@@ -76,11 +76,11 @@
 
     .line 243
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->a:Ljava/lang/Exception;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbs;->mExceptiona:Ljava/lang/Exception;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->a(Ljava/lang/Exception;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/SecretManager;
+.field final synthetic mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->a:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
 
     .line 61
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->a:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -77,7 +77,7 @@
     move-result-object v2
 
     .line 64
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->a:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -132,7 +132,7 @@
     .line 78
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->a:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbc;->mSecretManagera:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/Object;)V
 

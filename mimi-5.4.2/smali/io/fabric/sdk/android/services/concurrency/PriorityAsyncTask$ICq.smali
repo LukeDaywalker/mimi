@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/Executor;
+.field private final mExecutora:Ljava/util/concurrent/Executor;
 
-.field private final b:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
+.field private final mPriorityAsyncTaskb:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
 
 
 # direct methods
@@ -33,10 +33,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 108
-    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->a:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->mExecutora:Ljava/util/concurrent/Executor;
 
     .line 109
-    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->b:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->mPriorityAsyncTaskb:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
 
     .line 110
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->b:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->mPriorityAsyncTaskb:Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;
 
     return-object v0
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->a:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICq;->mExecutora:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask$ICr;
 

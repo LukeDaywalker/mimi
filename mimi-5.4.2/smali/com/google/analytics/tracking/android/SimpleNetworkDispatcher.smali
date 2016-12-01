@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mContextc:Landroid/content/Context;
 
-.field private final b:Lorg/apache/http/client/HttpClient;
+.field private mGoogleAnalyticsd:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
-.field private final c:Landroid/content/Context;
+.field private final mHttpClientb:Lorg/apache/http/client/HttpClient;
 
-.field private d:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+.field private final mStringa:Ljava/lang/String;
 
-.field private e:Ljava/net/URL;
+.field private mURLe:Ljava/net/URL;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->c:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mContextc:Landroid/content/Context;
 
     .line 64
     const-string/jumbo v1, "GoogleAnalytics"
@@ -73,13 +73,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mStringa:Ljava/lang/String;
 
     .line 72
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->b:Lorg/apache/http/client/HttpClient;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mHttpClientb:Lorg/apache/http/client/HttpClient;
 
     .line 74
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->d:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mGoogleAnalyticsd:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     .line 75
     return-void
@@ -153,7 +153,7 @@
     :goto_1
     const-string/jumbo v1, "User-Agent"
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Lorg/apache/http/HttpEntityEnclosingRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -555,7 +555,7 @@
 
     .line 141
     :cond_6
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->d:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mGoogleAnalyticsd:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/GoogleAnalytics;->b()Z
 
@@ -578,7 +578,7 @@
 
     .line 146
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mContextc:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GANetworkReceiver;->b(Landroid/content/Context;)V
     :try_end_0
@@ -590,7 +590,7 @@
     .line 149
     :goto_5
     :try_start_1
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->b:Lorg/apache/http/client/HttpClient;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mHttpClientb:Lorg/apache/http/client/HttpClient;
 
     invoke-interface {v1, v7, v6}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;
 
@@ -780,12 +780,12 @@
 
     .prologue
     .line 256
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->e:Ljava/net/URL;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mURLe:Ljava/net/URL;
 
     if-eqz v0, :cond_0
 
     .line 257
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->e:Ljava/net/URL;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mURLe:Ljava/net/URL;
 
     .line 270
     :goto_0
@@ -852,7 +852,7 @@
 
     invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->e:Ljava/net/URL;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mURLe:Ljava/net/URL;
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -867,7 +867,7 @@
     .line 284
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->e:Ljava/net/URL;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mURLe:Ljava/net/URL;
 
     goto :goto_0
 .end method
@@ -877,7 +877,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, "connectivity"
 

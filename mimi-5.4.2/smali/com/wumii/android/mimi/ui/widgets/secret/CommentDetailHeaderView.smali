@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mDisplayImageOptionsf:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/TextView;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/ProgressBar;
+.field private mProgressBard:Landroid/widget/ProgressBar;
 
-.field private e:Landroid/widget/ImageView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mTextViewc:Landroid/widget/TextView;
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewa:Landroid/widget/ImageView;
 
     .line 50
     const v0, 0x7f0b008b
@@ -78,7 +78,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mTextViewb:Landroid/widget/TextView;
 
     .line 52
     const v0, 0x7f0b01bb
@@ -89,7 +89,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mTextViewc:Landroid/widget/TextView;
 
     .line 53
     const v0, 0x7f0b01bc
@@ -100,7 +100,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->d:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mProgressBard:Landroid/widget/ProgressBar;
 
     .line 54
     const v0, 0x7f0b01bd
@@ -111,7 +111,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewe:Landroid/widget/ImageView;
 
     .line 56
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mDisplayImageOptionsf:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 62
     return-void
@@ -167,7 +167,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewa:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
@@ -215,14 +215,14 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewa:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mDisplayImageOptionsf:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v1, v0, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewa:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
@@ -240,7 +240,7 @@
     const/4 v1, 0x0
 
     .line 65
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->d:Landroid/widget/ProgressBar;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mProgressBard:Landroid/widget/ProgressBar;
 
     if-eqz p1, :cond_0
 
@@ -250,7 +250,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 66
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mTextViewc:Landroid/widget/TextView;
 
     if-eqz p2, :cond_1
 
@@ -260,7 +260,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->mImageViewe:Landroid/widget/ImageView;
 
     if-eqz p3, :cond_2
 

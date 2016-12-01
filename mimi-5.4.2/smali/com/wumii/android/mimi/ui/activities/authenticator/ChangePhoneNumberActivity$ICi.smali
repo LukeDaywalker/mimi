@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+.field final synthetic mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 189
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ChangePnoTask;-><init>(Landroid/app/Activity;)V
 
@@ -29,7 +29,7 @@
     const/4 v4, 0x1
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->e(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->f(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Landroid/widget/TextView;
 
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Landroid/widget/TextView;
 
@@ -131,7 +131,7 @@
     move-result-object v2
 
     .line 199
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->g(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -144,7 +144,7 @@
     invoke-virtual {v3, v1}, Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;->setPhoneNumber(Ljava/lang/String;)V
 
     .line 202
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->h(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -158,7 +158,7 @@
     invoke-virtual {v3, v2}, Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;->setCookie(Ljava/lang/String;)V
 
     .line 204
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->i(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -181,7 +181,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 211
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->mChangePhoneNumberActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->finish()V
 

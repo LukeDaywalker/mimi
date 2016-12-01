@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 548
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     if-ne v0, v1, :cond_1
 
     .line 568
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->g()Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
@@ -77,7 +77,7 @@
     if-ne v0, v1, :cond_2
 
     .line 573
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->h()Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
@@ -87,7 +87,7 @@
     if-eqz v0, :cond_0
 
     .line 575
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->h()Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
@@ -112,7 +112,7 @@
     if-ne v0, v1, :cond_0
 
     .line 578
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->i()Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
@@ -132,7 +132,7 @@
 
     .prologue
     .line 551
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;->mNavigationActivitya:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 

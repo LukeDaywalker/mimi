@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/IBinder;
+.field private mIBindera:Landroid/os/IBinder;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 152
-    iput-object p1, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     .line 153
     return-void
@@ -43,7 +43,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 186
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x2
 
@@ -100,7 +100,7 @@
 
     .line 272
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x7
 
@@ -168,7 +168,7 @@
 
     .line 224
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x4
 
@@ -236,7 +236,7 @@
 
     .line 290
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v2, 0x8
 
@@ -304,7 +304,7 @@
 
     .line 206
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x3
 
@@ -372,7 +372,7 @@
 
     .line 254
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x6
 
@@ -443,7 +443,7 @@
 
     .line 175
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x1
 
@@ -509,7 +509,7 @@
     invoke-virtual {v1, p1}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     .line 236
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x5
 
@@ -541,7 +541,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaControllerCallback$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method

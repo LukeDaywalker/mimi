@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
+.field private final mDatabasePeerManagera:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
 
-.field private final b:Lcom/facebook/stetho/json/ObjectMapper;
+.field private final mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
 
 # direct methods
@@ -31,14 +31,14 @@
 
     invoke-direct {v0, p1}, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Database;->a:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Database;->mDatabasePeerManagera:Lcom/facebook/stetho/inspector/database/DatabasePeerManager;
 
     .line 43
     new-instance v0, Lcom/facebook/stetho/json/ObjectMapper;
 
     invoke-direct {v0}, Lcom/facebook/stetho/json/ObjectMapper;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Database;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Database;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
     .line 44
     return-void

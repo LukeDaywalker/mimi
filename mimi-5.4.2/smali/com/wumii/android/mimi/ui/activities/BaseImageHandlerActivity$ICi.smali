@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
+.field final synthetic mBaseImageHandlerActivitya:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 26
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;->mBaseImageHandlerActivitya:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;->mBaseImageHandlerActivitya:Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->b(Ljava/lang/String;)V
 

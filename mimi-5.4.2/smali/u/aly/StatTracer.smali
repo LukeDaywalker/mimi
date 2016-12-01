@@ -10,15 +10,15 @@
 
 .field public c:J
 
-.field private final d:I
+.field private mContexth:Landroid/content/Context;
 
-.field private e:I
+.field private final mId:I
 
-.field private f:J
+.field private mIe:I
 
-.field private g:J
+.field private mJf:J
 
-.field private h:Landroid/content/Context;
+.field private mJg:J
 
 
 # direct methods
@@ -34,13 +34,13 @@
     .line 15
     const v0, 0x36ee80
 
-    iput v0, p0, Lu/aly/StatTracer;->d:I
+    iput v0, p0, Lu/aly/StatTracer;->mId:I
 
     .line 22
-    iput-wide v2, p0, Lu/aly/StatTracer;->f:J
+    iput-wide v2, p0, Lu/aly/StatTracer;->mJf:J
 
     .line 23
-    iput-wide v2, p0, Lu/aly/StatTracer;->g:J
+    iput-wide v2, p0, Lu/aly/StatTracer;->mJg:J
 
     .line 34
     invoke-direct {p0, p1}, Lu/aly/StatTracer;->b(Landroid/content/Context;)V
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/StatTracer;->h:Landroid/content/Context;
+    iput-object v0, p0, Lu/aly/StatTracer;->mContexth:Landroid/content/Context;
 
     .line 39
     invoke-static {p1}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -139,7 +139,7 @@
 
     move-result v1
 
-    iput v1, p0, Lu/aly/StatTracer;->e:I
+    iput v1, p0, Lu/aly/StatTracer;->mIe:I
 
     .line 45
     const-string/jumbo v1, "last_request_time"
@@ -194,7 +194,7 @@
     iput v0, p0, Lu/aly/StatTracer;->a:I
 
     .line 59
-    iget-wide v0, p0, Lu/aly/StatTracer;->f:J
+    iget-wide v0, p0, Lu/aly/StatTracer;->mJf:J
 
     iput-wide v0, p0, Lu/aly/StatTracer;->c:J
 
@@ -226,7 +226,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lu/aly/StatTracer;->f:J
+    iput-wide v0, p0, Lu/aly/StatTracer;->mJf:J
 
     .line 68
     return-void
@@ -241,13 +241,13 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lu/aly/StatTracer;->f:J
+    iget-wide v2, p0, Lu/aly/StatTracer;->mJf:J
 
     sub-long/2addr v0, v2
 
     long-to-int v0, v0
 
-    iput v0, p0, Lu/aly/StatTracer;->e:I
+    iput v0, p0, Lu/aly/StatTracer;->mIe:I
 
     .line 72
     return-void
@@ -258,7 +258,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lu/aly/StatTracer;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/StatTracer;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -287,7 +287,7 @@
 
     const-string/jumbo v1, "last_request_spent_ms"
 
-    iget v2, p0, Lu/aly/StatTracer;->e:I
+    iget v2, p0, Lu/aly/StatTracer;->mIe:I
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -312,7 +312,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lu/aly/StatTracer;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/StatTracer;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -345,14 +345,14 @@
     const-wide/16 v2, 0x0
 
     .line 90
-    iget-wide v0, p0, Lu/aly/StatTracer;->g:J
+    iget-wide v0, p0, Lu/aly/StatTracer;->mJg:J
 
     cmp-long v0, v0, v2
 
     if-nez v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lu/aly/StatTracer;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/StatTracer;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -364,11 +364,11 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lu/aly/StatTracer;->g:J
+    iput-wide v0, p0, Lu/aly/StatTracer;->mJg:J
 
     .line 94
     :cond_0
-    iget-wide v0, p0, Lu/aly/StatTracer;->g:J
+    iget-wide v0, p0, Lu/aly/StatTracer;->mJg:J
 
     cmp-long v0, v0, v2
 
@@ -404,7 +404,7 @@
     return-wide v0
 
     :cond_0
-    iget-wide v0, p0, Lu/aly/StatTracer;->g:J
+    iget-wide v0, p0, Lu/aly/StatTracer;->mJg:J
 
     goto :goto_0
 .end method

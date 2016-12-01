@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/viewpagerindicator/TabPageIndicator;
+.field final synthetic mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
     check-cast p1, Lcom/viewpagerindicator/TabPageIndicator$ICg;
 
     .line 61
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget-object v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
 
@@ -47,7 +47,7 @@
     move-result v1
 
     .line 63
-    iget-object v2, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v2, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget-object v2, v2, Lcom/viewpagerindicator/TabPageIndicator;->c:Landroid/support/v4/view/ViewPager;
 
@@ -56,14 +56,14 @@
     .line 64
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget-object v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
     if-eqz v0, :cond_0
 
     .line 65
-    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->a:Lcom/viewpagerindicator/TabPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator$ICd;->mTabPageIndicatora:Lcom/viewpagerindicator/TabPageIndicator;
 
     iget-object v0, v0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 

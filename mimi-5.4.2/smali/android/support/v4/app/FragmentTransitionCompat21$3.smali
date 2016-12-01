@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+.field final synthetic mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
-.field private b:Landroid/graphics/Rect;
+.field private mRectb:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 211
-    iput-object p1, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->a:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     invoke-direct {p0}, Landroid/transition/Transition$EpicenterCallback;-><init>()V
 
@@ -29,18 +29,18 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mRectb:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->a:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->a:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 217
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->a:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mEpicenterViewa:Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;
 
     iget-object v0, v0, Landroid/support/v4/app/FragmentTransitionCompat21$EpicenterView;->a:Landroid/view/View;
 
@@ -48,11 +48,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->b:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mRectb:Landroid/graphics/Rect;
 
     .line 219
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTransitionCompat21$3;->mRectb:Landroid/graphics/Rect;
 
     return-object v0
 .end method

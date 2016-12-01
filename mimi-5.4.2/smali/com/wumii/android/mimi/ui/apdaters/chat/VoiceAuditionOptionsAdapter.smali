@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Landroid/view/LayoutInflater;
+.field private mIc:I
 
-.field private c:I
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -20,14 +20,14 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mContexta:Landroid/content/Context;
 
     .line 23
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 24
     return-void
@@ -40,7 +40,7 @@
 
     .prologue
     .line 27
-    iput p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->c:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mIc:I
 
     .line 28
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->notifyDataSetChanged()V
@@ -109,7 +109,7 @@
     if-nez p2, :cond_0
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030067
 
@@ -150,7 +150,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 58
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->c:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mIc:I
 
     if-ne v2, p1, :cond_2
 
@@ -160,7 +160,7 @@
     invoke-virtual {v0, v3, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 60
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -196,7 +196,7 @@
     invoke-virtual {v0, v3, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 63
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

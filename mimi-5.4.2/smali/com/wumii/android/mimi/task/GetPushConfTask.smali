@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:I
+.field private mId:I
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 27
     return-void
@@ -65,14 +65,14 @@
 
     .prologue
     .line 68
-    iget v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mId:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mId:I
 
     .line 69
-    iget v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mId:I
 
     const/4 v1, 0x3
 
@@ -111,7 +111,7 @@
 
     .line 34
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "mqtt"
 
@@ -227,7 +227,7 @@
     invoke-direct/range {v0 .. v7}, Lcom/wumii/android/mimi/push/PushService$MqttConf;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 49
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/GetPushConfTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "mqtt"
 

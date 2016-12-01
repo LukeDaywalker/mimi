@@ -7,39 +7,41 @@
 
 
 # static fields
-.field private static final n:[I
+.field private static final mArrayIn:[I
 
-.field private static final o:[I
+.field private static final mArrayIo:[I
 
-.field private static final q:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
+.field private static final mPagerTitleStripImplq:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 
 
 # instance fields
-.field a:Landroid/support/v4/view/ViewPager;
+.field private isZj:Z
 
-.field b:Landroid/widget/TextView;
+.field private isZk:Z
 
-.field c:Landroid/widget/TextView;
+.field private mFg:F
 
-.field d:Landroid/widget/TextView;
+.field mIe:I
 
-.field e:I
+.field private mIf:I
 
-.field private f:I
+.field private mIh:I
 
-.field private g:F
+.field private mIi:I
 
-.field private h:I
+.field private mIp:I
 
-.field private i:I
+.field private final mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
-.field private j:Z
+.field mTextViewb:Landroid/widget/TextView;
 
-.field private k:Z
+.field mTextViewc:Landroid/widget/TextView;
 
-.field private final l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+.field mTextViewd:Landroid/widget/TextView;
 
-.field private m:Ljava/lang/ref/WeakReference;
+.field mViewPagera:Landroid/support/v4/view/ViewPager;
+
+.field private mWeakReferencem:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -49,8 +51,6 @@
         }
     .end annotation
 .end field
-
-.field private p:I
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->n:[I
+    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->mArrayIn:[I
 
     .line 72
     const/4 v0, 0x1
@@ -78,7 +78,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->o:[I
+    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->mArrayIo:[I
 
     .line 100
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -92,7 +92,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImplIcs;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->q:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
+    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->mPagerTitleStripImplq:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 
     .line 105
     :goto_0
@@ -104,7 +104,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->q:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
+    sput-object v0, Landroid/support/v4/view/PagerTitleStrip;->mPagerTitleStripImplq:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 
     goto :goto_0
 
@@ -147,12 +147,12 @@
     .line 53
     const/4 v1, -0x1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->f:I
+    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIf:I
 
     .line 54
     const/high16 v1, -0x40800000    # -1.0f
 
-    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     .line 61
     new-instance v1, Landroid/support/v4/view/PagerTitleStrip$PageListener;
@@ -161,14 +161,14 @@
 
     invoke-direct {v1, p0, v2}, Landroid/support/v4/view/PagerTitleStrip$PageListener;-><init>(Landroid/support/v4/view/PagerTitleStrip;Landroid/support/v4/view/PagerTitleStrip$1;)V
 
-    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
     .line 118
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/view/PagerTitleStrip;->addView(Landroid/view/View;)V
 
@@ -177,7 +177,7 @@
 
     invoke-direct {v1, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/view/PagerTitleStrip;->addView(Landroid/view/View;)V
 
@@ -186,12 +186,12 @@
 
     invoke-direct {v1, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p0, v1}, Landroid/support/v4/view/PagerTitleStrip;->addView(Landroid/view/View;)V
 
     .line 122
-    sget-object v1, Landroid/support/v4/view/PagerTitleStrip;->n:[I
+    sget-object v1, Landroid/support/v4/view/PagerTitleStrip;->mArrayIn:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -206,17 +206,17 @@
     if-eqz v2, :cond_0
 
     .line 125
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v3, p1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 126
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3, p1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 127
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3, p1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
@@ -250,17 +250,17 @@
     move-result v3
 
     .line 135
-    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 136
-    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 137
-    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -274,13 +274,13 @@
 
     move-result v3
 
-    iput v3, p0, Landroid/support/v4/view/PagerTitleStrip;->i:I
+    iput v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mIi:I
 
     .line 140
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 142
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getTextColors()Landroid/content/res/ColorStateList;
 
@@ -290,7 +290,7 @@
 
     move-result v1
 
-    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->e:I
+    iput v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIe:I
 
     .line 143
     const v1, 0x3f19999a    # 0.6f
@@ -298,21 +298,21 @@
     invoke-virtual {p0, v1}, Landroid/support/v4/view/PagerTitleStrip;->setNonPrimaryAlpha(F)V
 
     .line 145
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     sget-object v3, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
     .line 146
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     sget-object v3, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
     .line 147
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     sget-object v3, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
@@ -322,7 +322,7 @@
     if-eqz v2, :cond_3
 
     .line 151
-    sget-object v1, Landroid/support/v4/view/PagerTitleStrip;->o:[I
+    sget-object v1, Landroid/support/v4/view/PagerTitleStrip;->mArrayIo:[I
 
     invoke-virtual {p1, v2, v1}, Landroid/content/Context;->obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
 
@@ -341,17 +341,17 @@
     if-eqz v0, :cond_4
 
     .line 157
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->setSingleLineAllCaps(Landroid/widget/TextView;)V
 
     .line 158
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->setSingleLineAllCaps(Landroid/widget/TextView;)V
 
     .line 159
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->setSingleLineAllCaps(Landroid/widget/TextView;)V
 
@@ -374,24 +374,24 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->h:I
+    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIh:I
 
     .line 168
     return-void
 
     .line 161
     :cond_4
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 162
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 163
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->setSingleLine()V
 
@@ -403,7 +403,7 @@
 
     .prologue
     .line 45
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     return v0
 .end method
@@ -413,7 +413,7 @@
 
     .prologue
     .line 108
-    sget-object v0, Landroid/support/v4/view/PagerTitleStrip;->q:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
+    sget-object v0, Landroid/support/v4/view/PagerTitleStrip;->mPagerTitleStripImplq:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;->a(Landroid/widget/TextView;)V
 
@@ -430,7 +430,7 @@
     .line 333
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/view/PagerTitleStrip;->f:I
+    iget v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mIf:I
 
     move/from16 v0, p1
 
@@ -439,7 +439,7 @@
     .line 334
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getAdapter()Landroid/support/v4/view/PagerAdapter;
 
@@ -457,12 +457,12 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Landroid/support/v4/view/PagerTitleStrip;->k:Z
+    iput-boolean v2, v0, Landroid/support/v4/view/PagerTitleStrip;->isZk:Z
 
     .line 341
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
 
@@ -471,7 +471,7 @@
     .line 342
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
 
@@ -480,7 +480,7 @@
     .line 343
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
 
@@ -570,7 +570,7 @@
     .line 364
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getBaseline()I
 
@@ -579,7 +579,7 @@
     .line 365
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v3, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getBaseline()I
 
@@ -588,7 +588,7 @@
     .line 366
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v14, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v14}, Landroid/widget/TextView;->getBaseline()I
 
@@ -615,7 +615,7 @@
     .line 371
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v15, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v15}, Landroid/widget/TextView;->getMeasuredHeight()I
 
@@ -626,7 +626,7 @@
     .line 372
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v0, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     move-object/from16 v16, v0
 
@@ -639,7 +639,7 @@
     .line 373
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v0, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     move-object/from16 v17, v0
 
@@ -663,7 +663,7 @@
     .line 377
     move-object/from16 v0, p0
 
-    iget v0, v0, Landroid/support/v4/view/PagerTitleStrip;->i:I
+    iget v0, v0, Landroid/support/v4/view/PagerTitleStrip;->mIi:I
 
     move/from16 v16, v0
 
@@ -685,11 +685,11 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v10, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v11, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v11}, Landroid/widget/TextView;->getMeasuredHeight()I
 
@@ -702,7 +702,7 @@
     .line 407
     move-object/from16 v0, p0
 
-    iget v3, v0, Landroid/support/v4/view/PagerTitleStrip;->h:I
+    iget v3, v0, Landroid/support/v4/view/PagerTitleStrip;->mIh:I
 
     sub-int v3, v12, v3
 
@@ -715,13 +715,13 @@
     .line 408
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v8, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     add-int/2addr v5, v3
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v10, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v10}, Landroid/widget/TextView;->getMeasuredHeight()I
 
@@ -738,7 +738,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v4/view/PagerTitleStrip;->h:I
+    iget v4, v0, Landroid/support/v4/view/PagerTitleStrip;->mIh:I
 
     add-int/2addr v4, v13
 
@@ -749,13 +749,13 @@
     .line 413
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v4, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     add-int v5, v3, v6
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v6, v0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/widget/TextView;->getMeasuredHeight()I
 
@@ -770,14 +770,14 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iput v0, v1, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     .line 417
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Landroid/support/v4/view/PagerTitleStrip;->k:Z
+    iput-boolean v2, v0, Landroid/support/v4/view/PagerTitleStrip;->isZk:Z
 
     .line 418
     :goto_1
@@ -789,7 +789,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iget v2, v0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     cmpl-float v2, p2, v2
 
@@ -866,7 +866,7 @@
 
     .line 272
     :goto_0
-    iput-boolean v2, p0, Landroid/support/v4/view/PagerTitleStrip;->j:Z
+    iput-boolean v2, p0, Landroid/support/v4/view/PagerTitleStrip;->isZj:Z
 
     .line 275
     if-lt p1, v2, :cond_4
@@ -882,12 +882,12 @@
 
     .line 278
     :goto_1
-    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 280
-    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v4, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     if-eqz p2, :cond_3
 
@@ -916,7 +916,7 @@
 
     .line 287
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -973,36 +973,36 @@
     move-result v2
 
     .line 295
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0, v2}, Landroid/widget/TextView;->measure(II)V
 
     .line 296
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0, v2}, Landroid/widget/TextView;->measure(II)V
 
     .line 297
-    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0, v2}, Landroid/widget/TextView;->measure(II)V
 
     .line 299
-    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->f:I
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIf:I
 
     .line 301
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTitleStrip;->k:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTitleStrip;->isZk:Z
 
     if-nez v0, :cond_1
 
     .line 302
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/support/v4/view/PagerTitleStrip;->a(IFZ)V
 
     .line 305
     :cond_1
-    iput-boolean v1, p0, Landroid/support/v4/view/PagerTitleStrip;->j:Z
+    iput-boolean v1, p0, Landroid/support/v4/view/PagerTitleStrip;->isZj:Z
 
     .line 306
     return-void
@@ -1033,21 +1033,21 @@
     if-eqz p1, :cond_0
 
     .line 317
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
     invoke-virtual {p1, v0}, Landroid/support/v4/view/PagerAdapter;->b(Landroid/database/DataSetObserver;)V
 
     .line 318
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->m:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     .line 320
     :cond_0
     if-eqz p2, :cond_1
 
     .line 321
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
     invoke-virtual {p2, v0}, Landroid/support/v4/view/PagerAdapter;->a(Landroid/database/DataSetObserver;)V
 
@@ -1056,26 +1056,26 @@
 
     invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->m:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     .line 324
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     if-eqz v0, :cond_2
 
     .line 325
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->f:I
+    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIf:I
 
     .line 326
     const/high16 v0, -0x40800000    # -1.0f
 
-    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     .line 327
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
@@ -1121,7 +1121,7 @@
 
     .prologue
     .line 184
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->h:I
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIh:I
 
     return v0
 .end method
@@ -1162,24 +1162,24 @@
     move-result-object v1
 
     .line 253
-    iget-object v2, p0, Landroid/support/v4/view/PagerTitleStrip;->l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTitleStrip;->mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
     invoke-virtual {v0, v2}, Landroid/support/v4/view/ViewPager;->a(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     .line 254
-    iget-object v2, p0, Landroid/support/v4/view/PagerTitleStrip;->l:Landroid/support/v4/view/PagerTitleStrip$PageListener;
+    iget-object v2, p0, Landroid/support/v4/view/PagerTitleStrip;->mPageListenerl:Landroid/support/v4/view/PagerTitleStrip$PageListener;
 
     invoke-virtual {v0, v2}, Landroid/support/v4/view/ViewPager;->setOnAdapterChangeListener(Landroid/support/v4/view/ViewPager$OnAdapterChangeListener;)V
 
     .line 255
-    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iput-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     .line 256
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->m:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->m:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mWeakReferencem:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -1210,12 +1210,12 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
     .line 262
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     if-eqz v0, :cond_0
 
     .line 263
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getAdapter()Landroid/support/v4/view/PagerAdapter;
 
@@ -1224,17 +1224,17 @@
     invoke-virtual {p0, v0, v1}, Landroid/support/v4/view/PagerTitleStrip;->a(Landroid/support/v4/view/PagerAdapter;Landroid/support/v4/view/PagerAdapter;)V
 
     .line 264
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->a(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     .line 265
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setOnAdapterChangeListener(Landroid/support/v4/view/ViewPager$OnAdapterChangeListener;)V
 
     .line 266
-    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iput-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     .line 268
     :cond_0
@@ -1248,22 +1248,22 @@
     const/4 v0, 0x0
 
     .line 455
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     if-eqz v1, :cond_1
 
     .line 456
-    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     cmpl-float v1, v1, v0
 
     if-ltz v1, :cond_0
 
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->g:F
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mFg:F
 
     .line 457
     :cond_0
-    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->f:I
+    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIf:I
 
     const/4 v2, 0x1
 
@@ -1353,17 +1353,17 @@
     move-result v5
 
     .line 441
-    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v7, v6, v5}, Landroid/widget/TextView;->measure(II)V
 
     .line 442
-    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v7, v6, v5}, Landroid/widget/TextView;->measure(II)V
 
     .line 443
-    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v7, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v7, v6, v5}, Landroid/widget/TextView;->measure(II)V
 
@@ -1379,7 +1379,7 @@
 
     .line 448
     :cond_1
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getMeasuredHeight()I
 
@@ -1402,7 +1402,7 @@
 
     .prologue
     .line 310
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTitleStrip;->j:Z
+    iget-boolean v0, p0, Landroid/support/v4/view/PagerTitleStrip;->isZj:Z
 
     if-nez v0, :cond_0
 
@@ -1419,7 +1419,7 @@
 
     .prologue
     .line 236
-    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->i:I
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIi:I
 
     .line 237
     invoke-virtual {p0}, Landroid/support/v4/view/PagerTitleStrip;->requestLayout()V
@@ -1441,14 +1441,14 @@
 
     and-int/lit16 v0, v0, 0xff
 
-    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->p:I
+    iput v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIp:I
 
     .line 194
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->p:I
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIp:I
 
     shl-int/lit8 v0, v0, 0x18
 
-    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->e:I
+    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIe:I
 
     const v2, 0xffffff
 
@@ -1457,12 +1457,12 @@
     or-int/2addr v0, v1
 
     .line 195
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 196
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -1475,19 +1475,19 @@
 
     .prologue
     .line 206
-    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->e:I
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIe:I
 
     .line 207
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 208
-    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->p:I
+    iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mIp:I
 
     shl-int/lit8 v0, v0, 0x18
 
-    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->e:I
+    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIe:I
 
     const v2, 0xffffff
 
@@ -1496,12 +1496,12 @@
     or-int/2addr v0, v1
 
     .line 209
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 210
-    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -1514,17 +1514,17 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 225
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 226
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1, p2}, Landroid/widget/TextView;->setTextSize(IF)V
 
@@ -1537,7 +1537,7 @@
 
     .prologue
     .line 176
-    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->h:I
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mIh:I
 
     .line 177
     invoke-virtual {p0}, Landroid/support/v4/view/PagerTitleStrip;->requestLayout()V

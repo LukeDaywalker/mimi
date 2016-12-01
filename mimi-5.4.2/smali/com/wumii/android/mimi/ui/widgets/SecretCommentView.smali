@@ -8,67 +8,67 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private A:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private isZz:Z
 
-.field private B:I
+.field private mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private C:I
+.field private mDisplayImageOptionsA:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+.field private mIB:I
 
-.field private b:Landroid/view/ViewGroup;
+.field private mIC:I
 
-.field private c:Landroid/widget/ImageView;
+.field private mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
-.field private d:Landroid/widget/ImageView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/TextView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private f:Landroid/widget/TextView;
+.field private mImageViewj:Landroid/widget/ImageView;
 
-.field private g:Landroid/widget/TextView;
+.field private mImageViewk:Landroid/widget/ImageView;
 
-.field private h:Landroid/view/View;
+.field private mImageViewl:Landroid/widget/ImageView;
 
-.field private i:Landroid/widget/TextView;
+.field private mIu:I
 
-.field private j:Landroid/widget/ImageView;
+.field private mIv:I
 
-.field private k:Landroid/widget/ImageView;
+.field private mLayoutInflaterw:Landroid/view/LayoutInflater;
 
-.field private l:Landroid/widget/ImageView;
+.field private mLinearLayouto:Landroid/widget/LinearLayout;
 
-.field private m:Landroid/widget/ProgressBar;
+.field private mProgressBarm:Landroid/widget/ProgressBar;
 
-.field private n:Landroid/view/ViewGroup;
+.field private mScopedUsery:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
-.field private o:Landroid/widget/LinearLayout;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private p:Landroid/widget/TextView;
+.field private mTextViewf:Landroid/widget/TextView;
 
-.field private q:Landroid/view/View;
+.field private mTextViewg:Landroid/widget/TextView;
 
-.field private r:Landroid/view/ViewGroup;
+.field private mTextViewi:Landroid/widget/TextView;
 
-.field private s:Landroid/widget/TextView;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private t:Landroid/view/View;
+.field private mTextViews:Landroid/widget/TextView;
 
-.field private u:I
+.field private mViewGroupb:Landroid/view/ViewGroup;
 
-.field private v:I
+.field private mViewGroupn:Landroid/view/ViewGroup;
 
-.field private w:Landroid/view/LayoutInflater;
+.field private mViewGroupr:Landroid/view/ViewGroup;
 
-.field private x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mViewh:Landroid/view/View;
 
-.field private y:Lcom/wumii/android/mimi/models/entities/ScopedUser;
+.field private mViewq:Landroid/view/View;
 
-.field private z:Z
+.field private mViewt:Landroid/view/View;
 
 
 # direct methods
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -128,7 +128,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->w:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLayoutInflaterw:Landroid/view/LayoutInflater;
 
     .line 128
     const v0, 0x7f030102
@@ -144,7 +144,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->b:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupb:Landroid/view/ViewGroup;
 
     .line 133
     const v0, 0x7f0b00d9
@@ -155,7 +155,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewc:Landroid/widget/ImageView;
 
     .line 134
     const v0, 0x7f0b0250
@@ -166,7 +166,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewd:Landroid/widget/ImageView;
 
     .line 136
     const v0, 0x7f0b025e
@@ -177,7 +177,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     .line 137
     const v0, 0x7f0b014b
@@ -188,7 +188,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewf:Landroid/widget/TextView;
 
     .line 138
     const v0, 0x7f0b0260
@@ -199,7 +199,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->g:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewg:Landroid/widget/TextView;
 
     .line 140
     const v0, 0x7f0b018f
@@ -208,10 +208,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewh:Landroid/view/View;
 
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -224,7 +224,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->i:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewi:Landroid/widget/TextView;
 
     .line 144
     const v0, 0x7f0b0257
@@ -235,7 +235,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->j:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewj:Landroid/widget/ImageView;
 
     .line 145
     const v0, 0x7f0b0259
@@ -246,7 +246,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->k:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewk:Landroid/widget/ImageView;
 
     .line 147
     const v0, 0x7f0b018d
@@ -257,7 +257,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->l:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewl:Landroid/widget/ImageView;
 
     .line 148
     const v0, 0x7f0b0261
@@ -268,7 +268,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->m:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mProgressBarm:Landroid/widget/ProgressBar;
 
     .line 150
     const v0, 0x7f0b0262
@@ -279,7 +279,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->n:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupn:Landroid/view/ViewGroup;
 
     .line 151
     const v0, 0x7f0b0263
@@ -290,7 +290,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     .line 152
     const v0, 0x7f0b0264
@@ -301,7 +301,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     .line 154
     const v0, 0x7f0b0228
@@ -310,7 +310,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->q:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewq:Landroid/view/View;
 
     .line 157
     const v0, 0x7f0b025a
@@ -321,7 +321,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
     .line 158
     const v0, 0x7f0b0265
@@ -332,7 +332,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->s:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViews:Landroid/widget/TextView;
 
     .line 159
     const v0, 0x7f0b0266
@@ -341,7 +341,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->t:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewt:Landroid/view/View;
 
     .line 161
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -353,7 +353,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->u:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIu:I
 
     .line 164
     const v1, 0x7f09001a
@@ -362,7 +362,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->v:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIv:I
 
     .line 166
     const v1, 0x7f0a0024
@@ -375,14 +375,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->A:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mDisplayImageOptionsA:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 168
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->B:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIB:I
 
     .line 169
     const/16 v0, 0xaa
@@ -395,7 +395,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->C:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIC:I
 
     .line 170
     return-void
@@ -410,14 +410,14 @@
     const/4 v4, 0x0
 
     .line 359
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getReplies()Ljava/util/List;
 
     move-result-object v5
 
     .line 360
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -438,7 +438,7 @@
     if-nez v0, :cond_2
 
     .line 365
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->n:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupn:Landroid/view/ViewGroup;
 
     invoke-static {v0, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -454,7 +454,7 @@
 
     .line 369
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->n:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupn:Landroid/view/ViewGroup;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -472,7 +472,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 374
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -487,7 +487,7 @@
     move-result-object v1
 
     .line 377
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     invoke-virtual {v7, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -507,7 +507,7 @@
 
     .line 384
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -520,7 +520,7 @@
     if-ge v0, v1, :cond_0
 
     .line 386
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v0}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
@@ -563,7 +563,7 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;
 
     .line 420
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     const-string/jumbo v2, ""
 
@@ -611,7 +611,7 @@
     invoke-virtual {v3, v4, v6, v2, v8}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 427
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -653,7 +653,7 @@
     if-nez v1, :cond_1
 
     .line 432
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     const-string/jumbo v3, " \u56de\u590d "
 
@@ -685,7 +685,7 @@
     invoke-virtual {v2, v3, v6, v1, v8}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 436
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -715,12 +715,12 @@
     invoke-virtual {v1, v2, v6, v3, v8}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 441
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 443
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/widgets/WMText;
 
@@ -744,12 +744,12 @@
     if-ne v1, v2, :cond_2
 
     .line 447
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-static {v1, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 448
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->c:Landroid/widget/ProgressBar;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mProgressBarc:Landroid/widget/ProgressBar;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -768,22 +768,22 @@
     if-ne v1, v2, :cond_3
 
     .line 450
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
     .line 451
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 452
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-static {v1, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 453
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->c:Landroid/widget/ProgressBar;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mProgressBarc:Landroid/widget/ProgressBar;
 
     invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -791,12 +791,12 @@
 
     .line 455
     :cond_3
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-static {v1, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 456
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->c:Landroid/widget/ProgressBar;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mProgressBarc:Landroid/widget/ProgressBar;
 
     invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -827,7 +827,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -857,26 +857,26 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 283
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setTag(Ljava/lang/Object;)V
 
     .line 284
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViews:Landroid/widget/TextView;
 
     const-string/jumbo v1, "\u8bc4\u8bba\u56e0\u88ab\u8e29\u6b21\u6570\u8fc7\u591a\u5df2\u88ab\u6298\u53e0"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 286
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->t:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewt:Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -904,35 +904,35 @@
     const/4 v1, 0x0
 
     .line 293
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewh:Landroid/view/View;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 295
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->j:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewj:Landroid/widget/ImageView;
 
     invoke-direct {p0, v0, v3}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;Landroid/view/View;)V
 
     .line 296
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->k:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-direct {p0, v0, v3}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;Landroid/view/View;)V
 
     .line 298
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     move-result-object v0
 
     .line 299
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -949,16 +949,16 @@
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->c:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewc:Landroid/widget/ImageView;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->A:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mDisplayImageOptionsA:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3, v0, v4, v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 301
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->d:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewd:Landroid/widget/ImageView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -979,14 +979,14 @@
 
     .line 305
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, ""
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 306
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->isSecretAuthor()Z
 
@@ -995,14 +995,14 @@
     if-eqz v0, :cond_4
 
     .line 307
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, "\u697c\u4e3b"
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 308
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1010,7 +1010,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1022,7 +1022,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1035,16 +1035,16 @@
     if-eqz v0, :cond_1
 
     .line 309
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, " \u2022 "
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 310
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1058,7 +1058,7 @@
 
     .line 313
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getSource()Ljava/lang/String;
 
@@ -1067,16 +1067,16 @@
     if-eqz v0, :cond_2
 
     .line 314
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, " \u2022 "
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 315
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getSource()Ljava/lang/String;
 
@@ -1086,31 +1086,31 @@
 
     .line 318
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->u:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIu:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 334
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 335
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 337
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewf:Landroid/widget/TextView;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getContent()Ljava/lang/String;
 
@@ -1123,7 +1123,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 338
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -1132,14 +1132,14 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 339
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 340
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewf:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -1147,7 +1147,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->d()V
 
     .line 345
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getStatus()Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
@@ -1158,7 +1158,7 @@
     if-eq v0, v3, :cond_9
 
     .line 346
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewg:Landroid/widget/TextView;
 
     const/4 v3, 0x4
 
@@ -1166,7 +1166,7 @@
 
     .line 352
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewq:Landroid/view/View;
 
     if-eqz p1, :cond_a
 
@@ -1184,7 +1184,7 @@
 
     .line 320
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getStatus()Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
@@ -1195,7 +1195,7 @@
     if-eq v0, v3, :cond_8
 
     .line 321
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, "..."
 
@@ -1204,20 +1204,20 @@
     .line 326
     :cond_5
     :goto_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getSource()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 327
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1230,7 +1230,7 @@
     if-nez v0, :cond_6
 
     .line 328
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v3, " \u2022 "
 
@@ -1238,9 +1238,9 @@
 
     .line 330
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getSource()Ljava/lang/String;
 
@@ -1250,9 +1250,9 @@
 
     .line 332
     :cond_7
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->v:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIv:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -1260,7 +1260,7 @@
 
     .line 322
     :cond_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1273,9 +1273,9 @@
     if-eqz v0, :cond_5
 
     .line 323
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewe:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getScopedUser()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
@@ -1291,14 +1291,14 @@
 
     .line 348
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 349
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewg:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getCommentTime()Ljava/util/Date;
 
@@ -1330,7 +1330,7 @@
     const/4 v2, 0x0
 
     .line 395
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getReplies()Ljava/util/List;
 
@@ -1350,7 +1350,7 @@
     if-nez v1, :cond_1
 
     .line 398
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     invoke-static {v0, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1366,7 +1366,7 @@
 
     .line 402
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getReplyCount()J
 
@@ -1384,12 +1384,12 @@
     :goto_2
     if-nez v1, :cond_3
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->z:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->isZz:Z
 
     if-nez v0, :cond_3
 
     .line 404
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     invoke-static {v0, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1403,7 +1403,7 @@
 
     .line 408
     :cond_3
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     if-eqz v1, :cond_4
 
@@ -1413,7 +1413,7 @@
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 409
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     if-eqz v1, :cond_5
 
@@ -1423,17 +1423,17 @@
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 410
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     if-eqz v1, :cond_6
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->B:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIB:I
 
     :goto_5
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 411
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1453,7 +1453,7 @@
 
     .line 410
     :cond_6
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->C:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mIC:I
 
     goto :goto_5
 .end method
@@ -1463,11 +1463,11 @@
 
     .prologue
     .line 461
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->w:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLayoutInflaterw:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300a0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->o:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLinearLayouto:Landroid/widget/LinearLayout;
 
     const/4 v3, 0x0
 
@@ -1502,7 +1502,7 @@
     const/4 v2, 0x0
 
     .line 468
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getStatus()Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
@@ -1516,7 +1516,7 @@
 
     .line 469
     :goto_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getStatus()Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
@@ -1530,7 +1530,7 @@
 
     .line 470
     :goto_1
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getStatus()Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
@@ -1542,14 +1542,14 @@
 
     .line 472
     :goto_2
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getLikedCount()J
 
     move-result-wide v8
 
     .line 473
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getDislikedCount()J
 
@@ -1559,7 +1559,7 @@
     sub-long/2addr v8, v10
 
     .line 476
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->i:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewi:Landroid/widget/TextView;
 
     invoke-static {v8, v9}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -1568,7 +1568,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 477
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->i:Landroid/widget/TextView;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewi:Landroid/widget/TextView;
 
     const-wide/16 v10, 0x0
 
@@ -1585,9 +1585,9 @@
     if-eqz v1, :cond_0
 
     .line 480
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->j:Landroid/widget/ImageView;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewj:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->isLikedByCurUser()Z
 
@@ -1601,9 +1601,9 @@
     invoke-virtual {v7, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 481
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->k:Landroid/widget/ImageView;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewk:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->isDislikedByCurUser()Z
 
@@ -1617,43 +1617,43 @@
     invoke-virtual {v7, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 483
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->j:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewj:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setAnimation(Landroid/view/animation/Animation;)V
 
     .line 484
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->k:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setAnimation(Landroid/view/animation/Animation;)V
 
     .line 487
     :cond_0
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->h:Landroid/view/View;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewh:Landroid/view/View;
 
     if-eqz v1, :cond_8
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     :goto_6
     invoke-virtual {v7, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 488
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->l:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewl:Landroid/widget/ImageView;
 
     if-eqz v3, :cond_1
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     :cond_1
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
     .line 489
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->l:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewl:Landroid/widget/ImageView;
 
     invoke-virtual {v4, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 491
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->h:Landroid/view/View;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewh:Landroid/view/View;
 
     if-eqz v1, :cond_9
 
@@ -1663,7 +1663,7 @@
     invoke-static {v4, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 492
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->m:Landroid/widget/ProgressBar;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mProgressBarm:Landroid/widget/ProgressBar;
 
     if-eqz v0, :cond_a
 
@@ -1673,7 +1673,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 493
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->l:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewl:Landroid/widget/ImageView;
 
     if-eqz v3, :cond_b
 
@@ -1780,24 +1780,24 @@
     const/4 v1, 0x0
 
     .line 262
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 263
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->y:Lcom/wumii/android/mimi/models/entities/ScopedUser;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mScopedUsery:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     .line 264
-    iput-boolean p5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->z:Z
+    iput-boolean p5, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->isZz:Z
 
     .line 266
     if-eqz p4, :cond_0
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 268
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1810,12 +1810,12 @@
 
     .line 273
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 274
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1836,7 +1836,7 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method
@@ -1846,12 +1846,12 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     if-nez v0, :cond_0
 
     .line 175
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "OnSecretCommentViewClickListener == null !!!"
 
@@ -1867,7 +1867,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->r:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mViewGroupr:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -1883,7 +1883,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 181
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->getId()Ljava/lang/String;
 
@@ -1899,7 +1899,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->p:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getId()I
 
@@ -1908,9 +1908,9 @@
     if-ne v0, v1, :cond_2
 
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->d(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -1934,7 +1934,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 192
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -1958,7 +1958,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 198
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -1976,7 +1976,7 @@
     if-nez v0, :cond_5
 
     .line 204
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "The comment == null !!!"
 
@@ -1986,9 +1986,9 @@
 
     .line 208
     :cond_5
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->x:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mCommentx:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-interface {v1, p1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->a(Landroid/view/View;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -2006,12 +2006,12 @@
     const/4 v1, 0x0
 
     .line 213
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     if-nez v0, :cond_0
 
     .line 214
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "OnSecretCommentViewClickListener == null !!!"
 
@@ -2102,12 +2102,12 @@
     if-eqz v1, :cond_3
 
     .line 235
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->j:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewj:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v10, v0}, Landroid/widget/ImageView;->setTag(ILjava/lang/Object;)V
 
     .line 236
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->b(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -2120,12 +2120,12 @@
 
     .line 239
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->k:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v10, v0}, Landroid/widget/ImageView;->setTag(ILjava/lang/Object;)V
 
     .line 240
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;->c(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -2143,7 +2143,7 @@
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->D:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;->mICbhD:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbh;
 
     .line 113
     return-void

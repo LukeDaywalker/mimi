@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:J
+.field mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
-.field b:Landroid/support/v7/widget/ChildHelper$ICe;
+.field mJa:J
 
 
 # direct methods
@@ -20,7 +20,7 @@
     .line 355
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     .prologue
     .line 369
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-nez v0, :cond_0
 
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Landroid/support/v7/widget/ChildHelper$ICe;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iput-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     .line 372
     :cond_0
@@ -55,15 +55,15 @@
     .line 395
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     .line 396
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-eqz v0, :cond_0
 
     .line 397
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/ChildHelper$ICe;->a()V
 
@@ -85,7 +85,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/ChildHelper$ICe;->b()V
 
     .line 362
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -97,7 +97,7 @@
 
     .line 364
     :cond_0
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     const-wide/16 v2, 0x1
 
@@ -105,7 +105,7 @@
 
     or-long/2addr v0, v2
 
-    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     goto :goto_0
 .end method
@@ -129,7 +129,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/ChildHelper$ICe;->b()V
 
     .line 404
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -142,7 +142,7 @@
 
     .line 406
     :cond_1
-    iget-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     const-wide/high16 v6, -0x8000000000000000L
 
@@ -163,12 +163,12 @@
     sub-long/2addr v4, v8
 
     .line 408
-    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     and-long/2addr v6, v4
 
     .line 409
-    iget-wide v8, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v8, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     const-wide/16 v10, -0x1
 
@@ -181,7 +181,7 @@
     .line 410
     or-long/2addr v4, v6
 
-    iput-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     .line 411
     if-eqz p2, :cond_4
@@ -193,7 +193,7 @@
     :goto_2
     if-nez v0, :cond_2
 
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-eqz v1, :cond_0
 
@@ -202,7 +202,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/ChildHelper$ICe;->b()V
 
     .line 418
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     invoke-virtual {v1, v2, v0}, Landroid/support/v7/widget/ChildHelper$ICe;->a(IZ)V
 
@@ -231,12 +231,12 @@
     if-lt p1, v0, :cond_1
 
     .line 376
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-eqz v0, :cond_0
 
     .line 377
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -249,7 +249,7 @@
 
     .line 380
     :cond_1
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     const-wide/16 v2, 0x1
 
@@ -261,7 +261,7 @@
 
     and-long/2addr v0, v2
 
-    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     goto :goto_0
 .end method
@@ -279,7 +279,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/ChildHelper$ICe;->b()V
 
     .line 388
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -292,7 +292,7 @@
     return v0
 
     :cond_0
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     const-wide/16 v2, 0x1
 
@@ -337,7 +337,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/ChildHelper$ICe;->b()V
 
     .line 426
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -355,7 +355,7 @@
     shl-long v4, v12, p1
 
     .line 429
-    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     and-long/2addr v6, v4
 
@@ -369,24 +369,24 @@
 
     .line 430
     :goto_1
-    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     xor-long v8, v4, v10
 
     and-long/2addr v6, v8
 
-    iput-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     .line 431
     sub-long/2addr v4, v12
 
     .line 432
-    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v6, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     and-long/2addr v6, v4
 
     .line 434
-    iget-wide v8, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v8, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     xor-long/2addr v4, v10
 
@@ -399,15 +399,15 @@
     .line 435
     or-long/2addr v4, v6
 
-    iput-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iput-wide v4, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     .line 436
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-eqz v1, :cond_0
 
     .line 437
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     invoke-virtual {v1, v2}, Landroid/support/v7/widget/ChildHelper$ICe;->c(I)Z
 
@@ -422,7 +422,7 @@
 
     .line 440
     :cond_2
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     invoke-virtual {v1, v2}, Landroid/support/v7/widget/ChildHelper$ICe;->d(I)Z
 
@@ -444,7 +444,7 @@
     const-wide/16 v4, 0x1
 
     .line 447
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-nez v0, :cond_1
 
@@ -452,7 +452,7 @@
     if-lt p1, v1, :cond_0
 
     .line 449
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->bitCount(J)I
 
@@ -464,7 +464,7 @@
 
     .line 451
     :cond_0
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     shl-long v2, v4, p1
 
@@ -483,7 +483,7 @@
     if-ge p1, v1, :cond_2
 
     .line 454
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     shl-long v2, v4, p1
 
@@ -499,7 +499,7 @@
 
     .line 456
     :cond_2
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     add-int/lit8 v1, p1, -0x40
 
@@ -507,7 +507,7 @@
 
     move-result v0
 
-    iget-wide v2, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v2, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->bitCount(J)I
 
@@ -523,11 +523,11 @@
 
     .prologue
     .line 462
-    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     if-nez v0, :cond_0
 
-    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v0, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->toBinaryString(J)Ljava/lang/String;
 
@@ -541,7 +541,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->b:Landroid/support/v7/widget/ChildHelper$ICe;
+    iget-object v1, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mICeb:Landroid/support/v7/widget/ChildHelper$ICe;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/ChildHelper$ICe;->toString()Ljava/lang/String;
 
@@ -557,7 +557,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Landroid/support/v7/widget/ChildHelper$ICe;->a:J
+    iget-wide v2, p0, Landroid/support/v7/widget/ChildHelper$ICe;->mJa:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->toBinaryString(J)Ljava/lang/String;
 

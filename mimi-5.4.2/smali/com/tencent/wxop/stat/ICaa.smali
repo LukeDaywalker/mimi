@@ -6,20 +6,20 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
-.field final synthetic b:I
+.field final synthetic mIb:I
 
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICaa;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICaa;->mContexta:Landroid/content/Context;
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICaa;->b:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICaa;->mIb:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,17 +32,17 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICaa;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICaa;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->e(Landroid/content/Context;)V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICaa;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICaa;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/tencent/wxop/stat/ICaa;->b:I
+    iget v1, p0, Lcom/tencent/wxop/stat/ICaa;->mIb:I
 
     invoke-virtual {v0, v1}, Lcom/tencent/wxop/stat/ICam;->a(I)V
     :try_end_0
@@ -60,7 +60,7 @@
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICaa;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICaa;->mContexta:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;Ljava/lang/Throwable;)V
 

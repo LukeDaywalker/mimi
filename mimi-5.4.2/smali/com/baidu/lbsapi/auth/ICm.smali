@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICib:Lcom/baidu/lbsapi/auth/ICi;
 
-.field final synthetic b:Lcom/baidu/lbsapi/auth/ICi;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/lbsapi/auth/ICi;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICm;->b:Lcom/baidu/lbsapi/auth/ICi;
+    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICm;->mICib:Lcom/baidu/lbsapi/auth/ICi;
 
-    iput-object p2, p0, Lcom/baidu/lbsapi/auth/ICm;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/baidu/lbsapi/auth/ICm;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICm;->b:Lcom/baidu/lbsapi/auth/ICi;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICm;->mICib:Lcom/baidu/lbsapi/auth/ICi;
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICm;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICm;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, p1, v1}, Lcom/baidu/lbsapi/auth/ICi;->a(Lcom/baidu/lbsapi/auth/ICi;Ljava/lang/String;Ljava/lang/String;)V
 

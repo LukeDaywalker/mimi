@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+.field private mArrayFeedTypee:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private b:Landroid/support/v4/view/ViewPager;
+.field private mCustomTabAdapterc:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-.field private c:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+.field private mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-.field private d:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
+.field private mDiscoverSecretPagerAdapterd:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
 
-.field private e:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mViewPagerb:Landroid/support/v4/view/ViewPager;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     return-object v0
 .end method
@@ -43,7 +43,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
@@ -64,7 +64,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v3}, Landroid/support/v4/view/ViewPager;->getId()I
 
@@ -191,7 +191,7 @@
 
     check-cast v0, Landroid/support/v4/view/ViewPager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     .line 54
     const v0, 0x7f0b0057
@@ -202,7 +202,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     .line 56
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
@@ -213,12 +213,12 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->c:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabAdapterc:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->c:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabAdapterc:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;)V
 
@@ -247,7 +247,7 @@
 
     aput-object v2, v0, v1
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->e:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mArrayFeedTypee:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 60
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
@@ -256,34 +256,34 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getId()I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->e:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mArrayFeedTypee:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;I[Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->d:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mDiscoverSecretPagerAdapterd:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->d:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mDiscoverSecretPagerAdapterd:Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->b:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mViewPagerb:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setViewPager(Landroid/support/v4/view/ViewPager;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->mCustomTabPageIndicatora:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICf;
 

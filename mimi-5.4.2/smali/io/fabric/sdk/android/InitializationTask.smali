@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final a:Lio/fabric/sdk/android/Kit;
+.field final mKita:Lio/fabric/sdk/android/Kit;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/q",
@@ -45,7 +45,7 @@
     invoke-direct {p0}, Lio/fabric/sdk/android/services/concurrency/PriorityAsyncTask;-><init>()V
 
     .line 34
-    iput-object p1, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iput-object p1, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     .line 35
     return-void
@@ -62,7 +62,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v2, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v2}, Lio/fabric/sdk/android/Kit;->b()Ljava/lang/String;
 
@@ -142,7 +142,7 @@
     if-nez v2, :cond_0
 
     .line 63
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/Kit;->f()Ljava/lang/Object;
 
@@ -174,7 +174,7 @@
 
     .line 44
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/Kit;->a_()Z
     :try_end_0
@@ -256,14 +256,14 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Kit;->a(Ljava/lang/Object;)V
 
     .line 73
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->h:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->mInitializationCallbackh:Lio/fabric/sdk/android/InitializationCallback;
 
     invoke-interface {v0, p1}, Lio/fabric/sdk/android/InitializationCallback;->a(Ljava/lang/Object;)V
 
@@ -291,7 +291,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/Kit;->b(Ljava/lang/Object;)V
 
@@ -300,7 +300,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v1, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/Kit;->b()Ljava/lang/String;
 
@@ -326,9 +326,9 @@
     invoke-direct {v1, v0}, Lio/fabric/sdk/android/InitializationException;-><init>(Ljava/lang/String;)V
 
     .line 82
-    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->a:Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/InitializationTask;->mKita:Lio/fabric/sdk/android/Kit;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->h:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v0, v0, Lio/fabric/sdk/android/Kit;->mInitializationCallbackh:Lio/fabric/sdk/android/InitializationCallback;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/InitializationCallback;->a(Ljava/lang/Exception;)V
 

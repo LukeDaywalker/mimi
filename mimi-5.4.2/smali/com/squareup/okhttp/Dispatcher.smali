@@ -4,13 +4,7 @@
 
 
 # instance fields
-.field private a:I
-
-.field private b:I
-
-.field private c:Ljava/util/concurrent/ExecutorService;
-
-.field private final d:Ljava/util/Deque;
+.field private final mDequed:Ljava/util/Deque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Deque",
@@ -21,7 +15,7 @@
     .end annotation
 .end field
 
-.field private final e:Ljava/util/Deque;
+.field private final mDequee:Ljava/util/Deque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Deque",
@@ -32,7 +26,7 @@
     .end annotation
 .end field
 
-.field private final f:Ljava/util/Deque;
+.field private final mDequef:Ljava/util/Deque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Deque",
@@ -42,6 +36,12 @@
         }
     .end annotation
 .end field
+
+.field private mExecutorServicec:Ljava/util/concurrent/ExecutorService;
+
+.field private mIa:I
+
+.field private mIb:I
 
 
 # direct methods
@@ -55,33 +55,33 @@
     .line 37
     const/16 v0, 0x40
 
-    iput v0, p0, Lcom/squareup/okhttp/Dispatcher;->a:I
+    iput v0, p0, Lcom/squareup/okhttp/Dispatcher;->mIa:I
 
     .line 38
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/squareup/okhttp/Dispatcher;->b:I
+    iput v0, p0, Lcom/squareup/okhttp/Dispatcher;->mIb:I
 
     .line 44
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->d:Ljava/util/Deque;
+    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequed:Ljava/util/Deque;
 
     .line 47
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     .line 50
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->f:Ljava/util/Deque;
+    iput-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequef:Ljava/util/Deque;
 
     .line 57
     return-void
@@ -92,13 +92,13 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->size()I
 
     move-result v0
 
-    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->mIa:I
 
     if-lt v0, v1, :cond_1
 
@@ -109,7 +109,7 @@
 
     .line 147
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->d:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequed:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
 
@@ -118,7 +118,7 @@
     if-nez v0, :cond_0
 
     .line 149
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->d:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequed:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
 
@@ -143,7 +143,7 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/squareup/okhttp/Dispatcher;->b:I
+    iget v3, p0, Lcom/squareup/okhttp/Dispatcher;->mIb:I
 
     if-ge v2, v3, :cond_3
 
@@ -151,7 +151,7 @@
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     .line 154
-    iget-object v2, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v2, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v2, v0}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 
@@ -164,13 +164,13 @@
 
     .line 158
     :cond_3
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->size()I
 
     move-result v0
 
-    iget v2, p0, Lcom/squareup/okhttp/Dispatcher;->a:I
+    iget v2, p0, Lcom/squareup/okhttp/Dispatcher;->mIa:I
 
     if-lt v0, v2, :cond_2
 
@@ -185,7 +185,7 @@
     const/4 v0, 0x0
 
     .line 165
-    iget-object v1, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v1, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v1}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
 
@@ -249,7 +249,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->c:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_0
 
@@ -279,11 +279,11 @@
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    iput-object v1, p0, Lcom/squareup/okhttp/Dispatcher;->c:Ljava/util/concurrent/ExecutorService;
+    iput-object v1, p0, Lcom/squareup/okhttp/Dispatcher;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
 
     .line 64
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->c:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mExecutorServicec:Ljava/util/concurrent/ExecutorService;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -308,13 +308,13 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->size()I
 
     move-result v0
 
-    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->mIa:I
 
     if-ge v0, v1, :cond_0
 
@@ -322,12 +322,12 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->b:I
+    iget v1, p0, Lcom/squareup/okhttp/Dispatcher;->mIb:I
 
     if-ge v0, v1, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 
@@ -349,7 +349,7 @@
     .line 112
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->d:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequed:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
     :try_end_1
@@ -374,7 +374,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->f:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequef:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -402,7 +402,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequee:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
@@ -448,7 +448,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->f:Ljava/util/Deque;
+    iget-object v0, p0, Lcom/squareup/okhttp/Dispatcher;->mDequef:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 

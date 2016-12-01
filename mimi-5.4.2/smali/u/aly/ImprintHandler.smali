@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
 
 # instance fields
-.field private b:Lu/aly/Imprint;
+.field private mContextc:Landroid/content/Context;
 
-.field private c:Landroid/content/Context;
+.field private mImprintb:Lu/aly/Imprint;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lu/aly/ImprintHandler;->a:[B
+    sput-object v0, Lu/aly/ImprintHandler;->mArrayBa:[B
 
     return-void
 .end method
@@ -40,10 +40,10 @@
     .line 26
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iput-object v0, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
 
     .line 31
-    iput-object p1, p0, Lu/aly/ImprintHandler;->c:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/ImprintHandler;->mContextc:Landroid/content/Context;
 
     .line 32
     return-void
@@ -371,7 +371,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iget-object v0, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -418,7 +418,7 @@
     move-result-object v1
 
     .line 73
-    sget-object v2, Lu/aly/ImprintHandler;->a:[B
+    sget-object v2, Lu/aly/ImprintHandler;->mArrayBa:[B
 
     .line 74
     new-array v3, v6, [B
@@ -459,7 +459,7 @@
     .line 137
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lu/aly/ImprintHandler;->c:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/ImprintHandler;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -484,7 +484,7 @@
     .line 146
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lu/aly/ImprintHandler;->c:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/ImprintHandler;->mContextc:Landroid/content/Context;
 
     const-string/jumbo v1, ".imprint"
 
@@ -525,7 +525,7 @@
     invoke-virtual {v1, v0, v2}, Lu/aly/TDeserializer;->a(Lu/aly/TBase;[B)V
 
     .line 158
-    iput-object v0, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iput-object v0, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -605,14 +605,14 @@
 
     .line 97
     :try_start_0
-    iget-object v0, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iget-object v0, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
 
     .line 100
     if-nez v0, :cond_2
 
     .line 106
     :goto_1
-    iput-object p1, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iput-object p1, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
 
     .line 107
     monitor-exit p0
@@ -645,7 +645,7 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iget-object v0, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
 
     if-nez v0, :cond_0
 
@@ -660,7 +660,7 @@
 
     invoke-direct {v0}, Lu/aly/TSerializer;-><init>()V
 
-    iget-object v1, p0, Lu/aly/ImprintHandler;->b:Lu/aly/Imprint;
+    iget-object v1, p0, Lu/aly/ImprintHandler;->mImprintb:Lu/aly/Imprint;
 
     invoke-virtual {v0, v1}, Lu/aly/TSerializer;->a(Lu/aly/TBase;)[B
 
@@ -669,7 +669,7 @@
     .line 172
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lu/aly/ImprintHandler;->c:Landroid/content/Context;
+    iget-object v2, p0, Lu/aly/ImprintHandler;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 

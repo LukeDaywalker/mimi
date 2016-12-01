@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+.field private final mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mContexta:Landroid/content/Context;
 
     .line 37
     new-instance v0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, p1, v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     .line 38
     return-void
@@ -95,9 +95,9 @@
     if-eqz v0, :cond_0
 
     .line 83
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->b()Landroid/content/SharedPreferences$Editor;
 
@@ -127,9 +127,9 @@
 
     .line 89
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->b()Landroid/content/SharedPreferences$Editor;
 
@@ -313,7 +313,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a()Landroid/content/SharedPreferences;
 
@@ -328,7 +328,7 @@
     move-result-object v0
 
     .line 98
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->b:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mPreferenceStoreb:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a()Landroid/content/SharedPreferences;
 
@@ -357,7 +357,7 @@
     .line 103
     new-instance v0, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoReflectionStrategy;-><init>(Landroid/content/Context;)V
 
@@ -371,7 +371,7 @@
     .line 107
     new-instance v0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy;-><init>(Landroid/content/Context;)V
 

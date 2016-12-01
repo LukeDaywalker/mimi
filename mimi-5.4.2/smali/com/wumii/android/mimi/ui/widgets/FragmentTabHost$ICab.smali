@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 84
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;->mContexta:Landroid/content/Context;
 
     .line 85
     return-void
@@ -36,7 +36,7 @@
     .line 89
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;->mContexta:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 

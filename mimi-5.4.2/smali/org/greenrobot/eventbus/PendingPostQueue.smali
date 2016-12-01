@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lorg/greenrobot/eventbus/PendingPost;
+.field private mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
-.field private b:Lorg/greenrobot/eventbus/PendingPost;
+.field private mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
 
 
 # direct methods
@@ -30,29 +30,29 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 24
-    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     if-eqz v1, :cond_0
 
     .line 25
-    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
-    iget-object v1, v1, Lorg/greenrobot/eventbus/PendingPost;->c:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v1, v1, Lorg/greenrobot/eventbus/PendingPost;->mPendingPostc:Lorg/greenrobot/eventbus/PendingPost;
 
-    iput-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 26
-    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     if-nez v1, :cond_0
 
     .line 27
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->b:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object v1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -79,7 +79,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     if-nez v0, :cond_0
 
@@ -141,17 +141,17 @@
     .line 11
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->b:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
 
     if-eqz v0, :cond_1
 
     .line 12
-    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->b:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
 
-    iput-object p1, v0, Lorg/greenrobot/eventbus/PendingPost;->c:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object p1, v0, Lorg/greenrobot/eventbus/PendingPost;->mPendingPostc:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 13
-    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->b:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
 
     .line 19
     :goto_0
@@ -167,14 +167,14 @@
     .line 14
     :cond_1
     :try_start_2
-    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     if-nez v0, :cond_2
 
     .line 15
-    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->b:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPostb:Lorg/greenrobot/eventbus/PendingPost;
 
-    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->a:Lorg/greenrobot/eventbus/PendingPost;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/PendingPostQueue;->mPendingPosta:Lorg/greenrobot/eventbus/PendingPost;
 
     goto :goto_0
 

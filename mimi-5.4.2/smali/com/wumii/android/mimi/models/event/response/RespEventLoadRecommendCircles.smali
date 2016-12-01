@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
-
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,7 +15,7 @@
     .end annotation
 .end field
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -29,6 +27,8 @@
         }
     .end annotation
 .end field
+
+.field private mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     .line 42
     return-void
@@ -70,7 +70,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mListb:Ljava/util/List;
 
     .line 25
     return-void
@@ -92,7 +92,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mListc:Ljava/util/List;
 
     .line 33
     return-void
@@ -112,7 +112,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mListb:Ljava/util/List;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mListc:Ljava/util/List;
 
     return-object v0
 .end method
@@ -143,7 +143,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->a:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->mRecommendTypea:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     return-object v0
 .end method

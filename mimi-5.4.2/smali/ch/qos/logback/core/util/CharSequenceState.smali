@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field final c:C
+.field final mCc:C
 
 .field occurrences:I
 
@@ -14,7 +14,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-char p1, p0, Lch/qos/logback/core/util/CharSequenceState;->c:C
+    iput-char p1, p0, Lch/qos/logback/core/util/CharSequenceState;->mCc:C
 
     const/4 v0, 0x1
 

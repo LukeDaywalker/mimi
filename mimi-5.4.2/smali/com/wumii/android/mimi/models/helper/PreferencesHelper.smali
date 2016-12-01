@@ -4,17 +4,24 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/jackson/databind/JacksonMapper;
+.field private mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
-.field private c:Landroid/content/SharedPreferences;
+.field private mListh:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private d:Landroid/content/SharedPreferences;
-
-.field private e:Ljava/util/Map;
+.field private mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -26,7 +33,7 @@
     .end annotation
 .end field
 
-.field private f:Ljava/util/Map;
+.field private mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -38,7 +45,7 @@
     .end annotation
 .end field
 
-.field private g:Ljava/util/Map;
+.field private mMapg:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -51,16 +58,9 @@
     .end annotation
 .end field
 
-.field private h:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private mSharedPreferencesc:Landroid/content/SharedPreferences;
+
+.field private mSharedPreferencesd:Landroid/content/SharedPreferences;
 
 
 # direct methods
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 40
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -135,35 +135,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     .line 43
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     .line 44
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     .line 45
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->g:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapg:Ljava/util/Map;
 
     .line 46
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->h:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mListh:Ljava/util/List;
 
     .line 47
     return-void
@@ -185,7 +185,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->g:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapg:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -207,7 +207,7 @@
     move-result-object v0
 
     .line 178
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->g:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapg:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -346,7 +346,7 @@
 
     .prologue
     .line 235
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
@@ -383,14 +383,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 247
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
 
     return-object v0
 
@@ -399,7 +399,7 @@
     move-exception v0
 
     .line 244
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -428,7 +428,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -447,7 +447,7 @@
     .line 113
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
 
@@ -459,14 +459,14 @@
     if-eqz v0, :cond_0
 
     .line 115
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, v0, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 116
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     invoke-interface {v1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -482,7 +482,7 @@
     move-exception v0
 
     .line 120
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -548,24 +548,24 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 53
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
 
     .line 54
     return-void
@@ -576,12 +576,12 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mListh:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 184
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p1}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -616,7 +616,7 @@
     if-nez v0, :cond_0
 
     .line 67
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Save failed, privatePref is null"
 
@@ -629,7 +629,7 @@
     .line 71
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -642,7 +642,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -675,12 +675,12 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -775,10 +775,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mListh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -798,7 +798,7 @@
     check-cast v0, Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 61
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->d:Landroid/content/SharedPreferences;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesd:Landroid/content/SharedPreferences;
 
     invoke-interface {v2, v0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -827,7 +827,7 @@
     const/4 v1, 0x0
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -865,7 +865,7 @@
 
     .line 145
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     const/4 v2, 0x0
 
@@ -891,14 +891,14 @@
 
     .line 158
     :try_start_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, v0, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 159
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -923,7 +923,7 @@
     move-exception v0
 
     .line 162
-    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -989,12 +989,12 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mListh:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p1}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -1023,18 +1023,18 @@
     .prologue
     .line 80
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMape:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->c:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mSharedPreferencesc:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b:Lcom/wumii/jackson/databind/JacksonMapper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mJacksonMapperb:Lcom/wumii/jackson/databind/JacksonMapper;
 
     invoke-virtual {v1, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1075,7 +1075,7 @@
     if-nez v0, :cond_0
 
     .line 94
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Remove failed, privatePref is null"
 
@@ -1087,7 +1087,7 @@
 
     .line 97
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

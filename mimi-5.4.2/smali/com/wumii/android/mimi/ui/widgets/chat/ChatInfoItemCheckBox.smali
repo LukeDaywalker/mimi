@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private e:Landroid/widget/CheckBox;
+.field private mCheckBoxe:Landroid/widget/CheckBox;
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v2}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     .line 36
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
@@ -105,12 +105,12 @@
     invoke-virtual {v0, v2, v5, v5, v5}, Landroid/widget/RelativeLayout$LayoutParams;->setMargins(IIII)V
 
     .line 39
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckBox;->setBackgroundColor(I)V
 
     .line 40
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     const v3, 0x7f02018e
 
@@ -119,7 +119,7 @@
     .line 41
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->b:Landroid/widget/RelativeLayout;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v3, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -148,7 +148,7 @@
     if-eqz p1, :cond_0
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$ICr;
 
@@ -168,7 +168,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -182,7 +182,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 

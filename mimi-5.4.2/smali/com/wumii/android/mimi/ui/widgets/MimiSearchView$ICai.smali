@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+.field final synthetic mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->a(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lorg/slf4j/Logger;
 
@@ -57,7 +57,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->b(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/ImageView;
 
@@ -88,7 +88,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -113,7 +113,7 @@
     if-nez v1, :cond_0
 
     .line 81
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -123,7 +123,7 @@
 
     .line 83
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/EditText;
 
@@ -132,7 +132,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 84
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/EditText;
 
@@ -156,7 +156,7 @@
 
     .line 88
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -165,7 +165,7 @@
     if-eqz v1, :cond_3
 
     .line 89
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -177,7 +177,7 @@
 
     .line 91
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICai;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->a(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lorg/slf4j/Logger;
 

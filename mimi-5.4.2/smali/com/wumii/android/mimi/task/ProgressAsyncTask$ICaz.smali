@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+.field final synthetic mProgressAsyncTaska:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->a:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->mProgressAsyncTaska:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->a:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->mProgressAsyncTaska:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->a:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ProgressAsyncTask$ICaz;->mProgressAsyncTaska:Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;->a(Ljava/lang/Class;Lcom/wumii/android/mimi/ui/ActivityEventListener;)V
 

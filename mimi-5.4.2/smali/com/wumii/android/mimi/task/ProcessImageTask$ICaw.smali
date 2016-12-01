@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ProcessImageTask;
+.field final synthetic mProcessImageTaska:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;->a:Lcom/wumii/android/mimi/task/ProcessImageTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;->mProcessImageTaska:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;->a:Lcom/wumii/android/mimi/task/ProcessImageTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ProcessImageTask$ICaw;->mProcessImageTaska:Lcom/wumii/android/mimi/task/ProcessImageTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/ProcessImageTask;->f()Z
 

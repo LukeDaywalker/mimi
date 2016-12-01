@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[I
+.field private static final mArrayIa:[I
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/app/ActionBarDrawerToggleJellybeanMR2;->a:[I
+    sput-object v0, Landroid/support/v4/app/ActionBarDrawerToggleJellybeanMR2;->mArrayIa:[I
 
     return-void
 .end method

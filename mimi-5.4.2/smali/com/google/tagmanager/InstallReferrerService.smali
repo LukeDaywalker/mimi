@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Lcom/google/analytics/tracking/android/CampaignTrackingService;
+.field mCampaignTrackingServicea:Lcom/google/analytics/tracking/android/CampaignTrackingService;
 
-.field b:Landroid/content/Context;
+.field mContextb:Landroid/content/Context;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->a:Lcom/google/analytics/tracking/android/CampaignTrackingService;
+    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->mCampaignTrackingServicea:Lcom/google/analytics/tracking/android/CampaignTrackingService;
 
     if-nez v0, :cond_0
 
@@ -37,11 +37,11 @@
 
     invoke-direct {v0}, Lcom/google/analytics/tracking/android/CampaignTrackingService;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->a:Lcom/google/analytics/tracking/android/CampaignTrackingService;
+    iput-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->mCampaignTrackingServicea:Lcom/google/analytics/tracking/android/CampaignTrackingService;
 
     .line 43
     :cond_0
-    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->a:Lcom/google/analytics/tracking/android/CampaignTrackingService;
+    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->mCampaignTrackingServicea:Lcom/google/analytics/tracking/android/CampaignTrackingService;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/analytics/tracking/android/CampaignTrackingService;->a(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -63,11 +63,11 @@
     move-result-object v1
 
     .line 34
-    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->mContextb:Landroid/content/Context;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/tagmanager/InstallReferrerService;->mContextb:Landroid/content/Context;
 
     .line 35
     :goto_0

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:[Ljavax/net/ssl/TrustManager;
+.field private mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/app/MimiX509TrustManager;->a:[Ljavax/net/ssl/TrustManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/app/MimiX509TrustManager;->mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
     .line 57
     return-void
@@ -234,7 +234,7 @@
     :cond_1
     const-string/jumbo v0, "RSA"
 
-    invoke-static {p2, v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p2, v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -267,7 +267,7 @@
 
     .line 77
     :cond_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/app/MimiX509TrustManager;->a:[Ljavax/net/ssl/TrustManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/app/MimiX509TrustManager;->mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
     array-length v3, v2
 

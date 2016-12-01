@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private g:Landroid/widget/ImageView;
+.field private mImageViewg:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0, p1, p2, v0}, Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;I)V
 
     .line 16
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->g:Landroid/widget/ImageView;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;->mImageViewg:Landroid/widget/ImageView;
 
     .line 17
     return-void

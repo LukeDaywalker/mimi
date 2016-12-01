@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Ljava/io/File;
+.field private final mFileb:Ljava/io/File;
 
-.field private final c:Ljava/lang/String;
+.field private final mFiled:Ljava/io/File;
 
-.field private final d:Ljava/io/File;
+.field private mFilef:Ljava/io/File;
 
-.field private e:Lio/fabric/sdk/android/services/common/QueueFile;
+.field private mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
-.field private f:Ljava/io/File;
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -29,31 +29,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->a:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mContexta:Landroid/content/Context;
 
     .line 53
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->b:Ljava/io/File;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFileb:Ljava/io/File;
 
     .line 54
-    iput-object p4, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->c:Ljava/lang/String;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mStringc:Ljava/lang/String;
 
     .line 56
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->b:Ljava/io/File;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFileb:Ljava/io/File;
 
     invoke-direct {v0, v1, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->d:Ljava/io/File;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFiled:Ljava/io/File;
 
     .line 58
     new-instance v0, Lio/fabric/sdk/android/services/common/QueueFile;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->d:Ljava/io/File;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFiled:Ljava/io/File;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/common/QueueFile;-><init>(Ljava/io/File;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     .line 60
     invoke-direct {p0}, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e()V
@@ -143,16 +143,16 @@
     .line 64
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->b:Ljava/io/File;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFileb:Ljava/io/File;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->c:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mStringc:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     .line 65
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -161,7 +161,7 @@
     if-nez v0, :cond_0
 
     .line 66
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -177,7 +177,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/QueueFile;->a()I
 
@@ -217,7 +217,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 137
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -258,16 +258,16 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/QueueFile;->close()V
 
     .line 84
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->d:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFiled:Ljava/io/File;
 
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     invoke-direct {v1, v2, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -276,11 +276,11 @@
     .line 86
     new-instance v0, Lio/fabric/sdk/android/services/common/QueueFile;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->d:Ljava/io/File;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFiled:Ljava/io/File;
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/services/common/QueueFile;-><init>(Ljava/io/File;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     .line 87
     return-void
@@ -318,7 +318,7 @@
     check-cast v0, Ljava/io/File;
 
     .line 149
-    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->a:Landroid/content/Context;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v3, "deleting sent analytics file %s"
 
@@ -355,7 +355,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0, p1}, Lio/fabric/sdk/android/services/common/QueueFile;->a([B)V
 
@@ -368,7 +368,7 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0, p1, p2}, Lio/fabric/sdk/android/services/common/QueueFile;->a(II)Z
 
@@ -382,7 +382,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/QueueFile;->b()Z
 
@@ -405,7 +405,7 @@
 
     .prologue
     .line 157
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->f:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFilef:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -424,7 +424,7 @@
     .prologue
     .line 163
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->e:Lio/fabric/sdk/android/services/common/QueueFile;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mQueueFilee:Lio/fabric/sdk/android/services/common/QueueFile;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/QueueFile;->close()V
     :try_end_0
@@ -432,7 +432,7 @@
 
     .line 166
     :goto_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->d:Ljava/io/File;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/QueueFileEventStorage;->mFiled:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 

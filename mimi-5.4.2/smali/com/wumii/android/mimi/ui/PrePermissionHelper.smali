@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private static final mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sput-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-void
 .end method
@@ -215,7 +215,7 @@
 
     .prologue
     .line 88
-    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -311,7 +311,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 

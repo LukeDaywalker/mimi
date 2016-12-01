@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mIa:I
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+.field final synthetic mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
     const/4 v1, 0x0
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->a:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mIa:I
 
     const-class v3, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;
 
@@ -57,7 +57,7 @@
     aget-object v3, v0, v1
 
     .line 92
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
     invoke-virtual {v4, v3}, Lcom/wumii/android/mimi/ui/widgets/WMText;->removeSpan(Ljava/lang/Object;)V
 
@@ -68,7 +68,7 @@
 
     .line 95
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->b:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;->mWMTextb:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a()V
 

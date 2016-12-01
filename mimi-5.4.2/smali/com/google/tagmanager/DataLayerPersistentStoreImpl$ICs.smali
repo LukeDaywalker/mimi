@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/lang/String;
+.field final mArrayBb:[B
 
-.field final b:[B
+.field final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 518
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mStringa:Ljava/lang/String;
 
     .line 519
-    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->b:[B
+    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mArrayBb:[B
 
     .line 520
     return-void
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->b:[B
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICs;->mArrayBb:[B
 
     invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
 

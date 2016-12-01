@@ -4,29 +4,29 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mBlockTaskI:Lcom/wumii/android/mimi/task/BlockTask;
 
-.field private D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mChatInfoItemCheckBoxC:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field private E:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+.field private mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field private F:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+.field private mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
-.field private G:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+.field private mChatInfoItemSummaryViewq:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-.field private H:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
+.field private mChatInfoItemSummaryViewr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-.field private I:Lcom/wumii/android/mimi/task/BlockTask;
+.field private mChatInfoItemSummaryViews:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-.field private p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
+.field private mChatInfoItemTitleViewE:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
-.field private q:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+.field private mChatInfoItemTitleViewF:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+.field private mGroupChatInfoHeaderp:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
-.field private s:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+.field private mICcfH:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
 
-.field private t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+.field private mICchG:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->H:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mICcfH:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
 
     return-object p1
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     return-object v0
 .end method
@@ -104,7 +104,7 @@
     if-eqz p1, :cond_0
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -115,7 +115,7 @@
     invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->setupView(Lcom/wumii/android/mimi/models/entities/GroupChatImpact;I)V
 
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     const/4 v1, 0x0
 
@@ -127,7 +127,7 @@
 
     .line 153
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     const/16 v1, 0x8
 
@@ -143,12 +143,12 @@
     const/4 v2, 0x0
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mGroupChatInfoHeaderp:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->setupViews(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mGroupChatInfoHeaderp:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICca;
 
@@ -157,14 +157,14 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->setCallback(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;)V
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     const v1, 0x7f020169
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;->setContentBackground(I)V
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcb;
 
@@ -189,37 +189,37 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->a(Lcom/wumii/android/mimi/models/entities/GroupChatImpact;)V
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxC:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getNotifyNewMessage()Ljava/lang/Boolean;
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->setChecked(Z)V
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->F:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemTitleViewF:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->setVisibility(I)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->F:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemTitleViewF:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->setLineMatch(Z)V
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->E:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemTitleViewE:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->setLineMatch(Z)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->isAllBlocked()Z
 
@@ -248,7 +248,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->H:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mICcfH:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
 
     return-object v0
 .end method
@@ -258,7 +258,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxC:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     return-object v0
 .end method
@@ -276,7 +276,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mGroupChatInfoHeaderp:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
     .line 86
     const v0, 0x7f0b00c8
@@ -287,7 +287,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxC:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 87
     const v0, 0x7f0b00ca
@@ -298,7 +298,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 88
     const v0, 0x7f0b00c9
@@ -309,7 +309,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->E:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemTitleViewE:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
     .line 89
     const v0, 0x7f0b00cb
@@ -320,7 +320,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->F:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemTitleViewF:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;
 
     .line 90
     const v0, 0x7f0b00c1
@@ -331,7 +331,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->q:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViewq:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     .line 91
     const v0, 0x7f0b00c2
@@ -342,7 +342,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViewr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     .line 92
     const v0, 0x7f0b00c3
@@ -353,7 +353,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViews:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     .line 93
     const v0, 0x7f0b00c7
@@ -364,7 +364,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->t:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemImpactViewt:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemImpactView;
 
     .line 94
     return-void
@@ -375,7 +375,7 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->q:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViewq:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -408,7 +408,7 @@
     if-gtz v0, :cond_0
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViewr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     const v1, 0x7f060192
 
@@ -438,7 +438,7 @@
 
     .line 140
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViewr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     const v2, 0x7f060193
 
@@ -478,7 +478,7 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemSummaryViews:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->getResources()Landroid/content/res/Resources;
 
@@ -503,7 +503,7 @@
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mBlockTaskI:Lcom/wumii/android/mimi/task/BlockTask;
 
     if-nez v0, :cond_0
 
@@ -512,11 +512,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mBlockTaskI:Lcom/wumii/android/mimi/task/BlockTask;
 
     .line 320
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mBlockTaskI:Lcom/wumii/android/mimi/task/BlockTask;
 
     return-object v0
 .end method
@@ -528,7 +528,7 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -549,7 +549,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_ALL:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->D:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxD:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -696,7 +696,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->G:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mICchG:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
     if-nez v0, :cond_0
 
@@ -705,11 +705,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->G:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mICchG:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->G:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mICchG:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -717,7 +717,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->mChatInfoItemCheckBoxC:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 

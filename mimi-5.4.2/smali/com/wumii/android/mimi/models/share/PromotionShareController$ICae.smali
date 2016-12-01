@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+.field final synthetic mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICae;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/PromotionShareController;->l()Ljava/lang/String;
 

@@ -12,13 +12,13 @@
 
 .field protected d:I
 
-.field private e:Z
+.field private isZe:Z
 
-.field private f:Landroid/widget/TextView;
+.field private mImageViewg:Landroid/widget/ImageView;
 
-.field private g:Landroid/widget/ImageView;
+.field private mTextViewf:Landroid/widget/TextView;
 
-.field private h:Landroid/view/View;
+.field private mViewh:Landroid/view/View;
 
 
 # direct methods
@@ -110,7 +110,7 @@
 
     move-result v4
 
-    iput-boolean v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->e:Z
+    iput-boolean v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->isZe:Z
 
     .line 47
     invoke-virtual {v0, v1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -247,10 +247,10 @@
 
     invoke-direct {v0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->getResources()Landroid/content/res/Resources;
 
@@ -265,31 +265,31 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     const/high16 v4, 0x41800000    # 16.0f
 
     invoke-virtual {v0, v9, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->c:Landroid/widget/LinearLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -298,17 +298,17 @@
 
     invoke-direct {v0, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->g:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mImageViewg:Landroid/widget/ImageView;
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->g:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mImageViewg:Landroid/widget/ImageView;
 
     const v2, 0x7f02011d
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->g:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mImageViewg:Landroid/widget/ImageView;
 
     const/4 v2, 0x4
 
@@ -317,7 +317,7 @@
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->c:Landroid/widget/LinearLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->g:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mImageViewg:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -326,10 +326,10 @@
 
     invoke-direct {v0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mViewh:Landroid/view/View;
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mViewh:Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->getResources()Landroid/content/res/Resources;
 
@@ -349,7 +349,7 @@
     invoke-direct {v2, v10, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 96
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->e:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->isZe:Z
 
     if-eqz v0, :cond_1
 
@@ -359,7 +359,7 @@
     invoke-virtual {v2, v0, v1, v1, v1}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mViewh:Landroid/view/View;
 
     invoke-virtual {p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -380,7 +380,7 @@
 
     .prologue
     .line 113
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->g:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mImageViewg:Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
@@ -472,10 +472,10 @@
     const/4 v2, 0x0
 
     .line 117
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->e:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->isZe:Z
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -525,7 +525,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -538,7 +538,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemTitleView;->mTextViewf:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 

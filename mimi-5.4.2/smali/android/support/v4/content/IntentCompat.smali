@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+.field private static final mIntentCompatImpla:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->a:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v0, Landroid/support/v4/content/IntentCompat;->mIntentCompatImpla:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     .line 93
     :goto_0
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->a:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v0, Landroid/support/v4/content/IntentCompat;->mIntentCompatImpla:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     goto :goto_0
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->a:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v0, Landroid/support/v4/content/IntentCompat;->mIntentCompatImpla:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     goto :goto_0
 .end method

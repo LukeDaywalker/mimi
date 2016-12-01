@@ -3,19 +3,19 @@
 
 
 # instance fields
-.field a:Lcom/baidu/platform/comapi/map/B;
+.field isZb:Z
 
-.field b:Z
+.field isZd:Z
 
-.field c:I
+.field isZe:Z
 
-.field d:Z
+.field isZf:Z
 
-.field e:Z
+.field isZg:Z
 
-.field f:Z
+.field mBa:Lcom/baidu/platform/comapi/map/B;
 
-.field g:Z
+.field mIc:I
 
 
 # direct methods
@@ -30,19 +30,19 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/map/B;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICz;->a:Lcom/baidu/platform/comapi/map/B;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICz;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->b:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZb:Z
 
-    iput v1, p0, Lcom/baidu/platform/comapi/map/ICz;->c:I
+    iput v1, p0, Lcom/baidu/platform/comapi/map/ICz;->mIc:I
 
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->d:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZd:Z
 
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->e:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZe:Z
 
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->f:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZf:Z
 
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->g:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZg:Z
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 .method public a(I)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/platform/comapi/map/ICz;->c:I
+    iput p1, p0, Lcom/baidu/platform/comapi/map/ICz;->mIc:I
 
     return-object p0
 .end method
@@ -60,7 +60,7 @@
 .method public a(Lcom/baidu/platform/comapi/map/B;)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICz;->a:Lcom/baidu/platform/comapi/map/B;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICz;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     return-object p0
 .end method
@@ -68,7 +68,7 @@
 .method public a(Z)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZb:Z
 
     return-object p0
 .end method
@@ -76,7 +76,7 @@
 .method public b(Z)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->d:Z
+    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZd:Z
 
     return-object p0
 .end method
@@ -84,7 +84,7 @@
 .method public c(Z)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->e:Z
+    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZe:Z
 
     return-object p0
 .end method
@@ -92,7 +92,7 @@
 .method public d(Z)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->f:Z
+    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZf:Z
 
     return-object p0
 .end method
@@ -100,7 +100,7 @@
 .method public e(Z)Lcom/baidu/platform/comapi/map/ICz;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->g:Z
+    iput-boolean p1, p0, Lcom/baidu/platform/comapi/map/ICz;->isZg:Z
 
     return-object p0
 .end method

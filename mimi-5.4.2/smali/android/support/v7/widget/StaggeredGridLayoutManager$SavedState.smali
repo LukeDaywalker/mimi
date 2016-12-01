@@ -20,19 +20,25 @@
 
 
 # instance fields
-.field a:I
+.field isZh:Z
 
-.field b:I
+.field isZi:Z
 
-.field c:I
+.field isZj:Z
 
-.field d:[I
+.field mArrayId:[I
 
-.field e:I
+.field mArrayIf:[I
 
-.field f:[I
+.field mIa:I
 
-.field g:Ljava/util/List;
+.field mIb:I
+
+.field mIc:I
+
+.field mIe:I
+
+.field mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -42,12 +48,6 @@
         }
     .end annotation
 .end field
-
-.field h:Z
-
-.field i:Z
-
-.field j:Z
 
 
 # direct methods
@@ -92,36 +92,36 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     .line 2689
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
     .line 2690
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     .line 2691
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     if-lez v0, :cond_0
 
     .line 2692
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     .line 2693
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readIntArray([I)V
 
@@ -131,22 +131,22 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     .line 2697
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     if-lez v0, :cond_1
 
     .line 2698
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     .line 2699
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readIntArray([I)V
 
@@ -161,7 +161,7 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     .line 2702
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -173,7 +173,7 @@
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
     .line 2703
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -183,7 +183,7 @@
     if-ne v0, v1, :cond_4
 
     :goto_2
-    iput-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iput-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
     .line 2704
     const-class v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
     .line 2706
     return-void
@@ -228,54 +228,54 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2709
-    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     .line 2710
-    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     .line 2711
-    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
     .line 2712
-    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     .line 2713
-    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     .line 2714
-    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     .line 2715
-    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     .line 2716
-    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
     .line 2717
-    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iget-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
     .line 2718
-    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iget-object v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
     .line 2719
     return-void
@@ -292,19 +292,19 @@
     const/4 v0, 0x0
 
     .line 2722
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     .line 2723
-    iput v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iput v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     .line 2724
-    iput v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iput v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     .line 2725
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     .line 2726
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
     .line 2727
     return-void
@@ -329,49 +329,49 @@
     const/4 v2, 0x0
 
     .line 2743
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2744
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2745
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2746
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     if-lez v0, :cond_0
 
     .line 2747
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeIntArray([I)V
 
     .line 2749
     :cond_0
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2750
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     if-lez v0, :cond_1
 
     .line 2751
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeIntArray([I)V
 
     .line 2753
     :cond_1
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     if-eqz v0, :cond_2
 
@@ -381,7 +381,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2754
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
     if-eqz v0, :cond_3
 
@@ -391,7 +391,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2755
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
     if-eqz v0, :cond_4
 
@@ -399,7 +399,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 2756
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 

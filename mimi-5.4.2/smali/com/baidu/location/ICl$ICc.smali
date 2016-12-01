@@ -3,22 +3,22 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICl;
+.field isZif:Z
 
-.field if:Z
+.field final synthetic mICla:Lcom/baidu/location/ICl;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICl;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/ICl$ICc;->a:Lcom/baidu/location/ICl;
+    iput-object p1, p0, Lcom/baidu/location/ICl$ICc;->mICla:Lcom/baidu/location/ICl;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->if:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->isZif:Z
 
     invoke-static {}, Lcom/baidu/location/ICf;->getServiceContext()Landroid/content/Context;
 
@@ -34,13 +34,13 @@
 .method public a(Landroid/content/Context;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->if:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->isZif:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->if:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICl$ICc;->isZif:Z
 
     new-instance v0, Landroid/content/IntentFilter;
 

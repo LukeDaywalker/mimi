@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/Connection;
+.field private final mConnectionPoolb:Lcom/squareup/okhttp/ConnectionPool;
 
-.field private final b:Lcom/squareup/okhttp/ConnectionPool;
+.field private final mConnectiona:Lcom/squareup/okhttp/Connection;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 61
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->a:Lcom/squareup/okhttp/Connection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->mConnectiona:Lcom/squareup/okhttp/Connection;
 
     .line 62
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->b:Lcom/squareup/okhttp/ConnectionPool;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->mConnectionPoolb:Lcom/squareup/okhttp/ConnectionPool;
 
     .line 63
     return-void
@@ -176,9 +176,9 @@
     .line 178
     new-instance v4, Lcom/squareup/okhttp/internal/http/HttpConnection;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->b:Lcom/squareup/okhttp/ConnectionPool;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->mConnectionPoolb:Lcom/squareup/okhttp/ConnectionPool;
 
-    iget-object v5, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->a:Lcom/squareup/okhttp/Connection;
+    iget-object v5, p0, Lcom/squareup/okhttp/internal/http/SocketConnector;->mConnectiona:Lcom/squareup/okhttp/Connection;
 
     invoke-direct {v4, v1, v5, p5}, Lcom/squareup/okhttp/internal/http/HttpConnection;-><init>(Lcom/squareup/okhttp/ConnectionPool;Lcom/squareup/okhttp/Connection;Ljava/net/Socket;)V
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final b:Ljava/util/concurrent/ExecutorService;
+.field private static final mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/Future;
+.field private final mFuturea:Ljava/util/concurrent/Future;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Future",
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->b:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 42
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->a:Ljava/util/concurrent/Future;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mFuturea:Ljava/util/concurrent/Future;
 
     .line 43
     return-void
@@ -74,7 +74,7 @@
     invoke-direct {v1, v0}, Ljava/io/PipedOutputStream;-><init>(Ljava/io/PipedInputStream;)V
 
     .line 34
-    sget-object v2, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->b:Ljava/util/concurrent/ExecutorService;
+    sget-object v2, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
     new-instance v3, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;
 
@@ -158,7 +158,7 @@
 
     .line 53
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->a:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mFuturea:Ljava/util/concurrent/Future;
 
     invoke-static {v0}, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
     :try_end_1
@@ -180,7 +180,7 @@
 
     .line 53
     :try_start_2
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->a:Ljava/util/concurrent/Future;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->mFuturea:Ljava/util/concurrent/Future;
 
     invoke-static {v1}, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
     :try_end_2

@@ -4,7 +4,13 @@
 
 
 # instance fields
-.field private final a:Ljava/util/List;
+.field private isZc:Z
+
+.field private isZd:Z
+
+.field private mIb:I
+
+.field private final mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,12 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private b:I
-
-.field private c:Z
-
-.field private d:Z
 
 
 # direct methods
@@ -42,10 +42,10 @@
     .line 46
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->b:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mIb:I
 
     .line 47
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     .line 48
     return-void
@@ -56,12 +56,12 @@
 
     .prologue
     .line 134
-    iget v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mIb:I
 
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -70,7 +70,7 @@
     if-ge v1, v0, :cond_1
 
     .line 135
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -116,9 +116,9 @@
     const/4 v1, 0x0
 
     .line 58
-    iget v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mIb:I
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -130,7 +130,7 @@
     if-ge v2, v3, :cond_2
 
     .line 59
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -148,7 +148,7 @@
     .line 62
     add-int/lit8 v1, v2, 0x1
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->b:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mIb:I
 
     .line 67
     :goto_1
@@ -167,7 +167,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->d:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZd:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -179,7 +179,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->a:Ljava/util/List;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->mLista:Ljava/util/List;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -226,12 +226,12 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->c:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZc:Z
 
     .line 79
     sget-object v1, Lcom/squareup/okhttp/internal/Internal;->b:Lcom/squareup/okhttp/internal/Internal;
 
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->d:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZd:Z
 
     invoke-virtual {v1, v0, p1, v2}, Lcom/squareup/okhttp/internal/Internal;->a(Lcom/squareup/okhttp/ConnectionSpec;Ljavax/net/ssl/SSLSocket;Z)V
 
@@ -253,7 +253,7 @@
     const/4 v1, 0x0
 
     .line 93
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->d:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZd:Z
 
     .line 97
     instance-of v2, p1, Ljava/net/ProtocolException;
@@ -301,7 +301,7 @@
     if-eqz v2, :cond_4
 
     :cond_3
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->c:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/ConnectionSpecSelector;->isZc:Z
 
     if-eqz v2, :cond_4
 

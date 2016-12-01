@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field private mCircled:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 21
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->d:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mCircled:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 22
     return-void
@@ -140,7 +140,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->d:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mCircled:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)Ljava/lang/String;
 
@@ -267,7 +267,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->d:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/CircleShareController;->mCircled:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 

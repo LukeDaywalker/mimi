@@ -341,7 +341,7 @@
 
     .prologue
     .line 196
-    invoke-static {p1}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v0
 
@@ -451,7 +451,7 @@
 
     .prologue
     .line 212
-    invoke-static {p1}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v0
 

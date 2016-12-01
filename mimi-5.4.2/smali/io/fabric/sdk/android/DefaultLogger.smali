@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 33
     const/4 v0, 0x4
 
-    iput v0, p0, Lio/fabric/sdk/android/DefaultLogger;->a:I
+    iput v0, p0, Lio/fabric/sdk/android/DefaultLogger;->mIa:I
 
     .line 34
     return-void
@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput p1, p0, Lio/fabric/sdk/android/DefaultLogger;->a:I
+    iput p1, p0, Lio/fabric/sdk/android/DefaultLogger;->mIa:I
 
     .line 30
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 38
-    iget v0, p0, Lio/fabric/sdk/android/DefaultLogger;->a:I
+    iget v0, p0, Lio/fabric/sdk/android/DefaultLogger;->mIa:I
 
     if-gt v0, p2, :cond_0
 

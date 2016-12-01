@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+.field final synthetic mChatSessionStoragea:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 188
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;->a:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;->mChatSessionStoragea:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

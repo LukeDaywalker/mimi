@@ -8,13 +8,13 @@
 
 .field public b:I
 
-.field c:F
+.field isZd:Z
 
-.field d:Z
+.field mFc:F
 
-.field e:I
+.field mIe:I
 
-.field f:I
+.field mIf:I
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .line 2934
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->c:F
+    iput v0, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->mFc:F
 
     .line 2954
     return-void
@@ -46,7 +46,7 @@
     .line 2934
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->c:F
+    iput v0, p0, Landroid/support/v4/view/ViewPager$LayoutParams;->mFc:F
 
     .line 2959
     invoke-static {}, Landroid/support/v4/view/ViewPager;->f()[I

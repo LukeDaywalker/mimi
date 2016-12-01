@@ -45,15 +45,9 @@
 
 .field public static final enum m:Lu/aly/DeviceInfo$ICah;
 
-.field public static final enum n:Lu/aly/DeviceInfo$ICah;
+.field private static final synthetic mArrayICahu:[Lu/aly/DeviceInfo$ICah;
 
-.field public static final enum o:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum p:Lu/aly/DeviceInfo$ICah;
-
-.field public static final enum q:Lu/aly/DeviceInfo$ICah;
-
-.field private static final r:Ljava/util/Map;
+.field private static final mMapr:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -65,13 +59,19 @@
     .end annotation
 .end field
 
-.field private static final synthetic u:[Lu/aly/DeviceInfo$ICah;
+.field public static final enum n:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum o:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum p:Lu/aly/DeviceInfo$ICah;
+
+.field public static final enum q:Lu/aly/DeviceInfo$ICah;
 
 
 # instance fields
-.field private final s:S
+.field private final mSs:S
 
-.field private final t:Ljava/lang/String;
+.field private final mStringt:Ljava/lang/String;
 
 
 # direct methods
@@ -421,14 +421,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->u:[Lu/aly/DeviceInfo$ICah;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mArrayICahu:[Lu/aly/DeviceInfo$ICah;
 
     .line 97
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/DeviceInfo$ICah;->r:Ljava/util/Map;
+    sput-object v0, Lu/aly/DeviceInfo$ICah;->mMapr:Ljava/util/Map;
 
     .line 100
     const-class v0, Lu/aly/DeviceInfo$ICah;
@@ -455,7 +455,7 @@
     check-cast v0, Lu/aly/DeviceInfo$ICah;
 
     .line 101
-    sget-object v2, Lu/aly/DeviceInfo$ICah;->r:Ljava/util/Map;
+    sget-object v2, Lu/aly/DeviceInfo$ICah;->mMapr:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/DeviceInfo$ICah;->b()Ljava/lang/String;
 
@@ -485,10 +485,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 170
-    iput-short p3, p0, Lu/aly/DeviceInfo$ICah;->s:S
+    iput-short p3, p0, Lu/aly/DeviceInfo$ICah;->mSs:S
 
     .line 171
-    iput-object p4, p0, Lu/aly/DeviceInfo$ICah;->t:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/DeviceInfo$ICah;->mStringt:Ljava/lang/String;
 
     .line 172
     return-void
@@ -515,7 +515,7 @@
 
     .prologue
     .line 78
-    sget-object v0, Lu/aly/DeviceInfo$ICah;->u:[Lu/aly/DeviceInfo$ICah;
+    sget-object v0, Lu/aly/DeviceInfo$ICah;->mArrayICahu:[Lu/aly/DeviceInfo$ICah;
 
     invoke-virtual {v0}, [Lu/aly/DeviceInfo$ICah;->clone()Ljava/lang/Object;
 
@@ -533,7 +533,7 @@
 
     .prologue
     .line 175
-    iget-short v0, p0, Lu/aly/DeviceInfo$ICah;->s:S
+    iget-short v0, p0, Lu/aly/DeviceInfo$ICah;->mSs:S
 
     return v0
 .end method
@@ -543,7 +543,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lu/aly/DeviceInfo$ICah;->t:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/DeviceInfo$ICah;->mStringt:Ljava/lang/String;
 
     return-object v0
 .end method

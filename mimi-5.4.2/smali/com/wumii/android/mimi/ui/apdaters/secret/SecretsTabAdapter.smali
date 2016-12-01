@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -49,7 +49,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;-><init>(Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;Landroid/content/Context;IILjava/lang/CharSequence;)V
 
     .line 27
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

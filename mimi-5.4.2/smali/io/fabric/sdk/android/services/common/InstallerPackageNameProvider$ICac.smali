@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field final synthetic a:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+.field final synthetic mInstallerPackageNameProvidera:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$ICac;->a:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider$ICac;->mInstallerPackageNameProvidera:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

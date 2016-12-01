@@ -9,7 +9,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperKitKat;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperKitKat;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->isAutoMirrored()Z
 
@@ -23,7 +23,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperKitKat;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperKitKat;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAutoMirrored(Z)V
 

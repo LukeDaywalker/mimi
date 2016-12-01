@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+.field final synthetic mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,13 +39,13 @@
     if-eqz v0, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->b(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;->mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->a(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 

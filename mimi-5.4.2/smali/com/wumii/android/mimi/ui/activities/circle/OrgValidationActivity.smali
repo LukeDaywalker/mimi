@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
-
-.field private o:Ljava/util/ArrayList;
+.field private mArrayListo:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -16,6 +14,8 @@
         }
     .end annotation
 .end field
+
+.field private mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
 
 # direct methods
@@ -133,7 +133,7 @@
     if-ne p1, v0, :cond_1
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
@@ -149,9 +149,9 @@
     if-ne p1, v0, :cond_2
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->o:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mArrayListo:Ljava/util/ArrayList;
 
     invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Ljava/util/ArrayList;)V
 
@@ -164,7 +164,7 @@
     if-ne p1, v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
@@ -223,7 +223,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 50
     const-string/jumbo v0, "validationTypeOrdinals"
@@ -239,7 +239,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->o:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mArrayListo:Ljava/util/ArrayList;
 
     .line 53
     array-length v0, v3
@@ -286,7 +286,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 64
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgValidationActivity;->mOrganizationV2n:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 

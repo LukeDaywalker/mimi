@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static mArrayBg:[B
 
-.field private static b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+.field private static mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-.field private static c:I
+.field private static mIc:I
 
-.field private static d:I
+.field private static mId:I
 
-.field private static e:I
+.field private static mIe:I
 
-.field private static f:I
+.field private static mIf:I
 
-.field private static g:[B
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -31,32 +31,32 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mLoggera:Lorg/slf4j/Logger;
 
     .line 29
     sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 30
     const/4 v0, 0x0
 
-    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->c:I
+    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mIc:I
 
     .line 38
     const/16 v0, 0x140
 
-    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->d:I
+    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mId:I
 
     .line 39
     const/16 v0, 0x20
 
-    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->e:I
+    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mIe:I
 
     .line 40
     const/16 v0, 0x4000
 
-    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->f:I
+    sput v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mIf:I
 
     .line 41
     const/4 v0, 0x6
@@ -65,7 +65,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->g:[B
+    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mArrayBg:[B
 
     return-void
 
@@ -148,7 +148,7 @@
     long-to-int v3, v4
 
     .line 65
-    sget-object v4, Lcom/wumii/android/soundtouch/AudioConvertor;->a:Lorg/slf4j/Logger;
+    sget-object v4, Lcom/wumii/android/soundtouch/AudioConvertor;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -189,7 +189,7 @@
     .line 70
     new-instance v2, Ljava/io/BufferedOutputStream;
 
-    sget v4, Lcom/wumii/android/soundtouch/AudioConvertor;->f:I
+    sget v4, Lcom/wumii/android/soundtouch/AudioConvertor;->mIf:I
 
     invoke-direct {v2, v3, v4}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
@@ -199,38 +199,38 @@
     invoke-direct {v3, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     .line 75
-    sget-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->g:[B
+    sget-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mArrayBg:[B
 
     const/4 v4, 0x0
 
-    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->g:[B
+    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mArrayBg:[B
 
     array-length v5, v5
 
     invoke-virtual {v2, v0, v4, v5}, Ljava/io/BufferedOutputStream;->write([BII)V
 
     .line 77
-    sget v0, Lcom/wumii/android/soundtouch/AudioConvertor;->c:I
+    sget v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mIc:I
 
     invoke-static {v0}, Lcom/hikvh/media/amr/AmrEncoder;->init(I)V
 
     .line 80
     :goto_1
-    sget v0, Lcom/wumii/android/soundtouch/AudioConvertor;->d:I
+    sget v0, Lcom/wumii/android/soundtouch/AudioConvertor;->mId:I
 
     new-array v0, v0, [B
 
     .line 81
     const/4 v4, 0x0
 
-    sget v5, Lcom/wumii/android/soundtouch/AudioConvertor;->d:I
+    sget v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mId:I
 
     invoke-virtual {v3, v0, v4, v5}, Ljava/io/FileInputStream;->read([BII)I
 
     move-result v4
 
     .line 82
-    sget v5, Lcom/wumii/android/soundtouch/AudioConvertor;->d:I
+    sget v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mId:I
 
     if-eq v4, v5, :cond_2
 
@@ -255,7 +255,7 @@
     move-exception v0
 
     .line 99
-    sget-object v1, Lcom/wumii/android/soundtouch/AudioConvertor;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/soundtouch/AudioConvertor;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -293,12 +293,12 @@
     move-result-object v0
 
     .line 87
-    sget v4, Lcom/wumii/android/soundtouch/AudioConvertor;->e:I
+    sget v4, Lcom/wumii/android/soundtouch/AudioConvertor;->mIe:I
 
     new-array v4, v4, [B
 
     .line 88
-    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
+    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->mICab:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     invoke-virtual {v5}, Lcom/hikvh/media/amr/AmrEncoder$ICa;->ordinal()I
 

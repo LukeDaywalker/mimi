@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljavax/net/ssl/SSLContext;
+.field mSSLContexta:Ljavax/net/ssl/SSLContext;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->a:Ljavax/net/ssl/SSLContext;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     .line 354
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->a(Ljava/security/KeyStore;)[Ljavax/net/ssl/TrustManager;
@@ -32,7 +32,7 @@
     move-result-object v0
 
     .line 356
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v1, v2, v0, v2}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 378
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
@@ -103,7 +103,7 @@
 
     .prologue
     .line 373
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/HttpManager$ICe;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 

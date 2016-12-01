@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
+.field final synthetic mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;->mOrganizationsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 

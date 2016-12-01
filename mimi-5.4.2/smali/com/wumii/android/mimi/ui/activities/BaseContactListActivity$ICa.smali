@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+.field final synthetic mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->r:Landroid/widget/ListView;
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
@@ -74,7 +74,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->s:Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
 
@@ -101,7 +101,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Contact;
 
     .line 77
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/Contact;->getDisplayName()Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     if-nez v4, :cond_2
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/Contact;->getPhoneNumber()Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     if-nez v4, :cond_2
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/Contact;->getSortKey()Ljava/lang/String;
 
@@ -145,7 +145,7 @@
 
     .line 83
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICa;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 

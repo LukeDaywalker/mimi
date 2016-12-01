@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private p:Landroid/view/View;
+.field private mImageViewq:Landroid/widget/ImageView;
 
-.field private q:Landroid/widget/ImageView;
+.field private mTextViewr:Landroid/widget/TextView;
 
-.field private r:Landroid/widget/TextView;
+.field private mTextViews:Landroid/widget/TextView;
 
-.field private s:Landroid/widget/TextView;
+.field private mViewp:Landroid/view/View;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->r:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mTextViewr:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->q:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mImageViewq:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mTextViews:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -69,7 +69,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->p:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mViewp:Landroid/view/View;
 
     return-object v0
 .end method
@@ -92,7 +92,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->q:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mImageViewq:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->y:Landroid/util/DisplayMetrics;
 
@@ -184,7 +184,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->r:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mTextViewr:Landroid/widget/TextView;
 
     .line 34
     const v0, 0x7f0b00d9
@@ -195,7 +195,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->q:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mImageViewq:Landroid/widget/ImageView;
 
     .line 35
     const v0, 0x7f0b00da
@@ -204,7 +204,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->p:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mViewp:Landroid/view/View;
 
     .line 36
     const v0, 0x7f0b00db
@@ -215,10 +215,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->s:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mTextViews:Landroid/widget/TextView;
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->mTextViews:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static a:Lcom/google/tagmanager/Logger;
+.field static mLoggera:Lcom/google/tagmanager/Logger;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/google/tagmanager/DefaultLogger;-><init>()V
 
-    sput-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sput-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 27
-    sget-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sget-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     invoke-interface {v0, p0}, Lcom/google/tagmanager/Logger;->a(Ljava/lang/String;)V
 
@@ -40,7 +40,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sget-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     invoke-interface {v0, p0, p1}, Lcom/google/tagmanager/Logger;->a(Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 35
-    sget-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sget-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     invoke-interface {v0, p0}, Lcom/google/tagmanager/Logger;->b(Ljava/lang/String;)V
 
@@ -66,7 +66,7 @@
 
     .prologue
     .line 43
-    sget-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sget-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     invoke-interface {v0, p0}, Lcom/google/tagmanager/Logger;->c(Ljava/lang/String;)V
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/google/tagmanager/Log;->a:Lcom/google/tagmanager/Logger;
+    sget-object v0, Lcom/google/tagmanager/Log;->mLoggera:Lcom/google/tagmanager/Logger;
 
     invoke-interface {v0, p0}, Lcom/google/tagmanager/Logger;->d(Ljava/lang/String;)V
 

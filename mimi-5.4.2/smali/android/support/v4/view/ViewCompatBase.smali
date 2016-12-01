@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Field;
+.field private static isZb:Z
 
-.field private static b:Z
+.field private static isZd:Z
 
-.field private static c:Ljava/lang/reflect/Field;
+.field private static mFielda:Ljava/lang/reflect/Field;
 
-.field private static d:Z
+.field private static mFieldc:Ljava/lang/reflect/Field;
 
 
 # direct methods
@@ -31,7 +31,7 @@
     const/4 v2, 0x1
 
     .line 63
-    sget-boolean v0, Landroid/support/v4/view/ViewCompatBase;->b:Z
+    sget-boolean v0, Landroid/support/v4/view/ViewCompatBase;->isZb:Z
 
     if-nez v0, :cond_0
 
@@ -45,10 +45,10 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/view/ViewCompatBase;->a:Ljava/lang/reflect/Field;
+    sput-object v0, Landroid/support/v4/view/ViewCompatBase;->mFielda:Ljava/lang/reflect/Field;
 
     .line 66
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFielda:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
 
@@ -58,17 +58,17 @@
 
     .line 70
     :goto_0
-    sput-boolean v2, Landroid/support/v4/view/ViewCompatBase;->b:Z
+    sput-boolean v2, Landroid/support/v4/view/ViewCompatBase;->isZb:Z
 
     .line 73
     :cond_0
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFielda:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_1
 
     .line 75
     :try_start_1
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->a:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFielda:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -110,7 +110,7 @@
     const/4 v2, 0x1
 
     .line 86
-    sget-boolean v0, Landroid/support/v4/view/ViewCompatBase;->d:Z
+    sget-boolean v0, Landroid/support/v4/view/ViewCompatBase;->isZd:Z
 
     if-nez v0, :cond_0
 
@@ -124,10 +124,10 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/view/ViewCompatBase;->c:Ljava/lang/reflect/Field;
+    sput-object v0, Landroid/support/v4/view/ViewCompatBase;->mFieldc:Ljava/lang/reflect/Field;
 
     .line 89
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->c:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFieldc:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
 
@@ -137,17 +137,17 @@
 
     .line 93
     :goto_0
-    sput-boolean v2, Landroid/support/v4/view/ViewCompatBase;->d:Z
+    sput-boolean v2, Landroid/support/v4/view/ViewCompatBase;->isZd:Z
 
     .line 96
     :cond_0
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->c:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFieldc:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_1
 
     .line 98
     :try_start_1
-    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->c:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/view/ViewCompatBase;->mFieldc:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

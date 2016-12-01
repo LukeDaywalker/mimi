@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+.field private mArrayFiled:[Ljava/io/File;
 
-.field private final b:Ljava/lang/String;
+.field private final mArrayInputStreame:[Ljava/io/InputStream;
 
-.field private final c:J
+.field private final mArrayJf:[J
 
-.field private d:[Ljava/io/File;
+.field final synthetic mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
-.field private final e:[Ljava/io/InputStream;
+.field private final mJc:J
 
-.field private final f:[J
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -26,24 +26,24 @@
 
     .prologue
     .line 713
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->a:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mDiskLruCachea:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 714
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mStringb:Ljava/lang/String;
 
     .line 715
-    iput-wide p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->c:J
+    iput-wide p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mJc:J
 
     .line 716
-    iput-object p5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->d:[Ljava/io/File;
+    iput-object p5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mArrayFiled:[Ljava/io/File;
 
     .line 717
-    iput-object p6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->e:[Ljava/io/InputStream;
+    iput-object p6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mArrayInputStreame:[Ljava/io/InputStream;
 
     .line 718
-    iput-object p7, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->f:[J
+    iput-object p7, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mArrayJf:[J
 
     .line 719
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 732
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->d:[Ljava/io/File;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mArrayFiled:[Ljava/io/File;
 
     aget-object v0, v0, p1
 
@@ -78,7 +78,7 @@
 
     .prologue
     .line 751
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->e:[Ljava/io/InputStream;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$ICg;->mArrayInputStreame:[Ljava/io/InputStream;
 
     array-length v2, v1
 

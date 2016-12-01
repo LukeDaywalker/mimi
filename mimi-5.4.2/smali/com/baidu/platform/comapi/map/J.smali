@@ -10,19 +10,19 @@
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->c:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->mIc:I
 
     const-string/jumbo v0, "sdktile"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/J;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/J;->mStringb:Ljava/lang/String;
 
     const/16 v0, 0x1f4
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->d:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->mId:I
 
     const/16 v0, 0x17
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->g:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/J;->mIg:I
 
     return-void
 .end method

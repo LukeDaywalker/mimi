@@ -6,7 +6,7 @@
 # instance fields
 .field protected a:Z
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->mStringd:Ljava/lang/String;
 
     .line 23
     iput-boolean p2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->a:Z
@@ -81,7 +81,7 @@
     .line 30
     const-string/jumbo v1, "sid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/BlockSecretChatTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

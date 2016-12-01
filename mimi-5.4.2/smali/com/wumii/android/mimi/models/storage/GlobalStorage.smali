@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 16
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -86,7 +86,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/Boolean;
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -167,7 +167,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->mPreferencesHelpera:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

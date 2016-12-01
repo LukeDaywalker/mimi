@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
-.field b:I
+.field isZi:Z
 
-.field c:I
+.field mIb:I
 
-.field d:I
+.field mIc:I
 
-.field e:I
+.field mId:I
 
-.field f:I
+.field mIe:I
 
-.field g:I
+.field mIf:I
 
-.field h:I
+.field mIg:I
 
-.field i:Z
+.field mIh:I
 
-.field j:I
+.field mIj:I
 
-.field k:Ljava/util/List;
+.field mListk:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -49,18 +49,18 @@
     .line 1869
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->a:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->isZa:Z
 
     .line 1910
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->h:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mIh:I
 
     .line 1917
-    iput-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->i:Z
+    iput-boolean v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->isZi:Z
 
     .line 1928
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iput-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     .prologue
     .line 1960
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -85,7 +85,7 @@
     if-ge v1, v2, :cond_2
 
     .line 1962
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -110,7 +110,7 @@
 
     .line 1966
     :cond_1
-    iget v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v3, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     invoke-virtual {v0}, Landroid/support/v7/widget/RecyclerView$ICbg;->d()I
 
@@ -141,7 +141,7 @@
 
     .prologue
     .line 1944
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
@@ -156,20 +156,20 @@
 
     .line 1947
     :cond_0
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     invoke-virtual {p1, v0}, Landroid/support/v7/widget/RecyclerView$ICax;->b(I)Landroid/view/View;
 
     move-result-object v0
 
     .line 1948
-    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
-    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->e:I
+    iget v2, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mIe:I
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iput v1, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     goto :goto_0
 .end method
@@ -202,7 +202,7 @@
     const/4 v0, -0x1
 
     :goto_0
-    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iput v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     .line 1982
     return-void
@@ -221,11 +221,11 @@
 
     .prologue
     .line 1934
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView$ICbd;->e()I
 
@@ -249,7 +249,7 @@
 
     .prologue
     .line 1985
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -270,7 +270,7 @@
     if-ge v4, v5, :cond_4
 
     .line 1992
-    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->k:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mListk:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -309,11 +309,11 @@
 
     move-result v2
 
-    iget v6, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->d:I
+    iget v6, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mId:I
 
     sub-int/2addr v2, v6
 
-    iget v6, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->e:I
+    iget v6, p0, Landroid/support/v7/widget/LinearLayoutManager$ICv;->mIe:I
 
     mul-int/2addr v2, v6
 

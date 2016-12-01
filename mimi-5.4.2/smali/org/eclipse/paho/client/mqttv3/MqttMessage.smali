@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private b:[B
+.field private isZd:Z
 
-.field private c:I
+.field private isZe:Z
 
-.field private d:Z
+.field private mArrayBb:[B
 
-.field private e:Z
+.field private mIc:I
 
 
 # direct methods
@@ -28,16 +28,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    iput-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a:Z
+    iput-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZa:Z
 
     .line 28
-    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c:I
+    iput v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mIc:I
 
     .line 29
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZd:Z
 
     .line 30
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->e:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZe:Z
 
     .line 53
     new-array v0, v0, [B
@@ -82,7 +82,7 @@
     invoke-virtual {p0}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->d()V
 
     .line 121
-    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->d:Z
+    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZd:Z
 
     .line 122
     return-void
@@ -107,7 +107,7 @@
 
     .line 94
     :cond_0
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->b:[B
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mArrayBb:[B
 
     .line 95
     return-void
@@ -118,7 +118,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->b:[B
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mArrayBb:[B
 
     return-object v0
 .end method
@@ -134,7 +134,7 @@
     invoke-static {p1}, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a(I)V
 
     .line 176
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mIc:I
 
     .line 177
     return-void
@@ -145,7 +145,7 @@
 
     .prologue
     .line 207
-    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->e:Z
+    iput-boolean p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZe:Z
 
     .line 208
     return-void
@@ -156,7 +156,7 @@
 
     .prologue
     .line 108
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->d:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZd:Z
 
     return v0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 130
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->c:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mIc:I
 
     return v0
 .end method
@@ -176,7 +176,7 @@
 
     .prologue
     .line 201
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->a:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 217
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->e:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->isZe:Z
 
     return v0
 .end method
@@ -209,7 +209,7 @@
     .line 187
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->b:[B
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttMessage;->mArrayBb:[B
 
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>([B)V
 

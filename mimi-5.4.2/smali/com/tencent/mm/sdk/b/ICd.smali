@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private final E:Lcom/tencent/mm/a/ICa;
+.field private final mICaE:Lcom/tencent/mm/a/ICa;
 
-.field private F:Lcom/tencent/mm/sdk/b/ICc;
+.field private mICcF:Lcom/tencent/mm/sdk/b/ICc;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/tencent/mm/sdk/b/c",
@@ -33,7 +33,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/mm/sdk/b/ICd;->F:Lcom/tencent/mm/sdk/b/ICc;
+    iget-object v0, p0, Lcom/tencent/mm/sdk/b/ICd;->mICcF:Lcom/tencent/mm/sdk/b/ICc;
 
     invoke-virtual {v0, p1}, Lcom/tencent/mm/sdk/b/ICc;->a(Ljava/lang/Object;)Z
 
@@ -41,7 +41,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/mm/sdk/b/ICd;->F:Lcom/tencent/mm/sdk/b/ICc;
+    iget-object v0, p0, Lcom/tencent/mm/sdk/b/ICd;->mICcF:Lcom/tencent/mm/sdk/b/ICc;
 
     invoke-virtual {v0, p1}, Lcom/tencent/mm/sdk/b/ICc;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -122,7 +122,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v4, p0, Lcom/tencent/mm/sdk/b/ICd;->E:Lcom/tencent/mm/a/ICa;
+    iget-object v4, p0, Lcom/tencent/mm/sdk/b/ICd;->mICaE:Lcom/tencent/mm/a/ICa;
 
     invoke-virtual {v4, v3}, Lcom/tencent/mm/a/ICa;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -140,7 +140,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/mm/sdk/b/ICd;->F:Lcom/tencent/mm/sdk/b/ICc;
+    iget-object v2, p0, Lcom/tencent/mm/sdk/b/ICd;->mICcF:Lcom/tencent/mm/sdk/b/ICc;
 
     invoke-virtual {v2, p1, v1}, Lcom/tencent/mm/sdk/b/ICc;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1

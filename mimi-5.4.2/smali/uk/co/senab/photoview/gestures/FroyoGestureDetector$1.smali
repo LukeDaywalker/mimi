@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
+.field final synthetic mFroyoGestureDetectora:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector$1;->a:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
+    iput-object p1, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector$1;->mFroyoGestureDetectora:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector$1;->a:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/FroyoGestureDetector$1;->mFroyoGestureDetectora:Luk/co/senab/photoview/gestures/FroyoGestureDetector;
 
     iget-object v0, v0, Luk/co/senab/photoview/gestures/FroyoGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
+.field final synthetic m1a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 338
-    iput-object p1, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
+    iput-object p1, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->m1a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,14 +30,14 @@
 
     .prologue
     .line 341
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->m1a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
 
-    iget-object v0, v0, Landroid/support/v4/print/PrintHelperKitkat$2$1;->e:Landroid/support/v4/print/PrintHelperKitkat$2;
+    iget-object v0, v0, Landroid/support/v4/print/PrintHelperKitkat$2$1;->m2e:Landroid/support/v4/print/PrintHelperKitkat$2;
 
     invoke-static {v0}, Landroid/support/v4/print/PrintHelperKitkat$2;->a(Landroid/support/v4/print/PrintHelperKitkat$2;)V
 
     .line 342
-    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
+    iget-object v0, p0, Landroid/support/v4/print/PrintHelperKitkat$2$1$1;->m1a:Landroid/support/v4/print/PrintHelperKitkat$2$1;
 
     const/4 v1, 0x0
 

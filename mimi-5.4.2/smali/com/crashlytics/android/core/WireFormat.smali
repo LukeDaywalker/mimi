@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static final a:I
+.field static final mIa:I
 
-.field static final b:I
+.field static final mIb:I
 
-.field static final c:I
+.field static final mIc:I
 
-.field static final d:I
+.field static final mId:I
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result v0
 
-    sput v0, Lcom/crashlytics/android/core/WireFormat;->a:I
+    sput v0, Lcom/crashlytics/android/core/WireFormat;->mIa:I
 
     .line 158
     const/4 v0, 0x4
@@ -38,7 +38,7 @@
 
     move-result v0
 
-    sput v0, Lcom/crashlytics/android/core/WireFormat;->b:I
+    sput v0, Lcom/crashlytics/android/core/WireFormat;->mIb:I
 
     .line 160
     const/4 v0, 0x0
@@ -47,14 +47,14 @@
 
     move-result v0
 
-    sput v0, Lcom/crashlytics/android/core/WireFormat;->c:I
+    sput v0, Lcom/crashlytics/android/core/WireFormat;->mIc:I
 
     .line 162
     invoke-static {v3, v2}, Lcom/crashlytics/android/core/WireFormat;->a(II)I
 
     move-result v0
 
-    sput v0, Lcom/crashlytics/android/core/WireFormat;->d:I
+    sput v0, Lcom/crashlytics/android/core/WireFormat;->mId:I
 
     return-void
 .end method

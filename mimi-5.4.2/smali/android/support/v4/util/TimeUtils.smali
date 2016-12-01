@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/Object;
+.field private static mArrayCb:[C
 
-.field private static b:[C
+.field private static final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -19,14 +19,14 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroid/support/v4/util/TimeUtils;->a:Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/util/TimeUtils;->mObjecta:Ljava/lang/Object;
 
     .line 36
     const/16 v0, 0x18
 
     new-array v0, v0, [C
 
-    sput-object v0, Landroid/support/v4/util/TimeUtils;->b:[C
+    sput-object v0, Landroid/support/v4/util/TimeUtils;->mArrayCb:[C
 
     return-void
 .end method
@@ -106,7 +106,7 @@
 
     .prologue
     .line 76
-    sget-object v2, Landroid/support/v4/util/TimeUtils;->b:[C
+    sget-object v2, Landroid/support/v4/util/TimeUtils;->mArrayCb:[C
 
     array-length v2, v2
 
@@ -119,11 +119,11 @@
 
     new-array v2, v0, [C
 
-    sput-object v2, Landroid/support/v4/util/TimeUtils;->b:[C
+    sput-object v2, Landroid/support/v4/util/TimeUtils;->mArrayCb:[C
 
     .line 80
     :cond_0
-    sget-object v2, Landroid/support/v4/util/TimeUtils;->b:[C
+    sget-object v2, Landroid/support/v4/util/TimeUtils;->mArrayCb:[C
 
     .line 82
     const-wide/16 v4, 0x0
@@ -749,7 +749,7 @@
 
     .prologue
     .line 156
-    sget-object v1, Landroid/support/v4/util/TimeUtils;->a:Ljava/lang/Object;
+    sget-object v1, Landroid/support/v4/util/TimeUtils;->mObjecta:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -762,7 +762,7 @@
     .line 158
     new-instance v2, Ljava/lang/String;
 
-    sget-object v3, Landroid/support/v4/util/TimeUtils;->b:[C
+    sget-object v3, Landroid/support/v4/util/TimeUtils;->mArrayCb:[C
 
     const/4 v4, 0x0
 

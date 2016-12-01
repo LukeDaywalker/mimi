@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICo;
+.field final synthetic mICoa:Lcom/baidu/location/ICo;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICo;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICo$1;->a:Lcom/baidu/location/ICo;
+    iput-object p1, p0, Lcom/baidu/location/ICo$1;->mICoa:Lcom/baidu/location/ICo;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,7 +37,7 @@
     goto :goto_0
 
     :pswitch_0
-    iget-object v0, p0, Lcom/baidu/location/ICo$1;->a:Lcom/baidu/location/ICo;
+    iget-object v0, p0, Lcom/baidu/location/ICo$1;->mICoa:Lcom/baidu/location/ICo;
 
     invoke-static {v0}, Lcom/baidu/location/ICo;->if(Lcom/baidu/location/ICo;)V
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/DatabaseUtils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/DatabaseUtils;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -133,7 +133,7 @@
     .line 36
     :goto_2
     :try_start_2
-    sget-object v3, Lcom/wumii/android/mimi/util/DatabaseUtils;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/util/DatabaseUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -283,7 +283,7 @@
     if-nez v1, :cond_0
 
     .line 74
-    sget-object v1, Lcom/wumii/android/mimi/util/DatabaseUtils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/DatabaseUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -391,7 +391,7 @@
     if-nez v2, :cond_0
 
     .line 63
-    sget-object v2, Lcom/wumii/android/mimi/util/DatabaseUtils;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/util/DatabaseUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

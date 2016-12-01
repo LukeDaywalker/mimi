@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/google/tagmanager/ObjectAndStatic;
+.field private static final mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/tagmanager/ak",
@@ -17,45 +17,7 @@
 
 
 # instance fields
-.field private final b:Lcom/google/tagmanager/EventInfoDistributor;
-
-.field private final c:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/String;",
-            "Lcom/google/tagmanager/FunctionCallImplementation;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final d:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/String;",
-            "Lcom/google/tagmanager/FunctionCallImplementation;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final e:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/String;",
-            "Lcom/google/tagmanager/FunctionCallImplementation;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final f:Lcom/google/tagmanager/Cache;
+.field private final mCachef:Lcom/google/tagmanager/Cache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/tagmanager/b",
@@ -69,7 +31,7 @@
     .end annotation
 .end field
 
-.field private final g:Lcom/google/tagmanager/Cache;
+.field private final mCacheg:Lcom/google/tagmanager/Cache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/tagmanager/b",
@@ -81,20 +43,47 @@
     .end annotation
 .end field
 
-.field private final h:Ljava/util/Set;
+.field private final mDataLayeri:Lcom/google/tagmanager/DataLayer;
+
+.field private final mEventInfoDistributorb:Lcom/google/tagmanager/EventInfoDistributor;
+
+.field private final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Set",
+            "Ljava/util/Map",
             "<",
-            "Lcom/google/tagmanager/ResourceUtil$ICau;",
+            "Ljava/lang/String;",
+            "Lcom/google/tagmanager/FunctionCallImplementation;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final i:Lcom/google/tagmanager/DataLayer;
+.field private final mMapd:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Lcom/google/tagmanager/FunctionCallImplementation;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private final j:Ljava/util/Map;
+.field private final mMape:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Lcom/google/tagmanager/FunctionCallImplementation;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -106,7 +95,18 @@
     .end annotation
 .end field
 
-.field private volatile k:Ljava/lang/String;
+.field private final mSeth:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/tagmanager/ResourceUtil$ICau;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private volatile mStringk:Ljava/lang/String;
 
 
 # direct methods
@@ -125,7 +125,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/tagmanager/ObjectAndStatic;-><init>(Ljava/lang/Object;Z)V
 
-    sput-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sput-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     return-void
 .end method
@@ -199,7 +199,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 798
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
@@ -242,12 +242,12 @@
     move-result-object v0
 
     .line 725
-    sget-object v4, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v4, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-ne v0, v4, :cond_1
 
     .line 727
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
@@ -321,7 +321,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 740
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto/16 :goto_0
 
@@ -381,17 +381,17 @@
     move-result-object v4
 
     .line 751
-    sget-object v5, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v5, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-eq v0, v5, :cond_4
 
-    sget-object v5, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v5, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-ne v4, v5, :cond_5
 
     .line 754
     :cond_4
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto/16 :goto_0
 
@@ -493,7 +493,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 769
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto/16 :goto_0
 
@@ -567,12 +567,12 @@
     move-result-object v0
 
     .line 786
-    sget-object v4, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v4, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-ne v0, v4, :cond_8
 
     .line 788
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto/16 :goto_0
 
@@ -640,7 +640,7 @@
     const/4 v10, 0x1
 
     .line 612
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->g:Lcom/google/tagmanager/Cache;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mCacheg:Lcom/google/tagmanager/Cache;
 
     invoke-interface {v0, p1}, Lcom/google/tagmanager/Cache;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -651,7 +651,7 @@
     .line 613
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->b:Lcom/google/tagmanager/EventInfoDistributor;
+    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->mEventInfoDistributorb:Lcom/google/tagmanager/EventInfoDistributor;
 
     invoke-interface {v1}, Lcom/google/tagmanager/EventInfoDistributor;->a()Z
 
@@ -677,7 +677,7 @@
 
     .line 619
     :cond_0
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->j:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -712,7 +712,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 623
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
@@ -777,7 +777,7 @@
     if-nez v2, :cond_4
 
     .line 643
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
@@ -840,7 +840,7 @@
 
     .line 646
     :cond_4
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mMape:Ljava/util/Map;
 
     invoke-interface {p3}, Lcom/google/tagmanager/MacroEvaluationInfoBuilder;->a()Lcom/google/tagmanager/ResolvedFunctionCallBuilder;
 
@@ -867,11 +867,11 @@
 
     .line 651
     :goto_2
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-ne v3, v1, :cond_7
 
-    sget-object v0, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v0, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     .line 654
     :goto_3
@@ -887,7 +887,7 @@
     if-eqz v2, :cond_5
 
     .line 656
-    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->g:Lcom/google/tagmanager/Cache;
+    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->mCacheg:Lcom/google/tagmanager/Cache;
 
     new-instance v3, Lcom/google/tagmanager/Runtime$ICba;
 
@@ -977,7 +977,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 820
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     .line 881
     :cond_0
@@ -1020,13 +1020,13 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 827
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
     .line 830
     :cond_2
-    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->f:Lcom/google/tagmanager/Cache;
+    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->mCachef:Lcom/google/tagmanager/Cache;
 
     invoke-interface {v1, p2}, Lcom/google/tagmanager/Cache;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1037,7 +1037,7 @@
     .line 833
     if-eqz v1, :cond_3
 
-    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->b:Lcom/google/tagmanager/EventInfoDistributor;
+    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->mEventInfoDistributorb:Lcom/google/tagmanager/EventInfoDistributor;
 
     invoke-interface {v2}, Lcom/google/tagmanager/EventInfoDistributor;->a()Z
 
@@ -1112,12 +1112,12 @@
     move-result-object v10
 
     .line 847
-    sget-object v2, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v2, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-ne v10, v2, :cond_4
 
     .line 850
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto :goto_0
 
@@ -1231,7 +1231,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 868
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     goto/16 :goto_0
 
@@ -1259,7 +1259,7 @@
     if-eqz v5, :cond_8
 
     .line 878
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->f:Lcom/google/tagmanager/Cache;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mCachef:Lcom/google/tagmanager/Cache;
 
     invoke-interface {v0, p2, v1}, Lcom/google/tagmanager/Cache;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -1438,7 +1438,7 @@
     move-result-object v0
 
     .line 670
-    sget-object v1, Lcom/google/tagmanager/Runtime;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    sget-object v1, Lcom/google/tagmanager/Runtime;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     if-eq v0, v1, :cond_0
 
@@ -1462,7 +1462,7 @@
     check-cast v0, Ljava/util/Map;
 
     .line 677
-    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->i:Lcom/google/tagmanager/DataLayer;
+    iget-object v1, p0, Lcom/google/tagmanager/Runtime;->mDataLayeri:Lcom/google/tagmanager/DataLayer;
 
     invoke-virtual {v1, v0}, Lcom/google/tagmanager/DataLayer;->a(Ljava/util/Map;)V
 
@@ -1502,7 +1502,7 @@
     check-cast v0, Ljava/util/Map;
 
     .line 686
-    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->i:Lcom/google/tagmanager/DataLayer;
+    iget-object v2, p0, Lcom/google/tagmanager/Runtime;->mDataLayeri:Lcom/google/tagmanager/DataLayer;
 
     invoke-virtual {v2, v0}, Lcom/google/tagmanager/DataLayer;->a(Ljava/util/Map;)V
 
@@ -1548,7 +1548,7 @@
 
     .prologue
     .line 557
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mMapd:Ljava/util/Map;
 
     invoke-direct {p0, v0, p1, p2, p3}, Lcom/google/tagmanager/Runtime;->a(Ljava/util/Map;Lcom/google/tagmanager/ResourceUtil$ICat;Ljava/util/Set;Lcom/google/tagmanager/ResolvedFunctionCallBuilder;)Lcom/google/tagmanager/ObjectAndStatic;
 
@@ -1945,7 +1945,7 @@
     invoke-virtual {p0, p1}, Lcom/google/tagmanager/Runtime;->b(Ljava/lang/String;)V
 
     .line 347
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->b:Lcom/google/tagmanager/EventInfoDistributor;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mEventInfoDistributorb:Lcom/google/tagmanager/EventInfoDistributor;
 
     invoke-interface {v0, p1}, Lcom/google/tagmanager/EventInfoDistributor;->a(Ljava/lang/String;)Lcom/google/tagmanager/EventInfoBuilder;
 
@@ -1957,7 +1957,7 @@
     move-result-object v2
 
     .line 352
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->h:Ljava/util/Set;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime;->mSeth:Ljava/util/Set;
 
     invoke-interface {v2}, Lcom/google/tagmanager/DataLayerEventEvaluationInfoBuilder;->b()Lcom/google/tagmanager/RuleEvaluationStepInfoBuilder;
 
@@ -1991,7 +1991,7 @@
     check-cast v0, Lcom/google/tagmanager/ResourceUtil$ICat;
 
     .line 353
-    iget-object v4, p0, Lcom/google/tagmanager/Runtime;->c:Ljava/util/Map;
+    iget-object v4, p0, Lcom/google/tagmanager/Runtime;->mMapc:Ljava/util/Map;
 
     new-instance v5, Ljava/util/HashSet;
 
@@ -2041,7 +2041,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-object p1, p0, Lcom/google/tagmanager/Runtime;->k:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/tagmanager/Runtime;->mStringk:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

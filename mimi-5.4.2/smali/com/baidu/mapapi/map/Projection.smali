@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private a:Lcom/baidu/platform/comapi/map/ICc;
+.field private mICca:Lcom/baidu/platform/comapi/map/ICc;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Projection;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     return-void
 .end method
@@ -24,7 +24,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Projection;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     iget v1, p1, Landroid/graphics/Point;->x:I
 
@@ -62,7 +62,7 @@
     :cond_0
     float-to-double v0, p1
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Projection;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICc;->z()D
 
@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    iget-object v2, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v2, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-wide v4, v2, Lcom/baidu/platform/comapi/map/B;->d:D
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Projection;->mICca:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {v1, v0}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
 

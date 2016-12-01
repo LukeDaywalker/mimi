@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field private final a:Ljava/io/InputStream;
+.field private final mInputStreama:Ljava/io/InputStream;
 
-.field private final b:Ljava/io/OutputStream;
+.field private final mOutputStreamb:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -33,10 +33,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 81
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mInputStreama:Ljava/io/InputStream;
 
     .line 82
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->b:Ljava/io/OutputStream;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mOutputStreamb:Ljava/io/OutputStream;
 
     .line 83
     return-void
@@ -51,13 +51,13 @@
     .line 87
     new-instance v1, Ljava/util/zip/GZIPInputStream;
 
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mInputStreama:Ljava/io/InputStream;
 
     invoke-direct {v1, v0}, Ljava/util/zip/GZIPInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 89
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mOutputStreamb:Ljava/io/OutputStream;
 
     const/16 v2, 0x400
 
@@ -71,7 +71,7 @@
     invoke-virtual {v1}, Ljava/util/zip/GZIPInputStream;->close()V
 
     .line 92
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->b:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
@@ -87,7 +87,7 @@
     invoke-virtual {v1}, Ljava/util/zip/GZIPInputStream;->close()V
 
     .line 92
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->b:Ljava/io/OutputStream;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/GunzippingOutputStream$ICe;->mOutputStreamb:Ljava/io/OutputStream;
 
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
 

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:Z
+.field static final synthetic isZa:Z
 
 
 # direct methods
@@ -21,7 +21,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    sput-boolean v0, Lcom/tencent/wxop/stat/b/ICh;->a:Z
+    sput-boolean v0, Lcom/tencent/wxop/stat/b/ICh;->isZa:Z
 
     return-void
 
@@ -154,7 +154,7 @@
 
     invoke-virtual {v3, p0, v2}, Lcom/tencent/wxop/stat/b/ICk;->a([BI)Z
 
-    sget-boolean v1, Lcom/tencent/wxop/stat/b/ICh;->a:Z
+    sget-boolean v1, Lcom/tencent/wxop/stat/b/ICh;->isZa:Z
 
     if-nez v1, :cond_4
 

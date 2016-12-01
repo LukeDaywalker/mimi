@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final e:[I
+.field private static final mArrayIe:[I
 
 
 # instance fields
 .field public a:F
 
-.field b:Z
+.field isZb:Z
 
-.field c:Z
+.field isZc:Z
 
-.field d:Landroid/graphics/Paint;
+.field mPaintd:Landroid/graphics/Paint;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->e:[I
+    sput-object v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mArrayIe:[I
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     iput v2, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->a:F
 
     .line 1439
-    sget-object v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->e:[I
+    sget-object v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->mArrayIe:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 

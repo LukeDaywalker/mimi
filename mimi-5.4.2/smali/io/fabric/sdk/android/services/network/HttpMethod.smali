@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lio/fabric/sdk/android/services/network/HttpMethod;
 
-.field private static final synthetic e:[Lio/fabric/sdk/android/services/network/HttpMethod;
+.field private static final synthetic mArrayHttpMethode:[Lio/fabric/sdk/android/services/network/HttpMethod;
 
 
 # direct methods
@@ -96,7 +96,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->e:[Lio/fabric/sdk/android/services/network/HttpMethod;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mArrayHttpMethode:[Lio/fabric/sdk/android/services/network/HttpMethod;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 20
-    sget-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->e:[Lio/fabric/sdk/android/services/network/HttpMethod;
+    sget-object v0, Lio/fabric/sdk/android/services/network/HttpMethod;->mArrayHttpMethode:[Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/network/HttpMethod;->clone()Ljava/lang/Object;
 

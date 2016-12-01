@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field b:Landroid/support/v4/util/MapCollections$EntrySet;
+.field mEntrySetb:Landroid/support/v4/util/MapCollections$EntrySet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/MapCollections",
@@ -26,7 +26,7 @@
     .end annotation
 .end field
 
-.field c:Landroid/support/v4/util/MapCollections$KeySet;
+.field mKeySetc:Landroid/support/v4/util/MapCollections$KeySet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/MapCollections",
@@ -35,7 +35,7 @@
     .end annotation
 .end field
 
-.field d:Landroid/support/v4/util/MapCollections$ValuesCollection;
+.field mValuesCollectiond:Landroid/support/v4/util/MapCollections$ValuesCollection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/MapCollections",
@@ -504,7 +504,7 @@
 
     .prologue
     .line 529
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->b:Landroid/support/v4/util/MapCollections$EntrySet;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mEntrySetb:Landroid/support/v4/util/MapCollections$EntrySet;
 
     if-nez v0, :cond_0
 
@@ -513,11 +513,11 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$EntrySet;-><init>(Landroid/support/v4/util/MapCollections;)V
 
-    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->b:Landroid/support/v4/util/MapCollections$EntrySet;
+    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->mEntrySetb:Landroid/support/v4/util/MapCollections$EntrySet;
 
     .line 532
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->b:Landroid/support/v4/util/MapCollections$EntrySet;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mEntrySetb:Landroid/support/v4/util/MapCollections$EntrySet;
 
     return-object v0
 .end method
@@ -534,7 +534,7 @@
 
     .prologue
     .line 536
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->c:Landroid/support/v4/util/MapCollections$KeySet;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mKeySetc:Landroid/support/v4/util/MapCollections$KeySet;
 
     if-nez v0, :cond_0
 
@@ -543,11 +543,11 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$KeySet;-><init>(Landroid/support/v4/util/MapCollections;)V
 
-    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->c:Landroid/support/v4/util/MapCollections$KeySet;
+    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->mKeySetc:Landroid/support/v4/util/MapCollections$KeySet;
 
     .line 539
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->c:Landroid/support/v4/util/MapCollections$KeySet;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mKeySetc:Landroid/support/v4/util/MapCollections$KeySet;
 
     return-object v0
 .end method
@@ -564,7 +564,7 @@
 
     .prologue
     .line 543
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->d:Landroid/support/v4/util/MapCollections$ValuesCollection;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mValuesCollectiond:Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     if-nez v0, :cond_0
 
@@ -573,11 +573,11 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/util/MapCollections$ValuesCollection;-><init>(Landroid/support/v4/util/MapCollections;)V
 
-    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->d:Landroid/support/v4/util/MapCollections$ValuesCollection;
+    iput-object v0, p0, Landroid/support/v4/util/MapCollections;->mValuesCollectiond:Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     .line 546
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->d:Landroid/support/v4/util/MapCollections$ValuesCollection;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections;->mValuesCollectiond:Landroid/support/v4/util/MapCollections$ValuesCollection;
 
     return-object v0
 .end method

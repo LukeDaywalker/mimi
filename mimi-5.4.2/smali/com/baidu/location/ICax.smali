@@ -9,39 +9,39 @@
 # static fields
 .field private static final i:Ljava/lang/String; = "GeofenceMan"
 
-.field private static final iA:I = 0x3
-
 .field public static final iB:I = 0xa
 
-.field private static final iC:Ljava/lang/String; = "http://loc.map.baidu.com/fence"
+.field private static mICaxiH:Lcom/baidu/location/ICax; = null
 
-.field private static final iD:Ljava/lang/String; = "geofence_id"
+.field private static final mIiA:I = 0x3
 
-.field private static final iE:Ljava/lang/String; = ";"
+.field private static final mIiJ:I = 0x5
 
-.field private static final iG:Ljava/lang/String; = "status_code"
+.field private static final mIiK:I = 0x2
 
-.field private static iH:Lcom/baidu/location/ICax; = null
+.field private static final mIiL:I = 0x1
 
-.field private static final iJ:I = 0x5
+.field private static final mStringiC:Ljava/lang/String; = "http://loc.map.baidu.com/fence"
 
-.field private static final iK:I = 0x2
+.field private static final mStringiD:Ljava/lang/String; = "geofence_id"
 
-.field private static final iL:I = 0x1
+.field private static final mStringiE:Ljava/lang/String; = ";"
 
-.field private static final iN:Ljava/lang/String; = "geofence_ids"
+.field private static final mStringiG:Ljava/lang/String; = "status_code"
 
-.field private static final iz:Ljava/lang/String; = "GeofenceMan"
+.field private static final mStringiN:Ljava/lang/String; = "geofence_ids"
+
+.field private static final mStringiz:Ljava/lang/String; = "GeofenceMan"
 
 
 # instance fields
-.field private iF:Ljava/lang/Object;
+.field private mContextiy:Landroid/content/Context;
 
-.field private iI:Landroid/os/HandlerThread;
+.field private mHandlerThreadiI:Landroid/os/HandlerThread;
 
-.field private iM:Lcom/baidu/location/ICax$ICa;
+.field private mICaiM:Lcom/baidu/location/ICax$ICa;
 
-.field private iy:Landroid/content/Context;
+.field private mObjectiF:Ljava/lang/Object;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICax;->iF:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/baidu/location/ICax;->mObjectiF:Ljava/lang/Object;
 
     return-void
 .end method
@@ -70,15 +70,15 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICax;->iI:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/baidu/location/ICax;->mHandlerThreadiI:Landroid/os/HandlerThread;
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iI:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mHandlerThreadiI:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     new-instance v0, Lcom/baidu/location/ICax$ICa;
 
-    iget-object v1, p0, Lcom/baidu/location/ICax;->iI:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/baidu/location/ICax;->mHandlerThreadiI:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -86,7 +86,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICax$ICa;-><init>(Lcom/baidu/location/ICax;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/location/ICm;->a(Landroid/content/Context;)Lcom/baidu/location/ICm;
 
@@ -253,7 +253,7 @@
 .method private cq()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     const/4 v1, 0x3
 
@@ -265,7 +265,7 @@
 .method private final cr()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/location/ICt;->if(Landroid/content/Context;)Z
 
@@ -293,7 +293,7 @@
     const-wide/16 v0, 0x0
 
     :try_start_0
-    iget-object v2, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v2, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/baidu/location/ICm;->a(Landroid/content/Context;)Lcom/baidu/location/ICm;
 
@@ -424,7 +424,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/baidu/location/ICm;->a(Landroid/content/Context;)Lcom/baidu/location/ICm;
 
@@ -568,7 +568,7 @@
 .method static synthetic do(Lcom/baidu/location/ICax;)Lcom/baidu/location/ICax$ICa;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     return-object v0
 .end method
@@ -576,7 +576,7 @@
 .method public static for(Landroid/content/Context;)Lcom/baidu/location/ICax;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICax;->iH:Lcom/baidu/location/ICax;
+    sget-object v0, Lcom/baidu/location/ICax;->mICaxiH:Lcom/baidu/location/ICax;
 
     if-nez v0, :cond_0
 
@@ -584,18 +584,18 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICax;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICax;->iH:Lcom/baidu/location/ICax;
+    sput-object v0, Lcom/baidu/location/ICax;->mICaxiH:Lcom/baidu/location/ICax;
 
-    sget-object v0, Lcom/baidu/location/ICax;->iH:Lcom/baidu/location/ICax;
+    sget-object v0, Lcom/baidu/location/ICax;->mICaxiH:Lcom/baidu/location/ICax;
 
     invoke-direct {v0}, Lcom/baidu/location/ICax;->co()V
 
-    sget-object v0, Lcom/baidu/location/ICax;->iH:Lcom/baidu/location/ICax;
+    sget-object v0, Lcom/baidu/location/ICax;->mICaxiH:Lcom/baidu/location/ICax;
 
-    iput-object p0, v0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iput-object p0, v0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICax;->iH:Lcom/baidu/location/ICax;
+    sget-object v0, Lcom/baidu/location/ICax;->mICaxiH:Lcom/baidu/location/ICax;
 
     return-object v0
 .end method
@@ -618,7 +618,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v2, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v2, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/baidu/location/ICm;->a(Landroid/content/Context;)Lcom/baidu/location/ICm;
 
@@ -948,7 +948,7 @@
 .method static synthetic if(Lcom/baidu/location/ICax;)Landroid/content/Context;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -977,7 +977,7 @@
 .method private if(Lcom/baidu/location/GeofenceClient$OnAddBDGeofencesResultListener;ILjava/lang/String;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     invoke-static {v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;)Landroid/os/Message;
 
@@ -1003,7 +1003,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     invoke-virtual {v1, v0}, Lcom/baidu/location/ICax$ICa;->sendMessage(Landroid/os/Message;)Z
 
@@ -1055,12 +1055,12 @@
 .method public cn()V
     .locals 3
 
-    iget-object v1, p0, Lcom/baidu/location/ICax;->iF:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/baidu/location/ICax;->mObjectiF:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     new-instance v2, Lcom/baidu/location/ICax$3;
 
@@ -1085,7 +1085,7 @@
 .method public do(Lcom/baidu/location/ICat;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     new-instance v1, Lcom/baidu/location/ICax$1;
 
@@ -1122,7 +1122,7 @@
 
     :cond_1
     :try_start_1
-    iget-object v2, p0, Lcom/baidu/location/ICax;->iy:Landroid/content/Context;
+    iget-object v2, p0, Lcom/baidu/location/ICax;->mContextiy:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/baidu/location/ICm;->a(Landroid/content/Context;)Lcom/baidu/location/ICm;
 
@@ -1273,7 +1273,7 @@
 .method public if(Lcom/baidu/location/ICat;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     new-instance v1, Lcom/baidu/location/ICax$2;
 
@@ -1348,7 +1348,7 @@
 
     invoke-static {p2, v0}, Lcom/baidu/location/ICaq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/baidu/location/ICax;->iM:Lcom/baidu/location/ICax$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICax;->mICaiM:Lcom/baidu/location/ICax$ICa;
 
     new-instance v1, Lcom/baidu/location/ICax$ICd;
 

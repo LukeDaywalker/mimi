@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:[I
+.field private mArrayIa:[I
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -65,12 +65,12 @@
     :cond_1
     add-int/lit8 v0, p1, -0x1
 
-    iput v0, p0, Landroid/support/v4/util/CircularIntArray;->b:I
+    iput v0, p0, Landroid/support/v4/util/CircularIntArray;->mIb:I
 
     .line 67
     new-array v0, p1, [I
 
-    iput-object v0, p0, Landroid/support/v4/util/CircularIntArray;->a:[I
+    iput-object v0, p0, Landroid/support/v4/util/CircularIntArray;->mArrayIa:[I
 
     .line 68
     return-void

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mImageViewb:Landroid/widget/ImageView;
 
-.field b:Landroid/widget/ImageView;
+.field mProgressBarc:Landroid/widget/ProgressBar;
 
-.field c:Landroid/widget/ProgressBar;
+.field mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mTextViewa:Landroid/widget/TextView;
 
     .line 517
     const v0, 0x7f0b01c9
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mImageViewb:Landroid/widget/ImageView;
 
     .line 518
     const v0, 0x7f0b01ca
@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->c:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SecretCommentView$ICbi;->mProgressBarc:Landroid/widget/ProgressBar;
 
     .line 519
     return-void

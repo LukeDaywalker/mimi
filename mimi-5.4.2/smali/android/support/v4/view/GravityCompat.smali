@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+.field static final mGravityCompatImpla:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/GravityCompat;->a:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sput-object v0, Landroid/support/v4/view/GravityCompat;->mGravityCompatImpla:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     .line 95
     :goto_0
@@ -37,7 +37,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/GravityCompat;->a:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sput-object v0, Landroid/support/v4/view/GravityCompat;->mGravityCompatImpla:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     goto :goto_0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 201
-    sget-object v0, Landroid/support/v4/view/GravityCompat;->a:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sget-object v0, Landroid/support/v4/view/GravityCompat;->mGravityCompatImpla:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/GravityCompat$GravityCompatImpl;->a(II)I
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 132
-    sget-object v0, Landroid/support/v4/view/GravityCompat;->a:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sget-object v0, Landroid/support/v4/view/GravityCompat;->mGravityCompatImpla:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     move v1, p0
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/ConnectionPool;
+.field final synthetic mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 95
-    iput-object p1, p0, Lcom/squareup/okhttp/ConnectionPool$ICs;->a:Lcom/squareup/okhttp/ConnectionPool;
+    iput-object p1, p0, Lcom/squareup/okhttp/ConnectionPool$ICs;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool$ICs;->a:Lcom/squareup/okhttp/ConnectionPool;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionPool$ICs;->mConnectionPoola:Lcom/squareup/okhttp/ConnectionPool;
 
     invoke-static {v0}, Lcom/squareup/okhttp/ConnectionPool;->a(Lcom/squareup/okhttp/ConnectionPool;)V
 

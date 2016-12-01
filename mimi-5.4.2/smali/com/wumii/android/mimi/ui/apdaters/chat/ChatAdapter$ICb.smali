@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
+.field final synthetic mChatAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter$ICb;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter$ICb;->mChatAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 126
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter$ICb;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter$ICb;->mChatAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b:Landroid/content/Context;
 

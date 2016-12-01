@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZf:Z
 
-.field private b:Ljava/net/Socket;
+.field private mIncomingStreamHandlerc:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
-.field private c:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+.field private mProtocold:Lcom/squareup/okhttp/Protocol;
 
-.field private d:Lcom/squareup/okhttp/Protocol;
+.field private mPushObservere:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
-.field private e:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+.field private mSocketb:Ljava/net/Socket;
 
-.field private f:Z
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -28,26 +28,26 @@
     .line 521
     sget-object v0, Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;->a:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->c:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mIncomingStreamHandlerc:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
     .line 522
     sget-object v0, Lcom/squareup/okhttp/Protocol;->c:Lcom/squareup/okhttp/Protocol;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->d:Lcom/squareup/okhttp/Protocol;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     .line 523
     sget-object v0, Lcom/squareup/okhttp/internal/spdy/PushObserver;->a:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->e:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mPushObservere:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
     .line 535
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mStringa:Ljava/lang/String;
 
     .line 536
-    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->f:Z
+    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->isZf:Z
 
     .line 537
-    iput-object p3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->b:Ljava/net/Socket;
+    iput-object p3, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mSocketb:Ljava/net/Socket;
 
     .line 538
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->d:Lcom/squareup/okhttp/Protocol;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->e:Lcom/squareup/okhttp/internal/spdy/PushObserver;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mPushObservere:Lcom/squareup/okhttp/internal/spdy/PushObserver;
 
     return-object v0
 .end method
@@ -78,7 +78,7 @@
 
     .prologue
     .line 518
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->isZf:Z
 
     return v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->c:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mIncomingStreamHandlerc:Lcom/squareup/okhttp/internal/spdy/IncomingStreamHandler;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     .prologue
     .line 518
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->b:Ljava/net/Socket;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mSocketb:Ljava/net/Socket;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 546
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->d:Lcom/squareup/okhttp/Protocol;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyConnection$ICak;->mProtocold:Lcom/squareup/okhttp/Protocol;
 
     .line 547
     return-object p0

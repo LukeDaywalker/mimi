@@ -15,7 +15,13 @@
 
 
 # instance fields
-.field final f:Landroid/support/v4/content/Loader$ForceLoadContentObserver;
+.field mArrayStringh:[Ljava/lang/String;
+
+.field mArrayStringj:[Ljava/lang/String;
+
+.field mCursorl:Landroid/database/Cursor;
+
+.field final mForceLoadContentObserverf:Landroid/support/v4/content/Loader$ForceLoadContentObserver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/content/Loader",
@@ -27,17 +33,11 @@
     .end annotation
 .end field
 
-.field g:Landroid/net/Uri;
+.field mStringi:Ljava/lang/String;
 
-.field h:[Ljava/lang/String;
+.field mStringk:Ljava/lang/String;
 
-.field i:Ljava/lang/String;
-
-.field j:[Ljava/lang/String;
-
-.field k:Ljava/lang/String;
-
-.field l:Landroid/database/Cursor;
+.field mUrig:Landroid/net/Uri;
 
 
 # virtual methods
@@ -65,10 +65,10 @@
 
     .line 69
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     .line 70
-    iput-object p1, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iput-object p1, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     .line 72
     invoke-virtual {p0}, Landroid/support/v4/content/CursorLoader;->k()Z
@@ -124,7 +124,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->g:Landroid/net/Uri;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mUrig:Landroid/net/Uri;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
@@ -136,7 +136,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 199
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->h:[Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mArrayStringh:[Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
@@ -151,7 +151,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->i:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mStringi:Ljava/lang/String;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
@@ -163,7 +163,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 202
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->j:[Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mArrayStringj:[Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
@@ -178,7 +178,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->k:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mStringk:Ljava/lang/String;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
@@ -189,7 +189,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
@@ -200,7 +200,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Landroid/support/v4/content/CursorLoader;->s:Z
+    iget-boolean v0, p0, Landroid/support/v4/content/CursorLoader;->isZs:Z
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Z)V
 
@@ -266,15 +266,15 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v4/content/CursorLoader;->g:Landroid/net/Uri;
+    iget-object v1, p0, Landroid/support/v4/content/CursorLoader;->mUrig:Landroid/net/Uri;
 
-    iget-object v2, p0, Landroid/support/v4/content/CursorLoader;->h:[Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/content/CursorLoader;->mArrayStringh:[Ljava/lang/String;
 
-    iget-object v3, p0, Landroid/support/v4/content/CursorLoader;->i:Ljava/lang/String;
+    iget-object v3, p0, Landroid/support/v4/content/CursorLoader;->mStringi:Ljava/lang/String;
 
-    iget-object v4, p0, Landroid/support/v4/content/CursorLoader;->j:[Ljava/lang/String;
+    iget-object v4, p0, Landroid/support/v4/content/CursorLoader;->mArrayStringj:[Ljava/lang/String;
 
-    iget-object v5, p0, Landroid/support/v4/content/CursorLoader;->k:Ljava/lang/String;
+    iget-object v5, p0, Landroid/support/v4/content/CursorLoader;->mStringk:Ljava/lang/String;
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -287,7 +287,7 @@
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
     .line 54
-    iget-object v1, p0, Landroid/support/v4/content/CursorLoader;->f:Landroid/support/v4/content/Loader$ForceLoadContentObserver;
+    iget-object v1, p0, Landroid/support/v4/content/CursorLoader;->mForceLoadContentObserverf:Landroid/support/v4/content/Loader$ForceLoadContentObserver;
 
     invoke-interface {v0, v1}, Landroid/database/Cursor;->registerContentObserver(Landroid/database/ContentObserver;)V
 
@@ -301,12 +301,12 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     invoke-virtual {p0, v0}, Landroid/support/v4/content/CursorLoader;->a(Landroid/database/Cursor;)V
 
@@ -318,7 +318,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     if-nez v0, :cond_2
 
@@ -353,11 +353,11 @@
     invoke-virtual {p0}, Landroid/support/v4/content/CursorLoader;->h()V
 
     .line 148
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
 
@@ -366,7 +366,7 @@
     if-nez v0, :cond_0
 
     .line 149
-    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iget-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
@@ -374,7 +374,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/content/CursorLoader;->l:Landroid/database/Cursor;
+    iput-object v0, p0, Landroid/support/v4/content/CursorLoader;->mCursorl:Landroid/database/Cursor;
 
     .line 152
     return-void

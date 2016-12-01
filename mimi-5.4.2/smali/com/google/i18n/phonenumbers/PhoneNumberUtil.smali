@@ -4,25 +4,9 @@
 
 
 # static fields
-.field private static final A:Ljava/util/regex/Pattern;
+.field private static final mLoggerg:Ljava/util/logging/Logger;
 
-.field private static B:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
-
-.field static final a:Lcom/google/i18n/phonenumbers/MetadataLoader;
-
-.field static final b:Ljava/util/regex/Pattern;
-
-.field static final c:Ljava/util/regex/Pattern;
-
-.field static final d:Ljava/util/regex/Pattern;
-
-.field static final e:Ljava/lang/String;
-
-.field static final f:Ljava/util/regex/Pattern;
-
-.field private static final g:Ljava/util/logging/Logger;
-
-.field private static final h:Ljava/util/Map;
+.field private static final mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -34,7 +18,7 @@
     .end annotation
 .end field
 
-.field private static final i:Ljava/util/Map;
+.field private static final mMapi:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -46,7 +30,7 @@
     .end annotation
 .end field
 
-.field private static final j:Ljava/util/Map;
+.field private static final mMapj:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -58,7 +42,7 @@
     .end annotation
 .end field
 
-.field private static final k:Ljava/util/Map;
+.field private static final mMapk:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -70,7 +54,7 @@
     .end annotation
 .end field
 
-.field private static final l:Ljava/util/Map;
+.field private static final mMapl:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -82,37 +66,53 @@
     .end annotation
 .end field
 
-.field private static final m:Ljava/util/regex/Pattern;
+.field static final mMetadataLoadera:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
-.field private static final n:Ljava/lang/String;
+.field private static final mPatternA:Ljava/util/regex/Pattern;
 
-.field private static final o:Ljava/util/regex/Pattern;
+.field static final mPatternb:Ljava/util/regex/Pattern;
 
-.field private static final p:Ljava/util/regex/Pattern;
+.field static final mPatternc:Ljava/util/regex/Pattern;
 
-.field private static final q:Ljava/util/regex/Pattern;
+.field static final mPatternd:Ljava/util/regex/Pattern;
 
-.field private static final r:Ljava/util/regex/Pattern;
+.field static final mPatternf:Ljava/util/regex/Pattern;
 
-.field private static final s:Ljava/lang/String;
+.field private static final mPatternm:Ljava/util/regex/Pattern;
 
-.field private static final t:Ljava/lang/String;
+.field private static final mPatterno:Ljava/util/regex/Pattern;
 
-.field private static final u:Ljava/util/regex/Pattern;
+.field private static final mPatternp:Ljava/util/regex/Pattern;
 
-.field private static final v:Ljava/util/regex/Pattern;
+.field private static final mPatternq:Ljava/util/regex/Pattern;
 
-.field private static final w:Ljava/util/regex/Pattern;
+.field private static final mPatternr:Ljava/util/regex/Pattern;
 
-.field private static final x:Ljava/util/regex/Pattern;
+.field private static final mPatternu:Ljava/util/regex/Pattern;
 
-.field private static final y:Ljava/util/regex/Pattern;
+.field private static final mPatternv:Ljava/util/regex/Pattern;
 
-.field private static final z:Ljava/util/regex/Pattern;
+.field private static final mPatternw:Ljava/util/regex/Pattern;
+
+.field private static final mPatternx:Ljava/util/regex/Pattern;
+
+.field private static final mPatterny:Ljava/util/regex/Pattern;
+
+.field private static final mPatternz:Ljava/util/regex/Pattern;
+
+.field private static mPhoneNumberUtilB:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
+
+.field static final mStringe:Ljava/lang/String;
+
+.field private static final mStringn:Ljava/lang/String;
+
+.field private static final mStrings:Ljava/lang/String;
+
+.field private static final mStringt:Ljava/lang/String;
 
 
 # instance fields
-.field private final C:Ljava/util/Map;
+.field private final mMapC:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -126,18 +126,7 @@
     .end annotation
 .end field
 
-.field private final D:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final E:Ljava/util/Map;
+.field private final mMapE:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -149,7 +138,7 @@
     .end annotation
 .end field
 
-.field private final F:Ljava/util/Map;
+.field private final mMapF:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -161,9 +150,11 @@
     .end annotation
 .end field
 
-.field private final G:Lcom/google/i18n/phonenumbers/RegexCache;
+.field private final mMetadataLoaderK:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
-.field private final H:Ljava/util/Set;
+.field private final mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
+
+.field private final mSetD:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -174,7 +165,18 @@
     .end annotation
 .end field
 
-.field private final I:Ljava/util/Set;
+.field private final mSetH:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mSetI:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -185,9 +187,7 @@
     .end annotation
 .end field
 
-.field private final J:Ljava/lang/String;
-
-.field private final K:Lcom/google/i18n/phonenumbers/MetadataLoader;
+.field private final mStringJ:Ljava/lang/String;
 
 
 # direct methods
@@ -210,7 +210,7 @@
 
     invoke-direct {v0}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICf;-><init>()V
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a:Lcom/google/i18n/phonenumbers/MetadataLoader;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMetadataLoadera:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
     .line 66
     const-class v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     .line 123
     new-instance v0, Ljava/util/HashMap;
@@ -253,7 +253,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->h:Ljava/util/Map;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMaph:Ljava/util/Map;
 
     .line 130
     new-instance v1, Ljava/util/HashMap;
@@ -768,7 +768,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->j:Ljava/util/Map;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapj:Ljava/util/Map;
 
     .line 171
     new-instance v0, Ljava/util/HashMap;
@@ -778,7 +778,7 @@
     invoke-direct {v0, v2}, Ljava/util/HashMap;-><init>(I)V
 
     .line 172
-    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->j:Ljava/util/Map;
+    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapj:Ljava/util/Map;
 
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
@@ -790,7 +790,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->k:Ljava/util/Map;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapk:Ljava/util/Map;
 
     .line 176
     new-instance v0, Ljava/util/HashMap;
@@ -835,7 +835,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->i:Ljava/util/Map;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapi:Ljava/util/Map;
 
     .line 182
     new-instance v2, Ljava/util/HashMap;
@@ -843,7 +843,7 @@
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
     .line 184
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->j:Ljava/util/Map;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapj:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -1127,7 +1127,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->l:Ljava/util/Map;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapl:Ljava/util/Map;
 
     .line 215
     const-string/jumbo v0, "[\\d]+(?:[~\u2053\u223c\uff5e][\\d]+)?"
@@ -1136,14 +1136,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->m:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternm:Ljava/util/regex/Pattern;
 
     .line 229
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->j:Ljava/util/Map;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapj:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -1169,7 +1169,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->j:Ljava/util/Map;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapj:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -1203,7 +1203,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->n:Ljava/lang/String;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringn:Ljava/lang/String;
 
     .line 233
     const-string/jumbo v0, "[+\uff0b]+"
@@ -1212,7 +1212,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->b:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternb:Ljava/util/regex/Pattern;
 
     .line 234
     const-string/jumbo v0, "[-x\u2010-\u2015\u2212\u30fc\uff0d-\uff0f \u00a0\u00ad\u200b\u2060\u3000()\uff08\uff09\uff3b\uff3d.\\[\\]/~\u2053\u223c\uff5e]+"
@@ -1221,7 +1221,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->o:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatterno:Ljava/util/regex/Pattern;
 
     .line 235
     const-string/jumbo v0, "(\\p{Nd})"
@@ -1230,7 +1230,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->p:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternp:Ljava/util/regex/Pattern;
 
     .line 244
     const-string/jumbo v0, "[+\uff0b\\p{Nd}]"
@@ -1239,7 +1239,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->q:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternq:Ljava/util/regex/Pattern;
 
     .line 252
     const-string/jumbo v0, "[\\\\/] *x"
@@ -1248,7 +1248,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->c:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternc:Ljava/util/regex/Pattern;
 
     .line 258
     const-string/jumbo v0, "[[\\P{N}&&\\P{L}]&&[^#]]+$"
@@ -1257,7 +1257,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->d:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternd:Ljava/util/regex/Pattern;
 
     .line 262
     const-string/jumbo v0, "(?:.*?[A-Za-z]){3}.*"
@@ -1266,7 +1266,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->r:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternr:Ljava/util/regex/Pattern;
 
     .line 280
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1279,7 +1279,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->n:Ljava/lang/String;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringn:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1301,7 +1301,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->s:Ljava/lang/String;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStrings:Ljava/lang/String;
 
     .line 301
     const-string/jumbo v0, "x\uff58#\uff03~\uff5e"
@@ -1330,14 +1330,14 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->t:Ljava/lang/String;
+    sput-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringt:Ljava/lang/String;
 
     .line 308
     invoke-static {v0}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->e:Ljava/lang/String;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringe:Ljava/lang/String;
 
     .line 335
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1350,7 +1350,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->t:Ljava/lang/String;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringt:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1372,14 +1372,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->u:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternu:Ljava/util/regex/Pattern;
 
     .line 340
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->s:Ljava/lang/String;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStrings:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1391,7 +1391,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->t:Ljava/lang/String;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringt:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1413,7 +1413,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->v:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternv:Ljava/util/regex/Pattern;
 
     .line 343
     const-string/jumbo v0, "(\\D+)"
@@ -1422,7 +1422,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->f:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternf:Ljava/util/regex/Pattern;
 
     .line 349
     const-string/jumbo v0, "(\\$\\d)"
@@ -1431,7 +1431,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->w:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternw:Ljava/util/regex/Pattern;
 
     .line 350
     const-string/jumbo v0, "\\$NP"
@@ -1440,7 +1440,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->x:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternx:Ljava/util/regex/Pattern;
 
     .line 351
     const-string/jumbo v0, "\\$FG"
@@ -1449,7 +1449,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->y:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatterny:Ljava/util/regex/Pattern;
 
     .line 352
     const-string/jumbo v0, "\\$CC"
@@ -1458,7 +1458,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->z:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternz:Ljava/util/regex/Pattern;
 
     .line 357
     const-string/jumbo v0, "\\(?\\$1\\)?"
@@ -1467,12 +1467,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->A:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternA:Ljava/util/regex/Pattern;
 
     .line 359
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->B:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPhoneNumberUtilB:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
 
     return-void
 .end method
@@ -1507,7 +1507,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->D:Ljava/util/Set;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetD:Ljava/util/Set;
 
     .line 549
     new-instance v0, Ljava/util/HashMap;
@@ -1518,7 +1518,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->E:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapE:Ljava/util/Map;
 
     .line 557
     new-instance v0, Ljava/util/HashMap;
@@ -1529,7 +1529,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->F:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapF:Ljava/util/Map;
 
     .line 563
     new-instance v0, Lcom/google/i18n/phonenumbers/RegexCache;
@@ -1538,7 +1538,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/i18n/phonenumbers/RegexCache;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     .line 568
     new-instance v0, Ljava/util/HashSet;
@@ -1547,23 +1547,23 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->H:Ljava/util/Set;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetH:Ljava/util/Set;
 
     .line 572
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->I:Ljava/util/Set;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetI:Ljava/util/Set;
 
     .line 585
-    iput-object p1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->J:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringJ:Ljava/lang/String;
 
     .line 586
-    iput-object p2, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->K:Lcom/google/i18n/phonenumbers/MetadataLoader;
+    iput-object p2, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMetadataLoaderK:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
     .line 587
-    iput-object p3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->C:Ljava/util/Map;
+    iput-object p3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapC:Ljava/util/Map;
 
     .line 588
     invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -1616,7 +1616,7 @@
     if-eqz v3, :cond_0
 
     .line 594
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->I:Ljava/util/Set;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetI:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -1628,7 +1628,7 @@
 
     .line 597
     :cond_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->H:Ljava/util/Set;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetH:Ljava/util/Set;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
@@ -1636,7 +1636,7 @@
 
     .line 603
     :cond_1
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->H:Ljava/util/Set;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetH:Ljava/util/Set;
 
     const-string/jumbo v1, "001"
 
@@ -1647,7 +1647,7 @@
     if-eqz v0, :cond_2
 
     .line 604
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -1657,7 +1657,7 @@
 
     .line 607
     :cond_2
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->D:Ljava/util/Set;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetD:Ljava/util/Set;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1728,12 +1728,12 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->B:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPhoneNumberUtilB:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
 
     if-nez v0, :cond_0
 
     .line 1011
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a:Lcom/google/i18n/phonenumbers/MetadataLoader;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMetadataLoadera:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
     invoke-static {v0}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Lcom/google/i18n/phonenumbers/MetadataLoader;)Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -1743,7 +1743,7 @@
 
     .line 1013
     :cond_0
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->B:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPhoneNumberUtilB:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1852,7 +1852,7 @@
 
     .line 663
     :try_start_2
-    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -1876,7 +1876,7 @@
 
     .line 658
     :try_start_3
-    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -1901,7 +1901,7 @@
 
     .line 663
     :try_start_5
-    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -1938,7 +1938,7 @@
 
     .line 663
     :try_start_7
-    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v2, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -1964,7 +1964,7 @@
     const/4 v5, 0x0
 
     .line 686
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->q:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternq:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -1987,7 +1987,7 @@
     move-result-object v0
 
     .line 690
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->d:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternd:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -2010,7 +2010,7 @@
     move-result-object v0
 
     .line 693
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->FINER:Ljava/util/logging/Level;
 
@@ -2036,7 +2036,7 @@
 
     .line 696
     :cond_0
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->c:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternc:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -2232,7 +2232,7 @@
     monitor-enter v0
 
     :try_start_0
-    sput-object p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->B:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
+    sput-object p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPhoneNumberUtilB:Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2506,7 +2506,7 @@
     move-exception v0
 
     .line 2925
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->b:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternb:Ljava/util/regex/Pattern;
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2856,7 +2856,7 @@
 
     .prologue
     .line 2332
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->a()Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
@@ -2916,7 +2916,7 @@
     move-result v2
 
     .line 2590
-    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->p:Ljava/util/regex/Pattern;
+    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternp:Ljava/util/regex/Pattern;
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->substring(I)Ljava/lang/String;
 
@@ -2988,7 +2988,7 @@
 
     .line 721
     :cond_0
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->v:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternv:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3022,7 +3022,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->b:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternb:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3053,7 +3053,7 @@
 
     .prologue
     .line 742
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->r:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternr:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3067,7 +3067,7 @@
     if-eqz v0, :cond_0
 
     .line 744
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->k:Ljava/util/Map;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapk:Ljava/util/Map;
 
     const/4 v1, 0x1
 
@@ -3180,7 +3180,7 @@
     .line 1063
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->H:Ljava/util/Set;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mSetH:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -3346,7 +3346,7 @@
     move-result-object v3
 
     .line 2553
-    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {v3}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->a()Ljava/lang/String;
 
@@ -3362,7 +3362,7 @@
     invoke-virtual {p0, v5, p2, v6}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;Ljava/lang/StringBuilder;)Z
 
     .line 2557
-    iget-object v6, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v6, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {v3}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;->b()Ljava/lang/String;
 
@@ -3490,7 +3490,7 @@
     move-result v0
 
     .line 2467
-    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->C:Ljava/util/Map;
+    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapC:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3531,13 +3531,13 @@
 
     .prologue
     .line 2040
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->F:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapF:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 2041
     :try_start_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->C:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapC:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3560,7 +3560,7 @@
 
     .line 2044
     :cond_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->F:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapF:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3573,11 +3573,11 @@
     if-nez v0, :cond_1
 
     .line 2045
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->J:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringJ:Ljava/lang/String;
 
     const-string/jumbo v2, "001"
 
-    iget-object v3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->K:Lcom/google/i18n/phonenumbers/MetadataLoader;
+    iget-object v3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMetadataLoaderK:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
     invoke-virtual {p0, v0, v2, p1, v3}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;ILcom/google/i18n/phonenumbers/MetadataLoader;)V
 
@@ -3588,7 +3588,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2049
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->F:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapF:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3650,7 +3650,7 @@
 
     .line 2623
     :cond_0
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->b:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternb:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3682,7 +3682,7 @@
 
     .line 2631
     :cond_1
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {v0, p2}, Lcom/google/i18n/phonenumbers/RegexCache;->a(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -3758,7 +3758,7 @@
     if-nez v0, :cond_1
 
     .line 618
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -3838,7 +3838,7 @@
     if-eqz v3, :cond_2
 
     .line 627
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -3894,7 +3894,7 @@
     move-exception v0
 
     .line 640
-    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -3955,7 +3955,7 @@
     if-le v3, v4, :cond_3
 
     .line 631
-    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->g:Ljava/util/logging/Logger;
+    sget-object v3, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mLoggerg:Ljava/util/logging/Logger;
 
     sget-object v4, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -3993,7 +3993,7 @@
     if-eqz v1, :cond_4
 
     .line 635
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->F:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapF:Ljava/util/Map;
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4007,7 +4007,7 @@
 
     .line 637
     :cond_4
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->E:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapE:Ljava/util/Map;
 
     invoke-interface {v1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -4073,7 +4073,7 @@
 
     .line 2657
     :cond_1
-    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {v4, v3}, Lcom/google/i18n/phonenumbers/RegexCache;->a(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -4091,7 +4091,7 @@
     if-eqz v4, :cond_0
 
     .line 2659
-    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->G:Lcom/google/i18n/phonenumbers/RegexCache;
+    iget-object v4, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mRegexCacheG:Lcom/google/i18n/phonenumbers/RegexCache;
 
     invoke-virtual {p2}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->a()Lcom/google/i18n/phonenumbers/Phonemetadata$ICl;
 
@@ -4259,7 +4259,7 @@
 
     .prologue
     .line 2170
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->C:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapC:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4296,7 +4296,7 @@
 
     .prologue
     .line 2708
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->u:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mPatternu:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -4395,13 +4395,13 @@
 
     .line 2029
     :cond_0
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->E:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapE:Ljava/util/Map;
 
     monitor-enter v1
 
     .line 2030
     :try_start_0
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->E:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapE:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -4410,11 +4410,11 @@
     if-nez v0, :cond_1
 
     .line 2033
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->J:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mStringJ:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->K:Lcom/google/i18n/phonenumbers/MetadataLoader;
+    iget-object v3, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMetadataLoaderK:Lcom/google/i18n/phonenumbers/MetadataLoader;
 
     invoke-virtual {p0, v0, p1, v2, v3}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;ILcom/google/i18n/phonenumbers/MetadataLoader;)V
 
@@ -4425,7 +4425,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2036
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->E:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->mMapE:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -31,13 +31,13 @@
 
     iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->h:Ljava/lang/CharSequence;
 
-    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$Builder;->f:Landroid/widget/RemoteViews;
+    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mRemoteViewsf:Landroid/widget/RemoteViews;
 
     iget v6, p1, Landroid/support/v4/app/NotificationCompat$Builder;->i:I
 
-    iget-object v7, p1, Landroid/support/v4/app/NotificationCompat$Builder;->d:Landroid/app/PendingIntent;
+    iget-object v7, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
-    iget-object v8, p1, Landroid/support/v4/app/NotificationCompat$Builder;->e:Landroid/app/PendingIntent;
+    iget-object v8, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntente:Landroid/app/PendingIntent;
 
     iget-object v9, p1, Landroid/support/v4/app/NotificationCompat$Builder;->g:Landroid/graphics/Bitmap;
 

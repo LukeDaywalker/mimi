@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/Queue;
+.field final mQueuea:Ljava/util/Queue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field private final b:Ljava/util/concurrent/locks/ReentrantLock;
+.field private final mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
 
 # direct methods
@@ -45,14 +45,14 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     .line 59
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 60
     return-void
@@ -195,7 +195,7 @@
     .prologue
     .line 224
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -209,7 +209,7 @@
 
     .line 228
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0, p2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
     :try_end_0
@@ -218,7 +218,7 @@
     move-result v0
 
     .line 230
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -227,7 +227,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -415,12 +415,12 @@
     .prologue
     .line 165
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 166
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->clear()V
 
@@ -430,7 +430,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 169
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -441,7 +441,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -454,7 +454,7 @@
     .prologue
     .line 155
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -465,7 +465,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->contains(Ljava/lang/Object;)Z
     :try_end_0
@@ -480,7 +480,7 @@
 
     .line 158
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -496,7 +496,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -509,12 +509,12 @@
     .prologue
     .line 256
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 257
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->iterator()Ljava/util/Iterator;
 
@@ -557,14 +557,14 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -585,7 +585,7 @@
     .prologue
     .line 126
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -594,7 +594,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->size()I
 
@@ -604,7 +604,7 @@
 
     .line 128
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->isEmpty()Z
 
@@ -613,7 +613,7 @@
     if-nez v1, :cond_0
 
     .line 129
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -629,14 +629,14 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     throw v0
 
     :cond_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -656,7 +656,7 @@
     .prologue
     .line 140
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -667,7 +667,7 @@
 
     .line 142
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->isEmpty()Z
 
@@ -678,7 +678,7 @@
     if-gt v0, p2, :cond_0
 
     .line 143
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -695,7 +695,7 @@
 
     .line 148
     :cond_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -704,7 +704,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -753,7 +753,7 @@
     .prologue
     .line 176
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -764,7 +764,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->remove(Ljava/lang/Object;)Z
     :try_end_0
@@ -779,7 +779,7 @@
 
     .line 179
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -795,7 +795,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -815,7 +815,7 @@
     .prologue
     .line 186
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -824,7 +824,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1, p1}, Ljava/util/Queue;->removeAll(Ljava/util/Collection;)Z
     :try_end_0
@@ -835,7 +835,7 @@
     or-int/2addr v0, v1
 
     .line 189
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -844,7 +844,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -857,12 +857,12 @@
     .prologue
     .line 96
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 97
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->size()I
 
@@ -877,7 +877,7 @@
     add-int/2addr v0, v1
 
     .line 99
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -886,7 +886,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -911,7 +911,7 @@
     .prologue
     .line 116
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -920,7 +920,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1}, Ljava/util/Queue;->toArray()[Ljava/lang/Object;
 
@@ -933,7 +933,7 @@
     move-result-object v0
 
     .line 119
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -942,7 +942,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -962,7 +962,7 @@
     .prologue
     .line 106
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -971,7 +971,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->a:Ljava/util/Queue;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mQueuea:Ljava/util/Queue;
 
     invoke-interface {v1, p1}, Ljava/util/Queue;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
@@ -984,7 +984,7 @@
     move-result-object v0
 
     .line 109
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -993,7 +993,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/DependencyPriorityBlockingQueue;->mReentrantLockb:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 

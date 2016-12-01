@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+.field final synthetic mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 288
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICy;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 296
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICy;->mICwa:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;->mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->e(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Landroid/widget/TextView;
 

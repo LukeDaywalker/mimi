@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field a:Ljavax/net/ssl/X509TrustManager;
+.field mX509TrustManagera:Ljavax/net/ssl/X509TrustManager;
 
 
 # direct methods
@@ -92,7 +92,7 @@
 
     check-cast v0, Ljavax/net/ssl/X509TrustManager;
 
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICi;->a:Ljavax/net/ssl/X509TrustManager;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICi;->mX509TrustManagera:Ljavax/net/ssl/X509TrustManager;
 
     .line 1063
     return-void
@@ -152,7 +152,7 @@
     .prologue
     .line 1072
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->mX509TrustManagera:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     :try_end_0
@@ -175,7 +175,7 @@
     .prologue
     .line 1080
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->mX509TrustManagera:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     :try_end_0
@@ -197,7 +197,7 @@
 
     .prologue
     .line 1086
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICi;->mX509TrustManagera:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {v0}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
 

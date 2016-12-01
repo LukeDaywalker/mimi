@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 240
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->mStringa:Ljava/lang/String;
 
-    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/Util$ICn;->b:Z
+    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/Util$ICn;->isZb:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,12 +36,12 @@
     .line 242
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
     .line 243
-    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->b:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/Util$ICn;->isZb:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setDaemon(Z)V
 

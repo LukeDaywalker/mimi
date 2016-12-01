@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+.field final synthetic mICta:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 792
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICu;->mICta:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 795
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICu;->mICta:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->f()Z
 

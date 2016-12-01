@@ -4,13 +4,13 @@
 
 
 # instance fields
+.field private mAlertDialogp:Landroid/app/AlertDialog;
+
+.field private mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+
 .field protected n:Lcom/wumii/android/mimi/manager/CircleManager;
 
 .field protected o:Ljava/lang/String;
-
-.field private p:Landroid/app/AlertDialog;
-
-.field private q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     if-nez v0, :cond_0
 
@@ -47,11 +47,11 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mCaptureImageHelperq:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->p:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mAlertDialogp:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_1
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->p:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mAlertDialogp:Landroid/app/AlertDialog;
 
     .line 104
     :cond_0
@@ -102,7 +102,7 @@
 
     .line 100
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->p:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mAlertDialogp:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -111,7 +111,7 @@
     if-nez v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->p:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->mAlertDialogp:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 

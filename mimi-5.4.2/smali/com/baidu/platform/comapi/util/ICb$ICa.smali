@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field a:D
+.field mDa:D
 
-.field b:D
+.field mDb:D
 
 
 # direct methods

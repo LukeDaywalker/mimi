@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mIconPageIndicatorb:Lcom/viewpagerindicator/IconPageIndicator;
 
-.field final synthetic b:Lcom/viewpagerindicator/IconPageIndicator;
+.field final synthetic mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->b:Lcom/viewpagerindicator/IconPageIndicator;
+    iput-object p1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mIconPageIndicatorb:Lcom/viewpagerindicator/IconPageIndicator;
 
-    iput-object p2, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mViewa:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,19 +34,19 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->b:Lcom/viewpagerindicator/IconPageIndicator;
+    iget-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mIconPageIndicatorb:Lcom/viewpagerindicator/IconPageIndicator;
 
     invoke-virtual {v1}, Lcom/viewpagerindicator/IconPageIndicator;->getWidth()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->a:Landroid/view/View;
+    iget-object v2, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mViewa:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
@@ -59,14 +59,14 @@
     sub-int/2addr v0, v1
 
     .line 75
-    iget-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->b:Lcom/viewpagerindicator/IconPageIndicator;
+    iget-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mIconPageIndicatorb:Lcom/viewpagerindicator/IconPageIndicator;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v0, v2}, Lcom/viewpagerindicator/IconPageIndicator;->smoothScrollTo(II)V
 
     .line 76
-    iget-object v0, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->b:Lcom/viewpagerindicator/IconPageIndicator;
+    iget-object v0, p0, Lcom/viewpagerindicator/IconPageIndicator$ICa;->mIconPageIndicatorb:Lcom/viewpagerindicator/IconPageIndicator;
 
     const/4 v1, 0x0
 

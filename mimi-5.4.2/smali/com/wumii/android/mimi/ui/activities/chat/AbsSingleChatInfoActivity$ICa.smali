@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+.field final synthetic mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BlockTask;-><init>(Landroid/app/Activity;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
@@ -52,7 +52,7 @@
     if-ne v0, v1, :cond_1
 
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -63,7 +63,7 @@
     .line 110
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->i()V
 
@@ -79,7 +79,7 @@
     if-ne v0, v1, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -88,7 +88,7 @@
     if-eqz v0, :cond_2
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -102,7 +102,7 @@
 
     .line 106
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -111,7 +111,7 @@
     if-eqz v0, :cond_0
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -132,7 +132,7 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/BlockTask;->c(Ljava/lang/Exception;)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->mAbsSingleChatInfoActivityq:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->a:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 

@@ -4,27 +4,17 @@
 
 
 # static fields
-.field private static final a:Ljava/util/regex/Pattern;
+.field private static final mPatterna:Ljava/util/regex/Pattern;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private final c:Ljava/util/concurrent/locks/ReentrantLock;
+.field private final isZe:Z
 
-.field private final d:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+.field private final isZf:Z
 
-.field private final e:Z
-
-.field private final f:Z
-
-.field private final g:Landroid/content/Context;
-
-.field private final h:Ljava/lang/String;
-
-.field private final i:Ljava/lang/String;
-
-.field private final j:Ljava/util/Collection;
+.field private final mCollectionj:Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection",
@@ -34,6 +24,16 @@
         }
     .end annotation
 .end field
+
+.field private final mContextg:Landroid/content/Context;
+
+.field private final mInstallerPackageNameProviderd:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+
+.field private final mReentrantLockc:Ljava/util/concurrent/locks/ReentrantLock;
+
+.field private final mStringh:Ljava/lang/String;
+
+.field private final mStringi:Ljava/lang/String;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager;->mPatterna:Ljava/util/regex/Pattern;
 
     .line 71
     const-string/jumbo v0, "/"
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager;->b:Ljava/lang/String;
+    sput-object v0, Lio/fabric/sdk/android/services/common/IdManager;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->c:Ljava/util/concurrent/locks/ReentrantLock;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mReentrantLockc:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 113
     if-nez p1, :cond_0
@@ -130,23 +130,23 @@
 
     .line 122
     :cond_2
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     .line 123
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/IdManager;->h:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/IdManager;->mStringh:Ljava/lang/String;
 
     .line 124
-    iput-object p3, p0, Lio/fabric/sdk/android/services/common/IdManager;->i:Ljava/lang/String;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/common/IdManager;->mStringi:Ljava/lang/String;
 
     .line 125
-    iput-object p4, p0, Lio/fabric/sdk/android/services/common/IdManager;->j:Ljava/util/Collection;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/common/IdManager;->mCollectionj:Ljava/util/Collection;
 
     .line 127
     new-instance v0, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->d:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mInstallerPackageNameProviderd:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
 
     .line 129
     const-string/jumbo v0, "com.crashlytics.CollectDeviceIdentifiers"
@@ -155,10 +155,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     .line 131
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-nez v0, :cond_3
 
@@ -201,10 +201,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->f:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZf:Z
 
     .line 138
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->f:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZf:Z
 
     if-nez v0, :cond_4
 
@@ -249,7 +249,7 @@
 
     .prologue
     .line 331
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->c:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mReentrantLockc:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
@@ -296,7 +296,7 @@
 
     .line 342
     :cond_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->c:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->mReentrantLockc:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -305,7 +305,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->c:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->mReentrantLockc:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -389,7 +389,7 @@
 
     .prologue
     .line 234
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->checkCallingPermission(Ljava/lang/String;)I
 
@@ -423,7 +423,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager;->a:Ljava/util/regex/Pattern;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager;->mPatterna:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -555,7 +555,7 @@
 
     .prologue
     .line 297
-    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager;->b:Ljava/lang/String;
+    sget-object v0, Lio/fabric/sdk/android/services/common/IdManager;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -816,7 +816,7 @@
 
     .prologue
     .line 229
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->f:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZf:Z
 
     return v0
 .end method
@@ -826,13 +826,13 @@
 
     .prologue
     .line 258
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->i:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mStringi:Ljava/lang/String;
 
     .line 260
     if-nez v0, :cond_0
 
     .line 261
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -865,7 +865,7 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->h:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mStringh:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -958,7 +958,7 @@
     const-string/jumbo v0, ""
 
     .line 309
-    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v1, :cond_0
 
@@ -971,7 +971,7 @@
     if-nez v0, :cond_0
 
     .line 313
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1019,7 +1019,7 @@
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
     .line 362
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->j:Ljava/util/Collection;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mCollectionj:Ljava/util/Collection;
 
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -1158,9 +1158,9 @@
 
     .prologue
     .line 384
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->d:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mInstallerPackageNameProviderd:Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Lio/fabric/sdk/android/services/common/InstallerPackageNameProvider;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1177,14 +1177,14 @@
     const/4 v0, 0x0
 
     .line 390
-    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v1, :cond_0
 
     .line 391
     new-instance v1, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lio/fabric/sdk/android/services/common/AdvertisingInfoProvider;-><init>(Landroid/content/Context;)V
 
@@ -1211,12 +1211,12 @@
     const/4 v0, 0x0
 
     .line 411
-    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v1, :cond_0
 
     .line 412
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1252,7 +1252,7 @@
 
     .prologue
     .line 437
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -1265,7 +1265,7 @@
     if-eqz v0, :cond_0
 
     .line 438
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     const-string/jumbo v1, "phone"
 
@@ -1302,7 +1302,7 @@
 
     .prologue
     .line 450
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -1315,7 +1315,7 @@
     if-eqz v0, :cond_0
 
     .line 451
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->mContextg:Landroid/content/Context;
 
     const-string/jumbo v1, "wifi"
 
@@ -1360,7 +1360,7 @@
 
     .prologue
     .line 475
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -1422,7 +1422,7 @@
     const/4 v1, 0x0
 
     .line 490
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->e:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/IdManager;->isZe:Z
 
     if-eqz v0, :cond_0
 

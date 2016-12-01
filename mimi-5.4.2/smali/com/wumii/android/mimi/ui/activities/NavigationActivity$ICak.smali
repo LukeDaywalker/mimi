@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+.field final synthetic mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
+.field final synthetic mICajb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 745
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->mICajb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 748
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->mICajb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICak;->mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)V
 

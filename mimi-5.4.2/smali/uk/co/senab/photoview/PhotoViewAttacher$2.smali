@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sput-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_START:Landroid/widget/ImageView$ScaleType;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_END:Landroid/widget/ImageView$ScaleType;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->a:[I
+    sget-object v0, Luk/co/senab/photoview/PhotoViewAttacher$2;->mArrayIa:[I
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_XY:Landroid/widget/ImageView$ScaleType;
 

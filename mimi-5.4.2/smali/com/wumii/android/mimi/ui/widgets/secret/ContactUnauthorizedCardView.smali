@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private mProgressBarf:Landroid/widget/ProgressBar;
 
-.field private d:Landroid/view/View;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mViewc:Landroid/view/View;
 
-.field private f:Landroid/widget/ProgressBar;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewd:Landroid/view/View;
 
     .line 35
     const v0, 0x7f0b016a
@@ -65,7 +65,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mTextViewe:Landroid/widget/TextView;
 
     .line 36
     const v0, 0x7f0b016b
@@ -76,10 +76,10 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->f:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mProgressBarf:Landroid/widget/ProgressBar;
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -90,7 +90,7 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewd:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;
 
@@ -121,10 +121,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewc:Landroid/view/View;
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -139,14 +139,14 @@
     if-ne p1, v0, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mTextViewe:Landroid/widget/TextView;
 
     const v1, 0x7f06005f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->f:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mProgressBarf:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 
@@ -158,14 +158,14 @@
 
     .line 59
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mTextViewe:Landroid/widget/TextView;
 
     const v1, 0x7f06005e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->f:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->mProgressBarf:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
 

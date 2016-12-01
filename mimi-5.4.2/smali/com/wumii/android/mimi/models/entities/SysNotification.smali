@@ -8,7 +8,7 @@
 
 .field private createTime:J
 
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 .field private read:Z
 
@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 21
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/SysNotification;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/SysNotification;->mStringid:Ljava/lang/String;
 
     .line 22
     iput-object p2, p0, Lcom/wumii/android/mimi/models/entities/SysNotification;->title:Ljava/lang/String;
@@ -180,7 +180,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/SysNotification;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/SysNotification;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method

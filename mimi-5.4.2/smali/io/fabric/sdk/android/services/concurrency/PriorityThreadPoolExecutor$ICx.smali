@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 126
-    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;->a:I
+    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;->mIa:I
 
     .line 127
     return-void
@@ -37,7 +37,7 @@
     invoke-direct {v0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
     .line 132
-    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor$ICx;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setPriority(I)V
 

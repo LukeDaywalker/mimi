@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+.field final synthetic mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 114
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/EditText;
 
@@ -41,7 +41,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -50,7 +50,7 @@
     if-eqz v0, :cond_0
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICak;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 

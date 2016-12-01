@@ -25,13 +25,13 @@
 
 .field private fromLoginUser:Z
 
-.field private id:Ljava/lang/String;
-
 .field private isLikedByCurUser:Z
 
 .field private likedCount:J
 
 .field private localId:Ljava/lang/String;
+
+.field private mStringid:Ljava/lang/String;
 
 .field private needShowTimePoint:Z
     .annotation runtime Lcom/fasterxml/jackson/annotation/JsonIgnore;
@@ -158,7 +158,7 @@
 
     shl-long/2addr v0, v2
 
-    invoke-static {}, Lorg/apache/commons/long/math/RandomUtils;->a()I
+    invoke-static {}, Lorg/apache/commons/long3/math/RandomUtils;->a()I
 
     move-result v2
 
@@ -449,7 +449,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -953,7 +953,7 @@
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->mStringid:Ljava/lang/String;
 
     .line 100
     return-void
@@ -1099,7 +1099,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->id:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1255,9 +1255,9 @@
 
     .prologue
     .line 203
-    iget-object v0, p1, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->id:Ljava/lang/String;
+    iget-object v0, p1, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->mStringid:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->id:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->mStringid:Ljava/lang/String;
 
     .line 204
     iget-object v0, p1, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->chatId:Ljava/lang/String;

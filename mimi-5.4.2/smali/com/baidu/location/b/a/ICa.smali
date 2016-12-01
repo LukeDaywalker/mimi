@@ -3,9 +3,9 @@
 
 
 # static fields
-.field private static final a:Z
+.field private static final isZa:Z
 
-.field private static final if:Ljava/lang/String;
+.field private static final mStringif:Ljava/lang/String;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/b/a/ICa;->if:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/b/a/ICa;->mStringif:Ljava/lang/String;
 
     return-void
 .end method

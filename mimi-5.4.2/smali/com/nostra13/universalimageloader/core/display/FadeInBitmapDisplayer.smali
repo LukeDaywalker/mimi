@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:I
+.field private final isZb:Z
 
-.field private final b:Z
+.field private final isZc:Z
 
-.field private final c:Z
+.field private final isZd:Z
 
-.field private final d:Z
+.field private final mIa:I
 
 
 # direct methods
@@ -25,16 +25,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 55
-    iput p1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->mIa:I
 
     .line 56
-    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->b:Z
+    iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZb:Z
 
     .line 57
-    iput-boolean p3, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->c:Z
+    iput-boolean p3, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZc:Z
 
     .line 58
-    iput-boolean p4, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->d:Z
+    iput-boolean p4, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZd:Z
 
     .line 59
     return-void
@@ -86,7 +86,7 @@
     invoke-interface {p2, p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->a(Landroid/graphics/Bitmap;)Z
 
     .line 65
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->b:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -95,7 +95,7 @@
     if-eq p3, v0, :cond_2
 
     :cond_0
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->c:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -104,7 +104,7 @@
     if-eq p3, v0, :cond_2
 
     :cond_1
-    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->d:Z
+    iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->isZd:Z
 
     if-eqz v0, :cond_3
 
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->a:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->mIa:I
 
     invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->a(Landroid/view/View;I)V
 

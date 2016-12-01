@@ -9,23 +9,37 @@
 
 
 # instance fields
-.field private volatile a:J
+.field private isZn:Z
 
-.field private volatile b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+.field private isZo:Z
 
-.field private volatile c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+.field private isZp:Z
 
-.field private d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+.field private isZq:Z
 
-.field private e:Lcom/google/analytics/tracking/android/AnalyticsStore;
+.field private volatile mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
-.field private final f:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+.field private mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
-.field private final g:Lcom/google/analytics/tracking/android/AnalyticsThread;
+.field private mAnalyticsStoree:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
-.field private final h:Landroid/content/Context;
+.field private final mAnalyticsThreadg:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
-.field private final i:Ljava/util/Queue;
+.field private mClockr:Lcom/google/analytics/tracking/android/Clock;
+
+.field private final mContexth:Landroid/content/Context;
+
+.field private final mGoogleAnalyticsf:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+
+.field private volatile mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+
+.field private volatile mIj:I
+
+.field private volatile mJa:J
+
+.field private mJs:J
+
+.field private final mQueuei:Ljava/util/Queue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue",
@@ -36,25 +50,11 @@
     .end annotation
 .end field
 
-.field private volatile j:I
+.field private volatile mTimerk:Ljava/util/Timer;
 
-.field private volatile k:Ljava/util/Timer;
+.field private volatile mTimerl:Ljava/util/Timer;
 
-.field private volatile l:Ljava/util/Timer;
-
-.field private volatile m:Ljava/util/Timer;
-
-.field private n:Z
-
-.field private o:Z
-
-.field private p:Z
-
-.field private q:Z
-
-.field private r:Lcom/google/analytics/tracking/android/Clock;
-
-.field private s:J
+.field private volatile mTimerm:Ljava/util/Timer;
 
 
 # direct methods
@@ -87,41 +87,41 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     .line 69
     const-wide/32 v0, 0x493e0
 
-    iput-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->s:J
+    iput-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mJs:J
 
     .line 75
-    iput-object p3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->e:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iput-object p3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStoree:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     .line 76
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->h:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mContexth:Landroid/content/Context;
 
     .line 77
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->g:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsThreadg:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     .line 78
-    iput-object p4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->f:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iput-object p4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mGoogleAnalyticsf:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     .line 79
     new-instance v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaa;
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaa;-><init>(Lcom/google/analytics/tracking/android/GAServiceProxy;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->r:Lcom/google/analytics/tracking/android/Clock;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mClockr:Lcom/google/analytics/tracking/android/Clock;
 
     .line 85
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     .line 86
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->g:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 87
     return-void
@@ -159,7 +159,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     return-object v0
 .end method
@@ -189,7 +189,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     return-object v0
 .end method
@@ -199,7 +199,7 @@
 
     .prologue
     .line 28
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->a:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mJa:J
 
     return-wide v0
 .end method
@@ -209,7 +209,7 @@
 
     .prologue
     .line 28
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->s:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mJs:J
 
     return-wide v0
 .end method
@@ -219,31 +219,31 @@
 
     .prologue
     .line 195
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     .line 196
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     .line 197
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     .line 198
     return-void
@@ -254,7 +254,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->r:Lcom/google/analytics/tracking/android/Clock;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mClockr:Lcom/google/analytics/tracking/android/Clock;
 
     return-object v0
 .end method
@@ -271,7 +271,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->g:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsThreadg:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     invoke-interface {v3}, Lcom/google/analytics/tracking/android/AnalyticsThread;->d()Ljava/lang/Thread;
 
@@ -284,7 +284,7 @@
     if-nez v2, :cond_1
 
     .line 242
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->g:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsThreadg:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     invoke-interface {v2}, Lcom/google/analytics/tracking/android/AnalyticsThread;->c()Ljava/util/concurrent/LinkedBlockingQueue;
 
@@ -308,7 +308,7 @@
     .line 250
     :cond_1
     :try_start_1
-    iget-boolean v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->o:Z
+    iget-boolean v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZo:Z
 
     if-eqz v2, :cond_2
 
@@ -317,9 +317,9 @@
 
     .line 253
     :cond_2
-    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->a:[I
+    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->mArrayIa:[I
 
-    iget-object v3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v3, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     invoke-virtual {v3}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->ordinal()I
 
@@ -335,7 +335,7 @@
     .line 255
     :goto_1
     :pswitch_1
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->isEmpty()Z
 
@@ -344,7 +344,7 @@
     if-nez v2, :cond_3
 
     .line 256
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -378,7 +378,7 @@
     invoke-static {v2}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 258
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     invoke-virtual {v7}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a()Ljava/util/Map;
 
@@ -413,7 +413,7 @@
     .line 262
     :cond_3
     :try_start_2
-    iget-boolean v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->n:Z
+    iget-boolean v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZn:Z
 
     if-eqz v2, :cond_0
 
@@ -425,7 +425,7 @@
     .line 267
     :goto_2
     :pswitch_2
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->isEmpty()Z
 
@@ -434,7 +434,7 @@
     if-nez v2, :cond_5
 
     .line 268
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->peek()Ljava/lang/Object;
 
@@ -468,7 +468,7 @@
     invoke-static {v2}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 270
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->f:Lcom/google/analytics/tracking/android/GoogleAnalytics;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mGoogleAnalyticsf:Lcom/google/analytics/tracking/android/GoogleAnalytics;
 
     invoke-virtual {v2}, Lcom/google/analytics/tracking/android/GoogleAnalytics;->b()Z
 
@@ -477,7 +477,7 @@
     if-nez v2, :cond_4
 
     .line 271
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     invoke-virtual {v7}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a()Ljava/util/Map;
 
@@ -499,7 +499,7 @@
 
     .line 276
     :goto_3
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -515,13 +515,13 @@
 
     .line 278
     :cond_5
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->r:Lcom/google/analytics/tracking/android/Clock;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mClockr:Lcom/google/analytics/tracking/android/Clock;
 
     invoke-interface {v2}, Lcom/google/analytics/tracking/android/Clock;->a()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->a:J
+    iput-wide v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mJa:J
 
     goto/16 :goto_0
 
@@ -532,7 +532,7 @@
     invoke-static {v2}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 282
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v2}, Ljava/util/Queue;->isEmpty()Z
 
@@ -564,14 +564,14 @@
 
     .prologue
     .line 296
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsStore;->a()V
 
     .line 297
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->n:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZn:Z
 
     .line 298
     return-void
@@ -592,7 +592,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     return-object v0
 .end method
@@ -605,7 +605,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->c:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
     :try_end_0
@@ -630,20 +630,20 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 310
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->e:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStoree:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     if-eqz v0, :cond_1
 
     .line 311
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->e:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStoree:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     .line 317
     :goto_1
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->c:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 318
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->h()V
@@ -668,9 +668,9 @@
     move-result-object v0
 
     .line 314
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->h:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mContexth:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->g:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsThreadg:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     invoke-virtual {v0, v1, v2}, Lcom/google/analytics/tracking/android/GAServiceManager;->a(Landroid/content/Context;Lcom/google/analytics/tracking/android/AnalyticsThread;)V
 
@@ -679,7 +679,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -694,15 +694,15 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->q:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZq:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->c:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
     :try_end_0
@@ -712,21 +712,21 @@
 
     .line 324
     :try_start_1
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     .line 325
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     .line 326
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->a:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 327
     new-instance v0, Ljava/util/Timer;
@@ -735,10 +735,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     .line 328
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     new-instance v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;
 
@@ -756,7 +756,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 330
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsClient;->b()V
     :try_end_1
@@ -817,11 +817,11 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
@@ -830,10 +830,10 @@
     .line 343
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->f:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 344
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsClient;->c()V
     :try_end_0
@@ -859,13 +859,13 @@
 
     .prologue
     .line 397
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     .line 398
     new-instance v0, Ljava/util/Timer;
@@ -874,10 +874,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     .line 399
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->k:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerk:Ljava/util/Timer;
 
     new-instance v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICah;
 
@@ -903,18 +903,18 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->l:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerl:Ljava/util/Timer;
 
     .line 351
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     .line 352
     const-string/jumbo v0, "Connected to service"
@@ -924,10 +924,10 @@
     .line 353
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 355
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->p:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZp:Z
 
     if-eqz v0, :cond_0
 
@@ -937,7 +937,7 @@
     .line 357
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->p:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZp:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -953,13 +953,13 @@
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->h()V
 
     .line 362
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     invoke-direct {p0, v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->a(Ljava/util/Timer;)Ljava/util/Timer;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     .line 363
     new-instance v0, Ljava/util/Timer;
@@ -968,10 +968,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     .line 364
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->m:Ljava/util/Timer;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mTimerm:Ljava/util/Timer;
 
     new-instance v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICae;
 
@@ -979,7 +979,7 @@
 
     invoke-direct {v1, p0, v2}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICae;-><init>(Lcom/google/analytics/tracking/android/GAServiceProxy;Lcom/google/analytics/tracking/android/GAServiceProxy$ICaa;)V
 
-    iget-wide v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->s:J
+    iget-wide v2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mJs:J
 
     invoke-virtual {v0, v1, v2, v3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
     :try_end_1
@@ -1006,10 +1006,10 @@
     :try_start_0
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->e:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 387
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     const/4 v1, 0x2
 
@@ -1123,7 +1123,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 105
-    iget-object v6, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v6, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     new-instance v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;
 
@@ -1154,7 +1154,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     sget-object v1, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->f:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
@@ -1171,7 +1171,7 @@
     .line 372
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->g:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1191,10 +1191,10 @@
     .line 375
     sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->e:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     .line 376
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->j:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mIj:I
 
     const/4 v1, 0x2
 
@@ -1230,9 +1230,9 @@
 
     .prologue
     .line 111
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->a:[I
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->mArrayIa:[I
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->ordinal()I
 
@@ -1245,7 +1245,7 @@
     .line 118
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->n:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZn:Z
 
     .line 121
     :goto_0
@@ -1280,14 +1280,14 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 126
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->i:Ljava/util/Queue;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mQueuei:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->clear()V
 
     .line 127
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->a:[I
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->mArrayIa:[I
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->ordinal()I
 
@@ -1300,7 +1300,7 @@
     .line 137
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->o:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZo:Z
 
     .line 140
     :goto_0
@@ -1308,25 +1308,25 @@
 
     .line 129
     :pswitch_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->d:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsStored:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     const-wide/16 v2, 0x0
 
     invoke-interface {v0, v2, v3}, Lcom/google/analytics/tracking/android/AnalyticsStore;->a(J)V
 
     .line 130
-    iput-boolean v4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->o:Z
+    iput-boolean v4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZo:Z
 
     goto :goto_0
 
     .line 133
     :pswitch_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsClient;->a()V
 
     .line 134
-    iput-boolean v4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->o:Z
+    iput-boolean v4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZo:Z
 
     goto :goto_0
 
@@ -1348,7 +1348,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->q:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZq:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1371,12 +1371,12 @@
     .line 149
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->q:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZq:Z
 
     .line 155
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->a:[I
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICac;->mArrayIa:[I
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->b:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mICadb:Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
     invoke-virtual {v1}, Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;->ordinal()I
 
@@ -1409,7 +1409,7 @@
     const/4 v0, 0x1
 
     :try_start_2
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->p:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->isZp:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1434,7 +1434,7 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     if-eqz v0, :cond_0
 
@@ -1446,11 +1446,11 @@
     :cond_0
     new-instance v0, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->h:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mContexth:Landroid/content/Context;
 
     invoke-direct {v0, v1, p0, p0}, Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient;-><init>(Landroid/content/Context;Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICd;Lcom/google/analytics/tracking/android/AnalyticsGmsCoreClient$ICe;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->c:Lcom/google/analytics/tracking/android/AnalyticsClient;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy;->mAnalyticsClientc:Lcom/google/analytics/tracking/android/AnalyticsClient;
 
     .line 210
     invoke-direct {p0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->k()V

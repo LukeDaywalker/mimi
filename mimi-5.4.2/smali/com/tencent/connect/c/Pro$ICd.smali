@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private m:Z
+.field private isZm:Z
 
-.field private n:Z
+.field private isZn:Z
 
-.field private o:Z
+.field private isZo:Z
 
 
 # direct methods
@@ -26,16 +26,16 @@
     .line 62
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iput-boolean v0, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     .line 63
-    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->m:Z
+    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->isZm:Z
 
     .line 64
-    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->n:Z
+    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->isZn:Z
 
     .line 65
-    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->o:Z
+    iput-boolean v1, p0, Lcom/tencent/connect/c/Pro$ICd;->isZo:Z
 
     .line 69
     return-void
@@ -1331,17 +1331,17 @@
     if-eqz v7, :cond_3
 
     .line 124
-    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     .line 133
     :goto_2
-    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->m:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->isZm:Z
 
     .line 134
-    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->n:Z
+    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->isZn:Z
 
     .line 135
-    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->o:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->isZo:Z
 
     .line 141
     :goto_3
@@ -1408,16 +1408,16 @@
 
     .line 104
     :sswitch_0
-    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     .line 105
-    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->m:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->isZm:Z
 
     .line 106
-    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->n:Z
+    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->isZn:Z
 
     .line 107
-    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->o:Z
+    iput-boolean v2, p0, Lcom/tencent/connect/c/Pro$ICd;->isZo:Z
 
     goto :goto_3
 
@@ -1467,19 +1467,19 @@
     move-result-object v1
 
     .line 127
-    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     goto :goto_2
 
     .line 131
     :cond_4
-    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iput-boolean v10, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     goto/16 :goto_2
 
     .line 148
     :cond_5
-    iget-boolean v7, p0, Lcom/tencent/connect/c/Pro$ICd;->a:Z
+    iget-boolean v7, p0, Lcom/tencent/connect/c/Pro$ICd;->isZa:Z
 
     if-eqz v7, :cond_7
 
@@ -1536,7 +1536,7 @@
 
     .line 163
     :cond_7
-    iget-boolean v4, p0, Lcom/tencent/connect/c/Pro$ICd;->m:Z
+    iget-boolean v4, p0, Lcom/tencent/connect/c/Pro$ICd;->isZm:Z
 
     if-eqz v4, :cond_b
 
@@ -1584,7 +1584,7 @@
 
     .line 194
     :cond_a
-    iget-boolean v0, p0, Lcom/tencent/connect/c/Pro$ICd;->o:Z
+    iget-boolean v0, p0, Lcom/tencent/connect/c/Pro$ICd;->isZo:Z
 
     if-eqz v0, :cond_12
 
@@ -1608,7 +1608,7 @@
 
     .line 169
     :cond_b
-    iget-boolean v4, p0, Lcom/tencent/connect/c/Pro$ICd;->n:Z
+    iget-boolean v4, p0, Lcom/tencent/connect/c/Pro$ICd;->isZn:Z
 
     if-eqz v4, :cond_c
 

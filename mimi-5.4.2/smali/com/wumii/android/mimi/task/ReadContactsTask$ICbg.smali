@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic mLista:Ljava/util/List;
 
-.field final synthetic b:Ljava/util/List;
+.field final synthetic mListb:Ljava/util/List;
 
-.field final synthetic c:Lcom/wumii/android/mimi/task/ReadContactsTask;
+.field final synthetic mReadContactsTaskc:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 184
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->c:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mReadContactsTaskc:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mLista:Ljava/util/List;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->b:Ljava/util/List;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mListb:Ljava/util/List;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->c:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mReadContactsTaskc:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask;->a(Lcom/wumii/android/mimi/task/ReadContactsTask;)Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
@@ -47,15 +47,15 @@
     if-eqz v0, :cond_0
 
     .line 189
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->c:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mReadContactsTaskc:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask;->a(Lcom/wumii/android/mimi/task/ReadContactsTask;)Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mLista:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->b:Ljava/util/List;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbg;->mListb:Ljava/util/List;
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;->a(Ljava/util/List;Ljava/util/List;)V
 

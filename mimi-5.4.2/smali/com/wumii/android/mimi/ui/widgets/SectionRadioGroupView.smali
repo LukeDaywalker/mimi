@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+.field private mSectionRadioItemViewb:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mLista:Ljava/util/List;
 
     .line 25
     return-void
@@ -70,7 +70,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -79,7 +79,7 @@
     if-nez v0, :cond_0
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -93,7 +93,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->b:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mSectionRadioItemViewb:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     if-ne v0, p1, :cond_1
 
@@ -103,10 +103,10 @@
 
     .line 38
     :cond_1
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->b:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mSectionRadioItemViewb:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

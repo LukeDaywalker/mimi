@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
+.field final synthetic mContactUnauthorizedCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;->mContactUnauthorizedCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$ICe;->mContactUnauthorizedCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->getContext()Landroid/content/Context;
 

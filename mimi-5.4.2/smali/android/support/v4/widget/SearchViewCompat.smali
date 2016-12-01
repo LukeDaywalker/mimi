@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
+.field private static final mSearchViewCompatImpla:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatIcsImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->a:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->mSearchViewCompatImpla:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
 
     .line 262
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->a:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->mSearchViewCompatImpla:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatStubImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->a:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
+    sput-object v0, Landroid/support/v4/widget/SearchViewCompat;->mSearchViewCompatImpla:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
 
     goto :goto_0
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 30
-    sget-object v0, Landroid/support/v4/widget/SearchViewCompat;->a:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
+    sget-object v0, Landroid/support/v4/widget/SearchViewCompat;->mSearchViewCompatImpla:Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;
 
     return-object v0
 .end method

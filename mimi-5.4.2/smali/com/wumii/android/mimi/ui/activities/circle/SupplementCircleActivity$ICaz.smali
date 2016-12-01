@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
+.field final synthetic mSupplementCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;->mSupplementCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
 
     .line 57
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity$ICaz;->mSupplementCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementCircleActivity;->b(Z)V
 

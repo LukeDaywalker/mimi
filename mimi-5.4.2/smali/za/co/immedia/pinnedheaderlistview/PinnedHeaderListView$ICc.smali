@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+.field final synthetic mPinnedHeaderListViewc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 180
-    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->mPinnedHeaderListViewc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +95,7 @@
 
     .line 191
     :goto_0
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->mPinnedHeaderListViewc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     invoke-virtual {v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->getHeaderViewsCount()I
 
@@ -119,7 +119,7 @@
 
     .line 195
     :cond_1
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->c:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;->mPinnedHeaderListViewc:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     invoke-virtual {v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->getHeaderViewsCount()I
 

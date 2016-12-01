@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field a:Ljava/util/List;
+.field final synthetic mDiscoverManagerb:Lcom/wumii/android/mimi/manager/DiscoverManager;
+
+.field mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field final synthetic b:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
 
 # direct methods
@@ -33,12 +33,12 @@
 
     .prologue
     .line 448
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->b:Lcom/wumii/android/mimi/manager/DiscoverManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mDiscoverManagerb:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 449
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     .line 450
     return-void
@@ -60,7 +60,7 @@
 
     .prologue
     .line 481
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .line 456
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -109,25 +109,25 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 458
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 462
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v4, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 463
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -138,7 +138,7 @@
     if-le v0, v1, :cond_0
 
     .line 464
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     const/4 v1, 0x4
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/DiscoverManager$ICaj;->mLista:Ljava/util/List;
 
     goto :goto_0
 .end method

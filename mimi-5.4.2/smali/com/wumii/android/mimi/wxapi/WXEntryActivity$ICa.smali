@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
+.field final synthetic mWXEntryActivitya:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 72
-    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;->a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;->mWXEntryActivitya:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;->a:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;->mWXEntryActivitya:Lcom/wumii/android/mimi/wxapi/WXEntryActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->finish()V
 

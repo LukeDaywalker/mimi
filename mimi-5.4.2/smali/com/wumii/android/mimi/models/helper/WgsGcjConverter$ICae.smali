@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:D
+.field private mDa:D
 
-.field private b:D
+.field private mDb:D
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    iput-wide p1, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a:D
+    iput-wide p1, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDa:D
 
     .line 20
-    iput-wide p3, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b:D
+    iput-wide p3, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDb:D
 
     .line 21
     return-void
@@ -39,14 +39,14 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a:D
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDa:D
 
     .line 25
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b:D
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDb:D
 
     .line 26
     return-void
@@ -59,7 +59,7 @@
 
     .prologue
     .line 29
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a:D
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDa:D
 
     return-wide v0
 .end method
@@ -69,7 +69,7 @@
 
     .prologue
     .line 45
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a:D
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDa:D
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->a()D
 
@@ -78,7 +78,7 @@
     sub-double/2addr v0, v2
 
     .line 46
-    iget-wide v2, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b:D
+    iget-wide v2, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDb:D
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b()D
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 37
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->b:D
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/WgsGcjConverter$ICae;->mDb:D
 
     return-wide v0
 .end method

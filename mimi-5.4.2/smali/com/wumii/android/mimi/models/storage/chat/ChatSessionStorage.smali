@@ -4,7 +4,11 @@
 
 
 # instance fields
-.field private b:Ljava/util/List;
+.field private mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+
+.field private mICgc:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
+
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,10 +18,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
-
-.field private d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
 
 # direct methods
@@ -33,23 +33,23 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     .line 28
     new-instance v0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;-><init>(Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mICgc:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     .line 30
     return-void
@@ -60,9 +60,9 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mICgc:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage$ICg;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -87,7 +87,7 @@
     if-eqz p1, :cond_1
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -111,7 +111,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -146,7 +146,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -206,7 +206,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -296,7 +296,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v5, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 
@@ -322,29 +322,29 @@
 
     .line 83
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->b()I
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Ljava/util/List;)V
 
@@ -372,14 +372,14 @@
     if-nez v0, :cond_1
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 100
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
@@ -394,12 +394,12 @@
     if-eq v0, p1, :cond_0
 
     .line 96
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -437,7 +437,7 @@
     invoke-virtual {v1, p2, p3}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->setUnreadCount(J)V
 
     .line 159
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
@@ -544,7 +544,7 @@
     if-eqz p4, :cond_0
 
     .line 182
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
@@ -562,7 +562,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -609,7 +609,7 @@
 
     .line 147
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Ljava/util/List;)V
 
@@ -634,7 +634,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -678,7 +678,7 @@
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     .line 131
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)I
 
@@ -697,7 +697,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->setPageFlag(I)V
 
     .line 134
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
@@ -730,12 +730,12 @@
     if-eqz v0, :cond_0
 
     .line 107
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 108
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->mChatSessionDaod:Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/dao/chat/ChatSessionDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)I
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+.field final synthetic mGroupChatInfoMemberActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 172
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->mGroupChatInfoMemberActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->mGroupChatInfoMemberActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->mGroupChatInfoMemberActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -46,7 +46,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_ALL:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->mGroupChatInfoMemberActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 

@@ -41,9 +41,9 @@
 
     .line 673
     :pswitch_0
-    iget-object v1, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v1, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->b:[Ljava/lang/Object;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mArrayObjectb:[Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -55,9 +55,9 @@
 
     .line 676
     :pswitch_1
-    iget-object v1, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iget-object v1, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
-    iget-object v0, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->b:[Ljava/lang/Object;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mArrayObjectb:[Ljava/lang/Object;
 
     invoke-virtual {v1, v0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->b([Ljava/lang/Object;)V
 

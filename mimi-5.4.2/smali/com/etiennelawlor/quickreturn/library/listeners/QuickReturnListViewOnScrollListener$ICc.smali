@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private final a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+.field private isZf:Z
 
-.field private b:Landroid/view/View;
+.field private mIc:I
 
-.field private c:I
+.field private mIe:I
 
-.field private d:Landroid/view/View;
+.field private final mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
-.field private e:I
+.field private mViewb:Landroid/view/View;
 
-.field private f:Z
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -30,22 +30,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 218
-    iput-object v1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->b:Landroid/view/View;
+    iput-object v1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mViewb:Landroid/view/View;
 
     .line 219
-    iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->c:I
+    iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mIc:I
 
     .line 220
-    iput-object v1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->d:Landroid/view/View;
+    iput-object v1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mViewd:Landroid/view/View;
 
     .line 221
-    iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->e:I
+    iput v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mIe:I
 
     .line 222
-    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->f:Z
+    iput-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->isZf:Z
 
     .line 225
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     .line 226
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mQuickReturnViewTypea:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->b:Landroid/view/View;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mViewb:Landroid/view/View;
 
     return-object v0
 .end method
@@ -76,7 +76,7 @@
 
     .prologue
     .line 213
-    iget v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->c:I
+    iget v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mIc:I
 
     return v0
 .end method
@@ -86,7 +86,7 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -96,7 +96,7 @@
 
     .prologue
     .line 213
-    iget v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->e:I
+    iget v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mIe:I
 
     return v0
 .end method
@@ -106,7 +106,7 @@
 
     .prologue
     .line 213
-    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->f:Z
+    iget-boolean v0, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->isZf:Z
 
     return v0
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 234
-    iput p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->c:I
+    iput p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mIc:I
 
     .line 235
     return-object p0
@@ -129,7 +129,7 @@
 
     .prologue
     .line 229
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->b:Landroid/view/View;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->mViewb:Landroid/view/View;
 
     .line 230
     return-object p0

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/support/v4/widget/SlidingPaneLayout;
+.field private final mRectc:Landroid/graphics/Rect;
 
-.field private final c:Landroid/graphics/Rect;
+.field final synthetic mSlidingPaneLayoutb:Landroid/support/v4/widget/SlidingPaneLayout;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 1538
-    iput-object p1, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/SlidingPaneLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mSlidingPaneLayoutb:Landroid/support/v4/widget/SlidingPaneLayout;
 
     invoke-direct {p0}, Landroid/support/v4/view/AccessibilityDelegateCompat;-><init>()V
 
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->c:Landroid/graphics/Rect;
+    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mRectc:Landroid/graphics/Rect;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 1597
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->c:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mRectc:Landroid/graphics/Rect;
 
     .line 1599
     invoke-virtual {p2, v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Landroid/graphics/Rect;)V
@@ -192,7 +192,7 @@
 
     .line 1558
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/SlidingPaneLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mSlidingPaneLayoutb:Landroid/support/v4/widget/SlidingPaneLayout;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/SlidingPaneLayout;->getChildCount()I
 
@@ -205,7 +205,7 @@
     if-ge v0, v1, :cond_2
 
     .line 1560
-    iget-object v2, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/SlidingPaneLayout;
+    iget-object v2, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mSlidingPaneLayoutb:Landroid/support/v4/widget/SlidingPaneLayout;
 
     invoke-virtual {v2, v0}, Landroid/support/v4/widget/SlidingPaneLayout;->getChildAt(I)Landroid/view/View;
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 1587
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->b:Landroid/support/v4/widget/SlidingPaneLayout;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$AccessibilityDelegate;->mSlidingPaneLayoutb:Landroid/support/v4/widget/SlidingPaneLayout;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/widget/SlidingPaneLayout;->e(Landroid/view/View;)Z
 

@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/lang/String;
-
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,7 +15,9 @@
     .end annotation
 .end field
 
-.field private d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -74,7 +74,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mListc:Ljava/util/List;
 
     return-object v0
 .end method
@@ -150,10 +150,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -170,7 +170,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mStringb:Ljava/lang/String;
 
     .line 28
     const/4 v0, 0x2
@@ -189,7 +189,7 @@
 
     const/4 v1, 0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mOrganizationV2d:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 
@@ -201,7 +201,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;->mListc:Ljava/util/List;
 
     .line 29
     return-void

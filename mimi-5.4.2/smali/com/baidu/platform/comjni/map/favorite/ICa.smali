@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:J
+.field private mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-.field private b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+.field private mJa:J
 
 
 # direct methods
@@ -16,17 +16,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
     new-instance v0, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
     invoke-direct {v0}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
     return-void
 .end method
@@ -37,9 +37,9 @@
     .locals 4
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->GetAll(JLandroid/os/Bundle;)I
     :try_end_0
@@ -61,15 +61,15 @@
 .method public a()J
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Create()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
-    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     return-wide v0
 .end method
@@ -77,9 +77,9 @@
 .method public a(I)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->SetType(JI)Z
 
@@ -91,9 +91,9 @@
 .method public a(Ljava/lang/String;)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Remove(JLjava/lang/String;)Z
 
@@ -107,9 +107,9 @@
 
     invoke-static {}, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->a()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Add(JLjava/lang/String;Ljava/lang/String;)Z
 
@@ -121,9 +121,9 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)Z
     .locals 10
 
-    iget-object v1, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v1, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     move-object v4, p1
 
@@ -147,9 +147,9 @@
 .method public b()I
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Release(J)I
 
@@ -162,9 +162,9 @@
     .locals 4
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->GetValue(JLjava/lang/String;)Ljava/lang/String;
     :try_end_0
@@ -188,9 +188,9 @@
 
     invoke-static {}, Lcom/baidu/platform/comjni/map/favorite/ICa$ICa;->a()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1, p2}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Update(JLjava/lang/String;Ljava/lang/String;)Z
 
@@ -202,9 +202,9 @@
 .method public c()Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->Clear(J)Z
 
@@ -217,9 +217,9 @@
     .locals 4
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->IsExist(JLjava/lang/String;)Z
     :try_end_0
@@ -241,9 +241,9 @@
 .method public d()Z
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->b:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJNIFavoriteb:Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/favorite/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/platform/comjni/map/favorite/JNIFavorite;->SaveCache(J)Z
 

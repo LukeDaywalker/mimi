@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+.field private static final mConnectivityManagerCompatImpla:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->a:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->mConnectivityManagerCompatImpla:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 
     .line 93
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->a:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->mConnectivityManagerCompatImpla:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 
     goto :goto_0
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->a:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->mConnectivityManagerCompatImpla:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 
     goto :goto_0
 
@@ -70,7 +70,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/net/ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->a:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+    sput-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->mConnectivityManagerCompatImpla:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 
     goto :goto_0
 .end method

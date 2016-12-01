@@ -4,21 +4,13 @@
 
 
 # static fields
-.field private static a:Lcom/tencent/open/a/Pro$ICd;
+.field private static mICda:Lcom/tencent/open/a/Pro$ICd;
 
 
 # instance fields
-.field private b:J
+.field private isZd:Z
 
-.field private c:I
-
-.field private d:Z
-
-.field private e:Ljava/util/Random;
-
-.field private f:Lcom/tencent/open/a/Pro$ICb;
-
-.field private g:Ljava/util/ArrayList;
+.field private mArrayListg:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -29,7 +21,7 @@
     .end annotation
 .end field
 
-.field private h:Ljava/util/ArrayList;
+.field private mArrayListh:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -39,6 +31,14 @@
         }
     .end annotation
 .end field
+
+.field private mICbf:Lcom/tencent/open/a/Pro$ICb;
+
+.field private mIc:I
+
+.field private mJb:J
+
+.field private mRandome:Ljava/util/Random;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     .line 30
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/open/a/Pro$ICd;->a:Lcom/tencent/open/a/Pro$ICd;
+    sput-object v0, Lcom/tencent/open/a/Pro$ICd;->mICda:Lcom/tencent/open/a/Pro$ICd;
 
     return-void
 .end method
@@ -64,38 +64,38 @@
     .line 51
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/tencent/open/a/Pro$ICd;->b:J
+    iput-wide v0, p0, Lcom/tencent/open/a/Pro$ICd;->mJb:J
 
     .line 52
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/tencent/open/a/Pro$ICd;->c:I
+    iput v0, p0, Lcom/tencent/open/a/Pro$ICd;->mIc:I
 
     .line 53
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->d:Z
+    iput-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->isZd:Z
 
     .line 54
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     .line 55
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     .line 57
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->e:Ljava/util/Random;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mRandome:Ljava/util/Random;
 
     .line 58
     return-void
@@ -106,7 +106,7 @@
 
     .prologue
     .line 27
-    iget v0, p0, Lcom/tencent/open/a/Pro$ICd;->c:I
+    iget v0, p0, Lcom/tencent/open/a/Pro$ICd;->mIc:I
 
     return v0
 .end method
@@ -116,7 +116,7 @@
 
     .prologue
     .line 27
-    iput p1, p0, Lcom/tencent/open/a/Pro$ICd;->c:I
+    iput p1, p0, Lcom/tencent/open/a/Pro$ICd;->mIc:I
 
     return p1
 .end method
@@ -126,7 +126,7 @@
 
     .prologue
     .line 44
-    sget-object v0, Lcom/tencent/open/a/Pro$ICd;->a:Lcom/tencent/open/a/Pro$ICd;
+    sget-object v0, Lcom/tencent/open/a/Pro$ICd;->mICda:Lcom/tencent/open/a/Pro$ICd;
 
     if-nez v0, :cond_0
 
@@ -135,11 +135,11 @@
 
     invoke-direct {v0}, Lcom/tencent/open/a/Pro$ICd;-><init>()V
 
-    sput-object v0, Lcom/tencent/open/a/Pro$ICd;->a:Lcom/tencent/open/a/Pro$ICd;
+    sput-object v0, Lcom/tencent/open/a/Pro$ICd;->mICda:Lcom/tencent/open/a/Pro$ICd;
 
     .line 47
     :cond_0
-    sget-object v0, Lcom/tencent/open/a/Pro$ICd;->a:Lcom/tencent/open/a/Pro$ICd;
+    sget-object v0, Lcom/tencent/open/a/Pro$ICd;->mICda:Lcom/tencent/open/a/Pro$ICd;
 
     return-object v0
 .end method
@@ -315,33 +315,33 @@
     .line 262
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->d:Z
+    iput-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->isZd:Z
 
     .line 265
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICb;->c()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     .line 266
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICb;->b()Z
 
     .line 269
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICb;->d()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     .line 270
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICb;->a()Z
 
@@ -389,7 +389,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -416,7 +416,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -449,7 +449,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -482,7 +482,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -515,7 +515,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -548,7 +548,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -581,7 +581,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -614,7 +614,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -647,7 +647,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -674,7 +674,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -724,7 +724,7 @@
 
     .line 294
     :cond_0
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -733,13 +733,13 @@
     move v1, v0
 
     :goto_1
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    iget-object v3, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -750,7 +750,7 @@
     if-ge v1, v0, :cond_1
 
     .line 295
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -777,7 +777,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -810,7 +810,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -843,7 +843,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -876,7 +876,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -909,7 +909,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -942,7 +942,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -975,7 +975,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1008,7 +1008,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1035,7 +1035,7 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1205,7 +1205,7 @@
     move-result-object v4
 
     .line 136
-    iget-object v3, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v3, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1277,7 +1277,7 @@
     move-result v0
 
     .line 105
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICd;->e:Ljava/util/Random;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICd;->mRandome:Ljava/util/Random;
 
     const/16 v2, 0x64
 
@@ -1320,7 +1320,7 @@
 
     .prologue
     .line 27
-    iput-boolean p1, p0, Lcom/tencent/open/a/Pro$ICd;->d:Z
+    iput-boolean p1, p0, Lcom/tencent/open/a/Pro$ICd;->isZd:Z
 
     return p1
 .end method
@@ -1474,7 +1474,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mArrayListg:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -1562,13 +1562,13 @@
     div-long/2addr v2, v4
 
     .line 223
-    iget-wide v4, p0, Lcom/tencent/open/a/Pro$ICd;->b:J
+    iget-wide v4, p0, Lcom/tencent/open/a/Pro$ICd;->mJb:J
 
     cmp-long v4, v4, v6
 
     if-eqz v4, :cond_1
 
-    iget-wide v4, p0, Lcom/tencent/open/a/Pro$ICd;->b:J
+    iget-wide v4, p0, Lcom/tencent/open/a/Pro$ICd;->mJb:J
 
     add-long/2addr v0, v4
 
@@ -1578,7 +1578,7 @@
 
     .line 225
     :cond_1
-    iput-wide v2, p0, Lcom/tencent/open/a/Pro$ICd;->b:J
+    iput-wide v2, p0, Lcom/tencent/open/a/Pro$ICd;->mJb:J
 
     .line 226
     const-string/jumbo v0, "cgi_report_debug"
@@ -1613,7 +1613,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     return-object v0
 .end method
@@ -1688,7 +1688,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 248
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     invoke-virtual {v1}, Lcom/tencent/open/a/Pro$ICb;->e()I
 
@@ -1771,7 +1771,7 @@
 
     .line 72
     :cond_0
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     if-nez v0, :cond_1
 
@@ -1780,7 +1780,7 @@
 
     invoke-direct {v0, p1}, Lcom/tencent/open/a/Pro$ICb;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->f:Lcom/tencent/open/a/Pro$ICb;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICd;->mICbf:Lcom/tencent/open/a/Pro$ICb;
 
     .line 77
     :cond_1
@@ -1794,7 +1794,7 @@
     invoke-direct/range {p0 .. p11}, Lcom/tencent/open/a/Pro$ICd;->a(Landroid/content/Context;Ljava/lang/String;JJJILjava/lang/String;Ljava/lang/String;)V
 
     .line 84
-    iget-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->d:Z
+    iget-boolean v0, p0, Lcom/tencent/open/a/Pro$ICd;->isZd:Z
 
     if-ne v0, v1, :cond_3
 

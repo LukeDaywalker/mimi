@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:Ljava/lang/String;
+.field static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private final b:Lcom/google/analytics/tracking/android/ServiceManager;
+.field private final mServiceManagerb:Lcom/google/analytics/tracking/android/ServiceManager;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->a:Ljava/lang/String;
+    sput-object v0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->b:Lcom/google/analytics/tracking/android/ServiceManager;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mServiceManagerb:Lcom/google/analytics/tracking/android/ServiceManager;
 
     .line 32
     return-void
@@ -61,7 +61,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 69
-    sget-object v1, Lcom/google/analytics/tracking/android/GANetworkReceiver;->a:Ljava/lang/String;
+    sget-object v1, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mStringa:Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -145,7 +145,7 @@
     move-result v1
 
     .line 39
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->b:Lcom/google/analytics/tracking/android/ServiceManager;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mServiceManagerb:Lcom/google/analytics/tracking/android/ServiceManager;
 
     if-nez v1, :cond_0
 
@@ -169,7 +169,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->a:Ljava/lang/String;
+    sget-object v0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
 
@@ -178,7 +178,7 @@
     if-nez v0, :cond_1
 
     .line 42
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->b:Lcom/google/analytics/tracking/android/ServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GANetworkReceiver;->mServiceManagerb:Lcom/google/analytics/tracking/android/ServiceManager;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/ServiceManager;->e()V
 

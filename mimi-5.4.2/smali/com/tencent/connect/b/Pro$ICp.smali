@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/connect/b/Pro$ICo;
+.field private mICoa:Lcom/tencent/connect/b/Pro$ICo;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 109
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICp;->a:Lcom/tencent/connect/b/Pro$ICo;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICp;->mICoa:Lcom/tencent/connect/b/Pro$ICo;
 
     .line 110
     return-void
@@ -40,7 +40,7 @@
 
     .line 116
     :pswitch_0
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICp;->a:Lcom/tencent/connect/b/Pro$ICo;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICp;->mICoa:Lcom/tencent/connect/b/Pro$ICo;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -52,7 +52,7 @@
 
     .line 120
     :pswitch_1
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICp;->a:Lcom/tencent/connect/b/Pro$ICo;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICp;->mICoa:Lcom/tencent/connect/b/Pro$ICo;
 
     invoke-virtual {v0}, Lcom/tencent/connect/b/Pro$ICo;->a()V
 

@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final a:Lcom/crashlytics/android/core/internal/models/SignalData;
+.field private static final mArrayICbfe:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
 
-.field private static final b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+.field private static final mArrayICbgf:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
 
-.field private static final c:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
+.field private static final mArrayICbkd:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
 
-.field private static final d:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
+.field private static final mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
-.field private static final e:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
+.field private static final mArrayICbqc:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
 
-.field private static final f:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
+.field private static final mSignalDataa:Lcom/crashlytics/android/core/internal/models/SignalData;
 
 
 # direct methods
@@ -35,32 +35,32 @@
 
     invoke-direct {v0, v1, v2, v4, v5}, Lcom/crashlytics/android/core/internal/models/SignalData;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->a:Lcom/crashlytics/android/core/internal/models/SignalData;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mSignalDataa:Lcom/crashlytics/android/core/internal/models/SignalData;
 
     .line 29
     new-array v0, v3, [Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
     .line 30
     new-array v0, v3, [Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->c:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbqc:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
 
     .line 31
     new-array v0, v3, [Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->d:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbkd:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
 
     .line 32
     new-array v0, v3, [Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->e:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbfe:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
 
     .line 34
     new-array v0, v3, [Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
 
-    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->f:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
+    sput-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbgf:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
 
     return-void
 .end method
@@ -235,7 +235,7 @@
 
     .line 496
     :cond_1
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->a:Lcom/crashlytics/android/core/internal/models/SignalData;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mSignalDataa:Lcom/crashlytics/android/core/internal/models/SignalData;
 
     goto :goto_0
 
@@ -284,7 +284,7 @@
 
     .line 582
     :cond_0
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->e:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbfe:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbf;
 
     goto :goto_0
 
@@ -333,7 +333,7 @@
 
     .line 592
     :cond_0
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->f:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbgf:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbg;
 
     goto :goto_0
 
@@ -382,7 +382,7 @@
 
     .line 573
     :cond_0
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->d:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbkd:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbk;
 
     goto :goto_0
 
@@ -438,7 +438,7 @@
 
     .line 562
     :cond_0
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->c:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbqc:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbq;
 
     goto :goto_0
 
@@ -486,7 +486,7 @@
 
     .prologue
     .line 19
-    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+    sget-object v0, Lcom/crashlytics/android/core/NativeCrashWriter;->mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
     return-object v0
 .end method

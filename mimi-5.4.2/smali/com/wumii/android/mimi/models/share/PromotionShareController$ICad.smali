@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+.field final synthetic mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/models/share/PromotionShareController;->a:Landroid/app/Activity;
 
@@ -46,7 +46,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->a:Lcom/wumii/android/mimi/models/share/PromotionShareController;
+    iget-object v5, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController$ICad;->mPromotionShareControllera:Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/share/PromotionShareController;->k()Ljava/lang/String;
 

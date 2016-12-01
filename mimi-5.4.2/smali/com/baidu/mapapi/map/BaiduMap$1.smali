@@ -3,9 +3,9 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
-.field static final synthetic b:[I
+.field static final synthetic mArrayIb:[I
 
 
 # direct methods
@@ -20,10 +20,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->b:[I
+    sput-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIb:[I
 
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->b:[I
+    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIb:[I
 
     sget-object v1, Lcom/baidu/platform/comapi/map/A;->b:Lcom/baidu/platform/comapi/map/A;
 
@@ -39,7 +39,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->b:[I
+    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIb:[I
 
     sget-object v1, Lcom/baidu/platform/comapi/map/A;->a:Lcom/baidu/platform/comapi/map/A;
 
@@ -62,10 +62,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->a:[I
+    sput-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIa:[I
 
     :try_start_2
-    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->a:[I
+    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->COMPASS:Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
@@ -81,7 +81,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->a:[I
+    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->FOLLOWING:Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
@@ -97,7 +97,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->a:[I
+    sget-object v0, Lcom/baidu/mapapi/map/BaiduMap$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->NORMAL:Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 

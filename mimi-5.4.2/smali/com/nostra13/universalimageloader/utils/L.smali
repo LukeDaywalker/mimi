@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static volatile a:Z
+.field private static volatile isZa:Z
 
-.field private static volatile b:Z
+.field private static volatile isZb:Z
 
 
 # direct methods
@@ -17,12 +17,12 @@
     .line 30
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->a:Z
+    sput-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->isZa:Z
 
     .line 31
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->b:Z
+    sput-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->isZb:Z
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     .prologue
     .line 98
-    sget-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->b:Z
+    sget-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->isZb:Z
 
     if-nez v0, :cond_0
 
@@ -109,7 +109,7 @@
 
     .prologue
     .line 72
-    sget-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->a:Z
+    sget-boolean v0, Lcom/nostra13/universalimageloader/utils/L;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 63
-    sput-boolean p0, Lcom/nostra13/universalimageloader/utils/L;->a:Z
+    sput-boolean p0, Lcom/nostra13/universalimageloader/utils/L;->isZa:Z
 
     .line 64
     return-void

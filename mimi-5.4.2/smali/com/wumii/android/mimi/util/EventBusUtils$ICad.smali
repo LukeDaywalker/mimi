@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Object;
+.field final synthetic mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;->mObjecta:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/EventBusUtils$ICad;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Lorg/greenrobot/eventbus/EventBus;->d(Ljava/lang/Object;)V
 

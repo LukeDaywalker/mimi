@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/ResponseBody;
+.field private final mBufferedSourceb:Lokio/BufferedSource;
 
-.field private final b:Lokio/BufferedSource;
+.field private final mResponseBodya:Lcom/squareup/okhttp/ResponseBody;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Lcom/squareup/okhttp/ResponseBody;-><init>()V
 
     .line 254
-    iput-object p1, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->a:Lcom/squareup/okhttp/ResponseBody;
+    iput-object p1, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->mResponseBodya:Lcom/squareup/okhttp/ResponseBody;
 
     .line 255
     invoke-static {p2}, Lokio/Okio;->a(Ljava/io/InputStream;)Lokio/Source;
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->b:Lokio/BufferedSource;
+    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->mBufferedSourceb:Lokio/BufferedSource;
 
     .line 256
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->a:Lcom/squareup/okhttp/ResponseBody;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->mResponseBodya:Lcom/squareup/okhttp/ResponseBody;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/ResponseBody;->a()Lcom/squareup/okhttp/MediaType;
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 265
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->a:Lcom/squareup/okhttp/ResponseBody;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->mResponseBodya:Lcom/squareup/okhttp/ResponseBody;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/ResponseBody;->b()J
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 273
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->b:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICb;->mBufferedSourceb:Lokio/BufferedSource;
 
     return-object v0
 .end method

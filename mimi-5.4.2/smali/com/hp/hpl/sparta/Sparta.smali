@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Lcom/hp/hpl/sparta/Sparta$ICx;
+.field private static mICvb:Lcom/hp/hpl/sparta/Sparta$ICv;
 
-.field private static b:Lcom/hp/hpl/sparta/Sparta$ICv;
+.field private static mICxa:Lcom/hp/hpl/sparta/Sparta$ICx;
 
 
 # direct methods
@@ -19,14 +19,14 @@
 
     invoke-direct {v0}, Lcom/hp/hpl/sparta/Sparta$ICs;-><init>()V
 
-    sput-object v0, Lcom/hp/hpl/sparta/Sparta;->a:Lcom/hp/hpl/sparta/Sparta$ICx;
+    sput-object v0, Lcom/hp/hpl/sparta/Sparta;->mICxa:Lcom/hp/hpl/sparta/Sparta$ICx;
 
     .line 129
     new-instance v0, Lcom/hp/hpl/sparta/Sparta$ICt;
 
     invoke-direct {v0}, Lcom/hp/hpl/sparta/Sparta$ICt;-><init>()V
 
-    sput-object v0, Lcom/hp/hpl/sparta/Sparta;->b:Lcom/hp/hpl/sparta/Sparta$ICv;
+    sput-object v0, Lcom/hp/hpl/sparta/Sparta;->mICvb:Lcom/hp/hpl/sparta/Sparta$ICv;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     .prologue
     .line 99
-    sget-object v0, Lcom/hp/hpl/sparta/Sparta;->b:Lcom/hp/hpl/sparta/Sparta$ICv;
+    sget-object v0, Lcom/hp/hpl/sparta/Sparta;->mICvb:Lcom/hp/hpl/sparta/Sparta$ICv;
 
     invoke-interface {v0}, Lcom/hp/hpl/sparta/Sparta$ICv;->a()Lcom/hp/hpl/sparta/Sparta$ICu;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 35
-    sget-object v0, Lcom/hp/hpl/sparta/Sparta;->a:Lcom/hp/hpl/sparta/Sparta$ICx;
+    sget-object v0, Lcom/hp/hpl/sparta/Sparta;->mICxa:Lcom/hp/hpl/sparta/Sparta$ICx;
 
     invoke-interface {v0, p0}, Lcom/hp/hpl/sparta/Sparta$ICx;->a(Ljava/lang/String;)Ljava/lang/String;
 

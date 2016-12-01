@@ -20,7 +20,7 @@
 
 .field public static final enum NORMAL:Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
-.field private static final synthetic a:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
+.field private static final synthetic mArrayLocationModea:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
 
 # direct methods
@@ -73,7 +73,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->a:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
+    sput-object v0, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->mArrayLocationModea:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 .method public static values()[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->a:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
+    sget-object v0, Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->mArrayLocationModea:[Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;
 
     invoke-virtual {v0}, [Lcom/baidu/mapapi/map/MyLocationConfiguration$LocationMode;->clone()Ljava/lang/Object;
 

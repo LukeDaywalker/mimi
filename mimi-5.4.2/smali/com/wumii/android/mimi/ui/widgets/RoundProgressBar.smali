@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:I
+.field private mIb:I
 
-.field private c:I
+.field private mIc:I
 
-.field private d:I
+.field private mId:I
 
-.field private e:Landroid/graphics/Paint;
+.field private mPainte:Landroid/graphics/Paint;
 
-.field private f:Landroid/graphics/Paint;
+.field private mPaintf:Landroid/graphics/Paint;
 
-.field private g:Landroid/graphics/RectF;
+.field private mRectFg:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -68,7 +68,7 @@
     move-result-object v0
 
     .line 40
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -77,7 +77,7 @@
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->setMax(I)V
 
     .line 41
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     invoke-virtual {v0, v3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -88,7 +88,7 @@
     .line 42
     const/4 v1, 0x2
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -104,22 +104,22 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->e:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPainte:Landroid/graphics/Paint;
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->e:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPainte:Landroid/graphics/Paint;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIa:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->e:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPainte:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->e:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPainte:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
@@ -130,29 +130,29 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     const/high16 v1, 0x41000000    # 8.0f
 
@@ -175,20 +175,20 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->a:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIa:I
 
     .line 60
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     .line 61
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     .line 62
     const/16 v0, 0x50
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     .line 63
     return-void
@@ -201,7 +201,7 @@
 
     .prologue
     .line 130
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     return v0
 .end method
@@ -211,7 +211,7 @@
 
     .prologue
     .line 134
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     return v0
 .end method
@@ -226,7 +226,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 74
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     div-int/lit8 v0, v0, 0x2
 
@@ -237,12 +237,12 @@
 
     int-to-float v3, v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->e:Landroid/graphics/Paint;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPainte:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 79
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->g:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mRectFg:Landroid/graphics/RectF;
 
     if-nez v1, :cond_0
 
@@ -263,19 +263,19 @@
 
     invoke-direct {v1, v5, v5, v2, v0}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->g:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mRectFg:Landroid/graphics/RectF;
 
     .line 83
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->g:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mRectFg:Landroid/graphics/RectF;
 
     const/high16 v2, 0x43870000    # 270.0f
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     mul-int/lit16 v0, v0, 0x168
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     div-int/2addr v0, v3
 
@@ -283,7 +283,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->f:Landroid/graphics/Paint;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mPaintf:Landroid/graphics/Paint;
 
     move-object v0, p1
 
@@ -298,13 +298,13 @@
 
     .prologue
     .line 67
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->resolveSize(II)I
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     invoke-static {v1, p2}, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->resolveSize(II)I
 
@@ -328,20 +328,20 @@
 
     .line 103
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     if-eq p1, v0, :cond_2
 
     .line 104
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     .line 106
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     if-le v0, p1, :cond_1
 
     .line 107
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     .line 110
     :cond_1
@@ -364,21 +364,21 @@
 
     .line 119
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     if-le p1, v0, :cond_1
 
     .line 120
-    iget p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->b:I
+    iget p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIb:I
 
     .line 123
     :cond_1
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     if-eq p1, v0, :cond_2
 
     .line 124
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->c:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mIc:I
 
     .line 125
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->invalidate()V
@@ -400,17 +400,17 @@
 
     .line 91
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     if-eq p1, v0, :cond_1
 
     .line 92
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->d:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mId:I
 
     .line 93
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->g:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->mRectFg:Landroid/graphics/RectF;
 
     .line 94
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;->requestLayout()V

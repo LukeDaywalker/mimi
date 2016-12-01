@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:I
+.field private final mArrayId:[I
 
-.field private b:I
+.field private mIa:I
 
-.field private c:I
+.field private mIb:I
 
-.field private final d:[I
+.field private mIc:I
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     array-length v0, v0
 
@@ -55,11 +55,11 @@
     shl-int/2addr v0, p1
 
     .line 95
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     or-int/2addr v1, v0
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     .line 96
     and-int/lit8 v1, p2, 0x1
@@ -67,11 +67,11 @@
     if-eqz v1, :cond_1
 
     .line 97
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
     or-int/2addr v1, v0
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
     .line 101
     :goto_1
@@ -80,15 +80,15 @@
     if-eqz v1, :cond_2
 
     .line 102
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
     or-int/2addr v0, v1
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
     .line 107
     :goto_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     aput p3, v0, p1
 
@@ -96,25 +96,25 @@
 
     .line 99
     :cond_1
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
     xor-int/lit8 v2, v0, -0x1
 
     and-int/2addr v1, v2
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
     goto :goto_1
 
     .line 104
     :cond_2
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
     xor-int/lit8 v0, v0, -0x1
 
     and-int/2addr v0, v1
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
     goto :goto_2
 .end method
@@ -126,14 +126,14 @@
     const/4 v1, 0x0
 
     .line 85
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     .line 86
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
@@ -195,7 +195,7 @@
     shl-int v1, v0, p1
 
     .line 114
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     and-int/2addr v1, v2
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 132
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     invoke-static {v0}, Ljava/lang/Integer;->bitCount(I)I
 
@@ -229,7 +229,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     aget v0, v0, p1
 
@@ -244,13 +244,13 @@
     const/4 v0, 0x2
 
     .line 144
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     and-int/2addr v0, v1
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     const/4 v1, 0x1
 
@@ -304,13 +304,13 @@
     const/16 v0, 0x20
 
     .line 181
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     and-int/2addr v0, v1
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     const/4 v1, 0x5
 
@@ -328,13 +328,13 @@
     const/16 v0, 0x80
 
     .line 198
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->a:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIa:I
 
     and-int/2addr v0, v1
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->d:[I
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mArrayId:[I
 
     const/4 v1, 0x7
 
@@ -354,7 +354,7 @@
     shl-int v1, v0, p1
 
     .line 220
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIb:I
 
     and-int/2addr v1, v2
 
@@ -379,7 +379,7 @@
     shl-int v1, v0, p1
 
     .line 226
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->c:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Settings;->mIc:I
 
     and-int/2addr v1, v2
 

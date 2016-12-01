@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+.field final synthetic mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 282
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
     invoke-static {}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->c()V
 
     .line 288
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;->d(Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;)V
 
@@ -50,7 +50,7 @@
 
     .line 290
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity$ICg;->mBaseContactListActivitya:Lcom/wumii/android/mimi/ui/activities/BaseContactListActivity;
 
     const-string/jumbo v1, "contacts"
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
-.field private b:Ljava/util/List;
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -31,14 +31,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 22
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mListb:Ljava/util/List;
 
     .line 23
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->b:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mListb:Ljava/util/List;
 
     .line 60
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->notifyDataSetChanged()V
@@ -90,7 +90,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -130,7 +130,7 @@
     if-nez p2, :cond_0
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f9
 
@@ -160,7 +160,7 @@
     invoke-virtual {p2, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 53
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->a:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewa:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getName()Ljava/lang/String;
 
@@ -169,7 +169,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 54
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->b:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListItemViewHolder;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 

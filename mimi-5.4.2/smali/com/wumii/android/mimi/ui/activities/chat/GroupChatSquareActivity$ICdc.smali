@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+.field final synthetic mGroupChatSquareActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 234
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->mGroupChatSquareActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->a:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->isZa:Z
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -33,11 +33,11 @@
     .line 238
     new-instance v0, Lcom/wumii/android/mimi/task/SyncQuotaTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->mGroupChatSquareActivityb:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/SyncQuotaTask;-><init>(Landroid/content/Context;)V
 
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->a:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->isZa:Z
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdd;
 

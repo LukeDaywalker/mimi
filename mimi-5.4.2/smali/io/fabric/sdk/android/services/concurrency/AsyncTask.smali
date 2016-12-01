@@ -19,19 +19,11 @@
 
 
 # static fields
-.field private static final a:I
-
 .field public static final b:Ljava/util/concurrent/Executor;
 
 .field public static final c:Ljava/util/concurrent/Executor;
 
-.field private static final d:I
-
-.field private static final e:I
-
-.field private static final f:Ljava/util/concurrent/ThreadFactory;
-
-.field private static final g:Ljava/util/concurrent/BlockingQueue;
+.field private static final mBlockingQueueg:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue",
@@ -42,22 +34,25 @@
     .end annotation
 .end field
 
-.field private static final h:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
+.field private static volatile mExecutori:Ljava/util/concurrent/Executor;
 
-.field private static volatile i:Ljava/util/concurrent/Executor;
+.field private static final mICgh:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
+
+.field private static final mIa:I
+
+.field private static final mId:I
+
+.field private static final mIe:I
+
+.field private static final mThreadFactoryf:Ljava/util/concurrent/ThreadFactory;
 
 
 # instance fields
-.field private final j:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lc/a/a/a/a/c/k",
-            "<TParams;TResult;>;"
-        }
-    .end annotation
-.end field
+.field private final mAtomicBooleanm:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final k:Ljava/util/concurrent/FutureTask;
+.field private final mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field private final mFutureTaskk:Ljava/util/concurrent/FutureTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/FutureTask",
@@ -66,11 +61,16 @@
     .end annotation
 .end field
 
-.field private volatile l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+.field private volatile mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-.field private final m:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field private final n:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mICkj:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc/a/a/a/a/c/k",
+            "<TParams;TResult;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -87,30 +87,30 @@
 
     move-result v0
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mIa:I
 
     .line 204
-    sget v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a:I
+    sget v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mIa:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->d:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mId:I
 
     .line 205
-    sget v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a:I
+    sget v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mIa:I
 
     mul-int/lit8 v0, v0, 0x2
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->e:I
+    sput v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mIe:I
 
     .line 208
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICb;
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICb;-><init>()V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->f:Ljava/util/concurrent/ThreadFactory;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mThreadFactoryf:Ljava/util/concurrent/ThreadFactory;
 
     .line 216
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
@@ -119,22 +119,22 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->g:Ljava/util/concurrent/BlockingQueue;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mBlockingQueueg:Ljava/util/concurrent/BlockingQueue;
 
     .line 222
     new-instance v1, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    sget v2, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->d:I
+    sget v2, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mId:I
 
-    sget v3, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->e:I
+    sget v3, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mIe:I
 
     const-wide/16 v4, 0x1
 
     sget-object v6, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    sget-object v7, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->g:Ljava/util/concurrent/BlockingQueue;
+    sget-object v7, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mBlockingQueueg:Ljava/util/concurrent/BlockingQueue;
 
-    sget-object v8, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->f:Ljava/util/concurrent/ThreadFactory;
+    sget-object v8, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mThreadFactoryf:Ljava/util/concurrent/ThreadFactory;
 
     invoke-direct/range {v1 .. v8}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
@@ -154,12 +154,12 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;-><init>()V
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->h:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICgh:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
 
     .line 237
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->c:Ljava/util/concurrent/Executor;
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->i:Ljava/util/concurrent/Executor;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mExecutori:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
@@ -174,37 +174,37 @@
     .line 241
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 243
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->m:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleanm:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 244
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 305
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;
 
     invoke-direct {v0, p0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICc;-><init>(Lio/fabric/sdk/android/services/concurrency/AsyncTask;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->j:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICkj:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
 
     .line 315
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->j:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICkj:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
 
     invoke-direct {v0, p0, v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICd;-><init>(Lio/fabric/sdk/android/services/concurrency/AsyncTask;Ljava/util/concurrent/Callable;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->k:Ljava/util/concurrent/FutureTask;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mFutureTaskk:Ljava/util/concurrent/FutureTask;
 
     .line 330
     return-void
@@ -227,7 +227,7 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
 .end method
@@ -262,7 +262,7 @@
 
     .prologue
     .line 333
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleann:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -291,7 +291,7 @@
     const/4 v4, 0x1
 
     .line 341
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->h:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICgh:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICg;
 
     new-instance v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;
 
@@ -337,7 +337,7 @@
     :goto_0
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 659
     return-void
@@ -365,16 +365,16 @@
 
     .prologue
     .line 596
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     sget-object v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     if-eq v0, v1, :cond_0
 
     .line 597
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICe;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICe;->mArrayIa:[I
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->ordinal()I
 
@@ -388,18 +388,18 @@
     :cond_0
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     .line 611
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->a()V
 
     .line 613
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->j:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICkj:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;
 
-    iput-object p2, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;->b:[Ljava/lang/Object;
+    iput-object p2, v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICk;->mArrayObjectb:[Ljava/lang/Object;
 
     .line 614
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->k:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mFutureTaskk:Ljava/util/concurrent/FutureTask;
 
     invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -468,14 +468,14 @@
 
     .prologue
     .line 490
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->m:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleanm:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 491
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->k:Ljava/util/concurrent/FutureTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mFutureTaskk:Ljava/util/concurrent/FutureTask;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
@@ -518,7 +518,7 @@
 
     .prologue
     .line 457
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->m:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mAtomicBooleanm:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -532,7 +532,7 @@
 
     .prologue
     .line 353
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->l:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->mICjl:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     return-object v0
 .end method

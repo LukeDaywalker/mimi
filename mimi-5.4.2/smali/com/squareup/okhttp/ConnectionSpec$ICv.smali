@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private b:[Ljava/lang/String;
+.field private isZd:Z
 
-.field private c:[Ljava/lang/String;
+.field private mArrayStringb:[Ljava/lang/String;
 
-.field private d:Z
+.field private mArrayStringc:[Ljava/lang/String;
 
 
 # direct methods
@@ -22,28 +22,28 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 282
-    iget-boolean v0, p1, Lcom/squareup/okhttp/ConnectionSpec;->d:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/ConnectionSpec;->isZd:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     .line 283
     invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec;->a(Lcom/squareup/okhttp/ConnectionSpec;)[Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringb:[Ljava/lang/String;
 
     .line 284
     invoke-static {p1}, Lcom/squareup/okhttp/ConnectionSpec;->b(Lcom/squareup/okhttp/ConnectionSpec;)[Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringc:[Ljava/lang/String;
 
     .line 285
-    iget-boolean v0, p1, Lcom/squareup/okhttp/ConnectionSpec;->e:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/ConnectionSpec;->isZe:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->d:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZd:Z
 
     .line 286
     return-void
@@ -57,7 +57,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 278
-    iput-boolean p1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iput-boolean p1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     .line 279
     return-void
@@ -68,7 +68,7 @@
 
     .prologue
     .line 271
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     return v0
 .end method
@@ -78,7 +78,7 @@
 
     .prologue
     .line 271
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringb:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 271
-    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringc:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 271
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->d:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZd:Z
 
     return v0
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 342
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -124,7 +124,7 @@
 
     .line 343
     :cond_0
-    iput-boolean p1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->d:Z
+    iput-boolean p1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZd:Z
 
     .line 344
     return-object p0
@@ -135,7 +135,7 @@
 
     .prologue
     .line 289
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -164,7 +164,7 @@
     .line 294
     aget-object v2, p1, v0
 
-    iget-object v2, v2, Lcom/squareup/okhttp/CipherSuite;->aS:Ljava/lang/String;
+    iget-object v2, v2, Lcom/squareup/okhttp/CipherSuite;->mStringaS:Ljava/lang/String;
 
     aput-object v2, v1, v0
 
@@ -175,7 +175,7 @@
 
     .line 296
     :cond_1
-    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b:[Ljava/lang/String;
+    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringb:[Ljava/lang/String;
 
     .line 297
     return-object p0
@@ -186,7 +186,7 @@
 
     .prologue
     .line 314
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -230,7 +230,7 @@
     .line 322
     aget-object v2, p1, v0
 
-    iget-object v2, v2, Lcom/squareup/okhttp/TlsVersion;->e:Ljava/lang/String;
+    iget-object v2, v2, Lcom/squareup/okhttp/TlsVersion;->mStringe:Ljava/lang/String;
 
     aput-object v2, v1, v0
 
@@ -241,7 +241,7 @@
 
     .line 324
     :cond_2
-    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c:[Ljava/lang/String;
+    iput-object v1, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringc:[Ljava/lang/String;
 
     .line 325
     return-object p0
@@ -252,7 +252,7 @@
 
     .prologue
     .line 301
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -271,7 +271,7 @@
     .line 304
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringb:[Ljava/lang/String;
 
     .line 310
     :goto_0
@@ -285,7 +285,7 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->b:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringb:[Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -309,7 +309,7 @@
 
     .prologue
     .line 329
-    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -328,7 +328,7 @@
     .line 332
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringc:[Ljava/lang/String;
 
     .line 338
     :goto_0
@@ -342,7 +342,7 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->c:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/ConnectionSpec$ICv;->mArrayStringc:[Ljava/lang/String;
 
     goto :goto_0
 .end method

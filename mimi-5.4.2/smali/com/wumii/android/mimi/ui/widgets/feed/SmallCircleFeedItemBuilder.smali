@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 15
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     .line 16
     return-void
@@ -37,7 +37,7 @@
     .line 21
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SmallCircleFeedItemBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;-><init>(Landroid/content/Context;)V
 

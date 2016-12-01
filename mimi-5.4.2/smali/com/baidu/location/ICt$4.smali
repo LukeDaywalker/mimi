@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICt;
+.field final synthetic mICta:Lcom/baidu/location/ICt;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICt;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iput-object p1, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -28,7 +28,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-static {}, Lcom/baidu/location/ICc;->for()Ljava/lang/String;
 
@@ -36,15 +36,15 @@
 
     iput-object v1, v0, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICt;->X()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     iget v0, v0, Lcom/baidu/location/ICt;->c8:I
 
-    iget-object v1, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v1, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-static {v1}, Lcom/baidu/location/ICt;->if(Lcom/baidu/location/ICt;)V
 
@@ -66,7 +66,7 @@
     :try_start_0
     new-instance v1, Lorg/apache/http/client/methods/HttpPost;
 
-    iget-object v7, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v7, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     iget-object v7, v7, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
 
@@ -77,7 +77,7 @@
     :try_start_1
     new-instance v2, Lorg/apache/http/entity/ByteArrayEntity;
 
-    iget-object v7, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v7, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     iget-object v7, v7, Lcom/baidu/location/ICt;->c3:[B
 
@@ -183,7 +183,7 @@
 
     if-ne v7, v8, :cond_3
 
-    iget-object v7, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v7, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-interface {v2}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
 
@@ -191,7 +191,7 @@
 
     iput-object v2, v7, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
 
-    iget-object v2, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v2, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     const/4 v7, 0x1
 
@@ -208,20 +208,20 @@
 
     sput v0, Lcom/baidu/location/ICt;->c6:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     iput-object v6, v0, Lcom/baidu/location/ICt;->cY:Lorg/apache/http/HttpEntity;
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-virtual {v0, v4}, Lcom/baidu/location/ICt;->do(Z)V
 
     :goto_2
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     iput-object v6, v0, Lcom/baidu/location/ICt;->c3:[B
 
-    iget-object v0, p0, Lcom/baidu/location/ICt$4;->a:Lcom/baidu/location/ICt;
+    iget-object v0, p0, Lcom/baidu/location/ICt$4;->mICta:Lcom/baidu/location/ICt;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICt;->if(Lcom/baidu/location/ICt;Z)Z
 

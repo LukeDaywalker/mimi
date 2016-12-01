@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/concurrent/Callable;
+.field final synthetic mArrayExceptionb:[Ljava/lang/Exception;
 
-.field final synthetic b:[Ljava/lang/Exception;
+.field final synthetic mCallablea:Ljava/util/concurrent/Callable;
 
-.field final synthetic c:Ljava/util/concurrent/CountDownLatch;
+.field final synthetic mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
-.field final synthetic d:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+.field final synthetic mICbpd:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 291
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->d:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mICbpd:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->a:Ljava/util/concurrent/Callable;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCallablea:Ljava/util/concurrent/Callable;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->b:[Ljava/lang/Exception;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mArrayExceptionb:[Ljava/lang/Exception;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->c:Ljava/util/concurrent/CountDownLatch;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     .prologue
     .line 295
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->a:Ljava/util/concurrent/Callable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCallablea:Ljava/util/concurrent/Callable;
 
     invoke-interface {v0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
     :try_end_0
@@ -51,7 +51,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 299
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->c:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -65,7 +65,7 @@
 
     .line 297
     :try_start_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->b:[Ljava/lang/Exception;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mArrayExceptionb:[Ljava/lang/Exception;
 
     const/4 v2, 0x0
 
@@ -74,7 +74,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 299
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->c:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -83,7 +83,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->c:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbv;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 

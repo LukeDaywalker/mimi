@@ -7,9 +7,9 @@
 
 .field private latch:Ljava/util/concurrent/CountDownLatch;
 
-.field private final lc:Lch/qos/logback/classic/LoggerContext;
-
 .field logger:Lorg/slf4j/Logger;
+
+.field private final mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
 
 .field private final port:I
 
@@ -51,7 +51,7 @@
 
     iput-object v0, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->socketNodeList:Ljava/util/List;
 
-    iput-object p1, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->lc:Lch/qos/logback/classic/LoggerContext;
+    iput-object p1, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
 
     iput p2, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->port:I
 
@@ -560,7 +560,7 @@
 
     new-instance v2, Lch/qos/logback/classic/net/SocketNode;
 
-    iget-object v3, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->lc:Lch/qos/logback/classic/LoggerContext;
+    iget-object v3, p0, Lch/qos/logback/classic/net/SimpleSocketServer;->mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
 
     invoke-direct {v2, p0, v0, v3}, Lch/qos/logback/classic/net/SocketNode;-><init>(Lch/qos/logback/classic/net/SimpleSocketServer;Ljava/net/Socket;Lch/qos/logback/classic/LoggerContext;)V
 

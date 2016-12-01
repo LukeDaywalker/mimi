@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private c:Landroid/view/View;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/TextView;
+.field private mImageViewf:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/ImageView;
+.field private mImageViewi:Landroid/widget/ImageView;
 
-.field private f:Landroid/widget/ImageView;
+.field private mImageViewj:Landroid/widget/ImageView;
 
-.field private g:Landroid/view/View;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private h:Landroid/widget/TextView;
+.field private mTextViewh:Landroid/widget/TextView;
 
-.field private i:Landroid/widget/ImageView;
+.field private mTextViewk:Landroid/widget/TextView;
 
-.field private j:Landroid/widget/ImageView;
+.field private mViewc:Landroid/view/View;
 
-.field private k:Landroid/widget/TextView;
+.field private mViewg:Landroid/view/View;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewa:Landroid/widget/ImageView;
 
     .line 207
     const v0, 0x7f0b0151
@@ -55,7 +55,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewb:Landroid/widget/ImageView;
 
     .line 208
     const v0, 0x7f0b014f
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mViewc:Landroid/view/View;
 
     .line 209
     const v0, 0x7f0b0152
@@ -75,7 +75,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewd:Landroid/widget/TextView;
 
     .line 210
     const v0, 0x7f0b0154
@@ -86,7 +86,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewe:Landroid/widget/ImageView;
 
     .line 211
     const v0, 0x7f0b0155
@@ -97,7 +97,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewf:Landroid/widget/ImageView;
 
     .line 212
     const v0, 0x7f0b0153
@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->g:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mViewg:Landroid/view/View;
 
     .line 213
     const v0, 0x7f0b0156
@@ -117,7 +117,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->h:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewh:Landroid/widget/TextView;
 
     .line 214
     const v0, 0x7f0b0157
@@ -128,7 +128,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->i:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewi:Landroid/widget/ImageView;
 
     .line 215
     const v0, 0x7f0b0158
@@ -139,7 +139,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->j:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewj:Landroid/widget/ImageView;
 
     .line 216
     const v0, 0x7f0b00dd
@@ -150,7 +150,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->k:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewk:Landroid/widget/TextView;
 
     .line 217
     return-void
@@ -161,7 +161,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->i:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewi:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -171,7 +171,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -181,7 +181,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewe:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -191,7 +191,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewd:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -201,7 +201,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -211,7 +211,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->h:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewh:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mViewg:Landroid/view/View;
 
     return-object v0
 .end method
@@ -231,7 +231,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->k:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mTextViewk:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -241,7 +241,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -251,7 +251,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewf:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -261,7 +261,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->j:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->mImageViewj:Landroid/widget/ImageView;
 
     return-object v0
 .end method

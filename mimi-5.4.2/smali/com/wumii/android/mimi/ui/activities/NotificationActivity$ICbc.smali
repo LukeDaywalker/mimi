@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 280
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/NotificationObserver;-><init>()V
 
@@ -37,7 +37,7 @@
     if-ne v0, v1, :cond_0
 
     .line 286
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->d(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -47,7 +47,7 @@
 
     .line 289
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Landroid/widget/TextView;
 
@@ -68,7 +68,7 @@
     const/4 v2, 0x1
 
     .line 294
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->d(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 297
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;
 
@@ -91,7 +91,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;->a(Ljava/util/List;)V
 
     .line 299
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->d(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -100,7 +100,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 301
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Landroid/widget/TextView;
 
@@ -118,7 +118,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -147,14 +147,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 309
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -166,7 +166,7 @@
 
     .line 314
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->d(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -175,7 +175,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Z)V
 
     .line 315
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->d(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -184,13 +184,13 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 317
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->e(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter;
 
@@ -216,7 +216,7 @@
 
     .line 311
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbc;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 

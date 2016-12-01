@@ -4,9 +4,11 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field private mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private d:Ljava/util/Map;
+.field private mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -17,8 +19,6 @@
         }
     .end annotation
 .end field
-
-.field private q:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     .line 33
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
 
     if-eqz v0, :cond_0
 
@@ -78,12 +78,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -108,13 +108,13 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 61
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mICcjq:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     const-string/jumbo v1, "validationNeeded"
 
@@ -125,7 +125,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     const-string/jumbo v1, "validationQuestion"
 
@@ -146,7 +146,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->b()V
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
@@ -171,11 +171,11 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     const-string/jumbo v1, "cid"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mGroupChata:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 
@@ -188,7 +188,7 @@
 
     const-string/jumbo v1, "chat/group"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->d:Ljava/util/Map;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->mMapd:Ljava/util/Map;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 

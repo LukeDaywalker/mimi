@@ -4,9 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mContextc:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
+
+.field private mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/wumii/android/mimi/models/entities/SectionMap",
@@ -17,8 +19,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Landroid/content/Context;
 
 
 # direct methods
@@ -34,17 +34,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 31
     new-instance v0, Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/entities/SectionMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mContextc:Landroid/content/Context;
 
     .line 33
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->count(I)I
 
@@ -79,7 +79,7 @@
     .line 90
     new-instance v0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mContextc:Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -129,7 +129,7 @@
     if-nez p2, :cond_0
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300f2
 
@@ -156,7 +156,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->getHeader(I)Ljava/lang/Object;
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     .line 37
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->notifyDataSetChanged()V
@@ -223,7 +223,7 @@
     if-ge v1, v0, :cond_1
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->getData(I)Ljava/util/List;
 
@@ -256,7 +256,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -290,7 +290,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/SectionMap;->count()I
 
@@ -326,7 +326,7 @@
     if-ge v1, v0, :cond_1
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->getData(I)Ljava/util/List;
 
@@ -359,7 +359,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -389,7 +389,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->b:Lcom/wumii/android/mimi/models/entities/SectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->mSectionMapb:Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/SectionMap;->getData(I)Ljava/util/List;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Runnable;
+.field final synthetic mICwb:Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;
 
-.field final synthetic b:Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;
+.field final synthetic mRunnablea:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 72
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->b:Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->mICwb:Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->a:Ljava/lang/Runnable;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->mRunnablea:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/services/common/BackgroundPriorityRunnable;-><init>()V
 
@@ -31,7 +31,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->a:Ljava/lang/Runnable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICx;->mRunnablea:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

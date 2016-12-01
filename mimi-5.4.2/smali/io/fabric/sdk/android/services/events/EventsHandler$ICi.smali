@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Object;
+.field final synthetic mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-.field final synthetic b:Lio/fabric/sdk/android/services/events/EventsHandler;
+.field final synthetic mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 64
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->b:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->a:Ljava/lang/Object;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mObjecta:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +35,11 @@
     .prologue
     .line 68
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->b:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsHandler;->c:Lio/fabric/sdk/android/services/events/EventsStrategy;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/events/EventsStrategy;->a(Ljava/lang/Object;)V
     :try_end_0
@@ -54,7 +54,7 @@
     move-exception v0
 
     .line 70
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->b:Lio/fabric/sdk/android/services/events/EventsHandler;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/EventsHandler$ICi;->mEventsHandlerb:Lio/fabric/sdk/android/services/events/EventsHandler;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/events/EventsHandler;->a:Landroid/content/Context;
 

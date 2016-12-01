@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+.field final synthetic mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 394
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->mICbra:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 

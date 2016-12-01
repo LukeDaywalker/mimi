@@ -4,11 +4,22 @@
 
 
 # instance fields
-.field a:Ljava/lang/Object;
+.field mArrayListd:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Landroid/support/v4/app/Fragment;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field b:Ljava/lang/Object;
+.field mObjecta:Ljava/lang/Object;
 
-.field c:Landroid/support/v4/util/SimpleArrayMap;
+.field mObjectb:Ljava/lang/Object;
+
+.field mSimpleArrayMapc:Landroid/support/v4/util/SimpleArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/SimpleArrayMap",
@@ -20,18 +31,7 @@
     .end annotation
 .end field
 
-.field d:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList",
-            "<",
-            "Landroid/support/v4/app/Fragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field e:Landroid/support/v4/util/SimpleArrayMap;
+.field mSimpleArrayMape:Landroid/support/v4/util/SimpleArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/SimpleArrayMap",

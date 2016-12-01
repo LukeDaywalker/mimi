@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ProgressBar;
+.field private mCircleManagerd:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+.field private mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
-.field private c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+.field private mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private d:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mProgressBara:Landroid/widget/ProgressBar;
 
-.field private e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     return-object v0
 .end method
@@ -170,7 +170,7 @@
     if-eqz v5, :cond_0
 
     .line 122
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     sget-object v5, Lcom/wumii/android/mimi/models/entities/discover/RecommendType;->JOINABLE:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->d:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mCircleManagerd:Lcom/wumii/android/mimi/manager/CircleManager;
 
     return-object v0
 .end method
@@ -230,9 +230,9 @@
     invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->d:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mCircleManagerd:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)V
 
@@ -245,7 +245,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -273,7 +273,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     .line 57
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -284,14 +284,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->d:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mCircleManagerd:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 58
     new-instance v0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 66
     return-void
@@ -328,7 +328,7 @@
 
     check-cast v1, Landroid/widget/ProgressBar;
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->a:Landroid/widget/ProgressBar;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mProgressBara:Landroid/widget/ProgressBar;
 
     .line 73
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
@@ -339,10 +339,10 @@
 
     invoke-direct {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
     .line 74
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;
 
@@ -351,7 +351,7 @@
     invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)V
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
     invoke-virtual {v0, v1}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
@@ -378,7 +378,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mOnSharedPreferenceChangeListenere:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -395,12 +395,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->c:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mRecommendTypec:Lcom/wumii/android/mimi/models/entities/discover/RecommendType;
 
     if-ne v0, v1, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mDropDownItemListb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadRecommendCircles;->d()Ljava/util/List;
 
@@ -413,7 +413,7 @@
     invoke-direct {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->a(Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;Ljava/util/List;Ljava/util/List;)V
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->a:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->mProgressBara:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x8
 

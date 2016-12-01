@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private n:Landroid/support/v4/view/ViewPager;
+.field private mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
-.field private o:Lcom/viewpagerindicator/IconPageIndicator;
+.field private mIconPageIndicatoro:Lcom/viewpagerindicator/IconPageIndicator;
 
-.field private p:Lcom/wumii/android/mimi/models/service/ActivityService;
+.field private mViewPagern:Landroid/support/v4/view/ViewPager;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     check-cast v0, Landroid/support/v4/view/ViewPager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mViewPagern:Landroid/support/v4/view/ViewPager;
 
     .line 46
     const v0, 0x7f0b0057
@@ -81,7 +81,7 @@
 
     check-cast v0, Lcom/viewpagerindicator/IconPageIndicator;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->o:Lcom/viewpagerindicator/IconPageIndicator;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mIconPageIndicatoro:Lcom/viewpagerindicator/IconPageIndicator;
 
     .line 47
     return-void
@@ -130,7 +130,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/ActivityService;->b()V
 
@@ -159,13 +159,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mActivityServicep:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     .line 35
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->g()V
 
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mViewPagern:Landroid/support/v4/view/ViewPager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;)V
 
@@ -175,7 +175,7 @@
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;-><init>(Landroid/content/Context;)V
 
     .line 39
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mViewPagern:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->b()I
 
@@ -184,14 +184,14 @@
     invoke-virtual {v1, v2}, Landroid/support/v4/view/ViewPager;->setOffscreenPageLimit(I)V
 
     .line 40
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mViewPagern:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->o:Lcom/viewpagerindicator/IconPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mIconPageIndicatoro:Lcom/viewpagerindicator/IconPageIndicator;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->mViewPagern:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Lcom/viewpagerindicator/IconPageIndicator;->setViewPager(Landroid/support/v4/view/ViewPager;)V
 

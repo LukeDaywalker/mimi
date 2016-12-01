@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+.field private mCircleSelectorControllerr:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
-.field private o:Landroid/support/v4/view/ViewPager;
+.field private mCustomTabAdapterp:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-.field private p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+.field private mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-.field private q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
+.field private mGroupChatListFragmentPagerAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+.field private mOnSharedPreferenceChangeListeners:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private s:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mViewPagero:Landroid/support/v4/view/ViewPager;
 
 
 # direct methods
@@ -86,7 +86,7 @@
 
     check-cast v0, Landroid/support/v4/view/ViewPager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     .line 120
     const v0, 0x7f0b0057
@@ -97,7 +97,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     .line 121
     invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
@@ -175,7 +175,7 @@
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -192,7 +192,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v5}, Landroid/support/v4/view/ViewPager;->getId()I
 
@@ -200,12 +200,12 @@
 
     invoke-direct {v0, v1, v4, v5, v3}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;-><init>(Lcom/wumii/android/mimi/models/service/UserService;Landroid/support/v4/app/FragmentManager;ILjava/util/List;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mGroupChatListFragmentPagerAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mGroupChatListFragmentPagerAdapterq:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatListFragmentPagerAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
@@ -219,10 +219,10 @@
 
     invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;-><init>(Landroid/content/Context;Landroid/widget/LinearLayout$LayoutParams;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabAdapterp:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICda;
 
@@ -231,21 +231,21 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabAdapterp:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;)V
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setViewPager(Landroid/support/v4/view/ViewPager;)V
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdb;
 
@@ -278,7 +278,7 @@
 
     move-result-object v0
 
-    invoke-static {v4, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -286,7 +286,7 @@
 
     .line 191
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setCurrentItem(I)V
 
@@ -352,7 +352,7 @@
     if-ge v0, v1, :cond_3
 
     .line 197
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabAdapterp:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;->a(I)Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter$IndicatorTabView;
 
@@ -426,7 +426,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabAdapterp:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
     return-object v0
 .end method
@@ -469,7 +469,7 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCustomTabPageIndicatorn:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->getTabLayout()Lcom/viewpagerindicator/IcsLinearLayout;
 
@@ -570,7 +570,7 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->r:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCircleSelectorControllerr:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     if-nez v0, :cond_0
 
@@ -583,11 +583,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->r:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCircleSelectorControllerr:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     .line 247
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->r:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mCircleSelectorControllerr:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->b()V
 
@@ -662,7 +662,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getId()I
 
@@ -678,7 +678,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->o:Landroid/support/v4/view/ViewPager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mViewPagero:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v2}, Landroid/support/v4/view/ViewPager;->getCurrentItem()I
 
@@ -721,12 +721,12 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICcz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->s:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mOnSharedPreferenceChangeListeners:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->s:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mOnSharedPreferenceChangeListeners:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -782,7 +782,7 @@
     .line 108
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->s:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->mOnSharedPreferenceChangeListeners:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

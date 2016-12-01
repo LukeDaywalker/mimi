@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/pm/PackageInfo;
+.field private mPackageInfoa:Landroid/content/pm/PackageInfo;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->a:Landroid/content/pm/PackageInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -62,7 +62,7 @@
     .line 64
     new-instance v0, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mStringd:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -113,7 +113,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 76
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->a:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
 
     if-eqz v1, :cond_0
 
@@ -123,7 +123,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 78
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->a:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
 
     iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
 
@@ -247,10 +247,10 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mStringd:Ljava/lang/String;
 
     .line 48
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->q:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mStringq:Ljava/lang/String;
 
     .line 49
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SendFeedbackTask;->j()V
@@ -309,7 +309,7 @@
     .line 41
     const-string/jumbo v1, "type"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/SendFeedbackTask;->mStringq:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

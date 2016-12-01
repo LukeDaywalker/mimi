@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/os/Bundle;
+.field final synthetic mActivitye:Landroid/app/Activity;
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic mBundlea:Landroid/os/Bundle;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic mICbd:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic d:Lcom/tencent/tauth/Pro$ICb;
+.field final synthetic mProf:Lcom/tencent/connect/c/Pro;
 
-.field final synthetic e:Landroid/app/Activity;
+.field final synthetic mStringb:Ljava/lang/String;
 
-.field final synthetic f:Lcom/tencent/connect/c/Pro;
+.field final synthetic mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -26,17 +26,17 @@
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICb;->f:Lcom/tencent/connect/c/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICb;->mProf:Lcom/tencent/connect/c/Pro;
 
-    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICb;->a:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICb;->mBundlea:Landroid/os/Bundle;
 
-    iput-object p3, p0, Lcom/tencent/connect/c/Pro$ICb;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/connect/c/Pro$ICb;->mStringb:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/tencent/connect/c/Pro$ICb;->c:Ljava/lang/String;
+    iput-object p4, p0, Lcom/tencent/connect/c/Pro$ICb;->mStringc:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/tencent/connect/c/Pro$ICb;->d:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p5, p0, Lcom/tencent/connect/c/Pro$ICb;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
-    iput-object p6, p0, Lcom/tencent/connect/c/Pro$ICb;->e:Landroid/app/Activity;
+    iput-object p6, p0, Lcom/tencent/connect/c/Pro$ICb;->mActivitye:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +53,7 @@
     if-nez p1, :cond_2
 
     .line 182
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v1, "imageLocalUrl"
 
@@ -61,13 +61,13 @@
 
     .line 195
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->f:Lcom/tencent/connect/c/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mProf:Lcom/tencent/connect/c/Pro;
 
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICb;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICb;->mActivitye:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICb;->a:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICb;->mBundlea:Landroid/os/Bundle;
 
-    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICb;->d:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICb;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/connect/c/Pro;->a(Lcom/tencent/connect/c/Pro;Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$ICb;)V
 
@@ -78,7 +78,7 @@
 
     .line 184
     :cond_2
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mStringb:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -86,7 +86,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mStringc:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -95,12 +95,12 @@
     if-eqz v0, :cond_0
 
     .line 185
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->d:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
     if-eqz v0, :cond_1
 
     .line 186
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->d:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICb;->mICbd:Lcom/tencent/tauth/Pro$ICb;
 
     new-instance v1, Lcom/tencent/tauth/Pro$ICc;
 

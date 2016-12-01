@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+.field final synthetic mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
-.field final synthetic b:Lcom/wumii/android/mimi/util/UserProfileManager;
+.field final synthetic mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->b:Lcom/wumii/android/mimi/util/UserProfileManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mUserProfileManagerb:Lcom/wumii/android/mimi/util/UserProfileManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+    iput-object p2, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,12 +34,12 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
     if-eqz v0, :cond_0
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
     invoke-interface {v0, p1, p2}, Lcom/wumii/android/mimi/util/UserProfileManager$ICau;->a(Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;)V
 
@@ -53,12 +53,12 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
     if-eqz v0, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->a:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/UserProfileManager$ICat;->mICaua:Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
     invoke-interface {v0, p1, p2}, Lcom/wumii/android/mimi/util/UserProfileManager$ICau;->a(Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;)V
 

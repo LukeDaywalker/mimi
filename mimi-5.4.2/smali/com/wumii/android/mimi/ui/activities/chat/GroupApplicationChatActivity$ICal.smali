@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+.field final synthetic mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 451
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 455
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->l()Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
@@ -44,13 +44,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->x()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->getResources()Landroid/content/res/Resources;
 
@@ -67,11 +67,11 @@
     move-result-object v0
 
     .line 456
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->mGroupApplicationChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->k()Ljava/util/Map;
 

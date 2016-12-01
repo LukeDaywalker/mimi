@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private static final c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private static final mStringb:Ljava/lang/String;
 
-.field private static final d:Ljava/lang/String;
+.field private static final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     .prologue
     .line 36
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mClassa:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -32,25 +32,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mClassa:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->b:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringb:Ljava/lang/String;
 
     .line 37
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.internal.nls.logcat"
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/util/Debug;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     .line 39
     const-string/jumbo v0, "line.separator"
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->d:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringd:Ljava/lang/String;
 
     return-void
 
@@ -147,7 +147,7 @@
     .line 149
     new-instance v0, Ljava/lang/StringBuffer;
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->d:Ljava/lang/String;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringd:Ljava/lang/String;
 
     invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->d:Ljava/lang/String;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -210,7 +210,7 @@
 
     invoke-direct {v0, v2}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/util/Debug;->d:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -268,7 +268,7 @@
 
     move-result-object v0
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->d:Ljava/lang/String;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/util/Debug;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

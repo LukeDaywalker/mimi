@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/content/ModernAsyncTask;
+.field final synthetic mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 127
-    iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$3;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iput-object p1, p0, Landroid/support/v4/content/ModernAsyncTask$3;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
     invoke-direct {p0, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -42,7 +42,7 @@
     move-result-object v0
 
     .line 133
-    iget-object v1, p0, Landroid/support/v4/content/ModernAsyncTask$3;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v1, p0, Landroid/support/v4/content/ModernAsyncTask$3;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
     invoke-static {v1, v0}, Landroid/support/v4/content/ModernAsyncTask;->b(Landroid/support/v4/content/ModernAsyncTask;Ljava/lang/Object;)V
     :try_end_0
@@ -88,7 +88,7 @@
     move-exception v0
 
     .line 140
-    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$3;->a:Landroid/support/v4/content/ModernAsyncTask;
+    iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask$3;->mModernAsyncTaska:Landroid/support/v4/content/ModernAsyncTask;
 
     const/4 v1, 0x0
 

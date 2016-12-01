@@ -3,18 +3,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/platform/comapi/favrite/ICa;
+.field final synthetic mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
-.field private b:J
+.field private mJb:J
 
-.field private c:J
+.field private mJc:J
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/platform/comapi/favrite/ICa;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->a:Lcom/baidu/platform/comapi/favrite/ICa;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +36,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->b:J
+    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->mJb:J
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->c:J
+    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->mJc:J
 
     return-void
 .end method
@@ -82,9 +82,9 @@
 .method private c()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->c:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->mJc:J
 
-    iget-wide v2, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->b:J
+    iget-wide v2, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->mJb:J
 
     sub-long/2addr v0, v2
 

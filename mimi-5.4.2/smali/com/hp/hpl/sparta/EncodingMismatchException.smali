@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -68,7 +68,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/hp/hpl/sparta/ParseException;-><init>(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
 
     .line 27
-    iput-object p2, p0, Lcom/hp/hpl/sparta/EncodingMismatchException;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/hp/hpl/sparta/EncodingMismatchException;->mStringa:Ljava/lang/String;
 
     .line 28
     return-void
@@ -81,7 +81,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/hp/hpl/sparta/EncodingMismatchException;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/EncodingMismatchException;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field private mBitmape:Landroid/graphics/Bitmap;
 
-.field private e:Landroid/graphics/Bitmap;
+.field private mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 29
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 30
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->e:Landroid/graphics/Bitmap;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mBitmape:Landroid/graphics/Bitmap;
 
     .line 31
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     return-object v0
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->e:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mBitmape:Landroid/graphics/Bitmap;
 
     return-object v0
 .end method
@@ -150,19 +150,19 @@
     .line 61
     new-instance v1, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICat;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getImageUrl()Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
 
@@ -237,7 +237,7 @@
     .prologue
     .line 91
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getImage()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -360,7 +360,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController;->mSecretd:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 

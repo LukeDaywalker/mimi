@@ -3,11 +3,11 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # instance fields
-.field private b:Lcom/baidu/platform/comapi/map/ICv;
+.field private mICvb:Lcom/baidu/platform/comapi/map/ICv;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/ICw;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/map/ICw;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -56,11 +56,11 @@
     goto :goto_0
 
     :sswitch_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->b:Lcom/baidu/platform/comapi/map/ICv;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->mICvb:Lcom/baidu/platform/comapi/map/ICv;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->b:Lcom/baidu/platform/comapi/map/ICv;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->mICvb:Lcom/baidu/platform/comapi/map/ICv;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
@@ -93,7 +93,7 @@
 .method a(Lcom/baidu/platform/comapi/map/ICv;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICw;->b:Lcom/baidu/platform/comapi/map/ICv;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICw;->mICvb:Lcom/baidu/platform/comapi/map/ICv;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->b:Lcom/baidu/platform/comapi/map/ICv;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICw;->mICvb:Lcom/baidu/platform/comapi/map/ICv;
 
     return-void
 .end method

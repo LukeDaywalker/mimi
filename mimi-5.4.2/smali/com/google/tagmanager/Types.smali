@@ -4,19 +4,13 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/Object;
+.field private static mBooleanf:Ljava/lang/Boolean;
 
-.field private static b:Ljava/lang/Long;
+.field private static mDoublec:Ljava/lang/Double;
 
-.field private static c:Ljava/lang/Double;
+.field private static mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
-.field private static d:Lcom/google/tagmanager/TypedNumber;
-
-.field private static e:Ljava/lang/String;
-
-.field private static f:Ljava/lang/Boolean;
-
-.field private static g:Ljava/util/List;
+.field private static mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -27,7 +21,9 @@
     .end annotation
 .end field
 
-.field private static h:Ljava/util/Map;
+.field private static mLongb:Ljava/lang/Long;
+
+.field private static mMaph:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -39,7 +35,11 @@
     .end annotation
 .end field
 
-.field private static i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+.field private static final mObjecta:Ljava/lang/Object;
+
+.field private static mStringe:Ljava/lang/String;
+
+.field private static mTypedNumberd:Lcom/google/tagmanager/TypedNumber;
 
 
 # direct methods
@@ -54,14 +54,14 @@
     .line 36
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sput-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     .line 45
     new-instance v0, Ljava/lang/Long;
 
     invoke-direct {v0, v6, v7}, Ljava/lang/Long;-><init>(J)V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->b:Ljava/lang/Long;
+    sput-object v0, Lcom/google/tagmanager/Types;->mLongb:Ljava/lang/Long;
 
     .line 46
     new-instance v0, Ljava/lang/Double;
@@ -70,14 +70,14 @@
 
     invoke-direct {v0, v2, v3}, Ljava/lang/Double;-><init>(D)V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->c:Ljava/lang/Double;
+    sput-object v0, Lcom/google/tagmanager/Types;->mDoublec:Ljava/lang/Double;
 
     .line 47
     invoke-static {v6, v7}, Lcom/google/tagmanager/TypedNumber;->a(J)Lcom/google/tagmanager/TypedNumber;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/tagmanager/Types;->d:Lcom/google/tagmanager/TypedNumber;
+    sput-object v0, Lcom/google/tagmanager/Types;->mTypedNumberd:Lcom/google/tagmanager/TypedNumber;
 
     .line 48
     new-instance v0, Ljava/lang/String;
@@ -86,37 +86,37 @@
 
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->e:Ljava/lang/String;
+    sput-object v0, Lcom/google/tagmanager/Types;->mStringe:Ljava/lang/String;
 
     .line 49
     new-instance v0, Ljava/lang/Boolean;
 
     invoke-direct {v0, v4}, Ljava/lang/Boolean;-><init>(Z)V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->f:Ljava/lang/Boolean;
+    sput-object v0, Lcom/google/tagmanager/Types;->mBooleanf:Ljava/lang/Boolean;
 
     .line 50
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->g:Ljava/util/List;
+    sput-object v0, Lcom/google/tagmanager/Types;->mListg:Ljava/util/List;
 
     .line 51
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/google/tagmanager/Types;->h:Ljava/util/Map;
+    sput-object v0, Lcom/google/tagmanager/Types;->mMaph:Ljava/util/Map;
 
     .line 52
-    sget-object v0, Lcom/google/tagmanager/Types;->e:Ljava/lang/String;
+    sget-object v0, Lcom/google/tagmanager/Types;->mStringe:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/google/tagmanager/Types;->c(Ljava/lang/Object;)Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sput-object v0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     return-void
 .end method
@@ -126,7 +126,7 @@
 
     .prologue
     .line 91
-    sget-object v0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object v0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     return-object v0
 .end method
@@ -168,7 +168,7 @@
 
     .line 372
     :cond_1
-    sget-object v0, Lcom/google/tagmanager/Types;->f:Ljava/lang/Boolean;
+    sget-object v0, Lcom/google/tagmanager/Types;->mBooleanf:Ljava/lang/Boolean;
 
     goto :goto_0
 .end method
@@ -196,7 +196,7 @@
     .line 107
     if-nez p0, :cond_0
 
-    sget-object v0, Lcom/google/tagmanager/Types;->e:Ljava/lang/String;
+    sget-object v0, Lcom/google/tagmanager/Types;->mStringe:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -346,12 +346,12 @@
     move-result-object v7
 
     .line 199
-    sget-object v0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object v0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-ne v7, v0, :cond_2
 
     .line 202
-    sget-object p0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object p0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     goto :goto_0
 
@@ -472,17 +472,17 @@
     move-result-object v9
 
     .line 218
-    sget-object v0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object v0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-eq v8, v0, :cond_7
 
-    sget-object v0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object v0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     if-ne v9, v0, :cond_8
 
     .line 221
     :cond_7
-    sget-object p0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object p0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     goto/16 :goto_0
 
@@ -638,7 +638,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 244
-    sget-object p0, Lcom/google/tagmanager/Types;->i:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    sget-object p0, Lcom/google/tagmanager/Types;->mICbi:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     goto/16 :goto_0
 
@@ -665,7 +665,7 @@
     if-nez p0, :cond_0
 
     .line 379
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     .line 458
     :goto_0
@@ -701,7 +701,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 458
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto :goto_0
 
@@ -737,12 +737,12 @@
     move-result-object v4
 
     .line 390
-    sget-object v5, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v5, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     if-ne v4, v5, :cond_1
 
     .line 393
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto :goto_0
 
@@ -799,7 +799,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 404
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto :goto_0
 
@@ -840,17 +840,17 @@
     move-result-object v3
 
     .line 410
-    sget-object v4, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v4, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     if-eq v2, v4, :cond_4
 
-    sget-object v4, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v4, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     if-ne v3, v4, :cond_5
 
     .line 413
     :cond_4
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -876,7 +876,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 427
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -887,7 +887,7 @@
     invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     .line 435
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -923,12 +923,12 @@
     move-result-object v4
 
     .line 444
-    sget-object v5, Lcom/google/tagmanager/Types;->e:Ljava/lang/String;
+    sget-object v5, Lcom/google/tagmanager/Types;->mStringe:Ljava/lang/String;
 
     if-ne v4, v5, :cond_7
 
     .line 445
-    sget-object v0, Lcom/google/tagmanager/Types;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/tagmanager/Types;->mObjecta:Ljava/lang/Object;
 
     goto/16 :goto_0
 

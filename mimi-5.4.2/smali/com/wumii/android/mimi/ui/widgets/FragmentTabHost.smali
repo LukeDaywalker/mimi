@@ -7,7 +7,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/ArrayList;
+.field private isZh:Z
+
+.field private final mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -18,19 +20,17 @@
     .end annotation
 .end field
 
-.field private b:Landroid/widget/FrameLayout;
+.field private mContextc:Landroid/content/Context;
 
-.field private c:Landroid/content/Context;
+.field private mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
-.field private d:Landroid/support/v4/app/FragmentManager;
+.field private mFrameLayoutb:Landroid/widget/FrameLayout;
 
-.field private e:I
+.field private mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
-.field private f:Landroid/widget/TabHost$OnTabChangeListener;
+.field private mIe:I
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
-
-.field private h:Z
+.field private mOnTabChangeListenerf:Landroid/widget/TabHost$OnTabChangeListener;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     .line 138
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -69,7 +69,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     .line 143
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -91,7 +91,7 @@
     move v2, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -100,7 +100,7 @@
     if-ge v2, v0, :cond_0
 
     .line 339
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -160,7 +160,7 @@
 
     .line 347
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     if-eq v0, v1, :cond_5
 
@@ -168,7 +168,7 @@
     if-nez p2, :cond_2
 
     .line 349
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
@@ -176,12 +176,12 @@
 
     .line 351
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     if-eqz v0, :cond_3
 
     .line 352
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;)Landroid/support/v4/app/Fragment;
 
@@ -190,7 +190,7 @@
     if-eqz v0, :cond_3
 
     .line 354
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;)Landroid/support/v4/app/Fragment;
 
@@ -210,7 +210,7 @@
     if-nez v0, :cond_6
 
     .line 359
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mContextc:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->c(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;)Ljava/lang/Class;
 
@@ -231,7 +231,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/Fragment;
 
     .line 361
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->a(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;)Landroid/support/v4/app/Fragment;
 
@@ -246,7 +246,7 @@
     .line 368
     :cond_4
     :goto_2
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     .line 370
     :cond_5
@@ -273,12 +273,12 @@
 
     .prologue
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
     if-nez v0, :cond_0
 
     .line 221
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->findViewById(I)Landroid/view/View;
 
@@ -286,10 +286,10 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
     .line 222
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
     if-nez v0, :cond_0
 
@@ -306,7 +306,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -403,12 +403,12 @@
 
     invoke-direct {v1, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
     .line 177
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->setId(I)V
 
@@ -450,7 +450,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     .line 150
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -481,7 +481,7 @@
     .line 236
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mContextc:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICab;-><init>(Landroid/content/Context;)V
 
@@ -498,12 +498,12 @@
     invoke-direct {v1, v0, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;-><init>(Ljava/lang/String;Ljava/lang/Class;Landroid/os/Bundle;)V
 
     .line 241
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->h:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->isZh:Z
 
     if-eqz v2, :cond_0
 
     .line 245
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v2, v0}, Landroid/support/v4/app/FragmentManager;->a(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
@@ -529,7 +529,7 @@
     if-nez v0, :cond_0
 
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
@@ -547,7 +547,7 @@
 
     .line 254
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -579,7 +579,7 @@
     move v2, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -588,7 +588,7 @@
     if-ge v2, v0, :cond_3
 
     .line 268
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -597,7 +597,7 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     .line 269
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;->b(Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;)Ljava/lang/String;
 
@@ -628,7 +628,7 @@
     if-eqz v4, :cond_1
 
     .line 276
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->g:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mICadg:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$ICad;
 
     .line 267
     :cond_0
@@ -644,7 +644,7 @@
     if-nez v1, :cond_2
 
     .line 281
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v1}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
@@ -664,7 +664,7 @@
     :cond_3
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->isZh:Z
 
     .line 292
     invoke-direct {p0, v3, v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a(Ljava/lang/String;Landroid/support/v4/app/FragmentTransaction;)Landroid/support/v4/app/FragmentTransaction;
@@ -678,7 +678,7 @@
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->b()I
 
     .line 296
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->b()Z
 
@@ -697,7 +697,7 @@
     .line 303
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->h:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->isZh:Z
 
     .line 304
     return-void
@@ -718,7 +718,7 @@
     invoke-super {p0, v0}, Landroid/widget/TabHost;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 318
-    iget-object v0, p1, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$SavedState;->a:Ljava/lang/String;
+    iget-object v0, p1, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$SavedState;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->setCurrentTabByTag(Ljava/lang/String;)V
 
@@ -745,7 +745,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$SavedState;->a:Ljava/lang/String;
+    iput-object v0, v1, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost$SavedState;->mStringa:Ljava/lang/String;
 
     .line 311
     return-object v1
@@ -756,7 +756,7 @@
 
     .prologue
     .line 323
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->isZh:Z
 
     if-eqz v0, :cond_0
 
@@ -775,12 +775,12 @@
 
     .line 330
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->f:Landroid/widget/TabHost$OnTabChangeListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mOnTabChangeListenerf:Landroid/widget/TabHost$OnTabChangeListener;
 
     if-eqz v0, :cond_1
 
     .line 331
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->f:Landroid/widget/TabHost$OnTabChangeListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mOnTabChangeListenerf:Landroid/widget/TabHost$OnTabChangeListener;
 
     invoke-interface {v0, p1}, Landroid/widget/TabHost$OnTabChangeListener;->onTabChanged(Ljava/lang/String;)V
 
@@ -794,7 +794,7 @@
 
     .prologue
     .line 232
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->f:Landroid/widget/TabHost$OnTabChangeListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mOnTabChangeListenerf:Landroid/widget/TabHost$OnTabChangeListener;
 
     .line 233
     return-void
@@ -827,10 +827,10 @@
     invoke-super {p0}, Landroid/widget/TabHost;->setup()V
 
     .line 198
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mContextc:Landroid/content/Context;
 
     .line 199
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     .line 200
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a()V
@@ -850,19 +850,19 @@
     invoke-super {p0}, Landroid/widget/TabHost;->setup()V
 
     .line 206
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mContextc:Landroid/content/Context;
 
     .line 207
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->d:Landroid/support/v4/app/FragmentManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFragmentManagerd:Landroid/support/v4/app/FragmentManager;
 
     .line 208
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->e:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mIe:I
 
     .line 209
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->a()V
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->b:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->mFrameLayoutb:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p3}, Landroid/widget/FrameLayout;->setId(I)V
 

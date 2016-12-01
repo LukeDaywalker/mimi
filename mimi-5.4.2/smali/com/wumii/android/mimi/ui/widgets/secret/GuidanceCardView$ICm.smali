@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+.field final synthetic mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
+.field final synthetic mIClb:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 194
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->b:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->mIClb:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->b:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->mIClb:Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->b:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICl;->mActivityb:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICm;->mCircleTypea:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)V
 

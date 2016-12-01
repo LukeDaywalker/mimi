@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Luk/co/senab/photoview/PhotoViewAttacher;
+.field private mIc:I
 
-.field private final b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+.field private mId:I
 
-.field private c:I
+.field final synthetic mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-.field private d:I
+.field private final mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     .prologue
     .line 993
-    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iput-object p1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iput-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     .line 995
     return-void
@@ -63,7 +63,7 @@
 
     .line 1001
     :cond_0
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     const/4 v1, 0x1
 
@@ -80,7 +80,7 @@
     const/4 v9, 0x0
 
     .line 1006
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->b()Landroid/graphics/RectF;
 
@@ -168,10 +168,10 @@
 
     .line 1029
     :goto_2
-    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->c:I
+    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mIc:I
 
     .line 1030
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->d:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mId:I
 
     .line 1032
     invoke-static {}, Luk/co/senab/photoview/PhotoViewAttacher;->n()Z
@@ -245,7 +245,7 @@
 
     .line 1041
     :cond_3
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     move v3, p3
 
@@ -279,7 +279,7 @@
 
     .prologue
     .line 1048
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;->b()Z
 
@@ -294,7 +294,7 @@
 
     .line 1052
     :cond_1
-    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v0, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v0}, Luk/co/senab/photoview/PhotoViewAttacher;->c()Landroid/widget/ImageView;
 
@@ -303,7 +303,7 @@
     .line 1053
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     invoke-virtual {v1}, Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;->a()Z
 
@@ -312,14 +312,14 @@
     if-eqz v1, :cond_0
 
     .line 1055
-    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     invoke-virtual {v1}, Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;->c()I
 
     move-result v1
 
     .line 1056
-    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->b:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
+    iget-object v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mScrollerProxyb:Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;
 
     invoke-virtual {v2}, Luk/co/senab/photoview/scrollerproxy/ScrollerProxy;->d()I
 
@@ -349,7 +349,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->c:I
+    iget v6, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mIc:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -361,7 +361,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->d:I
+    iget v6, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mId:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -395,19 +395,19 @@
 
     .line 1066
     :cond_2
-    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-static {v3}, Luk/co/senab/photoview/PhotoViewAttacher;->b(Luk/co/senab/photoview/PhotoViewAttacher;)Landroid/graphics/Matrix;
 
     move-result-object v3
 
-    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->c:I
+    iget v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mIc:I
 
     sub-int/2addr v4, v1
 
     int-to-float v4, v4
 
-    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->d:I
+    iget v5, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mId:I
 
     sub-int/2addr v5, v2
 
@@ -416,9 +416,9 @@
     invoke-virtual {v3, v4, v5}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
     .line 1067
-    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v3, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->l()Landroid/graphics/Matrix;
 
@@ -427,10 +427,10 @@
     invoke-static {v3, v4}, Luk/co/senab/photoview/PhotoViewAttacher;->a(Luk/co/senab/photoview/PhotoViewAttacher;Landroid/graphics/Matrix;)V
 
     .line 1069
-    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->c:I
+    iput v1, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mIc:I
 
     .line 1070
-    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->d:I
+    iput v2, p0, Luk/co/senab/photoview/PhotoViewAttacher$FlingRunnable;->mId:I
 
     .line 1073
     invoke-static {v0, p0}, Luk/co/senab/photoview/Compat;->a(Landroid/view/View;Ljava/lang/Runnable;)V

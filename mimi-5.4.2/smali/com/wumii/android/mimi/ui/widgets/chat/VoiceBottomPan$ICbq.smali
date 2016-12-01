@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/GestureDetector;
+.field final synthetic mGestureDetectora:Landroid/view/GestureDetector;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+.field final synthetic mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 354
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->mVoiceBottomPanb:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->a:Landroid/view/GestureDetector;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->mGestureDetectora:Landroid/view/GestureDetector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 358
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->a:Landroid/view/GestureDetector;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbq;->mGestureDetectora:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

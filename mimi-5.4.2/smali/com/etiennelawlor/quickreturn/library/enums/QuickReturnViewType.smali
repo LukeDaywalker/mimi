@@ -25,7 +25,7 @@
 
 .field public static final enum e:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
-.field private static final synthetic f:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+.field private static final synthetic mArrayQuickReturnViewTypef:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
 
 # direct methods
@@ -113,7 +113,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->f:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mArrayQuickReturnViewTypef:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     return-void
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 6
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->f:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->mArrayQuickReturnViewTypef:[Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
     invoke-virtual {v0}, [Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->clone()Ljava/lang/Object;
 

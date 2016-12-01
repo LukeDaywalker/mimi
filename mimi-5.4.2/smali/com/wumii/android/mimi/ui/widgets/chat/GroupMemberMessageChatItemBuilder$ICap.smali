@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/ImageView;
+.field private mTextViewa:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/ImageView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewa:Landroid/widget/TextView;
 
     .line 119
     const v0, 0x7f0b0196
@@ -43,7 +43,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewe:Landroid/widget/TextView;
 
     .line 120
     const v0, 0x7f0b0197
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mImageViewd:Landroid/widget/ImageView;
 
     .line 121
     const v0, 0x7f0b0198
@@ -65,7 +65,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewb:Landroid/widget/TextView;
 
     .line 122
     const v0, 0x7f0b0199
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mImageViewc:Landroid/widget/ImageView;
 
     .line 123
     return-void
@@ -87,7 +87,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewe:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -97,7 +97,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mImageViewd:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -117,7 +117,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mImageViewc:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -127,7 +127,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method

@@ -5,23 +5,27 @@
 # static fields
 .field public static a:I
 
-.field static b:Landroid/content/ServiceConnection;
+.field private static isZt:Z
 
-.field private static final c:Ljava/lang/String;
+.field private static isZu:Z
 
-.field private static d:Lcom/baidu/a/a/a/ICb;
+.field private static mEBusStrategyTypeo:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
-.field private static e:Lcom/baidu/a/a/a/ICa;
+.field private static mICae:Lcom/baidu/a/a/a/ICa;
 
-.field private static f:I
+.field private static mICbd:Lcom/baidu/a/a/a/ICb;
 
-.field private static g:Ljava/lang/String;
+.field private static mIf:I
 
-.field private static h:Ljava/lang/String;
+.field private static mIs:I
 
-.field private static i:Ljava/lang/String;
+.field private static mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
-.field private static j:Ljava/util/List;
+.field private static mLatLngl:Lcom/baidu/mapapi/model/LatLng;
+
+.field private static mLatLngr:Lcom/baidu/mapapi/model/LatLng;
+
+.field private static mListj:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -32,27 +36,23 @@
     .end annotation
 .end field
 
-.field private static k:Lcom/baidu/mapapi/model/LatLng;
+.field static mServiceConnectionb:Landroid/content/ServiceConnection;
 
-.field private static l:Lcom/baidu/mapapi/model/LatLng;
+.field private static final mStringc:Ljava/lang/String;
 
-.field private static m:Ljava/lang/String;
+.field private static mStringg:Ljava/lang/String;
 
-.field private static n:Ljava/lang/String;
+.field private static mStringh:Ljava/lang/String;
 
-.field private static o:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+.field private static mStringi:Ljava/lang/String;
 
-.field private static p:Ljava/lang/String;
+.field private static mStringm:Ljava/lang/String;
 
-.field private static q:Ljava/lang/String;
+.field private static mStringn:Ljava/lang/String;
 
-.field private static r:Lcom/baidu/mapapi/model/LatLng;
+.field private static mStringp:Ljava/lang/String;
 
-.field private static s:I
-
-.field private static t:Z
-
-.field private static u:Z
+.field private static mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -69,49 +69,49 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const/4 v0, -0x1
 
     sput v0, Lcom/baidu/mapapi/utils/ICa;->a:I
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->h:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringh:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->i:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringi:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->p:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringp:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->q:Ljava/lang/String;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringq:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->r:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v1, Lcom/baidu/mapapi/utils/ICa;->mLatLngr:Lcom/baidu/mapapi/model/LatLng;
 
-    sput v2, Lcom/baidu/mapapi/utils/ICa;->s:I
+    sput v2, Lcom/baidu/mapapi/utils/ICa;->mIs:I
 
-    sput-boolean v2, Lcom/baidu/mapapi/utils/ICa;->t:Z
+    sput-boolean v2, Lcom/baidu/mapapi/utils/ICa;->isZt:Z
 
-    sput-boolean v2, Lcom/baidu/mapapi/utils/ICa;->u:Z
+    sput-boolean v2, Lcom/baidu/mapapi/utils/ICa;->isZu:Z
 
     new-instance v0, Lcom/baidu/mapapi/utils/ICc;
 
     invoke-direct {v0}, Lcom/baidu/mapapi/utils/ICc;-><init>()V
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->b:Landroid/content/ServiceConnection;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mServiceConnectionb:Landroid/content/ServiceConnection;
 
     return-void
 .end method
@@ -119,7 +119,7 @@
 .method static synthetic a(Lcom/baidu/a/a/a/ICa;)Lcom/baidu/a/a/a/ICa;
     .locals 0
 
-    sput-object p0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sput-object p0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     return-object p0
 .end method
@@ -127,7 +127,7 @@
 .method static synthetic a(Lcom/baidu/a/a/a/ICb;)Lcom/baidu/a/a/a/ICb;
     .locals 0
 
-    sput-object p0, Lcom/baidu/mapapi/utils/ICa;->d:Lcom/baidu/a/a/a/ICb;
+    sput-object p0, Lcom/baidu/mapapi/utils/ICa;->mICbd:Lcom/baidu/a/a/a/ICb;
 
     return-object p0
 .end method
@@ -145,17 +145,17 @@
 .method public static a(Landroid/content/Context;)V
     .locals 1
 
-    sget-boolean v0, Lcom/baidu/mapapi/utils/ICa;->u:Z
+    sget-boolean v0, Lcom/baidu/mapapi/utils/ICa;->isZu:Z
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->b:Landroid/content/ServiceConnection;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mServiceConnectionb:Landroid/content/ServiceConnection;
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/mapapi/utils/ICa;->u:Z
+    sput-boolean v0, Lcom/baidu/mapapi/utils/ICa;->isZu:Z
 
     :cond_0
     return-void
@@ -179,23 +179,23 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-static {p1}, Lcom/baidu/mapapi/utils/ICa;->c(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->h:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringh:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->i:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringi:Ljava/lang/String;
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -217,7 +217,7 @@
 
     check-cast v0, Lcom/baidu/mapapi/utils/poi/DispathcPoiData;
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -308,26 +308,26 @@
     const/4 v1, 0x0
 
     :try_start_0
-    sput-boolean v1, Lcom/baidu/mapapi/utils/ICa;->t:Z
+    sput-boolean v1, Lcom/baidu/mapapi/utils/ICa;->isZt:Z
 
     packed-switch p1, :pswitch_data_0
 
     :goto_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->d:Lcom/baidu/a/a/a/ICb;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICbd:Lcom/baidu/a/a/a/ICb;
 
     if-eqz v1, :cond_1
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/ICa;->u:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/ICa;->isZu:Z
 
     if-eqz v1, :cond_1
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     if-eqz v1, :cond_0
 
     const/4 v1, 0x1
 
-    sput-boolean v1, Lcom/baidu/mapapi/utils/ICa;->t:Z
+    sput-boolean v1, Lcom/baidu/mapapi/utils/ICa;->isZt:Z
 
     invoke-static {p1}, Lcom/baidu/mapapi/utils/ICa;->a(I)Z
 
@@ -410,7 +410,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->d:Lcom/baidu/a/a/a/ICb;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICbd:Lcom/baidu/a/a/a/ICb;
 
     new-instance v2, Lcom/baidu/mapapi/utils/ICb;
 
@@ -503,7 +503,7 @@
 .method static synthetic a(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/baidu/mapapi/utils/ICa;->t:Z
+    sput-boolean p0, Lcom/baidu/mapapi/utils/ICa;->isZt:Z
 
     return p0
 .end method
@@ -511,7 +511,7 @@
 .method static synthetic b()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -545,7 +545,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->b:Landroid/content/ServiceConnection;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mServiceConnectionb:Landroid/content/ServiceConnection;
 
     const/4 v2, 0x1
 
@@ -553,7 +553,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/baidu/mapapi/utils/ICa;->u:Z
+    sput-boolean v0, Lcom/baidu/mapapi/utils/ICa;->isZu:Z
 
     goto :goto_0
 .end method
@@ -565,7 +565,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/mapapi/navi/NaviParaOption;->getStartPoint()Lcom/baidu/mapapi/model/LatLng;
 
@@ -577,7 +577,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_0
     invoke-virtual {p0}, Lcom/baidu/mapapi/navi/NaviParaOption;->getEndPoint()Lcom/baidu/mapapi/model/LatLng;
@@ -590,7 +590,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_1
     invoke-virtual {p0}, Lcom/baidu/mapapi/navi/NaviParaOption;->getStartName()Ljava/lang/String;
@@ -603,7 +603,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     :cond_2
     invoke-virtual {p0}, Lcom/baidu/mapapi/navi/NaviParaOption;->getEndName()Ljava/lang/String;
@@ -616,7 +616,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     :cond_3
     return-void
@@ -629,7 +629,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->getUid()Ljava/lang/String;
 
@@ -641,7 +641,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->p:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringp:Ljava/lang/String;
 
     :cond_0
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->getKey()Ljava/lang/String;
@@ -654,7 +654,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->q:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringq:Ljava/lang/String;
 
     :cond_1
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->getCenter()Lcom/baidu/mapapi/model/LatLng;
@@ -667,7 +667,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->r:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mLatLngr:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_2
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->getRadius()I
@@ -680,7 +680,7 @@
 
     move-result v0
 
-    sput v0, Lcom/baidu/mapapi/utils/ICa;->s:I
+    sput v0, Lcom/baidu/mapapi/utils/ICa;->mIs:I
 
     :cond_3
     return-void
@@ -693,7 +693,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/route/RouteParaOption;->getStartPoint()Lcom/baidu/mapapi/model/LatLng;
 
@@ -705,7 +705,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_0
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/route/RouteParaOption;->getEndPoint()Lcom/baidu/mapapi/model/LatLng;
@@ -718,7 +718,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_1
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/route/RouteParaOption;->getStartName()Ljava/lang/String;
@@ -731,7 +731,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     :cond_2
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/route/RouteParaOption;->getEndName()Ljava/lang/String;
@@ -744,7 +744,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     :cond_3
     invoke-virtual {p0}, Lcom/baidu/mapapi/utils/route/RouteParaOption;->getBusStrategyType()Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
@@ -757,7 +757,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->o:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    sput-object v0, Lcom/baidu/mapapi/utils/ICa;->mEBusStrategyTypeo:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     :cond_4
     packed-switch p2, :pswitch_data_0
@@ -768,21 +768,21 @@
     :pswitch_0
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/mapapi/utils/ICa;->f:I
+    sput v0, Lcom/baidu/mapapi/utils/ICa;->mIf:I
 
     goto :goto_0
 
     :pswitch_1
     const/4 v0, 0x1
 
-    sput v0, Lcom/baidu/mapapi/utils/ICa;->f:I
+    sput v0, Lcom/baidu/mapapi/utils/ICa;->mIf:I
 
     goto :goto_0
 
     :pswitch_2
     const/4 v0, 0x2
 
-    sput v0, Lcom/baidu/mapapi/utils/ICa;->f:I
+    sput v0, Lcom/baidu/mapapi/utils/ICa;->mIf:I
 
     goto :goto_0
 
@@ -797,7 +797,7 @@
 .method static synthetic c()Lcom/baidu/a/a/a/ICa;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     return-object v0
 .end method
@@ -852,7 +852,7 @@
 .method static synthetic d()Lcom/baidu/a/a/a/ICb;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->d:Lcom/baidu/a/a/a/ICb;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICbd:Lcom/baidu/a/a/a/ICb;
 
     return-object v0
 .end method
@@ -860,7 +860,7 @@
 .method static synthetic e()Z
     .locals 1
 
-    sget-boolean v0, Lcom/baidu/mapapi/utils/ICa;->t:Z
+    sget-boolean v0, Lcom/baidu/mapapi/utils/ICa;->isZt:Z
 
     return v0
 .end method
@@ -871,13 +871,13 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOutRoute"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v2, "map.android.baidu.mainmap"
 
@@ -903,13 +903,13 @@
 
     const-string/jumbo v4, "route_type"
 
-    sget v5, Lcom/baidu/mapapi/utils/ICa;->f:I
+    sget v5, Lcom/baidu/mapapi/utils/ICa;->mIf:I
 
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v4, "bus_strategy"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->o:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mEBusStrategyTypeo:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     invoke-virtual {v5}, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->ordinal()I
 
@@ -923,7 +923,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v4, :cond_0
 
@@ -935,7 +935,7 @@
 
     const-string/jumbo v4, "start_longitude"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v5}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -951,7 +951,7 @@
 
     const-string/jumbo v4, "start_latitude"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v5}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -966,13 +966,13 @@
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :goto_0
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     if-eqz v4, :cond_1
 
     const-string/jumbo v4, "start_keyword"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -983,7 +983,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v4, :cond_2
 
@@ -995,7 +995,7 @@
 
     const-string/jumbo v4, "end_longitude"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v5}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -1011,7 +1011,7 @@
 
     const-string/jumbo v4, "end_latitude"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v5}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -1026,13 +1026,13 @@
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :goto_2
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     if-eqz v4, :cond_3
 
     const-string/jumbo v4, "end_keyword"
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1063,7 +1063,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1085,7 +1085,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v4, "map.android.baidu.mainmap"
 
@@ -1122,7 +1122,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, "callDispatchTakeOut exception"
 
@@ -1171,7 +1171,7 @@
     goto/16 :goto_3
 
     :cond_4
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut com not found"
 
@@ -1186,13 +1186,13 @@
     .locals 6
 
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchTakeOutPoiDetials"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v1, "map.android.baidu.mainmap"
 
@@ -1216,13 +1216,13 @@
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->p:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mStringp:Ljava/lang/String;
 
     if-eqz v3, :cond_0
 
     const-string/jumbo v3, "uid"
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->p:Ljava/lang/String;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mStringp:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1247,7 +1247,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1269,7 +1269,7 @@
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v3, "map.android.baidu.mainmap"
 
@@ -1294,7 +1294,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut exception"
 
@@ -1307,7 +1307,7 @@
 
     :cond_1
     :try_start_1
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchTakeOut com not found"
 
@@ -1323,11 +1323,11 @@
 
     const/4 v2, 0x0
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1343,13 +1343,13 @@
 
     :cond_1
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchPoiToBaiduMap"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v1, "map.android.baidu.mainmap"
 
@@ -1382,7 +1382,7 @@
     move v1, v2
 
     :goto_1
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1390,7 +1390,7 @@
 
     if-ge v3, v0, :cond_3
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1402,7 +1402,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1420,7 +1420,7 @@
 
     if-nez v0, :cond_6
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1453,7 +1453,7 @@
     :try_start_1
     const-string/jumbo v9, "name"
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1465,7 +1465,7 @@
 
     invoke-virtual {v8, v9, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1497,7 +1497,7 @@
 
     const-string/jumbo v9, "addr"
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1511,7 +1511,7 @@
 
     const-string/jumbo v9, "uid"
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->j:Ljava/util/List;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1550,7 +1550,7 @@
     :catch_1
     move-exception v0
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, "callDispatchPoiToBaiduMap exception"
 
@@ -1580,19 +1580,19 @@
 
     const-string/jumbo v0, "from"
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->h:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v6, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "pkg"
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v6, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "cls"
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->i:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mStringi:Ljava/lang/String;
 
     invoke-virtual {v6, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1620,7 +1620,7 @@
 
     move-result-object v3
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1642,7 +1642,7 @@
 
     invoke-virtual {v5, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v1, "map.android.baidu.mainmap"
 
@@ -1653,7 +1653,7 @@
     goto/16 :goto_0
 
     :cond_5
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchPoiToBaiduMap com not found"
 
@@ -1686,13 +1686,13 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOutRouteNavi"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v2, "map.android.baidu.mainmap"
 
@@ -1732,7 +1732,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     if-eqz v5, :cond_0
 
@@ -1746,7 +1746,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1773,7 +1773,7 @@
 
     const/4 v7, 0x0
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -1785,7 +1785,7 @@
 
     const/4 v7, 0x1
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -1805,7 +1805,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     if-eqz v6, :cond_1
 
@@ -1819,7 +1819,7 @@
 
     move-result-object v6
 
-    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1846,7 +1846,7 @@
 
     const/4 v8, 0x0
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -1858,7 +1858,7 @@
 
     const/4 v8, 0x1
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -1910,7 +1910,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1932,7 +1932,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v4, "map.android.baidu.mainmap"
 
@@ -1944,7 +1944,7 @@
     return v0
 
     :cond_2
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut com not found"
 
@@ -1957,7 +1957,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, "callDispatchTakeOut exception"
 
@@ -1972,13 +1972,13 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOutRouteNavi"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v2, "map.android.baidu.mainmap"
 
@@ -2012,7 +2012,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     if-eqz v5, :cond_0
 
@@ -2026,7 +2026,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2053,7 +2053,7 @@
 
     const/4 v7, 0x0
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -2065,7 +2065,7 @@
 
     const/4 v7, 0x1
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -2085,7 +2085,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     if-eqz v6, :cond_1
 
@@ -2099,7 +2099,7 @@
 
     move-result-object v6
 
-    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2126,7 +2126,7 @@
 
     const/4 v8, 0x0
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -2138,7 +2138,7 @@
 
     const/4 v8, 0x1
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -2190,7 +2190,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2212,7 +2212,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v4, "map.android.baidu.mainmap"
 
@@ -2224,7 +2224,7 @@
     return v0
 
     :cond_2
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut com not found"
 
@@ -2237,7 +2237,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, "callDispatchTakeOut exception"
 
@@ -2252,13 +2252,13 @@
     const/4 v0, 0x0
 
     :try_start_0
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOutRouteRidingNavi"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v2, "map.android.baidu.mainmap"
 
@@ -2292,7 +2292,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     if-eqz v5, :cond_0
 
@@ -2306,7 +2306,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->m:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringm:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2333,7 +2333,7 @@
 
     const/4 v7, 0x0
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -2345,7 +2345,7 @@
 
     const/4 v7, 0x1
 
-    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->k:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v8, Lcom/baidu/mapapi/utils/ICa;->mLatLngk:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v8, v8, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -2365,7 +2365,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     if-eqz v6, :cond_1
 
@@ -2379,7 +2379,7 @@
 
     move-result-object v6
 
-    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->n:Ljava/lang/String;
+    sget-object v7, Lcom/baidu/mapapi/utils/ICa;->mStringn:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2406,7 +2406,7 @@
 
     const/4 v8, 0x0
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -2418,7 +2418,7 @@
 
     const/4 v8, 0x1
 
-    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->l:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v9, Lcom/baidu/mapapi/utils/ICa;->mLatLngl:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v10, v9, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -2470,7 +2470,7 @@
 
     move-result-object v5
 
-    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v6, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2492,7 +2492,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v4, "map.android.baidu.mainmap"
 
@@ -2504,7 +2504,7 @@
     return v0
 
     :cond_2
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut com not found"
 
@@ -2517,7 +2517,7 @@
     :catch_0
     move-exception v1
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, "callDispatchTakeOut exception"
 
@@ -2530,13 +2530,13 @@
     .locals 6
 
     :try_start_0
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchTakeOutPoiNearbySearch"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v1, "map.android.baidu.mainmap"
 
@@ -2560,24 +2560,24 @@
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->q:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mStringq:Ljava/lang/String;
 
     if-eqz v3, :cond_0
 
     const-string/jumbo v3, "search_key"
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->q:Ljava/lang/String;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mStringq:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
-    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->r:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v3, Lcom/baidu/mapapi/utils/ICa;->mLatLngr:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v3, :cond_1
 
     const-string/jumbo v3, "center_pt_x"
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->r:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mLatLngr:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v4}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -2593,7 +2593,7 @@
 
     const-string/jumbo v3, "center_pt_y"
 
-    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->r:Lcom/baidu/mapapi/model/LatLng;
+    sget-object v4, Lcom/baidu/mapapi/utils/ICa;->mLatLngr:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v4}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -2608,13 +2608,13 @@
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :goto_1
-    sget v3, Lcom/baidu/mapapi/utils/ICa;->s:I
+    sget v3, Lcom/baidu/mapapi/utils/ICa;->mIs:I
 
     if-eqz v3, :cond_2
 
     const-string/jumbo v3, "search_radius"
 
-    sget v4, Lcom/baidu/mapapi/utils/ICa;->s:I
+    sget v4, Lcom/baidu/mapapi/utils/ICa;->mIs:I
 
     invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -2651,7 +2651,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->g:Ljava/lang/String;
+    sget-object v5, Lcom/baidu/mapapi/utils/ICa;->mStringg:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2673,7 +2673,7 @@
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->e:Lcom/baidu/a/a/a/ICa;
+    sget-object v2, Lcom/baidu/mapapi/utils/ICa;->mICae:Lcom/baidu/a/a/a/ICa;
 
     const-string/jumbo v3, "map.android.baidu.mainmap"
 
@@ -2698,7 +2698,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, "callDispatchTakeOut exception"
 
@@ -2729,7 +2729,7 @@
     goto :goto_2
 
     :cond_3
-    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->c:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/mapapi/utils/ICa;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v1, "callDispatchTakeOut com not found"
 

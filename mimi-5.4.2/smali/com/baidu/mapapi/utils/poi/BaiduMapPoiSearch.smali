@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Z
+.field private static isZa:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sput-boolean v0, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -108,7 +108,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v1, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -118,7 +118,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v1, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -128,7 +128,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->d:I
+    iget v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mId:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -280,7 +280,7 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringa:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
@@ -293,7 +293,7 @@
     throw v0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -344,7 +344,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     if-eqz v1, :cond_5
 
@@ -368,7 +368,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     if-eqz v1, :cond_7
 
@@ -407,7 +407,7 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringb:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
@@ -420,7 +420,7 @@
     throw v0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -433,7 +433,7 @@
     throw v0
 
     :cond_3
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v1, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -441,7 +441,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v1, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -459,7 +459,7 @@
     throw v0
 
     :cond_5
-    iget v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->d:I
+    iget v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mId:I
 
     if-nez v1, :cond_6
 
@@ -472,7 +472,7 @@
     throw v0
 
     :cond_6
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/poi/PoiParaOption;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -523,7 +523,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     if-eqz v1, :cond_9
 
@@ -547,7 +547,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     if-eqz v1, :cond_b
 
@@ -568,7 +568,7 @@
 .method public static setSupportWebPoi(Z)V
     .locals 0
 
-    sput-boolean p0, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->a:Z
+    sput-boolean p0, Lcom/baidu/mapapi/utils/poi/BaiduMapPoiSearch;->isZa:Z
 
     return-void
 .end method

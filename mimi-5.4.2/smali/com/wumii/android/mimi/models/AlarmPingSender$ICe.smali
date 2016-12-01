@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+.field final synthetic mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 188
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -67,7 +67,7 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 195
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->f(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/Handler;
 
@@ -78,7 +78,7 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 196
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->c(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 

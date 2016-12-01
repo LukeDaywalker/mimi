@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+.field final synthetic mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 668
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;->mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 671
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICdz;->mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->g(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)Landroid/view/View;
 

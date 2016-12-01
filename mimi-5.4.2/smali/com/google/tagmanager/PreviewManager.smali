@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static a:Lcom/google/tagmanager/PreviewManager;
+.field private static mPreviewManagera:Lcom/google/tagmanager/PreviewManager;
 
 
 # instance fields
-.field private volatile b:Lcom/google/tagmanager/PreviewManager$ICan;
+.field private volatile mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
-.field private volatile c:Ljava/lang/String;
+.field private volatile mStringc:Ljava/lang/String;
 
-.field private volatile d:Ljava/lang/String;
+.field private volatile mStringd:Ljava/lang/String;
 
-.field private volatile e:Ljava/lang/String;
+.field private volatile mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     .line 59
     :try_start_0
-    sget-object v0, Lcom/google/tagmanager/PreviewManager;->a:Lcom/google/tagmanager/PreviewManager;
+    sget-object v0, Lcom/google/tagmanager/PreviewManager;->mPreviewManagera:Lcom/google/tagmanager/PreviewManager;
 
     if-nez v0, :cond_0
 
@@ -52,11 +52,11 @@
 
     invoke-direct {v0}, Lcom/google/tagmanager/PreviewManager;-><init>()V
 
-    sput-object v0, Lcom/google/tagmanager/PreviewManager;->a:Lcom/google/tagmanager/PreviewManager;
+    sput-object v0, Lcom/google/tagmanager/PreviewManager;->mPreviewManagera:Lcom/google/tagmanager/PreviewManager;
 
     .line 63
     :cond_0
-    sget-object v0, Lcom/google/tagmanager/PreviewManager;->a:Lcom/google/tagmanager/PreviewManager;
+    sget-object v0, Lcom/google/tagmanager/PreviewManager;->mPreviewManagera:Lcom/google/tagmanager/PreviewManager;
 
     monitor-exit v1
 
@@ -193,7 +193,7 @@
     .line 78
     sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->c:Lcom/google/tagmanager/PreviewManager$ICan;
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 97
     :goto_0
@@ -201,16 +201,16 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->e:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringe:Ljava/lang/String;
 
     .line 99
-    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     sget-object v2, Lcom/google/tagmanager/PreviewManager$ICan;->b:Lcom/google/tagmanager/PreviewManager$ICan;
 
     if-eq v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     sget-object v2, Lcom/google/tagmanager/PreviewManager$ICan;->c:Lcom/google/tagmanager/PreviewManager$ICan;
 
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/tagmanager/PreviewManager;->e:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/tagmanager/PreviewManager;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -238,17 +238,17 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringd:Ljava/lang/String;
 
     .line 103
     :cond_1
-    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringe:Ljava/lang/String;
 
     invoke-direct {p0, v1}, Lcom/google/tagmanager/PreviewManager;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->c:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringc:Ljava/lang/String;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -272,7 +272,7 @@
     :try_start_2
     sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->b:Lcom/google/tagmanager/PreviewManager$ICan;
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -306,7 +306,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/google/tagmanager/PreviewManager;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/google/tagmanager/PreviewManager;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -325,7 +325,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/tagmanager/PreviewManager;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/tagmanager/PreviewManager;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -340,12 +340,12 @@
     .line 85
     sget-object v1, Lcom/google/tagmanager/PreviewManager$ICan;->a:Lcom/google/tagmanager/PreviewManager$ICan;
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 86
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringd:Ljava/lang/String;
 
     goto :goto_1
 
@@ -390,7 +390,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     return-object v0
 .end method
@@ -400,7 +400,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -410,7 +410,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/tagmanager/PreviewManager;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -424,16 +424,16 @@
     .line 131
     sget-object v0, Lcom/google/tagmanager/PreviewManager$ICan;->a:Lcom/google/tagmanager/PreviewManager$ICan;
 
-    iput-object v0, p0, Lcom/google/tagmanager/PreviewManager;->b:Lcom/google/tagmanager/PreviewManager$ICan;
+    iput-object v0, p0, Lcom/google/tagmanager/PreviewManager;->mICanb:Lcom/google/tagmanager/PreviewManager$ICan;
 
     .line 132
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->d:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringd:Ljava/lang/String;
 
     .line 133
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->c:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringc:Ljava/lang/String;
 
     .line 134
-    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->e:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/tagmanager/PreviewManager;->mStringe:Ljava/lang/String;
 
     .line 135
     return-void

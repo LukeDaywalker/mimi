@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICz;
+.field final synthetic mICza:Lcom/baidu/location/ICz;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/ICz;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iput-object p1, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -41,17 +41,17 @@
 
     invoke-static {v0, v2, v3}, Lcom/baidu/location/ICz;->do(Lcom/baidu/location/ICz;J)J
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Z)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0, p1}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Landroid/location/Location;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x0
 
@@ -63,13 +63,13 @@
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Landroid/location/Location;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x0
 
@@ -95,20 +95,20 @@
     return-void
 
     :pswitch_0
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Landroid/location/Location;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Z)V
 
     goto :goto_0
 
     :pswitch_1
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -116,20 +116,20 @@
 
     invoke-static {v0, v2, v3}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;J)J
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICz;->do(Lcom/baidu/location/ICz;Z)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICz;->if(Lcom/baidu/location/ICz;Z)V
 
     goto :goto_0
 
     :pswitch_2
-    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$ICb;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICz;->do(Lcom/baidu/location/ICz;Z)Z
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
 
 # direct methods
@@ -47,13 +47,13 @@
 
     .prologue
     .line 42
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringa:Ljava/lang/String;
 
     .line 43
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringd:Ljava/lang/String;
 
     .line 44
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->q:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringq:Ljava/lang/String;
 
     .line 45
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ResetPasswordTask;->j()V
@@ -103,21 +103,21 @@
     .line 25
     const-string/jumbo v1, "pno"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     const-string/jumbo v1, "code"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
     const-string/jumbo v1, "pwd"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ResetPasswordTask;->mStringq:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 15
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;->mContexta:Landroid/content/Context;
 
     .line 16
     return-void
@@ -37,7 +37,7 @@
     .line 21
     new-instance p2, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/BuildingItemFeedBuilder;->mContexta:Landroid/content/Context;
 
     invoke-direct {p2, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/BuildingFeedCardView;-><init>(Landroid/content/Context;)V
 

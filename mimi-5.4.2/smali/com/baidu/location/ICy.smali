@@ -7,57 +7,57 @@
 
 
 # static fields
-.field private static e0:Ljava/lang/StringBuffer; = null
+.field private static isZe7:Z = false
 
-.field private static final e1:I = 0x5
+.field private static mDfa:D = 0.0
 
-.field private static e2:Ljava/io/File; = null
+.field private static mDfb:D = 0.0
 
-.field private static final e3:I = 0xe10
+.field private static mFilee2:Ljava/io/File; = null
 
-.field private static e4:I = 0x0
+.field private static mICyfm:Lcom/baidu/location/ICy; = null
 
-.field private static e5:J = 0x0L
+.field private static final mIe1:I = 0x5
 
-.field private static e6:J = 0x0L
+.field private static final mIe3:I = 0xe10
 
-.field private static e7:Z = false
+.field private static mIe4:I = 0x0
 
-.field private static final e8:I = 0x400
+.field private static final mIe8:I = 0x400
 
-.field private static e9:I = 0x0
+.field private static mIe9:I = 0x0
 
-.field private static final eZ:I = 0xc
+.field private static final mIeZ:I = 0xc
 
-.field private static fa:D = 0.0
+.field private static mIfd:I = 0x0
 
-.field private static fb:D = 0.0
+.field private static mIfe:I = 0x0
 
-.field private static fc:Ljava/lang/String; = null
+.field private static final mIff:I = 0x5
 
-.field private static fd:I = 0x0
+.field private static final mIfg:I = 0x2ee
 
-.field private static fe:I = 0x0
+.field private static final mIfh:I = 0x3e8
 
-.field private static final ff:I = 0x5
+.field private static final mIfj:I = 0x64
 
-.field private static final fg:I = 0x2ee
+.field private static mIfl:I
 
-.field private static final fh:I = 0x3e8
+.field private static mJe5:J
 
-.field private static final fj:I = 0x64
+.field private static mJe6:J
 
-.field private static fl:I
+.field private static mJfn:J
 
-.field private static fm:Lcom/baidu/location/ICy;
+.field private static mStringBuffere0:Ljava/lang/StringBuffer;
 
-.field private static fn:J
+.field private static mStringfc:Ljava/lang/String;
 
 
 # instance fields
-.field private fi:Ljava/lang/String;
+.field private isZfk:Z
 
-.field private fk:Z
+.field private mStringfi:Ljava/lang/String;
 
 
 # direct methods
@@ -72,47 +72,47 @@
 
     const/4 v3, 0x0
 
-    sput-object v8, Lcom/baidu/location/ICy;->fm:Lcom/baidu/location/ICy;
+    sput-object v8, Lcom/baidu/location/ICy;->mICyfm:Lcom/baidu/location/ICy;
 
     const-string/jumbo v0, "Temp_in.dat"
 
-    sput-object v0, Lcom/baidu/location/ICy;->fc:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICy;->mStringfc:Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/baidu/location/ICy;->I:Ljava/lang/String;
 
-    sget-object v2, Lcom/baidu/location/ICy;->fc:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICy;->mStringfc:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
-    sput-object v8, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sput-object v8, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/location/ICy;->e7:Z
+    sput-boolean v0, Lcom/baidu/location/ICy;->isZe7:Z
 
-    sput v3, Lcom/baidu/location/ICy;->fd:I
+    sput v3, Lcom/baidu/location/ICy;->mIfd:I
 
-    sput v3, Lcom/baidu/location/ICy;->fl:I
+    sput v3, Lcom/baidu/location/ICy;->mIfl:I
 
-    sput-wide v4, Lcom/baidu/location/ICy;->e6:J
+    sput-wide v4, Lcom/baidu/location/ICy;->mJe6:J
 
-    sput-wide v4, Lcom/baidu/location/ICy;->e5:J
+    sput-wide v4, Lcom/baidu/location/ICy;->mJe5:J
 
-    sput-wide v4, Lcom/baidu/location/ICy;->fn:J
+    sput-wide v4, Lcom/baidu/location/ICy;->mJfn:J
 
-    sput-wide v6, Lcom/baidu/location/ICy;->fa:D
+    sput-wide v6, Lcom/baidu/location/ICy;->mDfa:D
 
-    sput-wide v6, Lcom/baidu/location/ICy;->fb:D
+    sput-wide v6, Lcom/baidu/location/ICy;->mDfb:D
 
-    sput v3, Lcom/baidu/location/ICy;->e4:I
+    sput v3, Lcom/baidu/location/ICy;->mIe4:I
 
-    sput v3, Lcom/baidu/location/ICy;->e9:I
+    sput v3, Lcom/baidu/location/ICy;->mIe9:I
 
-    sput v3, Lcom/baidu/location/ICy;->fe:I
+    sput v3, Lcom/baidu/location/ICy;->mIfe:I
 
     return-void
 .end method
@@ -126,11 +126,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICy;->fi:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICy;->mStringfi:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICy;->fk:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICy;->isZfk:Z
 
     if-eqz p1, :cond_1
 
@@ -148,7 +148,7 @@
 
     :cond_0
     :goto_0
-    iput-object p1, p0, Lcom/baidu/location/ICy;->fi:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/ICy;->mStringfi:Ljava/lang/String;
 
     return-void
 
@@ -163,7 +163,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -171,12 +171,12 @@
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
     :cond_0
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -188,7 +188,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -198,13 +198,13 @@
 
     :cond_1
     :try_start_0
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
 
     new-instance v1, Ljava/io/RandomAccessFile;
 
-    sget-object v2, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v2, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     const-string/jumbo v3, "rw"
 
@@ -232,7 +232,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -250,11 +250,11 @@
 .method private aP()V
     .locals 2
 
-    sget-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
@@ -264,7 +264,7 @@
 
     if-lt v0, v1, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -289,31 +289,31 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/location/ICy;->e7:Z
+    sput-boolean v0, Lcom/baidu/location/ICy;->isZe7:Z
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sput-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
-    sput v1, Lcom/baidu/location/ICy;->fd:I
+    sput v1, Lcom/baidu/location/ICy;->mIfd:I
 
-    sput v1, Lcom/baidu/location/ICy;->fl:I
+    sput v1, Lcom/baidu/location/ICy;->mIfl:I
 
-    sput-wide v2, Lcom/baidu/location/ICy;->e6:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJe6:J
 
-    sput-wide v2, Lcom/baidu/location/ICy;->e5:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJe5:J
 
-    sput-wide v2, Lcom/baidu/location/ICy;->fn:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJfn:J
 
-    sput-wide v4, Lcom/baidu/location/ICy;->fa:D
+    sput-wide v4, Lcom/baidu/location/ICy;->mDfa:D
 
-    sput-wide v4, Lcom/baidu/location/ICy;->fb:D
+    sput-wide v4, Lcom/baidu/location/ICy;->mDfb:D
 
-    sput v1, Lcom/baidu/location/ICy;->e4:I
+    sput v1, Lcom/baidu/location/ICy;->mIe4:I
 
-    sput v1, Lcom/baidu/location/ICy;->e9:I
+    sput v1, Lcom/baidu/location/ICy;->mIe9:I
 
-    sput v1, Lcom/baidu/location/ICy;->fe:I
+    sput v1, Lcom/baidu/location/ICy;->mIfe:I
 
     return-void
 .end method
@@ -321,7 +321,7 @@
 .method public static aR()Lcom/baidu/location/ICy;
     .locals 2
 
-    sget-object v0, Lcom/baidu/location/ICy;->fm:Lcom/baidu/location/ICy;
+    sget-object v0, Lcom/baidu/location/ICy;->mICyfm:Lcom/baidu/location/ICy;
 
     if-nez v0, :cond_0
 
@@ -337,10 +337,10 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/location/ICy;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICy;->fm:Lcom/baidu/location/ICy;
+    sput-object v0, Lcom/baidu/location/ICy;->mICyfm:Lcom/baidu/location/ICy;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICy;->fm:Lcom/baidu/location/ICy;
+    sget-object v0, Lcom/baidu/location/ICy;->mICyfm:Lcom/baidu/location/ICy;
 
     return-object v0
 .end method
@@ -358,7 +358,7 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     if-nez v0, :cond_0
 
@@ -368,7 +368,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -384,7 +384,7 @@
     :try_start_0
     new-instance v3, Ljava/io/RandomAccessFile;
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     const-string/jumbo v2, "rw"
 
@@ -521,7 +521,7 @@
 .method private aU()Z
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -529,14 +529,14 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
     :cond_0
     invoke-static {}, Lcom/baidu/location/ICy;->aQ()V
 
-    sget-object v0, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -562,7 +562,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -577,7 +577,7 @@
     :try_start_0
     new-instance v2, Ljava/io/RandomAccessFile;
 
-    sget-object v1, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     const-string/jumbo v3, "rw"
 
@@ -708,7 +708,7 @@
     return v0
 
     :cond_1
-    sget-object v2, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v2, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
@@ -726,7 +726,7 @@
     :try_start_0
     new-instance v4, Ljava/io/RandomAccessFile;
 
-    sget-object v2, Lcom/baidu/location/ICy;->e2:Ljava/io/File;
+    sget-object v2, Lcom/baidu/location/ICy;->mFilee2:Ljava/io/File;
 
     const-string/jumbo v3, "rw"
 
@@ -1093,7 +1093,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICy;->fk:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICy;->isZfk:Z
 
     if-eqz v0, :cond_0
 
@@ -1148,13 +1148,13 @@
 
     div-long v10, v4, v6
 
-    sget-boolean v4, Lcom/baidu/location/ICy;->e7:Z
+    sget-boolean v4, Lcom/baidu/location/ICy;->isZe7:Z
 
     if-eqz v4, :cond_6
 
     const/4 v4, 0x1
 
-    sput v4, Lcom/baidu/location/ICy;->fd:I
+    sput v4, Lcom/baidu/location/ICy;->mIfd:I
 
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -1162,9 +1162,9 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    sput-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sput-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     sget-object v5, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
@@ -1176,7 +1176,7 @@
 
     const/4 v8, 0x0
 
-    iget-object v9, p0, Lcom/baidu/location/ICy;->fi:Ljava/lang/String;
+    iget-object v9, p0, Lcom/baidu/location/ICy;->mStringfi:Ljava/lang/String;
 
     aput-object v9, v7, v8
 
@@ -1210,19 +1210,19 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->length()I
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICy;->fl:I
+    sput v4, Lcom/baidu/location/ICy;->mIfl:I
 
-    sput-wide v10, Lcom/baidu/location/ICy;->e6:J
+    sput-wide v10, Lcom/baidu/location/ICy;->mJe6:J
 
-    sput-wide v2, Lcom/baidu/location/ICy;->fa:D
+    sput-wide v2, Lcom/baidu/location/ICy;->mDfa:D
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fb:D
+    sput-wide v0, Lcom/baidu/location/ICy;->mDfb:D
 
     const-wide v4, 0x40f86a0000000000L    # 100000.0
 
@@ -1238,7 +1238,7 @@
 
     double-to-long v2, v2
 
-    sput-wide v2, Lcom/baidu/location/ICy;->e5:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJe5:J
 
     const-wide v2, 0x40f86a0000000000L    # 100000.0
 
@@ -1254,11 +1254,11 @@
 
     double-to-long v0, v0
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fn:J
+    sput-wide v0, Lcom/baidu/location/ICy;->mJfn:J
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/baidu/location/ICy;->e7:Z
+    sput-boolean v0, Lcom/baidu/location/ICy;->isZe7:Z
 
     const/4 v0, 0x1
 
@@ -1295,13 +1295,13 @@
 
     new-array v8, v4, [F
 
-    sget-wide v4, Lcom/baidu/location/ICy;->fb:D
+    sget-wide v4, Lcom/baidu/location/ICy;->mDfb:D
 
-    sget-wide v6, Lcom/baidu/location/ICy;->fa:D
+    sget-wide v6, Lcom/baidu/location/ICy;->mDfa:D
 
     invoke-static/range {v0 .. v8}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
-    sget-wide v4, Lcom/baidu/location/ICy;->e6:J
+    sget-wide v4, Lcom/baidu/location/ICy;->mJe6:J
 
     sub-long v4, v10, v4
 
@@ -1326,19 +1326,19 @@
     if-ltz v4, :cond_b
 
     :cond_7
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     if-nez v4, :cond_a
 
-    sget v4, Lcom/baidu/location/ICy;->fd:I
+    sget v4, Lcom/baidu/location/ICy;->mIfd:I
 
     add-int/lit8 v4, v4, 0x1
 
-    sput v4, Lcom/baidu/location/ICy;->fd:I
+    sput v4, Lcom/baidu/location/ICy;->mIfd:I
 
     const/4 v4, 0x0
 
-    sput v4, Lcom/baidu/location/ICy;->fl:I
+    sput v4, Lcom/baidu/location/ICy;->mIfl:I
 
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -1346,9 +1346,9 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    sput-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sput-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     sget-object v5, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
@@ -1360,7 +1360,7 @@
 
     const/4 v8, 0x0
 
-    iget-object v9, p0, Lcom/baidu/location/ICy;->fi:Ljava/lang/String;
+    iget-object v9, p0, Lcom/baidu/location/ICy;->mStringfi:Ljava/lang/String;
 
     aput-object v9, v7, v8
 
@@ -1394,19 +1394,19 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->length()I
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICy;->fl:I
+    sput v4, Lcom/baidu/location/ICy;->mIfl:I
 
-    sput-wide v10, Lcom/baidu/location/ICy;->e6:J
+    sput-wide v10, Lcom/baidu/location/ICy;->mJe6:J
 
-    sput-wide v2, Lcom/baidu/location/ICy;->fa:D
+    sput-wide v2, Lcom/baidu/location/ICy;->mDfa:D
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fb:D
+    sput-wide v0, Lcom/baidu/location/ICy;->mDfb:D
 
     const-wide v4, 0x40f86a0000000000L    # 100000.0
 
@@ -1422,7 +1422,7 @@
 
     double-to-long v2, v2
 
-    sput-wide v2, Lcom/baidu/location/ICy;->e5:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJe5:J
 
     const-wide v2, 0x40f86a0000000000L    # 100000.0
 
@@ -1438,10 +1438,10 @@
 
     double-to-long v0, v0
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fn:J
+    sput-wide v0, Lcom/baidu/location/ICy;->mJfn:J
 
     :goto_3
-    sget v0, Lcom/baidu/location/ICy;->fl:I
+    sget v0, Lcom/baidu/location/ICy;->mIfl:I
 
     add-int/lit8 v0, v0, 0xf
 
@@ -1449,7 +1449,7 @@
 
     if-le v0, v1, :cond_8
 
-    sget-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -1459,10 +1459,10 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sput-object v0, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     :cond_8
-    sget v0, Lcom/baidu/location/ICy;->fd:I
+    sget v0, Lcom/baidu/location/ICy;->mIfd:I
 
     sget v1, Lcom/baidu/location/ICc;->aQ:I
 
@@ -1470,7 +1470,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICy;->fk:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICy;->isZfk:Z
 
     :cond_9
     const/4 v0, 0x1
@@ -1478,9 +1478,9 @@
     goto/16 :goto_0
 
     :cond_a
-    sput-wide v2, Lcom/baidu/location/ICy;->fa:D
+    sput-wide v2, Lcom/baidu/location/ICy;->mDfa:D
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fb:D
+    sput-wide v0, Lcom/baidu/location/ICy;->mDfb:D
 
     const-wide v4, 0x40f86a0000000000L    # 100000.0
 
@@ -1510,31 +1510,31 @@
 
     double-to-long v0, v0
 
-    sget-wide v4, Lcom/baidu/location/ICy;->e6:J
+    sget-wide v4, Lcom/baidu/location/ICy;->mJe6:J
 
     sub-long v4, v10, v4
 
     long-to-int v4, v4
 
-    sput v4, Lcom/baidu/location/ICy;->e4:I
+    sput v4, Lcom/baidu/location/ICy;->mIe4:I
 
-    sget-wide v4, Lcom/baidu/location/ICy;->e5:J
+    sget-wide v4, Lcom/baidu/location/ICy;->mJe5:J
 
     sub-long v4, v2, v4
 
     long-to-int v4, v4
 
-    sput v4, Lcom/baidu/location/ICy;->e9:I
+    sput v4, Lcom/baidu/location/ICy;->mIe9:I
 
-    sget-wide v4, Lcom/baidu/location/ICy;->fn:J
+    sget-wide v4, Lcom/baidu/location/ICy;->mJfn:J
 
     sub-long v4, v0, v4
 
     long-to-int v4, v4
 
-    sput v4, Lcom/baidu/location/ICy;->fe:I
+    sput v4, Lcom/baidu/location/ICy;->mIfe:I
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     sget-object v5, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
@@ -1546,7 +1546,7 @@
 
     const/4 v8, 0x0
 
-    sget v9, Lcom/baidu/location/ICy;->e4:I
+    sget v9, Lcom/baidu/location/ICy;->mIe4:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1556,7 +1556,7 @@
 
     const/4 v8, 0x1
 
-    sget v9, Lcom/baidu/location/ICy;->e9:I
+    sget v9, Lcom/baidu/location/ICy;->mIe9:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1566,7 +1566,7 @@
 
     const/4 v8, 0x2
 
-    sget v9, Lcom/baidu/location/ICy;->fe:I
+    sget v9, Lcom/baidu/location/ICy;->mIfe:I
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1580,19 +1580,19 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    sget-object v4, Lcom/baidu/location/ICy;->e0:Ljava/lang/StringBuffer;
+    sget-object v4, Lcom/baidu/location/ICy;->mStringBuffere0:Ljava/lang/StringBuffer;
 
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->length()I
 
     move-result v4
 
-    sput v4, Lcom/baidu/location/ICy;->fl:I
+    sput v4, Lcom/baidu/location/ICy;->mIfl:I
 
-    sput-wide v10, Lcom/baidu/location/ICy;->e6:J
+    sput-wide v10, Lcom/baidu/location/ICy;->mJe6:J
 
-    sput-wide v2, Lcom/baidu/location/ICy;->e5:J
+    sput-wide v2, Lcom/baidu/location/ICy;->mJe5:J
 
-    sput-wide v0, Lcom/baidu/location/ICy;->fn:J
+    sput-wide v0, Lcom/baidu/location/ICy;->mJfn:J
 
     goto/16 :goto_3
 

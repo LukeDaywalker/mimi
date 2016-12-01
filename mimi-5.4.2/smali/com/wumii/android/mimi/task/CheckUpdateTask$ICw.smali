@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+.field final synthetic mCheckUpdateTaska:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;->a:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;->mCheckUpdateTaska:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;->a:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;->mCheckUpdateTaska:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/CheckUpdateTask;->f()Z
 

@@ -11,35 +11,35 @@
 
 .field public static gj:Z = false
 
-.field private static final gk:Ljava/lang/String;
-
 .field public static gm:I = 0x0
 
 .field public static gn:Z = false
 
 .field public static go:Z = false
 
-.field private static final gp:I = 0x80
+.field public static gq:Z = false
 
-.field public static gq:Z
+.field public static gu:Z = false
 
-.field private static gr:Lcom/baidu/location/ICaa;
+.field public static gv:I = 0x0
 
-.field static gs:Z
+.field public static gw:Z = false
 
-.field public static gu:Z
+.field public static gx:I = 0x0
 
-.field public static gv:I
+.field static isZgs:Z = false
 
-.field public static gw:Z
+.field private static mICaagr:Lcom/baidu/location/ICaa; = null
 
-.field public static gx:I
+.field private static final mIgp:I = 0x80
+
+.field private static final mStringgk:Ljava/lang/String;
 
 
 # instance fields
-.field private gl:Lcom/baidu/location/ICaa$ICa;
+.field private mICagl:Lcom/baidu/location/ICaa$ICa;
 
-.field private gt:J
+.field private mJgt:J
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICaa;->gr:Lcom/baidu/location/ICaa;
+    sput-object v0, Lcom/baidu/location/ICaa;->mICaagr:Lcom/baidu/location/ICaa;
 
     sput-boolean v1, Lcom/baidu/location/ICaa;->go:Z
 
@@ -70,7 +70,7 @@
 
     sput-boolean v1, Lcom/baidu/location/ICaa;->gn:Z
 
-    sput-boolean v2, Lcom/baidu/location/ICaa;->gs:Z
+    sput-boolean v2, Lcom/baidu/location/ICaa;->isZgs:Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -92,7 +92,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICaa;->gk:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICaa;->mStringgk:Ljava/lang/String;
 
     sput v3, Lcom/baidu/location/ICaa;->gv:I
 
@@ -110,17 +110,17 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaa;->gl:Lcom/baidu/location/ICaa$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICaa;->mICagl:Lcom/baidu/location/ICaa$ICa;
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICaa;->gt:J
+    iput-wide v0, p0, Lcom/baidu/location/ICaa;->mJgt:J
 
     new-instance v0, Lcom/baidu/location/ICaa$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaa$ICa;-><init>(Lcom/baidu/location/ICaa;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaa;->gl:Lcom/baidu/location/ICaa$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICaa;->mICagl:Lcom/baidu/location/ICaa$ICa;
 
     return-void
 .end method
@@ -671,7 +671,7 @@
     :try_start_0
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICaa;->gk:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICaa;->mStringgk:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -744,7 +744,7 @@
 .method public static bf()Lcom/baidu/location/ICaa;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICaa;->gr:Lcom/baidu/location/ICaa;
+    sget-object v0, Lcom/baidu/location/ICaa;->mICaagr:Lcom/baidu/location/ICaa;
 
     if-nez v0, :cond_0
 
@@ -752,10 +752,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICaa;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICaa;->gr:Lcom/baidu/location/ICaa;
+    sput-object v0, Lcom/baidu/location/ICaa;->mICaagr:Lcom/baidu/location/ICaa;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICaa;->gr:Lcom/baidu/location/ICaa;
+    sget-object v0, Lcom/baidu/location/ICaa;->mICaagr:Lcom/baidu/location/ICaa;
 
     return-object v0
 .end method
@@ -825,7 +825,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICaa;->gl:Lcom/baidu/location/ICaa$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICaa;->mICagl:Lcom/baidu/location/ICaa$ICa;
 
     const/4 v2, 0x0
 
@@ -975,7 +975,7 @@
     :try_start_0
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/baidu/location/ICaa;->gk:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICaa;->mStringgk:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -1587,7 +1587,7 @@
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICaa;->gk:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICaa;->mStringgk:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -1982,7 +1982,7 @@
 .method public o(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICaa;->gl:Lcom/baidu/location/ICaa$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICaa;->mICagl:Lcom/baidu/location/ICaa$ICa;
 
     const/4 v1, 0x1
 

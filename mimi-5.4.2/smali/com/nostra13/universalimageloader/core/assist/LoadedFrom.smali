@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-.field private static final synthetic d:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+.field private static final synthetic mArrayLoadedFromd:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->d:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sput-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mArrayLoadedFromd:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 8
-    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->d:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
+    sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->mArrayLoadedFromd:[Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->clone()Ljava/lang/Object;
 

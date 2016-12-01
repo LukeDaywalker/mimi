@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+.field final synthetic mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/SetUserProfileTask;-><init>(Landroid/app/Activity;)V
 
@@ -30,16 +30,16 @@
     invoke-super {p0, p1, p2}, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)V
 
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->getIntent()Landroid/content/Intent;
 
@@ -48,7 +48,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 159
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->onBackPressed()V
 

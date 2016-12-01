@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/squareup/okhttp/HttpUrl;
+.field private mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
-.field private b:Ljava/lang/String;
+.field private mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
-.field private c:Lcom/squareup/okhttp/Headers$ICab;
+.field private mObjecte:Ljava/lang/Object;
 
-.field private d:Lcom/squareup/okhttp/RequestBody;
+.field private mRequestBodyd:Lcom/squareup/okhttp/RequestBody;
 
-.field private e:Ljava/lang/Object;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -26,14 +26,14 @@
     .line 128
     const-string/jumbo v0, "GET"
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mStringb:Ljava/lang/String;
 
     .line 129
     new-instance v0, Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/Headers$ICab;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     .line 130
     return-void
@@ -51,28 +51,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->a:Lcom/squareup/okhttp/HttpUrl;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
     .line 134
     invoke-static {p1}, Lcom/squareup/okhttp/Request;->b(Lcom/squareup/okhttp/Request;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mStringb:Ljava/lang/String;
 
     .line 135
     invoke-static {p1}, Lcom/squareup/okhttp/Request;->c(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/RequestBody;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->d:Lcom/squareup/okhttp/RequestBody;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mRequestBodyd:Lcom/squareup/okhttp/RequestBody;
 
     .line 136
     invoke-static {p1}, Lcom/squareup/okhttp/Request;->d(Lcom/squareup/okhttp/Request;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->e:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mObjecte:Ljava/lang/Object;
 
     .line 137
     invoke-static {p1}, Lcom/squareup/okhttp/Request;->e(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Headers;
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iput-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     .line 138
     return-void
@@ -104,7 +104,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->a:Lcom/squareup/okhttp/HttpUrl;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -124,7 +124,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     return-object v0
 .end method
@@ -134,7 +134,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->d:Lcom/squareup/okhttp/RequestBody;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mRequestBodyd:Lcom/squareup/okhttp/RequestBody;
 
     return-object v0
 .end method
@@ -144,7 +144,7 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->e:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mObjecte:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -168,7 +168,7 @@
 
     .line 142
     :cond_0
-    iput-object p1, p0, Lcom/squareup/okhttp/Request$ICap;->a:Lcom/squareup/okhttp/HttpUrl;
+    iput-object p1, p0, Lcom/squareup/okhttp/Request$ICap;->mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
     .line 143
     return-object p0
@@ -439,10 +439,10 @@
 
     .line 246
     :cond_3
-    iput-object p1, p0, Lcom/squareup/okhttp/Request$ICap;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/Request$ICap;->mStringb:Ljava/lang/String;
 
     .line 247
-    iput-object p2, p0, Lcom/squareup/okhttp/Request$ICap;->d:Lcom/squareup/okhttp/RequestBody;
+    iput-object p2, p0, Lcom/squareup/okhttp/Request$ICap;->mRequestBodyd:Lcom/squareup/okhttp/RequestBody;
 
     .line 248
     return-object p0
@@ -453,7 +453,7 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
 
@@ -523,7 +523,7 @@
 
     .prologue
     .line 262
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->a:Lcom/squareup/okhttp/HttpUrl;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mHttpUrla:Lcom/squareup/okhttp/HttpUrl;
 
     if-nez v0, :cond_0
 
@@ -551,7 +551,7 @@
 
     .prologue
     .line 187
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Headers$ICab;->b(Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
 
@@ -564,7 +564,7 @@
 
     .prologue
     .line 182
-    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->c:Lcom/squareup/okhttp/Headers$ICab;
+    iget-object v0, p0, Lcom/squareup/okhttp/Request$ICap;->mICabc:Lcom/squareup/okhttp/Headers$ICab;
 
     invoke-virtual {v0, p1, p2}, Lcom/squareup/okhttp/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/squareup/okhttp/Headers$ICab;
 

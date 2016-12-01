@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:Landroid/os/Handler;
+.field private isZc:Z
 
-.field private b:Ljava/lang/Object;
+.field private isZd:Z
 
-.field private c:Z
+.field mHandlera:Landroid/os/Handler;
 
-.field private d:Z
+.field private mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -20,21 +20,21 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZc:Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->d:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZd:Z
 
     return-void
 .end method
@@ -46,21 +46,21 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZc:Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->d:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZd:Z
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICa;->a(Ljava/lang/String;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -93,16 +93,16 @@
 .method public b()V
     .locals 2
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->c:Z
+    iget-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZc:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->wait()V
     :try_end_0
@@ -136,16 +136,16 @@
 .method public c()V
     .locals 2
 
-    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/lbsapi/auth/ICo;->isZc:Z
 
-    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mObjectb:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
 
@@ -172,7 +172,7 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->a:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/lbsapi/auth/ICo;->mHandlera:Landroid/os/Handler;
 
     sget-boolean v0, Lcom/baidu/lbsapi/auth/ICa;->a:Z
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+.field final synthetic mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     .line 60
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
@@ -67,7 +67,7 @@
     invoke-static {p1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdo;->mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 

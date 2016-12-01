@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private final b:I
+.field private final mBufferc:Lokio/Buffer;
 
-.field private final c:Lokio/Buffer;
+.field private final mIb:I
 
 
 # direct methods
@@ -40,10 +40,10 @@
 
     invoke-direct {v0}, Lokio/Buffer;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     .line 38
-    iput p1, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iput p1, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     .line 39
     return-void
@@ -71,11 +71,11 @@
     invoke-direct {v1}, Lokio/Buffer;-><init>()V
 
     .line 77
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     const-wide/16 v2, 0x0
 
-    iget-object v4, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v4, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v4}, Lokio/Buffer;->b()J
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 55
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -124,19 +124,19 @@
     invoke-static/range {v0 .. v5}, Lcom/squareup/okhttp/internal/Util;->a(JJJ)V
 
     .line 57
-    iget v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
     move-result-wide v0
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     int-to-long v2, v2
 
@@ -159,7 +159,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -181,7 +181,7 @@
 
     .line 60
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->a_(Lokio/Buffer;J)V
 
@@ -194,7 +194,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
@@ -208,7 +208,7 @@
 
     .prologue
     .line 46
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -220,16 +220,16 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->a:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->isZa:Z
 
     .line 48
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
     move-result-wide v0
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     int-to-long v2, v2
 
@@ -250,7 +250,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -262,7 +262,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->c:Lokio/Buffer;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/http/RetryableSink;->mBufferc:Lokio/Buffer;
 
     .line 50
     invoke-virtual {v2}, Lokio/Buffer;->b()J

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+.field private isZd:Z
 
-.field private d:Z
+.field final synthetic mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 334
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     .line 335
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -31,7 +31,7 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->mNearbyUserListActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->finish()V
 
@@ -44,7 +44,7 @@
 
     .prologue
     .line 356
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->d:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->isZd:Z
 
     .line 357
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->j()V
@@ -94,7 +94,7 @@
     .line 341
     const-string/jumbo v1, "discoverable"
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->d:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICv;->isZd:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

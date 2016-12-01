@@ -15,7 +15,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Class;
+.field private final mArrayClassc:[Ljava/lang/Class;
+
+.field private final mClassa:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -24,9 +26,7 @@
     .end annotation
 .end field
 
-.field private final b:Ljava/lang/String;
-
-.field private final c:[Ljava/lang/Class;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -49,13 +49,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 46
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->a:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mClassa:Ljava/lang/Class;
 
     .line 47
-    iput-object p2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mStringb:Ljava/lang/String;
 
     .line 48
-    iput-object p3, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->c:[Ljava/lang/Class;
+    iput-object p3, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mArrayClassc:[Ljava/lang/Class;
 
     .line 49
     return-void
@@ -77,14 +77,14 @@
 
     .line 149
     .line 150
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mStringb:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
     .line 151
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mStringb:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->c:[Ljava/lang/Class;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mArrayClassc:[Ljava/lang/Class;
 
     invoke-static {p1, v1, v2}, Lcom/squareup/okhttp/internal/OptionalMethod;->a(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -93,11 +93,11 @@
     .line 152
     if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->a:Ljava/lang/Class;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mClassa:Ljava/lang/Class;
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->a:Ljava/lang/Class;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mClassa:Ljava/lang/Class;
 
     .line 154
     invoke-virtual {v1}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
@@ -357,7 +357,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/OptionalMethod;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

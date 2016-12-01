@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/support/v4/app/FragmentManager;
+.field private mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private b:I
+.field private mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
-.field private c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mIb:I
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0, p1}, Landroid/support/v4/app/FragmentPagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;)V
 
     .line 19
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     .line 20
-    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mIb:I
 
     .line 21
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 22
     return-void
@@ -39,12 +39,12 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     aget-object v1, v0, p1
 
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -56,7 +56,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->b:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mIb:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -102,7 +102,7 @@
 
     .line 34
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     aget-object v0, v0, p1
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     array-length v0, v0
 
@@ -133,7 +133,7 @@
     const/4 v0, 0x0
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->c:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverSecretPagerAdapter;->mArrayFeedTypec:[Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     aget-object v1, v1, p1
 

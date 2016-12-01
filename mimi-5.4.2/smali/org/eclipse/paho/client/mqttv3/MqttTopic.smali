@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -313,7 +313,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttTopic;->a:Ljava/lang/String;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttTopic;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+.field final synthetic mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;->mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;->mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)Landroid/widget/LinearLayout;
 

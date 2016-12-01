@@ -3,17 +3,17 @@
 
 
 # static fields
-.field private static c9:Lcom/baidu/location/ICd;
+.field private static mICdc9:Lcom/baidu/location/ICd;
 
 
 # instance fields
-.field da:Landroid/os/Handler;
+.field mHandlerda:Landroid/os/Handler;
 
-.field db:Ljava/lang/String;
+.field mStringdb:Ljava/lang/String;
 
-.field dc:Ljava/lang/String;
+.field mStringdc:Ljava/lang/String;
 
-.field dd:Ljava/lang/String;
+.field mStringdd:Ljava/lang/String;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICd;->c9:Lcom/baidu/location/ICd;
+    sput-object v0, Lcom/baidu/location/ICd;->mICdc9:Lcom/baidu/location/ICd;
 
     return-void
 .end method
@@ -34,19 +34,19 @@
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->dd:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdd:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->da:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mHandlerda:Landroid/os/Handler;
 
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->da:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mHandlerda:Landroid/os/Handler;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
@@ -85,7 +85,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICd;->dd:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICd;->mStringdd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICd;->for(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -147,7 +147,7 @@
 .method private aa()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -204,7 +204,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/location/ICd;->dd:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICd;->mStringdd:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -216,7 +216,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -226,7 +226,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
     invoke-static {v1, v2}, Lcom/baidu/location/ICd;->for(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -293,7 +293,7 @@
 .method private ab()Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICd;->da:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICd;->mHandlerda:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -301,7 +301,7 @@
 .method public static ac()Lcom/baidu/location/ICd;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICd;->c9:Lcom/baidu/location/ICd;
+    sget-object v0, Lcom/baidu/location/ICd;->mICdc9:Lcom/baidu/location/ICd;
 
     if-nez v0, :cond_0
 
@@ -309,10 +309,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICd;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICd;->c9:Lcom/baidu/location/ICd;
+    sput-object v0, Lcom/baidu/location/ICd;->mICdc9:Lcom/baidu/location/ICd;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICd;->c9:Lcom/baidu/location/ICd;
+    sget-object v0, Lcom/baidu/location/ICd;->mICdc9:Lcom/baidu/location/ICd;
 
     return-object v0
 .end method
@@ -320,7 +320,7 @@
 .method private ad()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICd;->dd:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICd;->mStringdd:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -675,7 +675,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -687,7 +687,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -778,7 +778,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -862,7 +862,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->dd:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdd:Ljava/lang/String;
 
     const-string/jumbo v0, "u1"
 
@@ -878,7 +878,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->dc:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdc:Ljava/lang/String;
 
     :cond_0
     const-string/jumbo v0, "u2"
@@ -895,7 +895,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICd;->db:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICd;->mStringdb:Ljava/lang/String;
 
     :cond_1
     invoke-direct {p0}, Lcom/baidu/location/ICd;->ab()Landroid/os/Handler;

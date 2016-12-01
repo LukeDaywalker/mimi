@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private final a:Lorg/greenrobot/eventbus/PendingPostQueue;
+.field private isZd:Z
 
-.field private final b:I
+.field private final mEventBusc:Lorg/greenrobot/eventbus/EventBus;
 
-.field private final c:Lorg/greenrobot/eventbus/EventBus;
+.field private final mIb:I
 
-.field private d:Z
+.field private final mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
 
 # direct methods
@@ -22,17 +22,17 @@
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 32
-    iput-object p1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->c:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mEventBusc:Lorg/greenrobot/eventbus/EventBus;
 
     .line 33
-    iput p3, p0, Lorg/greenrobot/eventbus/HandlerPoster;->b:I
+    iput p3, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mIb:I
 
     .line 34
     new-instance v0, Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-direct {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     .line 35
     return-void
@@ -54,19 +54,19 @@
 
     .line 40
     :try_start_0
-    iget-object v1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 
     .line 41
-    iget-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iget-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     if-nez v0, :cond_0
 
     .line 42
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     .line 43
     invoke-virtual {p0}, Lorg/greenrobot/eventbus/HandlerPoster;->obtainMessage()Landroid/os/Message;
@@ -123,7 +123,7 @@
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a()Lorg/greenrobot/eventbus/PendingPost;
 
@@ -139,7 +139,7 @@
 
     .line 60
     :try_start_1
-    iget-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a()Lorg/greenrobot/eventbus/PendingPost;
 
@@ -151,7 +151,7 @@
     .line 62
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     .line 63
     monitor-exit p0
@@ -159,7 +159,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 78
-    iput-boolean v6, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iput-boolean v6, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     :goto_0
     return-void
@@ -174,7 +174,7 @@
     .line 67
     :cond_2
     :try_start_3
-    iget-object v1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->c:Lorg/greenrobot/eventbus/EventBus;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mEventBusc:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/EventBus;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 
@@ -186,7 +186,7 @@
     sub-long/2addr v0, v2
 
     .line 69
-    iget v4, p0, Lorg/greenrobot/eventbus/HandlerPoster;->b:I
+    iget v4, p0, Lorg/greenrobot/eventbus/HandlerPoster;->mIb:I
 
     int-to-long v4, v4
 
@@ -220,7 +220,7 @@
     :catchall_0
     move-exception v0
 
-    iput-boolean v6, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iput-boolean v6, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     throw v0
 
@@ -243,7 +243,7 @@
     const/4 v0, 0x1
 
     .line 78
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->d:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/HandlerPoster;->isZd:Z
 
     goto :goto_0
 .end method

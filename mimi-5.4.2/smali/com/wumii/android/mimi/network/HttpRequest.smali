@@ -4,13 +4,11 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+.field private mICff:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
-.field private b:Ljava/lang/String;
+.field private mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
-.field private c:Ljava/lang/String;
-
-.field private d:Ljava/util/Map;
+.field private mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -22,9 +20,11 @@
     .end annotation
 .end field
 
-.field private e:Ljava/lang/Object;
+.field private mObjecte:Ljava/lang/Object;
 
-.field private f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+.field private mStringb:Ljava/lang/String;
+
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -49,16 +49,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     .line 46
-    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringb:Ljava/lang/String;
 
     .line 47
-    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpRequest;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringc:Ljava/lang/String;
 
     .line 48
-    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpRequest;->d:Ljava/util/Map;
+    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mMapd:Ljava/util/Map;
 
     .line 49
     return-void
@@ -128,22 +128,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     .line 28
-    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringb:Ljava/lang/String;
 
     .line 29
-    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpRequest;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringc:Ljava/lang/String;
 
     .line 30
-    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpRequest;->d:Ljava/util/Map;
+    iput-object p4, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mMapd:Ljava/util/Map;
 
     .line 31
-    iput-object p5, p0, Lcom/wumii/android/mimi/network/HttpRequest;->e:Ljava/lang/Object;
+    iput-object p5, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mObjecte:Ljava/lang/Object;
 
     .line 32
-    iput-object p6, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+    iput-object p6, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICff:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     .line 33
     return-void
@@ -156,7 +156,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICia:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     return-object v0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICff:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     .line 77
     return-void
@@ -177,7 +177,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -187,7 +187,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -207,7 +207,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->d:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mMapd:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -217,7 +217,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->e:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mObjecte:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -227,7 +227,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->mICff:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     return-object v0
 .end method

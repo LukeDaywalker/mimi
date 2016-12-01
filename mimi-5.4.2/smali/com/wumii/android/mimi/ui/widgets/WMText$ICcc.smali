@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/WMText;
+.field private mStringb:Ljava/lang/String;
 
-.field private b:Ljava/lang/String;
+.field final synthetic mWMTexta:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
 
 # direct methods
@@ -15,12 +15,12 @@
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->a:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->mWMTexta:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
     .line 155
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->mStringb:Ljava/lang/String;
 
     .line 156
     return-void
@@ -35,7 +35,7 @@
     const v1, 0x7f0b002a
 
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->a:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->mWMTexta:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a(Lcom/wumii/android/mimi/ui/widgets/WMText;)Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
@@ -75,13 +75,13 @@
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->a:Lcom/wumii/android/mimi/ui/widgets/WMText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->mWMTexta:Lcom/wumii/android/mimi/ui/widgets/WMText;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a(Lcom/wumii/android/mimi/ui/widgets/WMText;)Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;->a(Landroid/view/View;Ljava/lang/String;)V
 

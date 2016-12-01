@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+.field private mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/a/a/q",
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
     .line 33
     return-void
@@ -43,7 +43,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
     invoke-virtual {v0, p1}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -60,7 +60,7 @@
     move-result-object v0
 
     .line 39
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache;->a:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/RegexCache;->mICqa:Lcom/google/i18n/phonenumbers/RegexCache$ICq;
 
     invoke-virtual {v1, p1, v0}, Lcom/google/i18n/phonenumbers/RegexCache$ICq;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 

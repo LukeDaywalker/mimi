@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mAbsCircleSelectorListenerb:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 85
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->a:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->mActivitya:Landroid/app/Activity;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->b:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->mAbsCircleSelectorListenerb:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICj;->mActivitya:Landroid/app/Activity;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper$ICk;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/support/v4/app/FragmentManager;
+.field private mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0, p1}, Landroid/support/v4/app/FragmentPagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;)V
 
     .line 17
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     .line 18
-    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;->b:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;->mIb:I
 
     .line 19
     return-void

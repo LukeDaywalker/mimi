@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/reflect/Method;
+.field private static final mMethoda:Ljava/lang/reflect/Method;
 
 
 # instance fields
-.field private b:Ljava/io/IOException;
+.field private mIOExceptionb:Ljava/io/IOException;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     .line 35
     :goto_0
-    sput-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->a:Ljava/lang/reflect/Method;
+    sput-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->mMethoda:Ljava/lang/reflect/Method;
 
     .line 36
     return-void
@@ -63,7 +63,7 @@
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
 
     .line 41
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RouteException;->b:Ljava/io/IOException;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RouteException;->mIOExceptionb:Ljava/io/IOException;
 
     .line 42
     return-void
@@ -74,13 +74,13 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->mMethoda:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
     .line 56
     :try_start_0
-    sget-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->a:Ljava/lang/reflect/Method;
+    sget-object v0, Lcom/squareup/okhttp/internal/http/RouteException;->mMethoda:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 
@@ -119,7 +119,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RouteException;->b:Ljava/io/IOException;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RouteException;->mIOExceptionb:Ljava/io/IOException;
 
     return-object v0
 .end method
@@ -129,12 +129,12 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RouteException;->b:Ljava/io/IOException;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/RouteException;->mIOExceptionb:Ljava/io/IOException;
 
     invoke-direct {p0, p1, v0}, Lcom/squareup/okhttp/internal/http/RouteException;->a(Ljava/io/IOException;Ljava/io/IOException;)V
 
     .line 50
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RouteException;->b:Ljava/io/IOException;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/RouteException;->mIOExceptionb:Ljava/io/IOException;
 
     .line 51
     return-void

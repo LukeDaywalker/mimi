@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
+.field final synthetic mVerificationActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;->mVerificationActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;->mVerificationActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)Landroid/widget/TextView;
 
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 

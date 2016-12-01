@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private n:Landroid/widget/EditText;
+.field private mEditTextn:Landroid/widget/EditText;
 
-.field private o:Landroid/widget/EditText;
+.field private mEditTexto:Landroid/widget/EditText;
 
-.field private p:Landroid/view/MenuItem;
+.field private mMenuItemp:Landroid/view/MenuItem;
 
-.field private q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
+.field private mSendFeedbackTaskq:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->p:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     return-object v0
 .end method
@@ -67,12 +67,12 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->p:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 62
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->p:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     if-eqz p1, :cond_0
 
@@ -104,7 +104,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 57
     const v0, 0x7f0b005f
@@ -115,7 +115,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->o:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTexto:Landroid/widget/EditText;
 
     .line 58
     return-void
@@ -126,7 +126,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mSendFeedbackTaskq:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     if-nez v0, :cond_0
 
@@ -135,11 +135,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/SendFeedbackTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mSendFeedbackTaskq:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     .line 69
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mSendFeedbackTaskq:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     return-object v0
 .end method
@@ -175,7 +175,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->g()V
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTextn:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$ICg;
 
@@ -208,10 +208,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->p:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -221,7 +221,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -256,7 +256,7 @@
 
     .line 85
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -285,7 +285,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->o:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

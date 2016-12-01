@@ -4,37 +4,37 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/Object;
+.field private static mGAServiceManagero:Lcom/google/analytics/tracking/android/GAServiceManager;
 
-.field private static o:Lcom/google/analytics/tracking/android/GAServiceManager;
+.field private static final mObjecta:Ljava/lang/Object;
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private isZf:Z
 
-.field private c:Lcom/google/analytics/tracking/android/AnalyticsStore;
+.field private isZg:Z
 
-.field private volatile d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+.field private isZi:Z
 
-.field private e:I
+.field private isZj:Z
 
-.field private f:Z
+.field private isZn:Z
 
-.field private g:Z
+.field private mAnalyticsStoreStateListenerk:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
 
-.field private h:Ljava/lang/String;
+.field private mAnalyticsStorec:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
-.field private i:Z
+.field private volatile mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
-.field private j:Z
+.field private mContextb:Landroid/content/Context;
 
-.field private k:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
+.field private mGANetworkReceiverm:Lcom/google/analytics/tracking/android/GANetworkReceiver;
 
-.field private l:Landroid/os/Handler;
+.field private mHandlerl:Landroid/os/Handler;
 
-.field private m:Lcom/google/analytics/tracking/android/GANetworkReceiver;
+.field private mIe:I
 
-.field private n:Z
+.field private mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     return-void
 .end method
@@ -64,28 +64,28 @@
     .line 45
     const/16 v0, 0x708
 
-    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iput v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     .line 46
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->f:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZf:Z
 
     .line 51
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
 
     .line 55
-    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->j:Z
+    iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZj:Z
 
     .line 57
     new-instance v0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;-><init>(Lcom/google/analytics/tracking/android/GAServiceManager;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->k:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStoreStateListenerk:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
 
     .line 71
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     .line 83
     return-void
@@ -96,7 +96,7 @@
 
     .prologue
     .line 76
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->o:Lcom/google/analytics/tracking/android/GAServiceManager;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGAServiceManagero:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     if-nez v0, :cond_0
 
@@ -105,11 +105,11 @@
 
     invoke-direct {v0}, Lcom/google/analytics/tracking/android/GAServiceManager;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->o:Lcom/google/analytics/tracking/android/GAServiceManager;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGAServiceManagero:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     .line 79
     :cond_0
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->o:Lcom/google/analytics/tracking/android/GAServiceManager;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGAServiceManagero:Lcom/google/analytics/tracking/android/GAServiceManager;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 26
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
 
     return v0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 26
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     return v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 26
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     return v0
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -159,7 +159,7 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -173,12 +173,12 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GANetworkReceiver;-><init>(Lcom/google/analytics/tracking/android/ServiceManager;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->m:Lcom/google/analytics/tracking/android/GANetworkReceiver;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGANetworkReceiverm:Lcom/google/analytics/tracking/android/GANetworkReceiver;
 
     .line 101
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->m:Lcom/google/analytics/tracking/android/GANetworkReceiver;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGANetworkReceiverm:Lcom/google/analytics/tracking/android/GANetworkReceiver;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GANetworkReceiver;->a(Landroid/content/Context;)V
 
@@ -193,7 +193,7 @@
     .line 105
     new-instance v0, Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -205,27 +205,27 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     .line 123
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     if-lez v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v2, 0x1
 
-    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     mul-int/lit16 v2, v2, 0x3e8
 
@@ -250,7 +250,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     if-nez v0, :cond_1
 
@@ -260,7 +260,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 223
-    iput p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iput p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -283,50 +283,50 @@
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 229
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     if-lez v0, :cond_2
 
     .line 230
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 232
     :cond_2
-    iput p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iput p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     .line 233
     if-lez p1, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
 
     if-eqz v0, :cond_0
 
     .line 234
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v2, 0x1
 
-    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -359,7 +359,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -379,18 +379,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
 
     .line 144
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     if-nez v0, :cond_0
 
     .line 145
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     .line 146
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->f:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZf:Z
 
     if-eqz v0, :cond_2
 
@@ -400,11 +400,11 @@
     .line 148
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->f:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZf:Z
 
     .line 150
     :cond_2
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->g:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZg:Z
 
     if-eqz v0, :cond_0
 
@@ -414,7 +414,7 @@
     .line 152
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->g:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZg:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -437,7 +437,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     invoke-virtual {p0, v0, p1}, Lcom/google/analytics/tracking/android/GAServiceManager;->a(ZZ)V
     :try_end_0
@@ -465,11 +465,11 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     if-ne v0, p1, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -489,16 +489,16 @@
 
     :cond_1
     :try_start_1
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     if-lez v0, :cond_2
 
     .line 258
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
@@ -508,24 +508,24 @@
 
     if-eqz p2, :cond_3
 
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     if-lez v0, :cond_3
 
     .line 261
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v2, 0x1
 
-    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     mul-int/lit16 v2, v2, 0x3e8
 
@@ -564,10 +564,10 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 266
-    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     .line 267
-    iput-boolean p2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iput-boolean p2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -599,12 +599,12 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->c:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStorec:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     if-nez v0, :cond_1
 
     .line 168
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -632,38 +632,38 @@
     :try_start_1
     new-instance v0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->k:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStoreStateListenerk:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
 
-    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1, v2}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;-><init>(Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->c:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStorec:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     .line 174
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mStringh:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 175
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->c:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStorec:Lcom/google/analytics/tracking/android/AnalyticsStore;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsStore;->b()Lcom/google/analytics/tracking/android/Dispatcher;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mStringh:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/google/analytics/tracking/android/Dispatcher;->a(Ljava/lang/String;)V
 
     .line 176
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mStringh:Ljava/lang/String;
 
     .line 179
     :cond_1
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     if-nez v0, :cond_2
 
@@ -672,11 +672,11 @@
 
     .line 183
     :cond_2
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->m:Lcom/google/analytics/tracking/android/GANetworkReceiver;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mGANetworkReceiverm:Lcom/google/analytics/tracking/android/GANetworkReceiver;
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->j:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZj:Z
 
     if-eqz v0, :cond_3
 
@@ -685,7 +685,7 @@
 
     .line 186
     :cond_3
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->c:Lcom/google/analytics/tracking/android/AnalyticsStore;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsStorec:Lcom/google/analytics/tracking/android/AnalyticsStore;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -704,7 +704,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     if-nez v0, :cond_0
 
@@ -716,7 +716,7 @@
     .line 209
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->f:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZf:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -738,7 +738,7 @@
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 214
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsThread;->a()V
     :try_end_1
@@ -762,7 +762,7 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     if-nez v0, :cond_0
 
@@ -774,7 +774,7 @@
     .line 245
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->g:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZg:Z
 
     .line 250
     :goto_0
@@ -791,7 +791,7 @@
     invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 249
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mAnalyticsThreadd:Lcom/google/analytics/tracking/android/AnalyticsThread;
 
     invoke-interface {v0}, Lcom/google/analytics/tracking/android/AnalyticsThread;->b()V
 
@@ -806,35 +806,35 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZn:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->i:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->isZi:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->e:I
+    iget v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mIe:I
 
     if-lez v0, :cond_0
 
     .line 281
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v2, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
 
     .line 282
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->l:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->mHandlerl:Landroid/os/Handler;
 
     const/4 v2, 0x1
 
-    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->a:Ljava/lang/Object;
+    sget-object v3, Lcom/google/analytics/tracking/android/GAServiceManager;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

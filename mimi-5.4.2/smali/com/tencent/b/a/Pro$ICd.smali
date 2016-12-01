@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/b/a/Pro$ICb;
+.field final synthetic mICba:Lcom/tencent/b/a/Pro$ICb;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICd;->a:Lcom/tencent/b/a/Pro$ICb;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro$ICd;->mICba:Lcom/tencent/b/a/Pro$ICb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     move-result-object v1
 
     .line 142
-    iget-object v2, p0, Lcom/tencent/b/a/Pro$ICd;->a:Lcom/tencent/b/a/Pro$ICb;
+    iget-object v2, p0, Lcom/tencent/b/a/Pro$ICd;->mICba:Lcom/tencent/b/a/Pro$ICb;
 
     invoke-virtual {v2}, Lcom/tencent/b/a/Pro$ICb;->j()Ljava/lang/String;
 

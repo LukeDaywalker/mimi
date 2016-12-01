@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field final a:Landroid/content/Intent;
-
-.field final b:Ljava/util/ArrayList;
+.field final mArrayListb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -16,6 +14,8 @@
         }
     .end annotation
 .end field
+
+.field final mIntenta:Landroid/content/Intent;
 
 
 # direct methods
@@ -37,10 +37,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 74
-    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$BroadcastRecord;->a:Landroid/content/Intent;
+    iput-object p1, p0, Landroid/support/v4/content/LocalBroadcastManager$BroadcastRecord;->mIntenta:Landroid/content/Intent;
 
     .line 75
-    iput-object p2, p0, Landroid/support/v4/content/LocalBroadcastManager$BroadcastRecord;->b:Ljava/util/ArrayList;
+    iput-object p2, p0, Landroid/support/v4/content/LocalBroadcastManager$BroadcastRecord;->mArrayListb:Ljava/util/ArrayList;
 
     .line 76
     return-void

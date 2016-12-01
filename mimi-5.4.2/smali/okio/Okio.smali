@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Ljava/util/logging/Logger;
+.field private static final mLoggera:Ljava/util/logging/Logger;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lokio/Okio;->a:Ljava/util/logging/Logger;
+    sput-object v0, Lokio/Okio;->mLoggera:Ljava/util/logging/Logger;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 36
-    sget-object v0, Lokio/Okio;->a:Ljava/util/logging/Logger;
+    sget-object v0, Lokio/Okio;->mLoggera:Ljava/util/logging/Logger;
 
     return-object v0
 .end method

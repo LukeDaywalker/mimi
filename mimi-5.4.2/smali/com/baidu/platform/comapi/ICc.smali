@@ -3,14 +3,14 @@
 
 
 # static fields
-.field private static a:Z
+.field private static isZa:Z
 
 
 # direct methods
 .method public static a(Ljava/lang/String;Landroid/content/Context;)V
     .locals 3
 
-    sget-boolean v0, Lcom/baidu/platform/comapi/ICc;->a:Z
+    sget-boolean v0, Lcom/baidu/platform/comapi/ICc;->isZa:Z
 
     if-nez v0, :cond_4
 
@@ -101,7 +101,7 @@
     :cond_3
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/platform/comapi/ICc;->a:Z
+    sput-boolean v0, Lcom/baidu/platform/comapi/ICc;->isZa:Z
 
     :cond_4
     return-void

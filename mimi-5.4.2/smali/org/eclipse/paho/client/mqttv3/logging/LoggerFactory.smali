@@ -4,13 +4,13 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
-.field private static c:Ljava/lang/String;
+.field private static mStringc:Ljava/lang/String;
 
-.field private static d:Ljava/lang/String;
+.field private static mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mClassa:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -32,24 +32,24 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mClassa:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->b:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringb:Ljava/lang/String;
 
     .line 48
     const/4 v0, 0x0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->c:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringc:Ljava/lang/String;
 
     .line 52
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.logging.JSR47Logger"
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->d:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringd:Ljava/lang/String;
 
     return-void
 
@@ -83,13 +83,13 @@
 
     .prologue
     .line 66
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->c:Ljava/lang/String;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringc:Ljava/lang/String;
 
     .line 69
     if-nez v0, :cond_0
 
     .line 70
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->d:Ljava/lang/String;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringd:Ljava/lang/String;
 
     .line 73
     :cond_0
@@ -111,7 +111,7 @@
 
     const-string/jumbo v1, "Error locating the logging class"
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->mStringb:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2, p1}, Ljava/util/MissingResourceException;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 

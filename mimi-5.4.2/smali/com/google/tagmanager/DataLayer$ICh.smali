@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/DataLayer;
+.field final synthetic mDataLayera:Lcom/google/tagmanager/DataLayer;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayer$ICh;->a:Lcom/google/tagmanager/DataLayer;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayer$ICh;->mDataLayera:Lcom/google/tagmanager/DataLayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,9 +57,9 @@
     check-cast v0, Lcom/google/tagmanager/DataLayer$ICi;
 
     .line 285
-    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICh;->a:Lcom/google/tagmanager/DataLayer;
+    iget-object v2, p0, Lcom/google/tagmanager/DataLayer$ICh;->mDataLayera:Lcom/google/tagmanager/DataLayer;
 
-    iget-object v3, p0, Lcom/google/tagmanager/DataLayer$ICh;->a:Lcom/google/tagmanager/DataLayer;
+    iget-object v3, p0, Lcom/google/tagmanager/DataLayer$ICh;->mDataLayera:Lcom/google/tagmanager/DataLayer;
 
     iget-object v4, v0, Lcom/google/tagmanager/DataLayer$ICi;->a:Ljava/lang/String;
 
@@ -75,7 +75,7 @@
 
     .line 287
     :cond_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer$ICh;->a:Lcom/google/tagmanager/DataLayer;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer$ICh;->mDataLayera:Lcom/google/tagmanager/DataLayer;
 
     invoke-static {v0}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer;)Ljava/util/concurrent/CountDownLatch;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Luk/co/senab/photoview/PhotoViewAttacher;
+.field private mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iput-object p1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     .line 33
     return-void
@@ -45,7 +45,7 @@
     const/4 v0, 0x1
 
     .line 70
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-nez v1, :cond_0
 
@@ -59,7 +59,7 @@
     .line 74
     :cond_0
     :try_start_0
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v1}, Luk/co/senab/photoview/PhotoViewAttacher;->g()F
 
@@ -76,7 +76,7 @@
     move-result v3
 
     .line 78
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->e()F
 
@@ -87,9 +87,9 @@
     if-gez v4, :cond_1
 
     .line 79
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->e()F
 
@@ -109,7 +109,7 @@
 
     .line 80
     :cond_1
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->e()F
 
@@ -119,7 +119,7 @@
 
     if-ltz v4, :cond_2
 
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->f()F
 
@@ -130,9 +130,9 @@
     if-gez v1, :cond_2
 
     .line 81
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->f()F
 
@@ -146,9 +146,9 @@
 
     .line 83
     :cond_2
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
-    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v4, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v4}, Luk/co/senab/photoview/PhotoViewAttacher;->d()F
 
@@ -180,7 +180,7 @@
     const/4 v0, 0x0
 
     .line 37
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     if-nez v1, :cond_1
 
@@ -191,14 +191,14 @@
 
     .line 40
     :cond_1
-    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v1, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v1}, Luk/co/senab/photoview/PhotoViewAttacher;->c()Landroid/widget/ImageView;
 
     move-result-object v1
 
     .line 42
-    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v2}, Luk/co/senab/photoview/PhotoViewAttacher;->i()Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
@@ -207,7 +207,7 @@
     if-eqz v2, :cond_2
 
     .line 43
-    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v2}, Luk/co/senab/photoview/PhotoViewAttacher;->b()Landroid/graphics/RectF;
 
@@ -255,7 +255,7 @@
     div-float v2, v3, v2
 
     .line 56
-    iget-object v3, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v3, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v3}, Luk/co/senab/photoview/PhotoViewAttacher;->i()Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;
 
@@ -270,7 +270,7 @@
 
     .line 61
     :cond_2
-    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v2}, Luk/co/senab/photoview/PhotoViewAttacher;->j()Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 
@@ -279,7 +279,7 @@
     if-eqz v2, :cond_0
 
     .line 62
-    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->a:Luk/co/senab/photoview/PhotoViewAttacher;
+    iget-object v2, p0, Luk/co/senab/photoview/DefaultOnDoubleTapListener;->mPhotoViewAttachera:Luk/co/senab/photoview/PhotoViewAttacher;
 
     invoke-virtual {v2}, Luk/co/senab/photoview/PhotoViewAttacher;->j()Luk/co/senab/photoview/PhotoViewAttacher$OnViewTapListener;
 

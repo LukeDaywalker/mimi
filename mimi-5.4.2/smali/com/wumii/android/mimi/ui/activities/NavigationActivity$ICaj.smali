@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 720
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->a:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -33,7 +33,7 @@
     const/4 v4, 0x0
 
     .line 724
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICan;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICan;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -53,9 +53,9 @@
 
     .line 726
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mStringa:Ljava/lang/String;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -65,7 +65,7 @@
 
     .line 729
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->k(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -78,11 +78,11 @@
     if-nez v0, :cond_0
 
     .line 730
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mStringa:Ljava/lang/String;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -96,9 +96,9 @@
 
     .line 732
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->k(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -112,7 +112,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->k(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -126,7 +126,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mStringa:Ljava/lang/String;
 
     sget-object v4, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -136,7 +136,7 @@
 
     .line 736
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -154,7 +154,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mStringa:Ljava/lang/String;
 
     sget-object v4, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -180,9 +180,9 @@
     .line 743
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->getResources()Landroid/content/res/Resources;
 
@@ -192,7 +192,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -215,7 +215,7 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 751
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     const v2, 0x7f060094
 
@@ -225,7 +225,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;->mNavigationActivityb:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v5, p1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)Ljava/lang/String;
 

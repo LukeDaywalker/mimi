@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Lorg/greenrobot/eventbus/PendingPostQueue;
+.field private final mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
-.field private final b:Lorg/greenrobot/eventbus/EventBus;
+.field private final mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
 
 # direct methods
@@ -21,14 +21,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    iput-object p1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     .line 31
     new-instance v0, Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-direct {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     .line 32
     return-void
@@ -46,12 +46,12 @@
     move-result-object v0
 
     .line 36
-    iget-object v1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 
     .line 37
-    iget-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/EventBus;->b()Ljava/util/concurrent/ExecutorService;
 
@@ -68,7 +68,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->a:Lorg/greenrobot/eventbus/PendingPostQueue;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mPendingPostQueuea:Lorg/greenrobot/eventbus/PendingPostQueue;
 
     invoke-virtual {v0}, Lorg/greenrobot/eventbus/PendingPostQueue;->a()Lorg/greenrobot/eventbus/PendingPost;
 
@@ -88,7 +88,7 @@
 
     .line 46
     :cond_0
-    iget-object v1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->b:Lorg/greenrobot/eventbus/EventBus;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/AsyncPoster;->mEventBusb:Lorg/greenrobot/eventbus/EventBus;
 
     invoke-virtual {v1, v0}, Lorg/greenrobot/eventbus/EventBus;->a(Lorg/greenrobot/eventbus/PendingPost;)V
 

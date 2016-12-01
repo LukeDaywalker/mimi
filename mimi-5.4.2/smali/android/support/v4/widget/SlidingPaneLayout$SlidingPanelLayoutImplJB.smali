@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/reflect/Method;
+.field private mFieldb:Ljava/lang/reflect/Field;
 
-.field private b:Ljava/lang/reflect/Field;
+.field private mMethoda:Ljava/lang/reflect/Method;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->a:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mMethoda:Ljava/lang/reflect/Method;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -46,10 +46,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->b:Ljava/lang/reflect/Field;
+    iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mFieldb:Ljava/lang/reflect/Field;
 
     .line 1507
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->b:Ljava/lang/reflect/Field;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mFieldb:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
 
@@ -95,24 +95,24 @@
 
     .prologue
     .line 1515
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->a:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mMethoda:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->b:Ljava/lang/reflect/Field;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mFieldb:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_0
 
     .line 1517
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->b:Ljava/lang/reflect/Field;
+    iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mFieldb:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, p2, v1}, Ljava/lang/reflect/Field;->setBoolean(Ljava/lang/Object;Z)V
 
     .line 1518
-    iget-object v1, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->a:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mMethoda:Ljava/lang/reflect/Method;
 
     const/4 v0, 0x0
 

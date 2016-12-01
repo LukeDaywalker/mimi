@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
-.field private static final synthetic d:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+.field private static final synthetic mArrayICjd:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->d:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sput-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mArrayICjd:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 276
-    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->d:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
+    sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->mArrayICjd:[Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICj;->clone()Ljava/lang/Object;
 

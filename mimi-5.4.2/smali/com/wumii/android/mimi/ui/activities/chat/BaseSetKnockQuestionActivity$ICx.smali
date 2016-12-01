@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+.field final synthetic mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->getKnockQuestions()Ljava/util/List;
 
@@ -43,7 +43,7 @@
     iput-object v1, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 
@@ -53,12 +53,12 @@
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->isZa:Z
 
     if-eqz v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 
@@ -66,12 +66,12 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/math/RandomUtils;->a(I)I
+    invoke-static {v0}, Lorg/apache/commons/long3/math/RandomUtils;->a(I)I
 
     move-result v0
 
     .line 81
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->o:Landroid/widget/TextView;
 
@@ -82,11 +82,11 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->n:Landroid/widget/EditText;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;->mBaseSetKnockQuestionActivityb:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 

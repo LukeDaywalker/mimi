@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
+.field final synthetic mCircleSplitsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;->mCircleSplitsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;->mCircleSplitsActivitya:Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->finish()V
 

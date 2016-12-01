@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/ArrayList;
+.field private mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private b:Ljava/util/ArrayList;
+.field private mArrayListb:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -26,7 +26,7 @@
     .end annotation
 .end field
 
-.field private c:Ljava/util/ArrayList;
+.field private mArrayListc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -37,7 +37,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/ArrayList;
+.field private mArrayListd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -48,7 +48,7 @@
     .end annotation
 .end field
 
-.field private e:Ljava/util/ArrayList;
+.field private mArrayListe:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -61,7 +61,7 @@
     .end annotation
 .end field
 
-.field private f:Ljava/util/ArrayList;
+.field private mArrayListf:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -74,7 +74,7 @@
     .end annotation
 .end field
 
-.field private g:Ljava/util/ArrayList;
+.field private mArrayListg:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -87,7 +87,7 @@
     .end annotation
 .end field
 
-.field private h:Ljava/util/ArrayList;
+.field private mArrayListh:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -98,7 +98,7 @@
     .end annotation
 .end field
 
-.field private i:Ljava/util/ArrayList;
+.field private mArrayListi:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -109,7 +109,7 @@
     .end annotation
 .end field
 
-.field private j:Ljava/util/ArrayList;
+.field private mArrayListj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -120,7 +120,7 @@
     .end annotation
 .end field
 
-.field private k:Ljava/util/ArrayList;
+.field private mArrayListk:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -145,77 +145,77 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     .line 38
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     .line 39
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     .line 40
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     .line 42
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     .line 44
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     .line 45
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     .line 47
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     .line 48
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     .line 49
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     .line 50
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     .line 621
     return-void
@@ -226,7 +226,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -274,7 +274,7 @@
     move-result-object v0
 
     .line 341
-    iget-object v2, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     iget-object v3, p1, Landroid/support/v7/widget/DefaultItemAnimator$ICp;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
 
@@ -327,7 +327,7 @@
     move-result-object v0
 
     .line 364
-    iget-object v2, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     iget-object v3, p1, Landroid/support/v7/widget/DefaultItemAnimator$ICp;->b:Landroid/support/v7/widget/RecyclerView$ICbg;
 
@@ -541,7 +541,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -619,7 +619,7 @@
     move-result-object v5
 
     .line 284
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -655,7 +655,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -665,7 +665,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -685,7 +685,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -695,7 +695,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -705,7 +705,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -742,7 +742,7 @@
     move-result-object v0
 
     .line 195
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -788,7 +788,7 @@
     move-result-object v0
 
     .line 225
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -834,7 +834,7 @@
     const/4 v2, 0x0
 
     .line 97
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -846,7 +846,7 @@
 
     .line 98
     :goto_0
-    iget-object v3, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -858,7 +858,7 @@
 
     .line 99
     :goto_1
-    iget-object v4, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v4, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -870,7 +870,7 @@
 
     .line 100
     :goto_2
-    iget-object v5, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v5, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -921,7 +921,7 @@
 
     .line 106
     :cond_5
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -947,7 +947,7 @@
 
     .line 109
     :cond_6
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -960,17 +960,17 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 113
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v8}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 114
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 115
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->clear()V
 
@@ -1011,17 +1011,17 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 137
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v8}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 138
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 139
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->clear()V
 
@@ -1062,17 +1062,17 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 160
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 161
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 162
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1235,7 +1235,7 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/DefaultItemAnimator;->c(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 188
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1326,7 +1326,7 @@
 
     .line 266
     :cond_2
-    iget-object v7, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v7, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     new-instance v0, Landroid/support/v7/widget/DefaultItemAnimator$ICq;
 
@@ -1446,7 +1446,7 @@
 
     .line 329
     :cond_0
-    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     new-instance v0, Landroid/support/v7/widget/DefaultItemAnimator$ICp;
 
@@ -1479,7 +1479,7 @@
 
     .prologue
     .line 505
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1487,7 +1487,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1495,7 +1495,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1503,7 +1503,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1511,7 +1511,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1519,7 +1519,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1527,7 +1527,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1535,7 +1535,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1543,7 +1543,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1551,7 +1551,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1559,7 +1559,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -1594,7 +1594,7 @@
     invoke-static {v0, v1}, Landroid/support/v4/view/ViewCompat;->c(Landroid/view/View;F)V
 
     .line 218
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1613,7 +1613,7 @@
     const/4 v5, 0x0
 
     .line 531
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1628,7 +1628,7 @@
     if-ltz v1, :cond_0
 
     .line 533
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1653,7 +1653,7 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->e(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 538
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -1666,7 +1666,7 @@
 
     .line 540
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1681,7 +1681,7 @@
     if-ltz v1, :cond_1
 
     .line 542
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1693,7 +1693,7 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->d(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 544
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -1706,7 +1706,7 @@
 
     .line 546
     :cond_1
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1721,7 +1721,7 @@
     if-ltz v1, :cond_2
 
     .line 548
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1739,7 +1739,7 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->f(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 552
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -1752,7 +1752,7 @@
 
     .line 554
     :cond_2
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1767,7 +1767,7 @@
     if-ltz v1, :cond_3
 
     .line 556
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1786,7 +1786,7 @@
 
     .line 558
     :cond_3
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -1803,7 +1803,7 @@
 
     .line 563
     :cond_4
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1818,7 +1818,7 @@
     if-ltz v3, :cond_7
 
     .line 565
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1874,7 +1874,7 @@
     if-eqz v1, :cond_5
 
     .line 576
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -1896,7 +1896,7 @@
 
     .line 580
     :cond_7
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1911,7 +1911,7 @@
     if-ltz v3, :cond_a
 
     .line 582
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1959,7 +1959,7 @@
     if-eqz v1, :cond_8
 
     .line 591
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -1981,7 +1981,7 @@
 
     .line 595
     :cond_a
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1996,7 +1996,7 @@
     if-ltz v3, :cond_d
 
     .line 597
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2034,7 +2034,7 @@
     if-eqz v1, :cond_b
 
     .line 602
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2056,22 +2056,22 @@
 
     .line 607
     :cond_d
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Ljava/util/List;)V
 
     .line 608
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Ljava/util/List;)V
 
     .line 609
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Ljava/util/List;)V
 
     .line 610
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Ljava/util/List;)V
 
@@ -2100,7 +2100,7 @@
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->a()V
 
     .line 427
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2114,7 +2114,7 @@
     if-ltz v1, :cond_1
 
     .line 428
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2137,7 +2137,7 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/DefaultItemAnimator;->e(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 433
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -2151,12 +2151,12 @@
 
     .line 436
     :cond_1
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->d:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0, p1}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Ljava/util/List;Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 437
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2172,7 +2172,7 @@
 
     .line 441
     :cond_2
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->b:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListb:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2188,7 +2188,7 @@
 
     .line 446
     :cond_3
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2202,7 +2202,7 @@
     if-ltz v1, :cond_5
 
     .line 447
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2221,7 +2221,7 @@
     if-eqz v0, :cond_4
 
     .line 450
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -2235,7 +2235,7 @@
 
     .line 453
     :cond_5
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2249,7 +2249,7 @@
     if-ltz v3, :cond_8
 
     .line 454
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2301,7 +2301,7 @@
     if-eqz v0, :cond_6
 
     .line 463
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -2323,7 +2323,7 @@
 
     .line 469
     :cond_8
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2337,7 +2337,7 @@
     if-ltz v1, :cond_a
 
     .line 470
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2366,7 +2366,7 @@
     if-eqz v0, :cond_9
 
     .line 475
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->e:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListe:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -2380,7 +2380,7 @@
 
     .line 481
     :cond_a
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2390,7 +2390,7 @@
 
     .line 486
     :cond_b
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2400,7 +2400,7 @@
 
     .line 491
     :cond_c
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -2410,7 +2410,7 @@
 
     .line 496
     :cond_d
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 

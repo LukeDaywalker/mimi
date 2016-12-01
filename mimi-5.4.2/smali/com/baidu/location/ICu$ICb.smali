@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICu;
+.field final synthetic mICua:Lcom/baidu/location/ICu;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICu;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iput-object p1, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -29,9 +29,9 @@
 
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
-    iget-object v1, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v1, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v1}, Lcom/baidu/location/ICu;->new(Lcom/baidu/location/ICu;)Landroid/telephony/TelephonyManager;
 
@@ -56,7 +56,7 @@
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v0}, Lcom/baidu/location/ICu;->do(Lcom/baidu/location/ICu;)Lcom/baidu/location/ICu$ICa;
 
@@ -64,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v0}, Lcom/baidu/location/ICu;->do(Lcom/baidu/location/ICu;)Lcom/baidu/location/ICu$ICa;
 
@@ -76,7 +76,7 @@
 
     if-ne v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v0}, Lcom/baidu/location/ICu;->do(Lcom/baidu/location/ICu;)Lcom/baidu/location/ICu$ICa;
 
@@ -93,7 +93,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v0}, Lcom/baidu/location/ICu;->do(Lcom/baidu/location/ICu;)Lcom/baidu/location/ICu$ICa;
 
@@ -105,7 +105,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->a:Lcom/baidu/location/ICu;
+    iget-object v0, p0, Lcom/baidu/location/ICu$ICb;->mICua:Lcom/baidu/location/ICu;
 
     invoke-static {v0}, Lcom/baidu/location/ICu;->do(Lcom/baidu/location/ICu;)Lcom/baidu/location/ICu$ICa;
 

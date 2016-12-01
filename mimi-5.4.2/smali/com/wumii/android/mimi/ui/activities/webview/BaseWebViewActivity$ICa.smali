@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+.field final synthetic mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 57
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->clickOnCamera(Landroid/view/View;)V
 
@@ -48,7 +48,7 @@
 
     .line 60
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICa;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->clickOnAlbum(Landroid/view/View;)V
 

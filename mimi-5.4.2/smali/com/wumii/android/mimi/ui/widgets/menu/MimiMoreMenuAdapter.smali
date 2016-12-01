@@ -4,9 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
-.field private b:Ljava/util/List;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
+
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -16,8 +18,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
 
 # direct methods
@@ -33,14 +33,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 27
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mListb:Ljava/util/List;
 
     .line 28
     return-void
@@ -51,7 +51,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     return-object v0
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -95,7 +95,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mICahc:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     .line 32
     return-void
@@ -106,7 +106,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -119,7 +119,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -160,7 +160,7 @@
     if-nez p2, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v2, 0x7f030003
 

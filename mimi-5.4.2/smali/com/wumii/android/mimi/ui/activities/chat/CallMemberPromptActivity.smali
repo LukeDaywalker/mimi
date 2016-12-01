@@ -4,35 +4,35 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Landroid/os/Handler;
+.field private isZI:Z
 
-.field private D:Ljava/lang/Runnable;
+.field private mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private E:Landroid/media/MediaPlayer;
+.field private mHandlerC:Landroid/os/Handler;
 
-.field private F:Landroid/os/Vibrator;
+.field private mIG:I
 
-.field private G:I
+.field private mImageViewo:Landroid/widget/ImageView;
 
-.field private H:J
+.field private mJH:J
 
-.field private I:Z
+.field private mMediaPlayerE:Landroid/media/MediaPlayer;
 
-.field private o:Landroid/widget/ImageView;
+.field private mRunnableD:Ljava/lang/Runnable;
 
-.field private p:Landroid/widget/TextView;
+.field private mStringt:Ljava/lang/String;
 
-.field private q:Landroid/widget/TextView;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private r:Landroid/widget/TextView;
+.field private mTextViewq:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+.field private mTextViewr:Landroid/widget/TextView;
 
-.field private t:Ljava/lang/String;
+.field private mVibratorF:Landroid/os/Vibrator;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -68,12 +68,12 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->C:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mHandlerC:Landroid/os/Handler;
 
     .line 67
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->G:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mIG:I
 
     return-void
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     return-object v0
 .end method
@@ -175,7 +175,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->o:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mImageViewo:Landroid/widget/ImageView;
 
     .line 126
     const v0, 0x7f0b0089
@@ -186,7 +186,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewp:Landroid/widget/TextView;
 
     .line 127
     const v0, 0x7f0b008a
@@ -197,7 +197,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 128
     const v0, 0x7f0b008b
@@ -208,7 +208,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->r:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewr:Landroid/widget/TextView;
 
     .line 129
     return-void
@@ -268,7 +268,7 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     if-nez v0, :cond_0
 
@@ -281,11 +281,11 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     .line 176
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     const/4 v1, 0x3
 
@@ -314,19 +314,19 @@
 
     .prologue
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     if-eqz v0, :cond_0
 
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     invoke-virtual {v0}, Landroid/os/Vibrator;->cancel()V
 
     .line 182
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->F:Landroid/os/Vibrator;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mVibratorF:Landroid/os/Vibrator;
 
     .line 184
     :cond_0
@@ -340,7 +340,7 @@
     const/4 v2, 0x1
 
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     if-nez v0, :cond_0
 
@@ -355,24 +355,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 196
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_1
 
     .line 197
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, v2}, Landroid/media/MediaPlayer;->setLooping(Z)V
 
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->start()V
 
@@ -385,7 +385,7 @@
     move-exception v0
 
     .line 192
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->n:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mLoggern:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -401,11 +401,11 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
 
@@ -414,19 +414,19 @@
     if-eqz v0, :cond_0
 
     .line 204
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
 
     .line 205
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
 
     .line 206
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->E:Landroid/media/MediaPlayer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mMediaPlayerE:Landroid/media/MediaPlayer;
 
     .line 208
     :cond_0
@@ -442,10 +442,10 @@
     .line 137
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->G:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mIG:I
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getChatId()Ljava/lang/String;
 
@@ -467,7 +467,7 @@
     .line 132
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->G:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mIG:I
 
     .line 133
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->finish()V
@@ -515,7 +515,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->I:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->isZI:Z
 
     .line 97
     const-string/jumbo v1, "drawable://2130837731"
@@ -535,7 +535,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->t:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mStringt:Ljava/lang/String;
 
     .line 99
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
@@ -560,10 +560,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 101
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->I:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->isZI:Z
 
     if-eqz v0, :cond_2
 
@@ -590,11 +590,11 @@
     move-result-object v1
 
     .line 104
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->t:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mStringt:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
@@ -612,9 +612,9 @@
 
     .line 108
     :cond_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->p:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewp:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getName()Ljava/lang/String;
 
@@ -623,17 +623,17 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 109
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->r:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 110
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->q:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewq:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mGroupChats:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;->getIcon()Ljava/lang/String;
 
@@ -660,7 +660,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->o:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mImageViewo:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v0, v3, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
@@ -669,18 +669,18 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->H:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mJH:J
 
     goto :goto_0
 
     .line 113
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->r:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -697,21 +697,21 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 253
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
     .line 254
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->C:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mHandlerC:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 255
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     .line 257
     :cond_0
@@ -726,7 +726,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 213
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     if-nez v0, :cond_0
 
@@ -735,12 +735,12 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->C:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mHandlerC:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->D:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mRunnableD:Ljava/lang/Runnable;
 
     const-wide/32 v2, 0xea60
 
@@ -774,7 +774,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->H:J
+    iget-wide v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mJH:J
 
     sub-long/2addr v0, v2
 
@@ -783,9 +783,9 @@
     if-lez v0, :cond_0
 
     .line 240
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->t:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mStringt:Ljava/lang/String;
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->G:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mIG:I
 
     const/4 v2, 0x2
 
@@ -798,7 +798,7 @@
 
     .line 245
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->G:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mIG:I
 
     if-nez v0, :cond_1
 
@@ -806,7 +806,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->H:J
+    iget-wide v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->mJH:J
 
     sub-long/2addr v0, v2
 

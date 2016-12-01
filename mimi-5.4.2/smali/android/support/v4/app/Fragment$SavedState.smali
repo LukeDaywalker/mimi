@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field final a:Landroid/os/Bundle;
+.field final mBundlea:Landroid/os/Bundle;
 
 
 # direct methods
@@ -50,17 +50,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iput-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     .line 334
     if-eqz p2, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
     .line 335
-    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0, p2}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
 
@@ -86,7 +86,7 @@
 
     .prologue
     .line 346
-    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
 

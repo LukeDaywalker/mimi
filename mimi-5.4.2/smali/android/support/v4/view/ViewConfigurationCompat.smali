@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+.field static final mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$IcsViewConfigurationVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     .line 95
     :goto_0
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$HoneycombViewConfigurationVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     goto :goto_0
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     goto :goto_0
 
@@ -70,7 +70,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     goto :goto_0
 .end method
@@ -91,7 +91,7 @@
 
     .prologue
     .line 105
-    sget-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->a:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    sget-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->mViewConfigurationVersionImpla:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;->a(Landroid/view/ViewConfiguration;)I
 

@@ -4,23 +4,23 @@
 
 
 # static fields
-.field private static a:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+.field private static final mBidiFormatterd:Landroid/support/v4/text/BidiFormatter;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mBidiFormattere:Landroid/support/v4/text/BidiFormatter;
 
-.field private static final c:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
-.field private static final d:Landroid/support/v4/text/BidiFormatter;
+.field private static final mStringc:Ljava/lang/String;
 
-.field private static final e:Landroid/support/v4/text/BidiFormatter;
+.field private static mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
 
 # instance fields
-.field private final f:Z
+.field private final isZf:Z
 
-.field private final g:I
+.field private final mIg:I
 
-.field private final h:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+.field private final mTextDirectionHeuristicCompath:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
 
 # direct methods
@@ -33,7 +33,7 @@
     .line 83
     sget-object v0, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->c:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter;->a:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    sput-object v0, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     .line 113
     const/16 v0, 0x200e
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter;->b:Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/text/BidiFormatter;->mStringb:Ljava/lang/String;
 
     .line 118
     const/16 v0, 0x200f
@@ -51,29 +51,29 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter;->c:Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/text/BidiFormatter;->mStringc:Ljava/lang/String;
 
     .line 215
     new-instance v0, Landroid/support/v4/text/BidiFormatter;
 
     const/4 v1, 0x0
 
-    sget-object v2, Landroid/support/v4/text/BidiFormatter;->a:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    sget-object v2, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     invoke-direct {v0, v1, v3, v2}, Landroid/support/v4/text/BidiFormatter;-><init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;)V
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter;->d:Landroid/support/v4/text/BidiFormatter;
+    sput-object v0, Landroid/support/v4/text/BidiFormatter;->mBidiFormatterd:Landroid/support/v4/text/BidiFormatter;
 
     .line 220
     new-instance v0, Landroid/support/v4/text/BidiFormatter;
 
     const/4 v1, 0x1
 
-    sget-object v2, Landroid/support/v4/text/BidiFormatter;->a:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    sget-object v2, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     invoke-direct {v0, v1, v3, v2}, Landroid/support/v4/text/BidiFormatter;-><init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;)V
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter;->e:Landroid/support/v4/text/BidiFormatter;
+    sput-object v0, Landroid/support/v4/text/BidiFormatter;->mBidiFormattere:Landroid/support/v4/text/BidiFormatter;
 
     return-void
 .end method
@@ -86,13 +86,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 261
-    iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter;->f:Z
+    iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter;->isZf:Z
 
     .line 262
-    iput p2, p0, Landroid/support/v4/text/BidiFormatter;->g:I
+    iput p2, p0, Landroid/support/v4/text/BidiFormatter;->mIg:I
 
     .line 263
-    iput-object p3, p0, Landroid/support/v4/text/BidiFormatter;->h:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    iput-object p3, p0, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompath:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     .line 264
     return-void
@@ -103,7 +103,7 @@
 
     .prologue
     .line 78
-    sget-object v0, Landroid/support/v4/text/BidiFormatter;->a:Landroid/support/v4/text/TextDirectionHeuristicCompat;
+    sget-object v0, Landroid/support/v4/text/BidiFormatter;->mTextDirectionHeuristicCompata:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     return-object v0
 .end method

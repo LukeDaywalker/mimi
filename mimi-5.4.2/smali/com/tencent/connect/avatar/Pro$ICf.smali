@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+.field final synthetic mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 462
-    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICf;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iput-object p1, p0, Lcom/tencent/connect/avatar/Pro$ICf;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICf;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICf;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v2}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->i(Lcom/tencent/connect/avatar/Pro$ImageActivity;)J
 
@@ -43,21 +43,21 @@
     sub-long/2addr v0, v2
 
     .line 466
-    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICf;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v2, p0, Lcom/tencent/connect/avatar/Pro$ICf;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const-string/jumbo v3, "10656"
 
     invoke-virtual {v2, v3, v0, v1}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->a(Ljava/lang/String;J)V
 
     .line 467
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICf;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICf;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->setResult(I)V
 
     .line 468
-    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICf;->a:Lcom/tencent/connect/avatar/Pro$ImageActivity;
+    iget-object v0, p0, Lcom/tencent/connect/avatar/Pro$ICf;->mImageActivitya:Lcom/tencent/connect/avatar/Pro$ImageActivity;
 
     invoke-static {v0}, Lcom/tencent/connect/avatar/Pro$ImageActivity;->j(Lcom/tencent/connect/avatar/Pro$ImageActivity;)V
 

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Landroid/content/SharedPreferences;
+.field private final mContextc:Landroid/content/Context;
 
-.field private final b:Ljava/lang/String;
+.field private final mSharedPreferencesa:Landroid/content/SharedPreferences;
 
-.field private final c:Landroid/content/Context;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -36,15 +36,15 @@
 
     .line 37
     :cond_0
-    iput-object p1, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->c:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mContextc:Landroid/content/Context;
 
     .line 38
-    iput-object p2, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->b:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mStringb:Ljava/lang/String;
 
     .line 39
-    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->c:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mContextc:Landroid/content/Context;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->b:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mStringb:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->a:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     .line 40
     return-void
@@ -88,7 +88,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->a:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     return-object v0
 .end method
@@ -130,7 +130,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->a:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;->mSharedPreferencesa:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 

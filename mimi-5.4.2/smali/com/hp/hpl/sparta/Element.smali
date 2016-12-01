@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Lcom/hp/hpl/sparta/Node;
+.field private mHashtablec:Ljava/util/Hashtable;
 
-.field private b:Lcom/hp/hpl/sparta/Node;
+.field private mNodea:Lcom/hp/hpl/sparta/Node;
 
-.field private c:Ljava/util/Hashtable;
+.field private mNodeb:Lcom/hp/hpl/sparta/Node;
 
-.field private d:Ljava/util/Vector;
+.field private mStringe:Ljava/lang/String;
 
-.field private e:Ljava/lang/String;
+.field private mVectord:Ljava/util/Vector;
 
 
 # direct methods
@@ -26,19 +26,19 @@
     invoke-direct {p0}, Lcom/hp/hpl/sparta/Node;-><init>()V
 
     .line 467
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 473
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     .line 477
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     .line 478
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     .line 479
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     .line 46
     return-void
@@ -54,26 +54,26 @@
     invoke-direct {p0}, Lcom/hp/hpl/sparta/Node;-><init>()V
 
     .line 467
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 473
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     .line 477
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     .line 478
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     .line 479
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     .line 43
     invoke-static {p1}, Lcom/hp/hpl/sparta/Sparta;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     .line 44
     return-void
@@ -89,7 +89,7 @@
 
     .line 178
     .line 179
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     move v2, v0
 
@@ -104,7 +104,7 @@
     if-eqz v3, :cond_3
 
     .line 183
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     if-ne v0, v1, :cond_0
 
@@ -112,11 +112,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 184
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     if-ne v0, v1, :cond_1
 
@@ -124,7 +124,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     .line 186
     :cond_1
@@ -164,17 +164,17 @@
     .line 68
     new-instance v2, Lcom/hp/hpl/sparta/Element;
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     invoke-direct {v2, v0}, Lcom/hp/hpl/sparta/Element;-><init>(Ljava/lang/String;)V
 
     .line 69
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
     .line 70
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->elements()Ljava/util/Enumeration;
 
@@ -195,7 +195,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 72
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -211,7 +211,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     move-object v1, v0
 
@@ -257,23 +257,23 @@
 
     .line 149
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     invoke-virtual {p1, v0}, Lcom/hp/hpl/sparta/Node;->d(Lcom/hp/hpl/sparta/Node;)V
 
     .line 150
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     if-nez v0, :cond_1
 
-    iput-object p1, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 151
     :cond_1
     invoke-virtual {p1, p0}, Lcom/hp/hpl/sparta/Node;->b(Lcom/hp/hpl/sparta/Element;)V
 
     .line 153
-    iput-object p1, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     .line 154
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/Element;->e()Lcom/hp/hpl/sparta/Document;
@@ -291,7 +291,7 @@
 
     .prologue
     .line 250
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     :goto_0
     if-eqz v0, :cond_0
@@ -320,7 +320,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     .line 87
     invoke-virtual {p0}, Lcom/hp/hpl/sparta/Element;->a()V
@@ -334,7 +334,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-nez v0, :cond_0
 
@@ -343,18 +343,18 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     .line 129
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -362,13 +362,13 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->d:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mVectord:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
     .line 132
     :cond_1
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -384,18 +384,18 @@
 
     .prologue
     .line 438
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
     .line 440
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v1}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -427,7 +427,7 @@
     add-int/2addr v1, v3
 
     .line 443
-    iget-object v3, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v3, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v3, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -454,7 +454,7 @@
 
     .line 447
     :cond_1
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     :goto_1
     if-eqz v0, :cond_2
@@ -485,7 +485,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-nez v0, :cond_0
 
@@ -495,7 +495,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -544,7 +544,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -603,7 +603,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->b:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mNodeb:Lcom/hp/hpl/sparta/Node;
 
     return-object v0
 .end method
@@ -636,9 +636,9 @@
     check-cast p1, Lcom/hp/hpl/sparta/Element;
 
     .line 406
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->e:Ljava/lang/String;
+    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -647,7 +647,7 @@
     if-eqz v0, :cond_0
 
     .line 409
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-nez v0, :cond_3
 
@@ -655,7 +655,7 @@
 
     .line 410
     :goto_1
-    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-nez v1, :cond_4
 
@@ -666,11 +666,11 @@
     if-ne v0, v1, :cond_0
 
     .line 415
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -691,7 +691,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 417
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -700,7 +700,7 @@
     check-cast v1, Ljava/lang/String;
 
     .line 419
-    iget-object v5, p1, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v5, p1, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v5, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -719,7 +719,7 @@
 
     .line 409
     :cond_3
-    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->size()I
 
@@ -729,7 +729,7 @@
 
     .line 410
     :cond_4
-    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->c:Ljava/util/Hashtable;
+    iget-object v1, p1, Lcom/hp/hpl/sparta/Element;->mHashtablec:Ljava/util/Hashtable;
 
     invoke-virtual {v1}, Ljava/util/Hashtable;->size()I
 
@@ -739,10 +739,10 @@
 
     .line 425
     :cond_5
-    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 426
-    iget-object v0, p1, Lcom/hp/hpl/sparta/Element;->a:Lcom/hp/hpl/sparta/Node;
+    iget-object v0, p1, Lcom/hp/hpl/sparta/Element;->mNodea:Lcom/hp/hpl/sparta/Node;
 
     .line 427
     :goto_3

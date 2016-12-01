@@ -7,27 +7,27 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private static final c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private d:Z
+.field private isZd:Z
 
-.field private e:Ljava/lang/Object;
+.field private mClientCommsh:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
-.field private f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+.field private mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
-.field private g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+.field private mCommsTokenStorei:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
 
-.field private h:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+.field private mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
-.field private i:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
+.field private mObjecte:Ljava/lang/Object;
 
-.field private j:Ljava/lang/Thread;
+.field private mThreadj:Ljava/lang/Thread;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClassa:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -49,25 +49,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClassa:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     .line 33
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.internal.nls.logcat"
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     return-void
 
@@ -98,45 +98,45 @@
     .line 36
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     .line 37
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->e:Ljava/lang/Object;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mObjecte:Ljava/lang/Object;
 
     .line 38
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
     .line 40
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->h:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientCommsh:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 41
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->i:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mCommsTokenStorei:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
 
     .line 42
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     .line 45
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     invoke-direct {v0, p2, p4}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;-><init>(Lorg/eclipse/paho/client/mqttv3/internal/ClientState;Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     .line 46
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->h:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientCommsh:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 47
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
     .line 48
-    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->i:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
+    iput-object p3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mCommsTokenStorei:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
 
     .line 49
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     invoke-virtual {p1}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->i()Lorg/eclipse/paho/client/mqttv3/IMqttAsyncClient;
 
@@ -159,9 +159,9 @@
     const/4 v4, 0x0
 
     .line 148
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "handleRunException"
 
@@ -189,10 +189,10 @@
     :goto_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     .line 157
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->h:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientCommsh:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v0, v4, p2}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->a(Lorg/eclipse/paho/client/mqttv3/MqttToken;Lorg/eclipse/paho/client/mqttv3/MqttException;)V
 
@@ -213,15 +213,15 @@
 
     .prologue
     .line 71
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->e:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mObjecte:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 73
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "stop"
 
@@ -230,21 +230,21 @@
     invoke-interface {v0, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 74
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     if-eqz v0, :cond_0
 
     .line 75
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     .line 76
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
     :try_end_0
@@ -256,12 +256,12 @@
 
     .line 79
     :try_start_1
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientState;->h()V
 
     .line 81
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_1
@@ -274,12 +274,12 @@
     const/4 v0, 0x0
 
     :try_start_2
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     .line 89
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "stop"
 
@@ -314,30 +314,30 @@
 
     .prologue
     .line 56
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->e:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mObjecte:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 57
     :try_start_0
-    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iget-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     if-nez v0, :cond_0
 
     .line 58
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iput-boolean v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     .line 59
     new-instance v0, Ljava/lang/Thread;
 
     invoke-direct {v0, p0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     .line 60
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->j:Ljava/lang/Thread;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mThreadj:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
@@ -369,19 +369,19 @@
     .line 96
     :cond_0
     :goto_0
-    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iget-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     if-nez v1, :cond_2
 
     .line 141
     :cond_1
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "run"
 
@@ -395,7 +395,7 @@
     .line 98
     :cond_2
     :try_start_0
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/ClientState;->e()Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;
 
@@ -405,9 +405,9 @@
     if-eqz v0, :cond_5
 
     .line 101
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "run"
 
@@ -437,12 +437,12 @@
     if-eqz v1, :cond_3
 
     .line 104
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     invoke-virtual {v1, v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;)V
 
     .line 105
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;->flush()V
     :try_end_0
@@ -463,7 +463,7 @@
     .line 107
     :cond_3
     :try_start_1
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->i:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mCommsTokenStorei:Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;
 
     invoke-virtual {v1, v0}, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;)Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
@@ -480,7 +480,7 @@
 
     .line 113
     :try_start_2
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     invoke-virtual {v1, v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;)V
     :try_end_2
@@ -488,7 +488,7 @@
 
     .line 115
     :try_start_3
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->g:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mMqttOutputStreamg:Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;
 
     invoke-virtual {v1}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream;->flush()V
     :try_end_3
@@ -498,7 +498,7 @@
     .line 123
     :cond_4
     :try_start_4
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->f:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mClientStatef:Lorg/eclipse/paho/client/mqttv3/internal/ClientState;
 
     invoke-virtual {v1, v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientState;->a(Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;)V
 
@@ -547,9 +547,9 @@
     .line 129
     :cond_5
     :try_start_7
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "run"
 
@@ -560,7 +560,7 @@
     .line 131
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->d:Z
+    iput-boolean v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsSender;->isZd:Z
     :try_end_7
     .catch Lorg/eclipse/paho/client/mqttv3/MqttException; {:try_start_7 .. :try_end_7} :catch_0
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_1

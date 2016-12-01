@@ -28,7 +28,7 @@
 
     iput v0, p0, Lcom/baidu/vi/ICc;->b:I
 
-    sget-object v0, Lcom/baidu/vi/ICc$1;->a:[I
+    sget-object v0, Lcom/baidu/vi/ICc$1;->mArrayIa:[I
 
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;
 

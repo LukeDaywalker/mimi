@@ -8,41 +8,41 @@
 
 
 # static fields
-.field private static c:Lorg/slf4j/Logger;
+.field private static mLoggerc:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private d:Landroid/widget/TextView;
+.field private mFeedTypem:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private e:Landroid/widget/TextView;
+.field private mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+.field private mImageViewk:Landroid/widget/ImageView;
 
-.field private g:Landroid/widget/LinearLayout;
+.field private mIn:I
 
-.field private h:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+.field private mIo:I
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+.field private mIp:I
 
-.field private j:Landroid/widget/TextView;
+.field private mIq:I
 
-.field private k:Landroid/widget/ImageView;
+.field private mIr:I
 
-.field private l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+.field private mLinearLayoutg:Landroid/widget/LinearLayout;
 
-.field private m:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-.field private n:I
+.field private mSurveyOptionViewh:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-.field private o:I
+.field private mSurveyOptionViewi:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-.field private p:I
+.field private mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
-.field private q:I
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private r:I
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+.field private mTextViewj:Landroid/widget/TextView;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->c:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mLoggerc:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -104,7 +104,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     .line 79
     const v0, 0x7f0b0175
@@ -115,7 +115,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     .line 81
     const v0, 0x7f0b0176
@@ -126,7 +126,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->f:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
     .line 83
     const v0, 0x7f0b0177
@@ -137,7 +137,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->g:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mLinearLayoutg:Landroid/widget/LinearLayout;
 
     .line 84
     const v0, 0x7f0b0178
@@ -148,7 +148,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->h:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewh:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     .line 85
     const v0, 0x7f0b0179
@@ -159,15 +159,15 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->i:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewi:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->h:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewh:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbu;)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->i:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewi:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->setOnSurveyOptionsViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbu;)V
 
@@ -180,7 +180,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->j:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewj:Landroid/widget/TextView;
 
     .line 91
     const v0, 0x7f0b017b
@@ -191,10 +191,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->k:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mImageViewk:Landroid/widget/ImageView;
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->k:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -209,7 +209,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->q:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIq:I
 
     .line 95
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->getResources()Landroid/content/res/Resources;
@@ -222,7 +222,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->r:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIr:I
 
     .line 96
     return-void
@@ -233,16 +233,16 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->f:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setMaxLines(I)V
 
     .line 244
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->f:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getContent()Ljava/lang/String;
 
@@ -253,16 +253,16 @@
     const-string/jumbo v0, ""
 
     :goto_0
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->n:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIn:I
 
     const/4 v3, 0x7
 
     invoke-virtual {v1, v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setContent(Ljava/lang/String;II)V
 
     .line 245
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->f:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mMimiTextViewf:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->o:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIo:I
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setTextColor(I)V
 
@@ -271,7 +271,7 @@
 
     .line 244
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getContent()Ljava/lang/String;
 
@@ -293,14 +293,14 @@
     const/4 v2, 0x0
 
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v3, ""
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getAuthorOrg()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -310,7 +310,7 @@
     if-eqz v0, :cond_2
 
     .line 177
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -319,7 +319,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 178
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -335,14 +335,14 @@
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -353,7 +353,7 @@
 
     .line 180
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -363,7 +363,7 @@
     if-nez v0, :cond_3
 
     .line 182
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     const-string/jumbo v3, "\u670b\u53cb\u5708"
 
@@ -373,7 +373,7 @@
 
     .line 184
     :cond_3
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -382,7 +382,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 185
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -390,14 +390,14 @@
 
     .line 195
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 196
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -407,7 +407,7 @@
     if-ne p1, v0, :cond_7
 
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -457,20 +457,20 @@
 
     .line 207
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->n:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIn:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 212
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -488,14 +488,14 @@
     if-eqz v0, :cond_1
 
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -516,7 +516,7 @@
     const/4 v7, 0x0
 
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getOptions()Ljava/util/List;
 
@@ -583,12 +583,12 @@
 
     .line 256
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->h:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewh:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->a(Lcom/wumii/android/mimi/models/entities/survey/SurveyOption;JZZ)V
 
     .line 257
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->i:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyOptionViewi:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     if-nez v5, :cond_3
 
@@ -630,14 +630,14 @@
     const/4 v6, 0x0
 
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 221
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -646,7 +646,7 @@
     .line 222
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getAuthorOrg()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -658,7 +658,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getAuthorOrg()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -676,7 +676,7 @@
 
     .line 223
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -687,19 +687,19 @@
 
     .line 227
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 228
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 229
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -763,7 +763,7 @@
     .line 234
     new-instance v2, Landroid/text/style/ForegroundColorSpan;
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->n:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIn:I
 
     invoke-direct {v2, v3}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
@@ -782,24 +782,24 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 235
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 236
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 237
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -815,7 +815,7 @@
     const/4 v6, 0x0
 
     .line 261
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getOptions()Ljava/util/List;
 
@@ -847,7 +847,7 @@
     add-long/2addr v0, v2
 
     .line 266
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->j:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewj:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->getResources()Landroid/content/res/Resources;
 
@@ -870,9 +870,9 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->j:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewj:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -885,15 +885,15 @@
 
     .prologue
     .line 271
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->k:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mImageViewk:Landroid/widget/ImageView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getBgColor()I
 
     move-result v0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->q:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIq:I
 
     if-ne v0, v2, :cond_0
 
@@ -952,10 +952,10 @@
 
     .line 144
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     .line 145
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->m:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mFeedTypem:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 147
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a:Landroid/view/View;
@@ -971,7 +971,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->q:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIq:I
 
     if-ne v0, v1, :cond_2
 
@@ -986,7 +986,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     .line 151
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->getResources()Landroid/content/res/Resources;
@@ -999,7 +999,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->o:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIo:I
 
     .line 158
     :goto_0
@@ -1007,7 +1007,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->q:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIq:I
 
     if-eq v0, v1, :cond_1
 
@@ -1015,7 +1015,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->r:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIr:I
 
     if-ne v0, v1, :cond_3
 
@@ -1031,7 +1031,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->n:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIn:I
 
     .line 164
     :goto_1
@@ -1067,7 +1067,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->p:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIp:I
 
     .line 154
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->getResources()Landroid/content/res/Resources;
@@ -1080,7 +1080,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->o:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIo:I
 
     goto :goto_0
 
@@ -1096,7 +1096,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->n:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mIn:I
 
     goto :goto_1
 .end method
@@ -1106,12 +1106,12 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     if-nez v0, :cond_0
 
     .line 126
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->c:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unable to respond click event. onSurveyCardClickListener == null"
 
@@ -1123,7 +1123,7 @@
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a(Ljava/lang/String;)V
 
@@ -1135,12 +1135,12 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     if-nez v0, :cond_1
 
     .line 106
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->c:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unable to respond click event. onSurveyCardClickListener == null"
 
@@ -1157,7 +1157,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->k:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mImageViewk:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getId()I
 
@@ -1166,9 +1166,9 @@
     if-ne v0, v1, :cond_2
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->l:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mSurveyl:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getId()Ljava/lang/String;
 
@@ -1184,7 +1184,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getId()I
 
@@ -1193,7 +1193,7 @@
     if-ne v0, v1, :cond_3
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -1202,7 +1202,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 114
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -1214,7 +1214,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getId()I
 
@@ -1223,7 +1223,7 @@
     if-ne v0, v1, :cond_0
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -1235,7 +1235,7 @@
     if-eqz v0, :cond_0
 
     .line 118
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -1247,15 +1247,15 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->s:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mICms:Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

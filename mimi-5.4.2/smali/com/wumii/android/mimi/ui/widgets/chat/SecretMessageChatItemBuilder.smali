@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field f:Landroid/view/View$OnClickListener;
+.field mOnClickListenerf:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder$ICba;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->f:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     .line 22
     return-void
@@ -81,7 +81,7 @@
 
     .line 37
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->f:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->mOnClickListenerf:Landroid/view/View$OnClickListener;
 
     invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

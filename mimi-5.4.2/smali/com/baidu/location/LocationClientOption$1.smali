@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/baidu/location/LocationClientOption$1;->a:[I
+    sput-object v0, Lcom/baidu/location/LocationClientOption$1;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->a:[I
+    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/location/LocationClientOption$LocationMode;->Hight_Accuracy:Lcom/baidu/location/LocationClientOption$LocationMode;
 
@@ -37,7 +37,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->a:[I
+    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/location/LocationClientOption$LocationMode;->Battery_Saving:Lcom/baidu/location/LocationClientOption$LocationMode;
 
@@ -53,7 +53,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->a:[I
+    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->mArrayIa:[I
 
     sget-object v1, Lcom/baidu/location/LocationClientOption$LocationMode;->Device_Sensors:Lcom/baidu/location/LocationClientOption$LocationMode;
 

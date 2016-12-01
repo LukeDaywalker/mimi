@@ -99,7 +99,7 @@
 
     .line 16
     :goto_0
-    sget-object v1, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult;->getEvent()Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private i:Ljava/lang/String;
+.field private mStringi:Ljava/lang/String;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/SecretManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/SecretManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     .prologue
     .line 37
-    sget-object v0, Lcom/wumii/android/mimi/manager/SecretManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/SecretManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -55,7 +55,7 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager;->mStringi:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -346,7 +346,7 @@
 
     .prologue
     .line 187
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager;->mStringi:Ljava/lang/String;
 
     .line 188
     return-void

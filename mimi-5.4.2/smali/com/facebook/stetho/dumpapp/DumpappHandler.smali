@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/dumpapp/Dumper;
+.field private final mDumpera:Lcom/facebook/stetho/dumpapp/Dumper;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/facebook/stetho/server/SecureHttpRequestHandler;-><init>(Landroid/content/Context;)V
 
     .line 41
-    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/DumpappHandler;->a:Lcom/facebook/stetho/dumpapp/Dumper;
+    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/DumpappHandler;->mDumpera:Lcom/facebook/stetho/dumpapp/Dumper;
 
     .line 42
     return-void
@@ -143,7 +143,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumpappHandler;->a:Lcom/facebook/stetho/dumpapp/Dumper;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/DumpappHandler;->mDumpera:Lcom/facebook/stetho/dumpapp/Dumper;
 
     return-object v0
 .end method

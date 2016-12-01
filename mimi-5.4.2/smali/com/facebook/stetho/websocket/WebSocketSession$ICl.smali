@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/websocket/WebSocketSession;
+.field final synthetic mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +60,7 @@
 
     .line 153
     :goto_0
-    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-static {v2}, Lcom/facebook/stetho/websocket/WebSocketSession;->a(Lcom/facebook/stetho/websocket/WebSocketSession;)Z
 
@@ -69,7 +69,7 @@
     if-nez v2, :cond_0
 
     .line 154
-    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     const/16 v3, 0x3e8
 
@@ -79,7 +79,7 @@
 
     .line 157
     :cond_0
-    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v2, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-virtual {v2, v1, v0}, Lcom/facebook/stetho/websocket/WebSocketSession;->b(ILjava/lang/String;)V
 
@@ -107,7 +107,7 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-static {p1, p2}, Lcom/facebook/stetho/websocket/FrameHelper;->a([BI)Lcom/facebook/stetho/websocket/Frame;
 
@@ -132,13 +132,13 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-static {v0}, Lcom/facebook/stetho/websocket/WebSocketSession;->b(Lcom/facebook/stetho/websocket/WebSocketSession;)Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     new-instance v2, Ljava/lang/String;
 
@@ -157,13 +157,13 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-static {v0}, Lcom/facebook/stetho/websocket/WebSocketSession;->b(Lcom/facebook/stetho/websocket/WebSocketSession;)Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     invoke-interface {v0, v1, p1, p2}, Lcom/facebook/stetho/websocket/SimpleEndpoint;->a(Lcom/facebook/stetho/websocket/SimpleSession;[BI)V
 
@@ -182,7 +182,7 @@
 
     .line 135
     :pswitch_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->a:Lcom/facebook/stetho/websocket/WebSocketSession;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;->mWebSocketSessiona:Lcom/facebook/stetho/websocket/WebSocketSession;
 
     new-instance v1, Ljava/io/IOException;
 

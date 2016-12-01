@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private final a:Lokio/BufferedSink;
+.field private final isZb:Z
 
-.field private final b:Z
+.field private isZf:Z
 
-.field private final c:Lokio/Buffer;
+.field private final mBufferc:Lokio/Buffer;
 
-.field private final d:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
+.field private final mBufferedSinka:Lokio/BufferedSink;
 
-.field private e:I
+.field private final mICid:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
 
-.field private f:Z
+.field private mIe:I
 
 
 # direct methods
@@ -29,31 +29,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 372
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     .line 373
-    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->b:Z
+    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZb:Z
 
     .line 374
     new-instance v0, Lokio/Buffer;
 
     invoke-direct {v0}, Lokio/Buffer;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     .line 375
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     invoke-direct {v0, v1}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;-><init>(Lokio/Buffer;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->d:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mICid:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
 
     .line 376
     const/16 v0, 0x4000
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     .line 377
     return-void
@@ -72,7 +72,7 @@
     if-lez v0, :cond_1
 
     .line 460
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     int-to-long v0, v0
 
@@ -100,9 +100,9 @@
     invoke-virtual {p0, p1, v1, v2, v0}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 463
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     int-to-long v4, v1
 
@@ -131,7 +131,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -155,7 +155,7 @@
     .line 397
     :cond_0
     :try_start_1
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->b:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZb:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -213,7 +213,7 @@
 
     .line 401
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-static {}, Lcom/squareup/okhttp/internal/spdy/Http2;->a()Lokio/ByteString;
 
@@ -226,7 +226,7 @@
     invoke-interface {v0, v1}, Lokio/BufferedSink;->c([B)Lokio/BufferedSink;
 
     .line 402
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_2
@@ -249,7 +249,7 @@
     if-lez p4, :cond_0
 
     .line 496
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     int-to-long v2, p4
 
@@ -293,7 +293,7 @@
 
     .line 570
     :cond_0
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     if-le p2, v0, :cond_1
 
@@ -304,7 +304,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -350,26 +350,26 @@
 
     .line 574
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-static {v0, p2}, Lcom/squareup/okhttp/internal/spdy/Http2;->a(Lokio/BufferedSink;I)V
 
     .line 575
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/lit16 v1, p3, 0xff
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->h(I)Lokio/BufferedSink;
 
     .line 576
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/lit16 v1, p4, 0xff
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->h(I)Lokio/BufferedSink;
 
     .line 577
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, 0x7fffffff
 
@@ -398,7 +398,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -422,7 +422,7 @@
     .line 428
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
@@ -442,19 +442,19 @@
 
     .line 429
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->d:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mICid:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
 
     invoke-virtual {v0, p3}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a(Ljava/util/List;)V
 
     .line 431
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
     move-result-wide v2
 
     .line 432
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     add-int/lit8 v0, v0, -0x4
 
@@ -485,7 +485,7 @@
     invoke-virtual {p0, p1, v5, v4, v0}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 436
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     const v4, 0x7fffffff
 
@@ -494,9 +494,9 @@
     invoke-interface {v0, v4}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 437
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     int-to-long v6, v1
 
@@ -538,7 +538,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -612,14 +612,14 @@
     invoke-virtual {p0, p1, v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 559
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     long-to-int v1, p2
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 560
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -639,7 +639,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -689,14 +689,14 @@
     invoke-virtual {p0, p1, v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 476
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 477
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -716,7 +716,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -777,12 +777,12 @@
     invoke-virtual {p0, v3, v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 540
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 541
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->s:I
 
@@ -794,13 +794,13 @@
     if-lez v0, :cond_2
 
     .line 543
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p3}, Lokio/BufferedSink;->c([B)Lokio/BufferedSink;
 
     .line 545
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -820,7 +820,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -844,13 +844,13 @@
     .line 386
     :cond_0
     :try_start_1
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     invoke-virtual {p1, v0}, Lcom/squareup/okhttp/internal/spdy/Settings;->d(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     .line 387
     const/4 v0, 0x0
@@ -868,7 +868,7 @@
     invoke-virtual {p0, v3, v0, v1, v2}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 392
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -890,7 +890,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v1, :cond_0
 
@@ -932,17 +932,17 @@
     invoke-virtual {p0, v3, v1, v2, v0}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 526
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p2}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 527
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p3}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 528
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -968,7 +968,7 @@
 
     .prologue
     .line 443
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -982,7 +982,7 @@
 
     .line 444
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
@@ -1002,19 +1002,19 @@
 
     .line 445
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->d:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mICid:Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;
 
     invoke-virtual {v0, p3}, Lcom/squareup/okhttp/internal/spdy/Hpack$ICi;->a(Ljava/util/List;)V
 
     .line 447
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
     move-result-wide v2
 
     .line 448
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     int-to-long v0, v0
 
@@ -1049,9 +1049,9 @@
     invoke-virtual {p0, p2, v1, v4, v0}, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a(IIBB)V
 
     .line 453
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->c:Lokio/Buffer;
+    iget-object v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferc:Lokio/Buffer;
 
     int-to-long v6, v1
 
@@ -1089,7 +1089,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -1171,7 +1171,7 @@
     .line 409
     :cond_0
     :try_start_1
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_1
 
@@ -1203,7 +1203,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -1227,7 +1227,7 @@
     .line 381
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -1251,7 +1251,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -1320,12 +1320,12 @@
 
     .line 512
     :goto_2
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v3, v0}, Lokio/BufferedSink;->g(I)Lokio/BufferedSink;
 
     .line 513
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-virtual {p1, v2}, Lcom/squareup/okhttp/internal/spdy/Settings;->b(I)I
 
@@ -1347,7 +1347,7 @@
 
     .line 515
     :cond_3
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -1369,7 +1369,7 @@
 
     .prologue
     .line 481
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->e:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mIe:I
 
     return v0
 .end method
@@ -1384,10 +1384,10 @@
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->f:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->isZf:Z
 
     .line 565
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICn;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->close()V
     :try_end_0

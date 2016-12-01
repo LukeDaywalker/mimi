@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Landroid/os/Bundle;
+.field private final mBundlea:Landroid/os/Bundle;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iput-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     .line 573
     return-void
@@ -93,7 +93,7 @@
 
     .line 683
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
@@ -168,7 +168,7 @@
 
     .line 732
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
@@ -243,7 +243,7 @@
 
     .line 707
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
@@ -318,7 +318,7 @@
 
     .line 619
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
@@ -333,7 +333,7 @@
     .line 742
     new-instance v0, Landroid/support/v4/media/MediaMetadataCompat;
 
-    iget-object v1, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundlea:Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

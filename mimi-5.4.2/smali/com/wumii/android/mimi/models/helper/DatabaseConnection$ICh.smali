@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+.field final synthetic mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICh;->a:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICh;->mICga:Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/util/NamedThreadFactory;-><init>(Ljava/lang/String;)V
 

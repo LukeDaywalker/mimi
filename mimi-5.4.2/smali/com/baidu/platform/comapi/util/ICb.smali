@@ -3,15 +3,15 @@
 
 
 # static fields
-.field static a:Landroid/os/Bundle;
+.field static mArray2Dd:[[D
 
-.field static b:[D
+.field static mArray2De:[[D
 
-.field static c:[D
+.field static mArrayDb:[D
 
-.field static d:[[D
+.field static mArrayDc:[D
 
-.field static e:[[D
+.field static mBundlea:Landroid/os/Bundle;
 
 
 # direct methods
@@ -32,19 +32,19 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     new-array v0, v4, [D
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->b:[D
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->mArrayDb:[D
 
     new-array v0, v4, [D
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->c:[D
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->mArrayDc:[D
 
     new-array v0, v4, [[D
 
@@ -90,7 +90,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->d:[[D
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->mArray2Dd:[[D
 
     new-array v0, v4, [[D
 
@@ -136,7 +136,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->e:[[D
+    sput-object v0, Lcom/baidu/platform/comapi/util/ICb;->mArray2De:[[D
 
     return-void
 
@@ -408,23 +408,23 @@
 
     move-result-wide v2
 
-    iput-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     invoke-virtual {p0}, Lcom/baidu/mapapi/model/inner/GeoPoint;->getLatitudeE6()D
 
     move-result-wide v2
 
-    iput-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     new-instance v2, Lcom/baidu/platform/comapi/util/ICb$ICa;
 
     invoke-direct {v2}, Lcom/baidu/platform/comapi/util/ICb$ICa;-><init>()V
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     const-wide v6, 0x41731bf84578d4feL    # 2.0037508342E7
 
@@ -434,15 +434,15 @@
 
     const-wide v4, 0x41731bf84578d4feL    # 2.0037508342E7
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     :cond_0
     :goto_0
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide v4, 0x3eb0c6f7a0b5ed8dL    # 1.0E-6
 
@@ -450,7 +450,7 @@
 
     if-gez v0, :cond_4
 
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide/16 v4, 0x0
 
@@ -460,7 +460,7 @@
 
     const-wide v0, 0x3eb0c6f7a0b5ed8dL    # 1.0E-6
 
-    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     :cond_1
     :goto_1
@@ -473,13 +473,13 @@
 
     if-ge v1, v3, :cond_2
 
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     invoke-static {v4, v5}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v4
 
-    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->b:[D
+    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->mArrayDb:[D
 
     aget-wide v6, v3, v1
 
@@ -487,7 +487,7 @@
 
     if-lez v3, :cond_7
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->d:[[D
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mArray2Dd:[[D
 
     aget-object v0, v0, v1
 
@@ -498,16 +498,16 @@
 
     new-instance v1, Lcom/baidu/mapapi/model/LatLng;
 
-    iget-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/baidu/mapapi/model/LatLng;-><init>(DD)V
 
     return-object v1
 
     :cond_3
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     const-wide v6, -0x3e8ce407ba872b02L    # -2.0037508342E7
 
@@ -517,12 +517,12 @@
 
     const-wide v4, -0x3e8ce407ba872b02L    # -2.0037508342E7
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     goto :goto_0
 
     :cond_4
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide/16 v4, 0x0
 
@@ -530,7 +530,7 @@
 
     if-gez v0, :cond_5
 
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide v4, -0x414f39085f4a1273L    # -1.0E-6
 
@@ -540,12 +540,12 @@
 
     const-wide v0, -0x414f39085f4a1273L    # -1.0E-6
 
-    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     goto :goto_1
 
     :cond_5
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide v4, 0x41731bf84578d4feL    # 2.0037508342E7
 
@@ -555,12 +555,12 @@
 
     const-wide v0, 0x41731bf84578d4feL    # 2.0037508342E7
 
-    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     goto :goto_1
 
     :cond_6
-    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     const-wide v4, -0x3e8ce407ba872b02L    # -2.0037508342E7
 
@@ -570,7 +570,7 @@
 
     const-wide v0, -0x3e8ce407ba872b02L    # -2.0037508342E7
 
-    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     goto :goto_1
 
@@ -600,17 +600,17 @@
     return-object v0
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v1, "strkey"
 
     invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     invoke-static {v0}, Lcom/baidu/platform/comjni/tools/JNITools;->TransGeoStr2Pt(Ljava/lang/Object;)Z
 
@@ -618,7 +618,7 @@
 
     invoke-direct {v0, v2, v3, v2, v3}, Lcom/baidu/mapapi/model/inner/GeoPoint;-><init>(DD)V
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v2, "ptx"
 
@@ -630,7 +630,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/baidu/mapapi/model/inner/GeoPoint;->setLongitudeE6(D)V
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v2, "pty"
 
@@ -670,29 +670,29 @@
 
     move-result-wide v4
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     cmpg-double v0, v4, v8
 
     if-gez v0, :cond_0
 
-    iput-wide v8, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v8, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     :cond_0
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->c:[D
+    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->mArrayDc:[D
 
     array-length v3, v3
 
     if-ge v0, v3, :cond_2
 
-    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->c:[D
+    sget-object v3, Lcom/baidu/platform/comapi/util/ICb;->mArrayDc:[D
 
     aget-wide v6, v3, v0
 
@@ -700,18 +700,18 @@
 
     if-lez v3, :cond_1
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->e:[[D
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->mArray2De:[[D
 
     aget-object v0, v1, v0
 
     :goto_1
     iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
-    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v4, v2, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     invoke-static {v2, v0}, Lcom/baidu/platform/comapi/util/ICb;->a(Lcom/baidu/platform/comapi/util/ICb$ICa;[D)Lcom/baidu/platform/comapi/util/ICb$ICa;
 
@@ -719,9 +719,9 @@
 
     new-instance v1, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-    iget-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v2, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/baidu/mapapi/model/inner/GeoPoint;-><init>(DD)V
 
@@ -873,7 +873,7 @@
 
     aget-wide v6, p1, v2
 
-    iget-wide v8, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v8, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     invoke-static {v8, v9}, Ljava/lang/Math;->abs(D)D
 
@@ -883,9 +883,9 @@
 
     add-double/2addr v4, v6
 
-    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
-    iget-wide v4, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v4, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     invoke-static {v4, v5}, Ljava/lang/Math;->abs(D)D
 
@@ -979,11 +979,11 @@
 
     add-double/2addr v4, v6
 
-    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
-    iget-wide v6, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iget-wide v6, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
     cmpg-double v0, v6, v10
 
@@ -996,11 +996,11 @@
 
     mul-double/2addr v4, v6
 
-    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->a:D
+    iput-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDa:D
 
-    iget-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v4, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
-    iget-wide v6, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iget-wide v6, p0, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     cmpg-double v0, v6, v10
 
@@ -1011,7 +1011,7 @@
 
     mul-double/2addr v0, v4
 
-    iput-wide v0, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->b:D
+    iput-wide v0, v3, Lcom/baidu/platform/comapi/util/ICb$ICa;->mDb:D
 
     return-object v3
 
@@ -1044,23 +1044,23 @@
     return-object v0
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->clear()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v1, "strkey"
 
     invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v0, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     invoke-static {v0}, Lcom/baidu/platform/comjni/tools/JNITools;->TransNodeStr2Pt(Ljava/lang/Object;)V
 
     new-instance v0, Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v2, "pty"
 
@@ -1068,7 +1068,7 @@
 
     move-result-wide v2
 
-    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->a:Landroid/os/Bundle;
+    sget-object v1, Lcom/baidu/platform/comapi/util/ICb;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v4, "ptx"
 

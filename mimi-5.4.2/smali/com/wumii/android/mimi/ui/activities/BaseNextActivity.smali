@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private n:Landroid/view/MenuItem;
+.field private mCharSequenceo:Ljava/lang/CharSequence;
 
-.field private o:Ljava/lang/CharSequence;
+.field private mCharSequencep:Ljava/lang/CharSequence;
 
-.field private p:Ljava/lang/CharSequence;
+.field private mMenuItemn:Landroid/view/MenuItem;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->n:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -50,7 +50,7 @@
     if-eqz v0, :cond_2
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->o:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequenceo:Ljava/lang/CharSequence;
 
     if-nez v1, :cond_1
 
@@ -73,19 +73,19 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->o:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequenceo:Ljava/lang/CharSequence;
 
     .line 33
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->n:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mMenuItemn:Landroid/view/MenuItem;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->o:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequenceo:Ljava/lang/CharSequence;
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 40
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->n:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -93,7 +93,7 @@
 
     .line 35
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->p:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequencep:Ljava/lang/CharSequence;
 
     if-nez v1, :cond_3
 
@@ -116,13 +116,13 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->p:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequencep:Ljava/lang/CharSequence;
 
     .line 38
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->n:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mMenuItemn:Landroid/view/MenuItem;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->p:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mCharSequencep:Ljava/lang/CharSequence;
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->n:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->mMenuItemn:Landroid/view/MenuItem;
 
     .line 19
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseNextActivity;->g()V

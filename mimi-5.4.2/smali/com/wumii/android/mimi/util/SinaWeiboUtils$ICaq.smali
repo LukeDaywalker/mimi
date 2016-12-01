@@ -21,9 +21,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mProgressingDialoga:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -35,17 +35,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p3, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mStringb:Ljava/lang/String;
 
     .line 47
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mProgressingDialoga:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mProgressingDialoga:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mProgressingDialoga:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -72,7 +72,7 @@
     if-eqz v0, :cond_0
 
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mProgressingDialoga:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -89,7 +89,7 @@
     const/4 v0, 0x0
 
     .line 81
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -158,7 +158,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->a()V
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->b(Ljava/lang/String;)V
 
@@ -181,7 +181,7 @@
     .line 59
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->mStringb:Ljava/lang/String;
 
     :cond_0
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;->b(Ljava/lang/String;)V

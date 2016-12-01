@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-.field final synthetic b:Ljava/io/File;
+.field final synthetic mFileb:Ljava/io/File;
 
-.field final synthetic c:Lcom/wumii/android/mimi/services/AppDownloadService;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 142
-    iput-object p1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mStringa:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->b:Ljava/io/File;
+    iput-object p3, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mFileb:Ljava/io/File;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -44,7 +44,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
@@ -54,7 +54,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->a:Ljava/lang/String;
+    iget-object v6, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mStringa:Ljava/lang/String;
 
     invoke-direct {v5, v6}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
@@ -65,7 +65,7 @@
     .line 150
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
@@ -115,7 +115,7 @@
     .line 193
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->f(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -132,7 +132,7 @@
     .line 194
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->g(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/os/Handler;
 
@@ -203,7 +203,7 @@
     :try_start_3
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
@@ -216,7 +216,7 @@
     .line 165
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->b:Ljava/io/File;
+    iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mFileb:Ljava/io/File;
 
     invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
 
@@ -271,7 +271,7 @@
     .line 180
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->f(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -290,7 +290,7 @@
     .line 181
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->g(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/os/Handler;
 
@@ -327,7 +327,7 @@
     .line 183
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->f(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -342,7 +342,7 @@
     .line 184
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->f(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -371,7 +371,7 @@
     .line 185
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->h(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/app/NotificationManager;
 
@@ -381,7 +381,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
+    iget-object v7, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->mAppDownloadServicec:Lcom/wumii/android/mimi/services/AppDownloadService;
 
     invoke-static {v7}, Lcom/wumii/android/mimi/services/AppDownloadService;->f(Lcom/wumii/android/mimi/services/AppDownloadService;)Landroid/support/v4/app/NotificationCompat$Builder;
 

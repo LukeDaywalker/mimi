@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field final synthetic mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
+.field final synthetic mSingleChatHeaderb:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 120
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->b:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->mSingleChatHeaderb:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,20 +34,20 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->b:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->mSingleChatHeaderb:Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a(Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;)Landroid/content/Context;
 
@@ -55,7 +55,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 

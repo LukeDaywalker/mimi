@@ -3,27 +3,27 @@
 
 
 # instance fields
-.field a:I
+.field isZb:Z
 
-.field b:Z
+.field private mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-.field c:Landroid/os/Bundle;
+.field mBundlec:Landroid/os/Bundle;
 
-.field private d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+.field private mFh:F
 
-.field private e:Lcom/baidu/mapapi/model/LatLng;
+.field private mFi:F
 
-.field private f:I
+.field private mFk:F
 
-.field private g:I
+.field mIa:I
 
-.field private h:F
+.field private mIf:I
 
-.field private i:F
+.field private mIg:I
 
-.field private j:Lcom/baidu/mapapi/model/LatLngBounds;
+.field private mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
-.field private k:F
+.field private mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
 
 # direct methods
@@ -34,17 +34,17 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/OverlayOptions;-><init>()V
 
-    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->h:F
+    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFh:F
 
-    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->i:F
+    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFi:F
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->k:F
+    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFk:F
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->isZb:Z
 
     return-void
 .end method
@@ -58,19 +58,19 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/GroundOverlay;-><init>()V
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->b:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->isZb:Z
 
-    iput-boolean v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->s:Z
+    iput-boolean v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->isZs:Z
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIa:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->r:I
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mIr:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->c:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->t:Landroid/os/Bundle;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mBundlet:Landroid/os/Bundle;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     if-nez v1, :cond_0
 
@@ -83,23 +83,23 @@
     throw v0
 
     :cond_0
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->j:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_3
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
     if-lez v1, :cond_1
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
 
     if-gtz v1, :cond_2
 
@@ -113,57 +113,57 @@
     throw v0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->h:F
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFh:F
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->f:F
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mFf:F
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->i:F
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFi:F
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->g:F
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mFg:F
 
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
-
-    int-to-double v2, v1
-
-    iput-wide v2, v0, Lcom/baidu/mapapi/map/GroundOverlay;->d:D
-
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
     int-to-double v2, v1
 
-    iput-wide v2, v0, Lcom/baidu/mapapi/map/GroundOverlay;->e:D
+    iput-wide v2, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mDd:D
+
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
+
+    int-to-double v2, v1
+
+    iput-wide v2, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mDe:D
 
     const/4 v1, 0x2
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->a:I
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mIa:I
 
     :goto_0
-    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->k:F
+    iget v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFk:F
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->i:F
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mFi:F
 
     return-object v0
 
     :cond_3
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->j:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->j:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->h:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mLatLngBoundsh:Lcom/baidu/mapapi/model/LatLngBounds;
 
     const/4 v1, 0x1
 
-    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->a:I
+    iput v1, v0, Lcom/baidu/mapapi/map/GroundOverlay;->mIa:I
 
     goto :goto_0
 
@@ -205,9 +205,9 @@
 
     if-gtz v0, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->h:F
+    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFh:F
 
-    iput p2, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->i:F
+    iput p2, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFi:F
 
     goto :goto_0
 .end method
@@ -215,11 +215,11 @@
 .method public dimensions(I)Lcom/baidu/mapapi/map/GroundOverlayOptions;
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
+    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
     const v0, 0x7fffffff
 
-    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iput v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
 
     return-object p0
 .end method
@@ -227,9 +227,9 @@
 .method public dimensions(II)Lcom/baidu/mapapi/map/GroundOverlayOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
+    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
-    iput p2, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iput p2, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
 
     return-object p0
 .end method
@@ -237,7 +237,7 @@
 .method public extraInfo(Landroid/os/Bundle;)Lcom/baidu/mapapi/map/GroundOverlayOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->c:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object p0
 .end method
@@ -245,7 +245,7 @@
 .method public getAnchorX()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->h:F
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFh:F
 
     return v0
 .end method
@@ -253,7 +253,7 @@
 .method public getAnchorY()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->i:F
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFi:F
 
     return v0
 .end method
@@ -261,7 +261,7 @@
 .method public getBounds()Lcom/baidu/mapapi/model/LatLngBounds;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->j:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
     return-object v0
 .end method
@@ -269,7 +269,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -277,17 +277,17 @@
 .method public getHeight()I
     .locals 2
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
 
     const v1, 0x7fffffff
 
     if-ne v0, v1, :cond_0
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v1, v1, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v1, v1, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -297,9 +297,9 @@
 
     int-to-float v0, v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v1, v1, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v1, v1, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -315,7 +315,7 @@
     return v0
 
     :cond_0
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->g:I
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIg:I
 
     goto :goto_0
 .end method
@@ -323,7 +323,7 @@
 .method public getImage()Lcom/baidu/mapapi/map/BitmapDescriptor;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     return-object v0
 .end method
@@ -331,7 +331,7 @@
 .method public getPosition()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -339,7 +339,7 @@
 .method public getTransparency()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->k:F
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFk:F
 
     return v0
 .end method
@@ -347,7 +347,7 @@
 .method public getWidth()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->f:I
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIf:I
 
     return v0
 .end method
@@ -355,7 +355,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIa:I
 
     return v0
 .end method
@@ -374,7 +374,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->d:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mBitmapDescriptord:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     return-object p0
 .end method
@@ -382,7 +382,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->isZb:Z
 
     return v0
 .end method
@@ -401,7 +401,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->e:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLnge:Lcom/baidu/mapapi/model/LatLng;
 
     return-object p0
 .end method
@@ -420,7 +420,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->j:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mLatLngBoundsj:Lcom/baidu/mapapi/model/LatLngBounds;
 
     return-object p0
 .end method
@@ -445,7 +445,7 @@
     return-object p0
 
     :cond_1
-    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->k:F
+    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mFk:F
 
     goto :goto_0
 .end method
@@ -453,7 +453,7 @@
 .method public visible(Z)Lcom/baidu/mapapi/map/GroundOverlayOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -461,7 +461,7 @@
 .method public zIndex(I)Lcom/baidu/mapapi/map/GroundOverlayOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlayOptions;->mIa:I
 
     return-object p0
 .end method

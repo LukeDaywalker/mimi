@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/app/Notification$Builder;
+.field private mBuildera:Landroid/app/Notification$Builder;
 
 
 # direct methods
@@ -177,7 +177,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->a:Landroid/app/Notification$Builder;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     .line 57
     return-void
@@ -211,7 +211,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatIceCreamSandwich$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-virtual {v0}, Landroid/app/Notification$Builder;->getNotification()Landroid/app/Notification;
 

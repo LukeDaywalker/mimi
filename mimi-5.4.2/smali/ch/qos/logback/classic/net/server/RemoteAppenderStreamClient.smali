@@ -6,13 +6,13 @@
 
 
 # instance fields
-.field private final id:Ljava/lang/String;
-
 .field private final inputStream:Ljava/io/InputStream;
 
-.field private lc:Lch/qos/logback/classic/LoggerContext;
-
 .field private logger:Lch/qos/logback/classic/Logger;
+
+.field private mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
+
+.field private final mStringid:Ljava/lang/String;
 
 .field private final socket:Ljava/net/Socket;
 
@@ -23,7 +23,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->id:Ljava/lang/String;
+    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->mStringid:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -39,7 +39,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->id:Ljava/lang/String;
+    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->mStringid:Ljava/lang/String;
 
     iput-object p2, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->socket:Ljava/net/Socket;
 
@@ -147,7 +147,7 @@
 
     check-cast v0, Lch/qos/logback/classic/spi/ILoggingEvent;
 
-    iget-object v2, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->lc:Lch/qos/logback/classic/LoggerContext;
+    iget-object v2, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
 
     invoke-interface {v0}, Lch/qos/logback/classic/spi/ILoggingEvent;->getLoggerName()Ljava/lang/String;
 
@@ -487,7 +487,7 @@
 .method public setLoggerContext(Lch/qos/logback/classic/LoggerContext;)V
     .locals 1
 
-    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->lc:Lch/qos/logback/classic/LoggerContext;
+    iput-object p1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->mLoggerContextlc:Lch/qos/logback/classic/LoggerContext;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -523,7 +523,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->id:Ljava/lang/String;
+    iget-object v1, p0, Lch/qos/logback/classic/net/server/RemoteAppenderStreamClient;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

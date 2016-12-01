@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 .field private name:Ljava/lang/String;
 
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 10
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->mStringid:Ljava/lang/String;
 
     .line 11
     iput-object p2, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->name:Ljava/lang/String;
@@ -44,7 +44,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->id:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSquareGroupChatCategory;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

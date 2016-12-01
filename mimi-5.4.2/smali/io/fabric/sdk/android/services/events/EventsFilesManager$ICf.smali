@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final a:Ljava/io/File;
+.field final mFilea:Ljava/io/File;
 
-.field final b:J
+.field final mJb:J
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 241
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->a:Ljava/io/File;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mFilea:Ljava/io/File;
 
     .line 242
-    iput-wide p2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->b:J
+    iput-wide p2, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mJb:J
 
     .line 243
     return-void

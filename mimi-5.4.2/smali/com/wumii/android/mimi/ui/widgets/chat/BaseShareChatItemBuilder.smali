@@ -6,7 +6,7 @@
 # instance fields
 .field protected e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private f:Landroid/view/LayoutInflater;
+.field private mLayoutInflaterf:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->f:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->mLayoutInflaterf:Landroid/view/LayoutInflater;
 
     .line 25
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
@@ -97,7 +97,7 @@
 
     .line 36
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->f:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->mLayoutInflaterf:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030085
 

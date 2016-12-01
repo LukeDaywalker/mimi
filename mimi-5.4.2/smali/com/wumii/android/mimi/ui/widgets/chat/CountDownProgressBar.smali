@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+.field private isZf:Z
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+.field private mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
-.field private c:Landroid/graphics/drawable/Drawable;
+.field private mDrawablec:Landroid/graphics/drawable/Drawable;
 
-.field private d:Landroid/graphics/drawable/Drawable;
+.field private mDrawabled:Landroid/graphics/drawable/Drawable;
 
-.field private e:J
+.field private mICvb:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
-.field private f:Z
+.field private mJe:J
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICu;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 52
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 13
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     return-wide v0
 .end method
@@ -77,11 +77,11 @@
 
     .prologue
     .line 13
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     add-long/2addr v0, p1
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     return-wide v0
 .end method
@@ -101,7 +101,7 @@
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mICvb:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
     return-object v0
 .end method
@@ -111,7 +111,7 @@
 
     .prologue
     .line 56
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->getMax()I
 
@@ -126,7 +126,7 @@
     if-lez v0, :cond_2
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->d:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
@@ -141,11 +141,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->d:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->d:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawabled:Landroid/graphics/drawable/Drawable;
 
     .line 68
     :goto_0
@@ -171,7 +171,7 @@
 
     .line 62
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawablec:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_3
 
@@ -186,11 +186,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->c:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawablec:Landroid/graphics/drawable/Drawable;
 
     .line 65
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->c:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mDrawablec:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 .end method
@@ -204,7 +204,7 @@
     .line 101
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->f:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->isZf:Z
 
     .line 102
     return-void
@@ -236,10 +236,10 @@
 
     double-to-long v0, v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     .line 107
-    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->e:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mJe:J
 
     long-to-int v0, v0
 
@@ -249,7 +249,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->c()V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->c()Z
 
@@ -258,7 +258,7 @@
     if-eqz v0, :cond_0
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0, p3, p4}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->b(J)V
 
@@ -268,7 +268,7 @@
 
     .line 113
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     const-wide/16 v2, 0x3e8
 
@@ -282,7 +282,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->c()Z
 
@@ -291,7 +291,7 @@
     if-eqz v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a()V
 
@@ -308,7 +308,7 @@
     invoke-super {p0}, Landroid/widget/ProgressBar;->onDetachedFromWindow()V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->c()Z
 
@@ -317,7 +317,7 @@
     if-eqz v0, :cond_0
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a()V
 
@@ -334,13 +334,13 @@
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->onWindowFocusChanged(Z)V
 
     .line 95
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->isZf:Z
 
     if-eqz v0, :cond_0
 
     if-nez p1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->c()Z
 
@@ -349,7 +349,7 @@
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mCountDownTimera:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a()V
 
@@ -363,7 +363,7 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->mICvb:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
     .line 82
     return-void

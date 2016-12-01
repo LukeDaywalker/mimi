@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Throwable;
+.field final synthetic mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-.field final synthetic b:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+.field final synthetic mThrowablea:Ljava/lang/Throwable;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 204
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->b:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->a:Ljava/lang/Throwable;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mThrowablea:Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .line 209
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->b:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->b:Landroid/content/Context;
 
@@ -80,9 +80,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->b:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->a:Ljava/lang/Throwable;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mThrowablea:Ljava/lang/Throwable;
 
     invoke-static {v2, v3, v0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->a(Lcom/wumii/android/mimi/task/BaseAsyncTask;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/String;
 
@@ -105,7 +105,7 @@
     move-exception v0
 
     .line 213
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->b:Lcom/wumii/android/mimi/task/BaseAsyncTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/BaseAsyncTask$ICf;->mBaseAsyncTaskb:Lcom/wumii/android/mimi/task/BaseAsyncTask;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/task/BaseAsyncTask;->c:Lorg/slf4j/Logger;
 

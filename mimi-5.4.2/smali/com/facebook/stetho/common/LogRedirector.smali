@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static volatile a:Lcom/facebook/stetho/common/LogRedirector$ICc;
+.field private static volatile mICca:Lcom/facebook/stetho/common/LogRedirector$ICc;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/facebook/stetho/common/LogRedirector;->a:Lcom/facebook/stetho/common/LogRedirector$ICc;
+    sget-object v0, Lcom/facebook/stetho/common/LogRedirector;->mICca:Lcom/facebook/stetho/common/LogRedirector$ICc;
 
     .line 81
     if-eqz v0, :cond_0
@@ -115,7 +115,7 @@
 
     .prologue
     .line 89
-    sget-object v0, Lcom/facebook/stetho/common/LogRedirector;->a:Lcom/facebook/stetho/common/LogRedirector$ICc;
+    sget-object v0, Lcom/facebook/stetho/common/LogRedirector;->mICca:Lcom/facebook/stetho/common/LogRedirector$ICc;
 
     .line 90
     if-eqz v0, :cond_0

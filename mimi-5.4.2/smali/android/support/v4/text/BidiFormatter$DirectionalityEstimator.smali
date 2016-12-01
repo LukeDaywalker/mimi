@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[B
+.field private static final mArrayBa:[B
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .line 505
     new-array v0, v3, [B
 
-    sput-object v0, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;->a:[B
+    sput-object v0, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;->mArrayBa:[B
 
     .line 506
     const/4 v0, 0x0
@@ -26,7 +26,7 @@
     if-ge v0, v3, :cond_0
 
     .line 507
-    sget-object v1, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;->a:[B
+    sget-object v1, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;->mArrayBa:[B
 
     invoke-static {v0}, Ljava/lang/Character;->getDirectionality(I)B
 

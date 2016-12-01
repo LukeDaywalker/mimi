@@ -4,51 +4,51 @@
 
 
 # instance fields
-.field private a:Landroid/app/Activity;
+.field private isZv:Z
 
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private isZw:Z
 
-.field private c:Landroid/view/LayoutInflater;
+.field private mActivitya:Landroid/app/Activity;
 
-.field private d:Landroid/view/View;
+.field private mEditTexte:Landroid/widget/EditText;
 
-.field private e:Landroid/widget/EditText;
+.field private mFrameLayoutf:Landroid/widget/FrameLayout;
 
-.field private f:Landroid/widget/FrameLayout;
+.field private mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-.field private g:Landroid/view/View;
+.field private mIt:I
 
-.field private h:Landroid/view/View;
+.field private mIu:I
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+.field private mLayoutInflaterc:Landroid/view/LayoutInflater;
 
-.field private j:Lcom/wumii/android/soundtouch/RecordClient;
+.field private mMorphBottomPano:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
-.field private k:Landroid/view/View;
+.field private mOnKeyboardVisibilityListenerp:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
 
-.field private l:Landroid/view/View;
+.field private mOnVoiceRecListenerq:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
-.field private m:Landroid/view/View;
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private n:Landroid/view/View;
+.field private mRecordClientj:Lcom/wumii/android/soundtouch/RecordClient;
 
-.field private o:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+.field private mRunnabler:Ljava/lang/Runnable;
 
-.field private p:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
+.field private mViewd:Landroid/view/View;
 
-.field private q:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+.field private mViewg:Landroid/view/View;
 
-.field private r:Ljava/lang/Runnable;
+.field private mViewh:Landroid/view/View;
 
-.field private s:Landroid/view/inputmethod/InputMethodManager;
+.field private mViewk:Landroid/view/View;
 
-.field private t:I
+.field private mViewl:Landroid/view/View;
 
-.field private u:I
+.field private mViewm:Landroid/view/View;
 
-.field private v:Z
+.field private mViewn:Landroid/view/View;
 
-.field private w:Z
+.field private mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
@@ -60,25 +60,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     .line 78
-    iput-object p2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object p2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 79
-    iput-object p3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->d:Landroid/view/View;
+    iput-object p3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewd:Landroid/view/View;
 
     .line 80
-    iput-object p4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iput-object p4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     .line 81
-    iput-object p5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->p:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
+    iput-object p5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mOnKeyboardVisibilityListenerp:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
 
     .line 82
-    iput-object p6, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->r:Ljava/lang/Runnable;
+    iput-object p6, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRunnabler:Ljava/lang/Runnable;
 
     .line 83
-    iput-object p7, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->j:Lcom/wumii/android/soundtouch/RecordClient;
+    iput-object p7, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRecordClientj:Lcom/wumii/android/soundtouch/RecordClient;
 
     .line 85
     invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
@@ -91,21 +91,21 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->u:I
+    iput v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIu:I
 
     .line 87
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->c:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     .line 89
     new-instance v0, Landroid/widget/FrameLayout;
 
     invoke-direct {v0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     .line 90
     const-string/jumbo v0, "input_method"
@@ -116,7 +116,7 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->s:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
     .line 92
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICca;
@@ -139,7 +139,7 @@
 
     .prologue
     .line 35
-    iput p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->t:I
+    iput p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIt:I
 
     return p1
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->j:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRecordClientj:Lcom/wumii/android/soundtouch/RecordClient;
 
     return-object v0
 .end method
@@ -195,7 +195,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->isEnabled()Z
 
@@ -209,7 +209,7 @@
 
     .line 318
     :cond_0
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->v:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->isZv:Z
 
     if-nez v0, :cond_1
 
@@ -221,7 +221,7 @@
 
     .line 319
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -232,9 +232,9 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 320
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
@@ -246,9 +246,9 @@
     invoke-virtual {p0, p3}, Lcom/wumii/android/mimi/util/BottomPanFacade;->a(Landroid/view/View;)V
 
     .line 322
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewd:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->r:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRunnabler:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x96
 
@@ -265,7 +265,7 @@
     .line 336
     :cond_2
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     const/4 v1, 0x1
 
@@ -278,7 +278,7 @@
 
     .line 328
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
@@ -286,9 +286,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->h()V
 
     .line 330
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     const/4 v2, 0x0
 
@@ -308,7 +308,7 @@
 
     .prologue
     .line 35
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->v:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->isZv:Z
 
     return p1
 .end method
@@ -318,7 +318,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
 .end method
@@ -328,7 +328,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -338,7 +338,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     return-object v0
 .end method
@@ -368,7 +368,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -378,7 +378,7 @@
 
     .prologue
     .line 35
-    iget v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->t:I
+    iget v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIt:I
 
     return v0
 .end method
@@ -388,7 +388,7 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -420,7 +420,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -430,7 +430,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewh:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -445,7 +445,7 @@
     if-nez v0, :cond_0
 
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewh:Landroid/view/View;
 
     const v1, 0x7f020141
 
@@ -453,7 +453,7 @@
 
     .line 218
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->l:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewl:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
@@ -468,7 +468,7 @@
     if-nez v0, :cond_1
 
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->l:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewl:Landroid/view/View;
 
     const v1, 0x7f0200ba
 
@@ -476,7 +476,7 @@
 
     .line 222
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewn:Landroid/view/View;
 
     if-eqz v0, :cond_2
 
@@ -491,7 +491,7 @@
     if-nez v0, :cond_2
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewn:Landroid/view/View;
 
     const v1, 0x7f020081
 
@@ -507,29 +507,29 @@
 
     .prologue
     .line 228
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewg:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 229
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->j:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRecordClientj:Lcom/wumii/android/soundtouch/RecordClient;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->q:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+    iget-object v4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mOnVoiceRecListenerq:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/helper/PreferencesHelper;Lcom/wumii/android/soundtouch/RecordClient;Lcom/wumii/android/mimi/ui/OnVoiceRecListener;Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->i:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     .line 230
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->i:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICk;
 
@@ -538,17 +538,17 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbt;)V
 
     .line 254
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->i:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a()Landroid/widget/RelativeLayout;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->g:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewg:Landroid/view/View;
 
     .line 256
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewg:Landroid/view/View;
 
     return-object v0
 .end method
@@ -558,7 +558,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->r:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mRunnabler:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -568,28 +568,28 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->k:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewk:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
-    iget v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->u:I
+    iget v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIu:I
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->c:Landroid/view/LayoutInflater;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-static {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/content/Context;ILandroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->k:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewk:Landroid/view/View;
 
     .line 263
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->k:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewk:Landroid/view/View;
 
     return-object v0
 .end method
@@ -599,7 +599,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -613,31 +613,31 @@
     const/4 v1, 0x0
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 268
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->c:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     const v3, 0x7f030079
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v4, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v3, v4, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     .line 269
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     new-instance v3, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v4, -0x1
 
-    iget v5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->u:I
+    iget v5, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIu:I
 
     invoke-direct {v3, v4, v5}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
@@ -645,7 +645,7 @@
 
     .line 271
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     const v3, 0x7f0b0181
 
@@ -653,7 +653,7 @@
 
     move-result-object v3
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->w:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->isZw:Z
 
     if-eqz v0, :cond_1
 
@@ -663,7 +663,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 272
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     const v3, 0x7f0b0182
 
@@ -671,7 +671,7 @@
 
     move-result-object v0
 
-    iget-boolean v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->w:Z
+    iget-boolean v3, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->isZw:Z
 
     if-eqz v3, :cond_2
 
@@ -679,7 +679,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 273
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->m:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewm:Landroid/view/View;
 
     return-object v0
 
@@ -701,7 +701,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->p:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mOnKeyboardVisibilityListenerp:Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;
 
     return-object v0
 .end method
@@ -713,7 +713,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     return-object v0
 .end method
@@ -723,12 +723,12 @@
 
     .prologue
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
@@ -760,10 +760,10 @@
 
     .prologue
     .line 300
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->w:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->isZw:Z
 
     .line 301
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->n:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewn:Landroid/view/View;
 
     .line 302
     const v0, 0x7f020081
@@ -783,7 +783,7 @@
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->q:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mOnVoiceRecListenerq:Lcom/wumii/android/mimi/ui/OnVoiceRecListener;
 
     .line 99
     return-void
@@ -812,7 +812,7 @@
 
     .line 119
     :goto_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getChildCount()I
 
@@ -821,7 +821,7 @@
     if-ge v0, v2, :cond_0
 
     .line 120
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v2, v0}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
@@ -885,7 +885,7 @@
 
     .prologue
     .line 285
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->h:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewh:Landroid/view/View;
 
     .line 286
     const v0, 0x7f020141
@@ -905,7 +905,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getChildCount()I
 
@@ -929,7 +929,7 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
@@ -945,7 +945,7 @@
 
     .prologue
     .line 291
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->l:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewl:Landroid/view/View;
 
     .line 292
     const v0, 0x7f0200ba
@@ -991,7 +991,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->f:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1008,7 +1008,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->i:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mVoiceBottomPani:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     return-object v0
 .end method
@@ -1018,7 +1018,7 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mViewd:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICg;
 
@@ -1027,7 +1027,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/util/BottomPanFacade$ICh;
 
@@ -1036,9 +1036,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -1063,29 +1063,29 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->o:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mMorphBottomPano:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     if-nez v0, :cond_0
 
     .line 278
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->o:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mMorphBottomPano:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     .line 279
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->o:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mMorphBottomPano:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
-    iget v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->u:I
+    iget v1, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mIu:I
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(I)V
 
     .line 281
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->o:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mMorphBottomPano:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     return-object v0
 .end method
@@ -1095,7 +1095,7 @@
 
     .prologue
     .line 310
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->e:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/BottomPanFacade;->mEditTexte:Landroid/widget/EditText;
 
     return-object v0
 .end method

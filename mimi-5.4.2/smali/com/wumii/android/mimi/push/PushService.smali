@@ -15,49 +15,49 @@
 
 .field public static final d:Ljava/lang/String;
 
-.field private static final e:Lorg/slf4j/Logger;
+.field private static final mLoggere:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private f:Lcom/wumii/android/mimi/models/AppFacade;
+.field private isZk:Z
 
-.field private g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+.field private isZl:Z
 
-.field private h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+.field private isZo:Z
 
-.field private i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+.field private mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field private j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+.field private mHandlerq:Landroid/os/Handler;
 
-.field private k:Z
+.field private mHandlert:Landroid/os/Handler;
 
-.field private l:Z
+.field private mHandlery:Landroid/os/Handler;
 
-.field private m:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+.field private mIMqttActionListenerr:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-.field private n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+.field private mIMqttActionListeneru:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-.field private o:Z
+.field private mIMqttActionListenerv:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-.field private p:Landroid/os/PowerManager$WakeLock;
+.field private mIMqttActionListenerw:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
-.field private q:Landroid/os/Handler;
+.field private mIs:I
 
-.field private r:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+.field private mIx:I
 
-.field private s:I
+.field private mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-.field private t:Landroid/os/Handler;
+.field private mMqttClientPersistenceh:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
-.field private u:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+.field private mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-.field private v:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+.field private mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
-.field private w:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+.field private mMqttMessagem:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
-.field private x:I
+.field private mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-.field private y:Landroid/os/Handler;
+.field private mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
 
 # direct methods
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     .line 48
     new-instance v0, Ljava/lang/StringBuilder;
@@ -203,7 +203,7 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 86
-    iput-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iput-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
 
     .line 90
     new-instance v0, Landroid/os/Handler;
@@ -214,17 +214,17 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->q:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlerq:Landroid/os/Handler;
 
     .line 264
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICh;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$ICh;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->r:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListenerr:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 528
-    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     .line 529
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICl;
@@ -235,31 +235,31 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/PushService$ICl;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->t:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlert:Landroid/os/Handler;
 
     .line 568
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICm;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$ICm;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->u:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListeneru:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 616
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICn;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$ICn;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->v:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListenerv:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 629
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICo;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$ICo;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->w:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListenerw:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 657
-    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     .line 658
     new-instance v0, Lcom/wumii/android/mimi/push/PushService$ICq;
@@ -270,7 +270,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/PushService$ICq;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->y:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlery:Landroid/os/Handler;
 
     .line 752
     return-void
@@ -281,7 +281,7 @@
 
     .prologue
     .line 40
-    iput p1, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iput p1, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     return p1
 .end method
@@ -291,7 +291,7 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttClientPersistenceh:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     return-object p1
 .end method
@@ -301,7 +301,7 @@
 
     .prologue
     .line 40
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -314,14 +314,14 @@
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "doStartCommand"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -334,7 +334,7 @@
     if-nez v0, :cond_0
 
     .line 161
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Skip to start PushService because of no authentication."
 
@@ -436,7 +436,7 @@
 
     .line 184
     :cond_4
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "doStartCommand intent extra null,  normal start"
 
@@ -454,7 +454,7 @@
 
     .line 191
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
@@ -471,7 +471,7 @@
 
     .line 194
     :cond_6
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -509,7 +509,7 @@
 
     .line 201
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
@@ -589,7 +589,7 @@
     move-exception v0
 
     .line 140
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "startPushService error:"
 
@@ -603,7 +603,7 @@
 
     .prologue
     .line 40
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     return p1
 .end method
@@ -613,7 +613,7 @@
 
     .prologue
     .line 40
-    iput p1, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iput p1, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     return p1
 .end method
@@ -623,7 +623,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->q:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlerq:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -638,7 +638,7 @@
     move-result v1
 
     .line 207
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -660,7 +660,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_1
 
@@ -692,7 +692,7 @@
     invoke-interface {v2, v0}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 208
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_2
 
@@ -731,7 +731,7 @@
 
     .prologue
     .line 40
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
 
     return p1
 .end method
@@ -741,7 +741,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     return-object v0
 .end method
@@ -751,7 +751,7 @@
 
     .prologue
     .line 219
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -784,7 +784,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
@@ -817,7 +817,7 @@
 
     .prologue
     .line 230
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -843,7 +843,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_0
 
@@ -864,7 +864,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->j()Z
 
     .line 233
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_1
 
@@ -903,7 +903,7 @@
 
     .prologue
     .line 241
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "onStopAction"
 
@@ -924,7 +924,7 @@
 
     .prologue
     .line 40
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->k:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->isZk:Z
 
     return v0
 .end method
@@ -934,7 +934,7 @@
 
     .prologue
     .line 248
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -946,7 +946,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_0
 
@@ -978,7 +978,7 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;)V
 
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_1
 
@@ -994,7 +994,7 @@
 
     .line 252
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->c()Z
 
@@ -1010,13 +1010,13 @@
     .line 258
     :cond_2
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     const-wide/16 v2, 0x4e20
 
     const/4 v1, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->r:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListenerr:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     invoke-virtual {v0, v2, v3, v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(JLjava/lang/Object;Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;)Lorg/eclipse/paho/client/mqttv3/IMqttToken;
     :try_end_0
@@ -1029,7 +1029,7 @@
     move-exception v0
 
     .line 260
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "reconnect, diconnect failed  "
 
@@ -1053,7 +1053,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->t:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlert:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -1063,7 +1063,7 @@
 
     .prologue
     .line 295
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1075,7 +1075,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     if-nez v0, :cond_2
 
@@ -1093,11 +1093,11 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 296
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getClientId()Ljava/lang/String;
 
@@ -1110,7 +1110,7 @@
 
     .line 300
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-eqz v0, :cond_1
 
@@ -1123,7 +1123,7 @@
 
     .line 295
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->toString()Ljava/lang/String;
 
@@ -1137,7 +1137,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     return-object v0
 .end method
@@ -1147,7 +1147,7 @@
 
     .prologue
     .line 306
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
@@ -1169,7 +1169,7 @@
 
     .prologue
     .line 313
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1181,7 +1181,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_1
 
@@ -1199,7 +1199,7 @@
     invoke-interface {v1, v0}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 315
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttClientPersistenceh:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     if-nez v0, :cond_0
 
@@ -1216,26 +1216,26 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/push/MqttFilePersistence;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttClientPersistenceh:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     .line 320
     :cond_0
     :try_start_0
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getClientId()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttClientPersistenceh:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     new-instance v4, Lcom/wumii/android/mimi/models/AlarmPingSender;
 
@@ -1243,7 +1243,7 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;Lorg/eclipse/paho/client/mqttv3/MqttPingSender;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
     :try_end_0
     .catch Lorg/eclipse/paho/client/mqttv3/MqttException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1262,7 +1262,7 @@
     move-exception v0
 
     .line 322
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1274,7 +1274,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
@@ -1290,7 +1290,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getClientId()Ljava/lang/String;
 
@@ -1324,7 +1324,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->y:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlery:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -1337,7 +1337,7 @@
 
     .line 331
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -1354,7 +1354,7 @@
     check-cast v0, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     .line 332
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1380,7 +1380,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1400,7 +1400,7 @@
     if-nez v2, :cond_0
 
     .line 334
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Skip connection because MQTT configuration file is not ready."
 
@@ -1414,7 +1414,7 @@
 
     .line 338
     :cond_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->equals(Ljava/lang/Object;)Z
 
@@ -1423,12 +1423,12 @@
     if-nez v2, :cond_2
 
     .line 339
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     .line 340
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getUsername()Ljava/lang/String;
 
@@ -1437,7 +1437,7 @@
     invoke-virtual {v0, v2}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a(Ljava/lang/String;)V
 
     .line 342
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getPassword()Ljava/lang/String;
 
@@ -1451,7 +1451,7 @@
 
     .line 348
     :cond_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -1460,7 +1460,7 @@
     invoke-virtual {v2, v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a([C)V
 
     .line 349
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "MQTT configuration updated."
 
@@ -1473,7 +1473,7 @@
 
     .line 352
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "No need to update MQTT configuration."
 
@@ -1491,7 +1491,7 @@
     move-exception v0
 
     .line 356
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "Read MQTT configuration error."
 
@@ -1508,14 +1508,14 @@
 
     .prologue
     .line 475
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "acquire wakelock"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 476
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     if-nez v0, :cond_0
 
@@ -1559,12 +1559,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     .line 481
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     const-wide/16 v2, 0x1388
 
@@ -1581,7 +1581,7 @@
     move-exception v0
 
     .line 483
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1621,18 +1621,18 @@
 
     .prologue
     .line 488
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "release wakelock"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 489
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -1641,7 +1641,7 @@
     if-eqz v0, :cond_0
 
     .line 490
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->p:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mWakeLockp:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -1657,7 +1657,7 @@
     const/4 v2, 0x0
 
     .line 499
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1669,7 +1669,7 @@
 
     move-result-object v1
 
-    iget-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iget-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1696,7 +1696,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 500
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     if-eqz v0, :cond_0
 
@@ -1707,13 +1707,13 @@
     .line 511
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
@@ -1756,16 +1756,16 @@
 
     .line 517
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/push/PushService;->u:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v5, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListeneru:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     invoke-virtual {v1, v0, v3, v4, v5}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a([Ljava/lang/String;[ILjava/lang/Object;Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;)Lorg/eclipse/paho/client/mqttv3/IMqttToken;
 
     .line 519
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1777,7 +1777,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
@@ -1806,13 +1806,13 @@
     move-exception v0
 
     .line 521
-    iput-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     .line 522
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->n()V
 
     .line 523
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1824,7 +1824,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
@@ -1856,7 +1856,7 @@
     const/4 v5, 0x0
 
     .line 542
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
@@ -1869,7 +1869,7 @@
     if-eqz v0, :cond_0
 
     .line 544
-    iget v0, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iget v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -1878,14 +1878,14 @@
 
     .line 558
     :goto_0
-    iget v2, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iget v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     .line 559
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1897,7 +1897,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iget v4, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1920,7 +1920,7 @@
     invoke-interface {v2, v3}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 560
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->t:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlert:Landroid/os/Handler;
 
     invoke-virtual {v2, v5, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
@@ -1951,14 +1951,14 @@
 
     .line 562
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "network unavailable, don\'t retry subcribe and wait for the network signal."
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 563
-    iput v5, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
+    iput v5, p0, Lcom/wumii/android/mimi/push/PushService;->mIs:I
 
     goto :goto_1
 
@@ -1981,7 +1981,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
@@ -1995,7 +1995,7 @@
     if-nez v0, :cond_0
 
     .line 592
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
@@ -2007,7 +2007,7 @@
 
     .line 595
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2033,7 +2033,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2052,7 +2052,7 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
     :try_end_0
     .catch Lorg/eclipse/paho/client/mqttv3/MqttException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2069,28 +2069,28 @@
     .line 601
     :cond_2
     :try_start_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, p0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
     .line 603
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
 
     .line 605
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->w:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mIMqttActionListenerw:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;Ljava/lang/Object;Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;)Lorg/eclipse/paho/client/mqttv3/IMqttToken;
 
     .line 607
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2102,7 +2102,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
@@ -2118,7 +2118,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getClientId()Ljava/lang/String;
 
@@ -2145,7 +2145,7 @@
 
     .line 610
     :try_start_2
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2157,7 +2157,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
@@ -2182,7 +2182,7 @@
     .line 611
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -2213,7 +2213,7 @@
     const/4 v5, 0x0
 
     .line 671
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
@@ -2226,7 +2226,7 @@
     if-eqz v0, :cond_0
 
     .line 673
-    iget v0, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iget v0, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -2235,14 +2235,14 @@
 
     .line 687
     :goto_0
-    iget v2, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iget v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     .line 688
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2254,7 +2254,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iget v4, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2277,7 +2277,7 @@
     invoke-interface {v2, v3}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 689
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->y:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlery:Landroid/os/Handler;
 
     invoke-virtual {v2, v5, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
@@ -2308,14 +2308,14 @@
 
     .line 691
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "network unavailable, don\'t retry and wait for the network signal."
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 692
-    iput v5, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
+    iput v5, p0, Lcom/wumii/android/mimi/push/PushService;->mIx:I
 
     goto :goto_1
 
@@ -2339,7 +2339,7 @@
     const/4 v4, 0x0
 
     .line 698
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-nez v0, :cond_0
 
@@ -2349,7 +2349,7 @@
 
     .line 702
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->c()Z
 
@@ -2358,7 +2358,7 @@
     if-nez v0, :cond_1
 
     .line 703
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2367,15 +2367,15 @@
     .line 708
     :cond_1
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getTopics()Ljava/util/List;
 
@@ -2399,10 +2399,10 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 712
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     .line 713
-    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->m:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttMessagem:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 715
     :try_start_1
@@ -2412,7 +2412,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 719
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2424,7 +2424,7 @@
 
     .line 717
     :try_start_2
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "MQTT client disconnect failed."
 
@@ -2433,7 +2433,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 719
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2442,7 +2442,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2454,7 +2454,7 @@
 
     .line 710
     :try_start_3
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Fail to publish off message to server."
 
@@ -2463,10 +2463,10 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 712
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     .line 713
-    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->m:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttMessagem:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 715
     :try_start_4
@@ -2476,7 +2476,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     .line 719
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2488,7 +2488,7 @@
 
     .line 717
     :try_start_5
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "MQTT client disconnect failed."
 
@@ -2497,7 +2497,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     .line 719
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2506,7 +2506,7 @@
     :catchall_1
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2516,10 +2516,10 @@
     :catchall_2
     move-exception v0
 
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     .line 713
-    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->m:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
+    iput-object v4, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttMessagem:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
     .line 715
     :try_start_6
@@ -2529,7 +2529,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     .line 719
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2542,7 +2542,7 @@
 
     .line 717
     :try_start_7
-    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "MQTT client disconnect failed."
 
@@ -2551,7 +2551,7 @@
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
     .line 719
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2560,7 +2560,7 @@
     :catchall_3
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v1, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->a(Lorg/eclipse/paho/client/mqttv3/MqttCallback;)V
 
@@ -2572,12 +2572,12 @@
 
     .prologue
     .line 734
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->b()Lorg/eclipse/paho/client/mqttv3/IMqttToken;
 
     .line 735
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2589,7 +2589,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
@@ -2614,11 +2614,11 @@
 
     .prologue
     .line 739
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->j:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttAsyncClientj:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;->c()Z
 
@@ -2644,7 +2644,7 @@
 
     .prologue
     .line 436
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -2660,7 +2660,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->h()V
 
     .line 438
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "messageArrived, skip this message because of no authentication."
 
@@ -2714,7 +2714,7 @@
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>([B)V
 
     .line 465
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2775,7 +2775,7 @@
     move-exception v0
 
     .line 468
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2807,13 +2807,13 @@
     const/4 v3, 0x0
 
     .line 414
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->o:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZo:Z
 
     .line 415
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->k()V
 
     .line 416
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2825,7 +2825,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
+    iget-object v2, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConfg:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/push/PushService$MqttConf;->getServer()Ljava/lang/String;
 
@@ -2848,11 +2848,11 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 418
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->l:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZl:Z
 
     .line 420
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
@@ -2865,7 +2865,7 @@
     if-nez v0, :cond_0
 
     .line 421
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Waiting for network available before reconnect."
 
@@ -2909,7 +2909,7 @@
     move-result-object v0
 
     .line 746
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2975,7 +2975,7 @@
     move-exception v0
 
     .line 748
-    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3028,7 +3028,7 @@
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     .line 95
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "onCreate"
 
@@ -3039,24 +3039,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 97
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     invoke-direct {v0}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;->a(Z)V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->i:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mMqttConnectOptionsi:Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
 
     const/16 v1, 0x10e
 
@@ -3085,10 +3085,10 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
@@ -3111,14 +3111,14 @@
     const/4 v2, 0x0
 
     .line 369
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "onDestroy"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 370
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
@@ -3132,15 +3132,15 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->l()V
 
     .line 372
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->k:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/push/PushService;->isZk:Z
 
     .line 373
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->t:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlert:Landroid/os/Handler;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 374
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->y:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushService;->mHandlery:Landroid/os/Handler;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
@@ -3152,7 +3152,7 @@
     invoke-virtual {v1}, Lcom/wumii/android/mimi/push/PushService$ICk;->j()V
 
     .line 396
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->mPushServiceKeeperTimern:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b()V
 
@@ -3179,7 +3179,7 @@
 
     .prologue
     .line 147
-    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->e:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/PushService;->mLoggere:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "onStartCommand"
 

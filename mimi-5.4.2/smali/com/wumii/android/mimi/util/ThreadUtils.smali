@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Ljava/util/concurrent/ExecutorService;
+.field private static mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
-.field private static b:Landroid/os/Handler;
+.field private static mHandlerb:Landroid/os/Handler;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 38
-    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mHandlerb:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
@@ -28,11 +28,11 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->b:Landroid/os/Handler;
+    sput-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mHandlerb:Landroid/os/Handler;
 
     .line 41
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mHandlerb:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 16
-    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_0
 
@@ -51,11 +51,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->a:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     .line 19
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->a:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0, p0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
@@ -95,7 +95,7 @@
     invoke-static {}, Lcom/wumii/android/mimi/util/ThreadUtils;->a()Landroid/os/Handler;
 
     .line 46
-    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/wumii/android/mimi/util/ThreadUtils;->mHandlerb:Landroid/os/Handler;
 
     invoke-virtual {v0, p0, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 

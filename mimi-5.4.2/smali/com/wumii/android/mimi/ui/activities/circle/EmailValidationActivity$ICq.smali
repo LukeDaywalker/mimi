@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
+.field final synthetic mEmailValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->mEmailValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->mEmailValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICq;->mEmailValidationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

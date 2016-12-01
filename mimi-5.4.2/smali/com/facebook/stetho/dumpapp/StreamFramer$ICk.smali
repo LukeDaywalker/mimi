@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+.field private final mBb:B
 
-.field private final b:B
+.field final synthetic mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
 
 # direct methods
@@ -15,13 +15,13 @@
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+    iput-object p1, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
     .line 92
     invoke-direct {p0, p2}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     .line 93
-    iput-byte p3, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->b:B
+    iput-byte p3, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mBb:B
 
     .line 94
     return-void
@@ -77,7 +77,7 @@
 
     .line 100
     :try_start_0
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
     monitor-enter v1
     :try_end_0
@@ -85,14 +85,14 @@
 
     .line 101
     :try_start_1
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
-    iget-byte v2, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->b:B
+    iget-byte v2, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mBb:B
 
     invoke-static {v0, v2, p3}, Lcom/facebook/stetho/dumpapp/StreamFramer;->a(Lcom/facebook/stetho/dumpapp/StreamFramer;BI)V
 
     .line 102
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
     invoke-static {v0}, Lcom/facebook/stetho/dumpapp/StreamFramer;->a(Lcom/facebook/stetho/dumpapp/StreamFramer;)Ljava/io/DataOutputStream;
 
@@ -101,7 +101,7 @@
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/DataOutputStream;->write([BII)V
 
     .line 103
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->a:Lcom/facebook/stetho/dumpapp/StreamFramer;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;->mStreamFramera:Lcom/facebook/stetho/dumpapp/StreamFramer;
 
     invoke-static {v0}, Lcom/facebook/stetho/dumpapp/StreamFramer;->a(Lcom/facebook/stetho/dumpapp/StreamFramer;)Ljava/io/DataOutputStream;
 

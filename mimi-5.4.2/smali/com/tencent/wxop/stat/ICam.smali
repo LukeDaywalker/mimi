@@ -3,31 +3,17 @@
 
 
 # static fields
-.field private static h:Lcom/tencent/wxop/stat/b/ICb;
+.field private static mContexti:Landroid/content/Context;
 
-.field private static i:Landroid/content/Context;
+.field private static mICamj:Lcom/tencent/wxop/stat/ICam;
 
-.field private static j:Lcom/tencent/wxop/stat/ICam;
+.field private static mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
 
 # instance fields
-.field volatile a:I
+.field private isZm:Z
 
-.field b:Lcom/tencent/wxop/stat/b/ICc;
-
-.field private c:Lcom/tencent/wxop/stat/ICd;
-
-.field private d:Lcom/tencent/wxop/stat/ICd;
-
-.field private e:Lcom/tencent/wxop/stat/b/ICf;
-
-.field private f:Ljava/lang/String;
-
-.field private g:Ljava/lang/String;
-
-.field private k:I
-
-.field private l:Ljava/util/concurrent/ConcurrentHashMap;
+.field private mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentHashMap",
@@ -39,9 +25,7 @@
     .end annotation
 .end field
 
-.field private m:Z
-
-.field private n:Ljava/util/HashMap;
+.field private mHashMapn:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -52,6 +36,22 @@
         }
     .end annotation
 .end field
+
+.field mICcb:Lcom/tencent/wxop/stat/b/ICc;
+
+.field private mICdc:Lcom/tencent/wxop/stat/ICd;
+
+.field private mICdd:Lcom/tencent/wxop/stat/ICd;
+
+.field private mICfe:Lcom/tencent/wxop/stat/b/ICf;
+
+.field volatile mIa:I
+
+.field private mIk:I
+
+.field private mStringf:Ljava/lang/String;
+
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -64,11 +64,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sput-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
-    sput-object v1, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sput-object v1, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
-    sput-object v1, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sput-object v1, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     return-void
 .end method
@@ -82,60 +82,60 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->d:Lcom/tencent/wxop/stat/ICd;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mICdd:Lcom/tencent/wxop/stat/ICd;
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
-
-    const-string/jumbo v0, ""
-
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->f:Ljava/lang/String;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mStringf:Ljava/lang/String;
 
-    iput v2, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    const-string/jumbo v0, ""
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mStringg:Ljava/lang/String;
 
-    iput v2, p0, Lcom/tencent/wxop/stat/ICam;->k:I
+    iput v2, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
 
-    iput-boolean v2, p0, Lcom/tencent/wxop/stat/ICam;->m:Z
+    iput v2, p0, Lcom/tencent/wxop/stat/ICam;->mIk:I
+
+    iput-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
+
+    iput-boolean v2, p0, Lcom/tencent/wxop/stat/ICam;->isZm:Z
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->n:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mHashMapn:Ljava/util/HashMap;
 
     :try_start_0
     new-instance v0, Lcom/tencent/wxop/stat/b/ICf;
 
     invoke-direct {v0}, Lcom/tencent/wxop/stat/b/ICf;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sput-object v0, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-static {p1}, Lcom/tencent/wxop/stat/b/ICl;->p(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mStringf:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -155,27 +155,27 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mStringg:Ljava/lang/String;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICd;
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mStringf:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/tencent/wxop/stat/ICd;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICd;
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mStringg:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/tencent/wxop/stat/ICd;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->d:Lcom/tencent/wxop/stat/ICd;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdd:Lcom/tencent/wxop/stat/ICd;
 
     const/4 v0, 0x1
 
@@ -187,7 +187,7 @@
 
     invoke-direct {p0}, Lcom/tencent/wxop/stat/ICam;->e()V
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lcom/tencent/wxop/stat/ICam;->b(Landroid/content/Context;)Lcom/tencent/wxop/stat/b/ICc;
 
@@ -203,7 +203,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -213,7 +213,7 @@
 .method public static a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
     .locals 2
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     if-nez v0, :cond_1
 
@@ -222,7 +222,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     if-nez v0, :cond_0
 
@@ -230,7 +230,7 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/wxop/stat/ICam;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sput-object v0, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     :cond_0
     monitor-exit v1
@@ -238,7 +238,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     return-object v0
 
@@ -302,7 +302,7 @@
 
     check-cast v0, Lcom/tencent/wxop/stat/ICe;
 
-    iget-wide v6, v0, Lcom/tencent/wxop/stat/ICe;->a:J
+    iget-wide v6, v0, Lcom/tencent/wxop/stat/ICe;->mJa:J
 
     invoke-virtual {v2, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -339,7 +339,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     if-lez v0, :cond_0
 
@@ -368,7 +368,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -376,7 +376,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -413,7 +413,7 @@
 
     if-eqz v1, :cond_3
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -446,7 +446,7 @@
 
     invoke-direct {p0, v0, v1, p2}, Lcom/tencent/wxop/stat/ICam;->a(Ljava/util/List;IZ)V
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/tencent/wxop/stat/ICl;->b(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICl;
 
@@ -467,7 +467,7 @@
     move-exception v0
 
     :try_start_2
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_2
@@ -540,7 +540,7 @@
 
     if-eqz v5, :cond_1
 
-    sget-object v5, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v5, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -753,7 +753,7 @@
 
     if-eqz v3, :cond_2
 
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -778,7 +778,7 @@
 
     if-eqz v2, :cond_3
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -820,7 +820,7 @@
     move-exception v0
 
     :try_start_5
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_5
@@ -875,7 +875,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/tencent/wxop/stat/ICam;->k:I
+    iget v4, p0, Lcom/tencent/wxop/stat/ICam;->mIk:I
 
     rem-int/lit8 v4, v4, 0x3
 
@@ -896,11 +896,11 @@
     move-result-object v2
 
     :cond_6
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->k:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIk:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->k:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->mIk:I
     :try_end_7
     .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_4
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
@@ -916,7 +916,7 @@
 
     :goto_3
     :try_start_8
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_8
@@ -936,7 +936,7 @@
     move-exception v0
 
     :try_start_a
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_a
@@ -966,7 +966,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v1}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_c
@@ -1039,7 +1039,7 @@
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1083,7 +1083,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1093,7 +1093,7 @@
     move-exception v0
 
     :try_start_2
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_2
@@ -1111,7 +1111,7 @@
     :catch_2
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1134,7 +1134,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v1}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -1146,7 +1146,7 @@
 
     if-nez p1, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1156,7 +1156,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->d:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdd:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1168,7 +1168,7 @@
 .method public static b()Lcom/tencent/wxop/stat/ICam;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->j:Lcom/tencent/wxop/stat/ICam;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICamj:Lcom/tencent/wxop/stat/ICam;
 
     return-object v0
 .end method
@@ -1185,7 +1185,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p1, Lcom/tencent/wxop/stat/ICi;->b:Lorg/json/JSONObject;
+    iget-object v0, p1, Lcom/tencent/wxop/stat/ICi;->mJSONObjectb:Lorg/json/JSONObject;
 
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -1201,7 +1201,7 @@
 
     const-string/jumbo v1, "content"
 
-    iget-object v2, p1, Lcom/tencent/wxop/stat/ICi;->b:Lorg/json/JSONObject;
+    iget-object v2, p1, Lcom/tencent/wxop/stat/ICi;->mJSONObjectb:Lorg/json/JSONObject;
 
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -1213,11 +1213,11 @@
 
     invoke-virtual {v12, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p1, Lcom/tencent/wxop/stat/ICi;->c:Ljava/lang/String;
+    iput-object v0, p1, Lcom/tencent/wxop/stat/ICi;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v0, "version"
 
-    iget v1, p1, Lcom/tencent/wxop/stat/ICi;->d:I
+    iget v1, p1, Lcom/tencent/wxop/stat/ICi;->mId:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1225,7 +1225,7 @@
 
     invoke-virtual {v12, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1266,14 +1266,14 @@
 
     move-result v0
 
-    iget v2, p1, Lcom/tencent/wxop/stat/ICi;->a:I
+    iget v2, p1, Lcom/tencent/wxop/stat/ICi;->mIa:I
 
     if-ne v0, v2, :cond_0
 
     move v0, v9
 
     :goto_0
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1283,7 +1283,7 @@
 
     if-ne v9, v0, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1299,7 +1299,7 @@
 
     const/4 v5, 0x0
 
-    iget v6, p1, Lcom/tencent/wxop/stat/ICi;->a:I
+    iget v6, p1, Lcom/tencent/wxop/stat/ICi;->mIa:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1320,7 +1320,7 @@
 
     if-nez v0, :cond_3
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1339,7 +1339,7 @@
     invoke-virtual {v0, v2}, Lcom/tencent/wxop/stat/b/ICb;->e(Ljava/lang/Object;)V
 
     :goto_2
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1359,7 +1359,7 @@
 
     :cond_1
     :try_start_3
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1379,7 +1379,7 @@
     :try_start_4
     const-string/jumbo v0, "type"
 
-    iget v2, p1, Lcom/tencent/wxop/stat/ICi;->a:I
+    iget v2, p1, Lcom/tencent/wxop/stat/ICi;->mIa:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1387,7 +1387,7 @@
 
     invoke-virtual {v12, v0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1404,7 +1404,7 @@
     goto :goto_1
 
     :cond_3
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1432,7 +1432,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_5
@@ -1447,7 +1447,7 @@
 
     :cond_4
     :try_start_7
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1480,7 +1480,7 @@
 
     :cond_5
     :try_start_9
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v1}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1546,7 +1546,7 @@
 
     if-lez v0, :cond_4
 
-    sget v0, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v0, Lcom/tencent/wxop/stat/ICv;->mIn:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -1566,7 +1566,7 @@
 
     if-nez p3, :cond_1
 
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->j()I
 
@@ -1574,15 +1574,15 @@
 
     if-le v0, v2, :cond_1
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v2, "Too many events stored in db."
 
     invoke-virtual {v0, v2}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Object;)V
 
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1600,7 +1600,7 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     :cond_1
     new-instance v0, Landroid/content/ContentValues;
@@ -1617,7 +1617,7 @@
 
     if-eqz v3, :cond_2
 
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1703,11 +1703,11 @@
     if-lez v0, :cond_6
 
     :try_start_3
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
 
@@ -1715,7 +1715,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1754,7 +1754,7 @@
     move-exception v0
 
     :try_start_4
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_4
@@ -1770,7 +1770,7 @@
     const-wide/16 v2, -0x1
 
     :try_start_5
-    sget-object v4, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v4, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v4, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_5
@@ -1792,7 +1792,7 @@
     move-exception v0
 
     :try_start_7
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_7
@@ -1831,14 +1831,14 @@
     move-exception v1
 
     :try_start_a
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v1}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
     goto :goto_2
 
     :cond_6
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1863,7 +1863,7 @@
     goto :goto_1
 
     :cond_7
-    sget v0, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v0, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     if-lez v0, :cond_4
 
@@ -1873,7 +1873,7 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1881,7 +1881,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
@@ -1897,7 +1897,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v2, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1909,7 +1909,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1921,7 +1921,7 @@
 
     invoke-virtual {v0, v1}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1944,19 +1944,19 @@
     invoke-virtual {v0, v1}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_8
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     const-string/jumbo v1, ""
 
     invoke-virtual {v0, p1, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
     move-result v0
 
-    sget v1, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v1, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     if-lt v0, v1, :cond_9
 
@@ -1965,7 +1965,7 @@
     :cond_9
     if-eqz p2, :cond_4
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
@@ -2005,7 +2005,7 @@
     if-nez p3, :cond_3
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -2069,7 +2069,7 @@
 
     move-result-object v4
 
-    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->g:Z
+    sget-boolean v0, Lcom/tencent/wxop/stat/ICv;->isZg:Z
 
     if-nez v0, :cond_0
 
@@ -2100,7 +2100,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2159,7 +2159,7 @@
 
     :goto_2
     :try_start_2
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_2
@@ -2175,7 +2175,7 @@
 
     :cond_3
     :try_start_3
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->d:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdd:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_3
@@ -2265,7 +2265,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2337,7 +2337,7 @@
 
     check-cast v0, Lcom/tencent/wxop/stat/ICe;
 
-    iget-wide v6, v0, Lcom/tencent/wxop/stat/ICe;->a:J
+    iget-wide v6, v0, Lcom/tencent/wxop/stat/ICe;->mJa:J
 
     invoke-virtual {v3, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -2388,7 +2388,7 @@
 
     if-eqz v2, :cond_5
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -2431,11 +2431,11 @@
     invoke-virtual {v2, v3}, Lcom/tencent/wxop/stat/b/ICb;->a(Ljava/lang/Object;)V
 
     :cond_5
-    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v2, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     sub-int v0, v2, v0
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
@@ -2458,7 +2458,7 @@
     move-exception v0
 
     :try_start_4
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_4
@@ -2477,7 +2477,7 @@
     move-exception v0
 
     :try_start_5
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_5
@@ -2497,7 +2497,7 @@
     move-exception v0
 
     :try_start_7
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_7
@@ -2524,7 +2524,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v1}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_9
@@ -2536,7 +2536,7 @@
 .method static synthetic d()Lcom/tencent/wxop/stat/b/ICb;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     return-object v0
 .end method
@@ -2554,7 +2554,7 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     return-void
 .end method
@@ -2562,7 +2562,7 @@
 .method private f()I
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -2582,7 +2582,7 @@
 .method private g()I
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->d:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdd:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -2604,7 +2604,7 @@
 
     const/4 v1, 0x0
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->m:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->isZm:Z
 
     if-eqz v0, :cond_0
 
@@ -2612,12 +2612,12 @@
     return-void
 
     :cond_0
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     monitor-enter v2
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
@@ -2642,7 +2642,7 @@
     const/4 v0, 0x1
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->m:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->isZm:Z
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
 
@@ -2650,7 +2650,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2658,7 +2658,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v4, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v4}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
@@ -2674,7 +2674,7 @@
 
     move-result-object v3
 
-    sget v4, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v4, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2686,7 +2686,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v4, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2702,7 +2702,7 @@
 
     :cond_2
     :try_start_2
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -2710,7 +2710,7 @@
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
 
@@ -2753,7 +2753,7 @@
 
     if-eqz v6, :cond_3
 
-    sget-object v6, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v6, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -2825,7 +2825,7 @@
     move-exception v0
 
     :try_start_3
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v3, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_3
@@ -2846,7 +2846,7 @@
     const/4 v0, 0x0
 
     :try_start_5
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->m:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/ICam;->isZm:Z
 
     invoke-static {}, Lcom/tencent/wxop/stat/ICv;->b()Z
 
@@ -2854,7 +2854,7 @@
 
     if-eqz v0, :cond_5
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2862,7 +2862,7 @@
 
     invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICam;->l:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICam;->mConcurrentHashMapl:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
 
@@ -2878,7 +2878,7 @@
 
     move-result-object v1
 
-    sget v3, Lcom/tencent/wxop/stat/ICv;->n:I
+    sget v3, Lcom/tencent/wxop/stat/ICv;->mIn:I
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2890,7 +2890,7 @@
 
     move-result-object v1
 
-    iget v3, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v3, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2932,7 +2932,7 @@
     move-exception v0
 
     :try_start_8
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
@@ -2941,7 +2941,7 @@
     :catch_2
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_8
@@ -2970,7 +2970,7 @@
     :catch_3
     move-exception v1
 
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v3, v1}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_a
@@ -2985,7 +2985,7 @@
     const/4 v8, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3048,19 +3048,19 @@
 
     invoke-direct {v5, v0}, Lcom/tencent/wxop/stat/ICi;-><init>(I)V
 
-    iput v0, v5, Lcom/tencent/wxop/stat/ICi;->a:I
+    iput v0, v5, Lcom/tencent/wxop/stat/ICi;->mIa:I
 
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, v5, Lcom/tencent/wxop/stat/ICi;->b:Lorg/json/JSONObject;
+    iput-object v0, v5, Lcom/tencent/wxop/stat/ICi;->mJSONObjectb:Lorg/json/JSONObject;
 
-    iput-object v3, v5, Lcom/tencent/wxop/stat/ICi;->c:Ljava/lang/String;
+    iput-object v3, v5, Lcom/tencent/wxop/stat/ICi;->mStringc:Ljava/lang/String;
 
-    iput v4, v5, Lcom/tencent/wxop/stat/ICi;->d:I
+    iput v4, v5, Lcom/tencent/wxop/stat/ICi;->mId:I
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICam;->i:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/wxop/stat/ICam;->mContexti:Landroid/content/Context;
 
     invoke-static {v0, v5}, Lcom/tencent/wxop/stat/ICv;->a(Landroid/content/Context;Lcom/tencent/wxop/stat/ICi;)V
     :try_end_1
@@ -3074,7 +3074,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_2
@@ -3127,7 +3127,7 @@
     const/4 v8, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3162,7 +3162,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->n:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mHashMapn:Ljava/util/HashMap;
 
     const/4 v2, 0x0
 
@@ -3188,7 +3188,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v2, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_2
@@ -3240,7 +3240,7 @@
 .method public final a()I
     .locals 1
 
-    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, p0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     return v0
 .end method
@@ -3248,7 +3248,7 @@
 .method final a(I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICc;
 
@@ -3268,7 +3268,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICar;
 
@@ -3282,11 +3282,11 @@
 .method final a(Lcom/tencent/wxop/stat/a/ICd;Lcom/tencent/wxop/stat/ICk;ZZ)V
     .locals 7
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     if-eqz v0, :cond_0
 
-    iget-object v6, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v6, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v0, Lcom/tencent/wxop/stat/ICaq;
 
@@ -3320,11 +3320,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICan;
 
@@ -3344,13 +3344,13 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
 
     if-eqz v2, :cond_0
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -3365,7 +3365,7 @@
     :try_start_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3379,7 +3379,7 @@
 
     if-eqz v2, :cond_1
 
-    sget-object v2, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v2, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     const-string/jumbo v3, "try to load user info from db."
 
@@ -3388,7 +3388,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3601,7 +3601,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v11, v0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iput-object v11, v0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -3643,7 +3643,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3668,7 +3668,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3773,7 +3773,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3793,12 +3793,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iput-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
 
     :cond_7
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3817,7 +3817,7 @@
     :cond_8
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3832,7 +3832,7 @@
     :try_start_4
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->b:Lcom/tencent/wxop/stat/b/ICc;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICcb:Lcom/tencent/wxop/stat/b/ICc;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -3896,7 +3896,7 @@
     move-exception v2
 
     :try_start_6
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v3, v2}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_6
@@ -3918,7 +3918,7 @@
 
     :goto_8
     :try_start_7
-    sget-object v4, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v4, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v4, v2}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_7
@@ -3932,7 +3932,7 @@
     :cond_b
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v2, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v2}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3949,7 +3949,7 @@
     move-exception v2
 
     :try_start_9
-    sget-object v3, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v3, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v3, v2}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_9
@@ -3971,7 +3971,7 @@
     :cond_c
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/tencent/wxop/stat/ICam;->c:Lcom/tencent/wxop/stat/ICd;
+    iget-object v3, v0, Lcom/tencent/wxop/stat/ICam;->mICdc:Lcom/tencent/wxop/stat/ICd;
 
     invoke-virtual {v3}, Lcom/tencent/wxop/stat/ICd;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -3989,7 +3989,7 @@
     :catch_3
     move-exception v3
 
-    sget-object v4, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v4, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v4, v3}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
     :try_end_b
@@ -4058,11 +4058,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICao;
 
@@ -4088,7 +4088,7 @@
 
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->e:Lcom/tencent/wxop/stat/b/ICf;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICam;->mICfe:Lcom/tencent/wxop/stat/b/ICf;
 
     new-instance v1, Lcom/tencent/wxop/stat/ICap;
 
@@ -4103,7 +4103,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/wxop/stat/ICam;->h:Lcom/tencent/wxop/stat/b/ICb;
+    sget-object v1, Lcom/tencent/wxop/stat/ICam;->mICbh:Lcom/tencent/wxop/stat/b/ICb;
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 

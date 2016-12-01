@@ -32,11 +32,11 @@
 
 .field public static final enum i:Lcom/tencent/wxop/stat/a/ICe;
 
-.field private static final synthetic k:[Lcom/tencent/wxop/stat/a/ICe;
+.field private static final synthetic mArrayICek:[Lcom/tencent/wxop/stat/a/ICe;
 
 
 # instance fields
-.field private j:I
+.field private mIj:I
 
 
 # direct methods
@@ -193,7 +193,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/tencent/wxop/stat/a/ICe;->k:[Lcom/tencent/wxop/stat/a/ICe;
+    sput-object v0, Lcom/tencent/wxop/stat/a/ICe;->mArrayICek:[Lcom/tencent/wxop/stat/a/ICe;
 
     return-void
 .end method
@@ -208,7 +208,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lcom/tencent/wxop/stat/a/ICe;->j:I
+    iput p3, p0, Lcom/tencent/wxop/stat/a/ICe;->mIj:I
 
     return-void
 .end method
@@ -218,7 +218,7 @@
 .method public final a()I
     .locals 1
 
-    iget v0, p0, Lcom/tencent/wxop/stat/a/ICe;->j:I
+    iget v0, p0, Lcom/tencent/wxop/stat/a/ICe;->mIj:I
 
     return v0
 .end method

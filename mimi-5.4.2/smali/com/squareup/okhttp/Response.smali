@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field private final a:Lcom/squareup/okhttp/Request;
+.field private volatile mCacheControlk:Lcom/squareup/okhttp/CacheControl;
 
-.field private final b:Lcom/squareup/okhttp/Protocol;
+.field private final mHandshakee:Lcom/squareup/okhttp/Handshake;
 
-.field private final c:I
+.field private final mHeadersf:Lcom/squareup/okhttp/Headers;
 
-.field private final d:Ljava/lang/String;
+.field private final mIc:I
 
-.field private final e:Lcom/squareup/okhttp/Handshake;
+.field private final mProtocolb:Lcom/squareup/okhttp/Protocol;
 
-.field private final f:Lcom/squareup/okhttp/Headers;
+.field private final mRequesta:Lcom/squareup/okhttp/Request;
 
-.field private final g:Lcom/squareup/okhttp/ResponseBody;
+.field private final mResponseBodyg:Lcom/squareup/okhttp/ResponseBody;
 
-.field private h:Lcom/squareup/okhttp/Response;
+.field private mResponseh:Lcom/squareup/okhttp/Response;
 
-.field private i:Lcom/squareup/okhttp/Response;
+.field private mResponsei:Lcom/squareup/okhttp/Response;
 
-.field private final j:Lcom/squareup/okhttp/Response;
+.field private final mResponsej:Lcom/squareup/okhttp/Response;
 
-.field private volatile k:Lcom/squareup/okhttp/CacheControl;
+.field private final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -40,35 +40,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->a:Lcom/squareup/okhttp/Request;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mRequesta:Lcom/squareup/okhttp/Request;
 
     .line 52
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->b(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Protocol;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->b:Lcom/squareup/okhttp/Protocol;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     .line 53
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->c(Lcom/squareup/okhttp/Response$ICau;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iput v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     .line 54
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->d(Lcom/squareup/okhttp/Response$ICau;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mStringd:Ljava/lang/String;
 
     .line 55
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->e(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Handshake;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->e:Lcom/squareup/okhttp/Handshake;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mHandshakee:Lcom/squareup/okhttp/Handshake;
 
     .line 56
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->f(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Headers$ICab;
@@ -79,35 +79,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->f:Lcom/squareup/okhttp/Headers;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     .line 57
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->g(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/ResponseBody;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->g:Lcom/squareup/okhttp/ResponseBody;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseBodyg:Lcom/squareup/okhttp/ResponseBody;
 
     .line 58
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->h(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->h:Lcom/squareup/okhttp/Response;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseh:Lcom/squareup/okhttp/Response;
 
     .line 59
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->i(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->i:Lcom/squareup/okhttp/Response;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsei:Lcom/squareup/okhttp/Response;
 
     .line 60
     invoke-static {p1}, Lcom/squareup/okhttp/Response$ICau;->j(Lcom/squareup/okhttp/Response$ICau;)Lcom/squareup/okhttp/Response;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->j:Lcom/squareup/okhttp/Response;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsej:Lcom/squareup/okhttp/Response;
 
     .line 61
     return-void
@@ -128,7 +128,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->a:Lcom/squareup/okhttp/Request;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mRequesta:Lcom/squareup/okhttp/Request;
 
     return-object v0
 .end method
@@ -138,7 +138,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->b:Lcom/squareup/okhttp/Protocol;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     return-object v0
 .end method
@@ -148,7 +148,7 @@
 
     .prologue
     .line 36
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     return v0
 .end method
@@ -158,7 +158,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -168,7 +168,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->e:Lcom/squareup/okhttp/Handshake;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHandshakee:Lcom/squareup/okhttp/Handshake;
 
     return-object v0
 .end method
@@ -178,7 +178,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->f:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     return-object v0
 .end method
@@ -188,7 +188,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->g:Lcom/squareup/okhttp/ResponseBody;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseBodyg:Lcom/squareup/okhttp/ResponseBody;
 
     return-object v0
 .end method
@@ -198,7 +198,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->h:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseh:Lcom/squareup/okhttp/Response;
 
     return-object v0
 .end method
@@ -208,7 +208,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->i:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsei:Lcom/squareup/okhttp/Response;
 
     return-object v0
 .end method
@@ -218,7 +218,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->j:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsej:Lcom/squareup/okhttp/Response;
 
     return-object v0
 .end method
@@ -230,7 +230,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->a:Lcom/squareup/okhttp/Request;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mRequesta:Lcom/squareup/okhttp/Request;
 
     return-object v0
 .end method
@@ -254,7 +254,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->f:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Headers;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->b:Lcom/squareup/okhttp/Protocol;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     return-object v0
 .end method
@@ -284,7 +284,7 @@
 
     .prologue
     .line 88
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     return v0
 .end method
@@ -294,13 +294,13 @@
 
     .prologue
     .line 96
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     const/16 v1, 0xc8
 
     if-lt v0, v1, :cond_0
 
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     const/16 v1, 0x12c
 
@@ -322,7 +322,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -332,7 +332,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->e:Lcom/squareup/okhttp/Handshake;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHandshakee:Lcom/squareup/okhttp/Handshake;
 
     return-object v0
 .end method
@@ -342,7 +342,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->f:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     return-object v0
 .end method
@@ -352,7 +352,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->g:Lcom/squareup/okhttp/ResponseBody;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseBodyg:Lcom/squareup/okhttp/ResponseBody;
 
     return-object v0
 .end method
@@ -376,7 +376,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->h:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponseh:Lcom/squareup/okhttp/Response;
 
     return-object v0
 .end method
@@ -386,7 +386,7 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->i:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mResponsei:Lcom/squareup/okhttp/Response;
 
     return-object v0
 .end method
@@ -405,7 +405,7 @@
 
     .prologue
     .line 190
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     const/16 v1, 0x191
 
@@ -429,7 +429,7 @@
 
     .line 192
     :cond_0
-    iget v0, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     const/16 v1, 0x197
 
@@ -454,7 +454,7 @@
 
     .prologue
     .line 205
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->k:Lcom/squareup/okhttp/CacheControl;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mCacheControlk:Lcom/squareup/okhttp/CacheControl;
 
     .line 206
     if-eqz v0, :cond_0
@@ -463,13 +463,13 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Response;->f:Lcom/squareup/okhttp/Headers;
+    iget-object v0, p0, Lcom/squareup/okhttp/Response;->mHeadersf:Lcom/squareup/okhttp/Headers;
 
     invoke-static {v0}, Lcom/squareup/okhttp/CacheControl;->a(Lcom/squareup/okhttp/Headers;)Lcom/squareup/okhttp/CacheControl;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Response;->k:Lcom/squareup/okhttp/CacheControl;
+    iput-object v0, p0, Lcom/squareup/okhttp/Response;->mCacheControlk:Lcom/squareup/okhttp/CacheControl;
 
     goto :goto_0
 .end method
@@ -489,7 +489,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Response;->b:Lcom/squareup/okhttp/Protocol;
+    iget-object v1, p0, Lcom/squareup/okhttp/Response;->mProtocolb:Lcom/squareup/okhttp/Protocol;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -501,7 +501,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/squareup/okhttp/Response;->c:I
+    iget v1, p0, Lcom/squareup/okhttp/Response;->mIc:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -513,7 +513,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Response;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Response;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -525,7 +525,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Response;->a:Lcom/squareup/okhttp/Request;
+    iget-object v1, p0, Lcom/squareup/okhttp/Response;->mRequesta:Lcom/squareup/okhttp/Request;
 
     .line 217
     invoke-virtual {v1}, Lcom/squareup/okhttp/Request;->c()Ljava/lang/String;

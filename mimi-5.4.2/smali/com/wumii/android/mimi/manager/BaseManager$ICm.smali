@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+.field final synthetic mBaseManagerc:Lcom/wumii/android/mimi/manager/BaseManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
+.field final synthetic mICfa:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
-.field final synthetic c:Lcom/wumii/android/mimi/manager/BaseManager;
+.field final synthetic mWMProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->c:Lcom/wumii/android/mimi/manager/BaseManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->mBaseManagerc:Lcom/wumii/android/mimi/manager/BaseManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->a:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->mICfa:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->b:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
+    iput-object p3, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->mWMProgressingDialogb:Lcom/wumii/android/mimi/ui/widgets/WMProgressingDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->a:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICm;->mICfa:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     invoke-interface {v0, p1, p2}, Lcom/wumii/android/mimi/network/HttpProcessor$ICf;->a(Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpJsonResponse;)V
 

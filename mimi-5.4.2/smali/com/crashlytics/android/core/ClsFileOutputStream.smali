@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field private final b:Ljava/lang/String;
+.field private isZe:Z
 
-.field private c:Ljava/io/File;
+.field private mFilec:Ljava/io/File;
 
-.field private d:Ljava/io/File;
+.field private mFiled:Ljava/io/File;
 
-.field private e:Z
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -64,7 +64,7 @@
     .line 33
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->e:Z
+    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->isZe:Z
 
     .line 41
     new-instance v0, Ljava/lang/StringBuilder;
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mStringb:Ljava/lang/String;
 
     .line 42
     new-instance v0, Ljava/io/File;
@@ -98,7 +98,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->c:Ljava/io/File;
+    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilec:Ljava/io/File;
 
     .line 43
     return-void
@@ -129,7 +129,7 @@
 
     .prologue
     .line 79
-    iget-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->e:Z
+    iget-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -141,7 +141,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->e:Z
+    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->isZe:Z
 
     .line 83
     invoke-super {p0}, Ljava/io/FileOutputStream;->flush()V
@@ -160,7 +160,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->e:Z
+    iget-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->isZe:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -177,7 +177,7 @@
     const/4 v0, 0x1
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->e:Z
+    iput-boolean v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->isZe:Z
 
     .line 51
     invoke-super {p0}, Ljava/io/FileOutputStream;->flush()V
@@ -192,7 +192,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -211,7 +211,7 @@
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->c:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
@@ -222,10 +222,10 @@
     .line 57
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->c:Ljava/io/File;
+    iput-object v0, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilec:Ljava/io/File;
 
     .line 58
-    iput-object v1, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->d:Ljava/io/File;
+    iput-object v1, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFiled:Ljava/io/File;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -269,7 +269,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->c:Ljava/io/File;
+    iget-object v4, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilec:Ljava/io/File;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -299,7 +299,7 @@
 
     .line 63
     :cond_3
-    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->c:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/ClsFileOutputStream;->mFilec:Ljava/io/File;
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+.field final synthetic mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
@@ -66,7 +66,7 @@
     invoke-static {p1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICi;->mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->b(Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;)V
 

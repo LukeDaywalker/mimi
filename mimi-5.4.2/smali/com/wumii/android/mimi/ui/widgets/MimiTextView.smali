@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Ljava/util/regex/Pattern;
+.field private static mIb:I
 
-.field private static b:I
+.field private static final mPatterna:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field private c:Ljava/util/ArrayList;
+.field private mArrayListc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -21,9 +21,9 @@
     .end annotation
 .end field
 
-.field private d:I
+.field private mICaoe:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
+.field private mId:I
 
 
 # direct methods
@@ -38,12 +38,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mPatterna:Ljava/util/regex/Pattern;
 
     .line 35
     const/4 v0, 0x0
 
-    sput v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->b:I
+    sput v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mIb:I
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     .line 38
     const v0, -0xffff01
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mId:I
 
     .line 57
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -97,7 +97,7 @@
 
     move-result v0
 
-    sput v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->b:I
+    sput v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mIb:I
 
     .line 59
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->getMovementMethod()Landroid/text/method/MovementMethod;
@@ -132,7 +132,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
     .line 67
     return-void
@@ -143,7 +143,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->e:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mICaoe:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
 
     return-object v0
 .end method
@@ -153,7 +153,7 @@
 
     .prologue
     .line 24
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->a:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mPatterna:Ljava/util/regex/Pattern;
 
     return-object v0
 .end method
@@ -207,22 +207,22 @@
 
     move-result-object v4
 
-    iput-object v4, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->a:Ljava/lang/CharSequence;
+    iput-object v4, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mCharSequencea:Ljava/lang/CharSequence;
 
     .line 110
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;
 
-    iget-object v5, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->a:Ljava/lang/CharSequence;
+    iget-object v5, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mCharSequencea:Ljava/lang/CharSequence;
 
     invoke-direct {v4, p0, v5}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;-><init>(Lcom/wumii/android/mimi/ui/widgets/MimiTextView;Ljava/lang/CharSequence;)V
 
-    iput-object v4, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->b:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;
+    iput-object v4, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mICanb:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;
 
     .line 111
-    iput v1, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->c:I
+    iput v1, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mIc:I
 
     .line 112
-    iput v2, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->d:I
+    iput v2, v3, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mId:I
 
     .line 114
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -239,7 +239,7 @@
 
     .prologue
     .line 24
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mId:I
 
     return v0
 .end method
@@ -284,10 +284,10 @@
 
     .prologue
     .line 74
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->d:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mId:I
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -302,7 +302,7 @@
     if-eqz v1, :cond_3
 
     .line 81
-    sget v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->b:I
+    sget v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mIb:I
 
     invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Ljava/lang/String;I)Landroid/text/SpannableStringBuilder;
 
@@ -321,7 +321,7 @@
     if-eqz v0, :cond_0
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
     sget-object v1, Lcom/wumii/android/mimi/util/Patterns;->a:Ljava/util/regex/Pattern;
 
@@ -334,9 +334,9 @@
     if-eqz v0, :cond_1
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->a:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mPatterna:Ljava/util/regex/Pattern;
 
     invoke-direct {p0, v0, v2, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->a(Ljava/util/ArrayList;Landroid/text/Spannable;Ljava/util/regex/Pattern;)V
 
@@ -347,7 +347,7 @@
     move v1, v0
 
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -356,7 +356,7 @@
     if-ge v1, v0, :cond_2
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -365,11 +365,11 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;
 
     .line 94
-    iget-object v3, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->b:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;
+    iget-object v3, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mICanb:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICan;
 
-    iget v4, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->c:I
+    iget v4, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mIc:I
 
-    iget v0, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->d:I
+    iget v0, v0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICam;->mId:I
 
     const/16 v5, 0x21
 
@@ -400,7 +400,7 @@
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->e:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->mICaoe:Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;
 
     .line 71
     return-void

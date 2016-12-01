@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private c:[I
+.field private mArrayIc:[I
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->c:[I
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->mArrayIc:[I
 
     .line 39
     invoke-virtual {v2}, Ljava/io/DataInputStream;->read()I
@@ -65,7 +65,7 @@
 
     .line 41
     :cond_0
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->c:[I
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->mArrayIc:[I
 
     aput v0, v3, v1
 
@@ -120,7 +120,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->c:[I
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->mArrayIc:[I
 
     array-length v2, v2
 
@@ -141,7 +141,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->c:[I
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSuback;->mArrayIc:[I
 
     aget v3, v3, v0
 

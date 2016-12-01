@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
+.field final synthetic mShareSecretContactListActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->mShareSecretContactListActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;-><init>(Landroid/app/Activity;)V
 
@@ -34,7 +34,7 @@
     .line 75
     const-string/jumbo v1, "shared_contact_num"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->mShareSecretContactListActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;)Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
@@ -47,14 +47,14 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 76
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->mShareSecretContactListActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->mShareSecretContactListActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->finish()V
 

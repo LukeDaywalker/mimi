@@ -20,9 +20,9 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
-
 .field protected static final l:Ljava/util/concurrent/Executor;
+
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 35
-    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/task/SafeAsyncTask;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method

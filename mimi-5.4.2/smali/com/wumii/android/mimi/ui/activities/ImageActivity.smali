@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private C:Ljava/lang/String;
+.field private final mFq:F
+
+.field private mRoundProgressBarr:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
+
+.field private mStringC:Ljava/lang/String;
+
+.field private mStringt:Ljava/lang/String;
+
+.field private mViews:Landroid/view/View;
 
 .field protected n:Luk/co/senab/photoview/PhotoView;
 
 .field protected o:Landroid/view/View;
 
 .field protected p:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
-
-.field private final q:F
-
-.field private r:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
-
-.field private s:Landroid/view/View;
-
-.field private t:Ljava/lang/String;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .line 28
     const/high16 v0, 0x41200000    # 10.0f
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->q:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mFq:F
 
     return-void
 .end method
@@ -80,7 +80,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->r:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mRoundProgressBarr:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
     return-object v0
 .end method
@@ -116,7 +116,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->s:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViews:Landroid/view/View;
 
     return-object v0
 .end method
@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->C:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
 
@@ -210,7 +210,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->r:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mRoundProgressBarr:Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
     .line 75
     const v0, 0x7f0b00ba
@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->s:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViews:Landroid/view/View;
 
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->o:Landroid/view/View;
@@ -227,7 +227,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->s:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViews:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->t:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringt:Ljava/lang/String;
 
     new-instance v2, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
@@ -313,7 +313,7 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->s:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mViews:Landroid/view/View;
 
     if-ne p1, v0, :cond_1
 
@@ -367,7 +367,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->t:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringt:Ljava/lang/String;
 
     .line 60
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->getIntent()Landroid/content/Intent;
@@ -380,7 +380,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->C:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;
 
     .line 62
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
@@ -402,7 +402,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->p:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->C:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->mStringC:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 

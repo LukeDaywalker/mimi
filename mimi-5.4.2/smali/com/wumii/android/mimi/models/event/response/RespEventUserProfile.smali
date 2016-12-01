@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+.field private mUserProfilea:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 21
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->mUserProfilea:Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     .line 22
     return-void

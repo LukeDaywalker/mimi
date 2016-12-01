@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mFb:F
 
-.field private final b:F
+.field private final mIa:I
 
-.field private c:Ljava/lang/Object;
+.field private mObjectc:Ljava/lang/Object;
 
 
 # direct methods
@@ -50,10 +50,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 81
-    iput p1, p0, Landroid/support/v4/media/RatingCompat;->a:I
+    iput p1, p0, Landroid/support/v4/media/RatingCompat;->mIa:I
 
     .line 82
-    iput p2, p0, Landroid/support/v4/media/RatingCompat;->b:F
+    iput p2, p0, Landroid/support/v4/media/RatingCompat;->mFb:F
 
     .line 83
     return-void
@@ -300,7 +300,7 @@
 
     .line 330
     :goto_1
-    iput-object p0, v0, Landroid/support/v4/media/RatingCompat;->c:Ljava/lang/Object;
+    iput-object p0, v0, Landroid/support/v4/media/RatingCompat;->mObjectc:Ljava/lang/Object;
 
     goto :goto_0
 
@@ -417,7 +417,7 @@
 
     .prologue
     .line 93
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->a:I
+    iget v0, p0, Landroid/support/v4/media/RatingCompat;->mIa:I
 
     return v0
 .end method
@@ -437,7 +437,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Landroid/support/v4/media/RatingCompat;->a:I
+    iget v1, p0, Landroid/support/v4/media/RatingCompat;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -449,7 +449,7 @@
 
     move-result-object v1
 
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->b:F
+    iget v0, p0, Landroid/support/v4/media/RatingCompat;->mFb:F
 
     const/4 v2, 0x0
 
@@ -471,7 +471,7 @@
     return-object v0
 
     :cond_0
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->b:F
+    iget v0, p0, Landroid/support/v4/media/RatingCompat;->mFb:F
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
@@ -485,12 +485,12 @@
 
     .prologue
     .line 98
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->a:I
+    iget v0, p0, Landroid/support/v4/media/RatingCompat;->mIa:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 99
-    iget v0, p0, Landroid/support/v4/media/RatingCompat;->b:F
+    iget v0, p0, Landroid/support/v4/media/RatingCompat;->mFb:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 

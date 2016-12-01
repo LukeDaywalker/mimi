@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+.field final synthetic mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;-><init>(Landroid/content/Context;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
@@ -50,7 +50,7 @@
     if-nez v0, :cond_0
 
     .line 137
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->b(Ljava/lang/String;)Z
 
@@ -79,7 +79,7 @@
     if-eqz v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-static {v0, p1}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->a(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -101,7 +101,7 @@
     if-eqz v0, :cond_0
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICb;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 

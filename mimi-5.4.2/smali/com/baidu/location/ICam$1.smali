@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICam;
+.field final synthetic mICama:Lcom/baidu/location/ICam;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICam;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iput-object p1, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +58,7 @@
 
     check-cast v0, [F
 
-    iget-object v2, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v2, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-virtual {v0}, [F->clone()Ljava/lang/Object;
 
@@ -68,7 +68,7 @@
 
     invoke-static {v2, v1}, Lcom/baidu/location/ICam;->if(Lcom/baidu/location/ICam;[F)[F
 
-    iget-object v1, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v1, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     aget v2, v0, v4
 
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v1, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-static {v1}, Lcom/baidu/location/ICam;->do(Lcom/baidu/location/ICam;)I
 
@@ -114,7 +114,7 @@
 
     float-to-double v0, v0
 
-    iget-object v2, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v2, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-static {v2}, Lcom/baidu/location/ICam;->for(Lcom/baidu/location/ICam;)I
 
@@ -128,7 +128,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v0, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-static {v0, v5}, Lcom/baidu/location/ICam;->if(Lcom/baidu/location/ICam;I)I
 
@@ -141,7 +141,7 @@
 
     if-gez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICam$1;->a:Lcom/baidu/location/ICam;
+    iget-object v0, p0, Lcom/baidu/location/ICam$1;->mICama:Lcom/baidu/location/ICam;
 
     invoke-static {v0, v4}, Lcom/baidu/location/ICam;->if(Lcom/baidu/location/ICam;I)I
 

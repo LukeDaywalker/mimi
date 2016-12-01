@@ -6,7 +6,7 @@
 
 
 # static fields
-.field private static a:Lcom/baidu/location/ICh;
+.field private static mICha:Lcom/baidu/location/ICh;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICh;->a:Lcom/baidu/location/ICh;
+    sput-object v0, Lcom/baidu/location/ICh;->mICha:Lcom/baidu/location/ICh;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
 .method public static for()Lcom/baidu/location/ICh;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICh;->a:Lcom/baidu/location/ICh;
+    sget-object v0, Lcom/baidu/location/ICh;->mICha:Lcom/baidu/location/ICh;
 
     if-nez v0, :cond_0
 
@@ -39,10 +39,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICh;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICh;->a:Lcom/baidu/location/ICh;
+    sput-object v0, Lcom/baidu/location/ICh;->mICha:Lcom/baidu/location/ICh;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICh;->a:Lcom/baidu/location/ICh;
+    sget-object v0, Lcom/baidu/location/ICh;->mICha:Lcom/baidu/location/ICh;
 
     return-object v0
 .end method

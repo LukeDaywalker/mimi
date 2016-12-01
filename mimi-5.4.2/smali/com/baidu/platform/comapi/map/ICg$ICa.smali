@@ -3,21 +3,21 @@
 
 
 # instance fields
-.field a:F
+.field isZe:Z
 
-.field b:F
+.field mDh:D
 
-.field c:F
+.field mFa:F
 
-.field d:F
+.field mFb:F
 
-.field e:Z
+.field mFc:F
 
-.field f:F
+.field mFd:F
 
-.field g:F
+.field mFf:F
 
-.field h:D
+.field mFg:F
 
 
 # direct methods

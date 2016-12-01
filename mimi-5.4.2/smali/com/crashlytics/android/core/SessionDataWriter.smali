@@ -4,15 +4,23 @@
 
 
 # static fields
-.field private static final a:Lcom/crashlytics/android/core/ByteString;
+.field private static final mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
 
 # instance fields
-.field private b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+.field private mArrayStackTraceElemente:[Ljava/lang/StackTraceElement;
 
-.field private c:[Ljava/lang/Thread;
+.field private mArrayThreadc:[Ljava/lang/Thread;
 
-.field private d:Ljava/util/List;
+.field private final mByteStringg:Lcom/crashlytics/android/core/ByteString;
+
+.field private final mByteStringh:Lcom/crashlytics/android/core/ByteString;
+
+.field private final mContextf:Landroid/content/Context;
+
+.field private final mIi:I
+
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -23,15 +31,7 @@
     .end annotation
 .end field
 
-.field private e:[Ljava/lang/StackTraceElement;
-
-.field private final f:Landroid/content/Context;
-
-.field private final g:Lcom/crashlytics/android/core/ByteString;
-
-.field private final h:Lcom/crashlytics/android/core/ByteString;
-
-.field private final i:I
+.field private mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/SessionDataWriter;->a:Lcom/crashlytics/android/core/ByteString;
+    sput-object v0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     return-void
 .end method
@@ -61,17 +61,17 @@
     .line 45
     const/16 v0, 0x8
 
-    iput v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->i:I
+    iput v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mIi:I
 
     .line 48
-    iput-object p1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->f:Landroid/content/Context;
+    iput-object p1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mContextf:Landroid/content/Context;
 
     .line 49
     invoke-static {p3}, Lcom/crashlytics/android/core/ByteString;->a(Ljava/lang/String;)Lcom/crashlytics/android/core/ByteString;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->g:Lcom/crashlytics/android/core/ByteString;
+    iput-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringg:Lcom/crashlytics/android/core/ByteString;
 
     .line 50
     if-nez p2, :cond_0
@@ -79,7 +79,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->h:Lcom/crashlytics/android/core/ByteString;
+    iput-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringh:Lcom/crashlytics/android/core/ByteString;
 
     .line 52
     return-void
@@ -115,7 +115,7 @@
 
     invoke-direct {v2}, Lio/fabric/sdk/android/services/common/ApiKey;-><init>()V
 
-    iget-object v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->f:Landroid/content/Context;
+    iget-object v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mContextf:Landroid/content/Context;
 
     invoke-virtual {v2, v3}, Lio/fabric/sdk/android/services/common/ApiKey;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -814,7 +814,7 @@
 
     .line 519
     .line 521
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->e:[Ljava/lang/StackTraceElement;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayStackTraceElemente:[Ljava/lang/StackTraceElement;
 
     const/4 v1, 0x4
 
@@ -838,7 +838,7 @@
     add-int/2addr v0, v2
 
     .line 525
-    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->c:[Ljava/lang/Thread;
+    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayThreadc:[Ljava/lang/Thread;
 
     array-length v4, v1
 
@@ -851,12 +851,12 @@
     if-ge v1, v4, :cond_0
 
     .line 527
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->c:[Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayThreadc:[Ljava/lang/Thread;
 
     aget-object v5, v0, v1
 
     .line 528
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1070,14 +1070,14 @@
 
     .line 508
     :cond_1
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     if-eqz v0, :cond_2
 
     .line 509
     const/4 v1, 0x3
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     iget v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
 
@@ -1430,7 +1430,7 @@
     if-eqz v2, :cond_2
 
     .line 599
-    iget v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->i:I
+    iget v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mIi:I
 
     if-ge p2, v3, :cond_3
 
@@ -1785,7 +1785,7 @@
     invoke-virtual {p1, v0}, Lcom/crashlytics/android/core/CodedOutputStream;->k(I)V
 
     .line 234
-    iget-object v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->e:[Ljava/lang/StackTraceElement;
+    iget-object v3, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayStackTraceElemente:[Ljava/lang/StackTraceElement;
 
     const/4 v4, 0x4
 
@@ -1800,7 +1800,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lcom/crashlytics/android/core/CodedOutputStream;Ljava/lang/Thread;[Ljava/lang/StackTraceElement;IZ)V
 
     .line 238
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->c:[Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayThreadc:[Ljava/lang/Thread;
 
     array-length v7, v0
 
@@ -1813,12 +1813,12 @@
     if-ge v6, v7, :cond_0
 
     .line 240
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->c:[Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayThreadc:[Ljava/lang/Thread;
 
     aget-object v2, v0, v6
 
     .line 241
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1868,14 +1868,14 @@
     .line 248
     const/4 v0, 0x1
 
-    sget-object v1, Lcom/crashlytics/android/core/SessionDataWriter;->a:Lcom/crashlytics/android/core/ByteString;
+    sget-object v1, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     invoke-virtual {p1, v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->a(ILcom/crashlytics/android/core/ByteString;)V
 
     .line 249
     const/4 v0, 0x2
 
-    sget-object v1, Lcom/crashlytics/android/core/SessionDataWriter;->a:Lcom/crashlytics/android/core/ByteString;
+    sget-object v1, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     invoke-virtual {p1, v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->a(ILcom/crashlytics/android/core/ByteString;)V
 
@@ -1917,19 +1917,19 @@
     .line 256
     const/4 v0, 0x3
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->g:Lcom/crashlytics/android/core/ByteString;
+    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringg:Lcom/crashlytics/android/core/ByteString;
 
     invoke-virtual {p1, v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->a(ILcom/crashlytics/android/core/ByteString;)V
 
     .line 257
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->h:Lcom/crashlytics/android/core/ByteString;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringh:Lcom/crashlytics/android/core/ByteString;
 
     if-eqz v0, :cond_1
 
     .line 258
     const/4 v0, 0x4
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->h:Lcom/crashlytics/android/core/ByteString;
+    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringh:Lcom/crashlytics/android/core/ByteString;
 
     invoke-virtual {p1, v0, v1}, Lcom/crashlytics/android/core/CodedOutputStream;->a(ILcom/crashlytics/android/core/ByteString;)V
 
@@ -1987,12 +1987,12 @@
 
     .line 220
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     if-eqz v0, :cond_1
 
     .line 222
-    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     iget v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
 
@@ -2166,7 +2166,7 @@
     if-eqz v1, :cond_2
 
     .line 295
-    iget v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->i:I
+    iget v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mIi:I
 
     if-ge p3, v2, :cond_3
 
@@ -2338,7 +2338,7 @@
     .line 456
     const/4 v1, 0x3
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->g:Lcom/crashlytics/android/core/ByteString;
+    iget-object v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringg:Lcom/crashlytics/android/core/ByteString;
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CodedOutputStream;->b(ILcom/crashlytics/android/core/ByteString;)I
 
@@ -2347,14 +2347,14 @@
     add-int/2addr v0, v1
 
     .line 457
-    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->h:Lcom/crashlytics/android/core/ByteString;
+    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringh:Lcom/crashlytics/android/core/ByteString;
 
     if-eqz v1, :cond_0
 
     .line 458
     const/4 v1, 0x4
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->h:Lcom/crashlytics/android/core/ByteString;
+    iget-object v2, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringh:Lcom/crashlytics/android/core/ByteString;
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CodedOutputStream;->b(ILcom/crashlytics/android/core/ByteString;)I
 
@@ -2377,7 +2377,7 @@
     .line 623
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/crashlytics/android/core/SessionDataWriter;->a:Lcom/crashlytics/android/core/ByteString;
+    sget-object v2, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CodedOutputStream;->b(ILcom/crashlytics/android/core/ByteString;)I
 
@@ -2388,7 +2388,7 @@
     .line 624
     const/4 v1, 0x2
 
-    sget-object v2, Lcom/crashlytics/android/core/SessionDataWriter;->a:Lcom/crashlytics/android/core/ByteString;
+    sget-object v2, Lcom/crashlytics/android/core/SessionDataWriter;->mByteStringa:Lcom/crashlytics/android/core/ByteString;
 
     invoke-static {v1, v2}, Lcom/crashlytics/android/core/CodedOutputStream;->b(ILcom/crashlytics/android/core/ByteString;)I
 
@@ -2447,28 +2447,28 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->b:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->mRunningAppProcessInfob:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 181
     move-object/from16 v0, p17
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->d:Ljava/util/List;
+    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->mListd:Ljava/util/List;
 
     .line 182
     move-object/from16 v0, p18
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->e:[Ljava/lang/StackTraceElement;
+    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayStackTraceElemente:[Ljava/lang/StackTraceElement;
 
     .line 183
     move-object/from16 v0, p7
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->c:[Ljava/lang/Thread;
+    iput-object v0, v1, Lcom/crashlytics/android/core/SessionDataWriter;->mArrayThreadc:[Ljava/lang/Thread;
 
     .line 185
     invoke-virtual/range {p19 .. p19}, Lcom/crashlytics/android/core/LogFileManager;->a()Lcom/crashlytics/android/core/ByteString;
@@ -3071,7 +3071,7 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/common/ApiKey;-><init>()V
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->f:Landroid/content/Context;
+    iget-object v1, p0, Lcom/crashlytics/android/core/SessionDataWriter;->mContextf:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Lio/fabric/sdk/android/services/common/ApiKey;->a(Landroid/content/Context;)Ljava/lang/String;
 

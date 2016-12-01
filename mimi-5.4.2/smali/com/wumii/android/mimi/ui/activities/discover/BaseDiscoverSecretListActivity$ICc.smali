@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+.field final synthetic mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 208
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICc;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 212
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICc;->mBaseDiscoverSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->h()V
 

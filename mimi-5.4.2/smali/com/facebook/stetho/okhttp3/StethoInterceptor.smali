@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+.field private final mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private final mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     .line 29
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 249
     return-void
@@ -49,7 +49,7 @@
     const/4 v2, 0x0
 
     .line 33
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -68,7 +68,7 @@
     const/4 v0, 0x0
 
     .line 38
-    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-interface {v4}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a()Z
 
@@ -82,7 +82,7 @@
     invoke-direct {v4, v1, v3}, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICc;-><init>(Ljava/lang/String;Lcom/squareup/okhttp/Request;)V
 
     .line 40
-    iget-object v5, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v5, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-interface {v5, v4}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Lcom/facebook/stetho/inspector/network/NetworkEventReporter$ICj;)V
 
@@ -109,7 +109,7 @@
     move-result-object v6
 
     .line 57
-    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-interface {v4}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a()Z
 
@@ -121,7 +121,7 @@
     if-lez v0, :cond_1
 
     .line 59
-    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-interface {v4, v1, v0, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Ljava/lang/String;II)V
 
@@ -132,7 +132,7 @@
     move-result-object v0
 
     .line 63
-    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     new-instance v5, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;
 
@@ -162,7 +162,7 @@
 
     .line 78
     :goto_0
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     if-eqz v3, :cond_2
 
@@ -179,7 +179,7 @@
 
     new-instance v5, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;
 
-    iget-object v8, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v8, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-direct {v5, v8, v1}, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;-><init>(Lcom/facebook/stetho/inspector/network/NetworkEventReporter;Ljava/lang/String;)V
 
@@ -216,7 +216,7 @@
     move-exception v0
 
     .line 51
-    iget-object v2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-interface {v2}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a()Z
 
@@ -225,7 +225,7 @@
     if-eqz v2, :cond_3
 
     .line 52
-    iget-object v2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
 

@@ -4,13 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/etsy/android/grid/ExtendableListView;
-
-.field private b:I
-
-.field private c:[Landroid/view/View;
-
-.field private d:[Ljava/util/ArrayList;
+.field private mArrayArrayListd:[Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
@@ -22,9 +16,7 @@
     .end annotation
 .end field
 
-.field private e:I
-
-.field private f:Ljava/util/ArrayList;
+.field private mArrayListf:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -35,7 +27,7 @@
     .end annotation
 .end field
 
-.field private g:Ljava/util/ArrayList;
+.field private mArrayListg:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -46,7 +38,15 @@
     .end annotation
 .end field
 
-.field private h:Landroid/support/v4/util/SparseArrayCompat;
+.field private mArrayViewc:[Landroid/view/View;
+
+.field final synthetic mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
+
+.field private mIb:I
+
+.field private mIe:I
+
+.field private mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/support/v4/util/SparseArrayCompat",
@@ -64,7 +64,7 @@
 
     .prologue
     .line 2165
-    iput-object p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iput-object p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +73,7 @@
 
     new-array v0, v0, [Landroid/view/View;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     return-void
 .end method
@@ -85,15 +85,15 @@
     const/4 v1, 0x0
 
     .line 2450
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     array-length v5, v0
 
     .line 2451
-    iget v6, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v6, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     .line 2452
-    iget-object v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     move v4, v1
 
@@ -122,7 +122,7 @@
     if-ge v2, v9, :cond_0
 
     .line 2459
-    iget-object v10, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v10, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     add-int/lit8 v3, v0, -0x1
 
@@ -153,13 +153,13 @@
 
     .line 2463
     :cond_1
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-eqz v0, :cond_3
 
     .line 2464
     :goto_2
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/util/SparseArrayCompat;->b()I
 
@@ -168,7 +168,7 @@
     if-ge v1, v0, :cond_3
 
     .line 2465
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/util/SparseArrayCompat;->f(I)Ljava/lang/Object;
 
@@ -184,7 +184,7 @@
     if-nez v0, :cond_2
 
     .line 2467
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/util/SparseArrayCompat;->d(I)V
 
@@ -213,14 +213,14 @@
     const/4 v1, 0x0
 
     .line 2208
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     const/4 v2, 0x1
 
     if-ne v0, v2, :cond_0
 
     .line 2209
-    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     .line 2210
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
@@ -251,7 +251,7 @@
 
     .line 2216
     :cond_0
-    iget v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     move v3, v1
 
@@ -260,7 +260,7 @@
     if-ge v3, v4, :cond_2
 
     .line 2218
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     aget-object v5, v0, v3
 
@@ -301,12 +301,12 @@
 
     .line 2225
     :cond_2
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-eqz v0, :cond_3
 
     .line 2226
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/util/SparseArrayCompat;->b()I
 
@@ -317,7 +317,7 @@
     if-ge v1, v2, :cond_3
 
     .line 2228
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/util/SparseArrayCompat;->f(I)Ljava/lang/Object;
 
@@ -383,15 +383,15 @@
 
     .line 2202
     :cond_1
-    iput p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iput p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     .line 2203
     aget-object v0, v2, v1
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     .line 2204
-    iput-object v2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iput-object v2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     .line 2205
     return-void
@@ -402,7 +402,7 @@
 
     .prologue
     .line 2271
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     array-length v0, v0
 
@@ -411,14 +411,14 @@
     .line 2272
     new-array v0, p1, [Landroid/view/View;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     .line 2274
     :cond_0
-    iput p2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->b:I
+    iput p2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIb:I
 
     .line 2276
-    iget-object v2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iget-object v2, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     .line 2277
     const/4 v0, 0x0
@@ -429,7 +429,7 @@
     if-ge v1, p1, :cond_2
 
     .line 2278
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-virtual {v0, v1}, Lcom/etsy/android/grid/ExtendableListView;->getChildAt(I)Landroid/view/View;
 
@@ -445,7 +445,7 @@
     .line 2281
     if-eqz v0, :cond_1
 
-    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     const/4 v4, -0x2
 
@@ -488,10 +488,10 @@
 
     .line 2358
     :cond_1
-    iput p2, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->b:I
+    iput p2, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mIb:I
 
     .line 2362
-    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iget v0, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     .line 2363
     invoke-static {p1}, Landroid/support/v4/view/ViewCompat;->c(Landroid/view/View;)Z
@@ -517,7 +517,7 @@
 
     .line 2366
     :cond_3
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     if-nez v0, :cond_4
 
@@ -526,11 +526,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     .line 2369
     :cond_4
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -539,7 +539,7 @@
     if-eqz v1, :cond_0
 
     .line 2372
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-nez v0, :cond_6
 
@@ -548,11 +548,11 @@
 
     invoke-direct {v0}, Landroid/support/v4/util/SparseArrayCompat;-><init>()V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     .line 2375
     :cond_6
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0, p2, p1}, Landroid/support/v4/util/SparseArrayCompat;->b(ILjava/lang/Object;)V
 
@@ -560,14 +560,14 @@
 
     .line 2380
     :cond_7
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_8
 
     .line 2381
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -575,7 +575,7 @@
 
     .line 2384
     :cond_8
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     aget-object v0, v1, v0
 
@@ -591,14 +591,14 @@
     const/4 v2, 0x0
 
     .line 2241
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     .line 2242
-    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     .line 2243
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
@@ -612,7 +612,7 @@
     if-ge v1, v4, :cond_2
 
     .line 2245
-    iget-object v5, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v5, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     add-int/lit8 v0, v4, -0x1
 
@@ -635,7 +635,7 @@
 
     .line 2249
     :cond_0
-    iget v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     move v3, v2
 
@@ -644,7 +644,7 @@
     if-ge v3, v4, :cond_2
 
     .line 2251
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     aget-object v5, v0, v3
 
@@ -660,7 +660,7 @@
     if-ge v1, v6, :cond_1
 
     .line 2254
-    iget-object v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     add-int/lit8 v0, v6, -0x1
 
@@ -691,12 +691,12 @@
 
     .line 2258
     :cond_2
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-eqz v0, :cond_3
 
     .line 2259
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/util/SparseArrayCompat;->c()V
 
@@ -730,12 +730,12 @@
     const/4 v1, 0x0
 
     .line 2297
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->b:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIb:I
 
     sub-int v2, p1, v0
 
     .line 2298
-    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     .line 2299
     if-ltz v2, :cond_0
@@ -765,12 +765,12 @@
 
     .prologue
     .line 2324
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-eqz v0, :cond_0
 
     .line 2325
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     invoke-virtual {v0}, Landroid/support/v4/util/SparseArrayCompat;->c()V
 
@@ -784,14 +784,14 @@
 
     .prologue
     .line 2333
-    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     .line 2334
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-static {v0, p1}, Lcom/etsy/android/grid/ExtendableListView;->a(Ljava/util/ArrayList;I)Landroid/view/View;
 
@@ -803,9 +803,9 @@
 
     .line 2337
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
-    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView;->a:Landroid/widget/ListAdapter;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView;->mListAdaptera:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->getItemViewType(I)I
 
@@ -814,14 +814,14 @@
     .line 2338
     if-ltz v0, :cond_1
 
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 2339
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     aget-object v0, v1, v0
 
@@ -845,7 +845,7 @@
     const/4 v2, 0x0
 
     .line 2392
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -855,7 +855,7 @@
 
     .line 2395
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -868,9 +868,9 @@
     if-ge v1, v3, :cond_1
 
     .line 2397
-    iget-object v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v4, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -889,7 +889,7 @@
 
     .line 2399
     :cond_1
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -905,10 +905,10 @@
     const/4 v2, 0x0
 
     .line 2406
-    iget-object v5, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->c:[Landroid/view/View;
+    iget-object v5, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayViewc:[Landroid/view/View;
 
     .line 2407
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->e:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIe:I
 
     if-le v1, v0, :cond_5
 
@@ -916,7 +916,7 @@
 
     .line 2409
     :goto_0
-    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->f:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayListf:Ljava/util/ArrayList;
 
     .line 2410
     array-length v0, v5
@@ -953,7 +953,7 @@
     move-result v7
 
     .line 2418
-    iget v8, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->d:I
+    iget v8, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mId:I
 
     .line 2420
     invoke-virtual {p0, v8}, Lcom/etsy/android/grid/ExtendableListView$ICi;->b(I)Z
@@ -974,7 +974,7 @@
 
     .line 2423
     :cond_1
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->a:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mExtendableListViewa:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-static {v0, v6, v2}, Lcom/etsy/android/grid/ExtendableListView;->d(Lcom/etsy/android/grid/ExtendableListView;Landroid/view/View;Z)V
 
@@ -983,7 +983,7 @@
     if-eqz v7, :cond_4
 
     .line 2426
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     if-nez v0, :cond_3
 
@@ -992,13 +992,13 @@
 
     invoke-direct {v0}, Landroid/support/v4/util/SparseArrayCompat;-><init>()V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
     .line 2429
     :cond_3
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->h:Landroid/support/v4/util/SparseArrayCompat;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mSparseArrayCompath:Landroid/support/v4/util/SparseArrayCompat;
 
-    iget v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->b:I
+    iget v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIb:I
 
     add-int/2addr v7, v4
 
@@ -1024,17 +1024,17 @@
     if-eqz v1, :cond_7
 
     .line 2435
-    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->d:[Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mArrayArrayListd:[Ljava/util/ArrayList;
 
     aget-object v3, v3, v8
 
     .line 2437
     :cond_7
-    iget v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->b:I
+    iget v7, p0, Lcom/etsy/android/grid/ExtendableListView$ICi;->mIb:I
 
     add-int/2addr v7, v4
 
-    iput v7, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->b:I
+    iput v7, v0, Lcom/etsy/android/grid/ExtendableListView$ICf;->mIb:I
 
     .line 2438
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

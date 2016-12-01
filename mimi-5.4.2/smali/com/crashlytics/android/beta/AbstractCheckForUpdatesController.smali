@@ -7,27 +7,27 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private c:Landroid/content/Context;
+.field private mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
-.field private d:Lcom/crashlytics/android/beta/Beta;
+.field private mBetad:Lcom/crashlytics/android/beta/Beta;
 
-.field private e:Lio/fabric/sdk/android/services/common/IdManager;
+.field private mBuildPropertiesg:Lcom/crashlytics/android/beta/BuildProperties;
 
-.field private f:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
+.field private mContextc:Landroid/content/Context;
 
-.field private g:Lcom/crashlytics/android/beta/BuildProperties;
+.field private mCurrentTimeProvideri:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
-.field private h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+.field private mHttpRequestFactoryj:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
-.field private i:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+.field private mIdManagere:Lio/fabric/sdk/android/services/common/IdManager;
 
-.field private j:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+.field private mJk:J
 
-.field private k:J
+.field private mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
 
 # direct methods
@@ -56,19 +56,19 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 53
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->k:J
+    iput-wide v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mJk:J
 
     .line 69
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 70
     return-void
@@ -94,16 +94,16 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/common/ApiKey;-><init>()V
 
-    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->c:Landroid/content/Context;
+    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Lio/fabric/sdk/android/services/common/ApiKey;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 152
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->e:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mIdManagere:Lio/fabric/sdk/android/services/common/IdManager;
 
-    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->g:Lcom/crashlytics/android/beta/BuildProperties;
+    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBuildPropertiesg:Lcom/crashlytics/android/beta/BuildProperties;
 
     iget-object v1, v1, Lcom/crashlytics/android/beta/BuildProperties;->d:Ljava/lang/String;
 
@@ -114,19 +114,19 @@
     .line 155
     new-instance v0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;
 
-    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->d:Lcom/crashlytics/android/beta/Beta;
+    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetad:Lcom/crashlytics/android/beta/Beta;
 
-    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->d:Lcom/crashlytics/android/beta/Beta;
+    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetad:Lcom/crashlytics/android/beta/Beta;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/beta/Beta;->g()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->f:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
+    iget-object v3, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
     iget-object v3, v3, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->a:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->j:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v4, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mHttpRequestFactoryj:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     new-instance v5, Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
 
@@ -135,7 +135,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;-><init>(Lio/fabric/sdk/android/Kit;Ljava/lang/String;Ljava/lang/String;Lio/fabric/sdk/android/services/network/HttpRequestFactory;Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;)V
 
     .line 166
-    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->g:Lcom/crashlytics/android/beta/BuildProperties;
+    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBuildPropertiesg:Lcom/crashlytics/android/beta/BuildProperties;
 
     invoke-virtual {v0, v6, v7, v1}, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->a(Ljava/lang/String;Ljava/lang/String;Lcom/crashlytics/android/beta/BuildProperties;)Lcom/crashlytics/android/beta/CheckForUpdatesResponse;
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 173
-    iput-wide p1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->k:J
+    iput-wide p1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mJk:J
 
     .line 174
     return-void
@@ -161,28 +161,28 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mContextc:Landroid/content/Context;
 
     .line 82
-    iput-object p2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->d:Lcom/crashlytics/android/beta/Beta;
+    iput-object p2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetad:Lcom/crashlytics/android/beta/Beta;
 
     .line 83
-    iput-object p3, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->e:Lio/fabric/sdk/android/services/common/IdManager;
+    iput-object p3, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mIdManagere:Lio/fabric/sdk/android/services/common/IdManager;
 
     .line 84
-    iput-object p4, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->f:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
+    iput-object p4, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
     .line 85
-    iput-object p5, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->g:Lcom/crashlytics/android/beta/BuildProperties;
+    iput-object p5, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBuildPropertiesg:Lcom/crashlytics/android/beta/BuildProperties;
 
     .line 86
-    iput-object p6, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iput-object p6, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     .line 87
-    iput-object p7, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->i:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iput-object p7, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mCurrentTimeProvideri:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     .line 88
-    iput-object p8, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->j:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iput-object p8, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mHttpRequestFactoryj:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     .line 90
     invoke-virtual {p0}, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->b()Z
@@ -204,14 +204,14 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 101
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -225,14 +225,14 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 111
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -251,13 +251,13 @@
 
     .prologue
     .line 118
-    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     monitor-enter v1
 
     .line 119
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a()Landroid/content/SharedPreferences;
 
@@ -272,9 +272,9 @@
     if-eqz v0, :cond_0
 
     .line 120
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->h:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mPreferenceStoreh:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v2}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->b()Landroid/content/SharedPreferences$Editor;
 
@@ -295,14 +295,14 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 124
-    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->i:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mCurrentTimeProvideri:Lio/fabric/sdk/android/services/common/CurrentTimeProvider;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/common/CurrentTimeProvider;->a()J
 
     move-result-wide v0
 
     .line 125
-    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->f:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
+    iget-object v2, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mBetaSettingsDataf:Lio/fabric/sdk/android/services/settings/BetaSettingsData;
 
     iget v2, v2, Lio/fabric/sdk/android/services/settings/BetaSettingsData;->b:I
 
@@ -471,7 +471,7 @@
 
     .prologue
     .line 180
-    iget-wide v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->k:J
+    iget-wide v0, p0, Lcom/crashlytics/android/beta/AbstractCheckForUpdatesController;->mJk:J
 
     return-wide v0
 .end method

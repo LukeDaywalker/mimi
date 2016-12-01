@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/ResourceBundle;
+.field private mResourceBundlea:Ljava/util/ResourceBundle;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog;->a:Ljava/util/ResourceBundle;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog;->mResourceBundlea:Ljava/util/ResourceBundle;
 
     .line 28
     return-void
@@ -36,7 +36,7 @@
     .prologue
     .line 32
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog;->a:Ljava/util/ResourceBundle;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog;->mResourceBundlea:Ljava/util/ResourceBundle;
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro;
+.field final synthetic mProa:Lcom/tencent/connect/b/Pro;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 325
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     invoke-static {v0, v1}, Lcom/tencent/b/a/Pro$ICj;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 330
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->e(Lcom/tencent/connect/b/Pro;)V
 
@@ -61,15 +61,15 @@
     if-nez p1, :cond_0
 
     .line 336
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->e(Lcom/tencent/connect/b/Pro;)V
 
     .line 359
     :goto_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1}, Lcom/tencent/connect/b/Pro;->f(Lcom/tencent/connect/b/Pro;)Landroid/content/Context;
 
@@ -113,7 +113,7 @@
     invoke-static {v1, v2}, Lcom/tencent/b/a/Pro$ICj;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 352
-    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v1, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v1, v0}, Lcom/tencent/connect/b/Pro;->a(Lcom/tencent/connect/b/Pro;Ljava/lang/String;)V
 
@@ -144,7 +144,7 @@
     invoke-static {v0, v1}, Lcom/tencent/b/a/Pro$ICj;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICb;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->e(Lcom/tencent/connect/b/Pro;)V
 

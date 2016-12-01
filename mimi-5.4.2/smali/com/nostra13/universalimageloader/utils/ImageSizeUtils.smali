@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+.field private static mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v1, v0, v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
 
-    sput-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    sput-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     .line 43
     return-void
@@ -49,14 +49,14 @@
 
     .prologue
     .line 133
-    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a()I
 
     move-result v0
 
     .line 134
-    sget-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    sget-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b()I
 
@@ -107,14 +107,14 @@
     move-result v1
 
     .line 157
-    sget-object v2, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    sget-object v2, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v2}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->a()I
 
     move-result v2
 
     .line 158
-    sget-object v3, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->a:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
+    sget-object v3, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->mImageSizea:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->b()I
 
@@ -185,7 +185,7 @@
     move-result v5
 
     .line 99
-    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$ICc;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$ICc;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->ordinal()I
 

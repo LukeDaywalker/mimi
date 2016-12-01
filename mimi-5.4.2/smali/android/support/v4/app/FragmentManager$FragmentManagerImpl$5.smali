@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/Fragment;
+.field final synthetic mFragmentManagerImplb:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-.field final synthetic b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+.field final synthetic mFragmenta:Landroid/support/v4/app/Fragment;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 1039
-    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmentManagerImplb:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-    iput-object p2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->a:Landroid/support/v4/app/Fragment;
+    iput-object p2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmenta:Landroid/support/v4/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,25 +36,25 @@
     const/4 v3, 0x0
 
     .line 1042
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->a:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmenta:Landroid/support/v4/app/Fragment;
 
     iget-object v0, v0, Landroid/support/v4/app/Fragment;->mAnimatingAway:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 1043
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->a:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmenta:Landroid/support/v4/app/Fragment;
 
     const/4 v1, 0x0
 
     iput-object v1, v0, Landroid/support/v4/app/Fragment;->mAnimatingAway:Landroid/view/View;
 
     .line 1044
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmentManagerImplb:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->a:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmenta:Landroid/support/v4/app/Fragment;
 
-    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->a:Landroid/support/v4/app/Fragment;
+    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$5;->mFragmenta:Landroid/support/v4/app/Fragment;
 
     iget v2, v2, Landroid/support/v4/app/Fragment;->mStateAfterAnimating:I
 

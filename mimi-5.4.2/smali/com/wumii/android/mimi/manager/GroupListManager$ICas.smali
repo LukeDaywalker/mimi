@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/GroupListManager;
+.field final synthetic mGroupListManagera:Lcom/wumii/android/mimi/manager/GroupListManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/GroupListManager$ICas;->a:Lcom/wumii/android/mimi/manager/GroupListManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/GroupListManager$ICas;->mGroupListManagera:Lcom/wumii/android/mimi/manager/GroupListManager;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

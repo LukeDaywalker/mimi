@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/squareup/okhttp/internal/Platform;
+.field private static final mPlatforma:Lcom/squareup/okhttp/internal/Platform;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/Platform;->a:Lcom/squareup/okhttp/internal/Platform;
+    sput-object v0, Lcom/squareup/okhttp/internal/Platform;->mPlatforma:Lcom/squareup/okhttp/internal/Platform;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     .prologue
     .line 58
-    sget-object v0, Lcom/squareup/okhttp/internal/Platform;->a:Lcom/squareup/okhttp/internal/Platform;
+    sget-object v0, Lcom/squareup/okhttp/internal/Platform;->mPlatforma:Lcom/squareup/okhttp/internal/Platform;
 
     return-object v0
 .end method

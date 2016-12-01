@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICax;
+.field final synthetic mICaxa:Lcom/baidu/location/ICax;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICax;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICax$3;->a:Lcom/baidu/location/ICax;
+    iput-object p1, p0, Lcom/baidu/location/ICax$3;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +25,7 @@
 .method public run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICax$3;->a:Lcom/baidu/location/ICax;
+    iget-object v0, p0, Lcom/baidu/location/ICax$3;->mICaxa:Lcom/baidu/location/ICax;
 
     invoke-static {v0}, Lcom/baidu/location/ICax;->for(Lcom/baidu/location/ICax;)V
 

@@ -11,7 +11,7 @@
 
 .field public final b:Lokio/Source;
 
-.field private c:Z
+.field private isZc:Z
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     .prologue
     .line 25
-    iget-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     return v0
 .end method
@@ -94,7 +94,7 @@
     const-wide/16 v0, -0x1
 
     .line 304
-    iget-boolean v2, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v2, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v2, :cond_0
 
@@ -110,7 +110,7 @@
     :cond_0
     iget-object v2, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide v2, v2, Lokio/Buffer;->b:J
+    iget-wide v2, v2, Lokio/Buffer;->mJb:J
 
     cmp-long v2, p2, v2
 
@@ -148,7 +148,7 @@
     .line 310
     iget-object v2, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide p2, v2, Lokio/Buffer;->b:J
+    iget-wide p2, v2, Lokio/Buffer;->mJb:J
 
     .line 311
     iget-object v2, p0, Lokio/RealBufferedSource;->b:Lokio/Source;
@@ -223,7 +223,7 @@
 
     .line 47
     :cond_1
-    iget-boolean v2, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v2, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v2, :cond_2
 
@@ -239,7 +239,7 @@
     :cond_2
     iget-object v2, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide v2, v2, Lokio/Buffer;->b:J
+    iget-wide v2, v2, Lokio/Buffer;->mJb:J
 
     cmp-long v2, v2, v4
 
@@ -269,7 +269,7 @@
     :cond_3
     iget-object v0, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide v0, v0, Lokio/Buffer;->b:J
+    iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
     invoke-static {p2, p3, v0, v1}, Ljava/lang/Math;->min(JJ)J
 
@@ -358,7 +358,7 @@
 
     .line 69
     :cond_0
-    iget-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -374,7 +374,7 @@
     :cond_1
     iget-object v0, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide v0, v0, Lokio/Buffer;->b:J
+    iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
     cmp-long v0, v0, p1
 
@@ -441,7 +441,7 @@
 
     .prologue
     .line 372
-    iget-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -453,7 +453,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iput-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     .line 374
     iget-object v0, p0, Lokio/RealBufferedSource;->b:Lokio/Source;
@@ -492,7 +492,7 @@
     const-wide/16 v4, 0x0
 
     .line 288
-    iget-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -533,7 +533,7 @@
     .line 290
     iget-object v0, p0, Lokio/RealBufferedSource;->a:Lokio/Buffer;
 
-    iget-wide v0, v0, Lokio/Buffer;->b:J
+    iget-wide v0, v0, Lokio/Buffer;->mJb:J
 
     cmp-long v0, v0, v4
 
@@ -572,7 +572,7 @@
 
     .prologue
     .line 59
-    iget-boolean v0, p0, Lokio/RealBufferedSource;->c:Z
+    iget-boolean v0, p0, Lokio/RealBufferedSource;->isZc:Z
 
     if-eqz v0, :cond_0
 

@@ -8,21 +8,21 @@
 
 
 # instance fields
-.field private a:Lu/aly/MemoCache;
+.field private mContexth:Landroid/content/Context;
 
-.field private b:Lu/aly/NetworkHelper;
+.field private mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
-.field private c:Lcom/umeng/analytics/ReportPolicy$ICm;
+.field private mIdTrackerf:Lu/aly/IdTracker;
 
-.field private d:Lcom/umeng/analytics/StoreHelper;
+.field private mIg:I
 
-.field private e:Lu/aly/StatTracer;
+.field private mMemoCachea:Lu/aly/MemoCache;
 
-.field private f:Lu/aly/IdTracker;
+.field private mNetworkHelperb:Lu/aly/NetworkHelper;
 
-.field private g:I
+.field private mStatTracere:Lu/aly/StatTracer;
 
-.field private h:Landroid/content/Context;
+.field private mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
 
 
 # direct methods
@@ -36,63 +36,63 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     .line 28
-    iput-object v0, p0, Lu/aly/CacheImpl;->b:Lu/aly/NetworkHelper;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mNetworkHelperb:Lu/aly/NetworkHelper;
 
     .line 29
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     .line 30
-    iput-object v0, p0, Lu/aly/CacheImpl;->d:Lcom/umeng/analytics/StoreHelper;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
 
     .line 32
-    iput-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     .line 33
-    iput-object v0, p0, Lu/aly/CacheImpl;->f:Lu/aly/IdTracker;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mIdTrackerf:Lu/aly/IdTracker;
 
     .line 35
     const/16 v0, 0xa
 
-    iput v0, p0, Lu/aly/CacheImpl;->g:I
+    iput v0, p0, Lu/aly/CacheImpl;->mIg:I
 
     .line 40
-    iput-object p1, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iput-object p1, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     .line 42
     new-instance v0, Lu/aly/MemoCache;
 
     invoke-direct {v0, p1}, Lu/aly/MemoCache;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     .line 43
     invoke-static {p1}, Lu/aly/SDKContext;->a(Landroid/content/Context;)Lu/aly/IdTracker;
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->f:Lu/aly/IdTracker;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mIdTrackerf:Lu/aly/IdTracker;
 
     .line 44
     new-instance v0, Lu/aly/StatTracer;
 
     invoke-direct {v0, p1}, Lu/aly/StatTracer;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     .line 45
     new-instance v0, Lu/aly/NetworkHelper;
 
     invoke-direct {v0, p1}, Lu/aly/NetworkHelper;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->b:Lu/aly/NetworkHelper;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mNetworkHelperb:Lu/aly/NetworkHelper;
 
     .line 46
-    iget-object v0, p0, Lu/aly/CacheImpl;->b:Lu/aly/NetworkHelper;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mNetworkHelperb:Lu/aly/NetworkHelper;
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0, v1}, Lu/aly/NetworkHelper;->a(Lu/aly/StatTracer;)V
 
@@ -101,10 +101,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->d:Lcom/umeng/analytics/StoreHelper;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
 
     .line 49
-    iget-object v0, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/AnalyticsConfig;->c(Landroid/content/Context;)[I
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICi;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     .line 309
     :goto_0
@@ -227,7 +227,7 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICi;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -235,13 +235,13 @@
     :pswitch_2
     new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICj;
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     int-to-long v2, p2
 
     invoke-direct {v0, v1, v2, v3}, Lcom/umeng/analytics/ReportPolicy$ICj;-><init>(Lu/aly/StatTracer;J)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -249,11 +249,11 @@
     :pswitch_3
     new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICl;
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$ICl;-><init>(Lu/aly/StatTracer;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -263,7 +263,7 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/ReportPolicy$ICm;-><init>()V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -271,11 +271,11 @@
     :pswitch_5
     new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICn;
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/umeng/analytics/ReportPolicy$ICn;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -283,11 +283,11 @@
     :pswitch_6
     new-instance v0, Lcom/umeng/analytics/ReportPolicy$ICk;
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-direct {v0, v1, p2}, Lcom/umeng/analytics/ReportPolicy$ICk;-><init>(Lu/aly/MemoCache;I)V
 
-    iput-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iput-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -314,7 +314,7 @@
     const/4 v0, 0x1
 
     .line 187
-    iget-object v1, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v1}, Lu/aly/DeviceConfig;->g(Landroid/content/Context;)Z
 
@@ -344,7 +344,7 @@
 
     .line 192
     :cond_2
-    iget-object v1, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v1}, Lu/aly/StatTracer;->a()Z
 
@@ -357,7 +357,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v1}, Lu/aly/DeviceConfig;->q(Landroid/content/Context;)Z
 
@@ -367,7 +367,7 @@
 
     .line 202
     :cond_3
-    iget-object v0, p0, Lu/aly/CacheImpl;->c:Lcom/umeng/analytics/ReportPolicy$ICm;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mICmc:Lcom/umeng/analytics/ReportPolicy$ICm;
 
     invoke-virtual {v0, p1}, Lcom/umeng/analytics/ReportPolicy$ICm;->a(Z)Z
 
@@ -414,13 +414,13 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v0}, Lu/aly/MemoCache;->a()I
 
     move-result v0
 
-    iget v1, p0, Lu/aly/CacheImpl;->g:I
+    iget v1, p0, Lu/aly/CacheImpl;->mIg:I
 
     if-le v0, v1, :cond_0
 
@@ -441,7 +441,7 @@
     .prologue
     .line 212
     :try_start_0
-    iget-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->a()Z
 
@@ -450,11 +450,11 @@
     if-eqz v0, :cond_0
 
     .line 213
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     new-instance v1, Lu/aly/ActivateMsg;
 
-    iget-object v2, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v2, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v2}, Lu/aly/StatTracer;->i()J
 
@@ -499,7 +499,7 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/StoreHelper;->a(Landroid/content/Context;)Lcom/umeng/analytics/StoreHelper;
 
@@ -520,7 +520,7 @@
 
     .line 253
     :goto_0
-    iget-object v3, p0, Lu/aly/CacheImpl;->b:Lu/aly/NetworkHelper;
+    iget-object v3, p0, Lu/aly/CacheImpl;->mNetworkHelperb:Lu/aly/NetworkHelper;
 
     invoke-virtual {v3, v0}, Lu/aly/NetworkHelper;->a([B)I
 
@@ -536,7 +536,7 @@
 
     .line 238
     :cond_1
-    iget-object v0, p0, Lu/aly/CacheImpl;->f:Lu/aly/IdTracker;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mIdTrackerf:Lu/aly/IdTracker;
 
     invoke-virtual {v0}, Lu/aly/IdTracker;->a()V
 
@@ -559,9 +559,9 @@
 
     .line 246
     :cond_2
-    iget-object v3, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v3, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
-    iget-object v4, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v4, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/umeng/analytics/AnalyticsConfig;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -583,7 +583,7 @@
 
     .line 257
     :pswitch_0
-    iget-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->h()Z
 
@@ -592,18 +592,18 @@
     if-eqz v0, :cond_3
 
     .line 258
-    iget-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->g()V
 
     .line 261
     :cond_3
-    iget-object v0, p0, Lu/aly/CacheImpl;->f:Lu/aly/IdTracker;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mIdTrackerf:Lu/aly/IdTracker;
 
     invoke-virtual {v0}, Lu/aly/IdTracker;->c()V
 
     .line 262
-    iget-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->f()V
 
@@ -617,7 +617,7 @@
 
     .line 269
     :pswitch_1
-    iget-object v0, p0, Lu/aly/CacheImpl;->e:Lu/aly/StatTracer;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mStatTracere:Lu/aly/StatTracer;
 
     invoke-virtual {v0}, Lu/aly/StatTracer;->f()V
 
@@ -661,7 +661,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v0}, Lu/aly/MemoCache;->a()I
 
@@ -679,7 +679,7 @@
     if-eqz v0, :cond_0
 
     .line 92
-    iget-object v1, p0, Lu/aly/CacheImpl;->d:Lcom/umeng/analytics/StoreHelper;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
 
     invoke-virtual {v1, v0}, Lcom/umeng/analytics/StoreHelper;->a([B)V
     :try_end_0
@@ -700,7 +700,7 @@
     if-eqz v1, :cond_1
 
     .line 96
-    iget-object v1, p0, Lu/aly/CacheImpl;->d:Lcom/umeng/analytics/StoreHelper;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mStoreHelperd:Lcom/umeng/analytics/StoreHelper;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/StoreHelper;->c()V
 
@@ -722,7 +722,7 @@
     if-eqz p1, :cond_0
 
     .line 70
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v0, p1}, Lu/aly/MemoCache;->a(Lu/aly/IProtocol;)V
 
@@ -763,7 +763,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v0, p1}, Lu/aly/MemoCache;->a(Lu/aly/IProtocol;)V
 
@@ -779,7 +779,7 @@
 
     .line 108
     :try_start_0
-    iget-object v0, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/AnalyticsConfig;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -807,7 +807,7 @@
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/StoreHelper;->a(Landroid/content/Context;)Lcom/umeng/analytics/StoreHelper;
 
@@ -826,7 +826,7 @@
     :goto_1
     if-nez v0, :cond_3
 
-    iget-object v1, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v1, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v1}, Lu/aly/MemoCache;->a()I
 
@@ -859,7 +859,7 @@
 
     .line 125
     :goto_2
-    iget-object v0, p0, Lu/aly/CacheImpl;->a:Lu/aly/MemoCache;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mMemoCachea:Lu/aly/MemoCache;
 
     invoke-virtual {v0, v3}, Lu/aly/MemoCache;->a(Lu/aly/UALogEntry;)V
 
@@ -985,7 +985,7 @@
     invoke-static {v1, v3, v0}, Lu/aly/Log;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
 
     .line 154
-    iget-object v0, p0, Lu/aly/CacheImpl;->h:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/CacheImpl;->mContexth:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/StoreHelper;->a(Landroid/content/Context;)Lcom/umeng/analytics/StoreHelper;
 

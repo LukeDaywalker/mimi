@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+.field final synthetic mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 176
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
 
@@ -30,7 +30,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->b()V
 
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     const/4 v1, 0x0
 
@@ -48,7 +48,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f_()V
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     const/4 v1, 0x1
 

@@ -8,13 +8,13 @@
 
 .field protected k:[I
 
-.field l:[Ljava/lang/String;
+.field mArrayStringl:[Ljava/lang/String;
 
-.field private m:I
+.field private mCursorToStringConvertern:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
 
-.field private n:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
+.field private mIm:I
 
-.field private o:Landroid/support/v4/widget/SimpleCursorAdapter$ViewBinder;
+.field private mViewBindero:Landroid/support/v4/widget/SimpleCursorAdapter$ViewBinder;
 
 
 # direct methods
@@ -92,7 +92,7 @@
     const/4 v2, 0x0
 
     .line 121
-    iget-object v4, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->o:Landroid/support/v4/widget/SimpleCursorAdapter$ViewBinder;
+    iget-object v4, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mViewBindero:Landroid/support/v4/widget/SimpleCursorAdapter$ViewBinder;
 
     .line 122
     iget-object v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->k:[I
@@ -284,7 +284,7 @@
     move-result-object v0
 
     .line 328
-    iget-object v1, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->l:[Ljava/lang/String;
+    iget-object v1, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mArrayStringl:[Ljava/lang/String;
 
     invoke-direct {p0, v1}, Landroid/support/v4/widget/SimpleCursorAdapter;->a([Ljava/lang/String;)V
 
@@ -297,12 +297,12 @@
 
     .prologue
     .line 294
-    iget-object v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->n:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
+    iget-object v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mCursorToStringConvertern:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
 
     if-eqz v0, :cond_0
 
     .line 295
-    iget-object v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->n:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
+    iget-object v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mCursorToStringConvertern:Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;
 
     invoke-interface {v0, p1}, Landroid/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter;->a(Landroid/database/Cursor;)Ljava/lang/CharSequence;
 
@@ -314,14 +314,14 @@
 
     .line 296
     :cond_0
-    iget v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->m:I
+    iget v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mIm:I
 
     const/4 v1, -0x1
 
     if-le v0, v1, :cond_1
 
     .line 297
-    iget v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->m:I
+    iget v0, p0, Landroid/support/v4/widget/SimpleCursorAdapter;->mIm:I
 
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 

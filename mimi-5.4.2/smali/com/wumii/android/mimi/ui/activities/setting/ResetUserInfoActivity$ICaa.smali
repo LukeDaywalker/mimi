@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+.field final synthetic mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     if-nez v0, :cond_0
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
@@ -57,7 +57,7 @@
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->c(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setText(Ljava/lang/String;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
@@ -91,7 +91,7 @@
     check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     .line 77
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)Landroid/util/DisplayMetrics;
 
@@ -122,7 +122,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$ICaa;->mResetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 

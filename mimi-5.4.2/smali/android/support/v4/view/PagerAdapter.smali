@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/database/DataSetObservable;
+.field private mDataSetObservablea:Landroid/database/DataSetObservable;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Landroid/database/DataSetObservable;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/view/PagerAdapter;->a:Landroid/database/DataSetObservable;
+    iput-object v0, p0, Landroid/support/v4/view/PagerAdapter;->mDataSetObservablea:Landroid/database/DataSetObservable;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 
     .prologue
     .line 285
-    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->a:Landroid/database/DataSetObservable;
+    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->mDataSetObservablea:Landroid/database/DataSetObservable;
 
     invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->registerObserver(Ljava/lang/Object;)V
 
@@ -149,7 +149,7 @@
 
     .prologue
     .line 294
-    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->a:Landroid/database/DataSetObservable;
+    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->mDataSetObservablea:Landroid/database/DataSetObservable;
 
     invoke-virtual {v0, p1}, Landroid/database/DataSetObservable;->unregisterObserver(Ljava/lang/Object;)V
 
@@ -210,7 +210,7 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->a:Landroid/database/DataSetObservable;
+    iget-object v0, p0, Landroid/support/v4/view/PagerAdapter;->mDataSetObservablea:Landroid/database/DataSetObservable;
 
     invoke-virtual {v0}, Landroid/database/DataSetObservable;->notifyChanged()V
 

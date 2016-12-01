@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+.field final synthetic mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 174
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -47,7 +47,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_0
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->a:Lcom/wumii/android/mimi/models/AlarmPingSender;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;->mAlarmPingSendera:Lcom/wumii/android/mimi/models/AlarmPingSender;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/AlarmPingSender;->g(Lcom/wumii/android/mimi/models/AlarmPingSender;)Landroid/os/PowerManager$WakeLock;
 

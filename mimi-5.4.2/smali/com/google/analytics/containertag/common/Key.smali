@@ -303,8 +303,6 @@
 
 .field public static final enum cK:Lcom/google/analytics/containertag/common/Key;
 
-.field private static final synthetic cM:[Lcom/google/analytics/containertag/common/Key;
-
 .field public static final enum ca:Lcom/google/analytics/containertag/common/Key;
 
 .field public static final enum cb:Lcom/google/analytics/containertag/common/Key;
@@ -377,6 +375,8 @@
 
 .field public static final enum m:Lcom/google/analytics/containertag/common/Key;
 
+.field private static final synthetic mArrayKeycM:[Lcom/google/analytics/containertag/common/Key;
+
 .field public static final enum n:Lcom/google/analytics/containertag/common/Key;
 
 .field public static final enum o:Lcom/google/analytics/containertag/common/Key;
@@ -405,7 +405,7 @@
 
 
 # instance fields
-.field private final cL:Ljava/lang/String;
+.field private final mStringcL:Ljava/lang/String;
 
 
 # direct methods
@@ -4075,7 +4075,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/google/analytics/containertag/common/Key;->cM:[Lcom/google/analytics/containertag/common/Key;
+    sput-object v0, Lcom/google/analytics/containertag/common/Key;->mArrayKeycM:[Lcom/google/analytics/containertag/common/Key;
 
     return-void
 .end method
@@ -4095,7 +4095,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 214
-    iput-object p3, p0, Lcom/google/analytics/containertag/common/Key;->cL:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/analytics/containertag/common/Key;->mStringcL:Ljava/lang/String;
 
     .line 215
     return-void
@@ -4122,7 +4122,7 @@
 
     .prologue
     .line 9
-    sget-object v0, Lcom/google/analytics/containertag/common/Key;->cM:[Lcom/google/analytics/containertag/common/Key;
+    sget-object v0, Lcom/google/analytics/containertag/common/Key;->mArrayKeycM:[Lcom/google/analytics/containertag/common/Key;
 
     invoke-virtual {v0}, [Lcom/google/analytics/containertag/common/Key;->clone()Ljava/lang/Object;
 
@@ -4140,7 +4140,7 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/google/analytics/containertag/common/Key;->cL:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/containertag/common/Key;->mStringcL:Ljava/lang/String;
 
     return-object v0
 .end method

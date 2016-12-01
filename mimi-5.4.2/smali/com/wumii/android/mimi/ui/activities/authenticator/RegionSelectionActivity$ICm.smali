@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+.field final synthetic mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-direct {p0}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;-><init>()V
 
@@ -71,14 +71,14 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     const/4 v2, -0x1
 
     invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->finish()V
 

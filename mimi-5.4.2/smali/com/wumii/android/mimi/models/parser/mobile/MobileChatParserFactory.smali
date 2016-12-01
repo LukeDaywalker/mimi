@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
+.field private mMobileAnonymousLetterChatParserf:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
 
-.field private b:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
+.field private mMobileFriendImpressionChatParserg:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
 
-.field private c:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
+.field private mMobileFriendRegChatParserh:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
 
-.field private d:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
+.field private mMobileGroupApplicationChatParsere:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
 
-.field private e:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
+.field private mMobileGroupChatParsera:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
 
-.field private f:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
+.field private mMobileGroupSingleChatParserb:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
 
-.field private g:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
+.field private mMobileNearbyChatParserd:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
 
-.field private h:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
+.field private mMobileSecretChatParserc:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
 
-.field private i:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
+.field private mMobileSecretInvitationSingleChatParseri:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->a:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupChatParsera:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
 
     if-nez v0, :cond_0
 
@@ -48,11 +48,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->a:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupChatParsera:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
 
     .line 68
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->a:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupChatParsera:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupChatParser;
 
     return-object v0
 .end method
@@ -62,7 +62,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->b:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupSingleChatParserb:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
 
     if-nez v0, :cond_0
 
@@ -71,11 +71,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->b:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupSingleChatParserb:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
 
     .line 75
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->b:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupSingleChatParserb:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupSingleChatParser;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->c:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretChatParserc:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
 
     if-nez v0, :cond_0
 
@@ -94,11 +94,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->c:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretChatParserc:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
 
     .line 82
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->c:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretChatParserc:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretChatParser;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->d:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileNearbyChatParserd:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
 
     if-nez v0, :cond_0
 
@@ -117,11 +117,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->d:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileNearbyChatParserd:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
 
     .line 89
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->d:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileNearbyChatParserd:Lcom/wumii/android/mimi/models/parser/mobile/MobileNearbyChatParser;
 
     return-object v0
 .end method
@@ -131,7 +131,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->e:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupApplicationChatParsere:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
 
     if-nez v0, :cond_0
 
@@ -140,11 +140,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->e:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupApplicationChatParsere:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
 
     .line 96
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->e:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileGroupApplicationChatParsere:Lcom/wumii/android/mimi/models/parser/mobile/MobileGroupApplicationChatParser;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->f:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileAnonymousLetterChatParserf:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
 
     if-nez v0, :cond_0
 
@@ -163,11 +163,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->f:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileAnonymousLetterChatParserf:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
 
     .line 103
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->f:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileAnonymousLetterChatParserf:Lcom/wumii/android/mimi/models/parser/mobile/MobileAnonymousLetterChatParser;
 
     return-object v0
 .end method
@@ -177,7 +177,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretInvitationSingleChatParseri:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
 
     if-nez v0, :cond_0
 
@@ -186,11 +186,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretInvitationSingleChatParseri:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->i:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileSecretInvitationSingleChatParseri:Lcom/wumii/android/mimi/models/parser/mobile/MobileSecretInvitationSingleChatParser;
 
     return-object v0
 .end method
@@ -200,7 +200,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->g:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendImpressionChatParserg:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
 
     if-nez v0, :cond_0
 
@@ -209,11 +209,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->g:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendImpressionChatParserg:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->g:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendImpressionChatParserg:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendImpressionChatParser;
 
     return-object v0
 .end method
@@ -223,7 +223,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->h:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendRegChatParserh:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
 
     if-nez v0, :cond_0
 
@@ -232,11 +232,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->h:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendRegChatParserh:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->h:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatParserFactory;->mMobileFriendRegChatParserh:Lcom/wumii/android/mimi/models/parser/mobile/MobileFriendRegChatParser;
 
     return-object v0
 .end method

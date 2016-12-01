@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
+.field final synthetic mCircleSplitFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;->a:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;->mCircleSplitFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;->a:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment$ICh;->mCircleSplitFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 

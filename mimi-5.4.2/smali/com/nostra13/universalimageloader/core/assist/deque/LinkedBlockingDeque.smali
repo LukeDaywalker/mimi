@@ -149,7 +149,7 @@
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 203
-    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 204
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
@@ -182,7 +182,7 @@
 
     .line 208
     :cond_1
-    iput-object p1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object p1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -217,7 +217,7 @@
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 222
-    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 223
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
@@ -250,7 +250,7 @@
 
     .line 227
     :cond_1
-    iput-object p1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object p1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -278,16 +278,16 @@
 
     .line 241
     :cond_0
-    iget-object v3, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v3, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 242
-    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 243
-    iput-object v0, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iput-object v0, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 244
-    iput-object v2, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v2, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 245
     iput-object v3, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
@@ -318,7 +318,7 @@
 
     .line 249
     :cond_1
-    iput-object v0, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v0, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -346,16 +346,16 @@
 
     .line 263
     :cond_0
-    iget-object v3, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v3, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 264
-    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v1, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 265
-    iput-object v0, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iput-object v0, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 266
-    iput-object v2, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v2, v2, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 267
     iput-object v3, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
@@ -386,7 +386,7 @@
 
     .line 271
     :cond_1
-    iput-object v0, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v0, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -451,12 +451,12 @@
     if-eqz v0, :cond_0
 
     .line 1167
-    iget-object v2, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v2, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {p1, v2}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     .line 1166
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     goto :goto_0
 
@@ -605,10 +605,10 @@
 
     .prologue
     .line 282
-    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 283
-    iget-object v1, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v1, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 284
     if-nez v0, :cond_0
@@ -631,15 +631,15 @@
 
     .line 289
     :cond_1
-    iput-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 290
-    iput-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 291
     const/4 v0, 0x0
 
-    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iput-object v0, p1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 294
     iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->d:I
@@ -1003,20 +1003,20 @@
     .line 973
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iput-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 974
-    iget-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v1, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 975
     const/4 v3, 0x0
 
-    iput-object v3, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->b:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v3, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChb:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 976
     const/4 v3, 0x0
 
-    iput-object v3, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iput-object v3, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     move-object v0, v1
 
@@ -1086,7 +1086,7 @@
     if-eqz v1, :cond_2
 
     .line 809
-    iget-object v3, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v3, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
     :try_end_0
@@ -1107,7 +1107,7 @@
     .line 808
     :cond_1
     :try_start_1
-    iget-object v1, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v1, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1295,7 +1295,7 @@
     .line 734
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
-    iget-object v3, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v3, v3, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     invoke-interface {p1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
@@ -1359,7 +1359,7 @@
     :try_start_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->a:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1402,7 +1402,7 @@
     if-eqz v1, :cond_2
 
     .line 573
-    iget-object v3, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v3, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -1426,7 +1426,7 @@
     .line 572
     :cond_1
     :try_start_1
-    iget-object v1, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v1, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1725,12 +1725,12 @@
     .line 878
     add-int/lit8 v2, v1, 0x1
 
-    iget-object v5, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v5, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     aput-object v5, v4, v1
 
     .line 877
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1811,12 +1811,12 @@
     .line 932
     add-int/lit8 v2, v1, 0x1
 
-    iget-object v4, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v4, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     aput-object v4, p1, v1
 
     .line 931
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     move v1, v2
 
@@ -1893,7 +1893,7 @@
 
     .line 952
     :goto_1
-    iget-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
+    iget-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mObjecta:Ljava/lang/Object;
 
     .line 953
     if-ne v0, p0, :cond_1
@@ -1904,7 +1904,7 @@
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 954
-    iget-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->c:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
+    iget-object v0, v1, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;->mIChc:Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$ICh;
 
     .line 955
     if-nez v0, :cond_2

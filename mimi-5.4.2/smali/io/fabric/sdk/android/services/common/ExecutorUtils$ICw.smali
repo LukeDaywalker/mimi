@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mAtomicLongb:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field final synthetic b:Ljava/util/concurrent/atomic/AtomicLong;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 68
-    iput-object p1, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->a:Ljava/lang/String;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->mStringa:Ljava/lang/String;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->b:Ljava/util/concurrent/atomic/AtomicLong;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->mAtomicLongb:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,13 +51,13 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->a:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->b:Ljava/util/concurrent/atomic/AtomicLong;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/common/ExecutorUtils$ICw;->mAtomicLongb:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicLong;->getAndIncrement()J
 

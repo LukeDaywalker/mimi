@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:Lcom/baidu/platform/comapi/map/B;
-
-.field private b:D
-
 .field public final bound:Lcom/baidu/mapapi/model/LatLngBounds;
 
-.field private c:D
+.field mBa:Lcom/baidu/platform/comapi/map/B;
+
+.field private mDb:D
+
+.field private mDc:D
 
 .field public final overlook:F
 
@@ -38,9 +38,9 @@
 
     iput-object p5, p0, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
-    iput-wide p6, p0, Lcom/baidu/mapapi/map/MapStatus;->b:D
+    iput-wide p6, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
-    iput-wide p8, p0, Lcom/baidu/mapapi/map/MapStatus;->c:D
+    iput-wide p8, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
     iput-object p10, p0, Lcom/baidu/mapapi/map/MapStatus;->bound:Lcom/baidu/mapapi/model/LatLngBounds;
 
@@ -76,7 +76,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->b:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatus;->target:Lcom/baidu/mapapi/model/LatLng;
 
@@ -88,7 +88,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->c:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
     :cond_0
     iput-object p6, p0, Lcom/baidu/mapapi/map/MapStatus;->bound:Lcom/baidu/mapapi/model/LatLngBounds;
@@ -111,11 +111,11 @@
 
     iput-object p5, p0, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
-    iput-object p6, p0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iput-object p6, p0, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
-    iput-wide p7, p0, Lcom/baidu/mapapi/map/MapStatus;->b:D
+    iput-wide p7, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
-    iput-wide p9, p0, Lcom/baidu/mapapi/map/MapStatus;->c:D
+    iput-wide p9, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
     iput-object p11, p0, Lcom/baidu/mapapi/map/MapStatus;->bound:Lcom/baidu/mapapi/model/LatLngBounds;
 
@@ -407,7 +407,7 @@
 .method a()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->b:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
     return-wide v0
 .end method
@@ -415,7 +415,7 @@
 .method b()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->c:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
     return-wide v0
 .end method
@@ -470,11 +470,11 @@
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->b:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDb:D
 
     iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->d:D
 
-    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->c:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/map/MapStatus;->mDc:D
 
     iput-wide v0, p1, Lcom/baidu/platform/comapi/map/B;->e:D
 

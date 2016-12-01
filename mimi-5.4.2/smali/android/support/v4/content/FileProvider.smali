@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:[Ljava/lang/String;
+.field private static final mArrayStringa:[Ljava/lang/String;
 
-.field private static final b:Ljava/io/File;
+.field private static final mFileb:Ljava/io/File;
 
-.field private static c:Ljava/util/HashMap;
+.field private static mHashMapc:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field private d:Landroid/support/v4/content/FileProvider$PathStrategy;
+.field private mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/content/FileProvider;->a:[Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/content/FileProvider;->mArrayStringa:[Ljava/lang/String;
 
     .line 317
     new-instance v0, Ljava/io/File;
@@ -56,14 +56,14 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Landroid/support/v4/content/FileProvider;->b:Ljava/io/File;
+    sput-object v0, Landroid/support/v4/content/FileProvider;->mFileb:Ljava/io/File;
 
     .line 320
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/FileProvider;->c:Ljava/util/HashMap;
+    sput-object v0, Landroid/support/v4/content/FileProvider;->mHashMapc:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -200,13 +200,13 @@
 
     .prologue
     .line 530
-    sget-object v1, Landroid/support/v4/content/FileProvider;->c:Ljava/util/HashMap;
+    sget-object v1, Landroid/support/v4/content/FileProvider;->mHashMapc:Ljava/util/HashMap;
 
     monitor-enter v1
 
     .line 531
     :try_start_0
-    sget-object v0, Landroid/support/v4/content/FileProvider;->c:Ljava/util/HashMap;
+    sget-object v0, Landroid/support/v4/content/FileProvider;->mHashMapc:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,7 +231,7 @@
 
     .line 542
     :try_start_2
-    sget-object v2, Landroid/support/v4/content/FileProvider;->c:Ljava/util/HashMap;
+    sget-object v2, Landroid/support/v4/content/FileProvider;->mHashMapc:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -453,7 +453,7 @@
     if-eqz v6, :cond_1
 
     .line 577
-    sget-object v0, Landroid/support/v4/content/FileProvider;->b:Ljava/io/File;
+    sget-object v0, Landroid/support/v4/content/FileProvider;->mFileb:Ljava/io/File;
 
     new-array v6, v7, [Ljava/lang/String;
 
@@ -603,7 +603,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/content/FileProvider;->d:Landroid/support/v4/content/FileProvider$PathStrategy;
+    iput-object v0, p0, Landroid/support/v4/content/FileProvider;->mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
     .line 353
     return-void
@@ -614,7 +614,7 @@
 
     .prologue
     .line 497
-    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->d:Landroid/support/v4/content/FileProvider$PathStrategy;
+    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
     invoke-interface {v0, p1}, Landroid/support/v4/content/FileProvider$PathStrategy;->a(Landroid/net/Uri;)Ljava/io/File;
 
@@ -643,7 +643,7 @@
 
     .prologue
     .line 451
-    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->d:Landroid/support/v4/content/FileProvider$PathStrategy;
+    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
     invoke-interface {v0, p1}, Landroid/support/v4/content/FileProvider$PathStrategy;->a(Landroid/net/Uri;)Ljava/io/File;
 
@@ -725,7 +725,7 @@
 
     .prologue
     .line 519
-    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->d:Landroid/support/v4/content/FileProvider$PathStrategy;
+    iget-object v0, p0, Landroid/support/v4/content/FileProvider;->mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
     invoke-interface {v0, p1}, Landroid/support/v4/content/FileProvider$PathStrategy;->a(Landroid/net/Uri;)Ljava/io/File;
 
@@ -751,7 +751,7 @@
     const/4 v0, 0x0
 
     .line 412
-    iget-object v1, p0, Landroid/support/v4/content/FileProvider;->d:Landroid/support/v4/content/FileProvider$PathStrategy;
+    iget-object v1, p0, Landroid/support/v4/content/FileProvider;->mPathStrategyd:Landroid/support/v4/content/FileProvider$PathStrategy;
 
     invoke-interface {v1, p1}, Landroid/support/v4/content/FileProvider$PathStrategy;->a(Landroid/net/Uri;)Ljava/io/File;
 
@@ -761,7 +761,7 @@
     if-nez p2, :cond_0
 
     .line 415
-    sget-object p2, Landroid/support/v4/content/FileProvider;->a:[Ljava/lang/String;
+    sget-object p2, Landroid/support/v4/content/FileProvider;->mArrayStringa:[Ljava/lang/String;
 
     .line 418
     :cond_0

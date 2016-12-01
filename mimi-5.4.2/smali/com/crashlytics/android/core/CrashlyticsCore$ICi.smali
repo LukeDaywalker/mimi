@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field final synthetic mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 656
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICi;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICi;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/services/concurrency/PriorityCallable;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 659
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICi;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICi;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->c()Ljava/lang/Void;
 

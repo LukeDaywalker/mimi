@@ -4,7 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mContextd:Landroid/content/Context;
+
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
+
+.field private mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,12 +20,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Landroid/view/LayoutInflater;
-
-.field private c:Landroid/widget/AbsListView$LayoutParams;
-
-.field private d:Landroid/content/Context;
 
 
 # direct methods
@@ -41,24 +41,24 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 29
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->d:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mContextd:Landroid/content/Context;
 
     .line 30
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLista:Ljava/util/List;
 
     .line 31
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 32
     new-instance v0, Landroid/widget/AbsListView$LayoutParams;
 
     invoke-direct {v0, p3, p3}, Landroid/widget/AbsListView$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->c:Landroid/widget/AbsListView$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     .line 33
     return-void
@@ -72,7 +72,7 @@
     if-nez p2, :cond_0
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300b4
 
@@ -83,7 +83,7 @@
     move-result-object v1
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->c:Landroid/widget/AbsListView$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -135,12 +135,12 @@
     .line 97
     new-instance p2, Landroid/view/View;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->d:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mContextd:Landroid/content/Context;
 
     invoke-direct {p2, v0}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->c:Landroid/widget/AbsListView$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -157,7 +157,7 @@
     if-nez p2, :cond_0
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300ab
 
@@ -168,7 +168,7 @@
     move-result-object p2
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->c:Landroid/widget/AbsListView$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -184,7 +184,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -193,7 +193,7 @@
     if-ge p1, v0, :cond_0
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -252,7 +252,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonGridAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

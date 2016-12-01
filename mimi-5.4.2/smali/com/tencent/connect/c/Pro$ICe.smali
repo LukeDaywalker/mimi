@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/os/Bundle;
+.field final synthetic mActivityb:Landroid/app/Activity;
 
-.field final synthetic b:Landroid/app/Activity;
+.field final synthetic mBundlea:Landroid/os/Bundle;
 
-.field final synthetic c:Lcom/tencent/tauth/Pro$ICb;
+.field final synthetic mICbc:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic d:Lcom/tencent/connect/c/Pro$ICd;
+.field final synthetic mICdd:Lcom/tencent/connect/c/Pro$ICd;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 219
-    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICe;->d:Lcom/tencent/connect/c/Pro$ICd;
+    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICe;->mICdd:Lcom/tencent/connect/c/Pro$ICd;
 
-    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICe;->a:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICe;->mBundlea:Landroid/os/Bundle;
 
-    iput-object p3, p0, Lcom/tencent/connect/c/Pro$ICe;->b:Landroid/app/Activity;
+    iput-object p3, p0, Lcom/tencent/connect/c/Pro$ICe;->mActivityb:Landroid/app/Activity;
 
-    iput-object p4, p0, Lcom/tencent/connect/c/Pro$ICe;->c:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p4, p0, Lcom/tencent/connect/c/Pro$ICe;->mICbc:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +62,7 @@
     if-nez p1, :cond_0
 
     .line 228
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICe;->a:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICe;->mBundlea:Landroid/os/Bundle;
 
     const-string/jumbo v1, "imageUrl"
 
@@ -70,13 +70,13 @@
 
     .line 230
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICe;->d:Lcom/tencent/connect/c/Pro$ICd;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICe;->mICdd:Lcom/tencent/connect/c/Pro$ICd;
 
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICe;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICe;->mActivityb:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICe;->a:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICe;->mBundlea:Landroid/os/Bundle;
 
-    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICe;->c:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICe;->mICbc:Lcom/tencent/tauth/Pro$ICb;
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/connect/c/Pro$ICd;->a(Lcom/tencent/connect/c/Pro$ICd;Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/Pro$ICb;)V
 

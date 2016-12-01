@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static isZd:Z
 
-.field private static b:Ljava/lang/String;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static c:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
-.field private static d:Z
+.field private static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -25,12 +25,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/info/Device;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/info/Device;->mLoggera:Lorg/slf4j/Logger;
 
     .line 15
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/wumii/android/info/Device;->d:Z
+    sput-boolean v0, Lcom/wumii/android/info/Device;->isZd:Z
 
     .line 45
     :try_start_0
@@ -41,7 +41,7 @@
     .line 46
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/wumii/android/info/Device;->d:Z
+    sput-boolean v0, Lcom/wumii/android/info/Device;->isZd:Z
     :try_end_0
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -54,7 +54,7 @@
     move-exception v0
 
     .line 48
-    sget-object v1, Lcom/wumii/android/info/Device;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/info/Device;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "load libWMDevice.so failed"
 
@@ -100,12 +100,12 @@
 
     .prologue
     .line 18
-    sget-object v0, Lcom/wumii/android/info/Device;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/info/Device;->mStringb:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     .line 19
-    sget-boolean v0, Lcom/wumii/android/info/Device;->d:Z
+    sget-boolean v0, Lcom/wumii/android/info/Device;->isZd:Z
 
     if-eqz v0, :cond_0
 
@@ -118,11 +118,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/info/Device;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/info/Device;->mStringb:Ljava/lang/String;
 
     .line 23
     :cond_0
-    sget-object v0, Lcom/wumii/android/info/Device;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/info/Device;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -135,12 +135,12 @@
 
     .prologue
     .line 27
-    sget-object v0, Lcom/wumii/android/info/Device;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/info/Device;->mStringc:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     .line 28
-    sget-boolean v0, Lcom/wumii/android/info/Device;->d:Z
+    sget-boolean v0, Lcom/wumii/android/info/Device;->isZd:Z
 
     if-eqz v0, :cond_0
 
@@ -153,11 +153,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/info/Device;->c:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/info/Device;->mStringc:Ljava/lang/String;
 
     .line 32
     :cond_0
-    sget-object v0, Lcom/wumii/android/info/Device;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/info/Device;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

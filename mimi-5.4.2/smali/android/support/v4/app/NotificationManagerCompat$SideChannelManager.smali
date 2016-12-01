@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Landroid/os/Handler;
+.field private final mHandlerb:Landroid/os/Handler;
 
-.field private final c:Ljava/util/Map;
+.field private final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -24,7 +24,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/Set;
+.field private mSetd:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -44,14 +44,14 @@
     const/4 v7, 0x3
 
     .line 383
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/support/v4/app/NotificationManagerCompat;->a(Landroid/content/Context;)Ljava/util/Set;
 
     move-result-object v1
 
     .line 384
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->d:Ljava/util/Set;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mSetd:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
 
@@ -65,10 +65,10 @@
 
     .line 388
     :cond_1
-    iput-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->d:Ljava/util/Set;
+    iput-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mSetd:Ljava/util/Set;
 
     .line 389
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -203,7 +203,7 @@
     check-cast v0, Landroid/content/ComponentName;
 
     .line 407
-    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v3, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -245,7 +245,7 @@
 
     .line 411
     :cond_6
-    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     new-instance v4, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager$ListenerRecord;
 
@@ -257,7 +257,7 @@
 
     .line 415
     :cond_7
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -351,7 +351,7 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -375,7 +375,7 @@
 
     .prologue
     .line 338
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -414,7 +414,7 @@
     invoke-direct {p0}, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a()V
 
     .line 331
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -483,7 +483,7 @@
     move-result-object v0
 
     .line 438
-    iget-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a:Landroid/content/Context;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mContexta:Landroid/content/Context;
 
     invoke-static {}, Landroid/support/v4/app/NotificationManagerCompat;->a()I
 
@@ -538,7 +538,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 443
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
@@ -550,7 +550,7 @@
 
     .prologue
     .line 354
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->c:Ljava/util/Map;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mMapc:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -579,7 +579,7 @@
     if-eqz v0, :cond_0
 
     .line 453
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a:Landroid/content/Context;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
@@ -605,7 +605,7 @@
     const/4 v4, 0x3
 
     .line 465
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->b:Landroid/os/Handler;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mHandlerb:Landroid/os/Handler;
 
     iget-object v1, p1, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager$ListenerRecord;->a:Landroid/content/ComponentName;
 
@@ -752,7 +752,7 @@
 
     .line 479
     :cond_2
-    iget-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->b:Landroid/os/Handler;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mHandlerb:Landroid/os/Handler;
 
     iget-object v2, p1, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager$ListenerRecord;->a:Landroid/content/ComponentName;
 
@@ -761,7 +761,7 @@
     move-result-object v1
 
     .line 480
-    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->b:Landroid/os/Handler;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mHandlerb:Landroid/os/Handler;
 
     int-to-long v4, v0
 
@@ -1055,9 +1055,9 @@
     check-cast v0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;
 
     .line 317
-    iget-object v2, v0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->a:Landroid/content/ComponentName;
+    iget-object v2, v0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->mComponentNamea:Landroid/content/ComponentName;
 
-    iget-object v0, v0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->b:Landroid/os/IBinder;
+    iget-object v0, v0, Landroid/support/v4/app/NotificationManagerCompat$ServiceConnectedEvent;->mIBinderb:Landroid/os/IBinder;
 
     invoke-direct {p0, v2, v0}, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->a(Landroid/content/ComponentName;Landroid/os/IBinder;)V
 
@@ -1142,7 +1142,7 @@
 
     .line 365
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->b:Landroid/os/Handler;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mHandlerb:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -1200,7 +1200,7 @@
 
     .line 375
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->b:Landroid/os/Handler;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationManagerCompat$SideChannelManager;->mHandlerb:Landroid/os/Handler;
 
     const/4 v1, 0x2
 

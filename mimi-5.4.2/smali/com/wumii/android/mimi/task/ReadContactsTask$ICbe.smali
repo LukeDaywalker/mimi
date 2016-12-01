@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ReadContactsTask;
+.field final synthetic mReadContactsTaska:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;->a:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;->mReadContactsTaska:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

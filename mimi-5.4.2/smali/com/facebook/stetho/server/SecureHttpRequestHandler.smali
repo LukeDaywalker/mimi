@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/Class;
+.field private static final mClassa:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private final b:Landroid/content/Context;
+.field private final mContextb:Landroid/content/Context;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     .line 29
     const-class v0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;
 
-    sput-object v0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->a:Ljava/lang/Class;
+    sput-object v0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->mClassa:Ljava/lang/Class;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->mContextb:Landroid/content/Context;
 
     .line 34
     return-void
@@ -222,7 +222,7 @@
     move-result-object v0
 
     .line 70
-    iget-object v1, p0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->mContextb:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/facebook/stetho/server/SecureHttpRequestHandler;->a(Landroid/content/Context;Landroid/net/LocalSocket;)V
 

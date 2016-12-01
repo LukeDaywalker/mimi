@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+.field private mTriea:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     .line 35
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->a:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+    iput-object v0, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->mTriea:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
     .line 55
     invoke-direct {p0}, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->c()V
@@ -42,7 +42,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->a:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->mTriea:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
     .line 42
     return-void
@@ -107,7 +107,7 @@
 
     .prologue
     .line 157
-    sget-object v0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource$ChineseToPinyinResourceHolder;->a:Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;
+    sget-object v0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource$ChineseToPinyinResourceHolder;->mChineseToPinyinResourcea:Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;
 
     return-object v0
 .end method
@@ -241,7 +241,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->a:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
+    iget-object v0, p0, Lnet/sourceforge/pinyin4j/ChineseToPinyinResource;->mTriea:Lnet/sourceforge/pinyin4j/multipinyin/Trie;
 
     return-object v0
 .end method

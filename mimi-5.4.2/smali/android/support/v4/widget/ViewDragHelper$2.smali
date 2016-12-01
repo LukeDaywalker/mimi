@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/ViewDragHelper;
+.field final synthetic mViewDragHelpera:Landroid/support/v4/widget/ViewDragHelper;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 333
-    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper$2;->a:Landroid/support/v4/widget/ViewDragHelper;
+    iput-object p1, p0, Landroid/support/v4/widget/ViewDragHelper$2;->mViewDragHelpera:Landroid/support/v4/widget/ViewDragHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper$2;->a:Landroid/support/v4/widget/ViewDragHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/ViewDragHelper$2;->mViewDragHelpera:Landroid/support/v4/widget/ViewDragHelper;
 
     const/4 v1, 0x0
 

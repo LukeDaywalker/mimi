@@ -27,13 +27,13 @@
 
 .field public static final enum f:Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
-.field private static final synthetic i:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+.field private static final synthetic mArrayICami:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
 
 # instance fields
-.field private g:Ljava/lang/String;
+.field private mIh:I
 
-.field private h:I
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -150,7 +150,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->i:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mArrayICami:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     return-void
 .end method
@@ -196,10 +196,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mStringg:Ljava/lang/String;
 
     .line 40
-    iput p3, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->h:I
+    iput p3, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mIh:I
 
     .line 41
     return-void
@@ -226,7 +226,7 @@
 
     .prologue
     .line 27
-    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->i:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
+    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mArrayICami:[Lcom/wumii/android/mimi/util/ShareUtils$ICam;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/util/ShareUtils$ICam;->clone()Ljava/lang/Object;
 
@@ -244,7 +244,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -254,7 +254,7 @@
 
     .prologue
     .line 48
-    iget v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->h:I
+    iget v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->mIh:I
 
     return v0
 .end method

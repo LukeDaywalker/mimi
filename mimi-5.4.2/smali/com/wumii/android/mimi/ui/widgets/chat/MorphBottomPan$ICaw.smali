@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+.field final synthetic mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     const v2, 0x7f060270
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Landroid/view/View;
 
@@ -56,15 +56,15 @@
     if-eqz v0, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Ljava/lang/String;
 
@@ -82,7 +82,7 @@
 
     move-result-object v5
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->mMorphBottomPana:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 

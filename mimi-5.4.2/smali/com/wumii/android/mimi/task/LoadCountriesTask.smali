@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field private d:Ljava/util/List;
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -39,7 +39,7 @@
     .end annotation
 .end field
 
-.field private e:Landroid/util/SparseArray;
+.field private mSparseArraye:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -169,14 +169,14 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->a:Ljava/util/List;
+    iput-object v4, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mLista:Ljava/util/List;
 
     .line 35
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/CountriesResp;->getAllCountries()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -188,10 +188,10 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->e:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mSparseArraye:Landroid/util/SparseArray;
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->e:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mSparseArraye:Landroid/util/SparseArray;
 
     const/4 v1, -0x1
 
@@ -200,12 +200,12 @@
     invoke-virtual {v0, v1, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -219,7 +219,7 @@
     if-ge v2, v4, :cond_0
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -243,14 +243,14 @@
     move-result-object v0
 
     .line 50
-    invoke-static {v1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->e:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mSparseArraye:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -277,7 +277,7 @@
 
     .line 57
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
 
     return-object v0
 
@@ -307,7 +307,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -326,7 +326,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mListd:Ljava/util/List;
 
     return-object v0
 .end method
@@ -345,7 +345,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->e:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadCountriesTask;->mSparseArraye:Landroid/util/SparseArray;
 
     return-object v0
 .end method

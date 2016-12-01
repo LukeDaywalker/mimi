@@ -21,13 +21,13 @@
 # instance fields
 .field protected a:Landroid/content/Context;
 
-.field private b:Landroid/util/DisplayMetrics;
+.field private mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mAlertDialogd:Landroid/app/AlertDialog;
 
-.field private d:Landroid/app/AlertDialog;
+.field private mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
-.field private e:I
+.field private mIe:I
 
 
 # direct methods
@@ -41,16 +41,16 @@
     .line 25
     const v0, 0x800033
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mIe:I
 
     .line 29
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a:Landroid/content/Context;
 
     .line 30
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->b:Landroid/util/DisplayMetrics;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     .line 31
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 32
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 103
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->e:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mIe:I
 
     .line 104
     return-void
@@ -102,11 +102,11 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -115,7 +115,7 @@
     if-eqz v0, :cond_0
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
@@ -123,7 +123,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     .line 112
     return-void
@@ -173,10 +173,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;
 
@@ -185,7 +185,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICc;
 
@@ -194,7 +194,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->getListView()Landroid/widget/ListView;
 
@@ -203,13 +203,13 @@
     if-eqz v0, :cond_1
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     goto :goto_0
 
     .line 65
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     const/4 v1, -0x2
 
@@ -225,7 +225,7 @@
 
     .line 70
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     const/4 v1, -0x3
 
@@ -241,7 +241,7 @@
 
     .line 75
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     const/4 v1, -0x1
 
@@ -257,7 +257,7 @@
 
     .line 80
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     const v1, 0x102000b
 
@@ -271,7 +271,7 @@
     if-eqz v0, :cond_5
 
     .line 84
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->b:Landroid/util/DisplayMetrics;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     const/high16 v2, 0x41c00000    # 24.0f
 
@@ -291,13 +291,13 @@
     invoke-virtual {v0, v2, v1, v3, v1}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 90
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->e:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mIe:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 93
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->mAlertDialogd:Landroid/app/AlertDialog;
 
     goto :goto_0
 .end method

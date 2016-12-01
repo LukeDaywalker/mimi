@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+.field private isZc:Z
 
-.field private final b:Lokio/ForwardingTimeout;
+.field private final mForwardingTimeoutb:Lokio/ForwardingTimeout;
 
-.field private c:Z
+.field final synthetic mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
 
 # direct methods
@@ -20,14 +20,14 @@
 
     .prologue
     .line 325
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 326
     new-instance v0, Lokio/ForwardingTimeout;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v1}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v1}, Lokio/ForwardingTimeout;-><init>(Lokio/Timeout;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->b:Lokio/ForwardingTimeout;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mForwardingTimeoutb:Lokio/ForwardingTimeout;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 330
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->b:Lokio/ForwardingTimeout;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mForwardingTimeoutb:Lokio/ForwardingTimeout;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 334
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -97,7 +97,7 @@
 
     .line 337
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -106,7 +106,7 @@
     invoke-interface {v0, p2, p3}, Lokio/BufferedSink;->i(J)Lokio/BufferedSink;
 
     .line 338
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -117,7 +117,7 @@
     invoke-interface {v0, v1}, Lokio/BufferedSink;->b(Ljava/lang/String;)Lokio/BufferedSink;
 
     .line 339
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -126,7 +126,7 @@
     invoke-interface {v0, p1, p2, p3}, Lokio/BufferedSink;->a_(Lokio/Buffer;J)V
 
     .line 340
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -147,7 +147,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->isZc:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -164,10 +164,10 @@
     const/4 v0, 0x1
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->c:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->isZc:Z
 
     .line 351
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 
@@ -178,14 +178,14 @@
     invoke-interface {v0, v1}, Lokio/BufferedSink;->b(Ljava/lang/String;)Lokio/BufferedSink;
 
     .line 352
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->b:Lokio/ForwardingTimeout;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mForwardingTimeoutb:Lokio/ForwardingTimeout;
 
     invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;Lokio/ForwardingTimeout;)V
 
     .line 353
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     const/4 v1, 0x3
 
@@ -212,7 +212,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->c:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->isZc:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -227,7 +227,7 @@
     .line 345
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->a:Lcom/squareup/okhttp/internal/http/HttpConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/http/HttpConnection$ICj;->mHttpConnectiona:Lcom/squareup/okhttp/internal/http/HttpConnection;
 
     invoke-static {v0}, Lcom/squareup/okhttp/internal/http/HttpConnection;->a(Lcom/squareup/okhttp/internal/http/HttpConnection;)Lokio/BufferedSink;
 

@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private a:Landroid/app/Notification$Builder;
+.field private mBuildera:Landroid/app/Notification$Builder;
 
-.field private b:Landroid/os/Bundle;
+.field private mBundleb:Landroid/os/Bundle;
 
 
 # direct methods
@@ -255,20 +255,20 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->a:Landroid/app/Notification$Builder;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     .line 74
     new-instance v4, Landroid/os/Bundle;
 
     invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->b:Landroid/os/Bundle;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBundleb:Landroid/os/Bundle;
 
     .line 75
     if-eqz p20, :cond_0
 
     .line 76
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBundleb:Landroid/os/Bundle;
 
     move-object/from16 v0, p20
 
@@ -285,7 +285,7 @@
     if-nez v4, :cond_1
 
     .line 79
-    iget-object v5, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->b:Landroid/os/Bundle;
+    iget-object v5, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v6, "android.people"
 
@@ -338,7 +338,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     return-object v0
 .end method
@@ -348,7 +348,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-static {v0, p1}, Landroid/support/v4/app/NotificationCompatApi20;->a(Landroid/app/Notification$Builder;Landroid/support/v4/app/NotificationCompatBase$Action;)V
 
@@ -361,14 +361,14 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->b:Landroid/os/Bundle;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBundleb:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
 
     .line 97
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatApi20$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 

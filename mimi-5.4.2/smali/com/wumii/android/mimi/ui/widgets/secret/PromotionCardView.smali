@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private mImageViewf:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private f:Landroid/widget/ImageView;
+.field private mViewc:Landroid/view/View;
 
-.field private g:Landroid/view/View;
+.field private mViewg:Landroid/view/View;
 
-.field private h:Landroid/view/View;
+.field private mViewh:Landroid/view/View;
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mTextViewd:Landroid/widget/TextView;
 
     .line 48
     const v0, 0x7f0b016f
@@ -71,7 +71,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mTextViewe:Landroid/widget/TextView;
 
     .line 49
     const v0, 0x7f0b0095
@@ -82,7 +82,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mImageViewf:Landroid/widget/ImageView;
 
     .line 50
     const v0, 0x7f0b00b9
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->g:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewg:Landroid/view/View;
 
     .line 51
     const v0, 0x7f0b00ba
@@ -100,10 +100,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->h:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewh:Landroid/view/View;
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -122,7 +122,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->h:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewh:Landroid/view/View;
 
     return-object v0
 .end method
@@ -171,7 +171,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->g:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewg:Landroid/view/View;
 
     return-object v0
 .end method
@@ -195,10 +195,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewc:Landroid/view/View;
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -208,7 +208,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getContent()Ljava/lang/String;
 
@@ -217,7 +217,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getReason()Ljava/lang/String;
 
@@ -244,7 +244,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mImageViewf:Landroid/widget/ImageView;
 
     const v3, 0x7f0b0015
 
@@ -270,20 +270,20 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->f:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mImageViewf:Landroid/widget/ImageView;
 
     invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 78
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewc:Landroid/view/View;
 
     const v1, 0x7f0b0006
 
     invoke-virtual {v0, v1, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->mViewc:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;
 

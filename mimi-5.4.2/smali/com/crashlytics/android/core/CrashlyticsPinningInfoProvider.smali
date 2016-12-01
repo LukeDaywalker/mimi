@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Lcom/crashlytics/android/core/PinningInfoProvider;
+.field private final mPinningInfoProvidera:Lcom/crashlytics/android/core/PinningInfoProvider;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 17
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->a:Lcom/crashlytics/android/core/PinningInfoProvider;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->mPinningInfoProvidera:Lcom/crashlytics/android/core/PinningInfoProvider;
 
     .line 18
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->a:Lcom/crashlytics/android/core/PinningInfoProvider;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->mPinningInfoProvidera:Lcom/crashlytics/android/core/PinningInfoProvider;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/PinningInfoProvider;->a()Ljava/io/InputStream;
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->a:Lcom/crashlytics/android/core/PinningInfoProvider;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->mPinningInfoProvidera:Lcom/crashlytics/android/core/PinningInfoProvider;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/PinningInfoProvider;->b()Ljava/lang/String;
 
@@ -60,7 +60,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->a:Lcom/crashlytics/android/core/PinningInfoProvider;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsPinningInfoProvider;->mPinningInfoProvidera:Lcom/crashlytics/android/core/PinningInfoProvider;
 
     invoke-interface {v0}, Lcom/crashlytics/android/core/PinningInfoProvider;->c()[Ljava/lang/String;
 

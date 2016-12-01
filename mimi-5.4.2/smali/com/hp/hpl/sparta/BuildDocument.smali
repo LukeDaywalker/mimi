@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field private final c:Lcom/hp/hpl/sparta/ParseLog;
+.field private final mDocumente:Lcom/hp/hpl/sparta/Document;
 
-.field private d:Lcom/hp/hpl/sparta/Element;
+.field private mElementd:Lcom/hp/hpl/sparta/Element;
 
-.field private final e:Lcom/hp/hpl/sparta/Document;
+.field private mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
 
-.field private f:Lcom/hp/hpl/sparta/ParseSource$ICp;
+.field private final mParseLogc:Lcom/hp/hpl/sparta/ParseLog;
 
 
 # direct methods
@@ -41,17 +41,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 118
-    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     .line 119
     new-instance v0, Lcom/hp/hpl/sparta/Document;
 
     invoke-direct {v0}, Lcom/hp/hpl/sparta/Document;-><init>()V
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->e:Lcom/hp/hpl/sparta/Document;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
     .line 120
-    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->f:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iput-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
 
     .line 26
     if-nez p1, :cond_0
@@ -59,7 +59,7 @@
     sget-object p1, Lcom/hp/hpl/sparta/BuildDocument;->a:Lcom/hp/hpl/sparta/ParseLog;
 
     :cond_0
-    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->c:Lcom/hp/hpl/sparta/ParseLog;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mParseLogc:Lcom/hp/hpl/sparta/ParseLog;
 
     .line 27
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->e:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
     return-object v0
 .end method
@@ -82,25 +82,25 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     if-nez v0, :cond_0
 
     .line 76
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->e:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
     invoke-virtual {v0, p1}, Lcom/hp/hpl/sparta/Document;->a(Lcom/hp/hpl/sparta/Element;)V
 
     .line 80
     :goto_0
-    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     .line 81
     return-void
 
     .line 78
     :cond_0
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     invoke-virtual {v0, p1}, Lcom/hp/hpl/sparta/Element;->b(Lcom/hp/hpl/sparta/Node;)V
 
@@ -112,10 +112,10 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->f:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iput-object p1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
 
     .line 31
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->e:Lcom/hp/hpl/sparta/Document;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mDocumente:Lcom/hp/hpl/sparta/Document;
 
     invoke-interface {p1}, Lcom/hp/hpl/sparta/ParseSource$ICp;->toString()Ljava/lang/String;
 
@@ -132,7 +132,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     .line 106
     invoke-virtual {v0}, Lcom/hp/hpl/sparta/Element;->d()Lcom/hp/hpl/sparta/Node;
@@ -186,13 +186,13 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     invoke-virtual {v0}, Lcom/hp/hpl/sparta/Element;->f()Lcom/hp/hpl/sparta/Element;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->d:Lcom/hp/hpl/sparta/Element;
+    iput-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mElementd:Lcom/hp/hpl/sparta/Element;
 
     .line 97
     return-void
@@ -211,7 +211,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->f:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iget-object v0, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
 
     if-eqz v0, :cond_0
 
@@ -226,7 +226,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->f:Lcom/hp/hpl/sparta/ParseSource$ICp;
+    iget-object v1, p0, Lcom/hp/hpl/sparta/BuildDocument;->mICpf:Lcom/hp/hpl/sparta/ParseSource$ICp;
 
     invoke-interface {v1}, Lcom/hp/hpl/sparta/ParseSource$ICp;->toString()Ljava/lang/String;
 

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Z
+.field private static isZa:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->a:Z
+    sput-boolean v0, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->isZa:Z
 
     return-void
 .end method
@@ -93,21 +93,21 @@
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v1}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -172,11 +172,11 @@
 
     invoke-virtual {v4, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     if-eqz v6, :cond_3
 
-    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v7, ""
 
@@ -188,7 +188,7 @@
 
     const-string/jumbo v6, "keyword"
 
-    iget-object v7, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v7, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v4, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -243,11 +243,11 @@
 
     invoke-virtual {v5, v0, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v6, ""
 
@@ -259,7 +259,7 @@
 
     const-string/jumbo v0, "keyword"
 
-    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v6, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v4, v0, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -437,11 +437,11 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -512,11 +512,11 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -556,7 +556,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->isZa:Z
 
     if-eqz v1, :cond_5
 
@@ -580,7 +580,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->isZa:Z
 
     if-eqz v1, :cond_7
 
@@ -617,11 +617,11 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -692,21 +692,21 @@
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v1}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -798,11 +798,11 @@
     return-void
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -812,11 +812,11 @@
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -834,7 +834,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -842,7 +842,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/navi/NaviParaOption;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -891,7 +891,7 @@
 .method public static setSupportWebNavi(Z)V
     .locals 0
 
-    sput-boolean p0, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->a:Z
+    sput-boolean p0, Lcom/baidu/mapapi/navi/BaiduMapNavigation;->isZa:Z
 
     return-void
 .end method

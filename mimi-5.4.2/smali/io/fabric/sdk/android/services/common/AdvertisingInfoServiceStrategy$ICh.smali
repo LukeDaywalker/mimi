@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private final b:Ljava/util/concurrent/LinkedBlockingQueue;
+.field private final mLinkedBlockingQueueb:Ljava/util/concurrent/LinkedBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/LinkedBlockingQueue",
@@ -32,7 +32,7 @@
     .line 104
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->a:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->isZa:Z
 
     .line 106
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->mLinkedBlockingQueueb:Ljava/util/concurrent/LinkedBlockingQueue;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 123
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->a:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -82,11 +82,11 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->a:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->isZa:Z
 
     .line 132
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->mLinkedBlockingQueueb:Ljava/util/concurrent/LinkedBlockingQueue;
 
     const-wide/16 v2, 0xc8
 
@@ -120,7 +120,7 @@
     .prologue
     .line 111
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->mLinkedBlockingQueueb:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0, p2}, Ljava/util/concurrent/LinkedBlockingQueue;->put(Ljava/lang/Object;)V
     :try_end_0
@@ -142,7 +142,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->b:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AdvertisingInfoServiceStrategy$ICh;->mLinkedBlockingQueueb:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingQueue;->clear()V
 

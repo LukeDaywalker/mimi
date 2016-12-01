@@ -4,25 +4,25 @@
 
 
 # static fields
-.field private static final b:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private final c:Landroid/graphics/Rect;
+.field private final mAccessibilityManagerg:Landroid/view/accessibility/AccessibilityManager;
 
-.field private final d:Landroid/graphics/Rect;
+.field private final mArrayIf:[I
 
-.field private final e:Landroid/graphics/Rect;
+.field private mExploreByTouchNodeProvideri:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 
-.field private final f:[I
+.field private mIj:I
 
-.field private final g:Landroid/view/accessibility/AccessibilityManager;
+.field private final mRectc:Landroid/graphics/Rect;
 
-.field private final h:Landroid/view/View;
+.field private final mRectd:Landroid/graphics/Rect;
 
-.field private i:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
+.field private final mRecte:Landroid/graphics/Rect;
 
-.field private j:I
+.field private final mViewh:Landroid/view/View;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/v4/widget/ExploreByTouchHelper;->b:Ljava/lang/String;
+    sput-object v0, Landroid/support/v4/widget/ExploreByTouchHelper;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     move-result-object v0
 
     .line 272
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-static {v1, v0}, Landroid/support/v4/view/ViewCompat;->a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 450
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-static {v0, p1, p2}, Landroid/support/v4/view/ViewCompat;->a(Landroid/view/View;ILandroid/os/Bundle;)Z
 
@@ -110,7 +110,7 @@
 
     .line 489
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getWindowVisibility()I
 
@@ -125,7 +125,7 @@
 
     .line 494
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -182,9 +182,9 @@
 
     .line 509
     :cond_6
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
-    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->e:Landroid/graphics/Rect;
+    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRecte:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->getLocalVisibleRect(Landroid/graphics/Rect;)Z
 
@@ -199,7 +199,7 @@
 
     .line 514
     :cond_7
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->e:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRecte:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Rect;->intersect(Landroid/graphics/Rect;)Z
 
@@ -225,14 +225,14 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-static {v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Landroid/view/View;)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
 
     move-result-object v1
 
     .line 336
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-static {v0, v1}, Landroid/support/v4/view/ViewCompat;->a(Landroid/view/View;Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;)V
 
@@ -263,7 +263,7 @@
     check-cast v0, Ljava/lang/Integer;
 
     .line 343
-    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -391,7 +391,7 @@
     invoke-virtual {v0, v3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->h(Z)V
 
     .line 382
-    sget-object v1, Landroid/support/v4/widget/ExploreByTouchHelper;->b:Ljava/lang/String;
+    sget-object v1, Landroid/support/v4/widget/ExploreByTouchHelper;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->b(Ljava/lang/CharSequence;)V
 
@@ -422,12 +422,12 @@
 
     .line 393
     :cond_0
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->d:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectd:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Landroid/graphics/Rect;)V
 
     .line 394
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->d:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectd:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->isEmpty()Z
 
@@ -481,7 +481,7 @@
 
     .line 410
     :cond_3
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -494,17 +494,17 @@
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Ljava/lang/CharSequence;)V
 
     .line 411
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0, v1, p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->a(Landroid/view/View;I)V
 
     .line 412
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->d(Landroid/view/View;)V
 
     .line 415
-    iget v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->j:I
+    iget v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mIj:I
 
     if-ne v1, p1, :cond_5
 
@@ -518,7 +518,7 @@
 
     .line 424
     :goto_0
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->d:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectd:Landroid/graphics/Rect;
 
     invoke-direct {p0, v1}, Landroid/support/v4/widget/ExploreByTouchHelper;->a(Landroid/graphics/Rect;)Z
 
@@ -530,42 +530,42 @@
     invoke-virtual {v0, v3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->c(Z)V
 
     .line 426
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->d:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectd:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->b(Landroid/graphics/Rect;)V
 
     .line 430
     :cond_4
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
-    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->f:[I
+    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mArrayIf:[I
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 431
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->f:[I
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mArrayIf:[I
 
     aget v1, v1, v4
 
     .line 432
-    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->f:[I
+    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mArrayIf:[I
 
     aget v2, v2, v3
 
     .line 433
-    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->c:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectc:Landroid/graphics/Rect;
 
-    iget-object v4, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->d:Landroid/graphics/Rect;
+    iget-object v4, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectd:Landroid/graphics/Rect;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     .line 434
-    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->c:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectc:Landroid/graphics/Rect;
 
     invoke-virtual {v3, v1, v2}, Landroid/graphics/Rect;->offset(II)V
 
     .line 435
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->c:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mRectc:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->d(Landroid/graphics/Rect;)V
 
@@ -599,7 +599,7 @@
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityEvent;->setEnabled(Z)V
 
     .line 289
-    sget-object v1, Landroid/support/v4/widget/ExploreByTouchHelper;->b:Ljava/lang/String;
+    sget-object v1, Landroid/support/v4/widget/ExploreByTouchHelper;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
@@ -634,7 +634,7 @@
 
     .line 301
     :cond_0
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -652,7 +652,7 @@
     move-result-object v1
 
     .line 304
-    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v1, v2, p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->a(Landroid/view/View;I)V
 
@@ -698,7 +698,7 @@
 
     .prologue
     .line 523
-    iget v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->j:I
+    iget v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mIj:I
 
     if-ne v0, p1, :cond_0
 
@@ -759,7 +759,7 @@
     const/4 v0, 0x0
 
     .line 539
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->g:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mAccessibilityManagerg:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v1}, Landroid/view/accessibility/AccessibilityManager;->isEnabled()Z
 
@@ -767,7 +767,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->g:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mAccessibilityManagerg:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-static {v1}, Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;->a(Landroid/view/accessibility/AccessibilityManager;)Z
 
@@ -789,10 +789,10 @@
     if-nez v1, :cond_0
 
     .line 545
-    iput p1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->j:I
+    iput p1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mIj:I
 
     .line 547
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
@@ -821,10 +821,10 @@
     .line 564
     const/high16 v0, -0x80000000
 
-    iput v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->j:I
+    iput v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mIj:I
 
     .line 565
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
@@ -853,7 +853,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->i:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mExploreByTouchNodeProvideri:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 
     if-nez v0, :cond_0
 
@@ -864,11 +864,11 @@
 
     invoke-direct {v0, p0, v1}, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;-><init>(Landroid/support/v4/widget/ExploreByTouchHelper;Landroid/support/v4/widget/ExploreByTouchHelper$1;)V
 
-    iput-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->i:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
+    iput-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mExploreByTouchNodeProvideri:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 
     .line 110
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->i:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mExploreByTouchNodeProvideri:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 
     return-object v0
 .end method
@@ -902,7 +902,7 @@
 
     if-eq p1, v1, :cond_0
 
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->g:Landroid/view/accessibility/AccessibilityManager;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mAccessibilityManagerg:Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {v1}, Landroid/view/accessibility/AccessibilityManager;->isEnabled()Z
 
@@ -917,7 +917,7 @@
 
     .line 177
     :cond_1
-    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -932,7 +932,7 @@
     move-result-object v0
 
     .line 183
-    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->h:Landroid/view/View;
+    iget-object v2, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mViewh:Landroid/view/View;
 
     invoke-static {v1, v2, v0}, Landroid/support/v4/view/ViewParentCompat;->a(Landroid/view/ViewParent;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 

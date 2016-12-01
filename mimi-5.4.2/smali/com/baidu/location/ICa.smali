@@ -6,21 +6,21 @@
 
 
 # static fields
-.field private static lq:Ljava/lang/String;
+.field private static mBooleanlr:Ljava/lang/Boolean;
 
-.field private static lr:Ljava/lang/Boolean;
+.field private static mBooleanlw:Ljava/lang/Boolean;
 
-.field private static ls:C
+.field private static mCls:C
 
-.field private static lt:Ljava/lang/String;
+.field private static mIlv:I
 
-.field private static lu:Ljava/text/SimpleDateFormat;
+.field private static mSimpleDateFormatlu:Ljava/text/SimpleDateFormat;
 
-.field private static lv:I
+.field private static mSimpleDateFormatlx:Ljava/text/SimpleDateFormat;
 
-.field private static lw:Ljava/lang/Boolean;
+.field private static mStringlq:Ljava/lang/String;
 
-.field private static lx:Ljava/text/SimpleDateFormat;
+.field private static mStringlt:Ljava/lang/String;
 
 
 # direct methods
@@ -33,29 +33,29 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICa;->lw:Ljava/lang/Boolean;
+    sput-object v0, Lcom/baidu/location/ICa;->mBooleanlw:Ljava/lang/Boolean;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICa;->lr:Ljava/lang/Boolean;
+    sput-object v0, Lcom/baidu/location/ICa;->mBooleanlr:Ljava/lang/Boolean;
 
     const/16 v0, 0x76
 
-    sput-char v0, Lcom/baidu/location/ICa;->ls:C
+    sput-char v0, Lcom/baidu/location/ICa;->mCls:C
 
     const-string/jumbo v0, "/sdcard/baidu"
 
-    sput-object v0, Lcom/baidu/location/ICa;->lt:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICa;->mStringlt:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICa;->lv:I
+    sput v0, Lcom/baidu/location/ICa;->mIlv:I
 
     const-string/jumbo v0, "LocLog.txt"
 
-    sput-object v0, Lcom/baidu/location/ICa;->lq:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICa;->mStringlq:Ljava/lang/String;
 
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICa;->lx:Ljava/text/SimpleDateFormat;
+    sput-object v0, Lcom/baidu/location/ICa;->mSimpleDateFormatlx:Ljava/text/SimpleDateFormat;
 
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -71,7 +71,7 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICa;->lu:Ljava/text/SimpleDateFormat;
+    sput-object v0, Lcom/baidu/location/ICa;->mSimpleDateFormatlu:Ljava/text/SimpleDateFormat;
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 .method public static dh()V
     .locals 4
 
-    sget-object v0, Lcom/baidu/location/ICa;->lu:Ljava/text/SimpleDateFormat;
+    sget-object v0, Lcom/baidu/location/ICa;->mSimpleDateFormatlu:Ljava/text/SimpleDateFormat;
 
     invoke-static {}, Lcom/baidu/location/ICa;->di()Ljava/util/Date;
 
@@ -129,7 +129,7 @@
 
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/baidu/location/ICa;->lt:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICa;->mStringlt:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    sget-object v3, Lcom/baidu/location/ICa;->lq:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICa;->mStringlq:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -182,7 +182,7 @@
 
     move-result v0
 
-    sget v2, Lcom/baidu/location/ICa;->lv:I
+    sget v2, Lcom/baidu/location/ICa;->mIlv:I
 
     sub-int/2addr v0, v2
 
@@ -284,7 +284,7 @@
 
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
-    sget-object v1, Lcom/baidu/location/ICa;->lu:Ljava/text/SimpleDateFormat;
+    sget-object v1, Lcom/baidu/location/ICa;->mSimpleDateFormatlu:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v1, v0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
@@ -294,7 +294,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/baidu/location/ICa;->lx:Ljava/text/SimpleDateFormat;
+    sget-object v3, Lcom/baidu/location/ICa;->mSimpleDateFormatlx:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v3, v0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
@@ -340,7 +340,7 @@
 
     new-instance v2, Ljava/io/File;
 
-    sget-object v3, Lcom/baidu/location/ICa;->lt:Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICa;->mStringlt:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -350,7 +350,7 @@
 
     move-result-object v1
 
-    sget-object v4, Lcom/baidu/location/ICa;->lq:Ljava/lang/String;
+    sget-object v4, Lcom/baidu/location/ICa;->mStringlq:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

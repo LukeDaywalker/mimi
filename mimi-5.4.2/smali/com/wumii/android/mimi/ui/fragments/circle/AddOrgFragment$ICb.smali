@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
+.field final synthetic mAddOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->mAddOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->mAddOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->b()Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
@@ -39,13 +39,13 @@
     if-eqz v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->mAddOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;->b()Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment$ICb;->mAddOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/AddOrgFragment;
 
     const v2, 0x7f0602af
 

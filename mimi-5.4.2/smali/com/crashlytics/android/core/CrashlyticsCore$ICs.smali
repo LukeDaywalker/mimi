@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field private isZb:Z
 
-.field private b:Z
+.field private final mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
-.field private final c:Ljava/util/concurrent/CountDownLatch;
+.field final synthetic mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
 
 # direct methods
@@ -17,14 +17,14 @@
 
     .prologue
     .line 1060
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->a:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->mCrashlyticsCorea:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1061
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->b:Z
+    iput-boolean v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->isZb:Z
 
     .line 1062
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->c:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     return-void
 .end method
@@ -55,10 +55,10 @@
 
     .prologue
     .line 1065
-    iput-boolean p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->b:Z
+    iput-boolean p1, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->isZb:Z
 
     .line 1066
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->c:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -71,7 +71,7 @@
 
     .prologue
     .line 1070
-    iget-boolean v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->b:Z
+    iget-boolean v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->isZb:Z
 
     return v0
 .end method
@@ -82,7 +82,7 @@
     .prologue
     .line 1075
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->c:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsCore$ICs;->mCountDownLatchc:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
     :try_end_0

@@ -4,15 +4,21 @@
 
 
 # instance fields
-.field final a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+.field private final mAtomicBooleang:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private b:Ljava/util/concurrent/Executor;
+.field private final mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private c:Ljava/util/concurrent/Executor;
+.field private final mAtomicBooleani:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private d:Ljava/util/concurrent/Executor;
+.field private mExecutorb:Ljava/util/concurrent/Executor;
 
-.field private final e:Ljava/util/Map;
+.field private mExecutorc:Ljava/util/concurrent/Executor;
+
+.field private mExecutord:Ljava/util/concurrent/Executor;
+
+.field final mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+
+.field private final mMape:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -24,7 +30,7 @@
     .end annotation
 .end field
 
-.field private final f:Ljava/util/Map;
+.field private final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -36,13 +42,7 @@
     .end annotation
 .end field
 
-.field private final g:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field private final h:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field private final i:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field private final j:Ljava/lang/Object;
+.field private final mObjectj:Ljava/lang/Object;
 
 
 # direct methods
@@ -64,62 +64,62 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->e:Ljava/util/Map;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMape:Ljava/util/Map;
 
     .line 50
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->f:Ljava/util/Map;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMapf:Ljava/util/Map;
 
     .line 52
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleang:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 53
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 54
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleani:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 56
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->j:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mObjectj:Ljava/lang/Object;
 
     .line 59
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     .line 61
-    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->g:Ljava/util/concurrent/Executor;
+    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->mExecutorg:Ljava/util/concurrent/Executor;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->b:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorb:Ljava/util/concurrent/Executor;
 
     .line 62
-    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->h:Ljava/util/concurrent/Executor;
+    iget-object v0, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->mExecutorh:Ljava/util/concurrent/Executor;
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->c:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorc:Ljava/util/concurrent/Executor;
 
     .line 64
     invoke-static {}, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory;->a()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->d:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutord:Ljava/util/concurrent/Executor;
 
     .line 65
     return-void
@@ -140,7 +140,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->c:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorc:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
@@ -150,7 +150,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->b:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorb:Ljava/util/concurrent/Executor;
 
     return-object v0
 .end method
@@ -160,13 +160,13 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    iget-boolean v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->i:Z
+    iget-boolean v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->isZi:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->b:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorb:Ljava/util/concurrent/Executor;
 
     check-cast v0, Ljava/util/concurrent/ExecutorService;
 
@@ -181,17 +181,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->b:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorb:Ljava/util/concurrent/Executor;
 
     .line 94
     :cond_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    iget-boolean v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->j:Z
+    iget-boolean v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->isZj:Z
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->c:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorc:Ljava/util/concurrent/Executor;
 
     check-cast v0, Ljava/util/concurrent/ExecutorService;
 
@@ -206,7 +206,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->c:Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorc:Ljava/util/concurrent/Executor;
 
     .line 98
     :cond_1
@@ -218,17 +218,17 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    iget v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->k:I
+    iget v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->mIk:I
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    iget v1, v1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->l:I
+    iget v1, v1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->mIl:I
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->a:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mImageLoaderConfigurationa:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->m:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
+    iget-object v2, v2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->mQueueProcessingTypem:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     invoke-static {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory;->a(IILcom/nostra13/universalimageloader/core/assist/QueueProcessingType;)Ljava/util/concurrent/Executor;
 
@@ -244,7 +244,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMape:Ljava/util/Map;
 
     invoke-interface {p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->f()I
 
@@ -268,7 +268,7 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleang:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
 .end method
@@ -278,7 +278,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMapf:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -295,7 +295,7 @@
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
     .line 197
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->f:Ljava/util/Map;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMapf:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -309,7 +309,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->d:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutord:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine$ICp;
 
@@ -329,7 +329,7 @@
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->e()V
 
     .line 87
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->c:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutorc:Ljava/util/concurrent/Executor;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -342,7 +342,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMape:Ljava/util/Map;
 
     invoke-interface {p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->f()I
 
@@ -363,7 +363,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->d:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mExecutord:Ljava/util/concurrent/Executor;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -376,7 +376,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->j:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mObjectj:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -386,7 +386,7 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->e:Ljava/util/Map;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mMape:Ljava/util/Map;
 
     invoke-interface {p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->f()I
 
@@ -407,7 +407,7 @@
 
     .prologue
     .line 211
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -421,7 +421,7 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->mAtomicBooleani:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 

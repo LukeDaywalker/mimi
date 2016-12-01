@@ -7,7 +7,11 @@
 
 
 # instance fields
-.field private final a:Ljava/util/LinkedHashMap;
+.field private final mIb:I
+
+.field private mIc:I
+
+.field private final mLinkedHashMapa:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap",
@@ -18,10 +22,6 @@
         }
     .end annotation
 .end field
-
-.field private final b:I
-
-.field private c:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     .line 35
     :cond_0
-    iput p1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIb:I
 
     .line 36
     new-instance v0, Ljava/util/LinkedHashMap;
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     .line 37
     return-void
@@ -75,11 +75,11 @@
 
     .line 83
     :try_start_0
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     if-ltz v0, :cond_0
 
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->isEmpty()Z
 
@@ -87,7 +87,7 @@
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     if-eqz v0, :cond_1
 
@@ -138,11 +138,11 @@
     .line 87
     :cond_1
     :try_start_1
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     if-le v0, p1, :cond_2
 
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->isEmpty()Z
 
@@ -160,7 +160,7 @@
 
     .line 91
     :cond_3
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
@@ -200,12 +200,12 @@
     check-cast v0, Landroid/graphics/Bitmap;
 
     .line 97
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 98
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     invoke-direct {p0, v1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b(Ljava/lang/String;Landroid/graphics/Bitmap;)I
 
@@ -213,7 +213,7 @@
 
     sub-int v0, v2, v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     .line 99
     monitor-exit p0
@@ -265,7 +265,7 @@
 
     .line 50
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -308,7 +308,7 @@
     :try_start_0
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
@@ -356,7 +356,7 @@
 
     .line 62
     :try_start_0
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     invoke-direct {p0, p1, p2}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b(Ljava/lang/String;Landroid/graphics/Bitmap;)I
 
@@ -364,10 +364,10 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     .line 63
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -379,7 +379,7 @@
     if-eqz v0, :cond_2
 
     .line 65
-    iget v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     invoke-direct {p0, p1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b(Ljava/lang/String;Landroid/graphics/Bitmap;)I
 
@@ -387,7 +387,7 @@
 
     sub-int v0, v1, v0
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     .line 67
     :cond_2
@@ -396,7 +396,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 69
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIb:I
 
     invoke-direct {p0, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a(I)V
 
@@ -439,7 +439,7 @@
 
     .line 111
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -451,7 +451,7 @@
     if-eqz v0, :cond_1
 
     .line 113
-    iget v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     invoke-direct {p0, p1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b(Ljava/lang/String;Landroid/graphics/Bitmap;)I
 
@@ -459,7 +459,7 @@
 
     sub-int/2addr v1, v2
 
-    iput v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->c:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIc:I
 
     .line 115
     :cond_1
@@ -507,7 +507,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->b:I
+    iget v3, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->mIb:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

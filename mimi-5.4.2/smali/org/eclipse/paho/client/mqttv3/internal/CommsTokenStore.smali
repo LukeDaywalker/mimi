@@ -4,19 +4,19 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private static final c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private d:Ljava/util/Hashtable;
+.field private mHashtabled:Ljava/util/Hashtable;
 
-.field private e:Ljava/lang/String;
+.field private mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
-.field private f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mClassa:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -38,25 +38,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mClassa:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     .line 48
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.internal.nls.logcat"
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     return-void
 
@@ -85,10 +85,10 @@
     .line 53
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
     .line 58
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     invoke-interface {v0, p1}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->a(Ljava/lang/String;)V
 
@@ -97,15 +97,15 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     .line 60
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->e:Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringe:Ljava/lang/String;
 
     .line 62
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "<Init>"
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 109
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
@@ -143,7 +143,7 @@
     move-result-object v2
 
     .line 111
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v2}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -152,7 +152,7 @@
     if-eqz v0, :cond_0
 
     .line 112
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v2}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -161,9 +161,9 @@
     check-cast v0, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;
 
     .line 114
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v5, "restoreToken"
 
@@ -198,7 +198,7 @@
     :cond_0
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;
 
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->e:Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringe:Ljava/lang/String;
 
     invoke-direct {v0, v3}, Lorg/eclipse/paho/client/mqttv3/MqttDeliveryToken;-><init>(Ljava/lang/String;)V
 
@@ -208,14 +208,14 @@
     invoke-virtual {v3, v2}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a(Ljava/lang/String;)V
 
     .line 118
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v3, v2, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 120
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v4, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v5, "restoreToken"
 
@@ -257,7 +257,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -278,7 +278,7 @@
     move-result-object v0
 
     .line 74
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -294,15 +294,15 @@
 
     .prologue
     .line 169
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 171
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "open"
 
@@ -313,7 +313,7 @@
     .line 173
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
     .line 169
     monitor-exit v1
@@ -337,15 +337,15 @@
 
     .prologue
     .line 158
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 160
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "quiesce"
 
@@ -362,7 +362,7 @@
     invoke-interface {v0, v2, v3, v4, v5}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 162
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
     .line 158
     monitor-exit v1
@@ -386,15 +386,15 @@
 
     .prologue
     .line 147
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 149
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "saveToken"
 
@@ -424,7 +424,7 @@
     invoke-virtual {v0, p2}, Lorg/eclipse/paho/client/mqttv3/internal/Token;->a(Ljava/lang/String;)V
 
     .line 151
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p2, p1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -450,13 +450,13 @@
 
     .prologue
     .line 131
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 132
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
     if-nez v0, :cond_0
 
@@ -466,9 +466,9 @@
     move-result-object v0
 
     .line 135
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v3, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v4, "saveToken"
 
@@ -499,7 +499,7 @@
 
     .line 139
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->f:Lorg/eclipse/paho/client/mqttv3/MqttException;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mMqttExceptionf:Lorg/eclipse/paho/client/mqttv3/MqttException;
 
     throw v0
 
@@ -519,9 +519,9 @@
 
     .prologue
     .line 92
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "removeToken"
 
@@ -541,7 +541,7 @@
     if-eqz p1, :cond_0
 
     .line 95
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -590,15 +590,15 @@
 
     .prologue
     .line 180
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 182
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "getOutstandingDelTokens"
 
@@ -612,7 +612,7 @@
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     .line 185
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
@@ -691,15 +691,15 @@
 
     .prologue
     .line 205
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 207
     :try_start_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "getOutstandingTokens"
 
@@ -713,7 +713,7 @@
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     .line 210
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
@@ -765,9 +765,9 @@
 
     .prologue
     .line 228
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "clear"
 
@@ -781,7 +781,7 @@
 
     new-instance v6, Ljava/lang/Integer;
 
-    iget-object v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v7, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v7}, Ljava/util/Hashtable;->size()I
 
@@ -794,13 +794,13 @@
     invoke-interface {v0, v1, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 229
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 230
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
@@ -826,13 +826,13 @@
 
     .prologue
     .line 235
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v1
 
     .line 236
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->size()I
 
@@ -872,13 +872,13 @@
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
     .line 242
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     monitor-enter v3
 
     .line 243
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->d:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/CommsTokenStore;->mHashtabled:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 

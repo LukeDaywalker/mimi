@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+.field final synthetic mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICc;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

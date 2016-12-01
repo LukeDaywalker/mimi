@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Landroid/support/v4/app/FragmentManager;
+.field private final mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
-.field private b:Landroid/support/v4/app/FragmentTransaction;
+.field private mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
-.field private c:Landroid/support/v4/app/Fragment;
+.field private mFragmentc:Landroid/support/v4/app/Fragment;
 
 
 # direct methods
@@ -22,13 +22,13 @@
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
     .line 66
-    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     .line 67
-    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     .line 70
-    iput-object p1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     .line 71
     return-void
@@ -92,18 +92,18 @@
     const/4 v6, 0x0
 
     .line 84
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     if-nez v0, :cond_0
 
     .line 85
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     .line 88
     :cond_0
@@ -121,7 +121,7 @@
     move-result-object v0
 
     .line 92
-    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentManager;->a(Ljava/lang/String;)Landroid/support/v4/app/Fragment;
 
@@ -131,13 +131,13 @@
     if-eqz v0, :cond_2
 
     .line 95
-    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentTransaction;->e(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
 
     .line 102
     :goto_0
-    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     if-eq v0, v1, :cond_1
 
@@ -158,7 +158,7 @@
     move-result-object v0
 
     .line 99
-    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getId()I
 
@@ -198,22 +198,22 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     if-nez v0, :cond_0
 
     .line 113
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->a()Landroid/support/v4/app/FragmentTransaction;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     .line 117
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     check-cast p3, Landroid/support/v4/app/Fragment;
 
@@ -262,22 +262,22 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     if-eqz v0, :cond_0
 
     .line 139
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->b()I
 
     .line 140
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->b:Landroid/support/v4/app/FragmentTransaction;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentTransactionb:Landroid/support/v4/app/FragmentTransaction;
 
     .line 141
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->a:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentManagera:Landroid/support/v4/app/FragmentManager;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->b()Z
 
@@ -298,22 +298,22 @@
     check-cast p3, Landroid/support/v4/app/Fragment;
 
     .line 123
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     if-eq p3, v0, :cond_2
 
     .line 124
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/Fragment;->setMenuVisibility(Z)V
 
     .line 126
-    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/Fragment;->setUserVisibleHint(Z)V
 
@@ -329,7 +329,7 @@
 
     .line 132
     :cond_1
-    iput-object p3, p0, Landroid/support/v4/app/FragmentPagerAdapter;->c:Landroid/support/v4/app/Fragment;
+    iput-object p3, p0, Landroid/support/v4/app/FragmentPagerAdapter;->mFragmentc:Landroid/support/v4/app/Fragment;
 
     .line 134
     :cond_2

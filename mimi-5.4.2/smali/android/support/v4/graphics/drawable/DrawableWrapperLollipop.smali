@@ -9,7 +9,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->applyTheme(Landroid/content/res/Resources$Theme;)V
 
@@ -22,7 +22,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->canApplyTheme()Z
 
@@ -36,7 +36,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getDirtyBounds()Landroid/graphics/Rect;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/DrawableWrapperLollipop;->mDrawableb:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setHotspotBounds(IIII)V
 

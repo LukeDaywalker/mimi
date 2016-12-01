@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     .line 107
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->mContexta:Landroid/content/Context;
 
     .line 110
-    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->mContexta:Landroid/content/Context;
 
     .line 111
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICn;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/DeviceConfig;->f(Landroid/content/Context;)Z
 

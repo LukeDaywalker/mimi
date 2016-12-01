@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static mContextb:Landroid/content/Context;
 
-.field private static b:Landroid/content/Context;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -21,14 +21,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->mLoggera:Lorg/slf4j/Logger;
 
     .line 29
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     .line 33
     const-string/jumbo v1, "android.intent.extra.shortcut.NAME"
 
-    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -79,7 +79,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 38
-    sget-object v1, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     const v2, 0x7f0200e3
 
@@ -115,7 +115,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 46
-    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     const-class v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
@@ -127,7 +127,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 50
-    sget-object v1, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -180,7 +180,7 @@
 
     .line 58
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -204,7 +204,7 @@
 
     const/4 v5, 0x0
 
-    sget-object v9, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v9, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     const v10, 0x7f060026
 
@@ -255,7 +255,7 @@
     .line 71
     :goto_2
     :try_start_2
-    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/util/ShortcutUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "Permission denial when query from ContentResolver "
 
@@ -304,7 +304,7 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->b:Landroid/content/Context;
+    sget-object v0, Lcom/wumii/android/mimi/util/ShortcutUtils;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -376,7 +376,7 @@
 
     iget-object v6, v4, Landroid/content/pm/ProviderInfo;->readPermission:Ljava/lang/String;
 
-    invoke-static {v5, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v5, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 
@@ -386,7 +386,7 @@
 
     iget-object v6, v4, Landroid/content/pm/ProviderInfo;->writePermission:Ljava/lang/String;
 
-    invoke-static {v5, v6}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v5, v6}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 

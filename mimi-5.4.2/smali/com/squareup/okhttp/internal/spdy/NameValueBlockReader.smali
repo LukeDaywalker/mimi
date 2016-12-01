@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Lokio/InflaterSource;
+.field private final mBufferedSourcec:Lokio/BufferedSource;
 
-.field private b:I
+.field private mIb:I
 
-.field private final c:Lokio/BufferedSource;
+.field private final mInflaterSourcea:Lokio/InflaterSource;
 
 
 # direct methods
@@ -34,16 +34,16 @@
 
     invoke-direct {v2, v0, v1}, Lokio/InflaterSource;-><init>(Lokio/Source;Ljava/util/zip/Inflater;)V
 
-    iput-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a:Lokio/InflaterSource;
+    iput-object v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mInflaterSourcea:Lokio/InflaterSource;
 
     .line 78
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a:Lokio/InflaterSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mInflaterSourcea:Lokio/InflaterSource;
 
     invoke-static {v0}, Lokio/Okio;->a(Lokio/Source;)Lokio/BufferedSource;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->c:Lokio/BufferedSource;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mBufferedSourcec:Lokio/BufferedSource;
 
     .line 79
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 37
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     return v0
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 37
-    iput p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iput p1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     return p1
 .end method
@@ -74,14 +74,14 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->c:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mBufferedSourcec:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->l()I
 
     move-result v0
 
     .line 102
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->c:Lokio/BufferedSource;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mBufferedSourcec:Lokio/BufferedSource;
 
     int-to-long v2, v0
 
@@ -97,17 +97,17 @@
 
     .prologue
     .line 109
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     if-lez v0, :cond_0
 
     .line 110
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->a:Lokio/InflaterSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mInflaterSourcea:Lokio/InflaterSource;
 
     invoke-virtual {v0}, Lokio/InflaterSource;->b()Z
 
     .line 111
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     if-eqz v0, :cond_0
 
@@ -123,7 +123,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -158,14 +158,14 @@
 
     .prologue
     .line 82
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     add-int/2addr v0, p1
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->b:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mIb:I
 
     .line 84
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->c:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mBufferedSourcec:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->l()I
 
@@ -295,7 +295,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->c:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/NameValueBlockReader;->mBufferedSourcec:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->close()V
 

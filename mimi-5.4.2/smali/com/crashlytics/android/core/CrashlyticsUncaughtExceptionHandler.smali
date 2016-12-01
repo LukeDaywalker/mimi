@@ -7,9 +7,7 @@
 
 
 # static fields
-.field static final a:Ljava/io/FilenameFilter;
-
-.field static final b:Ljava/util/Comparator;
+.field static final mComparatorb:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -20,7 +18,7 @@
     .end annotation
 .end field
 
-.field static final c:Ljava/util/Comparator;
+.field static final mComparatorc:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -31,11 +29,11 @@
     .end annotation
 .end field
 
-.field static final d:Ljava/io/FilenameFilter;
+.field static final mFilenameFiltera:Ljava/io/FilenameFilter;
 
-.field private static final e:Ljava/util/regex/Pattern;
+.field static final mFilenameFilterd:Ljava/io/FilenameFilter;
 
-.field private static final f:Ljava/util/Map;
+.field private static final mMapf:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -47,33 +45,35 @@
     .end annotation
 .end field
 
+.field private static final mPatterne:Ljava/util/regex/Pattern;
+
 
 # instance fields
-.field private final g:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private isZp:Z
 
-.field private final h:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final i:Ljava/lang/Thread$UncaughtExceptionHandler;
+.field private final mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final j:Ljava/io/File;
+.field private final mAtomicIntegerg:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private final k:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mBroadcastReceiverl:Landroid/content/BroadcastReceiver;
 
-.field private final l:Landroid/content/BroadcastReceiver;
+.field private final mBroadcastReceiverm:Landroid/content/BroadcastReceiver;
 
-.field private final m:Landroid/content/BroadcastReceiver;
+.field private final mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
-.field private final n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+.field private final mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
-.field private final o:Lio/fabric/sdk/android/services/common/IdManager;
+.field private final mFilej:Ljava/io/File;
 
-.field private p:Z
+.field private final mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
-.field private final q:Lcom/crashlytics/android/core/CrashlyticsCore;
+.field private final mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
-.field private final r:Lcom/crashlytics/android/core/LogFileManager;
+.field private final mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
-.field private final s:Lcom/crashlytics/android/core/SessionDataWriter;
+.field private final mUncaughtExceptionHandleri:Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # direct methods
@@ -86,28 +86,28 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaa;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a:Ljava/io/FilenameFilter;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     .line 130
     new-instance v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICai;
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICai;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->b:Ljava/util/Comparator;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorb:Ljava/util/Comparator;
 
     .line 137
     new-instance v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaj;
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaj;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->c:Ljava/util/Comparator;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorc:Ljava/util/Comparator;
 
     .line 147
     new-instance v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICak;
 
     invoke-direct {v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICak;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->d:Ljava/io/FilenameFilter;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilenameFilterd:Ljava/io/FilenameFilter;
 
     .line 154
     const-string/jumbo v0, "([\\d|A-Z|a-z]{12}\\-[\\d|A-Z|a-z]{4}\\-[\\d|A-Z|a-z]{4}\\-[\\d|A-Z|a-z]{12}).+"
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->e:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mPatterne:Ljava/util/regex/Pattern;
 
     .line 157
     const-string/jumbo v0, "X-CRASHLYTICS-SEND-FLAGS"
@@ -127,7 +127,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->f:Ljava/util/Map;
+    sput-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mMapf:Ljava/util/Map;
 
     return-void
 .end method
@@ -146,43 +146,43 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->g:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicIntegerg:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 185
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 217
-    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->i:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iput-object p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mUncaughtExceptionHandleri:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     .line 218
-    iput-object p3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iput-object p3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     .line 219
-    iput-object p4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->o:Lio/fabric/sdk/android/services/common/IdManager;
+    iput-object p4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
     .line 220
-    iput-object p6, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iput-object p6, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     .line 221
-    iput-object p5, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iput-object p5, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     .line 222
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 224
     invoke-virtual {p6}, Lcom/crashlytics/android/core/CrashlyticsCore;->u()Ljava/io/File;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     .line 225
     new-instance v0, Lcom/crashlytics/android/core/LogFileManager;
@@ -191,11 +191,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-direct {v0, v1, v2}, Lcom/crashlytics/android/core/LogFileManager;-><init>(Landroid/content/Context;Ljava/io/File;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->r:Lcom/crashlytics/android/core/LogFileManager;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
     .line 227
     invoke-direct {p0, p2}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a(Lcom/crashlytics/android/core/CrashlyticsListener;)V
@@ -205,7 +205,7 @@
 
     invoke-direct {v0, p0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICal;-><init>(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->m:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverm:Landroid/content/BroadcastReceiver;
 
     .line 236
     new-instance v0, Landroid/content/IntentFilter;
@@ -219,7 +219,7 @@
 
     invoke-direct {v1, p0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICam;-><init>(Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;)V
 
-    iput-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->l:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverl:Landroid/content/BroadcastReceiver;
 
     .line 245
     new-instance v1, Landroid/content/IntentFilter;
@@ -234,17 +234,17 @@
     move-result-object v2
 
     .line 249
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->m:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverm:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 250
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->l:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverl:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v2, v0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 251
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -279,7 +279,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object v0
 .end method
@@ -301,7 +301,7 @@
     move-result-object v3
 
     .line 738
-    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->b:Ljava/util/Comparator;
+    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorb:Ljava/util/Comparator;
 
     invoke-static {v3, v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -359,7 +359,7 @@
     move-result-object v5
 
     .line 750
-    sget-object v6, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->e:Ljava/util/regex/Pattern;
+    sget-object v6, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mPatterne:Ljava/util/regex/Pattern;
 
     invoke-virtual {v6, v5}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -759,7 +759,7 @@
     .line 973
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->B()Landroid/content/Context;
 
@@ -782,7 +782,7 @@
     .line 976
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->p:Z
+    iget-boolean v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->isZp:Z
 
     invoke-static {v7, v2}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Z)I
 
@@ -942,11 +942,11 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->r:Lcom/crashlytics/android/core/LogFileManager;
+    iget-object v0, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
     move-object/from16 v21, v0
 
@@ -967,7 +967,7 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->g()Ljava/util/Map;
 
@@ -1107,7 +1107,7 @@
     .line 320
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v1}, Lcom/crashlytics/android/core/CrashlyticsCore;->u()Ljava/io/File;
 
@@ -1201,7 +1201,7 @@
     .line 431
     new-instance v1, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1239,7 +1239,7 @@
     :try_start_2
     new-instance v3, Lcom/crashlytics/android/core/MetaDataStore;
 
-    iget-object v4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-direct {v3, v4}, Lcom/crashlytics/android/core/MetaDataStore;-><init>(Ljava/io/File;)V
 
@@ -1248,7 +1248,7 @@
     move-result-object v2
 
     .line 436
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->r:Lcom/crashlytics/android/core/LogFileManager;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
     invoke-static {p1, v3, v2, v0}, Lcom/crashlytics/android/core/NativeCrashWriter;->a(Lcom/crashlytics/android/core/internal/models/SessionEventData;Lcom/crashlytics/android/core/LogFileManager;Ljava/util/Map;Lcom/crashlytics/android/core/CodedOutputStream;)V
     :try_end_2
@@ -1595,7 +1595,7 @@
     :try_start_0
     new-instance v2, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-direct {v2, v1, p2}, Lcom/crashlytics/android/core/ClsFileOutputStream;-><init>(Ljava/io/File;Ljava/lang/String;)V
     :try_end_0
@@ -2002,7 +2002,7 @@
 
     .prologue
     .line 712
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;
 
@@ -2026,7 +2026,7 @@
 
     invoke-direct {v1, v2}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaq;-><init>(Ljava/lang/String;)V
 
-    sget-object v2, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->c:Ljava/util/Comparator;
+    sget-object v2, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorc:Ljava/util/Comparator;
 
     invoke-static {v0, v1, p2, v2}, Lcom/crashlytics/android/core/Utils;->a(Ljava/io/File;Ljava/io/FilenameFilter;ILjava/util/Comparator;)V
 
@@ -2045,7 +2045,7 @@
     :try_start_0
     new-instance v6, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2087,7 +2087,7 @@
 
     const/4 v4, 0x0
 
-    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v5, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v5}, Lcom/crashlytics/android/core/CrashlyticsCore;->a()Ljava/lang/String;
 
@@ -2109,7 +2109,7 @@
     div-long/2addr v4, v8
 
     .line 839
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     move-object v2, p1
 
@@ -2204,7 +2204,7 @@
     invoke-virtual {p0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->f()V
 
     .line 305
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->v()Z
 
@@ -2225,7 +2225,7 @@
 
     .prologue
     .line 56
-    iput-boolean p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->p:Z
+    iput-boolean p1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->isZp:Z
 
     return p1
 .end method
@@ -2247,7 +2247,7 @@
 
     .prologue
     .line 695
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-virtual {v0, p1}, Ljava/io/File;->listFiles(Ljava/io/FilenameFilter;)[Ljava/io/File;
 
@@ -2265,7 +2265,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->r:Lcom/crashlytics/android/core/LogFileManager;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
     return-object v0
 .end method
@@ -2291,7 +2291,7 @@
     :try_start_0
     new-instance v0, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     const-string/jumbo v3, "crash_marker"
 
@@ -2313,7 +2313,7 @@
     .line 393
     new-instance v7, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2522,7 +2522,7 @@
     :try_start_0
     new-instance v7, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2554,35 +2554,35 @@
     move-result-object v1
 
     .line 856
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->h()Ljava/lang/String;
 
     move-result-object v2
 
     .line 857
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->k()Ljava/lang/String;
 
     move-result-object v3
 
     .line 858
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->j()Ljava/lang/String;
 
     move-result-object v4
 
     .line 859
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->o:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/common/IdManager;->b()Ljava/lang/String;
 
     move-result-object v5
 
     .line 860
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->i()Ljava/lang/String;
 
@@ -2597,7 +2597,7 @@
     move-result v6
 
     .line 863
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     invoke-virtual/range {v0 .. v6}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lcom/crashlytics/android/core/CodedOutputStream;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_1
@@ -2733,7 +2733,7 @@
     invoke-interface {v0, v2, v3}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1048
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->g:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicIntegerg:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -2769,7 +2769,7 @@
     .line 1052
     new-instance v7, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-direct {v7, v2, v0}, Lcom/crashlytics/android/core/ClsFileOutputStream;-><init>(Ljava/io/File;Ljava/lang/String;)V
     :try_end_0
@@ -2935,7 +2935,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     return-object v0
 .end method
@@ -2951,7 +2951,7 @@
     :try_start_0
     new-instance v2, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2983,7 +2983,7 @@
     move-result-object v1
 
     .line 884
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->B()Landroid/content/Context;
 
@@ -2994,7 +2994,7 @@
     move-result v0
 
     .line 886
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     invoke-virtual {v3, v1, v0}, Lcom/crashlytics/android/core/SessionDataWriter;->a(Lcom/crashlytics/android/core/CodedOutputStream;Z)V
     :try_end_1
@@ -3087,7 +3087,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3125,7 +3125,7 @@
     .line 904
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->B()Landroid/content/Context;
 
@@ -3147,7 +3147,7 @@
     .line 907
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->o:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v4, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-virtual {v4}, Lio/fabric/sdk/android/services/common/IdManager;->f()Ljava/lang/String;
 
@@ -3195,7 +3195,7 @@
     .line 914
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->o:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v6, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-virtual {v6}, Lio/fabric/sdk/android/services/common/IdManager;->g()Ljava/util/Map;
 
@@ -3209,7 +3209,7 @@
     .line 918
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v2, v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     sget-object v6, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
@@ -3298,7 +3298,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     return-object v0
 .end method
@@ -3314,7 +3314,7 @@
     :try_start_0
     new-instance v2, Lcom/crashlytics/android/core/ClsFileOutputStream;
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3377,7 +3377,7 @@
     .line 945
     :cond_0
     :try_start_2
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->s:Lcom/crashlytics/android/core/SessionDataWriter;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mSessionDataWriters:Lcom/crashlytics/android/core/SessionDataWriter;
 
     iget-object v4, v0, Lcom/crashlytics/android/core/UserMetaData;->b:Ljava/lang/String;
 
@@ -3462,19 +3462,19 @@
 
     new-instance v0, Lcom/crashlytics/android/core/UserMetaData;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v1}, Lcom/crashlytics/android/core/CrashlyticsCore;->n()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v2}, Lcom/crashlytics/android/core/CrashlyticsCore;->p()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v3, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v3}, Lcom/crashlytics/android/core/CrashlyticsCore;->o()Ljava/lang/String;
 
@@ -3488,7 +3488,7 @@
     :cond_0
     new-instance v0, Lcom/crashlytics/android/core/MetaDataStore;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
     invoke-direct {v0, v1}, Lcom/crashlytics/android/core/MetaDataStore;-><init>(Ljava/io/File;)V
 
@@ -3514,7 +3514,7 @@
 
     .prologue
     .line 56
-    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->e:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mPatterne:Ljava/util/regex/Pattern;
 
     return-object v0
 .end method
@@ -3524,7 +3524,7 @@
 
     .prologue
     .line 56
-    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->f:Ljava/util/Map;
+    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mMapf:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -3545,7 +3545,7 @@
     move-result-object v0
 
     .line 525
-    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->b:Ljava/util/Comparator;
+    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorb:Ljava/util/Comparator;
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -3583,7 +3583,7 @@
     .line 590
     new-instance v1, Lcom/crashlytics/android/core/CLSUUID;
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->o:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mIdManagero:Lio/fabric/sdk/android/services/common/IdManager;
 
     invoke-direct {v1, v2}, Lcom/crashlytics/android/core/CLSUUID;-><init>(Lio/fabric/sdk/android/services/common/IdManager;)V
 
@@ -3619,7 +3619,7 @@
     invoke-interface {v2, v3, v4}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 595
-    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->r:Lcom/crashlytics/android/core/LogFileManager;
+    iget-object v2, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mLogFileManagerr:Lcom/crashlytics/android/core/LogFileManager;
 
     invoke-virtual {v2, v1}, Lcom/crashlytics/android/core/LogFileManager;->a(Ljava/lang/String;)V
 
@@ -3660,7 +3660,7 @@
     invoke-direct {p0, v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->f(Ljava/lang/String;)V
 
     .line 615
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->y()Lio/fabric/sdk/android/services/settings/SessionSettingsData;
 
@@ -3782,7 +3782,7 @@
 
     .prologue
     .line 680
-    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a:Ljava/io/FilenameFilter;
+    sget-object v0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     invoke-direct {p0, v0}, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a(Ljava/io/FilenameFilter;)[Ljava/io/File;
 
@@ -3798,7 +3798,7 @@
     .line 813
     new-instance v1, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->u()Ljava/io/File;
 
@@ -3872,7 +3872,7 @@
     aget-object v3, v1, v0
 
     .line 1251
-    iget-object v4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v4, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v5, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICah;
 
@@ -3897,7 +3897,7 @@
 
     .prologue
     .line 461
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICab;
 
@@ -3919,7 +3919,7 @@
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
     .line 365
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v2, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICao;
 
@@ -3946,7 +3946,7 @@
 
     .prologue
     .line 481
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICac;
 
@@ -4108,7 +4108,7 @@
 
     .prologue
     .line 311
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -4122,7 +4122,7 @@
 
     .prologue
     .line 500
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICad;
 
@@ -4163,7 +4163,7 @@
 
     .prologue
     .line 563
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICae;
 
@@ -4205,13 +4205,13 @@
 
     .prologue
     .line 727
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->j:Ljava/io/File;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilej:Ljava/io/File;
 
-    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->a:Ljava/io/FilenameFilter;
+    sget-object v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mFilenameFiltera:Ljava/io/FilenameFilter;
 
     const/4 v2, 0x4
 
-    sget-object v3, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->c:Ljava/util/Comparator;
+    sget-object v3, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mComparatorc:Ljava/util/Comparator;
 
     invoke-static {v0, v1, v2, v3}, Lcom/crashlytics/android/core/Utils;->a(Ljava/io/File;Ljava/io/FilenameFilter;ILjava/util/Comparator;)V
 
@@ -4224,7 +4224,7 @@
 
     .prologue
     .line 767
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v1, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICaf;
 
@@ -4244,7 +4244,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -4295,7 +4295,7 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 265
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleanh:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -4317,19 +4317,19 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 267
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->q:Lcom/crashlytics/android/core/CrashlyticsCore;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsCoreq:Lcom/crashlytics/android/core/CrashlyticsCore;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/CrashlyticsCore;->B()Landroid/content/Context;
 
     move-result-object v0
 
     .line 268
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->m:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverm:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 269
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->l:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mBroadcastReceiverl:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -4340,7 +4340,7 @@
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
 
     .line 275
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->n:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mCrashlyticsExecutorServiceWrappern:Lcom/crashlytics/android/core/CrashlyticsExecutorServiceWrapper;
 
     new-instance v2, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler$ICan;
 
@@ -4364,12 +4364,12 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 289
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->i:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mUncaughtExceptionHandleri:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     .line 290
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
@@ -4414,12 +4414,12 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 289
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->i:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mUncaughtExceptionHandleri:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     .line 290
-    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
@@ -4453,12 +4453,12 @@
     invoke-interface {v1, v2, v3}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 289
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->i:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mUncaughtExceptionHandleri:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v1, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     .line 290
-    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p0, Lcom/crashlytics/android/core/CrashlyticsUncaughtExceptionHandler;->mAtomicBooleank:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v2, 0x0
 

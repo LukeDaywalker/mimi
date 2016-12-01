@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
+.field final synthetic mOnQueryTextListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 53
-    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
+    iput-object p1, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->mOnQueryTextListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
+    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->mOnQueryTextListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
 
     invoke-interface {v0, p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;->b(Ljava/lang/String;)Z
 
@@ -44,7 +44,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->a:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
+    iget-object v0, p0, Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;->mOnQueryTextListenerCompatBridgea:Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
 
     invoke-interface {v0, p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;->a(Ljava/lang/String;)Z
 

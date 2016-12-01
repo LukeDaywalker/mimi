@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/ThreadGroup;
+.field private final mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private final mStringc:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mThreadGroupa:Ljava/lang/ThreadGroup;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 15
     invoke-static {}, Ljava/lang/System;->getSecurityManager()Ljava/lang/SecurityManager;
@@ -44,7 +44,7 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->a:Ljava/lang/ThreadGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mThreadGroupa:Ljava/lang/ThreadGroup;
 
     .line 18
     new-instance v0, Ljava/lang/StringBuilder;
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mStringc:Ljava/lang/String;
 
     .line 19
     return-void
@@ -94,19 +94,19 @@
     .line 23
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->a:Ljava/lang/ThreadGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mThreadGroupa:Ljava/lang/ThreadGroup;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v3, p0, Lcom/wumii/android/mimi/util/NamedThreadFactory;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 

@@ -22,20 +22,13 @@
 
 
 # instance fields
-.field e:Lio/fabric/sdk/android/Fabric;
+.field mContextg:Landroid/content/Context;
 
-.field f:Lio/fabric/sdk/android/InitializationTask;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lc/a/a/a/p",
-            "<TResult;>;"
-        }
-    .end annotation
-.end field
+.field mFabrice:Lio/fabric/sdk/android/Fabric;
 
-.field g:Landroid/content/Context;
+.field mIdManageri:Lio/fabric/sdk/android/services/common/IdManager;
 
-.field h:Lio/fabric/sdk/android/InitializationCallback;
+.field mInitializationCallbackh:Lio/fabric/sdk/android/InitializationCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/l",
@@ -44,7 +37,14 @@
     .end annotation
 .end field
 
-.field i:Lio/fabric/sdk/android/services/common/IdManager;
+.field mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc/a/a/a/p",
+            "<TResult;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     invoke-direct {v0, p0}, Lio/fabric/sdk/android/InitializationTask;-><init>(Lio/fabric/sdk/android/Kit;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iput-object v0, p0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     .line 44
     return-void
@@ -73,7 +73,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->i:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->mIdManageri:Lio/fabric/sdk/android/services/common/IdManager;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->g:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->mContextg:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->e:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->mFabrice:Lio/fabric/sdk/android/Fabric;
 
     return-object v0
 .end method
@@ -179,7 +179,7 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/InitializationTask;->c()Ljava/util/Collection;
 
@@ -280,7 +280,7 @@
 
     .prologue
     .line 56
-    iput-object p2, p0, Lio/fabric/sdk/android/Kit;->e:Lio/fabric/sdk/android/Fabric;
+    iput-object p2, p0, Lio/fabric/sdk/android/Kit;->mFabrice:Lio/fabric/sdk/android/Fabric;
 
     .line 57
     new-instance v0, Lio/fabric/sdk/android/FabricContext;
@@ -295,13 +295,13 @@
 
     invoke-direct {v0, p1, v1, v2}, Lio/fabric/sdk/android/FabricContext;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Kit;->g:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/Kit;->mContextg:Landroid/content/Context;
 
     .line 58
-    iput-object p3, p0, Lio/fabric/sdk/android/Kit;->h:Lio/fabric/sdk/android/InitializationCallback;
+    iput-object p3, p0, Lio/fabric/sdk/android/Kit;->mInitializationCallbackh:Lio/fabric/sdk/android/InitializationCallback;
 
     .line 59
-    iput-object p4, p0, Lio/fabric/sdk/android/Kit;->i:Lio/fabric/sdk/android/services/common/IdManager;
+    iput-object p4, p0, Lio/fabric/sdk/android/Kit;->mIdManageri:Lio/fabric/sdk/android/services/common/IdManager;
 
     .line 60
     return-void
@@ -441,9 +441,9 @@
 
     .prologue
     .line 66
-    iget-object v1, p0, Lio/fabric/sdk/android/Kit;->f:Lio/fabric/sdk/android/InitializationTask;
+    iget-object v1, p0, Lio/fabric/sdk/android/Kit;->mInitializationTaskf:Lio/fabric/sdk/android/InitializationTask;
 
-    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->e:Lio/fabric/sdk/android/Fabric;
+    iget-object v0, p0, Lio/fabric/sdk/android/Kit;->mFabrice:Lio/fabric/sdk/android/Fabric;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/Fabric;->f()Ljava/util/concurrent/ExecutorService;
 

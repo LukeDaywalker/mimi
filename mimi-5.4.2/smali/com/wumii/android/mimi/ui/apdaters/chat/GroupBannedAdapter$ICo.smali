@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
+.field final synthetic mGroupBannedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;->mGroupBannedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,7 +84,7 @@
     if-nez v0, :cond_0
 
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter$ICo;->mGroupBannedAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupBannedAdapter;->a:Landroid/content/Context;
 

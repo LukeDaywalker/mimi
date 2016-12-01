@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field private b:Landroid/os/Parcelable;
+.field private mClassLoaderc:Ljava/lang/ClassLoader;
 
-.field private c:Ljava/lang/ClassLoader;
+.field private mParcelableb:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -61,16 +61,16 @@
     .line 31
     sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 32
-    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     .line 38
-    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 39
-    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     .line 40
     return-void
@@ -86,15 +86,15 @@
     .line 31
     sget-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 32
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     .line 64
-    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
@@ -104,7 +104,7 @@
     if-eqz v0, :cond_0
 
     :goto_0
-    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 66
     return-void
@@ -128,13 +128,13 @@
     .line 31
     sget-object v1, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
-    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object v1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 32
-    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iput-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     .line 48
-    iput-object p2, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->c:Ljava/lang/ClassLoader;
+    iput-object p2, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mClassLoaderc:Ljava/lang/ClassLoader;
 
     .line 49
     if-nez p1, :cond_0
@@ -155,7 +155,7 @@
     if-eq p1, v1, :cond_1
 
     :goto_0
-    iput-object p1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iput-object p1, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     .line 55
     return-void
@@ -184,7 +184,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     return-object v0
 .end method
@@ -204,7 +204,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->b:Landroid/os/Parcelable;
+    iget-object v0, p0, Lcom/etsy/android/grid/ClassLoaderSavedState;->mParcelableb:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+.field final synthetic mICca:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 148
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICd;->mICca:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 151
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICd;->mICca:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->mChangePasswordActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;
 
     const-string/jumbo v1, ""
 

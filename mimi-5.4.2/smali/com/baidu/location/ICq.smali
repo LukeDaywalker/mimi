@@ -7,89 +7,89 @@
 
 
 # static fields
-.field private static cB:Ljava/util/ArrayList; = null
+.field private static mArrayListcB:Ljava/util/ArrayList; = null
 
-.field private static cC:D = 0.0
+.field private static mArrayListcG:Ljava/util/ArrayList; = null
 
-.field private static cD:I = 0x0
+.field private static mArrayListcN:Ljava/util/ArrayList; = null
 
-.field private static final cE:Ljava/lang/String;
+.field private static mArrayListcm:Ljava/util/ArrayList; = null
 
-.field private static cF:Landroid/location/Location; = null
+.field private static mArrayListcv:Ljava/util/ArrayList; = null
 
-.field private static cG:Ljava/util/ArrayList; = null
+.field private static mArrayListcx:Ljava/util/ArrayList; = null
 
-.field private static final cI:I = 0x800
+.field private static mDcC:D = 0.0
 
-.field private static final cJ:Ljava/lang/String;
+.field private static mDce:D = 0.0
 
-.field private static final cK:Ljava/lang/String;
+.field private static mDcf:D = 0.0
 
-.field private static cL:I = 0x0
+.field private static mDcn:D = 0.0
 
-.field private static cM:I = 0x0
+.field private static mFileck:Ljava/io/File; = null
 
-.field private static cN:Ljava/util/ArrayList; = null
+.field private static mICbcu:Lcom/baidu/location/ICau$ICb; = null
 
-.field private static cO:Lcom/baidu/location/ICq; = null
+.field private static mICqcO:Lcom/baidu/location/ICq; = null
 
-.field private static cP:Ljava/lang/String; = null
+.field private static mIcD:I = 0x0
 
-.field private static cb:Landroid/location/Location; = null
+.field private static final mIcI:I = 0x800
 
-.field private static final cc:I = 0x800
+.field private static mIcL:I = 0x0
 
-.field private static final cd:I = 0x800
+.field private static mIcM:I = 0x0
 
-.field private static ce:D = 0.0
+.field private static final mIcc:I = 0x800
 
-.field private static cf:D = 0.0
+.field private static final mIcd:I = 0x800
 
-.field private static cg:I = 0x0
+.field private static mIcg:I = 0x0
 
-.field private static ch:I = 0x0
+.field private static mIch:I = 0x0
 
-.field private static ci:I = 0x0
+.field private static mIci:I = 0x0
 
-.field private static cj:I = 0x0
+.field private static mIcj:I = 0x0
 
-.field private static ck:Ljava/io/File; = null
+.field private static final mIcl:I = 0x80
 
-.field private static final cl:I = 0x80
+.field private static mIco:I = 0x0
 
-.field private static cm:Ljava/util/ArrayList; = null
+.field private static mIcq:I = 0x0
 
-.field private static cn:D = 0.0
+.field private static final mIcr:I = 0x410
 
-.field private static co:I = 0x0
+.field private static final mIct:I = 0x20
 
-.field private static cq:I = 0x0
+.field private static mIcw:I
 
-.field private static final cr:I = 0x410
+.field private static mIcz:I
 
-.field private static cs:Landroid/location/Location; = null
+.field private static mLocationcF:Landroid/location/Location;
 
-.field private static final ct:I = 0x20
+.field private static mLocationcb:Landroid/location/Location;
 
-.field private static cu:Lcom/baidu/location/ICau$ICb;
+.field private static mLocationcs:Landroid/location/Location;
 
-.field private static cv:Ljava/util/ArrayList;
+.field private static final mStringcE:Ljava/lang/String;
 
-.field private static cw:I
+.field private static final mStringcJ:Ljava/lang/String;
 
-.field private static cx:Ljava/util/ArrayList;
+.field private static final mStringcK:Ljava/lang/String;
 
-.field private static final cy:Ljava/lang/String;
+.field private static mStringcP:Ljava/lang/String;
 
-.field private static cz:I
+.field private static final mStringcy:Ljava/lang/String;
 
 
 # instance fields
-.field private cA:Lcom/baidu/location/ICq$ICb;
+.field private mICbcA:Lcom/baidu/location/ICq$ICb;
 
-.field cH:J
+.field private mIcp:I
 
-.field private cp:I
+.field mJcH:J
 
 
 # direct methods
@@ -106,37 +106,37 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cv:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcv:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cm:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcm:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cB:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcB:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cN:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcN:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cx:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcx:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sput-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICq;->cP:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICq;->mStringcP:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICq;->cK:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICq;->mStringcK:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICq;->cJ:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICq;->mStringcJ:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICq;->cy:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICq;->mStringcy:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -246,71 +246,71 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICq;->cE:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICq;->mStringcE:Ljava/lang/String;
 
-    sput-object v2, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sput-object v2, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
-    sput v4, Lcom/baidu/location/ICq;->ci:I
+    sput v4, Lcom/baidu/location/ICq;->mIci:I
 
     const/16 v0, 0x200
 
-    sput v0, Lcom/baidu/location/ICq;->cM:I
+    sput v0, Lcom/baidu/location/ICq;->mIcM:I
 
-    sput v3, Lcom/baidu/location/ICq;->ch:I
+    sput v3, Lcom/baidu/location/ICq;->mIch:I
 
     const/4 v0, 0x5
 
-    sput v0, Lcom/baidu/location/ICq;->cw:I
+    sput v0, Lcom/baidu/location/ICq;->mIcw:I
 
-    sput v3, Lcom/baidu/location/ICq;->co:I
+    sput v3, Lcom/baidu/location/ICq;->mIco:I
 
     const/16 v0, 0x10
 
-    sput v0, Lcom/baidu/location/ICq;->cg:I
+    sput v0, Lcom/baidu/location/ICq;->mIcg:I
 
-    sput v4, Lcom/baidu/location/ICq;->cD:I
+    sput v4, Lcom/baidu/location/ICq;->mIcD:I
 
     const/16 v0, 0x100
 
-    sput v0, Lcom/baidu/location/ICq;->cz:I
+    sput v0, Lcom/baidu/location/ICq;->mIcz:I
 
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/baidu/location/ICq;->cf:D
+    sput-wide v0, Lcom/baidu/location/ICq;->mDcf:D
 
     const-wide v0, 0x3fb999999999999aL    # 0.1
 
-    sput-wide v0, Lcom/baidu/location/ICq;->cC:D
+    sput-wide v0, Lcom/baidu/location/ICq;->mDcC:D
 
     const-wide/high16 v0, 0x403e000000000000L    # 30.0
 
-    sput-wide v0, Lcom/baidu/location/ICq;->cn:D
+    sput-wide v0, Lcom/baidu/location/ICq;->mDcn:D
 
     const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
-    sput-wide v0, Lcom/baidu/location/ICq;->ce:D
+    sput-wide v0, Lcom/baidu/location/ICq;->mDce:D
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/baidu/location/ICq;->cq:I
+    sput v0, Lcom/baidu/location/ICq;->mIcq:I
 
     const/16 v0, 0x40
 
-    sput v0, Lcom/baidu/location/ICq;->cj:I
+    sput v0, Lcom/baidu/location/ICq;->mIcj:I
 
     const/16 v0, 0x80
 
-    sput v0, Lcom/baidu/location/ICq;->cL:I
+    sput v0, Lcom/baidu/location/ICq;->mIcL:I
 
-    sput-object v2, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sput-object v2, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
-    sput-object v2, Lcom/baidu/location/ICq;->cF:Landroid/location/Location;
+    sput-object v2, Lcom/baidu/location/ICq;->mLocationcF:Landroid/location/Location;
 
-    sput-object v2, Lcom/baidu/location/ICq;->cb:Landroid/location/Location;
+    sput-object v2, Lcom/baidu/location/ICq;->mLocationcb:Landroid/location/Location;
 
-    sput-object v2, Lcom/baidu/location/ICq;->cu:Lcom/baidu/location/ICau$ICb;
+    sput-object v2, Lcom/baidu/location/ICq;->mICbcu:Lcom/baidu/location/ICau$ICb;
 
-    sput-object v2, Lcom/baidu/location/ICq;->cO:Lcom/baidu/location/ICq;
+    sput-object v2, Lcom/baidu/location/ICq;->mICqcO:Lcom/baidu/location/ICq;
 
     return-void
 .end method
@@ -324,21 +324,21 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICq;->cA:Lcom/baidu/location/ICq$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICq;->mICbcA:Lcom/baidu/location/ICq$ICb;
 
-    iput v2, p0, Lcom/baidu/location/ICq;->cp:I
+    iput v2, p0, Lcom/baidu/location/ICq;->mIcp:I
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICq;->cH:J
+    iput-wide v0, p0, Lcom/baidu/location/ICq;->mJcH:J
 
     new-instance v0, Lcom/baidu/location/ICq$ICb;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICq$ICb;-><init>(Lcom/baidu/location/ICq;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICq;->cA:Lcom/baidu/location/ICq$ICb;
+    iput-object v0, p0, Lcom/baidu/location/ICq;->mICbcA:Lcom/baidu/location/ICq$ICb;
 
-    iput v2, p0, Lcom/baidu/location/ICq;->cp:I
+    iput v2, p0, Lcom/baidu/location/ICq;->mIcp:I
 
     return-void
 .end method
@@ -395,13 +395,13 @@
     goto :goto_0
 
     :cond_2
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
-    sget v2, Lcom/baidu/location/ICq;->cj:I
+    sget v2, Lcom/baidu/location/ICq;->mIcj:I
 
     invoke-static {v1, v2}, Lcom/baidu/location/ICq;->if(Ljava/util/List;I)I
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -409,7 +409,7 @@
 
     if-lez v1, :cond_3
 
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -417,20 +417,20 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_3
     if-nez v0, :cond_0
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
-    sget v2, Lcom/baidu/location/ICq;->cq:I
+    sget v2, Lcom/baidu/location/ICq;->mIcq:I
 
     invoke-static {v1, v2}, Lcom/baidu/location/ICq;->if(Ljava/util/List;I)I
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -438,7 +438,7 @@
 
     if-lez v1, :cond_4
 
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -446,20 +446,20 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_4
     if-nez v0, :cond_0
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
-    sget v2, Lcom/baidu/location/ICq;->cL:I
+    sget v2, Lcom/baidu/location/ICq;->mIcL:I
 
     invoke-static {v1, v2}, Lcom/baidu/location/ICq;->if(Ljava/util/List;I)I
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -467,7 +467,7 @@
 
     if-lez v1, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -475,7 +475,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -585,7 +585,7 @@
 
     if-ne v1, v0, :cond_1
 
-    sget-object v0, Lcom/baidu/location/ICq;->cN:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcN:Ljava/util/ArrayList;
 
     :goto_0
     if-nez v0, :cond_3
@@ -598,7 +598,7 @@
 
     if-ne v1, v0, :cond_2
 
-    sget-object v0, Lcom/baidu/location/ICq;->cx:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcx:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -607,7 +607,7 @@
 
     if-ne v1, v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -616,7 +616,7 @@
 
     move-result v2
 
-    sget v3, Lcom/baidu/location/ICq;->cg:I
+    sget v3, Lcom/baidu/location/ICq;->mIcg:I
 
     if-gt v2, v3, :cond_4
 
@@ -627,7 +627,7 @@
 
     move-result v2
 
-    sget v3, Lcom/baidu/location/ICq;->cg:I
+    sget v3, Lcom/baidu/location/ICq;->mIcg:I
 
     if-lt v2, v3, :cond_5
 
@@ -639,7 +639,7 @@
 
     move-result v1
 
-    sget v2, Lcom/baidu/location/ICq;->cg:I
+    sget v2, Lcom/baidu/location/ICq;->mIcg:I
 
     if-le v1, v2, :cond_0
 
@@ -685,7 +685,7 @@
     :cond_2
     if-ne v0, v2, :cond_3
 
-    sget-boolean v0, Lcom/baidu/location/ICaa;->gs:Z
+    sget-boolean v0, Lcom/baidu/location/ICaa;->isZgs:Z
 
     if-eq v0, v8, :cond_0
 
@@ -823,13 +823,13 @@
 
     invoke-static {v0}, Lcom/baidu/location/ICq;->goto(Ljava/lang/String;)V
 
-    sput-object p2, Lcom/baidu/location/ICq;->cF:Landroid/location/Location;
+    sput-object p2, Lcom/baidu/location/ICq;->mLocationcF:Landroid/location/Location;
 
-    sput-object p2, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sput-object p2, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     if-eqz p1, :cond_0
 
-    sput-object p1, Lcom/baidu/location/ICq;->cu:Lcom/baidu/location/ICau$ICb;
+    sput-object p1, Lcom/baidu/location/ICq;->mICbcu:Lcom/baidu/location/ICau$ICb;
 
     goto/16 :goto_0
 
@@ -897,13 +897,13 @@
 
     invoke-static {v0}, Lcom/baidu/location/ICq;->else(Ljava/lang/String;)V
 
-    sput-object p2, Lcom/baidu/location/ICq;->cb:Landroid/location/Location;
+    sput-object p2, Lcom/baidu/location/ICq;->mLocationcb:Landroid/location/Location;
 
-    sput-object p2, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sput-object p2, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     if-eqz p1, :cond_0
 
-    sput-object p1, Lcom/baidu/location/ICq;->cu:Lcom/baidu/location/ICau$ICb;
+    sput-object p1, Lcom/baidu/location/ICq;->mICbcu:Lcom/baidu/location/ICau$ICb;
 
     goto/16 :goto_0
 
@@ -971,11 +971,11 @@
 
     invoke-static {v0}, Lcom/baidu/location/ICq;->void(Ljava/lang/String;)V
 
-    sput-object p2, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sput-object p2, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     if-eqz p1, :cond_0
 
-    sput-object p1, Lcom/baidu/location/ICq;->cu:Lcom/baidu/location/ICau$ICb;
+    sput-object p1, Lcom/baidu/location/ICq;->mICbcu:Lcom/baidu/location/ICau$ICb;
 
     goto/16 :goto_0
 
@@ -1020,19 +1020,19 @@
 
     :cond_1
     :try_start_0
-    sget-object v0, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
     if-nez v0, :cond_2
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cP:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcP:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
-    sget-object v0, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1042,7 +1042,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
     const/4 v0, -0x2
 
@@ -1051,7 +1051,7 @@
     :cond_2
     new-instance v7, Ljava/io/RandomAccessFile;
 
-    sget-object v0, Lcom/baidu/location/ICq;->ck:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICq;->mFileck:Ljava/io/File;
 
     const-string/jumbo v1, "rw"
 
@@ -1116,11 +1116,11 @@
     goto :goto_0
 
     :cond_5
-    sget v6, Lcom/baidu/location/ICq;->cD:I
+    sget v6, Lcom/baidu/location/ICq;->mIcD:I
 
     new-array v8, v6, [B
 
-    sget v6, Lcom/baidu/location/ICq;->ch:I
+    sget v6, Lcom/baidu/location/ICq;->mIch:I
 
     move v12, v6
 
@@ -1199,7 +1199,7 @@
 
     invoke-virtual {v7}, Ljava/io/RandomAccessFile;->close()V
 
-    sget v0, Lcom/baidu/location/ICq;->ch:I
+    sget v0, Lcom/baidu/location/ICq;->mIch:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1226,9 +1226,9 @@
 
     if-ne p0, v4, :cond_1
 
-    sget-object v2, Lcom/baidu/location/ICq;->cK:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICq;->mStringcK:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cN:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcN:Ljava/util/ArrayList;
 
     :goto_0
     if-nez v1, :cond_4
@@ -1242,9 +1242,9 @@
 
     if-ne p0, v1, :cond_2
 
-    sget-object v2, Lcom/baidu/location/ICq;->cJ:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICq;->mStringcJ:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cx:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcx:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -1253,9 +1253,9 @@
 
     if-ne p0, v1, :cond_3
 
-    sget-object v2, Lcom/baidu/location/ICq;->cy:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICq;->mStringcy:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -1264,9 +1264,9 @@
 
     if-ne p0, v1, :cond_0
 
-    sget-object v2, Lcom/baidu/location/ICq;->cE:Ljava/lang/String;
+    sget-object v2, Lcom/baidu/location/ICq;->mStringcE:Ljava/lang/String;
 
-    sget-object v1, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v1, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -1357,7 +1357,7 @@
     :cond_2
     if-ne v1, v3, :cond_3
 
-    sget-boolean v1, Lcom/baidu/location/ICaa;->gs:Z
+    sget-boolean v1, Lcom/baidu/location/ICaa;->isZgs:Z
 
     const/4 v2, 0x1
 
@@ -1397,9 +1397,9 @@
     if-lez v0, :cond_0
 
     :goto_0
-    sput-wide p0, Lcom/baidu/location/ICq;->cf:D
+    sput-wide p0, Lcom/baidu/location/ICq;->mDcf:D
 
-    sput-wide p2, Lcom/baidu/location/ICq;->cC:D
+    sput-wide p2, Lcom/baidu/location/ICq;->mDcC:D
 
     const-wide/high16 v0, 0x4034000000000000L    # 20.0
 
@@ -1408,19 +1408,19 @@
     if-lez v0, :cond_1
 
     :goto_1
-    sput-wide p4, Lcom/baidu/location/ICq;->cn:D
+    sput-wide p4, Lcom/baidu/location/ICq;->mDcn:D
 
-    sput-wide p6, Lcom/baidu/location/ICq;->ce:D
+    sput-wide p6, Lcom/baidu/location/ICq;->mDce:D
 
     return-void
 
     :cond_0
-    sget-wide p0, Lcom/baidu/location/ICq;->cf:D
+    sget-wide p0, Lcom/baidu/location/ICq;->mDcf:D
 
     goto :goto_0
 
     :cond_1
-    sget-wide p4, Lcom/baidu/location/ICq;->cn:D
+    sget-wide p4, Lcom/baidu/location/ICq;->mDcn:D
 
     goto :goto_1
 .end method
@@ -1444,7 +1444,7 @@
 
     if-ne p0, v0, :cond_3
 
-    sget-object v1, Lcom/baidu/location/ICq;->cK:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcK:Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -1453,7 +1453,7 @@
     return-void
 
     :cond_1
-    sget-object v0, Lcom/baidu/location/ICq;->cN:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcN:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1517,7 +1517,7 @@
     move v0, v4
 
     :goto_2
-    sget v4, Lcom/baidu/location/ICq;->co:I
+    sget v4, Lcom/baidu/location/ICq;->mIco:I
 
     if-le v6, v4, :cond_c
 
@@ -1608,11 +1608,11 @@
 
     if-ne p0, v0, :cond_5
 
-    sget-object v1, Lcom/baidu/location/ICq;->cJ:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcJ:Ljava/lang/String;
 
     if-eqz p1, :cond_4
 
-    sget-object v0, Lcom/baidu/location/ICq;->cN:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcN:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1623,7 +1623,7 @@
     goto/16 :goto_1
 
     :cond_4
-    sget-object v0, Lcom/baidu/location/ICq;->cx:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcx:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1638,11 +1638,11 @@
 
     if-ne p0, v0, :cond_7
 
-    sget-object v1, Lcom/baidu/location/ICq;->cy:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcy:Ljava/lang/String;
 
     if-eqz p1, :cond_6
 
-    sget-object v0, Lcom/baidu/location/ICq;->cx:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcx:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1653,7 +1653,7 @@
     goto/16 :goto_1
 
     :cond_6
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1668,11 +1668,11 @@
 
     if-ne p0, v0, :cond_0
 
-    sget-object v1, Lcom/baidu/location/ICq;->cE:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcE:Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICq;->cG:Ljava/util/ArrayList;
+    sget-object v0, Lcom/baidu/location/ICq;->mArrayListcG:Ljava/util/ArrayList;
 
     move-object v12, v0
 
@@ -1864,21 +1864,21 @@
     return v0
 
     :cond_1
-    sget-object v2, Lcom/baidu/location/ICq;->cF:Landroid/location/Location;
+    sget-object v2, Lcom/baidu/location/ICq;->mLocationcF:Landroid/location/Location;
 
     if-eqz v2, :cond_2
 
-    sget-object v2, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sget-object v2, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     if-nez v2, :cond_3
 
     :cond_2
-    sput-object p0, Lcom/baidu/location/ICq;->cF:Landroid/location/Location;
+    sput-object p0, Lcom/baidu/location/ICq;->mLocationcF:Landroid/location/Location;
 
     goto :goto_0
 
     :cond_3
-    sget-object v2, Lcom/baidu/location/ICq;->cF:Landroid/location/Location;
+    sget-object v2, Lcom/baidu/location/ICq;->mLocationcF:Landroid/location/Location;
 
     invoke-virtual {p0, v2}, Landroid/location/Location;->distanceTo(Landroid/location/Location;)F
 
@@ -1908,7 +1908,7 @@
 
     add-double/2addr v2, v4
 
-    sget-object v4, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sget-object v4, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     invoke-virtual {p0, v4}, Landroid/location/Location;->distanceTo(Landroid/location/Location;)F
 
@@ -1953,7 +1953,7 @@
     return v0
 
     :cond_1
-    sget-object v2, Lcom/baidu/location/ICq;->cu:Lcom/baidu/location/ICau$ICb;
+    sget-object v2, Lcom/baidu/location/ICq;->mICbcu:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {p1, v2}, Lcom/baidu/location/ICau$ICb;->do(Lcom/baidu/location/ICau$ICb;)Z
 
@@ -1961,11 +1961,11 @@
 
     if-nez v2, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICq;->cb:Landroid/location/Location;
+    sget-object v0, Lcom/baidu/location/ICq;->mLocationcb:Landroid/location/Location;
 
     if-nez v0, :cond_2
 
-    sput-object p0, Lcom/baidu/location/ICq;->cb:Landroid/location/Location;
+    sput-object p0, Lcom/baidu/location/ICq;->mLocationcb:Landroid/location/Location;
 
     move v0, v1
 
@@ -1980,7 +1980,7 @@
 .method public static if(Landroid/location/Location;Z)Z
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICq;->cs:Landroid/location/Location;
+    sget-object v0, Lcom/baidu/location/ICq;->mLocationcs:Landroid/location/Location;
 
     invoke-static {v0, p0, p1}, Lcom/baidu/location/ICz;->if(Landroid/location/Location;Landroid/location/Location;Z)Z
 
@@ -2033,11 +2033,11 @@
 
     move-result v2
 
-    sget v0, Lcom/baidu/location/ICq;->cD:I
+    sget v0, Lcom/baidu/location/ICq;->mIcD:I
 
     new-array v7, v0, [B
 
-    sget v0, Lcom/baidu/location/ICq;->co:I
+    sget v0, Lcom/baidu/location/ICq;->mIco:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -2150,7 +2150,7 @@
 
     const/4 v1, 0x0
 
-    sput v1, Lcom/baidu/location/ICq;->co:I
+    sput v1, Lcom/baidu/location/ICq;->mIco:I
 
     const/4 v0, 0x1
 
@@ -2166,7 +2166,7 @@
 
     const/16 v0, 0x8
 
-    sput v0, Lcom/baidu/location/ICq;->co:I
+    sput v0, Lcom/baidu/location/ICq;->mIco:I
 
     return-void
 .end method
@@ -2174,7 +2174,7 @@
 .method public static y()Lcom/baidu/location/ICq;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICq;->cO:Lcom/baidu/location/ICq;
+    sget-object v0, Lcom/baidu/location/ICq;->mICqcO:Lcom/baidu/location/ICq;
 
     if-nez v0, :cond_0
 
@@ -2182,10 +2182,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICq;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICq;->cO:Lcom/baidu/location/ICq;
+    sput-object v0, Lcom/baidu/location/ICq;->mICqcO:Lcom/baidu/location/ICq;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICq;->cO:Lcom/baidu/location/ICq;
+    sget-object v0, Lcom/baidu/location/ICq;->mICqcO:Lcom/baidu/location/ICq;
 
     return-object v0
 .end method
@@ -2195,7 +2195,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/location/ICq;->cJ:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcJ:Ljava/lang/String;
 
     new-instance v2, Ljava/io/File;
 
@@ -2265,7 +2265,7 @@
 
     :cond_2
     :goto_1
-    sget-object v1, Lcom/baidu/location/ICq;->cy:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcy:Ljava/lang/String;
 
     new-instance v2, Ljava/io/File;
 
@@ -2333,7 +2333,7 @@
 
     :cond_3
     :goto_2
-    sget-object v1, Lcom/baidu/location/ICq;->cE:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICq;->mStringcE:Ljava/lang/String;
 
     new-instance v2, Ljava/io/File;
 
@@ -2438,7 +2438,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/location/ICq;->cH:J
+    iget-wide v0, p0, Lcom/baidu/location/ICq;->mJcH:J
 
     const-wide/16 v2, 0x0
 
@@ -2455,7 +2455,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICq;->cH:J
+    iget-wide v2, p0, Lcom/baidu/location/ICq;->mJcH:J
 
     sub-long/2addr v0, v2
 
@@ -2477,7 +2477,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICq;->cH:J
+    iput-wide v0, p0, Lcom/baidu/location/ICq;->mJcH:J
 
     invoke-static {}, Lcom/baidu/location/ICo;->ah()Lcom/baidu/location/ICo;
 
@@ -2494,13 +2494,13 @@
     return-void
 
     :cond_1
-    iget v0, p0, Lcom/baidu/location/ICq;->cp:I
+    iget v0, p0, Lcom/baidu/location/ICq;->mIcp:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICq;->cp:I
+    iput v0, p0, Lcom/baidu/location/ICq;->mIcp:I
 
-    iget v0, p0, Lcom/baidu/location/ICq;->cp:I
+    iget v0, p0, Lcom/baidu/location/ICq;->mIcp:I
 
     const/4 v1, 0x1
 
@@ -2508,7 +2508,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/ICq;->cp:I
+    iput v0, p0, Lcom/baidu/location/ICq;->mIcp:I
 
     invoke-virtual {p0}, Lcom/baidu/location/ICq;->F()V
 
@@ -2528,7 +2528,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICq;->cA:Lcom/baidu/location/ICq$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICq;->mICbcA:Lcom/baidu/location/ICq$ICb;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICq$ICb;->ak()V
 

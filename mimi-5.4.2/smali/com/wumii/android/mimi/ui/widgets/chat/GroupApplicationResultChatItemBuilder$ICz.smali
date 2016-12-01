@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+.field final synthetic mGroupApplicationResultChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -17,15 +17,15 @@
 
     .prologue
     .line 65
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mGroupApplicationResultChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
     .line 66
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mStringb:Ljava/lang/String;
 
     .line 67
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mStringc:Ljava/lang/String;
 
     .line 68
     return-void
@@ -38,7 +38,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mGroupApplicationResultChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;)Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
 
@@ -63,18 +63,18 @@
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mGroupApplicationResultChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;)Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder$ICz;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;->a(Landroid/view/View;Ljava/lang/String;)V
 

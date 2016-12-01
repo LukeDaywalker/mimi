@@ -91,8 +91,6 @@
 
 .field public static final enum ak:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-.field private static final synthetic al:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
-
 .field public static final enum b:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
 .field public static final enum c:Lcom/google/analytics/tracking/android/GAUsage$ICan;
@@ -116,6 +114,8 @@
 .field public static final enum l:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
 .field public static final enum m:Lcom/google/analytics/tracking/android/GAUsage$ICan;
+
+.field private static final synthetic mArrayICanal:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
 .field public static final enum n:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
@@ -1215,7 +1215,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;->al:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mArrayICanal:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
     return-void
 .end method
@@ -1256,7 +1256,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;->al:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;->mArrayICanal:[Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
     invoke-virtual {v0}, [Lcom/google/analytics/tracking/android/GAUsage$ICan;->clone()Ljava/lang/Object;
 

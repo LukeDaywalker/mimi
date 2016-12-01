@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private final a:I
+.field private mCacheServicee:Lu/aly/CacheService;
 
-.field private final b:I
+.field private mCaretakerc:Lu/aly/Caretaker;
 
-.field private c:Lu/aly/Caretaker;
+.field private mContextd:Landroid/content/Context;
 
-.field private d:Landroid/content/Context;
+.field private final mIa:I
 
-.field private e:Lu/aly/CacheService;
+.field private final mIb:I
 
 
 # direct methods
@@ -26,12 +26,12 @@
     .line 22
     const/16 v0, 0x80
 
-    iput v0, p0, Lu/aly/EventTracker;->a:I
+    iput v0, p0, Lu/aly/EventTracker;->mIa:I
 
     .line 23
     const/16 v0, 0x100
 
-    iput v0, p0, Lu/aly/EventTracker;->b:I
+    iput v0, p0, Lu/aly/EventTracker;->mIb:I
 
     .line 31
     if-nez p1, :cond_0
@@ -50,19 +50,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/EventTracker;->d:Landroid/content/Context;
+    iput-object v0, p0, Lu/aly/EventTracker;->mContextd:Landroid/content/Context;
 
     .line 34
     new-instance v0, Lu/aly/Caretaker;
 
-    iget-object v1, p0, Lu/aly/EventTracker;->d:Landroid/content/Context;
+    iget-object v1, p0, Lu/aly/EventTracker;->mContextd:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lu/aly/Caretaker;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lu/aly/EventTracker;->c:Lu/aly/Caretaker;
+    iput-object v0, p0, Lu/aly/EventTracker;->mCaretakerc:Lu/aly/Caretaker;
 
     .line 35
-    iget-object v1, p0, Lu/aly/EventTracker;->c:Lu/aly/Caretaker;
+    iget-object v1, p0, Lu/aly/EventTracker;->mCaretakerc:Lu/aly/Caretaker;
 
     sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->l:Z
 
@@ -74,13 +74,13 @@
     invoke-virtual {v1, v0}, Lu/aly/Caretaker;->a(Z)V
 
     .line 36
-    iget-object v0, p0, Lu/aly/EventTracker;->d:Landroid/content/Context;
+    iget-object v0, p0, Lu/aly/EventTracker;->mContextd:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/CacheService;->a(Landroid/content/Context;)Lu/aly/CacheService;
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/EventTracker;->e:Lu/aly/CacheService;
+    iput-object v0, p0, Lu/aly/EventTracker;->mCacheServicee:Lu/aly/CacheService;
 
     .line 37
     return-void
@@ -220,7 +220,7 @@
     invoke-interface {v3, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
-    iget-object v0, p0, Lu/aly/EventTracker;->e:Lu/aly/CacheService;
+    iget-object v0, p0, Lu/aly/EventTracker;->mCacheServicee:Lu/aly/CacheService;
 
     new-instance v1, Lu/aly/UEKV;
 

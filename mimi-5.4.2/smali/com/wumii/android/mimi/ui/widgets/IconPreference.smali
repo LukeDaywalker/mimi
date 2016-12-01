@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mStringb:Ljava/lang/String;
 
-.field private b:Ljava/lang/String;
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -60,15 +60,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mTextViewa:Landroid/widget/TextView;
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mTextViewa:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mStringb:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -77,16 +77,16 @@
     if-nez v0, :cond_1
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mTextViewa:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mTextViewa:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -97,7 +97,7 @@
 
     .line 47
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/IconPreference;->mTextViewa:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 

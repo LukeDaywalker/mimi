@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/util/SparseArray;
+.field private mIc:I
+
+.field private mSparseArraya:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -17,9 +19,7 @@
     .end annotation
 .end field
 
-.field private b:Landroid/util/SparseIntArray;
-
-.field private c:I
+.field private mSparseIntArrayb:Landroid/util/SparseIntArray;
 
 
 # direct methods
@@ -35,19 +35,19 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->a:Landroid/util/SparseArray;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseArraya:Landroid/util/SparseArray;
 
     .line 3993
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->b:Landroid/util/SparseIntArray;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseIntArrayb:Landroid/util/SparseIntArray;
 
     .line 3994
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 4078
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -83,12 +83,12 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4081
-    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->a:Landroid/util/SparseArray;
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 4082
-    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->b:Landroid/util/SparseIntArray;
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseIntArrayb:Landroid/util/SparseIntArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseIntArray;->indexOfKey(I)I
 
@@ -97,7 +97,7 @@
     if-gez v1, :cond_0
 
     .line 4083
-    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->b:Landroid/util/SparseIntArray;
+    iget-object v1, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseIntArrayb:Landroid/util/SparseIntArray;
 
     const/4 v2, 0x5
 
@@ -115,7 +115,7 @@
 
     .prologue
     .line 4013
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -164,7 +164,7 @@
 
     .prologue
     .line 3999
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
@@ -177,11 +177,11 @@
 
     .prologue
     .line 4045
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     .line 4046
     return-void
@@ -201,7 +201,7 @@
     :cond_0
     if-nez p3, :cond_1
 
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     if-nez v0, :cond_1
 
@@ -235,7 +235,7 @@
     move-result-object v1
 
     .line 4037
-    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->b:Landroid/util/SparseIntArray;
+    iget-object v2, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mSparseIntArrayb:Landroid/util/SparseIntArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseIntArray;->get(I)I
 
@@ -266,11 +266,11 @@
 
     .prologue
     .line 4049
-    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iget v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->c:I
+    iput v0, p0, Landroid/support/v7/widget/RecyclerView$ICaw;->mIc:I
 
     .line 4050
     return-void

@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICak;
+.field final synthetic mICaka:Lcom/baidu/location/ICak;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/ICak;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICak$ICa;->a:Lcom/baidu/location/ICak;
+    iput-object p1, p0, Lcom/baidu/location/ICak$ICa;->mICaka:Lcom/baidu/location/ICak;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
 .method public run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->a:Lcom/baidu/location/ICak;
+    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->mICaka:Lcom/baidu/location/ICak;
 
     invoke-static {v0}, Lcom/baidu/location/ICak;->do(Lcom/baidu/location/ICak;)Z
 
@@ -43,13 +43,13 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->a:Lcom/baidu/location/ICak;
+    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->mICaka:Lcom/baidu/location/ICak;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICak;->if(Lcom/baidu/location/ICak;Z)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->a:Lcom/baidu/location/ICak;
+    iget-object v0, p0, Lcom/baidu/location/ICak$ICa;->mICaka:Lcom/baidu/location/ICak;
 
     invoke-static {v0}, Lcom/baidu/location/ICak;->if(Lcom/baidu/location/ICak;)V
 

@@ -29,11 +29,11 @@
 
 .field public static final enum g:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
-.field private static final synthetic i:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+.field private static final synthetic mArrayICii:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
 
 # instance fields
-.field private h:I
+.field private mIh:I
 
 
 # direct methods
@@ -163,7 +163,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->i:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mArrayICii:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     return-void
 .end method
@@ -181,7 +181,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 24
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->h:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mIh:I
 
     .line 25
     return-void
@@ -208,7 +208,7 @@
 
     .prologue
     .line 8
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->i:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mArrayICii:[Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->clone()Ljava/lang/Object;
 
@@ -226,7 +226,7 @@
 
     .prologue
     .line 20
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->h:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;->mIh:I
 
     return v0
 .end method

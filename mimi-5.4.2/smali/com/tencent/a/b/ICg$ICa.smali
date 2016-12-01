@@ -3,9 +3,13 @@
 
 
 # instance fields
-.field private a:I
+.field private isZc:Z
 
-.field private b:Ljava/util/List;
+.field private synthetic mICgd:Lcom/tencent/a/b/ICg;
+
+.field private mIa:I
+
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,10 +19,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Z
-
-.field private synthetic d:Lcom/tencent/a/b/ICg;
 
 
 # direct methods
@@ -40,11 +40,11 @@
     return-void
 
     :cond_1
-    iget-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->c:Z
+    iget-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->isZc:Z
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_2
 
@@ -52,10 +52,10 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     :cond_2
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -85,7 +85,7 @@
     :goto_1
     if-ge v2, v3, :cond_3
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -103,12 +103,12 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     :cond_3
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -122,7 +122,7 @@
     goto :goto_1
 
     :cond_5
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     if-nez v0, :cond_6
 
@@ -130,7 +130,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iput-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     :goto_2
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -150,14 +150,14 @@
 
     check-cast v0, Landroid/net/wifi/ScanResult;
 
-    iget-object v2, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v2, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
     :cond_6
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -189,9 +189,9 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/tencent/a/b/ICg$ICa;->a:I
+    iput v0, p0, Lcom/tencent/a/b/ICg$ICa;->mIa:I
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v0}, Lcom/tencent/a/b/ICg;->a(Lcom/tencent/a/b/ICg;)Lcom/tencent/a/b/ICb;
 
@@ -199,13 +199,13 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v0}, Lcom/tencent/a/b/ICg;->a(Lcom/tencent/a/b/ICg;)Lcom/tencent/a/b/ICb;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/tencent/a/b/ICg$ICa;->a:I
+    iget v1, p0, Lcom/tencent/a/b/ICg$ICa;->mIa:I
 
     invoke-interface {v0, v1}, Lcom/tencent/a/b/ICb;->a(I)V
 
@@ -237,7 +237,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v1}, Lcom/tencent/a/b/ICg;->b(Lcom/tencent/a/b/ICg;)Landroid/net/wifi/WifiManager;
 
@@ -245,7 +245,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v0}, Lcom/tencent/a/b/ICg;->b(Lcom/tencent/a/b/ICg;)Landroid/net/wifi/WifiManager;
 
@@ -283,15 +283,15 @@
     return-void
 
     :cond_4
-    iget-boolean v1, p0, Lcom/tencent/a/b/ICg$ICa;->c:Z
+    iget-boolean v1, p0, Lcom/tencent/a/b/ICg$ICa;->isZc:Z
 
     if-nez v1, :cond_5
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -313,9 +313,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->c:Z
+    iput-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->isZc:Z
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     const-wide/16 v2, 0x0
 
@@ -328,27 +328,27 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->c:Z
+    iput-boolean v0, p0, Lcom/tencent/a/b/ICg$ICa;->isZc:Z
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     new-instance v1, Lcom/tencent/a/b/ICa;
 
-    iget-object v2, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v2, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
-    iget-object v3, p0, Lcom/tencent/a/b/ICg$ICa;->b:Ljava/util/List;
+    iget-object v3, p0, Lcom/tencent/a/b/ICg$ICa;->mListb:Ljava/util/List;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    iget v6, p0, Lcom/tencent/a/b/ICg$ICa;->a:I
+    iget v6, p0, Lcom/tencent/a/b/ICg$ICa;->mIa:I
 
     invoke-direct/range {v1 .. v6}, Lcom/tencent/a/b/ICa;-><init>(Lcom/tencent/a/b/ICg;Ljava/util/List;JI)V
 
     invoke-static {v0, v1}, Lcom/tencent/a/b/ICg;->a(Lcom/tencent/a/b/ICg;Lcom/tencent/a/b/ICa;)Lcom/tencent/a/b/ICa;
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v0}, Lcom/tencent/a/b/ICg;->a(Lcom/tencent/a/b/ICg;)Lcom/tencent/a/b/ICb;
 
@@ -356,13 +356,13 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v0}, Lcom/tencent/a/b/ICg;->a(Lcom/tencent/a/b/ICg;)Lcom/tencent/a/b/ICb;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v1}, Lcom/tencent/a/b/ICg;->c(Lcom/tencent/a/b/ICg;)Lcom/tencent/a/b/ICa;
 
@@ -371,9 +371,9 @@
     invoke-interface {v0, v1}, Lcom/tencent/a/b/ICb;->a(Lcom/tencent/a/b/ICa;)V
 
     :cond_6
-    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v0, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
-    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->d:Lcom/tencent/a/b/ICg;
+    iget-object v1, p0, Lcom/tencent/a/b/ICg$ICa;->mICgd:Lcom/tencent/a/b/ICg;
 
     invoke-static {v1}, Lcom/tencent/a/b/ICg;->d(Lcom/tencent/a/b/ICg;)I
 

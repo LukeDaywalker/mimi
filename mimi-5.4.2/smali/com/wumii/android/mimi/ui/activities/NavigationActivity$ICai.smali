@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mImageViewb:Landroid/widget/ImageView;
 
-.field final synthetic b:Landroid/widget/ImageView;
+.field final synthetic mNavigationActivitye:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-.field final synthetic c:Landroid/view/View;
+.field final synthetic mViewa:Landroid/view/View;
 
-.field final synthetic d:Landroid/view/View;
+.field final synthetic mViewc:Landroid/view/View;
 
-.field final synthetic e:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+.field final synthetic mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     .prologue
     .line 683
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->e:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mNavigationActivitye:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewa:Landroid/view/View;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->b:Landroid/widget/ImageView;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mImageViewb:Landroid/widget/ImageView;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->c:Landroid/view/View;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewc:Landroid/view/View;
 
-    iput-object p5, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->d:Landroid/view/View;
+    iput-object p5, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewd:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,13 +46,13 @@
 
     .prologue
     .line 686
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->b:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getWidth()I
 
@@ -62,7 +62,7 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->a:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewa:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLeft()I
 
@@ -71,13 +71,13 @@
     add-int/2addr v1, v0
 
     .line 687
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->b:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v2}, Landroid/widget/ImageView;->getHeight()I
 
@@ -87,7 +87,7 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->a:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewa:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getTop()I
 
@@ -96,7 +96,7 @@
     add-int/2addr v2, v0
 
     .line 689
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -111,14 +111,14 @@
     iput v2, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 692
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
     .line 694
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mViewd:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->e:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;->mNavigationActivitye:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->getApplicationContext()Landroid/content/Context;
 

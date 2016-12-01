@@ -7,15 +7,15 @@
 
 
 # static fields
-.field private static final d:Ljava/io/FilenameFilter;
+.field private static final mFilenameFilterd:Ljava/io/FilenameFilter;
 
 
 # instance fields
-.field private a:Ljava/io/File;
+.field private mFileLockc:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
-.field private b:Ljava/io/File;
+.field private mFilea:Ljava/io/File;
 
-.field private c:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+.field private mFileb:Ljava/io/File;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {v0}, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence$1;-><init>()V
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->d:Ljava/io/FilenameFilter;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilenameFilterd:Ljava/io/FilenameFilter;
 
     .line 56
     return-void
@@ -61,17 +61,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     .line 52
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->c:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileLockc:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     .line 67
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     .line 68
     return-void
@@ -204,7 +204,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     if-nez v0, :cond_0
 
@@ -228,9 +228,9 @@
     invoke-direct {p0}, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->d()V
 
     .line 246
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->d:Ljava/io/FilenameFilter;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilenameFilterd:Ljava/io/FilenameFilter;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->listFiles(Ljava/io/FilenameFilter;)[Ljava/io/File;
 
@@ -266,7 +266,7 @@
     :try_start_0
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -363,12 +363,12 @@
 
     .line 136
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->c:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileLockc:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     if-eqz v0, :cond_0
 
     .line 137
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->c:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileLockc:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;->a()V
 
@@ -383,7 +383,7 @@
     if-nez v0, :cond_1
 
     .line 141
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
@@ -391,7 +391,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     .line 134
     monitor-exit p0
@@ -417,7 +417,7 @@
     const/4 v1, 0x0
 
     .line 72
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -425,7 +425,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
@@ -442,7 +442,7 @@
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -451,7 +451,7 @@
     if-nez v0, :cond_1
 
     .line 75
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -468,7 +468,7 @@
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->canWrite()Z
 
@@ -517,7 +517,7 @@
 
     .line 100
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     if-nez v0, :cond_3
 
@@ -529,14 +529,14 @@
     .line 102
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a:Ljava/io/File;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFilea:Ljava/io/File;
 
     invoke-direct {v1, v2, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     .line 104
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -545,7 +545,7 @@
     if-nez v0, :cond_3
 
     .line 105
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
     :try_end_0
@@ -556,20 +556,20 @@
     :try_start_1
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     const-string/jumbo v2, ".lck"
 
     invoke-direct {v0, v1, v2}, Lorg/eclipse/paho/client/mqttv3/internal/FileLock;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->c:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileLockc:Lorg/eclipse/paho/client/mqttv3/internal/FileLock;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 118
     :try_start_2
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     invoke-direct {p0, v0}, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->a(Ljava/io/File;)V
 
@@ -659,7 +659,7 @@
     .line 155
     new-instance v1, Ljava/io/File;
 
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -684,7 +684,7 @@
     .line 156
     new-instance v2, Ljava/io/File;
 
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -951,7 +951,7 @@
     .line 221
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -1033,7 +1033,7 @@
     .line 286
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->b:Ljava/io/File;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;->mFileb:Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuffer;
 

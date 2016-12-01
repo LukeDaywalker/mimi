@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/CircleManager;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 467
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,12 +47,12 @@
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;-><init>(ILjava/lang/String;)V
 
     .line 471
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventSubscribeCircle;->a(Ljava/lang/String;)V
 
     .line 472
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICv;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/Object;)V
 

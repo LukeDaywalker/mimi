@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field private final a:Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;
+.field private isZi:Z
 
-.field private b:Landroid/content/Context;
+.field private mCacheServiceh:Lu/aly/CacheService;
 
-.field private c:Lcom/umeng/analytics/ISysListener;
+.field private mContextb:Landroid/content/Context;
 
-.field private d:Lu/aly/CrashHandler;
+.field private mCrashHandlerd:Lu/aly/CrashHandler;
 
-.field private e:Lu/aly/ViewPageTracker;
+.field private mEventTrackerg:Lu/aly/EventTracker;
 
-.field private f:Lu/aly/SessionTracker;
+.field private mISysListenerc:Lcom/umeng/analytics/ISysListener;
 
-.field private g:Lu/aly/EventTracker;
+.field private final mOnlineConfigAgenta:Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;
 
-.field private h:Lu/aly/CacheService;
+.field private mSessionTrackerf:Lu/aly/SessionTracker;
 
-.field private i:Z
+.field private mViewPageTrackere:Lu/aly/ViewPageTracker;
 
 
 # direct methods
@@ -39,41 +39,41 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;-><init>()V
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->a:Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mOnlineConfigAgenta:Lcom/umeng/analytics/onlineconfig/OnlineConfigAgent;
 
     .line 27
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     .line 30
     new-instance v0, Lu/aly/CrashHandler;
 
     invoke-direct {v0}, Lu/aly/CrashHandler;-><init>()V
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->d:Lu/aly/CrashHandler;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCrashHandlerd:Lu/aly/CrashHandler;
 
     .line 31
     new-instance v0, Lu/aly/ViewPageTracker;
 
     invoke-direct {v0}, Lu/aly/ViewPageTracker;-><init>()V
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->e:Lu/aly/ViewPageTracker;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mViewPageTrackere:Lu/aly/ViewPageTracker;
 
     .line 32
     new-instance v0, Lu/aly/SessionTracker;
 
     invoke-direct {v0}, Lu/aly/SessionTracker;-><init>()V
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->f:Lu/aly/SessionTracker;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mSessionTrackerf:Lu/aly/SessionTracker;
 
     .line 36
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iput-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     .line 39
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->d:Lu/aly/CrashHandler;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCrashHandlerd:Lu/aly/CrashHandler;
 
     invoke-virtual {v0, p0}, Lu/aly/CrashHandler;->a(Lu/aly/OnAppCrashHandler;)V
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 43
-    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     if-nez v0, :cond_0
 
@@ -115,30 +115,30 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     .line 45
     new-instance v0, Lu/aly/EventTracker;
 
-    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lu/aly/EventTracker;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->g:Lu/aly/EventTracker;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mEventTrackerg:Lu/aly/EventTracker;
 
     .line 46
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/CacheService;->a(Landroid/content/Context;)Lu/aly/CacheService;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->h:Lu/aly/CacheService;
+    iput-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCacheServiceh:Lu/aly/CacheService;
 
     .line 48
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iput-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     .line 50
     :cond_0
@@ -150,16 +150,16 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->f:Lu/aly/SessionTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mSessionTrackerf:Lu/aly/SessionTracker;
 
     invoke-virtual {v0, p1}, Lu/aly/SessionTracker;->c(Landroid/content/Context;)V
 
     .line 193
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->c:Lcom/umeng/analytics/ISysListener;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mISysListenerc:Lcom/umeng/analytics/ISysListener;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->c:Lcom/umeng/analytics/ISysListener;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mISysListenerc:Lcom/umeng/analytics/ISysListener;
 
     invoke-interface {v0}, Lcom/umeng/analytics/ISysListener;->a()V
 
@@ -173,27 +173,27 @@
 
     .prologue
     .line 197
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->f:Lu/aly/SessionTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mSessionTrackerf:Lu/aly/SessionTracker;
 
     invoke-virtual {v0, p1}, Lu/aly/SessionTracker;->d(Landroid/content/Context;)V
 
     .line 198
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->e:Lu/aly/ViewPageTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mViewPageTrackere:Lu/aly/ViewPageTracker;
 
     invoke-virtual {v0, p1}, Lu/aly/ViewPageTracker;->a(Landroid/content/Context;)V
 
     .line 200
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->c:Lcom/umeng/analytics/ISysListener;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mISysListenerc:Lcom/umeng/analytics/ISysListener;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->c:Lcom/umeng/analytics/ISysListener;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mISysListenerc:Lcom/umeng/analytics/ISysListener;
 
     invoke-interface {v0}, Lcom/umeng/analytics/ISysListener;->b()V
 
     .line 201
     :cond_0
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->h:Lu/aly/CacheService;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCacheServiceh:Lu/aly/CacheService;
 
     invoke-virtual {v0}, Lu/aly/CacheService;->a()V
 
@@ -228,7 +228,7 @@
     if-eqz v0, :cond_1
 
     .line 108
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->e:Lu/aly/ViewPageTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mViewPageTrackere:Lu/aly/ViewPageTracker;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -243,7 +243,7 @@
     .line 112
     :cond_1
     :try_start_0
-    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     if-nez v0, :cond_2
 
@@ -281,7 +281,7 @@
     .prologue
     .line 215
     :try_start_0
-    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     if-nez v0, :cond_0
 
@@ -289,7 +289,7 @@
 
     .line 216
     :cond_0
-    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent;->g:Lu/aly/EventTracker;
+    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent;->mEventTrackerg:Lu/aly/EventTracker;
 
     move-object v2, p2
 
@@ -327,24 +327,24 @@
     .prologue
     .line 295
     :try_start_0
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->e:Lu/aly/ViewPageTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mViewPageTrackere:Lu/aly/ViewPageTracker;
 
     invoke-virtual {v0}, Lu/aly/ViewPageTracker;->a()V
 
     .line 297
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     if-eqz v0, :cond_1
 
     .line 298
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->h:Lu/aly/CacheService;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCacheServiceh:Lu/aly/CacheService;
 
     if-eqz v0, :cond_0
 
     .line 299
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->h:Lu/aly/CacheService;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mCacheServiceh:Lu/aly/CacheService;
 
     new-instance v1, Lu/aly/UError;
 
@@ -354,12 +354,12 @@
 
     .line 301
     :cond_0
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lcom/umeng/analytics/InternalAgent;->e(Landroid/content/Context;)V
 
     .line 302
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lu/aly/PreferenceWrapper;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -420,7 +420,7 @@
     if-eqz v0, :cond_1
 
     .line 133
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->e:Lu/aly/ViewPageTracker;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent;->mViewPageTrackere:Lu/aly/ViewPageTracker;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -435,7 +435,7 @@
     .line 137
     :cond_1
     :try_start_0
-    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->i:Z
+    iget-boolean v0, p0, Lcom/umeng/analytics/InternalAgent;->isZi:Z
 
     if-nez v0, :cond_2
 

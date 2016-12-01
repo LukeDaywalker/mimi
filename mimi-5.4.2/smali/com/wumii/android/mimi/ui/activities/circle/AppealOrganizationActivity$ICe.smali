@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+.field final synthetic mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 115
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->clickOnCamera(Landroid/view/View;)V
 
@@ -48,7 +48,7 @@
 
     .line 118
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICe;->mAppealOrganizationActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->clickOnAlbum(Landroid/view/View;)V
 

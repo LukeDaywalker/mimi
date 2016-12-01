@@ -4,23 +4,15 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private isZf:Z
 
-.field private b:[Lio/fabric/sdk/android/Kit;
+.field private mArrayKitb:[Lio/fabric/sdk/android/Kit;
 
-.field private c:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
+.field private final mContexta:Landroid/content/Context;
 
-.field private d:Landroid/os/Handler;
+.field private mHandlerd:Landroid/os/Handler;
 
-.field private e:Lio/fabric/sdk/android/Logger;
-
-.field private f:Z
-
-.field private g:Ljava/lang/String;
-
-.field private h:Ljava/lang/String;
-
-.field private i:Lio/fabric/sdk/android/InitializationCallback;
+.field private mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/l",
@@ -30,6 +22,14 @@
         }
     .end annotation
 .end field
+
+.field private mLoggere:Lio/fabric/sdk/android/Logger;
+
+.field private mPriorityThreadPoolExecutorc:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
+
+.field private mStringg:Ljava/lang/String;
+
+.field private mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->a:Landroid/content/Context;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mContexta:Landroid/content/Context;
 
     .line 96
     return-void
@@ -71,7 +71,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->b:[Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mArrayKitb:[Lio/fabric/sdk/android/Kit;
 
     if-eqz v0, :cond_0
 
@@ -86,7 +86,7 @@
 
     .line 106
     :cond_0
-    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICi;->b:[Lio/fabric/sdk/android/Kit;
+    iput-object p1, p0, Lio/fabric/sdk/android/Fabric$ICi;->mArrayKitb:[Lio/fabric/sdk/android/Kit;
 
     .line 107
     return-object p0
@@ -97,7 +97,7 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->c:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mPriorityThreadPoolExecutorc:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
 
     if-nez v0, :cond_0
 
@@ -106,11 +106,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->c:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mPriorityThreadPoolExecutorc:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
 
     .line 223
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->d:Landroid/os/Handler;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mHandlerd:Landroid/os/Handler;
 
     if-nez v0, :cond_1
 
@@ -123,16 +123,16 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->d:Landroid/os/Handler;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mHandlerd:Landroid/os/Handler;
 
     .line 227
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->e:Lio/fabric/sdk/android/Logger;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mLoggere:Lio/fabric/sdk/android/Logger;
 
     if-nez v0, :cond_2
 
     .line 228
-    iget-boolean v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->f:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->isZf:Z
 
     if-eqz v0, :cond_5
 
@@ -143,38 +143,38 @@
 
     invoke-direct {v0, v1}, Lio/fabric/sdk/android/DefaultLogger;-><init>(I)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->e:Lio/fabric/sdk/android/Logger;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mLoggere:Lio/fabric/sdk/android/Logger;
 
     .line 236
     :cond_2
     :goto_0
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->h:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mStringh:Ljava/lang/String;
 
     if-nez v0, :cond_3
 
     .line 237
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->h:Ljava/lang/String;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mStringh:Ljava/lang/String;
 
     .line 240
     :cond_3
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->i:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 
     if-nez v0, :cond_4
 
     .line 241
     sget-object v0, Lio/fabric/sdk/android/InitializationCallback;->d:Lio/fabric/sdk/android/InitializationCallback;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->i:Lio/fabric/sdk/android/InitializationCallback;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 
     .line 245
     :cond_4
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->b:[Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mArrayKitb:[Lio/fabric/sdk/android/Kit;
 
     if-nez v0, :cond_6
 
@@ -187,11 +187,11 @@
     :goto_1
     new-instance v8, Lio/fabric/sdk/android/services/common/IdManager;
 
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mContexta:Landroid/content/Context;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICi;->h:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICi;->mStringh:Ljava/lang/String;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/Fabric$ICi;->g:Ljava/lang/String;
+    iget-object v3, p0, Lio/fabric/sdk/android/Fabric$ICi;->mStringg:Ljava/lang/String;
 
     invoke-interface {v2}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -202,17 +202,17 @@
     .line 254
     new-instance v0, Lio/fabric/sdk/android/Fabric;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICi;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/Fabric$ICi;->mContexta:Landroid/content/Context;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/Fabric$ICi;->c:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
+    iget-object v3, p0, Lio/fabric/sdk/android/Fabric$ICi;->mPriorityThreadPoolExecutorc:Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/Fabric$ICi;->d:Landroid/os/Handler;
+    iget-object v4, p0, Lio/fabric/sdk/android/Fabric$ICi;->mHandlerd:Landroid/os/Handler;
 
-    iget-object v5, p0, Lio/fabric/sdk/android/Fabric$ICi;->e:Lio/fabric/sdk/android/Logger;
+    iget-object v5, p0, Lio/fabric/sdk/android/Fabric$ICi;->mLoggere:Lio/fabric/sdk/android/Logger;
 
-    iget-boolean v6, p0, Lio/fabric/sdk/android/Fabric$ICi;->f:Z
+    iget-boolean v6, p0, Lio/fabric/sdk/android/Fabric$ICi;->isZf:Z
 
-    iget-object v7, p0, Lio/fabric/sdk/android/Fabric$ICi;->i:Lio/fabric/sdk/android/InitializationCallback;
+    iget-object v7, p0, Lio/fabric/sdk/android/Fabric$ICi;->mInitializationCallbacki:Lio/fabric/sdk/android/InitializationCallback;
 
     invoke-direct/range {v0 .. v8}, Lio/fabric/sdk/android/Fabric;-><init>(Landroid/content/Context;Ljava/util/Map;Lio/fabric/sdk/android/services/concurrency/PriorityThreadPoolExecutor;Landroid/os/Handler;Lio/fabric/sdk/android/Logger;ZLio/fabric/sdk/android/InitializationCallback;Lio/fabric/sdk/android/services/common/IdManager;)V
 
@@ -224,13 +224,13 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/DefaultLogger;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->e:Lio/fabric/sdk/android/Logger;
+    iput-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mLoggere:Lio/fabric/sdk/android/Logger;
 
     goto :goto_0
 
     .line 248
     :cond_6
-    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->b:[Lio/fabric/sdk/android/Kit;
+    iget-object v0, p0, Lio/fabric/sdk/android/Fabric$ICi;->mArrayKitb:[Lio/fabric/sdk/android/Kit;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

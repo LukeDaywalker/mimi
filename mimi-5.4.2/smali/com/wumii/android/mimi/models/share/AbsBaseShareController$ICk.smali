@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->QQ:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->QZONE:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_TIMELINE:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_FRIEND:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -88,7 +88,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->SINA_WEIBO:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -104,7 +104,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->SYSTEM:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -120,7 +120,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->SMS:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -136,7 +136,7 @@
 
     :goto_6
     :try_start_7
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->ANONYMOUS_SMS:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -152,7 +152,7 @@
 
     :goto_7
     :try_start_8
-    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/share/AbsBaseShareController$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->CHAT:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 

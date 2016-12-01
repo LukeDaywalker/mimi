@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private k:Landroid/widget/FrameLayout;
+.field private isZp:Z
 
-.field private l:Landroid/widget/TextView;
+.field private mFrameLayoutk:Landroid/widget/FrameLayout;
 
-.field private m:Landroid/widget/PopupWindow;
+.field private mImageViewo:Landroid/widget/ImageView;
 
-.field private n:Landroid/widget/TextView;
+.field private mPopupWindowm:Landroid/widget/PopupWindow;
 
-.field private o:Landroid/widget/ImageView;
+.field private mTextViewl:Landroid/widget/TextView;
 
-.field private p:Z
+.field private mTextViewn:Landroid/widget/TextView;
 
-.field private q:Landroid/view/View;
+.field private mViewq:Landroid/view/View;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->m:Landroid/widget/PopupWindow;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mPopupWindowm:Landroid/widget/PopupWindow;
 
     return-object p1
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -55,7 +55,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewn:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -65,7 +65,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->m:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mPopupWindowm:Landroid/widget/PopupWindow;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 47
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->p:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->isZp:Z
 
     return v0
 .end method
@@ -108,7 +108,7 @@
     move-result v2
 
     .line 201
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -122,7 +122,7 @@
     invoke-virtual {v3, v0}, Landroid/graphics/drawable/Drawable;->setLevel(I)Z
 
     .line 202
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     const/16 v0, 0x63
 
@@ -134,7 +134,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 203
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->getResources()Landroid/content/res/Resources;
 
@@ -420,10 +420,10 @@
 
     .line 236
     :cond_3
-    iput-boolean v5, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->p:Z
+    iput-boolean v5, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->isZp:Z
 
     .line 237
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->o:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mImageViewo:Landroid/widget/ImageView;
 
     invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
@@ -526,7 +526,7 @@
     if-nez p1, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     const/16 v1, 0x8
 
@@ -538,7 +538,7 @@
 
     .line 186
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -559,10 +559,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     const v1, 0x7f0b01fc
 
@@ -578,7 +578,7 @@
 
     .line 196
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -627,7 +627,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->k:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mFrameLayoutk:Landroid/widget/FrameLayout;
 
     .line 62
     const v0, 0x7f0b0204
@@ -638,7 +638,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     .line 63
     const v0, 0x7f0b01e9
@@ -649,10 +649,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->o:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mImageViewo:Landroid/widget/ImageView;
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getParent()Landroid/view/ViewParent;
 
@@ -680,7 +680,7 @@
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 78
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->o:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mImageViewo:Landroid/widget/ImageView;
 
     invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
@@ -776,10 +776,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewn:Landroid/widget/TextView;
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mTextViewn:Landroid/widget/TextView;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment$ICm;
 
@@ -788,7 +788,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->k:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mFrameLayoutk:Landroid/widget/FrameLayout;
 
     invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -814,11 +814,11 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->onResume()V
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->mViewq:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 

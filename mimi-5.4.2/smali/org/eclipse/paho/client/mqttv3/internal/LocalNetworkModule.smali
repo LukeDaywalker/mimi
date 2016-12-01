@@ -7,15 +7,15 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
 
 # instance fields
-.field private b:Ljava/lang/Class;
+.field private mClassb:Ljava/lang/Class;
 
-.field private c:Ljava/lang/String;
+.field private mObjectd:Ljava/lang/Object;
 
-.field private d:Ljava/lang/Object;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 44
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->c:Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mStringc:Ljava/lang/String;
 
     .line 45
     return-void
@@ -66,10 +66,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->b:Ljava/lang/Class;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassb:Ljava/lang/Class;
 
     .line 53
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->b:Ljava/lang/Class;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassb:Ljava/lang/Class;
 
     const-string/jumbo v2, "connect"
 
@@ -79,7 +79,7 @@
 
     const/4 v4, 0x0
 
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassa:Ljava/lang/Class;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -96,7 +96,7 @@
     move-result-object v0
 
     :try_start_2
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassa:Ljava/lang/Class;
 
     :cond_1
     aput-object v0, v3, v4
@@ -114,7 +114,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->c:Ljava/lang/String;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mStringc:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
@@ -122,13 +122,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
     .line 57
     :goto_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
 
     if-nez v0, :cond_2
 
@@ -175,7 +175,7 @@
 
     .line 65
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassb:Ljava/lang/Class;
 
     const-string/jumbo v2, "getClientInputStream"
 
@@ -188,7 +188,7 @@
     move-result-object v0
 
     .line 66
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -223,7 +223,7 @@
 
     .line 75
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassb:Ljava/lang/Class;
 
     const-string/jumbo v2, "getClientOutputStream"
 
@@ -236,7 +236,7 @@
     move-result-object v0
 
     .line 76
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -267,13 +267,13 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
     .line 85
     :try_start_0
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->b:Ljava/lang/Class;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mClassb:Ljava/lang/Class;
 
     const-string/jumbo v1, "close"
 
@@ -286,7 +286,7 @@
     move-result-object v0
 
     .line 86
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->d:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/LocalNetworkModule;->mObjectd:Ljava/lang/Object;
 
     const/4 v2, 0x0
 

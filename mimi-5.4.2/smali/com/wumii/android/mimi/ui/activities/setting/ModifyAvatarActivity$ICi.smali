@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
+.field final synthetic mIChb:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->b:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->mIChb:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,14 +34,14 @@
 
     .prologue
     .line 62
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->isZa:Z
 
     if-eqz v0, :cond_0
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->b:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICi;->mIChb:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICh;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->j()V
 

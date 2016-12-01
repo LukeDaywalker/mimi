@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
+.field final synthetic mGroupChatListFragmentb:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 128
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->b:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->mGroupChatListFragmentb:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->isZa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 131
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->isZa:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->b:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->mGroupChatListFragmentb:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->g(Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;)Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;
 
@@ -49,7 +49,7 @@
     if-ne v0, v1, :cond_1
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->b:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->mGroupChatListFragmentb:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -66,7 +66,7 @@
 
     .line 135
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->b:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment$ICah;->mGroupChatListFragmentb:Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatListFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

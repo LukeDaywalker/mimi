@@ -10,17 +10,17 @@
 
     invoke-direct {p0}, Lcom/baidu/platform/comapi/map/G;-><init>()V
 
-    iput v1, p0, Lcom/baidu/platform/comapi/map/ICe;->c:I
+    iput v1, p0, Lcom/baidu/platform/comapi/map/ICe;->mIc:I
 
     const-string/jumbo v0, "compass"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICe;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICe;->mStringb:Ljava/lang/String;
 
-    iput v1, p0, Lcom/baidu/platform/comapi/map/ICe;->d:I
+    iput v1, p0, Lcom/baidu/platform/comapi/map/ICe;->mId:I
 
     const/16 v0, 0x14
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICe;->g:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICe;->mIg:I
 
     return-void
 .end method

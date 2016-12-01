@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+.field private final mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
-.field private final b:Ljava/util/concurrent/ExecutorService;
+.field private final mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
 
 
 # direct methods
@@ -28,13 +28,13 @@
 
     invoke-direct {v0, p0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;-><init>(Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;)V
 
-    iput-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->a:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+    iput-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
 
     .line 38
-    iput-object p2, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->b:Ljava/util/concurrent/ExecutorService;
+    iput-object p2, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
     .line 39
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->a:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mICda:Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;
 
     invoke-virtual {p1, v0}, Lio/fabric/sdk/android/ActivityLifecycleManager;->a(Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;)Z
 
@@ -47,7 +47,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->b:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->mExecutorServiceb:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
 .end method

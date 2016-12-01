@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/services/cache/ValueCache;
+.field private final mValueCachea:Lio/fabric/sdk/android/services/cache/ValueCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc/a/a/a/a/a/c",
@@ -46,7 +46,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->a:Lio/fabric/sdk/android/services/cache/ValueCache;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->mValueCachea:Lio/fabric/sdk/android/services/cache/ValueCache;
 
     .line 32
     return-void
@@ -117,11 +117,11 @@
     if-nez v0, :cond_0
 
     .line 39
-    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->a:Lio/fabric/sdk/android/services/cache/ValueCache;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->mValueCachea:Lio/fabric/sdk/android/services/cache/ValueCache;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->a:Lio/fabric/sdk/android/services/cache/ValueCache;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/cache/AbstractValueCache;->mValueCachea:Lio/fabric/sdk/android/services/cache/ValueCache;
 
     invoke-interface {v0, p1, p2}, Lio/fabric/sdk/android/services/cache/ValueCache;->a(Landroid/content/Context;Lio/fabric/sdk/android/services/cache/ValueLoader;)Ljava/lang/Object;
 

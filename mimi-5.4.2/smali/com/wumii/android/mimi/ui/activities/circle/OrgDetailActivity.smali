@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field private C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mOnSharedPreferenceChangeListenerC:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private D:Landroid/view/View;
+.field private mTextViewn:Landroid/widget/TextView;
 
-.field private n:Landroid/widget/TextView;
+.field private mTextViewo:Landroid/widget/TextView;
 
-.field private o:Landroid/widget/TextView;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private p:Landroid/widget/TextView;
+.field private mTextViewq:Landroid/widget/TextView;
 
-.field private q:Landroid/widget/TextView;
+.field private mTextViewr:Landroid/widget/TextView;
 
-.field private r:Landroid/widget/TextView;
+.field private mTextViews:Landroid/widget/TextView;
 
-.field private s:Landroid/widget/TextView;
+.field private mTextViewt:Landroid/widget/TextView;
 
-.field private t:Landroid/widget/TextView;
+.field private mViewD:Landroid/view/View;
 
 
 # direct methods
@@ -72,7 +72,7 @@
     .line 94
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     if-nez v0, :cond_0
 
@@ -81,7 +81,7 @@
 
     .line 97
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     if-eqz p1, :cond_1
 
@@ -122,17 +122,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     const v1, 0x7f0b01f1
 
@@ -164,7 +164,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->D:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mViewD:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -221,19 +221,19 @@
     if-eqz v3, :cond_1
 
     .line 103
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewo:Landroid/widget/TextView;
 
     const v4, 0x7f0603ee
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 104
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 105
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewo:Landroid/widget/TextView;
 
     const v4, 0x7f020140
 
@@ -275,7 +275,7 @@
     invoke-direct {p0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->b(Z)V
 
     .line 123
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->p:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewp:Landroid/widget/TextView;
 
     const v6, 0x7f0603ed
 
@@ -313,7 +313,7 @@
     invoke-virtual {p0, v3}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 126
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->n:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewn:Landroid/widget/TextView;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -333,7 +333,7 @@
     move-result-object v3
 
     .line 129
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->q:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewq:Landroid/widget/TextView;
 
     if-nez v3, :cond_3
 
@@ -344,7 +344,7 @@
     if-eqz v3, :cond_4
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->q:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewq:Landroid/widget/TextView;
 
     const v4, 0x7f0601c4
 
@@ -365,7 +365,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -389,7 +389,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     const/16 v1, 0x51
 
@@ -400,13 +400,13 @@
 
     .line 141
     :goto_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->isClickable()Z
 
@@ -424,7 +424,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -447,7 +447,7 @@
     iput v0, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 144
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->requestLayout()V
 
@@ -457,19 +457,19 @@
 
     .line 107
     :cond_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewo:Landroid/widget/TextView;
 
     const v4, 0x7f060293
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 108
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-static {v3, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 109
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewo:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -489,12 +489,12 @@
 
     .line 137
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     const/16 v1, 0x11
 
@@ -736,7 +736,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewn:Landroid/widget/TextView;
 
     .line 59
     const v0, 0x7f0b00ef
@@ -747,7 +747,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewp:Landroid/widget/TextView;
 
     .line 60
     const v0, 0x7f0b00f1
@@ -758,7 +758,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 61
     const v0, 0x7f0b00f0
@@ -769,7 +769,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewr:Landroid/widget/TextView;
 
     .line 62
     const v0, 0x7f0b00f2
@@ -780,7 +780,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->s:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViews:Landroid/widget/TextView;
 
     .line 63
     const v0, 0x7f0b00db
@@ -791,7 +791,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     .line 64
     const v0, 0x7f0b00ee
@@ -802,20 +802,20 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->s:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViews:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -827,7 +827,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICal;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mOnSharedPreferenceChangeListenerC:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 80
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -838,7 +838,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mOnSharedPreferenceChangeListenerC:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -862,7 +862,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->mOnSharedPreferenceChangeListenerC:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

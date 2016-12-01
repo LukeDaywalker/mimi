@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/io/InputStream;
+.field private final mIb:I
 
-.field private final b:I
+.field private final mInputStreama:Ljava/io/InputStream;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     .line 34
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     .line 35
-    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->b:I
+    iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mIb:I
 
     .line 36
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 40
-    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->b:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mIb:I
 
     return v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
@@ -57,7 +57,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
 
@@ -84,7 +84,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -98,7 +98,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->read([B)I
 
@@ -112,7 +112,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 

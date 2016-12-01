@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field private a:Landroid/widget/LinearLayout;
+.field private mAnimationg:Landroid/view/animation/Animation;
 
-.field private b:Landroid/widget/ImageView;
+.field private mAnimationh:Landroid/view/animation/Animation;
 
-.field private c:Landroid/widget/ProgressBar;
+.field private mIe:I
 
-.field private d:Landroid/widget/RelativeLayout;
+.field private mIf:I
 
-.field private e:I
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private f:I
+.field private mLinearLayouta:Landroid/widget/LinearLayout;
 
-.field private g:Landroid/view/animation/Animation;
+.field private mProgressBarc:Landroid/widget/ProgressBar;
 
-.field private h:Landroid/view/animation/Animation;
+.field private mRelativeLayoutd:Landroid/widget/RelativeLayout;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     .line 48
     sget-object v0, Lcom/wumii/android/mimi/R$styleable;->XListView:[I
@@ -50,7 +50,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     .line 50
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -68,7 +68,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     int-to-float v3, v3
 
@@ -93,10 +93,10 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -114,7 +114,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->d:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mRelativeLayoutd:Landroid/widget/RelativeLayout;
 
     .line 58
     const v0, 0x7f0b0288
@@ -125,7 +125,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     .line 60
     const v0, 0x7f0b0289
@@ -136,7 +136,7 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->c:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mProgressBarc:Landroid/widget/ProgressBar;
 
     .line 63
     new-instance v0, Landroid/view/animation/RotateAnimation;
@@ -155,17 +155,17 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/view/animation/RotateAnimation;-><init>(FFIFIF)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->g:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationg:Landroid/view/animation/Animation;
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationg:Landroid/view/animation/Animation;
 
     const-wide/16 v2, 0xb4
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->g:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationg:Landroid/view/animation/Animation;
 
     const/4 v1, 0x1
 
@@ -188,17 +188,17 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/view/animation/RotateAnimation;-><init>(FFIFIF)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->h:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationh:Landroid/view/animation/Animation;
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->h:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationh:Landroid/view/animation/Animation;
 
     const-wide/16 v2, 0xb4
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->h:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationh:Landroid/view/animation/Animation;
 
     const/4 v1, 0x1
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 113
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     return v0
 .end method
@@ -225,7 +225,7 @@
 
     .prologue
     .line 138
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     return v0
 .end method
@@ -235,7 +235,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->d:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mRelativeLayoutd:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
@@ -245,7 +245,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -261,10 +261,10 @@
 
     .prologue
     .line 117
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -273,12 +273,12 @@
     check-cast v0, Landroid/widget/LinearLayout$LayoutParams;
 
     .line 119
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
     .line 120
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -299,7 +299,7 @@
     const/4 v1, 0x0
 
     .line 77
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     if-ne p1, v0, :cond_0
 
@@ -312,17 +312,17 @@
     if-ne p1, v3, :cond_2
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->c:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mProgressBarc:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
@@ -333,18 +333,18 @@
     .line 109
     :cond_1
     :goto_2
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     goto :goto_0
 
     .line 86
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->c:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mProgressBarc:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v4}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
@@ -352,19 +352,19 @@
 
     .line 92
     :pswitch_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     if-ne v0, v2, :cond_3
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->h:Landroid/view/animation/Animation;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationh:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -372,12 +372,12 @@
 
     .line 95
     :cond_3
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     if-ne v0, v3, :cond_1
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
@@ -385,19 +385,19 @@
 
     .line 100
     :pswitch_1
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIe:I
 
     if-eq v0, v2, :cond_1
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mImageViewb:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->g:Landroid/view/animation/Animation;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mAnimationg:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -418,16 +418,16 @@
 
     .prologue
     .line 124
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     if-ge p1, v0, :cond_0
 
     .line 125
-    iget p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->f:I
+    iget p1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mIf:I
 
     .line 128
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -439,7 +439,7 @@
     iput p1, v0, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
     .line 130
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->a:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/XListViewHeader;->mLinearLayouta:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 

@@ -548,7 +548,7 @@
 
     const/4 v2, 0x1
 
-    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->a:[I
+    sget-object v0, Lcom/baidu/location/LocationClientOption$1;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/baidu/location/LocationClientOption$LocationMode;->ordinal()I
 

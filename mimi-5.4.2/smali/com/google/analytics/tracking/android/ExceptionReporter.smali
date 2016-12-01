@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Thread$UncaughtExceptionHandler;
+.field private mExceptionParserd:Lcom/google/analytics/tracking/android/ExceptionParser;
 
-.field private final b:Lcom/google/analytics/tracking/android/Tracker;
+.field private final mServiceManagerc:Lcom/google/analytics/tracking/android/ServiceManager;
 
-.field private final c:Lcom/google/analytics/tracking/android/ServiceManager;
+.field private final mTrackerb:Lcom/google/analytics/tracking/android/Tracker;
 
-.field private d:Lcom/google/analytics/tracking/android/ExceptionParser;
+.field private final mUncaughtExceptionHandlera:Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # direct methods
@@ -51,13 +51,13 @@
 
     .line 55
     :cond_1
-    iput-object p3, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iput-object p3, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mUncaughtExceptionHandlera:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     .line 56
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->b:Lcom/google/analytics/tracking/android/Tracker;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mTrackerb:Lcom/google/analytics/tracking/android/Tracker;
 
     .line 57
-    iput-object p2, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->c:Lcom/google/analytics/tracking/android/ServiceManager;
+    iput-object p2, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mServiceManagerc:Lcom/google/analytics/tracking/android/ServiceManager;
 
     .line 58
     new-instance v0, Lcom/google/analytics/tracking/android/StandardExceptionParser;
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, p4, v1}, Lcom/google/analytics/tracking/android/StandardExceptionParser;-><init>(Landroid/content/Context;Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->d:Lcom/google/analytics/tracking/android/ExceptionParser;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mExceptionParserd:Lcom/google/analytics/tracking/android/ExceptionParser;
 
     .line 59
     new-instance v0, Ljava/lang/StringBuilder;
@@ -122,7 +122,7 @@
     const-string/jumbo v0, "UncaughtException"
 
     .line 75
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->d:Lcom/google/analytics/tracking/android/ExceptionParser;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mExceptionParserd:Lcom/google/analytics/tracking/android/ExceptionParser;
 
     if-eqz v1, :cond_0
 
@@ -135,7 +135,7 @@
 
     .line 77
     :goto_0
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->d:Lcom/google/analytics/tracking/android/ExceptionParser;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mExceptionParserd:Lcom/google/analytics/tracking/android/ExceptionParser;
 
     invoke-interface {v1, v0, p2}, Lcom/google/analytics/tracking/android/ExceptionParser;->a(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -164,7 +164,7 @@
     invoke-static {v1}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 80
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->b:Lcom/google/analytics/tracking/android/Tracker;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mTrackerb:Lcom/google/analytics/tracking/android/Tracker;
 
     const/4 v2, 0x1
 
@@ -183,12 +183,12 @@
     invoke-virtual {v1, v0}, Lcom/google/analytics/tracking/android/Tracker;->a(Ljava/util/Map;)V
 
     .line 82
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->c:Lcom/google/analytics/tracking/android/ServiceManager;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mServiceManagerc:Lcom/google/analytics/tracking/android/ServiceManager;
 
     invoke-virtual {v0}, Lcom/google/analytics/tracking/android/ServiceManager;->c()V
 
     .line 83
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mUncaughtExceptionHandlera:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_1
 
@@ -198,7 +198,7 @@
     invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->c(Ljava/lang/String;)V
 
     .line 85
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ExceptionReporter;->mUncaughtExceptionHandlera:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 

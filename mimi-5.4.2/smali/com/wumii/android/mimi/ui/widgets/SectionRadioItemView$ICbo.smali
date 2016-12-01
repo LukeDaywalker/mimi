@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+.field final synthetic mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
@@ -39,15 +39,15 @@
     if-eqz v0, :cond_0
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->a:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbo;->mSectionRadioItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->b()Z
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+.field final synthetic mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,15 +52,15 @@
     .line 77
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Landroid/util/DisplayMetrics;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
@@ -78,7 +78,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     const v5, 0x7f0600c9
 

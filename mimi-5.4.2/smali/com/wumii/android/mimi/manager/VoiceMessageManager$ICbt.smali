@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+.field final synthetic mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -34,7 +34,7 @@
     if-ne v0, v2, :cond_3
 
     .line 64
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->h()Ljava/util/LinkedList;
 
@@ -49,7 +49,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -64,9 +64,9 @@
 
     .line 68
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -81,7 +81,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;)Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
@@ -90,7 +90,7 @@
     if-eqz v0, :cond_0
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -99,13 +99,13 @@
     if-eqz v0, :cond_2
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
@@ -115,7 +115,7 @@
 
     .line 77
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b()Lcom/wumii/android/soundtouch/RecordClient;
 
@@ -133,7 +133,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
@@ -175,7 +175,7 @@
     .line 100
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -184,7 +184,7 @@
     if-eqz v1, :cond_0
 
     .line 101
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -208,7 +208,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     .line 105
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -217,7 +217,7 @@
     if-eqz v1, :cond_0
 
     .line 106
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -248,7 +248,7 @@
     invoke-virtual {v1, v0}, Ljava/util/LinkedList;->offer(Ljava/lang/Object;)Z
 
     .line 111
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b()Lcom/wumii/android/soundtouch/RecordClient;
 
@@ -261,7 +261,7 @@
     if-nez v1, :cond_6
 
     .line 112
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Landroid/os/Handler;
 
@@ -271,7 +271,7 @@
 
     .line 114
     :cond_6
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -280,7 +280,7 @@
     if-eqz v1, :cond_0
 
     .line 115
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -304,7 +304,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     .line 119
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -313,7 +313,7 @@
     if-eqz v1, :cond_0
 
     .line 120
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -337,7 +337,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     .line 124
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
@@ -346,7 +346,7 @@
     if-eqz v1, :cond_0
 
     .line 125
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->a:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;->mVoiceMessageManagera:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c(Lcom/wumii/android/mimi/manager/VoiceMessageManager;)Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+.field final synthetic mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 137
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 140
-    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICs;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICs;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/ListItem;->ordinal()I
 
@@ -51,7 +51,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -65,7 +65,7 @@
 
     .line 146
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -82,7 +82,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -99,7 +99,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -118,7 +118,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -135,7 +135,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -147,7 +147,7 @@
 
     .line 165
     :pswitch_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment$ICp;->mMineFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

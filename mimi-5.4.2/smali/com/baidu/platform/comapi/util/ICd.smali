@@ -3,17 +3,17 @@
 
 
 # instance fields
-.field private final a:Z
+.field private final isZa:Z
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final c:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
 
-.field private final d:Ljava/lang/String;
+.field private final mStringd:Ljava/lang/String;
 
-.field private final e:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
-.field private final f:Ljava/lang/String;
+.field private final mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICd;->a:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/util/ICd;->isZa:Z
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
@@ -34,13 +34,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
@@ -72,15 +72,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringe:Ljava/lang/String;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringf:Ljava/lang/String;
 
     return-void
 .end method
@@ -90,15 +90,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Lcom/baidu/platform/comapi/util/ICd;->a:Z
+    iput-boolean p2, p0, Lcom/baidu/platform/comapi/util/ICd;->isZa:Z
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -120,13 +120,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringc:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -148,7 +148,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringd:Ljava/lang/String;
 
     invoke-virtual {p4}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
@@ -158,9 +158,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringe:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/baidu/platform/comapi/util/ICd;->f:Ljava/lang/String;
+    iput-object p3, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringf:Ljava/lang/String;
 
     return-void
 .end method
@@ -170,7 +170,7 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -182,7 +182,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -210,7 +210,7 @@
 .method public c()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -218,7 +218,7 @@
 .method public d()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -245,9 +245,9 @@
     :cond_1
     check-cast p1, Lcom/baidu/platform/comapi/util/ICd;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/baidu/platform/comapi/util/ICd;->b:Ljava/lang/String;
+    iget-object v1, p1, Lcom/baidu/platform/comapi/util/ICd;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

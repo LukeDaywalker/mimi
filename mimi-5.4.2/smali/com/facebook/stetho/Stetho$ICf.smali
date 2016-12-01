@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICf;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICf;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +74,7 @@
     .line 109
     new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;
 
-    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/facebook/stetho/inspector/protocol/module/DOMStorage;-><init>(Landroid/content/Context;)V
 
@@ -97,7 +97,7 @@
     .line 112
     new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Network;
 
-    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/facebook/stetho/inspector/protocol/module/Network;-><init>(Landroid/content/Context;)V
 
@@ -106,7 +106,7 @@
     .line 113
     new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Page;
 
-    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/facebook/stetho/inspector/protocol/module/Page;-><init>(Landroid/content/Context;)V
 
@@ -143,7 +143,7 @@
     .line 118
     new-instance v1, Lcom/facebook/stetho/inspector/protocol/module/Database;
 
-    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/Stetho$ICf;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/facebook/stetho/inspector/protocol/module/Database;-><init>(Landroid/content/Context;)V
 

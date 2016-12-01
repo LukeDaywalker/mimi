@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mArrayIb:[I
 
-.field private b:[I
+.field private mArrayIc:[I
 
-.field private c:[I
+.field private mContexta:Landroid/content/Context;
 
-.field private d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private e:Landroid/util/DisplayMetrics;
+.field private mDisplayMetricse:Landroid/util/DisplayMetrics;
 
 
 # direct methods
@@ -35,17 +35,17 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->b:[I
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mArrayIb:[I
 
     .line 24
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->c:[I
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mArrayIc:[I
 
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mContexta:Landroid/content/Context;
 
     .line 31
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->e:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayMetricse:Landroid/util/DisplayMetrics;
 
     .line 32
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
@@ -87,7 +87,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 37
     return-void
@@ -128,7 +128,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -167,7 +167,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->b:[I
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mArrayIb:[I
 
     aget v4, v4, p2
 
@@ -177,17 +177,17 @@
 
     new-instance v5, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->e:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayMetricse:Landroid/util/DisplayMetrics;
 
     iget v6, v6, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->e:Landroid/util/DisplayMetrics;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayMetricse:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->heightPixels:I
 
     invoke-direct {v5, v6, v7}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3, v4, v5, v6}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/Bitmap;
 
@@ -198,7 +198,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->c:[I
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mArrayIc:[I
 
     aget v5, v5, p2
 
@@ -208,17 +208,17 @@
 
     new-instance v6, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->e:Landroid/util/DisplayMetrics;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayMetricse:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->e:Landroid/util/DisplayMetrics;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayMetricse:Landroid/util/DisplayMetrics;
 
     iget v8, v8, Landroid/util/DisplayMetrics;->heightPixels:I
 
     invoke-direct {v6, v7, v8}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mDisplayImageOptionsd:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v4, v5, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)Landroid/graphics/Bitmap;
 
@@ -310,7 +310,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->b:[I
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->mArrayIb:[I
 
     array-length v0, v0
 

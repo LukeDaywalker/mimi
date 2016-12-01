@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static final do:Ljava/lang/String; = "bd_setting_i"
+.field private static final mStringdo:Ljava/lang/String; = "bd_setting_i"
 
 
 # instance fields

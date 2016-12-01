@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;->mAtomicIntegera:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method

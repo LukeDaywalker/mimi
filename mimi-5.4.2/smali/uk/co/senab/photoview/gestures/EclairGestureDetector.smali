@@ -10,9 +10,9 @@
 
 
 # instance fields
-.field private f:I
+.field private mIf:I
 
-.field private g:I
+.field private mIg:I
 
 
 # direct methods
@@ -26,12 +26,12 @@
     .line 28
     const/4 v0, -0x1
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     .line 29
     const/4 v0, 0x0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->g:I
+    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIg:I
 
     .line 33
     return-void
@@ -45,7 +45,7 @@
     .prologue
     .line 38
     :try_start_0
-    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->g:I
+    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIg:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
     :try_end_0
@@ -75,7 +75,7 @@
     .prologue
     .line 47
     :try_start_0
-    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->g:I
+    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIg:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
     :try_end_0
@@ -121,18 +121,18 @@
     :cond_0
     :goto_0
     :pswitch_0
-    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iget v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     if-eq v0, v4, :cond_1
 
-    iget v1, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iget v1, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     :cond_1
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->g:I
+    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIg:I
 
     .line 84
     invoke-super {p0, p1}, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c(Landroid/view/MotionEvent;)Z
@@ -147,13 +147,13 @@
 
     move-result v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     goto :goto_0
 
     .line 62
     :pswitch_2
-    iput v4, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iput v4, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     goto :goto_0
 
@@ -173,7 +173,7 @@
     move-result v2
 
     .line 70
-    iget v3, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iget v3, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     if-ne v2, v3, :cond_0
 
@@ -188,21 +188,21 @@
 
     move-result v2
 
-    iput v2, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->f:I
+    iput v2, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mIf:I
 
     .line 75
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v2
 
-    iput v2, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->b:F
+    iput v2, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mFb:F
 
     .line 76
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->c:F
+    iput v0, p0, Luk/co/senab/photoview/gestures/EclairGestureDetector;->mFc:F
 
     goto :goto_0
 

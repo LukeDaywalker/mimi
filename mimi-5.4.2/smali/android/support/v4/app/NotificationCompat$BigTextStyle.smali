@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljava/lang/CharSequence;
+.field mCharSequencea:Ljava/lang/CharSequence;
 
 
 # direct methods

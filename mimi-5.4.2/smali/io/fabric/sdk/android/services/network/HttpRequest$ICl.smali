@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/nio/charset/CharsetEncoder;
+.field private final mCharsetEncodera:Ljava/nio/charset/CharsetEncoder;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->a:Ljava/nio/charset/CharsetEncoder;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->mCharsetEncodera:Ljava/nio/charset/CharsetEncoder;
 
     .line 741
     return-void
@@ -41,7 +41,7 @@
 
     .prologue
     .line 751
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->a:Ljava/nio/charset/CharsetEncoder;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->mCharsetEncodera:Ljava/nio/charset/CharsetEncoder;
 
     invoke-static {p1}, Ljava/nio/CharBuffer;->wrap(Ljava/lang/CharSequence;)Ljava/nio/CharBuffer;
 

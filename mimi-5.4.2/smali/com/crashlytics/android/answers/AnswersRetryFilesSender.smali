@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
+.field private final mRetryManagerb:Lcom/crashlytics/android/answers/RetryManager;
 
-.field private final b:Lcom/crashlytics/android/answers/RetryManager;
+.field private final mSessionAnalyticsFilesSendera:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
 
 
 # direct methods
@@ -21,10 +21,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->a:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mSessionAnalyticsFilesSendera:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
 
     .line 42
-    iput-object p2, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->b:Lcom/crashlytics/android/answers/RetryManager;
+    iput-object p2, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mRetryManagerb:Lcom/crashlytics/android/answers/RetryManager;
 
     .line 43
     return-void
@@ -97,7 +97,7 @@
     move-result-wide v2
 
     .line 48
-    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->b:Lcom/crashlytics/android/answers/RetryManager;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mRetryManagerb:Lcom/crashlytics/android/answers/RetryManager;
 
     invoke-virtual {v1, v2, v3}, Lcom/crashlytics/android/answers/RetryManager;->a(J)Z
 
@@ -106,7 +106,7 @@
     if-eqz v1, :cond_0
 
     .line 49
-    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->a:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mSessionAnalyticsFilesSendera:Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;
 
     invoke-virtual {v1, p1}, Lcom/crashlytics/android/answers/SessionAnalyticsFilesSender;->a(Ljava/util/List;)Z
 
@@ -116,7 +116,7 @@
     if-eqz v1, :cond_1
 
     .line 51
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->b:Lcom/crashlytics/android/answers/RetryManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mRetryManagerb:Lcom/crashlytics/android/answers/RetryManager;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/answers/RetryManager;->a()V
 
@@ -130,7 +130,7 @@
 
     .line 54
     :cond_1
-    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->b:Lcom/crashlytics/android/answers/RetryManager;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/AnswersRetryFilesSender;->mRetryManagerb:Lcom/crashlytics/android/answers/RetryManager;
 
     invoke-virtual {v1, v2, v3}, Lcom/crashlytics/android/answers/RetryManager;->b(J)V
 

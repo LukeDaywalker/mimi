@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
+.field final synthetic mSetGroupChatPermissionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->a:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->mSetGroupChatPermissionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     const/4 v1, 0x0
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->a:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->mSetGroupChatPermissionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
@@ -41,7 +41,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setChecked(Z)V
 
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->a:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICds;->mSetGroupChatPermissionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;Z)V
 

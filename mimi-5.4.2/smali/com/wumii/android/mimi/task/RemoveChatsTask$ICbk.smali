@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/RemoveChatsTask;
+.field final synthetic mRemoveChatsTaska:Lcom/wumii/android/mimi/task/RemoveChatsTask;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbk;->a:Lcom/wumii/android/mimi/task/RemoveChatsTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbk;->mRemoveChatsTaska:Lcom/wumii/android/mimi/task/RemoveChatsTask;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

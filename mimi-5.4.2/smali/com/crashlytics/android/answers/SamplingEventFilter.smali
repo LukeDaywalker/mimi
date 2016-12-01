@@ -7,7 +7,7 @@
 
 
 # static fields
-.field static final b:Ljava/util/Set;
+.field static final mSetb:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field final a:I
+.field final mIa:I
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Lcom/crashlytics/android/answers/SamplingEventFilter$ICl;-><init>()V
 
-    sput-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->b:Ljava/util/Set;
+    sput-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mSetb:Ljava/util/Set;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput p1, p0, Lcom/crashlytics/android/answers/SamplingEventFilter;->a:I
+    iput p1, p0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mIa:I
 
     .line 33
     return-void
@@ -84,7 +84,7 @@
 
     .prologue
     .line 43
-    sget-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->b:Ljava/util/Set;
+    sget-object v0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mSetb:Ljava/util/Set;
 
     iget-object v1, p1, Lcom/crashlytics/android/answers/SessionEvent;->c:Lcom/crashlytics/android/answers/SessionEvent$ICr;
 
@@ -126,7 +126,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/crashlytics/android/answers/SamplingEventFilter;->a:I
+    iget v1, p0, Lcom/crashlytics/android/answers/SamplingEventFilter;->mIa:I
 
     rem-int/2addr v0, v1
 

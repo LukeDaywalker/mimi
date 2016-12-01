@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:J
+.field private final mJa:J
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0, v0, p4}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;-><init>(I[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;)V
 
     .line 177
-    iput-wide p1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->a:J
+    iput-wide p1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mJa:J
 
     .line 178
-    iput-object p3, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->b:Ljava/lang/String;
+    iput-object p3, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mStringb:Ljava/lang/String;
 
     .line 179
     return-void
@@ -38,7 +38,7 @@
     .line 183
     const/4 v0, 0x1
 
-    iget-wide v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->a:J
+    iget-wide v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mJa:J
 
     invoke-static {v0, v2, v3}, Lcom/crashlytics/android/core/CodedOutputStream;->b(IJ)I
 
@@ -47,7 +47,7 @@
     .line 184
     const/4 v1, 0x2
 
-    iget-object v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mStringb:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/crashlytics/android/core/ByteString;->a(Ljava/lang/String;)Lcom/crashlytics/android/core/ByteString;
 
@@ -70,14 +70,14 @@
     .line 191
     const/4 v0, 0x1
 
-    iget-wide v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->a:J
+    iget-wide v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mJa:J
 
     invoke-virtual {p1, v0, v2, v3}, Lcom/crashlytics/android/core/CodedOutputStream;->a(IJ)V
 
     .line 192
     const/4 v0, 0x2
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbi;->mStringb:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/crashlytics/android/core/ByteString;->a(Ljava/lang/String;)Lcom/crashlytics/android/core/ByteString;
 

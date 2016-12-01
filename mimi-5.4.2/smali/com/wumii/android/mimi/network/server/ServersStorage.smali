@@ -8,9 +8,7 @@
 
 .field public static final c:Lcom/wumii/android/mimi/network/server/Server;
 
-.field private static d:Lcom/wumii/android/mimi/network/server/ServersStorage;
-
-.field private static e:Ljava/util/List;
+.field private static mListe:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -21,13 +19,15 @@
     .end annotation
 .end field
 
+.field private static mServersStoraged:Lcom/wumii/android/mimi/network/server/ServersStorage;
+
 
 # instance fields
-.field private f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private isZh:Z
 
-.field private g:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
+.field private mICgg:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
 
-.field private h:Z
+.field private mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/storage/BaseStorage;-><init>()V
 
     .line 36
-    iput-boolean v2, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iput-boolean v2, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     .line 46
     new-instance v0, Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
@@ -88,7 +88,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;-><init>(Lcom/wumii/android/mimi/network/server/ServersStorage$ICf;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->g:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mICgg:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
 
     .line 47
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 49
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -130,7 +130,7 @@
 
     .prologue
     .line 39
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->d:Lcom/wumii/android/mimi/network/server/ServersStorage;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServersStoraged:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
     if-nez v0, :cond_0
 
@@ -139,11 +139,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/network/server/ServersStorage;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->d:Lcom/wumii/android/mimi/network/server/ServersStorage;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServersStoraged:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
     .line 42
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->d:Lcom/wumii/android/mimi/network/server/ServersStorage;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mServersStoraged:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
     return-object v0
 .end method
@@ -164,19 +164,19 @@
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->g:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mICgg:Lcom/wumii/android/mimi/network/server/ServersStorage$ICg;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "servers"
 
     invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 111
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -196,12 +196,12 @@
 
     .prologue
     .line 117
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     if-eq v0, p1, :cond_0
 
     .line 118
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     .line 119
     sget-object v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
@@ -229,7 +229,7 @@
 
     .prologue
     .line 54
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     if-eqz v0, :cond_0
 
@@ -254,7 +254,7 @@
 
     .line 58
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -263,7 +263,7 @@
     if-eqz v0, :cond_1
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/network/server/ServersStorage$ICf;
 
@@ -271,7 +271,7 @@
 
     const-string/jumbo v2, "servers"
 
-    sget-object v3, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v3, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -279,10 +279,10 @@
 
     check-cast v0, Ljava/util/List;
 
-    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sput-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     .line 61
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -291,16 +291,16 @@
     if-eqz v0, :cond_1
 
     .line 62
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     sget-object v1, Lcom/wumii/android/mimi/network/server/ServersStorage;->b:Lcom/wumii/android/mimi/network/server/Server;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mPreferencesHelperf:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v1, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     const-string/jumbo v2, "servers"
 
@@ -308,7 +308,7 @@
 
     .line 67
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->e:Ljava/util/List;
+    sget-object v0, Lcom/wumii/android/mimi/network/server/ServersStorage;->mListe:Ljava/util/List;
 
     goto :goto_0
 .end method
@@ -377,7 +377,7 @@
 
     .prologue
     .line 84
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     if-eqz v0, :cond_0
 
@@ -418,7 +418,7 @@
 
     .prologue
     .line 92
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     if-eqz v0, :cond_0
 
@@ -452,7 +452,7 @@
 
     .prologue
     .line 101
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->h:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/network/server/ServersStorage;->isZh:Z
 
     if-eqz v0, :cond_0
 

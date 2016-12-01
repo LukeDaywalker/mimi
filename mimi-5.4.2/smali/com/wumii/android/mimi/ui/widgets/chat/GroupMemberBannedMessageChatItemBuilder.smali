@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:I
+.field private mId:I
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->d:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->mId:I
 
     .line 46
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 35
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->mId:I
 
     return v0
 .end method
@@ -168,7 +168,7 @@
 
     const v1, 0x7f0200b2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->d:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->mId:I
 
     invoke-static {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;->a(II)Landroid/graphics/drawable/Drawable;
 

@@ -4,33 +4,33 @@
 
 
 # static fields
-.field private static final h:Ljava/lang/String;
+.field private static mAppConfigManagert:Lcom/wumii/android/mimi/util/AppConfigManager;
 
-.field private static final i:Ljava/lang/String;
+.field private static mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-.field private static final j:Ljava/lang/String;
+.field private static final mArrayStringp:[Ljava/lang/String;
 
-.field private static final k:Ljava/lang/String;
+.field private static final mStringh:Ljava/lang/String;
 
-.field private static final l:Ljava/lang/String;
+.field private static final mStringi:Ljava/lang/String;
 
-.field private static final m:Ljava/lang/String;
+.field private static final mStringj:Ljava/lang/String;
 
-.field private static final n:Ljava/lang/String;
+.field private static final mStringk:Ljava/lang/String;
 
-.field private static final o:Ljava/lang/String;
+.field private static final mStringl:Ljava/lang/String;
 
-.field private static final p:[Ljava/lang/String;
+.field private static final mStringm:Ljava/lang/String;
 
-.field private static q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+.field private static final mStringn:Ljava/lang/String;
 
-.field private static t:Lcom/wumii/android/mimi/util/AppConfigManager;
+.field private static final mStringo:Ljava/lang/String;
 
 
 # instance fields
-.field private r:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+.field private mContexts:Landroid/content/Context;
 
-.field private s:Landroid/content/Context;
+.field private mICcr:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->h:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringh:Ljava/lang/String;
 
     .line 34
     const-string/jumbo v0, "ext/friend/invitation"
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->i:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringi:Ljava/lang/String;
 
     .line 35
     const-string/jumbo v0, "share/secret/"
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->j:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringj:Ljava/lang/String;
 
     .line 36
     const-string/jumbo v0, "ext/friend/add/"
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->k:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringk:Ljava/lang/String;
 
     .line 37
     const-string/jumbo v0, "share/chat/group/"
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->l:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringl:Ljava/lang/String;
 
     .line 38
     const-string/jumbo v0, "share/promotion/"
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->m:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringm:Ljava/lang/String;
 
     .line 39
     const-string/jumbo v0, "share/circle/"
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->n:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringn:Ljava/lang/String;
 
     .line 40
     const-string/jumbo v0, "share/poll/"
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->o:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringo:Ljava/lang/String;
 
     .line 42
     const/16 v0, 0xa
@@ -175,7 +175,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->p:[Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mArrayStringp:[Ljava/lang/String;
 
     return-void
 .end method
@@ -188,7 +188,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/manager/BaseManager;-><init>()V
 
     .line 61
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     .line 62
     return-void
@@ -199,7 +199,7 @@
 
     .prologue
     .line 25
-    sput-object p0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sput-object p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     return-object p0
 .end method
@@ -209,7 +209,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->t:Lcom/wumii/android/mimi/util/AppConfigManager;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigManagert:Lcom/wumii/android/mimi/util/AppConfigManager;
 
     if-nez v0, :cond_0
 
@@ -222,11 +222,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->t:Lcom/wumii/android/mimi/util/AppConfigManager;
+    sput-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigManagert:Lcom/wumii/android/mimi/util/AppConfigManager;
 
     .line 57
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->t:Lcom/wumii/android/mimi/util/AppConfigManager;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigManagert:Lcom/wumii/android/mimi/util/AppConfigManager;
 
     return-object v0
 .end method
@@ -278,7 +278,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     return-object v0
 .end method
@@ -300,11 +300,11 @@
 
     .prologue
     .line 96
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/AppConfigModule;->isValid()Z
 
@@ -330,21 +330,21 @@
     .line 100
     new-instance v1, Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-    sget-object v2, Lcom/wumii/android/mimi/util/AppConfigManager;->h:Ljava/lang/String;
+    sget-object v2, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringh:Ljava/lang/String;
 
-    sget-object v3, Lcom/wumii/android/mimi/util/AppConfigManager;->i:Ljava/lang/String;
+    sget-object v3, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringi:Ljava/lang/String;
 
-    sget-object v4, Lcom/wumii/android/mimi/util/AppConfigManager;->j:Ljava/lang/String;
+    sget-object v4, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringj:Ljava/lang/String;
 
-    sget-object v5, Lcom/wumii/android/mimi/util/AppConfigManager;->k:Ljava/lang/String;
+    sget-object v5, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringk:Ljava/lang/String;
 
-    sget-object v6, Lcom/wumii/android/mimi/util/AppConfigManager;->l:Ljava/lang/String;
+    sget-object v6, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringl:Ljava/lang/String;
 
-    sget-object v7, Lcom/wumii/android/mimi/util/AppConfigManager;->m:Ljava/lang/String;
+    sget-object v7, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringm:Ljava/lang/String;
 
-    sget-object v8, Lcom/wumii/android/mimi/util/AppConfigManager;->n:Ljava/lang/String;
+    sget-object v8, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringn:Ljava/lang/String;
 
-    sget-object v9, Lcom/wumii/android/mimi/util/AppConfigManager;->o:Ljava/lang/String;
+    sget-object v9, Lcom/wumii/android/mimi/util/AppConfigManager;->mStringo:Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -362,7 +362,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     move-object/from16 v17, v0
 
@@ -374,7 +374,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     move-object/from16 v18, v0
 
@@ -394,7 +394,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     move-object/from16 v19, v0
 
@@ -406,7 +406,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iget-object v0, v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     move-object/from16 v20, v0
 
@@ -428,7 +428,7 @@
 
     const/16 v22, 0x0
 
-    sget-object v23, Lcom/wumii/android/mimi/util/AppConfigManager;->p:[Ljava/lang/String;
+    sget-object v23, Lcom/wumii/android/mimi/util/AppConfigManager;->mArrayStringp:[Ljava/lang/String;
 
     invoke-static/range {v23 .. v23}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -456,22 +456,22 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->r:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mICcr:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     if-nez v0, :cond_0
 
     .line 128
     new-instance v0, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->s:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mContexts:Landroid/content/Context;
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager$ICc;-><init>(Lcom/wumii/android/mimi/util/AppConfigManager;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->r:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mICcr:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->r:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/AppConfigManager;->mICcr:Lcom/wumii/android/mimi/util/AppConfigManager$ICc;
 
     return-object v0
 .end method
@@ -490,7 +490,7 @@
     if-eqz v0, :cond_0
 
     .line 75
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     .line 80
     :goto_0
@@ -530,7 +530,7 @@
     if-eqz v0, :cond_0
 
     .line 67
-    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    sget-object v0, Lcom/wumii/android/mimi/util/AppConfigManager;->mAppConfigModuleq:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     invoke-interface {p1, v0}, Lcom/wumii/android/mimi/util/AppConfigManager$ICb;->a(Lcom/wumii/android/mimi/models/entities/AppConfigModule;)V
 

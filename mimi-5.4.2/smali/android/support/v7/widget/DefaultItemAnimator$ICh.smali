@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/ArrayList;
+.field final synthetic mArrayLista:Ljava/util/ArrayList;
 
-.field final synthetic b:Landroid/support/v7/widget/DefaultItemAnimator;
+.field final synthetic mDefaultItemAnimatorb:Landroid/support/v7/widget/DefaultItemAnimator;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 116
-    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->b:Landroid/support/v7/widget/DefaultItemAnimator;
+    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mDefaultItemAnimatorb:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->a:Ljava/util/ArrayList;
+    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -56,7 +56,7 @@
     check-cast v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;
 
     .line 120
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->b:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mDefaultItemAnimatorb:Landroid/support/v7/widget/DefaultItemAnimator;
 
     iget-object v1, v5, Landroid/support/v7/widget/DefaultItemAnimator$ICq;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
 
@@ -74,18 +74,18 @@
 
     .line 123
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 124
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->b:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mDefaultItemAnimatorb:Landroid/support/v7/widget/DefaultItemAnimator;
 
     invoke-static {v0}, Landroid/support/v7/widget/DefaultItemAnimator;->a(Landroid/support/v7/widget/DefaultItemAnimator;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->a:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICh;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 

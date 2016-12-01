@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field final synthetic mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
+.field final synthetic mSearchCircleActivityb:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 171
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mSearchCircleActivityb:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,24 +34,24 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mSearchCircleActivityb:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mCirclea:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mSearchCircleActivityb:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->f(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->mSearchCircleActivityb:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 

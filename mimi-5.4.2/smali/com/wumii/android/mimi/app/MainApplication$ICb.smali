@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/app/MainApplication;
+.field final synthetic mMainApplicationa:Lcom/wumii/android/mimi/app/MainApplication;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 246
-    iput-object p1, p0, Lcom/wumii/android/mimi/app/MainApplication$ICb;->a:Lcom/wumii/android/mimi/app/MainApplication;
+    iput-object p1, p0, Lcom/wumii/android/mimi/app/MainApplication$ICb;->mMainApplicationa:Lcom/wumii/android/mimi/app/MainApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

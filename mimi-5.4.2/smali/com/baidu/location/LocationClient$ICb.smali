@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/LocationClient;
+.field final synthetic mLocationClienta:Lcom/baidu/location/LocationClient;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/LocationClient;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iput-object p1, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +33,7 @@
 .method public run()V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->for(Lcom/baidu/location/LocationClient;)Ljava/lang/Object;
 
@@ -42,13 +42,13 @@
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     const/4 v2, 0x0
 
     invoke-static {v0, v2}, Lcom/baidu/location/LocationClient;->int(Lcom/baidu/location/LocationClient;Z)Z
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->char(Lcom/baidu/location/LocationClient;)Landroid/os/Messenger;
 
@@ -56,7 +56,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->new(Lcom/baidu/location/LocationClient;)Landroid/os/Messenger;
 
@@ -71,7 +71,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->goto(Lcom/baidu/location/LocationClient;)Ljava/util/ArrayList;
 
@@ -79,7 +79,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->goto(Lcom/baidu/location/LocationClient;)Ljava/util/ArrayList;
 
@@ -109,7 +109,7 @@
 
     :cond_3
     :try_start_1
-    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->a:Lcom/baidu/location/LocationClient;
+    iget-object v0, p0, Lcom/baidu/location/LocationClient$ICb;->mLocationClienta:Lcom/baidu/location/LocationClient;
 
     invoke-static {v0}, Lcom/baidu/location/LocationClient;->byte(Lcom/baidu/location/LocationClient;)Lcom/baidu/location/LocationClient$ICa;
 

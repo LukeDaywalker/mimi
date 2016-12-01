@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+.field final synthetic mNotificationActivityb:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->b:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->mNotificationActivityb:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->b:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->mNotificationActivityb:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICbb;->mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getId()Ljava/lang/String;
 

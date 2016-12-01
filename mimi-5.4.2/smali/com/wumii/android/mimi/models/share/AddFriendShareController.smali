@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private e:Ljava/lang/String;
+.field private mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 21
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mStringd:Ljava/lang/String;
 
     .line 22
-    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mStringe:Ljava/lang/String;
 
     .line 23
     return-void
@@ -76,7 +76,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/AddFriendShareController;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

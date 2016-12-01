@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -35,7 +35,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
     if-eqz p2, :cond_0
 
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/net/wifi/ScanResult;
 
-    iget-object v2, p0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iget-object v2, p0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -89,7 +89,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iget-object v1, p0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
@@ -97,11 +97,11 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, v0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iput-object v1, v0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
-    iget-object v1, v0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iget-object v1, v0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/tencent/a/b/ICa;->a:Ljava/util/List;
+    iget-object v2, p0, Lcom/tencent/a/b/ICa;->mLista:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 

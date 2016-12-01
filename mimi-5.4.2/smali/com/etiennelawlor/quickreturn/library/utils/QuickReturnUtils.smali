@@ -4,9 +4,7 @@
 
 
 # static fields
-.field private static a:Landroid/util/TypedValue;
-
-.field private static b:Ljava/util/Dictionary;
+.field private static mDictionaryb:Ljava/util/Dictionary;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Dictionary",
@@ -18,7 +16,7 @@
     .end annotation
 .end field
 
-.field private static c:Ljava/util/Dictionary;
+.field private static mDictionaryc:Ljava/util/Dictionary;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Dictionary",
@@ -29,6 +27,8 @@
         }
     .end annotation
 .end field
+
+.field private static mTypedValuea:Landroid/util/TypedValue;
 
 
 # direct methods
@@ -41,21 +41,21 @@
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->a:Landroid/util/TypedValue;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mTypedValuea:Landroid/util/TypedValue;
 
     .line 25
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->b:Ljava/util/Dictionary;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mDictionaryb:Ljava/util/Dictionary;
 
     .line 26
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->c:Ljava/util/Dictionary;
+    sput-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mDictionaryc:Ljava/util/Dictionary;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
     neg-int v0, v0
 
     .line 73
-    sget-object v4, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->b:Ljava/util/Dictionary;
+    sget-object v4, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mDictionaryb:Ljava/util/Dictionary;
 
     invoke-virtual {p0}, Landroid/widget/AbsListView;->getFirstVisiblePosition()I
 
@@ -127,7 +127,7 @@
     if-ge v2, v3, :cond_0
 
     .line 88
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->b:Ljava/util/Dictionary;
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mDictionaryb:Ljava/util/Dictionary;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -140,7 +140,7 @@
     if-eqz v0, :cond_3
 
     .line 89
-    sget-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->b:Ljava/util/Dictionary;
+    sget-object v0, Lcom/etiennelawlor/quickreturn/library/utils/QuickReturnUtils;->mDictionaryb:Ljava/util/Dictionary;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

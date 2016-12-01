@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/map/TextureMapView;
+.field final synthetic mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/mapapi/map/TextureMapView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +29,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/TextureMapView;->a(Lcom/baidu/mapapi/map/TextureMapView;)Lcom/baidu/platform/comapi/map/C;
 
@@ -45,7 +45,7 @@
 
     iget v1, v0, Lcom/baidu/platform/comapi/map/B;->a:F
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/TextureMapView;->b(Lcom/baidu/mapapi/map/TextureMapView;)F
 
@@ -73,7 +73,7 @@
 
     int-to-double v2, v0
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v4}, Lcom/baidu/mapapi/map/TextureMapView;->a(Lcom/baidu/mapapi/map/TextureMapView;)Lcom/baidu/platform/comapi/map/C;
 
@@ -93,7 +93,7 @@
 
     double-to-int v2, v2
 
-    iget-object v3, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v3, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v3}, Lcom/baidu/mapapi/map/TextureMapView;->c(Lcom/baidu/mapapi/map/TextureMapView;)Landroid/widget/ImageView;
 
@@ -126,7 +126,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v2}, Lcom/baidu/mapapi/map/TextureMapView;->d(Lcom/baidu/mapapi/map/TextureMapView;)Landroid/widget/TextView;
 
@@ -134,7 +134,7 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v2}, Lcom/baidu/mapapi/map/TextureMapView;->e(Lcom/baidu/mapapi/map/TextureMapView;)Landroid/widget/TextView;
 
@@ -142,16 +142,16 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v0, v1}, Lcom/baidu/mapapi/map/TextureMapView;->a(Lcom/baidu/mapapi/map/TextureMapView;F)F
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-static {v0}, Lcom/baidu/mapapi/map/TextureMapView;->f(Lcom/baidu/mapapi/map/TextureMapView;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->a:Lcom/baidu/mapapi/map/TextureMapView;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/ICk;->mTextureMapViewa:Lcom/baidu/mapapi/map/TextureMapView;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/TextureMapView;->requestLayout()V
 

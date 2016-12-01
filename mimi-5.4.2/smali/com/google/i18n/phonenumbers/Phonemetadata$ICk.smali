@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->mLista:Ljava/util/List;
 
     .line 999
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 1019
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 1021
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -101,7 +101,7 @@
     invoke-virtual {v2, p1}, Lcom/google/i18n/phonenumbers/Phonemetadata$ICj;->readExternal(Ljava/io/ObjectInput;)V
 
     .line 1044
-    iget-object v3, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->a:Ljava/util/List;
+    iget-object v3, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->mLista:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -136,7 +136,7 @@
     if-ge v1, v2, :cond_0
 
     .line 1035
-    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/i18n/phonenumbers/Phonemetadata$ICk;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 

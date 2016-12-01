@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/view/View;
+.field private mViewb:Landroid/view/View;
 
-.field private c:Landroid/view/View;
+.field private mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mImageViewa:Landroid/widget/ImageView;
 
     .line 142
     const v0, 0x7f0b00b9
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->b:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mViewb:Landroid/view/View;
 
     .line 143
     const v0, 0x7f0b00ba
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mViewc:Landroid/view/View;
 
     .line 144
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -77,7 +77,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mViewc:Landroid/view/View;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->b:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;->mViewb:Landroid/view/View;
 
     return-object v0
 .end method

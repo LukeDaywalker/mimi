@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field private final g:I
+.field private final mIg:I
 
 
 # direct methods
@@ -98,7 +98,7 @@
     iput-wide v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->e:J
 
     .line 80
-    iput p5, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->g:I
+    iput p5, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mIg:I
 
     .line 81
     return-void
@@ -363,7 +363,7 @@
 
     .prologue
     .line 152
-    iget v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->g:I
+    iget v0, p0, Lio/fabric/sdk/android/services/events/EventsFilesManager;->mIg:I
 
     return v0
 .end method
@@ -651,7 +651,7 @@
     check-cast v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;
 
     .line 216
-    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->a:Ljava/io/File;
+    iget-object v0, v0, Lio/fabric/sdk/android/services/events/EventsFilesManager$ICf;->mFilea:Ljava/io/File;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

@@ -25,7 +25,9 @@
 
 .field public static final enum c:Lu/aly/ClientStats$ICaa;
 
-.field private static final d:Ljava/util/Map;
+.field private static final synthetic mArrayICaag:[Lu/aly/ClientStats$ICaa;
+
+.field private static final mMapd:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -37,13 +39,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic g:[Lu/aly/ClientStats$ICaa;
-
 
 # instance fields
-.field private final e:S
+.field private final mSe:S
 
-.field private final f:Ljava/lang/String;
+.field private final mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -107,14 +107,14 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lu/aly/ClientStats$ICaa;->g:[Lu/aly/ClientStats$ICaa;
+    sput-object v0, Lu/aly/ClientStats$ICaa;->mArrayICaag:[Lu/aly/ClientStats$ICaa;
 
     .line 55
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/ClientStats$ICaa;->d:Ljava/util/Map;
+    sput-object v0, Lu/aly/ClientStats$ICaa;->mMapd:Ljava/util/Map;
 
     .line 58
     const-class v0, Lu/aly/ClientStats$ICaa;
@@ -141,7 +141,7 @@
     check-cast v0, Lu/aly/ClientStats$ICaa;
 
     .line 59
-    sget-object v2, Lu/aly/ClientStats$ICaa;->d:Ljava/util/Map;
+    sget-object v2, Lu/aly/ClientStats$ICaa;->mMapd:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/ClientStats$ICaa;->b()Ljava/lang/String;
 
@@ -171,10 +171,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 100
-    iput-short p3, p0, Lu/aly/ClientStats$ICaa;->e:S
+    iput-short p3, p0, Lu/aly/ClientStats$ICaa;->mSe:S
 
     .line 101
-    iput-object p4, p0, Lu/aly/ClientStats$ICaa;->f:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/ClientStats$ICaa;->mStringf:Ljava/lang/String;
 
     .line 102
     return-void
@@ -201,7 +201,7 @@
 
     .prologue
     .line 50
-    sget-object v0, Lu/aly/ClientStats$ICaa;->g:[Lu/aly/ClientStats$ICaa;
+    sget-object v0, Lu/aly/ClientStats$ICaa;->mArrayICaag:[Lu/aly/ClientStats$ICaa;
 
     invoke-virtual {v0}, [Lu/aly/ClientStats$ICaa;->clone()Ljava/lang/Object;
 
@@ -219,7 +219,7 @@
 
     .prologue
     .line 105
-    iget-short v0, p0, Lu/aly/ClientStats$ICaa;->e:S
+    iget-short v0, p0, Lu/aly/ClientStats$ICaa;->mSe:S
 
     return v0
 .end method
@@ -229,7 +229,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lu/aly/ClientStats$ICaa;->f:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/ClientStats$ICaa;->mStringf:Ljava/lang/String;
 
     return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;
+.field static final mGwoyeuRomatzyhResourcea:Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0, v1}, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;-><init>(Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource$1;)V
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource$GwoyeuRomatzyhSystemResourceHolder;->a:Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;
+    sput-object v0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource$GwoyeuRomatzyhSystemResourceHolder;->mGwoyeuRomatzyhResourcea:Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;
 
     return-void
 .end method

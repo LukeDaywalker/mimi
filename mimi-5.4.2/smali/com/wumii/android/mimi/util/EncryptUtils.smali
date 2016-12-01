@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/EncryptUtils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/EncryptUtils;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -109,7 +109,7 @@
     move-exception v0
 
     .line 47
-    sget-object v1, Lcom/wumii/android/mimi/util/EncryptUtils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/EncryptUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Encrypt Error!"
 
@@ -301,7 +301,7 @@
     move-exception v2
 
     .line 91
-    sget-object v3, Lcom/wumii/android/mimi/util/EncryptUtils;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/util/EncryptUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "This device doesn\'t support 128bits, trying 192bits."
 
@@ -322,7 +322,7 @@
     move-exception v2
 
     .line 95
-    sget-object v3, Lcom/wumii/android/mimi/util/EncryptUtils;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/util/EncryptUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "This device doesn\'t support 192bits, trying 256bits."
 
@@ -412,7 +412,7 @@
     move-exception v0
 
     .line 58
-    sget-object v1, Lcom/wumii/android/mimi/util/EncryptUtils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/EncryptUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Decrypt Error!"
 

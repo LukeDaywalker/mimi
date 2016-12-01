@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field private mTextViewa:Landroid/widget/TextView;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:Landroid/view/View;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -135,7 +135,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mViewd:Landroid/view/View;
 
     if-nez v0, :cond_0
 
@@ -146,11 +146,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mViewd:Landroid/view/View;
 
     .line 57
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -160,7 +160,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewc:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -173,11 +173,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewc:Landroid/widget/TextView;
 
     .line 50
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewc:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -187,7 +187,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mImageViewb:Landroid/widget/ImageView;
 
     if-nez v0, :cond_0
 
@@ -200,11 +200,11 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mImageViewb:Landroid/widget/ImageView;
 
     .line 43
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -214,7 +214,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewa:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -227,11 +227,11 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewa:Landroid/widget/TextView;
 
     .line 36
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/discover/DiscoverItemView;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method

@@ -8,9 +8,9 @@
 # instance fields
 .field private final columns:[Ljava/lang/String;
 
-.field private final cr:Landroid/content/ContentResolver;
-
 .field private editor:Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;
+
+.field private final mContentResolvercr:Landroid/content/ContentResolver;
 
 .field private final values:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->cr:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     const/4 v6, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->cr:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
     sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
 
@@ -199,7 +199,7 @@
 
     new-instance v0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;
 
-    iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->cr:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
     invoke-direct {v0, v1}, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences$REditor;-><init>(Landroid/content/ContentResolver;)V
 
@@ -226,7 +226,7 @@
     const/4 v6, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->cr:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/MMSharedPreferences;->mContentResolvercr:Landroid/content/ContentResolver;
 
     sget-object v1, Lcom/tencent/mm/sdk/c/ICa$ICb;->CONTENT_URI:Landroid/net/Uri;
 

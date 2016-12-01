@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field a:[Landroid/support/v4/app/Fragment$FragmentState;
+.field mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
-.field b:[I
+.field mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
-.field c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+.field mArrayIb:[I
 
 
 # direct methods
@@ -69,14 +69,14 @@
 
     check-cast v0, [Landroid/support/v4/app/Fragment$FragmentState;
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     .line 375
     invoke-virtual {p1}, Landroid/os/Parcel;->createIntArray()[I
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     .line 376
     sget-object v0, Landroid/support/v4/app/BackStackRecord$BackStackState;->CREATOR:Landroid/os/Parcelable$Creator;
@@ -87,7 +87,7 @@
 
     check-cast v0, [Landroid/support/v4/app/BackStackRecord$BackStackState;
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     .line 377
     return-void
@@ -110,17 +110,17 @@
 
     .prologue
     .line 384
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeTypedArray([Landroid/os/Parcelable;I)V
 
     .line 385
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeIntArray([I)V
 
     .line 386
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeTypedArray([Landroid/os/Parcelable;I)V
 

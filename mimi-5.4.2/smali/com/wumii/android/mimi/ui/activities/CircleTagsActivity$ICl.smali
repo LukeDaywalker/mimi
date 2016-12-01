@@ -4,9 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Ljava/util/List;
+.field private mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
+
+.field private mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -16,8 +18,6 @@
         }
     .end annotation
 .end field
-
-.field private c:Landroid/widget/AbsListView$LayoutParams;
 
 
 # direct methods
@@ -39,17 +39,17 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mContexta:Landroid/content/Context;
 
     .line 100
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mListb:Ljava/util/List;
 
     .line 101
     new-instance v0, Landroid/widget/AbsListView$LayoutParams;
 
     invoke-direct {v0, p3, p4}, Landroid/widget/AbsListView$LayoutParams;-><init>(II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->c:Landroid/widget/AbsListView$LayoutParams;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     .line 102
     return-void
@@ -62,7 +62,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mListb:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -119,12 +119,12 @@
     .line 122
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICk;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mContexta:Landroid/content/Context;
 
     invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICk;-><init>(Landroid/content/Context;)V
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->c:Landroid/widget/AbsListView$LayoutParams;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->mLayoutParamsc:Landroid/widget/AbsListView$LayoutParams;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 

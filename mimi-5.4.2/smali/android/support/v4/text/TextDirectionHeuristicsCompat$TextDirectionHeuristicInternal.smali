@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Z
+.field private final isZa:Z
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
 
     .line 157
-    iput-boolean p2, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;->a:Z
+    iput-boolean p2, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;->isZa:Z
 
     .line 158
     return-void

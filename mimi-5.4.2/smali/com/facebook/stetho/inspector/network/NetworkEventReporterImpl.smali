@@ -7,11 +7,11 @@
 
 
 # static fields
-.field private static b:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+.field private static mNetworkEventReporterb:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
 
 # instance fields
-.field private a:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
+.field private mResourceTypeHelpera:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
 
 
 # direct methods
@@ -112,7 +112,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mNetworkEventReporterb:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     if-nez v0, :cond_0
 
@@ -121,11 +121,11 @@
 
     invoke-direct {v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;-><init>()V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    sput-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mNetworkEventReporterb:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     .line 45
     :cond_0
-    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->b:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mNetworkEventReporterb:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -323,7 +323,7 @@
 
     .prologue
     .line 285
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mResourceTypeHelpera:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
 
     if-nez v0, :cond_0
 
@@ -332,11 +332,11 @@
 
     invoke-direct {v0}, Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mResourceTypeHelpera:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
 
     .line 288
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->a:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkEventReporterImpl;->mResourceTypeHelpera:Lcom/facebook/stetho/inspector/network/ResourceTypeHelper;
 
     return-object v0
 .end method

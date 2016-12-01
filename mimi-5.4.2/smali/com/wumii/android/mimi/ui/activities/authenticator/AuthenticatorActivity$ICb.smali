@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+.field final synthetic mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     const/4 v1, 0x0
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)Landroid/widget/RadioButton;
 
@@ -48,7 +48,7 @@
 
     .line 123
     :goto_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;->mAuthenticatorActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;
 
     const-string/jumbo v3, "debug"
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+.field final synthetic mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 1027
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;->mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/network/NetworkObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 1030
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICeb;->mSingleChatActivitya:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->k(Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;)V
 

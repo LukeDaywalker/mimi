@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
+.field final synthetic mICca:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICd;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
+    iput-object p1, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICd;->mICca:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICd;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICd;->mICca:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;
 
-    iget-object v0, v0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
+    iget-object v0, v0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->mActivityLifecycleCheckForUpdatesControllera:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->c()V
 

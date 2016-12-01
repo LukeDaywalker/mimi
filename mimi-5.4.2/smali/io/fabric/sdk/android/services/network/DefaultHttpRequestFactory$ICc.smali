@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sput-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->a:Lio/fabric/sdk/android/services/network/HttpMethod;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->b:Lio/fabric/sdk/android/services/network/HttpMethod;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->c:Lio/fabric/sdk/android/services/network/HttpMethod;
 
@@ -72,7 +72,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->a:[I
+    sget-object v0, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory$ICc;->mArrayIa:[I
 
     sget-object v1, Lio/fabric/sdk/android/services/network/HttpMethod;->d:Lio/fabric/sdk/android/services/network/HttpMethod;
 

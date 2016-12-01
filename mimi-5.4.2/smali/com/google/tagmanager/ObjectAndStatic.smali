@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Object;
+.field private final isZb:Z
+
+.field private final mObjecta:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
         }
     .end annotation
 .end field
-
-.field private final b:Z
 
 
 # direct methods
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 15
-    iput-object p1, p0, Lcom/google/tagmanager/ObjectAndStatic;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/tagmanager/ObjectAndStatic;->mObjecta:Ljava/lang/Object;
 
     .line 16
-    iput-boolean p2, p0, Lcom/google/tagmanager/ObjectAndStatic;->b:Z
+    iput-boolean p2, p0, Lcom/google/tagmanager/ObjectAndStatic;->isZb:Z
 
     .line 17
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/google/tagmanager/ObjectAndStatic;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/tagmanager/ObjectAndStatic;->mObjecta:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 20
-    iget-boolean v0, p0, Lcom/google/tagmanager/ObjectAndStatic;->b:Z
+    iget-boolean v0, p0, Lcom/google/tagmanager/ObjectAndStatic;->isZb:Z
 
     return v0
 .end method

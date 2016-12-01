@@ -4,26 +4,15 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private volatile b:Z
+.field private volatile isZb:Z
 
-.field private c:Z
+.field private isZc:Z
 
-.field private d:Lcom/wumii/android/soundtouch/JNISoundTouch;
-
-.field private e:Ljava/util/LinkedList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/LinkedList",
-            "<[B>;"
-        }
-    .end annotation
-.end field
-
-.field private f:Ljava/util/concurrent/BlockingQueue;
+.field private mBlockingQueuef:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue",
@@ -32,9 +21,20 @@
     .end annotation
 .end field
 
-.field private g:Landroid/os/Handler;
+.field private mHandlerg:Landroid/os/Handler;
 
-.field private h:Ljava/lang/String;
+.field private mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
+
+.field private mLinkedListe:Ljava/util/LinkedList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/LinkedList",
+            "<[B>;"
+        }
+    .end annotation
+.end field
+
+.field private mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/soundtouch/SoundTouchThread;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -74,59 +74,59 @@
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     .line 21
-    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->b:Z
+    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZb:Z
 
     .line 23
-    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->c:Z
+    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZc:Z
 
     .line 25
     new-instance v0, Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-direct {v0}, Lcom/wumii/android/soundtouch/JNISoundTouch;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     .line 26
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->e:Ljava/util/LinkedList;
+    iput-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLinkedListe:Ljava/util/LinkedList;
 
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->g:Landroid/os/Handler;
+    iput-object p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mHandlerg:Landroid/os/Handler;
 
     .line 35
-    iput-object p2, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->f:Ljava/util/concurrent/BlockingQueue;
+    iput-object p2, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mBlockingQueuef:Ljava/util/concurrent/BlockingQueue;
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     const/16 v1, 0x1f40
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setSampleRate(I)V
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setChannels(I)V
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setPitchOctaves(F)V
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setTempo(F)V
 
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setRateChange(F)V
 
@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -177,7 +177,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setPitchOctaves(F)V
 
@@ -190,7 +190,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mStringh:Ljava/lang/String;
 
     .line 63
     return-void
@@ -207,7 +207,7 @@
     invoke-direct {v1, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->e:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLinkedListe:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
@@ -238,7 +238,7 @@
     move-exception v0
 
     .line 95
-    sget-object v1, Lcom/wumii/android/soundtouch/SoundTouchThread;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -256,7 +256,7 @@
     invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->g:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mHandlerg:Landroid/os/Handler;
 
     invoke-virtual {v0, p2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
     :try_end_1
@@ -277,7 +277,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     array-length v1, p2
 
@@ -285,7 +285,7 @@
 
     .line 78
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/JNISoundTouch;->receiveSamples()[S
 
@@ -315,10 +315,10 @@
     .line 49
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->b:Z
+    iput-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZb:Z
 
     .line 50
-    iput-boolean p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->c:Z
+    iput-boolean p1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZc:Z
 
     .line 51
     return-void
@@ -336,7 +336,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->e:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLinkedListe:Ljava/util/LinkedList;
 
     return-object v0
 .end method
@@ -346,7 +346,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->d:Lcom/wumii/android/soundtouch/JNISoundTouch;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mJNISoundTouchd:Lcom/wumii/android/soundtouch/JNISoundTouch;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/soundtouch/JNISoundTouch;->setTempo(F)V
 
@@ -359,7 +359,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->e:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLinkedListe:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
@@ -367,7 +367,7 @@
     :cond_0
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->f:Ljava/util/concurrent/BlockingQueue;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mBlockingQueuef:Ljava/util/concurrent/BlockingQueue;
 
     const-wide/16 v2, 0x64
 
@@ -383,17 +383,17 @@
     if-eqz v0, :cond_1
 
     .line 108
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->e:Ljava/util/LinkedList;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLinkedListe:Ljava/util/LinkedList;
 
     invoke-virtual {p0, v1, v0}, Lcom/wumii/android/soundtouch/SoundTouchThread;->a(Ljava/util/LinkedList;[S)V
 
     .line 111
     :cond_1
-    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->b:Z
+    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZb:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->f:Ljava/util/concurrent/BlockingQueue;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mBlockingQueuef:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->size()I
     :try_end_0
@@ -404,7 +404,7 @@
     if-nez v0, :cond_0
 
     .line 119
-    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->c:Z
+    iget-boolean v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->isZc:Z
 
     if-eqz v0, :cond_2
 
@@ -426,7 +426,7 @@
     move-exception v0
 
     .line 115
-    sget-object v1, Lcom/wumii/android/soundtouch/SoundTouchThread;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/soundtouch/SoundTouchThread;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -438,7 +438,7 @@
 
     .line 122
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->g:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->mHandlerg:Landroid/os/Handler;
 
     const/16 v1, 0x8
 

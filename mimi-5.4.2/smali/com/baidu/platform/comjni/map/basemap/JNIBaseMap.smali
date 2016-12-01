@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field a:J
+.field mJa:J
 
 
 # direct methods

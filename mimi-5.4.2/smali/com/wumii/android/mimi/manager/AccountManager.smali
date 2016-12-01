@@ -4,43 +4,43 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mAuthorCommentStoragek:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
-.field private b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+.field private mChatBannedMemberStoragee:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
-.field private c:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+.field private mChatMessageReportStoraged:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
-.field private d:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
+.field private mChatMessageStoragec:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
-.field private e:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
+.field private mChatSessionStorageg:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
-.field private f:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+.field private mChatStorageh:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
-.field private g:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+.field private mCircleStorages:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
-.field private h:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
+.field private mCommentStoragej:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
-.field private i:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
+.field private mCommonStorager:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
-.field private j:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+.field private mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
-.field private k:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
+.field private mDiscoverTopicStoragei:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
-.field private l:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
+.field private mDraftStoragen:Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
-.field private m:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
+.field private mFeedModuleStoragel:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
-.field private n:Lcom/wumii/android/mimi/models/storage/DraftStorage;
+.field private mFeedStorageq:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
-.field private o:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
+.field private mNotificationStoragem:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
-.field private p:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
+.field private mSecretStorageo:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
-.field private q:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
+.field private mStringa:Ljava/lang/String;
 
-.field private r:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+.field private mSurveyStoragep:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
-.field private s:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+.field private mSysNotificationStoragef:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AccountManager;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mStringa:Ljava/lang/String;
 
     .line 55
     return-void
@@ -83,7 +83,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     if-nez v0, :cond_0
 
@@ -94,15 +94,15 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AccountManager;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mStringa:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     .line 72
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     return-object v0
 .end method
@@ -114,12 +114,12 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     if-eqz v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/DatabaseConnection;->a()Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;
 
@@ -130,7 +130,7 @@
     .line 60
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->b:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDatabaseConnectionb:Lcom/wumii/android/mimi/models/helper/DatabaseConnection;
 
     .line 62
     :cond_0
@@ -142,7 +142,7 @@
 
     .prologue
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->c:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageStoragec:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     if-nez v0, :cond_0
 
@@ -155,11 +155,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->c:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageStoragec:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     .line 79
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->c:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageStoragec:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     return-object v0
 .end method
@@ -169,7 +169,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->d:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageReportStoraged:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     if-nez v0, :cond_0
 
@@ -182,11 +182,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->d:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageReportStoraged:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     .line 86
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->d:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatMessageReportStoraged:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     return-object v0
 .end method
@@ -196,7 +196,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->e:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatBannedMemberStoragee:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
     if-nez v0, :cond_0
 
@@ -209,11 +209,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->e:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatBannedMemberStoragee:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
     .line 93
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->e:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatBannedMemberStoragee:Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
     return-object v0
 .end method
@@ -223,7 +223,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->f:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSysNotificationStoragef:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     if-nez v0, :cond_0
 
@@ -236,11 +236,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->f:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSysNotificationStoragef:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     .line 100
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->f:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSysNotificationStoragef:Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     return-object v0
 .end method
@@ -250,7 +250,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->g:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatSessionStorageg:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     if-nez v0, :cond_0
 
@@ -263,11 +263,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->g:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatSessionStorageg:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     .line 107
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->g:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatSessionStorageg:Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     return-object v0
 .end method
@@ -277,7 +277,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->h:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatStorageh:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     if-nez v0, :cond_0
 
@@ -290,11 +290,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->h:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatStorageh:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     .line 114
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->h:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mChatStorageh:Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     return-object v0
 .end method
@@ -304,7 +304,7 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->i:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDiscoverTopicStoragei:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
     if-nez v0, :cond_0
 
@@ -317,11 +317,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->i:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDiscoverTopicStoragei:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->i:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDiscoverTopicStoragei:Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
     return-object v0
 .end method
@@ -331,7 +331,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->j:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommentStoragej:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     if-nez v0, :cond_0
 
@@ -344,11 +344,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->j:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommentStoragej:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     .line 128
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->j:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommentStoragej:Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     return-object v0
 .end method
@@ -358,7 +358,7 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->k:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mAuthorCommentStoragek:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     if-nez v0, :cond_0
 
@@ -367,11 +367,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->k:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mAuthorCommentStoragek:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     .line 135
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->k:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mAuthorCommentStoragek:Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     return-object v0
 .end method
@@ -381,7 +381,7 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->l:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedModuleStoragel:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     if-nez v0, :cond_0
 
@@ -394,11 +394,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->l:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedModuleStoragel:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     .line 142
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->l:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedModuleStoragel:Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     return-object v0
 .end method
@@ -408,7 +408,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->m:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mNotificationStoragem:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
     if-nez v0, :cond_0
 
@@ -421,11 +421,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->m:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mNotificationStoragem:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
     .line 149
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->m:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mNotificationStoragem:Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
     return-object v0
 .end method
@@ -435,7 +435,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->n:Lcom/wumii/android/mimi/models/storage/DraftStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDraftStoragen:Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
     if-nez v0, :cond_0
 
@@ -448,11 +448,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/DraftStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->n:Lcom/wumii/android/mimi/models/storage/DraftStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDraftStoragen:Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
     .line 156
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->n:Lcom/wumii/android/mimi/models/storage/DraftStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mDraftStoragen:Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
     return-object v0
 .end method
@@ -462,7 +462,7 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->o:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSecretStorageo:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     if-nez v0, :cond_0
 
@@ -475,11 +475,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->o:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSecretStorageo:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     .line 163
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->o:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSecretStorageo:Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     return-object v0
 .end method
@@ -489,7 +489,7 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->p:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSurveyStoragep:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     if-nez v0, :cond_0
 
@@ -502,11 +502,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->p:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSurveyStoragep:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     .line 170
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->p:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mSurveyStoragep:Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     return-object v0
 .end method
@@ -516,7 +516,7 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->q:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedStorageq:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     if-nez v0, :cond_0
 
@@ -529,11 +529,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->q:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedStorageq:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     .line 177
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->q:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mFeedStorageq:Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     return-object v0
 .end method
@@ -543,7 +543,7 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->r:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommonStorager:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     if-nez v0, :cond_0
 
@@ -556,11 +556,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->r:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommonStorager:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     .line 184
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->r:Lcom/wumii/android/mimi/models/storage/CommonStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCommonStorager:Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     return-object v0
 .end method
@@ -570,7 +570,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->s:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCircleStorages:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
     if-nez v0, :cond_0
 
@@ -583,11 +583,11 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/storage/CircleStorage;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->s:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCircleStorages:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
     .line 191
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->s:Lcom/wumii/android/mimi/models/storage/CircleStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AccountManager;->mCircleStorages:Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
     return-object v0
 .end method

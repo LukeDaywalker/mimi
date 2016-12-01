@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private c:Landroid/widget/TextView;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/TextView;
+.field private mImageViewj:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/ImageView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private j:Landroid/widget/ImageView;
+.field private mTextViewd:Landroid/widget/TextView;
 
 
 # direct methods
@@ -97,7 +97,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mImageViewe:Landroid/widget/ImageView;
 
     .line 39
     const v0, 0x7f0b01d8
@@ -108,7 +108,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mTextViewc:Landroid/widget/TextView;
 
     .line 40
     const v0, 0x7f0b01d9
@@ -119,7 +119,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->j:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mImageViewj:Landroid/widget/ImageView;
 
     .line 41
     const v0, 0x7f0b01da
@@ -130,7 +130,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mTextViewd:Landroid/widget/TextView;
 
     .line 43
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->f()Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
@@ -141,7 +141,7 @@
     if-eqz v0, :cond_0
 
     .line 45
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->c:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getName()Ljava/lang/String;
 
@@ -150,7 +150,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 46
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->d:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getDescription()Ljava/lang/String;
 
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->e:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;->getResources()Landroid/content/res/Resources;
 

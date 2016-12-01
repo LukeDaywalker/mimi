@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+.field final synthetic mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 299
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;->mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;->mShareToChatActivitya:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->b(Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;)V
 

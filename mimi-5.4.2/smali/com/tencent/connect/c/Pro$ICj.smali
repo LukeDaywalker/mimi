@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/ArrayList;
+.field final synthetic mArrayLista:Ljava/util/ArrayList;
 
-.field final synthetic b:Landroid/os/Handler;
+.field final synthetic mHandlerb:Landroid/os/Handler;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICj;->a:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/tencent/connect/c/Pro$ICj;->mArrayLista:Ljava/util/ArrayList;
 
-    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICj;->b:Landroid/os/Handler;
+    iput-object p2, p0, Lcom/tencent/connect/c/Pro$ICj;->mHandlerb:Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -50,7 +50,7 @@
     if-ge v1, v0, :cond_2
 
     .line 147
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -153,7 +153,7 @@
     if-eqz v0, :cond_0
 
     .line 171
-    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICj;->a:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/tencent/connect/c/Pro$ICj;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1, v0}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -182,7 +182,7 @@
 
     .line 176
     :cond_2
-    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/c/Pro$ICj;->mHandlerb:Landroid/os/Handler;
 
     const/16 v1, 0x65
 
@@ -198,7 +198,7 @@
     .line 178
     const-string/jumbo v2, "images"
 
-    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICj;->a:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/tencent/connect/c/Pro$ICj;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
@@ -206,7 +206,7 @@
     invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
     .line 180
-    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICj;->b:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/c/Pro$ICj;->mHandlerb:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 

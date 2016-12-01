@@ -7,18 +7,16 @@
 
 
 # static fields
-.field private static c0:I
-
-.field private static c5:Ljava/lang/String;
-
 .field protected static c6:I
 
-.field private static c7:I
+.field private static mIc0:I
+
+.field private static mIc7:I
+
+.field private static mStringc5:Ljava/lang/String;
 
 
 # instance fields
-.field private c1:Z
-
 .field public c2:Ljava/lang/String;
 
 .field public c3:[B
@@ -33,6 +31,8 @@
 
 .field public cZ:Ljava/util/List;
 
+.field private isZc1:Z
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -40,15 +40,15 @@
 
     const/4 v0, 0x4
 
-    sput v0, Lcom/baidu/location/ICt;->c0:I
+    sput v0, Lcom/baidu/location/ICt;->mIc0:I
 
     const-string/jumbo v0, "10.0.0.172"
 
-    sput-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     const/16 v0, 0x50
 
-    sput v0, Lcom/baidu/location/ICt;->c7:I
+    sput v0, Lcom/baidu/location/ICt;->mIc7:I
 
     const/4 v0, 0x0
 
@@ -66,7 +66,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICt;->c1:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICt;->isZc1:Z
 
     iput-object v1, p0, Lcom/baidu/location/ICt;->cX:Ljava/lang/String;
 
@@ -94,7 +94,7 @@
 
     move-result v0
 
-    sput v0, Lcom/baidu/location/ICt;->c0:I
+    sput v0, Lcom/baidu/location/ICt;->mIc0:I
 
     return-void
 .end method
@@ -102,7 +102,7 @@
 .method static synthetic Q()I
     .locals 1
 
-    sget v0, Lcom/baidu/location/ICt;->c0:I
+    sget v0, Lcom/baidu/location/ICt;->mIc0:I
 
     return v0
 .end method
@@ -110,7 +110,7 @@
 .method static synthetic S()Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -191,7 +191,7 @@
 .method static synthetic W()I
     .locals 1
 
-    sget v0, Lcom/baidu/location/ICt;->c7:I
+    sget v0, Lcom/baidu/location/ICt;->mIc7:I
 
     return v0
 .end method
@@ -269,7 +269,7 @@
     if-nez v2, :cond_2
 
     :goto_0
-    sput-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     move v0, v1
 
@@ -314,7 +314,7 @@
     if-nez v2, :cond_4
 
     :goto_2
-    sput-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     move v0, v1
 
@@ -385,7 +385,7 @@
 
     const-string/jumbo v0, "10.0.0.172"
 
-    sput-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     move v0, v1
 
@@ -406,7 +406,7 @@
 
     const-string/jumbo v0, "10.0.0.200"
 
-    sput-object v0, Lcom/baidu/location/ICt;->c5:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICt;->mStringc5:Ljava/lang/String;
 
     move v0, v1
 
@@ -555,7 +555,7 @@
 .method static synthetic if(Lcom/baidu/location/ICt;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICt;->c1:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICt;->isZc1:Z
 
     return p1
 .end method

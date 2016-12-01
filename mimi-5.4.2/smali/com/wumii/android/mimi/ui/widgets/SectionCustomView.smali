@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private mViewc:Landroid/view/View;
 
 
 # direct methods
@@ -73,12 +73,12 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->mViewc:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->c:Landroid/view/View;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->mViewc:Landroid/view/View;
 
     .line 32
     invoke-virtual {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V

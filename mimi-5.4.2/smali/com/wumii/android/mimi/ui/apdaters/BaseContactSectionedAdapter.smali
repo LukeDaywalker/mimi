@@ -6,7 +6,7 @@
 # instance fields
 .field protected a:Landroid/view/LayoutInflater;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+.field private mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Lza/co/immedia/pinnedheaderlistview/SectionedBaseAdapter;-><init>()V
 
     .line 24
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     .line 25
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -38,7 +38,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->count(I)I
 
@@ -71,7 +71,7 @@
     .line 82
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v2, p1}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->getHeader(I)Ljava/lang/Object;
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->getContacts()Ljava/util/List;
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->addRecentContact(Lcom/wumii/android/mimi/models/entities/Contact;)V
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     .line 35
     return-void
@@ -184,7 +184,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Contact;
 
     .line 47
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->addRecentContact(Lcom/wumii/android/mimi/models/entities/Contact;)V
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->count()I
 
@@ -217,7 +217,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->getSectionForHeaderIndexer(I)I
 
@@ -241,7 +241,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->getData(I)Ljava/util/List;
 
@@ -270,7 +270,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->b:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;->mContactSectionMapb:Lcom/wumii/android/mimi/models/entities/ContactSectionMap;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->getRecentContacts()Ljava/util/List;
 

@@ -8,7 +8,7 @@
 
 .field public b:Lcom/tencent/tauth/Pro$ICb;
 
-.field final synthetic c:Lcom/tencent/connect/common/Pro;
+.field final synthetic mProc:Lcom/tencent/connect/common/Pro;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 306
-    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICb;->c:Lcom/tencent/connect/common/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICb;->mProc:Lcom/tencent/connect/common/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

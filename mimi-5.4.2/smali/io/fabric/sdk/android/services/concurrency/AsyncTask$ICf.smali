@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field final a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
-
-.field final b:[Ljava/lang/Object;
+.field final mArrayObjectb:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TData;"
         }
     .end annotation
 .end field
+
+.field final mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
 
 # direct methods
@@ -42,10 +42,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 693
-    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->a:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mAsyncTaska:Lio/fabric/sdk/android/services/concurrency/AsyncTask;
 
     .line 694
-    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->b:[Ljava/lang/Object;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICf;->mArrayObjectb:[Ljava/lang/Object;
 
     .line 695
     return-void

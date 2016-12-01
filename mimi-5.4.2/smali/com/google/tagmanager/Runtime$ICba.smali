@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/google/tagmanager/ObjectAndStatic;
+.field private mICbb:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+
+.field private mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/tagmanager/ak",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
 
 # direct methods
@@ -38,10 +38,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 917
-    iput-object p1, p0, Lcom/google/tagmanager/Runtime$ICba;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    iput-object p1, p0, Lcom/google/tagmanager/Runtime$ICba;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     .line 918
-    iput-object p2, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iput-object p2, p0, Lcom/google/tagmanager/Runtime$ICba;->mICbb:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     .line 919
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 922
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->a:Lcom/google/tagmanager/ObjectAndStatic;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->mObjectAndStatica:Lcom/google/tagmanager/ObjectAndStatic;
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 926
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->mICbb:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     return-object v0
 .end method

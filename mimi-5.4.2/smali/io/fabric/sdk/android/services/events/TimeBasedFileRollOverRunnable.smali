@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Lio/fabric/sdk/android/services/events/FileRollOverManager;
+.field private final mFileRollOverManagerb:Lio/fabric/sdk/android/services/events/FileRollOverManager;
 
 
 # direct methods
@@ -21,10 +21,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
-    iput-object p1, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->a:Landroid/content/Context;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mContexta:Landroid/content/Context;
 
     .line 34
-    iput-object p2, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->b:Lio/fabric/sdk/android/services/events/FileRollOverManager;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mFileRollOverManagerb:Lio/fabric/sdk/android/services/events/FileRollOverManager;
 
     .line 35
     return-void
@@ -38,14 +38,14 @@
     .prologue
     .line 40
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->a:Landroid/content/Context;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v1, "Performing time based file roll over."
 
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 41
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->b:Lio/fabric/sdk/android/services/events/FileRollOverManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mFileRollOverManagerb:Lio/fabric/sdk/android/services/events/FileRollOverManager;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/events/FileRollOverManager;->e()Z
 
@@ -55,7 +55,7 @@
     if-nez v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->b:Lio/fabric/sdk/android/services/events/FileRollOverManager;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mFileRollOverManagerb:Lio/fabric/sdk/android/services/events/FileRollOverManager;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/events/FileRollOverManager;->d()V
     :try_end_0
@@ -71,7 +71,7 @@
     move-exception v0
 
     .line 49
-    iget-object v1, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->a:Landroid/content/Context;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/events/TimeBasedFileRollOverRunnable;->mContexta:Landroid/content/Context;
 
     const-string/jumbo v2, "Failed to roll over file"
 

@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static a:Ljava/lang/String;
+.field static mStringa:Ljava/lang/String;
 
-.field private static b:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -17,10 +17,10 @@
     const/4 v0, 0x0
 
     .line 56
-    sput-object v0, Lcom/tencent/open/a/Pro;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/open/a/Pro;->mStringa:Ljava/lang/String;
 
     .line 160
-    sput-object v0, Lcom/tencent/open/a/Pro;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/open/a/Pro;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -30,11 +30,11 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/tencent/open/a/Pro;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/open/a/Pro;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/open/a/Pro;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/open/a/Pro;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -43,7 +43,7 @@
     if-lez v0, :cond_0
 
     .line 60
-    sget-object v0, Lcom/tencent/open/a/Pro;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/open/a/Pro;->mStringa:Ljava/lang/String;
 
     .line 71
     :goto_0
@@ -94,7 +94,7 @@
     .prologue
     .line 170
     :try_start_0
-    sget-object v0, Lcom/tencent/open/a/Pro;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/open/a/Pro;->mStringb:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -245,11 +245,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/open/a/Pro;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/open/a/Pro;->mStringb:Ljava/lang/String;
 
     .line 194
     :cond_0
-    sget-object v0, Lcom/tencent/open/a/Pro;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/open/a/Pro;->mStringb:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

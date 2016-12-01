@@ -4,7 +4,18 @@
 
 
 # instance fields
-.field private a:Ljava/util/Map;
+.field private final mIterablec:Ljava/lang/Iterable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Iterable",
+            "<",
+            "Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -16,18 +27,7 @@
     .end annotation
 .end field
 
-.field private final b:Lcom/facebook/stetho/json/ObjectMapper;
-
-.field private final c:Ljava/lang/Iterable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Iterable",
-            "<",
-            "Lcom/facebook/stetho/inspector/protocol/ChromeDevtoolsDomain;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
 
 # direct methods
@@ -49,10 +49,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
     .line 41
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->c:Ljava/lang/Iterable;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mIterablec:Ljava/lang/Iterable;
 
     .line 42
     return-void
@@ -66,24 +66,24 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mMapa:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->b:Lcom/facebook/stetho/json/ObjectMapper;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mObjectMapperb:Lcom/facebook/stetho/json/ObjectMapper;
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->c:Ljava/lang/Iterable;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mIterablec:Ljava/lang/Iterable;
 
     invoke-static {v0, v1}, Lcom/facebook/stetho/inspector/MethodDispatcher;->a(Lcom/facebook/stetho/json/ObjectMapper;Ljava/lang/Iterable;)Ljava/util/Map;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mMapa:Ljava/util/Map;
 
     .line 48
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/MethodDispatcher;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

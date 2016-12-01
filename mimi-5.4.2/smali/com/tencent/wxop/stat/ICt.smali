@@ -6,22 +6,22 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mContextb:Landroid/content/Context;
 
-.field final synthetic b:Landroid/content/Context;
+.field final synthetic mICyc:Lcom/tencent/wxop/stat/ICy;
 
-.field final synthetic c:Lcom/tencent/wxop/stat/ICy;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Ljava/lang/String;Landroid/content/Context;Lcom/tencent/wxop/stat/ICy;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICt;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICt;->mStringa:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/ICt;->b:Landroid/content/Context;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/ICt;->mContextb:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/tencent/wxop/stat/ICt;->c:Lcom/tencent/wxop/stat/ICy;
+    iput-object p3, p0, Lcom/tencent/wxop/stat/ICt;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,7 +91,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICt;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICt;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -164,7 +164,7 @@
 
     invoke-virtual {v1, v0}, Lcom/tencent/wxop/stat/b/ICb;->b(Ljava/lang/Throwable;)V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICt;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICt;->mContextb:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;Ljava/lang/Throwable;)V
 
@@ -195,11 +195,11 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICt;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICt;->mContextb:Landroid/content/Context;
 
     const/4 v1, 0x1
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICt;->c:Lcom/tencent/wxop/stat/ICy;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICt;->mICyc:Lcom/tencent/wxop/stat/ICy;
 
     invoke-static {v0, v1, v2}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;ZLcom/tencent/wxop/stat/ICy;)I
     :try_end_4

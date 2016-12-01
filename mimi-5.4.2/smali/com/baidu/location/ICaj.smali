@@ -11,19 +11,19 @@
 
 
 # instance fields
-.field private eq:Z
-
-.field private es:Z
-
-.field final et:Landroid/os/Handler;
-
 .field public eu:Lcom/baidu/location/ICu$ICa;
 
-.field private ev:Z
-
-.field private ew:Z
-
 .field public ex:Lcom/baidu/location/ICau$ICb;
+
+.field private isZeq:Z
+
+.field private isZes:Z
+
+.field private isZev:Z
+
+.field private isZew:Z
+
+.field final mHandleret:Landroid/os/Handler;
 
 
 # direct methods
@@ -52,19 +52,19 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaj;->es:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaj;->isZes:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->ew:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->isZew:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->ev:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->isZev:Z
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->eq:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaj;->isZeq:Z
 
     new-instance v0, Lcom/baidu/location/ICaj$ICb;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICaj$ICb;-><init>(Lcom/baidu/location/ICaj;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICaj;->et:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICaj;->mHandleret:Landroid/os/Handler;
 
     return-void
 .end method
@@ -250,11 +250,11 @@
     const-string/jumbo v1, "&cn=32"
 
     :goto_4
-    iget-boolean v3, p0, Lcom/baidu/location/ICaj;->es:Z
+    iget-boolean v3, p0, Lcom/baidu/location/ICaj;->isZes:Z
 
     if-eqz v3, :cond_d
 
-    iput-boolean v7, p0, Lcom/baidu/location/ICaj;->es:Z
+    iput-boolean v7, p0, Lcom/baidu/location/ICaj;->isZes:Z
 
     sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -374,7 +374,7 @@
     goto :goto_5
 
     :cond_d
-    iget-boolean v3, p0, Lcom/baidu/location/ICaj;->eq:Z
+    iget-boolean v3, p0, Lcom/baidu/location/ICaj;->isZeq:Z
 
     if-nez v3, :cond_9
 
@@ -439,7 +439,7 @@
 
     move-result-object v1
 
-    iput-boolean v8, p0, Lcom/baidu/location/ICaj;->eq:Z
+    iput-boolean v8, p0, Lcom/baidu/location/ICaj;->isZeq:Z
 
     goto/16 :goto_5
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+.field final synthetic mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICe;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICe;->mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICe;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment$ICe;->mDiscoverFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

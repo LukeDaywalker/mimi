@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+.field final synthetic mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 142
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     .line 143
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
@@ -62,14 +62,14 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 168
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->finish()V
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -101,7 +101,7 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
@@ -132,7 +132,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;)Lcom/wumii/android/mimi/ui/widgets/CropImageView;
 

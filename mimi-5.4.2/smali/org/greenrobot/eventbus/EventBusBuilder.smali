@@ -4,25 +4,25 @@
 
 
 # static fields
-.field private static final i:Ljava/util/concurrent/ExecutorService;
+.field private static final mExecutorServicei:Ljava/util/concurrent/ExecutorService;
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
-.field b:Z
+.field isZb:Z
 
-.field c:Z
+.field isZc:Z
 
-.field d:Z
+.field isZd:Z
 
-.field e:Z
+.field isZe:Z
 
-.field f:Z
+.field isZf:Z
 
-.field g:Ljava/util/concurrent/ExecutorService;
+.field mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
 
-.field h:Ljava/util/List;
+.field mListh:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/greenrobot/eventbus/EventBusBuilder;->i:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lorg/greenrobot/eventbus/EventBusBuilder;->mExecutorServicei:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -59,24 +59,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->a:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->isZa:Z
 
     .line 31
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->b:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->isZb:Z
 
     .line 32
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->c:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->isZc:Z
 
     .line 33
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->d:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->isZd:Z
 
     .line 35
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->f:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->isZf:Z
 
     .line 36
-    sget-object v0, Lorg/greenrobot/eventbus/EventBusBuilder;->i:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lorg/greenrobot/eventbus/EventBusBuilder;->mExecutorServicei:Ljava/util/concurrent/ExecutorService;
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->g:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBusBuilder;->mExecutorServiceg:Ljava/util/concurrent/ExecutorService;
 
     .line 40
     return-void

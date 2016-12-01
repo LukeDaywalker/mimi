@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static mArrayStringc:[Ljava/lang/String;
 
-.field private static b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private static mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private static c:[Ljava/lang/String;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mLoggera:Lorg/slf4j/Logger;
 
     .line 25
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 27
     const/16 v0, 0xa
@@ -101,7 +101,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->c:[Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mArrayStringc:[Ljava/lang/String;
 
     return-void
 .end method
@@ -123,7 +123,7 @@
     const/4 v1, 0x1
 
     .line 83
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Z)Ljava/io/File;
 
@@ -172,7 +172,7 @@
     if-nez v1, :cond_2
 
     .line 94
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Upgrade version error! Cache Dir has broken!"
 
@@ -210,7 +210,7 @@
     move-exception v5
 
     .line 102
-    sget-object v6, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->a:Lorg/slf4j/Logger;
+    sget-object v6, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -260,7 +260,7 @@
     .line 40
     const/4 v0, 0x2
 
-    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a()I
 
@@ -288,7 +288,7 @@
     const/4 v12, 0x1
 
     .line 44
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a()I
 
@@ -309,7 +309,7 @@
     if-ge v3, v13, :cond_5
 
     .line 50
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(I)V
 
@@ -317,7 +317,7 @@
     if-ne v3, v12, :cond_4
 
     .line 52
-    sget-object v4, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->c:[Ljava/lang/String;
+    sget-object v4, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mArrayStringc:[Ljava/lang/String;
 
     array-length v5, v4
 
@@ -332,7 +332,7 @@
 
     .line 54
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const/4 v1, 0x1
 
@@ -341,14 +341,14 @@
     move-result-object v0
 
     .line 55
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 56
-    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const/4 v7, 0x1
 
@@ -373,7 +373,7 @@
     move-exception v0
 
     .line 59
-    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -397,7 +397,7 @@
 
     .line 61
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;)Z
     :try_end_1
@@ -421,7 +421,7 @@
     invoke-static {}, Ljava/lang/System;->gc()V
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v6, v12}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;Z)Ljava/io/File;
 
@@ -462,7 +462,7 @@
     invoke-static {v7}, Lcom/crashlytics/android/Crashlytics;->a(Ljava/lang/Throwable;)V
 
     .line 68
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -486,7 +486,7 @@
 
     .line 70
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;)Z
     :try_end_2
@@ -528,7 +528,7 @@
 
     .line 79
     :cond_5
-    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    sget-object v0, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->mFileHelperb:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v0, v13}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(I)V
 

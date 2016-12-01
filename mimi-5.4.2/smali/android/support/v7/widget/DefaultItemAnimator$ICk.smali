@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v7/widget/RecyclerView$ICbg;
+.field final synthetic mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-.field final synthetic b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+.field final synthetic mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-.field final synthetic c:Landroid/support/v7/widget/DefaultItemAnimator;
+.field final synthetic mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
 
 # direct methods
@@ -17,11 +17,11 @@
 
     .prologue
     .line 197
-    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iput-object p1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iput-object p2, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-    iput-object p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+    iput-object p3, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     const/4 v0, 0x0
 
@@ -37,9 +37,9 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/DefaultItemAnimator;->g(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 205
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->b:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mViewPropertyAnimatorCompatb:Landroid/support/v4/view/ViewPropertyAnimatorCompat;
 
     const/4 v1, 0x0
 
@@ -64,25 +64,25 @@
     invoke-static {p1, v0}, Landroid/support/v4/view/ViewCompat;->c(Landroid/view/View;F)V
 
     .line 207
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/DefaultItemAnimator;->d(Landroid/support/v7/widget/RecyclerView$ICbg;)V
 
     .line 208
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
     invoke-static {v0}, Landroid/support/v7/widget/DefaultItemAnimator;->d(Landroid/support/v7/widget/DefaultItemAnimator;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iget-object v1, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 209
-    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->c:Landroid/support/v7/widget/DefaultItemAnimator;
+    iget-object v0, p0, Landroid/support/v7/widget/DefaultItemAnimator$ICk;->mDefaultItemAnimatorc:Landroid/support/v7/widget/DefaultItemAnimator;
 
     invoke-static {v0}, Landroid/support/v7/widget/DefaultItemAnimator;->e(Landroid/support/v7/widget/DefaultItemAnimator;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+.field final synthetic mSurveyOptionViewa:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbs;->a:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbs;->mSurveyOptionViewa:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

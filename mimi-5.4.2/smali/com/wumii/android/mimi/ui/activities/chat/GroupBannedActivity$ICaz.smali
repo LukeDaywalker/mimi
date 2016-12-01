@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
+.field final synthetic mGroupBannedActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->mGroupBannedActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,19 +30,19 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->mGroupBannedActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->mGroupBannedActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;->mGroupBannedActivitya:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/manager/GroupBannedManager$ICan;
 

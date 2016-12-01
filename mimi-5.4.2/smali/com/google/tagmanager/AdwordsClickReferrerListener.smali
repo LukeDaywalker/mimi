@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    iput-object p1, p0, Lcom/google/tagmanager/AdwordsClickReferrerListener;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/tagmanager/AdwordsClickReferrerListener;->mContexta:Landroid/content/Context;
 
     .line 17
     return-void
@@ -106,7 +106,7 @@
     if-eqz v0, :cond_0
 
     .line 35
-    iget-object v1, p0, Lcom/google/tagmanager/AdwordsClickReferrerListener;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/tagmanager/AdwordsClickReferrerListener;->mContexta:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/google/tagmanager/InstallReferrerUtil;->b(Landroid/content/Context;Ljava/lang/String;)V
 

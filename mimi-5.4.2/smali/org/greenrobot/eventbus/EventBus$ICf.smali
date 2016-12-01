@@ -4,7 +4,13 @@
 
 
 # instance fields
-.field final a:Ljava/util/List;
+.field isZb:Z
+
+.field isZc:Z
+
+.field isZf:Z
+
+.field final mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,15 +21,9 @@
     .end annotation
 .end field
 
-.field b:Z
+.field mObjecte:Ljava/lang/Object;
 
-.field c:Z
-
-.field d:Lorg/greenrobot/eventbus/Subscription;
-
-.field e:Ljava/lang/Object;
-
-.field f:Z
+.field mSubscriptiond:Lorg/greenrobot/eventbus/Subscription;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus$ICf;->a:Ljava/util/List;
+    iput-object v0, p0, Lorg/greenrobot/eventbus/EventBus$ICf;->mLista:Ljava/util/List;
 
     return-void
 .end method

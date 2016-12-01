@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+.field final synthetic mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,11 +32,11 @@
     .line 122
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->c(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)Ljava/lang/String;
 

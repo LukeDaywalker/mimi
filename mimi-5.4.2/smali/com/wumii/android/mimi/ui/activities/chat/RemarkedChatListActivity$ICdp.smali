@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+.field final synthetic mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 131
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;->mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;->mRemarkedChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;)V
 

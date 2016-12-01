@@ -7,13 +7,13 @@
 
 
 # static fields
-.field private static a:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
+.field private static mObjectb:Ljava/lang/Object;
 
-.field private static b:Ljava/lang/Object;
+.field private static mScreenResolutionDefaultProvidera:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
 
 
 # instance fields
-.field private final c:Landroid/content/Context;
+.field private final mContextc:Landroid/content/Context;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->b:Ljava/lang/Object;
+    sput-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->c:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mContextc:Landroid/content/Context;
 
     .line 46
     return-void
@@ -50,13 +50,13 @@
 
     .prologue
     .line 31
-    sget-object v1, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->b:Ljava/lang/Object;
+    sget-object v1, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 32
     :try_start_0
-    sget-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->a:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mScreenResolutionDefaultProvidera:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
 
     monitor-exit v1
 
@@ -78,13 +78,13 @@
 
     .prologue
     .line 23
-    sget-object v1, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->b:Ljava/lang/Object;
+    sget-object v1, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mObjectb:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 24
     :try_start_0
-    sget-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->a:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
+    sget-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mScreenResolutionDefaultProvidera:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
 
     if-nez v0, :cond_0
 
@@ -93,7 +93,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->a:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
+    sput-object v0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mScreenResolutionDefaultProvidera:Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;
 
     .line 27
     :cond_0
@@ -152,7 +152,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/ScreenResolutionDefaultProvider;->mContextc:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

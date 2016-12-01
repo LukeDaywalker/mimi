@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:I
+.field final synthetic mExtendableListViewc:Lcom/etsy/android/grid/ExtendableListView;
 
-.field final synthetic c:Lcom/etsy/android/grid/ExtendableListView;
+.field private mIa:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 2765
-    iput-object p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->c:Lcom/etsy/android/grid/ExtendableListView;
+    iput-object p1, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mExtendableListViewc:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,13 +39,13 @@
 
     .prologue
     .line 2769
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->c:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mExtendableListViewc:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-static {v0}, Lcom/etsy/android/grid/ExtendableListView;->g(Lcom/etsy/android/grid/ExtendableListView;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->a:I
+    iput v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mIa:I
 
     .line 2770
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 2773
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->c:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mExtendableListViewc:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView;->hasWindowFocus()Z
 
@@ -64,13 +64,13 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->c:Lcom/etsy/android/grid/ExtendableListView;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mExtendableListViewc:Lcom/etsy/android/grid/ExtendableListView;
 
     invoke-static {v0}, Lcom/etsy/android/grid/ExtendableListView;->h(Lcom/etsy/android/grid/ExtendableListView;)I
 
     move-result v0
 
-    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->a:I
+    iget v1, p0, Lcom/etsy/android/grid/ExtendableListView$ICj;->mIa:I
 
     if-ne v0, v1, :cond_0
 

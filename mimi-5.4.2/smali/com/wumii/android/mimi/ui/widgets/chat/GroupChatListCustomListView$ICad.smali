@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic mGroupChatListCustomListViewc:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
-.field final synthetic b:I
+.field final synthetic mIb:I
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+.field final synthetic mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mGroupChatListCustomListViewc:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->a:Landroid/view/View;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mViewa:Landroid/view/View;
 
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->b:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mIb:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mGroupChatListCustomListViewc:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
@@ -47,15 +47,15 @@
     if-eqz v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mGroupChatListCustomListViewc:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->a:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mViewa:Landroid/view/View;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->b:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;->mIb:I
 
     invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;->a(Landroid/view/View;I)V
 

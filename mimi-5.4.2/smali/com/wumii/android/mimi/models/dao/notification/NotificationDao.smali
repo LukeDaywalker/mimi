@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+.field private mCircleChangeNotificationDaod:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
-.field private c:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
+.field private mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
-.field private d:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+.field private mSurveyNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -44,21 +44,21 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
     .line 39
     new-instance v0, Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->c:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSurveyNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
     .line 40
     new-instance v0, Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->d:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mCircleChangeNotificationDaod:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
     .line 41
     return-void
@@ -202,7 +202,7 @@
     move-exception v1
 
     .line 89
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -328,7 +328,7 @@
     if-ne v0, v8, :cond_2
 
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
     invoke-virtual {v0, v7}, Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
@@ -355,7 +355,7 @@
 
     .line 77
     :try_start_1
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -388,7 +388,7 @@
     if-ne v0, v8, :cond_3
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->c:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSurveyNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
     invoke-virtual {v0, v7}, Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/notification/SurveyNotification;
 
@@ -403,7 +403,7 @@
     if-ne v0, v8, :cond_4
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->d:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mCircleChangeNotificationDaod:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
     invoke-virtual {v0, v7}, Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/notification/CircleChangeNotification;
 
@@ -460,7 +460,7 @@
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
     check-cast p1, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
@@ -498,12 +498,12 @@
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;->a()V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->c:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSurveyNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;->a()V
 
@@ -545,7 +545,7 @@
     if-eqz v2, :cond_1
 
     .line 112
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->b:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSecretNotificationDaob:Lcom/wumii/android/mimi/models/dao/notification/SecretNotificationDao;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
@@ -562,7 +562,7 @@
 
     .line 121
     :try_start_1
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -589,7 +589,7 @@
     if-eqz v2, :cond_2
 
     .line 114
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->c:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mSurveyNotificationDaoc:Lcom/wumii/android/mimi/models/dao/notification/SurveyNotificationDao;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SurveyNotification;
 
@@ -618,7 +618,7 @@
     if-eqz v2, :cond_0
 
     .line 116
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->d:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/dao/notification/NotificationDao;->mCircleChangeNotificationDaod:Lcom/wumii/android/mimi/models/dao/notification/CircleChangeNotificationDao;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/CircleChangeNotification;
 

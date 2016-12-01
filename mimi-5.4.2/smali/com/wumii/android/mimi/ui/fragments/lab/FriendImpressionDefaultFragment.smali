@@ -7,11 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/Button;
+.field private mButtona:Landroid/widget/Button;
 
-.field private b:Landroid/widget/TextView;
-
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -21,6 +19,8 @@
         }
     .end annotation
 .end field
+
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     return-object p1
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -94,7 +94,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
@@ -127,7 +127,7 @@
     invoke-direct {v1}, Ljava/util/Random;-><init>()V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -138,9 +138,9 @@
     move-result-object v2
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -158,13 +158,13 @@
 
     .line 69
     :goto_0
-    invoke-static {v2, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -175,9 +175,9 @@
     if-le v3, v4, :cond_0
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -238,7 +238,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->a:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mButtona:Landroid/widget/Button;
 
     .line 34
     const v0, 0x7f0b0215
@@ -249,7 +249,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mTextViewb:Landroid/widget/TextView;
 
     .line 37
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -268,10 +268,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mListc:Ljava/util/List;
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mTextViewb:Landroid/widget/TextView;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->c()Ljava/lang/String;
 
@@ -280,7 +280,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->a:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->mButtona:Landroid/widget/Button;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;
 

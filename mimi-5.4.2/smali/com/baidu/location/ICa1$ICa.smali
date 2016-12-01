@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICa1;
+.field final synthetic mICa1a:Lcom/baidu/location/ICa1;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/ICa1;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICa1$ICa;->a:Lcom/baidu/location/ICa1;
+    iput-object p1, p0, Lcom/baidu/location/ICa1$ICa;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -51,7 +51,7 @@
 
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICa1$ICa;->a:Lcom/baidu/location/ICa1;
+    iget-object v1, p0, Lcom/baidu/location/ICa1$ICa;->mICa1a:Lcom/baidu/location/ICa1;
 
     invoke-static {v1}, Lcom/baidu/location/ICa1;->if(Lcom/baidu/location/ICa1;)Ljava/lang/String;
 

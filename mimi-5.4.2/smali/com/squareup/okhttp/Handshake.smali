@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
-
-.field private final b:Ljava/util/List;
+.field private final mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -17,7 +15,7 @@
     .end annotation
 .end field
 
-.field private final c:Ljava/util/List;
+.field private final mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -27,6 +25,8 @@
         }
     .end annotation
 .end field
+
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -52,13 +52,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 42
-    iput-object p1, p0, Lcom/squareup/okhttp/Handshake;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/Handshake;->mStringa:Ljava/lang/String;
 
     .line 43
-    iput-object p2, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iput-object p2, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     .line 44
-    iput-object p3, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iput-object p3, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     .line 45
     return-void
@@ -157,7 +157,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     return-object v0
 .end method
@@ -186,7 +186,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -194,7 +194,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -232,7 +232,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     return-object v0
 .end method
@@ -242,7 +242,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -250,7 +250,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -295,9 +295,9 @@
     check-cast p1, Lcom/squareup/okhttp/Handshake;
 
     .line 108
-    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->mStringa:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -305,9 +305,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     .line 109
     invoke-interface {v1, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
@@ -316,9 +316,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
-    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v2, p1, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     .line 110
     invoke-interface {v1, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
@@ -338,7 +338,7 @@
     .prologue
     .line 114
     .line 115
-    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Handshake;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -349,7 +349,7 @@
     .line 116
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->b:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->mListb:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
 
@@ -360,7 +360,7 @@
     .line 117
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->c:Ljava/util/List;
+    iget-object v1, p0, Lcom/squareup/okhttp/Handshake;->mListc:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
 

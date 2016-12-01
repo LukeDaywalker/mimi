@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
+.field final synthetic mICja:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 124
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->mICja:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,19 +30,19 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->mICja:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->c()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->mICja:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICk;->mICja:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;)Ljava/lang/String;
 

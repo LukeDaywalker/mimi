@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+.field final synthetic mBaseMimiActivityb:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic mStringa:Ljava/lang/String;
 
-.field final synthetic d:Ljava/lang/String;
+.field final synthetic mStringc:Ljava/lang/String;
 
-.field final synthetic e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+.field final synthetic mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringa:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->b:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iput-object p3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mBaseMimiActivityb:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->c:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringc:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->d:Ljava/lang/String;
+    iput-object p5, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringd:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,9 +55,9 @@
     if-eqz v0, :cond_0
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringa:Ljava/lang/String;
 
     invoke-static {v0, p2, v1, v3}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/manager/AuthenticatorManager;Lcom/wumii/android/mimi/network/HttpJsonResponse;Ljava/lang/String;Z)V
 
@@ -90,11 +90,11 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->b:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mBaseMimiActivityb:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
@@ -120,15 +120,15 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->b:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mBaseMimiActivityb:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringa:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->c:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringc:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->d:Ljava/lang/String;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mStringd:Ljava/lang/String;
 
     invoke-static {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/manager/AuthenticatorManager;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -140,14 +140,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
 
@@ -175,7 +175,7 @@
     .line 112
     const-string/jumbo v1, "net_signs"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
 
@@ -188,7 +188,7 @@
     .line 113
     const-string/jumbo v1, "sim_operator"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
 
@@ -201,7 +201,7 @@
     .line 114
     const-string/jumbo v1, "ip"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
 
@@ -215,7 +215,7 @@
     :try_start_0
     sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->v:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -269,7 +269,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->e:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AuthenticatorManager$ICg;->mAuthenticatorManagere:Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->f:Landroid/content/Context;
 

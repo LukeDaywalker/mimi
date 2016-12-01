@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+.field final synthetic mDataLayerPersistentStoreImpla:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 388
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->a:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->mDataLayerPersistentStoreImpla:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
     .line 390
     const/4 v0, 0x0
@@ -330,7 +330,7 @@
     move-exception v1
 
     .line 439
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->a:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICr;->mDataLayerPersistentStoreImpla:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
     invoke-static {v1}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->b(Lcom/google/tagmanager/DataLayerPersistentStoreImpl;)Landroid/content/Context;
 

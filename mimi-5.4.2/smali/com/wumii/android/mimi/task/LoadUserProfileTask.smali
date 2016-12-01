@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+.field private isZd:Z
 
-.field private d:Z
+.field private mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
 
 # direct methods
@@ -31,12 +31,12 @@
     invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     if-eqz v0, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -229,12 +229,12 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     if-eqz v0, :cond_1
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     invoke-interface {v0, v3, v4}, Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;->a(Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;)V
 
@@ -263,10 +263,10 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j()V
 
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     .line 33
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->d:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->isZd:Z
 
     .line 34
     return-void
@@ -289,12 +289,12 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->a:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->mICaua:Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -352,7 +352,7 @@
 
     .prologue
     .line 38
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/LoadUserProfileTask;->isZd:Z
 
     if-eqz v0, :cond_0
 

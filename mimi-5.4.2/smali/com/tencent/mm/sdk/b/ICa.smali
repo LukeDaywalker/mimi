@@ -5,13 +5,13 @@
 # static fields
 .field private static level:I
 
+.field private static mICar:Lcom/tencent/mm/sdk/b/ICa$ICa;
+
+.field private static mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
+
+.field private static final mStringt:Ljava/lang/String;
+
 .field public static q:Lcom/tencent/mm/sdk/b/ICd;
-
-.field private static r:Lcom/tencent/mm/sdk/b/ICa$ICa;
-
-.field private static s:Lcom/tencent/mm/sdk/b/ICa$ICa;
-
-.field private static final t:Ljava/lang/String;
 
 
 # direct methods
@@ -26,9 +26,9 @@
 
     invoke-direct {v0}, Lcom/tencent/mm/sdk/b/ICb;-><init>()V
 
-    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->r:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICar:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
-    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -296,7 +296,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->t:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/mm/sdk/b/ICa;->mStringt:Ljava/lang/String;
 
     return-void
 .end method
@@ -314,11 +314,11 @@
 .method public static varargs a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 4
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-interface {v0}, Lcom/tencent/mm/sdk/b/ICa$ICa;->h()I
 
@@ -342,7 +342,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v2, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -378,11 +378,11 @@
 .method public static b(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-interface {v0}, Lcom/tencent/mm/sdk/b/ICa$ICa;->h()I
 
@@ -401,7 +401,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -430,11 +430,11 @@
 .method public static c(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-interface {v0}, Lcom/tencent/mm/sdk/b/ICa$ICa;->h()I
 
@@ -453,7 +453,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -482,11 +482,11 @@
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v0, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-interface {v0}, Lcom/tencent/mm/sdk/b/ICa$ICa;->h()I
 
@@ -505,7 +505,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->s:Lcom/tencent/mm/sdk/b/ICa$ICa;
+    sget-object v1, Lcom/tencent/mm/sdk/b/ICa;->mICas:Lcom/tencent/mm/sdk/b/ICa$ICa;
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 

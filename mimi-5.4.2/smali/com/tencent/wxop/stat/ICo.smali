@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICo;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICo;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,17 +35,17 @@
 
     invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICz;->h()V
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->mContexta:Landroid/content/Context;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/tencent/wxop/stat/b/ICl;->a(Landroid/content/Context;Z)I
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICam;->a(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICam;
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICl;->b(Landroid/content/Context;)Lcom/tencent/wxop/stat/ICl;
 
@@ -69,7 +69,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICo;->mContexta:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICx;->d(Landroid/content/Context;)V
 

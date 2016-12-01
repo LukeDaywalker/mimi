@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:I
+.field mIb:I
 
-.field c:I
+.field mIc:I
 
 
 # direct methods
@@ -25,15 +25,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 115
-    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->a:I
+    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mIa:I
 
     .line 116
-    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->b:I
+    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mIb:I
 
     .line 117
     const/4 v0, 0x1
 
-    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->c:I
+    iput v0, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mIc:I
 
     return-void
 .end method

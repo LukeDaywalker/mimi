@@ -7,41 +7,41 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+.field private isZx:Z
 
-.field private e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+.field private mButtonq:Landroid/widget/Button;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+.field private mICby:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
-.field private k:Landroid/view/ViewGroup;
+.field private mICzw:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
 
-.field private l:Landroid/widget/TextView;
+.field private mImageViewo:Landroid/widget/ImageView;
 
-.field private m:Landroid/widget/TextView;
+.field private mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-.field private n:Landroid/view/View;
+.field private mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-.field private o:Landroid/widget/ImageView;
+.field private mOrganizationV2v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-.field private p:Landroid/widget/TextView;
+.field private mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-.field private q:Landroid/widget/Button;
+.field private mRunnablet:Ljava/lang/Runnable;
 
-.field private r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+.field private mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
-.field private s:Landroid/view/inputmethod/InputMethodManager;
+.field private mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
-.field private t:Ljava/lang/Runnable;
+.field private mStringu:Ljava/lang/String;
 
-.field private u:Ljava/lang/String;
+.field private mTextViewl:Landroid/widget/TextView;
 
-.field private v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mTextViewm:Landroid/widget/TextView;
 
-.field private w:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private x:Z
+.field private mViewGroupk:Landroid/view/ViewGroup;
 
-.field private y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+.field private mViewn:Landroid/view/View;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mICby:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mOrganizationV2v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     return-object p1
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     return-object v0
 .end method
@@ -131,7 +131,7 @@
     const/4 v2, 0x0
 
     .line 295
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -146,7 +146,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 296
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->o:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mImageViewo:Landroid/widget/ImageView;
 
     if-eqz p3, :cond_5
 
@@ -156,7 +156,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 298
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     if-nez p1, :cond_1
 
@@ -169,7 +169,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 300
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     const-string/jumbo v1, ""
 
@@ -179,7 +179,7 @@
     if-eqz p1, :cond_6
 
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     const v1, 0x7f0601ce
 
@@ -228,7 +228,7 @@
     invoke-virtual {v1, v3, v2, v0, v5}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 323
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -237,17 +237,17 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 324
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setHighlightColor(I)V
 
     .line 326
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 328
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     const v1, 0x7f0601cf
 
@@ -279,7 +279,7 @@
     if-eqz p2, :cond_3
 
     .line 330
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     const v1, 0x7f0601d0
 
@@ -328,7 +328,7 @@
     invoke-virtual {v1, v3, v2, v0, v5}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 350
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -337,12 +337,12 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 351
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setHighlightColor(I)V
 
     .line 353
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -364,7 +364,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mICzw:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
 
     return-object v0
 .end method
@@ -384,9 +384,9 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->c()V
 
     .line 272
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->getWindowToken()Landroid/os/IBinder;
 
@@ -417,12 +417,12 @@
     const/4 v4, 0x0
 
     .line 367
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 368
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewm:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -434,7 +434,7 @@
     if-eqz v0, :cond_0
 
     .line 371
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -481,7 +481,7 @@
 
     .line 378
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewm:Landroid/widget/TextView;
 
     const v1, 0x7f0602a7
 
@@ -498,7 +498,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 379
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -510,7 +510,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     return-object v0
 .end method
@@ -520,7 +520,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     return-object v0
 .end method
@@ -530,7 +530,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     return-object v0
 .end method
@@ -544,36 +544,36 @@
     const/4 v2, 0x0
 
     .line 358
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;->a(Ljava/util/List;)V
 
     .line 359
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->requestFocus()Z
 
     .line 360
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->b(Landroid/view/View;)V
 
     .line 361
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v2, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a(ZZZ)V
 
     .line 362
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 363
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -596,7 +596,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     return-object v0
 .end method
@@ -606,7 +606,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->q:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mButtonq:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -616,7 +616,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
 .end method
@@ -626,7 +626,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->u:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mStringu:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -656,7 +656,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mOrganizationV2v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     return-object v0
 .end method
@@ -688,7 +688,7 @@
 
     .prologue
     .line 573
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->x:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->isZx:Z
 
     if-eqz v0, :cond_0
 
@@ -769,16 +769,16 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->getQuery()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->u:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mStringu:Ljava/lang/String;
 
     .line 278
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->t:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mRunnablet:Ljava/lang/Runnable;
 
     if-nez v0, :cond_0
 
@@ -787,7 +787,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICw;-><init>(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->t:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mRunnablet:Ljava/lang/Runnable;
 
     .line 290
     :cond_0
@@ -795,7 +795,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->t:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mRunnablet:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -804,7 +804,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->t:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mRunnablet:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x1f4
 
@@ -888,7 +888,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mICzw:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -901,7 +901,7 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->s:Landroid/view/inputmethod/InputMethodManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
     .line 113
     return-void
@@ -962,7 +962,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->x:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->isZx:Z
 
     .line 121
     const v0, 0x7f0300c7
@@ -982,7 +982,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     .line 123
     const v0, 0x7f0b020c
@@ -993,10 +993,10 @@
 
     check-cast v0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     invoke-virtual {v0, v3}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setPinHeaders(Z)V
 
@@ -1009,17 +1009,17 @@
 
     invoke-direct {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->setOnSearchOrgFooterViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->addFooterView(Landroid/view/View;)V
 
@@ -1030,10 +1030,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     const v2, 0x7f0b020e
 
@@ -1043,10 +1043,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewp:Landroid/widget/TextView;
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     const v2, 0x7f0b020d
 
@@ -1056,10 +1056,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->o:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mImageViewo:Landroid/widget/ImageView;
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     const v2, 0x7f0b020f
 
@@ -1069,10 +1069,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->q:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mButtonq:Landroid/widget/Button;
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->q:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mButtonq:Landroid/widget/Button;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICk;
 
@@ -1089,7 +1089,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     .line 145
     const v0, 0x7f0b0211
@@ -1100,10 +1100,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->l:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewl:Landroid/widget/TextView;
 
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewl:Landroid/widget/TextView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICr;
 
@@ -1120,10 +1120,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewm:Landroid/widget/TextView;
 
     .line 154
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewm:Landroid/widget/TextView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICs;
 
@@ -1140,17 +1140,17 @@
 
     invoke-direct {v0, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICt;
 
@@ -1159,7 +1159,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
 
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICu;
 
@@ -1168,7 +1168,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setOnSearchBoxClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 230
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     const v2, 0x7f0602ab
 
@@ -1179,14 +1179,14 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setHint(Ljava/lang/String;)V
 
     .line 231
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mICby:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;)V
 
     .line 232
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mPinnedHeaderListViewe:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICv;
 
@@ -1195,37 +1195,37 @@
     invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 243
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->x:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->isZx:Z
 
     if-eqz v0, :cond_0
 
     .line 244
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 246
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->n:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewn:Landroid/view/View;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->q:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mButtonq:Landroid/widget/Button;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 249
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->k:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mViewGroupk:Landroid/view/ViewGroup;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 250
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 251
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->m:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewm:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1253,9 +1253,9 @@
 
     .prologue
     .line 265
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->s:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mInputMethodManagers:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->getWindowToken()Landroid/os/IBinder;
 
@@ -1350,7 +1350,7 @@
     invoke-direct {p0, v1, v0, v1}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->a(ZZZ)V
 
     .line 529
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventCircleSuggestions;->d()Ljava/util/List;
 
@@ -1359,9 +1359,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;->a(Ljava/util/List;)V
 
     .line 530
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mMimiSearchViewd:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->getQuery()Ljava/lang/String;
 
@@ -1370,7 +1370,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b(Ljava/lang/String;)V
 
     .line 532
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mTextViewl:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -1448,7 +1448,7 @@
     if-eqz v0, :cond_4
 
     .line 496
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->d()Ljava/util/List;
 
@@ -1457,7 +1457,7 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;->a(Ljava/util/List;)V
 
     .line 498
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSearchOrgFooterViewj:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
     invoke-virtual {v0, v1, v1, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a(ZZZ)V
 
@@ -1530,7 +1530,7 @@
 
     .line 511
     :cond_5
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->r:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mSectionCircleListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/SectionCircleListAdapter;->a(Ljava/util/List;)V
 
@@ -1549,7 +1549,7 @@
     if-eqz v0, :cond_0
 
     .line 538
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->mICzw:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICz;->h()V
 
@@ -1620,7 +1620,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1662,7 +1662,7 @@
     if-eqz v0, :cond_0
 
     .line 562
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->x:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->isZx:Z
 
     if-eqz v0, :cond_1
 

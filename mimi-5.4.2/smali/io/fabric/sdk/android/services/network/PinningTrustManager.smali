@@ -7,13 +7,11 @@
 
 
 # instance fields
-.field private final a:[Ljavax/net/ssl/TrustManager;
+.field private final mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
-.field private final b:Lio/fabric/sdk/android/services/network/SystemKeyStore;
+.field private final mJc:J
 
-.field private final c:J
-
-.field private final d:Ljava/util/List;
+.field private final mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -22,7 +20,7 @@
     .end annotation
 .end field
 
-.field private final e:Ljava/util/Set;
+.field private final mSete:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -32,6 +30,8 @@
         }
     .end annotation
 .end field
+
+.field private final mSystemKeyStoreb:Lio/fabric/sdk/android/services/network/SystemKeyStore;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->d:Ljava/util/List;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mListd:Ljava/util/List;
 
     .line 77
     new-instance v0, Ljava/util/HashSet;
@@ -58,24 +58,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->e:Ljava/util/Set;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mSete:Ljava/util/Set;
 
     .line 91
     invoke-direct {p0, p1}, Lio/fabric/sdk/android/services/network/PinningTrustManager;->a(Lio/fabric/sdk/android/services/network/SystemKeyStore;)[Ljavax/net/ssl/TrustManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->a:[Ljavax/net/ssl/TrustManager;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
     .line 92
-    iput-object p1, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->b:Lio/fabric/sdk/android/services/network/SystemKeyStore;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mSystemKeyStoreb:Lio/fabric/sdk/android/services/network/SystemKeyStore;
 
     .line 93
     invoke-interface {p2}, Lio/fabric/sdk/android/services/network/PinningInfoProvider;->d()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->c:J
+    iput-wide v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mJc:J
 
     .line 95
     invoke-interface {p2}, Lio/fabric/sdk/android/services/network/PinningInfoProvider;->c()[Ljava/lang/String;
@@ -92,7 +92,7 @@
     aget-object v3, v1, v0
 
     .line 96
-    iget-object v4, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->d:Ljava/util/List;
+    iget-object v4, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mListd:Ljava/util/List;
 
     invoke-direct {p0, v3}, Lio/fabric/sdk/android/services/network/PinningTrustManager;->a(Ljava/lang/String;)[B
 
@@ -117,7 +117,7 @@
     const-wide v8, 0x39ef8b000L
 
     .line 141
-    iget-wide v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->c:J
+    iget-wide v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mJc:J
 
     const-wide/16 v2, -0x1
 
@@ -129,7 +129,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->c:J
+    iget-wide v2, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mJc:J
 
     sub-long/2addr v0, v2
 
@@ -158,7 +158,7 @@
 
     move-result-wide v4
 
-    iget-wide v6, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->c:J
+    iget-wide v6, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mJc:J
 
     sub-long/2addr v4, v6
 
@@ -200,7 +200,7 @@
 
     .line 151
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->b:Lio/fabric/sdk/android/services/network/SystemKeyStore;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mSystemKeyStoreb:Lio/fabric/sdk/android/services/network/SystemKeyStore;
 
     invoke-static {p1, v0}, Lio/fabric/sdk/android/services/network/CertificateChainCleaner;->a([Ljava/security/cert/X509Certificate;Lio/fabric/sdk/android/services/network/SystemKeyStore;)[Ljava/security/cert/X509Certificate;
 
@@ -244,7 +244,7 @@
 
     .prologue
     .line 133
-    iget-object v2, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->a:[Ljavax/net/ssl/TrustManager;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mArrayTrustManagera:[Ljavax/net/ssl/TrustManager;
 
     array-length v3, v2
 
@@ -301,7 +301,7 @@
     move-result-object v1
 
     .line 119
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->d:Ljava/util/List;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -427,7 +427,7 @@
     move-result-object v0
 
     .line 103
-    iget-object v1, p1, Lio/fabric/sdk/android/services/network/SystemKeyStore;->a:Ljava/security/KeyStore;
+    iget-object v1, p1, Lio/fabric/sdk/android/services/network/SystemKeyStore;->mKeyStorea:Ljava/security/KeyStore;
 
     invoke-virtual {v0, v1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
@@ -487,7 +487,7 @@
     const/4 v2, 0x0
 
     .line 170
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->e:Ljava/util/Set;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mSete:Ljava/util/Set;
 
     aget-object v1, p1, v2
 
@@ -509,7 +509,7 @@
     invoke-direct {p0, p1}, Lio/fabric/sdk/android/services/network/PinningTrustManager;->a([Ljava/security/cert/X509Certificate;)V
 
     .line 179
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->e:Ljava/util/Set;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/PinningTrustManager;->mSete:Ljava/util/Set;
 
     aget-object v1, p1, v2
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/b/Pro;
+.field final synthetic mProa:Lcom/tencent/connect/b/Pro;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 367
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICc;->a:Lcom/tencent/connect/b/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICc;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -89,7 +89,7 @@
     if-nez v0, :cond_0
 
     .line 383
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->g(Lcom/tencent/connect/b/Pro;)Lcom/tencent/tauth/Pro$ICb;
 
@@ -113,7 +113,7 @@
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
     .line 380
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->e(Lcom/tencent/connect/b/Pro;)V
 
@@ -123,7 +123,7 @@
 
     .line 385
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->e(Lcom/tencent/connect/b/Pro;)V
 
@@ -131,7 +131,7 @@
 
     .line 389
     :cond_1
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->a:Lcom/tencent/connect/b/Pro;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICc;->mProa:Lcom/tencent/connect/b/Pro;
 
     invoke-static {v0}, Lcom/tencent/connect/b/Pro;->g(Lcom/tencent/connect/b/Pro;)Lcom/tencent/tauth/Pro$ICb;
 

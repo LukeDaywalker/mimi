@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+.field final synthetic mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 113
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;->mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;->mNearbyInfoSettingActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->g()V
 

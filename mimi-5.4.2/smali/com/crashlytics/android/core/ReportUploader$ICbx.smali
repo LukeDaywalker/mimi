@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/core/ReportUploader;
+.field private final mFb:F
 
-.field private final b:F
+.field final synthetic mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
 
 # direct methods
@@ -15,12 +15,12 @@
 
     .prologue
     .line 124
-    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->a:Lcom/crashlytics/android/core/ReportUploader;
+    iput-object p1, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/services/common/BackgroundPriorityRunnable;-><init>()V
 
     .line 125
-    iput p2, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->b:F
+    iput p2, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mFb:F
 
     .line 126
     return-void
@@ -47,7 +47,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->b:F
+    iget v3, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mFb:F
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -66,7 +66,7 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 144
-    iget v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->b:F
+    iget v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mFb:F
 
     const/4 v1, 0x0
 
@@ -76,7 +76,7 @@
 
     .line 146
     :try_start_0
-    iget v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->b:F
+    iget v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mFb:F
 
     const/high16 v1, 0x447a0000    # 1000.0f
 
@@ -100,7 +100,7 @@
     move-result-object v2
 
     .line 155
-    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->a:Lcom/crashlytics/android/core/ReportUploader;
+    iget-object v1, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
     invoke-virtual {v1}, Lcom/crashlytics/android/core/ReportUploader;->a()Ljava/util/List;
 
@@ -294,7 +294,7 @@
     check-cast v0, Lcom/crashlytics/android/core/Report;
 
     .line 190
-    iget-object v3, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->a:Lcom/crashlytics/android/core/ReportUploader;
+    iget-object v3, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
     invoke-virtual {v3, v0}, Lcom/crashlytics/android/core/ReportUploader;->a(Lcom/crashlytics/android/core/Report;)Z
 
@@ -302,7 +302,7 @@
 
     .line 194
     :cond_4
-    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->a:Lcom/crashlytics/android/core/ReportUploader;
+    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/core/ReportUploader;->a()Ljava/util/List;
 
@@ -421,7 +421,7 @@
 
     .line 137
     :goto_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->a:Lcom/crashlytics/android/core/ReportUploader;
+    iget-object v0, p0, Lcom/crashlytics/android/core/ReportUploader$ICbx;->mReportUploadera:Lcom/crashlytics/android/core/ReportUploader;
 
     const/4 v1, 0x0
 

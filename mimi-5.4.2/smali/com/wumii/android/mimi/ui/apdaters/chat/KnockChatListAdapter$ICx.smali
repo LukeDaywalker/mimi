@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field final synthetic mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     .prologue
     .line 100
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mImageViewb:Landroid/widget/ImageView;
 
     .line 102
     const v0, 0x7f0b0089
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewe:Landroid/widget/TextView;
 
     .line 103
     const v0, 0x7f0b01a6
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     .line 104
     const v0, 0x7f0b01a2
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewd:Landroid/widget/TextView;
 
     .line 105
     return-void
@@ -84,7 +84,7 @@
     const/4 v1, 0x0
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -119,13 +119,13 @@
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;)I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;)I
 
@@ -136,12 +136,12 @@
     .line 129
     :cond_0
     :goto_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -173,7 +173,7 @@
     move-result-wide v4
 
     .line 135
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mKnockChatListAdaptera:Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;)Landroid/content/Context;
 
@@ -184,20 +184,20 @@
     move-result-object v1
 
     .line 136
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 137
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     invoke-static {v2, v1}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
     .line 142
     :goto_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/NearbySingleChat;->getNearbyConverser()Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -218,7 +218,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->b:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mImageViewb:Landroid/widget/ImageView;
 
     invoke-static {}, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
@@ -234,7 +234,7 @@
     if-nez v0, :cond_3
 
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewd:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -247,7 +247,7 @@
 
     .line 117
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -267,7 +267,7 @@
 
     .line 120
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
@@ -287,7 +287,7 @@
 
     .line 139
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v2, ""
 
@@ -297,7 +297,7 @@
 
     .line 149
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v4, v5}, Lcom/wumii/android/mimi/util/Utils;->c(J)Ljava/lang/String;
 
@@ -306,7 +306,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 150
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/KnockChatListAdapter$ICx;->mTextViewd:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 

@@ -4,55 +4,55 @@
 
 
 # instance fields
-.field private A:Z
+.field private isZA:Z
 
-.field private final B:Ljava/lang/Runnable;
+.field isZc:Z
 
-.field a:Landroid/support/v7/widget/OrientationHelper;
+.field private isZo:Z
 
-.field b:Landroid/support/v7/widget/OrientationHelper;
+.field private isZr:Z
 
-.field c:Z
+.field private isZs:Z
 
-.field d:I
+.field private isZz:Z
 
-.field e:I
+.field private mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-.field f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+.field private mBitSetp:Ljava/util/BitSet;
 
-.field private g:I
+.field private final mICbky:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;
 
-.field private k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+.field mId:I
 
-.field private l:I
+.field mIe:I
 
-.field private m:I
+.field private mIg:I
 
-.field private n:Landroid/support/v7/widget/LayoutState;
+.field private mIl:I
 
-.field private o:Z
+.field private mIm:I
 
-.field private p:Ljava/util/BitSet;
+.field private mIq:I
 
-.field private q:I
+.field private mIu:I
 
-.field private r:Z
+.field private mIv:I
 
-.field private s:Z
+.field private mIw:I
 
-.field private t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+.field private mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-.field private u:I
+.field mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-.field private v:I
+.field mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
-.field private w:I
+.field mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
-.field private final x:Landroid/graphics/Rect;
+.field private final mRectx:Landroid/graphics/Rect;
 
-.field private final y:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;
+.field private final mRunnableB:Ljava/lang/Runnable;
 
-.field private z:Z
+.field private mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
 
 # direct methods
@@ -71,7 +71,7 @@
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->q:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIq:I
 
     if-eqz v0, :cond_0
 
@@ -90,7 +90,7 @@
 
     .line 239
     :cond_1
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_2
 
@@ -121,7 +121,7 @@
     if-eqz v0, :cond_3
 
     .line 249
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a()V
 
@@ -152,7 +152,7 @@
 
     .line 255
     :cond_3
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     if-nez v0, :cond_4
 
@@ -163,7 +163,7 @@
 
     .line 258
     :cond_4
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_5
 
@@ -171,7 +171,7 @@
 
     .line 259
     :goto_2
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     add-int/lit8 v6, v3, 0x1
 
@@ -183,10 +183,10 @@
     if-nez v5, :cond_6
 
     .line 262
-    iput-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iput-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     .line 263
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     add-int/lit8 v1, v3, 0x1
 
@@ -205,9 +205,9 @@
 
     .line 266
     :cond_6
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget v3, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->a:I
+    iget v3, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIa:I
 
     mul-int/lit8 v0, v0, -0x1
 
@@ -219,9 +219,9 @@
     if-nez v0, :cond_7
 
     .line 270
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget v2, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->a:I
+    iget v2, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIa:I
 
     invoke-virtual {v0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(I)I
 
@@ -236,9 +236,9 @@
 
     .line 272
     :cond_7
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->a:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIa:I
 
     add-int/lit8 v0, v0, 0x1
 
@@ -252,21 +252,21 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     if-nez v0, :cond_0
 
     .line 513
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     invoke-static {p0, v0}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/support/v7/widget/RecyclerView$ICar;I)Landroid/support/v7/widget/OrientationHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     .line 514
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     rsub-int/lit8 v0, v0, 0x1
 
@@ -274,14 +274,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     .line 516
     new-instance v0, Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {v0}, Landroid/support/v7/widget/LayoutState;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     .line 518
     :cond_0
@@ -295,7 +295,7 @@
     const/4 v0, 0x1
 
     .line 527
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-eq v1, v0, :cond_0
 
@@ -307,9 +307,9 @@
 
     .line 528
     :cond_0
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZo:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     .line 532
     :goto_0
@@ -317,12 +317,12 @@
 
     .line 530
     :cond_1
-    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZo:Z
 
     if-nez v1, :cond_2
 
     :goto_1
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     goto :goto_0
 
@@ -445,13 +445,13 @@
     .line 1392
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->p:Ljava/util/BitSet;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mBitSetp:Ljava/util/BitSet;
 
     const/4 v3, 0x0
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     const/4 v5, 0x1
 
@@ -460,7 +460,7 @@
     .line 1397
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v3, 0x1
 
@@ -469,11 +469,11 @@
     .line 1398
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     move-object/from16 v0, p2
 
-    iget v3, v0, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v3, v0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     add-int/2addr v2, v3
 
@@ -483,7 +483,7 @@
     :goto_0
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     move-object/from16 v0, p0
 
@@ -492,13 +492,13 @@
     .line 1410
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v2, :cond_2
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -520,7 +520,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->p:Ljava/util/BitSet;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mBitSetp:Ljava/util/BitSet;
 
     invoke-virtual {v3}, Ljava/util/BitSet;->isEmpty()Z
 
@@ -554,7 +554,7 @@
     .line 1418
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v2, v6}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->c(I)I
 
@@ -574,13 +574,13 @@
     if-eqz v4, :cond_5
 
     .line 1422
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_4
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     const/4 v5, 0x0
 
@@ -590,7 +590,7 @@
     :goto_4
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v5, v6, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(ILandroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;)V
 
@@ -600,12 +600,12 @@
     :goto_5
     move-object/from16 v0, v17
 
-    iput-object v0, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iput-object v0, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     .line 1435
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v5, 0x1
 
@@ -625,14 +625,14 @@
     .line 1444
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v5, 0x1
 
     if-ne v2, v5, :cond_8
 
     .line 1445
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_7
 
@@ -648,7 +648,7 @@
     :goto_7
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v5, v3}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
@@ -659,7 +659,7 @@
     .line 1448
     if-eqz v4, :cond_17
 
-    iget-boolean v5, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v5, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v5, :cond_17
 
@@ -673,15 +673,15 @@
     .line 1451
     const/4 v8, -0x1
 
-    iput v8, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->b:I
+    iput v8, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIb:I
 
     .line 1452
-    iput v6, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->a:I
+    iput v6, v5, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIa:I
 
     .line 1453
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v8, v5}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;)V
 
@@ -689,13 +689,13 @@
 
     .line 1469
     :goto_8
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_0
 
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     const/4 v8, -0x1
 
@@ -709,7 +709,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iput-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     .line 1490
     :cond_0
@@ -721,13 +721,13 @@
     invoke-direct {v0, v3, v14, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/view/View;Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;Landroid/support/v7/widget/LayoutState;)V
 
     .line 1491
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_10
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -737,7 +737,7 @@
     :goto_a
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2, v3}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
@@ -748,7 +748,7 @@
     .line 1495
     move-object/from16 v0, p0
 
-    iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     const/4 v8, 0x1
 
@@ -761,16 +761,16 @@
 
     .line 1501
     :goto_b
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_12
 
     .line 1502
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v2, v2, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     move-object/from16 v0, p0
 
@@ -780,7 +780,7 @@
     :goto_c
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     move-object/from16 v0, p0
 
@@ -798,11 +798,11 @@
     :cond_1
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     move-object/from16 v0, p2
 
-    iget v3, v0, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v3, v0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     sub-int/2addr v2, v3
 
@@ -814,7 +814,7 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -848,7 +848,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v5
 
@@ -880,7 +880,7 @@
 
     .line 1456
     :cond_8
-    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v2, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v2, :cond_a
 
@@ -896,7 +896,7 @@
     :goto_d
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v5, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v5, v3}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
@@ -907,7 +907,7 @@
     .line 1459
     if-eqz v4, :cond_9
 
-    iget-boolean v7, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v7, v14, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v7, :cond_9
 
@@ -921,15 +921,15 @@
     .line 1462
     const/4 v8, 0x1
 
-    iput v8, v7, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->b:I
+    iput v8, v7, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIb:I
 
     .line 1463
-    iput v6, v7, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->a:I
+    iput v6, v7, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mIa:I
 
     .line 1464
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v8, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v8, v7}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;)V
 
@@ -954,7 +954,7 @@
     :cond_b
     move-object/from16 v0, p2
 
-    iget v2, v0, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v0, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v4, 0x1
 
@@ -976,7 +976,7 @@
     .line 1480
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v2, v6}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->f(I)Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;
 
@@ -988,7 +988,7 @@
     .line 1483
     const/4 v4, 0x1
 
-    iput-boolean v4, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->d:Z
+    iput-boolean v4, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->isZd:Z
 
     .line 1485
     :cond_c
@@ -996,7 +996,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iput-boolean v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     goto/16 :goto_9
 
@@ -1027,17 +1027,17 @@
     :cond_10
     move-object/from16 v0, v17
 
-    iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:I
+    iget v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIm:I
 
     mul-int/2addr v2, v4
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v4}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1069,9 +1069,9 @@
     :cond_12
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v2, v2, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     move-object/from16 v0, p0
 
@@ -1088,7 +1088,7 @@
     .line 1510
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     move-object/from16 v0, p0
 
@@ -1100,9 +1100,9 @@
     :cond_14
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v2, v2, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, v2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v3, -0x1
 
@@ -1111,7 +1111,7 @@
     .line 1514
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1126,7 +1126,7 @@
     .line 1515
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1140,7 +1140,7 @@
 
     move-object/from16 v0, p2
 
-    iget v3, v0, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v3, v0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     invoke-static {v3, v2}, Ljava/lang/Math;->min(II)I
 
@@ -1153,7 +1153,7 @@
     :cond_15
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1168,7 +1168,7 @@
     .line 1518
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1214,9 +1214,9 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 937
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_2
 
@@ -1227,7 +1227,7 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_1
 
@@ -1238,9 +1238,9 @@
 
     move-result-object v3
 
-    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
-    iget-boolean v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     move-object v0, p1
 
@@ -1269,7 +1269,7 @@
     const/4 v0, -0x1
 
     .line 1779
-    iget v2, p1, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v2, p1, Landroid/support/v7/widget/LayoutState;->mId:I
 
     invoke-direct {p0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o(I)Z
 
@@ -1279,7 +1279,7 @@
     if-eqz v2, :cond_0
 
     .line 1782
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -1289,7 +1289,7 @@
 
     .line 1790
     :goto_0
-    iget v4, p1, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v4, p1, Landroid/support/v7/widget/LayoutState;->mId:I
 
     if-ne v4, v1, :cond_1
 
@@ -1297,7 +1297,7 @@
     const v1, 0x7fffffff
 
     .line 1793
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v4}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1312,7 +1312,7 @@
     if-eq v6, v2, :cond_2
 
     .line 1795
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v1, v6
 
@@ -1343,7 +1343,7 @@
     const/4 v2, 0x0
 
     .line 1787
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     move v3, v2
 
@@ -1359,7 +1359,7 @@
     const/high16 v1, -0x80000000
 
     .line 1806
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v4}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1374,7 +1374,7 @@
     if-eq v6, v2, :cond_2
 
     .line 1808
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v1, v6
 
@@ -1426,14 +1426,14 @@
     const/4 v1, 0x0
 
     .line 1270
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iput v1, v0, Landroid/support/v7/widget/LayoutState;->a:I
+    iput v1, v0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     .line 1271
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iput p1, v0, Landroid/support/v7/widget/LayoutState;->b:I
+    iput p1, v0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     .line 1274
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n()Z
@@ -1453,7 +1453,7 @@
     if-eq v0, v2, :cond_3
 
     .line 1277
-    iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-ge v0, p1, :cond_0
 
@@ -1463,7 +1463,7 @@
     if-ne v2, v0, :cond_1
 
     .line 1278
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->f()I
 
@@ -1479,9 +1479,9 @@
     if-eqz v2, :cond_2
 
     .line 1288
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1489,12 +1489,12 @@
 
     sub-int v1, v3, v1
 
-    iput v1, v2, Landroid/support/v7/widget/LayoutState;->e:I
+    iput v1, v2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     .line 1289
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1502,7 +1502,7 @@
 
     add-int/2addr v0, v2
 
-    iput v0, v1, Landroid/support/v7/widget/LayoutState;->f:I
+    iput v0, v1, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     .line 1294
     :goto_2
@@ -1516,7 +1516,7 @@
 
     .line 1280
     :cond_1
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->f()I
 
@@ -1532,9 +1532,9 @@
 
     .line 1291
     :cond_2
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->e()I
 
@@ -1542,14 +1542,14 @@
 
     add-int/2addr v0, v3
 
-    iput v0, v2, Landroid/support/v7/widget/LayoutState;->f:I
+    iput v0, v2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     .line 1292
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     neg-int v1, v1
 
-    iput v1, v0, Landroid/support/v7/widget/LayoutState;->e:I
+    iput v1, v0, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     goto :goto_2
 
@@ -1581,7 +1581,7 @@
     move-result-object v2
 
     .line 1710
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, v2}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -1597,7 +1597,7 @@
     check-cast v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;
 
     .line 1713
-    iget-boolean v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v3, :cond_3
 
@@ -1605,12 +1605,12 @@
 
     .line 1714
     :goto_1
-    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v3, :cond_2
 
     .line 1715
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v3, v3, v0
 
@@ -1639,12 +1639,12 @@
 
     .line 1719
     :goto_2
-    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v3, :cond_4
 
     .line 1720
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v3, v3, v0
 
@@ -1657,7 +1657,7 @@
 
     .line 1723
     :cond_3
-    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v3, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-static {v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->a(Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;)Ljava/util/ArrayList;
 
@@ -1670,7 +1670,7 @@
     if-eq v3, v4, :cond_0
 
     .line 1726
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->h()V
 
@@ -1688,17 +1688,17 @@
     const/4 v1, -0x1
 
     .line 1558
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     if-nez v0, :cond_1
 
     .line 1560
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     if-ne v0, v1, :cond_0
 
     .line 1561
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(Landroid/support/v7/widget/RecyclerView$ICax;I)V
 
@@ -1708,7 +1708,7 @@
 
     .line 1563
     :cond_0
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     invoke-direct {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;I)V
 
@@ -1716,14 +1716,14 @@
 
     .line 1568
     :cond_1
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     if-ne v0, v1, :cond_3
 
     .line 1570
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
-    iget v1, p2, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v1, p2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     invoke-direct {p0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k(I)I
 
@@ -1735,7 +1735,7 @@
     if-gez v0, :cond_2
 
     .line 1573
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     .line 1577
     :goto_1
@@ -1745,9 +1745,9 @@
 
     .line 1575
     :cond_2
-    iget v1, p2, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v1, p2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
-    iget v2, p2, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v2, p2, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     invoke-static {v0, v2}, Ljava/lang/Math;->min(II)I
 
@@ -1759,13 +1759,13 @@
 
     .line 1580
     :cond_3
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     invoke-direct {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n(I)I
 
     move-result v0
 
-    iget v1, p2, Landroid/support/v7/widget/LayoutState;->f:I
+    iget v1, p2, Landroid/support/v7/widget/LayoutState;->mIf:I
 
     sub-int/2addr v0, v1
 
@@ -1773,7 +1773,7 @@
     if-gez v0, :cond_4
 
     .line 1583
-    iget v0, p2, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v0, p2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
     .line 1587
     :goto_2
@@ -1783,9 +1783,9 @@
 
     .line 1585
     :cond_4
-    iget v1, p2, Landroid/support/v7/widget/LayoutState;->e:I
+    iget v1, p2, Landroid/support/v7/widget/LayoutState;->mIe:I
 
-    iget v2, p2, Landroid/support/v7/widget/LayoutState;->a:I
+    iget v2, p2, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     invoke-static {v0, v2}, Ljava/lang/Math;->min(II)I
 
@@ -1801,7 +1801,7 @@
 
     .prologue
     .line 1239
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1812,7 +1812,7 @@
     move-result v0
 
     .line 1240
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1841,7 +1841,7 @@
     if-lez v0, :cond_0
 
     .line 1249
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, v0}, Landroid/support/v7/widget/OrientationHelper;->a(I)V
 
@@ -1855,18 +1855,18 @@
 
     .prologue
     .line 640
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     if-lez v0, :cond_3
 
     .line 641
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ne v0, v1, :cond_2
 
@@ -1874,21 +1874,21 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_3
 
     .line 643
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->e()V
 
     .line 644
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     aget v1, v1, v0
 
@@ -1898,14 +1898,14 @@
     if-eq v1, v2, :cond_0
 
     .line 646
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-boolean v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iget-boolean v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
     if-eqz v2, :cond_1
 
     .line 647
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -1916,7 +1916,7 @@
     .line 652
     :cond_0
     :goto_1
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v0
 
@@ -1929,7 +1929,7 @@
 
     .line 649
     :cond_1
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -1941,31 +1941,31 @@
 
     .line 655
     :cond_2
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a()V
 
     .line 656
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
-    iput v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iput v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     .line 659
     :cond_3
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->s:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZs:Z
 
     .line 660
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Z)V
 
@@ -1973,55 +1973,55 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->D()V
 
     .line 663
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_5
 
     .line 664
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     .line 665
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
-    iput-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iput-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     .line 669
     :goto_2
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     const/4 v1, 0x1
 
     if-le v0, v1, :cond_4
 
     .line 670
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
-    iput-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a:[I
+    iput-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->mArrayIa:[I
 
     .line 671
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
-    iput-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->b:Ljava/util/List;
+    iput-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->mListb:Ljava/util/List;
 
     .line 673
     :cond_4
@@ -2029,9 +2029,9 @@
 
     .line 667
     :cond_5
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
-    iput-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iput-boolean v0, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     goto :goto_2
 .end method
@@ -2063,9 +2063,9 @@
     if-gt v0, p3, :cond_0
 
     .line 1633
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->p:Ljava/util/BitSet;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mBitSetp:Ljava/util/BitSet;
 
-    iget v1, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v1, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     invoke-virtual {v0, v1, v2}, Ljava/util/BitSet;->set(IZ)V
 
@@ -2086,9 +2086,9 @@
     if-lt v0, p3, :cond_0
 
     .line 1638
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->p:Ljava/util/BitSet;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mBitSetp:Ljava/util/BitSet;
 
-    iget v1, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v1, p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     invoke-virtual {v0, v1, v2}, Ljava/util/BitSet;->set(IZ)V
 
@@ -2102,21 +2102,21 @@
     const/4 v1, 0x1
 
     .line 991
-    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v0, :cond_1
 
     .line 992
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-ne v0, v1, :cond_0
 
     .line 993
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->u:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIu:I
 
     iget v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->height:I
 
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->w:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIw:I
 
     invoke-direct {p0, v1, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(II)I
 
@@ -2132,13 +2132,13 @@
     :cond_0
     iget v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->width:I
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->v:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIv:I
 
     invoke-direct {p0, v0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(II)I
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->u:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIu:I
 
     invoke-direct {p0, p1, v0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(Landroid/view/View;II)V
 
@@ -2146,16 +2146,16 @@
 
     .line 1000
     :cond_1
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-ne v0, v1, :cond_2
 
     .line 1001
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->v:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIv:I
 
     iget v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->height:I
 
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->w:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIw:I
 
     invoke-direct {p0, v1, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(II)I
 
@@ -2169,13 +2169,13 @@
     :cond_2
     iget v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->width:I
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->v:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIv:I
 
     invoke-direct {p0, v0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(II)I
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->w:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIw:I
 
     invoke-direct {p0, p1, v0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(Landroid/view/View;II)V
 
@@ -2187,14 +2187,14 @@
 
     .prologue
     .line 1542
-    iget v0, p3, Landroid/support/v7/widget/LayoutState;->d:I
+    iget v0, p3, Landroid/support/v7/widget/LayoutState;->mId:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_1
 
     .line 1543
-    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v0, :cond_0
 
@@ -2207,7 +2207,7 @@
 
     .line 1546
     :cond_0
-    iget-object v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->b(Landroid/view/View;)V
 
@@ -2215,7 +2215,7 @@
 
     .line 1549
     :cond_1
-    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v0, :cond_2
 
@@ -2226,7 +2226,7 @@
 
     .line 1552
     :cond_2
-    iget-object v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-virtual {v0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->a(Landroid/view/View;)V
 
@@ -2240,7 +2240,7 @@
     const/4 v0, 0x1
 
     .line 364
-    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v1, :cond_1
 
@@ -2249,7 +2249,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -2268,7 +2268,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v2}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -2311,7 +2311,7 @@
     const/4 v4, 0x1
 
     .line 1348
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -2339,7 +2339,7 @@
 
     .line 1365
     :goto_1
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v3, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->b(I)I
 
@@ -2389,7 +2389,7 @@
 
     .line 1368
     :pswitch_1
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v3, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->b(II)V
 
@@ -2397,7 +2397,7 @@
 
     .line 1371
     :pswitch_2
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v3, p1, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(II)V
 
@@ -2405,12 +2405,12 @@
 
     .line 1375
     :pswitch_3
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v3, p1, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a(II)V
 
     .line 1376
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v3, p2, v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->b(II)V
 
@@ -2418,7 +2418,7 @@
 
     .line 1384
     :cond_4
-    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v1, :cond_5
 
@@ -2480,7 +2480,7 @@
     move-result-object v3
 
     .line 1740
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, v3}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
@@ -2496,7 +2496,7 @@
     check-cast v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;
 
     .line 1743
-    iget-boolean v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v4, :cond_3
 
@@ -2504,12 +2504,12 @@
 
     .line 1744
     :goto_1
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_2
 
     .line 1745
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
@@ -2538,12 +2538,12 @@
 
     .line 1749
     :goto_2
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_4
 
     .line 1750
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
@@ -2556,7 +2556,7 @@
 
     .line 1753
     :cond_3
-    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-static {v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->a(Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;)Ljava/util/ArrayList;
 
@@ -2569,7 +2569,7 @@
     if-eq v4, v5, :cond_0
 
     .line 1756
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->g()V
 
@@ -2590,7 +2590,7 @@
 
     .prologue
     .line 1255
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -2601,7 +2601,7 @@
     move-result v0
 
     .line 1256
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -2626,7 +2626,7 @@
     if-lez v0, :cond_0
 
     .line 1265
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     neg-int v0, v0
 
@@ -2642,7 +2642,7 @@
 
     .prologue
     .line 1020
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->x:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRectx:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/view/View;Landroid/graphics/Rect;)V
 
@@ -2656,7 +2656,7 @@
     .line 1022
     iget v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->leftMargin:I
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->x:Landroid/graphics/Rect;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRectx:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->left:I
 
@@ -2664,7 +2664,7 @@
 
     iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->rightMargin:I
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->x:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRectx:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->right:I
 
@@ -2677,7 +2677,7 @@
     .line 1024
     iget v2, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->topMargin:I
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->x:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRectx:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->top:I
 
@@ -2685,7 +2685,7 @@
 
     iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->bottomMargin:I
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->x:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRectx:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->bottom:I
 
@@ -2748,12 +2748,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_1
 
     .line 1621
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -2775,7 +2775,7 @@
 
     .line 1624
     :cond_0
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -2793,7 +2793,7 @@
 
     .prologue
     .line 694
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     if-eqz v0, :cond_0
 
@@ -2806,12 +2806,12 @@
     move-result v0
 
     :goto_0
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     .line 697
     const/high16 v0, -0x80000000
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     .line 698
     const/4 v0, 0x1
@@ -2855,9 +2855,9 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 958
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_2
 
@@ -2868,7 +2868,7 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_1
 
@@ -2879,7 +2879,7 @@
 
     move-result-object v3
 
-    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     move-object v0, p1
 
@@ -2906,14 +2906,14 @@
     const/4 v1, -0x1
 
     .line 1297
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iput p1, v2, Landroid/support/v7/widget/LayoutState;->d:I
+    iput p1, v2, Landroid/support/v7/widget/LayoutState;->mId:I
 
     .line 1298
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-ne p1, v1, :cond_0
 
@@ -2923,7 +2923,7 @@
     if-ne v4, v2, :cond_1
 
     :goto_1
-    iput v0, v3, Landroid/support/v7/widget/LayoutState;->c:I
+    iput v0, v3, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     .line 1300
     return-void
@@ -2964,9 +2964,9 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 979
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_2
 
@@ -2977,7 +2977,7 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     if-nez v0, :cond_1
 
@@ -2988,7 +2988,7 @@
 
     move-result-object v3
 
-    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->A:Z
+    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZA:Z
 
     move-object v0, p1
 
@@ -3016,24 +3016,24 @@
     invoke-direct {v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;-><init>()V
 
     .line 1525
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     new-array v0, v0, [I
 
-    iput-object v0, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->c:[I
+    iput-object v0, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mArrayIc:[I
 
     .line 1526
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_0
 
     .line 1527
-    iget-object v2, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->c:[I
+    iget-object v2, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mArrayIc:[I
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v3, v3, v0
 
@@ -3065,24 +3065,24 @@
     invoke-direct {v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;-><init>()V
 
     .line 1534
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     new-array v0, v0, [I
 
-    iput-object v0, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->c:[I
+    iput-object v0, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mArrayIc:[I
 
     .line 1535
     const/4 v0, 0x0
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_0
 
     .line 1536
-    iget-object v2, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->c:[I
+    iget-object v2, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->mArrayIc:[I
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v3, v3, v0
 
@@ -3109,7 +3109,7 @@
 
     .prologue
     .line 1644
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     const/4 v1, 0x0
 
@@ -3123,12 +3123,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_1
 
     .line 1646
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v0
 
@@ -3157,7 +3157,7 @@
 
     .prologue
     .line 1655
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     const/4 v1, 0x0
 
@@ -3171,12 +3171,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_1
 
     .line 1657
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v0
 
@@ -3205,7 +3205,7 @@
 
     .prologue
     .line 1686
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     const/4 v1, 0x0
 
@@ -3219,12 +3219,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_1
 
     .line 1688
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v0
 
@@ -3253,7 +3253,7 @@
 
     .prologue
     .line 1697
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     const/4 v1, 0x0
 
@@ -3267,12 +3267,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v2, :cond_1
 
     .line 1699
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v2, v2, v0
 
@@ -3301,7 +3301,7 @@
 
     .prologue
     .line 1595
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     add-int/lit8 v0, v0, -0x1
 
@@ -3309,7 +3309,7 @@
     if-ltz v0, :cond_0
 
     .line 1596
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -3336,7 +3336,7 @@
     const/4 v2, 0x0
 
     .line 1769
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-nez v0, :cond_3
 
@@ -3346,7 +3346,7 @@
     move v0, v1
 
     :goto_0
-    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eq v0, v3, :cond_2
 
@@ -3373,7 +3373,7 @@
     move v0, v1
 
     :goto_2
-    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-ne v0, v3, :cond_5
 
@@ -3417,7 +3417,7 @@
     if-nez v2, :cond_1
 
     .line 1843
-    iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v2, :cond_0
 
@@ -3443,7 +3443,7 @@
     move v2, v0
 
     :goto_1
-    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eq v2, v3, :cond_3
 
@@ -3468,7 +3468,7 @@
 
     .prologue
     .line 1602
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     add-int/lit8 v0, v0, -0x1
 
@@ -3476,7 +3476,7 @@
     if-ltz v0, :cond_0
 
     .line 1603
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -3606,7 +3606,7 @@
     const/high16 v5, -0x80000000
 
     .line 1676
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v0, v0, v2
 
@@ -3618,12 +3618,12 @@
 
     .line 1677
     :goto_0
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_0
 
     .line 1678
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
@@ -3720,14 +3720,14 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 1184
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
     move-result v3
 
     .line 1185
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -3757,14 +3757,14 @@
     move-result-object v1
 
     .line 1190
-    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v6, v1}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v6
 
     .line 1191
-    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v7, v1}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -3825,7 +3825,7 @@
     .line 1044
     check-cast p1, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iput-object p1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iput-object p1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     .line 1045
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k()V
@@ -3851,13 +3851,13 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 552
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->y:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mICbky:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;
 
     .line 553
     invoke-virtual {v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a()V
 
     .line 555
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-eqz v0, :cond_4
 
@@ -3869,14 +3869,14 @@
     invoke-virtual {p0, p2, v3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICbd;Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;)V
 
     .line 564
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-nez v0, :cond_1
 
     .line 565
-    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
-    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     if-ne v0, v4, :cond_0
 
@@ -3884,18 +3884,18 @@
 
     move-result v0
 
-    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->s:Z
+    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZs:Z
 
     if-eq v0, v4, :cond_1
 
     .line 567
     :cond_0
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a()V
 
     .line 568
-    iput-boolean v2, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->d:Z
+    iput-boolean v2, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZd:Z
 
     .line 572
     :cond_1
@@ -3905,19 +3905,19 @@
 
     if-lez v0, :cond_6
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     if-ge v0, v2, :cond_6
 
     .line 574
     :cond_2
-    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->d:Z
+    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZd:Z
 
     if-eqz v0, :cond_5
 
@@ -3925,28 +3925,28 @@
 
     .line 575
     :goto_1
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_6
 
     .line 577
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
     invoke-virtual {v4}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->e()V
 
     .line 578
-    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     if-eq v4, v8, :cond_3
 
     .line 579
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
-    iget v5, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iget v5, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     invoke-virtual {v4, v5}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->c(I)V
 
@@ -3961,9 +3961,9 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->D()V
 
     .line 559
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
-    iput-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iput-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     goto :goto_0
 
@@ -3972,18 +3972,18 @@
 
     .line 583
     :goto_2
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_6
 
     .line 584
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
-    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
-    iget v6, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iget v6, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     invoke-virtual {v4, v5, v6}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->a(ZI)V
 
@@ -3997,18 +3997,18 @@
     invoke-virtual {p0, p1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;)V
 
     .line 589
-    iput-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iput-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     .line 590
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g()V
 
     .line 591
-    iget v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iget v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     invoke-direct {p0, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(ILandroid/support/v7/widget/RecyclerView$ICbd;)V
 
     .line 592
-    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     if-eqz v0, :cond_c
 
@@ -4016,7 +4016,7 @@
     invoke-direct {p0, v7}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h(I)V
 
     .line 595
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {p0, p1, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;Landroid/support/v7/widget/LayoutState;Landroid/support/v7/widget/RecyclerView$ICbd;)I
 
@@ -4024,20 +4024,20 @@
     invoke-direct {p0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h(I)V
 
     .line 598
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v5, v5, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v5, v5, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     add-int/2addr v4, v5
 
-    iput v4, v0, Landroid/support/v7/widget/LayoutState;->b:I
+    iput v4, v0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     .line 599
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {p0, p1, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;Landroid/support/v7/widget/LayoutState;Landroid/support/v7/widget/RecyclerView$ICbd;)I
 
@@ -4050,7 +4050,7 @@
     if-lez v0, :cond_7
 
     .line 611
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_d
 
@@ -4070,7 +4070,7 @@
     if-nez v0, :cond_b
 
     .line 621
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->q:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIq:I
 
     if-eqz v0, :cond_9
 
@@ -4080,7 +4080,7 @@
 
     if-lez v0, :cond_9
 
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->z:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZz:Z
 
     if-nez v0, :cond_8
 
@@ -4098,39 +4098,39 @@
     if-eqz v1, :cond_a
 
     .line 625
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->B:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRunnableB:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(Ljava/lang/Runnable;)Z
 
     .line 626
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->B:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRunnableB:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Ljava/lang/Runnable;)V
 
     .line 628
     :cond_a
-    iput v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iput v7, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     .line 629
-    iput v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iput v8, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     .line 631
     :cond_b
-    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iget-boolean v0, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     .line 632
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->s:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZs:Z
 
     .line 633
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iput-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     .line 634
     return-void
@@ -4140,7 +4140,7 @@
     invoke-direct {p0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h(I)V
 
     .line 603
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {p0, p1, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;Landroid/support/v7/widget/LayoutState;Landroid/support/v7/widget/RecyclerView$ICbd;)I
 
@@ -4148,20 +4148,20 @@
     invoke-direct {p0, v7}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h(I)V
 
     .line 606
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iget v4, v3, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v5, v5, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v5, v5, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     add-int/2addr v4, v5
 
-    iput v4, v0, Landroid/support/v7/widget/LayoutState;->b:I
+    iput v4, v0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     .line 607
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {p0, p1, v0, p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;Landroid/support/v7/widget/LayoutState;Landroid/support/v7/widget/RecyclerView$ICbd;)I
 
@@ -4205,7 +4205,7 @@
     check-cast v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;
 
     .line 1111
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-nez v0, :cond_2
 
@@ -4214,18 +4214,18 @@
 
     move-result v0
 
-    iget-boolean v1, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v1, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v1, :cond_1
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     :goto_1
     const/4 v2, -0x1
 
     const/4 v3, -0x1
 
-    iget-boolean v4, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v4, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     const/4 v5, 0x0
 
@@ -4252,14 +4252,14 @@
 
     move-result v2
 
-    iget-boolean v3, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v3, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v3, :cond_3
 
-    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     :goto_2
-    iget-boolean v4, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v4, v4, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     const/4 v5, 0x0
 
@@ -4307,7 +4307,7 @@
     .line 686
     const/4 v0, 0x0
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     goto :goto_0
 .end method
@@ -4343,7 +4343,7 @@
 
     .prologue
     .line 288
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->B:Ljava/lang/Runnable;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mRunnableB:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b(Ljava/lang/Runnable;)Z
 
@@ -4351,12 +4351,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_0
 
     .line 290
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -4452,7 +4452,7 @@
 
     .prologue
     .line 486
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-nez v0, :cond_0
 
@@ -4474,24 +4474,24 @@
     invoke-virtual {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Ljava/lang/String;)V
 
     .line 436
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iget-boolean v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     if-eq v0, p1, :cond_0
 
     .line 437
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iput-boolean p1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iput-boolean p1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     .line 439
     :cond_0
-    iput-boolean p1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
+    iput-boolean p1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZo:Z
 
     .line 440
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k()V
@@ -4545,14 +4545,14 @@
     const/high16 v4, -0x80000000
 
     .line 1053
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-eqz v0, :cond_0
 
     .line 1054
     new-instance v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     invoke-direct {v0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;-><init>(Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;)V
 
@@ -4567,51 +4567,51 @@
     invoke-direct {v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;-><init>()V
 
     .line 1057
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->o:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZo:Z
 
-    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->h:Z
+    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZh:Z
 
     .line 1058
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
-    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->i:Z
+    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZi:Z
 
     .line 1059
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->s:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZs:Z
 
-    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->j:Z
+    iput-boolean v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->isZj:Z
 
     .line 1061
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a:[I
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->mArrayIa:[I
 
     if-eqz v0, :cond_2
 
     .line 1062
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a:[I
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->mArrayIa:[I
 
-    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     .line 1063
-    iget-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->f:[I
+    iget-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayIf:[I
 
     array-length v0, v0
 
-    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     .line 1064
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->b:Ljava/util/List;
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->mListb:Ljava/util/List;
 
-    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->g:Ljava/util/List;
+    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mListg:Ljava/util/List;
 
     .line 1069
     :goto_1
@@ -4625,7 +4625,7 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 1071
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     if-eqz v0, :cond_3
 
@@ -4634,42 +4634,42 @@
     move-result v0
 
     :goto_2
-    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     .line 1073
     invoke-virtual {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h()I
 
     move-result v0
 
-    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
     .line 1074
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
-    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iput v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     .line 1075
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     new-array v0, v0, [I
 
-    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iput-object v0, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     move v0, v1
 
     .line 1076
     :goto_3
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_6
 
     .line 1078
-    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     if-eqz v1, :cond_4
 
     .line 1079
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -4681,7 +4681,7 @@
     if-eq v1, v4, :cond_1
 
     .line 1081
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -4692,7 +4692,7 @@
     .line 1089
     :cond_1
     :goto_4
-    iget-object v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->d:[I
+    iget-object v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mArrayId:[I
 
     aput v1, v3, v0
 
@@ -4703,7 +4703,7 @@
 
     .line 1066
     :cond_2
-    iput v1, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->e:I
+    iput v1, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIe:I
 
     goto :goto_1
 
@@ -4717,7 +4717,7 @@
 
     .line 1084
     :cond_4
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -4729,7 +4729,7 @@
     if-eq v1, v4, :cond_1
 
     .line 1086
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -4741,13 +4741,13 @@
 
     .line 1092
     :cond_5
-    iput v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iput v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     .line 1093
-    iput v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->b:I
+    iput v3, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIb:I
 
     .line 1094
-    iput v1, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iput v1, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     :cond_6
     move-object v0, v2
@@ -4764,14 +4764,14 @@
     invoke-direct {p0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->C()V
 
     .line 1215
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
     move-result v3
 
     .line 1216
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
@@ -4800,14 +4800,14 @@
     move-result-object v1
 
     .line 1220
-    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v5, v1}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v5
 
     .line 1221
-    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v6, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v6, v1}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -4888,7 +4888,7 @@
 
     if-nez v2, :cond_0
 
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     if-ne v2, v5, :cond_1
 
@@ -4901,11 +4901,11 @@
 
     .line 707
     :cond_1
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     if-ltz v2, :cond_2
 
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView$ICbd;->e()I
 
@@ -4915,10 +4915,10 @@
 
     .line 708
     :cond_2
-    iput v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iput v5, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     .line 709
-    iput v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iput v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     move v1, v0
 
@@ -4927,25 +4927,25 @@
 
     .line 713
     :cond_3
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-eqz v2, :cond_4
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->a:I
+    iget v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIa:I
 
     if-eq v2, v5, :cond_4
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
-    iget v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->c:I
+    iget v2, v2, Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;->mIc:I
 
     if-ge v2, v1, :cond_f
 
     .line 716
     :cond_4
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
     invoke-virtual {p0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(I)Landroid/view/View;
 
@@ -4955,7 +4955,7 @@
     if-eqz v2, :cond_c
 
     .line 720
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_5
 
@@ -4964,31 +4964,31 @@
     move-result v0
 
     :goto_1
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     .line 723
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     if-eq v0, v4, :cond_7
 
     .line 724
-    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     if-eqz v0, :cond_6
 
     .line 725
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     sub-int/2addr v0, v3
 
     .line 727
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, v2}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -4996,7 +4996,7 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto :goto_0
 
@@ -5010,18 +5010,18 @@
 
     .line 729
     :cond_6
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
     move-result v0
 
-    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iget v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     add-int/2addr v0, v3
 
     .line 731
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, v2}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
@@ -5029,20 +5029,20 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto :goto_0
 
     .line 737
     :cond_7
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, v2}, Landroid/support/v7/widget/OrientationHelper;->c(Landroid/view/View;)I
 
     move-result v0
 
     .line 738
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->f()I
 
@@ -5051,23 +5051,23 @@
     if-le v0, v3, :cond_9
 
     .line 740
-    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iget-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     if-eqz v0, :cond_8
 
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
     move-result v0
 
     :goto_2
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto/16 :goto_0
 
     :cond_8
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -5077,13 +5077,13 @@
 
     .line 746
     :cond_9
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0, v2}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v0
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3}, Landroid/support/v7/widget/OrientationHelper;->c()I
 
@@ -5097,19 +5097,19 @@
     .line 749
     neg-int v0, v0
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto/16 :goto_0
 
     .line 752
     :cond_a
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->d()I
 
     move-result v0
 
-    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v3, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v3, v2}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -5121,29 +5121,29 @@
     if-gez v0, :cond_b
 
     .line 755
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto/16 :goto_0
 
     .line 759
     :cond_b
-    iput v4, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v4, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     goto/16 :goto_0
 
     .line 763
     :cond_c
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
-    iput v2, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iput v2, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     .line 764
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     if-ne v2, v4, :cond_e
 
     .line 765
-    iget v2, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iget v2, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     invoke-direct {p0, v2}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->p(I)I
 
@@ -5155,20 +5155,20 @@
     move v0, v1
 
     :cond_d
-    iput-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->c:Z
+    iput-boolean v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZc:Z
 
     .line 768
     invoke-virtual {p2}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b()V
 
     .line 772
     :goto_3
-    iput-boolean v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->d:Z
+    iput-boolean v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->isZd:Z
 
     goto/16 :goto_0
 
     .line 770
     :cond_e
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->e:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIe:I
 
     invoke-virtual {p2, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a(I)V
 
@@ -5176,12 +5176,12 @@
 
     .line 775
     :cond_f
-    iput v4, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->b:I
+    iput v4, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIb:I
 
     .line 776
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->d:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mId:I
 
-    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->a:I
+    iput v0, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbk;->mIa:I
 
     goto/16 :goto_0
 .end method
@@ -5212,15 +5212,15 @@
     invoke-direct {p0, v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->h(I)V
 
     .line 1915
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iget v2, v2, Landroid/support/v7/widget/LayoutState;->c:I
+    iget v2, v2, Landroid/support/v7/widget/LayoutState;->mIc:I
 
     add-int/2addr v1, v2
 
-    iput v1, v0, Landroid/support/v7/widget/LayoutState;->b:I
+    iput v1, v0, Landroid/support/v7/widget/LayoutState;->mIb:I
 
     .line 1916
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
@@ -5228,12 +5228,12 @@
     move-result v1
 
     .line 1917
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
-    iput v1, v0, Landroid/support/v7/widget/LayoutState;->a:I
+    iput v1, v0, Landroid/support/v7/widget/LayoutState;->mIa:I
 
     .line 1918
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->n:Landroid/support/v7/widget/LayoutState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLayoutStaten:Landroid/support/v7/widget/LayoutState;
 
     invoke-direct {p0, p2, v0, p3}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/RecyclerView$ICax;Landroid/support/v7/widget/LayoutState;Landroid/support/v7/widget/RecyclerView$ICbd;)I
 
@@ -5244,16 +5244,16 @@
 
     .line 1931
     :goto_1
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     neg-int v1, p1
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/OrientationHelper;->a(I)V
 
     .line 1933
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
-    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->r:Z
+    iput-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZr:Z
 
     .line 1934
     return p1
@@ -5290,12 +5290,12 @@
 
     .prologue
     .line 1161
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-nez v0, :cond_0
 
     .line 1162
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     .line 1164
     :goto_0
@@ -5339,7 +5339,7 @@
 
     .prologue
     .line 1826
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-nez v0, :cond_0
 
@@ -5359,14 +5359,14 @@
 
     .prologue
     .line 1170
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     .line 1171
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     .line 1173
     :goto_0
@@ -5399,7 +5399,7 @@
     const/4 v0, 0x1
 
     .line 1821
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-ne v1, v0, :cond_0
 
@@ -5445,17 +5445,17 @@
     .line 302
     new-instance v9, Ljava/util/BitSet;
 
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     invoke-direct {v9, v2}, Ljava/util/BitSet;-><init>(I)V
 
     .line 303
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     invoke-virtual {v9, v5, v2, v3}, Ljava/util/BitSet;->set(IIZ)V
 
     .line 306
-    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v2, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     if-ne v2, v3, :cond_0
 
@@ -5469,7 +5469,7 @@
 
     .line 308
     :goto_0
-    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v4, :cond_1
 
@@ -5501,9 +5501,9 @@
     check-cast v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;
 
     .line 319
-    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     invoke-virtual {v9, v1}, Ljava/util/BitSet;->get(I)Z
 
@@ -5512,7 +5512,7 @@
     if-eqz v1, :cond_4
 
     .line 320
-    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     invoke-direct {p0, v1}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a(Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;)Z
 
@@ -5550,15 +5550,15 @@
 
     .line 323
     :cond_3
-    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     invoke-virtual {v9, v1}, Ljava/util/BitSet;->clear(I)V
 
     .line 325
     :cond_4
-    iget-boolean v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->f:Z
+    iget-boolean v1, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->isZf:Z
 
     if-eqz v1, :cond_6
 
@@ -5584,19 +5584,19 @@
     move-result-object v10
 
     .line 332
-    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v1, :cond_8
 
     .line 334
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, v6}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
     move-result v1
 
     .line 335
-    iget-object v11, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v11, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v11, v10}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/view/View;)I
 
@@ -5628,13 +5628,13 @@
     check-cast v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;
 
     .line 353
-    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v0, v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
-    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->e:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbl;->mICboe:Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
-    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
+    iget v1, v1, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->mId:I
 
     sub-int/2addr v0, v1
 
@@ -5657,14 +5657,14 @@
 
     .line 342
     :cond_8
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v1, v6}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
     move-result v1
 
     .line 343
-    iget-object v11, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->a:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v11, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelpera:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v11, v10}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/view/View;)I
 
@@ -5721,12 +5721,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_0
 
     .line 1306
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -5747,7 +5747,7 @@
 
     .prologue
     .line 1330
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->f:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mLazySpanLookupf:Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a()V
 
@@ -5781,12 +5781,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v1, :cond_0
 
     .line 1314
-    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v1, v1, v0
 
@@ -5845,20 +5845,20 @@
     const/4 v2, 0x0
 
     .line 782
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->f()I
 
     move-result v0
 
-    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v1, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     div-int/2addr v0, v1
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIm:I
 
     .line 783
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->b:Landroid/support/v7/widget/OrientationHelper;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mOrientationHelperb:Landroid/support/v7/widget/OrientationHelper;
 
     invoke-virtual {v0}, Landroid/support/v7/widget/OrientationHelper;->f()I
 
@@ -5868,30 +5868,30 @@
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->u:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIu:I
 
     .line 785
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->l:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIl:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
     .line 786
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIm:I
 
     invoke-static {v0, v3}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->v:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIv:I
 
     .line 787
     invoke-static {v2, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->w:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIw:I
 
     .line 792
     :goto_0
@@ -5899,20 +5899,20 @@
 
     .line 789
     :cond_0
-    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->m:I
+    iget v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIm:I
 
     invoke-static {v0, v3}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->w:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIw:I
 
     .line 790
     invoke-static {v2, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->v:I
+    iput v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIv:I
 
     goto :goto_0
 .end method
@@ -5939,7 +5939,7 @@
     const/4 v1, 0x1
 
     .line 1153
-    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c:Z
+    iget-boolean v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -5984,7 +5984,7 @@
     const/high16 v5, -0x80000000
 
     .line 1666
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v0, v0, v2
 
@@ -5996,12 +5996,12 @@
 
     .line 1667
     :goto_0
-    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g:I
+    iget v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mIg:I
 
     if-ge v0, v4, :cond_0
 
     .line 1668
-    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->k:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
+    iget-object v4, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mArrayICbok:[Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;
 
     aget-object v4, v4, v0
 
@@ -6029,7 +6029,7 @@
 
     .prologue
     .line 796
-    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->t:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
+    iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager;->mSavedStatet:Landroid/support/v7/widget/StaggeredGridLayoutManager$SavedState;
 
     if-nez v0, :cond_0
 

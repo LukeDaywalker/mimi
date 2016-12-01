@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lu/aly/CacheService;
+.field final synthetic mCacheServicea:Lu/aly/CacheService;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lu/aly/CacheService$IChr;->a:Lu/aly/CacheService;
+    iput-object p1, p0, Lu/aly/CacheService$IChr;->mCacheServicea:Lu/aly/CacheService;
 
     invoke-direct {p0}, Lcom/umeng/analytics/SafeRunnable;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lu/aly/CacheService$IChr;->a:Lu/aly/CacheService;
+    iget-object v0, p0, Lu/aly/CacheService$IChr;->mCacheServicea:Lu/aly/CacheService;
 
     invoke-static {v0}, Lu/aly/CacheService;->a(Lu/aly/CacheService;)Lu/aly/ICacheService;
 

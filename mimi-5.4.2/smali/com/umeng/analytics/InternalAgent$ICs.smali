@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
-.field final synthetic b:Lcom/umeng/analytics/InternalAgent;
+.field final synthetic mInternalAgentb:Lcom/umeng/analytics/InternalAgent;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 139
-    iput-object p1, p0, Lcom/umeng/analytics/InternalAgent$ICs;->b:Lcom/umeng/analytics/InternalAgent;
+    iput-object p1, p0, Lcom/umeng/analytics/InternalAgent$ICs;->mInternalAgentb:Lcom/umeng/analytics/InternalAgent;
 
-    iput-object p2, p0, Lcom/umeng/analytics/InternalAgent$ICs;->a:Landroid/content/Context;
+    iput-object p2, p0, Lcom/umeng/analytics/InternalAgent$ICs;->mContexta:Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/umeng/analytics/SafeRunnable;-><init>()V
 
@@ -31,9 +31,9 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent$ICs;->b:Lcom/umeng/analytics/InternalAgent;
+    iget-object v0, p0, Lcom/umeng/analytics/InternalAgent$ICs;->mInternalAgentb:Lcom/umeng/analytics/InternalAgent;
 
-    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent$ICs;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/umeng/analytics/InternalAgent$ICs;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 

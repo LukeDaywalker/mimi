@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/Object;
+.field private static isZc:Z
 
-.field private static b:Ljava/lang/reflect/Field;
+.field private static mFieldb:Ljava/lang/reflect/Field;
 
-.field private static c:Z
+.field private static final mObjecta:Ljava/lang/Object;
 
-.field private static final d:Ljava/lang/Object;
+.field private static final mObjectd:Ljava/lang/Object;
 
 
 # direct methods
@@ -23,14 +23,14 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->a:Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->mObjecta:Ljava/lang/Object;
 
     .line 56
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->d:Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->mObjectd:Ljava/lang/Object;
 
     return-void
 .end method
@@ -106,13 +106,13 @@
     const/4 v1, 0x0
 
     .line 212
-    sget-object v2, Landroid/support/v4/app/NotificationCompatJellybean;->a:Ljava/lang/Object;
+    sget-object v2, Landroid/support/v4/app/NotificationCompatJellybean;->mObjecta:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 213
     :try_start_0
-    sget-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->c:Z
+    sget-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -130,7 +130,7 @@
     .line 217
     :cond_0
     :try_start_1
-    sget-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->b:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->mFieldb:Ljava/lang/reflect/Field;
 
     if-nez v0, :cond_2
 
@@ -166,7 +166,7 @@
     .line 221
     const/4 v0, 0x1
 
-    sput-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->c:Z
+    sput-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->isZc:Z
     :try_end_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_1
@@ -190,11 +190,11 @@
     invoke-virtual {v0, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     .line 225
-    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->b:Ljava/lang/reflect/Field;
+    sput-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->mFieldb:Ljava/lang/reflect/Field;
 
     .line 227
     :cond_2
-    sget-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->b:Ljava/lang/reflect/Field;
+    sget-object v0, Landroid/support/v4/app/NotificationCompatJellybean;->mFieldb:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -211,7 +211,7 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 230
-    sget-object v3, Landroid/support/v4/app/NotificationCompatJellybean;->b:Ljava/lang/reflect/Field;
+    sget-object v3, Landroid/support/v4/app/NotificationCompatJellybean;->mFieldb:Ljava/lang/reflect/Field;
 
     invoke-virtual {v3, p0, v0}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_3
@@ -252,7 +252,7 @@
     :goto_1
     const/4 v0, 0x1
 
-    sput-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->c:Z
+    sput-boolean v0, Landroid/support/v4/app/NotificationCompatJellybean;->isZc:Z
 
     .line 239
     monitor-exit v2

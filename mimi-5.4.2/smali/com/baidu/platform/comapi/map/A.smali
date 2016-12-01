@@ -18,11 +18,11 @@
 
 .field public static final enum b:Lcom/baidu/platform/comapi/map/A;
 
-.field private static final synthetic d:[Lcom/baidu/platform/comapi/map/A;
+.field private static final synthetic mArrayAd:[Lcom/baidu/platform/comapi/map/A;
 
 
 # instance fields
-.field private final c:I
+.field private final mIc:I
 
 
 # direct methods
@@ -61,7 +61,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/A;->d:[Lcom/baidu/platform/comapi/map/A;
+    sput-object v0, Lcom/baidu/platform/comapi/map/A;->mArrayAd:[Lcom/baidu/platform/comapi/map/A;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lcom/baidu/platform/comapi/map/A;->c:I
+    iput p3, p0, Lcom/baidu/platform/comapi/map/A;->mIc:I
 
     return-void
 .end method
@@ -98,7 +98,7 @@
 .method public static values()[Lcom/baidu/platform/comapi/map/A;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/A;->d:[Lcom/baidu/platform/comapi/map/A;
+    sget-object v0, Lcom/baidu/platform/comapi/map/A;->mArrayAd:[Lcom/baidu/platform/comapi/map/A;
 
     invoke-virtual {v0}, [Lcom/baidu/platform/comapi/map/A;->clone()Ljava/lang/Object;
 

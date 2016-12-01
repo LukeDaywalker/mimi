@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private a:Landroid/app/Notification$Builder;
+.field private mBuildera:Landroid/app/Notification$Builder;
 
-.field private b:Landroid/os/Bundle;
+.field private mBundleb:Landroid/os/Bundle;
 
-.field private c:Ljava/util/List;
+.field private mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -64,7 +64,7 @@
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->c:Ljava/util/List;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mListc:Ljava/util/List;
 
     .line 45
     new-instance v4, Landroid/app/Notification$Builder;
@@ -249,20 +249,20 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->a:Landroid/app/Notification$Builder;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     .line 71
     new-instance v4, Landroid/os/Bundle;
 
     invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iput-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     .line 72
     if-eqz p20, :cond_0
 
     .line 73
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     move-object/from16 v0, p20
 
@@ -279,7 +279,7 @@
     if-nez v4, :cond_1
 
     .line 76
-    iget-object v5, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v5, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v6, "android.people"
 
@@ -304,7 +304,7 @@
     if-eqz p18, :cond_2
 
     .line 80
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android.support.localOnly"
 
@@ -317,7 +317,7 @@
     if-eqz p21, :cond_3
 
     .line 83
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android.support.groupKey"
 
@@ -329,7 +329,7 @@
     if-eqz p22, :cond_9
 
     .line 85
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android.support.isGroupSummary"
 
@@ -343,7 +343,7 @@
     if-eqz p23, :cond_4
 
     .line 91
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android.support.sortKey"
 
@@ -378,7 +378,7 @@
 
     .line 87
     :cond_9
-    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v4, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android.support.useSideChannel"
 
@@ -396,7 +396,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     return-object v0
 .end method
@@ -406,9 +406,9 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->c:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mListc:Ljava/util/List;
 
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-static {v1, p1}, Landroid/support/v4/app/NotificationCompatJellybean;->a(Landroid/app/Notification$Builder;Landroid/support/v4/app/NotificationCompatBase$Action;)Landroid/os/Bundle;
 
@@ -425,7 +425,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->c:Ljava/util/List;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mListc:Ljava/util/List;
 
     invoke-static {v0}, Landroid/support/v4/app/NotificationCompatJellybean;->a(Ljava/util/List;)Landroid/util/SparseArray;
 
@@ -435,7 +435,7 @@
     if-eqz v0, :cond_0
 
     .line 111
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     const-string/jumbo v2, "android.support.actionExtras"
 
@@ -443,14 +443,14 @@
 
     .line 114
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->b:Landroid/os/Bundle;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBundleb:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
 
     .line 115
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->a:Landroid/app/Notification$Builder;
+    iget-object v0, p0, Landroid/support/v4/app/NotificationCompatKitKat$Builder;->mBuildera:Landroid/app/Notification$Builder;
 
     invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 

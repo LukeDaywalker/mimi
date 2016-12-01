@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
-.field private static final synthetic e:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+.field private static final synthetic mArrayICge:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
 
 # direct methods
@@ -96,7 +96,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->e:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sput-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mArrayICge:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 429
-    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->e:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
+    sget-object v0, Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->mArrayICge:[Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;
 
     invoke-virtual {v0}, [Lcom/google/i18n/phonenumbers/PhoneNumberUtil$ICg;->clone()Ljava/lang/Object;
 

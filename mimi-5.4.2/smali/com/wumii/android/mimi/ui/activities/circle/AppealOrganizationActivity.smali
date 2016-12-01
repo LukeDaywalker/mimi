@@ -4,23 +4,23 @@
 
 
 # static fields
-.field private static final o:Lorg/slf4j/Logger;
+.field private static final mLoggero:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field private mAlertDialogt:Landroid/app/AlertDialog;
 
-.field private D:Ljava/io/File;
+.field private mEditTextp:Landroid/widget/EditText;
 
-.field private p:Landroid/widget/EditText;
+.field private mEditTextq:Landroid/widget/EditText;
 
-.field private q:Landroid/widget/EditText;
+.field private mFileD:Ljava/io/File;
 
-.field private r:Landroid/widget/TextView;
+.field private mMenuItems:Landroid/view/MenuItem;
 
-.field private s:Landroid/view/MenuItem;
+.field private mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-.field private t:Landroid/app/AlertDialog;
+.field private mTextViewr:Landroid/widget/TextView;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->o:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mLoggero:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     return-object v0
 .end method
@@ -100,12 +100,12 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->s:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mMenuItems:Landroid/view/MenuItem;
 
     invoke-interface {v0, p1}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 130
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->s:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mMenuItems:Landroid/view/MenuItem;
 
     if-eqz p1, :cond_0
 
@@ -129,7 +129,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextq:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -168,7 +168,7 @@
     move-result-object v0
 
     .line 207
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -179,7 +179,7 @@
     if-ne v2, v3, :cond_2
 
     .line 208
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->r:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mTextViewr:Landroid/widget/TextView;
 
     const v3, 0x7f060295
 
@@ -188,7 +188,7 @@
     .line 212
     :cond_0
     :goto_0
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     .line 230
     :goto_1
@@ -214,7 +214,7 @@
 
     .line 234
     :cond_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->r:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mTextViewr:Landroid/widget/TextView;
 
     invoke-virtual {v2, v0, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
@@ -226,7 +226,7 @@
 
     .line 209
     :cond_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -237,7 +237,7 @@
     if-ne v2, v3, :cond_0
 
     .line 210
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->r:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mTextViewr:Landroid/widget/TextView;
 
     const v3, 0x7f06029a
 
@@ -301,10 +301,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     .line 218
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
     :try_end_0
@@ -338,7 +338,7 @@
 
     .line 227
     :goto_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->r:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mTextViewr:Landroid/widget/TextView;
 
     const-string/jumbo v3, ""
 
@@ -357,7 +357,7 @@
     const/4 v2, 0x0
 
     :try_start_2
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     .line 223
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
@@ -419,7 +419,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     return-object v0
 .end method
@@ -437,7 +437,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->p:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
     .line 95
     const v0, 0x7f0b005f
@@ -448,7 +448,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->q:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextq:Landroid/widget/EditText;
 
     .line 96
     const v0, 0x7f0b0061
@@ -459,7 +459,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->r:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mTextViewr:Landroid/widget/TextView;
 
     .line 97
     return-void
@@ -470,7 +470,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->t:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mAlertDialogt:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -498,11 +498,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->t:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mAlertDialogt:Landroid/app/AlertDialog;
 
     .line 125
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->t:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mAlertDialogt:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
@@ -512,7 +512,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->s:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mMenuItems:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -525,7 +525,7 @@
 
     .line 137
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -535,7 +535,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -577,7 +577,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mFileD:Ljava/io/File;
 
     if-nez v0, :cond_0
 
@@ -625,7 +625,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 74
     const v0, 0x7f0b0060
@@ -637,7 +637,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 75
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mOrganizationV2C:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 
@@ -651,7 +651,7 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->d(Ljava/lang/String;)V
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity$ICd;
 
@@ -684,10 +684,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->s:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mMenuItems:Landroid/view/MenuItem;
 
     .line 146
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->p:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->mEditTextp:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -697,7 +697,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 

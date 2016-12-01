@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 2948
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$CarExtender;->a:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$CarExtender;->mIa:I
 
     .line 2954
     return-void

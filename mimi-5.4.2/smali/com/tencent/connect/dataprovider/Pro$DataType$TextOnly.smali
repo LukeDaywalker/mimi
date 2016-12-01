@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextOnly;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextOnly;->mStringa:Ljava/lang/String;
 
     .line 88
     return-void
@@ -83,7 +83,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextOnly;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextOnly;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
+.field final synthetic mSmallCircleCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;->mSmallCircleCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;->mSmallCircleCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->getContext()Landroid/content/Context;
 

@@ -30,7 +30,7 @@
 
     iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
 
-    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->d:Landroid/app/PendingIntent;
+    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
@@ -41,16 +41,16 @@
 
     iget-object v3, p1, Landroid/support/v4/app/NotificationCompat$Builder;->c:Ljava/lang/CharSequence;
 
-    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->d:Landroid/app/PendingIntent;
+    iget-object v4, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
-    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$Builder;->e:Landroid/app/PendingIntent;
+    iget-object v5, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntente:Landroid/app/PendingIntent;
 
     invoke-static/range {v0 .. v5}, Landroid/support/v4/app/NotificationCompatGingerbread;->a(Landroid/app/Notification;Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Landroid/app/Notification;
 
     move-result-object v0
 
     .line 559
-    iget v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->j:I
+    iget v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mIj:I
 
     if-lez v1, :cond_0
 

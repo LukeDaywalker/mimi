@@ -24,7 +24,7 @@
 
 .field public final i:Lokio/ByteString;
 
-.field final j:I
+.field final mIj:I
 
 
 # direct methods
@@ -158,7 +158,7 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Header;->j:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Header;->mIj:I
 
     .line 35
     return-void

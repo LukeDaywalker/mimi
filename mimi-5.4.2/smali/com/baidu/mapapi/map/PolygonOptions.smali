@@ -3,17 +3,15 @@
 
 
 # instance fields
-.field a:I
+.field isZb:Z
 
-.field b:Z
+.field mBundlec:Landroid/os/Bundle;
 
-.field c:Landroid/os/Bundle;
+.field mIa:I
 
-.field private d:Lcom/baidu/mapapi/map/Stroke;
+.field private mIe:I
 
-.field private e:I
-
-.field private f:Ljava/util/List;
+.field private mListf:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -24,6 +22,8 @@
     .end annotation
 .end field
 
+.field private mStroked:Lcom/baidu/mapapi/map/Stroke;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -33,11 +33,11 @@
 
     const/high16 v0, -0x1000000
 
-    iput v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->e:I
+    iput v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIe:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->b:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->isZb:Z
 
     return-void
 .end method
@@ -51,23 +51,23 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/Polygon;-><init>()V
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->b:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->isZb:Z
 
-    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Polygon;->s:Z
+    iput-boolean v1, v0, Lcom/baidu/mapapi/map/Polygon;->isZs:Z
 
-    iget v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->a:I
+    iget v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIa:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Polygon;->r:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Polygon;->mIr:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->c:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mBundlec:Landroid/os/Bundle;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->t:Landroid/os/Bundle;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->mBundlet:Landroid/os/Bundle;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mListf:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mListf:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -87,17 +87,17 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->f:Ljava/util/List;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mListf:Ljava/util/List;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->mListc:Ljava/util/List;
 
-    iget v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->e:I
+    iget v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIe:I
 
-    iput v1, v0, Lcom/baidu/mapapi/map/Polygon;->b:I
+    iput v1, v0, Lcom/baidu/mapapi/map/Polygon;->mIb:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->d:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
-    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
+    iput-object v1, v0, Lcom/baidu/mapapi/map/Polygon;->mStrokea:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -105,7 +105,7 @@
 .method public extraInfo(Landroid/os/Bundle;)Lcom/baidu/mapapi/map/PolygonOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->c:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object p0
 .end method
@@ -113,7 +113,7 @@
 .method public fillColor(I)Lcom/baidu/mapapi/map/PolygonOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->e:I
+    iput p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIe:I
 
     return-object p0
 .end method
@@ -121,7 +121,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->c:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mBundlec:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
 .method public getFillColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->e:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIe:I
 
     return v0
 .end method
@@ -146,7 +146,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mListf:Ljava/util/List;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 .method public getStroke()Lcom/baidu/mapapi/map/Stroke;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->d:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -162,7 +162,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIa:I
 
     return v0
 .end method
@@ -170,7 +170,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->b:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/PolygonOptions;->isZb:Z
 
     return v0
 .end method
@@ -292,7 +292,7 @@
     goto :goto_0
 
     :cond_5
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mListf:Ljava/util/List;
 
     return-object p0
 .end method
@@ -300,7 +300,7 @@
 .method public stroke(Lcom/baidu/mapapi/map/Stroke;)Lcom/baidu/mapapi/map/PolygonOptions;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->d:Lcom/baidu/mapapi/map/Stroke;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mStroked:Lcom/baidu/mapapi/map/Stroke;
 
     return-object p0
 .end method
@@ -308,7 +308,7 @@
 .method public visible(Z)Lcom/baidu/mapapi/map/PolygonOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -316,7 +316,7 @@
 .method public zIndex(I)Lcom/baidu/mapapi/map/PolygonOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/PolygonOptions;->mIa:I
 
     return-object p0
 .end method

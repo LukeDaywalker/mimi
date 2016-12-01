@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/net/Socket;
+.field final synthetic mSocketa:Ljava/net/Socket;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 203
-    iput-object p1, p0, Lokio/Okio$ICt;->a:Ljava/net/Socket;
+    iput-object p1, p0, Lokio/Okio$ICt;->mSocketa:Ljava/net/Socket;
 
     invoke-direct {p0}, Lokio/AsyncTimeout;-><init>()V
 
@@ -28,7 +28,7 @@
     .prologue
     .line 206
     :try_start_0
-    iget-object v0, p0, Lokio/Okio$ICt;->a:Ljava/net/Socket;
+    iget-object v0, p0, Lokio/Okio$ICt;->mSocketa:Ljava/net/Socket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
     :try_end_0
@@ -59,7 +59,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lokio/Okio$ICt;->a:Ljava/net/Socket;
+    iget-object v4, p0, Lokio/Okio$ICt;->mSocketa:Ljava/net/Socket;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

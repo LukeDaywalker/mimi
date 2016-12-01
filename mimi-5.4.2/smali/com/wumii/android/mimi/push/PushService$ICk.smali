@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field final synthetic a:Z
+.field final synthetic isZa:Z
 
-.field final synthetic b:Lcom/wumii/android/mimi/push/PushService;
+.field final synthetic mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
 
 # direct methods
@@ -26,9 +26,9 @@
 
     .prologue
     .line 375
-    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->b:Lcom/wumii/android/mimi/push/PushService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->isZa:Z
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;-><init>()V
 
@@ -44,7 +44,7 @@
     const/4 v1, 0x0
 
     .line 378
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->b:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->c(Lcom/wumii/android/mimi/push/PushService;)Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
@@ -53,7 +53,7 @@
     if-eqz v0, :cond_0
 
     .line 379
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->b:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->c(Lcom/wumii/android/mimi/push/PushService;)Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
@@ -63,12 +63,12 @@
 
     .line 382
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->b:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/push/PushService;->a(Lcom/wumii/android/mimi/push/PushService;Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;)Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
     .line 383
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->b:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->mPushServiceb:Lcom/wumii/android/mimi/push/PushService;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->d(Lcom/wumii/android/mimi/push/PushService;)V
 
@@ -95,7 +95,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->a:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->isZa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -108,7 +108,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 390
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->isZa:Z
 
     if-eqz v0, :cond_0
 

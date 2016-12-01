@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
+.field final synthetic mCreateGroupForGroupInfoFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->mCreateGroupForGroupInfoFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
 
     .line 186
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->mCreateGroupForGroupInfoFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->b(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;)Z
 
@@ -51,7 +51,7 @@
 
     .line 191
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->mCreateGroupForGroupInfoFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->c(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;)Z
 
@@ -63,7 +63,7 @@
 
     .line 196
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICr;->mCreateGroupForGroupInfoFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->d(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;)Z
 

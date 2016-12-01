@@ -12,11 +12,11 @@
 
 .field private converserAvatar:Ljava/lang/String;
 
-.field private id:Ljava/lang/String;
-
 .field private imageUrl:Ljava/lang/String;
 
 .field private loginUserAvatar:Ljava/lang/String;
+
+.field private mStringid:Ljava/lang/String;
 
 .field private remainTimeInMs:Ljava/lang/Long;
 
@@ -61,7 +61,7 @@
     iput-wide v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->totalTimeInMs:J
 
     .line 34
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->mStringid:Ljava/lang/String;
 
     .line 35
     iput-object p2, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->secretId:Ljava/lang/String;
@@ -145,7 +145,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -429,7 +429,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->id:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileConversation;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

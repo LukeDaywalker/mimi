@@ -1,4 +1,4 @@
-.class public Lorg/apache/commons/long/BooleanUtils;
+.class public Lorg/apache/commons/long3/BooleanUtils;
 .super Ljava/lang/Object;
 .source "BooleanUtils.java"
 
@@ -449,11 +449,11 @@
 
     .prologue
     .line 729
-    invoke-static {p0}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-static {p0}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v0
 

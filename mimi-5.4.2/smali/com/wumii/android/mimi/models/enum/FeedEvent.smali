@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
+.field private static final synthetic mArrayFeedEventd:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->d:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sput-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mArrayFeedEventd:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 3
-    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->d:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->mArrayFeedEventd:[Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/models/enum/FeedEvent;->clone()Ljava/lang/Object;
 

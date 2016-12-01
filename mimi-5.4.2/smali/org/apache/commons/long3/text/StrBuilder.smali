@@ -1,4 +1,4 @@
-.class public Lorg/apache/commons/long/text/StrBuilder;
+.class public Lorg/apache/commons/long3/text/StrBuilder;
 .super Ljava/lang/Object;
 .source "StrBuilder.java"
 
@@ -11,7 +11,7 @@
 
 .field protected b:I
 
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .line 102
     const/16 v0, 0x20
 
-    invoke-direct {p0, v0}, Lorg/apache/commons/long/text/StrBuilder;-><init>(I)V
+    invoke-direct {p0, v0}, Lorg/apache/commons/long3/text/StrBuilder;-><init>(I)V
 
     .line 103
     return-void
@@ -45,7 +45,7 @@
     :cond_0
     new-array v0, p1, [C
 
-    iput-object v0, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iput-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 116
     return-void
@@ -58,38 +58,38 @@
 
     .prologue
     .line 186
-    iget v0, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     return v0
 .end method
 
-.method public a(I)Lorg/apache/commons/long/text/StrBuilder;
+.method public a(I)Lorg/apache/commons/long3/text/StrBuilder;
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 232
-    iget-object v0, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     array-length v0, v0
 
     if-le p1, v0, :cond_0
 
     .line 233
-    iget-object v0, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 234
     mul-int/lit8 v1, p1, 0x2
 
     new-array v1, v1, [C
 
-    iput-object v1, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iput-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 235
-    iget-object v1, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
-    iget v2, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -98,7 +98,7 @@
     return-object p0
 .end method
 
-.method public a(Ljava/lang/Object;)Lorg/apache/commons/long/text/StrBuilder;
+.method public a(Ljava/lang/Object;)Lorg/apache/commons/long3/text/StrBuilder;
     .locals 1
 
     .prologue
@@ -106,7 +106,7 @@
     if-nez p1, :cond_0
 
     .line 460
-    invoke-virtual {p0}, Lorg/apache/commons/long/text/StrBuilder;->b()Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {p0}, Lorg/apache/commons/long3/text/StrBuilder;->b()Lorg/apache/commons/long3/text/StrBuilder;
 
     move-result-object v0
 
@@ -119,14 +119,14 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {p0, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+.method public a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
     .locals 4
 
     .prologue
@@ -134,7 +134,7 @@
     if-nez p1, :cond_1
 
     .line 474
-    invoke-virtual {p0}, Lorg/apache/commons/long/text/StrBuilder;->b()Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {p0}, Lorg/apache/commons/long3/text/StrBuilder;->b()Lorg/apache/commons/long3/text/StrBuilder;
 
     move-result-object p0
 
@@ -153,33 +153,33 @@
     if-lez v0, :cond_0
 
     .line 478
-    invoke-virtual {p0}, Lorg/apache/commons/long/text/StrBuilder;->a()I
+    invoke-virtual {p0}, Lorg/apache/commons/long3/text/StrBuilder;->a()I
 
     move-result v1
 
     .line 479
     add-int v2, v1, v0
 
-    invoke-virtual {p0, v2}, Lorg/apache/commons/long/text/StrBuilder;->a(I)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {p0, v2}, Lorg/apache/commons/long3/text/StrBuilder;->a(I)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 480
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     invoke-virtual {p1, v2, v0, v3, v1}, Ljava/lang/String;->getChars(II[CI)V
 
     .line 481
-    iget v1, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iput v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     goto :goto_0
 .end method
 
-.method public a(Lorg/apache/commons/long/text/StrBuilder;)Z
+.method public a(Lorg/apache/commons/long3/text/StrBuilder;)Z
     .locals 7
 
     .prologue
@@ -197,9 +197,9 @@
 
     .line 2515
     :cond_1
-    iget v2, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
-    iget v3, p1, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v3, p1, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     if-eq v2, v3, :cond_2
 
@@ -210,13 +210,13 @@
 
     .line 2518
     :cond_2
-    iget-object v3, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 2519
-    iget-object v4, p1, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v4, p1, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 2520
-    iget v2, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -242,12 +242,12 @@
     goto :goto_1
 .end method
 
-.method public b()Lorg/apache/commons/long/text/StrBuilder;
+.method public b()Lorg/apache/commons/long3/text/StrBuilder;
     .locals 1
 
     .prologue
     .line 445
-    iget-object v0, p0, Lorg/apache/commons/long/text/StrBuilder;->c:Ljava/lang/String;
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mStringc:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -256,9 +256,9 @@
     return-object p0
 
     :cond_0
-    iget-object v0, p0, Lorg/apache/commons/long/text/StrBuilder;->c:Ljava/lang/String;
+    iget-object v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->mStringc:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {p0, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     move-result-object p0
 
@@ -276,23 +276,23 @@
 
     move-result-object v0
 
-    check-cast v0, Lorg/apache/commons/long/text/StrBuilder;
+    check-cast v0, Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 2589
-    iget-object v1, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     array-length v1, v1
 
     new-array v1, v1, [C
 
-    iput-object v1, v0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iput-object v1, v0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 2590
-    iget-object v1, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
-    iget-object v2, v0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v2, v0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
-    iget-object v3, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     array-length v3, v3
 
@@ -307,14 +307,14 @@
 
     .prologue
     .line 2536
-    instance-of v0, p1, Lorg/apache/commons/long/text/StrBuilder;
+    instance-of v0, p1, Lorg/apache/commons/long3/text/StrBuilder;
 
     if-eqz v0, :cond_0
 
     .line 2537
-    check-cast p1, Lorg/apache/commons/long/text/StrBuilder;
+    check-cast p1, Lorg/apache/commons/long3/text/StrBuilder;
 
-    invoke-virtual {p0, p1}, Lorg/apache/commons/long/text/StrBuilder;->a(Lorg/apache/commons/long/text/StrBuilder;)Z
+    invoke-virtual {p0, p1}, Lorg/apache/commons/long3/text/StrBuilder;->a(Lorg/apache/commons/long3/text/StrBuilder;)Z
 
     move-result v0
 
@@ -333,13 +333,13 @@
 
     .prologue
     .line 2548
-    iget-object v2, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v2, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     .line 2549
     const/4 v1, 0x0
 
     .line 2550
-    iget v0, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v0, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     add-int/lit8 v0, v0, -0x1
 
@@ -370,11 +370,11 @@
     .line 2567
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lorg/apache/commons/long/text/StrBuilder;->a:[C
+    iget-object v1, p0, Lorg/apache/commons/long3/text/StrBuilder;->a:[C
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lorg/apache/commons/long/text/StrBuilder;->b:I
+    iget v3, p0, Lorg/apache/commons/long3/text/StrBuilder;->b:I
 
     invoke-direct {v0, v1, v2, v3}, Ljava/lang/String;-><init>([CII)V
 

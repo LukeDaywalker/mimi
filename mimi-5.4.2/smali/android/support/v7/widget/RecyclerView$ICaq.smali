@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field a:Landroid/support/v7/widget/RecyclerView$ICbg;
+.field mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
-.field b:I
+.field mIb:I
 
-.field c:I
+.field mIc:I
 
-.field d:I
+.field mId:I
 
-.field e:I
+.field mIe:I
 
 
 # direct methods
@@ -24,19 +24,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9774
-    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->a:Landroid/support/v7/widget/RecyclerView$ICbg;
+    iput-object p1, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->mICbga:Landroid/support/v7/widget/RecyclerView$ICbg;
 
     .line 9775
-    iput p2, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->b:I
+    iput p2, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->mIb:I
 
     .line 9776
-    iput p3, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->c:I
+    iput p3, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->mIc:I
 
     .line 9777
-    iput p4, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->d:I
+    iput p4, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->mId:I
 
     .line 9778
-    iput p5, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->e:I
+    iput p5, p0, Landroid/support/v7/widget/RecyclerView$ICaq;->mIe:I
 
     .line 9779
     return-void

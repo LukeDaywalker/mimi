@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljavax/net/ssl/SSLContext;
+.field private mSSLContexta:Ljavax/net/ssl/SSLContext;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/c/Pro$ICg;->a:Ljavax/net/ssl/SSLContext;
+    iput-object v0, p0, Lcom/tencent/c/Pro$ICg;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     .line 1014
     :try_start_0
@@ -36,7 +36,7 @@
 
     .line 1018
     :goto_0
-    iget-object v2, p0, Lcom/tencent/c/Pro$ICg;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v2, p0, Lcom/tencent/c/Pro$ICg;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     const/4 v3, 0x1
 
@@ -67,7 +67,7 @@
 
     .prologue
     .line 1030
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICg;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICg;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 1025
-    iget-object v0, p0, Lcom/tencent/c/Pro$ICg;->a:Ljavax/net/ssl/SSLContext;
+    iget-object v0, p0, Lcom/tencent/c/Pro$ICg;->mSSLContexta:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 

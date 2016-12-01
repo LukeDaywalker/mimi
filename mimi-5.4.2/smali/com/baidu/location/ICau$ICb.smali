@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICau;
-
-.field private do:Z
-
 .field public for:Ljava/util/List;
 
-.field private if:J
-
 .field private int:J
+
+.field private isZdo:Z
+
+.field final synthetic mICaua:Lcom/baidu/location/ICau;
+
+.field private mJif:J
 
 .field private new:Z
 
@@ -22,7 +22,7 @@
 
     const-wide/16 v2, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICau$ICb;->a:Lcom/baidu/location/ICau;
+    iput-object p1, p0, Lcom/baidu/location/ICau$ICb;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICau$ICb;->for:Ljava/util/List;
 
-    iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->if:J
+    iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->int:J
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->do:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
     if-eqz p2, :cond_0
 
@@ -44,17 +44,17 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICau$ICb;->for:Ljava/util/List;
 
-    iget-wide v0, p2, Lcom/baidu/location/ICau$ICb;->if:J
+    iget-wide v0, p2, Lcom/baidu/location/ICau$ICb;->mJif:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICau$ICb;->if:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     iget-wide v0, p2, Lcom/baidu/location/ICau$ICb;->int:J
 
     iput-wide v0, p0, Lcom/baidu/location/ICau$ICb;->int:J
 
-    iget-boolean v0, p2, Lcom/baidu/location/ICau$ICb;->do:Z
+    iget-boolean v0, p2, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->do:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
     :cond_0
     return-void
@@ -65,7 +65,7 @@
 
     const-wide/16 v2, 0x0
 
-    iput-object p1, p0, Lcom/baidu/location/ICau$ICb;->a:Lcom/baidu/location/ICau;
+    iput-object p1, p0, Lcom/baidu/location/ICau$ICb;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,15 +73,15 @@
 
     iput-object v0, p0, Lcom/baidu/location/ICau$ICb;->for:Ljava/util/List;
 
-    iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->if:J
+    iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     iput-wide v2, p0, Lcom/baidu/location/ICau$ICb;->int:J
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->do:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
-    iput-wide p3, p0, Lcom/baidu/location/ICau$ICb;->if:J
+    iput-wide p3, p0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     iput-object p2, p0, Lcom/baidu/location/ICau$ICb;->for:Ljava/util/List;
 
@@ -396,7 +396,7 @@
 .method public case()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->do:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
     return v0
 .end method
@@ -965,7 +965,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICau$ICb;->a:Lcom/baidu/location/ICau;
+    iget-object v2, v0, Lcom/baidu/location/ICau$ICb;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-virtual {v2}, Lcom/baidu/location/ICau;->ck()Ljava/lang/String;
 
@@ -1123,7 +1123,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/baidu/location/ICau$ICb;->a:Lcom/baidu/location/ICau;
+    iget-object v5, v0, Lcom/baidu/location/ICau$ICb;->mICaua:Lcom/baidu/location/ICau;
 
     move-object/from16 v0, p0
 
@@ -1345,7 +1345,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v2, v0, Lcom/baidu/location/ICau$ICb;->if:J
+    iget-wide v2, v0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     invoke-virtual {v9, v2, v3}, Ljava/lang/StringBuffer;->append(J)Ljava/lang/StringBuffer;
 
@@ -1365,7 +1365,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICau$ICb;->a:Lcom/baidu/location/ICau;
+    iget-object v2, v0, Lcom/baidu/location/ICau$ICb;->mICaua:Lcom/baidu/location/ICau;
 
     invoke-static {v2}, Lcom/baidu/location/ICau;->do(Lcom/baidu/location/ICau;)J
 
@@ -1379,7 +1379,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/baidu/location/ICau$ICb;->do:Z
+    iput-boolean v2, v0, Lcom/baidu/location/ICau$ICb;->isZdo:Z
 
     const-string/jumbo v2, "&wf_en="
 
@@ -1431,7 +1431,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICau$ICb;->if:J
+    iget-wide v2, p0, Lcom/baidu/location/ICau$ICb;->mJif:J
 
     sub-long/2addr v0, v2
 

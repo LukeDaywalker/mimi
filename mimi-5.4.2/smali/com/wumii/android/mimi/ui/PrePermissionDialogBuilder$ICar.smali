@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private b:Landroid/util/DisplayMetrics;
+.field private mContexta:Landroid/content/Context;
 
-.field private c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
-.field private d:I
+.field private mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field private e:I
+.field private mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field private f:I
+.field private mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-.field private g:Ljava/lang/String;
+.field private mICaqk:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
 
-.field private h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field private mId:I
 
-.field private i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field private mIe:I
 
-.field private j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+.field private mIf:I
 
-.field private k:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
+.field private mStringg:Ljava/lang/String;
 
 
 # direct methods
@@ -36,13 +36,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mContexta:Landroid/content/Context;
 
     .line 42
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->b:Landroid/util/DisplayMetrics;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     .line 43
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 44
     return-void
@@ -53,7 +53,7 @@
 
     .prologue
     .line 23
-    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->d:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mId:I
 
     return v0
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 23
-    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mIe:I
 
     return v0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mStringg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 23
-    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mIf:I
 
     return v0
 .end method
@@ -93,7 +93,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICaqk:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
 
     return-object v0
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     return-object v0
 .end method
@@ -113,7 +113,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->b:Landroid/util/DisplayMetrics;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mDisplayMetricsb:Landroid/util/DisplayMetrics;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->c:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mActivityEventManagerc:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     return-object v0
 .end method
@@ -143,7 +143,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     return-object v0
 .end method
@@ -153,7 +153,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     return-object v0
 .end method
@@ -165,7 +165,7 @@
 
     .prologue
     .line 47
-    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->d:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mId:I
 
     .line 48
     return-object p0
@@ -176,7 +176,7 @@
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICaqk:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
 
     .line 75
     return-object p0
@@ -187,13 +187,13 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafh:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 68
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->i:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafi:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 69
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mICafj:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     .line 70
     return-object p0
@@ -204,7 +204,7 @@
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mStringg:Ljava/lang/String;
 
     .line 63
     return-object p0
@@ -227,7 +227,7 @@
 
     .prologue
     .line 52
-    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->e:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mIe:I
 
     .line 53
     return-object p0
@@ -238,7 +238,7 @@
 
     .prologue
     .line 57
-    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->mIf:I
 
     .line 58
     return-object p0

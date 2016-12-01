@@ -7,27 +7,27 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/b/a/Pro$ICb;
+.field private volatile isZi:Z
 
-.field private b:Ljava/io/FileWriter;
+.field private mArrayCd:[C
 
-.field private c:Ljava/io/File;
+.field private mFileWriterb:Ljava/io/FileWriter;
 
-.field private d:[C
+.field private mFilec:Ljava/io/File;
 
-.field private volatile e:Lcom/tencent/b/a/Pro$ICg;
+.field private mHandlerThreadj:Landroid/os/HandlerThread;
 
-.field private volatile f:Lcom/tencent/b/a/Pro$ICg;
+.field private mHandlerk:Landroid/os/Handler;
 
-.field private volatile g:Lcom/tencent/b/a/Pro$ICg;
+.field private mICba:Lcom/tencent/b/a/Pro$ICb;
 
-.field private volatile h:Lcom/tencent/b/a/Pro$ICg;
+.field private volatile mICge:Lcom/tencent/b/a/Pro$ICg;
 
-.field private volatile i:Z
+.field private volatile mICgf:Lcom/tencent/b/a/Pro$ICg;
 
-.field private j:Landroid/os/HandlerThread;
+.field private volatile mICgg:Lcom/tencent/b/a/Pro$ICg;
 
-.field private k:Landroid/os/Handler;
+.field private volatile mICgh:Lcom/tencent/b/a/Pro$ICg;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     .line 60
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->i:Z
+    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->isZi:Z
 
     .line 93
     invoke-virtual {p0, p4}, Lcom/tencent/b/a/Pro;->a(Lcom/tencent/b/a/Pro$ICb;)V
@@ -51,24 +51,24 @@
 
     invoke-direct {v0}, Lcom/tencent/b/a/Pro$ICg;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->e:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICge:Lcom/tencent/b/a/Pro$ICg;
 
     .line 96
     new-instance v0, Lcom/tencent/b/a/Pro$ICg;
 
     invoke-direct {v0}, Lcom/tencent/b/a/Pro$ICg;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->f:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgf:Lcom/tencent/b/a/Pro$ICg;
 
     .line 98
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->e:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICge:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
     .line 99
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->f:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgf:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     .line 101
     invoke-virtual {p4}, Lcom/tencent/b/a/Pro$ICb;->f()I
@@ -77,7 +77,7 @@
 
     new-array v0, v0, [C
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->d:[C
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mArrayCd:[C
 
     .line 103
     invoke-virtual {p4}, Lcom/tencent/b/a/Pro$ICb;->b()V
@@ -98,21 +98,21 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     .line 109
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
 
     .line 111
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     .line 114
     :cond_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->isAlive()Z
 
@@ -120,7 +120,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -131,7 +131,7 @@
     .line 116
     new-instance v0, Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -139,7 +139,7 @@
 
     invoke-direct {v0, v1, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->k:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerk:Landroid/os/Handler;
 
     .line 119
     :cond_1
@@ -171,12 +171,12 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerk:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 191
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerk:Landroid/os/Handler;
 
     const/16 v1, 0x400
 
@@ -204,7 +204,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     if-eq v0, v1, :cond_1
 
@@ -215,27 +215,27 @@
 
     .line 206
     :cond_1
-    iget-boolean v0, p0, Lcom/tencent/b/a/Pro;->i:Z
+    iget-boolean v0, p0, Lcom/tencent/b/a/Pro;->isZi:Z
 
     if-nez v0, :cond_0
 
     .line 211
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->i:Z
+    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->isZi:Z
 
     .line 214
     invoke-direct {p0}, Lcom/tencent/b/a/Pro;->j()V
 
     .line 218
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-direct {p0}, Lcom/tencent/b/a/Pro;->h()Ljava/io/Writer;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/b/a/Pro;->d:[C
+    iget-object v2, p0, Lcom/tencent/b/a/Pro;->mArrayCd:[C
 
     invoke-virtual {v0, v1, v2}, Lcom/tencent/b/a/Pro$ICg;->a(Ljava/io/Writer;[C)V
     :try_end_0
@@ -243,7 +243,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 227
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-virtual {v0}, Lcom/tencent/b/a/Pro$ICg;->b()V
 
@@ -251,7 +251,7 @@
     :goto_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->i:Z
+    iput-boolean v0, p0, Lcom/tencent/b/a/Pro;->isZi:Z
 
     goto :goto_0
 
@@ -260,7 +260,7 @@
     move-exception v0
 
     .line 227
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-virtual {v0}, Lcom/tencent/b/a/Pro$ICg;->b()V
 
@@ -269,7 +269,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-virtual {v1}, Lcom/tencent/b/a/Pro$ICg;->b()V
 
@@ -292,7 +292,7 @@
     .line 245
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->c:Ljava/io/File;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mFilec:Ljava/io/File;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
 
@@ -301,7 +301,7 @@
     if-nez v1, :cond_0
 
     .line 247
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->c:Ljava/io/File;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mFilec:Ljava/io/File;
 
     .line 249
     invoke-direct {p0}, Lcom/tencent/b/a/Pro;->i()V
@@ -310,19 +310,19 @@
     :try_start_0
     new-instance v0, Ljava/io/FileWriter;
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->c:Ljava/io/File;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mFilec:Ljava/io/File;
 
     const/4 v2, 0x1
 
     invoke-direct {v0, v1, v2}, Ljava/io/FileWriter;-><init>(Ljava/io/File;Z)V
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->b:Ljava/io/FileWriter;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mFileWriterb:Ljava/io/FileWriter;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 261
     :cond_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->b:Ljava/io/FileWriter;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mFileWriterb:Ljava/io/FileWriter;
 
     :goto_0
     return-object v0
@@ -343,17 +343,17 @@
     .prologue
     .line 275
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->b:Ljava/io/FileWriter;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mFileWriterb:Ljava/io/FileWriter;
 
     if-eqz v0, :cond_0
 
     .line 277
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->b:Ljava/io/FileWriter;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mFileWriterb:Ljava/io/FileWriter;
 
     invoke-virtual {v0}, Ljava/io/FileWriter;->flush()V
 
     .line 278
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->b:Ljava/io/FileWriter;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mFileWriterb:Ljava/io/FileWriter;
 
     invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
     :try_end_0
@@ -383,21 +383,21 @@
 
     .line 294
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
-    iget-object v1, p0, Lcom/tencent/b/a/Pro;->e:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v1, p0, Lcom/tencent/b/a/Pro;->mICge:Lcom/tencent/b/a/Pro$ICg;
 
     if-ne v0, v1, :cond_0
 
     .line 296
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->f:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgf:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
     .line 297
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->e:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICge:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     .line 304
     :goto_0
@@ -408,14 +408,14 @@
 
     .line 301
     :cond_0
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->e:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICge:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
     .line 302
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->f:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgf:Lcom/tencent/b/a/Pro$ICg;
 
-    iput-object v0, p0, Lcom/tencent/b/a/Pro;->h:Lcom/tencent/b/a/Pro$ICg;
+    iput-object v0, p0, Lcom/tencent/b/a/Pro;->mICgh:Lcom/tencent/b/a/Pro$ICg;
 
     goto :goto_0
 
@@ -439,7 +439,7 @@
     const/16 v1, 0x400
 
     .line 128
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerk:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -448,7 +448,7 @@
     if-eqz v0, :cond_0
 
     .line 130
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerk:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
@@ -494,7 +494,7 @@
 
     .prologue
     .line 325
-    iput-object p1, p0, Lcom/tencent/b/a/Pro;->a:Lcom/tencent/b/a/Pro$ICb;
+    iput-object p1, p0, Lcom/tencent/b/a/Pro;->mICba:Lcom/tencent/b/a/Pro$ICb;
 
     .line 326
     return-void
@@ -505,12 +505,12 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-virtual {v0, p1}, Lcom/tencent/b/a/Pro$ICg;->a(Ljava/lang/String;)I
 
     .line 162
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->g:Lcom/tencent/b/a/Pro$ICg;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICgg:Lcom/tencent/b/a/Pro$ICg;
 
     invoke-virtual {v0}, Lcom/tencent/b/a/Pro$ICg;->a()I
 
@@ -542,7 +542,7 @@
     invoke-direct {p0}, Lcom/tencent/b/a/Pro;->i()V
 
     .line 145
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->j:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mHandlerThreadj:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
@@ -555,7 +555,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/tencent/b/a/Pro;->a:Lcom/tencent/b/a/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/b/a/Pro;->mICba:Lcom/tencent/b/a/Pro$ICb;
 
     return-object v0
 .end method

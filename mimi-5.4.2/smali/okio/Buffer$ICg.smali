@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lokio/Buffer;
+.field final synthetic mBuffera:Lokio/Buffer;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 68
-    iput-object p1, p0, Lokio/Buffer$ICg;->a:Lokio/Buffer;
+    iput-object p1, p0, Lokio/Buffer$ICg;->mBuffera:Lokio/Buffer;
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lokio/Buffer$ICg;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/Buffer$ICg;->mBuffera:Lokio/Buffer;
 
     int-to-byte v1, p1
 
@@ -84,7 +84,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lokio/Buffer$ICg;->a:Lokio/Buffer;
+    iget-object v0, p0, Lokio/Buffer$ICg;->mBuffera:Lokio/Buffer;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Buffer;->b([BII)Lokio/Buffer;
 

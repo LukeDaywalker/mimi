@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+.field final synthetic mCircleLockedFeedCardViewd:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+.field final synthetic mCirclec:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field final synthetic c:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field final synthetic mOrganizationTypeb:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
-.field final synthetic d:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+.field final synthetic mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 106
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->d:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCircleLockedFeedCardViewd:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->b:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationTypeb:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->c:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCirclec:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,11 +75,11 @@
     invoke-direct {v1, v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->d:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCircleLockedFeedCardViewd:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->getContext()Landroid/content/Context;
 
@@ -89,7 +89,7 @@
 
     new-array v4, v8, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->b:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationTypeb:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     sget-object v5, Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;->SCHOOL:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -100,7 +100,7 @@
     :goto_0
     aput-object v0, v4, v6
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->c:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCirclec:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -146,7 +146,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->d:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCircleLockedFeedCardViewd:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->getContext()Landroid/content/Context;
 
@@ -158,7 +158,7 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->b:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationTypeb:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
     sget-object v5, Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;->SCHOOL:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -169,7 +169,7 @@
     :goto_2
     aput-object v0, v4, v6
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->c:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCirclec:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -177,7 +177,7 @@
 
     aput-object v0, v4, v7
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getType()Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
@@ -194,7 +194,7 @@
 
     const/4 v0, 0x3
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mOrganizationV2a:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;->getName()Ljava/lang/String;
 

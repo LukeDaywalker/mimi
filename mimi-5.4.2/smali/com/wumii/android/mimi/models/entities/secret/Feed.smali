@@ -28,7 +28,7 @@
 
 .field private feedTypeId:Ljava/lang/String;
 
-.field private id:J
+.field private mJid:J
 
 .field private orderTime:J
 
@@ -62,7 +62,7 @@
     .line 35
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->id:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->mJid:J
 
     .line 36
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -95,7 +95,7 @@
     .line 35
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->id:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->mJid:J
 
     .line 36
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -726,7 +726,7 @@
 
     .prologue
     .line 66
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->id:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->mJid:J
 
     return-wide v0
 .end method
@@ -957,7 +957,7 @@
 
     .prologue
     .line 70
-    iput-wide p1, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->id:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->mJid:J
 
     .line 71
     return-void

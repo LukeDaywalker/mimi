@@ -1,4 +1,4 @@
-.class public Lorg/apache/commons/long/math/RandomUtils;
+.class public Lorg/apache/commons/long3/math/RandomUtils;
 .super Ljava/lang/Object;
 .source "RandomUtils.java"
 
@@ -13,11 +13,11 @@
 
     .prologue
     .line 37
-    new-instance v0, Lorg/apache/commons/long/math/JVMRandom;
+    new-instance v0, Lorg/apache/commons/long3/math/JVMRandom;
 
-    invoke-direct {v0}, Lorg/apache/commons/long/math/JVMRandom;-><init>()V
+    invoke-direct {v0}, Lorg/apache/commons/long3/math/JVMRandom;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long/math/RandomUtils;->a:Ljava/util/Random;
+    sput-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
 
     return-void
 .end method
@@ -27,9 +27,9 @@
 
     .prologue
     .line 51
-    sget-object v0, Lorg/apache/commons/long/math/RandomUtils;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
 
-    invoke-static {v0}, Lorg/apache/commons/long/math/RandomUtils;->a(Ljava/util/Random;)I
+    invoke-static {v0}, Lorg/apache/commons/long3/math/RandomUtils;->a(Ljava/util/Random;)I
 
     move-result v0
 
@@ -41,9 +41,9 @@
 
     .prologue
     .line 74
-    sget-object v0, Lorg/apache/commons/long/math/RandomUtils;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/RandomUtils;->a:Ljava/util/Random;
 
-    invoke-static {v0, p0}, Lorg/apache/commons/long/math/RandomUtils;->a(Ljava/util/Random;I)I
+    invoke-static {v0, p0}, Lorg/apache/commons/long3/math/RandomUtils;->a(Ljava/util/Random;I)I
 
     move-result v0
 

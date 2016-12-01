@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+.field final synthetic mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 370
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     .line 371
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICd;-><init>(Landroid/view/View;)V
@@ -42,7 +42,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 380
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -75,7 +75,7 @@
     move-result-object v0
 
     .line 383
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -96,7 +96,7 @@
     :goto_0
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->d:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->b(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)Landroid/content/Context;
 
@@ -136,7 +136,7 @@
     .line 399
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->f:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->c(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 
@@ -157,7 +157,7 @@
     .line 402
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->e:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->g:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter$ICh;->mChatListAdapterg:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->d(Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;)I
 

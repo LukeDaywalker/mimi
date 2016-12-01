@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:I
+.field final synthetic mIa:I
 
-.field final synthetic b:Lcom/wumii/android/mimi/network/server/ServersManager;
+.field final synthetic mServersManagerb:Lcom/wumii/android/mimi/network/server/ServersManager;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->b:Lcom/wumii/android/mimi/network/server/ServersManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->mServersManagerb:Lcom/wumii/android/mimi/network/server/ServersManager;
 
-    iput p2, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->mIa:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->b:Lcom/wumii/android/mimi/network/server/ServersManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->mServersManagerb:Lcom/wumii/android/mimi/network/server/ServersManager;
 
-    iget v1, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;->mIa:I
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/network/server/ServersManager;->a(Lcom/wumii/android/mimi/network/server/ServersManager;I)V
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/umeng/analytics/InternalAgent;
+.field private static final mInternalAgenta:Lcom/umeng/analytics/InternalAgent;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/InternalAgent;-><init>()V
 
-    sput-object v0, Lcom/umeng/analytics/MobclickAgent;->a:Lcom/umeng/analytics/InternalAgent;
+    sput-object v0, Lcom/umeng/analytics/MobclickAgent;->mInternalAgenta:Lcom/umeng/analytics/InternalAgent;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 131
-    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->a:Lcom/umeng/analytics/InternalAgent;
+    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->mInternalAgenta:Lcom/umeng/analytics/InternalAgent;
 
     invoke-virtual {v0, p0}, Lcom/umeng/analytics/InternalAgent;->b(Landroid/content/Context;)V
 
@@ -59,7 +59,7 @@
 
     .line 245
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->a:Lcom/umeng/analytics/InternalAgent;
+    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->mInternalAgenta:Lcom/umeng/analytics/InternalAgent;
 
     const-wide/16 v4, -0x1
 
@@ -107,7 +107,7 @@
 
     .line 144
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->a:Lcom/umeng/analytics/InternalAgent;
+    sget-object v0, Lcom/umeng/analytics/MobclickAgent;->mInternalAgenta:Lcom/umeng/analytics/InternalAgent;
 
     invoke-virtual {v0, p0}, Lcom/umeng/analytics/InternalAgent;->a(Landroid/content/Context;)V
 

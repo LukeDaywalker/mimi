@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+.field final synthetic mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+.field final synthetic mShareDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->b:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->mShareDialogBuilderb:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 137
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->mAbsBaseShareControllera:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

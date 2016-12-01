@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:I
+.field private mICcbc:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
-.field private b:I
+.field private mIa:I
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
+.field private mIb:I
 
 
 # direct methods
@@ -43,12 +43,12 @@
     invoke-direct {p0, p1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
     .line 30
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     .line 32
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->b:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIb:I
 
     .line 43
     const/4 v0, 0x2
@@ -77,10 +77,10 @@
 
     .line 51
     :cond_2
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     .line 52
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->b:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIb:I
 
     .line 53
     return-void
@@ -109,7 +109,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mICcbc:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     return-object v0
 .end method
@@ -190,13 +190,13 @@
 
     .prologue
     .line 102
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mICcbc:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     .line 104
     if-eqz p1, :cond_1
 
     .line 105
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     const/4 v1, 0x1
 
@@ -211,11 +211,11 @@
 
     .line 108
     :cond_0
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     or-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     .line 110
     :cond_1
@@ -302,7 +302,7 @@
     if-lez v0, :cond_3
 
     .line 61
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
@@ -363,19 +363,19 @@
     :cond_1
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/WMText;
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->b:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIb:I
 
     invoke-direct {v3, p3, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText;-><init>(Ljava/lang/CharSequence;II)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mICcbc:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     if-eqz v0, :cond_2
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mICcbc:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a(Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;)V
 
@@ -400,7 +400,7 @@
 
     .line 76
     :cond_3
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->mIa:I
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 

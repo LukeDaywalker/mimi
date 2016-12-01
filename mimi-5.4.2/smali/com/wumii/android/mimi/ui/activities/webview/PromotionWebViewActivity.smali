@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+.field private mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
-.field private p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+.field private mShareDialogBuildero:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mShareDialogBuildero:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     if-nez v0, :cond_0
 
@@ -67,11 +67,11 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mShareDialogBuildero:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     .line 67
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mShareDialogBuildero:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
@@ -118,7 +118,7 @@
     const/4 v9, 0x1
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     if-nez v0, :cond_0
 
@@ -149,12 +149,12 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     .line 40
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getUrl()Ljava/lang/String;
 
@@ -255,7 +255,7 @@
 
     invoke-direct/range {v0 .. v11}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/Image;Lcom/wumii/android/mimi/models/entities/Image;Ljava/lang/String;ILjava/lang/String;ZLjava/lang/String;Z)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->mPromotionp:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     goto :goto_0
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Map;
+.field private mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/MapBuilder;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/MapBuilder;->mMapa:Ljava/util/Map;
 
     return-void
 .end method
@@ -283,7 +283,7 @@
     if-eqz p1, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/MapBuilder;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/MapBuilder;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -317,7 +317,7 @@
     .line 81
     new-instance v0, Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/google/analytics/tracking/android/MapBuilder;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/analytics/tracking/android/MapBuilder;->mMapa:Ljava/util/Map;
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 

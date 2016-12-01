@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICt$ICa;
+.field final synthetic mICaa:Lcom/baidu/location/ICt$ICa;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICt$ICa;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICt$ICa$1;->a:Lcom/baidu/location/ICt$ICa;
+    iput-object p1, p0, Lcom/baidu/location/ICt$ICa$1;->mICaa:Lcom/baidu/location/ICt$ICa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

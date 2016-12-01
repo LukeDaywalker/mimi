@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
+.field final synthetic mICaga:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+.field final synthetic mMimiActionBarb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mMimiActionBarb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->a:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mICaga:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mMimiActionBarb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;)Z
 
@@ -43,7 +43,7 @@
     if-eqz v0, :cond_1
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mMimiActionBarb:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c()V
 
@@ -54,12 +54,12 @@
 
     .line 92
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->a:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mICaga:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
 
     if-eqz v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->a:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICaf;->mICaga:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICag;->a()V
 

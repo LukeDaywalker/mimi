@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private c:[Ljava/lang/String;
+.field private mArrayId:[I
 
-.field private d:[I
+.field private mArrayStringc:[Ljava/lang/String;
 
-.field private e:I
+.field private mIe:I
 
 
 # direct methods
@@ -43,17 +43,17 @@
     iput v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->a:I
 
     .line 48
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     .line 49
     new-array v1, v3, [Ljava/lang/String;
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
     .line 50
     new-array v1, v3, [I
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->d:[I
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayId:[I
 
     .line 52
     :goto_0
@@ -68,9 +68,9 @@
     .line 54
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
-    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     invoke-virtual {p0, v2}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->b(Ljava/io/DataInputStream;)Ljava/lang/String;
 
@@ -79,13 +79,13 @@
     aput-object v4, v1, v3
 
     .line 55
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->d:[I
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayId:[I
 
-    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     add-int/lit8 v4, v3, 0x1
 
-    iput v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iput v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     invoke-virtual {v2}, Ljava/io/DataInputStream;->readByte()B
 
@@ -116,10 +116,10 @@
     invoke-direct {p0, v0}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage;-><init>(B)V
 
     .line 70
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
     .line 71
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->d:[I
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayId:[I
 
     .line 73
     array-length v0, p1
@@ -204,7 +204,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
     array-length v3, v3
 
@@ -219,14 +219,14 @@
 
     .line 128
     :cond_0
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v3, v3, v0
 
     invoke-virtual {p0, v2, v3}, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->a(Ljava/io/DataOutputStream;Ljava/lang/String;)V
 
     .line 129
-    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->d:[I
+    iget-object v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayId:[I
 
     aget v3, v3, v0
 
@@ -322,7 +322,7 @@
 
     .line 89
     :goto_0
-    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iget v3, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     if-lt v0, v3, :cond_0
 
@@ -333,7 +333,7 @@
 
     .line 96
     :goto_1
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->e:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mIe:I
 
     if-lt v1, v0, :cond_2
 
@@ -366,7 +366,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->c:[Ljava/lang/String;
+    iget-object v4, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayStringc:[Ljava/lang/String;
 
     aget-object v4, v4, v0
 
@@ -394,7 +394,7 @@
 
     .line 100
     :cond_3
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->d:[I
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe;->mArrayId:[I
 
     aget v0, v0, v1
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
-.field private final b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+.field private final mIa:I
 
 
 # direct methods
@@ -18,13 +18,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    iput p1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->a:I
+    iput p1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mIa:I
 
     .line 52
     if-eqz p2, :cond_0
 
     :goto_0
-    iput-object p2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+    iput-object p2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
     .line 53
     return-void
@@ -75,7 +75,7 @@
     add-int/2addr v0, v1
 
     .line 63
-    iget v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->a:I
+    iget v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mIa:I
 
     invoke-static {v1}, Lcom/crashlytics/android/core/CodedOutputStream;->j(I)I
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 87
-    iget v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->a:I
+    iget v0, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mIa:I
 
     const/4 v1, 0x2
 
@@ -109,7 +109,7 @@
     invoke-virtual {p0, p1}, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->a(Lcom/crashlytics/android/core/CodedOutputStream;)V
 
     .line 90
-    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+    iget-object v1, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
     array-length v2, v1
 
@@ -143,7 +143,7 @@
     move-result v1
 
     .line 74
-    iget-object v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->b:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
+    iget-object v2, p0, Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;->mArrayICbnb:[Lcom/crashlytics/android/core/NativeCrashWriter$ICbn;
 
     array-length v3, v2
 

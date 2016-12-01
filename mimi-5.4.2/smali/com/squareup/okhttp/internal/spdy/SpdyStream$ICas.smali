@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
+.field final synthetic mSpdyStreama:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 598
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->a:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->mSpdyStreama:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
     invoke-direct {p0}, Lokio/AsyncTimeout;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 600
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->a:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/SpdyStream$ICas;->mSpdyStreama:Lcom/squareup/okhttp/internal/spdy/SpdyStream;
 
     sget-object v1, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->l:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 

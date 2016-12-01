@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mICfb:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 41
     return-void
@@ -88,7 +88,7 @@
     if-eqz p1, :cond_0
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300dc
 
@@ -124,7 +124,7 @@
     if-ge v4, v6, :cond_3
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300db
 
@@ -256,12 +256,12 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mICfb:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     if-eqz v0, :cond_0
 
     .line 50
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mICfb:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -281,7 +281,7 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->mICfb:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     .line 45
     return-void

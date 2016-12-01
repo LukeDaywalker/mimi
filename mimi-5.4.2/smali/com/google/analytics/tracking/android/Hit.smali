@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private final mJb:J
 
-.field private final b:J
+.field private final mJc:J
 
-.field private final c:J
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -24,16 +24,16 @@
     .line 17
     const-string/jumbo v0, "https:"
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->mStringd:Ljava/lang/String;
 
     .line 36
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/Hit;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/Hit;->mStringa:Ljava/lang/String;
 
     .line 37
-    iput-wide p2, p0, Lcom/google/analytics/tracking/android/Hit;->b:J
+    iput-wide p2, p0, Lcom/google/analytics/tracking/android/Hit;->mJb:J
 
     .line 38
-    iput-wide p4, p0, Lcom/google/analytics/tracking/android/Hit;->c:J
+    iput-wide p4, p0, Lcom/google/analytics/tracking/android/Hit;->mJc:J
 
     .line 39
     return-void
@@ -46,7 +46,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/Hit;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/Hit;->mStringa:Ljava/lang/String;
 
     .line 25
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 28
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/Hit;->b:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/Hit;->mJb:J
 
     return-wide v0
 .end method
@@ -111,7 +111,7 @@
     .line 62
     const-string/jumbo v0, "http:"
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->mStringd:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -121,7 +121,7 @@
 
     .prologue
     .line 32
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/Hit;->c:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/Hit;->mJc:J
 
     return-wide v0
 .end method
@@ -131,7 +131,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/Hit;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method

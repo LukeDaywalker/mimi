@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/content/Context;
+.field final synthetic mContexta:Landroid/content/Context;
 
-.field final synthetic b:Ljava/lang/Throwable;
+.field final synthetic mThrowableb:Ljava/lang/Throwable;
 
 
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/lang/Throwable;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICq;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICq;->mContexta:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/tencent/wxop/stat/ICq;->b:Ljava/lang/Throwable;
+    iput-object p2, p0, Lcom/tencent/wxop/stat/ICq;->mThrowableb:Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
     :cond_0
     new-instance v0, Lcom/tencent/wxop/stat/a/ICc;
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICq;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICq;->mContexta:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/tencent/wxop/stat/ICq;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/tencent/wxop/stat/ICq;->mContexta:Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -54,7 +54,7 @@
 
     move-result v2
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICq;->b:Ljava/lang/Throwable;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICq;->mThrowableb:Ljava/lang/Throwable;
 
     sget-object v4, Lcom/tencent/wxop/stat/a/ICf;->a:Lcom/tencent/wxop/stat/ICy;
 

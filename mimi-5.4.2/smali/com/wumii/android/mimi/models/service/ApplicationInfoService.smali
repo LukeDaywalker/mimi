@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mBundleb:Landroid/os/Bundle;
 
-.field private b:Landroid/os/Bundle;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mContexta:Landroid/content/Context;
 
     .line 18
     return-void
@@ -35,12 +35,12 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->b:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mBundleb:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->b:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mBundleb:Landroid/os/Bundle;
 
     .line 28
     :goto_0
@@ -49,13 +49,13 @@
     .line 26
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -70,10 +70,10 @@
     .line 27
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->b:Landroid/os/Bundle;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mBundleb:Landroid/os/Bundle;
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->b:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ApplicationInfoService;->mBundleb:Landroid/os/Bundle;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

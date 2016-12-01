@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field private volatile a:Z
-
 .field protected d:Lcom/tencent/b/a/Pro;
 
-.field private volatile e:Z
+.field private volatile isZa:Z
 
-.field private volatile f:Z
+.field private volatile isZe:Z
+
+.field private volatile isZf:Z
 
 
 # direct methods
@@ -84,13 +84,13 @@
     .line 137
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->a:Z
+    iput-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->isZa:Z
 
     .line 138
-    iput-boolean v1, p0, Lcom/tencent/b/a/Pro$ICk;->e:Z
+    iput-boolean v1, p0, Lcom/tencent/b/a/Pro$ICk;->isZe:Z
 
     .line 139
-    iput-boolean v1, p0, Lcom/tencent/b/a/Pro$ICk;->f:Z
+    iput-boolean v1, p0, Lcom/tencent/b/a/Pro$ICk;->isZf:Z
 
     .line 145
     return-void
@@ -296,7 +296,7 @@
 
     .prologue
     .line 193
-    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->a:Z
+    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->isZa:Z
 
     return v0
 .end method
@@ -306,7 +306,7 @@
 
     .prologue
     .line 210
-    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->e:Z
+    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->isZe:Z
 
     return v0
 .end method
@@ -316,7 +316,7 @@
 
     .prologue
     .line 220
-    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->f:Z
+    iget-boolean v0, p0, Lcom/tencent/b/a/Pro$ICk;->isZf:Z
 
     return v0
 .end method

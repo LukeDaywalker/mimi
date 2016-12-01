@@ -14,8 +14,6 @@
 
 
 # static fields
-.field private static final synthetic a:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
-
 .field public static final enum bus_no_subway:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
 .field public static final enum bus_recommend_way:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
@@ -25,6 +23,8 @@
 .field public static final enum bus_transfer_little:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
 .field public static final enum bus_walk_little:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+
+.field private static final synthetic mArrayEBusStrategyTypea:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
 
 # direct methods
@@ -105,7 +105,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->a:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    sput-object v0, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->mArrayEBusStrategyTypea:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     return-void
 .end method
@@ -140,7 +140,7 @@
 .method public static values()[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->a:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    sget-object v0, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->mArrayEBusStrategyTypea:[Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     invoke-virtual {v0}, [Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->clone()Ljava/lang/Object;
 

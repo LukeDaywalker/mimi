@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mConnectiond:Lcom/squareup/okhttp/Connection;
 
-.field private final b:Lcom/squareup/okhttp/Request;
+.field private final mRequestb:Lcom/squareup/okhttp/Request;
 
-.field private final c:Lcom/squareup/okhttp/Response;
+.field private final mResponsec:Lcom/squareup/okhttp/Response;
 
-.field private final d:Lcom/squareup/okhttp/Connection;
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -25,16 +25,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 185
-    iput-object p1, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mStringa:Ljava/lang/String;
 
     .line 186
-    iput-object p2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->b:Lcom/squareup/okhttp/Request;
+    iput-object p2, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mRequestb:Lcom/squareup/okhttp/Request;
 
     .line 187
-    iput-object p3, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iput-object p3, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     .line 188
-    iput-object p4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->d:Lcom/squareup/okhttp/Connection;
+    iput-object p4, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mConnectiond:Lcom/squareup/okhttp/Connection;
 
     .line 189
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 229
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->g()Lcom/squareup/okhttp/Headers;
 
@@ -65,7 +65,7 @@
 
     .prologue
     .line 234
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->g()Lcom/squareup/okhttp/Headers;
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 245
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0, p1}, Lcom/squareup/okhttp/Response;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
 
     .prologue
     .line 239
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->g()Lcom/squareup/okhttp/Headers;
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->b:Lcom/squareup/okhttp/Request;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mRequestb:Lcom/squareup/okhttp/Request;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Request;->c()Ljava/lang/String;
 
@@ -139,7 +139,7 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->c()I
 
@@ -153,7 +153,7 @@
 
     .prologue
     .line 208
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->e()Ljava/lang/String;
 
@@ -177,7 +177,7 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->d:Lcom/squareup/okhttp/Connection;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mConnectiond:Lcom/squareup/okhttp/Connection;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -191,7 +191,7 @@
 
     .prologue
     .line 224
-    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->c:Lcom/squareup/okhttp/Response;
+    iget-object v0, p0, Lcom/facebook/stetho/okhttp3/StethoInterceptor$ICd;->mResponsec:Lcom/squareup/okhttp/Response;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/Response;->k()Lcom/squareup/okhttp/Response;
 

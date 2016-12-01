@@ -1,4 +1,4 @@
-.class public Lorg/apache/commons/long/StringUtils;
+.class public Lorg/apache/commons/long3/StringUtils;
 .super Ljava/lang/Object;
 .source "StringUtils.java"
 
@@ -11,7 +11,7 @@
     .line 3771
     const/4 v0, -0x1
 
-    invoke-static {p0, p1, p2, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p0, p1, p2, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -29,13 +29,13 @@
     const/4 v6, -0x1
 
     .line 3803
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -87,7 +87,7 @@
     mul-int/2addr v0, v3
 
     .line 3815
-    new-instance v3, Lorg/apache/commons/long/text/StrBuilder;
+    new-instance v3, Lorg/apache/commons/long3/text/StrBuilder;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -95,7 +95,7 @@
 
     add-int/2addr v0, v5
 
-    invoke-direct {v3, v0}, Lorg/apache/commons/long/text/StrBuilder;-><init>(I)V
+    invoke-direct {v3, v0}, Lorg/apache/commons/long3/text/StrBuilder;-><init>(I)V
 
     move v0, v2
 
@@ -108,11 +108,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v3, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v3, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v0, p2}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3818
     add-int v0, v1, v4
@@ -128,10 +128,10 @@
 
     move-result-object v0
 
-    invoke-virtual {v3, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v3, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3825
-    invoke-virtual {v3}, Lorg/apache/commons/long/text/StrBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lorg/apache/commons/long3/text/StrBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Iterator;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/util/Iterator;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -221,7 +221,7 @@
     if-nez v1, :cond_2
 
     .line 3384
-    invoke-static {v0}, Lorg/apache/commons/long/ObjectUtils;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0}, Lorg/apache/commons/long3/ObjectUtils;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -229,17 +229,17 @@
 
     .line 3388
     :cond_2
-    new-instance v1, Lorg/apache/commons/long/text/StrBuilder;
+    new-instance v1, Lorg/apache/commons/long3/text/StrBuilder;
 
     const/16 v2, 0x100
 
-    invoke-direct {v1, v2}, Lorg/apache/commons/long/text/StrBuilder;-><init>(I)V
+    invoke-direct {v1, v2}, Lorg/apache/commons/long3/text/StrBuilder;-><init>(I)V
 
     .line 3389
     if-eqz v0, :cond_3
 
     .line 3390
-    invoke-virtual {v1, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v1, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3393
     :cond_3
@@ -254,7 +254,7 @@
     if-eqz p1, :cond_4
 
     .line 3395
-    invoke-virtual {v1, p1}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v1, p1}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3397
     :cond_4
@@ -266,13 +266,13 @@
     if-eqz v0, :cond_3
 
     .line 3399
-    invoke-virtual {v1, v0}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v1, v0}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long3/text/StrBuilder;
 
     goto :goto_1
 
     .line 3402
     :cond_5
-    invoke-virtual {v1}, Lorg/apache/commons/long/text/StrBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lorg/apache/commons/long3/text/StrBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
 
     array-length v1, p0
 
-    invoke-static {p0, p1, v0, v1}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/String;
+    invoke-static {p0, p1, v0, v1}, Lorg/apache/commons/long3/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -356,9 +356,9 @@
     mul-int/2addr v0, v1
 
     .line 3302
-    new-instance v1, Lorg/apache/commons/long/text/StrBuilder;
+    new-instance v1, Lorg/apache/commons/long3/text/StrBuilder;
 
-    invoke-direct {v1, v0}, Lorg/apache/commons/long/text/StrBuilder;-><init>(I)V
+    invoke-direct {v1, v0}, Lorg/apache/commons/long3/text/StrBuilder;-><init>(I)V
 
     move v0, p2
 
@@ -370,7 +370,7 @@
     if-le v0, p2, :cond_3
 
     .line 3306
-    invoke-virtual {v1, p1}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v1, p1}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/String;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3308
     :cond_3
@@ -381,7 +381,7 @@
     .line 3309
     aget-object v2, p0, v0
 
-    invoke-virtual {v1, v2}, Lorg/apache/commons/long/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long/text/StrBuilder;
+    invoke-virtual {v1, v2}, Lorg/apache/commons/long3/text/StrBuilder;->a(Ljava/lang/Object;)Lorg/apache/commons/long3/text/StrBuilder;
 
     .line 3304
     :cond_4
@@ -405,7 +405,7 @@
 
     .line 3312
     :cond_6
-    invoke-virtual {v1}, Lorg/apache/commons/long/text/StrBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lorg/apache/commons/long3/text/StrBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -525,7 +525,7 @@
 
     .prologue
     .line 213
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -722,7 +722,7 @@
 
     .prologue
     .line 261
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -824,7 +824,7 @@
 
     .prologue
     .line 2201
-    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -836,7 +836,7 @@
 
     .line 2204
     :cond_0
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -898,7 +898,7 @@
     .line 6356
     const/4 v0, 0x0
 
-    invoke-static {p0, p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p0, p1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -912,7 +912,7 @@
     .line 6463
     const/4 v0, 0x0
 
-    invoke-static {p0, p1, v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {p0, p1, v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v0
 

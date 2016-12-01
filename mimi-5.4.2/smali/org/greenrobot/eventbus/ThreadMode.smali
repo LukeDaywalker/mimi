@@ -23,7 +23,7 @@
 
 .field public static final enum d:Lorg/greenrobot/eventbus/ThreadMode;
 
-.field private static final synthetic e:[Lorg/greenrobot/eventbus/ThreadMode;
+.field private static final synthetic mArrayThreadModee:[Lorg/greenrobot/eventbus/ThreadMode;
 
 
 # direct methods
@@ -96,7 +96,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->e:[Lorg/greenrobot/eventbus/ThreadMode;
+    sput-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mArrayThreadModee:[Lorg/greenrobot/eventbus/ThreadMode;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lorg/greenrobot/eventbus/ThreadMode;->e:[Lorg/greenrobot/eventbus/ThreadMode;
+    sget-object v0, Lorg/greenrobot/eventbus/ThreadMode;->mArrayThreadModee:[Lorg/greenrobot/eventbus/ThreadMode;
 
     invoke-virtual {v0}, [Lorg/greenrobot/eventbus/ThreadMode;->clone()Ljava/lang/Object;
 

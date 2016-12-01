@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/tagmanager/DataLayer$ICl;
+.field final synthetic mDataLayerPersistentStoreImplb:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
-.field final synthetic b:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+.field final synthetic mICla:Lcom/google/tagmanager/DataLayer$ICl;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->b:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->mDataLayerPersistentStoreImplb:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
-    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->a:Lcom/google/tagmanager/DataLayer$ICl;
+    iput-object p2, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->mICla:Lcom/google/tagmanager/DataLayer$ICl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->a:Lcom/google/tagmanager/DataLayer$ICl;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->mICla:Lcom/google/tagmanager/DataLayer$ICl;
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->b:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayerPersistentStoreImpl$ICq;->mDataLayerPersistentStoreImplb:Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
 
     invoke-static {v1}, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;->a(Lcom/google/tagmanager/DataLayerPersistentStoreImpl;)Ljava/util/List;
 

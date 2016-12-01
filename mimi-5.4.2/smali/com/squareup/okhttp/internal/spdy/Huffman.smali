@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:[I
+.field private static final mArrayBb:[B
 
-.field private static final b:[B
+.field private static final mArrayIa:[I
 
-.field private static final c:Lcom/squareup/okhttp/internal/spdy/Huffman;
+.field private static final mHuffmanc:Lcom/squareup/okhttp/internal/spdy/Huffman;
 
 
 # instance fields
-.field private final d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+.field private final mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
 
 # direct methods
@@ -27,21 +27,21 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->a:[I
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mArrayIa:[I
 
     .line 63
     new-array v0, v1, [B
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->b:[B
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mArrayBb:[B
 
     .line 77
     new-instance v0, Lcom/squareup/okhttp/internal/spdy/Huffman;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/Huffman;-><init>()V
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->c:Lcom/squareup/okhttp/internal/spdy/Huffman;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mHuffmanc:Lcom/squareup/okhttp/internal/spdy/Huffman;
 
     return-void
 
@@ -580,7 +580,7 @@
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     .line 86
     invoke-direct {p0}, Lcom/squareup/okhttp/internal/spdy/Huffman;->b()V
@@ -594,7 +594,7 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->c:Lcom/squareup/okhttp/internal/spdy/Huffman;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mHuffmanc:Lcom/squareup/okhttp/internal/spdy/Huffman;
 
     return-object v0
 .end method
@@ -609,7 +609,7 @@
     invoke-direct {v3, p1, p3}, Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;-><init>(II)V
 
     .line 173
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     move-object v2, v0
 
@@ -726,18 +726,18 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Huffman;->b:[B
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Huffman;->mArrayBb:[B
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 166
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Huffman;->a:[I
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Huffman;->mArrayIa:[I
 
     aget v1, v1, v0
 
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Huffman;->b:[B
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Huffman;->mArrayBb:[B
 
     aget-byte v2, v2, v0
 
@@ -767,7 +767,7 @@
     invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 128
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     move v2, v0
 
@@ -836,7 +836,7 @@
     sub-int/2addr v1, v3
 
     .line 142
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     goto :goto_1
 
@@ -868,7 +868,7 @@
     sub-int/2addr v1, v0
 
     .line 158
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->d:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Huffman;->mICpd:Lcom/squareup/okhttp/internal/spdy/Huffman$ICp;
 
     .line 150
     :cond_3

@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field a:Landroid/os/Parcelable;
+.field mParcelablea:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->a:Landroid/os/Parcelable;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->mParcelablea:Landroid/os/Parcelable;
 
     .line 8886
     return-void
@@ -75,9 +75,9 @@
 
     .prologue
     .line 8902
-    iget-object v0, p1, Landroid/support/v7/widget/RecyclerView$SavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p1, Landroid/support/v7/widget/RecyclerView$SavedState;->mParcelablea:Landroid/os/Parcelable;
 
-    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->a:Landroid/os/Parcelable;
+    iput-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->mParcelablea:Landroid/os/Parcelable;
 
     .line 8903
     return-void
@@ -103,7 +103,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 8898
-    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->a:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$SavedState;->mParcelablea:Landroid/os/Parcelable;
 
     const/4 v1, 0x0
 

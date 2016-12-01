@@ -11,21 +11,21 @@
 
 .field public static jh:Ljava/lang/String;
 
-.field private static jl:Lcom/baidu/location/ICa2;
+.field private static mICa2jl:Lcom/baidu/location/ICa2;
 
 
 # instance fields
-.field je:I
+.field mIje:I
 
-.field jf:I
+.field mIjf:I
 
-.field jg:Ljava/lang/String;
+.field private mSensorjj:Landroid/hardware/Sensor;
 
-.field ji:Ljava/lang/String;
+.field mStringjg:Ljava/lang/String;
 
-.field private jj:Landroid/hardware/Sensor;
+.field mStringji:Ljava/lang/String;
 
-.field jk:Ljava/lang/String;
+.field mStringjk:Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICa2;->jl:Lcom/baidu/location/ICa2;
+    sput-object v0, Lcom/baidu/location/ICa2;->mICa2jl:Lcom/baidu/location/ICa2;
 
     sput-object v0, Lcom/baidu/location/ICa2;->jd:Ljava/lang/String;
 
@@ -52,15 +52,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v2, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/baidu/location/ICa2;->ji:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICa2;->mStringji:Ljava/lang/String;
 
-    iput v0, p0, Lcom/baidu/location/ICa2;->jf:I
+    iput v0, p0, Lcom/baidu/location/ICa2;->mIjf:I
 
-    iput v0, p0, Lcom/baidu/location/ICa2;->je:I
+    iput v0, p0, Lcom/baidu/location/ICa2;->mIje:I
 
     :try_start_0
     invoke-static {}, Lcom/baidu/location/ICf;->getServiceContext()Landroid/content/Context;
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -119,14 +119,14 @@
 
     const-string/jumbo v0, "NULL"
 
-    iput-object v0, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
     goto :goto_0
 
     :catch_1
     move-exception v0
 
-    iput-object v2, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     goto :goto_1
 
@@ -141,7 +141,7 @@
 .method public static cC()Lcom/baidu/location/ICa2;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICa2;->jl:Lcom/baidu/location/ICa2;
+    sget-object v0, Lcom/baidu/location/ICa2;->mICa2jl:Lcom/baidu/location/ICa2;
 
     if-nez v0, :cond_0
 
@@ -149,10 +149,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICa2;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICa2;->jl:Lcom/baidu/location/ICa2;
+    sput-object v0, Lcom/baidu/location/ICa2;->mICa2jl:Lcom/baidu/location/ICa2;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICa2;->jl:Lcom/baidu/location/ICa2;
+    sget-object v0, Lcom/baidu/location/ICa2;->mICa2jl:Lcom/baidu/location/ICa2;
 
     return-object v0
 .end method
@@ -162,7 +162,7 @@
 .method public cA()Ljava/lang/String;
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -176,7 +176,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -274,7 +274,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -282,7 +282,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -330,7 +330,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -451,7 +451,7 @@
 
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     if-nez v0, :cond_5
 
@@ -459,7 +459,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v0, p0, Lcom/baidu/location/ICa2;->jg:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa2;->mStringjg:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -548,7 +548,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v0, p0, Lcom/baidu/location/ICa2;->jk:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa2;->mStringjk:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

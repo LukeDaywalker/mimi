@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
+.field final synthetic mSectionImageItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->a:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->mSectionImageItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->a:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->mSectionImageItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
 
@@ -39,13 +39,13 @@
     if-eqz v0, :cond_0
 
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->a:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->mSectionImageItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->a:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbl;->mSectionImageItemViewa:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$ICbm;->a(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;)V
 

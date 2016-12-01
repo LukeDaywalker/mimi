@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static a:Lcom/umeng/analytics/StoreHelper;
+.field private static mContextb:Landroid/content/Context;
 
-.field private static b:Landroid/content/Context;
+.field private static mJd:J
 
-.field private static c:Ljava/lang/String;
+.field private static mJe:J
 
-.field private static d:J
+.field private static mStoreHelpera:Lcom/umeng/analytics/StoreHelper;
 
-.field private static e:J
+.field private static mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -25,17 +25,17 @@
 
     invoke-direct {v0}, Lcom/umeng/analytics/StoreHelper;-><init>()V
 
-    sput-object v0, Lcom/umeng/analytics/StoreHelper;->a:Lcom/umeng/analytics/StoreHelper;
+    sput-object v0, Lcom/umeng/analytics/StoreHelper;->mStoreHelpera:Lcom/umeng/analytics/StoreHelper;
 
     .line 38
     const-wide/32 v0, 0x48190800
 
-    sput-wide v0, Lcom/umeng/analytics/StoreHelper;->d:J
+    sput-wide v0, Lcom/umeng/analytics/StoreHelper;->mJd:J
 
     .line 39
     const-wide/32 v0, 0x200000
 
-    sput-wide v0, Lcom/umeng/analytics/StoreHelper;->e:J
+    sput-wide v0, Lcom/umeng/analytics/StoreHelper;->mJe:J
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -64,11 +64,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sput-object v0, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     .line 30
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -77,11 +77,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     .line 34
     :cond_1
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->a:Lcom/umeng/analytics/StoreHelper;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mStoreHelpera:Lcom/umeng/analytics/StoreHelper;
 
     return-object v0
 .end method
@@ -102,7 +102,7 @@
 
     if-eqz v2, :cond_0
 
-    sget-wide v2, Lcom/umeng/analytics/StoreHelper;->e:J
+    sget-wide v2, Lcom/umeng/analytics/StoreHelper;->mJe:J
 
     cmp-long v0, v0, v2
 
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -164,13 +164,13 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-static {v1}, Lu/aly/DeviceConfig;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -230,7 +230,7 @@
     :try_start_0
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -349,7 +349,7 @@
     :try_start_0
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -393,7 +393,7 @@
     .line 128
     new-instance v2, Ljava/io/File;
 
-    sget-object v3, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v3, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -426,7 +426,7 @@
 
     .line 140
     :try_start_0
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
     :try_end_0
@@ -496,7 +496,7 @@
 
     .prologue
     .line 161
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/umeng/analytics/StoreHelper;->h()Ljava/lang/String;
 
@@ -505,7 +505,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Context;->deleteFile(Ljava/lang/String;)Z
 
     .line 162
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/umeng/analytics/StoreHelper;->i()Ljava/lang/String;
 
@@ -531,7 +531,7 @@
     .line 173
     new-instance v3, Ljava/io/File;
 
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -569,7 +569,7 @@
     .line 183
     :cond_1
     :try_start_1
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
     :try_end_1
@@ -664,7 +664,7 @@
     move-result-object v0
 
     .line 209
-    sget-object v1, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v1, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->deleteFile(Ljava/lang/String;)Z
 
@@ -709,7 +709,7 @@
     .line 216
     new-instance v1, Ljava/io/File;
 
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -753,7 +753,7 @@
 
     .prologue
     .line 248
-    sget-object v0, Lcom/umeng/analytics/StoreHelper;->b:Landroid/content/Context;
+    sget-object v0, Lcom/umeng/analytics/StoreHelper;->mContextb:Landroid/content/Context;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -765,7 +765,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/umeng/analytics/StoreHelper;->c:Ljava/lang/String;
+    sget-object v2, Lcom/umeng/analytics/StoreHelper;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

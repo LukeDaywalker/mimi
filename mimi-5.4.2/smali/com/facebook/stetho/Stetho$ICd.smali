@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/Stetho$ICh;
+.field final synthetic mICha:Lcom/facebook/stetho/Stetho$ICh;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 75
-    iput-object p2, p0, Lcom/facebook/stetho/Stetho$ICd;->a:Lcom/facebook/stetho/Stetho$ICh;
+    iput-object p2, p0, Lcom/facebook/stetho/Stetho$ICd;->mICha:Lcom/facebook/stetho/Stetho$ICh;
 
     invoke-direct {p0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
@@ -29,7 +29,7 @@
     .line 78
     new-instance v0, Lcom/facebook/stetho/server/LocalSocketHttpServer;
 
-    iget-object v1, p0, Lcom/facebook/stetho/Stetho$ICd;->a:Lcom/facebook/stetho/Stetho$ICh;
+    iget-object v1, p0, Lcom/facebook/stetho/Stetho$ICd;->mICha:Lcom/facebook/stetho/Stetho$ICh;
 
     invoke-direct {v0, v1}, Lcom/facebook/stetho/server/LocalSocketHttpServer;-><init>(Lcom/facebook/stetho/server/RegistryInitializer;)V
 

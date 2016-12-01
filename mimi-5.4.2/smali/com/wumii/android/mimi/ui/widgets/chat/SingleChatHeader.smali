@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field private b:Landroid/view/LayoutInflater;
+.field private mContexta:Landroid/content/Context;
 
-.field private c:Landroid/view/ViewGroup;
+.field private mFrameLayoute:Landroid/widget/FrameLayout;
 
-.field private d:Landroid/widget/TextView;
+.field private mLayoutInflaterb:Landroid/view/LayoutInflater;
 
-.field private e:Landroid/widget/FrameLayout;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private f:Lcom/wumii/android/mimi/models/AppFacade;
+.field private mViewGroupc:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -30,20 +30,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     .line 54
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030080
 
@@ -55,10 +55,10 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const v1, 0x7f0b0195
 
@@ -68,10 +68,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mTextViewd:Landroid/widget/TextView;
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const v1, 0x7f0b0193
 
@@ -81,7 +81,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->e:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     .line 58
     return-void
@@ -92,7 +92,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -117,11 +117,11 @@
 
     .line 167
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030081
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -159,11 +159,11 @@
 
     .line 189
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030081
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -201,11 +201,11 @@
 
     .line 155
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030081
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -237,11 +237,11 @@
     move-result-object v2
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030081
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v1, v3, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -250,7 +250,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 139
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -267,7 +267,7 @@
     move-result v1
 
     .line 140
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -378,11 +378,11 @@
 
     .line 178
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030081
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -429,7 +429,7 @@
 
     new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -452,11 +452,11 @@
     move-result-object v4
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->b:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mLayoutInflaterb:Landroid/view/LayoutInflater;
 
     const v1, 0x7f03007f
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -559,7 +559,7 @@
     if-eqz v1, :cond_2
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f06015c
 
@@ -601,7 +601,7 @@
     .line 90
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -609,23 +609,23 @@
     if-eqz v4, :cond_1
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->e:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->e:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->e:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 97
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->c:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mViewGroupc:Landroid/view/ViewGroup;
 
     return-object v0
 
@@ -636,7 +636,7 @@
     if-eqz v1, :cond_3
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->f:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mAppFacadef:Lcom/wumii/android/mimi/models/AppFacade;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
@@ -655,7 +655,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 72
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v2, 0x7f060157
 
@@ -682,7 +682,7 @@
     if-eqz v1, :cond_4
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f060153
 
@@ -706,7 +706,7 @@
     if-eqz v1, :cond_5
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f060158
 
@@ -730,7 +730,7 @@
     if-eqz v1, :cond_6
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f060159
 
@@ -754,7 +754,7 @@
     if-eqz v1, :cond_7
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f060155
 
@@ -778,7 +778,7 @@
     if-eqz v1, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->mContexta:Landroid/content/Context;
 
     const v1, 0x7f06015b
 

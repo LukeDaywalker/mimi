@@ -3,17 +3,17 @@
 
 
 # instance fields
+.field isZs:Z
+
 .field protected listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-.field p:Ljava/lang/String;
+.field mBundlet:Landroid/os/Bundle;
 
-.field q:Lcom/baidu/platform/comapi/map/ICf;
+.field mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
-.field r:I
+.field mIr:I
 
-.field s:Z
-
-.field t:Landroid/os/Bundle;
+.field mStringp:Ljava/lang/String;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->p:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->mStringp:Ljava/lang/String;
 
     return-void
 .end method
@@ -197,13 +197,13 @@
 
     const-string/jumbo v1, "id"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->p:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->mStringp:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v1, "type"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Overlay;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -219,13 +219,13 @@
 
     const-string/jumbo v0, "id"
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->p:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->mStringp:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "type"
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Overlay;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICf;->ordinal()I
 
@@ -235,7 +235,7 @@
 
     const-string/jumbo v1, "visibility"
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Overlay;->s:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Overlay;->isZs:Z
 
     if-eqz v0, :cond_0
 
@@ -246,7 +246,7 @@
 
     const-string/jumbo v0, "z_index"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Overlay;->r:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Overlay;->mIr:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -261,7 +261,7 @@
 .method public getExtraInfo()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->t:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->mBundlet:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -269,7 +269,7 @@
 .method public getZIndex()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Overlay;->r:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Overlay;->mIr:I
 
     return v0
 .end method
@@ -277,7 +277,7 @@
 .method public isVisible()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Overlay;->s:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Overlay;->isZs:Z
 
     return v0
 .end method
@@ -295,7 +295,7 @@
 .method public setExtraInfo(Landroid/os/Bundle;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Overlay;->t:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Overlay;->mBundlet:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -303,7 +303,7 @@
 .method public setVisible(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Overlay;->s:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Overlay;->isZs:Z
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -315,7 +315,7 @@
 .method public setZIndex(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Overlay;->r:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Overlay;->mIr:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Overlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

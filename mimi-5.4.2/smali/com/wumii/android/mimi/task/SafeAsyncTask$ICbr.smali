@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Object;
+.field final synthetic mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
-.field final synthetic b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+.field final synthetic mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -30,9 +30,9 @@
 
     .prologue
     .line 222
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->a:Ljava/lang/Object;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->mObjecta:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,11 +46,11 @@
 
     .prologue
     .line 225
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->b:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->mICbpb:Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbp;->a:Lcom/wumii/android/mimi/task/SafeAsyncTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SafeAsyncTask$ICbr;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/SafeAsyncTask;->a(Ljava/lang/Object;)V
 

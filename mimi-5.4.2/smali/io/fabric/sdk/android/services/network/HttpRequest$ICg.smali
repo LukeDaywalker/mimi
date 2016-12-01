@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field private final a:Ljava/io/Closeable;
+.field private final isZb:Z
 
-.field private final b:Z
+.field private final mCloseablea:Ljava/io/Closeable;
 
 
 # direct methods
@@ -30,10 +30,10 @@
     invoke-direct {p0}, Lio/fabric/sdk/android/services/network/HttpRequest$ICk;-><init>()V
 
     .line 680
-    iput-object p1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->a:Ljava/io/Closeable;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->mCloseablea:Ljava/io/Closeable;
 
     .line 681
-    iput-boolean p2, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->b:Z
+    iput-boolean p2, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->isZb:Z
 
     .line 682
     return-void
@@ -46,14 +46,14 @@
 
     .prologue
     .line 686
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->a:Ljava/io/Closeable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->mCloseablea:Ljava/io/Closeable;
 
     instance-of v0, v0, Ljava/io/Flushable;
 
     if-eqz v0, :cond_0
 
     .line 687
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->a:Ljava/io/Closeable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->mCloseablea:Ljava/io/Closeable;
 
     check-cast v0, Ljava/io/Flushable;
 
@@ -61,13 +61,13 @@
 
     .line 688
     :cond_0
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->b:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->isZb:Z
 
     if-eqz v0, :cond_1
 
     .line 690
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->a:Ljava/io/Closeable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->mCloseablea:Ljava/io/Closeable;
 
     invoke-interface {v0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -79,7 +79,7 @@
 
     .line 695
     :cond_1
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->a:Ljava/io/Closeable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest$ICg;->mCloseablea:Ljava/io/Closeable;
 
     invoke-interface {v0}, Ljava/io/Closeable;->close()V
 

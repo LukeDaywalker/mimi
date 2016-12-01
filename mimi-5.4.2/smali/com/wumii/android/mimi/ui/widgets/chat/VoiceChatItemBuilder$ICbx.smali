@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->mTextViewa:Landroid/widget/TextView;
 
     .line 162
     const v0, 0x7f0b019f
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->mImageViewb:Landroid/widget/ImageView;
 
     .line 163
     return-void
@@ -48,7 +48,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->a:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->mTextViewa:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceChatItemBuilder$ICbx;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method

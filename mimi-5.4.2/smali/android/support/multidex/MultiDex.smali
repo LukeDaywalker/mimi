@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static final isZc:Z
 
-.field private static final b:Ljava/util/Set;
+.field private static final mSetb:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field private static final c:Z
+.field private static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -52,14 +52,14 @@
 
     move-result-object v0
 
-    sput-object v0, Landroid/support/multidex/MultiDex;->a:Ljava/lang/String;
+    sput-object v0, Landroid/support/multidex/MultiDex;->mStringa:Ljava/lang/String;
 
     .line 74
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Landroid/support/multidex/MultiDex;->b:Ljava/util/Set;
+    sput-object v0, Landroid/support/multidex/MultiDex;->mSetb:Ljava/util/Set;
 
     .line 76
     const-string/jumbo v0, "java.vm.version"
@@ -72,7 +72,7 @@
 
     move-result v0
 
-    sput-boolean v0, Landroid/support/multidex/MultiDex;->c:Z
+    sput-boolean v0, Landroid/support/multidex/MultiDex;->isZc:Z
 
     return-void
 .end method
@@ -117,7 +117,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 93
-    sget-boolean v0, Landroid/support/multidex/MultiDex;->c:Z
+    sget-boolean v0, Landroid/support/multidex/MultiDex;->isZc:Z
 
     if-eqz v0, :cond_1
 
@@ -193,7 +193,7 @@
     if-eqz v0, :cond_0
 
     .line 110
-    sget-object v1, Landroid/support/multidex/MultiDex;->b:Ljava/util/Set;
+    sget-object v1, Landroid/support/multidex/MultiDex;->mSetb:Ljava/util/Set;
 
     monitor-enter v1
     :try_end_0
@@ -204,7 +204,7 @@
     iget-object v2, v0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
 
     .line 112
-    sget-object v3, Landroid/support/multidex/MultiDex;->b:Ljava/util/Set;
+    sget-object v3, Landroid/support/multidex/MultiDex;->mSetb:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -279,7 +279,7 @@
     .line 115
     :cond_3
     :try_start_3
-    sget-object v3, Landroid/support/multidex/MultiDex;->b:Ljava/util/Set;
+    sget-object v3, Landroid/support/multidex/MultiDex;->mSetb:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -420,7 +420,7 @@
 
     iget-object v4, v0, Landroid/content/pm/ApplicationInfo;->dataDir:Ljava/lang/String;
 
-    sget-object v5, Landroid/support/multidex/MultiDex;->a:Ljava/lang/String;
+    sget-object v5, Landroid/support/multidex/MultiDex;->mStringa:Ljava/lang/String;
 
     invoke-direct {v3, v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 

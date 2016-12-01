@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+.field private static mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
 
 # instance fields
-.field private final b:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
+.field private final mPeersRegisteredListenerc:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
 
-.field private final c:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
+.field private final mResponseBodyFileManagerb:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
 
 # direct methods
@@ -26,13 +26,13 @@
 
     invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$ICn;-><init>(Lcom/facebook/stetho/inspector/network/NetworkPeerManager;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->c:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mPeersRegisteredListenerc:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
 
     .line 32
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->b:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mResponseBodyFileManagerb:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
     .line 33
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->c:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mPeersRegisteredListenerc:Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;
 
     invoke-virtual {p0, v0}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->a(Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;)V
 
@@ -50,7 +50,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
     if-nez v0, :cond_0
 
@@ -67,11 +67,11 @@
 
     invoke-direct {v0, v2}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;-><init>(Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;)V
 
-    sput-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    sput-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
     .line 28
     :cond_0
-    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    sget-object v0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -98,7 +98,7 @@
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    sget-object v1, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -121,7 +121,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->b:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->mResponseBodyFileManagerb:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
     return-object v0
 .end method

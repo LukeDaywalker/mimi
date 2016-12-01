@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/ArrayList;
+.field private mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -18,11 +18,7 @@
     .end annotation
 .end field
 
-.field private b:I
-
-.field private c:Landroid/app/PendingIntent;
-
-.field private d:Ljava/util/ArrayList;
+.field private mArrayListd:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -33,21 +29,25 @@
     .end annotation
 .end field
 
-.field private e:Landroid/graphics/Bitmap;
+.field private mBitmape:Landroid/graphics/Bitmap;
 
-.field private f:I
+.field private mIb:I
 
-.field private g:I
+.field private mIf:I
 
-.field private h:I
+.field private mIg:I
 
-.field private i:I
+.field private mIh:I
 
-.field private j:I
+.field private mIi:I
 
-.field private k:I
+.field private mIj:I
 
-.field private l:I
+.field private mIk:I
+
+.field private mIl:I
+
+.field private mPendingIntentc:Landroid/app/PendingIntent;
 
 
 # direct methods
@@ -63,39 +63,39 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayLista:Ljava/util/ArrayList;
 
     .line 2337
     const/4 v0, 0x1
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->b:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIb:I
 
     .line 2339
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->d:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayListd:Ljava/util/ArrayList;
 
     .line 2342
     const v0, 0x800005
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->g:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIg:I
 
     .line 2343
     const/4 v0, -0x1
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->h:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIh:I
 
     .line 2344
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->i:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIi:I
 
     .line 2346
     const/16 v0, 0x50
 
-    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->k:I
+    iput v0, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIk:I
 
     .line 2354
     return-void
@@ -115,70 +115,70 @@
     .line 2447
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->a:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayLista:Ljava/util/ArrayList;
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->a:Ljava/util/ArrayList;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayLista:Ljava/util/ArrayList;
 
     .line 2448
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->b:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIb:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->b:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIb:I
 
     .line 2449
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->c:Landroid/app/PendingIntent;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mPendingIntentc:Landroid/app/PendingIntent;
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->c:Landroid/app/PendingIntent;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mPendingIntentc:Landroid/app/PendingIntent;
 
     .line 2450
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->d:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayListd:Ljava/util/ArrayList;
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->d:Ljava/util/ArrayList;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mArrayListd:Ljava/util/ArrayList;
 
     .line 2451
-    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->e:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mBitmape:Landroid/graphics/Bitmap;
 
-    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->e:Landroid/graphics/Bitmap;
+    iput-object v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mBitmape:Landroid/graphics/Bitmap;
 
     .line 2452
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->f:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIf:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->f:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIf:I
 
     .line 2453
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->g:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIg:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->g:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIg:I
 
     .line 2454
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->h:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIh:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->h:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIh:I
 
     .line 2455
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->i:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIi:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->i:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIi:I
 
     .line 2456
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->j:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIj:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->j:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIj:I
 
     .line 2457
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->k:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIk:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->k:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIk:I
 
     .line 2458
-    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->l:I
+    iget v1, p0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIl:I
 
-    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->l:I
+    iput v1, v0, Landroid/support/v4/app/NotificationCompat$WearableExtender;->mIl:I
 
     .line 2459
     return-object v0

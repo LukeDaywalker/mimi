@@ -4,31 +4,31 @@
 
 
 # static fields
-.field private static final b:[Ljava/lang/String;
+.field private static final mArrayStringb:[Ljava/lang/String;
 
-.field private static c:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+.field private static mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
 
 # instance fields
 .field public final a:Ljava/net/URL;
 
-.field private d:Ljava/net/HttpURLConnection;
+.field private isZg:Z
 
-.field private final e:Ljava/lang/String;
+.field private isZh:Z
 
-.field private f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+.field private isZi:Z
 
-.field private g:Z
+.field private mHttpURLConnectiond:Ljava/net/HttpURLConnection;
 
-.field private h:Z
+.field private mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
-.field private i:Z
+.field private mIj:I
 
-.field private j:I
+.field private mIl:I
 
-.field private k:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
-.field private l:I
+.field private mStringk:Ljava/lang/String;
 
 
 # direct methods
@@ -41,12 +41,12 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->b:[Ljava/lang/String;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mArrayStringb:[Ljava/lang/String;
 
     .line 378
     sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICh;->a:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
-    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->c:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+    sput-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
     return-void
 .end method
@@ -61,22 +61,22 @@
     .line 1292
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->d:Ljava/net/HttpURLConnection;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mHttpURLConnectiond:Ljava/net/HttpURLConnection;
 
     .line 1304
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->h:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZh:Z
 
     .line 1306
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->i:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZi:Z
 
     .line 1308
     const/16 v0, 0x2000
 
-    iput v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->j:I
+    iput v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIj:I
 
     .line 1323
     :try_start_0
@@ -93,7 +93,7 @@
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1327
-    iput-object p2, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->e:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mStringe:Ljava/lang/String;
 
     .line 1328
     return-void
@@ -115,7 +115,7 @@
 
     .prologue
     .line 112
-    iget v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->j:I
+    iget v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIj:I
 
     return v0
 .end method
@@ -689,9 +689,9 @@
 
     new-instance v2, Ljava/net/InetSocketAddress;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->k:Ljava/lang/String;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mStringk:Ljava/lang/String;
 
-    iget v4, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->l:I
+    iget v4, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIl:I
 
     invoke-direct {v2, v3, v4}, Ljava/net/InetSocketAddress;-><init>(Ljava/lang/String;I)V
 
@@ -706,12 +706,12 @@
     .prologue
     .line 1349
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->k:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mStringk:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 1350
-    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->c:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
     iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->a:Ljava/net/URL;
 
@@ -725,7 +725,7 @@
 
     .line 1353
     :goto_0
-    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->e:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mStringe:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
@@ -734,7 +734,7 @@
 
     .line 1352
     :cond_0
-    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->c:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
+    sget-object v0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIChc:Lio/fabric/sdk/android/services/network/HttpRequest$ICh;
 
     iget-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->a:Ljava/net/URL;
 
@@ -801,7 +801,7 @@
     .line 2419
     new-instance v0, Lio/fabric/sdk/android/services/network/HttpRequest$ICf;
 
-    iget-boolean v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->h:Z
+    iget-boolean v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZh:Z
 
     move-object v1, p0
 
@@ -1055,7 +1055,7 @@
     invoke-virtual {p0, p1, p2, p3}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 
     .line 2711
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     invoke-virtual {p0, p4, v0}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)Lio/fabric/sdk/android/services/network/HttpRequest;
     :try_end_0
@@ -1088,7 +1088,7 @@
     invoke-virtual {p0, p1, p2, p3}, Lio/fabric/sdk/android/services/network/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;
 
     .line 2598
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     invoke-virtual {v0, p4}, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->a(Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
     :try_end_0
@@ -1206,7 +1206,7 @@
 
     .prologue
     .line 1371
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->d:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mHttpURLConnectiond:Ljava/net/HttpURLConnection;
 
     if-nez v0, :cond_0
 
@@ -1215,11 +1215,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->d:Ljava/net/HttpURLConnection;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mHttpURLConnectiond:Ljava/net/HttpURLConnection;
 
     .line 1373
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->d:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mHttpURLConnectiond:Ljava/net/HttpURLConnection;
 
     return-object v0
 .end method
@@ -1672,7 +1672,7 @@
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/network/HttpRequest;->m()Lio/fabric/sdk/android/services/network/HttpRequest;
 
     .line 2815
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -1736,7 +1736,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->j:I
+    iget v2, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIj:I
 
     invoke-direct {v0, v1, v2}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;I)V
 
@@ -1771,7 +1771,7 @@
     .line 1698
     :cond_0
     :goto_0
-    iget-boolean v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->i:Z
+    iget-boolean v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZi:Z
 
     if-eqz v1, :cond_1
 
@@ -1915,7 +1915,7 @@
 
     .prologue
     .line 2462
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     if-nez v0, :cond_0
 
@@ -1925,12 +1925,12 @@
 
     .line 2464
     :cond_0
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->g:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZg:Z
 
     if-eqz v0, :cond_1
 
     .line 2465
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     const-string/jumbo v1, "\r\n--00content0boundary00--\r\n"
 
@@ -1938,13 +1938,13 @@
 
     .line 2466
     :cond_1
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->h:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZh:Z
 
     if-eqz v0, :cond_2
 
     .line 2468
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->close()V
     :try_end_0
@@ -1954,13 +1954,13 @@
     :goto_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     goto :goto_0
 
     .line 2473
     :cond_2
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;->close()V
 
@@ -2004,7 +2004,7 @@
 
     .prologue
     .line 2500
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     if-eqz v0, :cond_0
 
@@ -2050,11 +2050,11 @@
 
     move-result-object v2
 
-    iget v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->j:I
+    iget v3, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIj:I
 
     invoke-direct {v1, v2, v0, v3}, Lio/fabric/sdk/android/services/network/HttpRequest$ICl;-><init>(Ljava/io/OutputStream;Ljava/lang/String;I)V
 
-    iput-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iput-object v1, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     goto :goto_0
 .end method
@@ -2064,14 +2064,14 @@
 
     .prologue
     .line 2515
-    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->g:Z
+    iget-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZg:Z
 
     if-nez v0, :cond_0
 
     .line 2516
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->g:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->isZg:Z
 
     .line 2517
     const-string/jumbo v0, "multipart/form-data; boundary=00content0boundary00"
@@ -2083,7 +2083,7 @@
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/network/HttpRequest;->m()Lio/fabric/sdk/android/services/network/HttpRequest;
 
     .line 2518
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     const-string/jumbo v1, "--00content0boundary00\r\n"
 
@@ -2095,7 +2095,7 @@
 
     .line 2520
     :cond_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->f:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/HttpRequest;->mIClf:Lio/fabric/sdk/android/services/network/HttpRequest$ICl;
 
     const-string/jumbo v1, "\r\n--00content0boundary00\r\n"
 

@@ -3,19 +3,19 @@
 
 
 # static fields
-.field private static c:Lcom/tencent/stat/a/ICl;
+.field private static mContextf:Landroid/content/Context;
 
-.field private static d:J
+.field private static mICee:Lcom/tencent/stat/ICe;
 
-.field private static e:Lcom/tencent/stat/ICe;
+.field private static mIClc:Lcom/tencent/stat/a/ICl;
 
-.field private static f:Landroid/content/Context;
+.field private static mJd:J
 
 
 # instance fields
-.field a:Lorg/apache/http/impl/client/DefaultHttpClient;
+.field mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
-.field b:Landroid/os/Handler;
+.field mHandlerb:Landroid/os/Handler;
 
 
 # direct methods
@@ -28,15 +28,15 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sput-object v0, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     const-wide/16 v0, -0x1
 
-    sput-wide v0, Lcom/tencent/stat/ICe;->d:J
+    sput-wide v0, Lcom/tencent/stat/ICe;->mJd:J
 
-    sput-object v2, Lcom/tencent/stat/ICe;->e:Lcom/tencent/stat/ICe;
+    sput-object v2, Lcom/tencent/stat/ICe;->mICee:Lcom/tencent/stat/ICe;
 
-    sput-object v2, Lcom/tencent/stat/ICe;->f:Landroid/content/Context;
+    sput-object v2, Lcom/tencent/stat/ICe;->mContextf:Landroid/content/Context;
 
     return-void
 .end method
@@ -48,9 +48,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iput-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
-    iput-object v0, p0, Lcom/tencent/stat/ICe;->b:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/stat/ICe;->mHandlerb:Landroid/os/Handler;
 
     :try_start_0
     new-instance v0, Landroid/os/HandlerThread;
@@ -65,7 +65,7 @@
 
     move-result-wide v2
 
-    sput-wide v2, Lcom/tencent/stat/ICe;->d:J
+    sput-wide v2, Lcom/tencent/stat/ICe;->mJd:J
 
     new-instance v1, Landroid/os/Handler;
 
@@ -75,7 +75,7 @@
 
     invoke-direct {v1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lcom/tencent/stat/ICe;->b:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/tencent/stat/ICe;->mHandlerb:Landroid/os/Handler;
 
     new-instance v0, Lorg/apache/http/params/BasicHttpParams;
 
@@ -93,9 +93,9 @@
 
     invoke-direct {v1, v0}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>(Lorg/apache/http/params/HttpParams;)V
 
-    iput-object v1, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iput-object v1, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
     new-instance v1, Lcom/tencent/stat/ICf;
 
@@ -109,7 +109,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-virtual {v0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
@@ -132,7 +132,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -142,7 +142,7 @@
 .method static a()Landroid/content/Context;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICe;->f:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/stat/ICe;->mContextf:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/ICe;->f:Landroid/content/Context;
+    sput-object v0, Lcom/tencent/stat/ICe;->mContextf:Landroid/content/Context;
 
     return-void
 .end method
@@ -162,7 +162,7 @@
 .method static b()Lcom/tencent/stat/ICe;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/ICe;->e:Lcom/tencent/stat/ICe;
+    sget-object v0, Lcom/tencent/stat/ICe;->mICee:Lcom/tencent/stat/ICe;
 
     if-nez v0, :cond_0
 
@@ -170,10 +170,10 @@
 
     invoke-direct {v0}, Lcom/tencent/stat/ICe;-><init>()V
 
-    sput-object v0, Lcom/tencent/stat/ICe;->e:Lcom/tencent/stat/ICe;
+    sput-object v0, Lcom/tencent/stat/ICe;->mICee:Lcom/tencent/stat/ICe;
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/ICe;->e:Lcom/tencent/stat/ICe;
+    sget-object v0, Lcom/tencent/stat/ICe;->mICee:Lcom/tencent/stat/ICe;
 
     return-object v0
 .end method
@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -352,7 +352,7 @@
 
     invoke-virtual {v1, v0}, Lorg/apache/http/client/methods/HttpPost;->removeHeaders(Ljava/lang/String;)V
 
-    sget-object v0, Lcom/tencent/stat/ICe;->f:Landroid/content/Context;
+    sget-object v0, Lcom/tencent/stat/ICe;->mContextf:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/stat/a/ICj;->a(Landroid/content/Context;)Lorg/apache/http/HttpHost;
 
@@ -360,7 +360,7 @@
 
     if-eqz v4, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-virtual {v0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
@@ -368,7 +368,7 @@
 
     const-string/jumbo v2, "http.route.default-proxy"
 
-    sget-object v5, Lcom/tencent/stat/ICe;->f:Landroid/content/Context;
+    sget-object v5, Lcom/tencent/stat/ICe;->mContextf:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/tencent/stat/a/ICj;->a(Landroid/content/Context;)Lorg/apache/http/HttpHost;
 
@@ -440,7 +440,7 @@
 
     invoke-virtual {v1, v3}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-virtual {v0, v1}, Lorg/apache/http/impl/client/DefaultHttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 
@@ -448,7 +448,7 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->a:Lorg/apache/http/impl/client/DefaultHttpClient;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mDefaultHttpClienta:Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-virtual {v0}, Lorg/apache/http/impl/client/DefaultHttpClient;->getParams()Lorg/apache/http/params/HttpParams;
 
@@ -475,7 +475,7 @@
 
     move-result-wide v4
 
-    sget-object v3, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v3, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -539,7 +539,7 @@
     move-exception v0
 
     :try_start_1
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -595,7 +595,7 @@
 
     invoke-virtual {v3, v6}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    sget-object v3, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v3, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -647,7 +647,7 @@
     goto :goto_3
 
     :cond_8
-    sget-object v0, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -730,7 +730,7 @@
     if-ne v2, v8, :cond_10
 
     :try_start_3
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v2, Ljava/lang/String;
 
@@ -841,7 +841,7 @@
     :catch_1
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v0}, Lorg/json/JSONException;->toString()Ljava/lang/String;
 
@@ -852,7 +852,7 @@
     goto :goto_5
 
     :cond_10
-    sget-object v1, Lcom/tencent/stat/ICe;->c:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/ICe;->mIClc:Lcom/tencent/stat/a/ICl;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -921,7 +921,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mHandlerb:Landroid/os/Handler;
 
     if-nez v0, :cond_1
 
@@ -930,7 +930,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/tencent/stat/ICe;->b:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/stat/ICe;->mHandlerb:Landroid/os/Handler;
 
     new-instance v1, Lcom/tencent/stat/ICg;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
+.field final synthetic mSecretsTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
 
-.field private b:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->a:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->mSecretsTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
 
     .line 40
     invoke-direct {p0, p2, p3, p4}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;-><init>(Landroid/content/Context;II)V
@@ -34,10 +34,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
     invoke-virtual {v0, p5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -55,9 +55,9 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$CustomTabView;->setSelected(Z)V
 
     .line 53
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->b:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->mTextViewb:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->a:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter$IndicatorTabView;->mSecretsTabAdaptera:Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;)Landroid/content/Context;
 

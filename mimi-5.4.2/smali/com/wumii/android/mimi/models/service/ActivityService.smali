@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Map;
+.field private mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -35,7 +35,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     .line 19
     return-void
@@ -48,7 +48,7 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -69,7 +69,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 25
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -95,7 +95,7 @@
 
     .line 31
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/ActivityService;->mMapa:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

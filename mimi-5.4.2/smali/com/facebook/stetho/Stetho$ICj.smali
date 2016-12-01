@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field final a:Landroid/content/Context;
+.field final mContexta:Landroid/content/Context;
 
-.field b:Lcom/facebook/stetho/DumperPluginsProvider;
+.field mDumperPluginsProviderb:Lcom/facebook/stetho/DumperPluginsProvider;
 
-.field c:Lcom/facebook/stetho/InspectorModulesProvider;
+.field mInspectorModulesProviderc:Lcom/facebook/stetho/InspectorModulesProvider;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICj;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICj;->mContexta:Landroid/content/Context;
 
     .line 203
     return-void
@@ -67,7 +67,7 @@
 
     check-cast v0, Lcom/facebook/stetho/DumperPluginsProvider;
 
-    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICj;->b:Lcom/facebook/stetho/DumperPluginsProvider;
+    iput-object v0, p0, Lcom/facebook/stetho/Stetho$ICj;->mDumperPluginsProviderb:Lcom/facebook/stetho/DumperPluginsProvider;
 
     .line 220
     return-object p0
@@ -78,7 +78,7 @@
 
     .prologue
     .line 224
-    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICj;->c:Lcom/facebook/stetho/InspectorModulesProvider;
+    iput-object p1, p0, Lcom/facebook/stetho/Stetho$ICj;->mInspectorModulesProviderc:Lcom/facebook/stetho/InspectorModulesProvider;
 
     .line 225
     return-object p0

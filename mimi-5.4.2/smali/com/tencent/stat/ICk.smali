@@ -3,7 +3,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sput-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
 
@@ -37,7 +37,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->b:Lcom/tencent/stat/ICh;
 
@@ -53,7 +53,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->d:Lcom/tencent/stat/ICh;
 
@@ -69,7 +69,7 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->e:Lcom/tencent/stat/ICh;
 
@@ -85,7 +85,7 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->c:Lcom/tencent/stat/ICh;
 
@@ -101,7 +101,7 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->f:Lcom/tencent/stat/ICh;
 
@@ -117,7 +117,7 @@
 
     :goto_5
     :try_start_6
-    sget-object v0, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v0, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
 

@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final b:Ljava/util/regex/Pattern;
+.field private static final mPatternb:Ljava/util/regex/Pattern;
 
 
 # instance fields
 .field protected final a:Lio/fabric/sdk/android/Kit;
 
-.field private final c:Ljava/lang/String;
+.field private final mHttpMethode:Lio/fabric/sdk/android/services/network/HttpMethod;
 
-.field private final d:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+.field private final mHttpRequestFactoryd:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
-.field private final e:Lio/fabric/sdk/android/services/network/HttpMethod;
+.field private final mStringc:Ljava/lang/String;
 
-.field private final f:Ljava/lang/String;
+.field private final mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->b:Ljava/util/regex/Pattern;
+    sput-object v0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mPatternb:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -75,20 +75,20 @@
     iput-object p1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->a:Lio/fabric/sdk/android/Kit;
 
     .line 95
-    iput-object p2, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->f:Ljava/lang/String;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringf:Ljava/lang/String;
 
     .line 96
     invoke-direct {p0, p3}, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->c:Ljava/lang/String;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringc:Ljava/lang/String;
 
     .line 97
-    iput-object p4, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->d:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iput-object p4, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mHttpRequestFactoryd:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     .line 98
-    iput-object p5, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->e:Lio/fabric/sdk/android/services/network/HttpMethod;
+    iput-object p5, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mHttpMethode:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     .line 99
     return-void
@@ -100,7 +100,7 @@
     .prologue
     .line 157
     .line 159
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->f:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringf:Ljava/lang/String;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/CommonUtils;->c(Ljava/lang/String;)Z
 
@@ -109,13 +109,13 @@
     if-nez v0, :cond_0
 
     .line 160
-    sget-object v0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->b:Ljava/util/regex/Pattern;
+    sget-object v0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mPatternb:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->f:Ljava/lang/String;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringf:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/regex/Matcher;->replaceFirst(Ljava/lang/String;)Ljava/lang/String;
 
@@ -144,9 +144,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->d:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mHttpRequestFactoryd:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->e:Lio/fabric/sdk/android/services/network/HttpMethod;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mHttpMethode:Lio/fabric/sdk/android/services/network/HttpMethod;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->a()Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->c:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/common/AbstractSpiCall;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

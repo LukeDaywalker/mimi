@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+.field final synthetic mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,12 +30,12 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-static {v0, p2}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;Z)Z
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;->mNearbyUserIntroEditActivitya:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)Landroid/view/View;
 

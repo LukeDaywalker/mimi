@@ -10,41 +10,41 @@
 
 
 # instance fields
-.field private k0:Z
+.field private isZk0:Z
 
-.field private k1:D
+.field private isZk4:Z
 
-.field private k2:C
+.field private isZk6:Z
 
-.field private k3:Ljava/lang/String;
+.field private final isZkW:Z
 
-.field private k4:Z
-
-.field private k5:I
-
-.field private k6:Z
-
-.field private k7:I
-
-.field private k8:I
-
-.field private k9:Ljava/lang/String;
+.field private isZlb:Z
 
 .field public kT:I
 
-.field private kU:I
+.field private mCk2:C
 
-.field private kV:Ljava/util/List;
+.field private mDk1:D
 
-.field private final kW:Z
+.field private mDkX:D
 
-.field private kX:D
+.field private mIk5:I
 
-.field private kZ:Ljava/lang/String;
+.field private mIk7:I
 
-.field private la:Ljava/lang/String;
+.field private mIk8:I
 
-.field private lb:Z
+.field private mIkU:I
+
+.field private mListkV:Ljava/util/List;
+
+.field private mStringk3:Ljava/lang/String;
+
+.field private mStringk9:Ljava/lang/String;
+
+.field private mStringkZ:Ljava/lang/String;
+
+.field private mStringla:Ljava/lang/String;
 
 
 # direct methods
@@ -67,63 +67,63 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->k4:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZk4:Z
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICaw;->k3:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaw;->mStringk3:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->lb:Z
-
-    const-string/jumbo v0, ""
-
-    iput-object v0, p0, Lcom/baidu/location/ICaw;->kZ:Ljava/lang/String;
-
-    iput v1, p0, Lcom/baidu/location/ICaw;->k5:I
-
-    iput v1, p0, Lcom/baidu/location/ICaw;->k7:I
+    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZlb:Z
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICaw;->k9:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaw;->mStringkZ:Ljava/lang/String;
+
+    iput v1, p0, Lcom/baidu/location/ICaw;->mIk5:I
+
+    iput v1, p0, Lcom/baidu/location/ICaw;->mIk7:I
+
+    const-string/jumbo v0, ""
+
+    iput-object v0, p0, Lcom/baidu/location/ICaw;->mStringk9:Ljava/lang/String;
 
     const/16 v0, 0x4e
 
-    iput-char v0, p0, Lcom/baidu/location/ICaw;->k2:C
+    iput-char v0, p0, Lcom/baidu/location/ICaw;->mCk2:C
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICaw;->la:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICaw;->mStringla:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->k6:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZk6:Z
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICaw;->kU:I
+    iput v0, p0, Lcom/baidu/location/ICaw;->mIkU:I
 
-    iput-wide v2, p0, Lcom/baidu/location/ICaw;->k1:D
+    iput-wide v2, p0, Lcom/baidu/location/ICaw;->mDk1:D
 
-    iput-wide v2, p0, Lcom/baidu/location/ICaw;->kX:D
+    iput-wide v2, p0, Lcom/baidu/location/ICaw;->mDkX:D
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaw;->kV:Ljava/util/List;
+    iput-object v0, p0, Lcom/baidu/location/ICaw;->mListkV:Ljava/util/List;
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->k0:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZk0:Z
 
-    iput v1, p0, Lcom/baidu/location/ICaw;->k8:I
+    iput v1, p0, Lcom/baidu/location/ICaw;->mIk8:I
 
-    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->kW:Z
+    iput-boolean v1, p0, Lcom/baidu/location/ICaw;->isZkW:Z
 
     iput v1, p0, Lcom/baidu/location/ICaw;->kT:I
 
-    iput-object p1, p0, Lcom/baidu/location/ICaw;->kV:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/location/ICaw;->mListkV:Ljava/util/List;
 
-    iput-object p2, p0, Lcom/baidu/location/ICaw;->k3:Ljava/lang/String;
+    iput-object p2, p0, Lcom/baidu/location/ICaw;->mStringk3:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/baidu/location/ICaw;->k9:Ljava/lang/String;
+    iput-object p3, p0, Lcom/baidu/location/ICaw;->mStringk9:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/baidu/location/ICaw;->la:Ljava/lang/String;
+    iput-object p4, p0, Lcom/baidu/location/ICaw;->mStringla:Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/baidu/location/ICaw;->c6()V
 
@@ -137,7 +137,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/location/ICaw;->la:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICaw;->mStringla:Ljava/lang/String;
 
     invoke-direct {p0, v1}, Lcom/baidu/location/ICaw;->u(Ljava/lang/String;)Z
 
@@ -145,9 +145,9 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/baidu/location/ICaw;->la:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICaw;->mStringla:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/baidu/location/ICaw;->la:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICaw;->mStringla:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -264,7 +264,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/baidu/location/ICaw;->kU:I
+    iput v1, p0, Lcom/baidu/location/ICaw;->mIkU:I
 
     array-length v1, v0
 
@@ -280,7 +280,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICaw;->k1:D
+    iput-wide v2, p0, Lcom/baidu/location/ICaw;->mDk1:D
 
     array-length v1, v0
 
@@ -296,16 +296,16 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICaw;->kX:D
+    iput-wide v0, p0, Lcom/baidu/location/ICaw;->mDkX:D
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaw;->k6:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaw;->isZk6:Z
 
     :cond_3
-    iget-boolean v0, p0, Lcom/baidu/location/ICaw;->k6:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaw;->isZk6:Z
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICaw;->k4:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICaw;->isZk4:Z
 
     goto :goto_1
 .end method
@@ -386,7 +386,7 @@
 .method public c7()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICaw;->kX:D
+    iget-wide v0, p0, Lcom/baidu/location/ICaw;->mDkX:D
 
     return-wide v0
 .end method
@@ -394,7 +394,7 @@
 .method public c8()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICaw;->kZ:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICaw;->mStringkZ:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -402,7 +402,7 @@
 .method public c9()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICaw;->k4:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICaw;->isZk4:Z
 
     return v0
 .end method
@@ -410,7 +410,7 @@
 .method public da()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICaw;->k1:D
+    iget-wide v0, p0, Lcom/baidu/location/ICaw;->mDk1:D
 
     return-wide v0
 .end method
@@ -418,7 +418,7 @@
 .method public db()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICaw;->k5:I
+    iget v0, p0, Lcom/baidu/location/ICaw;->mIk5:I
 
     return v0
 .end method

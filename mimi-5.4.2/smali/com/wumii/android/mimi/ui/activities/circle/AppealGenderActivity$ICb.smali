@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+.field final synthetic mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICb;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)V
 

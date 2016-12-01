@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+.field final synthetic mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 111
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
     if-eqz v2, :cond_0
 
     .line 118
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SecretNotification;
 
@@ -65,7 +65,7 @@
     if-eqz v2, :cond_1
 
     .line 123
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICax;->mNotificationActivitya:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/notification/SurveyNotification;
 

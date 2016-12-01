@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+.field final synthetic mGroupChatMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;->mGroupChatMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder$ICai;->mGroupChatMessageChatItemBuildera:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->d:Landroid/content/Context;
 

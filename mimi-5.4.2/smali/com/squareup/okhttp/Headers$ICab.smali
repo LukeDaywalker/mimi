@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/List;
+.field private final mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -241,7 +241,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -250,7 +250,7 @@
     if-ge v1, v0, :cond_1
 
     .line 265
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -265,12 +265,12 @@
     if-eqz v0, :cond_0
 
     .line 266
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 267
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -295,12 +295,12 @@
 
     .prologue
     .line 258
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 259
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -331,7 +331,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -345,7 +345,7 @@
     if-ltz v1, :cond_1
 
     .line 287
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -360,7 +360,7 @@
     if-eqz v0, :cond_0
 
     .line 288
-    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/Headers$ICab;->mLista:Ljava/util/List;
 
     add-int/lit8 v1, v1, 0x1
 

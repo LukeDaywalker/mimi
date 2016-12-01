@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private final i:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field private final mTypeReferencei:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/GroupListManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/GroupListManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/manager/GroupListManager$ICas;-><init>(Lcom/wumii/android/mimi/manager/GroupListManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->i:Lcom/fasterxml/jackson/core/type/TypeReference;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mTypeReferencei:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     .line 52
     return-void
@@ -101,7 +101,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->i:Lcom/fasterxml/jackson/core/type/TypeReference;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/GroupListManager;->mTypeReferencei:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     invoke-virtual {v2, v0, v3, p2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;)Ljava/lang/Object;
 
@@ -159,7 +159,7 @@
 
     .line 89
     :goto_1
-    sget-object v2, Lcom/wumii/android/mimi/manager/GroupListManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/GroupListManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "handle group chat list response error"
 
@@ -272,7 +272,7 @@
 
     .line 75
     :goto_1
-    sget-object v2, Lcom/wumii/android/mimi/manager/GroupListManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/GroupListManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "handle friend group chat list response error"
 
@@ -535,7 +535,7 @@
     move-exception v0
 
     .line 126
-    sget-object v3, Lcom/wumii/android/mimi/manager/GroupListManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/GroupListManager;->mLoggerh:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

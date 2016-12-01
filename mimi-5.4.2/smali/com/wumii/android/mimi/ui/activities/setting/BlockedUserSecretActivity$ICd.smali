@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+.field final synthetic mBlockedUserSecretActivityb:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+.field final synthetic mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 222
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mBlockedUserSecretActivityb:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;-><init>()V
 
@@ -31,7 +31,7 @@
 
     .prologue
     .line 225
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mBlockedUserSecretActivityb:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->h(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -41,7 +41,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->isBlocked()Z
 
@@ -52,18 +52,18 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(ZLcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->b:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mBlockedUserSecretActivityb:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->e(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->a:Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICd;->mSecreta:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)Z
 

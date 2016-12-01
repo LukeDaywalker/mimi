@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
+.field private final mTextDirectionAlgorithma:Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 115
-    iput-object p1, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->a:Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
+    iput-object p1, p0, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->mTextDirectionAlgorithma:Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 
     .line 116
     return-void

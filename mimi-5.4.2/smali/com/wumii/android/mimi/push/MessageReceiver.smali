@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mNotificationCountHelperc:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
-.field private c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+.field private mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private d:Lcom/wumii/android/mimi/push/PushReportService;
+.field private mPushReportServiced:Lcom/wumii/android/mimi/push/PushReportService;
 
-.field private e:Landroid/os/PowerManager$WakeLock;
+.field private mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -49,18 +49,18 @@
 
     .prologue
     .line 103
-    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "release wakelock"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -69,7 +69,7 @@
     if-eqz v0, :cond_0
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -83,14 +83,14 @@
 
     .prologue
     .line 88
-    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "acquire wakelock"
 
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     if-nez v0, :cond_0
 
@@ -116,12 +116,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     .line 94
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->e:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mWakeLocke:Landroid/os/PowerManager$WakeLock;
 
     const-wide/16 v2, 0x1770
 
@@ -138,7 +138,7 @@
     move-exception v0
 
     .line 96
-    sget-object v1, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -195,7 +195,7 @@
     move-result-object v0
 
     .line 113
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->d:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPushReportServiced:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-virtual {v3, v5, v1}, Lcom/wumii/android/mimi/push/PushReportService;->a(Ljava/lang/String;Z)V
 
@@ -219,7 +219,7 @@
     if-ne v0, v3, :cond_1
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -239,7 +239,7 @@
     move-exception v3
 
     .line 119
-    sget-object v3, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -402,7 +402,7 @@
 
     .line 154
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->d:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPushReportServiced:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-virtual {v0, v5, v2}, Lcom/wumii/android/mimi/push/PushReportService;->a(Ljava/lang/String;Z)V
 
@@ -912,7 +912,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -920,7 +920,7 @@
 
     .line 247
     :cond_18
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1012,7 +1012,7 @@
     invoke-virtual {v3, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 266
-    iget-object v7, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iget-object v7, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mNotificationCountHelperc:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/push/PushType;->name()Ljava/lang/String;
 
@@ -1025,7 +1025,7 @@
     invoke-virtual {v7, v0, v1, v8}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->d:Lcom/wumii/android/mimi/push/PushReportService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPushReportServiced:Lcom/wumii/android/mimi/push/PushReportService;
 
     invoke-virtual {v0, v5, v2}, Lcom/wumii/android/mimi/push/PushReportService;->a(Ljava/lang/String;Z)V
 
@@ -1211,7 +1211,7 @@
     const/4 v1, 0x1
 
     .line 273
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -1233,7 +1233,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -1279,7 +1279,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->d:Lcom/wumii/android/mimi/push/PushReportService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPushReportServiced:Lcom/wumii/android/mimi/push/PushReportService;
 
     .line 62
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -1290,7 +1290,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mNotificationCountHelperc:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     .line 63
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -1301,7 +1301,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->mPreferencesHelperb:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 65
     sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->a:Ljava/lang/String;
@@ -1317,7 +1317,7 @@
     if-nez v0, :cond_0
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1395,7 +1395,7 @@
     move-exception v2
 
     .line 78
-    sget-object v3, Lcom/wumii/android/mimi/push/MessageReceiver;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/push/MessageReceiver;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v4, Ljava/lang/StringBuilder;
 

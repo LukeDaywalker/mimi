@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/dao/SurveyDao;
-
-.field private c:Landroid/util/LruCache;
+.field private mLruCachec:Landroid/util/LruCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/LruCache",
@@ -17,6 +15,8 @@
         }
     .end annotation
 .end field
+
+.field private mSurveyDaob:Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
 
 # direct methods
@@ -34,14 +34,14 @@
 
     invoke-direct {v0, v1}, Landroid/util/LruCache;-><init>(I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->c:Landroid/util/LruCache;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mLruCachec:Landroid/util/LruCache;
 
     .line 25
     new-instance v0, Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/dao/SurveyDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b:Lcom/wumii/android/mimi/models/dao/SurveyDao;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mSurveyDaob:Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
     .line 26
     return-void
@@ -67,7 +67,7 @@
 
     .line 58
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->c:Landroid/util/LruCache;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mLruCachec:Landroid/util/LruCache;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/survey/Survey;->getId()Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->c:Landroid/util/LruCache;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mLruCachec:Landroid/util/LruCache;
 
     invoke-virtual {v0, p1}, Landroid/util/LruCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -99,7 +99,7 @@
     if-nez v0, :cond_0
 
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b:Lcom/wumii/android/mimi/models/dao/SurveyDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mSurveyDaob:Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/SurveyDao;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
@@ -109,7 +109,7 @@
     if-eqz v0, :cond_0
 
     .line 33
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->c:Landroid/util/LruCache;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mLruCachec:Landroid/util/LruCache;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/LruCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -141,7 +141,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b(Lcom/wumii/android/mimi/models/entities/survey/Survey;)V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b:Lcom/wumii/android/mimi/models/dao/SurveyDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mSurveyDaob:Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/SurveyDao;->b(Lcom/wumii/android/mimi/models/entities/survey/Survey;)V
 
@@ -196,7 +196,7 @@
 
     .line 52
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->b:Lcom/wumii/android/mimi/models/dao/SurveyDao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->mSurveyDaob:Lcom/wumii/android/mimi/models/dao/SurveyDao;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/dao/SurveyDao;->a(Ljava/util/List;)V
 

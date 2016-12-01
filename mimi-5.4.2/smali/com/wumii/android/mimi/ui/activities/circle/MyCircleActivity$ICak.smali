@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+.field final synthetic mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 389
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -68,7 +68,7 @@
 
     .line 396
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->h(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
@@ -76,12 +76,12 @@
 
     .line 399
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->i(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     .line 400
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->j(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -98,7 +98,7 @@
     if-eqz v0, :cond_1
 
     .line 401
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->k(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
@@ -106,7 +106,7 @@
 
     .line 403
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->l(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
@@ -114,12 +114,12 @@
 
     .line 407
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->i(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 
     .line 408
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICak;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->k(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)V
 

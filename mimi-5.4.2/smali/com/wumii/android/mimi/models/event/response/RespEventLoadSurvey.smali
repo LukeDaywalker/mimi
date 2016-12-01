@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+.field private mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 21
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     .line 22
     return-void
@@ -37,7 +37,7 @@
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->a:Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->mSurveya:Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     return-object v0
 .end method

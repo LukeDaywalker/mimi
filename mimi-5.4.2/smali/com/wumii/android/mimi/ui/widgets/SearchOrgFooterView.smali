@@ -7,25 +7,25 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Landroid/view/ViewGroup;
+.field private mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
-.field private c:Landroid/widget/TextView;
+.field private mStringh:Ljava/lang/String;
 
-.field private d:Landroid/view/ViewGroup;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private e:Landroid/widget/TextView;
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private f:Landroid/view/ViewGroup;
+.field private mTextViewg:Landroid/widget/TextView;
 
-.field private g:Landroid/widget/TextView;
+.field private mViewGroupb:Landroid/view/ViewGroup;
 
-.field private h:Ljava/lang/String;
+.field private mViewGroupd:Landroid/view/ViewGroup;
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+.field private mViewGroupf:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     .line 64
     const v0, 0x7f0b027c
@@ -103,7 +103,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     .line 66
     const v0, 0x7f0b027d
@@ -114,7 +114,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupd:Landroid/view/ViewGroup;
 
     .line 67
     const v0, 0x7f0b027e
@@ -125,7 +125,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewe:Landroid/widget/TextView;
 
     .line 69
     const v0, 0x7f0b027f
@@ -136,7 +136,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     .line 70
     const v0, 0x7f0b0280
@@ -147,20 +147,20 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -181,14 +181,14 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewe:Landroid/widget/TextView;
 
     const-string/jumbo v1, "\u641c\u7d22"
 
@@ -233,7 +233,7 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 133
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->e:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -297,10 +297,10 @@
     const/4 v5, 0x0
 
     .line 103
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -309,7 +309,7 @@
     if-eqz v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     const/16 v1, 0x8
 
@@ -321,33 +321,33 @@
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 114
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v2, ""
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 116
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v2, "\u641c\u7d22"
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 117
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v2, " \u4e0e"
 
@@ -386,12 +386,12 @@
     invoke-virtual {v1, v2, v5, v0, v3}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewc:Landroid/widget/TextView;
 
     const-string/jumbo v1, "\u76f8\u5173\u7684\u516c\u53f8/\u5b66\u6821"
 
@@ -412,13 +412,13 @@
     if-eqz p1, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a(Ljava/lang/String;)V
 
     .line 172
     :goto_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupd:Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_1
 
@@ -428,7 +428,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 173
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     if-eqz p3, :cond_2
 
@@ -440,7 +440,7 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -464,7 +464,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getVisibility()I
 
@@ -496,32 +496,32 @@
     const/4 v5, 0x0
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 141
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     const-string/jumbo v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 144
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     const-string/jumbo v1, "\u641c\u7d22"
 
@@ -567,7 +567,7 @@
     invoke-virtual {v0, v1, v5, v2, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 148
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -609,7 +609,7 @@
     invoke-virtual {v0, v1, v5, v2, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 152
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -649,7 +649,7 @@
     invoke-virtual {v1, v2, v5, v0, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -686,7 +686,7 @@
     invoke-virtual {v0, v1, v5, v2, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 161
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->g:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
@@ -698,12 +698,12 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     if-nez v0, :cond_0
 
     .line 83
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "OnSecretCommentViewClickListener == null !!!"
 
@@ -719,7 +719,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupb:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -728,9 +728,9 @@
     if-ne v0, v1, :cond_1
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->a(Ljava/lang/String;)V
 
@@ -742,7 +742,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -751,7 +751,7 @@
     if-ne v0, v1, :cond_2
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->f()V
 
@@ -763,7 +763,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mViewGroupf:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -772,9 +772,9 @@
     if-ne v0, v1, :cond_3
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mStringh:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->b(Ljava/lang/String;)V
 
@@ -782,7 +782,7 @@
 
     .line 94
     :cond_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mLoggera:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unsupported click event"
 
@@ -796,7 +796,7 @@
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->mICbei:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     .line 100
     return-void

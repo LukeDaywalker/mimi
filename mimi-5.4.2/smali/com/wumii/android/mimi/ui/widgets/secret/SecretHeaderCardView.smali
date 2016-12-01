@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private r:I
+.field private mIr:I
 
-.field private s:I
+.field private mIs:I
 
 
 # direct methods
@@ -61,14 +61,14 @@
 
     sub-int v0, v1, v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
     .line 36
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
     mul-int/lit8 v0, v0, 0x4
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->s:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIs:I
 
     .line 37
     return-void
@@ -235,11 +235,11 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->s:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIs:I
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
@@ -254,11 +254,11 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->s:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIs:I
 
-    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
+    iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->mIr:I
 
     invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 

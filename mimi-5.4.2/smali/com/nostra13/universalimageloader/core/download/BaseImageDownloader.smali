@@ -233,7 +233,7 @@
 
     .prologue
     .line 85
-    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$ICb;->mArrayIa:[I
 
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 

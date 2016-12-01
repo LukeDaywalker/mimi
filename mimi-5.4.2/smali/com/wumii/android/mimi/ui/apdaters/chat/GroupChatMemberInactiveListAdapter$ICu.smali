@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/ImageView;
+.field private mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mImageViewa:Landroid/widget/ImageView;
 
     .line 128
     const v0, 0x7f0b0089
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mTextViewb:Landroid/widget/TextView;
 
     .line 129
     const v0, 0x7f0b0224
@@ -50,7 +50,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mImageViewc:Landroid/widget/ImageView;
 
     .line 130
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -71,7 +71,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberInactiveListAdapter$ICu;->mImageViewc:Landroid/widget/ImageView;
 
     return-object v0
 .end method

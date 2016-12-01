@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ProgressBar;
+.field private isZb:Z
 
-.field private b:Z
+.field private isZc:Z
 
-.field private c:Z
+.field private mProgressBara:Landroid/widget/ProgressBar;
 
 
 # direct methods
@@ -22,10 +22,10 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 25
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZb:Z
 
     .line 26
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->c:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZc:Z
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->mProgressBara:Landroid/widget/ProgressBar;
 
     return-object v0
 .end method
@@ -45,11 +45,11 @@
 
     .prologue
     .line 64
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->c:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZc:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 15
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZb:Z
 
     return p1
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 15
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->c:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->isZc:Z
 
     return p1
 .end method
@@ -150,17 +150,17 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->mProgressBara:Landroid/widget/ProgressBar;
 
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->mProgressBara:Landroid/widget/ProgressBar;
 
     const/16 v1, 0x64
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setMax(I)V
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->a:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->mProgressBara:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 

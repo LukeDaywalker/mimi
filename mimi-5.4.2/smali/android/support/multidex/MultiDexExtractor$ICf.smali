@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 264
-    iput-object p1, p0, Landroid/support/multidex/MultiDexExtractor$ICf;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroid/support/multidex/MultiDexExtractor$ICf;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/multidex/MultiDexExtractor$ICf;->a:Ljava/lang/String;
+    iget-object v1, p0, Landroid/support/multidex/MultiDexExtractor$ICf;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

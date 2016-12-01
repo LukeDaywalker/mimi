@@ -7,23 +7,23 @@
 
 
 # static fields
-.field private static ia:Lcom/baidu/location/ICap; = null
+.field private static mArrayStringib:[Ljava/lang/String; = null
 
-.field private static ib:[Ljava/lang/String; = null
+.field private static final mDii:D = 121.314
 
-.field private static final ic:Ljava/lang/String; = "loc_cache.dat"
+.field private static mICapia:Lcom/baidu/location/ICap; = null
 
-.field private static final id:Ljava/lang/String; = ";"
+.field private static final mIih:I = 0x5
 
-.field private static final ig:Ljava/lang/String; = ","
+.field private static final mStringic:Ljava/lang/String; = "loc_cache.dat"
 
-.field private static final ih:I = 0x5
+.field private static final mStringid:Ljava/lang/String; = ";"
 
-.field private static final ii:D = 121.314
+.field private static final mStringig:Ljava/lang/String; = ","
 
 
 # instance fields
-.field private ie:[Ljava/lang/String;
+.field private mArrayStringie:[Ljava/lang/String;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     return-void
 .end method
@@ -46,17 +46,17 @@
 
     const-wide/16 v0, 0x0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-lt v2, v3, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     aget-object v0, v0, v3
 
@@ -133,11 +133,11 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v3, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     aget-object v3, v3, v0
 
-    sget-object v4, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v4, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     aget-object v4, v4, v0
 
@@ -163,15 +163,15 @@
 .method private b3()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -189,7 +189,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     :cond_0
     return-void
@@ -200,17 +200,17 @@
 
     const-wide/16 v0, 0x0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-lez v2, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -235,7 +235,7 @@
 .method public static b5()Lcom/baidu/location/ICap;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICap;->ia:Lcom/baidu/location/ICap;
+    sget-object v0, Lcom/baidu/location/ICap;->mICapia:Lcom/baidu/location/ICap;
 
     if-nez v0, :cond_0
 
@@ -243,10 +243,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICap;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICap;->ia:Lcom/baidu/location/ICap;
+    sput-object v0, Lcom/baidu/location/ICap;->mICapia:Lcom/baidu/location/ICap;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICap;->ia:Lcom/baidu/location/ICap;
+    sget-object v0, Lcom/baidu/location/ICap;->mICapia:Lcom/baidu/location/ICap;
 
     return-object v0
 .end method
@@ -258,17 +258,17 @@
 
     const-wide/16 v0, 0x0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-le v2, v3, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     aget-object v0, v0, v3
 
@@ -291,17 +291,17 @@
 
     const-wide/16 v0, 0x0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-le v2, v3, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICap;->ie:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICap;->mArrayStringie:[Ljava/lang/String;
 
     aget-object v0, v0, v3
 
@@ -421,7 +421,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/baidu/location/ICap;->b3()V
 
@@ -491,13 +491,13 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     aget-object v1, v1, v3
 
     if-eqz v1, :cond_4
 
-    sget-object v0, Lcom/baidu/location/ICap;->ib:[Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICap;->mArrayStringib:[Ljava/lang/String;
 
     aget-object v0, v0, v3
 

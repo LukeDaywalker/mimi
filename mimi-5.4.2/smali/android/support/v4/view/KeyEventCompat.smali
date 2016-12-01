@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+.field static final mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/KeyEventCompat;->a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/KeyEventCompat;->mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     .line 171
     :goto_0
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/KeyEventCompat;->a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    sput-object v0, Landroid/support/v4/view/KeyEventCompat;->mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     goto :goto_0
 .end method
@@ -57,7 +57,7 @@
 
     .prologue
     .line 192
-    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getMetaState()I
 
@@ -75,7 +75,7 @@
 
     .prologue
     .line 188
-    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getMetaState()I
 
@@ -93,7 +93,7 @@
 
     .prologue
     .line 196
-    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->a:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->mKeyEventVersionImpla:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->a(Landroid/view/KeyEvent;)V
 

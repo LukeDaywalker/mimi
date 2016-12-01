@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/SurveyManager;
+.field final synthetic mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 125
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +63,7 @@
     if-eqz v0, :cond_0
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->f:Landroid/content/Context;
 
@@ -73,7 +73,7 @@
 
     .line 146
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->b(Ljava/lang/Object;)V
 
@@ -82,7 +82,7 @@
 
     .line 133
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->f:Landroid/content/Context;
 
@@ -97,7 +97,7 @@
     .line 137
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -126,7 +126,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/event/response/RespEventSurveyVote;->a(Lcom/wumii/android/mimi/models/entities/survey/Survey;)V
 
     .line 140
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbk;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/SurveyManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 

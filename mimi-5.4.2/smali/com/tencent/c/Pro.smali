@@ -4,21 +4,21 @@
 
 
 # static fields
-.field private static d:Ljava/lang/String;
+.field private static mStringd:Ljava/lang/String;
 
 
 # instance fields
-.field a:Landroid/app/Activity;
+.field mActivitya:Landroid/app/Activity;
 
-.field private b:Ljava/lang/String;
+.field private mHandlerf:Landroid/os/Handler;
 
-.field private c:Lcom/tencent/c/Pro$ICd;
+.field private mICdc:Lcom/tencent/c/Pro$ICd;
 
-.field private e:J
+.field private mJe:J
 
-.field private f:Landroid/os/Handler;
+.field private mRunnableg:Ljava/lang/Runnable;
 
-.field private g:Ljava/lang/Runnable;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -34,10 +34,10 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/c/Pro$ICc;-><init>(Lcom/tencent/c/Pro;)V
 
-    iput-object v0, p0, Lcom/tencent/c/Pro;->g:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/tencent/c/Pro;->mRunnableg:Ljava/lang/Runnable;
 
     .line 46
-    iput-object p1, p0, Lcom/tencent/c/Pro;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/tencent/c/Pro;->mActivitya:Landroid/app/Activity;
 
     .line 48
     new-instance v0, Lcom/tencent/c/Pro$ICb;
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/tencent/c/Pro$ICb;-><init>(Lcom/tencent/c/Pro;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/tencent/c/Pro;->f:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/c/Pro;->mHandlerf:Landroid/os/Handler;
 
     .line 60
     return-void
@@ -169,7 +169,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/tencent/c/Pro;->c:Lcom/tencent/c/Pro$ICd;
+    iget-object v0, p0, Lcom/tencent/c/Pro;->mICdc:Lcom/tencent/c/Pro$ICd;
 
     return-object v0
 .end method
@@ -179,7 +179,7 @@
 
     .prologue
     .line 26
-    sget-object v0, Lcom/tencent/c/Pro;->d:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro;->mStringd:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -189,7 +189,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/tencent/c/Pro;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/c/Pro;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -199,7 +199,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/tencent/c/Pro;->f:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/c/Pro;->mHandlerf:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -209,7 +209,7 @@
 
     .prologue
     .line 26
-    iget-wide v0, p0, Lcom/tencent/c/Pro;->e:J
+    iget-wide v0, p0, Lcom/tencent/c/Pro;->mJe:J
 
     return-wide v0
 .end method
@@ -289,25 +289,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/c/Pro;->d:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/c/Pro;->mStringd:Ljava/lang/String;
 
     .line 75
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/tencent/c/Pro;->e:J
+    iput-wide v0, p0, Lcom/tencent/c/Pro;->mJe:J
 
     .line 77
-    iput-object p1, p0, Lcom/tencent/c/Pro;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/c/Pro;->mStringb:Ljava/lang/String;
 
     .line 78
-    iput-object p2, p0, Lcom/tencent/c/Pro;->c:Lcom/tencent/c/Pro$ICd;
+    iput-object p2, p0, Lcom/tencent/c/Pro;->mICdc:Lcom/tencent/c/Pro$ICd;
 
     .line 79
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/tencent/c/Pro;->g:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/tencent/c/Pro;->mRunnableg:Ljava/lang/Runnable;
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -321,7 +321,7 @@
 
     .prologue
     .line 89
-    sget-object v0, Lcom/tencent/c/Pro;->d:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/c/Pro;->mStringd:Ljava/lang/String;
 
     .line 91
     :try_start_0

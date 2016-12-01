@@ -4,9 +4,11 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mArrayZc:[Z
 
-.field private static final b:Ljava/util/LinkedList;
+.field private static mExecutorServiced:Ljava/util/concurrent/ExecutorService;
+
+.field private static final mLinkedListb:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList",
@@ -17,25 +19,23 @@
     .end annotation
 .end field
 
-.field private static final c:[Z
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static d:Ljava/util/concurrent/ExecutorService;
-
-.field private static e:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+.field private static mVoiceMessageManagere:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
 
 # instance fields
-.field private f:Lcom/squareup/okhttp/OkHttpClient;
+.field private mChatMessagej:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-.field private g:Lcom/wumii/android/soundtouch/RecordClient;
+.field private mChatMsgVoicei:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
-.field private h:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
+.field private mHandlerk:Landroid/os/Handler;
 
-.field private i:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
+.field private mICbxh:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
-.field private j:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+.field private mOkHttpClientf:Lcom/squareup/okhttp/OkHttpClient;
 
-.field private k:Landroid/os/Handler;
+.field private mRecordClientg:Lcom/wumii/android/soundtouch/RecordClient;
 
 
 # direct methods
@@ -52,14 +52,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLoggera:Lorg/slf4j/Logger;
 
     .line 43
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b:Ljava/util/LinkedList;
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLinkedListb:Ljava/util/LinkedList;
 
     .line 45
     const/4 v0, 0x1
@@ -68,14 +68,14 @@
 
     aput-boolean v1, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c:[Z
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mArrayZc:[Z
 
     .line 47
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mExecutorServiced:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method
@@ -98,24 +98,24 @@
 
     invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbt;-><init>(Lcom/wumii/android/mimi/manager/VoiceMessageManager;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->k:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mHandlerk:Landroid/os/Handler;
 
     .line 141
     new-instance v0, Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/OkHttpClient;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->f:Lcom/squareup/okhttp/OkHttpClient;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mOkHttpClientf:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->f:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mOkHttpClientf:Lcom/squareup/okhttp/OkHttpClient;
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, v2, v3, v1}, Lcom/squareup/okhttp/OkHttpClient;->a(JLjava/util/concurrent/TimeUnit;)V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->f:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mOkHttpClientf:Lcom/squareup/okhttp/OkHttpClient;
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 134
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->e:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mVoiceMessageManagere:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     if-nez v0, :cond_0
 
@@ -139,11 +139,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->e:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mVoiceMessageManagere:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     .line 137
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->e:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mVoiceMessageManagere:Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     return-object v0
 .end method
@@ -153,7 +153,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->j:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mChatMessagej:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     return-object v0
 .end method
@@ -163,7 +163,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->j:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mChatMessagej:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     return-object p1
 .end method
@@ -173,7 +173,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->i:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mChatMsgVoicei:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
     return-object p1
 .end method
@@ -193,7 +193,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->i:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mChatMsgVoicei:Lcom/wumii/android/mimi/models/entities/chat/ChatMsgVoice;
 
     return-object v0
 .end method
@@ -203,7 +203,7 @@
 
     .prologue
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mHandlerk:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -222,7 +222,7 @@
 
     .line 230
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->k:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mHandlerk:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -243,7 +243,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->h:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mICbxh:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
     return-object v0
 .end method
@@ -253,7 +253,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mHandlerk:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -263,7 +263,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->f:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mOkHttpClientf:Lcom/squareup/okhttp/OkHttpClient;
 
     return-object v0
 .end method
@@ -273,7 +273,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b:Ljava/util/LinkedList;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLinkedListb:Ljava/util/LinkedList;
 
     return-object v0
 .end method
@@ -283,7 +283,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -293,7 +293,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c:[Z
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mArrayZc:[Z
 
     return-object v0
 .end method
@@ -305,7 +305,7 @@
 
     .prologue
     .line 260
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->h:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mICbxh:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
     .line 261
     return-void
@@ -318,7 +318,7 @@
     const/4 v1, 0x0
 
     .line 154
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mExecutorServiced:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
@@ -331,16 +331,16 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d:Ljava/util/concurrent/ExecutorService;
+    sput-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mExecutorServiced:Ljava/util/concurrent/ExecutorService;
 
     .line 158
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c:[Z
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mArrayZc:[Z
 
     aput-boolean v1, v0, v1
 
     .line 160
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mExecutorServiced:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbv;
 
@@ -357,7 +357,7 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->g:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mRecordClientg:Lcom/wumii/android/soundtouch/RecordClient;
 
     if-nez v0, :cond_0
 
@@ -366,11 +366,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/soundtouch/RecordClient;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->g:Lcom/wumii/android/soundtouch/RecordClient;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mRecordClientg:Lcom/wumii/android/soundtouch/RecordClient;
 
     .line 150
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->g:Lcom/wumii/android/soundtouch/RecordClient;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mRecordClientg:Lcom/wumii/android/soundtouch/RecordClient;
 
     return-object v0
 .end method
@@ -403,9 +403,9 @@
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordClient;->b()V
 
     .line 239
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b:Ljava/util/LinkedList;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLinkedListb:Ljava/util/LinkedList;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->j:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mChatMessagej:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
 
@@ -418,7 +418,7 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->k:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mHandlerk:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -433,7 +433,7 @@
 
     .prologue
     .line 247
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c:[Z
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mArrayZc:[Z
 
     const/4 v1, 0x0
 
@@ -449,17 +449,17 @@
     invoke-virtual {v0}, Lcom/wumii/android/soundtouch/RecordClient;->b()V
 
     .line 249
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d:Ljava/util/concurrent/ExecutorService;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mExecutorServiced:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
 
     .line 250
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->h:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mICbxh:Lcom/wumii/android/mimi/manager/VoiceMessageManager$ICbx;
 
     .line 252
-    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->b:Ljava/util/LinkedList;
+    sget-object v0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mLinkedListb:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
@@ -474,7 +474,7 @@
     .line 256
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->g:Lcom/wumii/android/soundtouch/RecordClient;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->mRecordClientg:Lcom/wumii/android/soundtouch/RecordClient;
 
     .line 257
     return-void

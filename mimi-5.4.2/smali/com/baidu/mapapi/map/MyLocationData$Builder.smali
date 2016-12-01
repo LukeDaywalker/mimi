@@ -3,17 +3,17 @@
 
 
 # instance fields
-.field private a:D
+.field private mDa:D
 
-.field private b:D
+.field private mDb:D
 
-.field private c:F
+.field private mFc:F
 
-.field private d:F
+.field private mFd:F
 
-.field private e:F
+.field private mFe:F
 
-.field private f:I
+.field private mIf:I
 
 
 # direct methods
@@ -30,7 +30,7 @@
 .method public accuracy(F)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->e:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFe:F
 
     return-object p0
 .end method
@@ -40,17 +40,17 @@
 
     new-instance v1, Lcom/baidu/mapapi/map/MyLocationData;
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mDa:D
 
-    iget-wide v4, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->b:D
+    iget-wide v4, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mDb:D
 
-    iget v6, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->c:F
+    iget v6, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFc:F
 
-    iget v7, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->d:F
+    iget v7, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFd:F
 
-    iget v8, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->e:F
+    iget v8, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFe:F
 
-    iget v9, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->f:I
+    iget v9, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mIf:I
 
     invoke-direct/range {v1 .. v9}, Lcom/baidu/mapapi/map/MyLocationData;-><init>(DDFFFI)V
 
@@ -60,7 +60,7 @@
 .method public direction(F)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->d:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFd:F
 
     return-object p0
 .end method
@@ -68,7 +68,7 @@
 .method public latitude(D)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->a:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mDa:D
 
     return-object p0
 .end method
@@ -76,7 +76,7 @@
 .method public longitude(D)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->b:D
+    iput-wide p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mDb:D
 
     return-object p0
 .end method
@@ -84,7 +84,7 @@
 .method public satellitesNum(I)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->f:I
+    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mIf:I
 
     return-object p0
 .end method
@@ -92,7 +92,7 @@
 .method public speed(F)Lcom/baidu/mapapi/map/MyLocationData$Builder;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->c:F
+    iput p1, p0, Lcom/baidu/mapapi/map/MyLocationData$Builder;->mFc:F
 
     return-object p0
 .end method

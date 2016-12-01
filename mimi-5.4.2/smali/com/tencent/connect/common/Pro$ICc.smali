@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/common/Pro;
+.field private mHandlerc:Landroid/os/Handler;
 
-.field private b:Lcom/tencent/tauth/Pro$ICb;
+.field private mICbb:Lcom/tencent/tauth/Pro$ICb;
 
-.field private c:Landroid/os/Handler;
+.field final synthetic mProa:Lcom/tencent/connect/common/Pro;
 
 
 # direct methods
@@ -20,12 +20,12 @@
 
     .prologue
     .line 317
-    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICc;->a:Lcom/tencent/connect/common/Pro;
+    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICc;->mProa:Lcom/tencent/connect/common/Pro;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 318
-    iput-object p2, p0, Lcom/tencent/connect/common/Pro$ICc;->b:Lcom/tencent/tauth/Pro$ICb;
+    iput-object p2, p0, Lcom/tencent/connect/common/Pro$ICc;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     .line 319
     new-instance v0, Lcom/tencent/connect/common/Pro$ICd;
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, p0, v1, p1}, Lcom/tencent/connect/common/Pro$ICd;-><init>(Lcom/tencent/connect/common/Pro$ICc;Landroid/os/Looper;Lcom/tencent/connect/common/Pro;)V
 
-    iput-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     .line 329
     return-void
@@ -49,7 +49,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->b:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mICbb:Lcom/tencent/tauth/Pro$ICb;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     .prologue
     .line 389
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -80,7 +80,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 392
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -93,7 +93,7 @@
 
     .prologue
     .line 381
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -112,7 +112,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 384
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 341
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -144,7 +144,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 344
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -157,7 +157,7 @@
 
     .prologue
     .line 397
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -176,7 +176,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 400
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -189,7 +189,7 @@
 
     .prologue
     .line 349
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -208,7 +208,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 352
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -221,7 +221,7 @@
 
     .prologue
     .line 373
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -240,7 +240,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 376
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -253,7 +253,7 @@
 
     .prologue
     .line 365
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -272,7 +272,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 368
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -285,7 +285,7 @@
 
     .prologue
     .line 357
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -304,7 +304,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 360
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -317,7 +317,7 @@
 
     .prologue
     .line 333
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -332,7 +332,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 336
-    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->c:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/tencent/connect/common/Pro$ICc;->mHandlerc:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 

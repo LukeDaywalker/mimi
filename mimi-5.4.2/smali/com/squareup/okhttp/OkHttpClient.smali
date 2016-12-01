@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final a:Ljava/util/List;
+.field private static final mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field private static final b:Ljava/util/List;
+.field private static final mListb:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -29,19 +29,39 @@
     .end annotation
 .end field
 
-.field private static c:Ljavax/net/ssl/SSLSocketFactory;
+.field private static mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
 
 
 # instance fields
-.field private A:I
+.field private isZv:Z
 
-.field private final d:Lcom/squareup/okhttp/internal/RouteDatabase;
+.field private isZw:Z
 
-.field private e:Lcom/squareup/okhttp/Dispatcher;
+.field private isZx:Z
 
-.field private f:Ljava/net/Proxy;
+.field private mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
-.field private g:Ljava/util/List;
+.field private mCachen:Lcom/squareup/okhttp/Cache;
+
+.field private mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
+
+.field private mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
+
+.field private mCookieHandlerl:Ljava/net/CookieHandler;
+
+.field private mDispatchere:Lcom/squareup/okhttp/Dispatcher;
+
+.field private mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
+
+.field private mIA:I
+
+.field private mInternalCachem:Lcom/squareup/okhttp/internal/InternalCache;
+
+.field private mIy:I
+
+.field private mIz:I
+
+.field private mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -52,7 +72,7 @@
     .end annotation
 .end field
 
-.field private h:Ljava/util/List;
+.field private mListh:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -63,7 +83,7 @@
     .end annotation
 .end field
 
-.field private final i:Ljava/util/List;
+.field private final mListi:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -74,7 +94,7 @@
     .end annotation
 .end field
 
-.field private final j:Ljava/util/List;
+.field private final mListj:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -85,37 +105,17 @@
     .end annotation
 .end field
 
-.field private k:Ljava/net/ProxySelector;
+.field private mNetworku:Lcom/squareup/okhttp/internal/Network;
 
-.field private l:Ljava/net/CookieHandler;
+.field private mProxySelectork:Ljava/net/ProxySelector;
 
-.field private m:Lcom/squareup/okhttp/internal/InternalCache;
+.field private mProxyf:Ljava/net/Proxy;
 
-.field private n:Lcom/squareup/okhttp/Cache;
+.field private final mRouteDatabased:Lcom/squareup/okhttp/internal/RouteDatabase;
 
-.field private o:Ljavax/net/SocketFactory;
+.field private mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
-.field private p:Ljavax/net/ssl/SSLSocketFactory;
-
-.field private q:Ljavax/net/ssl/HostnameVerifier;
-
-.field private r:Lcom/squareup/okhttp/CertificatePinner;
-
-.field private s:Lcom/squareup/okhttp/Authenticator;
-
-.field private t:Lcom/squareup/okhttp/ConnectionPool;
-
-.field private u:Lcom/squareup/okhttp/internal/Network;
-
-.field private v:Z
-
-.field private w:Z
-
-.field private x:Z
-
-.field private y:I
-
-.field private z:I
+.field private mSocketFactoryo:Ljavax/net/SocketFactory;
 
 
 # direct methods
@@ -150,7 +150,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->a:Ljava/util/List;
+    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->mLista:Ljava/util/List;
 
     .line 60
     new-array v0, v5, [Lcom/squareup/okhttp/ConnectionSpec;
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->b:Ljava/util/List;
+    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->mListb:Ljava/util/List;
 
     .line 64
     new-instance v0, Lcom/squareup/okhttp/OkHttpClient$ICaj;
@@ -198,37 +198,37 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->i:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListi:Ljava/util/List;
 
     .line 172
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->j:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListj:Ljava/util/List;
 
     .line 187
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->v:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZv:Z
 
     .line 188
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
     .line 189
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->x:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZx:Z
 
     .line 195
     new-instance v0, Lcom/squareup/okhttp/internal/RouteDatabase;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/internal/RouteDatabase;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->d:Lcom/squareup/okhttp/internal/RouteDatabase;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mRouteDatabased:Lcom/squareup/okhttp/internal/RouteDatabase;
 
     .line 196
     new-instance v0, Lcom/squareup/okhttp/Dispatcher;
 
     invoke-direct {v0}, Lcom/squareup/okhttp/Dispatcher;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->e:Lcom/squareup/okhttp/Dispatcher;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mDispatchere:Lcom/squareup/okhttp/Dispatcher;
 
     .line 197
     return-void
@@ -248,161 +248,161 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->i:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListi:Ljava/util/List;
 
     .line 172
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->j:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListj:Ljava/util/List;
 
     .line 187
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->v:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZv:Z
 
     .line 188
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
     .line 189
-    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->x:Z
+    iput-boolean v1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZx:Z
 
     .line 200
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->d:Lcom/squareup/okhttp/internal/RouteDatabase;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mRouteDatabased:Lcom/squareup/okhttp/internal/RouteDatabase;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->d:Lcom/squareup/okhttp/internal/RouteDatabase;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mRouteDatabased:Lcom/squareup/okhttp/internal/RouteDatabase;
 
     .line 201
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->e:Lcom/squareup/okhttp/Dispatcher;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mDispatchere:Lcom/squareup/okhttp/Dispatcher;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->e:Lcom/squareup/okhttp/Dispatcher;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mDispatchere:Lcom/squareup/okhttp/Dispatcher;
 
     .line 202
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->f:Ljava/net/Proxy;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mProxyf:Ljava/net/Proxy;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->f:Ljava/net/Proxy;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mProxyf:Ljava/net/Proxy;
 
     .line 203
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
     .line 204
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->h:Ljava/util/List;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mListh:Ljava/util/List;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->h:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListh:Ljava/util/List;
 
     .line 205
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListi:Ljava/util/List;
 
-    iget-object v1, p1, Lcom/squareup/okhttp/OkHttpClient;->i:Ljava/util/List;
+    iget-object v1, p1, Lcom/squareup/okhttp/OkHttpClient;->mListi:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 206
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->j:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListj:Ljava/util/List;
 
-    iget-object v1, p1, Lcom/squareup/okhttp/OkHttpClient;->j:Ljava/util/List;
+    iget-object v1, p1, Lcom/squareup/okhttp/OkHttpClient;->mListj:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 207
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->k:Ljava/net/ProxySelector;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mProxySelectork:Ljava/net/ProxySelector;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->k:Ljava/net/ProxySelector;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mProxySelectork:Ljava/net/ProxySelector;
 
     .line 208
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->l:Ljava/net/CookieHandler;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mCookieHandlerl:Ljava/net/CookieHandler;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->l:Ljava/net/CookieHandler;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCookieHandlerl:Ljava/net/CookieHandler;
 
     .line 209
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->n:Lcom/squareup/okhttp/Cache;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mCachen:Lcom/squareup/okhttp/Cache;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->n:Lcom/squareup/okhttp/Cache;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCachen:Lcom/squareup/okhttp/Cache;
 
     .line 210
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->n:Lcom/squareup/okhttp/Cache;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCachen:Lcom/squareup/okhttp/Cache;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->n:Lcom/squareup/okhttp/Cache;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCachen:Lcom/squareup/okhttp/Cache;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Cache;->a:Lcom/squareup/okhttp/internal/InternalCache;
+    iget-object v0, v0, Lcom/squareup/okhttp/Cache;->mInternalCachea:Lcom/squareup/okhttp/internal/InternalCache;
 
     :goto_0
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->m:Lcom/squareup/okhttp/internal/InternalCache;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mInternalCachem:Lcom/squareup/okhttp/internal/InternalCache;
 
     .line 211
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->o:Ljavax/net/SocketFactory;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mSocketFactoryo:Ljavax/net/SocketFactory;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->o:Ljavax/net/SocketFactory;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mSocketFactoryo:Ljavax/net/SocketFactory;
 
     .line 212
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 213
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
     .line 214
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->r:Lcom/squareup/okhttp/CertificatePinner;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->r:Lcom/squareup/okhttp/CertificatePinner;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
     .line 215
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->s:Lcom/squareup/okhttp/Authenticator;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->s:Lcom/squareup/okhttp/Authenticator;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
     .line 216
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->t:Lcom/squareup/okhttp/ConnectionPool;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->t:Lcom/squareup/okhttp/ConnectionPool;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
 
     .line 217
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->u:Lcom/squareup/okhttp/internal/Network;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->u:Lcom/squareup/okhttp/internal/Network;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 
     .line 218
-    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->v:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->isZv:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->v:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZv:Z
 
     .line 219
-    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
     .line 220
-    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->x:Z
+    iget-boolean v0, p1, Lcom/squareup/okhttp/OkHttpClient;->isZx:Z
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->x:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZx:Z
 
     .line 221
-    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->y:I
+    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mIy:I
 
-    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->y:I
+    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIy:I
 
     .line 222
-    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->z:I
+    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mIz:I
 
-    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->z:I
+    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIz:I
 
     .line 223
-    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->A:I
+    iget v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mIA:I
 
-    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->A:I
+    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIA:I
 
     .line 224
     return-void
 
     .line 210
     :cond_0
-    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->m:Lcom/squareup/okhttp/internal/InternalCache;
+    iget-object v0, p1, Lcom/squareup/okhttp/OkHttpClient;->mInternalCachem:Lcom/squareup/okhttp/internal/InternalCache;
 
     goto :goto_0
 .end method
@@ -412,7 +412,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->u:Lcom/squareup/okhttp/internal/Network;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 
     return-object v0
 .end method
@@ -425,7 +425,7 @@
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lcom/squareup/okhttp/OkHttpClient;->c:Ljavax/net/ssl/SSLSocketFactory;
+    sget-object v0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -453,7 +453,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->c:Ljavax/net/ssl/SSLSocketFactory;
+    sput-object v0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
     :try_end_1
     .catch Ljava/security/GeneralSecurityException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -461,7 +461,7 @@
     .line 670
     :cond_0
     :try_start_2
-    sget-object v0, Lcom/squareup/okhttp/OkHttpClient;->c:Ljavax/net/ssl/SSLSocketFactory;
+    sget-object v0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryc:Ljavax/net/ssl/SSLSocketFactory;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -499,7 +499,7 @@
 
     .prologue
     .line 243
-    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->y:I
+    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIy:I
 
     return v0
 .end method
@@ -521,12 +521,12 @@
 
     .prologue
     .line 344
-    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->n:Lcom/squareup/okhttp/Cache;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->mCachen:Lcom/squareup/okhttp/Cache;
 
     .line 345
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->m:Lcom/squareup/okhttp/internal/InternalCache;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mInternalCachem:Lcom/squareup/okhttp/internal/InternalCache;
 
     .line 346
     return-object p0
@@ -537,7 +537,7 @@
 
     .prologue
     .line 291
-    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->f:Ljava/net/Proxy;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->mProxyf:Ljava/net/Proxy;
 
     .line 292
     return-object p0
@@ -656,7 +656,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
     .line 557
     return-object p0
@@ -667,7 +667,7 @@
 
     .prologue
     .line 392
-    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
     .line 393
     return-object p0
@@ -678,7 +678,7 @@
 
     .prologue
     .line 377
-    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object p1, p0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 378
     return-object p0
@@ -758,7 +758,7 @@
     :cond_3
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->y:I
+    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIy:I
 
     .line 239
     return-void
@@ -769,7 +769,7 @@
 
     .prologue
     .line 464
-    iput-boolean p1, p0, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iput-boolean p1, p0, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
     .line 465
     return-void
@@ -780,7 +780,7 @@
 
     .prologue
     .line 263
-    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->z:I
+    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIz:I
 
     return v0
 .end method
@@ -859,7 +859,7 @@
     :cond_3
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->z:I
+    iput v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIz:I
 
     .line 259
     return-void
@@ -870,7 +870,7 @@
 
     .prologue
     .line 281
-    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->A:I
+    iget v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mIA:I
 
     return v0
 .end method
@@ -892,7 +892,7 @@
 
     .prologue
     .line 296
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->f:Ljava/net/Proxy;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mProxyf:Ljava/net/Proxy;
 
     return-object v0
 .end method
@@ -902,7 +902,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->k:Ljava/net/ProxySelector;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mProxySelectork:Ljava/net/ProxySelector;
 
     return-object v0
 .end method
@@ -912,7 +912,7 @@
 
     .prologue
     .line 330
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->l:Ljava/net/CookieHandler;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCookieHandlerl:Ljava/net/CookieHandler;
 
     return-object v0
 .end method
@@ -922,7 +922,7 @@
 
     .prologue
     .line 340
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->m:Lcom/squareup/okhttp/internal/InternalCache;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mInternalCachem:Lcom/squareup/okhttp/internal/InternalCache;
 
     return-object v0
 .end method
@@ -932,7 +932,7 @@
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->o:Ljavax/net/SocketFactory;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mSocketFactoryo:Ljavax/net/SocketFactory;
 
     return-object v0
 .end method
@@ -942,7 +942,7 @@
 
     .prologue
     .line 382
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
     return-object v0
 .end method
@@ -952,7 +952,7 @@
 
     .prologue
     .line 397
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
     return-object v0
 .end method
@@ -962,7 +962,7 @@
 
     .prologue
     .line 412
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->r:Lcom/squareup/okhttp/CertificatePinner;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
     return-object v0
 .end method
@@ -972,7 +972,7 @@
 
     .prologue
     .line 428
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->s:Lcom/squareup/okhttp/Authenticator;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
     return-object v0
 .end method
@@ -982,7 +982,7 @@
 
     .prologue
     .line 443
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->t:Lcom/squareup/okhttp/ConnectionPool;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
 
     return-object v0
 .end method
@@ -992,7 +992,7 @@
 
     .prologue
     .line 459
-    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->v:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZv:Z
 
     return v0
 .end method
@@ -1002,7 +1002,7 @@
 
     .prologue
     .line 468
-    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->w:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZw:Z
 
     return v0
 .end method
@@ -1012,7 +1012,7 @@
 
     .prologue
     .line 494
-    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->x:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/OkHttpClient;->isZx:Z
 
     return v0
 .end method
@@ -1022,7 +1022,7 @@
 
     .prologue
     .line 498
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->d:Lcom/squareup/okhttp/internal/RouteDatabase;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mRouteDatabased:Lcom/squareup/okhttp/internal/RouteDatabase;
 
     return-object v0
 .end method
@@ -1032,7 +1032,7 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->e:Lcom/squareup/okhttp/Dispatcher;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mDispatchere:Lcom/squareup/okhttp/Dispatcher;
 
     return-object v0
 .end method
@@ -1051,7 +1051,7 @@
 
     .prologue
     .line 561
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
     return-object v0
 .end method
@@ -1070,7 +1070,7 @@
 
     .prologue
     .line 570
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListh:Ljava/util/List;
 
     return-object v0
 .end method
@@ -1089,7 +1089,7 @@
 
     .prologue
     .line 579
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->i:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListi:Ljava/util/List;
 
     return-object v0
 .end method
@@ -1108,7 +1108,7 @@
 
     .prologue
     .line 588
-    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->j:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/OkHttpClient;->mListj:Ljava/util/List;
 
     return-object v0
 .end method
@@ -1123,7 +1123,7 @@
     invoke-direct {v0, p0}, Lcom/squareup/okhttp/OkHttpClient;-><init>(Lcom/squareup/okhttp/OkHttpClient;)V
 
     .line 613
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->k:Ljava/net/ProxySelector;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mProxySelectork:Ljava/net/ProxySelector;
 
     if-nez v1, :cond_0
 
@@ -1132,11 +1132,11 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->k:Ljava/net/ProxySelector;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mProxySelectork:Ljava/net/ProxySelector;
 
     .line 616
     :cond_0
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->l:Ljava/net/CookieHandler;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mCookieHandlerl:Ljava/net/CookieHandler;
 
     if-nez v1, :cond_1
 
@@ -1145,11 +1145,11 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->l:Ljava/net/CookieHandler;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mCookieHandlerl:Ljava/net/CookieHandler;
 
     .line 619
     :cond_1
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->o:Ljavax/net/SocketFactory;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mSocketFactoryo:Ljavax/net/SocketFactory;
 
     if-nez v1, :cond_2
 
@@ -1158,11 +1158,11 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->o:Ljavax/net/SocketFactory;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mSocketFactoryo:Ljavax/net/SocketFactory;
 
     .line 622
     :cond_2
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
     if-nez v1, :cond_3
 
@@ -1171,44 +1171,44 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->p:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mSSLSocketFactoryp:Ljavax/net/ssl/SSLSocketFactory;
 
     .line 625
     :cond_3
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
     if-nez v1, :cond_4
 
     .line 626
     sget-object v1, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->q:Ljavax/net/ssl/HostnameVerifier;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mHostnameVerifierq:Ljavax/net/ssl/HostnameVerifier;
 
     .line 628
     :cond_4
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->r:Lcom/squareup/okhttp/CertificatePinner;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
     if-nez v1, :cond_5
 
     .line 629
     sget-object v1, Lcom/squareup/okhttp/CertificatePinner;->a:Lcom/squareup/okhttp/CertificatePinner;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->r:Lcom/squareup/okhttp/CertificatePinner;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mCertificatePinnerr:Lcom/squareup/okhttp/CertificatePinner;
 
     .line 631
     :cond_5
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->s:Lcom/squareup/okhttp/Authenticator;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
     if-nez v1, :cond_6
 
     .line 632
     sget-object v1, Lcom/squareup/okhttp/internal/http/AuthenticatorAdapter;->a:Lcom/squareup/okhttp/Authenticator;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->s:Lcom/squareup/okhttp/Authenticator;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mAuthenticators:Lcom/squareup/okhttp/Authenticator;
 
     .line 634
     :cond_6
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->t:Lcom/squareup/okhttp/ConnectionPool;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
 
     if-nez v1, :cond_7
 
@@ -1217,40 +1217,40 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->t:Lcom/squareup/okhttp/ConnectionPool;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mConnectionPoolt:Lcom/squareup/okhttp/ConnectionPool;
 
     .line 637
     :cond_7
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
     if-nez v1, :cond_8
 
     .line 638
-    sget-object v1, Lcom/squareup/okhttp/OkHttpClient;->a:Ljava/util/List;
+    sget-object v1, Lcom/squareup/okhttp/OkHttpClient;->mLista:Ljava/util/List;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->g:Ljava/util/List;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mListg:Ljava/util/List;
 
     .line 640
     :cond_8
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->h:Ljava/util/List;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mListh:Ljava/util/List;
 
     if-nez v1, :cond_9
 
     .line 641
-    sget-object v1, Lcom/squareup/okhttp/OkHttpClient;->b:Ljava/util/List;
+    sget-object v1, Lcom/squareup/okhttp/OkHttpClient;->mListb:Ljava/util/List;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->h:Ljava/util/List;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mListh:Ljava/util/List;
 
     .line 643
     :cond_9
-    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->u:Lcom/squareup/okhttp/internal/Network;
+    iget-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 
     if-nez v1, :cond_a
 
     .line 644
     sget-object v1, Lcom/squareup/okhttp/internal/Network;->a:Lcom/squareup/okhttp/internal/Network;
 
-    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->u:Lcom/squareup/okhttp/internal/Network;
+    iput-object v1, v0, Lcom/squareup/okhttp/OkHttpClient;->mNetworku:Lcom/squareup/okhttp/internal/Network;
 
     .line 646
     :cond_a

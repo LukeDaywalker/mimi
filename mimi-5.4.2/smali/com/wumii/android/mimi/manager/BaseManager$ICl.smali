@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/network/HttpRequest;
+.field final synthetic mBaseManagerb:Lcom/wumii/android/mimi/manager/BaseManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/BaseManager;
+.field final synthetic mHttpRequesta:Lcom/wumii/android/mimi/network/HttpRequest;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->b:Lcom/wumii/android/mimi/manager/BaseManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->mBaseManagerb:Lcom/wumii/android/mimi/manager/BaseManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->a:Lcom/wumii/android/mimi/network/HttpRequest;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->mHttpRequesta:Lcom/wumii/android/mimi/network/HttpRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->b:Lcom/wumii/android/mimi/manager/BaseManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->mBaseManagerb:Lcom/wumii/android/mimi/manager/BaseManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->a:Lcom/wumii/android/mimi/network/HttpRequest;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/BaseManager$ICl;->mHttpRequesta:Lcom/wumii/android/mimi/network/HttpRequest;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/network/HttpRequest;->c()Ljava/lang/String;
 

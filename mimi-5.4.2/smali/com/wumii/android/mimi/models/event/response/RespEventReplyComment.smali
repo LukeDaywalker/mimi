@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 22
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 23
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 31
     return-void
@@ -50,7 +50,7 @@
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method
@@ -60,7 +60,7 @@
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method

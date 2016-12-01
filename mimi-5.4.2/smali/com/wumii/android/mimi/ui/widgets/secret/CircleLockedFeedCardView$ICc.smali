@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
+.field final synthetic mICba:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 120
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->mICba:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->mICba:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->d:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCircleLockedFeedCardViewd:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->getContext()Landroid/content/Context;
 
@@ -48,9 +48,9 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->a:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICc;->mICba:Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->c:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$ICb;->mCirclec:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 

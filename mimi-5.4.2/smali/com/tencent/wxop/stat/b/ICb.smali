@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZb:Z
 
-.field private b:Z
+.field private mIc:I
 
-.field private c:I
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,15 +18,15 @@
 
     const-string/jumbo v0, "default"
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iput v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     return-void
 .end method
@@ -38,17 +38,17 @@
 
     const-string/jumbo v0, "default"
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iput v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -211,7 +211,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iput-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     return-void
 .end method
@@ -219,11 +219,11 @@
 .method public final a(Ljava/lang/Object;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     const/4 v1, 0x4
 
@@ -240,7 +240,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -278,13 +278,13 @@
 .method public final a(Ljava/lang/Throwable;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     const/4 v1, 0x6
 
     if-gt v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     const-string/jumbo v1, ""
 
@@ -299,7 +299,7 @@
 .method public final b(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     const/4 v1, 0x5
 
@@ -316,7 +316,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -354,7 +354,7 @@
 .method public final b(Ljava/lang/Throwable;)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -367,7 +367,7 @@
 .method public final c(Ljava/lang/Object;)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -380,7 +380,7 @@
 .method public final d(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     const/4 v1, 0x6
 
@@ -397,7 +397,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -435,7 +435,7 @@
 .method public final e(Ljava/lang/Object;)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -448,7 +448,7 @@
 .method public final f(Ljava/lang/Object;)V
     .locals 2
 
-    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->c:I
+    iget v0, p0, Lcom/tencent/wxop/stat/b/ICb;->mIc:I
 
     const/4 v1, 0x3
 
@@ -465,7 +465,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/b/ICb;->mStringa:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -503,7 +503,7 @@
 .method public final g(Ljava/lang/Object;)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->b:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/b/ICb;->isZb:Z
 
     if-eqz v0, :cond_0
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+.field final synthetic mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICb;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 85
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$ICb;->mBlockedUserSecretActivitya:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 

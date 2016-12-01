@@ -8,11 +8,11 @@
 
 .field protected b:Landroid/widget/TextView;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;
+.field final synthetic mBaseImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;
 
-.field private d:Landroid/view/View;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/ImageView;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->c:Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mBaseImageChatItemBuilderc:Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mViewd:Landroid/view/View;
 
     .line 114
     const v0, 0x7f0b0095
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mImageViewe:Landroid/widget/ImageView;
 
     .line 116
     const v0, 0x7f0b019b
@@ -76,7 +76,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mImageViewe:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -86,7 +86,7 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method

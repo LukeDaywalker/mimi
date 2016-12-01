@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+.field final synthetic mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 170
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     .line 171
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -69,12 +69,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;)V
 
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->k()V
 
@@ -84,14 +84,14 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 189
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     const/4 v2, -0x1
 
     invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 190
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->finish()V
 
@@ -137,7 +137,7 @@
 
     const-string/jumbo v1, "nearby/user"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->mBaseSetKnockQuestionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->i()Ljava/util/Map;
 

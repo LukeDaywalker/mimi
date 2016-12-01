@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field a:I
+.field mIa:I
 
-.field b:Lorg/json/JSONObject;
+.field mId:I
 
-.field c:Ljava/lang/String;
+.field mJSONObjectb:Lorg/json/JSONObject;
 
-.field d:I
+.field mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -22,17 +22,17 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICi;->b:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICi;->mJSONObjectb:Lorg/json/JSONObject;
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICi;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICi;->mStringc:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/tencent/wxop/stat/ICi;->d:I
+    iput v0, p0, Lcom/tencent/wxop/stat/ICi;->mId:I
 
-    iput p1, p0, Lcom/tencent/wxop/stat/ICi;->a:I
+    iput p1, p0, Lcom/tencent/wxop/stat/ICi;->mIa:I
 
     return-void
 .end method

@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -75,13 +75,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 37
-    iput-object p1, p0, Lcom/google/android/gms/analytics/internal/Command;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringa:Ljava/lang/String;
 
     .line 38
-    iput-object p2, p0, Lcom/google/android/gms/analytics/internal/Command;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringb:Ljava/lang/String;
 
     .line 39
-    iput-object p3, p0, Lcom/google/android/gms/analytics/internal/Command;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringc:Ljava/lang/String;
 
     .line 40
     return-void
@@ -96,21 +96,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringa:Ljava/lang/String;
 
     .line 88
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringb:Ljava/lang/String;
 
     .line 89
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringc:Ljava/lang/String;
 
     .line 90
     return-void
@@ -123,7 +123,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -153,17 +153,17 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 82
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 83
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/Command;->mStringc:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
+.field final synthetic mICana:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 100
-    iput-object p4, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICal;->a:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
+    iput-object p4, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICal;->mICana:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/util/SinaWeiboUtils$ICaq;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/ActivityEventManager;Ljava/lang/String;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICal;->a:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ShareUtils$ICal;->mICana:Lcom/wumii/android/mimi/util/ShareUtils$ICan;
 
     invoke-interface {v0, p1}, Lcom/wumii/android/mimi/util/ShareUtils$ICan;->a(Ljava/lang/String;)V
 

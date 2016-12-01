@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mBackoffb:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
-.field private final b:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+.field private final mIa:I
 
-.field private final c:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
+.field private final mRetryPolicyc:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 30
-    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->a:I
+    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mIa:I
 
     .line 31
-    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->b:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mBackoffb:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
     .line 32
-    iput-object p3, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->c:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
+    iput-object p3, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mRetryPolicyc:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
 
     .line 33
     return-void
@@ -52,9 +52,9 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->b:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mBackoffb:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
-    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mIa:I
 
     invoke-interface {v0, v1}, Lio/fabric/sdk/android/services/concurrency/internal/Backoff;->a(I)J
 
@@ -70,13 +70,13 @@
     .line 52
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
-    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->a:I
+    iget v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mIa:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->b:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mBackoffb:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->c:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
+    iget-object v3, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mRetryPolicyc:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
 
     invoke-direct {v0, v1, v2, v3}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;-><init>(ILio/fabric/sdk/android/services/concurrency/internal/Backoff;Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;)V
 
@@ -90,9 +90,9 @@
     .line 56
     new-instance v0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->b:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mBackoffb:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->c:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->mRetryPolicyc:Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;
 
     invoke-direct {v0, v1, v2}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;-><init>(Lio/fabric/sdk/android/services/concurrency/internal/Backoff;Lio/fabric/sdk/android/services/concurrency/internal/RetryPolicy;)V
 

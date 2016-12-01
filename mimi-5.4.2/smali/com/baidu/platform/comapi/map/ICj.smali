@@ -11,27 +11,27 @@
 
 
 # instance fields
-.field private a:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private isZj:Z
 
-.field private b:Landroid/graphics/SurfaceTexture;
+.field private mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private c:Lcom/baidu/platform/comapi/map/ICj$ICa;
+.field private final mCk:Lcom/baidu/platform/comapi/map/C;
 
-.field private d:Ljavax/microedition/khronos/egl/EGL10;
+.field private mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-.field private e:Ljavax/microedition/khronos/egl/EGLDisplay;
+.field private mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
-.field private f:Ljavax/microedition/khronos/egl/EGLContext;
+.field private mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-.field private g:Ljavax/microedition/khronos/egl/EGLSurface;
+.field private mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
-.field private h:Ljavax/microedition/khronos/opengles/GL10;
+.field private mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
-.field private i:I
+.field private mICac:Lcom/baidu/platform/comapi/map/ICj$ICa;
 
-.field private j:Z
+.field private mIi:I
 
-.field private final k:Lcom/baidu/platform/comapi/map/C;
+.field private mSurfaceTextureb:Landroid/graphics/SurfaceTexture;
 
 
 # direct methods
@@ -42,31 +42,31 @@
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_DISPLAY:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_SURFACE:Ljavax/microedition/khronos/egl/EGLSurface;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mIi:I
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->j:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->isZj:Z
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICj;->b:Landroid/graphics/SurfaceTexture;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICj;->mSurfaceTextureb:Landroid/graphics/SurfaceTexture;
 
-    iput-object p2, p0, Lcom/baidu/platform/comapi/map/ICj;->c:Lcom/baidu/platform/comapi/map/ICj$ICa;
+    iput-object p2, p0, Lcom/baidu/platform/comapi/map/ICj;->mICac:Lcom/baidu/platform/comapi/map/ICj$ICa;
 
-    iput-object p3, p0, Lcom/baidu/platform/comapi/map/ICj;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p3, p0, Lcom/baidu/platform/comapi/map/ICj;->mAtomicBooleana:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    iput-object p4, p0, Lcom/baidu/platform/comapi/map/ICj;->k:Lcom/baidu/platform/comapi/map/C;
+    iput-object p4, p0, Lcom/baidu/platform/comapi/map/ICj;->mCk:Lcom/baidu/platform/comapi/map/C;
 
     return-void
 .end method
@@ -80,9 +80,9 @@
 
     check-cast v0, Ljavax/microedition/khronos/egl/EGL10;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_DEFAULT_DISPLAY:Ljava/lang/Object;
 
@@ -90,9 +90,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_DISPLAY:Ljavax/microedition/khronos/egl/EGLDisplay;
 
@@ -110,7 +110,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v2}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -137,9 +137,9 @@
 
     new-array v0, v0, [I
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     invoke-interface {v1, v2, v0}, Ljavax/microedition/khronos/egl/EGL10;->eglInitialize(Ljavax/microedition/khronos/egl/EGLDisplay;[I)Z
 
@@ -159,7 +159,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v2}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -260,9 +260,9 @@
 
     aput v1, v2, v0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const/16 v4, 0x64
 
@@ -284,9 +284,9 @@
 
     fill-array-data v0, :array_0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const/4 v4, 0x0
 
@@ -298,17 +298,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const/4 v2, 0x0
 
     aget-object v2, v3, v2
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->b:Landroid/graphics/SurfaceTexture;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mSurfaceTextureb:Landroid/graphics/SurfaceTexture;
 
     const/4 v4, 0x0
 
@@ -316,22 +316,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_SURFACE:Ljavax/microedition/khronos/egl/EGLSurface;
 
     if-eq v0, v1, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
     if-ne v0, v1, :cond_4
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v0}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -350,7 +350,7 @@
     throw v0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v0}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -359,15 +359,15 @@
     invoke-static {v0}, Landroid/opengl/GLUtils;->getEGLErrorString(I)Ljava/lang/String;
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-interface {v0, v1, v2, v3, v4}, Ljavax/microedition/khronos/egl/EGL10;->eglMakeCurrent(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLContext;)Z
 
@@ -375,7 +375,7 @@
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v0}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -395,7 +395,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
     invoke-interface {v2}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
@@ -418,7 +418,7 @@
     throw v0
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-virtual {v0}, Ljavax/microedition/khronos/egl/EGLContext;->getGL()Ljavax/microedition/khronos/opengles/GL;
 
@@ -426,7 +426,7 @@
 
     check-cast v0, Ljavax/microedition/khronos/opengles/GL10;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     const/4 v0, 0x1
 
@@ -467,23 +467,23 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/baidu/platform/comapi/map/ICj;->a(IIIIII)Z
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->k:Lcom/baidu/platform/comapi/map/C;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mCk:Lcom/baidu/platform/comapi/map/C;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->g:J
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mJg:J
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeInit(J)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->k:Lcom/baidu/platform/comapi/map/C;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mCk:Lcom/baidu/platform/comapi/map/C;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->g:J
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mJg:J
 
     sget v2, Lcom/baidu/platform/comapi/map/C;->a:I
 
@@ -497,29 +497,29 @@
 .method private e()V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-interface {v0, v1, v2}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroyContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
     invoke-interface {v0, v1, v2}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroySurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->f:Ljavax/microedition/khronos/egl/EGLContext;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLContextf:Ljavax/microedition/khronos/egl/EGLContext;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_SURFACE:Ljavax/microedition/khronos/egl/EGLSurface;
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
     return-void
 .end method
@@ -531,7 +531,7 @@
 
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mIi:I
 
     monitor-enter p0
 
@@ -566,7 +566,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mIi:I
 
     :try_start_0
     monitor-enter p0
@@ -620,7 +620,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->j:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->isZj:Z
 
     monitor-exit p0
 
@@ -646,31 +646,31 @@
     invoke-direct {p0}, Lcom/baidu/platform/comapi/map/ICj;->d()V
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->c:Lcom/baidu/platform/comapi/map/ICj$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mICac:Lcom/baidu/platform/comapi/map/ICj$ICa;
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/ICj;->i:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mIi:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->c:Lcom/baidu/platform/comapi/map/ICj$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mICac:Lcom/baidu/platform/comapi/map/ICj$ICa;
 
     invoke-interface {v0}, Lcom/baidu/platform/comapi/map/ICj$ICa;->a()I
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->i:I
+    iput v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mIi:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->k:Lcom/baidu/platform/comapi/map/C;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mCk:Lcom/baidu/platform/comapi/map/C;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -689,7 +689,7 @@
 
     check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->k:Lcom/baidu/platform/comapi/map/C;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mCk:Lcom/baidu/platform/comapi/map/C;
 
     invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
@@ -699,11 +699,11 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     invoke-interface {v3}, Ljavax/microedition/khronos/opengles/GL10;->glPushMatrix()V
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     iget v4, v2, Lcom/baidu/platform/comapi/map/B;->c:I
 
@@ -711,7 +711,7 @@
 
     invoke-interface {v3, v4, v6, v5, v5}, Ljavax/microedition/khronos/opengles/GL10;->glRotatef(FFFF)V
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     iget v4, v2, Lcom/baidu/platform/comapi/map/B;->b:I
 
@@ -719,15 +719,15 @@
 
     invoke-interface {v3, v4, v5, v5, v6}, Ljavax/microedition/khronos/opengles/GL10;->glRotatef(FFFF)V
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     invoke-interface {v0, v3, v2}, Lcom/baidu/platform/comapi/map/ICi;->a(Ljavax/microedition/khronos/opengles/GL10;Lcom/baidu/platform/comapi/map/B;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     invoke-interface {v0}, Ljavax/microedition/khronos/opengles/GL10;->glPopMatrix()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->h:Ljavax/microedition/khronos/opengles/GL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mGL10h:Ljavax/microedition/khronos/opengles/GL10;
 
     const v2, 0x3f75c28f    # 0.96f
 
@@ -740,16 +740,16 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->d:Ljavax/microedition/khronos/egl/EGL10;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGL10d:Ljavax/microedition/khronos/egl/EGL10;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->e:Ljavax/microedition/khronos/egl/EGLDisplay;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLDisplaye:Ljavax/microedition/khronos/egl/EGLDisplay;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->g:Ljavax/microedition/khronos/egl/EGLSurface;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/ICj;->mEGLSurfaceg:Ljavax/microedition/khronos/egl/EGLSurface;
 
     invoke-interface {v0, v1, v2}, Ljavax/microedition/khronos/egl/EGL10;->eglSwapBuffers(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z
 
     :goto_1
-    iget-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->j:Z
+    iget-boolean v0, p0, Lcom/baidu/platform/comapi/map/ICj;->isZj:Z
 
     if-eqz v0, :cond_0
 

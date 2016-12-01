@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+.field final synthetic mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 107
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;->a:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;->mSecretHeaderCardViewa:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->h:Landroid/view/View;
 

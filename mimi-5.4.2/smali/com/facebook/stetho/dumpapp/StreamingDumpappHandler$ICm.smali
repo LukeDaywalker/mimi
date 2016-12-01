@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;
+.field private final mDumperc:Lcom/facebook/stetho/dumpapp/Dumper;
 
-.field private final b:Lorg/apache/http/HttpRequest;
+.field private final mHttpRequestb:Lorg/apache/http/HttpRequest;
 
-.field private final c:Lcom/facebook/stetho/dumpapp/Dumper;
+.field private final mInputStreamd:Ljava/io/InputStream;
 
-.field private final d:Ljava/io/InputStream;
+.field final synthetic mStreamingDumpappHandlera:Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;
 
 
 # direct methods
@@ -19,18 +19,18 @@
 
     .prologue
     .line 75
-    iput-object p1, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->a:Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;
+    iput-object p1, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mStreamingDumpappHandlera:Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;
 
     invoke-direct {p0}, Lorg/apache/http/entity/AbstractHttpEntity;-><init>()V
 
     .line 76
-    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->b:Lorg/apache/http/HttpRequest;
+    iput-object p2, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mHttpRequestb:Lorg/apache/http/HttpRequest;
 
     .line 77
-    iput-object p3, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->c:Lcom/facebook/stetho/dumpapp/Dumper;
+    iput-object p3, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mDumperc:Lcom/facebook/stetho/dumpapp/Dumper;
 
     .line 78
-    iput-object p4, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->d:Ljava/io/InputStream;
+    iput-object p4, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mInputStreamd:Ljava/io/InputStream;
 
     .line 79
     return-void
@@ -85,11 +85,11 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->b:Lorg/apache/http/HttpRequest;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mHttpRequestb:Lorg/apache/http/HttpRequest;
 
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->c:Lcom/facebook/stetho/dumpapp/Dumper;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mDumperc:Lcom/facebook/stetho/dumpapp/Dumper;
 
-    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->d:Ljava/io/InputStream;
+    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler$ICm;->mInputStreamd:Ljava/io/InputStream;
 
     invoke-static {v0, v1, v2, p1}, Lcom/facebook/stetho/dumpapp/StreamingDumpappHandler;->a(Lorg/apache/http/HttpRequest;Lcom/facebook/stetho/dumpapp/Dumper;Ljava/io/InputStream;Ljava/io/OutputStream;)V
 

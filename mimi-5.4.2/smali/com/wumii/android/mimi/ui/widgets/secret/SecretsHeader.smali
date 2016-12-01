@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/widget/TextView;
+.field private mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -55,7 +55,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretsHeader;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretsHeader;->mTextViewa:Landroid/widget/TextView;
 
     .line 28
     return-void

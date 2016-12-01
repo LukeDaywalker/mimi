@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
-.field private final b:Ljava/lang/String;
+.field private mStringEntityc:Lorg/apache/http/entity/StringEntity;
 
-.field private c:Lorg/apache/http/entity/StringEntity;
+.field private mStringEntityd:Lorg/apache/http/entity/StringEntity;
 
-.field private d:Lorg/apache/http/entity/StringEntity;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -22,10 +22,10 @@
     invoke-direct {p0, p1}, Lcom/facebook/stetho/server/SecureHttpRequestHandler;-><init>(Landroid/content/Context;)V
 
     .line 64
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     .line 65
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringb:Ljava/lang/String;
 
     .line 66
     return-void
@@ -107,7 +107,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->c:Lorg/apache/http/entity/StringEntity;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityc:Lorg/apache/http/entity/StringEntity;
 
     if-nez v0, :cond_0
 
@@ -149,7 +149,7 @@
     .line 109
     const-string/jumbo v1, "Android-Package"
 
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -168,11 +168,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->c:Lorg/apache/http/entity/StringEntity;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityc:Lorg/apache/http/entity/StringEntity;
 
     .line 112
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->c:Lorg/apache/http/entity/StringEntity;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityc:Lorg/apache/http/entity/StringEntity;
 
     invoke-static {p1, v0}, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a(Lorg/apache/http/HttpResponse;Lorg/apache/http/HttpEntity;)V
 
@@ -211,7 +211,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 180
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -231,7 +231,7 @@
 
     .line 184
     :try_start_0
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -274,7 +274,7 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->d:Lorg/apache/http/entity/StringEntity;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityd:Lorg/apache/http/entity/StringEntity;
 
     if-nez v0, :cond_0
 
@@ -331,7 +331,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -380,7 +380,7 @@
 
     const-string/jumbo v3, "ws"
 
-    iget-object v4, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->b:Ljava/lang/String;
+    iget-object v4, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
@@ -413,11 +413,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->d:Lorg/apache/http/entity/StringEntity;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityd:Lorg/apache/http/entity/StringEntity;
 
     .line 139
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->d:Lorg/apache/http/entity/StringEntity;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mStringEntityd:Lorg/apache/http/entity/StringEntity;
 
     invoke-static {p1, v0}, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a(Lorg/apache/http/HttpResponse;Lorg/apache/http/HttpEntity;)V
 
@@ -430,14 +430,14 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     .line 194
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/ChromeDiscoveryHandler;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 

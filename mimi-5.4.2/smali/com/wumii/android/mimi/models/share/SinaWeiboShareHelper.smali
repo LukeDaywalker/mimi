@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+.field private mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
 
 # direct methods
@@ -148,10 +148,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     invoke-interface {v0}, Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;->c()Z
 
@@ -231,7 +231,7 @@
     iput-object v0, v1, Lcom/sina/weibo/sdk/api/share/SendMultiMessageToWeiboRequest;->b:Lcom/sina/weibo/sdk/api/WeiboMultiMessage;
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     invoke-interface {v0, v1}, Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;->a(Lcom/sina/weibo/sdk/api/share/BaseRequest;)Z
 
@@ -247,7 +247,7 @@
     const/4 v0, 0x0
 
     .line 28
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     invoke-interface {v2}, Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;->c()Z
 
@@ -257,7 +257,7 @@
     if-nez v2, :cond_2
 
     .line 31
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     invoke-interface {v2}, Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;->a()Z
 
@@ -337,7 +337,7 @@
 
     .line 54
     :cond_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->a:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SinaWeiboShareHelper;->mIWeiboShareAPIa:Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;
 
     invoke-interface {v2}, Lcom/sina/weibo/sdk/api/share/IWeiboShareAPI;->b()I
 

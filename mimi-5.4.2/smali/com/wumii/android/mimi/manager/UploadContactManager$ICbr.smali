@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
-.field private static final synthetic d:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+.field private static final synthetic mArrayICbrd:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->d:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sput-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mArrayICbrd:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     .prologue
     .line 73
-    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->d:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
+    sget-object v0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->mArrayICbrd:[Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->clone()Ljava/lang/Object;
 

@@ -4,19 +4,11 @@
 
 
 # static fields
-.field private static f:Lcom/google/tagmanager/TagManager;
+.field private static mTagManagerf:Lcom/google/tagmanager/TagManager;
 
 
 # instance fields
-.field private final a:Lcom/google/tagmanager/TagManager$ICbi;
-
-.field private final b:Landroid/content/Context;
-
-.field private final c:Lcom/google/tagmanager/DataLayer;
-
-.field private volatile d:Lcom/google/tagmanager/TagManager$ICbj;
-
-.field private final e:Ljava/util/concurrent/ConcurrentMap;
+.field private final mConcurrentMape:Ljava/util/concurrent/ConcurrentMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap",
@@ -27,6 +19,14 @@
         }
     .end annotation
 .end field
+
+.field private final mContextb:Landroid/content/Context;
+
+.field private final mDataLayerc:Lcom/google/tagmanager/DataLayer;
+
+.field private final mICbia:Lcom/google/tagmanager/TagManager$ICbi;
+
+.field private volatile mICbjd:Lcom/google/tagmanager/TagManager$ICbj;
 
 
 # direct methods
@@ -55,28 +55,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->b:Landroid/content/Context;
+    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->mContextb:Landroid/content/Context;
 
     .line 143
-    iput-object p2, p0, Lcom/google/tagmanager/TagManager;->a:Lcom/google/tagmanager/TagManager$ICbi;
+    iput-object p2, p0, Lcom/google/tagmanager/TagManager;->mICbia:Lcom/google/tagmanager/TagManager$ICbi;
 
     .line 144
     sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->a:Lcom/google/tagmanager/TagManager$ICbj;
 
-    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$ICbj;
+    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->mICbjd:Lcom/google/tagmanager/TagManager$ICbj;
 
     .line 145
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->e:Ljava/util/concurrent/ConcurrentMap;
+    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->mConcurrentMape:Ljava/util/concurrent/ConcurrentMap;
 
     .line 146
-    iput-object p3, p0, Lcom/google/tagmanager/TagManager;->c:Lcom/google/tagmanager/DataLayer;
+    iput-object p3, p0, Lcom/google/tagmanager/TagManager;->mDataLayerc:Lcom/google/tagmanager/DataLayer;
 
     .line 147
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->c:Lcom/google/tagmanager/DataLayer;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mDataLayerc:Lcom/google/tagmanager/DataLayer;
 
     new-instance v1, Lcom/google/tagmanager/TagManager$ICbf;
 
@@ -85,11 +85,11 @@
     invoke-virtual {v0, v1}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer$ICj;)V
 
     .line 157
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->c:Lcom/google/tagmanager/DataLayer;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mDataLayerc:Lcom/google/tagmanager/DataLayer;
 
     new-instance v1, Lcom/google/tagmanager/AdwordsClickReferrerListener;
 
-    iget-object v2, p0, Lcom/google/tagmanager/TagManager;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/google/tagmanager/TagManager;->mContextb:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Lcom/google/tagmanager/AdwordsClickReferrerListener;-><init>(Landroid/content/Context;)V
 
@@ -110,7 +110,7 @@
 
     .line 167
     :try_start_0
-    sget-object v0, Lcom/google/tagmanager/TagManager;->f:Lcom/google/tagmanager/TagManager;
+    sget-object v0, Lcom/google/tagmanager/TagManager;->mTagManagerf:Lcom/google/tagmanager/TagManager;
 
     if-nez v0, :cond_1
 
@@ -160,11 +160,11 @@
 
     invoke-direct {v3, p0, v0, v4}, Lcom/google/tagmanager/TagManager;-><init>(Landroid/content/Context;Lcom/google/tagmanager/TagManager$ICbi;Lcom/google/tagmanager/DataLayer;)V
 
-    sput-object v3, Lcom/google/tagmanager/TagManager;->f:Lcom/google/tagmanager/TagManager;
+    sput-object v3, Lcom/google/tagmanager/TagManager;->mTagManagerf:Lcom/google/tagmanager/TagManager;
 
     .line 182
     :cond_1
-    sget-object v0, Lcom/google/tagmanager/TagManager;->f:Lcom/google/tagmanager/TagManager;
+    sget-object v0, Lcom/google/tagmanager/TagManager;->mTagManagerf:Lcom/google/tagmanager/TagManager;
 
     monitor-exit v1
     :try_end_1
@@ -188,7 +188,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->e:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mConcurrentMape:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v0}, Ljava/util/concurrent/ConcurrentMap;->values()Ljava/util/Collection;
 
@@ -228,7 +228,7 @@
 
     .prologue
     .line 259
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$ICbj;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mICbjd:Lcom/google/tagmanager/TagManager$ICbj;
 
     return-object v0
 .end method
@@ -258,7 +258,7 @@
     move-result-object v3
 
     .line 274
-    sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->a:[I
+    sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->mArrayIa:[I
 
     invoke-virtual {v2}, Lcom/google/tagmanager/PreviewManager;->b()Lcom/google/tagmanager/PreviewManager$ICan;
 
@@ -288,7 +288,7 @@
     .line 276
     :pswitch_0
     :try_start_1
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->e:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mConcurrentMape:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v0, v3}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -322,7 +322,7 @@
     .line 284
     :pswitch_1
     :try_start_2
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->e:Ljava/util/concurrent/ConcurrentMap;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->mConcurrentMape:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v0}, Ljava/util/concurrent/ConcurrentMap;->entrySet()Ljava/util/Set;
 

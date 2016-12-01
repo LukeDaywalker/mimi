@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field final synthetic b:Lcom/wumii/android/mimi/manager/CircleManager;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 211
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->mStringa:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
 
     .line 217
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/CircleManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -94,7 +94,7 @@
     move-result-object v2
 
     .line 222
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v0}, Lcom/wumii/android/mimi/models/storage/CircleStorage;->a(Ljava/lang/String;Ljava/util/List;)V
     :try_end_0
@@ -103,7 +103,7 @@
     .line 228
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->b:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/CircleManager$ICx;->mCircleManagerb:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/Object;)V
 

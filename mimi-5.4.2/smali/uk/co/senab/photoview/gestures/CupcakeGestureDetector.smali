@@ -9,17 +9,17 @@
 # instance fields
 .field protected a:Luk/co/senab/photoview/gestures/OnGestureListener;
 
-.field b:F
+.field private isZg:Z
 
-.field c:F
+.field mFb:F
 
-.field final d:F
+.field mFc:F
 
-.field final e:F
+.field final mFd:F
 
-.field private f:Landroid/view/VelocityTracker;
+.field final mFe:F
 
-.field private g:Z
+.field private mVelocityTrackerf:Landroid/view/VelocityTracker;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     int-to-float v1, v1
 
-    iput v1, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->e:F
+    iput v1, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFe:F
 
     .line 43
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
@@ -51,7 +51,7 @@
 
     int-to-float v0, v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->d:F
+    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFd:F
 
     .line 44
     return-void
@@ -132,15 +132,15 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iput-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     .line 66
-    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     if-eqz v2, :cond_1
 
     .line 67
-    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
@@ -150,17 +150,17 @@
 
     move-result v2
 
-    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b:F
+    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 
     .line 73
     invoke-virtual {p0, p1}, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b(Landroid/view/MotionEvent;)F
 
     move-result v2
 
-    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c:F
+    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFc:F
 
     .line 74
-    iput-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->g:Z
+    iput-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->isZg:Z
 
     goto :goto_0
 
@@ -186,16 +186,16 @@
     move-result v3
 
     .line 81
-    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b:F
+    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 
     sub-float v4, v2, v4
 
-    iget v5, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c:F
+    iget v5, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFc:F
 
     sub-float v5, v3, v5
 
     .line 83
-    iget-boolean v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->g:Z
+    iget-boolean v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->isZg:Z
 
     if-nez v6, :cond_3
 
@@ -210,7 +210,7 @@
 
     move-result v6
 
-    iget v7, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->d:F
+    iget v7, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFd:F
 
     cmpl-float v6, v6, v7
 
@@ -219,11 +219,11 @@
     move v0, v1
 
     :cond_2
-    iput-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->g:Z
+    iput-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->isZg:Z
 
     .line 89
     :cond_3
-    iget-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->g:Z
+    iget-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->isZg:Z
 
     if-eqz v0, :cond_0
 
@@ -233,18 +233,18 @@
     invoke-interface {v0, v4, v5}, Luk/co/senab/photoview/gestures/OnGestureListener;->a(FF)V
 
     .line 91
-    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b:F
+    iput v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 
     .line 92
-    iput v3, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c:F
+    iput v3, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFc:F
 
     .line 94
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 95
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
@@ -252,28 +252,28 @@
 
     .line 103
     :pswitch_2
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 105
-    iput-object v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iput-object v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     goto :goto_0
 
     .line 111
     :pswitch_3
-    iget-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->g:Z
+    iget-boolean v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->isZg:Z
 
     if-eqz v0, :cond_4
 
     .line 112
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_4
 
@@ -282,35 +282,35 @@
 
     move-result v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b:F
+    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 
     .line 114
     invoke-virtual {p0, p1}, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b(Landroid/view/MotionEvent;)F
 
     move-result v0
 
-    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c:F
+    iput v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFc:F
 
     .line 117
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     .line 118
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     const/16 v2, 0x3e8
 
     invoke-virtual {v0, v2}, Landroid/view/VelocityTracker;->computeCurrentVelocity(I)V
 
     .line 120
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->getXVelocity()F
 
     move-result v0
 
-    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v2, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v2}, Landroid/view/VelocityTracker;->getYVelocity()F
 
@@ -329,7 +329,7 @@
 
     move-result v3
 
-    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->e:F
+    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFe:F
 
     cmpl-float v3, v3, v4
 
@@ -338,9 +338,9 @@
     .line 126
     iget-object v3, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->a:Luk/co/senab/photoview/gestures/OnGestureListener;
 
-    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->b:F
+    iget v4, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFb:F
 
-    iget v5, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->c:F
+    iget v5, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mFc:F
 
     neg-float v0, v0
 
@@ -350,17 +350,17 @@
 
     .line 133
     :cond_4
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
     .line 134
-    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iget-object v0, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 135
-    iput-object v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->f:Landroid/view/VelocityTracker;
+    iput-object v6, p0, Luk/co/senab/photoview/gestures/CupcakeGestureDetector;->mVelocityTrackerf:Landroid/view/VelocityTracker;
 
     goto/16 :goto_0
 

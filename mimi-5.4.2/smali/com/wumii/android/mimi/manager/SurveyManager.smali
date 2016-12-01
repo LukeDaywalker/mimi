@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/SurveyManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 41
-    sget-object v0, Lcom/wumii/android/mimi/manager/SurveyManager;->h:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/manager/SurveyManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-object v0
 .end method

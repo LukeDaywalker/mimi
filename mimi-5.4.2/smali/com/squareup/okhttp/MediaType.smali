@@ -4,19 +4,19 @@
 
 
 # static fields
-.field private static final a:Ljava/util/regex/Pattern;
+.field private static final mPatterna:Ljava/util/regex/Pattern;
 
-.field private static final b:Ljava/util/regex/Pattern;
+.field private static final mPatternb:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field private final c:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
 
-.field private final d:Ljava/lang/String;
+.field private final mStringd:Ljava/lang/String;
 
-.field private final e:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
-.field private final f:Ljava/lang/String;
+.field private final mStringf:Ljava/lang/String;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/MediaType;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/squareup/okhttp/MediaType;->mPatterna:Ljava/util/regex/Pattern;
 
     .line 31
     const-string/jumbo v0, ";\\s*(?:([a-zA-Z0-9-!#$%&\'*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&\'*+.^_`{|}~]+)|\"([^\"]*)\"))?"
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/MediaType;->b:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/squareup/okhttp/MediaType;->mPatternb:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -53,16 +53,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lcom/squareup/okhttp/MediaType;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/MediaType;->mStringc:Ljava/lang/String;
 
     .line 41
-    iput-object p2, p0, Lcom/squareup/okhttp/MediaType;->d:Ljava/lang/String;
+    iput-object p2, p0, Lcom/squareup/okhttp/MediaType;->mStringd:Ljava/lang/String;
 
     .line 42
-    iput-object p3, p0, Lcom/squareup/okhttp/MediaType;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/squareup/okhttp/MediaType;->mStringe:Ljava/lang/String;
 
     .line 43
-    iput-object p4, p0, Lcom/squareup/okhttp/MediaType;->f:Ljava/lang/String;
+    iput-object p4, p0, Lcom/squareup/okhttp/MediaType;->mStringf:Ljava/lang/String;
 
     .line 44
     return-void
@@ -79,7 +79,7 @@
     const/4 v7, 0x2
 
     .line 51
-    sget-object v0, Lcom/squareup/okhttp/MediaType;->a:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/squareup/okhttp/MediaType;->mPatterna:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -121,7 +121,7 @@
     move-result-object v4
 
     .line 57
-    sget-object v1, Lcom/squareup/okhttp/MediaType;->b:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/squareup/okhttp/MediaType;->mPatternb:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -263,11 +263,11 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->mStringf:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->mStringf:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
@@ -293,9 +293,9 @@
 
     check-cast p1, Lcom/squareup/okhttp/MediaType;
 
-    iget-object v0, p1, Lcom/squareup/okhttp/MediaType;->c:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/MediaType;->mStringc:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/MediaType;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/MediaType;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -319,7 +319,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -333,7 +333,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/MediaType;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

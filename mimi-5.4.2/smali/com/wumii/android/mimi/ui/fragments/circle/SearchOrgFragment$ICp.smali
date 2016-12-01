@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
+.field final synthetic mICoa:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 452
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->mICoa:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +32,16 @@
     const/4 v2, 0x0
 
     .line 461
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->mICoa:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->d()V
 
     .line 462
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->mICoa:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->a:Lcom/wumii/android/mimi/manager/CircleManager;
 
@@ -58,9 +58,9 @@
 
     .prologue
     .line 456
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICp;->mICoa:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICo;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->a:Lcom/wumii/android/mimi/manager/CircleManager;
 

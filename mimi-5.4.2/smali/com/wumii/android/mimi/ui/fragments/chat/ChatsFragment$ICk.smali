@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/widget/EditText;
+.field final synthetic mEditTexta:Landroid/widget/EditText;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
+.field final synthetic mICjb:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 325
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->b:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->mICjb:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->a:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->mEditTexta:Landroid/widget/EditText;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 328
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -45,13 +45,13 @@
     move-result-object v1
 
     .line 329
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->b:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->mICjb:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
 
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->c:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatsFragmentc:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->b:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICk;->mICjb:Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->b:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment$ICj;->mChatBaseb:Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 

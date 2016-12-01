@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+.field private final mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
-.field private final b:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
+.field private final mResponseBodyFileManagerb:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
 
 # direct methods
@@ -25,16 +25,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
     .line 31
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
     invoke-virtual {v0}, Lcom/facebook/stetho/inspector/network/NetworkPeerManager;->c()Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->b:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/protocol/module/Network;->mResponseBodyFileManagerb:Lcom/facebook/stetho/inspector/network/ResponseBodyFileManager;
 
     .line 32
     return-void

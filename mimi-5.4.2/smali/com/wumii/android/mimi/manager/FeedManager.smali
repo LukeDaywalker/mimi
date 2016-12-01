@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final h:Lorg/slf4j/Logger;
+.field private static final mLoggerh:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private i:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+.field private mLocationHelperi:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
-.field private j:Lcom/wumii/android/mimi/models/service/UserService;
+.field private mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->i:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mLocationHelperi:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     .line 121
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -148,7 +148,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     .line 122
     return-void
@@ -258,7 +258,7 @@
     if-eqz v2, :cond_1
 
     .line 781
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->i:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mLocationHelperi:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->b()Lcom/baidu/location/BDLocation;
 
@@ -297,7 +297,7 @@
     .line 786
     const-string/jumbo v0, "coordtype"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/FeedManager;->i:Lcom/wumii/android/mimi/models/helper/LocationHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mLocationHelperi:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a()Ljava/lang/String;
 
@@ -798,7 +798,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1067,7 +1067,7 @@
     move-exception v0
 
     .line 149
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle secret detail error"
 
@@ -1283,7 +1283,7 @@
     move-exception v1
 
     .line 250
-    sget-object v2, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v3, "handle load my circle secrets error"
 
@@ -1772,7 +1772,7 @@
     move-exception v2
 
     .line 308
-    sget-object v3, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle load blocked secret error"
 
@@ -2178,7 +2178,7 @@
     move-exception v2
 
     .line 367
-    sget-object v3, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v4, "handle load feeds response error"
 
@@ -2444,7 +2444,7 @@
     move-result-object v0
 
     .line 418
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->e()Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -2458,7 +2458,7 @@
     if-eqz v1, :cond_1
 
     .line 420
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -2467,7 +2467,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/service/UserService$UserSettings;->setOrganizationV2(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     .line 421
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->c()V
 
@@ -2503,7 +2503,7 @@
     move-exception v0
 
     .line 434
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle load chat group info response error"
 
@@ -2549,7 +2549,7 @@
     move-result-object v0
 
     .line 425
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -2571,7 +2571,7 @@
     if-eqz v1, :cond_1
 
     .line 427
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/service/UserService;->h()Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -2584,7 +2584,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->setAppCrowd(Lcom/wumii/android/mimi/models/entities/circle/Crowd;)V
 
     .line 428
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->j:Lcom/wumii/android/mimi/models/service/UserService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/FeedManager;->mUserServicej:Lcom/wumii/android/mimi/models/service/UserService;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->c()V
     :try_end_1
@@ -2774,7 +2774,7 @@
     move-exception v0
 
     .line 666
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Fail to parse comments data"
 
@@ -2967,7 +2967,7 @@
     move-exception v0
 
     .line 698
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle comments sort error"
 
@@ -3178,7 +3178,7 @@
     move-exception v0
 
     .line 731
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle comments sort error"
 
@@ -3383,7 +3383,7 @@
     move-exception v0
 
     .line 764
-    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->h:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/manager/FeedManager;->mLoggerh:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "handle author comments error"
 

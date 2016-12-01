@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
+.field final synthetic mVoiceAuditionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 267
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICeh;->a:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ICeh;->mVoiceAuditionActivitya:Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

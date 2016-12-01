@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:J
+.field private mJa:J
 
-.field private b:J
+.field private mJb:J
 
-.field private c:Lu/aly/StatTracer;
+.field private mStatTracerc:Lu/aly/StatTracer;
 
 
 # direct methods
@@ -22,22 +22,22 @@
     .line 66
     const-wide/16 v0, 0x2710
 
-    iput-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->a:J
+    iput-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mJa:J
 
     .line 72
-    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->c:Lu/aly/StatTracer;
+    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mStatTracerc:Lu/aly/StatTracer;
 
     .line 73
-    iget-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->a:J
+    iget-wide v0, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mJa:J
 
     cmp-long v0, p2, v0
 
     if-gez v0, :cond_0
 
-    iget-wide p2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->a:J
+    iget-wide p2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mJa:J
 
     :cond_0
-    iput-wide p2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->b:J
+    iput-wide p2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mJb:J
 
     .line 74
     return-void
@@ -54,13 +54,13 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->c:Lu/aly/StatTracer;
+    iget-object v2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mStatTracerc:Lu/aly/StatTracer;
 
     iget-wide v2, v2, Lu/aly/StatTracer;->c:J
 
     sub-long/2addr v0, v2
 
-    iget-wide v2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->b:J
+    iget-wide v2, p0, Lcom/umeng/analytics/ReportPolicy$ICj;->mJb:J
 
     cmp-long v0, v0, v2
 

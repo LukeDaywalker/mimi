@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field final synthetic isZb:Z
 
-.field final synthetic b:Z
+.field final synthetic mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field final synthetic c:Lcom/wumii/android/mimi/manager/SecretManager;
+.field final synthetic mSecretManagerc:Lcom/wumii/android/mimi/manager/SecretManager;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 159
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->c:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->mSecretManagerc:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    iput-boolean p3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->b:Z
+    iput-boolean p3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->isZb:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,17 +51,17 @@
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;-><init>(ILjava/lang/String;)V
 
     .line 163
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->a:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->mCommenta:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
     .line 164
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->b:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->isZb:Z
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->a(Z)V
 
     .line 165
-    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->c:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbf;->mSecretManagerc:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/Object;)V
 

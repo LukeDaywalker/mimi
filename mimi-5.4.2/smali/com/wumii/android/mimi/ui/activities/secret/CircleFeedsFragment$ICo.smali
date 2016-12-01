@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
+.field final synthetic mICma:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 349
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICo;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICo;->mICma:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 357
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICo;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICo;->mICma:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->mCircleFeedsFragmenta:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->g(Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;)Landroid/widget/TextView;
 

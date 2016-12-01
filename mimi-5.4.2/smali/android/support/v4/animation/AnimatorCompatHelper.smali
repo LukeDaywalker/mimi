@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static a:Landroid/support/v4/animation/AnimatorProvider;
+.field static mAnimatorProvidera:Landroid/support/v4/animation/AnimatorProvider;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/animation/HoneycombMr1AnimatorCompatProvider;-><init>()V
 
-    sput-object v0, Landroid/support/v4/animation/AnimatorCompatHelper;->a:Landroid/support/v4/animation/AnimatorProvider;
+    sput-object v0, Landroid/support/v4/animation/AnimatorCompatHelper;->mAnimatorProvidera:Landroid/support/v4/animation/AnimatorProvider;
 
     .line 31
     :goto_0
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Landroid/support/v4/animation/DonutAnimatorCompatProvider;-><init>()V
 
-    sput-object v0, Landroid/support/v4/animation/AnimatorCompatHelper;->a:Landroid/support/v4/animation/AnimatorProvider;
+    sput-object v0, Landroid/support/v4/animation/AnimatorCompatHelper;->mAnimatorProvidera:Landroid/support/v4/animation/AnimatorProvider;
 
     goto :goto_0
 .end method

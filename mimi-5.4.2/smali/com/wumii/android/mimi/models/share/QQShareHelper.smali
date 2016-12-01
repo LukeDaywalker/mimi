@@ -6,11 +6,11 @@
 # static fields
 .field protected static final a:Lorg/slf4j/Logger;
 
-.field private static b:Lcom/wumii/android/mimi/models/share/QQShareHelper;
+.field private static mQQShareHelperb:Lcom/wumii/android/mimi/models/share/QQShareHelper;
 
 
 # instance fields
-.field private c:Lcom/tencent/tauth/Pro$ICb;
+.field private mICbc:Lcom/tencent/tauth/Pro$ICb;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b:Lcom/wumii/android/mimi/models/share/QQShareHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mQQShareHelperb:Lcom/wumii/android/mimi/models/share/QQShareHelper;
 
     if-nez v0, :cond_0
 
@@ -55,11 +55,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/share/QQShareHelper;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b:Lcom/wumii/android/mimi/models/share/QQShareHelper;
+    sput-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mQQShareHelperb:Lcom/wumii/android/mimi/models/share/QQShareHelper;
 
     .line 36
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->b:Lcom/wumii/android/mimi/models/share/QQShareHelper;
+    sget-object v0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mQQShareHelperb:Lcom/wumii/android/mimi/models/share/QQShareHelper;
 
     return-object v0
 .end method
@@ -190,7 +190,7 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->c:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
 
     if-nez v0, :cond_0
 
@@ -199,11 +199,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/share/QQShareHelper$ICah;-><init>(Lcom/wumii/android/mimi/models/share/QQShareHelper;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->c:Lcom/tencent/tauth/Pro$ICb;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
 
     .line 106
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->c:Lcom/tencent/tauth/Pro$ICb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/QQShareHelper;->mICbc:Lcom/tencent/tauth/Pro$ICb;
 
     return-object v0
 .end method

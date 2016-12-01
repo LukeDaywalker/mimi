@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 14
-    iput p1, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->a:I
+    iput p1, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->mIa:I
 
     .line 15
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->mStringb:Ljava/lang/String;
 
     .line 16
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 23
-    iget v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->mIa:I
 
     return v0
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 27
-    iget v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/event/response/BaseRespEvent;->mIa:I
 
     if-nez v0, :cond_0
 

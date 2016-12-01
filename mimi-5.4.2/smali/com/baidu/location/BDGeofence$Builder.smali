@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field private a:I
-
-.field private do:Ljava/lang/String;
-
 .field private for:D
 
-.field private if:J
-
 .field private int:Ljava/lang/String;
+
+.field private mIa:I
+
+.field private mJif:J
+
+.field private mStringdo:Ljava/lang/String;
 
 .field private new:Z
 
@@ -26,7 +26,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/BDGeofence$Builder;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mStringdo:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -34,7 +34,7 @@
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    iput-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->if:J
+    iput-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mJif:J
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 .method public build()Lcom/baidu/location/BDGeofence;
     .locals 10
 
-    iget-object v0, p0, Lcom/baidu/location/BDGeofence$Builder;->do:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mStringdo:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -74,7 +74,7 @@
     throw v0
 
     :cond_1
-    iget-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->if:J
+    iget-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mJif:J
 
     const-wide/high16 v2, -0x8000000000000000L
 
@@ -110,15 +110,15 @@
     :cond_3
     new-instance v0, Lcom/baidu/location/ICat;
 
-    iget-object v1, p0, Lcom/baidu/location/BDGeofence$Builder;->do:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/BDGeofence$Builder;->mStringdo:Ljava/lang/String;
 
     iget-wide v2, p0, Lcom/baidu/location/BDGeofence$Builder;->try:D
 
     iget-wide v4, p0, Lcom/baidu/location/BDGeofence$Builder;->for:D
 
-    iget v6, p0, Lcom/baidu/location/BDGeofence$Builder;->a:I
+    iget v6, p0, Lcom/baidu/location/BDGeofence$Builder;->mIa:I
 
-    iget-wide v7, p0, Lcom/baidu/location/BDGeofence$Builder;->if:J
+    iget-wide v7, p0, Lcom/baidu/location/BDGeofence$Builder;->mJif:J
 
     iget-object v9, p0, Lcom/baidu/location/BDGeofence$Builder;->int:Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     iput-wide p3, p0, Lcom/baidu/location/BDGeofence$Builder;->for:D
 
-    iput v0, p0, Lcom/baidu/location/BDGeofence$Builder;->a:I
+    iput v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mIa:I
 
     return-object p0
 .end method
@@ -162,13 +162,13 @@
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->if:J
+    iput-wide v0, p0, Lcom/baidu/location/BDGeofence$Builder;->mJif:J
 
     :goto_0
     return-object p0
 
     :cond_0
-    iput-wide p1, p0, Lcom/baidu/location/BDGeofence$Builder;->if:J
+    iput-wide p1, p0, Lcom/baidu/location/BDGeofence$Builder;->mJif:J
 
     goto :goto_0
 .end method
@@ -176,7 +176,7 @@
 .method public setGeofenceId(Ljava/lang/String;)Lcom/baidu/location/BDGeofence$Builder;
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/BDGeofence$Builder;->do:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/BDGeofence$Builder;->mStringdo:Ljava/lang/String;
 
     return-object p0
 .end method

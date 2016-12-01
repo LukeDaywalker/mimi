@@ -3,15 +3,15 @@
 
 
 # static fields
-.field private static final a:Z = false
-
-.field private static final do:Ljava/lang/String; = "DeviceId"
-
 .field private static final for:Ljava/lang/String; = "30212102dicudiab"
 
-.field private static final if:Ljava/lang/String; = "baidu/.cuid"
-
 .field private static final int:Ljava/lang/String; = "com.baidu.deviceid"
+
+.field private static final isZa:Z = false
+
+.field private static final mStringdo:Ljava/lang/String; = "DeviceId"
+
+.field private static final mStringif:Ljava/lang/String; = "baidu/.cuid"
 
 
 # direct methods

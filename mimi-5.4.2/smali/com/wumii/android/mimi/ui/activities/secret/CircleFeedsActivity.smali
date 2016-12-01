@@ -4,29 +4,29 @@
 
 
 # static fields
-.field private static final n:Lorg/slf4j/Logger;
+.field private static final mLoggern:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field private mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field private D:Ljava/lang/String;
+.field private mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private E:Ljava/lang/String;
+.field private mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
-.field private F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+.field private mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private o:Landroid/widget/RelativeLayout;
+.field private mRelativeLayouto:Landroid/widget/RelativeLayout;
 
-.field private p:Landroid/widget/TextView;
+.field private mShareDialogBuilderr:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
-.field private q:Landroid/view/View;
+.field private mStringD:Ljava/lang/String;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+.field private mStringE:Ljava/lang/String;
 
-.field private s:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mTextViewp:Landroid/widget/TextView;
 
-.field private t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mViewq:Landroid/view/View;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->n:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mLoggern:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -99,7 +99,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     return-object v0
 .end method
@@ -109,7 +109,7 @@
 
     .prologue
     .line 60
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     return-object p1
 .end method
@@ -123,13 +123,13 @@
     const/4 v1, 0x0
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->JOINED:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     if-eq v0, v3, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->SET:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -184,7 +184,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -209,7 +209,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->s:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
     return-object v0
 .end method
@@ -261,7 +261,7 @@
     move-result-object v1
 
     .line 126
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
@@ -275,7 +275,7 @@
     if-eqz v0, :cond_0
 
     .line 129
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
@@ -293,16 +293,16 @@
 
     .line 133
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-ne v0, v2, :cond_1
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)Lcom/wumii/android/mimi/ui/fragments/secret/CardSupportCircleFeedsFragment;
 
@@ -315,7 +315,7 @@
 
     .line 150
     :goto_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
@@ -331,7 +331,7 @@
 
     .line 137
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND_HOTEST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -342,19 +342,19 @@
 
     .line 140
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND_HOTEST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v2, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE_HOTEST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v2, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION_HOTEST:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -368,9 +368,9 @@
 
     .line 147
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
@@ -380,7 +380,7 @@
 
     .line 142
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->OUTSIDER:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -395,7 +395,7 @@
 
     .line 145
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->E:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringE:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->setTitle(Ljava/lang/CharSequence;)V
 
@@ -428,7 +428,7 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mShareDialogBuilderr:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     if-nez v0, :cond_0
 
@@ -449,11 +449,11 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mShareDialogBuilderr:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     .line 243
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mShareDialogBuilderr:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     return-object v0
 .end method
@@ -464,7 +464,7 @@
     .prologue
     .line 288
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -509,7 +509,7 @@
 
     .line 292
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -525,7 +525,7 @@
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;-><init>(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -542,7 +542,7 @@
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;-><init>(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -556,10 +556,10 @@
 
     .prologue
     .line 167
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->s:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
     if-nez v0, :cond_1
 
@@ -581,7 +581,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->s:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 171
     :cond_1
@@ -656,9 +656,9 @@
 
     new-instance v1, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->E:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringE:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lcom/wumii/android/mimi/models/entities/circle/Circle;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -686,9 +686,9 @@
     if-eqz v0, :cond_4
 
     .line 256
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->s:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->d(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
@@ -709,9 +709,9 @@
     if-eqz v0, :cond_5
 
     .line 258
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->s:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleManagers:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->e(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
@@ -745,14 +745,14 @@
 
     .line 260
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-ne v0, v1, :cond_0
 
     .line 261
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -782,7 +782,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->name()Ljava/lang/String;
 
@@ -849,7 +849,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 108
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->getIntent()Landroid/content/Intent;
@@ -889,25 +889,25 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->E:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringE:Ljava/lang/String;
 
     .line 117
     :goto_0
@@ -924,7 +924,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->o:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mRelativeLayouto:Landroid/widget/RelativeLayout;
 
     .line 119
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->g()V
@@ -934,10 +934,10 @@
 
     .line 113
     :cond_0
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     .line 114
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->E:Ljava/lang/String;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringE:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -957,31 +957,31 @@
     const/4 v8, 0x0
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->TAG:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->SUBJECT:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -999,7 +999,7 @@
 
     .line 181
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     if-nez v0, :cond_2
 
@@ -1014,7 +1014,7 @@
 
     .line 186
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->CAN_JOIN:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1058,12 +1058,12 @@
 
     .line 202
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mTextViewp:Landroid/widget/TextView;
 
     if-nez v0, :cond_5
 
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     if-nez v0, :cond_4
 
@@ -1078,11 +1078,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     .line 206
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     const v2, 0x7f0b022d
 
@@ -1092,10 +1092,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->p:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mTextViewp:Landroid/widget/TextView;
 
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mTextViewp:Landroid/widget/TextView;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity$ICb;
 
@@ -1130,20 +1130,20 @@
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 220
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->o:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mRelativeLayouto:Landroid/widget/RelativeLayout;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     invoke-virtual {v2, v4, v9, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     .line 222
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->p:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mTextViewp:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 223
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->p:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mTextViewp:Landroid/widget/TextView;
 
     const-string/jumbo v0, "join"
 
@@ -1159,19 +1159,19 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 224
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     invoke-static {v0, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 229
     :goto_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     instance-of v0, v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -1184,19 +1184,19 @@
     if-ne v0, v1, :cond_6
 
     .line 230
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     invoke-static {v0, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 233
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v0, v1, :cond_7
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->t:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mFeedTypet:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -1228,7 +1228,7 @@
 
     .line 189
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->CAN_SUBSCRIBE:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1258,7 +1258,7 @@
 
     .line 192
     :cond_a
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->JOINED:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1285,7 +1285,7 @@
 
     .line 194
     :cond_b
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->SUBSCRIBED:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1312,7 +1312,7 @@
 
     .line 196
     :cond_c
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->SET:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1327,13 +1327,13 @@
 
     new-array v6, v9, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     instance-of v0, v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     if-eqz v0, :cond_f
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -1381,7 +1381,7 @@
 
     .line 226
     :cond_11
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->q:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mViewq:Landroid/view/View;
 
     invoke-static {v0, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -1451,7 +1451,7 @@
 
     .line 371
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->SUBSCRIBED:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
@@ -1477,7 +1477,7 @@
     if-eqz v0, :cond_3
 
     .line 375
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-interface {v1, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -1488,7 +1488,7 @@
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;->CAN_SUBSCRIBE:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     :goto_3
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->F:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleParticipationStatusF:Lcom/wumii/android/mimi/models/entities/circle/CircleParticipationStatus;
 
     .line 381
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
@@ -1508,7 +1508,7 @@
 
     .line 377
     :cond_3
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->C:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mCircleC:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1608,7 +1608,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->D:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsActivity;->mStringD:Ljava/lang/String;
 
     invoke-static {v0, v2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 

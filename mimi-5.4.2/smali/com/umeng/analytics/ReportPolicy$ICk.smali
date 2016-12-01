@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
-.field private b:Lu/aly/MemoCache;
+.field private mMemoCacheb:Lu/aly/MemoCache;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Lcom/umeng/analytics/ReportPolicy$ICm;-><init>()V
 
     .line 123
-    iput p2, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->a:I
+    iput p2, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->mIa:I
 
     .line 124
-    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->b:Lu/aly/MemoCache;
+    iput-object p1, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->mMemoCacheb:Lu/aly/MemoCache;
 
     .line 125
     return-void
@@ -34,13 +34,13 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->b:Lu/aly/MemoCache;
+    iget-object v0, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->mMemoCacheb:Lu/aly/MemoCache;
 
     invoke-virtual {v0}, Lu/aly/MemoCache;->a()I
 
     move-result v0
 
-    iget v1, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->a:I
+    iget v1, p0, Lcom/umeng/analytics/ReportPolicy$ICk;->mIa:I
 
     if-le v0, v1, :cond_0
 

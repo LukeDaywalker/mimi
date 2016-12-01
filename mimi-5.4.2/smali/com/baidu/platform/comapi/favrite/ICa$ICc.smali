@@ -3,30 +3,30 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/platform/comapi/favrite/ICa;
+.field final synthetic mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
-.field private b:Ljava/lang/String;
+.field private mJc:J
 
-.field private c:J
+.field private mJd:J
 
-.field private d:J
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/platform/comapi/favrite/ICa;)V
     .locals 2
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->a:Lcom/baidu/platform/comapi/favrite/ICa;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mICaa:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x1388
 
-    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->c:J
+    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mJc:J
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->d:J
+    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mJd:J
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method private a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -58,13 +58,13 @@
 .method private a(Ljava/lang/String;)V
     .locals 2
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mStringb:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->d:J
+    iput-wide v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mJd:J
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 .method private b()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->mStringb:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

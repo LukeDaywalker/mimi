@@ -4,27 +4,27 @@
 
 
 # instance fields
-.field private final a:[B
+.field private final mArrayBa:[B
 
-.field private b:Ljava/lang/String;
+.field private mArrayBd:[B
 
-.field private c:Ljava/lang/String;
+.field private mArrayBe:[B
 
-.field private d:[B
+.field private mArrayBf:[B
 
-.field private e:[B
+.field private mArrayBj:[B
 
-.field private f:[B
+.field private mArrayBk:[B
 
-.field private g:I
+.field private mIg:I
 
-.field private h:I
+.field private mIh:I
 
-.field private i:I
+.field private mIi:I
 
-.field private j:[B
+.field private mStringb:Ljava/lang/String;
 
-.field private k:[B
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -46,39 +46,39 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lu/aly/Envelope;->a:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBa:[B
 
     .line 25
     const-string/jumbo v0, "1.0"
 
-    iput-object v0, p0, Lu/aly/Envelope;->b:Ljava/lang/String;
+    iput-object v0, p0, Lu/aly/Envelope;->mStringb:Ljava/lang/String;
 
     .line 26
-    iput-object v1, p0, Lu/aly/Envelope;->c:Ljava/lang/String;
+    iput-object v1, p0, Lu/aly/Envelope;->mStringc:Ljava/lang/String;
 
     .line 28
-    iput-object v1, p0, Lu/aly/Envelope;->d:[B
+    iput-object v1, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     .line 29
-    iput-object v1, p0, Lu/aly/Envelope;->e:[B
+    iput-object v1, p0, Lu/aly/Envelope;->mArrayBe:[B
 
     .line 30
-    iput-object v1, p0, Lu/aly/Envelope;->f:[B
+    iput-object v1, p0, Lu/aly/Envelope;->mArrayBf:[B
 
     .line 32
-    iput v2, p0, Lu/aly/Envelope;->g:I
+    iput v2, p0, Lu/aly/Envelope;->mIg:I
 
     .line 33
-    iput v2, p0, Lu/aly/Envelope;->h:I
+    iput v2, p0, Lu/aly/Envelope;->mIh:I
 
     .line 34
-    iput v2, p0, Lu/aly/Envelope;->i:I
+    iput v2, p0, Lu/aly/Envelope;->mIi:I
 
     .line 36
-    iput-object v1, p0, Lu/aly/Envelope;->j:[B
+    iput-object v1, p0, Lu/aly/Envelope;->mArrayBj:[B
 
     .line 37
-    iput-object v1, p0, Lu/aly/Envelope;->k:[B
+    iput-object v1, p0, Lu/aly/Envelope;->mArrayBk:[B
 
     .line 41
     if-eqz p1, :cond_0
@@ -99,19 +99,19 @@
 
     .line 45
     :cond_1
-    iput-object p2, p0, Lu/aly/Envelope;->c:Ljava/lang/String;
+    iput-object p2, p0, Lu/aly/Envelope;->mStringc:Ljava/lang/String;
 
     .line 46
     array-length v0, p1
 
-    iput v0, p0, Lu/aly/Envelope;->i:I
+    iput v0, p0, Lu/aly/Envelope;->mIi:I
 
     .line 47
     invoke-static {p1}, Lu/aly/DeflaterHelper;->a([B)[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/Envelope;->j:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBj:[B
 
     .line 48
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -124,10 +124,10 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lu/aly/Envelope;->h:I
+    iput v0, p0, Lu/aly/Envelope;->mIh:I
 
     .line 50
-    iput-object p3, p0, Lu/aly/Envelope;->k:[B
+    iput-object p3, p0, Lu/aly/Envelope;->mArrayBk:[B
 
     .line 51
     return-void
@@ -317,14 +317,14 @@
     const/4 v0, 0x0
 
     .line 104
-    iget-object v1, p0, Lu/aly/Envelope;->k:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBk:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->a([B)[B
 
     move-result-object v2
 
     .line 105
-    iget-object v1, p0, Lu/aly/Envelope;->j:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBj:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->a([B)[B
 
@@ -599,7 +599,7 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lu/aly/Envelope;->a:[B
+    iget-object v0, p0, Lu/aly/Envelope;->mArrayBa:[B
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -628,7 +628,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 145
-    iget-object v1, p0, Lu/aly/Envelope;->d:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -637,22 +637,22 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 146
-    iget v1, p0, Lu/aly/Envelope;->g:I
+    iget v1, p0, Lu/aly/Envelope;->mIg:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 147
-    iget v1, p0, Lu/aly/Envelope;->h:I
+    iget v1, p0, Lu/aly/Envelope;->mIh:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 148
-    iget v1, p0, Lu/aly/Envelope;->i:I
+    iget v1, p0, Lu/aly/Envelope;->mIi:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 149
-    iget-object v1, p0, Lu/aly/Envelope;->e:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBe:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -683,7 +683,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lu/aly/Envelope;->d:[B
+    iget-object v0, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     invoke-static {v0}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -697,7 +697,7 @@
 
     .prologue
     .line 62
-    iput p1, p0, Lu/aly/Envelope;->g:I
+    iput p1, p0, Lu/aly/Envelope;->mIg:I
 
     .line 63
     return-void
@@ -712,7 +712,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/Envelope;->d:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     .line 55
     return-void
@@ -723,7 +723,7 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lu/aly/Envelope;->d:[B
+    iget-object v0, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     if-nez v0, :cond_0
 
@@ -732,26 +732,26 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/Envelope;->d:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lu/aly/Envelope;->d:[B
+    iget-object v0, p0, Lu/aly/Envelope;->mArrayBd:[B
 
-    iget v1, p0, Lu/aly/Envelope;->h:I
+    iget v1, p0, Lu/aly/Envelope;->mIh:I
 
     invoke-direct {p0, v0, v1}, Lu/aly/Envelope;->a([BI)[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/Envelope;->e:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBe:[B
 
     .line 100
     invoke-direct {p0}, Lu/aly/Envelope;->e()[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/Envelope;->f:[B
+    iput-object v0, p0, Lu/aly/Envelope;->mArrayBf:[B
 
     .line 101
     return-void
@@ -767,17 +767,17 @@
     invoke-direct {v0}, Lu/aly/UMEnvelope;-><init>()V
 
     .line 157
-    iget-object v1, p0, Lu/aly/Envelope;->b:Ljava/lang/String;
+    iget-object v1, p0, Lu/aly/Envelope;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->a(Ljava/lang/String;)Lu/aly/UMEnvelope;
 
     .line 158
-    iget-object v1, p0, Lu/aly/Envelope;->c:Ljava/lang/String;
+    iget-object v1, p0, Lu/aly/Envelope;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->b(Ljava/lang/String;)Lu/aly/UMEnvelope;
 
     .line 159
-    iget-object v1, p0, Lu/aly/Envelope;->d:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -786,27 +786,27 @@
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->c(Ljava/lang/String;)Lu/aly/UMEnvelope;
 
     .line 160
-    iget v1, p0, Lu/aly/Envelope;->g:I
+    iget v1, p0, Lu/aly/Envelope;->mIg:I
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->a(I)Lu/aly/UMEnvelope;
 
     .line 161
-    iget v1, p0, Lu/aly/Envelope;->h:I
+    iget v1, p0, Lu/aly/Envelope;->mIh:I
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->b(I)Lu/aly/UMEnvelope;
 
     .line 162
-    iget v1, p0, Lu/aly/Envelope;->i:I
+    iget v1, p0, Lu/aly/Envelope;->mIi:I
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->c(I)Lu/aly/UMEnvelope;
 
     .line 163
-    iget-object v1, p0, Lu/aly/Envelope;->j:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBj:[B
 
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->a([B)Lu/aly/UMEnvelope;
 
     .line 164
-    iget-object v1, p0, Lu/aly/Envelope;->e:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBe:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -815,7 +815,7 @@
     invoke-virtual {v0, v1}, Lu/aly/UMEnvelope;->d(Ljava/lang/String;)Lu/aly/UMEnvelope;
 
     .line 165
-    iget-object v1, p0, Lu/aly/Envelope;->f:[B
+    iget-object v1, p0, Lu/aly/Envelope;->mArrayBf:[B
 
     invoke-static {v1}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -870,7 +870,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lu/aly/Envelope;->b:Ljava/lang/String;
+    iget-object v3, p0, Lu/aly/Envelope;->mStringb:Ljava/lang/String;
 
     aput-object v3, v2, v4
 
@@ -885,7 +885,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lu/aly/Envelope;->c:Ljava/lang/String;
+    iget-object v3, p0, Lu/aly/Envelope;->mStringc:Ljava/lang/String;
 
     aput-object v3, v2, v4
 
@@ -900,7 +900,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lu/aly/Envelope;->d:[B
+    iget-object v3, p0, Lu/aly/Envelope;->mArrayBd:[B
 
     invoke-static {v3}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -919,7 +919,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget v3, p0, Lu/aly/Envelope;->g:I
+    iget v3, p0, Lu/aly/Envelope;->mIg:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -938,7 +938,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget v3, p0, Lu/aly/Envelope;->h:I
+    iget v3, p0, Lu/aly/Envelope;->mIh:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -957,7 +957,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget v3, p0, Lu/aly/Envelope;->i:I
+    iget v3, p0, Lu/aly/Envelope;->mIi:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -976,7 +976,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lu/aly/Envelope;->e:[B
+    iget-object v3, p0, Lu/aly/Envelope;->mArrayBe:[B
 
     invoke-static {v3}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 
@@ -995,7 +995,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lu/aly/Envelope;->f:[B
+    iget-object v3, p0, Lu/aly/Envelope;->mArrayBf:[B
 
     invoke-static {v3}, Lu/aly/Envelope;->b([B)Ljava/lang/String;
 

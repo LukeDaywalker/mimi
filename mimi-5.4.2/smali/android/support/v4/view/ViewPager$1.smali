@@ -36,9 +36,9 @@
 
     .prologue
     .line 125
-    iget v0, p1, Landroid/support/v4/view/ViewPager$ItemInfo;->b:I
+    iget v0, p1, Landroid/support/v4/view/ViewPager$ItemInfo;->mIb:I
 
-    iget v1, p2, Landroid/support/v4/view/ViewPager$ItemInfo;->b:I
+    iget v1, p2, Landroid/support/v4/view/ViewPager$ItemInfo;->mIb:I
 
     sub-int/2addr v0, v1
 

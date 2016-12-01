@@ -3004,7 +3004,7 @@
     .line 1980
     iget-object v0, p0, Landroid/support/v4/app/Fragment;->mActivity:Landroid/support/v4/app/FragmentActivity;
 
-    iget-boolean v0, v0, Landroid/support/v4/app/FragmentActivity;->h:Z
+    iget-boolean v0, v0, Landroid/support/v4/app/FragmentActivity;->isZh:Z
 
     if-nez v0, :cond_3
 
@@ -3608,11 +3608,11 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    iget-object v0, p1, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object v0, p1, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Landroid/support/v4/app/Fragment$SavedState;->a:Landroid/os/Bundle;
+    iget-object v0, p1, Landroid/support/v4/app/Fragment$SavedState;->mBundlea:Landroid/os/Bundle;
 
     :goto_0
     iput-object v0, p0, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;

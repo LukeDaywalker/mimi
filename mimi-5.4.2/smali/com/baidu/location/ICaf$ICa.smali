@@ -3,18 +3,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICaf;
-
-.field do:Ljava/lang/StringBuffer;
-
 .field public if:Z
+
+.field final synthetic mICafa:Lcom/baidu/location/ICaf;
+
+.field mStringBufferdo:Ljava/lang/StringBuffer;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICaf;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/ICaf$ICa;->a:Lcom/baidu/location/ICaf;
+    iput-object p1, p0, Lcom/baidu/location/ICaf$ICa;->mICafa:Lcom/baidu/location/ICaf;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICaf$ICa;->do:Ljava/lang/StringBuffer;
+    iput-object v0, p0, Lcom/baidu/location/ICaf$ICa;->mStringBufferdo:Ljava/lang/StringBuffer;
 
     return-void
 .end method

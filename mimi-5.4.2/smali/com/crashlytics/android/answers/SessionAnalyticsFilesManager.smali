@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+.field private mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
 
 # direct methods
@@ -112,7 +112,7 @@
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     .line 65
     return-void
@@ -123,7 +123,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     if-nez v0, :cond_0
 
@@ -135,7 +135,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->e:I
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     if-nez v0, :cond_0
 
@@ -159,7 +159,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->g:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/SessionAnalyticsFilesManager;->mAnalyticsSettingsDatag:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
     iget v0, v0, Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;->c:I
 

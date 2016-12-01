@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+.field private mPromotiond:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 23
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mPromotiond:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     .line 24
     return-void
@@ -231,7 +231,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mPromotiond:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getShareContent()Ljava/lang/String;
 
@@ -245,7 +245,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mPromotiond:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getShareImage()Lcom/wumii/android/mimi/models/entities/Image;
 
@@ -354,7 +354,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/PromotionShareController;->mPromotiond:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getSharePath()Ljava/lang/String;
 

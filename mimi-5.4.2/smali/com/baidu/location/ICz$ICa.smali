@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private a:J
-
 .field private byte:Z
 
 .field private case:Ljava/util/List;
 
 .field private final char:I
 
-.field private do:Ljava/lang/String;
-
 .field private for:Ljava/lang/String;
 
-.field if:J
-
 .field final synthetic int:Lcom/baidu/location/ICz;
+
+.field private mJa:J
+
+.field mJif:J
+
+.field private mStringdo:Ljava/lang/String;
 
 .field private new:Ljava/lang/String;
 
@@ -40,9 +40,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v2, p0, Lcom/baidu/location/ICz$ICa;->if:J
+    iput-wide v2, p0, Lcom/baidu/location/ICz$ICa;->mJif:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICz$ICa;->a:J
+    iput-wide v2, p0, Lcom/baidu/location/ICz$ICa;->mJa:J
 
     const/16 v0, 0x190
 
@@ -66,7 +66,7 @@
 
     iput-object v1, p0, Lcom/baidu/location/ICz$ICa;->new:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/baidu/location/ICz$ICa;->do:Ljava/lang/String;
+    iput-object v1, p0, Lcom/baidu/location/ICz$ICa;->mStringdo:Ljava/lang/String;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICz$ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/location/ICz$ICa;->mJa:J
 
     sub-long/2addr v0, v2
 
@@ -123,7 +123,7 @@
 
     iget-object v3, p0, Lcom/baidu/location/ICz$ICa;->new:Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/baidu/location/ICz$ICa;->do:Ljava/lang/String;
+    iget-object v4, p0, Lcom/baidu/location/ICz$ICa;->mStringdo:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/baidu/location/ICaw;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -209,7 +209,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz$ICa;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICz$ICa;->mStringdo:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/baidu/location/ICz$ICa;->new:Ljava/lang/String;
 
@@ -240,7 +240,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICz$ICa;->a:J
+    iput-wide v0, p0, Lcom/baidu/location/ICz$ICa;->mJa:J
 
     return-void
 
@@ -293,7 +293,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICz$ICa;->do:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICz$ICa;->mStringdo:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -351,7 +351,7 @@
 
     move-result-wide v0
 
-    iget-wide v4, p0, Lcom/baidu/location/ICz$ICa;->if:J
+    iget-wide v4, p0, Lcom/baidu/location/ICz$ICa;->mJif:J
 
     sub-long/2addr v0, v4
 
@@ -582,7 +582,7 @@
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/baidu/location/ICz$ICa;->if:J
+    iput-wide v4, p0, Lcom/baidu/location/ICz$ICa;->mJif:J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

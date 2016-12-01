@@ -4,21 +4,13 @@
 
 
 # static fields
-.field private static final a:[C
+.field private static final mArrayCa:[C
 
 
 # instance fields
-.field private final b:Ljava/lang/String;
+.field private final mIf:I
 
-.field private final c:Ljava/lang/String;
-
-.field private final d:Ljava/lang/String;
-
-.field private final e:Ljava/lang/String;
-
-.field private final f:I
-
-.field private final g:Ljava/util/List;
+.field private final mListg:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -29,7 +21,7 @@
     .end annotation
 .end field
 
-.field private final h:Ljava/util/List;
+.field private final mListh:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -40,9 +32,17 @@
     .end annotation
 .end field
 
-.field private final i:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
-.field private final j:Ljava/lang/String;
+.field private final mStringc:Ljava/lang/String;
+
+.field private final mStringd:Ljava/lang/String;
+
+.field private final mStringe:Ljava/lang/String;
+
+.field private final mStringi:Ljava/lang/String;
+
+.field private final mStringj:Ljava/lang/String;
 
 
 # direct methods
@@ -57,7 +57,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/squareup/okhttp/HttpUrl;->a:[C
+    sput-object v0, Lcom/squareup/okhttp/HttpUrl;->mArrayCa:[C
 
     return-void
 
@@ -92,55 +92,55 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 301
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->a:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     .line 302
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringb:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/squareup/okhttp/HttpUrl;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringc:Ljava/lang/String;
 
     .line 303
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->c:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringc:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/squareup/okhttp/HttpUrl;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringd:Ljava/lang/String;
 
     .line 304
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->d:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringd:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringe:Ljava/lang/String;
 
     .line 305
     invoke-virtual {p1}, Lcom/squareup/okhttp/HttpUrl$ICae;->a()I
 
     move-result v0
 
-    iput v0, p0, Lcom/squareup/okhttp/HttpUrl;->f:I
+    iput v0, p0, Lcom/squareup/okhttp/HttpUrl;->mIf:I
 
     .line 306
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->f:Ljava/util/List;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mListf:Ljava/util/List;
 
     invoke-direct {p0, v0}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mListg:Ljava/util/List;
 
     .line 307
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->g:Ljava/util/List;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mListg:Ljava/util/List;
 
     .line 308
     invoke-direct {p0, v0}, Lcom/squareup/okhttp/HttpUrl;->a(Ljava/util/List;)Ljava/util/List;
@@ -148,14 +148,14 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->h:Ljava/util/List;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mListh:Ljava/util/List;
 
     .line 310
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->h:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringh:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->h:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl$ICae;->mStringh:Ljava/lang/String;
 
     .line 311
     invoke-static {v0}, Lcom/squareup/okhttp/HttpUrl;->d(Ljava/lang/String;)Ljava/lang/String;
@@ -163,14 +163,14 @@
     move-result-object v1
 
     :cond_0
-    iput-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->i:Ljava/lang/String;
+    iput-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringi:Ljava/lang/String;
 
     .line 313
     invoke-virtual {p1}, Lcom/squareup/okhttp/HttpUrl$ICae;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     .line 314
     return-void
@@ -325,7 +325,7 @@
 
     .prologue
     .line 255
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -839,7 +839,7 @@
     invoke-virtual {p0, v5}, Lokio/Buffer;->b(I)Lokio/Buffer;
 
     .line 1460
-    sget-object v3, Lcom/squareup/okhttp/HttpUrl;->a:[C
+    sget-object v3, Lcom/squareup/okhttp/HttpUrl;->mArrayCa:[C
 
     shr-int/lit8 v4, v1, 0x4
 
@@ -850,7 +850,7 @@
     invoke-virtual {p0, v3}, Lokio/Buffer;->b(I)Lokio/Buffer;
 
     .line 1461
-    sget-object v3, Lcom/squareup/okhttp/HttpUrl;->a:[C
+    sget-object v3, Lcom/squareup/okhttp/HttpUrl;->mArrayCa:[C
 
     and-int/lit8 v1, v1, 0xf
 
@@ -912,7 +912,7 @@
 
     .prologue
     .line 255
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->e:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1102,7 +1102,7 @@
 
     .prologue
     .line 255
-    iget v0, p0, Lcom/squareup/okhttp/HttpUrl;->f:I
+    iget v0, p0, Lcom/squareup/okhttp/HttpUrl;->mIf:I
 
     return v0
 .end method
@@ -1153,7 +1153,7 @@
     :try_start_0
     new-instance v0, Ljava/net/URL;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
     :try_end_0
@@ -1181,7 +1181,7 @@
     :try_start_0
     new-instance v0, Ljava/net/URI;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/net/URI;-><init>(Ljava/lang/String;)V
     :try_end_0
@@ -1206,7 +1206,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1226,7 +1226,7 @@
 
     .prologue
     .line 345
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v1, "https"
 
@@ -1242,7 +1242,7 @@
 
     .prologue
     .line 350
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -1258,7 +1258,7 @@
 
     .line 351
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -1267,9 +1267,9 @@
     add-int/lit8 v0, v0, 0x3
 
     .line 352
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -1282,7 +1282,7 @@
     move-result v1
 
     .line 353
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1296,7 +1296,7 @@
 
     .prologue
     .line 362
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -1312,11 +1312,11 @@
 
     .line 363
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     const/16 v1, 0x3a
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -1331,7 +1331,7 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 364
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     const/16 v2, 0x40
 
@@ -1340,7 +1340,7 @@
     move-result v1
 
     .line 365
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1360,9 +1360,9 @@
 
     check-cast p1, Lcom/squareup/okhttp/HttpUrl;
 
-    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p1, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1395,11 +1395,11 @@
 
     .prologue
     .line 432
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     const/16 v1, 0x2f
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -1412,9 +1412,9 @@
     move-result v0
 
     .line 433
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -1439,7 +1439,7 @@
     add-int/lit8 v3, v0, 0x1
 
     .line 437
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     const-string/jumbo v4, "/"
 
@@ -1448,7 +1448,7 @@
     move-result v0
 
     .line 438
-    iget-object v4, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v4, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v4, v3, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1468,7 +1468,7 @@
 
     .prologue
     .line 454
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->h:Ljava/util/List;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mListh:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -1480,7 +1480,7 @@
 
     .line 455
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     const/16 v1, 0x3f
 
@@ -1491,11 +1491,11 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 456
-    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     add-int/lit8 v2, v0, 0x1
 
-    iget-object v3, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v3, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -1508,7 +1508,7 @@
     move-result v1
 
     .line 457
-    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1522,7 +1522,7 @@
 
     .prologue
     .line 605
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -1536,7 +1536,7 @@
 
     .prologue
     .line 609
-    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/HttpUrl;->mStringj:Ljava/lang/String;
 
     return-object v0
 .end method

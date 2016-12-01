@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mCommentc:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field private c:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 32
     return-void
@@ -41,7 +41,7 @@
 
     .prologue
     .line 23
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mStringa:Ljava/lang/String;
 
     .line 24
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->c:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mCommentc:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     .line 40
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->c:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->mCommentc:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     return-object v0
 .end method

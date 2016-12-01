@@ -24,11 +24,15 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private d:Lcom/wumii/android/mimi/util/ContextToast;
+.field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private e:Lcom/fasterxml/jackson/core/type/TypeReference;
+.field private mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+
+.field private mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+
+.field private mTypeReferencee:Lcom/fasterxml/jackson/core/type/TypeReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/fasterxml/jackson/core/type/TypeReference",
@@ -40,10 +44,6 @@
         }
     .end annotation
 .end field
-
-.field private f:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
-
-.field private g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -59,27 +59,27 @@
     invoke-direct {p0, p1, v0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
 
     .line 60
-    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object p3, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 61
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->d:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 63
     new-instance v0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbe;-><init>(Lcom/wumii/android/mimi/task/ReadContactsTask;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->e:Lcom/fasterxml/jackson/core/type/TypeReference;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mTypeReferencee:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     .line 66
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;
 
@@ -101,7 +101,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->f:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
     return-object v0
 .end method
@@ -185,7 +185,7 @@
 
     move-result-object v0
 
-    invoke-static {v2, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -204,7 +204,7 @@
 
     .prologue
     .line 207
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->f:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
     .line 208
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ReadContactsTask;->j()V
@@ -218,7 +218,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -227,7 +227,7 @@
     if-eqz v0, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -241,18 +241,18 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->f:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->f:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mICbhf:Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;->a()V
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->d:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mContextToastd:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b3
 
@@ -281,7 +281,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -313,11 +313,11 @@
 
     .line 104
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "recent_contacts"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->e:Lcom/fasterxml/jackson/core/type/TypeReference;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mTypeReferencee:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
@@ -476,7 +476,7 @@
 
     move-result-object v10
 
-    invoke-static {v5, v10}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v5, v10}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v10
 
@@ -604,7 +604,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -825,7 +825,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -834,7 +834,7 @@
     if-eqz v0, :cond_0
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->g:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask;->mProgressingDialogg:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 

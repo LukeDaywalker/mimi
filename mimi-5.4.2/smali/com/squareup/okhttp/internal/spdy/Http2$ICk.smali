@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field a:I
+.field mBb:B
 
-.field b:B
+.field private final mBufferedSourcef:Lokio/BufferedSource;
 
-.field c:I
+.field mIa:I
 
-.field d:I
+.field mIc:I
 
-.field e:S
+.field mId:I
 
-.field private final f:Lokio/BufferedSource;
+.field mSe:S
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 605
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     .line 606
     return-void
@@ -44,21 +44,21 @@
     const/4 v6, 0x0
 
     .line 631
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->c:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIc:I
 
     .line 633
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     invoke-static {v1}, Lcom/squareup/okhttp/internal/spdy/Http2;->a(Lokio/BufferedSource;)I
 
     move-result v1
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->d:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mId:I
 
-    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->a:I
+    iput v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIa:I
 
     .line 634
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     invoke-interface {v1}, Lokio/BufferedSource;->j()B
 
@@ -69,7 +69,7 @@
     int-to-byte v1, v1
 
     .line 635
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     invoke-interface {v2}, Lokio/BufferedSource;->j()B
 
@@ -79,7 +79,7 @@
 
     int-to-byte v2, v2
 
-    iput-byte v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->b:B
+    iput-byte v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBb:B
 
     .line 636
     invoke-static {}, Lcom/squareup/okhttp/internal/spdy/Http2;->b()Ljava/util/logging/Logger;
@@ -98,11 +98,11 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->c:I
+    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIc:I
 
-    iget v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->a:I
+    iget v4, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIa:I
 
-    iget-byte v5, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->b:B
+    iget-byte v5, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBb:B
 
     invoke-static {v7, v3, v4, v1, v5}, Lcom/squareup/okhttp/internal/spdy/Http2$ICl;->a(ZIIBB)Ljava/lang/String;
 
@@ -112,7 +112,7 @@
 
     .line 637
     :cond_0
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     invoke-interface {v2}, Lokio/BufferedSource;->l()I
 
@@ -122,7 +122,7 @@
 
     and-int/2addr v2, v3
 
-    iput v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->c:I
+    iput v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIc:I
 
     .line 638
     const/16 v2, 0x9
@@ -147,7 +147,7 @@
 
     .line 639
     :cond_1
-    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->c:I
+    iget v1, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mIc:I
 
     if-eq v1, v0, :cond_2
 
@@ -176,14 +176,14 @@
 
     .line 609
     :goto_0
-    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->d:I
+    iget v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mId:I
 
     if-nez v2, :cond_2
 
     .line 610
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
-    iget-short v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->e:S
+    iget-short v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mSe:S
 
     int-to-long v4, v3
 
@@ -192,10 +192,10 @@
     .line 611
     const/4 v2, 0x0
 
-    iput-short v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->e:S
+    iput-short v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mSe:S
 
     .line 612
-    iget-byte v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->b:B
+    iget-byte v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBb:B
 
     and-int/lit8 v2, v2, 0x4
 
@@ -214,9 +214,9 @@
 
     .line 617
     :cond_2
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
-    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->d:I
+    iget v3, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mId:I
 
     int-to-long v4, v3
 
@@ -234,7 +234,7 @@
     if-eqz v4, :cond_0
 
     .line 619
-    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->d:I
+    iget v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mId:I
 
     int-to-long v0, v0
 
@@ -242,7 +242,7 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->d:I
+    iput v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mId:I
 
     move-wide v0, v2
 
@@ -255,7 +255,7 @@
 
     .prologue
     .line 624
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->f:Lokio/BufferedSource;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Http2$ICk;->mBufferedSourcef:Lokio/BufferedSource;
 
     invoke-interface {v0}, Lokio/BufferedSource;->a()Lokio/Timeout;
 

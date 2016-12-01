@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Landroid/view/View;
+.field private mCheckBoxb:Landroid/widget/CheckBox;
 
-.field private b:Landroid/widget/CheckBox;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/TextView;
+.field private mViewa:Landroid/view/View;
 
-.field private e:Landroid/view/View;
+.field private mViewe:Landroid/view/View;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->a:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mViewa:Landroid/view/View;
 
     .line 20
     const v0, 0x7f0b0233
@@ -41,7 +41,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->b:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mCheckBoxb:Landroid/widget/CheckBox;
 
     .line 21
     const v0, 0x7f0b0147
@@ -52,7 +52,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mTextViewc:Landroid/widget/TextView;
 
     .line 22
     const v0, 0x7f0b0234
@@ -63,7 +63,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mTextViewd:Landroid/widget/TextView;
 
     .line 23
     const v0, 0x7f0b0228
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->e:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mViewe:Landroid/view/View;
 
     .line 24
     return-void
@@ -85,7 +85,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mViewa:Landroid/view/View;
 
     return-object v0
 .end method
@@ -95,19 +95,19 @@
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mViewa:Landroid/view/View;
 
     const v1, 0x7f0b000c
 
     invoke-virtual {v0, v1, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->b:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mCheckBoxb:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/Contact;->getDisplayName()Ljava/lang/String;
 
@@ -116,7 +116,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/Contact;->getPhoneNumber()Ljava/lang/String;
 
@@ -125,7 +125,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 32
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->e:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ContactListItemViewHolder;->mViewe:Landroid/view/View;
 
     if-eqz p3, :cond_0
 

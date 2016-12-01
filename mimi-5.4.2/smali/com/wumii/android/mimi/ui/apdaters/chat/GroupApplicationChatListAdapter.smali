@@ -4,17 +4,21 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private static e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/AppFacade;
+.field private mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
-.field private c:Landroid/view/LayoutInflater;
+.field private mContextg:Landroid/content/Context;
 
-.field private d:Ljava/util/List;
+.field private mIf:I
+
+.field private mLayoutInflaterc:Landroid/view/LayoutInflater;
+
+.field private mListd:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -25,11 +29,7 @@
     .end annotation
 .end field
 
-.field private f:I
-
-.field private g:Landroid/content/Context;
-
-.field private h:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerh:Landroid/view/View$OnClickListener;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -71,17 +71,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->b:Lcom/wumii/android/mimi/models/AppFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 48
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->g:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mContextg:Landroid/content/Context;
 
     .line 49
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->c:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     .line 50
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -98,10 +98,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    sput-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 51
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     .line 53
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -114,7 +114,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->f:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mIf:I
 
     .line 54
     return-void
@@ -135,7 +135,7 @@
     if-nez p2, :cond_1
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->c:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mLayoutInflaterc:Landroid/view/LayoutInflater;
 
     const v2, 0x7f0300cb
 
@@ -158,7 +158,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter$ICm;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 108
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->h:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     if-eqz v2, :cond_0
 
@@ -174,12 +174,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->h:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->h:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->b:Lcom/wumii/android/mimi/models/AppFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mAppFacadeb:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
@@ -213,7 +213,7 @@
 
     .prologue
     .line 31
-    iget v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->f:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mIf:I
 
     return v0
 .end method
@@ -223,7 +223,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mDisplayImageOptionse:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     return-object v0
 .end method
@@ -233,7 +233,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->g:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mContextg:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -243,7 +243,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -255,7 +255,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -271,7 +271,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -287,7 +287,7 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->h:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mOnClickListenerh:Landroid/view/View$OnClickListener;
 
     .line 58
     return-void
@@ -307,17 +307,17 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     if-eq v0, p1, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
@@ -334,7 +334,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->mListd:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

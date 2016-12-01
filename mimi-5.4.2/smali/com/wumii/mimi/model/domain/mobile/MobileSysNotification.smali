@@ -8,7 +8,7 @@
 
 .field private creationTime:Ljava/util/Date;
 
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 .field private read:Z
 
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;->mStringid:Ljava/lang/String;
 
     .line 17
     iput-object p2, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;->title:Ljava/lang/String;
@@ -231,7 +231,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileSysNotification;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method

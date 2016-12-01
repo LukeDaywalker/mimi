@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field final b:Ljava/lang/Object;
+.field final mObjectb:Ljava/lang/Object;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->b:Ljava/lang/Object;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->mObjectb:Ljava/lang/Object;
 
     .line 46
     return-void
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->b:Ljava/lang/Object;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->mObjectb:Ljava/lang/Object;
 
     .line 41
     return-void
@@ -101,7 +101,7 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityFutureTask;->mObjectb:Ljava/lang/Object;
 
     check-cast v0, Lio/fabric/sdk/android/services/concurrency/Dependency;
 

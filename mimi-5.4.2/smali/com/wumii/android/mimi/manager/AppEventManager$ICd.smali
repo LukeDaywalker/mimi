@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
+.field final synthetic mICca:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICd;->a:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICd;->mICca:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICd;->a:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/AppEventManager$ICd;->mICca:Lcom/wumii/android/mimi/manager/AppEventManager$ICc;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->b:Lcom/wumii/android/mimi/manager/AppEventManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/manager/AppEventManager$ICc;->mAppEventManagerb:Lcom/wumii/android/mimi/manager/AppEventManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AppEventManager;->a()V
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->a:[I
+    sput-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->a:[I
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->mArrayIa:[I
 
     sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->b:Landroid/support/v4/content/ModernAsyncTask$Status;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->a:[I
+    sget-object v0, Landroid/support/v4/content/ModernAsyncTask$4;->mArrayIa:[I
 
     sget-object v1, Landroid/support/v4/content/ModernAsyncTask$Status;->c:Landroid/support/v4/content/ModernAsyncTask$Status;
 

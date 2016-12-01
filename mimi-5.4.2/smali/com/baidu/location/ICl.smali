@@ -7,83 +7,83 @@
 
 
 # static fields
-.field private static b1:Ljava/lang/String; = null
-
-.field private static final b7:I = 0xc8
-
-.field private static b9:Ljava/io/File; = null
-
-.field private static bF:Ljava/io/File; = null
-
-.field private static final bM:I = 0x320
-
 .field public static final bO:Ljava/lang/String; = "com.baidu.locTest.LocationServer5.0"
 
-.field private static final bY:I = 0x18
+.field private static mFileb9:Ljava/io/File; = null
+
+.field private static mFilebF:Ljava/io/File; = null
+
+.field private static final mIb7:I = 0xc8
+
+.field private static final mIbM:I = 0x320
+
+.field private static final mIbY:I = 0x18
+
+.field private static mStringb1:Ljava/lang/String;
 
 
 # instance fields
-.field b0:Ljava/util/ArrayList;
+.field private isZb6:Z
 
-.field private b2:J
+.field private isZbD:Z
 
-.field private final b3:I
+.field private isZbG:Z
 
-.field private b4:I
+.field private isZbH:Z
 
-.field private b5:I
+.field private isZbR:Z
 
-.field private b6:Z
+.field private mAlarmManagerbK:Landroid/app/AlarmManager;
 
-.field b8:J
+.field private mArrayJbE:[J
 
-.field private final bA:J
+.field mArrayListb0:Ljava/util/ArrayList;
 
-.field private bB:Ljava/lang/String;
+.field mArrayListbX:Ljava/util/ArrayList;
 
-.field private bC:Landroid/os/Handler;
+.field private mContextbN:Landroid/content/Context;
 
-.field private bD:Z
+.field private mHandlerbC:Landroid/os/Handler;
 
-.field private bE:[J
+.field private mICabT:Lcom/baidu/location/ICu$ICa;
 
-.field private bG:Z
+.field private mICaca:Lcom/baidu/location/ICl$ICa;
 
-.field private bH:Z
+.field mICcbz:Lcom/baidu/location/ICl$ICc;
 
-.field private bI:Ljava/lang/String;
+.field private final mIb3:I
 
-.field private bJ:I
+.field private mIb4:I
 
-.field private bK:Landroid/app/AlarmManager;
+.field private mIb5:I
 
-.field private bL:Landroid/app/PendingIntent;
+.field private mIbJ:I
 
-.field private bN:Landroid/content/Context;
+.field private final mIbV:I
 
-.field private bP:Ljava/lang/String;
+.field private mJb2:J
 
-.field private bQ:J
+.field mJb8:J
 
-.field private bR:Z
+.field private final mJbA:J
 
-.field private bS:J
+.field private mJbQ:J
 
-.field private bT:Lcom/baidu/location/ICu$ICa;
+.field private mJbS:J
 
-.field private bU:J
+.field private mJbU:J
 
-.field private final bV:I
+.field private mJbZ:J
 
-.field bW:Ljava/lang/String;
+.field private mPendingIntentbL:Landroid/app/PendingIntent;
 
-.field bX:Ljava/util/ArrayList;
+.field private mStringbB:Ljava/lang/String;
 
-.field private bZ:J
+.field private mStringbI:Ljava/lang/String;
 
-.field bz:Lcom/baidu/location/ICl$ICc;
+.field private mStringbP:Ljava/lang/String;
 
-.field private ca:Lcom/baidu/location/ICl$ICa;
+.field mStringbW:Ljava/lang/String;
 
 
 # direct methods
@@ -112,11 +112,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/location/ICl;->b1:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/location/ICl;->mStringb1:Ljava/lang/String;
 
-    sput-object v2, Lcom/baidu/location/ICl;->bF:Ljava/io/File;
+    sput-object v2, Lcom/baidu/location/ICl;->mFilebF:Ljava/io/File;
 
-    sput-object v2, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sput-object v2, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
     return-void
 .end method
@@ -154,92 +154,92 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bI:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mStringbI:Ljava/lang/String;
 
     const-wide/32 v0, 0x521c820
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->bA:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbA:J
 
     const/16 v0, 0xc8
 
-    iput v0, p0, Lcom/baidu/location/ICl;->b3:I
+    iput v0, p0, Lcom/baidu/location/ICl;->mIb3:I
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bN:Landroid/content/Context;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mContextbN:Landroid/content/Context;
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->bZ:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJbZ:J
 
     const/16 v0, 0x14
 
     new-array v0, v0, [J
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bE:[J
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mArrayJbE:[J
 
-    iput v3, p0, Lcom/baidu/location/ICl;->bJ:I
+    iput v3, p0, Lcom/baidu/location/ICl;->mIbJ:I
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bT:Lcom/baidu/location/ICu$ICa;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mICabT:Lcom/baidu/location/ICu$ICa;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bP:Ljava/lang/String;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mStringbP:Ljava/lang/String;
 
-    iput v6, p0, Lcom/baidu/location/ICl;->b5:I
+    iput v6, p0, Lcom/baidu/location/ICl;->mIb5:I
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICl;->bH:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZbH:Z
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICl;->bR:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZbR:Z
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICl;->b6:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZb6:Z
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bC:Landroid/os/Handler;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mHandlerbC:Landroid/os/Handler;
 
-    iput v6, p0, Lcom/baidu/location/ICl;->bV:I
+    iput v6, p0, Lcom/baidu/location/ICl;->mIbV:I
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICl;->bG:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZbG:Z
 
     sget-wide v0, Lcom/baidu/location/ICc;->aT:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbU:J
 
-    iput v3, p0, Lcom/baidu/location/ICl;->b4:I
+    iput v3, p0, Lcom/baidu/location/ICl;->mIb4:I
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->bS:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJbS:J
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->bQ:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJbQ:J
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->b2:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJb2:J
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mStringbB:Ljava/lang/String;
 
-    iput-boolean v3, p0, Lcom/baidu/location/ICl;->bD:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICl;->isZbD:Z
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bz:Lcom/baidu/location/ICl$ICc;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mICcbz:Lcom/baidu/location/ICl$ICc;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->b8:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJb8:J
 
     const-string/jumbo v0, "dlcu.dat"
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bW:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mStringbW:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/baidu/location/ICl;->bN:Landroid/content/Context;
+    iput-object p1, p0, Lcom/baidu/location/ICl;->mContextbN:Landroid/content/Context;
 
-    iput-wide v4, p0, Lcom/baidu/location/ICl;->b8:J
+    iput-wide v4, p0, Lcom/baidu/location/ICl;->mJb8:J
 
     :try_start_0
     new-instance v0, Lcom/baidu/location/ICl$ICc;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICl$ICc;-><init>(Lcom/baidu/location/ICl;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bz:Lcom/baidu/location/ICl$ICc;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mICcbz:Lcom/baidu/location/ICl$ICc;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -251,13 +251,13 @@
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICl$1;-><init>(Lcom/baidu/location/ICl;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bC:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mHandlerbC:Landroid/os/Handler;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->bZ:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbZ:J
 
     const-string/jumbo v0, "alarm"
 
@@ -267,15 +267,15 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     new-instance v0, Lcom/baidu/location/ICl$ICa;
 
     invoke-direct {v0, p0}, Lcom/baidu/location/ICl$ICa;-><init>(Lcom/baidu/location/ICl;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
     new-instance v1, Landroid/content/IntentFilter;
 
@@ -299,9 +299,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v1, 0x0
 
@@ -313,31 +313,31 @@
 
     add-long/2addr v2, v4
 
-    iget-object v4, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v4, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
     sget-wide v0, Lcom/baidu/location/ICc;->aT:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbU:J
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Lcom/baidu/location/ICl;->u()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICl;->bG:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICl;->isZbG:Z
 
     monitor-exit p0
     :try_end_1
@@ -348,7 +348,7 @@
     :catch_0
     move-exception v0
 
-    iput-object v2, p0, Lcom/baidu/location/ICl;->bz:Lcom/baidu/location/ICl$ICc;
+    iput-object v2, p0, Lcom/baidu/location/ICl;->mICcbz:Lcom/baidu/location/ICl$ICc;
 
     goto :goto_0
 
@@ -366,7 +366,7 @@
 .method static synthetic if(Lcom/baidu/location/ICl;)Landroid/os/Handler;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bC:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mHandlerbC:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -404,7 +404,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICl;->bW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICl;->mStringbW:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -439,16 +439,16 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/ICl;->b4:I
+    iput v0, p0, Lcom/baidu/location/ICl;->mIb4:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICl;->bS:J
+    iput-wide v2, p0, Lcom/baidu/location/ICl;->mJbS:J
 
     :goto_1
-    iget v0, p0, Lcom/baidu/location/ICl;->b4:I
+    iget v0, p0, Lcom/baidu/location/ICl;->mIb4:I
 
     invoke-virtual {v1, v0}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
@@ -481,19 +481,19 @@
     const/4 v4, 0x0
 
     :try_start_0
-    sget-object v0, Lcom/baidu/location/ICl;->b1:Ljava/lang/String;
+    sget-object v0, Lcom/baidu/location/ICl;->mStringb1:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/baidu/location/ICl;->b1:Ljava/lang/String;
+    sget-object v1, Lcom/baidu/location/ICl;->mStringb1:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
-    sget-object v0, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -516,13 +516,13 @@
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sget-object v0, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
 
     new-instance v0, Ljava/io/RandomAccessFile;
 
-    sget-object v1, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sget-object v1, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
     const-string/jumbo v2, "rw"
 
@@ -565,7 +565,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -574,7 +574,7 @@
     :catch_0
     move-exception v0
 
-    sput-object v4, Lcom/baidu/location/ICl;->b9:Ljava/io/File;
+    sput-object v4, Lcom/baidu/location/ICl;->mFileb9:Ljava/io/File;
 
     goto :goto_0
 .end method
@@ -626,7 +626,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICl;->bW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICl;->mStringbW:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -686,16 +686,16 @@
     :goto_2
     if-eqz v6, :cond_1
 
-    iput v4, p0, Lcom/baidu/location/ICl;->b4:I
+    iput v4, p0, Lcom/baidu/location/ICl;->mIb4:I
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->bS:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJbS:J
 
     goto :goto_0
 
     :cond_1
-    iput v5, p0, Lcom/baidu/location/ICl;->b4:I
+    iput v5, p0, Lcom/baidu/location/ICl;->mIb4:I
 
-    iput-wide v2, p0, Lcom/baidu/location/ICl;->bS:J
+    iput-wide v2, p0, Lcom/baidu/location/ICl;->mJbS:J
 
     goto :goto_0
 
@@ -783,7 +783,7 @@
 .method public s()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bN:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mContextbN:Landroid/content/Context;
 
     const-string/jumbo v1, "keyguard"
 
@@ -808,81 +808,81 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/baidu/location/ICl;->bG:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICl;->isZbG:Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bN:Landroid/content/Context;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mContextbN:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->ca:Lcom/baidu/location/ICl$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mICaca:Lcom/baidu/location/ICl$ICa;
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
-    iget-object v1, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
+
+    iget-object v1, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     :cond_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICl;->bF:Ljava/io/File;
+    sput-object v0, Lcom/baidu/location/ICl;->mFilebF:Ljava/io/File;
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->b8:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJb8:J
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICl;->b2:J
+    iput-wide v0, p0, Lcom/baidu/location/ICl;->mJb2:J
 
     const-string/jumbo v0, ""
 
-    iput-object v0, p0, Lcom/baidu/location/ICl;->bB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICl;->mStringbB:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICl;->bD:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICl;->isZbD:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -903,7 +903,7 @@
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/baidu/location/ICl;->bG:Z
+    iget-boolean v2, v0, Lcom/baidu/location/ICl;->isZbG:Z
 
     if-nez v2, :cond_0
 
@@ -915,7 +915,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v4, v0, Lcom/baidu/location/ICl;->b2:J
+    iget-wide v4, v0, Lcom/baidu/location/ICl;->mJb2:J
 
     const-wide/16 v6, 0x0
 
@@ -929,7 +929,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v4, v0, Lcom/baidu/location/ICl;->b2:J
+    iget-wide v4, v0, Lcom/baidu/location/ICl;->mJb2:J
 
     sub-long/2addr v2, v4
 
@@ -946,7 +946,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v2, v0, Lcom/baidu/location/ICl;->b2:J
+    iput-wide v2, v0, Lcom/baidu/location/ICl;->mJb2:J
 
     invoke-static {}, Lcom/baidu/location/ICc;->case()Ljava/lang/String;
 
@@ -956,7 +956,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v3, 0x0
 
@@ -970,7 +970,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v6, v0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -989,7 +989,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v3, 0x0
 
@@ -1003,7 +1003,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v6, v0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -1022,7 +1022,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v6, v0, Lcom/baidu/location/ICl;->b8:J
+    iget-wide v6, v0, Lcom/baidu/location/ICl;->mJb8:J
 
     const-wide/16 v8, 0x0
 
@@ -1034,13 +1034,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
@@ -1055,7 +1055,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1065,7 +1065,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     add-int/lit8 v9, v8, -0x1
 
@@ -1083,7 +1083,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1093,7 +1093,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     add-int/lit8 v8, v8, -0x1
 
@@ -1151,7 +1151,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->bS:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJbS:J
 
     sub-long/2addr v8, v14
 
@@ -1167,7 +1167,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->bS:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJbS:J
 
     sub-long/2addr v8, v14
 
@@ -1182,7 +1182,7 @@
 
     move-object/from16 v0, p0
 
-    iput v7, v0, Lcom/baidu/location/ICl;->b4:I
+    iput v7, v0, Lcom/baidu/location/ICl;->mIb4:I
 
     const/4 v7, 0x1
 
@@ -1193,7 +1193,7 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/baidu/location/ICl;->b4:I
+    iget v7, v0, Lcom/baidu/location/ICl;->mIb4:I
 
     sget v8, Lcom/baidu/location/ICc;->ak:I
 
@@ -1201,7 +1201,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bS:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbS:J
 
     const-wide/32 v14, 0x5265c00
 
@@ -1215,12 +1215,12 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bQ:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbQ:J
 
     :cond_7
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bQ:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbQ:J
 
     const-wide/32 v14, 0xdbba0
 
@@ -1230,15 +1230,15 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bQ:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbQ:J
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v7, 0x0
 
@@ -1248,13 +1248,13 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     add-long/2addr v8, v14
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v13, v0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v3, v7, v8, v9, v13}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -1262,7 +1262,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bQ:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbQ:J
 
     :cond_8
     :goto_3
@@ -1272,7 +1272,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->b8:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJb8:J
 
     if-eqz v2, :cond_f
 
@@ -1287,13 +1287,13 @@
     :cond_9
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/baidu/location/ICl;->b4:I
+    iget v7, v0, Lcom/baidu/location/ICl;->mIb4:I
 
     add-int/lit8 v7, v7, 0x1
 
     move-object/from16 v0, p0
 
-    iput v7, v0, Lcom/baidu/location/ICl;->b4:I
+    iput v7, v0, Lcom/baidu/location/ICl;->mIb4:I
 
     const/4 v7, 0x0
 
@@ -1308,7 +1308,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     sget-wide v14, Lcom/baidu/location/ICc;->aS:J
 
@@ -1316,7 +1316,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     if-eqz v12, :cond_b
 
@@ -1335,7 +1335,7 @@
     :cond_b
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     sget-wide v14, Lcom/baidu/location/ICc;->a8:J
 
@@ -1347,13 +1347,13 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     :cond_c
     :goto_4
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v7, 0x0
 
@@ -1363,13 +1363,13 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     add-long/2addr v8, v14
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v13, v0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v3, v7, v8, v9, v13}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -1377,14 +1377,14 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v3, v0, Lcom/baidu/location/ICl;->bD:Z
+    iput-boolean v3, v0, Lcom/baidu/location/ICl;->isZbD:Z
 
     goto :goto_3
 
     :cond_d
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     sget-wide v14, Lcom/baidu/location/ICc;->aR:J
 
@@ -1396,7 +1396,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     goto :goto_4
 
@@ -1405,11 +1405,11 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v8, v0, Lcom/baidu/location/ICl;->bU:J
+    iput-wide v8, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->bK:Landroid/app/AlarmManager;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mAlarmManagerbK:Landroid/app/AlarmManager;
 
     const/4 v7, 0x0
 
@@ -1419,13 +1419,13 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->bU:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJbU:J
 
     add-long/2addr v8, v14
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/location/ICl;->bL:Landroid/app/PendingIntent;
+    iget-object v13, v0, Lcom/baidu/location/ICl;->mPendingIntentbL:Landroid/app/PendingIntent;
 
     invoke-virtual {v3, v7, v8, v9, v13}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
@@ -1435,7 +1435,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/baidu/location/ICl;->b8:J
+    iget-wide v14, v0, Lcom/baidu/location/ICl;->mJb8:J
 
     sub-long/2addr v8, v14
 
@@ -1447,13 +1447,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
@@ -1848,7 +1848,7 @@
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/baidu/location/ICl;->bD:Z
+    iget-boolean v2, v0, Lcom/baidu/location/ICl;->isZbD:Z
 
     if-eqz v2, :cond_19
 
@@ -1882,11 +1882,11 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/baidu/location/ICl;->bB:Ljava/lang/String;
+    iput-object v2, v0, Lcom/baidu/location/ICl;->mStringbB:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bB:Ljava/lang/String;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mStringbB:Ljava/lang/String;
 
     invoke-virtual {v13, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -1894,14 +1894,14 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/baidu/location/ICl;->bB:Ljava/lang/String;
+    iput-object v2, v0, Lcom/baidu/location/ICl;->mStringbB:Ljava/lang/String;
 
     :cond_18
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/baidu/location/ICl;->bD:Z
+    iput-boolean v2, v0, Lcom/baidu/location/ICl;->isZbD:Z
 
     :cond_19
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1914,14 +1914,14 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :goto_e
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1933,7 +1933,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->b0:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListb0:Ljava/util/ArrayList;
 
     const/4 v3, 0x0
 
@@ -1986,14 +1986,14 @@
     :cond_1e
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :goto_f
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -2005,7 +2005,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICl;->bX:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/baidu/location/ICl;->mArrayListbX:Ljava/util/ArrayList;
 
     const/4 v3, 0x0
 

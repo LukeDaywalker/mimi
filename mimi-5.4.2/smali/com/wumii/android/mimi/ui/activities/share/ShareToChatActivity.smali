@@ -4,17 +4,17 @@
 
 
 # instance fields
+.field private mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+
+.field private mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
+
+.field mChatObserverp:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+
+.field private mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+
 .field protected n:Landroid/widget/ListView;
 
 .field protected o:Landroid/widget/TextView;
-
-.field p:Lcom/wumii/android/mimi/models/observer/ChatObserver;
-
-.field private q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
-
-.field private r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
-
-.field private s:Lcom/wumii/android/mimi/manager/ChatManager;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->p:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatObserverp:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     return-object v0
 .end method
@@ -104,7 +104,7 @@
     move-result-object v1
 
     .line 151
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     invoke-direct {p0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;)V
 
@@ -231,7 +231,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->setChatMsgItem(Lcom/wumii/android/mimi/models/entities/chat/ChatMsgItemBase;)V
 
     .line 176
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -312,20 +312,20 @@
     move-result-object v1
 
     .line 191
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
     .line 192
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -339,7 +339,7 @@
 
     .line 196
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatBase;->getChatId()Ljava/lang/String;
 
@@ -405,9 +405,9 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->p:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatObserverp:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->addObserver(Ljava/util/Observer;)V
 
@@ -420,9 +420,9 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->p:Lcom/wumii/android/mimi/models/observer/ChatObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatObserverp:Lcom/wumii/android/mimi/models/observer/ChatObserver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->deleteObserver(Ljava/util/Observer;)V
 
@@ -435,7 +435,7 @@
 
     .prologue
     .line 265
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->notifyDataSetChanged()V
 
@@ -468,7 +468,7 @@
     .line 267
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/manager/ChatManager;->c()I
 
@@ -544,7 +544,7 @@
     if-nez v1, :cond_0
 
     .line 281
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;->f()Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
@@ -578,7 +578,7 @@
     check-cast v1, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 286
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     check-cast v2, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICar;
 
@@ -619,7 +619,7 @@
     const v5, 0x7f060107
 
     .line 108
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;->f()Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
@@ -642,7 +642,7 @@
 
     .line 114
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;->f()Lcom/wumii/android/mimi/models/entities/share/ShareType;
 
@@ -653,7 +653,7 @@
     if-ne v0, v1, :cond_0
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     check-cast v0, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICar;
 
@@ -977,7 +977,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->q:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mICasq:Lcom/wumii/android/mimi/models/share/ShareInsideController$ICas;
 
     .line 82
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
@@ -988,7 +988,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     .line 84
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
@@ -1003,12 +1003,12 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;Ljava/util/List;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     .line 96
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->n:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -1016,7 +1016,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->h()V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->s:Lcom/wumii/android/mimi/manager/ChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatManagers:Lcom/wumii/android/mimi/manager/ChatManager;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->f()V
 
@@ -1046,7 +1046,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->notifyDataSetChanged()V
 
@@ -1064,7 +1064,7 @@
     .line 203
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->getCount()I
 
@@ -1073,7 +1073,7 @@
     if-eqz v0, :cond_0
 
     .line 204
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;->mChatListAdapterr:Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatListAdapter;->notifyDataSetChanged()V
 

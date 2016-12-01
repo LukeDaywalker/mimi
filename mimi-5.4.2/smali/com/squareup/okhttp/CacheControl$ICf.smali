@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field a:Z
+.field isZa:Z
 
-.field b:Z
+.field isZb:Z
 
-.field c:I
+.field isZf:Z
 
-.field d:I
+.field isZg:Z
 
-.field e:I
+.field mIc:I
 
-.field f:Z
+.field mId:I
 
-.field g:Z
+.field mIe:I
 
 
 # direct methods
@@ -30,13 +30,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 275
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->c:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->mIc:I
 
     .line 276
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->d:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->mId:I
 
     .line 277
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->e:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->mIe:I
 
     return-void
 .end method
@@ -50,7 +50,7 @@
     .line 283
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->a:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->isZa:Z
 
     .line 284
     return-object p0
@@ -105,7 +105,7 @@
     const v0, 0x7fffffff
 
     :goto_0
-    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->d:I
+    iput v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->mId:I
 
     .line 325
     return-object p0
@@ -124,7 +124,7 @@
     .line 352
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->f:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/CacheControl$ICf;->isZf:Z
 
     .line 353
     return-object p0

@@ -6,13 +6,13 @@
 # static fields
 .field public static final a:Ljava/lang/Object;
 
-.field static final b:[Ljava/lang/String;
+.field static final mArrayStringb:[Ljava/lang/String;
 
-.field private static final c:Ljava/util/regex/Pattern;
+.field private static final mPatternc:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field private final d:Ljava/util/concurrent/ConcurrentHashMap;
+.field private final mConcurrentHashMapd:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentHashMap",
@@ -24,21 +24,11 @@
     .end annotation
 .end field
 
-.field private final e:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mCountDownLatchi:Ljava/util/concurrent/CountDownLatch;
 
-.field private final f:Ljava/util/concurrent/locks/ReentrantLock;
+.field private final mICkh:Lcom/google/tagmanager/DataLayer$ICk;
 
-.field private final g:Ljava/util/LinkedList;
+.field private final mLinkedListg:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList",
@@ -52,9 +42,19 @@
     .end annotation
 .end field
 
-.field private final h:Lcom/google/tagmanager/DataLayer$ICk;
+.field private final mMape:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private final i:Ljava/util/concurrent/CountDownLatch;
+.field private final mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
 
 # direct methods
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/tagmanager/DataLayer;->b:[Ljava/lang/String;
+    sput-object v0, Lcom/google/tagmanager/DataLayer;->mArrayStringb:[Ljava/lang/String;
 
     .line 170
     const-string/jumbo v0, "(\\d+)\\s*([smhd]?)"
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/google/tagmanager/DataLayer;->c:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/google/tagmanager/DataLayer;->mPatternc:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -119,35 +119,35 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 210
-    iput-object p1, p0, Lcom/google/tagmanager/DataLayer;->h:Lcom/google/tagmanager/DataLayer$ICk;
+    iput-object p1, p0, Lcom/google/tagmanager/DataLayer;->mICkh:Lcom/google/tagmanager/DataLayer$ICk;
 
     .line 211
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->d:Ljava/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->mConcurrentHashMapd:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 212
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->e:Ljava/util/Map;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->mMape:Ljava/util/Map;
 
     .line 213
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->f:Ljava/util/concurrent/locks/ReentrantLock;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 214
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->g:Ljava/util/LinkedList;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->mLinkedListg:Ljava/util/LinkedList;
 
     .line 215
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
@@ -156,7 +156,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->i:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lcom/google/tagmanager/DataLayer;->mCountDownLatchi:Ljava/util/concurrent/CountDownLatch;
 
     .line 216
     invoke-direct {p0}, Lcom/google/tagmanager/DataLayer;->a()V
@@ -178,7 +178,7 @@
     const-wide/16 v6, 0x3c
 
     .line 366
-    sget-object v1, Lcom/google/tagmanager/DataLayer;->c:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/google/tagmanager/DataLayer;->mPatternc:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -413,7 +413,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->i:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mCountDownLatchi:Ljava/util/concurrent/CountDownLatch;
 
     return-object v0
 .end method
@@ -423,7 +423,7 @@
 
     .prologue
     .line 281
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->h:Lcom/google/tagmanager/DataLayer$ICk;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mICkh:Lcom/google/tagmanager/DataLayer$ICk;
 
     new-instance v1, Lcom/google/tagmanager/DataLayer$ICh;
 
@@ -587,7 +587,7 @@
 
     .line 407
     :goto_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->g:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mLinkedListg:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;
 
@@ -608,7 +608,7 @@
     if-le v0, v1, :cond_1
 
     .line 410
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->g:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mLinkedListg:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
@@ -646,18 +646,18 @@
 
     .prologue
     .line 263
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->f:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 267
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->g:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mLinkedListg:Ljava/util/LinkedList;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedList;->offer(Ljava/lang/Object;)Z
 
     .line 268
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->f:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->getHoldCount()I
 
@@ -677,7 +677,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 276
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->f:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -688,7 +688,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer;->f:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer;->mReentrantLockf:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -733,7 +733,7 @@
     invoke-interface {v1, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 298
-    iget-object v2, p0, Lcom/google/tagmanager/DataLayer;->h:Lcom/google/tagmanager/DataLayer$ICk;
+    iget-object v2, p0, Lcom/google/tagmanager/DataLayer;->mICkh:Lcom/google/tagmanager/DataLayer$ICk;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -803,7 +803,7 @@
     .prologue
     .line 316
     .line 317
-    sget-object v2, Lcom/google/tagmanager/DataLayer;->b:[Ljava/lang/String;
+    sget-object v2, Lcom/google/tagmanager/DataLayer;->mArrayStringb:[Ljava/lang/String;
 
     array-length v3, v2
 
@@ -896,7 +896,7 @@
 
     .prologue
     .line 418
-    iget-object v1, p0, Lcom/google/tagmanager/DataLayer;->e:Ljava/util/Map;
+    iget-object v1, p0, Lcom/google/tagmanager/DataLayer;->mMape:Ljava/util/Map;
 
     monitor-enter v1
 
@@ -930,7 +930,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/google/tagmanager/DataLayer;->e:Ljava/util/Map;
+    iget-object v3, p0, Lcom/google/tagmanager/DataLayer;->mMape:Ljava/util/Map;
 
     invoke-virtual {p0, v2, v3}, Lcom/google/tagmanager/DataLayer;->a(Ljava/util/Map;Ljava/util/Map;)V
 
@@ -974,7 +974,7 @@
 
     .prologue
     .line 510
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->d:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mConcurrentHashMapd:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->keySet()Ljava/util/Set;
 
@@ -1090,7 +1090,7 @@
 
     .prologue
     .line 499
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->d:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mConcurrentHashMapd:Ljava/util/concurrent/ConcurrentHashMap;
 
     const/4 v1, 0x0
 
@@ -1272,7 +1272,7 @@
     .prologue
     .line 251
     :try_start_0
-    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->i:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lcom/google/tagmanager/DataLayer;->mCountDownLatchi:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
     :try_end_0

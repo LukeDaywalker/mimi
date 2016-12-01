@@ -4,11 +4,13 @@
 
 
 # static fields
-.field private static final d:Lcom/google/analytics/tracking/android/GAUsage;
+.field private static final mGAUsaged:Lcom/google/analytics/tracking/android/GAUsage;
 
 
 # instance fields
-.field private a:Ljava/util/SortedSet;
+.field private isZc:Z
+
+.field private mSortedSeta:Ljava/util/SortedSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/SortedSet",
@@ -19,9 +21,7 @@
     .end annotation
 .end field
 
-.field private b:Ljava/lang/StringBuilder;
-
-.field private c:Z
+.field private mStringBuilderb:Ljava/lang/StringBuilder;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Lcom/google/analytics/tracking/android/GAUsage;-><init>()V
 
-    sput-object v0, Lcom/google/analytics/tracking/android/GAUsage;->d:Lcom/google/analytics/tracking/android/GAUsage;
+    sput-object v0, Lcom/google/analytics/tracking/android/GAUsage;->mGAUsaged:Lcom/google/analytics/tracking/android/GAUsage;
 
     return-void
 .end method
@@ -51,19 +51,19 @@
 
     invoke-direct {v0}, Ljava/util/TreeSet;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     .line 99
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     .line 101
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->c:Z
+    iput-boolean v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->isZc:Z
 
     .line 114
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 106
-    sget-object v0, Lcom/google/analytics/tracking/android/GAUsage;->d:Lcom/google/analytics/tracking/android/GAUsage;
+    sget-object v0, Lcom/google/analytics/tracking/android/GAUsage;->mGAUsaged:Lcom/google/analytics/tracking/android/GAUsage;
 
     return-object v0
 .end method
@@ -89,17 +89,17 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->c:Z
+    iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->isZc:Z
 
     if-nez v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     invoke-interface {v0, p1}, Ljava/util/SortedSet;->add(Ljava/lang/Object;)Z
 
     .line 123
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 
@@ -138,7 +138,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GAUsage;->c:Z
+    iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GAUsage;->isZc:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -177,7 +177,7 @@
 
     .line 144
     :goto_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     invoke-interface {v0}, Ljava/util/SortedSet;->size()I
 
@@ -186,7 +186,7 @@
     if-lez v0, :cond_1
 
     .line 148
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     invoke-interface {v0}, Ljava/util/SortedSet;->first()Ljava/lang/Object;
 
@@ -195,7 +195,7 @@
     check-cast v0, Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
     .line 149
-    iget-object v5, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iget-object v5, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     invoke-interface {v5, v0}, Ljava/util/SortedSet;->remove(Ljava/lang/Object;)Z
 
@@ -263,7 +263,7 @@
 
     .line 174
     :cond_3
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->a:Ljava/util/SortedSet;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mSortedSeta:Ljava/util/SortedSet;
 
     invoke-interface {v0}, Ljava/util/SortedSet;->clear()V
 
@@ -295,7 +295,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -304,7 +304,7 @@
     if-lez v0, :cond_0
 
     .line 188
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
@@ -314,7 +314,7 @@
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -325,7 +325,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iput-object v1, p0, Lcom/google/analytics/tracking/android/GAUsage;->b:Ljava/lang/StringBuilder;
+    iput-object v1, p0, Lcom/google/analytics/tracking/android/GAUsage;->mStringBuilderb:Ljava/lang/StringBuilder;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -28,8 +28,6 @@
 
 .field private foldReason:Ljava/lang/String;
 
-.field private id:Ljava/lang/String;
-
 .field private isBlocked:Z
 
 .field private isFromCircle:Ljava/lang/Boolean;
@@ -41,6 +39,8 @@
 .field private likedByCurUser:Z
 
 .field private likedCount:J
+
+.field private mStringid:Ljava/lang/String;
 
 .field private name:Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
@@ -260,7 +260,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->mStringid:Ljava/lang/String;
 
     .line 42
     iput-object p2, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->content:Ljava/lang/String;
@@ -366,7 +366,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -558,7 +558,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->id:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileComment;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

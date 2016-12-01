@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+.field final synthetic mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 125
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/LoadCountriesTask;-><init>(Landroid/content/Context;)V
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->k()Ljava/util/List;
 
@@ -57,7 +57,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Ljava/util/List;)Ljava/util/List;
 
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->l()Ljava/util/List;
 
@@ -66,7 +66,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Ljava/util/List;)Ljava/util/List;
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->m()Landroid/util/SparseArray;
 
@@ -75,7 +75,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
@@ -83,21 +83,21 @@
 
     new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->c(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Ljava/util/List;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->e(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Ljava/util/List;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Landroid/util/SparseArray;
 
@@ -108,13 +108,13 @@
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->d(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->b(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Landroid/util/SparseArray;
 
@@ -131,7 +131,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     const v1, 0x7f0603a7
 
@@ -140,7 +140,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->mRegionSelectionActivitya:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->finish()V
 

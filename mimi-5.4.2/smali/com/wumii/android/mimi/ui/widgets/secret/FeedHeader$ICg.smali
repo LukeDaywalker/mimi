@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+.field final synthetic mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +36,7 @@
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->OUTSIDER:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;->a:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$ICg;->mFeedHeadera:Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

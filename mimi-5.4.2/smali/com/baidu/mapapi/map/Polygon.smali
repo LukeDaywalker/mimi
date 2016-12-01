@@ -3,11 +3,9 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/map/Stroke;
+.field mIb:I
 
-.field b:I
-
-.field c:Ljava/util/List;
+.field mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -18,6 +16,8 @@
     .end annotation
 .end field
 
+.field mStrokea:Lcom/baidu/mapapi/map/Stroke;
+
 
 # direct methods
 .method constructor <init>()V
@@ -27,7 +27,7 @@
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->j:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     invoke-super {p0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mListc:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -69,15 +69,15 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/os/Bundle;->putDouble(Ljava/lang/String;D)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mListc:Ljava/util/List;
 
     invoke-static {v0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Ljava/util/List;Landroid/os/Bundle;)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Polygon;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Polygon;->mIb:I
 
     invoke-static {v0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(ILandroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mStrokea:Lcom/baidu/mapapi/map/Stroke;
 
     if-nez v0, :cond_0
 
@@ -101,7 +101,7 @@
 
     const-string/jumbo v1, "stroke"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Polygon;->mStrokea:Lcom/baidu/mapapi/map/Stroke;
 
     invoke-virtual {v2, v0}, Lcom/baidu/mapapi/map/Stroke;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
@@ -115,7 +115,7 @@
 .method public getFillColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Polygon;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Polygon;->mIb:I
 
     return v0
 .end method
@@ -132,7 +132,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mListc:Ljava/util/List;
 
     return-object v0
 .end method
@@ -140,7 +140,7 @@
 .method public getStroke()Lcom/baidu/mapapi/map/Stroke;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->mStrokea:Lcom/baidu/mapapi/map/Stroke;
 
     return-object v0
 .end method
@@ -148,7 +148,7 @@
 .method public setFillColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Polygon;->b:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Polygon;->mIb:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -273,7 +273,7 @@
     goto :goto_0
 
     :cond_5
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->mListc:Ljava/util/List;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -285,7 +285,7 @@
 .method public setStroke(Lcom/baidu/mapapi/map/Stroke;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->mStrokea:Lcom/baidu/mapapi/map/Stroke;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

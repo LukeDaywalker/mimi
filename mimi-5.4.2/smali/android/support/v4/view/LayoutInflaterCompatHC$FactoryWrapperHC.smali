@@ -25,7 +25,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Landroid/support/v4/view/LayoutInflaterCompatHC$FactoryWrapperHC;->a:Landroid/support/v4/view/LayoutInflaterFactory;
+    iget-object v0, p0, Landroid/support/v4/view/LayoutInflaterCompatHC$FactoryWrapperHC;->mLayoutInflaterFactorya:Landroid/support/v4/view/LayoutInflaterFactory;
 
     invoke-interface {v0, p1, p2, p3, p4}, Landroid/support/v4/view/LayoutInflaterFactory;->a(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
 

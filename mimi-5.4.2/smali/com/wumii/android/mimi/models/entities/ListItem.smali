@@ -47,7 +47,7 @@
 # instance fields
 .field private iconId:I
 
-.field private id:I
+.field private mIid:I
 
 .field private newCount:I
 
@@ -381,7 +381,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 32
-    iput p3, p0, Lcom/wumii/android/mimi/models/entities/ListItem;->id:I
+    iput p3, p0, Lcom/wumii/android/mimi/models/entities/ListItem;->mIid:I
 
     .line 33
     iput p4, p0, Lcom/wumii/android/mimi/models/entities/ListItem;->iconId:I
@@ -442,7 +442,7 @@
 
     .prologue
     .line 38
-    iget v0, p0, Lcom/wumii/android/mimi/models/entities/ListItem;->id:I
+    iget v0, p0, Lcom/wumii/android/mimi/models/entities/ListItem;->mIid:I
 
     return v0
 .end method

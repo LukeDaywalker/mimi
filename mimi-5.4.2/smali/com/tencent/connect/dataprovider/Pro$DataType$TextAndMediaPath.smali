@@ -20,9 +20,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -52,14 +52,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->mStringa:Ljava/lang/String;
 
     .line 51
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->mStringb:Ljava/lang/String;
 
     .line 52
     return-void
@@ -92,12 +92,12 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->mStringa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 36
-    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/dataprovider/Pro$DataType$TextAndMediaPath;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

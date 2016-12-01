@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+.field final synthetic mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,17 +30,17 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->n:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
     const/4 v2, 0x0
 
     new-instance v3, Ljava/io/File;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$ICj;->mModifyAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;
 
     iget-object v4, v4, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->o:Ljava/lang/String;
 

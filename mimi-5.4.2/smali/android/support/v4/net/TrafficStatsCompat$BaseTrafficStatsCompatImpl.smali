@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/ThreadLocal;
+.field private mThreadLocala:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal",
@@ -32,7 +32,7 @@
 
     invoke-direct {v0, p0}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;-><init>(Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;)V
 
-    iput-object v0, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;->a:Ljava/lang/ThreadLocal;
+    iput-object v0, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;->mThreadLocala:Ljava/lang/ThreadLocal;
 
     return-void
 .end method

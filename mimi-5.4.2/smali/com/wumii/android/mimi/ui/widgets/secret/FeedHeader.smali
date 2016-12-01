@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/view/View;
+.field private mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field private b:Landroid/widget/TextView;
+.field private mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private c:Landroid/widget/TextView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/ImageView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+.field private mViewa:Landroid/view/View;
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     return-object v0
 .end method
@@ -97,7 +97,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewb:Landroid/widget/TextView;
 
     .line 78
     const v0, 0x7f0b01f5
@@ -108,7 +108,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewc:Landroid/widget/TextView;
 
     .line 79
     const v0, 0x7f0b01f4
@@ -119,7 +119,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mImageViewd:Landroid/widget/ImageView;
 
     .line 80
     const v0, 0x7f0b01f2
@@ -128,7 +128,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->a:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mViewa:Landroid/view/View;
 
     .line 82
     const v0, 0x7f0b01f6
@@ -192,14 +192,14 @@
     check-cast v2, Landroid/widget/TextView;
 
     .line 107
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     instance-of v3, v3, Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
     if-eqz v3, :cond_3
 
     .line 108
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     check-cast v3, Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -220,7 +220,7 @@
     .line 122
     :cond_0
     :goto_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v3, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -248,7 +248,7 @@
     move-result-object v3
 
     .line 149
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v6, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->FRIEND:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -300,7 +300,7 @@
 
     .line 116
     :cond_3
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     instance-of v3, v3, Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -315,7 +315,7 @@
 
     .line 118
     :cond_4
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     instance-of v2, v2, Lcom/wumii/android/mimi/models/entities/circle/Crowd;
 
@@ -345,19 +345,19 @@
 
     .line 158
     :cond_6
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v6, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ORGANIZATION:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-eq v4, v6, :cond_7
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     sget-object v6, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     if-ne v4, v6, :cond_8
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -375,7 +375,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getId()Ljava/lang/String;
 
@@ -415,7 +415,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 59
     return-void
@@ -430,7 +430,7 @@
     const/4 v2, 0x0
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     if-eqz v0, :cond_0
 
@@ -439,9 +439,9 @@
     if-eqz p1, :cond_0
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewb:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->f:Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mCirclef:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -450,12 +450,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->a:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mViewa:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mImageViewd:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -464,17 +464,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mImageViewd:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p2, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -484,12 +484,12 @@
 
     .line 71
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mImageViewd:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -501,7 +501,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->mFeedTypee:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 55
     return-void

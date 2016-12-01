@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 42
     return-void
@@ -83,14 +83,14 @@
     const/4 v3, 0x0
 
     .line 56
-    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300b1
 
@@ -163,7 +163,7 @@
 
     .line 73
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->a:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v4, 0x7f0300b2
 
@@ -252,12 +252,12 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
 
     if-eqz v0, :cond_0
 
     .line 51
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->b:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;->mICxb:Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;
 
     .line 46
     return-void

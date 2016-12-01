@@ -3,17 +3,23 @@
 
 
 # static fields
-.field private static b:Lcom/baidu/platform/comapi/favrite/ICa;
+.field private static mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
 
 # instance fields
-.field private a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+.field private isZc:Z
 
-.field private c:Z
+.field private isZd:Z
 
-.field private d:Z
+.field private isZg:Z
 
-.field private e:Ljava/util/Vector;
+.field private mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
+
+.field private mICbi:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
+
+.field private mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+
+.field private mVectore:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector",
@@ -24,7 +30,7 @@
     .end annotation
 .end field
 
-.field private f:Ljava/util/Vector;
+.field private mVectorf:Ljava/util/Vector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Vector",
@@ -34,12 +40,6 @@
         }
     .end annotation
 .end field
-
-.field private g:Z
-
-.field private h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
-
-.field private i:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sput-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     return-void
 .end method
@@ -62,29 +62,29 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZc:Z
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->d:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZd:Z
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->g:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZg:Z
 
     new-instance v0, Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;-><init>(Lcom/baidu/platform/comapi/favrite/ICa;Lcom/baidu/platform/comapi/favrite/ICa$1;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     new-instance v0, Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/platform/comapi/favrite/ICa$ICb;-><init>(Lcom/baidu/platform/comapi/favrite/ICa;Lcom/baidu/platform/comapi/favrite/ICa$1;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->i:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICbi:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 .method public static a()Lcom/baidu/platform/comapi/favrite/ICa;
     .locals 2
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v0, :cond_1
 
@@ -101,7 +101,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v0, :cond_0
 
@@ -109,9 +109,9 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/favrite/ICa;-><init>()V
 
-    sput-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sput-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/favrite/ICa;->h()Z
 
@@ -121,7 +121,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     return-object v0
 
@@ -139,19 +139,19 @@
 .method public static g()Z
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/favorite/ICa;->d()Z
 
@@ -175,7 +175,7 @@
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-nez v1, :cond_0
 
@@ -183,9 +183,9 @@
 
     invoke-direct {v1}, Lcom/baidu/platform/comjni/map/favorite/ICa;-><init>()V
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a()J
 
@@ -199,7 +199,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     const/4 v0, 0x0
 
@@ -218,7 +218,7 @@
 .method private i()Z
     .locals 8
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-nez v0, :cond_0
 
@@ -260,13 +260,13 @@
 
     const/16 v5, 0x1f5
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     const/4 v7, 0x1
 
     invoke-virtual {v0, v7}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a(I)Z
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual/range {v0 .. v6}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)Z
 
@@ -280,9 +280,9 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->c:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZc:Z
 
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->d:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZd:Z
 
     return-void
 .end method
@@ -299,7 +299,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -533,7 +533,7 @@
 
     invoke-virtual {v2, v0, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -606,7 +606,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -638,7 +638,7 @@
 
     invoke-direct {p0}, Lcom/baidu/platform/comapi/favrite/ICa;->j()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a(Ljava/lang/String;)Z
     :try_end_1
@@ -661,7 +661,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v1, :cond_0
 
@@ -691,7 +691,7 @@
 
     invoke-direct {v1}, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;-><init>()V
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v2, p1}, Lcom/baidu/platform/comjni/map/favorite/ICa;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -834,28 +834,28 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/favorite/ICa;->b()I
 
-    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sget-object v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iput-object v1, v0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     :cond_0
-    sput-object v1, Lcom/baidu/platform/comapi/favrite/ICa;->b:Lcom/baidu/platform/comapi/favrite/ICa;
+    sput-object v1, Lcom/baidu/platform/comapi/favrite/ICa;->mICab:Lcom/baidu/platform/comapi/favrite/ICa;
 
     :cond_1
     return-void
@@ -869,7 +869,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v1, :cond_0
 
@@ -1004,11 +1004,11 @@
 
     invoke-direct {p0}, Lcom/baidu/platform/comapi/favrite/ICa;->j()V
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -1046,7 +1046,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1063,7 +1063,7 @@
     :try_start_1
     invoke-direct {p0}, Lcom/baidu/platform/comapi/favrite/ICa;->j()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/favorite/ICa;->c()Z
 
@@ -1086,7 +1086,7 @@
 .method public c(Ljava/lang/String;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-eqz v0, :cond_0
 
@@ -1100,7 +1100,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v0, p1}, Lcom/baidu/platform/comjni/map/favorite/ICa;->c(Ljava/lang/String;)Z
 
@@ -1133,7 +1133,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-nez v0, :cond_0
 
@@ -1141,17 +1141,17 @@
     return-object v1
 
     :cond_0
-    iget-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->d:Z
+    iget-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZd:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     if-eqz v0, :cond_1
 
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -1163,7 +1163,7 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v2, v0}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a(Landroid/os/Bundle;)I
 
@@ -1175,7 +1175,7 @@
 
     if-eqz v2, :cond_8
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     if-nez v0, :cond_3
 
@@ -1183,7 +1183,7 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     :goto_1
     const/4 v0, 0x0
@@ -1203,7 +1203,7 @@
 
     if-nez v3, :cond_2
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     aget-object v4, v2, v0
 
@@ -1228,7 +1228,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->clear()V
 
@@ -1240,7 +1240,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v3, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     aget-object v4, v2, v0
 
@@ -1249,7 +1249,7 @@
     goto :goto_3
 
     :cond_5
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
     :try_end_0
@@ -1260,7 +1260,7 @@
     if-lez v0, :cond_6
 
     :try_start_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     new-instance v2, Lcom/baidu/platform/comapi/favrite/ICa$ICa;
 
@@ -1274,15 +1274,15 @@
     const/4 v0, 0x1
 
     :try_start_2
-    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->d:Z
+    iput-boolean v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZd:Z
 
     :cond_6
     :goto_5
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -1306,24 +1306,24 @@
     goto :goto_4
 
     :cond_8
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->clear()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     goto :goto_5
 
     :cond_9
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->f:Ljava/util/Vector;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectorf:Ljava/util/Vector;
 
     invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
     :try_end_2
@@ -1346,7 +1346,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-nez v1, :cond_1
 
@@ -1355,17 +1355,17 @@
     return-object v0
 
     :cond_1
-    iget-boolean v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->c:Z
+    iget-boolean v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZc:Z
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     if-eqz v1, :cond_2
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -1377,7 +1377,7 @@
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v2, v1}, Lcom/baidu/platform/comjni/map/favorite/ICa;->a(Landroid/os/Bundle;)I
 
@@ -1389,7 +1389,7 @@
 
     if-eqz v2, :cond_7
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     if-nez v1, :cond_4
 
@@ -1397,7 +1397,7 @@
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     :goto_1
     array-length v3, v2
@@ -1417,7 +1417,7 @@
 
     if-nez v5, :cond_3
 
-    iget-object v5, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v5, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-virtual {v5, v4}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -1427,7 +1427,7 @@
     goto :goto_2
 
     :cond_4
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->clear()V
 
@@ -1439,7 +1439,7 @@
     goto :goto_0
 
     :cond_5
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
     :try_end_0
@@ -1450,7 +1450,7 @@
     if-lez v1, :cond_6
 
     :try_start_1
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     new-instance v2, Lcom/baidu/platform/comapi/favrite/ICa$ICa;
 
@@ -1464,17 +1464,17 @@
     const/4 v1, 0x1
 
     :try_start_2
-    iput-boolean v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->c:Z
+    iput-boolean v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->isZc:Z
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     :cond_6
     :goto_4
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
 
@@ -1484,7 +1484,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -1499,17 +1499,17 @@
     goto :goto_3
 
     :cond_7
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->clear()V
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->e:Ljava/util/Vector;
+    iput-object v1, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mVectore:Ljava/util/Vector;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
@@ -1521,7 +1521,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->i:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICbi:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->a(Lcom/baidu/platform/comapi/favrite/ICa$ICb;)Z
 
@@ -1529,7 +1529,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->a(Lcom/baidu/platform/comapi/favrite/ICa$ICc;)Z
 
@@ -1537,7 +1537,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->b(Lcom/baidu/platform/comapi/favrite/ICa$ICc;)Z
 
@@ -1545,7 +1545,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->c(Lcom/baidu/platform/comapi/favrite/ICa$ICc;)Ljava/lang/String;
 
@@ -1555,11 +1555,11 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->i:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICbi:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->b(Lcom/baidu/platform/comapi/favrite/ICa$ICb;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     if-nez v0, :cond_1
 
@@ -1612,7 +1612,7 @@
 
     if-nez v6, :cond_4
 
-    iget-object v6, p0, Lcom/baidu/platform/comapi/favrite/ICa;->a:Lcom/baidu/platform/comjni/map/favorite/ICa;
+    iget-object v6, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICaa:Lcom/baidu/platform/comjni/map/favorite/ICa;
 
     invoke-virtual {v6, v0}, Lcom/baidu/platform/comjni/map/favorite/ICa;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1663,11 +1663,11 @@
     invoke-virtual {v3, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->i:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICbi:Lcom/baidu/platform/comapi/favrite/ICa$ICb;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICb;->c(Lcom/baidu/platform/comapi/favrite/ICa$ICb;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-virtual {v3}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -1675,7 +1675,7 @@
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->a(Lcom/baidu/platform/comapi/favrite/ICa$ICc;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->h:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/favrite/ICa;->mICch:Lcom/baidu/platform/comapi/favrite/ICa$ICc;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/favrite/ICa$ICc;->c(Lcom/baidu/platform/comapi/favrite/ICa$ICc;)Ljava/lang/String;
     :try_end_0

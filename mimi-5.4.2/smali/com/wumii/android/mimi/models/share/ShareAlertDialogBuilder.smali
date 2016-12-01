@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private b:Landroid/widget/EditText;
+.field private mDisplayImageOptionsg:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private c:Landroid/widget/ImageView;
+.field private mEditTextb:Landroid/widget/EditText;
 
-.field private d:Landroid/widget/TextView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private e:Landroid/widget/TextView;
+.field private mLayoutInflaterf:Landroid/view/LayoutInflater;
 
-.field private f:Landroid/view/LayoutInflater;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private g:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mTextViewe:Landroid/widget/TextView;
 
 
 # direct methods
@@ -32,10 +32,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->f:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mLayoutInflaterf:Landroid/view/LayoutInflater;
 
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->f:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mLayoutInflaterf:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030109
 
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->b:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mEditTextb:Landroid/widget/EditText;
 
     .line 41
     const v0, 0x7f0b0080
@@ -65,7 +65,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mImageViewc:Landroid/widget/ImageView;
 
     .line 42
     const v0, 0x7f0b008a
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mTextViewd:Landroid/widget/TextView;
 
     .line 43
     const v0, 0x7f0b0089
@@ -87,7 +87,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mTextViewe:Landroid/widget/TextView;
 
     .line 44
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
@@ -133,7 +133,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->g:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mDisplayImageOptionsg:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 52
     return-void
@@ -146,7 +146,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->b:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mEditTextb:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -166,7 +166,7 @@
     const/16 v1, 0x8
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mTextViewe:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
@@ -174,7 +174,7 @@
     if-nez p2, :cond_0
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -183,7 +183,7 @@
     if-nez p3, :cond_1
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mImageViewc:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -193,7 +193,7 @@
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -205,9 +205,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->c:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mImageViewc:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->g:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/ShareAlertDialogBuilder;->mDisplayImageOptionsg:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0, p3, v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 

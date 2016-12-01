@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field private final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->a:Landroid/content/Context;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->mContexta:Landroid/content/Context;
 
     .line 31
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->mContexta:Landroid/content/Context;
 
     const/4 v1, 0x4
 
@@ -541,7 +541,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -705,7 +705,7 @@
     move-result-object v0
 
     .line 74
-    sget-object v2, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->a:[I
+    sget-object v2, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICb;->mArrayIa:[I
 
     invoke-virtual {v4}, Lcom/facebook/stetho/dumpapp/plugins/SharedPreferencesDumperPlugin$ICc;->ordinal()I
 

@@ -3,11 +3,11 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field private static mHandlerThreadc:Landroid/os/HandlerThread;
 
-.field private static b:Landroid/os/Handler;
+.field private static mHandlerb:Landroid/os/Handler;
 
-.field private static c:Landroid/os/HandlerThread;
+.field private static final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/vi/VMsg;->a:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/vi/VMsg;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -49,17 +49,17 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lcom/baidu/vi/VMsg;->c:Landroid/os/HandlerThread;
+    sget-object v0, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
-    sput-object v1, Lcom/baidu/vi/VMsg;->c:Landroid/os/HandlerThread;
+    sput-object v1, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
-    sget-object v0, Lcom/baidu/vi/VMsg;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    sput-object v1, Lcom/baidu/vi/VMsg;->b:Landroid/os/Handler;
+    sput-object v1, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 
     return-void
 .end method
@@ -73,15 +73,15 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/baidu/vi/VMsg;->c:Landroid/os/HandlerThread;
+    sput-object v0, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
-    sget-object v0, Lcom/baidu/vi/VMsg;->c:Landroid/os/HandlerThread;
+    sget-object v0, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     new-instance v0, Lcom/baidu/vi/VMsg$ICa;
 
-    sget-object v1, Lcom/baidu/vi/VMsg;->c:Landroid/os/HandlerThread;
+    sget-object v1, Lcom/baidu/vi/VMsg;->mHandlerThreadc:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/vi/VMsg$ICa;-><init>(Landroid/os/Looper;)V
 
-    sput-object v0, Lcom/baidu/vi/VMsg;->b:Landroid/os/Handler;
+    sput-object v0, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
 .method private static postMessage(IIIJ)V
     .locals 3
 
-    sget-object v0, Lcom/baidu/vi/VMsg;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
@@ -105,7 +105,7 @@
     return-void
 
     :cond_0
-    sget-object v0, Lcom/baidu/vi/VMsg;->b:Landroid/os/Handler;
+    sget-object v0, Lcom/baidu/vi/VMsg;->mHandlerb:Landroid/os/Handler;
 
     invoke-static {p3, p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 

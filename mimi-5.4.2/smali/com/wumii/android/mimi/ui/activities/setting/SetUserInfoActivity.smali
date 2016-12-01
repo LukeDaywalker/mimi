@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private p:Landroid/widget/ImageView;
+.field private mEditTextq:Landroid/widget/EditText;
 
-.field private q:Landroid/widget/EditText;
+.field private mImageViewp:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mEditTextq:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -48,7 +48,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->p:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->y:Landroid/util/DisplayMetrics;
 
@@ -65,7 +65,7 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mEditTextq:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -159,10 +159,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->p:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->p:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;
 
@@ -179,10 +179,10 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mEditTextq:Landroid/widget/EditText;
 
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->mEditTextq:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;
 

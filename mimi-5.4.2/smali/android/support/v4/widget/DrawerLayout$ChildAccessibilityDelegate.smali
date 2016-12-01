@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/support/v4/widget/DrawerLayout;
+.field final synthetic mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 1944
-    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$ChildAccessibilityDelegate;->b:Landroid/support/v4/widget/DrawerLayout;
+    iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$ChildAccessibilityDelegate;->mDrawerLayoutb:Landroid/support/v4/widget/DrawerLayout;
 
     invoke-direct {p0}, Landroid/support/v4/view/AccessibilityDelegateCompat;-><init>()V
 

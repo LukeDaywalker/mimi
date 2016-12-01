@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Ljava/io/PrintStream;
+.field private final mDataOutputStreamc:Ljava/io/DataOutputStream;
 
-.field private final b:Ljava/io/PrintStream;
+.field private final mPrintStreama:Ljava/io/PrintStream;
 
-.field private final c:Ljava/io/DataOutputStream;
+.field private final mPrintStreamb:Ljava/io/PrintStream;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0, p1}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     .line 45
     new-instance v0, Ljava/io/PrintStream;
@@ -36,7 +36,7 @@
 
     new-instance v2, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;
 
-    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v3, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     const/16 v4, 0x31
 
@@ -46,14 +46,14 @@
 
     invoke-direct {v0, v1}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->a:Ljava/io/PrintStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreama:Ljava/io/PrintStream;
 
     .line 48
     new-instance v0, Ljava/io/PrintStream;
 
     new-instance v1, Lcom/facebook/stetho/dumpapp/StreamFramer$ICk;
 
-    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v2, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     const/16 v3, 0x32
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->b:Ljava/io/PrintStream;
+    iput-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreamb:Ljava/io/PrintStream;
 
     .line 50
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     return-object v0
 .end method
@@ -82,12 +82,12 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/DataOutputStream;->write(I)V
 
     .line 84
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     invoke-virtual {v0, p2}, Ljava/io/DataOutputStream;->writeInt(I)V
 
@@ -112,7 +112,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->a:Ljava/io/PrintStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreama:Ljava/io/PrintStream;
 
     return-object v0
 .end method
@@ -125,12 +125,12 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->a:Ljava/io/PrintStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreama:Ljava/io/PrintStream;
 
     invoke-virtual {v0}, Ljava/io/PrintStream;->flush()V
 
     .line 62
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->b:Ljava/io/PrintStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreamb:Ljava/io/PrintStream;
 
     invoke-virtual {v0}, Ljava/io/PrintStream;->flush()V
 
@@ -160,7 +160,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->b:Ljava/io/PrintStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mPrintStreamb:Ljava/io/PrintStream;
 
     return-object v0
 .end method
@@ -173,7 +173,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->c:Ljava/io/DataOutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/dumpapp/StreamFramer;->mDataOutputStreamc:Ljava/io/DataOutputStream;
 
     invoke-virtual {v0}, Ljava/io/DataOutputStream;->close()V
     :try_end_0

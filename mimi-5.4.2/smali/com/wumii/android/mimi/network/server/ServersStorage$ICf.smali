@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/network/server/ServersStorage;
+.field final synthetic mServersStoragea:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/ServersStorage$ICf;->a:Lcom/wumii/android/mimi/network/server/ServersStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/ServersStorage$ICf;->mServersStoragea:Lcom/wumii/android/mimi/network/server/ServersStorage;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

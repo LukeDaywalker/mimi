@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static a:Z
+.field private static isZa:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sput-boolean v0, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     return-void
 .end method
@@ -40,15 +40,15 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -62,7 +62,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -72,7 +72,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -86,7 +86,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -95,15 +95,15 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -117,7 +117,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -127,7 +127,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -141,7 +141,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -226,11 +226,11 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -240,7 +240,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -249,18 +249,18 @@
     goto/16 :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
@@ -270,7 +270,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     iget-wide v2, v0, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
@@ -279,7 +279,7 @@
     goto/16 :goto_1
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -351,19 +351,19 @@
     throw v0
 
     :cond_1
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v2, :cond_2
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v2, :cond_2
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v2, :cond_2
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v2, :cond_2
 
@@ -376,11 +376,11 @@
     throw v0
 
     :cond_2
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v2, :cond_3
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v2, :cond_3
 
@@ -393,11 +393,11 @@
     throw v0
 
     :cond_3
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v2, :cond_4
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v2, :cond_4
 
@@ -410,11 +410,11 @@
     throw v0
 
     :cond_4
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-eqz v2, :cond_5
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v3, ""
 
@@ -425,16 +425,16 @@
     if-eqz v2, :cond_6
 
     :cond_5
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v2, :cond_8
 
     :cond_6
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v3, ""
 
@@ -445,7 +445,7 @@
     if-eqz v2, :cond_9
 
     :cond_7
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v2, :cond_9
 
@@ -466,13 +466,13 @@
     return v0
 
     :cond_9
-    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iget-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     if-nez v2, :cond_a
 
     sget-object v2, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->bus_recommend_way:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
-    iput-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iput-object v2, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     :cond_a
     invoke-static {p1}, Lcom/baidu/mapapi/utils/OpenClientUtil;->getBaiduMapVersion(Landroid/content/Context;)I
@@ -498,7 +498,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v2, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v2, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v2, :cond_c
 
@@ -522,7 +522,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v2, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v2, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v2, :cond_e
 
@@ -559,19 +559,19 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
@@ -584,11 +584,11 @@
     throw v0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -601,11 +601,11 @@
     throw v0
 
     :cond_3
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v1, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_4
 
@@ -618,11 +618,11 @@
     throw v0
 
     :cond_4
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -633,16 +633,16 @@
     if-eqz v1, :cond_6
 
     :cond_5
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_8
 
     :cond_6
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v1, :cond_7
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -653,7 +653,7 @@
     if-eqz v1, :cond_9
 
     :cond_7
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_9
 
@@ -674,13 +674,13 @@
     return v0
 
     :cond_9
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     if-nez v1, :cond_a
 
     sget-object v1, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->bus_recommend_way:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
-    iput-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iput-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     :cond_a
     invoke-static {p1}, Lcom/baidu/mapapi/utils/OpenClientUtil;->getBaiduMapVersion(Landroid/content/Context;)I
@@ -706,7 +706,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v1, :cond_c
 
@@ -730,7 +730,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v1, :cond_e
 
@@ -769,19 +769,19 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v1, :cond_2
 
@@ -794,11 +794,11 @@
     throw v0
 
     :cond_2
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_3
 
@@ -811,11 +811,11 @@
     throw v0
 
     :cond_3
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-nez v1, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_4
 
@@ -828,11 +828,11 @@
     throw v0
 
     :cond_4
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -843,16 +843,16 @@
     if-eqz v1, :cond_6
 
     :cond_5
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     if-eqz v1, :cond_8
 
     :cond_6
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     if-eqz v1, :cond_7
 
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->d:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mStringd:Ljava/lang/String;
 
     const-string/jumbo v2, ""
 
@@ -863,7 +863,7 @@
     if-eqz v1, :cond_9
 
     :cond_7
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->b:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mLatLngb:Lcom/baidu/mapapi/model/LatLng;
 
     if-nez v1, :cond_9
 
@@ -884,13 +884,13 @@
     return v0
 
     :cond_9
-    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iget-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     if-nez v1, :cond_a
 
     sget-object v1, Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;->bus_recommend_way:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
-    iput-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->f:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
+    iput-object v1, p0, Lcom/baidu/mapapi/utils/route/RouteParaOption;->mEBusStrategyTypef:Lcom/baidu/mapapi/utils/route/RouteParaOption$EBusStrategyType;
 
     :cond_a
     invoke-static {p1}, Lcom/baidu/mapapi/utils/OpenClientUtil;->getBaiduMapVersion(Landroid/content/Context;)I
@@ -916,7 +916,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v1, :cond_c
 
@@ -940,7 +940,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sget-boolean v1, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     if-eqz v1, :cond_e
 
@@ -961,7 +961,7 @@
 .method public static setSupportWebRoute(Z)V
     .locals 0
 
-    sput-boolean p0, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->a:Z
+    sput-boolean p0, Lcom/baidu/mapapi/utils/route/BaiduMapRoutePlan;->isZa:Z
 
     return-void
 .end method

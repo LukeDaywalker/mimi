@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -473,7 +473,7 @@
 
     .line 96
     :try_start_2
-    sget-object v2, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -630,7 +630,7 @@
     move-exception v0
 
     .line 106
-    sget-object v1, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/dao/SysNotificationDao;->mLoggera:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 

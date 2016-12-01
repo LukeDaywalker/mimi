@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+.field final synthetic mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 66
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,19 +32,19 @@
     .line 69
     new-instance v0, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/models/share/SecretShareController;->a:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/ShareSecretCardImageTask;-><init>(Landroid/app/Activity;)V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/models/share/SecretShareController;->a(Lcom/wumii/android/mimi/models/share/SecretShareController;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICan;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/models/share/SecretShareController;->b(Lcom/wumii/android/mimi/models/share/SecretShareController;)Landroid/graphics/Bitmap;
 

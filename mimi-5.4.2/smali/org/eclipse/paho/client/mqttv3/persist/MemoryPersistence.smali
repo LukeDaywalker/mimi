@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/Hashtable;
+.field private mHashtablea:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -44,7 +44,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     .line 64
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -112,7 +112,7 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->a:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/persist/MemoryPersistence;->mHashtablea:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 

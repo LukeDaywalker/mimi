@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private n:Landroid/widget/EditText;
+.field private mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
-.field private o:Landroid/widget/EditText;
+.field private mEditTextn:Landroid/widget/EditText;
 
-.field private p:Lcom/wumii/android/mimi/manager/CircleManager;
+.field private mEditTexto:Landroid/widget/EditText;
 
-.field private q:Landroid/view/MenuItem;
+.field private mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
-.field private r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+.field private mMenuItemq:Landroid/view/MenuItem;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->q:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     if-nez v0, :cond_0
 
@@ -50,7 +50,7 @@
     :cond_0
     new-instance v1, Landroid/text/SpannableString;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->q:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-interface {v0}, Landroid/view/MenuItem;->getTitle()Ljava/lang/CharSequence;
 
@@ -91,7 +91,7 @@
     invoke-virtual {v1, v2, v0, v3, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->q:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
@@ -143,19 +143,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 43
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mICar:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->addObserver(Ljava/util/Observer;)V
 
@@ -168,7 +168,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->n:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTextn:Landroid/widget/EditText;
 
     .line 47
     const v0, 0x7f0b0059
@@ -179,15 +179,15 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->o:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTexto:Landroid/widget/EditText;
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -215,7 +215,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->q:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mMenuItemq:Landroid/view/MenuItem;
 
     .line 57
     const/4 v0, 0x1
@@ -244,7 +244,7 @@
     if-ne v0, v1, :cond_1
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -255,7 +255,7 @@
     move-result-object v0
 
     .line 65
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->o:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -266,20 +266,20 @@
     move-result-object v1
 
     .line 66
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 67
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mCircleManagerp:Lcom/wumii/android/mimi/manager/CircleManager;
 
     invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -304,7 +304,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->n:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTextn:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -314,13 +314,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -330,7 +330,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

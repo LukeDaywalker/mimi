@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+.field final synthetic mCommentListAdapterb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;
+.field final synthetic mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
 
 # direct methods
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1212
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->b:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->mCommentListAdapterb:Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     .prologue
     .line 1216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/Sort;->ASC:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
@@ -79,7 +79,7 @@
 
     .line 1218
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->a:Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICb;->mSorta:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/Sort;->DESC:Lcom/wumii/android/mimi/models/entities/secret/Sort;
 

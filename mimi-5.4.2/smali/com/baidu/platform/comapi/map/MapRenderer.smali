@@ -6,7 +6,7 @@
 
 
 # static fields
-.field private static final d:Ljava/lang/String;
+.field private static final mStringd:Ljava/lang/String;
 
 
 # instance fields
@@ -16,11 +16,11 @@
 
 .field public c:I
 
-.field private e:J
+.field private mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
 
-.field private f:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+.field private final mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
-.field private final g:Lcom/baidu/platform/comapi/map/ICg;
+.field private mJe:J
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/map/MapRenderer;->d:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/platform/comapi/map/MapRenderer;->mStringd:Ljava/lang/String;
 
     return-void
 .end method
@@ -43,9 +43,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->f:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iput-object p2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->g:Lcom/baidu/platform/comapi/map/ICg;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 .method private a()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     const-wide/16 v2, 0x0
 
@@ -104,7 +104,7 @@
 .method public a(J)V
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iput-wide p1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 
     if-gt v0, v6, :cond_2
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     iget v2, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->a:I
 
@@ -150,23 +150,23 @@
     iput v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->c:I
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->f:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
 
     invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$ICa;->c()V
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeRender(J)I
 
     move-result v1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->g:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->mListe:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -185,7 +185,7 @@
 
     check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->g:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
     invoke-virtual {v3}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
 
@@ -224,7 +224,7 @@
     goto :goto_1
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->g:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
     if-ne v1, v6, :cond_4
 
@@ -233,7 +233,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->g:Lcom/baidu/platform/comapi/map/ICg;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICgg:Lcom/baidu/platform/comapi/map/ICg;
 
     invoke-virtual {v1}, Lcom/baidu/platform/comapi/map/ICg;->a()Lcom/baidu/platform/comapi/map/ICc;
 
@@ -272,7 +272,7 @@
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 4
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     const-wide/16 v2, 0x0
 
@@ -280,7 +280,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     invoke-static {v0, v1, p2, p3}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeResize(JII)V
 
@@ -291,7 +291,7 @@
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->e:J
+    iget-wide v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mJe:J
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeInit(J)V
 
@@ -305,7 +305,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->f:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/MapRenderer;->mICaf:Lcom/baidu/platform/comapi/map/MapRenderer$ICa;
 
     invoke-interface {v0}, Lcom/baidu/platform/comapi/map/MapRenderer$ICa;->c()V
 

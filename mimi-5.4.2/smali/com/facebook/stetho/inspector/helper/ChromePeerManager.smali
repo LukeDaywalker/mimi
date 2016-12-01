@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field private b:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+.field private mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->mMapa:Ljava/util/Map;
 
     .line 41
     return-void
@@ -118,7 +118,7 @@
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->a:Ljava/util/Map;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->mMapa:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -150,7 +150,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->b:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->mPeerRegistrationListenerb:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -189,7 +189,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/helper/ChromePeerManager;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
     :try_end_0

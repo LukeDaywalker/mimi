@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Landroid/database/sqlite/SQLiteDatabase;
+.field private mICcc:Lcom/tencent/open/a/Pro$ICc;
 
-.field private c:Lcom/tencent/open/a/Pro$ICc;
+.field private mId:I
 
-.field private d:I
+.field private mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 76
-    iput-object p1, p0, Lcom/tencent/open/a/Pro$ICb;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/tencent/open/a/Pro$ICb;->mContexta:Landroid/content/Context;
 
     .line 77
     new-instance v0, Lcom/tencent/open/a/Pro$ICc;
@@ -39,7 +39,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/tencent/open/a/Pro$ICc;-><init>(Lcom/tencent/open/a/Pro$ICb;Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     .line 80
     invoke-virtual {p0}, Lcom/tencent/open/a/Pro$ICb;->c()Ljava/util/ArrayList;
@@ -50,7 +50,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iput v0, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
 
     .line 81
     return-void
@@ -214,16 +214,16 @@
 
     .line 154
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICc;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 155
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v4, "olddata"
 
@@ -232,7 +232,7 @@
     invoke-virtual {v0, v4, v5, v3}, Landroid/database/sqlite/SQLiteDatabase;->insertOrThrow(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     .line 156
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_1
@@ -321,13 +321,13 @@
 
     .line 175
     :try_start_1
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v1}, Lcom/tencent/open/a/Pro$ICc;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -340,7 +340,7 @@
 
     .line 184
     :try_start_3
-    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_3
@@ -349,7 +349,7 @@
 
     .line 191
     :try_start_4
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -399,7 +399,7 @@
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 187
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_6
@@ -747,7 +747,7 @@
 
     move-result-object v2
 
-    iget-object v5, p0, Lcom/tencent/open/a/Pro$ICb;->a:Landroid/content/Context;
+    iget-object v5, p0, Lcom/tencent/open/a/Pro$ICb;->mContexta:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/tencent/open/a/Pro;->c(Landroid/content/Context;)Ljava/lang/String;
 
@@ -776,16 +776,16 @@
 
     .line 119
     :try_start_1
-    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v2}, Lcom/tencent/open/a/Pro$ICc;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 120
-    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v4, "newdata"
 
@@ -794,7 +794,7 @@
     invoke-virtual {v2, v4, v5, v3}, Landroid/database/sqlite/SQLiteDatabase;->insertOrThrow(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     .line 121
-    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -810,11 +810,11 @@
 
     .line 128
     :try_start_2
-    iget v2, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iget v2, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iput v2, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -883,13 +883,13 @@
 
     .line 205
     :try_start_1
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v1}, Lcom/tencent/open/a/Pro$ICc;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -902,7 +902,7 @@
 
     .line 214
     :try_start_3
-    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_3
@@ -913,10 +913,10 @@
     const/4 v0, 0x0
 
     :try_start_4
-    iput v0, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iput v0, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
 
     .line 222
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -966,7 +966,7 @@
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 217
-    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_6
@@ -1007,20 +1007,20 @@
 
     .line 232
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICc;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 238
     :try_start_2
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "select * from newdata"
 
@@ -1189,7 +1189,7 @@
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     .line 258
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -1260,20 +1260,20 @@
 
     .line 268
     :try_start_1
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->c:Lcom/tencent/open/a/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mICcc:Lcom/tencent/open/a/Pro$ICc;
 
     invoke-virtual {v0}, Lcom/tencent/open/a/Pro$ICc;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 274
     :try_start_2
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v1, "select * from olddata"
 
@@ -1442,7 +1442,7 @@
     invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     .line 294
-    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->b:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/tencent/open/a/Pro$ICb;->mSQLiteDatabaseb:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -1498,7 +1498,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iget v2, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1511,7 +1511,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 301
-    iget v0, p0, Lcom/tencent/open/a/Pro$ICb;->d:I
+    iget v0, p0, Lcom/tencent/open/a/Pro$ICb;->mId:I
 
     return v0
 .end method

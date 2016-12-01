@@ -3,36 +3,36 @@
 
 
 # static fields
-.field private static final d1:Ljava/lang/String; = "bloc"
+.field private static final mStringd1:Ljava/lang/String; = "bloc"
 
-.field private static final d2:Ljava/lang/String; = "ext"
+.field private static final mStringd2:Ljava/lang/String; = "ext"
 
-.field private static final d3:Ljava/lang/String; = "error"
+.field private static final mStringd3:Ljava/lang/String; = "error"
 
-.field private static final d5:Ljava/lang/String; = "in"
+.field private static final mStringd5:Ljava/lang/String; = "in"
 
-.field private static final dZ:Ljava/lang/String; = "fence"
+.field private static final mStringdZ:Ljava/lang/String; = "fence"
 
 
 # instance fields
-.field private d0:Lcom/baidu/location/ICat;
+.field final synthetic mICa3dY:Lcom/baidu/location/ICa3;
 
-.field private final d4:Ljava/lang/String;
+.field private mICatd0:Lcom/baidu/location/ICat;
 
-.field final synthetic dY:Lcom/baidu/location/ICa3;
+.field private final mStringd4:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICa3;Lcom/baidu/location/ICat;Ljava/lang/String;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iput-object p1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-direct {p0}, Lcom/baidu/location/ICt;-><init>()V
 
-    iput-object p2, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iput-object p2, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
-    iput-object p3, p0, Lcom/baidu/location/ICa3$ICa;->d4:Ljava/lang/String;
+    iput-object p3, p0, Lcom/baidu/location/ICa3$ICa;->mStringd4:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -46,7 +46,7 @@
 .method private am()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     const/4 v1, 0x0
 
@@ -60,11 +60,11 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICax;->if(Lcom/baidu/location/ICat;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v0}, Lcom/baidu/location/ICa3;->char(Lcom/baidu/location/ICa3;)Landroid/os/Messenger;
 
@@ -86,7 +86,7 @@
 
     const-string/jumbo v2, "geofence_id"
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -96,7 +96,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v1}, Lcom/baidu/location/ICa3;->char(Lcom/baidu/location/ICa3;)Landroid/os/Messenger;
 
@@ -111,19 +111,19 @@
 .method private ao()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/baidu/location/ICa3;->if(Lcom/baidu/location/ICa3;Z)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v0}, Lcom/baidu/location/ICa3;->goto(Lcom/baidu/location/ICa3;)Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -147,11 +147,11 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v0, v1}, Lcom/baidu/location/ICax;->do(Lcom/baidu/location/ICat;)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v0}, Lcom/baidu/location/ICa3;->char(Lcom/baidu/location/ICa3;)Landroid/os/Messenger;
 
@@ -173,7 +173,7 @@
 
     const-string/jumbo v2, "geofence_id"
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->getGeofenceId()Ljava/lang/String;
 
@@ -183,7 +183,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v1}, Lcom/baidu/location/ICa3;->char(Lcom/baidu/location/ICa3;)Landroid/os/Messenger;
 
@@ -222,7 +222,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->a()D
 
@@ -234,7 +234,7 @@
 
     aput-object v3, v2, v7
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->case()D
 
@@ -246,7 +246,7 @@
 
     aput-object v0, v2, v8
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICat;->do()F
 
@@ -260,7 +260,7 @@
 
     const/4 v0, 0x3
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->int()Ljava/lang/String;
 
@@ -302,7 +302,7 @@
 
     const/4 v0, 0x6
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v3}, Lcom/baidu/location/ICat;->char()I
 
@@ -355,7 +355,7 @@
 
     const-string/jumbo v2, "bloc"
 
-    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->d4:Ljava/lang/String;
+    iget-object v3, p0, Lcom/baidu/location/ICa3$ICa;->mStringd4:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -428,7 +428,7 @@
 
     const/4 v4, 0x1
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v1, v0}, Lcom/baidu/location/ICa3;->do(Lcom/baidu/location/ICa3;Z)Z
 
@@ -492,13 +492,13 @@
     :cond_0
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     const/4 v2, 0x0
 
     invoke-static {v1, v2}, Lcom/baidu/location/ICa3;->do(Lcom/baidu/location/ICa3;Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     const/4 v2, 0x0
 
@@ -514,7 +514,7 @@
 
     invoke-virtual {v1}, Lcom/baidu/location/ICax;->cn()V
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->dY:Lcom/baidu/location/ICa3;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICa3dY:Lcom/baidu/location/ICa3;
 
     invoke-static {v1}, Lcom/baidu/location/ICa3;->try(Lcom/baidu/location/ICa3;)Z
 
@@ -545,7 +545,7 @@
     :cond_3
     if-ne v0, v4, :cond_4
 
-    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v1, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICat;->try()I
 
@@ -560,7 +560,7 @@
     :cond_4
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->d0:Lcom/baidu/location/ICat;
+    iget-object v0, p0, Lcom/baidu/location/ICa3$ICa;->mICatd0:Lcom/baidu/location/ICat;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICat;->try()I
 

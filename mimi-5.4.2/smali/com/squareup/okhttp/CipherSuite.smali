@@ -105,8 +105,6 @@
 
 .field public static final enum aR:Lcom/squareup/okhttp/CipherSuite;
 
-.field private static final synthetic aT:[Lcom/squareup/okhttp/CipherSuite;
-
 .field public static final enum aa:Lcom/squareup/okhttp/CipherSuite;
 
 .field public static final enum ab:Lcom/squareup/okhttp/CipherSuite;
@@ -183,6 +181,8 @@
 
 .field public static final enum m:Lcom/squareup/okhttp/CipherSuite;
 
+.field private static final synthetic mArrayCipherSuiteaT:[Lcom/squareup/okhttp/CipherSuite;
+
 .field public static final enum n:Lcom/squareup/okhttp/CipherSuite;
 
 .field public static final enum o:Lcom/squareup/okhttp/CipherSuite;
@@ -211,7 +211,7 @@
 
 
 # instance fields
-.field final aS:Ljava/lang/String;
+.field final mStringaS:Ljava/lang/String;
 
 
 # direct methods
@@ -2816,7 +2816,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->aT:[Lcom/squareup/okhttp/CipherSuite;
+    sput-object v0, Lcom/squareup/okhttp/CipherSuite;->mArrayCipherSuiteaT:[Lcom/squareup/okhttp/CipherSuite;
 
     return-void
 .end method
@@ -2836,7 +2836,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 367
-    iput-object p3, p0, Lcom/squareup/okhttp/CipherSuite;->aS:Ljava/lang/String;
+    iput-object p3, p0, Lcom/squareup/okhttp/CipherSuite;->mStringaS:Ljava/lang/String;
 
     .line 368
     return-void
@@ -2917,7 +2917,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lcom/squareup/okhttp/CipherSuite;->aT:[Lcom/squareup/okhttp/CipherSuite;
+    sget-object v0, Lcom/squareup/okhttp/CipherSuite;->mArrayCipherSuiteaT:[Lcom/squareup/okhttp/CipherSuite;
 
     invoke-virtual {v0}, [Lcom/squareup/okhttp/CipherSuite;->clone()Ljava/lang/Object;
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZd:Z
 
-.field private d:Z
+.field private mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
-.field private j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -30,12 +30,12 @@
 
     .prologue
     .line 519
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
     if-eqz v0, :cond_0
 
     .line 520
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;->a(IILjava/lang/String;)V
 
@@ -49,12 +49,12 @@
 
     .prologue
     .line 512
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
     if-eqz v0, :cond_0
 
     .line 513
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;->a()V
 
@@ -68,13 +68,13 @@
 
     .prologue
     .line 525
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mStringa:Ljava/lang/String;
 
     .line 526
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->d:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->isZd:Z
 
     .line 527
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mICaoj:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICao;
 
     .line 528
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->j()V
@@ -107,14 +107,14 @@
     .line 504
     const-string/jumbo v1, "chatId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->mStringa:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 505
     const-string/jumbo v1, "approved"
 
-    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->d:Z
+    iget-boolean v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->isZd:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

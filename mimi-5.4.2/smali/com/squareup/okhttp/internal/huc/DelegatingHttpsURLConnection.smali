@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:Ljava/net/HttpURLConnection;
+.field private final mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0, v0}, Ljavax/net/ssl/HttpsURLConnection;-><init>(Ljava/net/URL;)V
 
     .line 45
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     .line 46
     return-void
@@ -36,7 +36,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -54,7 +54,7 @@
     iput-boolean v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->connected:Z
 
     .line 89
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
 
@@ -67,7 +67,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
@@ -80,7 +80,7 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getAllowUserInteraction()Z
 
@@ -119,7 +119,7 @@
 
     .prologue
     .line 270
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getConnectTimeout()I
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 133
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getContent()Ljava/lang/Object;
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->getContent([Ljava/lang/Class;)Ljava/lang/Object;
 
@@ -161,7 +161,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getContentEncoding()Ljava/lang/String;
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getContentLength()I
 
@@ -189,7 +189,7 @@
 
     .prologue
     .line 150
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getContentType()Ljava/lang/String;
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getDate()J
 
@@ -217,7 +217,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getDefaultUseCaches()Z
 
@@ -231,7 +231,7 @@
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getDoInput()Z
 
@@ -245,7 +245,7 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getDoOutput()Z
 
@@ -259,7 +259,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
@@ -273,7 +273,7 @@
 
     .prologue
     .line 170
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getExpiration()J
 
@@ -287,7 +287,7 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->getHeaderField(I)Ljava/lang/String;
 
@@ -301,7 +301,7 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
@@ -315,7 +315,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/net/HttpURLConnection;->getHeaderFieldDate(Ljava/lang/String;J)J
 
@@ -329,7 +329,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/HttpURLConnection;->getHeaderFieldInt(Ljava/lang/String;I)I
 
@@ -343,7 +343,7 @@
 
     .prologue
     .line 202
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->getHeaderFieldKey(I)Ljava/lang/String;
 
@@ -369,7 +369,7 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
 
@@ -383,7 +383,7 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getIfModifiedSince()J
 
@@ -397,7 +397,7 @@
 
     .prologue
     .line 210
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -411,7 +411,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getInstanceFollowRedirects()Z
 
@@ -425,7 +425,7 @@
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getLastModified()J
 
@@ -511,7 +511,7 @@
 
     .prologue
     .line 218
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
@@ -550,7 +550,7 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getPermission()Ljava/security/Permission;
 
@@ -564,7 +564,7 @@
 
     .prologue
     .line 278
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getReadTimeout()I
 
@@ -578,7 +578,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getRequestMethod()Ljava/lang/String;
 
@@ -604,7 +604,7 @@
 
     .prologue
     .line 182
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getRequestProperties()Ljava/util/Map;
 
@@ -618,7 +618,7 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->getRequestProperty(Ljava/lang/String;)Ljava/lang/String;
 
@@ -632,7 +632,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -646,7 +646,7 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
 
@@ -707,7 +707,7 @@
 
     .prologue
     .line 230
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getURL()Ljava/net/URL;
 
@@ -721,7 +721,7 @@
 
     .prologue
     .line 234
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getUseCaches()Z
 
@@ -735,7 +735,7 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setAllowUserInteraction(Z)V
 
@@ -748,7 +748,7 @@
 
     .prologue
     .line 290
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setChunkedStreamingMode(I)V
 
@@ -761,7 +761,7 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
@@ -774,7 +774,7 @@
 
     .prologue
     .line 242
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setDefaultUseCaches(Z)V
 
@@ -787,7 +787,7 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
@@ -800,7 +800,7 @@
 
     .prologue
     .line 250
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
@@ -813,7 +813,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
@@ -826,7 +826,7 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/HttpURLConnection;->setIfModifiedSince(J)V
 
@@ -839,7 +839,7 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
@@ -852,7 +852,7 @@
 
     .prologue
     .line 274
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
@@ -865,7 +865,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
@@ -878,7 +878,7 @@
 
     .prologue
     .line 258
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -891,7 +891,7 @@
 
     .prologue
     .line 262
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, p1}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
 
@@ -904,7 +904,7 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->toString()Ljava/lang/String;
 
@@ -918,7 +918,7 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->a:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection;->mHttpURLConnectiona:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->usingProxy()Z
 

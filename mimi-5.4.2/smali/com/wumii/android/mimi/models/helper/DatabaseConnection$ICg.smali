@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/ExecutorService;
+.field private mContextb:Landroid/content/Context;
 
-.field private b:Landroid/content/Context;
+.field private final mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
 
 # direct methods
@@ -50,10 +50,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     .line 89
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->mContextb:Landroid/content/Context;
 
     .line 90
     return-void
@@ -64,7 +64,7 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->a:Ljava/util/concurrent/ExecutorService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->mExecutorServicea:Ljava/util/concurrent/ExecutorService;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
 
     new-instance v0, Ljava/io/InputStreamReader;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->b:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -258,7 +258,7 @@
     const/16 v1, 0x16
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/DatabaseConnection$ICg;->mContextb:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/DatabaseUtils;->a(Landroid/content/Context;)Ljava/lang/String;
 

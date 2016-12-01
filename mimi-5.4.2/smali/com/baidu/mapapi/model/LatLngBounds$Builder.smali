@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field private a:D
+.field private isZe:Z
 
-.field private b:D
+.field private mDa:D
 
-.field private c:D
+.field private mDb:D
 
-.field private d:D
+.field private mDc:D
 
-.field private e:Z
+.field private mDd:D
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->e:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->isZe:Z
 
     return-void
 .end method
@@ -34,17 +34,17 @@
 
     new-instance v0, Lcom/baidu/mapapi/model/LatLng;
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->b:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDb:D
 
-    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->d:D
+    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDd:D
 
     invoke-direct {v0, v2, v3, v4, v5}, Lcom/baidu/mapapi/model/LatLng;-><init>(DD)V
 
     new-instance v1, Lcom/baidu/mapapi/model/LatLng;
 
-    iget-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->a:D
+    iget-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDa:D
 
-    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->c:D
+    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDc:D
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/baidu/mapapi/model/LatLng;-><init>(DD)V
 
@@ -65,65 +65,65 @@
     return-object p0
 
     :cond_1
-    iget-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->e:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->isZe:Z
 
     if-eqz v0, :cond_2
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->e:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->isZe:Z
 
     iget-wide v0, p1, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->a:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDa:D
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->b:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDb:D
 
     iget-wide v0, p1, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->c:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDc:D
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->d:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDd:D
 
     :cond_2
     iget-wide v0, p1, Lcom/baidu/mapapi/model/LatLng;->latitude:D
 
     iget-wide v2, p1, Lcom/baidu/mapapi/model/LatLng;->longitude:D
 
-    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->a:D
+    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDa:D
 
     cmpg-double v4, v0, v4
 
     if-gez v4, :cond_3
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->a:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDa:D
 
     :cond_3
-    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->b:D
+    iget-wide v4, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDb:D
 
     cmpl-double v4, v0, v4
 
     if-lez v4, :cond_4
 
-    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->b:D
+    iput-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDb:D
 
     :cond_4
-    iget-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->c:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDc:D
 
     cmpg-double v0, v2, v0
 
     if-gez v0, :cond_5
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->c:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDc:D
 
     :cond_5
-    iget-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->d:D
+    iget-wide v0, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDd:D
 
     cmpl-double v0, v2, v0
 
     if-lez v0, :cond_0
 
-    iput-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->d:D
+    iput-wide v2, p0, Lcom/baidu/mapapi/model/LatLngBounds$Builder;->mDd:D
 
     goto :goto_0
 .end method

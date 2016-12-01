@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private final b:[B
+.field private final mArrayBb:[B
 
-.field private volatile c:I
+.field private volatile mIc:I
 
 
 # direct methods
@@ -42,10 +42,10 @@
     .line 279
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/crashlytics/android/core/ByteString;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/ByteString;->mIc:I
 
     .line 53
-    iput-object p1, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iput-object p1, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     .line 54
     return-void
@@ -112,7 +112,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     array-length v0, v0
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 195
-    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     invoke-static {v0, p2, p1, p3, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -139,7 +139,7 @@
     .line 310
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v1, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     invoke-direct {v0, v1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
@@ -178,12 +178,12 @@
     check-cast p1, Lcom/crashlytics/android/core/ByteString;
 
     .line 263
-    iget-object v2, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v2, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     array-length v3, v2
 
     .line 264
-    iget-object v2, p1, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v2, p1, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     array-length v2, v2
 
@@ -196,10 +196,10 @@
 
     .line 268
     :cond_3
-    iget-object v4, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v4, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     .line 269
-    iget-object v5, p1, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v5, p1, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     move v2, v1
 
@@ -231,16 +231,16 @@
 
     .prologue
     .line 283
-    iget v0, p0, Lcom/crashlytics/android/core/ByteString;->c:I
+    iget v0, p0, Lcom/crashlytics/android/core/ByteString;->mIc:I
 
     .line 285
     if-nez v0, :cond_2
 
     .line 286
-    iget-object v4, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v4, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     .line 287
-    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->b:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/ByteString;->mArrayBb:[B
 
     array-length v2, v0
 
@@ -279,7 +279,7 @@
 
     .line 297
     :cond_1
-    iput v0, p0, Lcom/crashlytics/android/core/ByteString;->c:I
+    iput v0, p0, Lcom/crashlytics/android/core/ByteString;->mIc:I
 
     .line 300
     :cond_2

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+.field final synthetic mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,21 +30,21 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/task/ChangePnoTask;->a(Lcom/wumii/android/mimi/task/ChangePnoTask;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/task/ChangePnoTask;->b(Lcom/wumii/android/mimi/task/ChangePnoTask;)Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->a:Lcom/wumii/android/mimi/task/ChangePnoTask;
+    iget-object v3, p0, Lcom/wumii/android/mimi/task/ChangePnoTask$ICp;->mChangePnoTaska:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/task/ChangePnoTask;->c(Lcom/wumii/android/mimi/task/ChangePnoTask;)Ljava/lang/String;
 

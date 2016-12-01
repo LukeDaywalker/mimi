@@ -35,7 +35,9 @@
 
 .field public static final enum j:Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
 
-.field private static final k:Ljava/util/Map;
+.field private static final synthetic mArrayICol:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
+
+.field private static final mMapk:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -46,8 +48,6 @@
         }
     .end annotation
 .end field
-
-.field private static final synthetic l:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
 
 
 # direct methods
@@ -220,17 +220,17 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->l:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
+    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mArrayICol:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
 
     .line 170
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0, v3}, Ljava/util/HashMap;-><init>(I)V
 
-    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->k:Ljava/util/Map;
+    sput-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mMapk:Ljava/util/Map;
 
     .line 173
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->k:Ljava/util/Map;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mMapk:Ljava/util/Map;
 
     const-string/jumbo v1, "armeabi-v7a"
 
@@ -239,7 +239,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->k:Ljava/util/Map;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mMapk:Ljava/util/Map;
 
     const-string/jumbo v1, "armeabi"
 
@@ -248,7 +248,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 175
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->k:Ljava/util/Map;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mMapk:Ljava/util/Map;
 
     const-string/jumbo v1, "x86"
 
@@ -317,7 +317,7 @@
     move-result-object v0
 
     .line 192
-    sget-object v1, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->k:Ljava/util/Map;
+    sget-object v1, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mMapk:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -355,7 +355,7 @@
 
     .prologue
     .line 158
-    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->l:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
+    sget-object v0, Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->mArrayICol:[Lio/fabric/sdk/android/services/common/CommonUtils$ICo;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/common/CommonUtils$ICo;->clone()Ljava/lang/Object;
 

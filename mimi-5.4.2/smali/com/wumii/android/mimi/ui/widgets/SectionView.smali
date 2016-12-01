@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mCharSequenceb:Ljava/lang/CharSequence;
 
-.field private b:Ljava/lang/CharSequence;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->b:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->mCharSequenceb:Ljava/lang/CharSequence;
 
     .line 33
     const/4 v1, 0x2
@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 38
     invoke-virtual {p0, v5}, Lcom/wumii/android/mimi/ui/widgets/SectionView;->setOrientation(I)V
@@ -105,18 +105,18 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->b:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->mCharSequenceb:Ljava/lang/CharSequence;
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f030105
 
@@ -129,7 +129,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 46
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->b:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionView;->mCharSequenceb:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

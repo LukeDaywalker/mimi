@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+.field private mJj:J
 
-.field private b:Ljava/lang/String;
+.field private mPreferenceStored:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-.field private c:Ljava/lang/String;
+.field mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
-.field private d:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+.field private mStringb:Ljava/lang/String;
 
-.field private j:J
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -157,9 +157,9 @@
     .line 211
     new-instance v0, Lcom/crashlytics/android/answers/SessionEventMetadata;
 
-    iget-object v10, p0, Lcom/crashlytics/android/answers/Answers;->b:Ljava/lang/String;
+    iget-object v10, p0, Lcom/crashlytics/android/answers/Answers;->mStringb:Ljava/lang/String;
 
-    iget-object v11, p0, Lcom/crashlytics/android/answers/Answers;->c:Ljava/lang/String;
+    iget-object v11, p0, Lcom/crashlytics/android/answers/Answers;->mStringc:Ljava/lang/String;
 
     invoke-direct/range {v0 .. v11}, Lcom/crashlytics/android/answers/SessionEventMetadata;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -196,11 +196,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     .line 230
     :goto_0
-    iget-wide v0, p0, Lcom/crashlytics/android/answers/Answers;->j:J
+    iget-wide v0, p0, Lcom/crashlytics/android/answers/Answers;->mJj:J
 
     invoke-virtual {p0, v0, v1}, Lcom/crashlytics/android/answers/Answers;->a(J)Z
 
@@ -220,14 +220,14 @@
     invoke-interface {v0, v1, v2}, Lio/fabric/sdk/android/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 232
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->b()V
 
     .line 233
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->d:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mPreferenceStored:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
-    iget-object v1, p0, Lcom/crashlytics/android/answers/Answers;->d:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v1, p0, Lcom/crashlytics/android/answers/Answers;->mPreferenceStored:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v1}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->b()Landroid/content/SharedPreferences$Editor;
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iput-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -313,12 +313,12 @@
 
     .prologue
     .line 109
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     if-eqz v0, :cond_0
 
     .line 110
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$ICq;->a()Ljava/lang/String;
 
@@ -336,12 +336,12 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     invoke-virtual {p1}, Lio/fabric/sdk/android/services/common/Crash$ICr;->a()Ljava/lang/String;
 
@@ -399,7 +399,7 @@
 
     invoke-direct {v1, p0}, Lio/fabric/sdk/android/services/persistence/PreferenceStoreImpl;-><init>(Lio/fabric/sdk/android/Kit;)V
 
-    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->d:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->mPreferenceStored:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     .line 120
     invoke-virtual {p0}, Lcom/crashlytics/android/answers/Answers;->B()Landroid/content/Context;
@@ -430,7 +430,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->b:Ljava/lang/String;
+    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->mStringb:Ljava/lang/String;
 
     .line 127
     iget-object v1, v3, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
@@ -440,7 +440,7 @@
     const-string/jumbo v1, "0.0"
 
     :goto_0
-    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->c:Ljava/lang/String;
+    iput-object v1, p0, Lcom/crashlytics/android/answers/Answers;->mStringc:Ljava/lang/String;
 
     .line 130
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -452,7 +452,7 @@
     .line 131
     iget-wide v2, v3, Landroid/content/pm/PackageInfo;->firstInstallTime:J
 
-    iput-wide v2, p0, Lcom/crashlytics/android/answers/Answers;->j:J
+    iput-wide v2, p0, Lcom/crashlytics/android/answers/Answers;->mJj:J
 
     .line 137
     :goto_1
@@ -495,7 +495,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/crashlytics/android/answers/Answers;->j:J
+    iput-wide v2, p0, Lcom/crashlytics/android/answers/Answers;->mJj:J
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -605,7 +605,7 @@
     if-eqz v2, :cond_1
 
     .line 156
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     iget-object v1, v1, Lio/fabric/sdk/android/services/settings/SettingsData;->e:Lio/fabric/sdk/android/services/settings/AnalyticsSettingsData;
 
@@ -631,7 +631,7 @@
     invoke-static {v0, v1}, Lio/fabric/sdk/android/services/common/CommonUtils;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 162
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->a:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mSessionAnalyticsManagera:Lcom/crashlytics/android/answers/SessionAnalyticsManager;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/answers/SessionAnalyticsManager;->a()V
 
@@ -704,7 +704,7 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->d:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/Answers;->mPreferenceStored:Lio/fabric/sdk/android/services/persistence/PreferenceStore;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/persistence/PreferenceStore;->a()Landroid/content/SharedPreferences;
 

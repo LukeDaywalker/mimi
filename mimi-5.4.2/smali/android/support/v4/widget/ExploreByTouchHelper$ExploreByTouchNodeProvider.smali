@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/ExploreByTouchHelper;
+.field final synthetic mExploreByTouchHelpera:Landroid/support/v4/widget/ExploreByTouchHelper;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 714
-    iput-object p1, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->a:Landroid/support/v4/widget/ExploreByTouchHelper;
+    iput-object p1, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->mExploreByTouchHelpera:Landroid/support/v4/widget/ExploreByTouchHelper;
 
     invoke-direct {p0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;-><init>()V
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 717
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->a:Landroid/support/v4/widget/ExploreByTouchHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->mExploreByTouchHelpera:Landroid/support/v4/widget/ExploreByTouchHelper;
 
     invoke-static {v0, p1}, Landroid/support/v4/widget/ExploreByTouchHelper;->a(Landroid/support/v4/widget/ExploreByTouchHelper;I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
 
@@ -51,7 +51,7 @@
 
     .prologue
     .line 722
-    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->a:Landroid/support/v4/widget/ExploreByTouchHelper;
+    iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->mExploreByTouchHelpera:Landroid/support/v4/widget/ExploreByTouchHelper;
 
     invoke-static {v0, p1, p2, p3}, Landroid/support/v4/widget/ExploreByTouchHelper;->a(Landroid/support/v4/widget/ExploreByTouchHelper;IILandroid/os/Bundle;)Z
 

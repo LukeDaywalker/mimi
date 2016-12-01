@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
-.field private b:Landroid/support/v4/app/FragmentManager;
+.field private mFragmentManagerb:Landroid/support/v4/app/FragmentManager;
 
-.field private c:I
+.field private mIc:I
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0, p2}, Landroid/support/v4/app/FragmentPagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;)V
 
     .line 19
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mContexta:Landroid/content/Context;
 
     .line 20
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->b:Landroid/support/v4/app/FragmentManager;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mFragmentManagerb:Landroid/support/v4/app/FragmentManager;
 
     .line 21
-    iput p3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->c:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mIc:I
 
     .line 22
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->b:Landroid/support/v4/app/FragmentManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mFragmentManagerb:Landroid/support/v4/app/FragmentManager;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->c:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mIc:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -79,7 +79,7 @@
     if-nez v0, :cond_0
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;->mContexta:Landroid/content/Context;
 
     invoke-static {}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;->values()[Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;
 

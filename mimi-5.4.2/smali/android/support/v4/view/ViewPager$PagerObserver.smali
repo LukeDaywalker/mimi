@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/ViewPager;
+.field final synthetic mViewPagera:Landroid/support/v4/view/ViewPager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 2902
-    iput-object p1, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->a:Landroid/support/v4/view/ViewPager;
+    iput-object p1, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 2905
-    iget-object v0, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->b()V
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 2909
-    iget-object v0, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->a:Landroid/support/v4/view/ViewPager;
+    iget-object v0, p0, Landroid/support/v4/view/ViewPager$PagerObserver;->mViewPagera:Landroid/support/v4/view/ViewPager;
 
     invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->b()V
 

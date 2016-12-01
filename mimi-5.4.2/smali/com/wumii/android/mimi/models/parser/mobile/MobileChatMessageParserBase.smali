@@ -131,7 +131,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v1
 
@@ -142,7 +142,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->c(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/BooleanUtils;->c(Ljava/lang/Boolean;)Z
 
     move-result v1
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+.field final synthetic mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
@@ -39,7 +39,7 @@
     if-eqz v0, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->a:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter$ICe;->mMimiMoreMenuAdaptera:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 

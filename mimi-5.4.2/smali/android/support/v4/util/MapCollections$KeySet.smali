@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/util/MapCollections;
+.field final synthetic mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 265
-    iput-object p1, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iput-object p1, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 279
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->c()V
 
@@ -89,7 +89,7 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/MapCollections;->a(Ljava/lang/Object;)I
 
@@ -120,7 +120,7 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->b()Ljava/util/Map;
 
@@ -153,7 +153,7 @@
 
     .line 344
     .line 345
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->a()I
 
@@ -169,7 +169,7 @@
     if-ltz v2, :cond_1
 
     .line 346
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0, v2, v1}, Landroid/support/v4/util/MapCollections;->a(II)Ljava/lang/Object;
 
@@ -208,7 +208,7 @@
 
     .prologue
     .line 294
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->a()I
 
@@ -241,7 +241,7 @@
     .line 299
     new-instance v0, Landroid/support/v4/util/MapCollections$ArrayIterator;
 
-    iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     const/4 v2, 0x0
 
@@ -255,7 +255,7 @@
 
     .prologue
     .line 304
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/util/MapCollections;->a(Ljava/lang/Object;)I
 
@@ -265,7 +265,7 @@
     if-ltz v0, :cond_0
 
     .line 306
-    iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v1, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v1, v0}, Landroid/support/v4/util/MapCollections;->a(I)V
 
@@ -294,7 +294,7 @@
 
     .prologue
     .line 314
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->b()Ljava/util/Map;
 
@@ -319,7 +319,7 @@
 
     .prologue
     .line 319
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->b()Ljava/util/Map;
 
@@ -337,7 +337,7 @@
 
     .prologue
     .line 324
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     invoke-virtual {v0}, Landroid/support/v4/util/MapCollections;->a()I
 
@@ -351,7 +351,7 @@
 
     .prologue
     .line 329
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     const/4 v1, 0x0
 
@@ -374,7 +374,7 @@
 
     .prologue
     .line 334
-    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->a:Landroid/support/v4/util/MapCollections;
+    iget-object v0, p0, Landroid/support/v4/util/MapCollections$KeySet;->mMapCollectionsa:Landroid/support/v4/util/MapCollections;
 
     const/4 v1, 0x0
 

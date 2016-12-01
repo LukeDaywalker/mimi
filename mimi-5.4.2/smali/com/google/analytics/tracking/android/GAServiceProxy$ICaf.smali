@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+.field final synthetic mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 402
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 405
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->b(Lcom/google/analytics/tracking/android/GAServiceProxy;)Lcom/google/analytics/tracking/android/GAServiceProxy$ICad;
 
@@ -48,7 +48,7 @@
     if-ne v0, v1, :cond_0
 
     .line 406
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaf;->mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
     invoke-static {v0}, Lcom/google/analytics/tracking/android/GAServiceProxy;->c(Lcom/google/analytics/tracking/android/GAServiceProxy;)V
 

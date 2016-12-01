@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+.field private static mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 22
     const/4 v0, 0x0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
     if-nez v0, :cond_0
 
@@ -62,14 +62,14 @@
 
     check-cast v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 42
     :cond_0
     :goto_0
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
     invoke-virtual {v0, p0}, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->b(I)Ljava/lang/String;
 
@@ -110,7 +110,7 @@
 
     check-cast v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->mMessageCataloga:Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 

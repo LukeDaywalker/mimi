@@ -3,17 +3,17 @@
 
 
 # static fields
-.field static if:Lcom/baidu/location/ICe;
+.field static mICeif:Lcom/baidu/location/ICe;
 
 
 # instance fields
-.field a:I
-
-.field do:I
-
 .field for:I
 
 .field int:I
+
+.field mIa:I
+
+.field mIdo:I
 
 .field new:Ljava/lang/String;
 
@@ -34,11 +34,11 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/ICe;->do:I
+    iput v0, p0, Lcom/baidu/location/ICe;->mIdo:I
 
     const/16 v0, 0x14
 
-    iput v0, p0, Lcom/baidu/location/ICe;->a:I
+    iput v0, p0, Lcom/baidu/location/ICe;->mIa:I
 
     const/16 v0, 0x28
 
@@ -199,7 +199,7 @@
 .method public static if()Lcom/baidu/location/ICe;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICe;->if:Lcom/baidu/location/ICe;
+    sget-object v0, Lcom/baidu/location/ICe;->mICeif:Lcom/baidu/location/ICe;
 
     if-nez v0, :cond_0
 
@@ -207,10 +207,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICe;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICe;->if:Lcom/baidu/location/ICe;
+    sput-object v0, Lcom/baidu/location/ICe;->mICeif:Lcom/baidu/location/ICe;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICe;->if:Lcom/baidu/location/ICe;
+    sget-object v0, Lcom/baidu/location/ICe;->mICeif:Lcom/baidu/location/ICe;
 
     return-object v0
 .end method
@@ -220,7 +220,7 @@
 .method public a()J
     .locals 2
 
-    iget v0, p0, Lcom/baidu/location/ICe;->a:I
+    iget v0, p0, Lcom/baidu/location/ICe;->mIa:I
 
     invoke-direct {p0, v0}, Lcom/baidu/location/ICe;->a(I)J
 
@@ -242,7 +242,7 @@
 .method public do()J
     .locals 2
 
-    iget v0, p0, Lcom/baidu/location/ICe;->do:I
+    iget v0, p0, Lcom/baidu/location/ICe;->mIdo:I
 
     invoke-direct {p0, v0}, Lcom/baidu/location/ICe;->a(I)J
 
@@ -254,7 +254,7 @@
 .method public do(J)V
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICe;->do:I
+    iget v0, p0, Lcom/baidu/location/ICe;->mIdo:I
 
     invoke-direct {p0, v0, p1, p2}, Lcom/baidu/location/ICe;->a(IJ)V
 
@@ -276,7 +276,7 @@
 .method public if(J)V
     .locals 1
 
-    iget v0, p0, Lcom/baidu/location/ICe;->a:I
+    iget v0, p0, Lcom/baidu/location/ICe;->mIa:I
 
     invoke-direct {p0, v0, p1, p2}, Lcom/baidu/location/ICe;->a(IJ)V
 

@@ -3,17 +3,17 @@
 
 
 # static fields
-.field private static a:Ljava/lang/String;
+.field private static mIClf:Lcom/tencent/stat/a/ICl;
 
-.field private static b:Ljava/lang/String;
+.field private static mRandome:Ljava/util/Random;
 
-.field private static c:Ljava/lang/String;
+.field private static mStringa:Ljava/lang/String;
 
-.field private static d:Ljava/lang/String;
+.field private static mStringb:Ljava/lang/String;
 
-.field private static e:Ljava/util/Random;
+.field private static mStringc:Ljava/lang/String;
 
-.field private static f:Lcom/tencent/stat/a/ICl;
+.field private static mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -22,17 +22,17 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringb:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->c:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringc:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->d:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringd:Ljava/lang/String;
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->e:Ljava/util/Random;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mRandome:Ljava/util/Random;
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     return-void
 .end method
@@ -261,7 +261,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -398,7 +398,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -550,7 +550,7 @@
 .method public static b()Lcom/tencent/stat/a/ICl;
     .locals 2
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     if-nez v0, :cond_0
 
@@ -560,16 +560,16 @@
 
     invoke-direct {v0, v1}, Lcom/tencent/stat/a/ICl;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/tencent/stat/a/ICl;->a(Z)V
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     return-object v0
 .end method
@@ -577,11 +577,11 @@
 .method public static b(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -593,7 +593,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -603,13 +603,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -636,10 +636,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     :cond_2
-    sget-object v0, Lcom/tencent/stat/a/ICj;->a:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringa:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -683,13 +683,13 @@
 .method public static c(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->c:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringc:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     const-string/jumbo v0, ""
 
-    sget-object v1, Lcom/tencent/stat/a/ICj;->c:Ljava/lang/String;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mStringc:Ljava/lang/String;
 
     if-ne v0, v1, :cond_1
 
@@ -698,10 +698,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->c:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringc:Ljava/lang/String;
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->c:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -756,7 +756,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -841,7 +841,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->f(Ljava/lang/Object;)V
 
@@ -851,7 +851,7 @@
 .method private static d()Ljava/util/Random;
     .locals 1
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->e:Ljava/util/Random;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mRandome:Ljava/util/Random;
 
     if-nez v0, :cond_0
 
@@ -859,10 +859,10 @@
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->e:Ljava/util/Random;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mRandome:Ljava/util/Random;
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICj;->e:Ljava/util/Random;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mRandome:Ljava/util/Random;
 
     return-object v0
 .end method
@@ -941,7 +941,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "can not get the permission of android.permission.ACCESS_WIFI_STATE"
 
@@ -993,7 +993,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v1, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v1, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1002,7 +1002,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Could not get permission of android.permission.ACCESS_WIFI_STATE"
 
@@ -1069,7 +1069,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "can not get the permisson of android.permission.INTERNET"
 
@@ -1119,7 +1119,7 @@
     return v0
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "Network error"
 
@@ -1130,7 +1130,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "can not get the permisson of android.permission.INTERNET"
 
@@ -1144,11 +1144,11 @@
 .method public static i(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->b:Ljava/lang/String;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mStringb:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -1181,7 +1181,7 @@
 
     if-eqz v0, :cond_2
 
-    sput-object v0, Lcom/tencent/stat/a/ICj;->b:Ljava/lang/String;
+    sput-object v0, Lcom/tencent/stat/a/ICj;->mStringb:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1190,7 +1190,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Could not read APPKEY meta-data from AndroidManifest.xml"
 
@@ -1204,7 +1204,7 @@
 
     :cond_2
     :try_start_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Could not read APPKEY meta-data from AndroidManifest.xml"
 
@@ -1253,7 +1253,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Could not read InstallChannel meta-data from AndroidManifest.xml"
 
@@ -1270,7 +1270,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "Could not read InstallChannel meta-data from AndroidManifest.xml"
 
@@ -1341,7 +1341,7 @@
     return-object v0
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "deviceId is null"
 
@@ -1352,7 +1352,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "Could not get permission of android.permission.READ_PHONE_STATE"
 
@@ -1407,7 +1407,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v0}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1416,7 +1416,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "Could not get permission of android.permission.READ_PHONE_STATE"
 
@@ -1470,7 +1470,7 @@
     move-object v1, v4
 
     :goto_1
-    sget-object v2, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1592,7 +1592,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object v0, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v0, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v1, "can not get the permission of android.permission.ACCESS_WIFI_STATE"
 
@@ -1686,7 +1686,7 @@
     move-object v1, v4
 
     :goto_1
-    sget-object v2, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v2, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     invoke-virtual {v2, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Exception;)V
 
@@ -1832,7 +1832,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v1, Lcom/tencent/stat/a/ICj;->f:Lcom/tencent/stat/a/ICl;
+    sget-object v1, Lcom/tencent/stat/a/ICj;->mIClf:Lcom/tencent/stat/a/ICl;
 
     const-string/jumbo v2, "can not get the permission of android.permission.WRITE_EXTERNAL_STORAGE"
 

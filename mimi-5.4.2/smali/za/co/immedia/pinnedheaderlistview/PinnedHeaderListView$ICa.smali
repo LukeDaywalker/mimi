@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+.field final synthetic mICba:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
-.field final synthetic b:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+.field final synthetic mPinnedHeaderListViewb:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 212
-    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->b:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
+    iput-object p1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->mPinnedHeaderListViewb:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iput-object p2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->a:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+    iput-object p2, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->mICba:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     invoke-direct {p0, p1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICc;-><init>(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;)V
 
@@ -40,7 +40,7 @@
 
     .prologue
     .line 217
-    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->a:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+    iget-object v0, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->mICba:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     move-object v1, p1
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 223
-    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->a:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
+    iget-object v1, p0, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICa;->mICba:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     move-object v2, p1
 

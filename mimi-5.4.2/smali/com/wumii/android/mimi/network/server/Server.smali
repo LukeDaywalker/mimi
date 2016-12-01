@@ -28,12 +28,12 @@
     .end annotation
 .end field
 
-.field private ip:Ljava/lang/String;
-
 .field private lastValidTimestamp:J
     .annotation runtime Lcom/fasterxml/jackson/annotation/JsonIgnore;
     .end annotation
 .end field
+
+.field private mStringip:Ljava/lang/String;
 
 .field private port:Ljava/lang/String;
 
@@ -118,7 +118,7 @@
     iput-wide v0, p0, Lcom/wumii/android/mimi/network/server/Server;->lastValidTimestamp:J
 
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     .line 44
     iput-object p2, p0, Lcom/wumii/android/mimi/network/server/Server;->port:Ljava/lang/String;
@@ -161,7 +161,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iput-object v1, v0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     .line 163
     invoke-virtual {p0}, Lcom/wumii/mimi/model/domain/mobile/MobileServer;->getPort()I
@@ -335,12 +335,12 @@
 
     .line 109
     :cond_5
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     if-nez v2, :cond_6
 
     .line 110
-    iget-object v2, p1, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v2, p1, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
@@ -351,9 +351,9 @@
 
     .line 112
     :cond_6
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v3, p1, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -497,11 +497,11 @@
     invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     :goto_0
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -553,7 +553,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -598,7 +598,7 @@
     .line 89
     mul-int/lit8 v2, v0, 0x1f
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -639,7 +639,7 @@
 
     .line 89
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -756,7 +756,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/network/server/Server;->ip:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/network/server/Server;->mStringip:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

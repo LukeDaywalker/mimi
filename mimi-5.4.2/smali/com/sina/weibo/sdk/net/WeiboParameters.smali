@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/LinkedHashMap;
+.field private mLinkedHashMapa:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap",
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     .line 36
     return-void
@@ -43,7 +43,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -66,7 +66,7 @@
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
@@ -80,7 +80,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -101,7 +101,7 @@
     const/4 v0, 0x1
 
     .line 120
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
@@ -143,7 +143,7 @@
 
     .line 127
     :goto_1
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -247,7 +247,7 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -256,14 +256,14 @@
     if-eqz v0, :cond_0
 
     .line 95
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 96
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -281,7 +281,7 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
@@ -314,7 +314,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 148
-    iget-object v2, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->a:Ljava/util/LinkedHashMap;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/net/WeiboParameters;->mLinkedHashMapa:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

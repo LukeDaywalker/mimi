@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+.field final synthetic mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 354
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 358
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICab;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICab;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -47,7 +47,7 @@
 
     .line 360
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->a(Landroid/content/Context;)V
 
@@ -55,7 +55,7 @@
 
     .line 363
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaa;->mMyCircleActivitya:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->a(Landroid/content/Context;)V
 

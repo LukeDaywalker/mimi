@@ -8,21 +8,21 @@
 
 
 # static fields
-.field private static hq:F
+.field private static mFhq:F
 
-.field private static hu:Lcom/baidu/location/ICah;
+.field private static mICahhu:Lcom/baidu/location/ICah;
 
 
 # instance fields
-.field private ho:Z
+.field private isZho:Z
 
-.field hp:[F
+.field mArrayFhp:[F
 
-.field hr:Landroid/hardware/SensorManager;
+.field mArrayFhs:[F
 
-.field hs:[F
+.field mArrayFht:[F
 
-.field ht:[F
+.field mSensorManagerhr:Landroid/hardware/SensorManager;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     new-array v0, v0, [F
 
-    iput-object v0, p0, Lcom/baidu/location/ICah;->hs:[F
+    iput-object v0, p0, Lcom/baidu/location/ICah;->mArrayFhs:[F
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 .method public static bG()Lcom/baidu/location/ICah;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICah;->hu:Lcom/baidu/location/ICah;
+    sget-object v0, Lcom/baidu/location/ICah;->mICahhu:Lcom/baidu/location/ICah;
 
     if-nez v0, :cond_0
 
@@ -51,10 +51,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICah;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICah;->hu:Lcom/baidu/location/ICah;
+    sput-object v0, Lcom/baidu/location/ICah;->mICahhu:Lcom/baidu/location/ICah;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICah;->hu:Lcom/baidu/location/ICah;
+    sget-object v0, Lcom/baidu/location/ICah;->mICahhu:Lcom/baidu/location/ICah;
 
     return-object v0
 .end method
@@ -64,7 +64,7 @@
 .method public bE()F
     .locals 1
 
-    sget v0, Lcom/baidu/location/ICah;->hq:F
+    sget v0, Lcom/baidu/location/ICah;->mFhq:F
 
     return v0
 .end method
@@ -75,17 +75,17 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iput-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -108,7 +108,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     if-nez v0, :cond_0
 
@@ -124,12 +124,12 @@
 
     check-cast v0, Landroid/hardware/SensorManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iput-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v1, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     const/4 v2, 0x1
 
@@ -141,9 +141,9 @@
 
     invoke-virtual {v0, p0, v1, v2}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/baidu/location/ICah;->hr:Landroid/hardware/SensorManager;
+    iget-object v1, p0, Lcom/baidu/location/ICah;->mSensorManagerhr:Landroid/hardware/SensorManager;
 
     const/4 v2, 0x2
 
@@ -172,7 +172,7 @@
 .method public bI()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICah;->ho:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICah;->isZho:Z
 
     return v0
 .end method
@@ -195,11 +195,11 @@
     packed-switch v0, :pswitch_data_0
 
     :goto_0
-    iget-object v0, p0, Lcom/baidu/location/ICah;->hp:[F
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mArrayFhp:[F
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICah;->ht:[F
+    iget-object v0, p0, Lcom/baidu/location/ICah;->mArrayFht:[F
 
     if-eqz v0, :cond_0
 
@@ -209,9 +209,9 @@
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/baidu/location/ICah;->hp:[F
+    iget-object v2, p0, Lcom/baidu/location/ICah;->mArrayFhp:[F
 
-    iget-object v3, p0, Lcom/baidu/location/ICah;->ht:[F
+    iget-object v3, p0, Lcom/baidu/location/ICah;->mArrayFht:[F
 
     invoke-static {v0, v1, v2, v3}, Landroid/hardware/SensorManager;->getRotationMatrix([F[F[F[F)Z
 
@@ -237,9 +237,9 @@
 
     double-to-float v0, v0
 
-    sput v0, Lcom/baidu/location/ICah;->hq:F
+    sput v0, Lcom/baidu/location/ICah;->mFhq:F
 
-    sget v0, Lcom/baidu/location/ICah;->hq:F
+    sget v0, Lcom/baidu/location/ICah;->mFhq:F
 
     const/4 v1, 0x0
 
@@ -247,7 +247,7 @@
 
     if-ltz v0, :cond_1
 
-    sget v0, Lcom/baidu/location/ICah;->hq:F
+    sget v0, Lcom/baidu/location/ICah;->mFhq:F
 
     float-to-double v0, v0
 
@@ -258,7 +258,7 @@
 
     double-to-float v0, v0
 
-    sput v0, Lcom/baidu/location/ICah;->hq:F
+    sput v0, Lcom/baidu/location/ICah;->mFhq:F
 
     :cond_0
     return-void
@@ -266,19 +266,19 @@
     :pswitch_0
     iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    iput-object v0, p0, Lcom/baidu/location/ICah;->hp:[F
+    iput-object v0, p0, Lcom/baidu/location/ICah;->mArrayFhp:[F
 
     goto :goto_0
 
     :pswitch_1
     iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    iput-object v0, p0, Lcom/baidu/location/ICah;->ht:[F
+    iput-object v0, p0, Lcom/baidu/location/ICah;->mArrayFht:[F
 
     goto :goto_0
 
     :cond_1
-    sget v0, Lcom/baidu/location/ICah;->hq:F
+    sget v0, Lcom/baidu/location/ICah;->mFhq:F
 
     const/high16 v1, 0x43b40000    # 360.0f
 
@@ -298,7 +298,7 @@
 .method public try(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICah;->ho:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICah;->isZho:Z
 
     return-void
 .end method

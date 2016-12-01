@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private final a:Lokio/BufferedSink;
+.field private final isZd:Z
 
-.field private final b:Lokio/Buffer;
+.field private isZe:Z
 
-.field private final c:Lokio/BufferedSink;
+.field private final mBufferb:Lokio/Buffer;
 
-.field private final d:Z
+.field private final mBufferedSinka:Lokio/BufferedSink;
 
-.field private e:Z
+.field private final mBufferedSinkc:Lokio/BufferedSink;
 
 
 # direct methods
@@ -27,10 +27,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 295
-    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iput-object p1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     .line 296
-    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->d:Z
+    iput-boolean p2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZd:Z
 
     .line 298
     new-instance v0, Ljava/util/zip/Deflater;
@@ -38,7 +38,7 @@
     invoke-direct {v0}, Ljava/util/zip/Deflater;-><init>()V
 
     .line 299
-    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Spdy3;->a:[B
+    sget-object v1, Lcom/squareup/okhttp/internal/spdy/Spdy3;->mArrayBa:[B
 
     invoke-virtual {v0, v1}, Ljava/util/zip/Deflater;->setDictionary([B)V
 
@@ -47,12 +47,12 @@
 
     invoke-direct {v1}, Lokio/Buffer;-><init>()V
 
-    iput-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->b:Lokio/Buffer;
+    iput-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferb:Lokio/Buffer;
 
     .line 301
     new-instance v1, Lokio/DeflaterSink;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->b:Lokio/Buffer;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferb:Lokio/Buffer;
 
     invoke-direct {v1, v2, v0}, Lokio/DeflaterSink;-><init>(Lokio/Sink;Ljava/util/zip/Deflater;)V
 
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iput-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     .line 302
     return-void
@@ -80,7 +80,7 @@
 
     .prologue
     .line 409
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->b:Lokio/Buffer;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferb:Lokio/Buffer;
 
     invoke-virtual {v0}, Lokio/Buffer;->b()J
 
@@ -100,7 +100,7 @@
 
     .line 410
     :cond_0
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -130,7 +130,7 @@
     iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->h:Lokio/ByteString;
 
     .line 413
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-virtual {v0}, Lokio/ByteString;->f()I
 
@@ -139,7 +139,7 @@
     invoke-interface {v3, v4}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 414
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-interface {v3, v0}, Lokio/BufferedSink;->b(Lokio/ByteString;)Lokio/BufferedSink;
 
@@ -153,7 +153,7 @@
     iget-object v0, v0, Lcom/squareup/okhttp/internal/spdy/Header;->i:Lokio/ByteString;
 
     .line 416
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-virtual {v0}, Lokio/ByteString;->f()I
 
@@ -162,7 +162,7 @@
     invoke-interface {v3, v4}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 417
-    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-interface {v3, v0}, Lokio/BufferedSink;->b(Lokio/ByteString;)Lokio/BufferedSink;
 
@@ -175,7 +175,7 @@
 
     .line 419
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
 
@@ -219,7 +219,7 @@
 
     .prologue
     .line 397
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -268,7 +268,7 @@
 
     .line 401
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, 0x7fffffff
 
@@ -277,7 +277,7 @@
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 402
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/lit16 v1, p2, 0xff
 
@@ -295,7 +295,7 @@
     if-lez p4, :cond_2
 
     .line 404
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     int-to-long v2, p4
 
@@ -314,7 +314,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -378,33 +378,33 @@
 
     .line 480
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, -0x7ffcfff7
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 481
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const/16 v1, 0x8
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 482
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 483
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     long-to-int v1, p2
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 484
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -424,7 +424,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -462,21 +462,21 @@
 
     .line 378
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, -0x7ffcfffd
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 379
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const/16 v1, 0x8
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 380
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, 0x7fffffff
 
@@ -485,14 +485,14 @@
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 381
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->t:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 382
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -512,7 +512,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -553,33 +553,33 @@
 
     .line 463
     :cond_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, -0x7ffcfff9
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 464
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const/16 v1, 0x8
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 465
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 466
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     iget v1, p2, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->u:I
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 467
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -611,7 +611,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v2, :cond_0
 
@@ -635,7 +635,7 @@
     .line 443
     :cond_0
     :try_start_1
-    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->d:Z
+    iget-boolean v3, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZd:Z
 
     and-int/lit8 v2, p2, 0x1
 
@@ -671,26 +671,26 @@
 
     .line 448
     :cond_3
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v1, -0x7ffcfffa
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 449
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const/4 v1, 0x4
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 450
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0, p2}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 451
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -760,7 +760,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v1, :cond_0
 
@@ -789,7 +789,7 @@
     .line 328
     const-wide/16 v2, 0xa
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->b:Lokio/Buffer;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferb:Lokio/Buffer;
 
     invoke-virtual {v1}, Lokio/Buffer;->b()J
 
@@ -813,14 +813,14 @@
     or-int/2addr v0, v1
 
     .line 333
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v3, -0x7ffcffff
 
     invoke-interface {v1, v3}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 334
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/lit16 v0, v0, 0xff
 
@@ -835,35 +835,35 @@
     invoke-interface {v1, v0}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 335
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int v1, p3, v6
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 336
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int v1, p4, v6
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 337
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->g(I)Lokio/BufferedSink;
 
     .line 338
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->b:Lokio/Buffer;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferb:Lokio/Buffer;
 
     invoke-interface {v0, v1}, Lokio/BufferedSink;->a(Lokio/Source;)J
 
     .line 339
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -889,7 +889,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -913,7 +913,7 @@
     .line 320
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -935,7 +935,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -969,14 +969,14 @@
     add-int/lit8 v1, v1, 0x4
 
     .line 428
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     const v3, -0x7ffcfffc
 
     invoke-interface {v2, v3}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 429
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/2addr v1, v4
 
@@ -985,7 +985,7 @@
     invoke-interface {v2, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 430
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v1, v0}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
@@ -1017,7 +1017,7 @@
     move-result v1
 
     .line 434
-    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v2, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     and-int/lit16 v1, v1, 0xff
 
@@ -1030,7 +1030,7 @@
     invoke-interface {v2, v1}, Lokio/BufferedSink;->f(I)Lokio/BufferedSink;
 
     .line 435
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-virtual {p1, v0}, Lcom/squareup/okhttp/internal/spdy/Settings;->b(I)I
 
@@ -1042,7 +1042,7 @@
 
     .line 437
     :cond_2
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
     invoke-interface {v0}, Lokio/BufferedSink;->flush()V
     :try_end_1
@@ -1074,12 +1074,12 @@
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->e:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->isZe:Z
 
     .line 489
-    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->a:Lokio/BufferedSink;
+    iget-object v0, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinka:Lokio/BufferedSink;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->c:Lokio/BufferedSink;
+    iget-object v1, p0, Lcom/squareup/okhttp/internal/spdy/Spdy3$ICab;->mBufferedSinkc:Lokio/BufferedSink;
 
     invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/Util;->a(Ljava/io/Closeable;Ljava/io/Closeable;)V
     :try_end_0

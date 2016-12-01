@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
-.field private static final synthetic d:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+.field private static final synthetic mArrayICfd:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
 
 # direct methods
@@ -77,7 +77,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->d:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mArrayICfd:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     const/4 v3, 0x0
 
     .line 1
-    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->d:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$ICf;->mArrayICfd:[Lcom/sina/weibo/sdk/net/NetStateManager$ICf;
 
     array-length v1, v0
 

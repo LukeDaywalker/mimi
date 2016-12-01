@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/stat/ICc;
+.field final synthetic mICca:Lcom/tencent/stat/ICc;
 
-.field final synthetic b:Lcom/tencent/stat/ICo;
+.field final synthetic mICob:Lcom/tencent/stat/ICo;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/stat/ICo;Lcom/tencent/stat/ICc;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/stat/ICt;->b:Lcom/tencent/stat/ICo;
+    iput-object p1, p0, Lcom/tencent/stat/ICt;->mICob:Lcom/tencent/stat/ICo;
 
-    iput-object p2, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iput-object p2, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
 
     const/4 v8, 0x0
 
-    iget-object v0, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v0, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
     invoke-virtual {v0}, Lcom/tencent/stat/ICc;->a()Ljava/lang/String;
 
@@ -45,9 +45,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget-object v1, v1, Lcom/tencent/stat/ICc;->c:Ljava/lang/String;
+    iget-object v1, v1, Lcom/tencent/stat/ICc;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -61,9 +61,9 @@
 
     const-string/jumbo v1, "content"
 
-    iget-object v2, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v2, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget-object v2, v2, Lcom/tencent/stat/ICc;->b:Lorg/json/JSONObject;
+    iget-object v2, v2, Lcom/tencent/stat/ICc;->mJSONObjectb:Lorg/json/JSONObject;
 
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -75,15 +75,15 @@
 
     invoke-virtual {v12, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iput-object v0, v1, Lcom/tencent/stat/ICc;->c:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/stat/ICc;->mStringc:Ljava/lang/String;
 
     const-string/jumbo v0, "version"
 
-    iget-object v1, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v1, v1, Lcom/tencent/stat/ICc;->d:I
+    iget v1, v1, Lcom/tencent/stat/ICc;->mId:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -92,7 +92,7 @@
     invoke-virtual {v12, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/stat/ICt;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICt;->mICob:Lcom/tencent/stat/ICo;
 
     invoke-static {v0}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/ICo;)Lcom/tencent/stat/ICx;
 
@@ -137,9 +137,9 @@
 
     move-result v0
 
-    iget-object v2, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v2, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v2, v2, Lcom/tencent/stat/ICc;->a:I
+    iget v2, v2, Lcom/tencent/stat/ICc;->mIa:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -157,7 +157,7 @@
     :goto_1
     if-ne v10, v0, :cond_4
 
-    iget-object v0, p0, Lcom/tencent/stat/ICt;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICt;->mICob:Lcom/tencent/stat/ICo;
 
     invoke-static {v0}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/ICo;)Lcom/tencent/stat/ICx;
 
@@ -173,9 +173,9 @@
 
     new-array v3, v10, [Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v4, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v4, v4, Lcom/tencent/stat/ICc;->a:I
+    iget v4, v4, Lcom/tencent/stat/ICc;->mIa:I
 
     invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -263,9 +263,9 @@
     :cond_4
     const-string/jumbo v0, "type"
 
-    iget-object v1, p0, Lcom/tencent/stat/ICt;->a:Lcom/tencent/stat/ICc;
+    iget-object v1, p0, Lcom/tencent/stat/ICt;->mICca:Lcom/tencent/stat/ICc;
 
-    iget v1, v1, Lcom/tencent/stat/ICc;->a:I
+    iget v1, v1, Lcom/tencent/stat/ICc;->mIa:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -273,7 +273,7 @@
 
     invoke-virtual {v12, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICt;->b:Lcom/tencent/stat/ICo;
+    iget-object v0, p0, Lcom/tencent/stat/ICt;->mICob:Lcom/tencent/stat/ICo;
 
     invoke-static {v0}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/ICo;)Lcom/tencent/stat/ICx;
 

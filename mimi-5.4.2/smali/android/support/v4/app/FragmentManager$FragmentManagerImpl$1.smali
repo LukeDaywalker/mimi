@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+.field final synthetic mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 455
-    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;->a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;->mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 458
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;->a:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;->mFragmentManagerImpla:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g()Z
 

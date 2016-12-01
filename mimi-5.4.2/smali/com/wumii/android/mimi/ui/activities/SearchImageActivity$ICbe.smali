@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+.field private mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field final synthetic mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
-.field private r:Ljava/lang/String;
+.field private mStringr:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     .prologue
     .line 328
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     .line 329
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 331
     return-void
@@ -56,10 +56,10 @@
 
     .prologue
     .line 361
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->q:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringq:Ljava/lang/String;
 
     .line 362
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->r:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringr:Ljava/lang/String;
 
     .line 363
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->j()V
@@ -87,9 +87,9 @@
     .line 335
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->q:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringq:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->r:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/lang/String;Ljava/lang/String;)[B
 
@@ -98,7 +98,7 @@
     .line 337
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->b:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mStringq:Ljava/lang/String;
 
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
@@ -123,13 +123,13 @@
     if-eqz v3, :cond_0
 
     .line 340
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mFileHelperd:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     invoke-virtual {v3, v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a([BLjava/io/File;)Ljava/io/File;
 
     .line 343
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     new-instance v3, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbf;
 

@@ -8,21 +8,21 @@
 
 
 # instance fields
-.field private c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+.field private mEditTextm:Landroid/widget/EditText;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+.field private mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+.field private mSectionCheckBoxItemViewk:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+.field private mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
-.field private k:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+.field private mSectionListViewj:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
-.field private l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+.field private mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
-.field private m:Landroid/widget/EditText;
+.field private mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-.field private n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+.field private mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     return-object v0
 .end method
@@ -53,12 +53,12 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->setValidationNeeded(Z)V
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
     if-eqz p2, :cond_0
 
@@ -68,7 +68,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionListViewj:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionListView;->a()V
 
@@ -87,14 +87,14 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->b(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
 
     .line 153
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     if-ne p1, v0, :cond_0
 
@@ -161,10 +161,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getCircleSelectorType()Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
@@ -183,7 +183,7 @@
 
     .line 113
     :goto_0
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->getResources()Landroid/content/res/Resources;
 
@@ -193,7 +193,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getCircleDesc()Ljava/lang/String;
 
@@ -208,9 +208,9 @@
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setName(Ljava/lang/String;)V
 
     .line 115
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isCircleLimited()Z
 
@@ -218,15 +218,15 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     :goto_1
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->b(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->k:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCheckBoxItemViewk:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isValidationNeeded()Z
 
@@ -235,9 +235,9 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setChecked(Z)V
 
     .line 117
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isValidationNeeded()Z
 
@@ -251,12 +251,12 @@
     invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionListViewj:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionListView;->a()V
 
     .line 120
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isValidationNeeded()Z
 
@@ -265,9 +265,9 @@
     if-eqz v0, :cond_0
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->getValidationQuestion()Ljava/lang/String;
 
@@ -287,7 +287,7 @@
 
     .line 115
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     goto :goto_1
 
@@ -324,7 +324,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     .line 62
     const v0, 0x7f0b01e4
@@ -335,15 +335,15 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
 
@@ -356,19 +356,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->c:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioGroupViewc:Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionRadioItemViewe:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioGroupView;->a(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;)V
 
@@ -381,7 +381,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionListViewj:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
 
     .line 72
     const v0, 0x7f0b0131
@@ -392,10 +392,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->k:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCheckBoxItemViewk:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->k:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCheckBoxItemViewk:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;)V
 
@@ -408,10 +408,10 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -439,10 +439,10 @@
 
     invoke-direct {v0, v2}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->getResources()Landroid/content/res/Resources;
 
@@ -457,24 +457,24 @@
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     invoke-virtual {v0, v6}, Landroid/widget/EditText;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     const/16 v2, 0x30
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setGravity(I)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     invoke-virtual {v0, v4, v4, v4, v4}, Landroid/widget/EditText;->setPadding(IIII)V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment$ICt;
 
@@ -483,9 +483,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->l:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mSectionCustomViewl:Lcom/wumii/android/mimi/ui/widgets/SectionCustomView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     new-instance v3, Landroid/widget/FrameLayout$LayoutParams;
 
@@ -505,9 +505,9 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->onPause()V
 
     .line 129
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->n:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mGroupChatInfon:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->isValidationNeeded()Z
 
@@ -515,7 +515,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;->mEditTextm:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mIm:I
 
-.field private m:I
+.field private mIn:I
 
-.field private n:I
+.field private mStringa:Ljava/lang/String;
 
-.field private o:Ljava/lang/Thread;
+.field private mThreado:Ljava/lang/Thread;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/tencent/wxop/stat/a/ICc;->n:I
+    iput v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mIn:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICc;->o:Ljava/lang/Thread;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mThreado:Ljava/lang/Thread;
 
     const/16 v0, 0x63
 
@@ -42,15 +42,15 @@
 
     const/16 v0, 0x64
 
-    iput v0, p0, Lcom/tencent/wxop/stat/a/ICc;->n:I
+    iput v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mIn:I
 
-    iput-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->o:Ljava/lang/Thread;
+    iput-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->mThreado:Ljava/lang/Thread;
 
     const/4 v0, 0x2
 
     invoke-direct {p0, v0, p3}, Lcom/tencent/wxop/stat/a/ICc;->a(ILjava/lang/Throwable;)V
 
-    iput-object p4, p0, Lcom/tencent/wxop/stat/a/ICc;->o:Ljava/lang/Thread;
+    iput-object p4, p0, Lcom/tencent/wxop/stat/a/ICc;->mThreado:Ljava/lang/Thread;
 
     return-void
 .end method
@@ -74,9 +74,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mStringa:Ljava/lang/String;
 
-    iput p1, p0, Lcom/tencent/wxop/stat/a/ICc;->m:I
+    iput p1, p0, Lcom/tencent/wxop/stat/a/ICc;->mIm:I
 
     invoke-virtual {v1}, Ljava/io/PrintWriter;->close()V
 
@@ -91,23 +91,23 @@
 
     const-string/jumbo v0, "er"
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->mStringa:Ljava/lang/String;
 
     invoke-static {p1, v0, v1}, Lcom/tencent/wxop/stat/b/ICr;->a(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v0, "ea"
 
-    iget v1, p0, Lcom/tencent/wxop/stat/a/ICc;->m:I
+    iget v1, p0, Lcom/tencent/wxop/stat/a/ICc;->mIm:I
 
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    iget v0, p0, Lcom/tencent/wxop/stat/a/ICc;->m:I
+    iget v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mIm:I
 
     const/4 v1, 0x2
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/tencent/wxop/stat/a/ICc;->m:I
+    iget v0, p0, Lcom/tencent/wxop/stat/a/ICc;->mIm:I
 
     const/4 v1, 0x3
 
@@ -120,7 +120,7 @@
 
     invoke-direct {v0, v1}, Lcom/tencent/wxop/stat/b/ICd;-><init>(Landroid/content/Context;)V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->o:Ljava/lang/Thread;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/a/ICc;->mThreado:Ljava/lang/Thread;
 
     invoke-virtual {v0, p1, v1}, Lcom/tencent/wxop/stat/b/ICd;->a(Lorg/json/JSONObject;Ljava/lang/Thread;)V
 

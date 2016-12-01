@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
+.field private mCheckBoxe:Landroid/widget/CheckBox;
 
-.field private e:Landroid/widget/CheckBox;
+.field private mICbkd:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mICbkd:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -113,22 +113,22 @@
 
     invoke-direct {v1, v2}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     .line 41
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v3}, Landroid/widget/CheckBox;->setBackgroundColor(I)V
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     const v2, 0x7f02018e
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setButtonDrawable(I)V
 
     .line 44
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbj;
 
@@ -139,9 +139,9 @@
     .line 54
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->b:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v2, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -154,7 +154,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -168,7 +168,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -178,7 +178,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mCheckBoxe:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
@@ -191,7 +191,7 @@
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->mICbkd:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
 
     .line 59
     return-void

@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field private final a:Ljava/io/InputStream;
+.field private mArrayBc:[B
 
-.field private final b:Ljava/nio/charset/Charset;
+.field private final mCharsetb:Ljava/nio/charset/Charset;
 
-.field private c:[B
+.field private mId:I
 
-.field private d:I
+.field private mIe:I
 
-.field private e:I
+.field private final mInputStreama:Ljava/io/InputStream;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     .line 92
     :cond_2
-    sget-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->a:Ljava/nio/charset/Charset;
+    sget-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/Util;->mCharseta:Ljava/nio/charset/Charset;
 
     invoke-virtual {p3, v0}, Ljava/nio/charset/Charset;->equals(Ljava/lang/Object;)Z
 
@@ -73,15 +73,15 @@
 
     .line 96
     :cond_3
-    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mInputStreama:Ljava/io/InputStream;
 
     .line 97
-    iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->b:Ljava/nio/charset/Charset;
+    iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mCharsetb:Ljava/nio/charset/Charset;
 
     .line 98
     new-array v0, p2, [B
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     .line 99
     return-void
@@ -105,7 +105,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->b:Ljava/nio/charset/Charset;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mCharsetb:Ljava/nio/charset/Charset;
 
     return-object v0
 .end method
@@ -117,11 +117,11 @@
     const/4 v3, 0x0
 
     .line 183
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mInputStreama:Ljava/io/InputStream;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     array-length v2, v2
 
@@ -143,10 +143,10 @@
 
     .line 187
     :cond_0
-    iput v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iput v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     .line 188
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
     .line 189
     return-void
@@ -161,13 +161,13 @@
     const/16 v6, 0xa
 
     .line 125
-    iget-object v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a:Ljava/io/InputStream;
+    iget-object v3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mInputStreama:Ljava/io/InputStream;
 
     monitor-enter v3
 
     .line 126
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     if-nez v0, :cond_0
 
@@ -193,9 +193,9 @@
     .line 133
     :cond_0
     :try_start_1
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
-    iget v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iget v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
     if-lt v0, v1, :cond_1
 
@@ -204,26 +204,26 @@
 
     .line 137
     :cond_1
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     :goto_0
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
     if-eq v2, v0, :cond_4
 
     .line 138
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     aget-byte v0, v0, v2
 
     if-ne v0, v6, :cond_3
 
     .line 139
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     if-eq v2, v0, :cond_2
 
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     add-int/lit8 v1, v2, -0x1
 
@@ -241,15 +241,15 @@
     :goto_1
     new-instance v0, Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
-    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
-    iget v6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     sub-int/2addr v1, v6
 
-    iget-object v6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->b:Ljava/nio/charset/Charset;
+    iget-object v6, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mCharsetb:Ljava/nio/charset/Charset;
 
     invoke-virtual {v6}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
 
@@ -260,7 +260,7 @@
     .line 141
     add-int/lit8 v1, v2, 0x1
 
-    iput v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iput v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     .line 142
     monitor-exit v3
@@ -285,9 +285,9 @@
     :cond_4
     new-instance v1, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader$ICj;
 
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     sub-int/2addr v0, v2
 
@@ -297,13 +297,13 @@
 
     .line 160
     :cond_5
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
-    iget v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iget v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
-    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     sub-int/2addr v4, v5
 
@@ -312,37 +312,37 @@
     .line 162
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
     .line 163
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->b()V
 
     .line 165
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     :goto_3
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->e:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mIe:I
 
     if-eq v0, v2, :cond_5
 
     .line 166
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     aget-byte v2, v2, v0
 
     if-ne v2, v6, :cond_7
 
     .line 167
-    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     if-eq v0, v2, :cond_6
 
     .line 168
-    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
-    iget v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v4, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
-    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iget v5, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     sub-int v5, v0, v5
 
@@ -352,7 +352,7 @@
     :cond_6
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->d:I
+    iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mId:I
 
     .line 171
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;
@@ -377,23 +377,23 @@
 
     .prologue
     .line 108
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a:Ljava/io/InputStream;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mInputStreama:Ljava/io/InputStream;
 
     monitor-enter v1
 
     .line 109
     :try_start_0
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     if-eqz v0, :cond_0
 
     .line 110
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->c:[B
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mArrayBc:[B
 
     .line 111
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/StrictLineReader;->mInputStreama:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 

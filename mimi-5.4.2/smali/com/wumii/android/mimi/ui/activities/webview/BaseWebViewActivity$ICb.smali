@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+.field final synthetic mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICb;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICb;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->setTitle(Ljava/lang/CharSequence;)V
 

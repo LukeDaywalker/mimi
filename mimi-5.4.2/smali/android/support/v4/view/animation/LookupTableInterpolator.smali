@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:[F
+.field private final mArrayFa:[F
 
-.field private final b:F
+.field private final mFb:F
 
 
 # direct methods
@@ -21,12 +21,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iput-object p1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     .line 32
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iget-object v1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     array-length v1, v1
 
@@ -36,7 +36,7 @@
 
     div-float/2addr v0, v1
 
-    iput v0, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->b:F
+    iput v0, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mFb:F
 
     .line 33
     return-void
@@ -74,7 +74,7 @@
 
     .line 46
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v0, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     array-length v0, v0
 
@@ -86,7 +86,7 @@
 
     float-to-int v0, v0
 
-    iget-object v1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v1, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     array-length v1, v1
 
@@ -99,7 +99,7 @@
     .line 49
     int-to-float v1, v0
 
-    iget v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->b:F
+    iget v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mFb:F
 
     mul-float/2addr v1, v2
 
@@ -107,22 +107,22 @@
     sub-float v1, p1, v1
 
     .line 51
-    iget v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->b:F
+    iget v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mFb:F
 
     div-float/2addr v1, v2
 
     .line 54
-    iget-object v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v2, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     aget v2, v2, v0
 
-    iget-object v3, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v3, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     add-int/lit8 v4, v0, 0x1
 
     aget v3, v3, v4
 
-    iget-object v4, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->a:[F
+    iget-object v4, p0, Landroid/support/v4/view/animation/LookupTableInterpolator;->mArrayFa:[F
 
     aget v0, v4, v0
 

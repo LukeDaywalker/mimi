@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/hp/hpl/sparta/Document;
+.field private mDocumenta:Lcom/hp/hpl/sparta/Document;
 
 
 # direct methods
@@ -99,7 +99,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->a:Lcom/hp/hpl/sparta/Document;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->mDocumenta:Lcom/hp/hpl/sparta/Document;
 
     .line 47
     return-void

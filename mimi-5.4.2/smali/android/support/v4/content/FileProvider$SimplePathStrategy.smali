@@ -7,9 +7,7 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
-
-.field private final b:Ljava/util/HashMap;
+.field private final mHashMapb:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -20,6 +18,8 @@
         }
     .end annotation
 .end field
+
+.field private final mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -35,10 +35,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->b:Ljava/util/HashMap;
+    iput-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mHashMapb:Ljava/util/HashMap;
 
     .line 635
-    iput-object p1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mStringa:Ljava/lang/String;
 
     .line 636
     return-void
@@ -85,7 +85,7 @@
     move-result-object v1
 
     .line 704
-    iget-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -223,7 +223,7 @@
     move-result-object v0
 
     .line 655
-    iget-object v1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->b:Ljava/util/HashMap;
+    iget-object v1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

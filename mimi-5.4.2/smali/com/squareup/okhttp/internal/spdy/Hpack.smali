@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:[Lcom/squareup/okhttp/internal/spdy/Header;
+.field private static final mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
-.field private static final b:Ljava/util/Map;
+.field private static final mMapb:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -761,14 +761,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     .line 357
     invoke-static {}, Lcom/squareup/okhttp/internal/spdy/Hpack;->c()Ljava/util/Map;
 
     move-result-object v0
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->b:Ljava/util/Map;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->mMapb:Ljava/util/Map;
 
     return-void
 .end method
@@ -790,7 +790,7 @@
 
     .prologue
     .line 40
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     return-object v0
 .end method
@@ -800,7 +800,7 @@
 
     .prologue
     .line 40
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->b:Ljava/util/Map;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->mMapb:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -890,7 +890,7 @@
     .line 360
     new-instance v1, Ljava/util/LinkedHashMap;
 
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     array-length v0, v0
 
@@ -900,14 +900,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_1
 
     .line 362
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     aget-object v2, v2, v0
 
@@ -920,7 +920,7 @@
     if-nez v2, :cond_0
 
     .line 363
-    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->a:[Lcom/squareup/okhttp/internal/spdy/Header;
+    sget-object v2, Lcom/squareup/okhttp/internal/spdy/Hpack;->mArrayHeadera:[Lcom/squareup/okhttp/internal/spdy/Header;
 
     aget-object v2, v2, v0
 

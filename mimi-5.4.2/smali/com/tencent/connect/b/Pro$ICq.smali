@@ -6,9 +6,9 @@
 # static fields
 .field public static a:Lcom/tencent/connect/b/Pro$ICq;
 
-.field static final synthetic d:Z
+.field static final synthetic isZd:Z
 
-.field private static e:I
+.field private static mIe:I
 
 
 # instance fields
@@ -46,10 +46,10 @@
     const/4 v0, 0x1
 
     :goto_0
-    sput-boolean v0, Lcom/tencent/connect/b/Pro$ICq;->d:Z
+    sput-boolean v0, Lcom/tencent/connect/b/Pro$ICq;->isZd:Z
 
     .line 11
-    sput v1, Lcom/tencent/connect/b/Pro$ICq;->e:I
+    sput v1, Lcom/tencent/connect/b/Pro$ICq;->mIe:I
 
     return-void
 
@@ -110,11 +110,11 @@
 
     .prologue
     .line 35
-    sget v0, Lcom/tencent/connect/b/Pro$ICq;->e:I
+    sget v0, Lcom/tencent/connect/b/Pro$ICq;->mIe:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/tencent/connect/b/Pro$ICq;->e:I
+    sput v0, Lcom/tencent/connect/b/Pro$ICq;->mIe:I
 
     return v0
 .end method
@@ -126,7 +126,7 @@
     const/4 v0, 0x0
 
     .line 74
-    sget-boolean v1, Lcom/tencent/connect/b/Pro$ICq;->d:Z
+    sget-boolean v1, Lcom/tencent/connect/b/Pro$ICq;->isZd:Z
 
     if-nez v1, :cond_0
 

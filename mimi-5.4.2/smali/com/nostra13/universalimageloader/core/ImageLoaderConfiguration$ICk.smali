@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->a:[I
+    sput-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->a:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->a:[I
+    sget-object v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$ICk;->mArrayIa:[I
 
     sget-object v1, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;->b:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$ICd;
 

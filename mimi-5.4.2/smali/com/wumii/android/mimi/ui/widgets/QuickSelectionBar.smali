@@ -4,7 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/util/SparseArray;
+.field private mICbdf:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
+
+.field private mIe:I
+
+.field private mPaintb:Landroid/graphics/Paint;
+
+.field private mPopupWindowc:Landroid/widget/PopupWindow;
+
+.field private mRectg:Landroid/graphics/Rect;
+
+.field private mSparseArraya:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -15,17 +25,7 @@
     .end annotation
 .end field
 
-.field private b:Landroid/graphics/Paint;
-
-.field private c:Landroid/widget/PopupWindow;
-
-.field private d:Landroid/widget/TextView;
-
-.field private e:I
-
-.field private f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
-
-.field private g:Landroid/graphics/Rect;
+.field private mTextViewd:Landroid/widget/TextView;
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->g:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mRectg:Landroid/graphics/Rect;
 
     .line 44
     sget-object v0, Lcom/wumii/android/mimi/R$styleable;->QuickSelectionBar:[I
@@ -93,7 +93,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->e:I
+    iput v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mIe:I
 
     .line 46
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -103,24 +103,24 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     const v1, -0x777778
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 50
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     const/high16 v1, 0x41a00000    # 20.0f
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     return-object v0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mICbdf:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
 
     if-eqz v0, :cond_0
 
@@ -174,7 +174,7 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b(I)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mICbdf:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
 
     invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;->a(I)V
 
@@ -192,7 +192,7 @@
     const/4 v4, 0x0
 
     .line 121
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     if-nez v0, :cond_0
 
@@ -205,10 +205,10 @@
 
     invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
     const/4 v1, 0x1
 
@@ -217,37 +217,37 @@
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setIncludeFontPadding(Z)V
 
     .line 127
     new-instance v0, Landroid/widget/PopupWindow;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->e:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mIe:I
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->e:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mIe:I
 
     invoke-direct {v0, v1, v2, v3}, Landroid/widget/PopupWindow;-><init>(Landroid/view/View;II)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->getResources()Landroid/content/res/Resources;
 
@@ -263,9 +263,9 @@
 
     .line 131
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->d:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mTextViewd:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -276,7 +276,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0}, Landroid/widget/PopupWindow;->isShowing()Z
 
@@ -285,7 +285,7 @@
     if-eqz v0, :cond_1
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0}, Landroid/widget/PopupWindow;->update()V
 
@@ -295,7 +295,7 @@
 
     .line 135
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->c:Landroid/widget/PopupWindow;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPopupWindowc:Landroid/widget/PopupWindow;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->getRootView()Landroid/view/View;
 
@@ -315,11 +315,11 @@
     const/4 v0, 0x1
 
     .line 87
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
 
@@ -352,7 +352,7 @@
 
     div-float/2addr v2, v3
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v3}, Landroid/util/SparseArray;->size()I
 
@@ -380,7 +380,7 @@
     :pswitch_0
     if-ltz v2, :cond_2
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
 
@@ -431,11 +431,11 @@
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -459,7 +459,7 @@
     move-result v0
 
     .line 70
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
 
@@ -479,7 +479,7 @@
     if-ge v1, v4, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     invoke-virtual {v0, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -488,23 +488,23 @@
     check-cast v0, Ljava/lang/String;
 
     .line 76
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->g:Landroid/graphics/Rect;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mRectg:Landroid/graphics/Rect;
 
     invoke-virtual {v6}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 77
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     const/4 v7, 0x1
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->g:Landroid/graphics/Rect;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mRectg:Landroid/graphics/Rect;
 
     invoke-virtual {v6, v0, v2, v7, v8}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
     .line 79
     int-to-float v6, v3
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v0}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
 
@@ -521,7 +521,7 @@
 
     div-float v8, v5, v10
 
-    iget-object v9, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->g:Landroid/graphics/Rect;
+    iget-object v9, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mRectg:Landroid/graphics/Rect;
 
     invoke-virtual {v9}, Landroid/graphics/Rect;->height()I
 
@@ -536,7 +536,7 @@
     add-float/2addr v7, v8
 
     .line 81
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b:Landroid/graphics/Paint;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mPaintb:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v6, v7, v8}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
@@ -562,7 +562,7 @@
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->a:Landroid/util/SparseArray;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mSparseArraya:Landroid/util/SparseArray;
 
     .line 56
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->invalidate()V
@@ -576,7 +576,7 @@
 
     .prologue
     .line 156
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->mICbdf:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;
 
     .line 157
     return-void

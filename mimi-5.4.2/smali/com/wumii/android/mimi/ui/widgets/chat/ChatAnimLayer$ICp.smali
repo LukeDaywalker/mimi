@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mIb:I
 
-.field private b:I
+.field private mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->b:I
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->mIb:I
 
     .line 29
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -52,7 +52,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->mStringa:Ljava/lang/String;
 
     .line 37
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 40
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->b:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer$ICp;->mIb:I
 
     return v0
 .end method

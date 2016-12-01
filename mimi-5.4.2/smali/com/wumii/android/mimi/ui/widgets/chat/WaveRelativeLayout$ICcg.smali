@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:I
+.field private mFb:F
 
-.field private b:F
+.field private mFc:F
 
-.field private c:F
+.field private mFd:F
 
-.field private d:F
+.field private mFe:F
 
-.field private e:F
+.field private mFf:F
 
-.field private f:F
+.field private mIa:I
 
 
 # direct methods
@@ -28,22 +28,22 @@
     .line 162
     const/16 v0, 0xbe
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mIa:I
 
     .line 163
-    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b:F
+    iput p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFb:F
 
     .line 164
-    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->c:F
+    iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFc:F
 
     .line 165
-    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->d:F
+    iput p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFd:F
 
     .line 166
-    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->e:F
+    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFe:F
 
     .line 167
-    iput p5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->f:F
+    iput p5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFf:F
 
     .line 168
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 152
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mIa:I
 
     return v0
 .end method
@@ -64,7 +64,7 @@
 
     .prologue
     .line 152
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFb:F
 
     return v0
 .end method
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mIa:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAlpha(I)V
 
@@ -89,16 +89,16 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->c:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFc:F
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 173
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->e:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFe:F
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->f:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFf:F
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b:F
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFb:F
 
     invoke-static {}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->c()Landroid/graphics/Paint;
 
@@ -107,29 +107,29 @@
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     .line 174
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mIa:I
 
     add-int/lit8 v0, v0, -0x3
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mIa:I
 
     .line 175
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFb:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     add-float/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFb:F
 
     .line 176
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->c:F
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFc:F
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->d:F
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFd:F
 
     sub-float/2addr v0, v1
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->c:F
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->mFc:F
 
     .line 177
     return-void

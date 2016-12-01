@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mIc:I
 
-.field private b:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private c:I
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,15 +18,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/stat/a/ICn;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/a/ICn;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/tencent/stat/a/ICn;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/stat/a/ICn;->mStringb:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/tencent/stat/a/ICn;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/stat/a/ICn;->mStringa:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/tencent/stat/a/ICn;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/stat/a/ICn;->mStringb:Ljava/lang/String;
 
-    iput p3, p0, Lcom/tencent/stat/a/ICn;->c:I
+    iput p3, p0, Lcom/tencent/stat/a/ICn;->mIc:I
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/a/ICn;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/stat/a/ICn;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 .method public a(I)V
     .locals 0
 
-    iput p1, p0, Lcom/tencent/stat/a/ICn;->c:I
+    iput p1, p0, Lcom/tencent/stat/a/ICn;->mIc:I
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/a/ICn;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/stat/a/ICn;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -60,7 +60,7 @@
 .method public c()I
     .locals 1
 
-    iget v0, p0, Lcom/tencent/stat/a/ICn;->c:I
+    iget v0, p0, Lcom/tencent/stat/a/ICn;->mIc:I
 
     return v0
 .end method

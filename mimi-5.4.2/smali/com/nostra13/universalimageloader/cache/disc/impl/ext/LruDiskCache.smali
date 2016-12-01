@@ -21,7 +21,7 @@
 
 .field protected f:I
 
-.field private g:Ljava/io/File;
+.field private mFileg:Ljava/io/File;
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     .line 104
     :goto_1
-    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->g:Ljava/io/File;
+    iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->mFileg:Ljava/io/File;
 
     .line 105
     iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->c:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;

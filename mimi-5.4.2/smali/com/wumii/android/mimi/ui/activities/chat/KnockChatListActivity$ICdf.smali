@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+.field final synthetic mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
+.field final synthetic mICdeb:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->b:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->mICdeb:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +44,9 @@
     :pswitch_0
     new-instance v0, Lcom/wumii/android/mimi/task/RemoveChatsTask;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->b:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->mICdeb:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;->mKnockChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdg;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/task/RemoveChatsTask;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;)V
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->mChatSessiona:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getSessionId()Ljava/lang/String;
 

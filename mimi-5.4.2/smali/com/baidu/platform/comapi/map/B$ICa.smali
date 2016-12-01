@@ -19,7 +19,7 @@
 
 .field public h:Lcom/baidu/mapapi/model/inner/Point;
 
-.field final synthetic i:Lcom/baidu/platform/comapi/map/B;
+.field final synthetic mBi:Lcom/baidu/platform/comapi/map/B;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     const/4 v1, 0x0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/B$ICa;->i:Lcom/baidu/platform/comapi/map/B;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/B$ICa;->mBi:Lcom/baidu/platform/comapi/map/B;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field a:Landroid/graphics/Bitmap;
+.field mBitmapa:Landroid/graphics/Bitmap;
 
-.field private b:Landroid/os/Bundle;
+.field private mBundleb:Landroid/os/Bundle;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     :cond_0
     return-void
@@ -69,13 +69,13 @@
 .method a()[B
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Bitmap;->copyPixelsToBuffer(Ljava/nio/Buffer;)V
 
@@ -105,7 +105,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_0
 
@@ -118,7 +118,7 @@
     throw v0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->b:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBundleb:Landroid/os/Bundle;
 
     if-nez v0, :cond_2
 
@@ -128,7 +128,7 @@
 
     const-string/jumbo v0, "image_width"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -138,7 +138,7 @@
 
     const-string/jumbo v0, "image_height"
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -227,10 +227,10 @@
 
     invoke-virtual {v3, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v3, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->b:Landroid/os/Bundle;
+    iput-object v3, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBundleb:Landroid/os/Bundle;
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->b:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBundleb:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -238,11 +238,11 @@
 .method public recycle()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -250,13 +250,13 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     :cond_0
     return-void

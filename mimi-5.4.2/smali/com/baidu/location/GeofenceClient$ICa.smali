@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/GeofenceClient;
+.field final synthetic mGeofenceClienta:Lcom/baidu/location/GeofenceClient;
 
 
 # direct methods
 .method private constructor <init>(Lcom/baidu/location/GeofenceClient;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/GeofenceClient$ICa;->a:Lcom/baidu/location/GeofenceClient;
+    iput-object p1, p0, Lcom/baidu/location/GeofenceClient$ICa;->mGeofenceClienta:Lcom/baidu/location/GeofenceClient;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -51,14 +51,14 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/GeofenceClient$ICa;->a:Lcom/baidu/location/GeofenceClient;
+    iget-object v1, p0, Lcom/baidu/location/GeofenceClient$ICa;->mGeofenceClienta:Lcom/baidu/location/GeofenceClient;
 
     invoke-static {v1, v0}, Lcom/baidu/location/GeofenceClient;->do(Lcom/baidu/location/GeofenceClient;Ljava/lang/String;)V
 
     goto :goto_0
 
     :sswitch_1
-    iget-object v0, p0, Lcom/baidu/location/GeofenceClient$ICa;->a:Lcom/baidu/location/GeofenceClient;
+    iget-object v0, p0, Lcom/baidu/location/GeofenceClient$ICa;->mGeofenceClienta:Lcom/baidu/location/GeofenceClient;
 
     invoke-static {v0}, Lcom/baidu/location/GeofenceClient;->do(Lcom/baidu/location/GeofenceClient;)V
 
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/GeofenceClient$ICa;->a:Lcom/baidu/location/GeofenceClient;
+    iget-object v1, p0, Lcom/baidu/location/GeofenceClient$ICa;->mGeofenceClienta:Lcom/baidu/location/GeofenceClient;
 
     invoke-static {v1, v0}, Lcom/baidu/location/GeofenceClient;->if(Lcom/baidu/location/GeofenceClient;Ljava/lang/String;)V
 

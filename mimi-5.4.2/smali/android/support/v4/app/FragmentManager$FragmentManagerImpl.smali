@@ -7,21 +7,31 @@
 
 
 # static fields
-.field static final A:Landroid/view/animation/Interpolator;
+.field static isZa:Z
 
-.field static final B:Landroid/view/animation/Interpolator;
+.field static final isZb:Z
 
-.field static final C:Landroid/view/animation/Interpolator;
+.field static final mInterpolatorA:Landroid/view/animation/Interpolator;
 
-.field static a:Z
+.field static final mInterpolatorB:Landroid/view/animation/Interpolator;
 
-.field static final b:Z
+.field static final mInterpolatorC:Landroid/view/animation/Interpolator;
 
-.field static final z:Landroid/view/animation/Interpolator;
+.field static final mInterpolatorz:Landroid/view/animation/Interpolator;
 
 
 # instance fields
-.field c:Ljava/util/ArrayList;
+.field isZe:Z
+
+.field isZr:Z
+
+.field isZs:Z
+
+.field isZt:Z
+
+.field isZv:Z
+
+.field mArrayListc:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -32,11 +42,7 @@
     .end annotation
 .end field
 
-.field d:[Ljava/lang/Runnable;
-
-.field e:Z
-
-.field f:Ljava/util/ArrayList;
+.field mArrayListf:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -47,7 +53,7 @@
     .end annotation
 .end field
 
-.field g:Ljava/util/ArrayList;
+.field mArrayListg:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -58,7 +64,7 @@
     .end annotation
 .end field
 
-.field h:Ljava/util/ArrayList;
+.field mArrayListh:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -69,7 +75,7 @@
     .end annotation
 .end field
 
-.field i:Ljava/util/ArrayList;
+.field mArrayListi:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -80,7 +86,7 @@
     .end annotation
 .end field
 
-.field j:Ljava/util/ArrayList;
+.field mArrayListj:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -91,7 +97,7 @@
     .end annotation
 .end field
 
-.field k:Ljava/util/ArrayList;
+.field mArrayListk:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -102,7 +108,7 @@
     .end annotation
 .end field
 
-.field l:Ljava/util/ArrayList;
+.field mArrayListl:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -113,7 +119,7 @@
     .end annotation
 .end field
 
-.field m:Ljava/util/ArrayList;
+.field mArrayListm:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -124,27 +130,21 @@
     .end annotation
 .end field
 
-.field n:I
+.field mArrayRunnabled:[Ljava/lang/Runnable;
 
-.field o:Landroid/support/v4/app/FragmentActivity;
+.field mBundlew:Landroid/os/Bundle;
 
-.field p:Landroid/support/v4/app/FragmentManager$FragmentContainer;
+.field mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-.field q:Landroid/support/v4/app/Fragment;
+.field mFragmentContainerp:Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
-.field r:Z
+.field mFragmentq:Landroid/support/v4/app/Fragment;
 
-.field s:Z
+.field mIn:I
 
-.field t:Z
+.field mRunnabley:Ljava/lang/Runnable;
 
-.field u:Ljava/lang/String;
-
-.field v:Z
-
-.field w:Landroid/os/Bundle;
-
-.field x:Landroid/util/SparseArray;
+.field mSparseArrayx:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray",
@@ -155,7 +155,7 @@
     .end annotation
 .end field
 
-.field y:Ljava/lang/Runnable;
+.field mStringu:Ljava/lang/String;
 
 
 # direct methods
@@ -170,7 +170,7 @@
     const/high16 v3, 0x3fc00000    # 1.5f
 
     .line 414
-    sput-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sput-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     .line 417
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -182,35 +182,35 @@
     const/4 v0, 0x1
 
     :cond_0
-    sput-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->b:Z
+    sput-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZb:Z
 
     .line 750
     new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v0, v4}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
 
-    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->z:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorz:Landroid/view/animation/Interpolator;
 
     .line 751
     new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v0, v3}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
 
-    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->A:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorA:Landroid/view/animation/Interpolator;
 
     .line 752
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0, v4}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
 
-    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->B:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorB:Landroid/view/animation/Interpolator;
 
     .line 753
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0, v3}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
 
-    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->C:Landroid/view/animation/Interpolator;
+    sput-object v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorC:Landroid/view/animation/Interpolator;
 
     return-void
 .end method
@@ -227,20 +227,20 @@
     .line 440
     const/4 v0, 0x0
 
-    iput v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iput v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     .line 452
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     .line 453
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     .line 455
     new-instance v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;
 
     invoke-direct {v0, p0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl$1;-><init>(Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;)V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->y:Ljava/lang/Runnable;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mRunnabley:Ljava/lang/Runnable;
 
     .line 2216
     return-void
@@ -256,7 +256,7 @@
     invoke-direct {v0, p1, p2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
     .line 774
-    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->A:Landroid/view/animation/Interpolator;
+    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorA:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
@@ -302,7 +302,7 @@
     invoke-direct/range {v0 .. v8}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
     .line 762
-    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->z:Landroid/view/animation/Interpolator;
+    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorz:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
@@ -320,7 +320,7 @@
     invoke-direct {v0, p3, p4}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
     .line 766
-    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->A:Landroid/view/animation/Interpolator;
+    sget-object v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mInterpolatorA:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
@@ -369,13 +369,13 @@
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
     .line 467
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     if-eqz v0, :cond_0
 
     .line 469
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     const-string/jumbo v2, "  "
 
@@ -549,7 +549,7 @@
 
     .prologue
     .line 1376
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     if-eqz v0, :cond_0
 
@@ -564,7 +564,7 @@
 
     .line 1380
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->u:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mStringu:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -581,7 +581,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->u:Ljava/lang/String;
+    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mStringu:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -611,11 +611,11 @@
 
     .line 1414
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -625,7 +625,7 @@
 
     .line 1415
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     if-nez v0, :cond_1
 
@@ -634,18 +634,18 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     .line 1418
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
     .line 1419
-    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v1, :cond_2
 
@@ -683,7 +683,7 @@
 
     .line 1420
     :cond_2
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -696,9 +696,9 @@
 
     .line 1424
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -717,7 +717,7 @@
     move-result v0
 
     .line 1425
-    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v1, :cond_4
 
@@ -755,7 +755,7 @@
 
     .line 1426
     :cond_4
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0, p1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -780,12 +780,12 @@
 
     .prologue
     .line 1320
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
     .line 1322
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -799,7 +799,7 @@
     if-ltz v1, :cond_2
 
     .line 1323
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -829,12 +829,12 @@
 
     .line 1329
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_4
 
     .line 1331
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -848,7 +848,7 @@
     if-ltz v1, :cond_4
 
     .line 1332
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -902,7 +902,7 @@
 
     .line 587
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -947,7 +947,7 @@
 
     .line 591
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1001,14 +1001,14 @@
 
     .prologue
     .line 1342
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
     if-eqz p1, :cond_2
 
     .line 1344
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1022,7 +1022,7 @@
     if-ltz v1, :cond_2
 
     .line 1345
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1056,14 +1056,14 @@
 
     .line 1351
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_4
 
     if-eqz p1, :cond_4
 
     .line 1353
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1077,7 +1077,7 @@
     if-ltz v1, :cond_4
 
     .line 1354
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1192,7 +1192,7 @@
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 2135
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v0, v6}, Landroid/support/v4/app/Fragment;->isSupportFragmentClass(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -1292,7 +1292,7 @@
 
     .line 2158
     :cond_5
-    sget-boolean v4, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v4, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v4, :cond_6
 
@@ -1375,7 +1375,7 @@
     iput-object p0, v4, Landroid/support/v4/app/Fragment;->mFragmentManager:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
     .line 2169
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     iget-object v1, v4, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;
 
@@ -1388,7 +1388,7 @@
 
     .line 2193
     :goto_5
-    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     if-ge v0, v2, :cond_c
 
@@ -1541,7 +1541,7 @@
     if-nez v1, :cond_b
 
     .line 2187
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     iget-object v4, v0, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;
 
@@ -1628,7 +1628,7 @@
     if-eqz v0, :cond_2
 
     .line 788
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     iget v2, p1, Landroid/support/v4/app/Fragment;->mNextAnim:I
 
@@ -1669,7 +1669,7 @@
     .line 818
     if-nez p4, :cond_5
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getWindow()Landroid/view/Window;
 
@@ -1678,7 +1678,7 @@
     if-eqz v0, :cond_5
 
     .line 819
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getWindow()Landroid/view/Window;
 
@@ -1701,7 +1701,7 @@
 
     .line 805
     :pswitch_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     const/high16 v1, 0x3f900000    # 1.125f
 
@@ -1713,7 +1713,7 @@
 
     .line 807
     :pswitch_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v0, v3, v5, v3, v4}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(Landroid/content/Context;FFFF)Landroid/view/animation/Animation;
 
@@ -1723,7 +1723,7 @@
 
     .line 809
     :pswitch_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v0, v5, v3, v4, v3}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(Landroid/content/Context;FFFF)Landroid/view/animation/Animation;
 
@@ -1733,7 +1733,7 @@
 
     .line 811
     :pswitch_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     const v1, 0x3f89999a    # 1.075f
 
@@ -1745,7 +1745,7 @@
 
     .line 813
     :pswitch_4
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v0, v4, v3}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(Landroid/content/Context;FF)Landroid/view/animation/Animation;
 
@@ -1755,7 +1755,7 @@
 
     .line 815
     :pswitch_5
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v0, v3, v4}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(Landroid/content/Context;FF)Landroid/view/animation/Animation;
 
@@ -1834,7 +1834,7 @@
     const/4 v5, 0x0
 
     .line 1124
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     if-nez v0, :cond_0
 
@@ -1853,7 +1853,7 @@
     :cond_0
     if-nez p4, :cond_2
 
-    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     if-ne v0, p1, :cond_2
 
@@ -1864,10 +1864,10 @@
 
     .line 1132
     :cond_2
-    iput p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iput p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     .line 1133
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
@@ -1877,7 +1877,7 @@
 
     .line 1135
     :goto_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -1886,7 +1886,7 @@
     if-ge v6, v0, :cond_3
 
     .line 1136
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1943,27 +1943,27 @@
 
     .line 1149
     :cond_4
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_1
 
     .line 1150
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->d()V
 
     .line 1151
-    iput-boolean v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     goto :goto_0
 
@@ -1982,7 +1982,7 @@
 
     .line 1434
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -1991,11 +1991,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     .line 1437
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2005,7 +2005,7 @@
     if-ge p1, v0, :cond_2
 
     .line 1439
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -2043,7 +2043,7 @@
 
     .line 1440
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
@@ -2060,14 +2060,14 @@
     if-ge v0, p1, :cond_5
 
     .line 1443
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1444
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     if-nez v1, :cond_3
 
@@ -2076,11 +2076,11 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     .line 1447
     :cond_3
-    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v1, :cond_4
 
@@ -2108,7 +2108,7 @@
 
     .line 1448
     :cond_4
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2123,7 +2123,7 @@
 
     .line 1451
     :cond_5
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_6
 
@@ -2161,7 +2161,7 @@
 
     .line 1452
     :cond_6
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -2196,7 +2196,7 @@
 
     .prologue
     .line 1973
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
@@ -2206,7 +2206,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -2215,7 +2215,7 @@
     if-ge v1, v0, :cond_1
 
     .line 1975
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2323,7 +2323,7 @@
     check-cast p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;
 
     .line 1802
-    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     if-eqz v0, :cond_0
 
@@ -2348,7 +2348,7 @@
     check-cast v0, Landroid/support/v4/app/Fragment;
 
     .line 1809
-    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v3, :cond_2
 
@@ -2376,14 +2376,14 @@
 
     .line 1810
     :cond_2
-    iget-object v3, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v3, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     iget v4, v0, Landroid/support/v4/app/Fragment;->mIndex:I
 
     aget-object v3, v3, v4
 
     .line 1811
-    iput-object v0, v3, Landroid/support/v4/app/Fragment$FragmentState;->k:Landroid/support/v4/app/Fragment;
+    iput-object v0, v3, Landroid/support/v4/app/Fragment$FragmentState;->mFragmentk:Landroid/support/v4/app/Fragment;
 
     .line 1812
     iput-object v7, v0, Landroid/support/v4/app/Fragment;->mSavedViewState:Landroid/util/SparseArray;
@@ -2401,14 +2401,14 @@
     iput-object v7, v0, Landroid/support/v4/app/Fragment;->mTarget:Landroid/support/v4/app/Fragment;
 
     .line 1817
-    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     if-eqz v4, :cond_3
 
     .line 1818
-    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
-    iget-object v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v5}, Landroid/support/v4/app/FragmentActivity;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -2417,7 +2417,7 @@
     invoke-virtual {v4, v5}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
 
     .line 1819
-    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v4, v3, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     const-string/jumbo v5, "android:view_state"
 
@@ -2428,7 +2428,7 @@
     iput-object v4, v0, Landroid/support/v4/app/Fragment;->mSavedViewState:Landroid/util/SparseArray;
 
     .line 1821
-    iget-object v3, v3, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v3, v3, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     iput-object v3, v0, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;
 
@@ -2444,21 +2444,21 @@
     :cond_4
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     array-length v1, v1
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     .line 1829
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_5
 
     .line 1830
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -2467,14 +2467,14 @@
 
     .line 1832
     :goto_2
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_a
 
     .line 1833
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     aget-object v1, v1, v0
 
@@ -2482,16 +2482,16 @@
     if-eqz v1, :cond_7
 
     .line 1835
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {v1, v3, v4}, Landroid/support/v4/app/Fragment$FragmentState;->a(Landroid/support/v4/app/FragmentActivity;Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/Fragment;
 
     move-result-object v3
 
     .line 1836
-    sget-boolean v4, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v4, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v4, :cond_6
 
@@ -2529,12 +2529,12 @@
 
     .line 1837
     :cond_6
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1841
-    iput-object v7, v1, Landroid/support/v4/app/Fragment$FragmentState;->k:Landroid/support/v4/app/Fragment;
+    iput-object v7, v1, Landroid/support/v4/app/Fragment$FragmentState;->mFragmentk:Landroid/support/v4/app/Fragment;
 
     .line 1832
     :goto_3
@@ -2544,12 +2544,12 @@
 
     .line 1843
     :cond_7
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1844
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     if-nez v1, :cond_8
 
@@ -2558,11 +2558,11 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     .line 1847
     :cond_8
-    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v1, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v1, :cond_9
 
@@ -2590,7 +2590,7 @@
 
     .line 1848
     :cond_9
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2629,7 +2629,7 @@
     .line 1857
     iget v1, v0, Landroid/support/v4/app/Fragment;->mTargetIndex:I
 
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -2638,7 +2638,7 @@
     if-ge v1, v4, :cond_c
 
     .line 1858
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     iget v4, v0, Landroid/support/v4/app/Fragment;->mTargetIndex:I
 
@@ -2702,35 +2702,35 @@
 
     .line 1869
     :cond_d
-    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     if-eqz v0, :cond_11
 
     .line 1870
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     array-length v1, v1
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     move v1, v2
 
     .line 1871
     :goto_6
-    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     array-length v0, v0
 
     if-ge v1, v0, :cond_12
 
     .line 1872
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
-    iget-object v3, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v3, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     aget v3, v3, v1
 
@@ -2756,7 +2756,7 @@
 
     move-result-object v4
 
-    iget-object v5, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iget-object v5, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     aget v5, v5, v1
 
@@ -2779,7 +2779,7 @@
     iput-boolean v3, v0, Landroid/support/v4/app/Fragment;->mAdded:Z
 
     .line 1878
-    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v3, :cond_f
 
@@ -2817,7 +2817,7 @@
 
     .line 1879
     :cond_f
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2836,7 +2836,7 @@
 
     .line 1882
     :cond_10
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -2849,37 +2849,37 @@
 
     .line 1885
     :cond_11
-    iput-object v7, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iput-object v7, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     .line 1889
     :cond_12
-    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iget-object v0, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     if-eqz v0, :cond_15
 
     .line 1890
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     array-length v1, v1
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     move v0, v2
 
     .line 1891
     :goto_7
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 1892
-    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iget-object v1, p1, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     aget-object v1, v1, v0
 
@@ -2888,7 +2888,7 @@
     move-result-object v1
 
     .line 1893
-    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v3, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v3, :cond_13
 
@@ -2915,7 +2915,7 @@
 
     move-result-object v4
 
-    iget v5, v1, Landroid/support/v4/app/BackStackRecord;->p:I
+    iget v5, v1, Landroid/support/v4/app/BackStackRecord;->mIp:I
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2956,17 +2956,17 @@
 
     .line 1900
     :cond_13
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1901
-    iget v3, v1, Landroid/support/v4/app/BackStackRecord;->p:I
+    iget v3, v1, Landroid/support/v4/app/BackStackRecord;->mIp:I
 
     if-ltz v3, :cond_14
 
     .line 1902
-    iget v3, v1, Landroid/support/v4/app/BackStackRecord;->p:I
+    iget v3, v1, Landroid/support/v4/app/BackStackRecord;->mIp:I
 
     invoke-virtual {p0, v3, v1}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(ILandroid/support/v4/app/BackStackRecord;)V
 
@@ -2978,7 +2978,7 @@
 
     .line 1906
     :cond_15
-    iput-object v7, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iput-object v7, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     goto/16 :goto_0
 .end method
@@ -2995,14 +2995,14 @@
     if-eqz v0, :cond_0
 
     .line 840
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->e:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZe:Z
 
     if-eqz v0, :cond_1
 
     .line 842
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->v:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZv:Z
 
     .line 848
     :cond_0
@@ -3014,7 +3014,7 @@
     iput-boolean v3, p1, Landroid/support/v4/app/Fragment;->mDeferStart:Z
 
     .line 846
-    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     move-object v0, p0
 
@@ -3038,7 +3038,7 @@
     const/4 v5, 0x0
 
     .line 1224
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -3096,12 +3096,12 @@
 
     .line 1227
     :cond_1
-    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v2, :cond_2
 
     .line 1228
-    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -3116,7 +3116,7 @@
     if-eqz v2, :cond_3
 
     .line 1231
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1233
     :cond_3
@@ -3267,7 +3267,7 @@
 
     .line 882
     :pswitch_0
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_7
 
@@ -3302,7 +3302,7 @@
     .line 884
     iget-object v0, p1, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v1}, Landroid/support/v4/app/FragmentActivity;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -3375,21 +3375,21 @@
 
     .line 902
     :cond_9
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     iput-object v0, p1, Landroid/support/v4/app/Fragment;->mActivity:Landroid/support/v4/app/FragmentActivity;
 
     .line 903
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     iput-object v0, p1, Landroid/support/v4/app/Fragment;->mParentFragment:Landroid/support/v4/app/Fragment;
 
     .line 904
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     if-eqz v0, :cond_a
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     iget-object v0, v0, Landroid/support/v4/app/Fragment;->mChildFragmentManager:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
@@ -3400,7 +3400,7 @@
     iput-boolean v3, p1, Landroid/support/v4/app/Fragment;->mCalled:Z
 
     .line 907
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {p1, v0}, Landroid/support/v4/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -3442,9 +3442,9 @@
 
     .line 904
     :cond_a
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->mFragmentManagerImplb:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
     goto :goto_2
 
@@ -3455,7 +3455,7 @@
     if-nez v0, :cond_c
 
     .line 913
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0, p1}, Landroid/support/v4/app/FragmentActivity;->a(Landroid/support/v4/app/Fragment;)V
 
@@ -3543,7 +3543,7 @@
     if-le p2, v5, :cond_17
 
     .line 941
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_10
 
@@ -3581,7 +3581,7 @@
     if-eqz v0, :cond_32
 
     .line 945
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->p:Landroid/support/v4/app/FragmentManager$FragmentContainer;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentContainerp:Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
     iget v1, p1, Landroid/support/v4/app/Fragment;->mContainerId:I
 
@@ -3771,7 +3771,7 @@
     if-le p2, v6, :cond_19
 
     .line 988
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_18
 
@@ -3807,7 +3807,7 @@
     if-le p2, v9, :cond_6
 
     .line 993
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1a
 
@@ -3904,7 +3904,7 @@
     if-ge p2, v5, :cond_6
 
     .line 1065
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->t:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZt:Z
 
     if-eqz v0, :cond_21
 
@@ -3943,7 +3943,7 @@
     if-ge p2, v0, :cond_23
 
     .line 1004
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_22
 
@@ -3982,7 +3982,7 @@
     if-ge p2, v9, :cond_25
 
     .line 1010
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_24
 
@@ -4018,7 +4018,7 @@
     if-ge p2, v6, :cond_27
 
     .line 1015
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_26
 
@@ -4056,7 +4056,7 @@
     if-ge p2, v0, :cond_20
 
     .line 1020
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_28
 
@@ -4089,7 +4089,7 @@
     if-eqz v0, :cond_29
 
     .line 1024
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->isFinishing()Z
 
@@ -4118,11 +4118,11 @@
     if-eqz v0, :cond_2b
 
     .line 1031
-    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     if-lez v0, :cond_31
 
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->t:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZt:Z
 
     if-nez v0, :cond_31
 
@@ -4177,7 +4177,7 @@
 
     .line 1086
     :cond_2c
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_2d
 
@@ -4322,7 +4322,7 @@
     const/4 v3, 0x1
 
     .line 1202
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -4331,11 +4331,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     .line 1205
     :cond_0
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -4371,7 +4371,7 @@
     if-nez v0, :cond_4
 
     .line 1208
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -4406,7 +4406,7 @@
 
     .line 1211
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -4428,7 +4428,7 @@
     if-eqz v0, :cond_3
 
     .line 1215
-    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1217
     :cond_3
@@ -4447,7 +4447,7 @@
 
     .prologue
     .line 1912
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     if-eqz v0, :cond_0
 
@@ -4461,13 +4461,13 @@
 
     .line 1913
     :cond_0
-    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     .line 1914
-    iput-object p2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->p:Landroid/support/v4/app/FragmentManager$FragmentContainer;
+    iput-object p2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentContainerp:Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
     .line 1915
-    iput-object p3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iput-object p3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     .line 1916
     return-void
@@ -4489,11 +4489,11 @@
 
     .line 1398
     :try_start_0
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->t:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZt:Z
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     if-nez v0, :cond_2
 
@@ -4520,7 +4520,7 @@
     .line 1401
     :cond_2
     :try_start_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     if-nez v0, :cond_3
 
@@ -4529,16 +4529,16 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     .line 1404
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1405
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4549,20 +4549,20 @@
     if-ne v0, v1, :cond_4
 
     .line 1406
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->y:Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mRunnabley:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 1407
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->y:Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mRunnabley:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -4619,12 +4619,12 @@
     move-result-object v3
 
     .line 642
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
     .line 643
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4663,7 +4663,7 @@
     if-ge v2, v4, :cond_1
 
     .line 649
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -4703,12 +4703,12 @@
 
     .line 659
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
     .line 660
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4731,7 +4731,7 @@
     if-ge v2, v4, :cond_2
 
     .line 664
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -4768,12 +4768,12 @@
 
     .line 671
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_3
 
     .line 672
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4796,7 +4796,7 @@
     if-ge v2, v4, :cond_3
 
     .line 676
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -4833,12 +4833,12 @@
 
     .line 683
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_4
 
     .line 684
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4861,7 +4861,7 @@
     if-ge v2, v4, :cond_4
 
     .line 688
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -4905,12 +4905,12 @@
 
     .line 697
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_5
 
     .line 698
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4933,7 +4933,7 @@
     if-ge v2, v3, :cond_5
 
     .line 702
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -4966,11 +4966,11 @@
 
     .line 709
     :cond_5
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -4986,7 +4986,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 711
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
 
@@ -5005,12 +5005,12 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 715
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_7
 
     .line 716
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5031,7 +5031,7 @@
     if-ge v1, v2, :cond_7
 
     .line 720
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5088,7 +5088,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
@@ -5099,12 +5099,12 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->p:Landroid/support/v4/app/FragmentManager$FragmentContainer;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentContainerp:Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
     .line 730
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     if-eqz v0, :cond_8
 
@@ -5115,7 +5115,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
@@ -5127,7 +5127,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(I)V
 
@@ -5136,7 +5136,7 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Z)V
 
@@ -5145,12 +5145,12 @@
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->t:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZt:Z
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Z)V
 
     .line 736
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     if-eqz v0, :cond_9
 
@@ -5162,13 +5162,13 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 738
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Z)V
 
     .line 740
     :cond_9
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->u:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mStringu:Ljava/lang/String;
 
     if-eqz v0, :cond_a
 
@@ -5180,17 +5180,17 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 742
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->u:Ljava/lang/String;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mStringu:Ljava/lang/String;
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 744
     :cond_a
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5206,7 +5206,7 @@
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 746
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
 
@@ -5234,7 +5234,7 @@
     const/4 v3, 0x0
 
     .line 1541
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     if-nez v0, :cond_1
 
@@ -5254,7 +5254,7 @@
     if-nez v0, :cond_2
 
     .line 1545
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5266,7 +5266,7 @@
     if-ltz v0, :cond_0
 
     .line 1549
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -5310,7 +5310,7 @@
 
     .line 1560
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5323,7 +5323,7 @@
     if-ltz v1, :cond_4
 
     .line 1562
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5361,7 +5361,7 @@
     if-ltz v1, :cond_9
 
     .line 1578
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5385,7 +5385,7 @@
     :cond_5
     if-ltz p3, :cond_9
 
-    iget v0, v0, Landroid/support/v4/app/BackStackRecord;->p:I
+    iget v0, v0, Landroid/support/v4/app/BackStackRecord;->mIp:I
 
     if-ne p3, v0, :cond_9
 
@@ -5400,7 +5400,7 @@
     :cond_7
     if-ltz p3, :cond_8
 
-    iget v0, v0, Landroid/support/v4/app/BackStackRecord;->p:I
+    iget v0, v0, Landroid/support/v4/app/BackStackRecord;->mIp:I
 
     if-eq p3, v0, :cond_4
 
@@ -5416,7 +5416,7 @@
 
     .line 1588
     :cond_a
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -5432,7 +5432,7 @@
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
     .line 1593
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -5444,7 +5444,7 @@
     if-le v1, v0, :cond_b
 
     .line 1594
-    iget-object v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v5, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -5507,7 +5507,7 @@
     if-gt v4, v7, :cond_f
 
     .line 1604
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_d
 
@@ -5584,7 +5584,7 @@
 
     .line 2027
     .line 2028
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v1, :cond_1
 
@@ -5594,7 +5594,7 @@
 
     .line 2029
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5603,7 +5603,7 @@
     if-ge v1, v0, :cond_2
 
     .line 2030
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5651,7 +5651,7 @@
     const/4 v1, 0x0
 
     .line 1997
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
@@ -5661,7 +5661,7 @@
 
     .line 1998
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5670,7 +5670,7 @@
     if-ge v3, v0, :cond_3
 
     .line 1999
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5720,13 +5720,13 @@
 
     .line 2012
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_6
 
     .line 2013
     :goto_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5735,7 +5735,7 @@
     if-ge v4, v0, :cond_6
 
     .line 2014
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5764,7 +5764,7 @@
 
     .line 2021
     :cond_6
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->j:Ljava/util/ArrayList;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListj:Ljava/util/ArrayList;
 
     .line 2023
     return v2
@@ -5777,7 +5777,7 @@
     const/4 v2, 0x0
 
     .line 2042
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -5785,7 +5785,7 @@
 
     .line 2043
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5794,7 +5794,7 @@
     if-ge v1, v0, :cond_0
 
     .line 2044
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5833,14 +5833,14 @@
 
     .prologue
     .line 1364
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
     if-eqz p1, :cond_1
 
     .line 1365
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -5854,7 +5854,7 @@
     if-ltz v1, :cond_1
 
     .line 1366
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5899,14 +5899,14 @@
 
     .line 1459
     :try_start_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->k:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListk:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     .line 1460
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -5915,11 +5915,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     .line 1463
     :cond_0
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -5947,7 +5947,7 @@
 
     .line 1464
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->l:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListl:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -5977,7 +5977,7 @@
 
     .prologue
     .line 1533
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
@@ -5986,11 +5986,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     .line 1536
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -6008,7 +6008,7 @@
     const/4 v3, 0x0
 
     .line 1116
-    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     move-object v0, p0
 
@@ -6031,7 +6031,7 @@
     const/4 v3, 0x1
 
     .line 1241
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -6109,7 +6109,7 @@
     if-eqz v0, :cond_3
 
     .line 1253
-    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1255
     :cond_3
@@ -6125,7 +6125,7 @@
 
     .prologue
     .line 2070
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
@@ -6135,7 +6135,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6144,7 +6144,7 @@
     if-ge v1, v0, :cond_1
 
     .line 2072
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -6190,7 +6190,7 @@
     const/4 v2, 0x0
 
     .line 2056
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -6198,7 +6198,7 @@
 
     .line 2057
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6207,7 +6207,7 @@
     if-ge v1, v0, :cond_0
 
     .line 2058
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -6257,11 +6257,11 @@
 
     .line 1172
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6271,7 +6271,7 @@
 
     .line 1173
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-nez v0, :cond_3
 
@@ -6280,28 +6280,28 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     .line 1176
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p1, v0, v1}, Landroid/support/v4/app/Fragment;->setIndex(ILandroid/support/v4/app/Fragment;)V
 
     .line 1177
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1183
     :goto_1
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -6331,9 +6331,9 @@
 
     .line 1180
     :cond_4
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -6351,12 +6351,12 @@
 
     move-result v0
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p1, v0, v1}, Landroid/support/v4/app/Fragment;->setIndex(ILandroid/support/v4/app/Fragment;)V
 
     .line 1181
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     iget v1, p1, Landroid/support/v4/app/Fragment;->mIndex:I
 
@@ -6374,7 +6374,7 @@
     const/4 v3, 0x0
 
     .line 1260
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -6448,7 +6448,7 @@
     if-eqz v0, :cond_3
 
     .line 1272
-    iput-boolean v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1274
     :cond_3
@@ -6470,9 +6470,9 @@
     invoke-virtual {p0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->b()Z
 
     .line 506
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -6492,11 +6492,11 @@
 
     .prologue
     .line 549
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -6526,7 +6526,7 @@
 
     .line 1191
     :cond_0
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -6554,7 +6554,7 @@
 
     .line 1192
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     iget v1, p1, Landroid/support/v4/app/Fragment;->mIndex:I
 
@@ -6563,7 +6563,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     .line 1193
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     if-nez v0, :cond_2
 
@@ -6572,11 +6572,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     .line 1196
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListh:Ljava/util/ArrayList;
 
     iget v1, p1, Landroid/support/v4/app/Fragment;->mIndex:I
 
@@ -6587,7 +6587,7 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 1197
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     iget-object v1, p1, Landroid/support/v4/app/Fragment;->mWho:Ljava/lang/String;
 
@@ -6608,7 +6608,7 @@
     const/4 v2, 0x1
 
     .line 1279
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -6649,12 +6649,12 @@
     if-eqz v0, :cond_4
 
     .line 1284
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_2
 
     .line 1285
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -6682,7 +6682,7 @@
 
     .line 1286
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -6697,7 +6697,7 @@
     if-eqz v0, :cond_3
 
     .line 1289
-    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1291
     :cond_3
@@ -6733,7 +6733,7 @@
 
     .prologue
     .line 601
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -6754,7 +6754,7 @@
 
     .line 1636
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     if-nez v0, :cond_2
 
@@ -6763,18 +6763,18 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     .line 1641
     :goto_1
     iget-object v0, p1, Landroid/support/v4/app/Fragment;->mInnerView:Landroid/view/View;
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->saveHierarchyState(Landroid/util/SparseArray;)V
 
     .line 1642
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -6783,20 +6783,20 @@
     if-lez v0, :cond_0
 
     .line 1643
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     iput-object v0, p1, Landroid/support/v4/app/Fragment;->mSavedViewState:Landroid/util/SparseArray;
 
     .line 1644
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     goto :goto_0
 
     .line 1639
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->x:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mSparseArrayx:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
@@ -6812,7 +6812,7 @@
     const/4 v5, 0x0
 
     .line 1298
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -6853,7 +6853,7 @@
     if-nez v0, :cond_5
 
     .line 1302
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-nez v0, :cond_1
 
@@ -6862,11 +6862,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     .line 1305
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -6901,7 +6901,7 @@
 
     .line 1308
     :cond_2
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_3
 
@@ -6929,7 +6929,7 @@
 
     .line 1309
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -6946,11 +6946,11 @@
     if-eqz v0, :cond_4
 
     .line 1312
-    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->r:Z
+    iput-boolean v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZr:Z
 
     .line 1314
     :cond_4
-    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->n:I
+    iget v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mIn:I
 
     move-object v0, p0
 
@@ -6975,7 +6975,7 @@
 
     .line 1649
     .line 1651
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     if-nez v0, :cond_0
 
@@ -6984,16 +6984,16 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iput-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     .line 1654
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     invoke-virtual {p1, v0}, Landroid/support/v4/app/Fragment;->performSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 1655
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->isEmpty()Z
 
@@ -7002,10 +7002,10 @@
     if-nez v0, :cond_6
 
     .line 1656
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     .line 1657
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->w:Landroid/os/Bundle;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mBundlew:Landroid/os/Bundle;
 
     .line 1660
     :goto_0
@@ -7075,7 +7075,7 @@
 
     .prologue
     .line 1157
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-nez v0, :cond_1
 
@@ -7090,7 +7090,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7099,7 +7099,7 @@
     if-ge v1, v0, :cond_0
 
     .line 1160
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7131,7 +7131,7 @@
     const/4 v2, 0x0
 
     .line 1472
-    iget-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->e:Z
+    iget-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZe:Z
 
     if-eqz v1, :cond_0
 
@@ -7150,9 +7150,9 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v3, v3, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v3, v3, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
     invoke-virtual {v3}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -7178,11 +7178,11 @@
 
     .line 1486
     :try_start_0
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     if-eqz v3, :cond_2
 
-    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v3, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -7197,7 +7197,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 1508
-    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->v:Z
+    iget-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZv:Z
 
     if-eqz v0, :cond_9
 
@@ -7207,7 +7207,7 @@
 
     .line 1510
     :goto_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7216,7 +7216,7 @@
     if-ge v3, v0, :cond_8
 
     .line 1511
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7251,18 +7251,18 @@
     .line 1490
     :cond_4
     :try_start_1
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
     .line 1491
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     array-length v1, v1
 
@@ -7272,27 +7272,27 @@
     :cond_5
     new-array v1, v3, [Ljava/lang/Runnable;
 
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     .line 1494
     :cond_6
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 1495
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->c:Ljava/util/ArrayList;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListc:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
     .line 1496
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v1, v1, Landroid/support/v4/app/FragmentActivity;->a:Landroid/os/Handler;
+    iget-object v1, v1, Landroid/support/v4/app/FragmentActivity;->mHandlera:Landroid/os/Handler;
 
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->y:Ljava/lang/Runnable;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mRunnabley:Ljava/lang/Runnable;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -7302,7 +7302,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 1499
-    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->e:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZe:Z
 
     move v1, v2
 
@@ -7311,14 +7311,14 @@
     if-ge v1, v3, :cond_7
 
     .line 1501
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     aget-object v4, v4, v1
 
     invoke-interface {v4}, Ljava/lang/Runnable;->run()V
 
     .line 1502
-    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->d:[Ljava/lang/Runnable;
+    iget-object v4, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayRunnabled:[Ljava/lang/Runnable;
 
     const/4 v5, 0x0
 
@@ -7342,7 +7342,7 @@
 
     .line 1504
     :cond_7
-    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->e:Z
+    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZe:Z
 
     move v1, v0
 
@@ -7354,7 +7354,7 @@
     if-nez v4, :cond_9
 
     .line 1517
-    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->v:Z
+    iput-boolean v2, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZv:Z
 
     .line 1518
     invoke-virtual {p0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f()V
@@ -7369,7 +7369,7 @@
 
     .prologue
     .line 1525
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->m:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListm:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -7379,7 +7379,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->m:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListm:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7388,7 +7388,7 @@
     if-ge v1, v0, :cond_0
 
     .line 1527
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->m:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListm:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7427,7 +7427,7 @@
     const/4 v1, 0x0
 
     .line 1615
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_3
 
@@ -7437,7 +7437,7 @@
     move v3, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7446,7 +7446,7 @@
     if-ge v3, v0, :cond_3
 
     .line 1617
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7491,7 +7491,7 @@
     iput v2, v0, Landroid/support/v4/app/Fragment;->mTargetIndex:I
 
     .line 1625
-    sget-boolean v2, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v2, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v2, :cond_1
 
@@ -7550,20 +7550,20 @@
     invoke-virtual {p0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g()Z
 
     .line 1686
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->b:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZb:Z
 
     if-eqz v0, :cond_0
 
     .line 1696
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1699
     :cond_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7578,7 +7578,7 @@
 
     .line 1704
     :cond_2
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7596,7 +7596,7 @@
     if-ge v5, v6, :cond_9
 
     .line 1708
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListf:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7663,7 +7663,7 @@
 
     if-lez v8, :cond_8
 
-    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     if-nez v8, :cond_8
 
@@ -7672,7 +7672,7 @@
 
     move-result-object v8
 
-    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     .line 1724
     iget-object v8, v0, Landroid/support/v4/app/Fragment;->mTarget:Landroid/support/v4/app/Fragment;
@@ -7725,7 +7725,7 @@
 
     .line 1730
     :cond_4
-    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     if-nez v8, :cond_5
 
@@ -7734,11 +7734,11 @@
 
     invoke-direct {v8}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     .line 1733
     :cond_5
-    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     const-string/jumbo v9, "android:target_state"
 
@@ -7752,7 +7752,7 @@
     if-eqz v8, :cond_6
 
     .line 1736
-    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     const-string/jumbo v9, "android:target_req_state"
 
@@ -7763,7 +7763,7 @@
     .line 1746
     :cond_6
     :goto_2
-    sget-boolean v8, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v8, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v8, :cond_7
 
@@ -7789,7 +7789,7 @@
 
     move-result-object v0
 
-    iget-object v2, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iget-object v2, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -7818,7 +7818,7 @@
     :cond_8
     iget-object v8, v0, Landroid/support/v4/app/Fragment;->mSavedFragmentState:Landroid/os/Bundle;
 
-    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->j:Landroid/os/Bundle;
+    iput-object v8, v2, Landroid/support/v4/app/Fragment$FragmentState;->mBundlej:Landroid/os/Bundle;
 
     goto :goto_2
 
@@ -7827,7 +7827,7 @@
     if-nez v2, :cond_a
 
     .line 1752
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_1
 
@@ -7841,12 +7841,12 @@
 
     .line 1760
     :cond_a
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_d
 
     .line 1761
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -7865,7 +7865,7 @@
     if-ge v2, v5, :cond_e
 
     .line 1765
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7895,7 +7895,7 @@
 
     move-result-object v6
 
-    iget-object v8, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7927,7 +7927,7 @@
 
     .line 1771
     :cond_b
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_c
 
@@ -7953,7 +7953,7 @@
 
     move-result-object v6
 
-    iget-object v8, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v8, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -7982,12 +7982,12 @@
 
     .line 1778
     :cond_e
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_10
 
     .line 1779
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -8008,7 +8008,7 @@
     .line 1783
     new-instance v4, Landroid/support/v4/app/BackStackRecord$BackStackState;
 
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -8021,7 +8021,7 @@
     aput-object v4, v3, v2
 
     .line 1784
-    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a:Z
+    sget-boolean v0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZa:Z
 
     if-eqz v0, :cond_f
 
@@ -8047,7 +8047,7 @@
 
     move-result-object v4
 
-    iget-object v6, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->i:Ljava/util/ArrayList;
+    iget-object v6, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListi:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -8078,13 +8078,13 @@
     invoke-direct {v0}, Landroid/support/v4/app/FragmentManager$FragmentManagerState;-><init>()V
 
     .line 1791
-    iput-object v7, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->a:[Landroid/support/v4/app/Fragment$FragmentState;
+    iput-object v7, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayFragmentStatea:[Landroid/support/v4/app/Fragment$FragmentState;
 
     .line 1792
-    iput-object v1, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->b:[I
+    iput-object v1, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayIb:[I
 
     .line 1793
-    iput-object v3, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->c:[Landroid/support/v4/app/BackStackRecord$BackStackState;
+    iput-object v3, v0, Landroid/support/v4/app/FragmentManager$FragmentManagerState;->mArrayBackStackStatec:[Landroid/support/v4/app/BackStackRecord$BackStackState;
 
     move-object v3, v0
 
@@ -8104,7 +8104,7 @@
     .line 1919
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1920
     return-void
@@ -8117,7 +8117,7 @@
     const/4 v1, 0x0
 
     .line 1923
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1924
     const/4 v0, 0x1
@@ -8135,7 +8135,7 @@
     const/4 v1, 0x0
 
     .line 1928
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1929
     const/4 v0, 0x2
@@ -8153,7 +8153,7 @@
     const/4 v1, 0x0
 
     .line 1933
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1934
     const/4 v0, 0x4
@@ -8171,7 +8171,7 @@
     const/4 v1, 0x0
 
     .line 1938
-    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1939
     const/4 v0, 0x5
@@ -8204,7 +8204,7 @@
     .line 1950
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->s:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZs:Z
 
     .line 1952
     const/4 v0, 0x3
@@ -8258,7 +8258,7 @@
     .line 1964
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->t:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->isZt:Z
 
     .line 1965
     invoke-virtual {p0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g()Z
@@ -8267,13 +8267,13 @@
     invoke-virtual {p0, v2, v2}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->a(IZ)V
 
     .line 1967
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     .line 1968
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->p:Landroid/support/v4/app/FragmentManager$FragmentContainer;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentContainerp:Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
     .line 1969
-    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iput-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     .line 1970
     return-void
@@ -8312,12 +8312,12 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 628
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     if-eqz v1, :cond_0
 
     .line 629
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->q:Landroid/support/v4/app/Fragment;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentq:Landroid/support/v4/app/Fragment;
 
     invoke-static {v1, v0}, Landroid/support/v4/util/DebugUtils;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
 
@@ -8336,7 +8336,7 @@
 
     .line 631
     :cond_0
-    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->o:Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mFragmentActivityo:Landroid/support/v4/app/FragmentActivity;
 
     invoke-static {v1, v0}, Landroid/support/v4/util/DebugUtils;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
 
@@ -8348,7 +8348,7 @@
 
     .prologue
     .line 1984
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
@@ -8358,7 +8358,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -8367,7 +8367,7 @@
     if-ge v1, v0, :cond_1
 
     .line 1986
-    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->mArrayListg:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

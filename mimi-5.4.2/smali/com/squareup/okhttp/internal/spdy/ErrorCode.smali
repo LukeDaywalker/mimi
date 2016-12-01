@@ -41,6 +41,8 @@
 
 .field public static final enum m:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
+.field private static final synthetic mArrayErrorCodev:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+
 .field public static final enum n:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
 .field public static final enum o:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
@@ -50,8 +52,6 @@
 .field public static final enum q:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
 .field public static final enum r:Lcom/squareup/okhttp/internal/spdy/ErrorCode;
-
-.field private static final synthetic v:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
 
 # instance fields
@@ -482,7 +482,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->v:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sput-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mArrayErrorCodev:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     return-void
 .end method
@@ -665,7 +665,7 @@
 
     .prologue
     .line 19
-    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->v:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
+    sget-object v0, Lcom/squareup/okhttp/internal/spdy/ErrorCode;->mArrayErrorCodev:[Lcom/squareup/okhttp/internal/spdy/ErrorCode;
 
     invoke-virtual {v0}, [Lcom/squareup/okhttp/internal/spdy/ErrorCode;->clone()Ljava/lang/Object;
 

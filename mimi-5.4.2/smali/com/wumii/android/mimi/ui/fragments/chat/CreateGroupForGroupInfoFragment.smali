@@ -8,29 +8,29 @@
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field private isZr:Z
 
-.field private d:Landroid/view/View;
+.field private mAlertDialogn:Landroid/app/AlertDialog;
 
-.field private e:Landroid/widget/TextView;
+.field private mButtonm:Landroid/widget/Button;
 
-.field private j:Landroid/widget/EditText;
+.field private mEditTextj:Landroid/widget/EditText;
 
-.field private k:Landroid/widget/EditText;
+.field private mEditTextk:Landroid/widget/EditText;
 
-.field private l:Landroid/widget/ImageButton;
+.field private mFileo:Ljava/io/File;
 
-.field private m:Landroid/widget/Button;
+.field private mImageButtonl:Landroid/widget/ImageButton;
 
-.field private n:Landroid/app/AlertDialog;
+.field private mIp:I
 
-.field private o:Ljava/io/File;
+.field private mSyncQuotaTaskq:Lcom/wumii/android/mimi/task/SyncQuotaTask;
 
-.field private p:I
+.field private mTextViewe:Landroid/widget/TextView;
 
-.field private q:Lcom/wumii/android/mimi/task/SyncQuotaTask;
+.field private mViewc:Landroid/view/View;
 
-.field private r:Z
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -44,7 +44,7 @@
     .line 65
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->r:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->isZr:Z
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -71,15 +71,15 @@
     if-lez p1, :cond_0
 
     .line 126
-    iput-boolean v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->r:Z
+    iput-boolean v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->isZr:Z
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewd:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -91,15 +91,15 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->r:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->isZr:Z
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->c:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewc:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewd:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -147,7 +147,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->l:Landroid/widget/ImageButton;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mImageButtonl:Landroid/widget/ImageButton;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->getResources()Landroid/content/res/Resources;
 
@@ -428,7 +428,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->n:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mAlertDialogn:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -464,7 +464,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->n:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mAlertDialogn:Landroid/app/AlertDialog;
 
     .line 207
     :goto_0
@@ -472,7 +472,7 @@
 
     .line 205
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->n:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mAlertDialogn:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -726,7 +726,7 @@
     invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 281
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->o:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mFileo:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -756,7 +756,7 @@
 
     .prologue
     .line 342
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->o:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mFileo:Ljava/io/File;
 
     if-nez v0, :cond_0
 
@@ -771,11 +771,11 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->o:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mFileo:Ljava/io/File;
 
     .line 345
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->o:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mFileo:Ljava/io/File;
 
     return-object v0
 .end method
@@ -789,11 +789,11 @@
     const/4 v0, 0x0
 
     .line 146
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->k:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextk:Landroid/widget/EditText;
 
     if-nez v1, :cond_1
 
@@ -821,7 +821,7 @@
     if-eqz v1, :cond_0
 
     .line 152
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getEditableText()Landroid/text/Editable;
 
@@ -831,13 +831,13 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->k:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextk:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getEditableText()Landroid/text/Editable;
 
@@ -847,7 +847,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -858,7 +858,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->k:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextk:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -875,7 +875,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -921,7 +921,7 @@
 
     .prologue
     .line 138
-    iget v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->p:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mIp:I
 
     if-lez v0, :cond_0
 
@@ -1068,7 +1068,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->p:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mIp:I
 
     .line 72
     new-instance v0, Lcom/wumii/android/mimi/task/SyncQuotaTask;
@@ -1079,7 +1079,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/SyncQuotaTask;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->q:Lcom/wumii/android/mimi/task/SyncQuotaTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mSyncQuotaTaskq:Lcom/wumii/android/mimi/task/SyncQuotaTask;
 
     .line 73
     return-void
@@ -1110,7 +1110,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewc:Landroid/view/View;
 
     .line 80
     const v0, 0x7f0b01d2
@@ -1119,7 +1119,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mViewd:Landroid/view/View;
 
     .line 81
     const v0, 0x7f0b0089
@@ -1130,10 +1130,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->e:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mTextViewe:Landroid/widget/TextView;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->e:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mTextViewe:Landroid/widget/TextView;
 
     const v2, 0x7f0600b4
 
@@ -1141,7 +1141,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->p:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mIp:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1164,7 +1164,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     .line 84
     const v0, 0x7f0b01d1
@@ -1175,7 +1175,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->k:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextk:Landroid/widget/EditText;
 
     .line 85
     const v0, 0x7f0b017d
@@ -1186,25 +1186,25 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->l:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mImageButtonl:Landroid/widget/ImageButton;
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->l:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mImageButtonl:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     invoke-virtual {v0, v5}, Landroid/widget/EditText;->setCursorVisible(Z)V
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextj:Landroid/widget/EditText;
 
     new-instance v2, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment$ICp;
 
@@ -1213,7 +1213,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 95
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mEditTextk:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -1245,7 +1245,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->l:Landroid/widget/ImageButton;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mImageButtonl:Landroid/widget/ImageButton;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->getResources()Landroid/content/res/Resources;
 
@@ -1273,15 +1273,15 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->m:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mButtonm:Landroid/widget/Button;
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->m:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mButtonm:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 107
-    iget v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->p:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mIp:I
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->a(I)V
 
@@ -1297,12 +1297,12 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->onResume()V
 
     .line 114
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->isZr:Z
 
     if-eqz v0, :cond_0
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->q:Lcom/wumii/android/mimi/task/SyncQuotaTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;->mSyncQuotaTaskq:Lcom/wumii/android/mimi/task/SyncQuotaTask;
 
     const/4 v1, 0x0
 

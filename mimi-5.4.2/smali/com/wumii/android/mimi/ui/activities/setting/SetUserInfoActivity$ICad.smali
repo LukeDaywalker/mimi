@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+.field final synthetic mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;->mSetUserInfoActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->j()V
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
+.field private mICaa:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 19
-    iput-object p1, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->a:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
+    iput-object p1, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->mICaa:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
 
     .line 20
     return-void
@@ -56,7 +56,7 @@
 
     .line 28
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->a:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->mICaa:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;->b()V
 
@@ -64,7 +64,7 @@
 
     .line 31
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->a:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;->mICaa:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;
 
     invoke-interface {v0}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;->a()V
 

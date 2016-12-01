@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+.field final synthetic mNotificationHelpera:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 226
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper$ICz;->a:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/NotificationHelper$ICz;->mNotificationHelpera:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

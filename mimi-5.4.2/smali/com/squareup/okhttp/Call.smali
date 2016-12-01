@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field volatile a:Z
+.field volatile isZa:Z
 
-.field b:Lcom/squareup/okhttp/Request;
+.field private isZe:Z
 
-.field c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+.field mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-.field private final d:Lcom/squareup/okhttp/OkHttpClient;
+.field private final mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
-.field private e:Z
+.field mRequestb:Lcom/squareup/okhttp/Request;
 
 
 # direct methods
@@ -28,10 +28,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iput-object v0, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     .line 51
-    iput-object p2, p0, Lcom/squareup/okhttp/Call;->b:Lcom/squareup/okhttp/Request;
+    iput-object p2, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
     .line 52
     return-void
@@ -58,12 +58,12 @@
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/squareup/okhttp/Call;->b:Lcom/squareup/okhttp/Request;
+    iget-object v2, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
     invoke-direct {v0, p0, v1, v2, p1}, Lcom/squareup/okhttp/Call$ICi;-><init>(Lcom/squareup/okhttp/Call;ILcom/squareup/okhttp/Request;Z)V
 
     .line 201
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->b:Lcom/squareup/okhttp/Request;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
     invoke-interface {v0, v1}, Lcom/squareup/okhttp/Interceptor$ICag;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
 
@@ -89,7 +89,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     return-object v0
 .end method
@@ -99,7 +99,7 @@
 
     .prologue
     .line 190
-    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->a:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZa:Z
 
     if-eqz v0, :cond_0
 
@@ -110,7 +110,7 @@
     :try_start_0
     new-instance v1, Ljava/net/URL;
 
-    iget-object v2, p0, Lcom/squareup/okhttp/Call;->b:Lcom/squareup/okhttp/Request;
+    iget-object v2, p0, Lcom/squareup/okhttp/Call;->mRequestb:Lcom/squareup/okhttp/Request;
 
     invoke-virtual {v2}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -177,7 +177,7 @@
 
     .line 76
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -204,7 +204,7 @@
     const/4 v0, 0x1
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->e:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZe:Z
 
     .line 78
     monitor-exit p0
@@ -213,7 +213,7 @@
 
     .line 80
     :try_start_2
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->r()Lcom/squareup/okhttp/Dispatcher;
 
@@ -245,7 +245,7 @@
     :catchall_1
     move-exception v0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/OkHttpClient;->r()Lcom/squareup/okhttp/Dispatcher;
 
@@ -256,7 +256,7 @@
     throw v0
 
     :cond_1
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/OkHttpClient;->r()Lcom/squareup/okhttp/Dispatcher;
 
@@ -338,7 +338,7 @@
     :goto_1
     new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     const/4 v3, 0x0
 
@@ -356,19 +356,19 @@
 
     invoke-direct/range {v0 .. v9}, Lcom/squareup/okhttp/internal/http/HttpEngine;-><init>(Lcom/squareup/okhttp/OkHttpClient;Lcom/squareup/okhttp/Request;ZZZLcom/squareup/okhttp/Connection;Lcom/squareup/okhttp/internal/http/RouteSelector;Lcom/squareup/okhttp/internal/http/RetryableSink;Lcom/squareup/okhttp/Response;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     .line 265
     const/4 v0, 0x0
 
     .line 267
     :goto_2
-    iget-boolean v1, p0, Lcom/squareup/okhttp/Call;->a:Z
+    iget-boolean v1, p0, Lcom/squareup/okhttp/Call;->isZa:Z
 
     if-eqz v1, :cond_2
 
     .line 268
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->k()V
 
@@ -399,12 +399,12 @@
     .line 273
     :cond_2
     :try_start_0
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/internal/http/HttpEngine;->a()V
 
     .line 274
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/internal/http/HttpEngine;->n()V
     :try_end_0
@@ -413,14 +413,14 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
     .line 299
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/internal/http/HttpEngine;->h()Lcom/squareup/okhttp/Response;
 
     move-result-object v9
 
     .line 300
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v1}, Lcom/squareup/okhttp/internal/http/HttpEngine;->o()Lcom/squareup/okhttp/Request;
 
@@ -433,7 +433,7 @@
     if-nez p2, :cond_3
 
     .line 304
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->k()V
 
@@ -457,7 +457,7 @@
     move-exception v1
 
     .line 280
-    iget-object v2, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v2, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v2, v1}, Lcom/squareup/okhttp/internal/http/HttpEngine;->a(Lcom/squareup/okhttp/internal/http/RouteException;)Lcom/squareup/okhttp/internal/http/HttpEngine;
 
@@ -467,7 +467,7 @@
     if-eqz v2, :cond_4
 
     .line 282
-    iput-object v2, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object v2, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     goto :goto_2
 
@@ -484,7 +484,7 @@
     move-exception v1
 
     .line 289
-    iget-object v2, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v2, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     const/4 v3, 0x0
 
@@ -496,7 +496,7 @@
     if-eqz v2, :cond_5
 
     .line 291
-    iput-object v2, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object v2, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     goto :goto_2
 
@@ -539,7 +539,7 @@
 
     .line 313
     :cond_7
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v2}, Lcom/squareup/okhttp/Request;->a()Ljava/net/URL;
 
@@ -552,13 +552,13 @@
     if-nez v0, :cond_8
 
     .line 314
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->k()V
 
     .line 317
     :cond_8
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->m()Lcom/squareup/okhttp/Connection;
 
@@ -567,7 +567,7 @@
     .line 319
     new-instance v0, Lcom/squareup/okhttp/internal/http/HttpEngine;
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v1, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     const/4 v3, 0x0
 
@@ -581,7 +581,7 @@
 
     invoke-direct/range {v0 .. v9}, Lcom/squareup/okhttp/internal/http/HttpEngine;-><init>(Lcom/squareup/okhttp/OkHttpClient;Lcom/squareup/okhttp/Request;ZZZLcom/squareup/okhttp/Connection;Lcom/squareup/okhttp/internal/http/RouteSelector;Lcom/squareup/okhttp/internal/http/RetryableSink;Lcom/squareup/okhttp/Response;)V
 
-    iput-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iput-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     move v0, v10
 
@@ -616,7 +616,7 @@
 
     .line 112
     :try_start_0
-    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->e:Z
+    iget-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZe:Z
 
     if-eqz v0, :cond_0
 
@@ -643,7 +643,7 @@
     const/4 v0, 0x1
 
     :try_start_1
-    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->e:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZe:Z
 
     .line 114
     monitor-exit p0
@@ -651,7 +651,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 115
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->d:Lcom/squareup/okhttp/OkHttpClient;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mOkHttpClientd:Lcom/squareup/okhttp/OkHttpClient;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/OkHttpClient;->r()Lcom/squareup/okhttp/Dispatcher;
 
@@ -676,14 +676,14 @@
     .line 123
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->a:Z
+    iput-boolean v0, p0, Lcom/squareup/okhttp/Call;->isZa:Z
 
     .line 124
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Call;->c:Lcom/squareup/okhttp/internal/http/HttpEngine;
+    iget-object v0, p0, Lcom/squareup/okhttp/Call;->mHttpEnginec:Lcom/squareup/okhttp/internal/http/HttpEngine;
 
     invoke-virtual {v0}, Lcom/squareup/okhttp/internal/http/HttpEngine;->l()V
 

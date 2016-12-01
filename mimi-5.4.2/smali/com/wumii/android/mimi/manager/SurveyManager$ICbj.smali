@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/SurveyManager;
+.field final synthetic mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
 
     .line 110
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SurveyManager;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
@@ -83,7 +83,7 @@
     .line 116
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->a:Lcom/wumii/android/mimi/manager/SurveyManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SurveyManager$ICbj;->mSurveyManagera:Lcom/wumii/android/mimi/manager/SurveyManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->b(Ljava/lang/Object;)V
 

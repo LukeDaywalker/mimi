@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+.field final synthetic mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->b(Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->a:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment$ICb;->mFriendImpressionDefaultFragmenta:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;->a(Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionDefaultFragment;)Ljava/lang/String;
 

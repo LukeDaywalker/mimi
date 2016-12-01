@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private b:Ljava/util/HashMap;
+.field private mHashMapb:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->b:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->mHashMapb:Ljava/util/HashMap;
 
     .line 19
     return-void
@@ -74,7 +74,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, p2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, p2}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -125,7 +125,7 @@
 
     .line 26
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -142,7 +142,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 29
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->b:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

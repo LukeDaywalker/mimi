@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/CursorAdapter;
+.field final synthetic mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
 
 # virtual methods
@@ -13,14 +13,14 @@
 
     .prologue
     .line 472
-    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->a:Landroid/support/v4/widget/CursorAdapter;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->a:Z
 
     .line 473
-    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->a:Landroid/support/v4/widget/CursorAdapter;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->notifyDataSetChanged()V
 
@@ -33,14 +33,14 @@
 
     .prologue
     .line 478
-    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->a:Landroid/support/v4/widget/CursorAdapter;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Landroid/support/v4/widget/CursorAdapter;->a:Z
 
     .line 479
-    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->a:Landroid/support/v4/widget/CursorAdapter;
+    iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;->mCursorAdaptera:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->notifyDataSetInvalidated()V
 

@@ -19,7 +19,7 @@
 
 .field public static final enum b:Lcom/google/tagmanager/TagManager$ICbj;
 
-.field private static final synthetic c:[Lcom/google/tagmanager/TagManager$ICbj;
+.field private static final synthetic mArrayICbjc:[Lcom/google/tagmanager/TagManager$ICbj;
 
 
 # direct methods
@@ -62,7 +62,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->c:[Lcom/google/tagmanager/TagManager$ICbj;
+    sput-object v0, Lcom/google/tagmanager/TagManager$ICbj;->mArrayICbjc:[Lcom/google/tagmanager/TagManager$ICbj;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 
     .prologue
     .line 71
-    sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->c:[Lcom/google/tagmanager/TagManager$ICbj;
+    sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->mArrayICbjc:[Lcom/google/tagmanager/TagManager$ICbj;
 
     invoke-virtual {v0}, [Lcom/google/tagmanager/TagManager$ICbj;->clone()Ljava/lang/Object;
 

@@ -12,7 +12,7 @@
 # instance fields
 .field protected final a:Landroid/widget/OverScroller;
 
-.field private b:Z
+.field private isZb:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .line 26
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->b:Z
+    iput-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->isZb:Z
 
     .line 29
     new-instance v0, Landroid/widget/OverScroller;
@@ -92,7 +92,7 @@
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->b:Z
+    iget-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->isZb:Z
 
     if-eqz v0, :cond_0
 
@@ -104,7 +104,7 @@
     .line 38
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->b:Z
+    iput-boolean v0, p0, Luk/co/senab/photoview/scrollerproxy/GingerScroller;->isZb:Z
 
     .line 40
     :cond_0

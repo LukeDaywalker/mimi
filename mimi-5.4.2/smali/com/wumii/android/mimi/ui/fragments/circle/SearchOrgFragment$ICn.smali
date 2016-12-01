@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
+.field final synthetic mICla:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 414
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICn;->mICla:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 418
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICn;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICn;->mICla:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->a:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment$ICl;->mSearchOrgFragmenta:Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;->q(Lcom/wumii/android/mimi/ui/fragments/circle/SearchOrgFragment;)Lcom/wumii/android/mimi/models/AppFacade;
 

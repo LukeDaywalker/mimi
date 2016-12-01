@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+.field final synthetic mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 25
-    iput-object p1, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->a(Landroid/app/Activity;)V
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->b(Landroid/app/Activity;)V
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->c(Landroid/app/Activity;)V
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->d(Landroid/app/Activity;)V
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->e(Landroid/app/Activity;)V
 
@@ -95,7 +95,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->f(Landroid/app/Activity;)V
 
@@ -108,7 +108,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->a:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
+    iget-object v0, p0, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager$ICd;->mAutoSessionAnalyticsManagera:Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;
 
     invoke-virtual {v0, p1}, Lcom/crashlytics/android/answers/AutoSessionAnalyticsManager;->g(Landroid/app/Activity;)V
 

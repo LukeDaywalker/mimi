@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+.field final synthetic mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 389
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity$ICj;->mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 392
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity$ICj;->mBaseMimiActivitya:Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->o()V
 

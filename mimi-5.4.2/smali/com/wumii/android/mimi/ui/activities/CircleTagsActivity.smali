@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+.field private mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
-.field private o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+.field private mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
 
 
 # direct methods
@@ -76,14 +76,14 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/CircleTags;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/CircleTags;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -91,7 +91,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/CircleTags;->getTags()Ljava/util/List;
 
@@ -113,7 +113,7 @@
 
     .line 51
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/CircleTags;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -186,7 +186,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/GridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 65
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/CircleTags;->getTags()Ljava/util/List;
 
@@ -197,10 +197,10 @@
 
     invoke-direct {v5, p0, v4, v1, v3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;-><init>(Landroid/content/Context;Ljava/util/List;II)V
 
-    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
 
     .line 68
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mIClo:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;
 
     invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$ICl;->a(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
 
     .line 88
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->n:Lcom/wumii/android/mimi/models/entities/CircleTags;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->mCircleTagsn:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/CircleTags;->getCircle()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
+.field final synthetic mICala:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 177
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     const/4 v1, 0x0
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
-    iget-object v3, v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v3, v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getGender()Lcom/wumii/android/mimi/models/entities/Gender;
 
@@ -42,9 +42,9 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)Lcom/wumii/android/mimi/models/entities/Gender;
 
@@ -57,9 +57,9 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICam;->mICala:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;->mUserProfileActivitya:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->c(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 

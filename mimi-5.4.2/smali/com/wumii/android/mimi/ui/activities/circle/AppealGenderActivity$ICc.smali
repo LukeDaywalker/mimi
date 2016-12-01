@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+.field final synthetic mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 103
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
@@ -36,11 +36,11 @@
     if-ne p2, v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->getIntent()Landroid/content/Intent;
 
@@ -65,7 +65,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     const v1, 0x7f060366
 
@@ -74,7 +74,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->finish()V
 
@@ -106,7 +106,7 @@
     .line 107
     const-string/jumbo v1, "newGender"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)Lcom/wumii/android/mimi/models/entities/circle/GenderType;
 
@@ -117,7 +117,7 @@
     .line 108
     const-string/jumbo v1, "reason"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)Landroid/widget/EditText;
 
@@ -136,7 +136,7 @@
     .line 109
     const-string/jumbo v1, "contact"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity$ICc;->mAppealGenderActivitya:Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;->d(Lcom/wumii/android/mimi/ui/activities/circle/AppealGenderActivity;)Landroid/widget/EditText;
 

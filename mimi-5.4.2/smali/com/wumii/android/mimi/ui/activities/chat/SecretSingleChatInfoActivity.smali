@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private o:Landroid/widget/TextView;
+.field private mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field private p:Landroid/widget/ImageView;
+.field private mImageViewp:Landroid/widget/ImageView;
 
-.field private q:Landroid/widget/TextView;
+.field private mTextViewo:Landroid/widget/TextView;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+.field private mTextViewq:Landroid/widget/TextView;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->o:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mTextViewo:Landroid/widget/TextView;
 
     .line 49
     const v0, 0x7f0b012d
@@ -48,7 +48,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->p:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     .line 50
     const v0, 0x7f0b0105
@@ -59,7 +59,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->q:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mTextViewq:Landroid/widget/TextView;
 
     .line 51
     const v0, 0x7f0b00cf
@@ -70,7 +70,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     .line 52
     return-void
@@ -91,9 +91,9 @@
     if-ne p1, v0, :cond_0
 
     .line 58
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -134,7 +134,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/chat/BlockType;->TYPE_ALL:Lcom/wumii/android/mimi/models/entities/chat/BlockType;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v3}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->a()Z
 
@@ -196,7 +196,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;
 
     .line 35
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->o:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mTextViewo:Landroid/widget/TextView;
 
     const v2, 0x7f06033c
 
@@ -212,12 +212,12 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->p:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mImageViewp:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v1, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 40
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->q:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mTextViewq:Landroid/widget/TextView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->b(Ljava/lang/String;)Z
 
@@ -231,7 +231,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 41
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->q:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mTextViewq:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;->getSecretContent()Ljava/lang/String;
 
@@ -240,14 +240,14 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 43
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     const v2, 0x7f060334
 
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->setTitle(I)V
 
     .line 44
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->r:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->mChatInfoItemCheckBoxr:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/SecretSingleChat;->isAllBlocked()Z
 

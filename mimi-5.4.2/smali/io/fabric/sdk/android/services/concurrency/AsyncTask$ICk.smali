@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field b:[Ljava/lang/Object;
+.field mArrayObjectb:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TParams;"

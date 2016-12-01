@@ -3,31 +3,31 @@
 
 
 # static fields
-.field private static final l:Ljava/lang/String;
+.field private static final mStringl:Ljava/lang/String;
 
 
 # instance fields
-.field a:I
+.field mFg:F
 
-.field b:Lcom/baidu/mapapi/map/MapStatus;
+.field mFj:F
 
-.field c:Lcom/baidu/mapapi/model/LatLng;
+.field mIa:I
 
-.field d:Lcom/baidu/mapapi/model/LatLngBounds;
+.field mIe:I
 
-.field e:I
+.field mIf:I
 
-.field f:I
+.field mIh:I
 
-.field g:F
+.field mIi:I
 
-.field h:I
+.field mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
-.field i:I
+.field mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-.field j:F
+.field mMapStatusb:Lcom/baidu/mapapi/map/MapStatus;
 
-.field k:Landroid/graphics/Point;
+.field mPointk:Landroid/graphics/Point;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->l:Ljava/lang/String;
+    sput-object v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mStringl:Ljava/lang/String;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->a:I
+    iput p1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIa:I
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 .method a(Lcom/baidu/platform/comapi/map/ICc;Lcom/baidu/mapapi/map/MapStatus;)Lcom/baidu/mapapi/map/MapStatus;
     .locals 11
 
-    iget v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->a:I
+    iget v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIa:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -78,7 +78,7 @@
     return-object v0
 
     :pswitch_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->b:Lcom/baidu/mapapi/map/MapStatus;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mMapStatusb:Lcom/baidu/mapapi/map/MapStatus;
 
     goto :goto_0
 
@@ -87,7 +87,7 @@
 
     iget v1, p2, Lcom/baidu/mapapi/map/MapStatus;->rotate:F
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget v3, p2, Lcom/baidu/mapapi/map/MapStatus;->overlook:F
 
@@ -102,7 +102,7 @@
     goto :goto_0
 
     :pswitch_2
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     iget-object v0, v0, Lcom/baidu/mapapi/model/LatLngBounds;->southwest:Lcom/baidu/mapapi/model/LatLng;
 
@@ -110,7 +110,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     iget-object v1, v1, Lcom/baidu/mapapi/model/LatLngBounds;->northeast:Lcom/baidu/mapapi/model/LatLng;
 
@@ -142,13 +142,13 @@
 
     double-to-int v4, v8
 
-    iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
     iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
-    iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v5, v5, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
@@ -156,13 +156,13 @@
 
     sub-int v5, v0, v5
 
-    iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
     iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
-    iget-object v6, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
+    iget-object v6, p2, Lcom/baidu/mapapi/map/MapStatus;->mBa:Lcom/baidu/platform/comapi/map/B;
 
     iget-object v6, v6, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
@@ -176,7 +176,7 @@
 
     move-result v4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/model/LatLngBounds;->getCenter()Lcom/baidu/mapapi/model/LatLng;
 
@@ -201,11 +201,11 @@
 
     iget v1, p2, Lcom/baidu/mapapi/map/MapStatus;->rotate:F
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->c:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     iget v3, p2, Lcom/baidu/mapapi/map/MapStatus;->overlook:F
 
-    iget v4, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->g:F
+    iget v4, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFg:F
 
     iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
@@ -224,7 +224,7 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    iget v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->h:I
+    iget v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIh:I
 
     add-int/2addr v0, v1
 
@@ -234,7 +234,7 @@
 
     div-int/lit8 v1, v1, 0x2
 
-    iget v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->i:I
+    iget v2, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIi:I
 
     add-int/2addr v1, v2
 
@@ -281,7 +281,7 @@
 
     iget v4, p2, Lcom/baidu/mapapi/map/MapStatus;->zoom:F
 
-    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
     add-float/2addr v4, v5
 
@@ -302,11 +302,11 @@
     goto/16 :goto_0
 
     :pswitch_6
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->k:Landroid/graphics/Point;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mPointk:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->x:I
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->k:Landroid/graphics/Point;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mPointk:Landroid/graphics/Point;
 
     iget v1, v1, Landroid/graphics/Point;->y:I
 
@@ -326,11 +326,11 @@
 
     iget v4, p2, Lcom/baidu/mapapi/map/MapStatus;->zoom:F
 
-    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
     add-float/2addr v4, v5
 
-    iget-object v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->k:Landroid/graphics/Point;
+    iget-object v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mPointk:Landroid/graphics/Point;
 
     const/4 v6, 0x0
 
@@ -347,7 +347,7 @@
 
     iget v3, p2, Lcom/baidu/mapapi/map/MapStatus;->overlook:F
 
-    iget v4, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->g:F
+    iget v4, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFg:F
 
     iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->targetScreen:Landroid/graphics/Point;
 
@@ -366,7 +366,7 @@
     goto/16 :goto_0
 
     :pswitch_8
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     iget-object v0, v0, Lcom/baidu/mapapi/model/LatLngBounds;->southwest:Lcom/baidu/mapapi/model/LatLng;
 
@@ -374,7 +374,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     iget-object v1, v1, Lcom/baidu/mapapi/model/LatLngBounds;->northeast:Lcom/baidu/mapapi/model/LatLng;
 
@@ -406,9 +406,9 @@
 
     double-to-int v4, v8
 
-    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->e:I
+    iget v5, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIe:I
 
-    iget v6, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->f:I
+    iget v6, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIf:I
 
     move-object v0, p1
 
@@ -416,7 +416,7 @@
 
     move-result v4
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     invoke-virtual {v0}, Lcom/baidu/mapapi/model/LatLngBounds;->getCenter()Lcom/baidu/mapapi/model/LatLng;
 

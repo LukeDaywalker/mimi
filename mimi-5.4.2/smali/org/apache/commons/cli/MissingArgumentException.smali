@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lorg/apache/commons/cli/Option;
+.field private mOptiona:Lorg/apache/commons/cli/Option;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     invoke-direct {p0, v0}, Lorg/apache/commons/cli/MissingArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 53
-    iput-object p1, p0, Lorg/apache/commons/cli/MissingArgumentException;->a:Lorg/apache/commons/cli/Option;
+    iput-object p1, p0, Lorg/apache/commons/cli/MissingArgumentException;->mOptiona:Lorg/apache/commons/cli/Option;
 
     .line 54
     return-void

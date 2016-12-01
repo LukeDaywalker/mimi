@@ -3,23 +3,23 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/map/MapStatus;
+.field isZb:Z
 
-.field b:Z
+.field isZd:Z
 
-.field c:I
+.field isZe:Z
 
-.field d:Z
+.field isZf:Z
 
-.field e:Z
+.field isZg:Z
 
-.field f:Z
+.field isZh:Z
 
-.field g:Z
+.field isZi:Z
 
-.field h:Z
+.field mIc:I
 
-.field i:Z
+.field mMapStatusa:Lcom/baidu/mapapi/map/MapStatus;
 
 
 # direct methods
@@ -52,23 +52,23 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/baidu/mapapi/map/MapStatus;-><init>(FLcom/baidu/mapapi/model/LatLng;FFLandroid/graphics/Point;Lcom/baidu/mapapi/model/LatLngBounds;)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->a:Lcom/baidu/mapapi/map/MapStatus;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mMapStatusa:Lcom/baidu/mapapi/map/MapStatus;
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->b:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZb:Z
 
-    iput v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->c:I
+    iput v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mIc:I
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->d:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZd:Z
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->e:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZe:Z
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->f:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZf:Z
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->g:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZg:Z
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->h:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZh:Z
 
-    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->i:Z
+    iput-boolean v10, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZi:Z
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     invoke-direct {v0}, Lcom/baidu/platform/comapi/map/ICz;-><init>()V
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->a:Lcom/baidu/mapapi/map/MapStatus;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mMapStatusa:Lcom/baidu/mapapi/map/MapStatus;
 
     invoke-virtual {v1}, Lcom/baidu/mapapi/map/MapStatus;->c()Lcom/baidu/platform/comapi/map/B;
 
@@ -92,37 +92,37 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->b:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZb:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->a(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->c:I
+    iget v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mIc:I
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->a(I)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->d:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZd:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->b(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->e:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZe:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->c(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->f:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZf:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->d(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->g:Z
+    iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZg:Z
 
     invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->e(Z)Lcom/baidu/platform/comapi/map/ICz;
 
@@ -134,7 +134,7 @@
 .method public compassEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->b:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZb:Z
 
     return-object p0
 .end method
@@ -144,7 +144,7 @@
 
     if-eqz p1, :cond_0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->a:Lcom/baidu/mapapi/map/MapStatus;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mMapStatusa:Lcom/baidu/mapapi/map/MapStatus;
 
     :cond_0
     return-object p0
@@ -153,7 +153,7 @@
 .method public mapType(I)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->c:I
+    iput p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->mIc:I
 
     return-object p0
 .end method
@@ -161,7 +161,7 @@
 .method public overlookingGesturesEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->f:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZf:Z
 
     return-object p0
 .end method
@@ -169,7 +169,7 @@
 .method public rotateGesturesEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->d:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZd:Z
 
     return-object p0
 .end method
@@ -177,7 +177,7 @@
 .method public scaleControlEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->i:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZi:Z
 
     return-object p0
 .end method
@@ -185,7 +185,7 @@
 .method public scrollGesturesEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->e:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZe:Z
 
     return-object p0
 .end method
@@ -193,7 +193,7 @@
 .method public zoomControlsEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->h:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZh:Z
 
     return-object p0
 .end method
@@ -201,7 +201,7 @@
 .method public zoomGesturesEnabled(Z)Lcom/baidu/mapapi/map/BaiduMapOptions;
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->g:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->isZg:Z
 
     return-object p0
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+.field final synthetic mPromotionCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+.field final synthetic mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->b:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotionCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->isOpenInterior()Z
 
@@ -43,7 +43,7 @@
     if-eqz v0, :cond_1
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->isShareable()Z
 
@@ -53,20 +53,20 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->b:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotionCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
@@ -76,13 +76,13 @@
 
     .line 87
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->b:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotionCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getUrl()Ljava/lang/String;
 
@@ -104,7 +104,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 92
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->a:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotiona:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/Promotion;->getUrl()Ljava/lang/String;
 
@@ -117,7 +117,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 93
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->b:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;->mPromotionCardViewb:Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->getContext()Landroid/content/Context;
 

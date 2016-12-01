@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private b:Ljava/lang/String;
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->mStringb:Ljava/lang/String;
 
     .line 33
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->mLista:Ljava/util/List;
 
     .line 25
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchCircle;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method

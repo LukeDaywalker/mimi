@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mIa:I
 
 
 # direct methods
@@ -32,7 +32,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/DefaultRetryPolicy;->a:I
+    iput p1, p0, Lio/fabric/sdk/android/services/concurrency/internal/DefaultRetryPolicy;->mIa:I
 
     .line 30
     return-void

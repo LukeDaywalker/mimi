@@ -39,7 +39,7 @@
 
 .field public static final enum l:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
-.field private static final synthetic m:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
+.field private static final synthetic mArrayICwm:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
 
 # direct methods
@@ -246,7 +246,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->m:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
+    sput-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->mArrayICwm:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     return-void
 .end method
@@ -287,7 +287,7 @@
 
     .prologue
     .line 31
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->m:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->mArrayICwm:[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->clone()Ljava/lang/Object;
 

@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+.field final synthetic mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     .line 94
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
@@ -45,7 +45,7 @@
     if-nez p1, :cond_0
 
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     const v1, 0x7f06037e
 
@@ -54,7 +54,7 @@
     invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->finish()V
 
@@ -64,7 +64,7 @@
 
     .line 120
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;)Lcom/wumii/android/mimi/ui/widgets/CropImageView;
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -101,7 +101,7 @@
     if-eqz v0, :cond_0
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -120,7 +120,7 @@
     if-nez v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     const v1, 0x7f06037e
 
@@ -130,7 +130,7 @@
 
     .line 129
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->finish()V
 
@@ -161,10 +161,10 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICn;
 
@@ -173,7 +173,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->d:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mProgressingDialogd:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -186,13 +186,13 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->mCropImageActivitya:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->y:Landroid/util/DisplayMetrics;
 

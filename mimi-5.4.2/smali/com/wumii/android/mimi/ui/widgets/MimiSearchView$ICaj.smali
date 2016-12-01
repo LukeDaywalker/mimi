@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+.field final synthetic mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 96
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
 
     .line 102
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -48,7 +48,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/EditText;
 
@@ -65,13 +65,13 @@
     if-lez v0, :cond_0
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->c(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->a:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICaj;->mMimiSearchViewa:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->d(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;)Landroid/widget/EditText;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field a:Ljava/util/ArrayList;
+.field mArrayLista:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$InboxStyle;->a:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mArrayLista:Ljava/util/ArrayList;
 
     .line 1764
     return-void

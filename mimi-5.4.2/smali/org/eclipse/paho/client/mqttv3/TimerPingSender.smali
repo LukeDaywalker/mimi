@@ -7,17 +7,17 @@
 
 
 # static fields
-.field static a:Ljava/lang/Class;
+.field static mClassa:Ljava/lang/Class;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-.field private static final c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+.field private static final mStringb:Ljava/lang/String;
 
 
 # instance fields
-.field private d:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+.field private mClientCommsd:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
-.field private e:Ljava/util/Timer;
+.field private mTimere:Ljava/util/Timer;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->a:Ljava/lang/Class;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClassa:Ljava/lang/Class;
 
     if-nez v0, :cond_0
 
@@ -39,25 +39,25 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->a:Ljava/lang/Class;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClassa:Ljava/lang/Class;
 
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->b:Ljava/lang/String;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mStringb:Ljava/lang/String;
 
     .line 34
     const-string/jumbo v0, "org.eclipse.paho.client.mqttv3.internal.nls.logcat"
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mStringb:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lorg/eclipse/paho/client/mqttv3/logging/LoggerFactory;->a(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sput-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     return-void
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->d:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClientCommsd:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     return-object v0
 .end method
@@ -101,7 +101,7 @@
 
     .prologue
     .line 34
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
     return-object v0
 .end method
@@ -111,7 +111,7 @@
 
     .prologue
     .line 33
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->b:Ljava/lang/String;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->d:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClientCommsd:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->i()Lorg/eclipse/paho/client/mqttv3/IMqttAsyncClient;
 
@@ -134,9 +134,9 @@
     move-result-object v0
 
     .line 51
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v2, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->b:Ljava/lang/String;
+    sget-object v2, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v3, "start"
 
@@ -171,10 +171,10 @@
 
     invoke-direct {v1, v0}, Ljava/util/Timer;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->e:Ljava/util/Timer;
+    iput-object v1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mTimere:Ljava/util/Timer;
 
     .line 55
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->e:Ljava/util/Timer;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mTimere:Ljava/util/Timer;
 
     new-instance v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v1, p0, v2}, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;-><init>(Lorg/eclipse/paho/client/mqttv3/TimerPingSender;Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;)V
 
-    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->d:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v2, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClientCommsd:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v2}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->j()J
 
@@ -199,7 +199,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->e:Ljava/util/Timer;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mTimere:Ljava/util/Timer;
 
     new-instance v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender$PingTask;
 
@@ -231,7 +231,7 @@
 
     .line 43
     :cond_0
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->d:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mClientCommsd:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 44
     return-void
@@ -242,9 +242,9 @@
 
     .prologue
     .line 61
-    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->c:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
+    sget-object v0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mLoggerc:Lorg/eclipse/paho/client/mqttv3/logging/Logger;
 
-    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->b:Ljava/lang/String;
+    sget-object v1, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mStringb:Ljava/lang/String;
 
     const-string/jumbo v2, "stop"
 
@@ -255,12 +255,12 @@
     invoke-interface {v0, v1, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/logging/Logger;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 62
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->e:Ljava/util/Timer;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mTimere:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
     .line 63
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->e:Ljava/util/Timer;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/TimerPingSender;->mTimere:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 

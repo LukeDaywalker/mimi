@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+.field final synthetic mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
@@ -27,14 +27,14 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->setProgressBarIndeterminateVisibility(Z)V
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->getCallingActivity()Landroid/content/ComponentName;
 
@@ -43,7 +43,7 @@
     if-eqz v0, :cond_0
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     const/4 v1, -0x1
 
@@ -59,7 +59,7 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     const/4 v1, 0x1
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;->mBaseWebViewActivitya:Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;
 
     invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->a(Landroid/webkit/WebView;Ljava/lang/String;)Z
 

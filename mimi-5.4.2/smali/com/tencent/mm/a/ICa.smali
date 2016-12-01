@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private a:Ljavax/crypto/Cipher;
+.field private mCiphera:Ljavax/crypto/Cipher;
 
 
 # virtual methods
@@ -17,7 +17,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/mm/a/ICa;->a:Ljavax/crypto/Cipher;
+    iget-object v1, p0, Lcom/tencent/mm/a/ICa;->mCiphera:Ljavax/crypto/Cipher;
 
     invoke-virtual {v1, v0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 

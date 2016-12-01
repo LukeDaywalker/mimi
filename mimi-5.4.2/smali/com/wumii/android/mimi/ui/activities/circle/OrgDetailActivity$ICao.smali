@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
+.field final synthetic mICana:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 182
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICao;->mICana:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICao;->mICana:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;->mICama:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;->mOrgDetailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->finish()V
 

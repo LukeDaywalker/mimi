@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/connect/common/Pro;
+.field final synthetic mICcb:Lcom/tencent/connect/common/Pro$ICc;
 
-.field final synthetic b:Lcom/tencent/connect/common/Pro$ICc;
+.field final synthetic mProa:Lcom/tencent/connect/common/Pro;
 
 
 # direct methods
@@ -15,9 +15,9 @@
 
     .prologue
     .line 319
-    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICd;->b:Lcom/tencent/connect/common/Pro$ICc;
+    iput-object p1, p0, Lcom/tencent/connect/common/Pro$ICd;->mICcb:Lcom/tencent/connect/common/Pro$ICc;
 
-    iput-object p3, p0, Lcom/tencent/connect/common/Pro$ICd;->a:Lcom/tencent/connect/common/Pro;
+    iput-object p3, p0, Lcom/tencent/connect/common/Pro$ICd;->mProa:Lcom/tencent/connect/common/Pro;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -36,7 +36,7 @@
     if-nez v0, :cond_0
 
     .line 323
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICd;->b:Lcom/tencent/connect/common/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICd;->mICcb:Lcom/tencent/connect/common/Pro$ICc;
 
     invoke-static {v0}, Lcom/tencent/connect/common/Pro$ICc;->a(Lcom/tencent/connect/common/Pro$ICc;)Lcom/tencent/tauth/Pro$ICb;
 
@@ -54,7 +54,7 @@
 
     .line 325
     :cond_0
-    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICd;->b:Lcom/tencent/connect/common/Pro$ICc;
+    iget-object v0, p0, Lcom/tencent/connect/common/Pro$ICd;->mICcb:Lcom/tencent/connect/common/Pro$ICc;
 
     invoke-static {v0}, Lcom/tencent/connect/common/Pro$ICc;->a(Lcom/tencent/connect/common/Pro$ICc;)Lcom/tencent/tauth/Pro$ICb;
 

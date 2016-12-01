@@ -3,11 +3,15 @@
 
 
 # static fields
-.field private static d:Lcom/tencent/a/a/a/a/ICg;
+.field private static mICgd:Lcom/tencent/a/a/a/a/ICg;
 
 
 # instance fields
-.field private a:Ljava/util/Map;
+.field private mContextc:Landroid/content/Context;
+
+.field private mIb:I
+
+.field private mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -19,10 +23,6 @@
     .end annotation
 .end field
 
-.field private b:I
-
-.field private c:Landroid/content/Context;
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -30,7 +30,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/a/a/a/a/ICg;->d:Lcom/tencent/a/a/a/a/ICg;
+    sput-object v0, Lcom/tencent/a/a/a/a/ICg;->mICgd:Lcom/tencent/a/a/a/a/ICg;
 
     return-void
 .end method
@@ -42,19 +42,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iput-object v1, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/tencent/a/a/a/a/ICg;->b:I
+    iput v0, p0, Lcom/tencent/a/a/a/a/ICg;->mIb:I
 
-    iput-object v1, p0, Lcom/tencent/a/a/a/a/ICg;->c:Landroid/content/Context;
+    iput-object v1, p0, Lcom/tencent/a/a/a/a/ICg;->mContextc:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->c:Landroid/content/Context;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mContextc:Landroid/content/Context;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -62,9 +62,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
-    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iput-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     const/4 v1, 0x1
 
@@ -78,7 +78,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     const/4 v1, 0x2
 
@@ -92,7 +92,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     const/4 v1, 0x4
 
@@ -147,7 +147,7 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iget-object v2, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -163,7 +163,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v2, v0, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iget-object v2, v0, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/tencent/a/a/a/a/ICh;->b(Ljava/lang/String;)Z
 
@@ -190,7 +190,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/tencent/a/a/a/a/ICg;->d:Lcom/tencent/a/a/a/a/ICg;
+    sget-object v0, Lcom/tencent/a/a/a/a/ICg;->mICgd:Lcom/tencent/a/a/a/a/ICg;
 
     if-nez v0, :cond_0
 
@@ -198,10 +198,10 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/a/a/a/a/ICg;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/tencent/a/a/a/a/ICg;->d:Lcom/tencent/a/a/a/a/ICg;
+    sput-object v0, Lcom/tencent/a/a/a/a/ICg;->mICgd:Lcom/tencent/a/a/a/a/ICg;
 
     :cond_0
-    sget-object v0, Lcom/tencent/a/a/a/a/ICg;->d:Lcom/tencent/a/a/a/a/ICg;
+    sget-object v0, Lcom/tencent/a/a/a/a/ICg;->mICgd:Lcom/tencent/a/a/a/a/ICg;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -274,9 +274,9 @@
 
     move-result-object v1
 
-    iput-object p1, v1, Lcom/tencent/a/a/a/a/ICc;->c:Ljava/lang/String;
+    iput-object p1, v1, Lcom/tencent/a/a/a/a/ICc;->mStringc:Ljava/lang/String;
 
-    iget-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->a:Ljava/lang/String;
+    iget-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->mStringa:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/a/a/a/a/ICh;->a(Ljava/lang/String;)Z
 
@@ -284,16 +284,16 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mContextc:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/a/a/a/a/ICh;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->a:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->mStringa:Ljava/lang/String;
 
     :cond_0
-    iget-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->b:Ljava/lang/String;
+    iget-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->mStringb:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/tencent/a/a/a/a/ICh;->a(Ljava/lang/String;)Z
 
@@ -301,22 +301,22 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->c:Landroid/content/Context;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mContextc:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/tencent/a/a/a/a/ICh;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->b:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/a/a/a/a/ICc;->mStringb:Ljava/lang/String;
 
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    iput-wide v2, v1, Lcom/tencent/a/a/a/a/ICc;->d:J
+    iput-wide v2, v1, Lcom/tencent/a/a/a/a/ICc;->mJd:J
 
-    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/tencent/a/a/a/a/ICg;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 

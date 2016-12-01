@@ -7,33 +7,33 @@
 
 
 # static fields
-.field private static li:Lcom/baidu/location/ICj;
+.field private static mICjli:Lcom/baidu/location/ICj;
 
 
 # instance fields
-.field private lc:Lcom/baidu/location/ICx;
+.field isZlg:Z
 
-.field ld:D
+.field mDld:D
 
-.field le:D
+.field mDle:D
 
-.field private lf:I
+.field mDlj:D
 
-.field lg:Z
+.field mDln:D
 
-.field volatile lh:I
+.field private mICxlc:Lcom/baidu/location/ICx;
 
-.field lj:D
+.field private mICxlo:Lcom/baidu/location/ICx;
 
-.field lk:I
+.field private mIlf:I
 
-.field ll:J
+.field volatile mIlh:I
 
-.field private lm:I
+.field mIlk:I
 
-.field ln:D
+.field private mIlm:I
 
-.field private lo:Lcom/baidu/location/ICx;
+.field mJll:J
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICj;->li:Lcom/baidu/location/ICj;
+    sput-object v0, Lcom/baidu/location/ICj;->mICjli:Lcom/baidu/location/ICj;
 
     return-void
 .end method
@@ -60,33 +60,33 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v2, p0, Lcom/baidu/location/ICj;->ln:D
+    iput-wide v2, p0, Lcom/baidu/location/ICj;->mDln:D
 
-    iput-wide v2, p0, Lcom/baidu/location/ICj;->lj:D
+    iput-wide v2, p0, Lcom/baidu/location/ICj;->mDlj:D
 
-    iput-boolean v5, p0, Lcom/baidu/location/ICj;->lg:Z
+    iput-boolean v5, p0, Lcom/baidu/location/ICj;->isZlg:Z
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICj;->ll:J
+    iput-wide v0, p0, Lcom/baidu/location/ICj;->mJll:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICj;->ld:D
+    iput-wide v2, p0, Lcom/baidu/location/ICj;->mDld:D
 
-    iput-wide v2, p0, Lcom/baidu/location/ICj;->le:D
+    iput-wide v2, p0, Lcom/baidu/location/ICj;->mDle:D
 
-    iput v4, p0, Lcom/baidu/location/ICj;->lh:I
+    iput v4, p0, Lcom/baidu/location/ICj;->mIlh:I
 
-    iput v4, p0, Lcom/baidu/location/ICj;->lk:I
+    iput v4, p0, Lcom/baidu/location/ICj;->mIlk:I
 
-    iput-object v6, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iput-object v6, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
-    iput-object v6, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iput-object v6, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/baidu/location/ICj;->lf:I
+    iput v0, p0, Lcom/baidu/location/ICj;->mIlf:I
 
-    iput v5, p0, Lcom/baidu/location/ICj;->lm:I
+    iput v5, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     return-void
 .end method
@@ -94,7 +94,7 @@
 .method public static dg()Lcom/baidu/location/ICj;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICj;->li:Lcom/baidu/location/ICj;
+    sget-object v0, Lcom/baidu/location/ICj;->mICjli:Lcom/baidu/location/ICj;
 
     if-nez v0, :cond_0
 
@@ -102,10 +102,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICj;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICj;->li:Lcom/baidu/location/ICj;
+    sput-object v0, Lcom/baidu/location/ICj;->mICjli:Lcom/baidu/location/ICj;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICj;->li:Lcom/baidu/location/ICj;
+    sget-object v0, Lcom/baidu/location/ICj;->mICjli:Lcom/baidu/location/ICj;
 
     return-object v0
 .end method
@@ -121,7 +121,7 @@
 
     const/4 v6, 0x0
 
-    iget v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iget v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     const/4 v1, 0x5
 
@@ -139,7 +139,7 @@
 
     new-array v2, v7, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/baidu/location/ICj;->lm:I
+    iget v3, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -151,7 +151,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v1, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICx;->iterator()Ljava/util/Iterator;
 
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v1, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v1}, Lcom/baidu/location/ICx;->iterator()Ljava/util/Iterator;
 
@@ -308,11 +308,11 @@
 
     invoke-virtual {v4, v0, v1}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    iget v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iget v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     invoke-virtual {v4, v0}, Ljava/io/RandomAccessFile;->writeInt(I)V
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->size()I
 
@@ -323,7 +323,7 @@
     :goto_1
     if-ge v3, v1, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0, v3}, Lcom/baidu/location/ICx;->get(I)Ljava/lang/Object;
 
@@ -351,7 +351,7 @@
     move v0, v1
 
     :goto_2
-    iget v1, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v1, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     if-ge v0, v1, :cond_3
 
@@ -364,7 +364,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->size()I
 
@@ -373,7 +373,7 @@
     :goto_3
     if-ge v2, v1, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0, v2}, Lcom/baidu/location/ICx;->get(I)Ljava/lang/Object;
 
@@ -401,7 +401,7 @@
     move v0, v1
 
     :goto_4
-    iget v1, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v1, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     if-ge v0, v1, :cond_5
 
@@ -419,17 +419,17 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_5
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
-    iput-object v5, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iput-object v5, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
-    iput-object v5, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iput-object v5, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     goto/16 :goto_0
 
@@ -442,7 +442,7 @@
 .method public de()V
     .locals 2
 
-    iget v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iget v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     const/4 v1, 0x5
 
@@ -450,13 +450,13 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iput v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
@@ -471,19 +471,19 @@
 
     new-instance v0, Lcom/baidu/location/ICx;
 
-    iget v2, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v2, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     invoke-direct {v0, v2}, Lcom/baidu/location/ICx;-><init>(I)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iput-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     new-instance v0, Lcom/baidu/location/ICx;
 
-    iget v2, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v2, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     invoke-direct {v0, v2}, Lcom/baidu/location/ICx;-><init>(I)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iput-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-static {}, Lcom/baidu/location/ICc;->long()Ljava/lang/String;
 
@@ -545,12 +545,12 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iput v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     move v0, v1
 
     :goto_1
-    iget v2, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v2, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     if-ge v0, v2, :cond_3
 
@@ -560,7 +560,7 @@
 
     if-ltz v2, :cond_2
 
-    iget-object v4, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v4, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -591,7 +591,7 @@
     move v0, v1
 
     :goto_2
-    iget v2, p0, Lcom/baidu/location/ICj;->lf:I
+    iget v2, p0, Lcom/baidu/location/ICj;->mIlf:I
 
     if-ge v0, v2, :cond_5
 
@@ -601,7 +601,7 @@
 
     if-ltz v2, :cond_4
 
-    iget-object v4, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v4, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -638,13 +638,13 @@
     :catch_0
     move-exception v0
 
-    iput v1, p0, Lcom/baidu/location/ICj;->lm:I
+    iput v1, p0, Lcom/baidu/location/ICj;->mIlm:I
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICx;->clear()V
 
@@ -654,11 +654,11 @@
 .method public if(Lcom/baidu/location/ICu$ICa;Lcom/baidu/location/ICau$ICb;)V
     .locals 3
 
-    iget v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iget v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/baidu/location/ICj;->lm:I
+    iput v0, p0, Lcom/baidu/location/ICj;->mIlm:I
 
     if-eqz p1, :cond_0
 
@@ -668,7 +668,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     const-string/jumbo v1, "1"
 
@@ -683,7 +683,7 @@
 
     if-lez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -713,7 +713,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lo:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlo:Lcom/baidu/location/ICx;
 
     const-string/jumbo v1, "0"
 
@@ -722,7 +722,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICj;->lc:Lcom/baidu/location/ICx;
+    iget-object v0, p0, Lcom/baidu/location/ICj;->mICxlc:Lcom/baidu/location/ICx;
 
     const-string/jumbo v1, "0"
 

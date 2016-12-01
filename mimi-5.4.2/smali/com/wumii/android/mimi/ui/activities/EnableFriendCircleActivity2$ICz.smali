@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+.field final synthetic mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 116
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -60,7 +60,7 @@
 
     .line 127
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -83,7 +83,7 @@
     if-ge v0, v1, :cond_1
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->a(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;)V
 
@@ -94,7 +94,7 @@
 
     .line 131
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->b(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;)V
 
@@ -102,7 +102,7 @@
 
     .line 135
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICz;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;->b(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;)V
 

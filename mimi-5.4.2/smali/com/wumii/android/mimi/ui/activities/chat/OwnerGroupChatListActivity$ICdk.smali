@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+.field final synthetic mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 90
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
     .line 101
     const-string/jumbo v2, "loadOwnerGroupChat"
 
-    invoke-static {v2, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -76,7 +76,7 @@
     if-ne v2, v3, :cond_2
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     const/4 v1, 0x1
 
@@ -93,7 +93,7 @@
     if-nez v2, :cond_4
 
     .line 109
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-virtual {v2, v1}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->setProgressBarIndeterminateVisibility(Z)V
 
@@ -105,7 +105,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/SectionMap;
 
     .line 111
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;
 
@@ -114,7 +114,7 @@
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->a(Lcom/wumii/android/mimi/models/entities/SectionMap;)V
 
     .line 112
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Landroid/view/View;
 
@@ -140,12 +140,12 @@
 
     .line 114
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->setProgressBarIndeterminateVisibility(Z)V
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->mOwnerGroupChatListActivitya:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 

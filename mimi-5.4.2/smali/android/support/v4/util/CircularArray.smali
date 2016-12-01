@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private a:[Ljava/lang/Object;
+.field private mArrayObjecta:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TE;"
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field private b:I
+.field private mIb:I
 
 
 # direct methods
@@ -82,14 +82,14 @@
     :cond_1
     add-int/lit8 v0, p1, -0x1
 
-    iput v0, p0, Landroid/support/v4/util/CircularArray;->b:I
+    iput v0, p0, Landroid/support/v4/util/CircularArray;->mIb:I
 
     .line 66
     new-array v0, p1, [Ljava/lang/Object;
 
     check-cast v0, [Ljava/lang/Object;
 
-    iput-object v0, p0, Landroid/support/v4/util/CircularArray;->a:[Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/util/CircularArray;->mArrayObjecta:[Ljava/lang/Object;
 
     .line 67
     return-void

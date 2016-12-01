@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[I
+.field private static final mArrayIa:[I
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroid/support/v4/widget/DrawerLayoutCompatApi21;->a:[I
+    sput-object v0, Landroid/support/v4/widget/DrawerLayoutCompatApi21;->mArrayIa:[I
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 78
-    sget-object v0, Landroid/support/v4/widget/DrawerLayoutCompatApi21;->a:[I
+    sget-object v0, Landroid/support/v4/widget/DrawerLayoutCompatApi21;->mArrayIa:[I
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 

@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static final b:Ljava/lang/String;
+.field private static final mStringb:Ljava/lang/String;
 
-.field private static c:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+.field private static mVoiceFileManagerc:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mLoggera:Lorg/slf4j/Logger;
 
     .line 21
     new-instance v0, Ljava/lang/StringBuilder;
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->b:Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mStringb:Ljava/lang/String;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 40
     return-void
@@ -88,7 +88,7 @@
 
     .prologue
     .line 32
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->c:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mVoiceFileManagerc:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
     if-nez v0, :cond_0
 
@@ -97,11 +97,11 @@
 
     invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;-><init>()V
 
-    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->c:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+    sput-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mVoiceFileManagerc:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
     .line 35
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->c:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mVoiceFileManagerc:Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
     return-object v0
 .end method
@@ -111,7 +111,7 @@
 
     .prologue
     .line 19
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -121,7 +121,7 @@
 
     .prologue
     .line 19
-    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
     const-wide/16 v4, 0x0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -203,7 +203,7 @@
 
     .line 47
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->mPreferencesHelperd:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

@@ -21,11 +21,11 @@
 
 .field public static final enum c:Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
-.field private static final synthetic e:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+.field private static final synthetic mArrayICqe:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
 
 # instance fields
-.field private final d:Ljava/lang/String;
+.field private final mStringd:Ljava/lang/String;
 
 
 # direct methods
@@ -89,7 +89,7 @@
 
     aput-object v1, v0, v5
 
-    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->e:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sput-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mArrayICqe:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     return-void
 .end method
@@ -109,7 +109,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 202
-    iput-object p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->d:Ljava/lang/String;
+    iput-object p3, p0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mStringd:Ljava/lang/String;
 
     .line 203
     return-void
@@ -136,7 +136,7 @@
 
     .prologue
     .line 194
-    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->e:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
+    sget-object v0, Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->mArrayICqe:[Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;
 
     invoke-virtual {v0}, [Lcom/facebook/stetho/inspector/protocol/module/Network$ICq;->clone()Ljava/lang/Object;
 

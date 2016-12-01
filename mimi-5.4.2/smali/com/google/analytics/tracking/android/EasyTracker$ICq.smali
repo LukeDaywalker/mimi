@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/EasyTracker;
+.field final synthetic mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICq;->a:Lcom/google/analytics/tracking/android/EasyTracker;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/EasyTracker$ICq;->mEasyTrackera:Lcom/google/analytics/tracking/android/EasyTracker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

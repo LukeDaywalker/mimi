@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/AppealLegalityTask;
+.field final synthetic mAppealLegalityTaska:Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->a:Lcom/wumii/android/mimi/task/AppealLegalityTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->mAppealLegalityTaska:Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->a:Lcom/wumii/android/mimi/task/AppealLegalityTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->mAppealLegalityTaska:Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/AppealLegalityTask;->a(Lcom/wumii/android/mimi/task/AppealLegalityTask;)Lcom/wumii/android/mimi/models/entities/circle/AppealType;
 
@@ -45,7 +45,7 @@
     if-eqz v0, :cond_0
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->a:Lcom/wumii/android/mimi/task/AppealLegalityTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->mAppealLegalityTaska:Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/AppealLegalityTask;->b(Lcom/wumii/android/mimi/task/AppealLegalityTask;)Lcom/wumii/android/mimi/task/AppealLegalityTask$ICc;
 
@@ -59,7 +59,7 @@
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->a:Lcom/wumii/android/mimi/task/AppealLegalityTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/AppealLegalityTask$ICb;->mAppealLegalityTaska:Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/AppealLegalityTask;->b(Lcom/wumii/android/mimi/task/AppealLegalityTask;)Lcom/wumii/android/mimi/task/AppealLegalityTask$ICc;
 

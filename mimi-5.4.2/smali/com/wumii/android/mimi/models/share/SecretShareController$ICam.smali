@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+.field final synthetic mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     const-string/jumbo v2, "weixin_timeline"
 
@@ -42,7 +42,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->a:Lcom/wumii/android/mimi/models/share/SecretShareController;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/share/SecretShareController$ICam;->mSecretShareControllera:Lcom/wumii/android/mimi/models/share/SecretShareController;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/share/SecretShareController;->k()Ljava/lang/String;
 

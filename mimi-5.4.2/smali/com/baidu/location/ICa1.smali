@@ -7,49 +7,49 @@
 
 
 # static fields
-.field private static iS:Lcom/baidu/location/ICa1;
+.field private static mICa1iS:Lcom/baidu/location/ICa1;
 
 
 # instance fields
-.field private i0:D
+.field private isZi2:Z
 
-.field private i1:D
+.field private isZi3:Z
 
-.field private i2:Z
+.field private isZi4:Z
 
-.field private i3:Z
+.field private volatile isZi6:Z
 
-.field private i4:Z
+.field private isZiT:Z
 
-.field private i5:D
+.field private isZja:Z
 
-.field private volatile i6:Z
+.field private mDi0:D
 
-.field private final i7:Ljava/lang/String;
+.field private mDi1:D
 
-.field private i8:I
+.field private mDi5:D
 
-.field private final i9:Ljava/lang/String;
+.field private mDiX:D
 
-.field private iT:Z
+.field private mDiY:D
 
-.field private iU:Ljava/lang/String;
+.field private mIi8:I
 
-.field private iV:J
+.field private final mIiW:I
 
-.field private final iW:I
+.field private final mIjb:I
 
-.field private iX:D
+.field private mJiV:J
 
-.field private iY:D
+.field private final mStringi7:Ljava/lang/String;
 
-.field private final iZ:Ljava/lang/String;
+.field private final mStringi9:Ljava/lang/String;
 
-.field private ja:Z
+.field private mStringiU:Ljava/lang/String;
 
-.field private final jb:I
+.field private final mStringiZ:Ljava/lang/String;
 
-.field private jc:Ljava/lang/String;
+.field private mStringjc:Ljava/lang/String;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICa1;->iS:Lcom/baidu/location/ICa1;
+    sput-object v0, Lcom/baidu/location/ICa1;->mICa1iS:Lcom/baidu/location/ICa1;
 
     return-void
 .end method
@@ -74,51 +74,51 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v3, p0, Lcom/baidu/location/ICa1;->jc:Ljava/lang/String;
+    iput-object v3, p0, Lcom/baidu/location/ICa1;->mStringjc:Ljava/lang/String;
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->i4:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZi4:Z
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->ja:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZja:Z
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->iT:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZiT:Z
 
-    iput-object v3, p0, Lcom/baidu/location/ICa1;->iU:Ljava/lang/String;
+    iput-object v3, p0, Lcom/baidu/location/ICa1;->mStringiU:Ljava/lang/String;
 
-    iput v2, p0, Lcom/baidu/location/ICa1;->i8:I
+    iput v2, p0, Lcom/baidu/location/ICa1;->mIi8:I
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->i1:D
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mDi1:D
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->i0:D
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mDi0:D
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->i5:D
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mDi5:D
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->iY:D
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mDiY:D
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->iX:D
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mDiX:D
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICa1;->iV:J
+    iput-wide v0, p0, Lcom/baidu/location/ICa1;->mJiV:J
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->i2:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZi2:Z
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->i6:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZi6:Z
 
     const/4 v0, 0x6
 
-    iput v0, p0, Lcom/baidu/location/ICa1;->iW:I
+    iput v0, p0, Lcom/baidu/location/ICa1;->mIiW:I
 
     const/16 v0, 0x2710
 
-    iput v0, p0, Lcom/baidu/location/ICa1;->jb:I
+    iput v0, p0, Lcom/baidu/location/ICa1;->mIjb:I
 
     const-string/jumbo v0, "bdcltb09"
 
-    iput-object v0, p0, Lcom/baidu/location/ICa1;->iZ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa1;->mStringiZ:Ljava/lang/String;
 
     const-string/jumbo v0, "wof"
 
-    iput-object v0, p0, Lcom/baidu/location/ICa1;->i9:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa1;->mStringi9:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -140,11 +140,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICa1;->i3:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICa1;->isZi3:Z
 
     :try_start_0
     invoke-direct {p0}, Lcom/baidu/location/ICa1;->cw()V
@@ -173,13 +173,13 @@
 
     const/4 v1, 0x1
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->ja:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->isZja:Z
 
     if-eqz v0, :cond_0
 
-    iget-wide v8, p0, Lcom/baidu/location/ICa1;->iY:D
+    iget-wide v8, p0, Lcom/baidu/location/ICa1;->mDiY:D
 
-    iget-wide v6, p0, Lcom/baidu/location/ICa1;->iX:D
+    iget-wide v6, p0, Lcom/baidu/location/ICa1;->mDiX:D
 
     const-wide v4, 0x406ecccccccccccdL    # 246.4
 
@@ -264,15 +264,15 @@
     return-object v0
 
     :cond_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->i4:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->isZi4:Z
 
     if-eqz v0, :cond_4
 
-    iget-wide v8, p0, Lcom/baidu/location/ICa1;->i1:D
+    iget-wide v8, p0, Lcom/baidu/location/ICa1;->mDi1:D
 
-    iget-wide v6, p0, Lcom/baidu/location/ICa1;->i0:D
+    iget-wide v6, p0, Lcom/baidu/location/ICa1;->mDi0:D
 
-    iget-wide v4, p0, Lcom/baidu/location/ICa1;->i5:D
+    iget-wide v4, p0, Lcom/baidu/location/ICa1;->mDi5:D
 
     invoke-static {}, Lcom/baidu/location/ICak;->aF()Lcom/baidu/location/ICak;
 
@@ -436,7 +436,7 @@
 .method public static ct()Lcom/baidu/location/ICa1;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICa1;->iS:Lcom/baidu/location/ICa1;
+    sget-object v0, Lcom/baidu/location/ICa1;->mICa1iS:Lcom/baidu/location/ICa1;
 
     if-nez v0, :cond_0
 
@@ -444,10 +444,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICa1;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICa1;->iS:Lcom/baidu/location/ICa1;
+    sput-object v0, Lcom/baidu/location/ICa1;->mICa1iS:Lcom/baidu/location/ICa1;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICa1;->iS:Lcom/baidu/location/ICa1;
+    sget-object v0, Lcom/baidu/location/ICa1;->mICa1iS:Lcom/baidu/location/ICa1;
 
     return-object v0
 .end method
@@ -464,7 +464,7 @@
     const/4 v2, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -604,7 +604,7 @@
 
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iget-object v2, p0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -681,7 +681,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/baidu/location/ICa1;->ja:Z
+    iput-boolean v2, v0, Lcom/baidu/location/ICa1;->isZja:Z
 
     move-object/from16 v0, p1
 
@@ -697,7 +697,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iget-object v2, v0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -777,7 +777,7 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/baidu/location/ICa1;->ja:Z
+    iput-boolean v2, v0, Lcom/baidu/location/ICa1;->isZja:Z
 
     int-to-double v2, v14
 
@@ -785,7 +785,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v2, v0, Lcom/baidu/location/ICa1;->iY:D
+    iput-wide v2, v0, Lcom/baidu/location/ICa1;->mDiY:D
 
     int-to-double v2, v14
 
@@ -793,7 +793,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v2, v0, Lcom/baidu/location/ICa1;->iX:D
+    iput-wide v2, v0, Lcom/baidu/location/ICa1;->mDiX:D
 
     :cond_3
     invoke-virtual/range {v21 .. v21}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -914,7 +914,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-boolean v6, v0, Lcom/baidu/location/ICa1;->i4:Z
+    iget-boolean v6, v0, Lcom/baidu/location/ICa1;->isZi4:Z
 
     if-eqz v6, :cond_7
 
@@ -924,11 +924,11 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v6, v0, Lcom/baidu/location/ICa1;->i0:D
+    iget-wide v6, v0, Lcom/baidu/location/ICa1;->mDi0:D
 
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICa1;->i1:D
+    iget-wide v8, v0, Lcom/baidu/location/ICa1;->mDi1:D
 
     invoke-static/range {v2 .. v10}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
@@ -940,7 +940,7 @@
 
     move-object/from16 v0, p0
 
-    iget-wide v8, v0, Lcom/baidu/location/ICa1;->i5:D
+    iget-wide v8, v0, Lcom/baidu/location/ICa1;->mDi5:D
 
     const-wide v24, 0x409f400000000000L    # 2000.0
 
@@ -1287,7 +1287,7 @@
 .method static synthetic if(Lcom/baidu/location/ICa1;)Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -2243,7 +2243,7 @@
 .method static synthetic if(Lcom/baidu/location/ICa1;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/baidu/location/ICa1;->i6:Z
+    iput-boolean p1, p0, Lcom/baidu/location/ICa1;->isZi6:Z
 
     return p1
 .end method
@@ -2275,7 +2275,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v1, p0, Lcom/baidu/location/ICa1;->jc:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa1;->mStringjc:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2289,7 +2289,7 @@
 
     :cond_1
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICa1;->i7:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/location/ICa1;->mStringi7:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2305,12 +2305,12 @@
     if-nez p1, :cond_3
 
     :cond_2
-    iput-boolean v3, p0, Lcom/baidu/location/ICa1;->i4:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICa1;->isZi4:Z
 
     goto :goto_0
 
     :cond_3
-    iput-boolean v3, p0, Lcom/baidu/location/ICa1;->i4:Z
+    iput-boolean v3, p0, Lcom/baidu/location/ICa1;->isZi4:Z
 
     :try_start_1
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2343,13 +2343,13 @@
 
     move-result-object v1
 
-    iput-object p1, p0, Lcom/baidu/location/ICa1;->jc:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/location/ICa1;->mStringjc:Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICa1;->iV:J
+    iput-wide v2, p0, Lcom/baidu/location/ICa1;->mJiV:J
 
     if-eqz v1, :cond_5
 
@@ -2369,7 +2369,7 @@
 
     sub-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/baidu/location/ICa1;->i1:D
+    iput-wide v2, p0, Lcom/baidu/location/ICa1;->mDi1:D
 
     const/4 v2, 0x2
 
@@ -2381,7 +2381,7 @@
 
     sub-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/baidu/location/ICa1;->i5:D
+    iput-wide v2, p0, Lcom/baidu/location/ICa1;->mDi5:D
 
     const/4 v2, 0x3
 
@@ -2393,11 +2393,11 @@
 
     sub-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/baidu/location/ICa1;->i0:D
+    iput-wide v2, p0, Lcom/baidu/location/ICa1;->mDi0:D
 
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->i4:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZi4:Z
 
     :cond_4
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
@@ -2450,7 +2450,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICa1;->i3:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICa1;->isZi3:Z
 
     invoke-static {}, Lcom/baidu/location/ICad;->br()Landroid/os/Handler;
 
@@ -2546,11 +2546,11 @@
     return-void
 
     :cond_4
-    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->i6:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICa1;->isZi6:Z
 
     if-nez v0, :cond_3
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->i6:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICa1;->isZi6:Z
 
     new-instance v0, Lcom/baidu/location/ICa1$ICb;
 

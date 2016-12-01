@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Z
+.field private isZa:Z
 
-.field private d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+.field private mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     invoke-direct {p0, p1, v0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Landroid/os/Handler;Z)V
 
     .line 29
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->a:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->isZa:Z
 
     .line 30
     return-void
@@ -33,7 +33,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     return-object v0
 .end method
@@ -43,7 +43,7 @@
 
     .prologue
     .line 15
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     return-object p1
 .end method
@@ -136,19 +136,19 @@
     invoke-virtual {v2, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(I)V
 
     .line 73
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     if-eqz v1, :cond_0
 
     .line 74
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;->a(Ljava/lang/String;)V
 
     .line 75
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     goto :goto_0
 .end method
@@ -161,7 +161,7 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f()Z
 
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->d:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->mICasd:Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
     .line 35
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->j()V
@@ -175,7 +175,7 @@
 
     .prologue
     .line 81
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/LoadInvitationTask;->isZa:Z
 
     if-nez v0, :cond_0
 

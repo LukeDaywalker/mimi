@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+.field final synthetic mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 79
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaa;->a:Lcom/google/analytics/tracking/android/GAServiceProxy;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICaa;->mGAServiceProxya:Lcom/google/analytics/tracking/android/GAServiceProxy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

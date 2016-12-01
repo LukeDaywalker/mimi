@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/wxop/stat/ICai;
+.field final synthetic mICaia:Lcom/tencent/wxop/stat/ICai;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/wxop/stat/ICai;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICak;->a:Lcom/tencent/wxop/stat/ICai;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICak;->mICaia:Lcom/tencent/wxop/stat/ICai;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

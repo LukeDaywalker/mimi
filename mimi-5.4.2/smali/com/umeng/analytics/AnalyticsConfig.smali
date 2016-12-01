@@ -30,15 +30,15 @@
 
 .field public static m:Z
 
+.field private static mArrayDq:[D
+
+.field private static mArrayIr:[I
+
+.field private static mStringo:Ljava/lang/String;
+
+.field private static mStringp:Ljava/lang/String;
+
 .field public static n:J
-
-.field private static o:Ljava/lang/String;
-
-.field private static p:Ljava/lang/String;
-
-.field private static q:[D
-
-.field private static r:[I
 
 
 # direct methods
@@ -51,10 +51,10 @@
     const/4 v1, 0x0
 
     .line 8
-    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->o:Ljava/lang/String;
+    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringo:Ljava/lang/String;
 
     .line 9
-    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->p:Ljava/lang/String;
+    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mStringp:Ljava/lang/String;
 
     .line 11
     sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->a:Ljava/lang/String;
@@ -73,7 +73,7 @@
     sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->e:Ljava/lang/String;
 
     .line 51
-    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->q:[D
+    sput-object v1, Lcom/umeng/analytics/AnalyticsConfig;->mArrayDq:[D
 
     .line 84
     sput-boolean v2, Lcom/umeng/analytics/AnalyticsConfig;->j:Z
@@ -100,7 +100,7 @@
 
     .prologue
     .line 34
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->o:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringo:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -109,11 +109,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->o:Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringo:Ljava/lang/String;
 
     .line 38
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->o:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringo:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->q:[D
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mArrayDq:[D
 
     return-object v0
 .end method
@@ -133,7 +133,7 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->p:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringp:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -142,11 +142,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->p:Ljava/lang/String;
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringp:Ljava/lang/String;
 
     .line 45
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->p:Ljava/lang/String;
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mStringp:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -156,7 +156,7 @@
 
     .prologue
     .line 77
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->r:[I
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mArrayIr:[I
 
     if-nez v0, :cond_0
 
@@ -169,11 +169,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->r:[I
+    sput-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mArrayIr:[I
 
     .line 81
     :cond_0
-    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->r:[I
+    sget-object v0, Lcom/umeng/analytics/AnalyticsConfig;->mArrayIr:[I
 
     return-object v0
 .end method

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+.field final synthetic mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 246
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 250
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->g(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/manager/TagManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->e(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -46,13 +46,13 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->f(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 

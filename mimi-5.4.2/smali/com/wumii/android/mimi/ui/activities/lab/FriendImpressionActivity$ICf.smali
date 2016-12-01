@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+.field final synthetic mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 79
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->a(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)Z
 
@@ -39,7 +39,7 @@
     if-nez v0, :cond_0
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->a(Landroid/app/Activity;)V
 
@@ -49,7 +49,7 @@
 
     .line 87
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;->mFriendImpressionActivitya:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->b(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 

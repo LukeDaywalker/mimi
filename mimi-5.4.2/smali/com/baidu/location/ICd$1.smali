@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICd;
+.field final synthetic mICda:Lcom/baidu/location/ICd;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICd;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICd$1;->a:Lcom/baidu/location/ICd;
+    iput-object p1, p0, Lcom/baidu/location/ICd$1;->mICda:Lcom/baidu/location/ICd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICd$1;->a:Lcom/baidu/location/ICd;
+    iget-object v0, p0, Lcom/baidu/location/ICd$1;->mICda:Lcom/baidu/location/ICd;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICd;->U()V
 

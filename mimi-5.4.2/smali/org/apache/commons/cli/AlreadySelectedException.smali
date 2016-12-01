@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lorg/apache/commons/cli/OptionGroup;
+.field private mOptionGroupa:Lorg/apache/commons/cli/OptionGroup;
 
-.field private b:Lorg/apache/commons/cli/Option;
+.field private mOptionb:Lorg/apache/commons/cli/Option;
 
 
 # direct methods
@@ -77,10 +77,10 @@
     invoke-direct {p0, v0}, Lorg/apache/commons/cli/AlreadySelectedException;-><init>(Ljava/lang/String;)V
 
     .line 58
-    iput-object p1, p0, Lorg/apache/commons/cli/AlreadySelectedException;->a:Lorg/apache/commons/cli/OptionGroup;
+    iput-object p1, p0, Lorg/apache/commons/cli/AlreadySelectedException;->mOptionGroupa:Lorg/apache/commons/cli/OptionGroup;
 
     .line 59
-    iput-object p2, p0, Lorg/apache/commons/cli/AlreadySelectedException;->b:Lorg/apache/commons/cli/Option;
+    iput-object p2, p0, Lorg/apache/commons/cli/AlreadySelectedException;->mOptionb:Lorg/apache/commons/cli/Option;
 
     .line 60
     return-void

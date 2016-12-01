@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field private a:Z
-
 .field protected e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
 .field protected f:Lcom/wumii/android/mimi/util/ContextToast;
@@ -26,6 +24,8 @@
 .field protected h:Z
 
 .field protected i:Lcom/wumii/android/mimi/models/AppFacade;
+
+.field private isZa:Z
 
 
 # direct methods
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/BooleanUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -211,7 +211,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -260,7 +260,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {p3}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {p3}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -738,7 +738,7 @@
 
     .prologue
     .line 79
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZa:Z
 
     if-nez v0, :cond_0
 
@@ -787,10 +787,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->a:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZa:Z
 
     .line 95
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->a:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZa:Z
 
     return v0
 .end method
@@ -802,7 +802,7 @@
     .line 88
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->a:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/task/HttpAsyncTask;->isZa:Z
 
     .line 89
     invoke-super {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->j()V

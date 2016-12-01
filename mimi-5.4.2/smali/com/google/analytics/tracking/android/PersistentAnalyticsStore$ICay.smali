@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+.field final synthetic mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICay;->a:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICay;->mPersistentAnalyticsStorea:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

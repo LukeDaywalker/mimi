@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/soundtouch/RecordThread;
+.field final synthetic mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 37
-    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iput-object p1, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .prologue
     .line 41
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-static {v0}, Lcom/wumii/android/soundtouch/RecordThread;->a(Lcom/wumii/android/soundtouch/RecordThread;)Z
 
@@ -46,13 +46,13 @@
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-static {v0}, Lcom/wumii/android/soundtouch/RecordThread;->d(Lcom/wumii/android/soundtouch/RecordThread;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v1, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-static {v1}, Lcom/wumii/android/soundtouch/RecordThread;->d(Lcom/wumii/android/soundtouch/RecordThread;)Landroid/os/Handler;
 
@@ -60,15 +60,15 @@
 
     const/16 v2, 0xb
 
-    iget-object v3, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v3, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
-    iget-object v4, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v4, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-static {v4}, Lcom/wumii/android/soundtouch/RecordThread;->b(Lcom/wumii/android/soundtouch/RecordThread;)[S
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->a:Lcom/wumii/android/soundtouch/RecordThread;
+    iget-object v5, p0, Lcom/wumii/android/soundtouch/RecordThread$ICf;->mRecordThreada:Lcom/wumii/android/soundtouch/RecordThread;
 
     invoke-static {v5}, Lcom/wumii/android/soundtouch/RecordThread;->c(Lcom/wumii/android/soundtouch/RecordThread;)I
 

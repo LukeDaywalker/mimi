@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private a:Ljava/lang/Object;
+.field private mObjecta:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field private b:Lcom/sina/weibo/sdk/exception/WeiboException;
+.field private mWeiboExceptionb:Lcom/sina/weibo/sdk/exception/WeiboException;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 163
-    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->mWeiboExceptionb:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     .line 164
     return-void
@@ -54,7 +54,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 158
-    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->mObjecta:Ljava/lang/Object;
 
     .line 159
     return-void
@@ -72,7 +72,7 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->mObjecta:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -82,7 +82,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->mWeiboExceptionb:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     return-object v0
 .end method

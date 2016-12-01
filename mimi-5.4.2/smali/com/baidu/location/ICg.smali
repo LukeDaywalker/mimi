@@ -7,17 +7,17 @@
 
 
 # static fields
-.field private static bt:Lcom/baidu/location/ICg;
+.field private static mICgbt:Lcom/baidu/location/ICg;
 
 
 # instance fields
-.field private bq:J
-
 .field public br:J
 
-.field private bs:J
-
 .field public bu:Z
+
+.field private mJbq:J
+
+.field private mJbs:J
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICg;->bt:Lcom/baidu/location/ICg;
+    sput-object v0, Lcom/baidu/location/ICg;->mICgbt:Lcom/baidu/location/ICg;
 
     return-void
 .end method
@@ -44,9 +44,9 @@
 
     iput-wide v2, p0, Lcom/baidu/location/ICg;->br:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICg;->bq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICg;->mJbq:J
 
-    iput-wide v2, p0, Lcom/baidu/location/ICg;->bs:J
+    iput-wide v2, p0, Lcom/baidu/location/ICg;->mJbs:J
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method public static h()Lcom/baidu/location/ICg;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICg;->bt:Lcom/baidu/location/ICg;
+    sget-object v0, Lcom/baidu/location/ICg;->mICgbt:Lcom/baidu/location/ICg;
 
     if-nez v0, :cond_0
 
@@ -62,10 +62,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICg;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICg;->bt:Lcom/baidu/location/ICg;
+    sput-object v0, Lcom/baidu/location/ICg;->mICgbt:Lcom/baidu/location/ICg;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICg;->bt:Lcom/baidu/location/ICg;
+    sget-object v0, Lcom/baidu/location/ICg;->mICgbt:Lcom/baidu/location/ICg;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICg;->bq:J
+    iput-wide v0, p0, Lcom/baidu/location/ICg;->mJbq:J
 
     goto :goto_0
 .end method
@@ -141,11 +141,11 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICg;->bs:J
+    iput-wide v0, p0, Lcom/baidu/location/ICg;->mJbs:J
 
-    iget-wide v0, p0, Lcom/baidu/location/ICg;->bs:J
+    iget-wide v0, p0, Lcom/baidu/location/ICg;->mJbs:J
 
-    iget-wide v2, p0, Lcom/baidu/location/ICg;->bq:J
+    iget-wide v2, p0, Lcom/baidu/location/ICg;->mJbq:J
 
     sub-long/2addr v0, v2
 

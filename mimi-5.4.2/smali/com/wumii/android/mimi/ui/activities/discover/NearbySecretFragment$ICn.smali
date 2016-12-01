@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
+.field final synthetic mICma:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 233
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICn;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICn;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICn;->mICma:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;->mICla:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->b:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->mNearbySecretFragmentb:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

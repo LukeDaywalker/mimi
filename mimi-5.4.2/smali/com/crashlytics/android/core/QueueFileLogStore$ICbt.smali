@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:[B
+.field final synthetic mArrayBa:[B
 
-.field final synthetic b:[I
+.field final synthetic mArrayIb:[I
 
-.field final synthetic c:Lcom/crashlytics/android/core/QueueFileLogStore;
+.field final synthetic mQueueFileLogStorec:Lcom/crashlytics/android/core/QueueFileLogStore;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->c:Lcom/crashlytics/android/core/QueueFileLogStore;
+    iput-object p1, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mQueueFileLogStorec:Lcom/crashlytics/android/core/QueueFileLogStore;
 
-    iput-object p2, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->a:[B
+    iput-object p2, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mArrayBa:[B
 
-    iput-object p3, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->b:[I
+    iput-object p3, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mArrayIb:[I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .prologue
     .line 75
     :try_start_0
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->a:[B
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mArrayBa:[B
 
-    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->b:[I
+    iget-object v1, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mArrayIb:[I
 
     const/4 v2, 0x0
 
@@ -50,7 +50,7 @@
     invoke-virtual {p1, v0, v1, p2}, Ljava/io/InputStream;->read([BII)I
 
     .line 76
-    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->b:[I
+    iget-object v0, p0, Lcom/crashlytics/android/core/QueueFileLogStore$ICbt;->mArrayIb:[I
 
     const/4 v1, 0x0
 

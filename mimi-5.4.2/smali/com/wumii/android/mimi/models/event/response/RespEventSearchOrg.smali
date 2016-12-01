@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private isZb:Z
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -15,9 +17,7 @@
     .end annotation
 .end field
 
-.field private b:Z
-
-.field private c:Ljava/lang/String;
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->mStringc:Ljava/lang/String;
 
     .line 42
     return-void
@@ -59,7 +59,7 @@
 
     .prologue
     .line 25
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->mLista:Ljava/util/List;
 
     .line 26
     return-void
@@ -70,7 +70,7 @@
 
     .prologue
     .line 33
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->b:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->isZb:Z
 
     .line 34
     return-void
@@ -90,7 +90,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->mLista:Ljava/util/List;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
 
     .prologue
     .line 29
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->b:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->isZb:Z
 
     return v0
 .end method
@@ -110,7 +110,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/event/response/RespEventSearchOrg;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

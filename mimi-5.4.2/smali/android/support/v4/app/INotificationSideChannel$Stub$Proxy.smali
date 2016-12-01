@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/IBinder;
+.field private mIBindera:Landroid/os/IBinder;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 98
-    iput-object p1, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     .line 99
     return-void
@@ -46,7 +46,7 @@
     invoke-virtual {v1, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 158
-    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x3
 
@@ -98,7 +98,7 @@
     invoke-virtual {v1, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 143
-    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x2
 
@@ -164,7 +164,7 @@
 
     .line 126
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v2, 0x1
 
@@ -207,7 +207,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/app/INotificationSideChannel$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/network/HttpProcessor$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->c:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 

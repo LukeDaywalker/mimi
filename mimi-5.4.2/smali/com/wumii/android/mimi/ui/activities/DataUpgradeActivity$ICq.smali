@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+.field final synthetic mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,14 +33,14 @@
     invoke-static {}, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b()V
 
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;Z)Z
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->mDataUpgradeActivitya:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;->b(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)V
 

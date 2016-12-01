@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+.field final synthetic mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field final synthetic c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+.field final synthetic mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-.field final synthetic d:Lcom/wumii/android/mimi/manager/SecretManager;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iput-object p3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p4, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,12 +55,12 @@
     invoke-direct {v1, v0, v2}, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;-><init>(ILjava/lang/String;)V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->a(Ljava/lang/String;)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/event/response/RespEventSendComment;->b(Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -72,7 +72,7 @@
     if-eqz v0, :cond_1
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->g:Lcom/wumii/android/mimi/models/AppFacade;
 
@@ -80,9 +80,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
@@ -128,7 +128,7 @@
     .line 121
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/Object;)V
 
@@ -152,20 +152,20 @@
 
     .line 108
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->b:Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mCommentb:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;->FAILED:Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/entities/secret/Comment;->setStatus(Lcom/wumii/android/mimi/models/entities/secret/Comment$CommentStatus;)V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mFeedTypec:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     const/4 v4, 0x1
 
@@ -196,15 +196,15 @@
 
     if-nez v2, :cond_2
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/manager/SecretManager;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->a:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mStringa:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -212,15 +212,15 @@
 
     .line 118
     :cond_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v2, v2, Lcom/wumii/android/mimi/manager/SecretManager;->e:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v3, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v3, v3, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->d:Lcom/wumii/android/mimi/manager/SecretManager;
+    iget-object v4, p0, Lcom/wumii/android/mimi/manager/SecretManager$ICbd;->mSecretManagerd:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v4, v4, Lcom/wumii/android/mimi/manager/SecretManager;->f:Landroid/content/Context;
 

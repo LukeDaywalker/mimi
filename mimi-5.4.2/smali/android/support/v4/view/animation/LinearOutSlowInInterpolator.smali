@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[F
+.field private static final mArrayFa:[F
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Landroid/support/v4/view/animation/LinearOutSlowInInterpolator;->a:[F
+    sput-object v0, Landroid/support/v4/view/animation/LinearOutSlowInInterpolator;->mArrayFa:[F
 
     return-void
 
@@ -234,7 +234,7 @@
 
     .prologue
     .line 67
-    sget-object v0, Landroid/support/v4/view/animation/LinearOutSlowInInterpolator;->a:[F
+    sget-object v0, Landroid/support/v4/view/animation/LinearOutSlowInInterpolator;->mArrayFa:[F
 
     invoke-direct {p0, v0}, Landroid/support/v4/view/animation/LookupTableInterpolator;-><init>([F)V
 

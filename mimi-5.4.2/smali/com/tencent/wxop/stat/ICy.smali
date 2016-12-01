@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZd:Z
 
-.field private b:Ljava/lang/String;
+.field private isZe:Z
 
-.field private c:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Z
+.field private mStringb:Ljava/lang/String;
 
-.field private e:Z
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringa:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringb:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringc:Ljava/lang/String;
 
-    iput-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->d:Z
+    iput-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->isZd:Z
 
-    iput-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->e:Z
+    iput-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->isZe:Z
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method public final a(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICy;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICy;->mStringa:Ljava/lang/String;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 .method public final a()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICy;->d:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICy;->isZd:Z
 
     return v0
 .end method
@@ -58,7 +58,7 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
 .method public final d()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICy;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -82,7 +82,7 @@
 .method public final e()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICy;->e:Z
+    iget-boolean v0, p0, Lcom/tencent/wxop/stat/ICy;->isZe:Z
 
     return v0
 .end method
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICy;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->d:Z
+    iget-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->isZd:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->e:Z
+    iget-boolean v1, p0, Lcom/tencent/wxop/stat/ICy;->isZe:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

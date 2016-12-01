@@ -7,19 +7,19 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/websocket/ReadHandler;
+.field private volatile isZe:Z
 
-.field private final b:Lcom/facebook/stetho/websocket/WriteHandler;
+.field private mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+.field private final mReadCallbackf:Lcom/facebook/stetho/websocket/ReadCallback;
 
-.field private d:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private final mReadHandlera:Lcom/facebook/stetho/websocket/ReadHandler;
 
-.field private volatile e:Z
+.field private final mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
-.field private final f:Lcom/facebook/stetho/websocket/ReadCallback;
+.field private final mWriteCallbackg:Lcom/facebook/stetho/websocket/WriteCallback;
 
-.field private final g:Lcom/facebook/stetho/websocket/WriteCallback;
+.field private final mWriteHandlerb:Lcom/facebook/stetho/websocket/WriteHandler;
 
 
 # direct methods
@@ -37,38 +37,38 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 115
     new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;
 
     invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$ICl;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->f:Lcom/facebook/stetho/websocket/ReadCallback;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mReadCallbackf:Lcom/facebook/stetho/websocket/ReadCallback;
 
     .line 177
     new-instance v0, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;
 
     invoke-direct {v0, p0}, Lcom/facebook/stetho/websocket/WebSocketSession$ICm;-><init>(Lcom/facebook/stetho/websocket/WebSocketSession;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->g:Lcom/facebook/stetho/websocket/WriteCallback;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mWriteCallbackg:Lcom/facebook/stetho/websocket/WriteCallback;
 
     .line 28
     new-instance v0, Lcom/facebook/stetho/websocket/ReadHandler;
 
     invoke-direct {v0, p1, p3}, Lcom/facebook/stetho/websocket/ReadHandler;-><init>(Ljava/io/InputStream;Lcom/facebook/stetho/websocket/SimpleEndpoint;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->a:Lcom/facebook/stetho/websocket/ReadHandler;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mReadHandlera:Lcom/facebook/stetho/websocket/ReadHandler;
 
     .line 29
     new-instance v0, Lcom/facebook/stetho/websocket/WriteHandler;
 
     invoke-direct {v0, p2}, Lcom/facebook/stetho/websocket/WriteHandler;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->b:Lcom/facebook/stetho/websocket/WriteHandler;
+    iput-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mWriteHandlerb:Lcom/facebook/stetho/websocket/WriteHandler;
 
     .line 30
-    iput-object p3, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iput-object p3, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     .line 31
     return-void
@@ -91,9 +91,9 @@
 
     .line 95
     :cond_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->b:Lcom/facebook/stetho/websocket/WriteHandler;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mWriteHandlerb:Lcom/facebook/stetho/websocket/WriteHandler;
 
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->g:Lcom/facebook/stetho/websocket/WriteCallback;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mWriteCallbackg:Lcom/facebook/stetho/websocket/WriteCallback;
 
     invoke-virtual {v0, p1, v1}, Lcom/facebook/stetho/websocket/WriteHandler;->a(Lcom/facebook/stetho/websocket/Frame;Lcom/facebook/stetho/websocket/WriteCallback;)V
 
@@ -135,7 +135,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     invoke-interface {v0, p0, p1}, Lcom/facebook/stetho/websocket/SimpleEndpoint;->a(Lcom/facebook/stetho/websocket/SimpleSession;Ljava/lang/Throwable;)V
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 16
-    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->e:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->isZe:Z
 
     return v0
 .end method
@@ -158,7 +158,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     return-object v0
 .end method
@@ -225,9 +225,9 @@
 
     .line 38
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->a:Lcom/facebook/stetho/websocket/ReadHandler;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mReadHandlera:Lcom/facebook/stetho/websocket/ReadHandler;
 
-    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->f:Lcom/facebook/stetho/websocket/ReadCallback;
+    iget-object v1, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mReadCallbackf:Lcom/facebook/stetho/websocket/ReadCallback;
 
     invoke-virtual {v0, v1}, Lcom/facebook/stetho/websocket/ReadHandler;->a(Lcom/facebook/stetho/websocket/ReadCallback;)V
     :try_end_0
@@ -302,7 +302,7 @@
     .line 71
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->e:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->isZe:Z
 
     .line 72
     return-void
@@ -313,7 +313,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
@@ -324,7 +324,7 @@
     if-eqz v0, :cond_0
 
     .line 82
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     invoke-interface {v0, p0, p1, p2}, Lcom/facebook/stetho/websocket/SimpleEndpoint;->a(Lcom/facebook/stetho/websocket/SimpleSession;ILjava/lang/String;)V
 
@@ -338,7 +338,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -349,7 +349,7 @@
     if-nez v0, :cond_0
 
     .line 76
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->c:Lcom/facebook/stetho/websocket/SimpleEndpoint;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mSimpleEndpointc:Lcom/facebook/stetho/websocket/SimpleEndpoint;
 
     invoke-interface {v0, p0}, Lcom/facebook/stetho/websocket/SimpleEndpoint;->a(Lcom/facebook/stetho/websocket/SimpleSession;)V
 
@@ -363,7 +363,7 @@
 
     .prologue
     .line 88
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketSession;->mAtomicBooleand:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 

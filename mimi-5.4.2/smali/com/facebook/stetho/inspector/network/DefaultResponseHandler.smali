@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field private final a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+.field private mIc:I
 
-.field private final b:Ljava/lang/String;
+.field private mId:I
 
-.field private c:I
+.field private final mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-.field private d:I
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -27,18 +27,18 @@
     .line 12
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->c:I
+    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mIc:I
 
     .line 13
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     .line 16
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
     .line 17
-    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mStringb:Ljava/lang/String;
 
     .line 18
     return-void
@@ -49,17 +49,17 @@
 
     .prologue
     .line 44
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b:Ljava/lang/String;
+    iget-object v2, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mStringb:Ljava/lang/String;
 
-    iget v3, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->c:I
+    iget v3, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mIc:I
 
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     if-ltz v0, :cond_0
 
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     :goto_0
     invoke-interface {v1, v2, v3, v0}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->b(Ljava/lang/String;II)V
@@ -69,7 +69,7 @@
 
     .line 44
     :cond_0
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->c:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mIc:I
 
     goto :goto_0
 .end method
@@ -84,9 +84,9 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b()V
 
     .line 35
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mStringb:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/facebook/stetho/inspector/network/NetworkEventReporter;->a(Ljava/lang/String;)V
 
@@ -99,11 +99,11 @@
 
     .prologue
     .line 22
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->c:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mIc:I
 
     add-int/2addr v0, p1
 
-    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->c:I
+    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mIc:I
 
     .line 23
     return-void
@@ -117,9 +117,9 @@
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b()V
 
     .line 40
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->a:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mNetworkEventReportera:Lcom/facebook/stetho/inspector/network/NetworkEventReporter;
 
-    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mStringb:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 
     .prologue
     .line 27
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     const/4 v1, -0x1
 
@@ -145,15 +145,15 @@
     .line 28
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     .line 30
     :cond_0
-    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iget v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     add-int/2addr v0, p1
 
-    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->d:I
+    iput v0, p0, Lcom/facebook/stetho/inspector/network/DefaultResponseHandler;->mId:I
 
     .line 31
     return-void

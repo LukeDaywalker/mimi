@@ -23,7 +23,9 @@
 
 .field public static final enum b:Lu/aly/PropertyValue$ICdl;
 
-.field private static final c:Ljava/util/Map;
+.field private static final synthetic mArrayICdlf:[Lu/aly/PropertyValue$ICdl;
+
+.field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -35,13 +37,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic f:[Lu/aly/PropertyValue$ICdl;
-
 
 # instance fields
-.field private final d:S
+.field private final mSd:S
 
-.field private final e:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -88,14 +88,14 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lu/aly/PropertyValue$ICdl;->f:[Lu/aly/PropertyValue$ICdl;
+    sput-object v0, Lu/aly/PropertyValue$ICdl;->mArrayICdlf:[Lu/aly/PropertyValue$ICdl;
 
     .line 42
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/PropertyValue$ICdl;->c:Ljava/util/Map;
+    sput-object v0, Lu/aly/PropertyValue$ICdl;->mMapc:Ljava/util/Map;
 
     .line 45
     const-class v0, Lu/aly/PropertyValue$ICdl;
@@ -122,7 +122,7 @@
     check-cast v0, Lu/aly/PropertyValue$ICdl;
 
     .line 46
-    sget-object v2, Lu/aly/PropertyValue$ICdl;->c:Ljava/util/Map;
+    sget-object v2, Lu/aly/PropertyValue$ICdl;->mMapc:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/PropertyValue$ICdl;->b()Ljava/lang/String;
 
@@ -152,10 +152,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 85
-    iput-short p3, p0, Lu/aly/PropertyValue$ICdl;->d:S
+    iput-short p3, p0, Lu/aly/PropertyValue$ICdl;->mSd:S
 
     .line 86
-    iput-object p4, p0, Lu/aly/PropertyValue$ICdl;->e:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/PropertyValue$ICdl;->mStringe:Ljava/lang/String;
 
     .line 87
     return-void
@@ -264,7 +264,7 @@
 
     .prologue
     .line 38
-    sget-object v0, Lu/aly/PropertyValue$ICdl;->f:[Lu/aly/PropertyValue$ICdl;
+    sget-object v0, Lu/aly/PropertyValue$ICdl;->mArrayICdlf:[Lu/aly/PropertyValue$ICdl;
 
     invoke-virtual {v0}, [Lu/aly/PropertyValue$ICdl;->clone()Ljava/lang/Object;
 
@@ -282,7 +282,7 @@
 
     .prologue
     .line 90
-    iget-short v0, p0, Lu/aly/PropertyValue$ICdl;->d:S
+    iget-short v0, p0, Lu/aly/PropertyValue$ICdl;->mSd:S
 
     return v0
 .end method
@@ -292,7 +292,7 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lu/aly/PropertyValue$ICdl;->e:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/PropertyValue$ICdl;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+.field final synthetic mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;-><init>(Landroid/app/Activity;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 72
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICr;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICr;->mArrayIa:[I
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -47,11 +47,11 @@
 
     .line 74
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Ljava/lang/String;
 
@@ -65,7 +65,7 @@
 
     .line 77
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->b(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -78,11 +78,11 @@
     if-nez v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Ljava/lang/String;
 
@@ -100,9 +100,9 @@
 
     .line 81
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->c(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -116,7 +116,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Ljava/lang/String;
 
@@ -130,7 +130,7 @@
 
     .line 85
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
@@ -140,7 +140,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;->mSubjectSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;
 
     invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->a(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)Ljava/lang/String;
 

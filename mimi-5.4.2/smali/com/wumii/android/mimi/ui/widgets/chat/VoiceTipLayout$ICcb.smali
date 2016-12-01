@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+.field final synthetic mVoiceTipLayouta:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;->mVoiceTipLayouta:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;->mVoiceTipLayouta:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;)Landroid/widget/LinearLayout;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/widget/MaterialProgressDrawable;
+.field final synthetic mMaterialProgressDrawablea:Landroid/support/v4/widget/MaterialProgressDrawable;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 450
-    iput-object p1, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->a:Landroid/support/v4/widget/MaterialProgressDrawable;
+    iput-object p1, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->mMaterialProgressDrawablea:Landroid/support/v4/widget/MaterialProgressDrawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 453
-    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->a:Landroid/support/v4/widget/MaterialProgressDrawable;
+    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->mMaterialProgressDrawablea:Landroid/support/v4/widget/MaterialProgressDrawable;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/MaterialProgressDrawable;->invalidateSelf()V
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 458
-    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->a:Landroid/support/v4/widget/MaterialProgressDrawable;
+    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->mMaterialProgressDrawablea:Landroid/support/v4/widget/MaterialProgressDrawable;
 
     invoke-virtual {v0, p2, p3, p4}, Landroid/support/v4/widget/MaterialProgressDrawable;->scheduleSelf(Ljava/lang/Runnable;J)V
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 463
-    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->a:Landroid/support/v4/widget/MaterialProgressDrawable;
+    iget-object v0, p0, Landroid/support/v4/widget/MaterialProgressDrawable$3;->mMaterialProgressDrawablea:Landroid/support/v4/widget/MaterialProgressDrawable;
 
     invoke-virtual {v0, p2}, Landroid/support/v4/widget/MaterialProgressDrawable;->unscheduleSelf(Ljava/lang/Runnable;)V
 

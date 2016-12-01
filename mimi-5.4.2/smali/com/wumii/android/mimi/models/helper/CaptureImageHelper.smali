@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:J
+.field private mActivitye:Landroid/app/Activity;
 
-.field private b:Ljava/io/File;
+.field private mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private c:Lcom/wumii/android/mimi/util/ContextToast;
+.field private mFileb:Ljava/io/File;
 
-.field private d:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
+.field private mICcd:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
-.field private e:Landroid/app/Activity;
+.field private mJa:J
 
 
 # direct methods
@@ -24,17 +24,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     .line 32
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mICcd:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
     .line 33
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 34
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 102
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     const-wide/16 v2, 0x0
 
@@ -60,11 +60,11 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     .line 105
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mFileb:Ljava/io/File;
 
     if-nez v0, :cond_1
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-wide v4, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iget-wide v4, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -97,11 +97,11 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->b:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mFileb:Ljava/io/File;
 
     .line 108
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->b:Ljava/io/File;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mFileb:Ljava/io/File;
 
     return-object v0
 .end method
@@ -111,7 +111,7 @@
 
     .prologue
     .line 117
-    iput-wide p1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iput-wide p1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     .line 118
     return-void
@@ -164,14 +164,14 @@
     invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mICcd:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->b:Ljava/io/File;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mFileb:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     .line 51
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06036a
 
@@ -213,7 +213,7 @@
     if-nez p3, :cond_3
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v7}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -229,7 +229,7 @@
     if-nez v1, :cond_4
 
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v7}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -245,7 +245,7 @@
 
     .line 71
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -290,7 +290,7 @@
     if-eqz v0, :cond_5
 
     .line 75
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mICcd:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
     invoke-interface {v1, v0}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;->a(Ljava/lang/String;)V
     :try_end_1
@@ -326,7 +326,7 @@
     if-eqz v0, :cond_8
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mICcd:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
     invoke-virtual {v1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -353,7 +353,7 @@
 
     .line 91
     :cond_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     invoke-virtual {v0, v9, v7}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
@@ -392,12 +392,12 @@
     .line 112
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->b:Ljava/io/File;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mFileb:Ljava/io/File;
 
     .line 113
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iput-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     .line 114
     return-void
@@ -408,7 +408,7 @@
 
     .prologue
     .line 121
-    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a:J
+    iget-wide v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mJa:J
 
     return-wide v0
 .end method
@@ -427,7 +427,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 130
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;Landroid/content/Intent;)Z
 
@@ -436,9 +436,9 @@
     if-nez v1, :cond_0
 
     .line 131
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     const v2, 0x7f060397
 
@@ -475,7 +475,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 135
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     const/4 v2, 0x2
 
@@ -498,7 +498,7 @@
     if-nez v0, :cond_0
 
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060398
 
@@ -533,7 +533,7 @@
 
     .line 157
     :goto_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;Landroid/content/Intent;)Z
 
@@ -542,9 +542,9 @@
     if-nez v1, :cond_2
 
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mContextToastc:Lcom/wumii/android/mimi/util/ContextToast;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     const v2, 0x7f060397
 
@@ -579,7 +579,7 @@
 
     .line 161
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->mActivitye:Landroid/app/Activity;
 
     const/4 v2, 0x3
 

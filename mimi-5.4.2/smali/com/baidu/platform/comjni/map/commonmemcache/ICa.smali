@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field private a:J
+.field private mJNICommonMemCacheb:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
-.field private b:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
+.field private mJa:J
 
 
 # direct methods
@@ -16,17 +16,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJa:J
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->b:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJNICommonMemCacheb:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
     new-instance v0, Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
     invoke-direct {v0}, Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;-><init>()V
 
-    iput-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->b:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
+    iput-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJNICommonMemCacheb:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
     return-void
 .end method
@@ -36,15 +36,15 @@
 .method public a()J
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->b:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJNICommonMemCacheb:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
     invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;->Create()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a:J
+    iput-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJa:J
 
-    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a:J
+    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJa:J
 
     return-wide v0
 .end method
@@ -52,7 +52,7 @@
 .method public a(Landroid/os/Bundle;)V
     .locals 4
 
-    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a:J
+    iget-wide v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJa:J
 
     const-wide/16 v2, 0x0
 
@@ -60,9 +60,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->b:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
+    iget-object v0, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJNICommonMemCacheb:Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;
 
-    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->a:J
+    iget-wide v2, p0, Lcom/baidu/platform/comjni/map/commonmemcache/ICa;->mJa:J
 
     invoke-virtual {v0, v2, v3, p1}, Lcom/baidu/platform/comjni/map/commonmemcache/JNICommonMemCache;->Init(JLandroid/os/Bundle;)V
 

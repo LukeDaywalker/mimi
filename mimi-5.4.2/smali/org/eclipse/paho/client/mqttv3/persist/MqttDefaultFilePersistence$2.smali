@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;
+.field final mMqttDefaultFilePersistencea:Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence$2;->a:Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence$2;->mMqttDefaultFilePersistencea:Lorg/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence;
 
     .line 265
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

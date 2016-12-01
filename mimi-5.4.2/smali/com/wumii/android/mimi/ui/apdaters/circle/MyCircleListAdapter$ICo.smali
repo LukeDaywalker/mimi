@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mTextViewa:Landroid/widget/TextView;
 
-.field b:Landroid/widget/TextView;
+.field mTextViewb:Landroid/widget/TextView;
 
 
 # direct methods

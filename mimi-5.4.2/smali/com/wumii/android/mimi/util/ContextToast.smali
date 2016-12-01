@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
-.field private static e:Landroid/widget/Toast;
+.field private static mToaste:Landroid/widget/Toast;
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field private isZd:Z
 
-.field private c:Landroid/widget/Toast;
+.field private mContextb:Landroid/content/Context;
 
-.field private d:Z
+.field private mToastc:Landroid/widget/Toast;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ContextToast;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/util/ContextToast;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 34
-    iput-object p1, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     .line 36
     instance-of v0, p1, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
@@ -182,7 +182,7 @@
     .line 74
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->isZd:Z
 
     .line 75
     return-void
@@ -208,7 +208,7 @@
 
     .prologue
     .line 156
-    sget-object v0, Lcom/wumii/android/mimi/util/ContextToast;->e:Landroid/widget/Toast;
+    sget-object v0, Lcom/wumii/android/mimi/util/ContextToast;->mToaste:Landroid/widget/Toast;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -218,7 +218,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ContextToast;->e:Landroid/widget/Toast;
+    sput-object v0, Lcom/wumii/android/mimi/util/ContextToast;->mToaste:Landroid/widget/Toast;
 
     .line 157
     return-void
@@ -239,12 +239,12 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
@@ -252,7 +252,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->d:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->isZd:Z
 
     .line 110
     return-void
@@ -275,16 +275,16 @@
     const/4 v1, 0x0
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
 
     .line 114
-    iput-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iput-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
     .line 117
     :cond_0
-    iput-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iput-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     .line 118
     return-void
@@ -307,7 +307,7 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
@@ -317,7 +317,7 @@
 
     .line 84
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -333,14 +333,14 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     instance-of v0, v0, Landroid/app/Activity;
 
     if-nez v0, :cond_1
 
     .line 93
-    sget-object v0, Lcom/wumii/android/mimi/util/ContextToast;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/util/ContextToast;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -352,7 +352,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -387,20 +387,20 @@
 
     .line 97
     :cond_1
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->isZd:Z
 
     if-nez v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/util/ContextToast;->mContextb:Landroid/content/Context;
 
     invoke-static {v0, v1, p1, p2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/widget/Toast;Landroid/content/Context;Ljava/lang/String;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->c:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/util/ContextToast;->mToastc:Landroid/widget/Toast;
 
     goto :goto_0
 .end method

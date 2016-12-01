@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field private a:Landroid/widget/EditText;
+.field private mButtone:Landroid/widget/Button;
 
-.field private b:Landroid/widget/RelativeLayout;
+.field private mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+.field private mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-.field private d:Landroid/widget/EditText;
+.field private mEditTexta:Landroid/widget/EditText;
 
-.field private e:Landroid/widget/Button;
+.field private mEditTextd:Landroid/widget/EditText;
 
-.field private j:Lcom/wumii/android/mimi/util/ContextToast;
+.field private mLinearLayoutk:Landroid/widget/LinearLayout;
 
-.field private k:Landroid/widget/LinearLayout;
+.field private mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
-.field private l:Landroid/widget/TextView;
+.field private mTextViewl:Landroid/widget/TextView;
 
-.field private m:Landroid/widget/TextView;
+.field private mTextViewm:Landroid/widget/TextView;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->b:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
@@ -54,7 +54,7 @@
     .line 162
     sget-object v0, Landroid/util/Patterns;->PHONE:Ljava/util/regex/Pattern;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -76,7 +76,7 @@
     if-nez v0, :cond_0
 
     .line 164
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060388
 
@@ -104,7 +104,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -124,7 +124,7 @@
 
     .prologue
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->l:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mTextViewl:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getName()Ljava/lang/String;
 
@@ -133,7 +133,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->m:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mTextViewm:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/authenticator/Country;->getCode()Ljava/lang/String;
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -162,7 +162,7 @@
     const/4 v3, 0x0
 
     .line 172
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -173,7 +173,7 @@
     move-result-object v1
 
     .line 173
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTextd:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -184,14 +184,14 @@
     move-result-object v2
 
     .line 174
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060385
 
@@ -217,7 +217,7 @@
     if-nez v0, :cond_2
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060388
 
@@ -227,14 +227,14 @@
 
     .line 178
     :cond_2
-    invoke-static {v2}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v2}, Lorg/apache/commons/long3/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060386
 
@@ -259,7 +259,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/authenticator/NextStepCallback;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->m:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mTextViewm:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -279,7 +279,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     return-object v0
 .end method
@@ -289,7 +289,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->k:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mLinearLayoutk:Landroid/widget/LinearLayout;
 
     return-object v0
 .end method
@@ -320,7 +320,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     .line 57
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -335,7 +335,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->b:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     .line 58
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -350,7 +350,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     .line 59
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -365,7 +365,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->d:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTextd:Landroid/widget/EditText;
 
     .line 60
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -380,7 +380,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->e:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mButtone:Landroid/widget/Button;
 
     .line 61
     new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
@@ -391,7 +391,7 @@
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 62
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -406,7 +406,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->k:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mLinearLayoutk:Landroid/widget/LinearLayout;
 
     .line 63
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -421,7 +421,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->l:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mTextViewl:Landroid/widget/TextView;
 
     .line 64
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->getView()Landroid/view/View;
@@ -436,20 +436,20 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->m:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mTextViewm:Landroid/widget/TextView;
 
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->e:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mButtone:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->d:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTextd:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICd;
 
@@ -458,7 +458,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICe;
 
@@ -467,7 +467,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mEditTexta:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICf;
 
@@ -476,7 +476,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment$ICg;
 
@@ -534,7 +534,7 @@
     if-lez v2, :cond_0
 
     .line 110
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->a(J)V
 
@@ -549,7 +549,7 @@
 
     .line 112
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setText(I)V
 
@@ -557,7 +557,7 @@
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setText(I)V
 
@@ -678,14 +678,14 @@
     if-eqz v0, :cond_0
 
     .line 141
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a6
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mCountDownTimerViewc:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
     const-wide/16 v2, 0x7530
 
@@ -706,7 +706,7 @@
 
     .line 145
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->j:Lcom/wumii/android/mimi/util/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;->mContextToastj:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a5
 

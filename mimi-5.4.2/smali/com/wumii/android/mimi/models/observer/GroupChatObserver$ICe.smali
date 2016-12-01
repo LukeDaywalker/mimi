@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final synthetic a:[I
+.field static final synthetic mArrayIa:[I
 
 
 # direct methods
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->a:[I
+    sput-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->mArrayIa:[I
 
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;->JOIN:Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;->QUIT:Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/models/observer/GroupChatObserver$ICe;->mArrayIa:[I
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;->LOAD:Lcom/wumii/android/mimi/models/entities/chat/GroupChatResult$GroupChatEvent;
 

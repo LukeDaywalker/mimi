@@ -7,15 +7,13 @@
 
 
 # static fields
-.field private static final o:Lorg/slf4j/Logger;
+.field private static final mLoggero:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private p:Landroid/webkit/WebView;
+.field private mAlertDialogq:Landroid/app/AlertDialog;
 
-.field private q:Landroid/app/AlertDialog;
-
-.field private r:Landroid/webkit/ValueCallback;
+.field private mValueCallbackr:Landroid/webkit/ValueCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/webkit/ValueCallback",
@@ -26,7 +24,7 @@
     .end annotation
 .end field
 
-.field private s:Landroid/webkit/ValueCallback;
+.field private mValueCallbacks:Landroid/webkit/ValueCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/webkit/ValueCallback",
@@ -36,6 +34,8 @@
         }
     .end annotation
 .end field
+
+.field private mWebViewp:Landroid/webkit/WebView;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->o:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mLoggero:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->s:Landroid/webkit/ValueCallback;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbacks:Landroid/webkit/ValueCallback;
 
     return-object p1
 .end method
@@ -92,7 +92,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->r:Landroid/webkit/ValueCallback;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbackr:Landroid/webkit/ValueCallback;
 
     return-object p1
 .end method
@@ -102,7 +102,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->q:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mAlertDialogq:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -130,11 +130,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->q:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mAlertDialogq:Landroid/app/AlertDialog;
 
     .line 67
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->q:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mAlertDialogq:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
@@ -359,7 +359,7 @@
     move-result-object v0
 
     .line 237
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->r:Landroid/webkit/ValueCallback;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbackr:Landroid/webkit/ValueCallback;
 
     if-eqz v1, :cond_0
 
@@ -373,26 +373,26 @@
     aput-object v0, v1, v2
 
     .line 239
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->r:Landroid/webkit/ValueCallback;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbackr:Landroid/webkit/ValueCallback;
 
     invoke-interface {v2, v1}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
 
     .line 240
-    iput-object v3, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->r:Landroid/webkit/ValueCallback;
+    iput-object v3, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbackr:Landroid/webkit/ValueCallback;
 
     .line 243
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->s:Landroid/webkit/ValueCallback;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbacks:Landroid/webkit/ValueCallback;
 
     if-eqz v1, :cond_1
 
     .line 244
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->s:Landroid/webkit/ValueCallback;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbacks:Landroid/webkit/ValueCallback;
 
     invoke-interface {v1, v0}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
 
     .line 245
-    iput-object v3, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->s:Landroid/webkit/ValueCallback;
+    iput-object v3, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mValueCallbacks:Landroid/webkit/ValueCallback;
 
     .line 247
     :cond_1
@@ -407,7 +407,7 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
 
@@ -416,7 +416,7 @@
     if-eqz v0, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
 
@@ -468,10 +468,10 @@
 
     check-cast v0, Landroid/webkit/WebView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICb;
 
@@ -480,12 +480,12 @@
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p0}, Landroid/webkit/WebView;->setDownloadListener(Landroid/webkit/DownloadListener;)V
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -494,7 +494,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -503,7 +503,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -512,7 +512,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -521,7 +521,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -530,7 +530,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setNeedInitialFocus(Z)V
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -539,7 +539,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setLoadsImagesAutomatically(Z)V
 
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -548,7 +548,7 @@
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICc;
 
@@ -557,7 +557,7 @@
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$ICd;
 
@@ -645,7 +645,7 @@
 
     .line 174
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->h()Ljava/lang/String;
 
@@ -674,7 +674,7 @@
     move-exception v0
 
     .line 170
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->o:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mLoggero:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Fail to set cookie."
 
@@ -703,12 +703,12 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 229
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->mWebViewp:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->destroy()V
 

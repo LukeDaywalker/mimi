@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/atomic/AtomicReference;
+.field private isZd:Z
+
+.field private final mAtomicReferencea:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference",
@@ -15,11 +17,9 @@
     .end annotation
 .end field
 
-.field private final b:Ljava/util/concurrent/CountDownLatch;
+.field private final mCountDownLatchb:Ljava/util/concurrent/CountDownLatch;
 
-.field private c:Lio/fabric/sdk/android/services/settings/SettingsController;
-
-.field private d:Z
+.field private mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mAtomicReferencea:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 42
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
@@ -44,12 +44,12 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->b:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mCountDownLatchb:Ljava/util/concurrent/CountDownLatch;
 
     .line 44
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->d:Z
+    iput-boolean v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->isZd:Z
 
     .line 60
     return-void
@@ -82,12 +82,12 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mAtomicReferencea:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     .line 180
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->b:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mCountDownLatchb:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -105,7 +105,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->d:Z
+    iget-boolean v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->isZd:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -122,7 +122,7 @@
     .line 82
     :cond_0
     :try_start_1
-    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->c:Lio/fabric/sdk/android/services/settings/SettingsController;
+    iget-object v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
     if-nez v2, :cond_1
 
@@ -255,13 +255,13 @@
 
     invoke-direct/range {v3 .. v9}, Lio/fabric/sdk/android/services/settings/DefaultSettingsController;-><init>(Lio/fabric/sdk/android/Kit;Lio/fabric/sdk/android/services/settings/SettingsRequest;Lio/fabric/sdk/android/services/common/CurrentTimeProvider;Lio/fabric/sdk/android/services/settings/SettingsJsonTransform;Lio/fabric/sdk/android/services/settings/CachedSettingsIo;Lio/fabric/sdk/android/services/settings/SettingsSpiCall;)V
 
-    iput-object v3, p0, Lio/fabric/sdk/android/services/settings/Settings;->c:Lio/fabric/sdk/android/services/settings/SettingsController;
+    iput-object v3, p0, Lio/fabric/sdk/android/services/settings/Settings;->mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
     .line 109
     :cond_1
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->d:Z
+    iput-boolean v2, p0, Lio/fabric/sdk/android/services/settings/Settings;->isZd:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -293,7 +293,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mAtomicReferencea:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -321,12 +321,12 @@
     .prologue
     .line 142
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->b:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mCountDownLatchb:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->await()V
 
     .line 143
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mAtomicReferencea:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -369,7 +369,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->c:Lio/fabric/sdk/android/services/settings/SettingsController;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
     invoke-interface {v0}, Lio/fabric/sdk/android/services/settings/SettingsController;->a()Lio/fabric/sdk/android/services/settings/SettingsData;
 
@@ -412,7 +412,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->c:Lio/fabric/sdk/android/services/settings/SettingsController;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/settings/Settings;->mSettingsControllerc:Lio/fabric/sdk/android/services/settings/SettingsController;
 
     sget-object v1, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->b:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 

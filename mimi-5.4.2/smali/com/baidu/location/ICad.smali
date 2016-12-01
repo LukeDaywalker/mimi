@@ -12,23 +12,23 @@
 
 .field public static gQ:J
 
-.field private static gS:Landroid/content/Context;
-
-.field private static gW:J
-
-.field static gX:Lcom/baidu/location/ICad$ICa;
-
 .field public static gY:Z
+
+.field private static mContextgS:Landroid/content/Context;
+
+.field static mICagX:Lcom/baidu/location/ICad$ICa;
+
+.field private static mJgW:J
 
 
 # instance fields
-.field private gR:Z
+.field private isZgR:Z
 
-.field gT:Landroid/os/Messenger;
+.field private mHandlerThreadgU:Landroid/os/HandlerThread;
 
-.field private gU:Landroid/os/HandlerThread;
+.field private mLoopergV:Landroid/os/Looper;
 
-.field private gV:Landroid/os/Looper;
+.field mMessengergT:Landroid/os/Messenger;
 
 
 # direct methods
@@ -37,9 +37,9 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sput-object v0, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
-    sput-object v0, Lcom/baidu/location/ICad;->gS:Landroid/content/Context;
+    sput-object v0, Lcom/baidu/location/ICad;->mContextgS:Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -47,7 +47,7 @@
 
     const-wide/16 v0, 0x0
 
-    sput-wide v0, Lcom/baidu/location/ICad;->gW:J
+    sput-wide v0, Lcom/baidu/location/ICad;->mJgW:J
 
     return-void
 .end method
@@ -59,11 +59,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICad;->gT:Landroid/os/Messenger;
+    iput-object v0, p0, Lcom/baidu/location/ICad;->mMessengergT:Landroid/os/Messenger;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICad;->gR:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICad;->isZgR:Z
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 .method public static bq()J
     .locals 2
 
-    sget-wide v0, Lcom/baidu/location/ICad;->gW:J
+    sget-wide v0, Lcom/baidu/location/ICad;->mJgW:J
 
     return-wide v0
 .end method
@@ -79,7 +79,7 @@
 .method public static br()Landroid/os/Handler;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sget-object v0, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     invoke-virtual {v0}, Lcom/baidu/location/ICk;->o()V
 
-    iget-boolean v0, p0, Lcom/baidu/location/ICad;->gR:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICad;->isZgR:Z
 
     if-nez v0, :cond_0
 
@@ -347,7 +347,7 @@
 
     move-result v2
 
-    iput-boolean v2, p0, Lcom/baidu/location/ICad;->gR:Z
+    iput-boolean v2, p0, Lcom/baidu/location/ICad;->isZgR:Z
 
     const-string/jumbo v2, "debug_dev"
 
@@ -375,7 +375,7 @@
     invoke-static {v0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICad;->gT:Landroid/os/Messenger;
+    iget-object v0, p0, Lcom/baidu/location/ICad;->mMessengergT:Landroid/os/Messenger;
 
     invoke-virtual {v0}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;
 
@@ -391,41 +391,41 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/baidu/location/ICad;->gW:J
+    sput-wide v0, Lcom/baidu/location/ICad;->mJgW:J
 
-    sput-object p1, Lcom/baidu/location/ICad;->gS:Landroid/content/Context;
+    sput-object p1, Lcom/baidu/location/ICad;->mContextgS:Landroid/content/Context;
 
     invoke-static {}, Lcom/baidu/location/ICar;->a()Landroid/os/HandlerThread;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICad;->gU:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/baidu/location/ICad;->mHandlerThreadgU:Landroid/os/HandlerThread;
 
-    iget-object v0, p0, Lcom/baidu/location/ICad;->gU:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/baidu/location/ICad;->mHandlerThreadgU:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICad;->gV:Landroid/os/Looper;
+    iput-object v0, p0, Lcom/baidu/location/ICad;->mLoopergV:Landroid/os/Looper;
 
     new-instance v0, Lcom/baidu/location/ICad$ICa;
 
-    iget-object v1, p0, Lcom/baidu/location/ICad;->gV:Landroid/os/Looper;
+    iget-object v1, p0, Lcom/baidu/location/ICad;->mLoopergV:Landroid/os/Looper;
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICad$ICa;-><init>(Lcom/baidu/location/ICad;Landroid/os/Looper;)V
 
-    sput-object v0, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sput-object v0, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
     new-instance v0, Landroid/os/Messenger;
 
-    sget-object v1, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sget-object v1, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
     invoke-direct {v0, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICad;->gT:Landroid/os/Messenger;
+    iput-object v0, p0, Lcom/baidu/location/ICad;->mMessengergT:Landroid/os/Messenger;
 
-    sget-object v0, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sget-object v0, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
     const/4 v1, 0x0
 
@@ -497,7 +497,7 @@
 
     invoke-virtual {v0}, Lcom/baidu/location/ICaz;->if()V
 
-    sget-object v0, Lcom/baidu/location/ICad;->gX:Lcom/baidu/location/ICad$ICa;
+    sget-object v0, Lcom/baidu/location/ICad;->mICagX:Lcom/baidu/location/ICad$ICa;
 
     const/4 v1, 0x1
 

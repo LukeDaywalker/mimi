@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic mICyb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
 
-.field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
+.field final synthetic mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-.field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+.field final synthetic mStringa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mStringa:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->b:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mICyb:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,14 +48,14 @@
     const/16 v1, 0x8
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->i:Landroid/view/View;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->h:Landroid/view/View;
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->i:Landroid/view/View;
 
@@ -79,7 +79,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->h:Landroid/view/View;
 
@@ -88,7 +88,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->mSecretHeaderCardViewc:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->i:Landroid/view/View;
 

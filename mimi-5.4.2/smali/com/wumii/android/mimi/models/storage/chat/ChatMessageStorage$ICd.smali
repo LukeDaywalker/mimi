@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/HashMap;
+.field final synthetic mChatMessageStorageb:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+.field final synthetic mHashMapa:Ljava/util/HashMap;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->b:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->mChatMessageStorageb:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->a:Ljava/util/HashMap;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->mHashMapa:Ljava/util/HashMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     .prologue
     .line 62
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->b:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->mChatMessageStorageb:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->a(Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
@@ -43,7 +43,7 @@
 
     const-string/jumbo v1, "hasReadVoices"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->a:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICd;->mHashMapa:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0

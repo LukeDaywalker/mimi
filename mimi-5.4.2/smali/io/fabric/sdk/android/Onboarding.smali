@@ -15,25 +15,18 @@
 
 
 # instance fields
-.field private final a:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+.field private final mCollectionp:Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Collection",
+            "<",
+            "Lio/fabric/sdk/android/Kit;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private b:Landroid/content/pm/PackageManager;
-
-.field private c:Ljava/lang/String;
-
-.field private d:Landroid/content/pm/PackageInfo;
-
-.field private j:Ljava/lang/String;
-
-.field private k:Ljava/lang/String;
-
-.field private l:Ljava/lang/String;
-
-.field private m:Ljava/lang/String;
-
-.field private n:Ljava/lang/String;
-
-.field private final o:Ljava/util/concurrent/Future;
+.field private final mFutureo:Ljava/util/concurrent/Future;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Future",
@@ -47,16 +40,23 @@
     .end annotation
 .end field
 
-.field private final p:Ljava/util/Collection;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Collection",
-            "<",
-            "Lio/fabric/sdk/android/Kit;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+
+.field private mPackageInfod:Landroid/content/pm/PackageInfo;
+
+.field private mPackageManagerb:Landroid/content/pm/PackageManager;
+
+.field private mStringc:Ljava/lang/String;
+
+.field private mStringj:Ljava/lang/String;
+
+.field private mStringk:Ljava/lang/String;
+
+.field private mStringl:Ljava/lang/String;
+
+.field private mStringm:Ljava/lang/String;
+
+.field private mStringn:Ljava/lang/String;
 
 
 # direct methods
@@ -88,13 +88,13 @@
 
     invoke-direct {v0}, Lio/fabric/sdk/android/services/network/DefaultHttpRequestFactory;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/Onboarding;->a:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iput-object v0, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     .line 63
-    iput-object p1, p0, Lio/fabric/sdk/android/Onboarding;->o:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Lio/fabric/sdk/android/Onboarding;->mFutureo:Ljava/util/concurrent/Future;
 
     .line 64
-    iput-object p2, p0, Lio/fabric/sdk/android/Onboarding;->p:Ljava/util/Collection;
+    iput-object p2, p0, Lio/fabric/sdk/android/Onboarding;->mCollectionp:Ljava/util/Collection;
 
     .line 65
     return-void
@@ -148,7 +148,7 @@
     move-result-object v5
 
     .line 213
-    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->l:Ljava/lang/String;
+    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->mStringl:Ljava/lang/String;
 
     invoke-static {v0}, Lio/fabric/sdk/android/services/common/DeliveryMechanism;->a(Ljava/lang/String;)Lio/fabric/sdk/android/services/common/DeliveryMechanism;
 
@@ -170,13 +170,13 @@
     .line 216
     new-instance v0, Lio/fabric/sdk/android/services/settings/AppRequestData;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/Onboarding;->k:Ljava/lang/String;
+    iget-object v3, p0, Lio/fabric/sdk/android/Onboarding;->mStringk:Ljava/lang/String;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->j:Ljava/lang/String;
+    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mStringj:Ljava/lang/String;
 
-    iget-object v6, p0, Lio/fabric/sdk/android/Onboarding;->m:Ljava/lang/String;
+    iget-object v6, p0, Lio/fabric/sdk/android/Onboarding;->mStringm:Ljava/lang/String;
 
-    iget-object v8, p0, Lio/fabric/sdk/android/Onboarding;->n:Ljava/lang/String;
+    iget-object v8, p0, Lio/fabric/sdk/android/Onboarding;->mStringn:Ljava/lang/String;
 
     const-string/jumbo v9, "0"
 
@@ -218,7 +218,7 @@
 
     iget-object v3, p1, Lio/fabric/sdk/android/services/settings/AppSettingsData;->c:Ljava/lang/String;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->a:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     invoke-direct {v1, p0, v2, v3, v4}, Lio/fabric/sdk/android/services/settings/UpdateAppSpiCall;-><init>(Lio/fabric/sdk/android/Kit;Ljava/lang/String;Ljava/lang/String;Lio/fabric/sdk/android/services/network/HttpRequestFactory;)V
 
@@ -381,7 +381,7 @@
 
     iget-object v3, p2, Lio/fabric/sdk/android/services/settings/AppSettingsData;->c:Ljava/lang/String;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->a:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
     invoke-direct {v1, p0, v2, v3, v4}, Lio/fabric/sdk/android/services/settings/CreateAppSpiCall;-><init>(Lio/fabric/sdk/android/Kit;Ljava/lang/String;Ljava/lang/String;Lio/fabric/sdk/android/services/network/HttpRequestFactory;)V
 
@@ -433,13 +433,13 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lio/fabric/sdk/android/Onboarding;->i:Lio/fabric/sdk/android/services/common/IdManager;
+    iget-object v2, p0, Lio/fabric/sdk/android/Onboarding;->mIdManageri:Lio/fabric/sdk/android/services/common/IdManager;
 
-    iget-object v3, p0, Lio/fabric/sdk/android/Onboarding;->a:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
+    iget-object v3, p0, Lio/fabric/sdk/android/Onboarding;->mHttpRequestFactorya:Lio/fabric/sdk/android/services/network/HttpRequestFactory;
 
-    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->j:Ljava/lang/String;
+    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mStringj:Ljava/lang/String;
 
-    iget-object v5, p0, Lio/fabric/sdk/android/Onboarding;->k:Ljava/lang/String;
+    iget-object v5, p0, Lio/fabric/sdk/android/Onboarding;->mStringk:Ljava/lang/String;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/Onboarding;->e()Ljava/lang/String;
 
@@ -598,7 +598,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->l:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringl:Ljava/lang/String;
 
     .line 76
     invoke-virtual {p0}, Lio/fabric/sdk/android/Onboarding;->B()Landroid/content/Context;
@@ -609,7 +609,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->b:Landroid/content/pm/PackageManager;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageManagerb:Landroid/content/pm/PackageManager;
 
     .line 77
     invoke-virtual {p0}, Lio/fabric/sdk/android/Onboarding;->B()Landroid/content/Context;
@@ -620,12 +620,12 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->c:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringc:Ljava/lang/String;
 
     .line 78
-    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->b:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageManagerb:Landroid/content/pm/PackageManager;
 
-    iget-object v2, p0, Lio/fabric/sdk/android/Onboarding;->c:Ljava/lang/String;
+    iget-object v2, p0, Lio/fabric/sdk/android/Onboarding;->mStringc:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -633,10 +633,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->d:Landroid/content/pm/PackageInfo;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageInfod:Landroid/content/pm/PackageInfo;
 
     .line 79
-    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->d:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageInfod:Landroid/content/pm/PackageInfo;
 
     iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
 
@@ -644,10 +644,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->j:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringj:Ljava/lang/String;
 
     .line 80
-    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->d:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageInfod:Landroid/content/pm/PackageInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
@@ -656,10 +656,10 @@
     const-string/jumbo v1, "0.0"
 
     :goto_0
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->k:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringk:Ljava/lang/String;
 
     .line 82
-    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->b:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageManagerb:Landroid/content/pm/PackageManager;
 
     invoke-virtual {p0}, Lio/fabric/sdk/android/Onboarding;->B()Landroid/content/Context;
 
@@ -677,7 +677,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->m:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringm:Ljava/lang/String;
 
     .line 85
     invoke-virtual {p0}, Lio/fabric/sdk/android/Onboarding;->B()Landroid/content/Context;
@@ -694,7 +694,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->n:Ljava/lang/String;
+    iput-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mStringn:Ljava/lang/String;
 
     .line 88
     const/4 v0, 0x1
@@ -705,7 +705,7 @@
 
     .line 80
     :cond_0
-    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->d:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lio/fabric/sdk/android/Onboarding;->mPackageInfod:Landroid/content/pm/PackageInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
     :try_end_0
@@ -767,12 +767,12 @@
 
     .line 104
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->o:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->mFutureo:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_0
 
     .line 105
-    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->o:Ljava/util/concurrent/Future;
+    iget-object v0, p0, Lio/fabric/sdk/android/Onboarding;->mFutureo:Ljava/util/concurrent/Future;
 
     invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
@@ -782,7 +782,7 @@
 
     .line 111
     :goto_0
-    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->p:Ljava/util/Collection;
+    iget-object v4, p0, Lio/fabric/sdk/android/Onboarding;->mCollectionp:Ljava/util/Collection;
 
     invoke-virtual {p0, v0, v4}, Lio/fabric/sdk/android/Onboarding;->a(Ljava/util/Map;Ljava/util/Collection;)Ljava/util/Map;
 

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final a:[I
+.field static final mArrayIa:[I
 
-.field static final b:[J
+.field static final mArrayJb:[J
 
-.field static final c:[Ljava/lang/Object;
+.field static final mArrayObjectc:[Ljava/lang/Object;
 
 
 # direct methods
@@ -21,17 +21,17 @@
     .line 20
     new-array v0, v1, [I
 
-    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->a:[I
+    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->mArrayIa:[I
 
     .line 21
     new-array v0, v1, [J
 
-    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->b:[J
+    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->mArrayJb:[J
 
     .line 22
     new-array v0, v1, [Ljava/lang/Object;
 
-    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->c:[Ljava/lang/Object;
+    sput-object v0, Landroid/support/v4/util/ContainerHelpers;->mArrayObjectc:[Ljava/lang/Object;
 
     return-void
 .end method

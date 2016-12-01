@@ -35,7 +35,7 @@
     invoke-virtual {p0}, Landroid/support/v4/graphics/drawable/RoundedBitmapDrawable21;->a()V
 
     .line 34
-    iget-object v0, p0, Landroid/support/v4/graphics/drawable/RoundedBitmapDrawable21;->b:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroid/support/v4/graphics/drawable/RoundedBitmapDrawable21;->mRectb:Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/support/v4/graphics/drawable/RoundedBitmapDrawable21;->b()F
 

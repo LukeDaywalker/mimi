@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mId:I
 
-.field private b:Ljava/lang/String;
+.field private mJe:J
 
-.field private c:Ljava/lang/String;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:I
+.field private mStringb:Ljava/lang/String;
 
-.field private e:J
+.field private mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -26,15 +26,15 @@
     .line 11
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/tencent/connect/b/Pro$ICt;->d:I
+    iput v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mId:I
 
     .line 12
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->e:J
+    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mJe:J
 
     .line 15
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringa:Ljava/lang/String;
 
     .line 16
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->c:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringc:Ljava/lang/String;
 
     .line 50
     return-void
@@ -58,12 +58,12 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringb:Ljava/lang/String;
 
     .line 37
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->e:J
+    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mJe:J
 
     .line 38
     if-eqz p2, :cond_0
@@ -83,7 +83,7 @@
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->e:J
+    iput-wide v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mJe:J
 
     .line 42
     :cond_0
@@ -95,7 +95,7 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -103,7 +103,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/tencent/connect/b/Pro$ICt;->e:J
+    iget-wide v2, p0, Lcom/tencent/connect/b/Pro$ICt;->mJe:J
 
     cmp-long v0, v0, v2
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -135,7 +135,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -145,7 +145,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/tencent/connect/b/Pro$ICt;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method

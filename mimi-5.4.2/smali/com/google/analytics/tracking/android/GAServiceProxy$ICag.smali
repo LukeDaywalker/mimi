@@ -4,7 +4,20 @@
 
 
 # instance fields
-.field private final a:Ljava/util/Map;
+.field private final mJb:J
+
+.field private final mListd:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lcom/google/android/gms/analytics/internal/Command;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mMapa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -16,20 +29,7 @@
     .end annotation
 .end field
 
-.field private final b:J
-
-.field private final c:Ljava/lang/String;
-
-.field private final d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Lcom/google/android/gms/analytics/internal/Command;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mStringc:Ljava/lang/String;
 
 
 # direct methods
@@ -56,16 +56,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 444
-    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a:Ljava/util/Map;
+    iput-object p1, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mMapa:Ljava/util/Map;
 
     .line 445
-    iput-wide p2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->b:J
+    iput-wide p2, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mJb:J
 
     .line 446
-    iput-object p4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->c:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mStringc:Ljava/lang/String;
 
     .line 447
-    iput-object p5, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->d:Ljava/util/List;
+    iput-object p5, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mListd:Ljava/util/List;
 
     .line 448
     return-void
@@ -88,7 +88,7 @@
 
     .prologue
     .line 451
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mMapa:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -98,7 +98,7 @@
 
     .prologue
     .line 455
-    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->b:J
+    iget-wide v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mJb:J
 
     return-wide v0
 .end method
@@ -108,7 +108,7 @@
 
     .prologue
     .line 459
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mStringc:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -127,7 +127,7 @@
 
     .prologue
     .line 463
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->d:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mListd:Ljava/util/List;
 
     return-object v0
 .end method
@@ -147,12 +147,12 @@
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 470
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->c:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mStringc:Ljava/lang/String;
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 471
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mMapa:Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
@@ -162,7 +162,7 @@
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 473
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->a:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceProxy$ICag;->mMapa:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 

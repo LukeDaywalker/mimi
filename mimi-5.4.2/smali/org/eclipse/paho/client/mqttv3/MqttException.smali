@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private a:I
+.field private mIa:I
 
-.field private b:Ljava/lang/Throwable;
+.field private mThrowableb:Ljava/lang/Throwable;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     .line 166
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->a:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mIa:I
 
     .line 167
     return-void
@@ -36,10 +36,10 @@
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     .line 188
-    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->a:I
+    iput p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mIa:I
 
     .line 189
-    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->b:Ljava/lang/Throwable;
+    iput-object p2, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mThrowableb:Ljava/lang/Throwable;
 
     .line 190
     return-void
@@ -55,10 +55,10 @@
     .line 176
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->a:I
+    iput v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mIa:I
 
     .line 177
-    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->b:Ljava/lang/Throwable;
+    iput-object p1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mThrowableb:Ljava/lang/Throwable;
 
     .line 178
     return-void
@@ -71,7 +71,7 @@
 
     .prologue
     .line 207
-    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->b:Ljava/lang/Throwable;
+    iget-object v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mThrowableb:Ljava/lang/Throwable;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
 
     .prologue
     .line 215
-    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->a:I
+    iget v0, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mIa:I
 
     invoke-static {v0}, Lorg/eclipse/paho/client/mqttv3/internal/MessageCatalog;->a(I)Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->a:I
+    iget v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mIa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -130,7 +130,7 @@
     move-result-object v0
 
     .line 224
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->b:Ljava/lang/Throwable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mThrowableb:Ljava/lang/Throwable;
 
     if-eqz v1, :cond_0
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->b:Ljava/lang/Throwable;
+    iget-object v1, p0, Lorg/eclipse/paho/client/mqttv3/MqttException;->mThrowableb:Ljava/lang/Throwable;
 
     invoke-virtual {v1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 

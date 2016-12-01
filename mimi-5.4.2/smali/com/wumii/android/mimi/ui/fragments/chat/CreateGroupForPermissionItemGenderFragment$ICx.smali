@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+.field final synthetic mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 38
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +35,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 42
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
@@ -46,7 +46,7 @@
     if-eqz v0, :cond_0
 
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
@@ -68,7 +68,7 @@
 
     .line 46
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -79,7 +79,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/support/v4/app/FragmentActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->a:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment$ICx;->mCreateGroupForPermissionItemGenderFragmenta:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
+.field final synthetic mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/storage/BaseStorage;
+.field final synthetic mICea:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 18
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mICea:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
     iget-object v2, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
 
@@ -42,7 +42,7 @@
 
     .line 22
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
 
@@ -58,7 +58,7 @@
     if-ltz v1, :cond_0
 
     .line 23
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mBaseStorageb:Lcom/wumii/android/mimi/models/storage/BaseStorage;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/models/storage/BaseStorage;->a:Ljava/util/ArrayList;
 
@@ -68,7 +68,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->a:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICb;->mICea:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;
 
     invoke-interface {v0, v3}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
 

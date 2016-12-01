@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/manager/UploadContactManager;
+.field final synthetic mUploadContactManagera:Lcom/wumii/android/mimi/manager/UploadContactManager;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     .prologue
     .line 226
-    iput-object p1, p0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbq;->a:Lcom/wumii/android/mimi/manager/UploadContactManager;
+    iput-object p1, p0, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbq;->mUploadContactManagera:Lcom/wumii/android/mimi/manager/UploadContactManager;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

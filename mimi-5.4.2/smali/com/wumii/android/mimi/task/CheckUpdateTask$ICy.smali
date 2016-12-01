@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
+.field final synthetic mAppUpdateInfoa:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
 
-.field final synthetic b:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+.field final synthetic mCheckUpdateTaskb:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 149
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->b:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->mCheckUpdateTaskb:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->a:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->mAppUpdateInfoa:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->b:Lcom/wumii/android/mimi/task/CheckUpdateTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->mCheckUpdateTaskb:Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/task/CheckUpdateTask;->a(Lcom/wumii/android/mimi/task/CheckUpdateTask;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->a:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICy;->mAppUpdateInfoa:Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/AppUpdateInfo;->getNewestVersion()Ljava/lang/String;
 

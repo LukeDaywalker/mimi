@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+.field final synthetic mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .line 87
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
@@ -50,7 +50,7 @@
 
     .line 90
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
@@ -62,7 +62,7 @@
 
     .line 93
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->mSetUserAvatarActivitya:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/ImageSearchHotsType;->CHAT_ICON:Lcom/wumii/android/mimi/models/entities/ImageSearchHotsType;
 

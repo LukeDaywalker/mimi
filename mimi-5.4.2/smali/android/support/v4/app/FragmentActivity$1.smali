@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/app/FragmentActivity;
+.field final synthetic mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 87
-    iput-object p1, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
+    iput-object p1, p0, Landroid/support/v4/app/FragmentActivity$1;->mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -41,14 +41,14 @@
 
     .line 92
     :pswitch_0
-    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
-    iget-boolean v0, v0, Landroid/support/v4/app/FragmentActivity;->f:Z
+    iget-boolean v0, v0, Landroid/support/v4/app/FragmentActivity;->isZf:Z
 
     if-eqz v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
     const/4 v1, 0x0
 
@@ -58,14 +58,14 @@
 
     .line 97
     :pswitch_1
-    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->b()V
 
     .line 98
-    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->mFragmentActivitya:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->mFragmentManagerImplb:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g()Z
 

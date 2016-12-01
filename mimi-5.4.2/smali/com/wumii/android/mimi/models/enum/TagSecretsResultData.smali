@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private isZd:Z
 
-.field private b:Ljava/lang/String;
+.field private mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
-.field private c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+.field private mStringa:Ljava/lang/String;
 
-.field private d:Z
+.field private mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     .prologue
     .line 12
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -41,7 +41,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     .line 33
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 16
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mStringa:Ljava/lang/String;
 
     .line 17
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 40
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->d:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->isZd:Z
 
     .line 41
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -84,7 +84,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->b:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mStringb:Ljava/lang/String;
 
     .line 25
     return-void
@@ -95,7 +95,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->mFeedEventc:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     return-object v0
 .end method
@@ -105,7 +105,7 @@
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->d:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/enum/TagSecretsResultData;->isZd:Z
 
     return v0
 .end method

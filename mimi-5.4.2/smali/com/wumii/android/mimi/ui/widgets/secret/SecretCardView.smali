@@ -10,52 +10,10 @@
 
 
 # static fields
-.field private static final r:Lorg/slf4j/Logger;
+.field private static final mLoggerr:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private A:Landroid/view/View;
-
-.field private B:Landroid/widget/TextView;
-
-.field private C:Landroid/widget/ImageView;
-
-.field private D:Landroid/widget/ImageView;
-
-.field private E:Landroid/view/View;
-
-.field private F:Landroid/view/View;
-
-.field private G:Landroid/view/View;
-
-.field private H:Landroid/view/ViewGroup;
-
-.field private I:Landroid/widget/TextView;
-
-.field private J:Landroid/widget/ImageView;
-
-.field private K:Z
-
-.field private L:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
-
-.field private M:I
-
-.field private N:I
-
-.field private O:I
-
-.field private P:I
-
-.field private Q:I
-
-.field private R:I
-
-.field private S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
-
-.field private T:I
-
-.field private U:Landroid/view/animation/Animation;
-
 .field protected c:Landroid/view/ViewGroup;
 
 .field protected d:Lcom/wumii/android/mimi/ui/widgets/MimiTextView;
@@ -70,6 +28,8 @@
 
 .field protected i:Landroid/view/View;
 
+.field private isZK:Z
+
 .field protected j:I
 
 .field protected k:I
@@ -78,6 +38,62 @@
 
 .field protected m:I
 
+.field private mAnimationU:Landroid/view/animation/Animation;
+
+.field private mFeedTypeL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+
+.field private mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+
+.field private mIM:I
+
+.field private mIN:I
+
+.field private mIO:I
+
+.field private mIP:I
+
+.field private mIQ:I
+
+.field private mIR:I
+
+.field private mIT:I
+
+.field private mImageViewC:Landroid/widget/ImageView;
+
+.field private mImageViewD:Landroid/widget/ImageView;
+
+.field private mImageViewJ:Landroid/widget/ImageView;
+
+.field private mImageViewv:Landroid/widget/ImageView;
+
+.field private mImageVieww:Landroid/widget/ImageView;
+
+.field private mTextViewB:Landroid/widget/TextView;
+
+.field private mTextViewI:Landroid/widget/TextView;
+
+.field private mTextViewt:Landroid/widget/TextView;
+
+.field private mTextViewu:Landroid/widget/TextView;
+
+.field private mTextViewx:Landroid/widget/TextView;
+
+.field private mTextViewy:Landroid/widget/TextView;
+
+.field private mTextViewz:Landroid/widget/TextView;
+
+.field private mViewA:Landroid/view/View;
+
+.field private mViewE:Landroid/view/View;
+
+.field private mViewF:Landroid/view/View;
+
+.field private mViewG:Landroid/view/View;
+
+.field private mViewGroupH:Landroid/view/ViewGroup;
+
+.field private mViewGroups:Landroid/view/ViewGroup;
+
 .field protected n:I
 
 .field protected o:I
@@ -85,22 +101,6 @@
 .field protected p:I
 
 .field protected q:I
-
-.field private s:Landroid/view/ViewGroup;
-
-.field private t:Landroid/widget/TextView;
-
-.field private u:Landroid/widget/TextView;
-
-.field private v:Landroid/widget/ImageView;
-
-.field private w:Landroid/widget/ImageView;
-
-.field private x:Landroid/widget/TextView;
-
-.field private y:Landroid/widget/TextView;
-
-.field private z:Landroid/widget/TextView;
 
 
 # direct methods
@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->r:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mLoggerr:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -162,7 +162,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     .line 141
     const v0, 0x7f0b0174
@@ -173,7 +173,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     .line 142
     const v0, 0x7f0b0175
@@ -184,7 +184,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     .line 143
     const v0, 0x7f0b0080
@@ -195,7 +195,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->v:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewv:Landroid/widget/ImageView;
 
     .line 144
     const v0, 0x7f0b0250
@@ -206,7 +206,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->w:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageVieww:Landroid/widget/ImageView;
 
     .line 145
     const v0, 0x7f0b00dd
@@ -217,7 +217,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
     .line 146
     const v0, 0x7f0b00e6
@@ -228,7 +228,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->z:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewz:Landroid/widget/TextView;
 
     .line 148
     const v0, 0x7f0b0251
@@ -312,7 +312,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->y:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewy:Landroid/widget/TextView;
 
     .line 159
     const v0, 0x7f0b018f
@@ -321,7 +321,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->A:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewA:Landroid/view/View;
 
     .line 160
     const v0, 0x7f0b0258
@@ -332,7 +332,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     .line 161
     const v0, 0x7f0b0257
@@ -343,7 +343,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->C:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewC:Landroid/widget/ImageView;
 
     .line 162
     const v0, 0x7f0b0259
@@ -354,7 +354,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->D:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewD:Landroid/widget/ImageView;
 
     .line 164
     const v0, 0x7f0b024d
@@ -363,7 +363,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->G:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewG:Landroid/view/View;
 
     .line 167
     const v0, 0x7f0b025a
@@ -374,7 +374,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     .line 168
     const v0, 0x7f0b025b
@@ -385,7 +385,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->I:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewI:Landroid/widget/TextView;
 
     .line 169
     const v0, 0x7f0b025c
@@ -396,7 +396,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->J:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewJ:Landroid/widget/ImageView;
 
     .line 171
     const/4 v0, 0x0
@@ -435,7 +435,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->O:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIO:I
 
     .line 175
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getResources()Landroid/content/res/Resources;
@@ -448,7 +448,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->P:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIP:I
 
     .line 177
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getResources()Landroid/content/res/Resources;
@@ -461,7 +461,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->Q:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIQ:I
 
     .line 178
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getResources()Landroid/content/res/Resources;
@@ -474,7 +474,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->R:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIR:I
 
     .line 179
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getResources()Landroid/content/res/Resources;
@@ -519,7 +519,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->T:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIT:I
 
     .line 183
     return-void
@@ -530,7 +530,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     return-object v0
 .end method
@@ -554,7 +554,7 @@
 
     .line 685
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->U:Landroid/view/animation/Animation;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mAnimationU:Landroid/view/animation/Animation;
 
     if-nez v0, :cond_1
 
@@ -569,7 +569,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->U:Landroid/view/animation/Animation;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mAnimationU:Landroid/view/animation/Animation;
 
     .line 689
     :cond_1
@@ -596,7 +596,7 @@
     invoke-static {p1, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 693
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->U:Landroid/view/animation/Animation;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mAnimationU:Landroid/view/animation/Animation;
 
     invoke-static {p1, v1, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
 
@@ -626,7 +626,7 @@
     const/4 v6, 0x0
 
     .line 350
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     const-string/jumbo v1, ""
 
@@ -672,7 +672,7 @@
 
     .line 353
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -683,19 +683,19 @@
 
     .line 357
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 358
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 359
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -778,24 +778,24 @@
     invoke-virtual {v1, v2, v3, v4, v5}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 365
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 366
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 367
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 368
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -813,7 +813,7 @@
     const/4 v1, 0x0
 
     .line 283
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     const-string/jumbo v4, ""
 
@@ -834,9 +834,9 @@
     move-result-object v5
 
     .line 288
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
-    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->M:I
+    iget v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIM:I
 
     invoke-virtual {v3, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -867,23 +867,23 @@
 
     .line 291
     :cond_0
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->v:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewv:Landroid/widget/ImageView;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 292
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 293
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->w:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageVieww:Landroid/widget/ImageView;
 
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 302
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
@@ -893,7 +893,7 @@
     if-eqz v4, :cond_6
 
     .line 304
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v4}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -902,7 +902,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 305
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -918,14 +918,14 @@
 
     .line 317
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 318
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -942,17 +942,17 @@
 
     .line 295
     :cond_4
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->v:Landroid/widget/ImageView;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewv:Landroid/widget/ImageView;
 
     invoke-static {v6, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 296
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
     invoke-static {v6, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 297
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->w:Landroid/widget/ImageView;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageVieww:Landroid/widget/ImageView;
 
     if-eqz v3, :cond_5
 
@@ -970,7 +970,7 @@
 
     move-result-object v3
 
-    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->v:Landroid/widget/ImageView;
+    iget-object v6, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewv:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getResources()Landroid/content/res/Resources;
 
@@ -993,7 +993,7 @@
     invoke-virtual {v0, v3, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 299
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
     invoke-virtual {v5}, Lcom/wumii/android/mimi/models/entities/ScopedUser;->getName()Ljava/lang/String;
 
@@ -1015,7 +1015,7 @@
     if-nez v0, :cond_8
 
     .line 309
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -1039,7 +1039,7 @@
 
     .line 311
     :cond_8
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -1048,7 +1048,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 312
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -1056,14 +1056,14 @@
 
     .line 322
     :cond_9
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 323
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -1122,20 +1122,20 @@
 
     .line 332
     :cond_a
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->m:I
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 333
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setClickable(Z)V
 
     .line 337
     :cond_b
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -1153,14 +1153,14 @@
     if-eqz v0, :cond_c
 
     .line 339
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 340
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -1168,7 +1168,7 @@
     :cond_c
     const-string/jumbo v0, "\u706b\u661f"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1181,14 +1181,14 @@
     if-eqz v0, :cond_2
 
     .line 344
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 345
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setClickable(Z)V
 
@@ -1205,7 +1205,7 @@
 
     .prologue
     .line 279
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->G:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewG:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
@@ -1216,7 +1216,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->K:Z
+    iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->isZK:Z
 
     invoke-virtual {p0, p1, p2, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZZ)V
 
@@ -1249,14 +1249,14 @@
     if-lez v2, :cond_0
 
     .line 456
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->y:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewy:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
     invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 457
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->y:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewy:Landroid/widget/TextView;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1279,7 +1279,7 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 458
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->y:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewy:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
@@ -1291,7 +1291,7 @@
 
     .line 460
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->y:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewy:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -1322,7 +1322,7 @@
     sub-long/2addr v0, v2
 
     .line 469
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -1331,7 +1331,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 470
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     const-wide/16 v4, 0x0
 
@@ -1354,7 +1354,7 @@
     if-eqz v0, :cond_1
 
     .line 473
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->C:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewC:Landroid/widget/ImageView;
 
     const v1, 0x7f020090
 
@@ -1371,7 +1371,7 @@
     if-eqz v0, :cond_3
 
     .line 479
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->D:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewD:Landroid/widget/ImageView;
 
     const v1, 0x7f02008c
 
@@ -1379,7 +1379,7 @@
 
     .line 484
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
@@ -1396,7 +1396,7 @@
 
     .line 475
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->C:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewC:Landroid/widget/ImageView;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -1404,7 +1404,7 @@
 
     move-result v0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->O:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIO:I
 
     if-ne v0, v2, :cond_2
 
@@ -1422,7 +1422,7 @@
 
     .line 481
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->D:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewD:Landroid/widget/ImageView;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -1430,7 +1430,7 @@
 
     move-result v0
 
-    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->O:I
+    iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIO:I
 
     if-ne v0, v2, :cond_4
 
@@ -1465,7 +1465,7 @@
 
     const/4 v0, -0x2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->A:Landroid/view/View;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewA:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getHeight()I
 
@@ -1474,7 +1474,7 @@
     invoke-direct {v2, v0, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     .line 725
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewA:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -1520,7 +1520,7 @@
     .line 730
     const/4 v0, 0x0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getTextSize()F
 
@@ -1534,7 +1534,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 732
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1566,7 +1566,7 @@
 
     const/4 v2, -0x2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getHeight()I
 
@@ -1575,7 +1575,7 @@
     invoke-direct {v1, v2, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
     .line 710
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->x:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewx:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getHeight()I
 
@@ -1608,7 +1608,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 714
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getTextSize()F
 
@@ -1622,7 +1622,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 716
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1757,7 +1757,7 @@
     const/4 v7, 0x0
 
     .line 648
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getVisibility()I
 
@@ -1777,7 +1777,7 @@
 
     .line 654
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -1800,14 +1800,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     .line 656
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICx;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICx;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;Landroid/view/View;)V
 
@@ -1818,13 +1818,13 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 659
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
@@ -1832,7 +1832,7 @@
 
     iget v0, v0, Landroid/graphics/Point;->x:I
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getPaddingLeft()I
 
@@ -1856,7 +1856,7 @@
     move-result v6
 
     .line 661
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getSourceGuidanceContentView()Landroid/view/View;
 
@@ -1874,7 +1874,7 @@
 
     .line 665
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     if-nez v0, :cond_2
 
@@ -1897,14 +1897,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     .line 667
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICx;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICx;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;Landroid/view/View;)V
 
@@ -1915,13 +1915,13 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 670
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
@@ -1929,7 +1929,7 @@
 
     iget v0, v0, Landroid/graphics/Point;->x:I
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->B:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewB:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getPaddingLeft()I
 
@@ -1955,7 +1955,7 @@
     neg-int v8, v0
 
     .line 672
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->getLikeResultGuidanceContentView()Landroid/view/View;
 
@@ -2004,13 +2004,13 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     .line 215
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->L:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mFeedTypeL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 216
-    iput-boolean p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->K:Z
+    iput-boolean p4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->isZK:Z
 
     .line 218
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->G:Landroid/view/View;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewG:Landroid/view/View;
 
     if-eqz p3, :cond_4
 
@@ -2020,7 +2020,7 @@
     invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getBgColor()I
 
@@ -2033,7 +2033,7 @@
 
     move-result v0
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->O:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIO:I
 
     if-ne v0, v3, :cond_5
 
@@ -2066,16 +2066,16 @@
     .line 223
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->M:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIM:I
 
     .line 224
     const v0, 0x7f0200c7
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->N:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIN:I
 
     .line 231
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->z:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewz:Landroid/widget/TextView;
 
     iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
@@ -2089,7 +2089,7 @@
     if-nez v0, :cond_6
 
     .line 233
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->z:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewz:Landroid/widget/TextView;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -2099,7 +2099,7 @@
 
     move-result v0
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->O:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIO:I
 
     if-eq v0, v3, :cond_1
 
@@ -2107,7 +2107,7 @@
 
     move-result v0
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->P:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIP:I
 
     if-ne v0, v3, :cond_7
 
@@ -2127,23 +2127,23 @@
 
     .line 246
     :goto_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     if-eqz v0, :cond_2
 
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->F:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewF:Landroid/view/View;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 250
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     if-eqz v0, :cond_3
 
     .line 251
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->E:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewE:Landroid/view/View;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -2162,7 +2162,7 @@
     .line 255
     if-eqz p4, :cond_8
 
-    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->T:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIT:I
 
     int-to-long v6, v0
 
@@ -2171,17 +2171,17 @@
     if-gtz v0, :cond_8
 
     .line 256
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 257
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 258
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getBgColor()I
 
@@ -2190,23 +2190,23 @@
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setBackgroundColor(I)V
 
     .line 259
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->I:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewI:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->n:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 260
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->I:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewI:Landroid/widget/TextView;
 
     const-string/jumbo v1, "\u79d8\u5bc6\u56e0\u88ab\u8e29\u6b21\u6570\u8fc7\u591a\u5df2\u88ab\u6298\u53e0"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 261
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->J:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewJ:Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->N:I
+    iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIN:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2250,23 +2250,23 @@
     .line 228
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->o:I
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->M:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIM:I
 
     .line 229
     const v0, 0x7f0200c8
 
-    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->N:I
+    iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIN:I
 
     goto/16 :goto_1
 
     .line 235
     :cond_6
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->z:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewz:Landroid/widget/TextView;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 236
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->z:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewz:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getDistance()Ljava/lang/String;
 
@@ -2294,12 +2294,12 @@
 
     .line 265
     :cond_8
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 266
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
@@ -2333,7 +2333,7 @@
 
     .prologue
     .line 571
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     if-eqz v0, :cond_0
 
@@ -2344,7 +2344,7 @@
     if-nez v0, :cond_0
 
     .line 572
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->b(Ljava/lang/String;)V
 
@@ -2420,9 +2420,9 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->Q:I
+    iget v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIQ:I
 
-    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->R:I
+    iget v4, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mIR:I
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->p:I
 
@@ -2515,12 +2515,12 @@
 
     .prologue
     .line 489
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     if-nez v0, :cond_1
 
     .line 490
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->r:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mLoggerr:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unable to respond click event. onSecretCardClickListener == null"
 
@@ -2537,7 +2537,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->G:Landroid/view/View;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewG:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getId()I
 
@@ -2546,7 +2546,7 @@
     if-ne v0, v1, :cond_2
 
     .line 495
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->a()V
 
@@ -2558,7 +2558,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -2592,11 +2592,11 @@
 
     .line 497
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->L:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mFeedTypeL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
@@ -2608,7 +2608,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getId()I
 
@@ -2617,7 +2617,7 @@
     if-ne v0, v1, :cond_5
 
     .line 499
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -2626,7 +2626,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 500
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -2638,7 +2638,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getId()I
 
@@ -2647,7 +2647,7 @@
     if-ne v0, v1, :cond_6
 
     .line 502
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getTag()Ljava/lang/Object;
 
@@ -2659,7 +2659,7 @@
     if-eqz v0, :cond_0
 
     .line 504
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
@@ -2697,7 +2697,7 @@
     if-eqz v0, :cond_0
 
     .line 508
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -2711,7 +2711,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getId()I
 
@@ -2720,7 +2720,7 @@
     if-ne v0, v1, :cond_8
 
     .line 511
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -2734,7 +2734,7 @@
 
     .line 513
     :cond_8
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->r:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mLoggerr:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "Unsupported click event."
 
@@ -2759,12 +2759,12 @@
     invoke-virtual {p1, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 556
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     if-nez v1, :cond_1
 
     .line 557
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->r:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mLoggerr:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Unable to respond long press event. onSecretCardClickListener == null"
 
@@ -2782,7 +2782,7 @@
     if-ne p1, v1, :cond_0
 
     .line 562
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -2805,12 +2805,12 @@
     const/4 v0, 0x0
 
     .line 519
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     if-nez v2, :cond_1
 
     .line 520
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->r:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mLoggerr:Lorg/slf4j/Logger;
 
     const-string/jumbo v2, "Unable to respond touch event. onSecretCardClickListener == null"
 
@@ -2823,7 +2823,7 @@
 
     .line 524
     :cond_1
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->A:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewA:Landroid/view/View;
 
     if-ne p1, v2, :cond_0
 
@@ -2880,7 +2880,7 @@
     if-eqz v0, :cond_3
 
     .line 536
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -2889,14 +2889,14 @@
     .line 537
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->L:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mFeedTypeL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-direct {p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
     .line 538
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->C:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewC:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->C:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewC:Landroid/widget/ImageView;
 
     invoke-virtual {v2}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
@@ -2917,7 +2917,7 @@
 
     .line 541
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -2926,14 +2926,14 @@
     .line 542
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->L:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mFeedTypeL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     invoke-direct {p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
     .line 543
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->D:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewD:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->D:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mImageViewD:Landroid/widget/ImageView;
 
     invoke-virtual {v2}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
@@ -2953,10 +2953,10 @@
 
     .prologue
     .line 191
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->S:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mICzS:Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->s:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroups:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2986,27 +2986,27 @@
     invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->setOnLinkClickListener(Lcom/wumii/android/mimi/ui/widgets/MimiTextView$ICao;)V
 
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->H:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewGroupH:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 202
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->t:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewt:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->u:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mTextViewu:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 205
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->G:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewG:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->A:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView;->mViewA:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 

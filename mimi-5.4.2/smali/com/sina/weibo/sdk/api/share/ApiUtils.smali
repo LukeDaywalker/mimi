@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Landroid/net/Uri;
+.field private static final mUria:Landroid/net/Uri;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a:Landroid/net/Uri;
+    sput-object v0, Lcom/sina/weibo/sdk/api/share/ApiUtils;->mUria:Landroid/net/Uri;
 
     .line 68
     return-void
@@ -193,7 +193,7 @@
 
     .line 191
     :try_start_0
-    sget-object v1, Lcom/sina/weibo/sdk/api/share/ApiUtils;->a:Landroid/net/Uri;
+    sget-object v1, Lcom/sina/weibo/sdk/api/share/ApiUtils;->mUria:Landroid/net/Uri;
 
     const/4 v2, 0x0
 

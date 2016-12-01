@@ -10,7 +10,7 @@
 
     const-string/jumbo v0, "geometry"
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICk;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/ICk;->mStringb:Ljava/lang/String;
 
     return-void
 .end method

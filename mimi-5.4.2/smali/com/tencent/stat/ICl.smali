@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field private a:Lcom/tencent/stat/b/ICe;
+.field private mICea:Lcom/tencent/stat/b/ICe;
 
-.field private b:Lcom/tencent/stat/ICh;
+.field private mIChb:Lcom/tencent/stat/ICh;
 
 
 # direct methods
@@ -19,15 +19,15 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/stat/ICl;->b:Lcom/tencent/stat/ICh;
+    iput-object v0, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
-    iput-object p1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iput-object p1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-static {}, Lcom/tencent/stat/ICb;->a()Lcom/tencent/stat/ICh;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/tencent/stat/ICl;->b:Lcom/tencent/stat/ICh;
+    iput-object v0, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method static synthetic a(Lcom/tencent/stat/ICl;)Lcom/tencent/stat/b/ICe;
     .locals 1
 
-    iget-object v0, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v0, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     return-object v0
 .end method
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     const/4 v2, 0x0
 
@@ -98,7 +98,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v2, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v1, v2, v0}, Lcom/tencent/stat/ICe;->a(Lcom/tencent/stat/b/ICe;Lcom/tencent/stat/ICd;)V
 
@@ -123,7 +123,7 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v0, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0}, Lcom/tencent/stat/b/ICe;->a()Lcom/tencent/stat/b/ICf;
 
@@ -133,7 +133,7 @@
 
     if-eq v0, v1, :cond_2
 
-    iget-object v0, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v0, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0}, Lcom/tencent/stat/b/ICe;->d()Ljava/lang/String;
 
@@ -242,7 +242,7 @@
 
     invoke-virtual {v0, v1}, Lcom/tencent/stat/a/ICl;->b(Ljava/lang/Object;)V
 
-    iget-object v0, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v0, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0}, Lcom/tencent/stat/b/ICe;->c()Landroid/content/Context;
 
@@ -258,7 +258,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0, v1, v3}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/b/ICe;Lcom/tencent/stat/ICd;)V
 
@@ -271,7 +271,7 @@
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->b:Lcom/tencent/stat/ICh;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
     sget-object v2, Lcom/tencent/stat/ICh;->g:Lcom/tencent/stat/ICh;
 
@@ -285,12 +285,12 @@
 
     sget-object v1, Lcom/tencent/stat/ICh;->a:Lcom/tencent/stat/ICh;
 
-    iput-object v1, p0, Lcom/tencent/stat/ICl;->b:Lcom/tencent/stat/ICh;
+    iput-object v1, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
     :cond_6
-    sget-object v1, Lcom/tencent/stat/ICk;->a:[I
+    sget-object v1, Lcom/tencent/stat/ICk;->mArrayIa:[I
 
-    iget-object v2, p0, Lcom/tencent/stat/ICl;->b:Lcom/tencent/stat/ICh;
+    iget-object v2, p0, Lcom/tencent/stat/ICl;->mIChb:Lcom/tencent/stat/ICh;
 
     invoke-virtual {v2}, Lcom/tencent/stat/ICh;->ordinal()I
 
@@ -351,7 +351,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0, v1, v3}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/b/ICe;Lcom/tencent/stat/ICd;)V
 
@@ -362,14 +362,14 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v0, v1, v3}, Lcom/tencent/stat/ICo;->b(Lcom/tencent/stat/b/ICe;Lcom/tencent/stat/ICd;)V
 
     goto/16 :goto_0
 
     :pswitch_3
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     invoke-virtual {v1}, Lcom/tencent/stat/b/ICe;->c()Landroid/content/Context;
 
@@ -385,7 +385,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v1, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     new-instance v2, Lcom/tencent/stat/ICn;
 
@@ -401,7 +401,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/tencent/stat/ICl;->a:Lcom/tencent/stat/b/ICe;
+    iget-object v2, p0, Lcom/tencent/stat/ICl;->mICea:Lcom/tencent/stat/b/ICe;
 
     const/4 v3, 0x0
 

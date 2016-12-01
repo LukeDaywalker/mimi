@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/ResultReceiver;
+.field private mResultReceivera:Landroid/os/ResultReceiver;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     check-cast v0, Landroid/os/ResultReceiver;
 
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->a:Landroid/os/ResultReceiver;
+    iput-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->mResultReceivera:Landroid/os/ResultReceiver;
 
     .line 871
     return-void
@@ -65,7 +65,7 @@
 
     .prologue
     .line 862
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->a:Landroid/os/ResultReceiver;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->mResultReceivera:Landroid/os/ResultReceiver;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 893
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->a:Landroid/os/ResultReceiver;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->mResultReceivera:Landroid/os/ResultReceiver;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/ResultReceiver;->writeToParcel(Landroid/os/Parcel;I)V
 

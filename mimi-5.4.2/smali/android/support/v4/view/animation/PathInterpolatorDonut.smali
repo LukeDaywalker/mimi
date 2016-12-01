@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final a:[F
+.field private final mArrayFa:[F
 
-.field private final b:[F
+.field private final mArrayFb:[F
 
 
 # virtual methods
@@ -43,7 +43,7 @@
     const/4 v2, 0x0
 
     .line 74
-    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->a:[F
+    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFa:[F
 
     array-length v0, v0
 
@@ -63,7 +63,7 @@
     div-int/lit8 v0, v0, 0x2
 
     .line 77
-    iget-object v4, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->a:[F
+    iget-object v4, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFa:[F
 
     aget v4, v4, v0
 
@@ -93,11 +93,11 @@
 
     .line 84
     :cond_3
-    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->a:[F
+    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFa:[F
 
     aget v0, v0, v1
 
-    iget-object v4, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->a:[F
+    iget-object v4, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFa:[F
 
     aget v4, v4, v2
 
@@ -109,7 +109,7 @@
     if-nez v3, :cond_4
 
     .line 86
-    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->b:[F
+    iget-object v0, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFb:[F
 
     aget v0, v0, v2
 
@@ -117,7 +117,7 @@
 
     .line 89
     :cond_4
-    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->a:[F
+    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFa:[F
 
     aget v3, v3, v2
 
@@ -127,12 +127,12 @@
     div-float v0, v3, v0
 
     .line 92
-    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->b:[F
+    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFb:[F
 
     aget v2, v3, v2
 
     .line 93
-    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->b:[F
+    iget-object v3, p0, Landroid/support/v4/view/animation/PathInterpolatorDonut;->mArrayFb:[F
 
     aget v1, v3, v1
 

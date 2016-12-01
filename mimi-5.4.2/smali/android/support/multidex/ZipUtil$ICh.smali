@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:J
+.field mJa:J
 
-.field b:J
+.field mJb:J
 
 
 # direct methods

@@ -14,7 +14,7 @@
 
 .field protected d:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
-.field private e:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mPreferencesHelpere:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -189,7 +189,7 @@
     const/4 v3, 0x0
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->e:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->mPreferencesHelpere:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "crowd_splits"
 
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->e:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/circle/BaseCircleFragment;->mPreferencesHelpere:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 40
     invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;

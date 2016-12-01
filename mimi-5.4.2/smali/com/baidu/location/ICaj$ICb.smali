@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICaj;
+.field final synthetic mICaja:Lcom/baidu/location/ICaj;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/location/ICaj;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICaj$ICb;->a:Lcom/baidu/location/ICaj;
+    iput-object p1, p0, Lcom/baidu/location/ICaj$ICb;->mICaja:Lcom/baidu/location/ICaj;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,14 +37,14 @@
     goto :goto_0
 
     :sswitch_0
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICb;->a:Lcom/baidu/location/ICaj;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICb;->mICaja:Lcom/baidu/location/ICaj;
 
     invoke-virtual {v0, p1}, Lcom/baidu/location/ICaj;->byte(Landroid/os/Message;)V
 
     goto :goto_0
 
     :sswitch_1
-    iget-object v0, p0, Lcom/baidu/location/ICaj$ICb;->a:Lcom/baidu/location/ICaj;
+    iget-object v0, p0, Lcom/baidu/location/ICaj$ICb;->mICaja:Lcom/baidu/location/ICaj;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICaj;->aA()V
 

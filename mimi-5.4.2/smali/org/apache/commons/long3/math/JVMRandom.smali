@@ -1,16 +1,16 @@
-.class public final Lorg/apache/commons/long/math/JVMRandom;
+.class public final Lorg/apache/commons/long3/math/JVMRandom;
 .super Ljava/util/Random;
 .source "JVMRandom.java"
 
 
 # static fields
-.field private static final a:Ljava/util/Random;
+.field private static final mRandoma:Ljava/util/Random;
 
 .field private static final serialVersionUID:J = 0x1L
 
 
 # instance fields
-.field private b:Z
+.field private isZb:Z
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
-    sput-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sput-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     return-void
 .end method
@@ -38,12 +38,12 @@
     .line 54
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/apache/commons/long/math/JVMRandom;->b:Z
+    iput-boolean v0, p0, Lorg/apache/commons/long3/math/JVMRandom;->isZb:Z
 
     .line 60
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/apache/commons/long/math/JVMRandom;->b:Z
+    iput-boolean v0, p0, Lorg/apache/commons/long3/math/JVMRandom;->isZb:Z
 
     .line 61
     return-void
@@ -54,7 +54,7 @@
 
     .prologue
     .line 202
-    sget-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     invoke-virtual {v0}, Ljava/util/Random;->nextLong()J
 
@@ -100,13 +100,13 @@
     if-nez v0, :cond_1
 
     .line 153
-    invoke-static {}, Lorg/apache/commons/long/math/JVMRandom;->a()J
+    invoke-static {}, Lorg/apache/commons/long3/math/JVMRandom;->a()J
 
     move-result-wide v0
 
     sub-long v2, p0, v8
 
-    invoke-static {v2, v3}, Lorg/apache/commons/long/math/JVMRandom;->b(J)I
+    invoke-static {v2, v3}, Lorg/apache/commons/long3/math/JVMRandom;->b(J)I
 
     move-result v2
 
@@ -120,7 +120,7 @@
 
     .line 160
     :cond_1
-    invoke-static {}, Lorg/apache/commons/long/math/JVMRandom;->a()J
+    invoke-static {}, Lorg/apache/commons/long3/math/JVMRandom;->a()J
 
     move-result-wide v2
 
@@ -193,7 +193,7 @@
 
     .prologue
     .line 173
-    sget-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     invoke-virtual {v0}, Ljava/util/Random;->nextBoolean()Z
 
@@ -219,7 +219,7 @@
 
     .prologue
     .line 193
-    sget-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     invoke-virtual {v0}, Ljava/util/Random;->nextDouble()D
 
@@ -233,7 +233,7 @@
 
     .prologue
     .line 184
-    sget-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     invoke-virtual {v0}, Ljava/util/Random;->nextFloat()F
 
@@ -273,7 +273,7 @@
     .line 105
     const v0, 0x7fffffff
 
-    invoke-virtual {p0, v0}, Lorg/apache/commons/long/math/JVMRandom;->nextInt(I)I
+    invoke-virtual {p0, v0}, Lorg/apache/commons/long3/math/JVMRandom;->nextInt(I)I
 
     move-result v0
 
@@ -285,7 +285,7 @@
 
     .prologue
     .line 118
-    sget-object v0, Lorg/apache/commons/long/math/JVMRandom;->a:Ljava/util/Random;
+    sget-object v0, Lorg/apache/commons/long3/math/JVMRandom;->mRandoma:Ljava/util/Random;
 
     invoke-virtual {v0, p1}, Ljava/util/Random;->nextInt(I)I
 
@@ -301,7 +301,7 @@
     .line 131
     const-wide v0, 0x7fffffffffffffffL
 
-    invoke-static {v0, v1}, Lorg/apache/commons/long/math/JVMRandom;->a(J)J
+    invoke-static {v0, v1}, Lorg/apache/commons/long3/math/JVMRandom;->a(J)J
 
     move-result-wide v0
 
@@ -316,7 +316,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lorg/apache/commons/long/math/JVMRandom;->b:Z
+    iget-boolean v0, p0, Lorg/apache/commons/long3/math/JVMRandom;->isZb:Z
 
     if-eqz v0, :cond_0
 

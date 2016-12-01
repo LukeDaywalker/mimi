@@ -4,8 +4,6 @@
 
 
 # instance fields
-.field A:Landroid/app/Notification;
-
 .field public B:Landroid/app/Notification;
 
 .field public C:Ljava/util/ArrayList;
@@ -25,39 +23,51 @@
 
 .field public c:Ljava/lang/CharSequence;
 
-.field d:Landroid/app/PendingIntent;
-
-.field e:Landroid/app/PendingIntent;
-
-.field f:Landroid/widget/RemoteViews;
-
 .field public g:Landroid/graphics/Bitmap;
 
 .field public h:Ljava/lang/CharSequence;
 
 .field public i:I
 
-.field j:I
+.field isZk:Z
 
-.field k:Z
+.field isZq:Z
+
+.field isZs:Z
+
+.field isZv:Z
 
 .field public l:Z
 
 .field public m:Landroid/support/v4/app/NotificationCompat$Style;
 
+.field mBundlex:Landroid/os/Bundle;
+
+.field mIj:I
+
+.field mIo:I
+
+.field mIp:I
+
+.field mIy:I
+
+.field mIz:I
+
+.field mNotificationA:Landroid/app/Notification;
+
+.field mPendingIntentd:Landroid/app/PendingIntent;
+
+.field mPendingIntente:Landroid/app/PendingIntent;
+
+.field mRemoteViewsf:Landroid/widget/RemoteViews;
+
+.field mStringr:Ljava/lang/String;
+
+.field mStringt:Ljava/lang/String;
+
+.field mStringw:Ljava/lang/String;
+
 .field public n:Ljava/lang/CharSequence;
-
-.field o:I
-
-.field p:I
-
-.field q:Z
-
-.field r:Ljava/lang/String;
-
-.field s:Z
-
-.field t:Ljava/lang/String;
 
 .field public u:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -69,16 +79,6 @@
         }
     .end annotation
 .end field
-
-.field v:Z
-
-.field w:Ljava/lang/String;
-
-.field x:Landroid/os/Bundle;
-
-.field y:I
-
-.field z:I
 
 
 # direct methods
@@ -94,7 +94,7 @@
     .line 896
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->k:Z
+    iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->isZk:Z
 
     .line 910
     new-instance v0, Ljava/util/ArrayList;
@@ -104,13 +104,13 @@
     iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->u:Ljava/util/ArrayList;
 
     .line 911
-    iput-boolean v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->v:Z
+    iput-boolean v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->isZv:Z
 
     .line 914
-    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->y:I
+    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mIy:I
 
     .line 915
-    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->z:I
+    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mIz:I
 
     .line 919
     new-instance v0, Landroid/app/Notification;
@@ -139,7 +139,7 @@
     iput v1, v0, Landroid/app/Notification;->audioStreamType:I
 
     .line 939
-    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->j:I
+    iput v4, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mIj:I
 
     .line 940
     new-instance v0, Ljava/util/ArrayList;
@@ -259,13 +259,13 @@
 
     .prologue
     .line 1058
-    iput p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->o:I
+    iput p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mIo:I
 
     .line 1059
-    iput p2, p0, Landroid/support/v4/app/NotificationCompat$Builder;->p:I
+    iput p2, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mIp:I
 
     .line 1060
-    iput-boolean p3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->q:Z
+    iput-boolean p3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->isZq:Z
 
     .line 1061
     return-object p0
@@ -289,7 +289,7 @@
 
     .prologue
     .line 1081
-    iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->d:Landroid/app/PendingIntent;
+    iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mPendingIntentd:Landroid/app/PendingIntent;
 
     .line 1082
     return-object p0

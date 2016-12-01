@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/TextView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewb:Landroid/widget/TextView;
 
-.field private d:Landroid/widget/ImageView;
+.field private mTextViewc:Landroid/widget/TextView;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mImageViewa:Landroid/widget/ImageView;
 
     .line 86
     const v0, 0x7f0b021f
@@ -41,7 +41,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->b:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mTextViewb:Landroid/widget/TextView;
 
     .line 87
     const v0, 0x7f0b0221
@@ -52,7 +52,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mTextViewc:Landroid/widget/TextView;
 
     .line 88
     const v0, 0x7f0b01e9
@@ -63,7 +63,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mImageViewd:Landroid/widget/ImageView;
 
     .line 89
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -84,7 +84,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->b:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mTextViewb:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -94,7 +94,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mTextViewc:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -104,7 +104,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberBannedListAdapter$ICs;->mImageViewd:Landroid/widget/ImageView;
 
     return-object v0
 .end method

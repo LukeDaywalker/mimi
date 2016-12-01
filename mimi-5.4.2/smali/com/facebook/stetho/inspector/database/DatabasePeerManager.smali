@@ -4,13 +4,13 @@
 
 
 # static fields
-.field private static final a:[Ljava/lang/String;
+.field private static final mArrayStringa:[Ljava/lang/String;
 
 
 # instance fields
-.field private final b:Landroid/content/Context;
+.field private final mContextb:Landroid/content/Context;
 
-.field private final c:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+.field private final mPeerRegistrationListenerc:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->a:[Ljava/lang/String;
+    sput-object v0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->mArrayStringa:[Ljava/lang/String;
 
     return-void
 .end method
@@ -52,13 +52,13 @@
 
     invoke-direct {v0, p0}, Lcom/facebook/stetho/inspector/database/DatabasePeerManager$ICb;-><init>(Lcom/facebook/stetho/inspector/database/DatabasePeerManager;)V
 
-    iput-object v0, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->c:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+    iput-object v0, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->mPeerRegistrationListenerc:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
     .line 35
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->mContextb:Landroid/content/Context;
 
     .line 36
-    iget-object v0, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->c:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
+    iget-object v0, p0, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->mPeerRegistrationListenerc:Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;
 
     invoke-virtual {p0, v0}, Lcom/facebook/stetho/inspector/database/DatabasePeerManager;->a(Lcom/facebook/stetho/inspector/helper/PeerRegistrationListener;)V
 

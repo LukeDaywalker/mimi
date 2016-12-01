@@ -23,11 +23,11 @@
 
 .field public static final enum d:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
-.field private static final synthetic f:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+.field private static final synthetic mArrayICrf:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
 
 # instance fields
-.field private e:I
+.field private mIe:I
 
 
 # direct methods
@@ -106,7 +106,7 @@
 
     aput-object v1, v0, v6
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->f:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sput-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mArrayICrf:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     return-void
 .end method
@@ -124,7 +124,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 66
-    iput p3, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->e:I
+    iput p3, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mIe:I
 
     .line 67
     return-void
@@ -151,7 +151,7 @@
 
     .prologue
     .line 57
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->f:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mArrayICrf:[Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->clone()Ljava/lang/Object;
 
@@ -169,7 +169,7 @@
 
     .prologue
     .line 70
-    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->e:I
+    iget v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICr;->mIe:I
 
     return v0
 .end method

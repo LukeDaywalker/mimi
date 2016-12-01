@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+.field private mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
-.field private e:Landroid/widget/ImageView;
+.field private mImageViewe:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
     return-object v0
 .end method
@@ -81,10 +81,10 @@
 
     invoke-direct {v0, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
     const v1, 0x7f020125
 
@@ -108,9 +108,9 @@
     .line 64
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->b:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->e:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v2, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -123,7 +123,7 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getVisibility()I
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 50
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->e:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mImageViewe:Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
@@ -171,7 +171,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->mICbpd:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
     .line 47
     return-void

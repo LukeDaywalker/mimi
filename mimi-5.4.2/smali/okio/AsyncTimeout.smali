@@ -4,15 +4,15 @@
 
 
 # static fields
-.field private static a:Lokio/AsyncTimeout;
+.field private static mAsyncTimeouta:Lokio/AsyncTimeout;
 
 
 # instance fields
-.field private c:Z
+.field private isZc:Z
 
-.field private d:Lokio/AsyncTimeout;
+.field private mAsyncTimeoutd:Lokio/AsyncTimeout;
 
-.field private e:J
+.field private mJe:J
 
 
 # direct methods
@@ -39,7 +39,7 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     if-nez v0, :cond_0
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v0}, Lokio/AsyncTimeout;-><init>()V
 
-    sput-object v0, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sput-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     .line 77
     new-instance v0, Lokio/AsyncTimeout$ICd;
@@ -83,7 +83,7 @@
 
     add-long/2addr v4, v2
 
-    iput-wide v4, p0, Lokio/AsyncTimeout;->e:J
+    iput-wide v4, p0, Lokio/AsyncTimeout;->mJe:J
 
     .line 94
     :goto_0
@@ -92,15 +92,15 @@
     move-result-wide v4
 
     .line 95
-    sget-object v0, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     .line 96
     :goto_1
-    iget-object v6, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v6, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     if-eqz v6, :cond_1
 
-    iget-object v6, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v6, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     invoke-direct {v6, v2, v3}, Lokio/AsyncTimeout;->b(J)J
 
@@ -112,15 +112,15 @@
 
     .line 97
     :cond_1
-    iget-object v2, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v2, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
-    iput-object v2, p0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object v2, p0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     .line 98
-    iput-object p0, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object p0, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     .line 99
-    sget-object v2, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v2, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     if-ne v0, v2, :cond_2
 
@@ -147,7 +147,7 @@
     add-long v4, v2, p1
 
     :try_start_1
-    iput-wide v4, p0, Lokio/AsyncTimeout;->e:J
+    iput-wide v4, p0, Lokio/AsyncTimeout;->mJe:J
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -171,7 +171,7 @@
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lokio/AsyncTimeout;->e:J
+    iput-wide v4, p0, Lokio/AsyncTimeout;->mJe:J
 
     goto :goto_0
 
@@ -185,7 +185,7 @@
 
     .line 95
     :cond_6
-    iget-object v0, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v0, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -202,25 +202,25 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
     :goto_0
     if-eqz v0, :cond_1
 
     .line 118
-    iget-object v2, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v2, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     if-ne v2, p0, :cond_0
 
     .line 119
-    iget-object v2, p0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v2, p0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
-    iput-object v2, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object v2, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     .line 120
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object v0, p0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -236,7 +236,7 @@
     .line 117
     :cond_0
     :try_start_1
-    iget-object v0, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v0, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -262,7 +262,7 @@
 
     .prologue
     .line 134
-    iget-wide v0, p0, Lokio/AsyncTimeout;->e:J
+    iget-wide v0, p0, Lokio/AsyncTimeout;->mJe:J
 
     sub-long/2addr v0, p1
 
@@ -295,9 +295,9 @@
     monitor-enter v2
 
     :try_start_0
-    sget-object v1, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v1, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
-    iget-object v1, v1, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v1, v1, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     .line 296
     if-nez v1, :cond_0
@@ -365,16 +365,16 @@
     .line 314
     :cond_1
     :try_start_2
-    sget-object v0, Lokio/AsyncTimeout;->a:Lokio/AsyncTimeout;
+    sget-object v0, Lokio/AsyncTimeout;->mAsyncTimeouta:Lokio/AsyncTimeout;
 
-    iget-object v3, v1, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iget-object v3, v1, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
-    iput-object v3, v0, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object v3, v0, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
 
     .line 315
     const/4 v0, 0x0
 
-    iput-object v0, v1, Lokio/AsyncTimeout;->d:Lokio/AsyncTimeout;
+    iput-object v0, v1, Lokio/AsyncTimeout;->mAsyncTimeoutd:Lokio/AsyncTimeout;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -484,7 +484,7 @@
     const/4 v0, 0x0
 
     .line 109
-    iget-boolean v1, p0, Lokio/AsyncTimeout;->c:Z
+    iget-boolean v1, p0, Lokio/AsyncTimeout;->isZc:Z
 
     if-nez v1, :cond_0
 
@@ -494,7 +494,7 @@
 
     .line 110
     :cond_0
-    iput-boolean v0, p0, Lokio/AsyncTimeout;->c:Z
+    iput-boolean v0, p0, Lokio/AsyncTimeout;->isZc:Z
 
     .line 111
     invoke-static {p0}, Lokio/AsyncTimeout;->a(Lokio/AsyncTimeout;)Z
@@ -509,7 +509,7 @@
 
     .prologue
     .line 62
-    iget-boolean v0, p0, Lokio/AsyncTimeout;->c:Z
+    iget-boolean v0, p0, Lokio/AsyncTimeout;->isZc:Z
 
     if-eqz v0, :cond_0
 
@@ -549,7 +549,7 @@
     :cond_1
     const/4 v3, 0x1
 
-    iput-boolean v3, p0, Lokio/AsyncTimeout;->c:Z
+    iput-boolean v3, p0, Lokio/AsyncTimeout;->isZc:Z
 
     .line 69
     invoke-static {p0, v0, v1, v2}, Lokio/AsyncTimeout;->a(Lokio/AsyncTimeout;JZ)V

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+.field final synthetic mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 122
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
@@ -41,7 +41,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Landroid/view/View;
 
@@ -62,7 +62,7 @@
     const/16 v1, 0x8
 
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
@@ -71,7 +71,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 135
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Landroid/view/View;
 
@@ -80,7 +80,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->a(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
 
@@ -93,7 +93,7 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
@@ -104,7 +104,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 129
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Landroid/view/View;
 
@@ -123,7 +123,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Lcom/wumii/android/mimi/ui/widgets/RoundProgressBar;
 
@@ -134,7 +134,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->mImageActivitya:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)Landroid/view/View;
 

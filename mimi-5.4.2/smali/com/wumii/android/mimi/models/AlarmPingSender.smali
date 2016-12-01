@@ -7,27 +7,27 @@
 
 
 # static fields
-.field private static final a:Lorg/slf4j/Logger;
+.field private static final mLoggera:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private b:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+.field private volatile isZf:Z
 
-.field private c:Lcom/wumii/android/mimi/push/PushService;
+.field private mBroadcastReceiverd:Landroid/content/BroadcastReceiver;
 
-.field private d:Landroid/content/BroadcastReceiver;
+.field private mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
-.field private e:Landroid/app/PendingIntent;
+.field private mHandleri:Landroid/os/Handler;
 
-.field private volatile f:Z
+.field private mPendingIntente:Landroid/app/PendingIntent;
 
-.field private g:Landroid/os/PowerManager$WakeLock;
+.field private mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
-.field private h:Ljava/lang/String;
+.field private mRunnablej:Ljava/lang/Runnable;
 
-.field private i:Landroid/os/Handler;
+.field private mStringh:Ljava/lang/String;
 
-.field private j:Ljava/lang/Runnable;
+.field private mWakeLockg:Landroid/os/PowerManager$WakeLock;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     .line 47
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->f:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->isZf:Z
 
     .line 49
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -68,21 +68,21 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mStringh:Ljava/lang/String;
 
     .line 50
     new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICb;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
     .line 174
     new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICd;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->j:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mRunnablej:Ljava/lang/Runnable;
 
     .line 65
     if-nez p1, :cond_0
@@ -98,7 +98,7 @@
 
     .line 68
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     .line 69
     return-void
@@ -109,7 +109,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->e:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPendingIntente:Landroid/app/PendingIntent;
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 39
-    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mStringh:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -161,14 +161,14 @@
     const/4 v1, 0x1
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->b:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->k()Lorg/eclipse/paho/client/mqttv3/MqttToken;
 
     move-result-object v2
 
     .line 126
-    sget-object v3, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v3, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -224,12 +224,12 @@
 
     .line 136
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->g:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mWakeLockg:Landroid/os/PowerManager$WakeLock;
 
     if-nez v0, :cond_2
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     const-string/jumbo v3, "power"
 
@@ -240,25 +240,25 @@
     check-cast v0, Landroid/os/PowerManager;
 
     .line 138
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->h:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mStringh:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->g:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mWakeLockg:Landroid/os/PowerManager$WakeLock;
 
     .line 141
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->j:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mRunnablej:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 144
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->g:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mWakeLockg:Landroid/os/PowerManager$WakeLock;
 
     const-wide/16 v4, 0x1770
 
@@ -275,9 +275,9 @@
     invoke-interface {v2, v0}, Lorg/eclipse/paho/client/mqttv3/IMqttToken;->a(Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;)V
 
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->j:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mRunnablej:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0xfa0
 
@@ -290,7 +290,7 @@
     move-exception v0
 
     .line 146
-    sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -320,7 +320,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->j:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mRunnablej:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -330,7 +330,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -340,7 +340,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->g:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mWakeLockg:Landroid/os/PowerManager$WakeLock;
 
     return-object v0
 .end method
@@ -355,7 +355,7 @@
     sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->b:Ljava/lang/String;
 
     .line 80
-    sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -378,9 +378,9 @@
     invoke-interface {v1, v2}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 82
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->d:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mBroadcastReceiverd:Landroid/content/BroadcastReceiver;
 
     new-instance v3, Landroid/content/IntentFilter;
 
@@ -389,7 +389,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/push/PushService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 84
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     const/4 v2, 0x0
 
@@ -403,10 +403,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->e:Landroid/app/PendingIntent;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPendingIntente:Landroid/app/PendingIntent;
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->b:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v0}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->j()J
 
@@ -417,7 +417,7 @@
     .line 87
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->f:Z
+    iput-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->isZf:Z
 
     .line 88
     return-void
@@ -441,7 +441,7 @@
     add-long v2, v0, p1
 
     .line 112
-    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -464,7 +464,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     const-string/jumbo v1, "alarm"
 
@@ -475,12 +475,12 @@
     check-cast v0, Landroid/app/AlarmManager;
 
     .line 114
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->e:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPendingIntente:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v5, v2, v3, v1}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
     add-long v2, p1, v6
 
@@ -495,14 +495,14 @@
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->b:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     .line 74
     new-instance v0, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender$ICe;-><init>(Lcom/wumii/android/mimi/models/AlarmPingSender;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->d:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mBroadcastReceiverd:Landroid/content/BroadcastReceiver;
 
     .line 75
     return-void
@@ -515,7 +515,7 @@
     const/4 v3, 0x0
 
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
     const-string/jumbo v1, "alarm"
 
@@ -526,12 +526,12 @@
     check-cast v0, Landroid/app/AlarmManager;
 
     .line 94
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->e:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPendingIntente:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
     .line 95
-    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->a:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mLoggera:Lorg/slf4j/Logger;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -543,7 +543,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->b:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mClientCommsb:Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;
 
     invoke-virtual {v2}, Lorg/eclipse/paho/client/mqttv3/internal/ClientComms;->i()Lorg/eclipse/paho/client/mqttv3/IMqttAsyncClient;
 
@@ -564,18 +564,18 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 96
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->f:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->isZf:Z
 
     if-eqz v0, :cond_0
 
     .line 97
-    iput-boolean v3, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->f:Z
+    iput-boolean v3, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->isZf:Z
 
     .line 99
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->c:Lcom/wumii/android/mimi/push/PushService;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mPushServicec:Lcom/wumii/android/mimi/push/PushService;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->d:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mBroadcastReceiverd:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/push/PushService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -584,7 +584,7 @@
     .line 105
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AlarmPingSender;->mHandleri:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 

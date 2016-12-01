@@ -27,7 +27,7 @@
 
 .field public static final enum f:Lcom/google/tagmanager/Logger$ICab;
 
-.field private static final synthetic g:[Lcom/google/tagmanager/Logger$ICab;
+.field private static final synthetic mArrayICabg:[Lcom/google/tagmanager/Logger$ICab;
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/google/tagmanager/Logger$ICab;->g:[Lcom/google/tagmanager/Logger$ICab;
+    sput-object v0, Lcom/google/tagmanager/Logger$ICab;->mArrayICabg:[Lcom/google/tagmanager/Logger$ICab;
 
     return-void
 .end method
@@ -173,7 +173,7 @@
 
     .prologue
     .line 15
-    sget-object v0, Lcom/google/tagmanager/Logger$ICab;->g:[Lcom/google/tagmanager/Logger$ICab;
+    sget-object v0, Lcom/google/tagmanager/Logger$ICab;->mArrayICabg:[Lcom/google/tagmanager/Logger$ICab;
 
     invoke-virtual {v0}, [Lcom/google/tagmanager/Logger$ICab;->clone()Ljava/lang/Object;
 

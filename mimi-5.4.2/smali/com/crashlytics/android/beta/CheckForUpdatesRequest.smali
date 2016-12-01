@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final b:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
+.field private final mCheckForUpdatesResponseTransformb:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     invoke-direct/range {v0 .. v5}, Lio/fabric/sdk/android/services/common/AbstractSpiCall;-><init>(Lio/fabric/sdk/android/Kit;Ljava/lang/String;Ljava/lang/String;Lio/fabric/sdk/android/services/network/HttpRequestFactory;Lio/fabric/sdk/android/services/network/HttpMethod;)V
 
     .line 30
-    iput-object p5, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->b:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
+    iput-object p5, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->mCheckForUpdatesResponseTransformb:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
 
     .line 31
     return-void
@@ -288,7 +288,7 @@
     invoke-direct {v1, v3}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     .line 48
-    iget-object v3, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->b:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
+    iget-object v3, p0, Lcom/crashlytics/android/beta/CheckForUpdatesRequest;->mCheckForUpdatesResponseTransformb:Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;
 
     invoke-virtual {v3, v1}, Lcom/crashlytics/android/beta/CheckForUpdatesResponseTransform;->a(Lorg/json/JSONObject;)Lcom/crashlytics/android/beta/CheckForUpdatesResponse;
     :try_end_1

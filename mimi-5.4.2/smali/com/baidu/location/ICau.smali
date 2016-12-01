@@ -7,37 +7,37 @@
 
 
 # static fields
-.field private static final ik:I = 0xf
+.field private static mICauit:Lcom/baidu/location/ICau; = null
 
-.field private static it:Lcom/baidu/location/ICau;
+.field private static final mIik:I = 0xf
 
 
 # instance fields
-.field private final ij:J
+.field private isZil:Z
 
-.field private il:Z
+.field private isZiv:Z
 
-.field private im:J
+.field private mICaix:Lcom/baidu/location/ICau$ICa;
 
-.field private in:Lcom/baidu/location/ICau$ICb;
+.field private mICbin:Lcom/baidu/location/ICau$ICb;
 
-.field private io:Ljava/lang/Object;
+.field private final mJij:J
 
-.field private final ip:J
+.field private mJim:J
 
-.field private iq:J
+.field private final mJip:J
 
-.field private final ir:J
+.field private mJiq:J
 
-.field private is:Landroid/net/wifi/WifiManager;
+.field private final mJir:J
 
-.field private iu:Ljava/lang/reflect/Method;
+.field private mJiw:J
 
-.field private iv:Z
+.field private mMethodiu:Ljava/lang/reflect/Method;
 
-.field private iw:J
+.field private mObjectio:Ljava/lang/Object;
 
-.field private ix:Lcom/baidu/location/ICau$ICa;
+.field private mWifiManageris:Landroid/net/wifi/WifiManager;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/location/ICau;->it:Lcom/baidu/location/ICau;
+    sput-object v0, Lcom/baidu/location/ICau;->mICauit:Lcom/baidu/location/ICau;
 
     return-void
 .end method
@@ -62,37 +62,37 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide v0, p0, Lcom/baidu/location/ICau;->ij:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau;->mJij:J
 
-    iput-wide v0, p0, Lcom/baidu/location/ICau;->ip:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau;->mJip:J
 
     const-wide/16 v0, 0x1388
 
-    iput-wide v0, p0, Lcom/baidu/location/ICau;->ir:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau;->mJir:J
 
-    iput-object v2, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iput-object v2, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
-    iput-object v2, p0, Lcom/baidu/location/ICau;->ix:Lcom/baidu/location/ICau$ICa;
+    iput-object v2, p0, Lcom/baidu/location/ICau;->mICaix:Lcom/baidu/location/ICau$ICa;
 
-    iput-object v2, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iput-object v2, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
-    iput-wide v4, p0, Lcom/baidu/location/ICau;->iq:J
+    iput-wide v4, p0, Lcom/baidu/location/ICau;->mJiq:J
 
-    iput-wide v4, p0, Lcom/baidu/location/ICau;->iw:J
+    iput-wide v4, p0, Lcom/baidu/location/ICau;->mJiw:J
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau;->iv:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau;->isZiv:Z
 
-    iput-object v2, p0, Lcom/baidu/location/ICau;->io:Ljava/lang/Object;
+    iput-object v2, p0, Lcom/baidu/location/ICau;->mObjectio:Ljava/lang/Object;
 
-    iput-object v2, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iput-object v2, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau;->il:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau;->isZil:Z
 
-    iput-wide v4, p0, Lcom/baidu/location/ICau;->im:J
+    iput-wide v4, p0, Lcom/baidu/location/ICau;->mJim:J
 
     return-void
 .end method
@@ -152,7 +152,7 @@
 .method private cb()V
     .locals 4
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_1
 
@@ -162,7 +162,7 @@
 
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getScanResults()Ljava/util/List;
     :try_end_0
@@ -172,19 +172,19 @@
 
     new-instance v1, Lcom/baidu/location/ICau$ICb;
 
-    iget-wide v2, p0, Lcom/baidu/location/ICau;->iq:J
+    iget-wide v2, p0, Lcom/baidu/location/ICau;->mJiq:J
 
     invoke-direct {v1, p0, v0, v2, v3}, Lcom/baidu/location/ICau$ICb;-><init>(Lcom/baidu/location/ICau;Ljava/util/List;J)V
 
     const-wide/16 v2, 0x0
 
-    iput-wide v2, p0, Lcom/baidu/location/ICau;->iq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICau;->mJiq:J
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v1, v0}, Lcom/baidu/location/ICau$ICb;->if(Lcom/baidu/location/ICau$ICb;)Z
 
@@ -193,7 +193,7 @@
     if-nez v0, :cond_0
 
     :cond_2
-    iput-object v1, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iput-object v1, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     goto :goto_0
 
@@ -206,7 +206,7 @@
 .method public static cc()Lcom/baidu/location/ICau;
     .locals 1
 
-    sget-object v0, Lcom/baidu/location/ICau;->it:Lcom/baidu/location/ICau;
+    sget-object v0, Lcom/baidu/location/ICau;->mICauit:Lcom/baidu/location/ICau;
 
     if-nez v0, :cond_0
 
@@ -214,10 +214,10 @@
 
     invoke-direct {v0}, Lcom/baidu/location/ICau;-><init>()V
 
-    sput-object v0, Lcom/baidu/location/ICau;->it:Lcom/baidu/location/ICau;
+    sput-object v0, Lcom/baidu/location/ICau;->mICauit:Lcom/baidu/location/ICau;
 
     :cond_0
-    sget-object v0, Lcom/baidu/location/ICau;->it:Lcom/baidu/location/ICau;
+    sget-object v0, Lcom/baidu/location/ICau;->mICauit:Lcom/baidu/location/ICau;
 
     return-object v0
 .end method
@@ -225,7 +225,7 @@
 .method static synthetic do(Lcom/baidu/location/ICau;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/baidu/location/ICau;->im:J
+    iget-wide v0, p0, Lcom/baidu/location/ICau;->mJim:J
 
     return-wide v0
 .end method
@@ -382,7 +382,7 @@
 .method static synthetic if(Lcom/baidu/location/ICau;J)J
     .locals 1
 
-    iput-wide p1, p0, Lcom/baidu/location/ICau;->im:J
+    iput-wide p1, p0, Lcom/baidu/location/ICau;->mJim:J
 
     return-wide p1
 .end method
@@ -599,11 +599,11 @@
 .method public b7()Lcom/baidu/location/ICau$ICb;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICau$ICb;->for()Z
 
@@ -620,7 +620,7 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     goto :goto_0
 .end method
@@ -631,7 +631,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICau;->iv:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICau;->isZiv:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -648,13 +648,13 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->ix:Lcom/baidu/location/ICau$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mICaix:Lcom/baidu/location/ICau$ICa;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/baidu/location/ICau;->im:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau;->mJim:J
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -663,15 +663,15 @@
     const/4 v0, 0x0
 
     :try_start_2
-    iput-object v0, p0, Lcom/baidu/location/ICau;->ix:Lcom/baidu/location/ICau$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mICaix:Lcom/baidu/location/ICau$ICa;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/baidu/location/ICau;->iv:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau;->isZiv:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -693,7 +693,7 @@
 .method public b9()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isScanAlwaysAvailable()Z
 
@@ -707,7 +707,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     if-nez v1, :cond_1
 
@@ -720,7 +720,7 @@
 
     move-result-wide v2
 
-    iget-wide v4, p0, Lcom/baidu/location/ICau;->iq:J
+    iget-wide v4, p0, Lcom/baidu/location/ICau;->mJiq:J
 
     sub-long/2addr v2, v4
 
@@ -742,14 +742,14 @@
 
     const-wide/16 v4, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     if-eqz v0, :cond_0
 
     :try_start_0
     new-instance v0, Lcom/baidu/location/ICau$ICb;
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getScanResults()Ljava/util/List;
 
@@ -780,7 +780,7 @@
 .method public cf()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -790,7 +790,7 @@
 
     const/4 v0, 0x3
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getWifiState()I
 
@@ -815,7 +815,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object v1, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -842,11 +842,11 @@
 .method public ch()Lcom/baidu/location/ICau$ICb;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     invoke-virtual {v0}, Lcom/baidu/location/ICau$ICb;->new()Z
 
@@ -863,7 +863,7 @@
     return-object v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/location/ICau;->in:Lcom/baidu/location/ICau$ICb;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mICbin:Lcom/baidu/location/ICau$ICb;
 
     goto :goto_0
 .end method
@@ -876,7 +876,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/baidu/location/ICau;->iv:Z
+    iget-boolean v0, p0, Lcom/baidu/location/ICau;->isZiv:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -906,7 +906,7 @@
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     new-instance v0, Lcom/baidu/location/ICau$ICa;
 
@@ -914,7 +914,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/baidu/location/ICau$ICa;-><init>(Lcom/baidu/location/ICau;Lcom/baidu/location/ICau$1;)V
 
-    iput-object v0, p0, Lcom/baidu/location/ICau;->ix:Lcom/baidu/location/ICau$ICa;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mICaix:Lcom/baidu/location/ICau$ICa;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -923,7 +923,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->ix:Lcom/baidu/location/ICau$ICa;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mICaix:Lcom/baidu/location/ICau$ICa;
 
     new-instance v2, Landroid/content/IntentFilter;
 
@@ -940,7 +940,7 @@
     const/4 v0, 0x1
 
     :try_start_3
-    iput-boolean v0, p0, Lcom/baidu/location/ICau;->iv:Z
+    iput-boolean v0, p0, Lcom/baidu/location/ICau;->isZiv:Z
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -963,15 +963,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    iget-object v1, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICau;->io:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mObjectio:Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->io:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mObjectio:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -993,13 +993,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iput-object v0, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 
@@ -1035,7 +1035,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/baidu/location/ICau;->iw:J
+    iget-wide v2, p0, Lcom/baidu/location/ICau;->mJiw:J
 
     sub-long v2, v0, v2
 
@@ -1051,7 +1051,7 @@
     return v0
 
     :cond_0
-    iput-wide v0, p0, Lcom/baidu/location/ICau;->iw:J
+    iput-wide v0, p0, Lcom/baidu/location/ICau;->mJiw:J
 
     invoke-virtual {p0}, Lcom/baidu/location/ICau;->cd()Z
 
@@ -1065,7 +1065,7 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -1135,7 +1135,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object v2, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -1149,7 +1149,7 @@
 
     if-le v2, v3, :cond_2
 
-    iget-object v2, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->isScanAlwaysAvailable()Z
 
@@ -1158,20 +1158,20 @@
     if-eqz v2, :cond_2
 
     :cond_0
-    iget-object v2, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/baidu/location/ICau;->io:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mObjectio:Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     if-eqz v2, :cond_1
 
     :try_start_1
-    iget-object v2, p0, Lcom/baidu/location/ICau;->iu:Ljava/lang/reflect/Method;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mMethodiu:Ljava/lang/reflect/Method;
 
-    iget-object v3, p0, Lcom/baidu/location/ICau;->io:Ljava/lang/Object;
+    iget-object v3, p0, Lcom/baidu/location/ICau;->mObjectio:Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -1179,7 +1179,7 @@
 
     const/4 v5, 0x0
 
-    iget-boolean v6, p0, Lcom/baidu/location/ICau;->il:Z
+    iget-boolean v6, p0, Lcom/baidu/location/ICau;->isZil:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1197,7 +1197,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/baidu/location/ICau;->iq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICau;->mJiq:J
 
     move v0, v1
 
@@ -1207,7 +1207,7 @@
     :catch_0
     move-exception v2
 
-    iget-object v2, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->startScan()Z
 
@@ -1219,7 +1219,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object v2, p0, Lcom/baidu/location/ICau;->is:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/baidu/location/ICau;->mWifiManageris:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->startScan()Z
 
@@ -1228,7 +1228,7 @@
     :cond_2
     const-wide/16 v2, 0x0
 
-    iput-wide v2, p0, Lcom/baidu/location/ICau;->iq:J
+    iput-wide v2, p0, Lcom/baidu/location/ICau;->mJiq:J
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 

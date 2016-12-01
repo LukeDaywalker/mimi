@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICam;
+.field final synthetic mICama:Lcom/baidu/location/ICam;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICam;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICam$2;->a:Lcom/baidu/location/ICam;
+    iput-object p1, p0, Lcom/baidu/location/ICam$2;->mICama:Lcom/baidu/location/ICam;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/location/ICam$2;->a:Lcom/baidu/location/ICam;
+    iget-object v0, p0, Lcom/baidu/location/ICam$2;->mICama:Lcom/baidu/location/ICam;
 
     invoke-static {v0}, Lcom/baidu/location/ICam;->if(Lcom/baidu/location/ICam;)V
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final a:Ljava/lang/Object;
+.field volatile isZd:Z
 
-.field final b:Lorg/greenrobot/eventbus/SubscriberMethod;
+.field final mIc:I
 
-.field final c:I
+.field final mObjecta:Ljava/lang/Object;
 
-.field volatile d:Z
+.field final mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
 
 # direct methods
@@ -22,18 +22,18 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
-    iput-object p1, p0, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     .line 30
-    iput-object p2, p0, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iput-object p2, p0, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
     .line 31
-    iput p3, p0, Lorg/greenrobot/eventbus/Subscription;->c:I
+    iput p3, p0, Lorg/greenrobot/eventbus/Subscription;->mIc:I
 
     .line 32
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/greenrobot/eventbus/Subscription;->d:Z
+    iput-boolean v0, p0, Lorg/greenrobot/eventbus/Subscription;->isZd:Z
 
     .line 33
     return-void
@@ -56,15 +56,15 @@
     check-cast p1, Lorg/greenrobot/eventbus/Subscription;
 
     .line 39
-    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
-    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
-    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v2, p1, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
     invoke-virtual {v1, v2}, Lorg/greenrobot/eventbus/SubscriberMethod;->equals(Ljava/lang/Object;)Z
 
@@ -84,15 +84,15 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lorg/greenrobot/eventbus/Subscription;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lorg/greenrobot/eventbus/Subscription;->mObjecta:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->b:Lorg/greenrobot/eventbus/SubscriberMethod;
+    iget-object v1, p0, Lorg/greenrobot/eventbus/Subscription;->mSubscriberMethodb:Lorg/greenrobot/eventbus/SubscriberMethod;
 
-    iget-object v1, v1, Lorg/greenrobot/eventbus/SubscriberMethod;->d:Ljava/lang/String;
+    iget-object v1, v1, Lorg/greenrobot/eventbus/SubscriberMethod;->mStringd:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 

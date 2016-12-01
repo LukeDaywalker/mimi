@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+.field final synthetic mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
-.field private d:Ljava/lang/String;
+.field private mStringd:Ljava/lang/String;
 
-.field private j:Ljava/lang/String;
+.field private mStringj:Ljava/lang/String;
 
-.field private k:Ljava/lang/String;
+.field private mStringk:Ljava/lang/String;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     .prologue
     .line 200
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     .line 201
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
@@ -73,7 +73,7 @@
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
 
@@ -95,13 +95,13 @@
 
     .prologue
     .line 232
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->d:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringd:Ljava/lang/String;
 
     .line 233
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->j:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringj:Ljava/lang/String;
 
     .line 234
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->k:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringk:Ljava/lang/String;
 
     .line 235
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->j()V
@@ -151,21 +151,21 @@
     .line 207
     const-string/jumbo v1, "pno"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->d:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringd:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 208
     const-string/jumbo v1, "snsType"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringj:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 209
     const-string/jumbo v1, "openId"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->mStringk:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

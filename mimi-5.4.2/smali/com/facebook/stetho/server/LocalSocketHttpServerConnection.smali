@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private volatile a:Landroid/net/LocalSocket;
+.field private volatile isZb:Z
 
-.field private volatile b:Z
+.field private volatile mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
 
-.field private volatile c:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+.field private volatile mLocalSocketa:Landroid/net/LocalSocket;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 92
-    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->b:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->isZb:Z
 
     if-nez v0, :cond_0
 
@@ -40,7 +40,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->b:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->isZb:Z
 
     .line 96
     if-eqz p1, :cond_1
@@ -50,7 +50,7 @@
 
     .line 99
     :cond_1
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     invoke-virtual {v0}, Landroid/net/LocalSocket;->close()V
 
@@ -64,7 +64,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
     invoke-static {p2}, Lcom/facebook/stetho/common/Util;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
-    iput-object p1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iput-object p1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     .line 29
     invoke-static {p2}, Lorg/apache/http/params/HttpConnectionParams;->getSocketBufferSize(Lorg/apache/http/params/HttpParams;)I
@@ -92,10 +92,10 @@
 
     invoke-direct {v1, p1, v0, p2}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
 
-    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->c:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iput-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
 
     .line 32
-    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->c:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iget-object v1, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
 
     new-instance v2, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICe;
 
@@ -106,7 +106,7 @@
     .line 37
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->b:Z
+    iput-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->isZb:Z
 
     .line 38
     return-void
@@ -117,7 +117,7 @@
 
     .prologue
     .line 54
-    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->b:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->isZb:Z
 
     invoke-static {v0}, Lcom/facebook/stetho/common/Util;->a(Z)V
 
@@ -130,7 +130,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->c:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mICdc:Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;
 
     invoke-virtual {v0}, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection$ICd;->a()[B
 
@@ -158,7 +158,7 @@
     .prologue
     .line 74
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     invoke-virtual {v0}, Landroid/net/LocalSocket;->getSoTimeout()I
     :try_end_0
@@ -175,7 +175,7 @@
     move-exception v0
 
     .line 76
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     invoke-virtual {v0}, Landroid/net/LocalSocket;->isClosed()Z
 
@@ -194,7 +194,7 @@
 
     .prologue
     .line 59
-    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->b:Z
+    iget-boolean v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->isZb:Z
 
     return v0
 .end method
@@ -205,7 +205,7 @@
     .prologue
     .line 65
     :try_start_0
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     invoke-virtual {v0, p1}, Landroid/net/LocalSocket;->setSoTimeout(I)V
     :try_end_0
@@ -220,7 +220,7 @@
     move-exception v0
 
     .line 67
-    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->a:Landroid/net/LocalSocket;
+    iget-object v0, p0, Lcom/facebook/stetho/server/LocalSocketHttpServerConnection;->mLocalSocketa:Landroid/net/LocalSocket;
 
     invoke-virtual {v0}, Landroid/net/LocalSocket;->isClosed()Z
 

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field c:Landroid/widget/ImageView;
+.field mImageViewc:Landroid/widget/ImageView;
 
-.field d:Landroid/widget/LinearLayout;
+.field mLinearLayoutd:Landroid/widget/LinearLayout;
 
-.field final synthetic e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+.field final synthetic mVoiceTipLayoute:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->mVoiceTipLayoute:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;
 
     .line 176
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/view/View;)V
@@ -31,7 +31,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->mImageViewc:Landroid/widget/ImageView;
 
     .line 178
     const v0, 0x7f0b0245
@@ -42,7 +42,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->mLinearLayoutd:Landroid/widget/LinearLayout;
 
     .line 179
     return-void

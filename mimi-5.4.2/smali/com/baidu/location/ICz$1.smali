@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/location/ICz;
+.field final synthetic mICza:Lcom/baidu/location/ICz;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/location/ICz;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iput-object p1, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -38,7 +38,7 @@
     goto :goto_0
 
     :pswitch_0
-    iget-object v1, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iget-object v1, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -49,7 +49,7 @@
     goto :goto_0
 
     :pswitch_1
-    iget-object v0, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0}, Lcom/baidu/location/ICz;->for(Lcom/baidu/location/ICz;)Lcom/baidu/location/ICz$ICa;
 
@@ -57,7 +57,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iget-object v0, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     invoke-static {v0}, Lcom/baidu/location/ICz;->for(Lcom/baidu/location/ICz;)Lcom/baidu/location/ICz$ICa;
 
@@ -72,7 +72,7 @@
     goto :goto_0
 
     :pswitch_2
-    iget-object v1, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iget-object v1, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     const-string/jumbo v2, "&og=1"
 
@@ -85,7 +85,7 @@
     goto :goto_0
 
     :pswitch_3
-    iget-object v1, p0, Lcom/baidu/location/ICz$1;->a:Lcom/baidu/location/ICz;
+    iget-object v1, p0, Lcom/baidu/location/ICz$1;->mICza:Lcom/baidu/location/ICz;
 
     const-string/jumbo v2, "&og=2"
 

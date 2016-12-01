@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
+.field final synthetic mBeginnerPostSecretDialoga:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 89
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;->a:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;->mBeginnerPostSecretDialoga:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;->a:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICd;->mBeginnerPostSecretDialoga:Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;->c(Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog;)Landroid/widget/Button;
 
@@ -40,7 +40,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v1
 

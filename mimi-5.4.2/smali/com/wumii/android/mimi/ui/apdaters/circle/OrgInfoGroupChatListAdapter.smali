@@ -4,7 +4,9 @@
 
 
 # instance fields
-.field private a:Ljava/util/List;
+.field private mContextb:Landroid/content/Context;
+
+.field private mLista:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -14,8 +16,6 @@
         }
     .end annotation
 .end field
-
-.field private b:Landroid/content/Context;
 
 
 # direct methods
@@ -27,14 +27,14 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 24
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->b:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mContextb:Landroid/content/Context;
 
     .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     .line 27
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     .line 31
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->notifyDataSetChanged()V
@@ -70,12 +70,12 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -96,12 +96,12 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->a:Ljava/util/List;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -138,7 +138,7 @@
     .line 59
     new-instance v0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->b:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;->mContextb:Landroid/content/Context;
 
     const/4 v2, 0x0
 

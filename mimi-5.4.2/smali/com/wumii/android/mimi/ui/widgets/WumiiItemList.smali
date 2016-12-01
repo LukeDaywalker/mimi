@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private a:Landroid/view/LayoutInflater;
+.field private mICcdb:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
+.field private mLayoutInflatera:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->a:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     .line 43
     return-void
@@ -139,7 +139,7 @@
     if-eqz p2, :cond_0
 
     .line 58
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->a:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0300af
 
@@ -183,7 +183,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/ListItem;
 
     .line 66
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->a:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mLayoutInflatera:Landroid/view/LayoutInflater;
 
     const v2, 0x7f0300b0
 
@@ -333,12 +333,12 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mICcdb:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     if-eqz v0, :cond_0
 
     .line 52
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mICcdb:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -358,7 +358,7 @@
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->mICcdb:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     .line 47
     return-void

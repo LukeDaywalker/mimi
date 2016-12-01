@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
+.field final synthetic mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;->mBaseCircleCategoryActivitya:Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->r:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 

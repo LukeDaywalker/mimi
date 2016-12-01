@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/IBinder;
+.field private mIBindera:Landroid/os/IBinder;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 79
-    iput-object p1, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->a:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->mIBindera:Landroid/os/IBinder;
 
     .line 80
     return-void
@@ -48,7 +48,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 127
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x2
 
@@ -127,7 +127,7 @@
     invoke-virtual {v1, p5}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     .line 110
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x1
 
@@ -166,7 +166,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/analytics/internal/IAnalyticsService$ICd;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method

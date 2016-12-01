@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Lu/aly/TProtocol;
+.field private final mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
-.field private final b:Lu/aly/TMemoryInputTransport;
+.field private final mTProtocola:Lu/aly/TProtocol;
 
 
 # direct methods
@@ -37,16 +37,16 @@
 
     invoke-direct {v0}, Lu/aly/TMemoryInputTransport;-><init>()V
 
-    iput-object v0, p0, Lu/aly/TDeserializer;->b:Lu/aly/TMemoryInputTransport;
+    iput-object v0, p0, Lu/aly/TDeserializer;->mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
     .line 59
-    iget-object v0, p0, Lu/aly/TDeserializer;->b:Lu/aly/TMemoryInputTransport;
+    iget-object v0, p0, Lu/aly/TDeserializer;->mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
     invoke-interface {p1, v0}, Lu/aly/TProtocolFactory;->a(Lu/aly/TTransport;)Lu/aly/TProtocol;
 
     move-result-object v0
 
-    iput-object v0, p0, Lu/aly/TDeserializer;->a:Lu/aly/TProtocol;
+    iput-object v0, p0, Lu/aly/TDeserializer;->mTProtocola:Lu/aly/TProtocol;
 
     .line 60
     return-void
@@ -60,24 +60,24 @@
     .prologue
     .line 70
     :try_start_0
-    iget-object v0, p0, Lu/aly/TDeserializer;->b:Lu/aly/TMemoryInputTransport;
+    iget-object v0, p0, Lu/aly/TDeserializer;->mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
     invoke-virtual {v0, p2}, Lu/aly/TMemoryInputTransport;->a([B)V
 
     .line 71
-    iget-object v0, p0, Lu/aly/TDeserializer;->a:Lu/aly/TProtocol;
+    iget-object v0, p0, Lu/aly/TDeserializer;->mTProtocola:Lu/aly/TProtocol;
 
     invoke-interface {p1, v0}, Lu/aly/TBase;->a(Lu/aly/TProtocol;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 73
-    iget-object v0, p0, Lu/aly/TDeserializer;->b:Lu/aly/TMemoryInputTransport;
+    iget-object v0, p0, Lu/aly/TDeserializer;->mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
     invoke-virtual {v0}, Lu/aly/TMemoryInputTransport;->a()V
 
     .line 74
-    iget-object v0, p0, Lu/aly/TDeserializer;->a:Lu/aly/TProtocol;
+    iget-object v0, p0, Lu/aly/TDeserializer;->mTProtocola:Lu/aly/TProtocol;
 
     invoke-virtual {v0}, Lu/aly/TProtocol;->x()V
 
@@ -88,12 +88,12 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lu/aly/TDeserializer;->b:Lu/aly/TMemoryInputTransport;
+    iget-object v1, p0, Lu/aly/TDeserializer;->mTMemoryInputTransportb:Lu/aly/TMemoryInputTransport;
 
     invoke-virtual {v1}, Lu/aly/TMemoryInputTransport;->a()V
 
     .line 74
-    iget-object v1, p0, Lu/aly/TDeserializer;->a:Lu/aly/TProtocol;
+    iget-object v1, p0, Lu/aly/TDeserializer;->mTProtocola:Lu/aly/TProtocol;
 
     invoke-virtual {v1}, Lu/aly/TProtocol;->x()V
 

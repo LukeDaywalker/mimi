@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:Lorg/apache/http/HttpServerConnection;
+.field private final mHttpServerConnectiona:Lorg/apache/http/HttpServerConnection;
 
-.field private final b:Ljava/io/InputStream;
+.field private final mInputStreamb:Ljava/io/InputStream;
 
-.field private final c:Ljava/io/OutputStream;
+.field private final mOutputStreamc:Ljava/io/OutputStream;
 
 
 # direct methods
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 205
-    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->a:Lorg/apache/http/HttpServerConnection;
+    iput-object p1, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mHttpServerConnectiona:Lorg/apache/http/HttpServerConnection;
 
     .line 206
-    iput-object p2, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->b:Ljava/io/InputStream;
+    iput-object p2, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mInputStreamb:Ljava/io/InputStream;
 
     .line 207
-    iput-object p3, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->c:Ljava/io/OutputStream;
+    iput-object p3, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mOutputStreamc:Ljava/io/OutputStream;
 
     .line 208
     return-void
@@ -110,7 +110,7 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->a:Lorg/apache/http/HttpServerConnection;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mHttpServerConnectiona:Lorg/apache/http/HttpServerConnection;
 
     return-object v0
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->b:Ljava/io/InputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mInputStreamb:Ljava/io/InputStream;
 
     return-object v0
 .end method
@@ -130,7 +130,7 @@
 
     .prologue
     .line 223
-    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->c:Ljava/io/OutputStream;
+    iget-object v0, p0, Lcom/facebook/stetho/websocket/WebSocketHandler$ICj;->mOutputStreamc:Ljava/io/OutputStream;
 
     return-object v0
 .end method

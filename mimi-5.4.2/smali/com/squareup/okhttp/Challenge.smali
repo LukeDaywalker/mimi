@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final mStringa:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
+.field private final mStringb:Ljava/lang/String;
 
 
 # direct methods
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    iput-object p1, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     .line 27
-    iput-object p2, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     .line 28
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -58,13 +58,13 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     move-object v0, p1
 
     check-cast v0, Lcom/squareup/okhttp/Challenge;
 
-    iget-object v0, v0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     .line 42
     invoke-static {v1, v0}, Lcom/squareup/okhttp/internal/Util;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -73,11 +73,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     check-cast p1, Lcom/squareup/okhttp/Challenge;
 
-    iget-object v1, p1, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v1, p1, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     .line 43
     invoke-static {v0, v1}, Lcom/squareup/okhttp/internal/Util;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -105,11 +105,11 @@
 
     .line 47
     .line 48
-    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -121,11 +121,11 @@
     .line 49
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v2, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->mStringa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/squareup/okhttp/Challenge;->mStringb:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+.field private mCircleTypen:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
-.field private o:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+.field private mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
 
 # direct methods
@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mCircleTypen:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;->a(Landroid/support/v4/app/FragmentManager;Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;)Lcom/wumii/android/mimi/ui/fragments/circle/CircleSplitFragment;
 
@@ -142,19 +142,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->n:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mCircleTypen:Lcom/wumii/android/mimi/models/entities/circle/Circle$CircleType;
 
     .line 36
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->o:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 44
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->o:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleSplitsActivity;->mOnSharedPreferenceChangeListenero:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 

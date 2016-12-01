@@ -3,33 +3,15 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/model/LatLng;
+.field isZe:Z
 
-.field b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+.field isZf:Z
 
-.field c:F
+.field isZj:Z
 
-.field d:F
+.field isZk:Z
 
-.field e:Z
-
-.field f:Z
-
-.field g:F
-
-.field h:Ljava/lang/String;
-
-.field i:I
-
-.field j:Z
-
-.field k:Z
-
-.field l:F
-
-.field m:I
-
-.field n:Ljava/util/ArrayList;
+.field mArrayListn:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
@@ -40,7 +22,25 @@
     .end annotation
 .end field
 
-.field o:I
+.field mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
+
+.field mFc:F
+
+.field mFd:F
+
+.field mFg:F
+
+.field mFl:F
+
+.field mIi:I
+
+.field mIm:I
+
+.field mIo:I
+
+.field mLatLnga:Lcom/baidu/mapapi/model/LatLng;
+
+.field mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -51,17 +51,17 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/Overlay;-><init>()V
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->j:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZj:Z
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->k:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZk:Z
 
     const/16 v0, 0x14
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->o:I
+    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->mIo:I
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->c:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Marker;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -111,7 +111,7 @@
 
     invoke-direct {v6}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v0, v0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, v0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -290,13 +290,13 @@
 
     invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     if-eqz v0, :cond_0
 
     const-string/jumbo v0, "image_info"
 
-    iget-object v4, p0, Lcom/baidu/mapapi/map/Marker;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v4, p0, Lcom/baidu/mapapi/map/Marker;->mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     invoke-virtual {v4}, Lcom/baidu/mapapi/map/BitmapDescriptor;->b()Landroid/os/Bundle;
 
@@ -305,7 +305,7 @@
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -313,7 +313,7 @@
 
     const-string/jumbo v4, "animatetype"
 
-    iget v5, p0, Lcom/baidu/mapapi/map/Marker;->m:I
+    iget v5, p0, Lcom/baidu/mapapi/map/Marker;->mIm:I
 
     invoke-virtual {p1, v4, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -335,7 +335,7 @@
 
     const-string/jumbo v4, "perspective"
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->e:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZe:Z
 
     if-eqz v0, :cond_2
 
@@ -346,31 +346,31 @@
 
     const-string/jumbo v0, "anchor_x"
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->c:F
+    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->mFc:F
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
     const-string/jumbo v0, "anchor_y"
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->d:F
+    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->mFd:F
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
     const-string/jumbo v0, "rotate"
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->g:F
+    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->mFg:F
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
     const-string/jumbo v0, "y_offset"
 
-    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->i:I
+    iget v4, p0, Lcom/baidu/mapapi/map/Marker;->mIi:I
 
     invoke-virtual {p1, v0, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v4, "isflat"
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->j:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZj:Z
 
     if-eqz v0, :cond_3
 
@@ -381,7 +381,7 @@
 
     const-string/jumbo v0, "istop"
 
-    iget-boolean v4, p0, Lcom/baidu/mapapi/map/Marker;->k:Z
+    iget-boolean v4, p0, Lcom/baidu/mapapi/map/Marker;->isZk:Z
 
     if-eqz v4, :cond_4
 
@@ -390,21 +390,21 @@
 
     const-string/jumbo v0, "period"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Marker;->o:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Marker;->mIo:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string/jumbo v0, "alpha"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Marker;->l:F
+    iget v1, p0, Lcom/baidu/mapapi/map/Marker;->mFl:F
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->n:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mArrayListn:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->n:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mArrayListn:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -412,7 +412,7 @@
 
     if-lez v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->n:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mArrayListn:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0, p1}, Lcom/baidu/mapapi/map/Marker;->a(Ljava/util/ArrayList;Landroid/os/Bundle;)V
 
@@ -442,7 +442,7 @@
 .method public getAlpha()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->l:F
+    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->mFl:F
 
     return v0
 .end method
@@ -450,7 +450,7 @@
 .method public getAnchorX()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->c:F
+    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->mFc:F
 
     return v0
 .end method
@@ -458,7 +458,7 @@
 .method public getAnchorY()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->d:F
+    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->mFd:F
 
     return v0
 .end method
@@ -466,7 +466,7 @@
 .method public getIcon()Lcom/baidu/mapapi/map/BitmapDescriptor;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     return-object v0
 .end method
@@ -483,7 +483,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->n:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mArrayListn:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -491,7 +491,7 @@
 .method public getPeriod()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->o:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->mIo:I
 
     return v0
 .end method
@@ -499,7 +499,7 @@
 .method public getPosition()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -507,7 +507,7 @@
 .method public getRotate()F
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->g:F
+    iget v0, p0, Lcom/baidu/mapapi/map/Marker;->mFg:F
 
     return v0
 .end method
@@ -515,7 +515,7 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->mStringh:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -523,7 +523,7 @@
 .method public isDraggable()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->f:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZf:Z
 
     return v0
 .end method
@@ -531,7 +531,7 @@
 .method public isFlat()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->j:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZj:Z
 
     return v0
 .end method
@@ -539,7 +539,7 @@
 .method public isPerspective()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->e:Z
+    iget-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZe:Z
 
     return v0
 .end method
@@ -564,13 +564,13 @@
     :cond_0
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->l:F
+    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->mFl:F
 
     :goto_0
     return-void
 
     :cond_1
-    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->l:F
+    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->mFl:F
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -607,9 +607,9 @@
 
     if-gtz v0, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->c:F
+    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->mFc:F
 
-    iput p2, p0, Lcom/baidu/mapapi/map/Marker;->d:F
+    iput p2, p0, Lcom/baidu/mapapi/map/Marker;->mFd:F
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -621,7 +621,7 @@
 .method public setDraggable(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->f:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->isZf:Z
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -633,7 +633,7 @@
 .method public setFlat(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->j:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->isZj:Z
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -656,7 +656,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->mBitmapDescriptorb:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -722,7 +722,7 @@
 
     check-cast v0, Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v0, v0, Lcom/baidu/mapapi/map/BitmapDescriptor;->a:Landroid/graphics/Bitmap;
+    iget-object v0, v0, Lcom/baidu/mapapi/map/BitmapDescriptor;->mBitmapa:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_1
 
@@ -733,7 +733,7 @@
     goto :goto_1
 
     :cond_3
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->n:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->mArrayListn:Ljava/util/ArrayList;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -756,7 +756,7 @@
     throw v0
 
     :cond_0
-    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->o:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Marker;->mIo:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -768,7 +768,7 @@
 .method public setPerspective(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->e:Z
+    iput-boolean p1, p0, Lcom/baidu/mapapi/map/Marker;->isZe:Z
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -791,7 +791,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -819,7 +819,7 @@
     :cond_0
     rem-float v0, p1, v1
 
-    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->g:F
+    iput v0, p0, Lcom/baidu/mapapi/map/Marker;->mFg:F
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -831,7 +831,7 @@
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Marker;->mStringh:Ljava/lang/String;
 
     return-void
 .end method
@@ -841,7 +841,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->k:Z
+    iput-boolean v0, p0, Lcom/baidu/mapapi/map/Marker;->isZk:Z
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Marker;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

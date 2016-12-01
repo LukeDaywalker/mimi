@@ -4,4 +4,4 @@
 
 
 # instance fields
-.field final a:Lcom/squareup/okhttp/internal/InternalCache;
+.field final mInternalCachea:Lcom/squareup/okhttp/internal/InternalCache;

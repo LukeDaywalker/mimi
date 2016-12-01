@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
+.field private mCreateGroupForPermissionItemPasswordFragmentn:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-.field private o:Landroid/support/v4/app/Fragment;
+.field private mFragmento:Landroid/support/v4/app/Fragment;
 
 
 # direct methods
@@ -44,7 +44,7 @@
     if-nez v1, :cond_0
 
     .line 35
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICaf;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICaf;->mArrayIa:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity$ICag;->ordinal()I
 
@@ -57,7 +57,7 @@
     .line 54
     :cond_0
     :goto_0
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->o:Landroid/support/v4/app/Fragment;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mFragmento:Landroid/support/v4/app/Fragment;
 
     .line 55
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->f()Landroid/support/v4/app/FragmentManager;
@@ -138,7 +138,7 @@
     .line 50
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mCreateGroupForPermissionItemPasswordFragmentn:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
     goto :goto_0
 
@@ -174,7 +174,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->o:Landroid/support/v4/app/Fragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mFragmento:Landroid/support/v4/app/Fragment;
 
     instance-of v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
@@ -188,7 +188,7 @@
     .line 66
     const-string/jumbo v1, "extra_password"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mCreateGroupForPermissionItemPasswordFragmentn:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->a()Ljava/lang/String;
 
@@ -199,7 +199,7 @@
     .line 67
     const-string/jumbo v1, "extra_password_hint"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->mCreateGroupForPermissionItemPasswordFragmentn:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
     invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b()Ljava/lang/String;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+.field final synthetic mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;->mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;->a:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment$ICc;->mDiscoverCircleFragmenta:Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

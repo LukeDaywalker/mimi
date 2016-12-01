@@ -19,17 +19,17 @@
 
 
 # instance fields
-.field private a:Landroid/content/pm/PackageInfo;
+.field private isZr:Z
 
-.field private d:Landroid/util/DisplayMetrics;
+.field private mActivityEventManagerk:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+.field private mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
-.field private k:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+.field private mPackageInfoa:Landroid/content/pm/PackageInfo;
 
-.field private q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+.field private mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private r:Z
+.field private mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
 
     .line 50
-    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iput-boolean p2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     .line 53
     :try_start_0
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->a:Landroid/content/pm/PackageInfo;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->k:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mActivityEventManagerk:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 58
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 59
     invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->d:Landroid/util/DisplayMetrics;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
     .line 60
     if-nez p2, :cond_0
@@ -109,10 +109,10 @@
 
     invoke-direct {v0, p1, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     new-instance v1, Lcom/wumii/android/mimi/task/CheckUpdateTask$ICw;
 
@@ -121,7 +121,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->k:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mActivityEventManagerk:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     const-class v1, Lcom/wumii/android/mimi/ui/OnDestroyEvent;
 
@@ -146,7 +146,7 @@
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -202,7 +202,7 @@
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "latest_version_name"
 
@@ -284,14 +284,14 @@
     if-ne v2, v0, :cond_1
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v2, "latest_version_name"
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/String;)V
 
     .line 126
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-nez v0, :cond_0
 
@@ -323,7 +323,7 @@
 
     .line 132
     :cond_1
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-eqz v0, :cond_2
 
@@ -335,7 +335,7 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPreferencesHelperj:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v4, Ljava/lang/String;
 
@@ -349,7 +349,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v3, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -361,9 +361,9 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->b:Landroid/content/Context;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->d:Landroid/util/DisplayMetrics;
+    iget-object v4, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mDisplayMetricsd:Landroid/util/DisplayMetrics;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->k:Lcom/wumii/android/mimi/ui/ActivityEventManager;
+    iget-object v5, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mActivityEventManagerk:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     invoke-direct {v0, v3, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
@@ -450,11 +450,11 @@
 
     .prologue
     .line 82
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -463,7 +463,7 @@
     if-eqz v0, :cond_0
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 
@@ -477,7 +477,7 @@
 
     .prologue
     .line 110
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-nez v0, :cond_0
 
@@ -512,12 +512,12 @@
 
     .prologue
     .line 75
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-nez v0, :cond_0
 
     .line 76
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->show()V
 
@@ -536,14 +536,14 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->a:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
 
     if-eqz v1, :cond_0
 
     .line 103
     const-string/jumbo v1, "v"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->a:Landroid/content/pm/PackageInfo;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mPackageInfoa:Landroid/content/pm/PackageInfo;
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
@@ -571,11 +571,11 @@
 
     .prologue
     .line 89
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->r:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->isZr:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->isShowing()Z
 
@@ -584,7 +584,7 @@
     if-eqz v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->q:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/CheckUpdateTask;->mProgressingDialogq:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->dismiss()V
 

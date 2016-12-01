@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/lbsapi/auth/ICf;
+.field final synthetic mICfa:Lcom/baidu/lbsapi/auth/ICf;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/lbsapi/auth/ICf;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICf$ICb;->a:Lcom/baidu/lbsapi/auth/ICf;
+    iput-object p1, p0, Lcom/baidu/lbsapi/auth/ICf$ICb;->mICfa:Lcom/baidu/lbsapi/auth/ICf;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

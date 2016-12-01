@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic mActivitya:Landroid/app/Activity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .line 122
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->a:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;->mActivitya:Landroid/app/Activity;
 
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;-><init>(Landroid/app/Activity;)V
 

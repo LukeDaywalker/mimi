@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/task/ReadContactsTask;
+.field final synthetic mReadContactsTaska:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;->a:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iput-object p1, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;->mReadContactsTaska:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;->a:Lcom/wumii/android/mimi/task/ReadContactsTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/ReadContactsTask$ICbf;->mReadContactsTaska:Lcom/wumii/android/mimi/task/ReadContactsTask;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/task/ReadContactsTask;->f()Z
 

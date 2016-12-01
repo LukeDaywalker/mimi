@@ -29,13 +29,13 @@
 
 .field public static final enum g:Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
-.field private static final synthetic j:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+.field private static final synthetic mArrayICtj:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
 
 # instance fields
-.field h:Ljava/lang/String;
+.field mIi:I
 
-.field i:I
+.field mStringh:Ljava/lang/String;
 
 
 # direct methods
@@ -185,7 +185,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->j:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mArrayICtj:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     return-void
 .end method
@@ -205,10 +205,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 241
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mStringh:Ljava/lang/String;
 
     .line 242
-    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->i:I
+    iput p4, p0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mIi:I
 
     .line 243
     return-void
@@ -235,7 +235,7 @@
 
     .prologue
     .line 228
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->j:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->mArrayICtj:[Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;
 
     invoke-virtual {v0}, [Lcom/wumii/android/mimi/ui/widgets/CommentOperationDialog$ICt;->clone()Ljava/lang/Object;
 

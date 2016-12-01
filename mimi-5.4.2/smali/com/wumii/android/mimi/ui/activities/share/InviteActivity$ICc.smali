@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+.field final synthetic mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->e(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
@@ -52,7 +52,7 @@
     if-eqz v0, :cond_0
 
     .line 115
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-static {v1, p1, v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;Ljava/lang/String;)V
 
@@ -62,7 +62,7 @@
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->mInviteActivitya:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->f(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/task/LoadInvitationTask;
 

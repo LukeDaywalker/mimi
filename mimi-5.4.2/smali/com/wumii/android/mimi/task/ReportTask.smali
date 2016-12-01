@@ -8,9 +8,9 @@
 
 .field protected d:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringq:Ljava/lang/String;
 
-.field private r:Ljava/lang/String;
+.field private mStringr:Ljava/lang/String;
 
 
 # direct methods
@@ -55,13 +55,13 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/task/ReportTask;->a:Ljava/lang/String;
 
     .line 44
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/ReportTask;->q:Ljava/lang/String;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringq:Ljava/lang/String;
 
     .line 45
     iput-object p3, p0, Lcom/wumii/android/mimi/task/ReportTask;->d:Ljava/lang/String;
 
     .line 46
-    iput-object p4, p0, Lcom/wumii/android/mimi/task/ReportTask;->r:Ljava/lang/String;
+    iput-object p4, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringr:Ljava/lang/String;
 
     .line 47
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/ReportTask;->j()V
@@ -109,7 +109,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 26
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReportTask;->q:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringq:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->d:Ljava/lang/String;
 
@@ -118,7 +118,7 @@
     .line 27
     const-string/jumbo v1, "type"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->r:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/task/ReportTask;->mStringr:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

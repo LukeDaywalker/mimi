@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private a:Landroid/os/IBinder;
+.field private mIBindera:Landroid/os/IBinder;
 
 
 # virtual methods
@@ -41,7 +41,7 @@
     invoke-virtual {v1, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 614
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xb
 
@@ -99,7 +99,7 @@
     invoke-virtual {v1, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 706
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x10
 
@@ -168,7 +168,7 @@
 
     .line 826
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x18
 
@@ -244,7 +244,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
     .line 470
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x3
 
@@ -322,7 +322,7 @@
 
     .line 669
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xe
 
@@ -419,7 +419,7 @@
 
     .line 431
     :goto_1
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x1
 
@@ -498,7 +498,7 @@
     invoke-virtual {v1, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 500
-    iget-object v3, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v3, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v4, 0x5
 
@@ -581,7 +581,7 @@
 
     .line 453
     :goto_0
-    iget-object v4, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v4, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v5, 0x2
 
@@ -645,7 +645,7 @@
 
     .prologue
     .line 404
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     return-object v0
 .end method
@@ -671,7 +671,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 517
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x6
 
@@ -740,7 +740,7 @@
     invoke-virtual {v1, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 631
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xc
 
@@ -798,7 +798,7 @@
     invoke-virtual {v1, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 805
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x17
 
@@ -863,7 +863,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
     .line 485
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x4
 
@@ -941,7 +941,7 @@
 
     .line 691
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xf
 
@@ -1007,7 +1007,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 534
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/4 v3, 0x7
 
@@ -1084,7 +1084,7 @@
 
     .line 848
     :goto_0
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x19
 
@@ -1150,7 +1150,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 551
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x8
 
@@ -1228,7 +1228,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 573
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x9
 
@@ -1288,7 +1288,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 590
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xa
 
@@ -1366,7 +1366,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 647
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0xd
 
@@ -1421,7 +1421,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 720
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x11
 
@@ -1476,7 +1476,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 734
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x12
 
@@ -1531,7 +1531,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 748
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x13
 
@@ -1586,7 +1586,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 762
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x14
 
@@ -1641,7 +1641,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 776
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x15
 
@@ -1696,7 +1696,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 790
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x16
 
@@ -1751,7 +1751,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 863
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1a
 
@@ -1829,7 +1829,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 885
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1b
 
@@ -1916,7 +1916,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 907
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1c
 
@@ -1978,7 +1978,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 924
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1d
 
@@ -2056,7 +2056,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 946
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1e
 
@@ -2134,7 +2134,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     .line 968
-    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->a:Landroid/os/IBinder;
+    iget-object v0, p0, Landroid/support/v4/media/session/IMediaSession$Stub$Proxy;->mIBindera:Landroid/os/IBinder;
 
     const/16 v3, 0x1f
 

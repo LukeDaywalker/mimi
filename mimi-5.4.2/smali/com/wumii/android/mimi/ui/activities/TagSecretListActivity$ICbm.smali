@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+.field final synthetic mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 216
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-direct {p0, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;-><init>(Landroid/content/Context;)V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->b(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
@@ -52,7 +52,7 @@
     if-nez v0, :cond_0
 
     .line 226
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->b(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
@@ -82,7 +82,7 @@
     if-eqz v0, :cond_0
 
     .line 235
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbm;->mTagSecretListActivitya:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->b(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 

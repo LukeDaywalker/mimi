@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+.field final synthetic mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICy;->a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2$ICy;->mEnableFriendCircleActivity2a:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

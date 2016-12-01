@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+.field final synthetic mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$ICn;->a:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
+    iput-object p1, p0, Lcom/facebook/stetho/inspector/network/NetworkPeerManager$ICn;->mNetworkPeerManagera:Lcom/facebook/stetho/inspector/network/NetworkPeerManager;
 
     invoke-direct {p0}, Lcom/facebook/stetho/inspector/helper/PeersRegisteredListener;-><init>()V
 

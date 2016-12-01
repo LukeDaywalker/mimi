@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+.field final synthetic mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
 
 # virtual methods
@@ -44,13 +44,13 @@
 
     .line 115
     :pswitch_0
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->b(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/GestureDetector$OnGestureListener;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v1}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->a(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/MotionEvent;
 
@@ -65,7 +65,7 @@
 
     .line 119
     :pswitch_1
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->c(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)V
 
@@ -73,7 +73,7 @@
 
     .line 124
     :pswitch_2
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->d(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/GestureDetector$OnDoubleTapListener;
 
@@ -82,7 +82,7 @@
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->e(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Z
 
@@ -91,13 +91,13 @@
     if-nez v0, :cond_1
 
     .line 126
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->d(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/GestureDetector$OnDoubleTapListener;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-static {v1}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->a(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/MotionEvent;
 
@@ -109,7 +109,7 @@
 
     .line 128
     :cond_1
-    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->a:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+    iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;->mGestureDetectorCompatImplBasea:Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     const/4 v1, 0x1
 

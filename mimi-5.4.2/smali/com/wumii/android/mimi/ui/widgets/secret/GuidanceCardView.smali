@@ -7,25 +7,25 @@
 
 
 # static fields
-.field private static final c:Lorg/slf4j/Logger;
+.field private static final mLoggerc:Lorg/slf4j/Logger;
 
 
 # instance fields
-.field private d:Landroid/view/View;
+.field private mButtonh:Landroid/widget/Button;
 
-.field private e:Landroid/widget/ImageView;
+.field private mButtoni:Landroid/widget/Button;
 
-.field private f:Landroid/widget/ImageView;
+.field private mDisplayImageOptionsk:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-.field private g:Landroid/widget/TextView;
+.field private mFeedj:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
-.field private h:Landroid/widget/Button;
+.field private mImageViewe:Landroid/widget/ImageView;
 
-.field private i:Landroid/widget/Button;
+.field private mImageViewf:Landroid/widget/ImageView;
 
-.field private j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
+.field private mTextViewg:Landroid/widget/TextView;
 
-.field private k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+.field private mViewd:Landroid/view/View;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->c:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mLoggerc:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewf:Landroid/widget/ImageView;
 
     .line 72
     const v0, 0x7f0b008b
@@ -102,7 +102,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->g:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mTextViewg:Landroid/widget/TextView;
 
     .line 73
     const v0, 0x7f0b016e
@@ -113,7 +113,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->h:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtonh:Landroid/widget/Button;
 
     .line 74
     const v0, 0x7f0b016d
@@ -124,7 +124,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->i:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtoni:Landroid/widget/Button;
 
     .line 75
     const v0, 0x7f0b016c
@@ -135,10 +135,10 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->e:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewe:Landroid/widget/ImageView;
 
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mViewd:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -149,22 +149,22 @@
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mViewd:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->e:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 81
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->h:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtonh:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->i:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtoni:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -229,7 +229,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mDisplayImageOptionsk:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 95
     return-void
@@ -365,10 +365,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->d:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mViewd:Landroid/view/View;
 
     .line 100
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->d:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mViewd:Landroid/view/View;
 
     return-object v0
 .end method
@@ -391,7 +391,7 @@
 
     .line 131
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mFeedj:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
     .line 133
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Feed;->getItemGuidance()Lcom/wumii/android/mimi/models/entities/secret/ItemGuidance;
@@ -414,7 +414,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     .line 136
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->e:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewe:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/secret/ItemGuidance;->getGuidances()Ljava/util/List;
 
@@ -434,7 +434,7 @@
     invoke-static {v2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 138
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->g:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mTextViewg:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Guidance;->getContent()Ljava/lang/String;
 
@@ -447,7 +447,7 @@
 
     move-result-object v2
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->f:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewf:Landroid/widget/ImageView;
 
     const v3, 0x7f0b0015
 
@@ -483,9 +483,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->f:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewf:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mDisplayImageOptionsk:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICk;
 
@@ -501,12 +501,12 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mFeedj:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
     if-nez v0, :cond_1
 
     .line 106
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->c:Lorg/slf4j/Logger;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mLoggerc:Lorg/slf4j/Logger;
 
     const-string/jumbo v1, "guidanceFeed == null"
 
@@ -519,7 +519,7 @@
 
     .line 110
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mFeedj:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Feed;->getItemGuidance()Lcom/wumii/android/mimi/models/entities/secret/ItemGuidance;
 
@@ -541,7 +541,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/secret/Guidance;
 
     .line 113
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->d:Landroid/view/View;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mViewd:Landroid/view/View;
 
     if-ne p1, v2, :cond_2
 
@@ -560,7 +560,7 @@
 
     .line 115
     :cond_2
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->e:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mImageViewe:Landroid/widget/ImageView;
 
     if-ne p1, v2, :cond_3
 
@@ -597,7 +597,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/entities/secret/ItemGuidance;->setDisplayItemPosition(I)V
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mFeedj:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->a(Lcom/wumii/android/mimi/models/entities/secret/Feed;)V
 
@@ -605,7 +605,7 @@
 
     .line 119
     :cond_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->h:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtonh:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_4
 
@@ -638,7 +638,7 @@
 
     .line 121
     :cond_4
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->i:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->mButtoni:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_0
 

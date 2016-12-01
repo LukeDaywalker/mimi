@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final a:Lokio/Source;
+.field private final mSourcea:Lokio/Source;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     .line 26
     :cond_0
-    iput-object p1, p0, Lokio/ForwardingSource;->a:Lokio/Source;
+    iput-object p1, p0, Lokio/ForwardingSource;->mSourcea:Lokio/Source;
 
     .line 27
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lokio/ForwardingSource;->a:Lokio/Source;
+    iget-object v0, p0, Lokio/ForwardingSource;->mSourcea:Lokio/Source;
 
     invoke-interface {v0, p1, p2, p3}, Lokio/Source;->a(Lokio/Buffer;J)J
 
@@ -58,7 +58,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lokio/ForwardingSource;->a:Lokio/Source;
+    iget-object v0, p0, Lokio/ForwardingSource;->mSourcea:Lokio/Source;
 
     invoke-interface {v0}, Lokio/Source;->a()Lokio/Timeout;
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lokio/ForwardingSource;->a:Lokio/Source;
+    iget-object v0, p0, Lokio/ForwardingSource;->mSourcea:Lokio/Source;
 
     invoke-interface {v0}, Lokio/Source;->close()V
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lokio/ForwardingSource;->a:Lokio/Source;
+    iget-object v1, p0, Lokio/ForwardingSource;->mSourcea:Lokio/Source;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

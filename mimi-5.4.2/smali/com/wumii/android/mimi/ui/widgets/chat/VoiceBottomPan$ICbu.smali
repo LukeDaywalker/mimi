@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private a:Landroid/widget/RelativeLayout;
+.field private mFrameLayoutf:Landroid/widget/FrameLayout;
 
-.field private b:Landroid/widget/ImageButton;
+.field private mImageButtonb:Landroid/widget/ImageButton;
 
-.field private c:Landroid/widget/ImageView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/ImageView;
+.field private mImageViewd:Landroid/widget/ImageView;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
+.field private mRelativeLayouta:Landroid/widget/RelativeLayout;
 
-.field private f:Landroid/widget/FrameLayout;
+.field private mVoiceAuditionOptionsGallerye:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     .line 50
     const v0, 0x7f0b015d
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b:Landroid/widget/ImageButton;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageButtonb:Landroid/widget/ImageButton;
 
     .line 51
     const v0, 0x7f0b015a
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageViewc:Landroid/widget/ImageView;
 
     .line 52
     const v0, 0x7f0b015c
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->d:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageViewd:Landroid/widget/ImageView;
 
     .line 53
     const v0, 0x7f0b015b
@@ -78,7 +78,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mVoiceAuditionOptionsGallerye:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
     .line 54
     const v0, 0x7f0b015e
@@ -89,10 +89,10 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->f:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageButtonb:Landroid/widget/ImageButton;
 
     const/4 v1, 0x2
 
@@ -109,7 +109,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageButtonb:Landroid/widget/ImageButton;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mVoiceAuditionOptionsGallerye:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->d:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageViewd:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageViewc:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -161,7 +161,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->e:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mVoiceAuditionOptionsGallerye:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
     return-object v0
 .end method
@@ -171,7 +171,7 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->b:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mImageButtonb:Landroid/widget/ImageButton;
 
     return-object v0
 .end method
@@ -181,7 +181,7 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
@@ -193,12 +193,12 @@
     const/16 v1, 0x8
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mRelativeLayouta:Landroid/widget/RelativeLayout;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->f:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->mFrameLayoutf:Landroid/widget/FrameLayout;
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 

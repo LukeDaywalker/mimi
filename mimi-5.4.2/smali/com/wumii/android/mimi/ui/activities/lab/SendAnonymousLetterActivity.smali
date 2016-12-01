@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field private n:Landroid/widget/TextView;
+.field private mEditTexto:Landroid/widget/EditText;
 
-.field private o:Landroid/widget/EditText;
+.field private mMenuItemp:Landroid/view/MenuItem;
 
-.field private p:Landroid/view/MenuItem;
+.field private mStringq:Ljava/lang/String;
 
-.field private q:Ljava/lang/String;
+.field private mStringr:Ljava/lang/String;
 
-.field private r:Ljava/lang/String;
+.field private mTextViewn:Landroid/widget/TextView;
 
 
 # direct methods
@@ -132,7 +132,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->n:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mTextViewn:Landroid/widget/TextView;
 
     .line 73
     const v0, 0x7f0b005e
@@ -143,7 +143,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mEditTexto:Landroid/widget/EditText;
 
     .line 74
     return-void
@@ -154,7 +154,7 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -209,9 +209,9 @@
 
     invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;Landroid/app/Activity;)V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringr:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->q:Ljava/lang/String;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringq:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -236,7 +236,7 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mEditTexto:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -246,15 +246,15 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringr:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -264,7 +264,7 @@
 
     .line 111
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->p:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     if-nez v1, :cond_1
 
@@ -283,7 +283,7 @@
 
     .line 115
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->p:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->b(Z)Landroid/text/SpannableString;
 
@@ -292,7 +292,7 @@
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
     .line 116
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->p:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
@@ -339,7 +339,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->q:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringq:Ljava/lang/String;
 
     .line 84
     const-string/jumbo v0, "contactPNO"
@@ -348,16 +348,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringr:Ljava/lang/String;
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mTextViewn:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->q:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringq:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -369,7 +369,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mStringr:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -388,7 +388,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->n:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mTextViewn:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3, v3, v3, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
@@ -414,7 +414,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->h()V
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mEditTexto:Landroid/widget/EditText;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;
 
@@ -446,7 +446,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->p:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->mMenuItemp:Landroid/view/MenuItem;
 
     .line 99
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->g()V

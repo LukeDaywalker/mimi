@@ -28,7 +28,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
     goto :goto_0
 .end method
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
     goto :goto_0
 .end method
@@ -77,11 +77,11 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->d:Lcom/baidu/mapapi/model/LatLngBounds;
+    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngBoundsd:Lcom/baidu/mapapi/model/LatLngBounds;
 
-    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->e:I
+    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIe:I
 
-    iput p2, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->f:I
+    iput p2, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIf:I
 
     goto :goto_0
 .end method
@@ -103,9 +103,9 @@
     return-object v0
 
     :cond_0
-    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->c:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mLatLngc:Lcom/baidu/mapapi/model/LatLng;
 
-    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->g:F
+    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFg:F
 
     goto :goto_0
 .end method
@@ -127,7 +127,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->b:Lcom/baidu/mapapi/map/MapStatus;
+    iput-object p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mMapStatusb:Lcom/baidu/mapapi/map/MapStatus;
 
     goto :goto_0
 .end method
@@ -141,9 +141,9 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->h:I
+    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIh:I
 
-    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->i:I
+    iput p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mIi:I
 
     return-object v0
 .end method
@@ -157,7 +157,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
     return-object v0
 .end method
@@ -179,9 +179,9 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
-    iput-object p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->k:Landroid/graphics/Point;
+    iput-object p1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mPointk:Landroid/graphics/Point;
 
     goto :goto_0
 .end method
@@ -197,7 +197,7 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    iput v1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iput v1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
     return-object v0
 .end method
@@ -213,7 +213,7 @@
 
     const/high16 v1, -0x40800000    # -1.0f
 
-    iput v1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->j:F
+    iput v1, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFj:F
 
     return-object v0
 .end method
@@ -227,7 +227,7 @@
 
     invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/MapStatusUpdate;-><init>(I)V
 
-    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->g:F
+    iput p0, v0, Lcom/baidu/mapapi/map/MapStatusUpdate;->mFg:F
 
     return-object v0
 .end method

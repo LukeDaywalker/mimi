@@ -21,7 +21,7 @@
 
 .field public static final enum c:Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
-.field private static final synthetic d:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+.field private static final synthetic mArraySettingsCacheBehaviord:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
 
 # direct methods
@@ -79,7 +79,7 @@
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->d:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sput-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mArraySettingsCacheBehaviord:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 25
-    sget-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->d:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
+    sget-object v0, Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->mArraySettingsCacheBehaviord:[Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;
 
     invoke-virtual {v0}, [Lio/fabric/sdk/android/services/settings/SettingsCacheBehavior;->clone()Ljava/lang/Object;
 

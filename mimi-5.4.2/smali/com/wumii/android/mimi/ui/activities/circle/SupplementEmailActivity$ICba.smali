@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+.field final synthetic mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;->a:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;->mSupplementEmailActivitya:Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;->g()V
 

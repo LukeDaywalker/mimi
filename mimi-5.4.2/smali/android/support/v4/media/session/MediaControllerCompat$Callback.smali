@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Object;
+.field private isZc:Z
 
-.field private b:Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
+.field private mMessageHandlerb:Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
-.field private c:Z
+.field private final mObjecta:Ljava/lang/Object;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     .line 341
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->c:Z
+    iput-boolean v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->isZc:Z
 
     .line 344
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mObjecta:Ljava/lang/Object;
 
     .line 349
     :goto_0
@@ -57,7 +57,7 @@
 
     invoke-direct {v0, p0, v2}, Landroid/support/v4/media/session/MediaControllerCompat$Callback$StubCompat;-><init>(Landroid/support/v4/media/session/MediaControllerCompat$Callback;Landroid/support/v4/media/session/MediaControllerCompat$1;)V
 
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->a:Ljava/lang/Object;
+    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mObjecta:Ljava/lang/Object;
 
     goto :goto_0
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 337
-    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->b:Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
+    iget-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->mMessageHandlerb:Landroid/support/v4/media/session/MediaControllerCompat$Callback$MessageHandler;
 
     return-object v0
 .end method
@@ -77,7 +77,7 @@
 
     .prologue
     .line 337
-    iget-boolean v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->c:Z
+    iget-boolean v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$Callback;->isZc:Z
 
     return v0
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/Runnable;
+.field final synthetic mIChb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
 
-.field final synthetic b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
+.field final synthetic mRunnablea:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     .prologue
     .line 251
-    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
+    iput-object p1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->mIChb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
 
-    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->a:Ljava/lang/Runnable;
+    iput-object p2, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->mRunnablea:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,14 +35,14 @@
     .prologue
     .line 254
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->a:Ljava/lang/Runnable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->mRunnablea:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 256
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->mIChb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
 
     invoke-virtual {v0}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->a()V
 
@@ -53,7 +53,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->b:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;->mIChb:Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;
 
     invoke-virtual {v1}, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->a()V
 

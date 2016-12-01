@@ -9,9 +9,9 @@
 # instance fields
 .field protected a:Lorg/apache/commons/cli/CommandLine;
 
-.field private b:Lorg/apache/commons/cli/Options;
+.field private mListc:Ljava/util/List;
 
-.field private c:Ljava/util/List;
+.field private mOptionsb:Lorg/apache/commons/cli/Options;
 
 
 # direct methods
@@ -272,7 +272,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->b:Lorg/apache/commons/cli/Options;
+    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->mOptionsb:Lorg/apache/commons/cli/Options;
 
     return-object v0
 .end method
@@ -638,7 +638,7 @@
 
     .prologue
     .line 47
-    iput-object p1, p0, Lorg/apache/commons/cli/Parser;->b:Lorg/apache/commons/cli/Options;
+    iput-object p1, p0, Lorg/apache/commons/cli/Parser;->mOptionsb:Lorg/apache/commons/cli/Options;
 
     .line 48
     new-instance v0, Ljava/util/ArrayList;
@@ -649,7 +649,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/apache/commons/cli/Parser;->c:Ljava/util/List;
+    iput-object v0, p0, Lorg/apache/commons/cli/Parser;->mListc:Ljava/util/List;
 
     .line 49
     return-void
@@ -660,7 +660,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->c:Ljava/util/List;
+    iget-object v0, p0, Lorg/apache/commons/cli/Parser;->mListc:Ljava/util/List;
 
     return-object v0
 .end method

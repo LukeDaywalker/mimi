@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private mImageViewa:Landroid/widget/ImageView;
 
-.field private b:Landroid/widget/ImageView;
+.field private mImageViewb:Landroid/widget/ImageView;
 
-.field private c:Landroid/widget/ImageView;
+.field private mImageViewc:Landroid/widget/ImageView;
 
-.field private d:Landroid/widget/TextView;
+.field private mLinearLayouth:Landroid/widget/LinearLayout;
 
-.field private e:Landroid/view/View;
+.field private mMimiSearchViewg:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-.field private f:Landroid/widget/TextView;
+.field private mTextViewd:Landroid/widget/TextView;
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+.field private mTextViewf:Landroid/widget/TextView;
 
-.field private h:Landroid/widget/LinearLayout;
+.field private mViewe:Landroid/view/View;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->a:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewa:Landroid/widget/ImageView;
 
     .line 26
     const v0, 0x7f0b0053
@@ -49,7 +49,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->g:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mMimiSearchViewg:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     .line 27
     const v0, 0x7f0b0051
@@ -60,7 +60,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->b:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewb:Landroid/widget/ImageView;
 
     .line 28
     const v0, 0x7f0b0052
@@ -71,7 +71,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->c:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewc:Landroid/widget/ImageView;
 
     .line 29
     const v0, 0x7f0b0003
@@ -82,7 +82,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->d:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mTextViewd:Landroid/widget/TextView;
 
     .line 30
     const v0, 0x7f0b0002
@@ -93,7 +93,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mTextViewf:Landroid/widget/TextView;
 
     .line 31
     const v0, 0x7f0b0004
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->e:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mViewe:Landroid/view/View;
 
     .line 33
     const/high16 v0, 0x7f0b0000
@@ -113,7 +113,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->h:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mLinearLayouth:Landroid/widget/LinearLayout;
 
     .line 34
     return-void
@@ -126,7 +126,7 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->a:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewa:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->d:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mTextViewd:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -146,7 +146,7 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->e:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mViewe:Landroid/view/View;
 
     return-object v0
 .end method
@@ -156,7 +156,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mTextViewf:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->g:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mMimiSearchViewg:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->h:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mLinearLayouth:Landroid/widget/LinearLayout;
 
     return-object v0
 .end method
@@ -186,7 +186,7 @@
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->b:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewb:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -196,7 +196,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->c:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/ActionBarViewHolder;->mImageViewc:Landroid/widget/ImageView;
 
     return-object v0
 .end method

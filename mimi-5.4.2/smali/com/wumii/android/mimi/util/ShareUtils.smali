@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final a:Landroid/content/Context;
+.field private static final mArrayStringb:[Ljava/lang/String;
 
-.field private static final b:[Ljava/lang/String;
+.field private static final mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -19,10 +19,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->a:Landroid/content/Context;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->mContexta:Landroid/content/Context;
 
     .line 21
-    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->a:Landroid/content/Context;
+    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->b:[Ljava/lang/String;
+    sput-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->mArrayStringb:[Ljava/lang/String;
 
     return-void
 .end method
@@ -69,13 +69,13 @@
 
     .prologue
     .line 53
-    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->b:[Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/ShareUtils;->mArrayStringb:[Ljava/lang/String;
 
     new-instance v1, Ljava/util/Random;
 
     invoke-direct {v1}, Ljava/util/Random;-><init>()V
 
-    sget-object v2, Lcom/wumii/android/mimi/util/ShareUtils;->b:[Ljava/lang/String;
+    sget-object v2, Lcom/wumii/android/mimi/util/ShareUtils;->mArrayStringb:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -164,7 +164,7 @@
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 85
-    invoke-static {p3}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {p3}, Lorg/apache/commons/long3/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -272,7 +272,7 @@
     move-result-object v0
 
     .line 68
-    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils;->a:Landroid/content/Context;
+    sget-object v1, Lcom/wumii/android/mimi/util/ShareUtils;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/util/ShareUtils$ICam;->a()Ljava/lang/String;
 

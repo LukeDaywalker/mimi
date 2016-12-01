@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private a:Landroid/widget/EditText;
+.field private mEditTexta:Landroid/widget/EditText;
 
-.field private b:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+.field private mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
 
     if-nez v0, :cond_0
 
@@ -42,11 +42,11 @@
     .line 71
     check-cast v0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
 
     .line 73
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->b:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mICeb:Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment$ICe;
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -136,10 +136,10 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->a:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mEditTexta:Landroid/widget/EditText;
 
     .line 28
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->a:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/fragments/lab/FriendImpressionWriteQuestionFragment;->mEditTexta:Landroid/widget/EditText;
 
     invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long3/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

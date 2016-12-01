@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[C
+.field private static final mArrayCa:[C
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/google/analytics/tracking/android/Utils;->a:[C
+    sput-object v0, Lcom/google/analytics/tracking/android/Utils;->mArrayCa:[C
 
     return-void
 

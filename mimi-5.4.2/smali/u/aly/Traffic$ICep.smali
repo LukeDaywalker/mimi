@@ -23,7 +23,9 @@
 
 .field public static final enum b:Lu/aly/Traffic$ICep;
 
-.field private static final c:Ljava/util/Map;
+.field private static final synthetic mArrayICepf:[Lu/aly/Traffic$ICep;
+
+.field private static final mMapc:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map",
@@ -35,13 +37,11 @@
     .end annotation
 .end field
 
-.field private static final synthetic f:[Lu/aly/Traffic$ICep;
-
 
 # instance fields
-.field private final d:S
+.field private final mSd:S
 
-.field private final e:Ljava/lang/String;
+.field private final mStringe:Ljava/lang/String;
 
 
 # direct methods
@@ -88,14 +88,14 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lu/aly/Traffic$ICep;->f:[Lu/aly/Traffic$ICep;
+    sput-object v0, Lu/aly/Traffic$ICep;->mArrayICepf:[Lu/aly/Traffic$ICep;
 
     .line 52
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu/aly/Traffic$ICep;->c:Ljava/util/Map;
+    sput-object v0, Lu/aly/Traffic$ICep;->mMapc:Ljava/util/Map;
 
     .line 55
     const-class v0, Lu/aly/Traffic$ICep;
@@ -122,7 +122,7 @@
     check-cast v0, Lu/aly/Traffic$ICep;
 
     .line 56
-    sget-object v2, Lu/aly/Traffic$ICep;->c:Ljava/util/Map;
+    sget-object v2, Lu/aly/Traffic$ICep;->mMapc:Ljava/util/Map;
 
     invoke-virtual {v0}, Lu/aly/Traffic$ICep;->b()Ljava/lang/String;
 
@@ -152,10 +152,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 95
-    iput-short p3, p0, Lu/aly/Traffic$ICep;->d:S
+    iput-short p3, p0, Lu/aly/Traffic$ICep;->mSd:S
 
     .line 96
-    iput-object p4, p0, Lu/aly/Traffic$ICep;->e:Ljava/lang/String;
+    iput-object p4, p0, Lu/aly/Traffic$ICep;->mStringe:Ljava/lang/String;
 
     .line 97
     return-void
@@ -182,7 +182,7 @@
 
     .prologue
     .line 48
-    sget-object v0, Lu/aly/Traffic$ICep;->f:[Lu/aly/Traffic$ICep;
+    sget-object v0, Lu/aly/Traffic$ICep;->mArrayICepf:[Lu/aly/Traffic$ICep;
 
     invoke-virtual {v0}, [Lu/aly/Traffic$ICep;->clone()Ljava/lang/Object;
 
@@ -200,7 +200,7 @@
 
     .prologue
     .line 100
-    iget-short v0, p0, Lu/aly/Traffic$ICep;->d:S
+    iget-short v0, p0, Lu/aly/Traffic$ICep;->mSd:S
 
     return v0
 .end method
@@ -210,7 +210,7 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lu/aly/Traffic$ICep;->e:Ljava/lang/String;
+    iget-object v0, p0, Lu/aly/Traffic$ICep;->mStringe:Ljava/lang/String;
 
     return-object v0
 .end method

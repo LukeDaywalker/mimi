@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final a:Ljava/util/LinkedList;
+.field final mLinkedLista:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList",
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field b:Ljava/lang/Runnable;
+.field mRunnableb:Ljava/lang/Runnable;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->a:Ljava/util/LinkedList;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mLinkedLista:Ljava/util/LinkedList;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->a:Ljava/util/LinkedList;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mLinkedLista:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;
 
@@ -67,14 +67,14 @@
 
     check-cast v0, Ljava/lang/Runnable;
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->b:Ljava/lang/Runnable;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mRunnableb:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
     .line 267
     sget-object v0, Lio/fabric/sdk/android/services/concurrency/AsyncTask;->b:Ljava/util/concurrent/Executor;
 
-    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->b:Ljava/lang/Runnable;
+    iget-object v1, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mRunnableb:Ljava/lang/Runnable;
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
@@ -103,7 +103,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->a:Ljava/util/LinkedList;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mLinkedLista:Ljava/util/LinkedList;
 
     new-instance v1, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICi;
 
@@ -112,7 +112,7 @@
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->offer(Ljava/lang/Object;)Z
 
     .line 260
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->b:Ljava/lang/Runnable;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/AsyncTask$ICh;->mRunnableb:Ljava/lang/Runnable;
 
     if-nez v0, :cond_0
 

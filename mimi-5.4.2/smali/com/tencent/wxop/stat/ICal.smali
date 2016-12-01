@@ -6,14 +6,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/wxop/stat/ICai;
+.field final synthetic mICaia:Lcom/tencent/wxop/stat/ICai;
 
 
 # direct methods
 .method constructor <init>(Lcom/tencent/wxop/stat/ICai;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/tencent/wxop/stat/ICal;->a:Lcom/tencent/wxop/stat/ICai;
+    iput-object p1, p0, Lcom/tencent/wxop/stat/ICal;->mICaia:Lcom/tencent/wxop/stat/ICai;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,11 +31,11 @@
 
     move-result-object v0
 
-    iget v0, v0, Lcom/tencent/wxop/stat/ICam;->a:I
+    iget v0, v0, Lcom/tencent/wxop/stat/ICam;->mIa:I
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/wxop/stat/ICal;->a:Lcom/tencent/wxop/stat/ICai;
+    iget-object v0, p0, Lcom/tencent/wxop/stat/ICal;->mICaia:Lcom/tencent/wxop/stat/ICai;
 
     invoke-static {v0}, Lcom/tencent/wxop/stat/ICai;->a(Lcom/tencent/wxop/stat/ICai;)Landroid/content/Context;
 
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/wxop/stat/ICal;->a:Lcom/tencent/wxop/stat/ICai;
+    iget-object v1, p0, Lcom/tencent/wxop/stat/ICal;->mICaia:Lcom/tencent/wxop/stat/ICai;
 
     invoke-static {v1}, Lcom/tencent/wxop/stat/ICai;->b(Lcom/tencent/wxop/stat/ICai;)Lcom/tencent/wxop/stat/a/ICd;
 
@@ -62,7 +62,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/tencent/wxop/stat/ICal;->a:Lcom/tencent/wxop/stat/ICai;
+    iget-object v3, p0, Lcom/tencent/wxop/stat/ICal;->mICaia:Lcom/tencent/wxop/stat/ICai;
 
     invoke-static {v3}, Lcom/tencent/wxop/stat/ICai;->c(Lcom/tencent/wxop/stat/ICai;)Z
 

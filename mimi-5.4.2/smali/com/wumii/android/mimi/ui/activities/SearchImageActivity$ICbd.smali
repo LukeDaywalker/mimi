@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+.field final synthetic mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;-><init>()V
 
@@ -35,11 +35,11 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->A:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
@@ -52,7 +52,7 @@
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
@@ -78,7 +78,7 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->requestFocus()Z
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
@@ -102,7 +102,7 @@
     if-nez v0, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->mSearchImageActivitya:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->b(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
 

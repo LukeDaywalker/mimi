@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+.field final synthetic mChatMessageStoragea:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICe;->a:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage$ICe;->mChatMessageStoragea:Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     invoke-direct {p0}, Lcom/fasterxml/jackson/core/type/TypeReference;-><init>()V
 

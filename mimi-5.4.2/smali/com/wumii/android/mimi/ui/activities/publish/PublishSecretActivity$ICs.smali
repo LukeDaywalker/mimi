@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+.field private mFrameLayoute:Landroid/widget/FrameLayout;
 
-.field private b:Landroid/view/View;
+.field final synthetic mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-.field private c:Landroid/widget/TextView;
+.field private mTextViewc:Landroid/widget/TextView;
 
-.field private d:Landroid/view/ViewGroup;
+.field private mViewGroupd:Landroid/view/ViewGroup;
 
-.field private e:Landroid/widget/FrameLayout;
+.field private mViewb:Landroid/view/View;
 
-.field private f:Landroid/view/View;
+.field private mViewf:Landroid/view/View;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     .prologue
     .line 749
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mPublishSecretActivitya:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->b:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewb:Landroid/view/View;
 
     .line 751
     const v0, 0x7f0b008b
@@ -45,7 +45,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->c:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mTextViewc:Landroid/widget/TextView;
 
     .line 752
     const v0, 0x7f0b0057
@@ -56,7 +56,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->d:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewGroupd:Landroid/view/ViewGroup;
 
     .line 753
     const v0, 0x7f0b0230
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->e:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     .line 754
     const v0, 0x7f0b022f
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->f:Landroid/view/View;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewf:Landroid/view/View;
 
     .line 755
     return-void
@@ -87,7 +87,7 @@
 
     .prologue
     .line 742
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->b:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewb:Landroid/view/View;
 
     return-object v0
 .end method
@@ -99,22 +99,22 @@
 
     .prologue
     .line 758
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->e:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
     .line 760
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->c:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mTextViewc:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
     .line 762
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->e:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mFrameLayoute:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 764
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->d:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewGroupd:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -126,7 +126,7 @@
     iput p3, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 767
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->f:Landroid/view/View;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICs;->mViewf:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

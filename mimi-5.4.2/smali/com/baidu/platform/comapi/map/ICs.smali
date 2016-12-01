@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/platform/comapi/map/ICr;
+.field final synthetic mICra:Lcom/baidu/platform/comapi/map/ICr;
 
 
 # direct methods
 .method constructor <init>(Lcom/baidu/platform/comapi/map/ICr;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICs;->a:Lcom/baidu/platform/comapi/map/ICr;
+    iput-object p1, p0, Lcom/baidu/platform/comapi/map/ICs;->mICra:Lcom/baidu/platform/comapi/map/ICr;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -30,7 +30,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICs;->a:Lcom/baidu/platform/comapi/map/ICr;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICs;->mICra:Lcom/baidu/platform/comapi/map/ICr;
 
     invoke-static {v0}, Lcom/baidu/platform/comapi/map/ICr;->a(Lcom/baidu/platform/comapi/map/ICr;)Lcom/baidu/platform/comapi/map/ICw;
 

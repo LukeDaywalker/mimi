@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+.field private isZk:Z
 
-.field private d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+.field private mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private j:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+.field private mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
 
-.field private k:Z
+.field private mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 29
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 30
     return-void
@@ -56,7 +56,7 @@
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->j:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
     move-result v0
 
     .line 62
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "quota"
 
@@ -123,7 +123,7 @@
 
     .line 69
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v2, "quota"
 
@@ -173,10 +173,10 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->f()Z
 
     .line 78
-    iput-boolean p1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->k:Z
+    iput-boolean p1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->isZk:Z
 
     .line 79
-    iput-object p2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->j:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iput-object p2, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
 
     .line 80
     invoke-virtual {p0}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->j()V
@@ -203,11 +203,11 @@
     .prologue
     .line 34
     .line 36
-    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->k:Z
+    iget-boolean v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->isZk:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a:Lcom/wumii/android/mimi/models/helper/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mFileHelpera:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "quota"
 
@@ -224,7 +224,7 @@
     if-eqz v0, :cond_2
 
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->d:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mNetworkHelperd:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
@@ -242,7 +242,7 @@
 
     .line 47
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->j:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
+    iget-object v1, p0, Lcom/wumii/android/mimi/task/SyncQuotaTask;->mICchj:Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
 
     if-eqz v1, :cond_1
 

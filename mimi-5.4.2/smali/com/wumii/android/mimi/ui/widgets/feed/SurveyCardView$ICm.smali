@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Landroid/content/Context;
+.field private mContexta:Landroid/content/Context;
 
 
 # direct methods
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 278
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
     .line 279
     return-void
@@ -29,7 +29,7 @@
 
     .prologue
     .line 288
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -61,7 +61,7 @@
 
     .prologue
     .line 292
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->CIRCLE:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -76,7 +76,7 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
     check-cast v0, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;
 
@@ -87,9 +87,9 @@
     .line 283
     new-instance v1, Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->a:Landroid/content/Context;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView$ICm;->mContexta:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

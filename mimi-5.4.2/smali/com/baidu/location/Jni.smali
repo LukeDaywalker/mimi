@@ -7,23 +7,23 @@
 
 
 # static fields
-.field private static fo:I
+.field private static isZft:Z
 
-.field private static fp:I
+.field private static mIfo:I
 
-.field private static fq:I
+.field private static mIfp:I
 
-.field private static fr:I
+.field private static mIfq:I
 
-.field private static fs:I
+.field private static mIfr:I
 
-.field private static ft:Z
+.field private static mIfs:I
 
-.field private static fu:I
+.field private static mIfu:I
 
-.field private static fv:I
+.field private static mIfv:I
 
-.field private static fw:I
+.field private static mIfw:I
 
 
 # direct methods
@@ -34,35 +34,35 @@
 
     const/4 v1, 0x0
 
-    sput v1, Lcom/baidu/location/Jni;->fw:I
+    sput v1, Lcom/baidu/location/Jni;->mIfw:I
 
-    sput v2, Lcom/baidu/location/Jni;->fu:I
+    sput v2, Lcom/baidu/location/Jni;->mIfu:I
 
     const/4 v0, 0x2
 
-    sput v0, Lcom/baidu/location/Jni;->fv:I
+    sput v0, Lcom/baidu/location/Jni;->mIfv:I
 
     const/16 v0, 0xb
 
-    sput v0, Lcom/baidu/location/Jni;->fr:I
+    sput v0, Lcom/baidu/location/Jni;->mIfr:I
 
     const/16 v0, 0xc
 
-    sput v0, Lcom/baidu/location/Jni;->fs:I
+    sput v0, Lcom/baidu/location/Jni;->mIfs:I
 
     const/16 v0, 0xd
 
-    sput v0, Lcom/baidu/location/Jni;->fp:I
+    sput v0, Lcom/baidu/location/Jni;->mIfp:I
 
     const/16 v0, 0xe
 
-    sput v0, Lcom/baidu/location/Jni;->fo:I
+    sput v0, Lcom/baidu/location/Jni;->mIfo:I
 
     const/16 v0, 0x400
 
-    sput v0, Lcom/baidu/location/Jni;->fq:I
+    sput v0, Lcom/baidu/location/Jni;->mIfq:I
 
-    sput-boolean v1, Lcom/baidu/location/Jni;->ft:Z
+    sput-boolean v1, Lcom/baidu/location/Jni;->isZft:Z
 
     :try_start_0
     const-string/jumbo v0, "locSDK5"
@@ -78,7 +78,7 @@
 
     invoke-virtual {v0}, Ljava/lang/UnsatisfiedLinkError;->printStackTrace()V
 
-    sput-boolean v2, Lcom/baidu/location/Jni;->ft:Z
+    sput-boolean v2, Lcom/baidu/location/Jni;->isZft:Z
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -131,7 +131,7 @@
 
     fill-array-data v6, :array_0
 
-    sget-boolean v0, Lcom/baidu/location/Jni;->ft:Z
+    sget-boolean v0, Lcom/baidu/location/Jni;->isZft:Z
 
     if-eqz v0, :cond_0
 
@@ -151,7 +151,7 @@
 
     if-eqz v0, :cond_2
 
-    sget v4, Lcom/baidu/location/Jni;->fw:I
+    sget v4, Lcom/baidu/location/Jni;->mIfw:I
 
     :cond_1
     :goto_1
@@ -212,7 +212,7 @@
 
     if-eqz v0, :cond_3
 
-    sget v4, Lcom/baidu/location/Jni;->fu:I
+    sget v4, Lcom/baidu/location/Jni;->mIfu:I
 
     goto :goto_1
 
@@ -225,7 +225,7 @@
 
     if-eqz v0, :cond_4
 
-    sget v4, Lcom/baidu/location/Jni;->fv:I
+    sget v4, Lcom/baidu/location/Jni;->mIfv:I
 
     goto :goto_1
 
@@ -238,7 +238,7 @@
 
     if-eqz v0, :cond_5
 
-    sget v4, Lcom/baidu/location/Jni;->fr:I
+    sget v4, Lcom/baidu/location/Jni;->mIfr:I
 
     goto :goto_1
 
@@ -251,7 +251,7 @@
 
     if-eqz v0, :cond_6
 
-    sget v4, Lcom/baidu/location/Jni;->fs:I
+    sget v4, Lcom/baidu/location/Jni;->mIfs:I
 
     goto :goto_1
 
@@ -264,7 +264,7 @@
 
     if-eqz v0, :cond_1
 
-    sget v4, Lcom/baidu/location/Jni;->fp:I
+    sget v4, Lcom/baidu/location/Jni;->mIfp:I
 
     goto :goto_1
 
@@ -308,7 +308,7 @@
 .method public static j(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    sget-boolean v0, Lcom/baidu/location/Jni;->ft:Z
+    sget-boolean v0, Lcom/baidu/location/Jni;->isZft:Z
 
     if-eqz v0, :cond_0
 
@@ -346,7 +346,7 @@
 .method public static k(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    sget-boolean v0, Lcom/baidu/location/Jni;->ft:Z
+    sget-boolean v0, Lcom/baidu/location/Jni;->isZft:Z
 
     if-eqz v0, :cond_0
 
@@ -425,7 +425,7 @@
 
     const/4 v2, 0x0
 
-    sget-boolean v1, Lcom/baidu/location/Jni;->ft:Z
+    sget-boolean v1, Lcom/baidu/location/Jni;->isZft:Z
 
     if-eqz v1, :cond_0
 
@@ -439,7 +439,7 @@
 
     move-result-object v3
 
-    sget v1, Lcom/baidu/location/Jni;->fq:I
+    sget v1, Lcom/baidu/location/Jni;->mIfq:I
 
     new-array v4, v1, [B
 

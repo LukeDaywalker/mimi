@@ -23,25 +23,25 @@
 
 
 # instance fields
-.field private final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List",
-            "<",
-            "Lio/fabric/sdk/android/services/concurrency/Task;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field private final c:Ljava/util/concurrent/atomic/AtomicReference;
+.field private final mAtomicReferencec:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference",
             "<",
             "Ljava/lang/Throwable;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mLista:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lio/fabric/sdk/android/services/concurrency/Task;",
             ">;"
         }
     .end annotation
@@ -61,7 +61,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->a:Ljava/util/List;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mLista:Ljava/util/List;
 
     .line 33
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -70,7 +70,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 34
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->c:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mAtomicReferencec:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-void
 .end method
@@ -149,7 +149,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->a:Ljava/util/List;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mLista:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -174,7 +174,7 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->c:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mAtomicReferencec:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
@@ -200,7 +200,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
     :try_end_0
@@ -237,7 +237,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->a:Ljava/util/List;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mLista:Ljava/util/List;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableCollection(Ljava/util/Collection;)Ljava/util/Collection;
     :try_end_0
@@ -332,7 +332,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/concurrency/PriorityTask;->mAtomicBooleanb:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 

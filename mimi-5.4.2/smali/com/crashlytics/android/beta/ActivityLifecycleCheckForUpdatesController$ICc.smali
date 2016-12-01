@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
+.field final synthetic mActivityLifecycleCheckForUpdatesControllera:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 18
-    iput-object p1, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
+    iput-object p1, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->mActivityLifecycleCheckForUpdatesControllera:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
 
     invoke-direct {p0}, Lio/fabric/sdk/android/ActivityLifecycleManager$ICd;-><init>()V
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->mActivityLifecycleCheckForUpdatesControllera:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
 
     invoke-virtual {v0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->a()Z
 
@@ -36,7 +36,7 @@
     if-eqz v0, :cond_0
 
     .line 24
-    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->a:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
+    iget-object v0, p0, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController$ICc;->mActivityLifecycleCheckForUpdatesControllera:Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;
 
     invoke-static {v0}, Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;->a(Lcom/crashlytics/android/beta/ActivityLifecycleCheckForUpdatesController;)Ljava/util/concurrent/ExecutorService;
 

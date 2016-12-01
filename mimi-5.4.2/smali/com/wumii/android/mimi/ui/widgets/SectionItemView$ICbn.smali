@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field a:Landroid/widget/TextView;
+.field mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
-.field b:Landroid/widget/RelativeLayout;
+.field mTextViewa:Landroid/widget/TextView;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->a:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mTextViewa:Landroid/widget/TextView;
 
     .line 82
     const v0, 0x7f0b003c
@@ -37,7 +37,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->b:Landroid/widget/RelativeLayout;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$ICbn;->mRelativeLayoutb:Landroid/widget/RelativeLayout;
 
     .line 83
     return-void

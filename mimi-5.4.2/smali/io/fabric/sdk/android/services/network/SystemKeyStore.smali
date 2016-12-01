@@ -4,9 +4,7 @@
 
 
 # instance fields
-.field final a:Ljava/security/KeyStore;
-
-.field private final b:Ljava/util/HashMap;
+.field private final mHashMapb:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap",
@@ -17,6 +15,8 @@
         }
     .end annotation
 .end field
+
+.field final mKeyStorea:Ljava/security/KeyStore;
 
 
 # direct methods
@@ -37,10 +37,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->b:Ljava/util/HashMap;
+    iput-object v1, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->mHashMapb:Ljava/util/HashMap;
 
     .line 47
-    iput-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->a:Ljava/security/KeyStore;
+    iput-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->mKeyStorea:Ljava/security/KeyStore;
 
     .line 48
     return-void
@@ -230,7 +230,7 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
 
@@ -277,7 +277,7 @@
     const/4 v1, 0x0
 
     .line 56
-    iget-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->b:Ljava/util/HashMap;
+    iget-object v0, p0, Lio/fabric/sdk/android/services/network/SystemKeyStore;->mHashMapb:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getIssuerX500Principal()Ljavax/security/auth/x500/X500Principal;
 

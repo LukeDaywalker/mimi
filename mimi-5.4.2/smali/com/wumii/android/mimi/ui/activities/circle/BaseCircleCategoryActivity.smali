@@ -6,7 +6,7 @@
 # instance fields
 .field protected C:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-.field private D:Landroid/widget/TextView;
+.field private mTextViewD:Landroid/widget/TextView;
 
 .field protected n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
@@ -207,15 +207,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->D:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mTextViewD:Landroid/widget/TextView;
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->D:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mTextViewD:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->D:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->mTextViewD:Landroid/widget/TextView;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;
 

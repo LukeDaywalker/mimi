@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final a:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+.field final mBackoffa:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
-.field final b:Ljava/util/Random;
+.field final mDc:D
 
-.field final c:D
+.field final mRandomb:Ljava/util/Random;
 
 
 # direct methods
@@ -88,13 +88,13 @@
 
     .line 55
     :cond_3
-    iput-object p1, p0, Lcom/crashlytics/android/answers/RandomBackoff;->a:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iput-object p1, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mBackoffa:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
     .line 56
-    iput-wide p2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->c:D
+    iput-wide p2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mDc:D
 
     .line 57
-    iput-object p4, p0, Lcom/crashlytics/android/answers/RandomBackoff;->b:Ljava/util/Random;
+    iput-object p4, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mRandomb:Ljava/util/Random;
 
     .line 58
     return-void
@@ -109,17 +109,17 @@
     const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
 
     .line 66
-    iget-wide v0, p0, Lcom/crashlytics/android/answers/RandomBackoff;->c:D
+    iget-wide v0, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mDc:D
 
     sub-double v0, v4, v0
 
     .line 67
-    iget-wide v2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->c:D
+    iget-wide v2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mDc:D
 
     add-double/2addr v2, v4
 
     .line 68
-    iget-object v4, p0, Lcom/crashlytics/android/answers/RandomBackoff;->b:Ljava/util/Random;
+    iget-object v4, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mRandomb:Ljava/util/Random;
 
     invoke-virtual {v4}, Ljava/util/Random;->nextDouble()D
 
@@ -144,7 +144,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->a:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
+    iget-object v2, p0, Lcom/crashlytics/android/answers/RandomBackoff;->mBackoffa:Lio/fabric/sdk/android/services/concurrency/internal/Backoff;
 
     invoke-interface {v2, p1}, Lio/fabric/sdk/android/services/concurrency/internal/Backoff;->a(I)J
 

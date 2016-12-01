@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private b:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerb:Landroid/view/View$OnClickListener;
 
-.field private c:Landroid/view/View$OnClickListener;
+.field private mOnClickListenerc:Landroid/view/View$OnClickListener;
 
-.field private d:Ljava/util/Set;
+.field private mSetd:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set",
@@ -44,10 +44,10 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter$ICd;-><init>(Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->c:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     .line 39
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     .line 40
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->b:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mOnClickListenerb:Landroid/view/View$OnClickListener;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -77,7 +77,7 @@
     if-nez v0, :cond_0
 
     .line 61
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -119,7 +119,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->c:Landroid/view/View$OnClickListener;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mOnClickListenerc:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -129,7 +129,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     invoke-virtual {p0, p1, p2}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->c(II)Lcom/wumii/android/mimi/models/entities/Contact;
 
@@ -171,7 +171,7 @@
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->b:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mOnClickListenerb:Landroid/view/View$OnClickListener;
 
     .line 44
     return-void
@@ -241,7 +241,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
@@ -264,7 +264,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->d:Ljava/util/Set;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->mSetd:Ljava/util/Set;
 
     return-object v0
 .end method

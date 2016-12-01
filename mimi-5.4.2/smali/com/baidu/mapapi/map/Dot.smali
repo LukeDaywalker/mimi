@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field a:Lcom/baidu/mapapi/model/LatLng;
+.field mIb:I
 
-.field b:I
+.field mIc:I
 
-.field c:I
+.field mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->g:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Dot;->q:Lcom/baidu/platform/comapi/map/ICf;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Dot;->mICfq:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     invoke-super {p0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     invoke-static {v0}, Lcom/baidu/mapapi/model/CoordUtil;->ll2mc(Lcom/baidu/mapapi/model/LatLng;)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
@@ -54,11 +54,11 @@
 
     const-string/jumbo v0, "radius"
 
-    iget v1, p0, Lcom/baidu/mapapi/map/Dot;->c:I
+    iget v1, p0, Lcom/baidu/mapapi/map/Dot;->mIc:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->mIb:I
 
     invoke-static {v0, p1}, Lcom/baidu/mapapi/map/Overlay;->a(ILandroid/os/Bundle;)V
 
@@ -68,7 +68,7 @@
 .method public getCenter()Lcom/baidu/mapapi/model/LatLng;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->a:Lcom/baidu/mapapi/model/LatLng;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     return-object v0
 .end method
@@ -76,7 +76,7 @@
 .method public getColor()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->b:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->mIb:I
 
     return v0
 .end method
@@ -84,7 +84,7 @@
 .method public getRadius()I
     .locals 1
 
-    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->c:I
+    iget v0, p0, Lcom/baidu/mapapi/map/Dot;->mIc:I
 
     return v0
 .end method
@@ -103,7 +103,7 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Dot;->a:Lcom/baidu/mapapi/model/LatLng;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Dot;->mLatLnga:Lcom/baidu/mapapi/model/LatLng;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -115,7 +115,7 @@
 .method public setColor(I)V
     .locals 1
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Dot;->b:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Dot;->mIb:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
@@ -129,7 +129,7 @@
 
     if-lez p1, :cond_0
 
-    iput p1, p0, Lcom/baidu/mapapi/map/Dot;->c:I
+    iput p1, p0, Lcom/baidu/mapapi/map/Dot;->mIc:I
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/Dot;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 

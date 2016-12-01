@@ -28,11 +28,11 @@
 
 .field public static final enum g:Lcom/tencent/wxop/stat/ICw;
 
-.field private static final synthetic i:[Lcom/tencent/wxop/stat/ICw;
+.field private static final synthetic mArrayICwi:[Lcom/tencent/wxop/stat/ICw;
 
 
 # instance fields
-.field h:I
+.field mIh:I
 
 
 # direct methods
@@ -149,7 +149,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/tencent/wxop/stat/ICw;->i:[Lcom/tencent/wxop/stat/ICw;
+    sput-object v0, Lcom/tencent/wxop/stat/ICw;->mArrayICwi:[Lcom/tencent/wxop/stat/ICw;
 
     return-void
 .end method
@@ -164,7 +164,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lcom/tencent/wxop/stat/ICw;->h:I
+    iput p3, p0, Lcom/tencent/wxop/stat/ICw;->mIh:I
 
     return-void
 .end method
@@ -187,7 +187,7 @@
 
     aget-object v0, v2, v1
 
-    iget v4, v0, Lcom/tencent/wxop/stat/ICw;->h:I
+    iget v4, v0, Lcom/tencent/wxop/stat/ICw;->mIh:I
 
     if-ne p0, v4, :cond_0
 
@@ -224,7 +224,7 @@
 .method public static values()[Lcom/tencent/wxop/stat/ICw;
     .locals 1
 
-    sget-object v0, Lcom/tencent/wxop/stat/ICw;->i:[Lcom/tencent/wxop/stat/ICw;
+    sget-object v0, Lcom/tencent/wxop/stat/ICw;->mArrayICwi:[Lcom/tencent/wxop/stat/ICw;
 
     invoke-virtual {v0}, [Lcom/tencent/wxop/stat/ICw;->clone()Ljava/lang/Object;
 

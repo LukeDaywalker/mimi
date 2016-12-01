@@ -6,7 +6,7 @@
 # instance fields
 .field private duration:I
 
-.field private id:Ljava/lang/String;
+.field private mStringid:Ljava/lang/String;
 
 .field private sizeInByte:J
 
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 13
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->mStringid:Ljava/lang/String;
 
     .line 14
     iput-object p2, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->url:Ljava/lang/String;
@@ -71,7 +71,7 @@
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->id:Ljava/lang/String;
+    iget-object v0, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->mStringid:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -122,7 +122,7 @@
 
     .prologue
     .line 21
-    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->id:Ljava/lang/String;
+    iput-object p1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->mStringid:Ljava/lang/String;
 
     .line 22
     return-void
@@ -176,7 +176,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->id:Ljava/lang/String;
+    iget-object v1, p0, Lcom/wumii/mimi/model/domain/mobile/MobileVideo;->mStringid:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

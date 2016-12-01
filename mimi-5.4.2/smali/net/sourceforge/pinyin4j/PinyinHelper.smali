@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:[Ljava/lang/String;
+.field private static final mArrayStringa:[Ljava/lang/String;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    sput-object v0, Lnet/sourceforge/pinyin4j/PinyinHelper;->a:[Ljava/lang/String;
+    sput-object v0, Lnet/sourceforge/pinyin4j/PinyinHelper;->mArrayStringa:[Ljava/lang/String;
 
     return-void
 .end method
@@ -102,7 +102,7 @@
     return-object v0
 
     :cond_1
-    sget-object v0, Lnet/sourceforge/pinyin4j/PinyinHelper;->a:[Ljava/lang/String;
+    sget-object v0, Lnet/sourceforge/pinyin4j/PinyinHelper;->mArrayStringa:[Ljava/lang/String;
 
     goto :goto_1
 .end method

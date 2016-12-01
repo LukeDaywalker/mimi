@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private final a:I
+.field private final mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicInteger;
+.field private final mIa:I
 
-.field private final c:Ljava/util/List;
+.field private final mListc:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -37,17 +37,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->c:Ljava/util/List;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mListc:Ljava/util/List;
 
     .line 56
-    iput p1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->a:I
+    iput p1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mIa:I
 
     .line 57
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 58
     const/high16 v0, 0x1000000
@@ -98,7 +98,7 @@
     move-result v3
 
     .line 69
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -122,7 +122,7 @@
     move-result-object v1
 
     .line 73
-    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->c:Ljava/util/List;
+    iget-object v4, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mListc:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -131,7 +131,7 @@
     if-eqz v4, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, v1}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b(Landroid/graphics/Bitmap;)I
 
@@ -147,12 +147,12 @@
 
     .line 77
     :cond_1
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mListc:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 78
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
@@ -183,7 +183,7 @@
     if-eqz v0, :cond_0
 
     .line 91
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->c:Ljava/util/List;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mListc:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -192,7 +192,7 @@
     if-eqz v1, :cond_0
 
     .line 92
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, v0}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b(Landroid/graphics/Bitmap;)I
 
@@ -216,12 +216,12 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->c:Ljava/util/List;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mListc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 101
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mAtomicIntegerb:Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
 
@@ -239,7 +239,7 @@
 
     .prologue
     .line 106
-    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->a:I
+    iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->mIa:I
 
     return v0
 .end method

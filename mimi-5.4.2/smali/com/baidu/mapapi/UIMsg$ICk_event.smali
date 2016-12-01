@@ -107,14 +107,14 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/baidu/mapapi/UIMsg;
+.field final synthetic mUIMsga:Lcom/baidu/mapapi/UIMsg;
 
 
 # direct methods
 .method public constructor <init>(Lcom/baidu/mapapi/UIMsg;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/baidu/mapapi/UIMsg$ICk_event;->a:Lcom/baidu/mapapi/UIMsg;
+    iput-object p1, p0, Lcom/baidu/mapapi/UIMsg$ICk_event;->mUIMsga:Lcom/baidu/mapapi/UIMsg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

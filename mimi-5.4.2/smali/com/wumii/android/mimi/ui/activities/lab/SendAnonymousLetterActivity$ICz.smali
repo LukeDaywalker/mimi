@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
+.field final synthetic mSendAnonymousLetterActivitya:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;->a:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;->mSendAnonymousLetterActivitya:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;->a:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;->mSendAnonymousLetterActivitya:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->g()V
 

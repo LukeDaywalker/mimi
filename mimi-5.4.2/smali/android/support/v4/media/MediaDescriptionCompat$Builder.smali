@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private mBitmape:Landroid/graphics/Bitmap;
 
-.field private b:Ljava/lang/CharSequence;
+.field private mBundleg:Landroid/os/Bundle;
 
-.field private c:Ljava/lang/CharSequence;
+.field private mCharSequenceb:Ljava/lang/CharSequence;
 
-.field private d:Ljava/lang/CharSequence;
+.field private mCharSequencec:Ljava/lang/CharSequence;
 
-.field private e:Landroid/graphics/Bitmap;
+.field private mCharSequenced:Ljava/lang/CharSequence;
 
-.field private f:Landroid/net/Uri;
+.field private mStringa:Ljava/lang/String;
 
-.field private g:Landroid/os/Bundle;
+.field private mUrif:Landroid/net/Uri;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     .prologue
     .line 321
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->e:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mBitmape:Landroid/graphics/Bitmap;
 
     .line 322
     return-object p0
@@ -49,7 +49,7 @@
 
     .prologue
     .line 333
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->f:Landroid/net/Uri;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mUrif:Landroid/net/Uri;
 
     .line 334
     return-object p0
@@ -60,7 +60,7 @@
 
     .prologue
     .line 344
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->g:Landroid/os/Bundle;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mBundleg:Landroid/os/Bundle;
 
     .line 345
     return-object p0
@@ -71,7 +71,7 @@
 
     .prologue
     .line 286
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->b:Ljava/lang/CharSequence;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
     .line 287
     return-object p0
@@ -82,7 +82,7 @@
 
     .prologue
     .line 275
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->a:Ljava/lang/String;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mStringa:Ljava/lang/String;
 
     .line 276
     return-object p0
@@ -95,19 +95,19 @@
     .line 355
     new-instance v0, Landroid/support/v4/media/MediaDescriptionCompat;
 
-    iget-object v1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->a:Ljava/lang/String;
+    iget-object v1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mStringa:Ljava/lang/String;
 
-    iget-object v2, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->b:Ljava/lang/CharSequence;
+    iget-object v2, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequenceb:Ljava/lang/CharSequence;
 
-    iget-object v3, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->c:Ljava/lang/CharSequence;
+    iget-object v3, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
-    iget-object v4, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->d:Ljava/lang/CharSequence;
+    iget-object v4, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequenced:Ljava/lang/CharSequence;
 
-    iget-object v5, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->e:Landroid/graphics/Bitmap;
+    iget-object v5, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mBitmape:Landroid/graphics/Bitmap;
 
-    iget-object v6, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->f:Landroid/net/Uri;
+    iget-object v6, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mUrif:Landroid/net/Uri;
 
-    iget-object v7, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->g:Landroid/os/Bundle;
+    iget-object v7, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mBundleg:Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -121,7 +121,7 @@
 
     .prologue
     .line 297
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->c:Ljava/lang/CharSequence;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequencec:Ljava/lang/CharSequence;
 
     .line 298
     return-object p0
@@ -132,7 +132,7 @@
 
     .prologue
     .line 309
-    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->d:Ljava/lang/CharSequence;
+    iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mCharSequenced:Ljava/lang/CharSequence;
 
     .line 310
     return-object p0
